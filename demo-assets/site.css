@@ -13,6 +13,7 @@
   --solid-blue-hover: #204e67;
   --on-solid-blue: #ffffff;
   --blue-pale: #edf3f6;
+  --accent-line: #6f9bb3;
   --gold: #f3be34;
   --line: #d8e0e5;
   --line-strong: #b8c5cd;
@@ -37,6 +38,7 @@
   --solid-blue-hover: #35617d;
   --on-solid-blue: #ffffff;
   --blue-pale: #1d2d38;
+  --accent-line: #6fa6c4;
   --gold: #d8ad3c;
   --line: #2a3b48;
   --line-strong: #3d5262;
@@ -59,8 +61,9 @@ body {
   background: var(--paper);
   font-family: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
   font-size: 18px;
-  line-height: 1.65;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
 }
 
 a {
@@ -92,7 +95,7 @@ h3 {
   color: var(--heading);
   font-weight: 600;
   letter-spacing: -0.025em;
-  line-height: 1.12;
+  line-height: 1.1;
 }
 
 .shell {
@@ -122,6 +125,7 @@ h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.73rem;
   letter-spacing: 0.025em;
+  line-height: 1.35;
 }
 
 .status-inner,
@@ -158,7 +162,7 @@ h3 {
 }
 
 .header-inner {
-  min-height: 90px;
+  min-height: 112px;
   justify-content: space-between;
   gap: 34px;
 }
@@ -174,8 +178,8 @@ h3 {
 }
 
 .brand strong {
-  font-size: 1.1rem;
-  line-height: 1.2;
+  font-size: 1.35rem;
+  line-height: 1.15;
 }
 
 .brand span {
@@ -185,6 +189,7 @@ h3 {
   font-size: 0.66rem;
   font-weight: 600;
   letter-spacing: 0.065em;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
@@ -205,6 +210,7 @@ h3 {
   border-bottom: 2px solid transparent;
   font-size: 0.8rem;
   font-weight: 650;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -281,63 +287,182 @@ h3 {
 }
 
 .hero {
+  background: var(--subtle);
   border-bottom: 1px solid var(--line);
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.62fr);
-  min-height: 430px;
-  align-items: end;
-  gap: 88px;
-  padding-block: 80px 72px;
+  grid-template-columns: minmax(0, 1.12fr) minmax(330px, 0.68fr);
+  min-height: 540px;
+  align-items: center;
+  gap: clamp(58px, 8vw, 105px);
+  padding-block: 78px;
 }
 
-.eyebrow {
-  margin-bottom: 19px;
+.hero-copy {
+  max-width: 760px;
+}
+
+.section-label,
+.orientation-label {
+  margin-bottom: 16px;
   color: var(--blue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.095em;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
 .hero h1 {
-  max-width: 850px;
-  margin-bottom: 0;
-  font-size: clamp(3.25rem, 6.5vw, 5.25rem);
+  max-width: 720px;
+  margin-bottom: 25px;
+  font-size: clamp(3.25rem, 6.2vw, 5.45rem);
+  text-wrap: balance;
 }
 
-.hero-lede {
-  max-width: 34ch;
-  margin-bottom: 8px;
-  padding-top: 25px;
+.hero-summary {
+  max-width: 610px;
+  margin-bottom: 0;
   color: var(--copy);
-  border-top: 4px solid var(--gold);
-  font-size: clamp(1.15rem, 2vw, 1.42rem);
-  line-height: 1.55;
+  font-size: clamp(1.1rem, 1.8vw, 1.32rem);
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px 20px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 17px;
+  color: var(--blue);
+  background: transparent;
+  border: 1px solid var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: var(--on-solid-blue);
+  background: var(--solid-blue-hover);
+  border-color: var(--solid-blue-hover);
+}
+
+.button-primary {
+  color: var(--on-solid-blue);
+  background: var(--solid-blue);
+  border-color: var(--solid-blue);
+}
+
+.orientation-panel {
+  align-self: stretch;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(30px, 4vw, 46px);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent-line);
+}
+
+.orientation-panel h2 {
+  max-width: 15ch;
+  margin-bottom: 27px;
+  font-size: clamp(1.75rem, 2.8vw, 2.45rem);
+  text-wrap: balance;
+}
+
+.orientation-facts {
+  margin: 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.orientation-facts > div {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 17px;
+  padding-block: 13px;
+  border-bottom: 1px solid var(--line);
+}
+
+.orientation-facts dt {
+  color: var(--heading);
+  font-size: 1.65rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+  line-height: 1;
+}
+
+.orientation-facts dd {
+  margin: 0;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.orientation-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 25px;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.77rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.orientation-link:hover {
+  color: var(--blue-dark);
 }
 
 .directory {
-  padding-block: 88px 108px;
+  padding-block: 94px 112px;
 }
 
 .section-heading {
   display: grid;
-  grid-template-columns: minmax(150px, 0.35fr) minmax(0, 1fr);
-  gap: 54px;
-  align-items: baseline;
-  margin-bottom: 56px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
+  gap: clamp(46px, 8vw, 100px);
+  align-items: end;
+  margin-bottom: 60px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line-strong);
 }
 
-.section-heading .eyebrow {
-  margin-bottom: 0;
+.section-heading .section-label {
+  margin-bottom: 10px;
 }
 
 .section-heading h2 {
   margin-bottom: 0;
   font-size: clamp(2.15rem, 4vw, 3.2rem);
+  text-wrap: balance;
+}
+
+.section-heading > p {
+  max-width: 43ch;
+  margin: 0;
+  color: var(--copy);
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .directory-groups {
@@ -347,12 +472,13 @@ h3 {
 }
 
 .directory-group h3 {
-  margin-bottom: 21px;
-  color: var(--muted);
+  margin-bottom: 18px;
+  color: var(--blue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
@@ -380,7 +506,7 @@ h3 {
 .directory-link strong {
   color: var(--heading);
   font-size: 1.13rem;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .directory-link small {
@@ -388,7 +514,7 @@ h3 {
   color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.75rem;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .directory-link .arrow {
@@ -422,12 +548,24 @@ h3 {
   gap: 28px;
 }
 
-.footer-inner p {
+.footer-identity p {
   margin: 0;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.footer-identity span {
+  display: block;
+  margin-top: 4px;
+  color: #b9c8d4;
+  font-size: 0.69rem;
+  line-height: 1.4;
 }
 
 .footer-inner nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -475,17 +613,13 @@ h3 {
   .hero-inner {
     grid-template-columns: 1fr;
     min-height: 0;
-    gap: 50px;
-    align-items: start;
-    padding-block: 70px;
-  }
-
-  .hero-lede {
-    max-width: 46ch;
+    gap: 44px;
+    padding-block: 68px;
   }
 
   .directory-groups {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
 }
 
@@ -512,7 +646,7 @@ h3 {
   }
 
   .brand strong {
-    font-size: 0.98rem;
+    font-size: 1.08rem;
   }
 
   .brand span {
@@ -521,30 +655,43 @@ h3 {
   }
 
   .hero-inner {
-    gap: 38px;
-    padding-block: 58px;
+    gap: 34px;
+    padding-block: 54px;
   }
 
   .hero h1 {
-    font-size: clamp(2.65rem, 13vw, 4rem);
+    font-size: clamp(2.65rem, 12.5vw, 4rem);
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .orientation-panel {
+    padding: 28px 24px;
   }
 
   .directory {
-    padding-block: 64px 78px;
+    padding-block: 68px 82px;
   }
 
-  .section-heading,
-  .directory-groups {
+  .section-heading {
     grid-template-columns: 1fr;
   }
 
   .section-heading {
-    gap: 8px;
-    margin-bottom: 44px;
+    gap: 17px;
+    margin-bottom: 48px;
+    padding-bottom: 24px;
   }
 
   .directory-groups {
-    gap: 48px;
+    gap: 46px;
   }
 
   .directory-link {
@@ -557,6 +704,10 @@ h3 {
     flex-direction: column;
     justify-content: center;
     gap: 13px;
+  }
+
+  .footer-inner nav {
+    gap: 9px 18px;
   }
 }
 

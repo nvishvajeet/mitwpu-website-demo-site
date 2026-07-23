@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Working demonstration of a clear, accessible academic and research website for MIT-WPU.">
+  <meta name="description" content="Browse academics, research, facilities, events, and public profiles across MIT World Peace University.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="color-scheme" content="light dark">
-  <title>MIT-WPU Academic &amp; Research Website — Working Demo</title>
+  <title>MIT-WPU Academic &amp; Research</title>
   <script>
     (function () {
       try {
@@ -57,21 +57,51 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div class="shell hero-inner">
-        <div>
-          <h1 id="page-title">Academic work,<br>clearly organised.</h1>
+        <div class="hero-copy">
+          <p class="section-label">MIT World Peace University · Pune, India</p>
+          <h1 id="page-title">Academics and research at MIT-WPU.</h1>
+          <p class="hero-summary">
+            Browse the university’s academic structure, research activity,
+            shared facilities, and public people directory.
+          </p>
+          <div class="hero-actions" aria-label="Start exploring">
+            <a class="button button-primary" href="academics/">Explore academics</a>
+            <a class="button" href="people/">Find a person</a>
+          </div>
         </div>
-        <p class="hero-lede">
-          A unified home for departments, research groups, shared facilities,
-          and the people behind them.
-        </p>
+        <aside class="orientation-panel" aria-labelledby="orientation-title">
+          <p class="orientation-label">University directory</p>
+          <h2 id="orientation-title">Schools, departments, and people.</h2>
+          <dl class="orientation-facts">
+            <div>
+              <dt>14</dt>
+              <dd>Schools</dd>
+            </div>
+            <div>
+              <dt>31</dt>
+              <dd>Departments and institutes</dd>
+            </div>
+            <div>
+              <dt>502</dt>
+              <dd>Public profiles</dd>
+            </div>
+          </dl>
+          <a class="orientation-link" href="academics/">View the academic structure <span aria-hidden="true">→</span></a>
+        </aside>
       </div>
     </section>
 
     <section class="directory" aria-labelledby="explore-title">
       <div class="shell">
         <div class="section-heading">
-          <p class="eyebrow">Current scope</p>
-          <h2 id="explore-title">Explore</h2>
+          <div>
+            <p class="section-label">Browse</p>
+            <h2 id="explore-title">University directory</h2>
+          </div>
+          <p>
+            Move between academic units, research activity, specialist groups,
+            events, facilities, and people.
+          </p>
         </div>
 
         <div class="directory-groups">
@@ -80,21 +110,21 @@
             <div class="link-list">
               <a class="directory-link" href="research/">
                 <span>
-                  <strong>Overview</strong>
+                  <strong>Research overview</strong>
                   <small>Overview, leadership, facilities and groups</small>
                 </span>
                 <span class="arrow" aria-hidden="true">→</span>
               </a>
               <a class="directory-link" href="facilities/">
                 <span>
-                  <strong>Facilities</strong>
+                  <strong>Central Research Facility</strong>
                   <small>Significant instruments and shared capabilities</small>
                 </span>
                 <span class="arrow" aria-hidden="true">→</span>
               </a>
               <a class="directory-link" href="groups/">
                 <span>
-                  <strong>Groups</strong>
+                  <strong>Research groups</strong>
                   <small>Directory of active groups and centres</small>
                 </span>
                 <span class="arrow" aria-hidden="true">→</span>
@@ -110,18 +140,18 @@
           </section>
 
           <section class="directory-group" aria-labelledby="academic-title">
-            <h3 id="academic-title">Academic</h3>
+            <h3 id="academic-title">Academics</h3>
             <div class="link-list">
               <a class="directory-link" href="academics/">
                 <span>
-                  <strong>All academic units</strong>
-                  <small>45 schools, departments and institutes</small>
+                  <strong>Schools and departments</strong>
+                  <small>14 schools and 31 departments and institutes</small>
                 </span>
                 <span class="arrow" aria-hidden="true">→</span>
               </a>
               <a class="directory-link" href="science/">
                 <span>
-                  <strong>School of Science</strong>
+                  <strong>Science and environmental studies</strong>
                   <small>Physics, chemistry, mathematics and life sciences</small>
                 </span>
                 <span class="arrow" aria-hidden="true">→</span>
@@ -144,7 +174,7 @@
           </section>
 
           <section class="directory-group" aria-labelledby="groups-title">
-            <h3 id="groups-title">Group websites</h3>
+            <h3 id="groups-title">Specialist groups</h3>
             <div class="link-list">
               <a class="directory-link" href="photonics/">
                 <span>
@@ -169,7 +199,10 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <p>MIT World Peace University</p>
+      <div class="footer-identity">
+        <p>MAEER’s MIT-WPU</p>
+        <span>Pune, Maharashtra, India</span>
+      </div>
       <nav aria-label="Footer navigation">
         <a href="academics/">Academics</a>
         <a href="research/">Research</a>

@@ -3,6 +3,7 @@
 
   var search = document.querySelector("[data-unit-search]");
   var faculty = document.querySelector("[data-faculty-filter]");
+  var grid = document.querySelector(".directory-grid");
   var cards = Array.prototype.slice.call(
     document.querySelectorAll("[data-unit-card]"),
   );
@@ -25,14 +26,20 @@
       .trim();
   }
 
-  function scrollToDirectory() {
-    var target = document.querySelector(".directory-summary");
-    if (!target) return;
-    var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    target.scrollIntoView({
-      behavior: reducedMotion ? "auto" : "smooth",
-      block: "start",
-    });
+  function reserveGridHeight(matches, pageCount) {
+    if (!grid) return;
+    grid.style.minHeight = "";
+    var tallest = 0;
+    for (var page = 0; page < pageCount; page += 1) {
+      var first = page * pageSize;
+      var last = first + pageSize;
+      cards.forEach(function (card) {
+        var matchIndex = matches.indexOf(card);
+        card.hidden = matchIndex < first || matchIndex >= last;
+      });
+      tallest = Math.max(tallest, grid.getBoundingClientRect().height);
+    }
+    grid.style.minHeight = Math.ceil(tallest) + "px";
   }
 
   function applyFilters(resetPage) {
@@ -51,6 +58,7 @@
     var first = (currentPage - 1) * pageSize;
     var last = first + pageSize;
 
+    reserveGridHeight(matches, pageCount);
     cards.forEach(function (card) {
       var matchIndex = matches.indexOf(card);
       card.hidden = matchIndex < first || matchIndex >= last;
@@ -81,15 +89,20 @@
       if (currentPage <= 1) return;
       currentPage -= 1;
       applyFilters(false);
-      scrollToDirectory();
     });
   }
   if (next) {
     next.addEventListener("click", function () {
       currentPage += 1;
       applyFilters(false);
-      scrollToDirectory();
     });
   }
+  var resizeFrame = 0;
+  window.addEventListener("resize", function () {
+    window.cancelAnimationFrame(resizeFrame);
+    resizeFrame = window.requestAnimationFrame(function () {
+      applyFilters(false);
+    });
+  });
   applyFilters(true);
 })();

@@ -251,6 +251,61 @@ h3 {
   border-bottom-color: var(--blue);
 }
 
+.orientation-bar {
+  color: var(--muted);
+  background: var(--topbar);
+  border-bottom: 1px solid var(--line);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.breadcrumbs {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 7px;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.breadcrumbs li {
+  display: flex;
+  min-width: 0;
+  flex: 0 0 auto;
+  align-items: center;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.breadcrumbs li + li::before {
+  margin-inline: 10px;
+  color: var(--line-dark);
+  content: "/";
+}
+
+.breadcrumbs a {
+  color: var(--muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--blue);
+}
+
+.breadcrumbs a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.breadcrumbs [aria-current="page"] {
+  padding: 3px 8px;
+  color: var(--heading);
+  background: var(--blue-pale);
+  border-left: 2px solid var(--blue);
+  font-weight: 700;
+}
+
 .theme-toggle {
   --toggle-track: var(--blue-pale);
   position: relative;
@@ -1157,6 +1212,22 @@ h3 {
     flex-wrap: wrap;
     gap: 2px 18px;
     overflow: visible;
+  }
+
+  .breadcrumbs {
+    min-height: 0;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    overflow: visible;
+    padding-block: 8px;
+  }
+
+  .breadcrumbs li {
+    font-size: 0.68rem;
+  }
+
+  .breadcrumbs li + li::before {
+    margin-inline: 7px;
   }
 
   .hero-grid {
