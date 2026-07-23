@@ -100,7 +100,12 @@
       </div>
       <header class="site-header">
         <div class="shell header-inner">
-          ${brand}
+          <div class="masthead-brands">
+            <a class="institutional-lockup" href="${demoHomeHref}" aria-label="Dr. Vishwanath Karad MIT World Peace University home">
+              <img class="institutional-lockup__logo" src="/demo-assets/brand/mitwpu-official-logo.jpg" alt="" width="431" height="124">
+            </a>
+            ${brand}
+          </div>
           ${department ? `
             <nav class="site-nav" aria-label="Department navigation">
               ${navItems.map(([id, label, href]) => `<a data-nav="${id}" href="${href}"${page === id ? ' aria-current="page"' : ""}>${label}</a>`).join("")}

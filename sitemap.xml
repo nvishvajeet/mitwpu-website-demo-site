@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://mitwpu.vishwanathgrid.org/AlChE/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/about/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/about/maeer/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/about/world-peace-dome/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/about-mit/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/administrative-offices/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/executive-director/</loc></url>
@@ -189,6 +192,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/liberal-arts-humanities/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/liberal-arts-humanities/photography/academics.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/liberal-arts-humanities/photography/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/academics/liberal-arts-humanities/research.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/list-of-holidays/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/ordinances/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/results/</loc></url>
@@ -214,6 +218,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/science/physics/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/student-assistance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/student-grievance/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/accessibility/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/a-stellar-odyssey-anurag-vaidyas-journey-from-mit-wpu-to-isro/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/aaryesh-honrao/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/abeer-atmesh-dhond/</loc></url>
@@ -282,11 +287,17 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/yashodhan-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/yeshaya-h-contractor/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/acm-club/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/admissions/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/admissions-contact-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/advanced-manufacturing-and-engineering-centre/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/alumni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/application-process/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/asme/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/contact.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/people.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/publications.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/research.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-chandrakant-pandav-153/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-jayant-narlikar-158/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-kiran-mazumdar-shaw-146/</loc></url>
@@ -324,256 +335,12 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-sai-paranjpye-145/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-supriya-sule-151/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/baja-sae/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/contact.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/people.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/publications.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/research.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/blockchain-coe/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/4-factors-to-consider-while-choosing-a-bdes-course-in-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/5-benefits-of-pursuing-a-postgraduate-degree-that-will-change-your-career-path/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/5-essential-skills-to-learn-in-a-bdes-course-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/7-skills-required-to-become-a-successful-civil-engineer/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/a-comprehensive-guide-to-mah-cet-2024---exam-pattern-syllabus-and-preparation/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/a-comprehensive-guide-to-mba-in-human-resource-management/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/a-comprehensive-guide-to-the-highest-paid-engineering-jobs/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/a-detailed-look-at-mtech--focusing-on-engineering-and-technology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/a-guide-to-choosing-the-right-bba-programme/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/ace-your-dream-job-placement-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/advance-your-career-with-mpharm-pharmaceutics-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/advanced-leadership-skills/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/after-12th-study-options-at-mit-wpu-pune-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/agribusiness-management-why-the-increasing-demand-for-these-courses/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/ai-at-the-edge/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bachelor-of-product-design-syllabus/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/basics-of-commerce-planning-to-auditing/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/basics-of-quantum-computing/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bba-business-analytics-students-perspective-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bba-in-event-management-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bba-international-business-curriculum-for-global-marketplace/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bba-llb-hons-syllabus-and-career-opportunities/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bcom-financial-analysis-for-cfa-frm-mba-aspirants/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bdes-fashion-design-career-scope/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/be-or-b-tech---which-is-better-for-you/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bed-admission-process-2025/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/best-student-hostels-facilities-pune/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bioengineering-vs-biotechnology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/biology-courses-after-12th/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/boost-your-btech-journey-targeting-jee-scores-and-scholarships-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/bsc-computer-science-scope-and-jobs/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/btech-bioengineering-course-details-and-scope/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/btech-cse-vs-ai-data-science-which-is-best/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/btech-cse-vs-bsc-cs-better-career-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/btech-in-robotics--automation-eligibility-scope--career-prospects/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/btech-mechanical-after-10th-complete-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/btech-programmes-of-punes-leading-btech-college/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/building-a-career-in-robotics--essential-steps-for-btech-graduates/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/business-intelligence-for-mba-professionals-transforming-data-into-value/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/business-tips-for-students/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/can-ai-match-creativity-of-ui-ux-designer-an-analysis/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/career-in-user-experience-design/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/career-opportunities-after-bca-eligibility-future-scope-admission-process/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/career-opportunities-after-mba-in-business-analytics/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/career-options-after-b-tech-mechanical-engineering/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/career-outlook-for-mba-graduates-with-a-specialisation-in-digital-marketing/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/careers-after-phd-ece/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/careers-in-public-health/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cat-vs-gmat-choosing-the-right-exam-for-your-mba-aspirations/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/civil-engineering-careers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/clinical-trials-unveiled---b-pharms-role-in-advancing-medical-research/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cloud-computing-vs-devops-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/coding-the-concrete-civil-engineer-tech-genius/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/color-psychology-in-fashion-crafting-emotional-narratives-through-design/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/computer-engineering-vs-electronics-engineering-making-the-right-choice/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/corporate-finance-excellence--a-masterclass-for-mba-professionals/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/courses-after-bsc-after-2025/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cracking-cat---a-step-by-step-guide-for-mba-aspirants/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cracking-the-mah-cet-2024--strategies-and-tips-for-success/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cracking-the-uceed-exam-a-comprehensive-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cyber-security-courses-after-12th/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/cybersecurity-in-the-age-of-ai-challenges-and-solutions-for-cse-engineers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/day-at-mit-wpu-civil-engineering-department/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/decoding-algorithms-a-beginners-guide-for-bca-science-enthusiasts/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/demystifying-the-phd-journey--a-guide-for-aspiring-environmental-scientists/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/design-thinking-in-business-integrating-bdes-principles-for-creative-problem-solving/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/differences-between-mba-and-pgdm/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/different-types-of-careers-you-can-pursue-with-a-bachelor-of-design/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/diploma-and-certification-programmes-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/diploma-courses-after-10th-in-2024/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/dream-job-in-digital-arts--career-paths-for-bfa-graduates/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/e-commerce-evolution---mba-perspectives-on-digital-marketing/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/e-learning-innovations-bca-sciences-role-in-educational-technology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/emerging-specialisations-in-mba---how-to-future-proof-your-business-career-in-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/empowering-the-next-generation--mentorship-programmes-bridging-b-tech-jee-students-with-alumni-start-ups/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/ethical-hacking-interview-questions-and-answers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/ethics-in-ai/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/evolution-of-animation-and-vfx---from-traditional-techniques-to-cutting-edge-technologies/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/evolution-of-pharmacy/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exciting-15-clinical-pharmacy-careers-you-never-knew-existed/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exciting-career-prospects-after-b-tech-computer-science/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/explore-different-career-options-after-mba-with-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/explore-postgraduate-programmes-at-mitwpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-alternatives-to-jee-mains-mit-wpu-emerges-as-a-promising-choice/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-engineering-jobs-in-various-government-departments/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-innovative-trends-in-b-tech-civil-engineering/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-the-benefits-of-a-dual-mba-is-it-right-for-you/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-the-bfa-digital-arts-programme-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-the-career-paths-for-b-tech-mechanical-engineers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-the-curriculum-of-an-mba-finance-programme/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-the-ethical-implications-of-ai-in-deepfake-technology-a-perspective-for-engineering-students/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/exploring-the-top-10-mba-marketing-recruiters-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/fashion-tech-careers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/fast-track-to-success---b-tech-lateral-entry-for-diploma-holders/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/finding-balance-a-law-students-guide-to-sanity-and-success/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/from-jee-results-to-job---how-mit-wpu-prepares-students-for-successful-placements/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/from-smart-cities-to-disaster-management--the-diverse-applications-of-mtech-in-civil-engineering/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/future-of-mba-in-digital-marketing/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/future-proof-gen-ai-skills/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/global-exchange-programmes-by-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/global-perspectives--international-collaborations-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/growing-trend-of-digital-marketing-mbas-navigating-the-future-of-business/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/guide-to-career-in-banking-and-finance/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/hospitality-careers-around-the-world--opportunities-for-bba-graduates/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/hostel-facilities-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-a-bba-at-mit-wpu-empowers-future-business-leaders/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-a-bba-in-global-marketing-and-event-management-prepares-you-for-career-success/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-a-postgraduate-degree-can-enhance-your-career-prospects/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-an-integrated-b-tech-after-10th-gives-you-a-career-edge/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-can-a-career-in-b-des-animation-and-vfx-jumpstart-your-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-can-product-design-courses-transform-your-future/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-data-science-transforms-chemical-engineering-applications/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-do-you-determine-if-engineering-is-the-right-course-for-you/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-is-a-bba-in-digital-marketing-beneficial-for-your-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-is-bba-in-international-business-unique-from-regular-bba/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-msc-yoga-shapes-your-career-best-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-apply-for-btech-cse-ai-and-data-science-best-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-apply-for-mba-in-india-a-students-complete-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-apply-for-mba-operations--supply-chain-management-a-must-read-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-choose-a-top-interior-design-course/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-choose-the-best-b-tech-branch-for-your-future/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-choose-the-best-college-after-12th/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-choose-the-right-engineering-stream-and-the-best-engineering-college/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-choose-the-right-mba-specialisation/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-choose-the-right-university-for-your-mba/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-do-phd-after-mba/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-manage-academic-pressure/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-master-the-core-subjects-of-a-b-des-in-fashion-design/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-moot-courts-and-debates/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-prepare-for-pg-entrance-exams/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-prepare-for-phd-entrance-exam-tips-tricks/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-protect-your-data-best-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-take-family-brand-global/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/how-to-write-literature-review/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/importance-of-user-experience-design-course/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/imposter-syndrome-in-students/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/industry-academia-role-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/inside-mit-wpus-ai-ml-lab/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/interior-space-design-vs-architecture-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/international-collaboration--exposure-for-jee-aspirants-at-mit-wpu-pune/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/internship-opportunities-a-stepping-stone-to-careers-in-banking/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/is-b-tech-in-ai--data-science-right-for-you/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/is-your-engineering-degree-ai-proof/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/job-finding-tips-for-2026/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/job-opportunities-for-bba-hr-graduates-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/key-qualities-for-fashion-design-students/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/landing-a-spot-in-a-top-bdes-visual-communication-design-programme/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/level-up-your-mba-application-the-power-of-sports/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/life-after-mtech-how-to-leverage-your-masters-degree-for-a-rewarding-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/m-tech-in-computer-science-and-engineering-course-details-eligibility--career-prospects/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/m-tech-vs-mba---specializing-in-engineering-or-business/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mastering-branding-and-advertising-strategies--a-guide-for-bba-students/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mastering-finance-with-international-accounting-and-finance-b-com-programme-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mastering-financial-analysis-core-skills-for-mba-finance-professionals/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mba-healthcare-management-salary-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mba-in-banking--financial-services-vs-mba-in-finance--mit-wpu-blog/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mba-international-business-scope-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mba-international-business-scope-pune/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mcom-syllabus-semester-wise-breakdown/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mergers-and-acquisitions-jobs-mba-finance-recruiter-expectations/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-a-university-with-a-wide-range-of-undergraduate-and-graduate-programmes/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-and-its-mba-programme/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-cet-details/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-incubation-centre-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-lateral-entry-programmes/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-petroleum-enineering-course/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-placement-stats/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-research-contribution-in-science-technology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mit-wpu-unique-way-of-education-with-diversity-and-inclusion/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/modern-civil-engineering-practices/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mtech-chemical-placement-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mtech-for-working-professionals/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mtech-research-for-impact-solving-societal-challenges-through-technology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/mtech-vs-ms--decoding-the-differences-and-choosing-the-right-path-for-you/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/overcoming-jee-exam-anxiety--strategies-for-a-calm-and-focused-mind/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/peace-studies-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/phd-after-mba-in-management-best-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/power-of-data-science-with-b.tech-programme/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/preparing-for-a-career-in-fashion-design--tips-for-success/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/product-designer-vs-product-manager-comparision/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/public-policy-vs-political-science/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/public-speaking-mastery-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/qa-vs-sc-in-pharma-a-career-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/real-world-readiness-placements-internships/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/rise-autonomous-ai/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/robotics-engineering-careers-best-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/scope--career-opportunities-after-bba-international-business/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/seo-mastery-unlocking-the-power-of-search-in-mba-digital-marketing/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/should-you-choose-mbapgdm-after-bsc/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/standing-out-in-the-job-market-how-an-mba-marketing-degree-sets-you-apart/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/start-with-a-b-tech-degree-to-upgrade-your-career-in-ai-and-data-science/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/strategic-approaches-for-jee-preparation---a-winning-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/strategic-role-of-business-analytics-an-mba-perspective/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/student-led-innovations-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/student-loan-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/study-abroad-programmes-through-global-partnerships-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/study-abroad-vs-study-in-india-best-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/supply-chain-management--a-course-that-shapes-the-future-of-business/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-benefits-of-taking-a-visual-design-course/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-building-blocks-of-everything--discovering-b-tech-materials-science-for-future-engineers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-complete-guide-for-undergraduates--mastering-academic-success/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-early-engineer---nurturing-btech-aspirations-in-high-school/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-evolving-landscape-of-b-tech-cse---emerging-trends-and-technologies/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-evolving-role-of-technology-in-b-com-adapting-to-digital-finance/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-future-of-agri-business--how-an-mba-can-give-you-an-edge/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-future-of-design-jobs-how-b-des-can-prepare-you-in-an-evolving-design-industry/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-impact-of-ai-and-automation-on-mba-careers-how-to-prepare-for-the-future/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-importance-and-scope-of-mba-programmes/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-mit-wpu-experience--a-glimpse-into-campus-life-and-community/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-power-of-a-bachelor-of-design-degree-in-todays-job-market/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-role-of-data-science-in-petroleum-engineering/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-role-of-technology-in-modern-supply-chain-management--mit-wpu-blog/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-transformative-role-of-mba-in-agri-business-management/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/the-ultimate-guide-to-becoming-a-product-designer/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/things-you-didnt-know-about-ba-in-psychology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-10-government-jobs-after-b-tech-in-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-10-in-demand-pg-courses-for-2025/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-5-career-options-after-mba-in-marketing-2025/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-7-essential-soft-skills-that-make-mit-wpu-graduates-stand-out/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-7-reasons-to-dive-into-ai--machine-learning-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-7-reasons-to-opt-for-bba-as-a-course/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-advertising-agencies-hiring-branding-and-advertising-graduates/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-business-finance-jobs-india-2025/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-business-skills-learned-in-bba-programmes/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-career-opportunities-after-ba-in-psychology/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-career-options-for-electronics-and-communication-engineers/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-fellowships-for-phd-students-in-india-2025/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-five-reasons-to-pursue-an-mba/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-gd-topic-ideas-for-mba-finance/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-government-jobs-pharmacy/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-mba-entrance-exams-in-india/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-reasons-to-choose-b.com-financial-analysis-programme-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-reasons-to-pursue-interior-designing-course/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/top-ten-career-options-to-pursue-after-btech/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/unveiling-the-world-of-design-careers-from-graphic-design-to-industrial-design/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/ux-researcher-vs-ux-designer-career-guide/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/vlsi-project-ideas-for-final-year-btech-students/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/what-does-choosing-interior-design-as-your-career-mean/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/what-to-expect-in-a-bdes-programme--skills-youll-learn-and-how-to-prepare/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-choose-a-regular-degree-over-distance-degree---exploring-the-benefits/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-choose-b-des-animation-and-vfx-design-at-mit-wpu-a-student-perspective/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-choose-fashion-designing-as-a-career/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-llm-is-beneficial-after-llb/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-pursue-m-tech-chemical-engineering-and-its-potential-career-opportunities/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-study-at-mit-wpu/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/why-think-tanks-prefer-ba-bsc-hons-graduates/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/wireless-wonders-advancements-in-communication-systems-engineering/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/blog/your-guide-to-mba-entrance-exams-and-tips-to-prepare/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/career/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/centre-for-womens-studies-and-development/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/centre-of-excellence-technology-and-visualization-centre-1/</loc></url>
@@ -983,6 +750,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/goa/search/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/goa/sitemap/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/groups/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/happenings/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-about-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-advisory-committee/</loc></url>
@@ -1023,6 +791,8 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/kapila/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/pre-incubation-labs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/yukti/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/international/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/intranet/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/dr-anjali-sane-164/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/dr-bharat-s-chaudhari-204/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/dr-hitesh-joshi-165/</loc></url>
@@ -1040,6 +810,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/dr-vinod-shastri-198/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/mr-haranath-ghosh-193/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-transformation-centre/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/academic-facilities/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/about-adventure-club/</loc></url>

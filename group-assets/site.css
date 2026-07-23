@@ -24,8 +24,8 @@
   --focus: #9dc4de;
   --switch-knob: #ffffff;
   --shell: 1080px;
-  --institution-bar-height: 52px;
-  --site-header-height: 88px;
+  --institution-bar-height: 76px;
+  --site-header-height: 80px;
   --page-hero-height: 272px;
   color-scheme: light;
 }
@@ -145,6 +145,10 @@ h3 {
 }
 
 .institution-bar {
+  position: sticky;
+  z-index: 70;
+  top: 0;
+  display: block;
   color: #e9f0f5;
   background: var(--institution);
   border-bottom: 3px solid var(--gold);
@@ -175,20 +179,34 @@ h3 {
 
 .institution-links {
   display: flex;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  flex: 1 1 auto;
   gap: 22px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
 }
 
 .institution-links a {
+  flex: 0 0 auto;
   color: #fff;
+  font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.institution-links a:hover {
+.institution-links a:hover,
+.institution-links a[aria-current="page"] {
+  color: #fff;
   opacity: 0.82;
   text-decoration: none;
 }
 
 .site-header {
+  color: var(--heading);
   background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
@@ -203,8 +221,48 @@ h3 {
 }
 
 .brand {
-  color: var(--ink);
+  color: var(--heading);
   text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--blue);
+}
+
+.masthead-brands {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 16px;
+}
+
+.masthead-brands > .brand,
+.masthead-brands > .academic-brand {
+  min-width: 0;
+  padding-left: 16px;
+  border-left: 1px solid rgb(255 255 255 / 28%);
+}
+
+.institutional-lockup {
+  display: grid;
+  flex: 0 0 auto;
+  justify-items: start;
+  color: #ffffff;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.institutional-lockup:hover {
+  color: #ffffff;
+}
+
+.institutional-lockup__logo {
+  display: block;
+  width: clamp(150px, 13vw, 180px);
+  height: auto;
+  padding: 3px 5px;
+  background: #ffffff;
+  border-radius: 2px;
 }
 
 .brand strong,
@@ -219,7 +277,7 @@ h3 {
 
 .brand small {
   margin-top: 4px;
-  color: var(--title);
+  color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.055em;
@@ -266,8 +324,11 @@ h3 {
   padding-inline: 0;
   padding-block: 7px;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-inline: contain;
   list-style: none;
   scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 
 .breadcrumbs li {
@@ -589,7 +650,6 @@ h3 {
   height: 126px;
   object-fit: cover;
   background: var(--blue-pale);
-  border-top: 3px solid var(--photo-accent);
 }
 
 .portrait-placeholder {
@@ -1113,7 +1173,16 @@ h3 {
 
   .site-nav {
     width: 100%;
+    min-width: 0;
+    max-width: 100%;
     overflow-x: auto;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .masthead-brands {
+    width: 100%;
   }
 
   .site-nav a {
@@ -1198,11 +1267,26 @@ h3 {
   }
 
   .institution-links {
+    width: 100%;
+    flex: 0 0 auto;
     gap: 16px;
   }
 
   .brand small {
     display: none;
+  }
+
+  .masthead-brands {
+    gap: 10px;
+  }
+
+  .masthead-brands > .brand,
+  .masthead-brands > .academic-brand {
+    padding-left: 10px;
+  }
+
+  .institutional-lockup__logo {
+    width: 142px;
   }
 
   .site-nav {
@@ -1211,7 +1295,10 @@ h3 {
     gap: 18px;
     overflow-x: auto;
     overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-inline: contain;
     scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
   }
 
   .site-nav a { flex: 0 0 auto; white-space: nowrap; }

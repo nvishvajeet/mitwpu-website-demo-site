@@ -183,10 +183,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "department": "science/physics",
     "departmentName": "Department of Physics",
     "unitRoutes": [
-      "science/physics"
+      "science/physics",
+      "research-groups/astrophysics"
     ],
     "unitNames": {
-      "science/physics": "Department of Physics"
+      "science/physics": "Department of Physics",
+      "research-groups/astrophysics": "Astrophysics Research Group"
     },
     "photoPath": "./assets/campus/abhijit-bendre.webp",
     "research": "Cosmic magnetic fields, nonlinear and galactic dynamos, the interstellar medium, and cosmic-ray dynamos.",
@@ -304,12 +306,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mr. Abhishek Prakash Chunawale",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/abhishek-prakash-chunawale.webp",
     "research": "",
@@ -369,12 +371,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Aditi Shantanu Jahagirdar",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/aditi-shantanu-jahagirdar.webp",
     "research": "",
@@ -589,12 +591,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Akshita Sparshneel Chanchlani",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/akshita-sparshneel-chanchlani.webp",
     "research": "",
@@ -1157,16 +1159,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Anita Mahesh Thengade",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/anita-mahesh-thengade.jpg",
     "research": "",
-    "summary": "Dr. Anita Thengade is an Assistant Professor in the Department of Computer Engineering and Technology at Dr. Vishwanath Karad MIT World Peace University, Pune, India. With over 24 years of teaching experience, She earned her Ph.D. in Computer Engineering from Swami Ramanand Teerth Marathwada University, Nanded.",
+    "summary": "Dr. Anita Thengade is an Assistant Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, India. With over 24 years of teaching experience, She earned her Ph.D. in Computer Engineering from Swami Ramanand Teerth Marathwada University, Nanded.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anita-mahesh-thengade",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57208574640",
@@ -1289,12 +1291,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Ankita Kotalwar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/ankita-kotalwar.webp",
     "research": "",
@@ -1530,12 +1532,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Anusha Raghavendra Pai",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/anusha-raghavendra-pai.webp",
     "research": "",
@@ -1554,12 +1556,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Anushri Kulkarni",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/anushri-kulkarni.webp",
     "research": "",
@@ -1577,12 +1579,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Ms. Aparna Ashok Kamble",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/aparna-ashok-kamble.jpg",
     "research": "",
@@ -2082,12 +2084,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Ashwini Vinayak Zadgaonkar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/ashwini-vinayak-zadgaonkar.webp",
     "research": "",
@@ -2254,12 +2256,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Balaso Nivruti Jagdale",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/balaso-nivruti-jagdale.jpg",
     "research": "",
@@ -2364,12 +2366,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Bharat Burghate",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/bharat-burghate.webp",
     "research": "",
@@ -2517,12 +2519,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Chaitali Vivek Chandankhede",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/chaitali-vivek-chandankhede.jpg",
     "research": "",
@@ -2876,12 +2878,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Devendra Joshi",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/devendra-joshi.webp",
     "research": "",
@@ -2943,12 +2945,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Dhanashri Narayan Wategaonkar",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/dhanashri-narayan-wategaonkar.webp",
     "research": "",
@@ -3073,12 +3075,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Dipali Prashant Baviskar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/dipali-prashant-baviskar.jpg",
     "research": "",
@@ -3288,12 +3290,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Gauri Bilaye",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/gauri-bilaye.webp",
     "research": "",
@@ -3566,12 +3568,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Himangi Milind Pande",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/himangi-milind-pande.jpg",
     "research": "",
@@ -3700,12 +3702,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Jayshree Ajit Aher",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/jayshree-ajit-aher.jpg",
     "research": "",
@@ -3853,12 +3855,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Kajal Vatekar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/kajal-vatekar.webp",
     "research": "",
@@ -3897,20 +3899,23 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
     "unitRoutes": [
-      "science/biosciences-and-technology"
+      "science/biosciences-and-technology",
+      "research-groups/bioinformatics"
     ],
     "unitNames": {
-      "science/biosciences-and-technology": "Department of Biosciences and Technology"
+      "science/biosciences-and-technology": "Department of Biosciences and Technology",
+      "research-groups/bioinformatics": "Bioinformatics Group"
     },
     "photoPath": "./assets/campus/kausik-bhattacharyya.webp",
     "research": "Infectious-disease biology, microbial and viral genomics, bioinformatics, host–pathogen interactions, and antimicrobial resistance.",
     "summary": "Dr. Kausik Bhattacharyya is an Assistant Professor at the Department of Biosciences and Technology (DoBT) and Revvity – MIT-WPU Centre of Excellence for Bioimaging Technologies and Innovation. Serving additionally as a Departmental Placement coordinator for the department of Biosciences and Technology, Dr Kausik has more than 12 years of research experience in Infectious Disease biology, Microbiology, Genomics and Bioinformatics and 7 years of teaching experience. He has completed his Ph.D. from Department of Biomedical Sciences (ACBR), University of Delhi. During his Ph.D., he has demonstrated how genomic sequence and novel genomic variations can have functional significance in Multi-Drug Resistant (MDR) clinical isolates of M. tuberculosis through Bioinformatics and Experimental approaches, including altering protein 3D structure, causing drug resistance, altering host-pathogen interactions, Molecular mimicry, and Evasion of Immune responses. Before joining Ph.D., he worked as a junior Team Mentor and Project Fellow in the area of drug discovery against Tuberculosis (OSDD), a CSIR-led Team India Consortium with global participation. (https://en.wikipedia.org/wiki/Open_Source_Drug_Discovery) at Institute of Genomics and Integrative Biology (IGIB), Delhi and Institute of Microbial Technology (IMTECH), Chandigarh.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kausik-bhattacharyya",
-      "linkedin": "https://www.linkedin.com/in/kausik-bhattacharyya/",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55313145700",
       "orcid": "https://orcid.org/0000-0002-4033-676X",
-      "research": "https://vidwan.inflibnet.ac.in/profile/534729"
+      "research": "https://vidwan.inflibnet.ac.in/profile/534729",
+      "website": "https://www.linkedin.com/in/kausik-bhattacharyya/",
+      "linkedin": "https://www.linkedin.com/in/kausik-bhattacharyya/"
     },
     "memberType": ""
   },
@@ -3983,12 +3988,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Kiran Bidua",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/kiran-bidua.webp",
     "research": "",
@@ -4112,12 +4117,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Kishor Rambhau Kolhe",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/kishor-rambhau-kolhe.webp",
     "research": "",
@@ -4180,12 +4185,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Kulamala Vinod Kumar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/kulamala-vinod-kumar.webp",
     "research": "",
@@ -4351,12 +4356,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Ms. Madhura Vishnu Phatak",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/madhura-vishnu-phatak.jpg",
     "research": "",
@@ -4375,12 +4380,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Madhuri Amol Bhalekar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/madhuri-amol-bhalekar.jpg",
     "research": "",
@@ -4486,12 +4491,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Mahesh Salunkhe",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/mahesh-salunkhe.webp",
     "research": "",
@@ -4720,12 +4725,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Mangesh Vilas Bedekar",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/mangesh-vilas-bedekar.webp",
     "research": "",
@@ -5333,16 +5338,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Neha Prasad Sathe",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/neha-prasad-sathe.jpg",
     "research": "",
-    "summary": "Dr. Neha Sathe is working as an Assistant Professor in the Department of Computer Engineering and Technology, MIT World Peace University, Pune. She has 21 years of teaching experience. She has completed her Ph.D from MIT World Peace, in Electronics and Telecommunication. Her research interests are Wireless sensor Networks, Biomedical signal Processing, IKS, Outcome based education. She has published 15+ Journal and conference papers.",
+    "summary": "Dr. Neha Sathe is working as an Assistant Professor in the Department of Computer Science and Engineering, MIT World Peace University, Pune. She has 21 years of teaching experience. She has completed her Ph.D from MIT World Peace, in Electronics and Telecommunication. Her research interests are Wireless sensor Networks, Biomedical signal Processing, IKS, Outcome based education. She has published 15+ Journal and conference papers.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/neha-prasad-sathe",
       "scopus": "https://www.scopus.com/pages/home#basic",
@@ -5397,12 +5402,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mr. Nikhil Vijaykumar Soniminde",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/nikhil-vijaykumar-soniminde.webp",
     "research": "",
@@ -5942,12 +5947,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Pradnya Siddhivinayak Kulkarni",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/pradnya-siddhivinayak-kulkarni.webp",
     "research": "",
@@ -6074,12 +6079,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mr. Pramod Bapu Mali",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/pramod-bapu-mali.jpg",
     "research": "",
@@ -6096,16 +6101,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Pranali Kashinath Kosamkar",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/pranali-kashinath-kosamkar.jpg",
     "research": "",
-    "summary": "Dr. Pranali Kosamkar is an Associate Professor in the Department of Computer Engineering and Technology at Dr. Vishwanath Karad MIT World Peace University, Pune. Prof. Pranali is well known for her fundamental and impactful contribution to the field of computing education, elevating every student she has mentored through a consistent, selfless teaching service for more than 20 years. Her research interests are in Machine Learning, Deep Learning, Information Retrieval, and Quantum Computing. Prof. Pranali is also a well-respected technologist. She has delivered sessions on Big Data Analytics with Python to selected officers of the Indian Armed Forces at Military Institute of Training, Girinagar Pune. She has guided many undergraduate and graduate projects and has national and international paper publications to her credit. Her innovative teaching of basic courses like compiler design, database management system, data mining and principles of programming languages has built a high recognition among the student community in the institute MIT-WPU, Pune.",
+    "summary": "Dr. Pranali Kosamkar is an Associate Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. Prof. Pranali is well known for her fundamental and impactful contribution to the field of computing education, elevating every student she has mentored through a consistent, selfless teaching service for more than 20 years. Her research interests are in Machine Learning, Deep Learning, Information Retrieval, and Quantum Computing. Prof. Pranali is also a well-respected technologist. She has delivered sessions on Big Data Analytics with Python to selected officers of the Indian Armed Forces at Military Institute of Training, Girinagar Pune. She has guided many undergraduate and graduate projects and has national and international paper publications to her credit. Her innovative teaching of basic courses like compiler design, database management system, data mining and principles of programming languages has built a high recognition among the student community in the institute MIT-WPU, Pune.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pranali-kashinath-kosamkar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55356706800",
@@ -6120,12 +6125,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Ms. Pranati Prabhakar Waghodekar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/pranati-prabhakar-waghodekar.webp",
     "research": "",
@@ -6317,12 +6322,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mr. Prashant Sudhakar Lahane",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/prashant-sudhakar-lahane.jpg",
     "research": "",
@@ -6402,16 +6407,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Pratvina Vinayak Talele",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/pratvina-vinayak-talele.jpg",
     "research": "",
-    "summary": "Dr. Pratvina Talele is an Assistant Professor in the Department of Computer Engineering and Technology, School of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, with 18+ years of experience in higher education.",
+    "summary": "Dr. Pratvina Talele is an Assistant Professor in the Department of Computer Science and Engineering, School of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, with 18+ years of experience in higher education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pratvina-vinayak-talele",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57212007030",
@@ -6472,12 +6477,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Preeti Amit Kale",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/preeti-amit-kale.jpg",
     "research": "",
@@ -6508,7 +6513,10 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "summary": "Preeti Kale works in algorithms, artificial intelligence, sensor networks, and computational systems. Her interdisciplinary portfolio includes work connected with quantum cloud gateway systems.",
     "links": {
       "profile": "https://mitwpu.irins.org/profile/148543",
-      "research": "https://research.mitwpu.edu.in/researcher/preeti-kale"
+      "scholar": "https://scholar.google.com/citations?hl=en&user=qjAK7_IAAAAJ&view_op=list_works&authuser=3&sortby=pubdate",
+      "scopus": "https://www.scopus.com/authid/detail.uri?authorId=35487807200",
+      "orcid": "https://orcid.org/0000-0002-1571-9208",
+      "research": "https://vidwan.inflibnet.ac.in/profile/148543"
     },
     "memberType": ""
   },
@@ -6537,12 +6545,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Priya Nagargoje",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/priya-nagargoje.webp",
     "research": "",
@@ -6604,12 +6612,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Priyanka Rohit Rajmane",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/priyanka-rohit-rajmane.webp",
     "research": "",
@@ -7005,12 +7013,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Ranjana Anup Agrawal",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/ranjana-anup-agrawal.jpg",
     "research": "",
@@ -7052,16 +7060,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Rashmi Ashtagi",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/rashmi-ashtagi.webp",
     "research": "",
-    "summary": "Dr. Rashmi Murgendra Ashtagi is an Associate Professor in the Department of Computer Engineering and Technology at MIT World Peace University, Pune, with expertise in Artificial Intelligence, Machine Learning, and Medical Image Analysis. She is committed to fostering outcome-based, research-driven learning that integrates innovation with societal impact.",
+    "summary": "Dr. Rashmi Murgendra Ashtagi is an Associate Professor in the Department of Computer Science and Engineering at MIT World Peace University, Pune, with expertise in Artificial Intelligence, Machine Learning, and Medical Image Analysis. She is committed to fostering outcome-based, research-driven learning that integrates innovation with societal impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rashmi-ashtagi",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57738018000",
@@ -7076,12 +7084,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Rashmi Ashwinikumar Rane",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/rashmi-ashwinikumar-rane.jpg",
     "research": "",
@@ -7120,12 +7128,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Rashmi Suhas Phalnikar",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/rashmi-suhas-phalnikar.webp",
     "research": "",
@@ -7251,12 +7259,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Renuka Amit Mane",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/renuka-amit-mane.webp",
     "research": "",
@@ -7398,12 +7406,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Ms. Ruchi Rani",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/ruchi-rani.webp",
     "research": "",
@@ -7418,12 +7426,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Ruhi Ajit Patankar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/ruhi-ajit-patankar.jpg",
     "research": "",
@@ -8045,12 +8053,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Sarika Sanjay Bobde",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sarika-sanjay-bobde.jpg",
     "research": "",
@@ -8132,16 +8140,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Seema Idhate",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/seema-idhate.webp",
     "research": "",
-    "summary": "Mrs. Seema B. Idhate is an Assistant Professor in the Department of Computer Engineering and Technology at Dr. Vishwanath Karad MIT World Peace University. With 19 years of teaching experience, she is dedicated to nurturing analytical thinking, innovation, and research aptitude among students. Her expertise spans Digital Electronics, Algorithms, Computer Organization, Cloud Computing, Analog Communication, and MMA.",
+    "summary": "Mrs. Seema B. Idhate is an Assistant Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University. With 19 years of teaching experience, she is dedicated to nurturing analytical thinking, innovation, and research aptitude among students. Her expertise spans Digital Electronics, Algorithms, Computer Organization, Cloud Computing, Analog Communication, and MMA.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/seema-idhate",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=59536789400&notSignedIn=true",
@@ -8155,12 +8163,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Seema Jitendra Patil",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/seema-jitendra-patil.jpg",
     "research": "Machine Learning",
@@ -8283,12 +8291,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Shakti Sanjay Kinger",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/shakti-sanjay-kinger.jpg",
     "research": "",
@@ -8395,12 +8403,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Sharmishta Suhas Desai",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sharmishta-suhas-desai.jpg",
     "research": "",
@@ -8419,12 +8427,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Sheetal Pravin Girase",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sheetal-pravin-girase.jpg",
     "research": "",
@@ -8508,16 +8516,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Shilpa Snehal Sonawani",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/shilpa-snehal-sonawani.jpg",
     "research": "",
-    "summary": "Associate Professor in the Department of Computer Engineering and Technology, has over two decades of combined teaching and industry experience. She works in the field of Artificial Intelligence, Data Analytics, and Sustainable Technologies. Her research focuses on AI-driven solutions for environmental sustainability, including air quality prediction, climate analytics, biodiversity monitoring and forest encroachment. She actively collaborates with BAIF Development Research Foundation and Bombay Natural History Society (BNHS), contributing to initiatives aligned with the Sustainable Development Goals (SDGs).",
+    "summary": "Associate Professor in the Department of Computer Science and Engineering, has over two decades of combined teaching and industry experience. She works in the field of Artificial Intelligence, Data Analytics, and Sustainable Technologies. Her research focuses on AI-driven solutions for environmental sustainability, including air quality prediction, climate analytics, biodiversity monitoring and forest encroachment. She actively collaborates with BAIF Development Research Foundation and Bombay Natural History Society (BNHS), contributing to initiatives aligned with the Sustainable Development Goals (SDGs).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shilpa-snehal-sonawani",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=36706629400",
@@ -8575,12 +8583,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mr. Shiv Havgirao Sutar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/shiv-havgirao-sutar.jpg",
     "research": "Wireless Sensor Networks, Internet of Things, and High-Performance Computing.",
@@ -8621,12 +8629,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Shounak Rushikesh Sugave",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/shounak-rushikesh-sugave.webp",
     "research": "",
@@ -8753,12 +8761,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Shridevi Chandraprakash Karande",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/shridevi-chandraprakash-karande.jpg",
     "research": "",
@@ -9015,12 +9023,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Siddhivinayak Arvind Kulkarni",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/siddhivinayak-arvind-kulkarni.webp",
     "research": "",
@@ -9125,12 +9133,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Sonali Potadar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sonali-potadar.webp",
     "research": "",
@@ -9275,12 +9283,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Ms. Suja Sreejith Panickar",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/suja-sreejith-panickar.jpg",
     "research": "Cognitive Computing & NLP, Machine Learning, Databases, Deep Learning",
@@ -9296,12 +9304,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Sujata Jagadale",
     "designation": "Teaching Associate",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sujata-jagadale.webp",
     "research": "",
@@ -9316,12 +9324,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Sukhada Prasad Bhingarkar",
     "designation": "Associate Dean - External Relations",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sukhada-prasad-bhingarkar.jpg",
     "research": "Cloud Computing, Information Security, Machine Learning",
@@ -9421,12 +9429,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Sumedha Dhananjay Sirsikar",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sumedha-dhananjay-sirsikar.webp",
     "research": "",
@@ -9570,12 +9578,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Sushila Manish Palwe",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/sushila-manish-palwe.jpg",
     "research": "Computer Vision, Machine Learning, Databases",
@@ -9930,12 +9938,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Uma Ramachandra Pujeri",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/uma-ramachandra-pujeri.jpg",
     "research": "Computer Networks, Cryptography, loud computing, encryption algorithm, Post Quantum Lattice algorithm",
@@ -9950,16 +9958,16 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Umesh Kisan Raut",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/umesh-kisan-raut.jpg",
     "research": "",
-    "summary": "Dr. Umesh Raut is an Associate Professor in the Department of Computer Engineering and Technology at MIT-WPU, with over 23 years of teaching experience. His teaching philosophy centers on student-centric, outcome-based learning that combines strong theoretical foundations with practical and research-oriented exposure.",
+    "summary": "Dr. Umesh Raut is an Associate Professor in the Department of Computer Science and Engineering at MIT-WPU, with over 23 years of teaching experience. His teaching philosophy centers on student-centric, outcome-based learning that combines strong theoretical foundations with practical and research-oriented exposure.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/umesh-kisan-raut",
       "scholar": "https://scholar.google.com/citations?user=WhYLrPQAAAAJ&hl=en",
@@ -10145,12 +10153,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Vaishali Pankaj Suryawanshi",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/vaishali-pankaj-suryawanshi.jpg",
     "research": "",
@@ -10215,12 +10223,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Vandana Swapnil Jagtap",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/vandana-swapnil-jagtap.jpg",
     "research": "Machine Learning, Artificial Intelligence, Data Science",
@@ -10390,12 +10398,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Mrs. Vidya Balaji Patil",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/vidya-balaji-patil.jpg",
     "research": "",
@@ -10711,7 +10719,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   },
   {
     "id": "vishvajeet-n",
-    "name": "Dr. Vishvajeet N",
+    "name": "Dr. Vishvajeet Nagargoje",
     "designation": "Postdoctoral Researcher, CNRS / LaBRI",
     "department": "research-groups/quantum",
     "departmentName": "Quantum Science & Technology Group",
@@ -10723,7 +10731,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "../quantum/assets/vishvajeet.jpg",
     "research": "Theoretical computer science; Quantum information; Randomness and computation; Algorithms and complexity",
-    "summary": "Vishvajeet N is a theoretical computer scientist working at the intersection of algorithms, randomness, and quantum information. He received his Ph.D. from Rutgers University and is currently a postdoctoral researcher with the Quantum Information and Computation group at LaBRI.",
+    "summary": "Vishvajeet Nagargoje is a theoretical computer scientist working at the intersection of algorithms, randomness, and quantum information. He received his Ph.D. from Rutgers University and is currently a postdoctoral researcher with the Quantum Information and Computation group at LaBRI.",
     "links": {
       "website": "https://vishvajeetn.org/",
       "scholar": "https://scholar.google.com/citations?user=lRdytyQAAAAJ&hl=en",
@@ -10839,12 +10847,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Dr. Yogesh Raghunath Kulkarni",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/yogesh-raghunath-kulkarni.webp",
     "research": "",
@@ -10863,12 +10871,12 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "name": "Prof. Yogini Mukherjee",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
-    "departmentName": "Department of Computer Engineering and Technology",
+    "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
       "computer-engineering-and-technology/computer-engineering-and-technology"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Engineering and Technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/yogini-mukherjee.webp",
     "research": "",

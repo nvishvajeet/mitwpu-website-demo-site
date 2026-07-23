@@ -8,11 +8,13 @@
   <title>People Directory · MIT-WPU</title>
   <link rel="icon" type="image/svg+xml" href="../research/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}})();</script>
-  <link rel="stylesheet" href="style.css?v=20260723f">
+  <link rel="stylesheet" href="style.css?v=20260724b">
   <script src="../group-assets/theme.js" defer></script>
   <script src="../group-assets/people-order.js" defer></script>
+  <script src="leadership-data.js" defer></script>
   <script src="public-data.js" defer></script>
-  <script src="directory.js?v=20260723f" defer></script>
+  <script src="directory.js?v=20260724b" defer></script>
+  <link rel="stylesheet" href="../demo-assets/institutional-footer.css?v=20260723">
 </head>
 <body>
   <a class="skip-link" href="#directory">Skip to directory</a>
@@ -44,15 +46,9 @@
 
   <main id="directory">
     <section class="directory-intro">
-      <div class="shell directory-intro-grid">
-        <div>
-          <h1>Find people.</h1>
-          <p class="intro-copy">Search by name, academic unit, or research area.</p>
-        </div>
-        <aside aria-label="Directory scope">
-          <strong id="directory-total">502</strong>
-          <span>public profiles</span>
-        </aside>
+      <div class="shell">
+        <h1>Find people.</h1>
+        <p class="intro-copy">Meet university leadership, or search by name, school or department, role, research area, and surname.</p>
       </div>
     </section>
 
@@ -64,20 +60,61 @@
             <input id="name-filter" name="name" type="search" autocomplete="off" placeholder="Search by name">
           </div>
           <div class="filter-field">
-            <label for="department-filter">Unit or group</label>
+            <label for="department-filter">School or department</label>
             <select id="department-filter" name="department">
-              <option value="">All units and groups</option>
+              <option value="">All schools and departments</option>
             </select>
           </div>
           <div class="filter-field filter-research">
             <label for="research-filter">Research interest</label>
             <input id="research-filter" name="research" type="search" autocomplete="off" placeholder="e.g. photonics or statistics">
           </div>
+          <div class="filter-field">
+            <label for="role-filter">Role</label>
+            <select id="role-filter" name="role">
+              <option value="">All roles</option>
+            </select>
+          </div>
           <button class="clear-filters" id="clear-filters" type="reset">Clear filters</button>
+          <fieldset class="alphabet-filter" id="alphabet-filter">
+            <legend>Browse by surname</legend>
+            <div class="alphabet-filter__buttons">
+              <button type="button" data-letter="" aria-pressed="true">All</button>
+              <button type="button" data-letter="A" aria-pressed="false">A</button>
+              <button type="button" data-letter="B" aria-pressed="false">B</button>
+              <button type="button" data-letter="C" aria-pressed="false">C</button>
+              <button type="button" data-letter="D" aria-pressed="false">D</button>
+              <button type="button" data-letter="E" aria-pressed="false">E</button>
+              <button type="button" data-letter="F" aria-pressed="false">F</button>
+              <button type="button" data-letter="G" aria-pressed="false">G</button>
+              <button type="button" data-letter="H" aria-pressed="false">H</button>
+              <button type="button" data-letter="I" aria-pressed="false">I</button>
+              <button type="button" data-letter="J" aria-pressed="false">J</button>
+              <button type="button" data-letter="K" aria-pressed="false">K</button>
+              <button type="button" data-letter="L" aria-pressed="false">L</button>
+              <button type="button" data-letter="M" aria-pressed="false">M</button>
+              <button type="button" data-letter="N" aria-pressed="false">N</button>
+              <button type="button" data-letter="O" aria-pressed="false">O</button>
+              <button type="button" data-letter="P" aria-pressed="false">P</button>
+              <button type="button" data-letter="Q" aria-pressed="false">Q</button>
+              <button type="button" data-letter="R" aria-pressed="false">R</button>
+              <button type="button" data-letter="S" aria-pressed="false">S</button>
+              <button type="button" data-letter="T" aria-pressed="false">T</button>
+              <button type="button" data-letter="U" aria-pressed="false">U</button>
+              <button type="button" data-letter="V" aria-pressed="false">V</button>
+              <button type="button" data-letter="W" aria-pressed="false">W</button>
+              <button type="button" data-letter="X" aria-pressed="false">X</button>
+              <button type="button" data-letter="Y" aria-pressed="false">Y</button>
+              <button type="button" data-letter="Z" aria-pressed="false">Z</button>
+            </div>
+          </fieldset>
         </form>
 
         <div class="directory-status">
-          <p id="result-count" tabindex="-1" role="status" aria-live="polite" aria-atomic="true">Loading directory…</p>
+          <div>
+            <p id="result-count" tabindex="-1" role="status" aria-live="polite" aria-atomic="true">Loading directory…</p>
+            <button type="button" class="show-all-people" id="show-all-people">Show all people</button>
+          </div>
           <label for="sort-order">Sort
             <select id="sort-order" name="sort">
               <option value="name">Academic role, then surname</option>
@@ -107,20 +144,50 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div>
-        <strong>MIT-WPU People Directory</strong>
-        <p>Pune, India</p>
+  <footer class="institutional-footer">
+    <div class="shell institutional-footer__inner">
+      <div class="institutional-footer__lead">
+        <div>
+          <strong>MAEER’s MIT World Peace University</strong>
+          <p>Pune, Maharashtra, India</p>
+        </div>
       </div>
-      <nav aria-label="Directory links">
-        <a href="../science/">Science departments</a>
-        <a href="../groups/">Research groups</a>
-        <a href="../facilities/">Research facilities</a>
-      </nav>
-      <div>
-        <a href="../search/">Site search</a>
-        <span>© 2026 MIT-WPU</span>
+      <div class="institutional-footer__groups">
+        <section class="institutional-footer__group">
+          <h2>University</h2>
+          <nav aria-label="University footer links">
+            <a href="../about/">About</a>
+            <a href="../about-us/about-mit/">Mission &amp; Values</a>
+            <a href="../about/maeer/">MAEER</a>
+          </nav>
+        </section>
+        <section class="institutional-footer__group">
+          <h2>Support and obligations</h2>
+          <nav aria-label="Support and obligations footer links">
+            <a href="../accessibility/">Accessibility</a>
+            <a href="../student-affairs/anti-ragging-committee/">Anti-ragging</a>
+            <a href="../mandatory-disclosures/">Mandatory disclosures</a>
+          </nav>
+        </section>
+        <section class="institutional-footer__group">
+          <h2>Information</h2>
+          <nav aria-label="Information footer links">
+            <a href="../privacy-policy/">Privacy</a>
+            <a href="../copyright-statement/">Copyright</a>
+            <a href="../sitemap/">Sitemap</a>
+          </nav>
+        </section>
+        <section class="institutional-footer__group">
+          <nav aria-label="Quick links footer links">
+            <a href="../people/">People</a>
+            <a href="../search/">Search</a>
+            <a href="../intranet/">Intranet</a>
+            <a href="../contact-us/">Contact</a>
+          </nav>
+        </section>
+      </div>
+      <div class="institutional-footer__legal">
+        <span>© 2026 MIT World Peace University</span>
       </div>
     </div>
   </footer>

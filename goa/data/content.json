@@ -2,16 +2,21 @@
   {
     "route": "/goa/",
     "page_type": "home",
-    "title": "Academic life on a residential campus.",
-    "description": "Interdisciplinary teaching, research, and student life at WPU Goa.",
+    "title": "WPU Goa",
+    "description": "Programmes, research, and residential learning at WPU Goa.",
     "source_url": "https://wpugoa.edu.in/",
     "source_raw_path": "raw/e304f512ca034a482b1ee729723d864a58d22c82b27d6dd1cd246c92f808b535.html.gz",
     "captured_at": "2026-07-23T13:51:48.405398+00:00",
     "lastmod": "2026-07-21T11:54:18+00:00",
     "hero_image": {
-      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/Transdiciplinary-1.webp",
-      "local_url": "/goa/assets/media/50ac6a5ce9df5b32-transdiciplinary-1.webp",
-      "alt": "Transdisciplinary Learning"
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Group-scaled.jpg",
+      "source_page_url": "https://wpugoa.edu.in/about-us/",
+      "local_url": "/goa/assets/media/3a4d0b914f3f1f20-group-scaled-hero-1600x900.webp",
+      "alt": "A group gathered at a WPU Goa campus ceremony",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "3a4d0b914f3f1f2080dced62a94cc26fffe4a14b8e532b8bf40c211857398c93",
+      "derivative_role": "hero"
     },
     "card_image": null,
     "blocks": [
@@ -701,8 +706,11 @@
     "lastmod": "2026-06-16T12:20:50+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/BCS.jpg",
+      "source_page_url": "https://wpugoa.edu.in/about-maeers-group",
       "local_url": "/goa/assets/media/9f6ec317a6c01a0a-bcs.jpg",
-      "alt": "BCS"
+      "alt": "BCS",
+      "width": 500,
+      "height": 280
     },
     "card_image": null,
     "blocks": [
@@ -910,15 +918,20 @@
     "route": "/goa/about/",
     "page_type": "about",
     "title": "About WPU Goa",
-    "description": "Know about World Peace University Goa, a transdisciplinary institution promoting global learning, sustainability, leadership, and innovation.",
+    "description": "Institutional background, campus life, partnerships, leadership, careers, brand, and policies.",
     "source_url": "https://wpugoa.edu.in/about-us",
     "source_raw_path": "raw/5885582a542dd4518b9dda48f606bf172670307253cda11c80b344957ff50596.html.gz",
     "captured_at": "2026-07-23T13:51:53.495212+00:00",
     "lastmod": "2026-06-22T09:17:47+00:00",
     "hero_image": {
-      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Student-Experince-Program--1024x530.webp",
-      "local_url": "/goa/assets/media/a8d90de14be112d2-student-experince-program-1024x530.webp",
-      "alt": "About Us"
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Group-scaled.jpg",
+      "source_page_url": "https://wpugoa.edu.in/about-us/",
+      "local_url": "/goa/assets/media/3a4d0b914f3f1f20-group-scaled-hero-1600x900.webp",
+      "alt": "A group gathered at a WPU Goa campus ceremony",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "3a4d0b914f3f1f2080dced62a94cc26fffe4a14b8e532b8bf40c211857398c93",
+      "derivative_role": "hero"
     },
     "card_image": null,
     "blocks": [
@@ -1175,15 +1188,20 @@
     "route": "/goa/academics/",
     "page_type": "academics",
     "title": "Academics",
-    "description": "Learn about academic programs at WPU Goa including B.Tech, B.Des, B.Sc, and management courses designed for future-ready skills and real-world learning",
+    "description": "Programme families, detailed programme pages, and the academic model at WPU Goa.",
     "source_url": "https://wpugoa.edu.in/academic-programs",
     "source_raw_path": "raw/68675d4fc718230d6f02b1425bf21b13765f3fa07a77c5f06083a4bf6c961afc.html.gz",
     "captured_at": "2026-07-23T13:51:56.001750+00:00",
     "lastmod": "2026-06-25T07:08:56+00:00",
     "hero_image": {
-      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/academic-core-01.jpg",
-      "local_url": "/goa/assets/media/7ecd1b10ce898047-academic-core-01.jpg",
-      "alt": "Academic Programs"
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/1f15b84e6922b30404e20931daff90a98604c27d.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute",
+      "local_url": "/goa/assets/media/3701891b56b5a5b4-1f15b84e6922b30404e20931daff90a98604c27d-hero-1600x900.webp",
+      "alt": "A researcher working with a robotic arm in a laboratory",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "3701891b56b5a5b4912141b74661f78d38eedfd753be7698ffe247f2bfee7ad3",
+      "derivative_role": "hero"
     },
     "card_image": null,
     "blocks": [
@@ -2039,8 +2057,11 @@
     "hero_image": null,
     "card_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bms.svg",
+      "source_page_url": "https://wpugoa.edu.in/academic-programs/bachelor-of-managementstudies",
       "local_url": "/goa/assets/media/a0a47c47ae8e0eaf-bms.svg",
-      "alt": "Bachelor of Management Studies"
+      "alt": "Bachelor of Management Studies",
+      "width": 71,
+      "height": 82
     },
     "blocks": [
       {
@@ -3635,8 +3656,11 @@
     "hero_image": null,
     "card_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bdes-communication-design.svg",
+      "source_page_url": "https://wpugoa.edu.in/academic-programs/bdes-in-communication-design",
       "local_url": "/goa/assets/media/a5b3d76c084dd2b4-bdes-communication-design.svg",
-      "alt": "Bachelor in Communication Design (B.Des) Course"
+      "alt": "Bachelor in Communication Design (B.Des) Course",
+      "width": 71,
+      "height": 55
     },
     "blocks": [
       {
@@ -5571,8 +5595,11 @@
     "hero_image": null,
     "card_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bdes-integrated-product.svg",
+      "source_page_url": "https://wpugoa.edu.in/academic-programs/bdes-in-integrated-product-design",
       "local_url": "/goa/assets/media/cd3eb8419a33e1ca-bdes-integrated-product.svg",
-      "alt": "B.Des in Integrated Product Design Course"
+      "alt": "B.Des in Integrated Product Design Course",
+      "width": 69,
+      "height": 69
     },
     "blocks": [
       {
@@ -7507,8 +7534,11 @@
     "hero_image": null,
     "card_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bsc-psycho.svg",
+      "source_page_url": "https://wpugoa.edu.in/academic-programs/bsc-hons-in-psychology",
       "local_url": "/goa/assets/media/4fc054f039106b4b-bsc-psycho.svg",
-      "alt": "BSc (Hons.) in Psychology"
+      "alt": "BSc (Hons.) in Psychology",
+      "width": 66,
+      "height": 71
     },
     "blocks": [
       {
@@ -9513,8 +9543,11 @@
     "hero_image": null,
     "card_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/btech-cse.svg",
+      "source_page_url": "https://wpugoa.edu.in/academic-programs/btech-in-computer-science-engineering-cse",
       "local_url": "/goa/assets/media/4fc313adea52e65f-btech-cse.svg",
-      "alt": "B.Tech in Computer Science & Engineering"
+      "alt": "B.Tech in Computer Science & Engineering",
+      "width": 65,
+      "height": 69
     },
     "blocks": [
       {
@@ -12642,12 +12675,21 @@
     "route": "/goa/admissions/",
     "page_type": "admissions",
     "title": "Admissions",
-    "description": "Apply to WPU Goa and explore the complete admission process, eligibility, programs, and selection criteria for a future-focused learning experience.",
+    "description": "Application process, eligibility, assessment, documents, fees, scholarships, loans, and international-candidate guidance.",
     "source_url": "https://wpugoa.edu.in/admissions",
     "source_raw_path": "raw/6f2f5ac2eb4849189d056c7c2c3f04dba4a48ef1d0f47b7f549b668cee006636.html.gz",
     "captured_at": "2026-07-23T13:52:23.922261+00:00",
     "lastmod": "2026-06-25T07:21:05+00:00",
-    "hero_image": null,
+    "hero_image": {
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Goupp1-scaled.jpg",
+      "source_page_url": "https://wpugoa.edu.in/about-us/",
+      "local_url": "/goa/assets/media/0c88c9d959040cde-goupp1-scaled-hero-1600x900.webp",
+      "alt": "A group gathered at a WPU Goa campus ceremony",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "0c88c9d959040cde5e369ab4f039b9745680cf0ca3057d31e5b6581f27fcc12e",
+      "derivative_role": "hero"
+    },
     "card_image": null,
     "blocks": [
       {
@@ -12981,8 +13023,11 @@
     "lastmod": "2026-05-19T07:40:41+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/What-Do-We-%CE%93C%C2%BFSeek-in-Our-Students_-1024x833.webp",
+      "source_page_url": "https://wpugoa.edu.in/admissions-at-wpu-goa",
       "local_url": "/goa/assets/media/1cdb4c56038aefe0-what-do-we-ce-93c-c2-bfseek-in-our-students-1024x833.webp",
-      "alt": "Admissions at WPU GŌA"
+      "alt": "Admissions at WPU GŌA",
+      "width": 1024,
+      "height": 833
     },
     "card_image": null,
     "blocks": [
@@ -13594,8 +13639,11 @@
     "lastmod": "2026-03-28T11:30:12+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/transdisiplinary-approch-wpu-goa-1-1024x320.jpg",
+      "source_page_url": "https://wpugoa.edu.in/author/oze",
       "local_url": "/goa/assets/media/359f5cb9dbe9bcc0-transdisiplinary-approch-wpu-goa-1-1024x320.jpg",
-      "alt": "OZE, Author at WPU GOA"
+      "alt": "OZE, Author at WPU GOA",
+      "width": 1024,
+      "height": 320
     },
     "card_image": null,
     "blocks": [
@@ -13630,8 +13678,11 @@
     "lastmod": "2026-05-14T13:04:29+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/bsc-psychology-careers-wpu-goa-1024x320.jpg",
+      "source_page_url": "https://wpugoa.edu.in/author/pratibha-kathar",
       "local_url": "/goa/assets/media/89a6ef67bd009164-bsc-psychology-careers-wpu-goa-1024x320.jpg",
-      "alt": "B.Sc. Psychology careers"
+      "alt": "B.Sc. Psychology careers",
+      "width": 1024,
+      "height": 320
     },
     "card_image": null,
     "blocks": [
@@ -13771,8 +13822,11 @@
     "lastmod": "2026-02-18T11:11:58+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/bsc-psychology-subjects-career-paths-india-1024x320.jpg",
+      "source_page_url": "https://wpugoa.edu.in/author/wpugoa",
       "local_url": "/goa/assets/media/2e178f7b8b31f87d-bsc-psychology-subjects-career-paths-india-1024x320.jpg",
-      "alt": "BSc Psychology Course Details and Career Options"
+      "alt": "BSc Psychology Course Details and Career Options",
+      "width": 1024,
+      "height": 320
     },
     "card_image": null,
     "blocks": [
@@ -13899,16 +13953,21 @@
   {
     "route": "/goa/news/",
     "page_type": "news-index",
-    "title": "News and ideas",
-    "description": "Public articles, campus updates and thought leadership captured from WPU Goa.",
+    "title": "News",
+    "description": "Articles and campus updates from WPU Goa.",
     "source_url": "https://wpugoa.edu.in/blogs",
     "source_raw_path": "raw/ccdc4a5d143aba59a8a09eff36e0d2d633abb8472b516c27f6b8da1c1710e031.html.gz",
     "captured_at": "2026-07-23T13:52:39.101242+00:00",
     "lastmod": "2026-04-23T09:22:02+00:00",
     "hero_image": {
-      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/wpu-goa-transdisciplinary-university.jpg",
-      "local_url": "/goa/assets/media/4776a874c4b000bd-wpu-goa-transdisciplinary-university.jpg",
-      "alt": "WPU GOA as a leading private university"
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/Maker_asylum_banner.png",
+      "source_page_url": "https://wpugoa.edu.in/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning",
+      "local_url": "/goa/assets/media/7524a8bfe582d5dc-maker-asylum-banner-hero-1600x900.webp",
+      "alt": "Representatives of WPU Goa and Makers Asylum Foundation holding their agreement",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "7524a8bfe582d5dc13d6e87c6501c4d21b2375c4cebcb983d78df72189ef35d9",
+      "derivative_role": "hero"
     },
     "card_image": null,
     "blocks": [
@@ -14468,8 +14527,11 @@
     "lastmod": "2026-06-29T07:35:59+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/ai-careers-computer-science-wpu-goa.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/ai-careers-btech-in-computer-science",
       "local_url": "/goa/assets/media/3176d5f8fc5649b5-ai-careers-computer-science-wpu-goa.jpg",
-      "alt": "AI careers in B.Tech Computer Science"
+      "alt": "AI careers in B.Tech Computer Science",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -15224,8 +15286,11 @@
     "lastmod": "2026-04-09T06:35:32+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/bsc-hons-economics-career-scope.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/bsc-hons-in-economics-career-scope",
       "local_url": "/goa/assets/media/54ff23c08dd43801-bsc-hons-economics-career-scope.jpg",
-      "alt": "B.Sc Hons in Economics: Career and Study Options"
+      "alt": "B.Sc Hons in Economics: Career and Study Options",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -15675,8 +15740,11 @@
     "lastmod": "2026-05-04T09:52:28+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/bsc-psychology-subjects-career-paths-india.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/bsc-psychology-subjects-career-scope",
       "local_url": "/goa/assets/media/13289ef2c5d96f8e-bsc-psychology-subjects-career-paths-india.jpg",
-      "alt": "BSc Psychology Course Details and Career Options"
+      "alt": "BSc Psychology Course Details and Career Options",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -16021,8 +16089,11 @@
     "lastmod": "2026-06-22T09:24:54+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/why-btech-computer-science-wpu-goa-1024x320.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/communication-design",
       "local_url": "/goa/assets/media/54c39726d59f1d1a-why-btech-computer-science-wpu-goa-1024x320.jpg",
-      "alt": "B.Tech Computer Science Career at WPU Goa"
+      "alt": "B.Tech Computer Science Career at WPU Goa",
+      "width": 1024,
+      "height": 320
     },
     "card_image": null,
     "blocks": [
@@ -16102,8 +16173,11 @@
     "lastmod": "2026-04-23T09:18:23+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/identify-best-university-career-goals-1.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/communication-design/best-university-for-career-goals",
       "local_url": "/goa/assets/media/4cae098a07fe07a7-identify-best-university-career-goals-1.jpg",
-      "alt": "How to Choose the Best University for Your Career Goals in 2026"
+      "alt": "How to Choose the Best University for Your Career Goals in 2026",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -16448,8 +16522,11 @@
     "lastmod": "2026-06-22T09:24:54+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bsc-media-communication-films-future-career-scope-1.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/communication-design/bsc-media-communication-films-career-scope",
       "local_url": "/goa/assets/media/069215de58894cd8-bsc-media-communication-films-future-career-scope-1.jpg",
-      "alt": "B.Sc in Media Communication and Films Career Scope"
+      "alt": "B.Sc in Media Communication and Films Career Scope",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -16894,8 +16971,11 @@
     "lastmod": "2026-04-09T06:28:23+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/why-btech-computer-science-wpu-goa.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/communication-design/btech-computer-science-subjects-careers",
       "local_url": "/goa/assets/media/0f80d9ad73ef8051-why-btech-computer-science-wpu-goa.jpg",
-      "alt": "B.Tech Computer Science Career at WPU Goa"
+      "alt": "B.Tech Computer Science Career at WPU Goa",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -17255,8 +17335,11 @@
     "lastmod": "2026-04-09T06:37:55+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/careers-in-communication-design.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/communication-design/careers-in-communication-design-skills-industry-trends",
       "local_url": "/goa/assets/media/8eb4583000d68cf3-careers-in-communication-design.jpg",
-      "alt": "communication design careers and future opportunities"
+      "alt": "communication design careers and future opportunities",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -17486,8 +17569,11 @@
     "lastmod": "2026-05-22T12:53:38+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/wpugoa-ai-education-computer-science.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/cs-education-ai-era-wpu-goa",
       "local_url": "/goa/assets/media/57f5a21a2fdb1f08-wpugoa-ai-education-computer-science.jpg",
-      "alt": "WPU GŌA AI education computer science"
+      "alt": "WPU GŌA AI education computer science",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -17717,8 +17803,11 @@
     "lastmod": "2026-05-04T05:13:08+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/energy-systems-engineering-renewable-future-1.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/energy-systems-engineering-worth-it",
       "local_url": "/goa/assets/media/fd9e42bbf7958782-energy-systems-engineering-renewable-future-1.jpg",
-      "alt": "Future of Renewable Energy and Energy Engineering"
+      "alt": "Future of Renewable Energy and Energy Engineering",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -17963,8 +18052,11 @@
     "lastmod": "2026-06-29T07:17:09+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/future-ready-university-career-success.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/how-to-identify-a-future-ready-university",
       "local_url": "/goa/assets/media/436d5c0bc5b126c9-future-ready-university-career-success.jpg",
-      "alt": "Future-ready university campus learning"
+      "alt": "Future-ready university campus learning",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -18504,8 +18596,11 @@
     "lastmod": "2026-05-04T09:42:50+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/wpu-goa-extends-mit-pune-legacy.png",
+      "source_page_url": "https://wpugoa.edu.in/blog/how-wpu-goa-extends-mit-pune-legacy",
       "local_url": "/goa/assets/media/78f68d9563f70cff-wpu-goa-extends-mit-pune-legacy.png",
-      "alt": "WPU Goa Builds on MIT Pune Legacy for Students"
+      "alt": "WPU Goa Builds on MIT Pune Legacy for Students",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -18965,8 +19060,11 @@
     "lastmod": "2026-06-22T09:03:07+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/what-to-expect-integrated-product-design-program-1024x320.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/integrated-product-design",
       "local_url": "/goa/assets/media/911b4fc98446c7e6-what-to-expect-integrated-product-design-program-1024x3.jpg",
-      "alt": "WPU GOA as a leading private university"
+      "alt": "WPU GOA as a leading private university",
+      "width": 1024,
+      "height": 320
     },
     "card_image": null,
     "blocks": [
@@ -19001,8 +19099,11 @@
     "lastmod": "2026-06-22T09:03:07+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/what-to-expect-integrated-product-design-program.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/integrated-product-design/what-to-expect-integrated-product-design-program",
       "local_url": "/goa/assets/media/d7e54c31bd6ceb8f-what-to-expect-integrated-product-design-program.jpg",
-      "alt": "WPU GOA as a leading private university"
+      "alt": "WPU GOA as a leading private university",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -19672,8 +19773,11 @@
     "lastmod": "2026-06-29T07:19:14+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/product-design-career-future-wpu-goa.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/blog/product-design-career-future-wpu-goa",
       "local_url": "/goa/assets/media/20ff69cacb0dd32f-product-design-career-future-wpu-goa.jpg",
-      "alt": "WPU GŌA Product Design Career"
+      "alt": "WPU GŌA Product Design Career",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -19993,8 +20097,11 @@
     "lastmod": "2026-04-23T09:18:31+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/rise-of-transdisciplinary-education-wpu-goa-1024x320.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/transdisciplinary-education",
       "local_url": "/goa/assets/media/65cba6fa74c96ee5-rise-of-transdisciplinary-education-wpu-goa-1024x320.jpg",
-      "alt": "Transdisciplinary Education Archives"
+      "alt": "Transdisciplinary Education Archives",
+      "width": 1024,
+      "height": 320
     },
     "card_image": null,
     "blocks": [
@@ -20044,8 +20151,11 @@
     "lastmod": "2026-04-23T07:01:38+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/rise-of-transdisciplinary-education-wpu-goa.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/transdisciplinary-education/rise-of-transdisciplinary-education-higher-learning",
       "local_url": "/goa/assets/media/03996e3a85466b00-rise-of-transdisciplinary-education-wpu-goa.jpg",
-      "alt": "How Transdisciplinary Education Is Transforming Higher Education"
+      "alt": "How Transdisciplinary Education Is Transforming Higher Education",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -20410,8 +20520,11 @@
     "lastmod": "2026-04-23T09:18:31+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/transdisiplinary-approch-wpu-goa-1.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/transdisciplinary-education/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures",
       "local_url": "/goa/assets/media/7b731508eb4cab74-transdisiplinary-approch-wpu-goa-1.jpg",
-      "alt": "Transdisciplinary Approach for Sustainable Futures"
+      "alt": "Transdisciplinary Approach for Sustainable Futures",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -20500,8 +20613,11 @@
     "lastmod": "2026-06-29T07:03:38+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/wpu-goa-integrates-industry-ready-learning.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/transdisciplinary-industry-ready-learning",
       "local_url": "/goa/assets/media/d6ce918bae5b6590-wpu-goa-integrates-industry-ready-learning.jpg",
-      "alt": "WPU GŌA transdisciplinary learning students"
+      "alt": "WPU GŌA transdisciplinary learning students",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -21051,8 +21167,11 @@
     "lastmod": "2026-05-22T12:52:53+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/transdisciplinary-university-future-education-wpu-goa.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/transdisciplinary-universities-future-of-higher-education",
       "local_url": "/goa/assets/media/314a553e5c565351-transdisciplinary-university-future-education-wpu-goa.jpg",
-      "alt": "Students in a transdisciplinary learning environment"
+      "alt": "Students in a transdisciplinary learning environment",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -21697,8 +21816,11 @@
     "lastmod": "2026-06-29T07:56:17+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/bsc-psychology-careers-wpu-goa.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/what-can-you-do-after-bsc-psychology",
       "local_url": "/goa/assets/media/971e628a2ddfdc50-bsc-psychology-careers-wpu-goa.jpg",
-      "alt": "B.Sc. Psychology careers"
+      "alt": "B.Sc. Psychology careers",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -22458,8 +22580,11 @@
     "lastmod": "2026-05-22T12:53:24+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/students-beyond-traditional-universities-wpu-goa.jpg.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/why-students-are-looking-beyond-traditional-universities",
       "local_url": "/goa/assets/media/95fc1513afaa5380-students-beyond-traditional-universities-wpu-goa-jpg.jpg",
-      "alt": "students discussing future education"
+      "alt": "students discussing future education",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -22974,8 +23099,11 @@
     "lastmod": "2026-04-09T06:41:39+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/wpu-goa-transdisciplinary-university.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/why-wpu-goa-leading-transdisciplinary-university",
       "local_url": "/goa/assets/media/4776a874c4b000bd-wpu-goa-transdisciplinary-university.jpg",
-      "alt": "WPU GOA as a leading private university"
+      "alt": "WPU GOA as a leading private university",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -23405,8 +23533,11 @@
     "lastmod": "2026-05-04T05:12:56+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/wpu-goa-key-features-1.jpg",
+      "source_page_url": "https://wpugoa.edu.in/blog/wpu-goa-key-features",
       "local_url": "/goa/assets/media/b59eb46d80791f5c-wpu-goa-key-features-1.jpg",
-      "alt": "Features That Make WPU Goa Stand Out for Students"
+      "alt": "Features That Make WPU Goa Stand Out for Students",
+      "width": 1920,
+      "height": 600
     },
     "card_image": null,
     "blocks": [
@@ -23766,8 +23897,11 @@
     "lastmod": "2026-06-22T09:55:01+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Mask-group.png",
+      "source_page_url": "https://wpugoa.edu.in/build-whats-next",
       "local_url": "/goa/assets/media/6e1a7387d80f0862-mask-group.png",
-      "alt": "Mask group - Build What's Next"
+      "alt": "Mask group - Build What's Next",
+      "width": 398,
+      "height": 518
     },
     "card_image": null,
     "blocks": [
@@ -24116,8 +24250,11 @@
     "lastmod": "2026-06-16T11:52:42+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/The-Goa-Proposition.webp",
+      "source_page_url": "https://wpugoa.edu.in/campus-life",
       "local_url": "/goa/assets/media/697e7472b3902426-the-goa-proposition.webp",
-      "alt": "Campus Life"
+      "alt": "Campus Life",
+      "width": 596,
+      "height": 424
     },
     "card_image": null,
     "blocks": [
@@ -24662,8 +24799,11 @@
     "lastmod": "2026-06-22T09:55:37+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/HOSTEL-COURTYARD-rloulujp68dsxgcc8j7ppo460c0zt2jnace2fh8bzs.png",
+      "source_page_url": "https://wpugoa.edu.in/careers",
       "local_url": "/goa/assets/media/80dac961349008c3-hostel-courtyard-rloulujp68dsxgcc8j7ppo460c0zt2jnace2fh.png",
-      "alt": "HOSTEL COURTYARD"
+      "alt": "HOSTEL COURTYARD",
+      "width": 320,
+      "height": 300
     },
     "card_image": null,
     "blocks": [
@@ -24928,8 +25068,11 @@
     "lastmod": "2026-05-08T07:27:33+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Vishwanath-Karad.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university",
       "local_url": "/goa/assets/media/7f6a5c84082bf134-prof-vishwanath-karad.webp",
-      "alt": "Centres of Excellence at WPU GŌA University"
+      "alt": "Centres of Excellence at WPU GŌA University",
+      "width": 1076,
+      "height": 664
     },
     "card_image": null,
     "blocks": [
@@ -25544,8 +25687,11 @@
     "lastmod": "2026-07-11T11:17:20+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Prof.-Barbara-Regeer-rgkpv16o0t4welmxzijlw2cxmea87z1bz1mzs869ho.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-for-brain-mind-and-consciousness",
       "local_url": "/goa/assets/media/c641368618d55bed-prof-barbara-regeer-rgkpv16o0t4welmxzijlw2cxmea87z1bz1m.webp",
-      "alt": "Dr. Deepak Ranade"
+      "alt": "Dr. Deepak Ranade",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [
@@ -26120,8 +26266,11 @@
     "lastmod": "2026-05-19T11:31:01+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Pandit-Niladri-Kumaar-rkxhtbtdvadpok0m36hfcpyh1ym1v0nya1auknrc7g.jpg",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-for-music-film-creative-futures",
       "local_url": "/goa/assets/media/ebffc1e8e78d43b1-pandit-niladri-kumaar-rkxhtbtdvadpok0m36hfcpyh1ym1v0nya.jpg",
-      "alt": "Pandit-Niladri-Kumaar"
+      "alt": "Pandit-Niladri-Kumaar",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [
@@ -26751,8 +26900,11 @@
     "lastmod": "2026-07-15T06:19:00+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-M.-S.-Swaminathan-1.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-of-biohappiness",
       "local_url": "/goa/assets/media/0c157ab5bbc664fa-prof-m-s-swaminathan-1.webp",
-      "alt": "Centre of BioHappiness"
+      "alt": "Centre of BioHappiness",
+      "width": 757,
+      "height": 335
     },
     "card_image": null,
     "blocks": [
@@ -27242,8 +27394,11 @@
     "lastmod": "2026-07-11T11:58:47+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Delfina-Fantini-van-Ditmar-rgmps2t2lrcdcawks56ra88tor7kuwd6xmmy0rdcwc.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-of-excellence-for-designresearch",
       "local_url": "/goa/assets/media/8fd20395739e6ff7-delfina-fantini-van-ditmar-rgmps2t2lrcdcawks56ra88tor7k.webp",
-      "alt": "Delfina Fantini van Ditmar"
+      "alt": "Delfina Fantini van Ditmar",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [
@@ -27893,8 +28048,11 @@
     "lastmod": "2026-05-19T09:15:05+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/12121-rgm71w2eomfk1076k80yduvr2k6yyaw18pmhb0ztsc.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-of-excellence-for-government-leadership-and-public-policy",
       "local_url": "/goa/assets/media/45cc47ac2b39d3af-12121-rgm71w2eomfk1076k80yduvr2k6yyaw18pmhb0ztsc.webp",
-      "alt": "12121"
+      "alt": "12121",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [
@@ -28494,8 +28652,11 @@
     "lastmod": "2026-07-11T11:48:09+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Outcomes-and-Impact-rleyhxbca9i7sa4y01ws9o3l999zvpo7qrbvayvjb4.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-of-excellence-for-inclusive-innovation",
       "local_url": "/goa/assets/media/64ee2cf5dbac1f15-outcomes-and-impact-rleyhxbca9i7sa4y01ws9o3l999zvpo7qrb.jpg",
-      "alt": "Outcomes-and-Impact"
+      "alt": "Outcomes-and-Impact",
+      "width": 892,
+      "height": 576
     },
     "card_image": null,
     "blocks": [
@@ -29060,8 +29221,11 @@
     "lastmod": "2026-07-11T12:32:37+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Shaphali-Gupta-rgmkc6a07t5zm1grpyoy45xcmqsllvn4zzuu9nu7po.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-of-strategic-leadership-and-organizational-governance-2",
       "local_url": "/goa/assets/media/4a2cc0e290c78f7b-shaphali-gupta-rgmkc6a07t5zm1grpyoy45xcmqsllvn4zzuu9nu7.webp",
-      "alt": "Shaphali Gupta"
+      "alt": "Shaphali Gupta",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [
@@ -29646,8 +29810,11 @@
     "lastmod": "2026-05-18T12:23:22+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Seema-Purushothaman.webp",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/center-of-transdisciplinary-research-and-education",
       "local_url": "/goa/assets/media/0e5db03fe771785d-prof-seema-purushothaman.webp",
-      "alt": "Prof. Seema Purushothaman"
+      "alt": "Prof. Seema Purushothaman",
+      "width": 198,
+      "height": 228
     },
     "card_image": null,
     "blocks": [
@@ -29866,8 +30033,11 @@
     "lastmod": "2026-07-15T07:16:16+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Paul-Gordon-Emerson-rlqwjl0qsfzdrvxu5jotm86bzz5q6cin5v5lubj2i0.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/center-of-excellence-at-wpu-goa-university/centre-for-diplomacy-human-creativity-and-artificial-intelligence",
       "local_url": "/goa/assets/media/5935fdc83c4958ca-paul-gordon-emerson-rlqwjl0qsfzdrvxu5jotm86bzz5q6cin5v5.jpg",
-      "alt": "Paul-Gordon-Emerson - Centre for Diplomacy, Human Creativity and Artificial Intelligence"
+      "alt": "Paul-Gordon-Emerson - Centre for Diplomacy, Human Creativity and Artificial Intelligence",
+      "width": 198,
+      "height": 228
     },
     "card_image": null,
     "blocks": [
@@ -30477,8 +30647,11 @@
     "lastmod": "2026-06-16T12:14:13+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/fitness.png",
+      "source_page_url": "https://wpugoa.edu.in/college-of-human-performance-and-longevity",
       "local_url": "/goa/assets/media/cb84077e4992f2fb-fitness.png",
-      "alt": "HEalth and Fitness"
+      "alt": "HEalth and Fitness",
+      "width": 480,
+      "height": 511
     },
     "card_image": null,
     "blocks": [
@@ -31152,8 +31325,11 @@
     "lastmod": "2026-06-19T12:24:54+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/academic-core-01.jpg",
+      "source_page_url": "https://wpugoa.edu.in/educational-model",
       "local_url": "/goa/assets/media/7ecd1b10ce898047-academic-core-01.jpg",
-      "alt": "Educational Model"
+      "alt": "Educational Model",
+      "width": 354,
+      "height": 214
     },
     "card_image": null,
     "blocks": [
@@ -31828,15 +32004,20 @@
     "route": "/goa/events/",
     "page_type": "events",
     "title": "Events and public programmes",
-    "description": "Explore events at WPU Goa featuring workshops, seminars, cultural activities, and academic engagements shaping student experience and learning.",
+    "description": "Conferences, open houses, talks, and public programmes.",
     "source_url": "https://wpugoa.edu.in/events",
     "source_raw_path": "raw/a6ed8cc991881102c3ad74fa502f7140ee44210825bdc92c5e545cd207b8a9df.html.gz",
     "captured_at": "2026-07-23T13:54:32.101895+00:00",
     "lastmod": "2026-04-06T11:26:09+00:00",
     "hero_image": {
-      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/events-main-vid-e1767167594328.webp",
-      "local_url": "/goa/assets/media/87075cc8079adb35-events-main-vid-e1767167594328.webp",
-      "alt": "Events Archives"
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Goupp1-scaled.jpg",
+      "source_page_url": "https://wpugoa.edu.in/about-us/",
+      "local_url": "/goa/assets/media/0c88c9d959040cde-goupp1-scaled-hero-1600x900.webp",
+      "alt": "A group gathered at a WPU Goa campus ceremony",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "0c88c9d959040cde5e369ab4f039b9745680cf0ca3057d31e5b6581f27fcc12e",
+      "derivative_role": "hero"
     },
     "card_image": null,
     "blocks": [],
@@ -32199,8 +32380,11 @@
     "lastmod": "2026-02-11T13:04:48+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Global-Visioning-Conference-Dublin-Ireland.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
       "local_url": "/goa/assets/media/694e45a0caa77548-global-visioning-conference-dublin-ireland.jpg",
-      "alt": "Global-Visioning-Conference-Dublin-Ireland"
+      "alt": "Global-Visioning-Conference-Dublin-Ireland",
+      "width": 623,
+      "height": 348
     },
     "card_image": null,
     "blocks": [],
@@ -32263,8 +32447,11 @@
     "lastmod": "2026-03-13T10:47:16+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Inaugural-Visioning-Conference.png",
+      "source_page_url": "https://wpugoa.edu.in/events/inaugural-visioning-conference-event",
       "local_url": "/goa/assets/media/fb0c8e77e81964ec-inaugural-visioning-conference.png",
-      "alt": "Inaugural Visioning Conference"
+      "alt": "Inaugural Visioning Conference",
+      "width": 1956,
+      "height": 894
     },
     "card_image": null,
     "blocks": [],
@@ -32477,8 +32664,11 @@
     "lastmod": "2026-04-06T11:26:09+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/Walter-Leal-Filho-Transdisciplinary-Education.png",
+      "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
       "local_url": "/goa/assets/media/3613e74df7a38c89-walter-leal-filho-transdisciplinary-education.png",
-      "alt": "Walter-Leal-Filho-Transdisciplinary-Education"
+      "alt": "Walter-Leal-Filho-Transdisciplinary-Education",
+      "width": 1920,
+      "height": 1080
     },
     "card_image": null,
     "blocks": [],
@@ -33840,8 +34030,11 @@
     "lastmod": "2026-04-15T08:42:12+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-11.16.09.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/goa-2037-knowledge-industry-sustainability-conclave",
       "local_url": "/goa/assets/media/2b8ff0cee41be39b-whatsapp-image-2026-04-10-at-11-16-09.jpg",
-      "alt": "Goa 2037: Knowledge, Industry & Sustainability Conclave"
+      "alt": "Goa 2037: Knowledge, Industry & Sustainability Conclave",
+      "width": 1600,
+      "height": 692
     },
     "card_image": null,
     "blocks": [
@@ -34226,8 +34419,11 @@
     "lastmod": "2026-06-22T09:58:36+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-08-at-18.34.55.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/goa-2037-knowledge-industry-sustainability-conclave-past-event",
       "local_url": "/goa/assets/media/e5464837b5bdaa89-whatsapp-image-2026-05-08-at-18-34-55.jpg",
-      "alt": "goa 2037 knowledge industry sustainability conclave past event"
+      "alt": "goa 2037 knowledge industry sustainability conclave past event",
+      "width": 1600,
+      "height": 690
     },
     "card_image": null,
     "blocks": [
@@ -34536,8 +34732,11 @@
     "lastmod": "2026-07-07T09:27:12+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/student-experience-and-counselling-e1775128535829.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/goa-residential-campus",
       "local_url": "/goa/assets/media/bf460493cbf50612-student-experience-and-counselling-e1775128535829.jpg",
-      "alt": "student experience and counselling"
+      "alt": "student experience and counselling",
+      "width": 911,
+      "height": 607
     },
     "card_image": null,
     "blocks": [
@@ -37012,8 +37211,11 @@
     "lastmod": "2026-07-21T07:36:00+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-7.png",
+      "source_page_url": "https://wpugoa.edu.in/international-faculty-development-programme",
       "local_url": "/goa/assets/media/c126293aef8feefa-group-7.png",
-      "alt": "International Faculty Development Programme"
+      "alt": "International Faculty Development Programme",
+      "width": 39,
+      "height": 39
     },
     "card_image": null,
     "blocks": [
@@ -37629,8 +37831,11 @@
     "lastmod": "2026-04-30T13:00:53+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-30-at-18.12.14-724x1024.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/leadership-that-delivers",
       "local_url": "/goa/assets/media/5c37bc4486313de7-whatsapp-image-2026-04-30-at-18-12-14-724x1024.jpg",
-      "alt": "Leadership that delivers"
+      "alt": "Leadership that delivers",
+      "width": 724,
+      "height": 1024
     },
     "card_image": null,
     "blocks": [],
@@ -37648,8 +37853,11 @@
     "lastmod": "2026-06-16T12:18:40+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-23-768x528.webp",
+      "source_page_url": "https://wpugoa.edu.in/living-learning-societies",
       "local_url": "/goa/assets/media/e959e162a552eec3-mask-group-23-768x528.webp",
-      "alt": "Living Learning Societies"
+      "alt": "Living Learning Societies",
+      "width": 768,
+      "height": 528
     },
     "card_image": null,
     "blocks": [
@@ -38356,8 +38564,11 @@
     "lastmod": "2026-06-26T10:07:08+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Ashish-Bharadwaj-rn7bhcy930nypl57fantmvn9jd2u984bb9dfzj7szw.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/about-us",
       "local_url": "/goa/assets/media/8143c002fcd49f50-ashish-bharadwaj-rn7bhcy930nypl57fantmvn9jd2u984bb9dfzj.jpg",
-      "alt": "Dr Ashish Bharadwaj"
+      "alt": "Dr Ashish Bharadwaj",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [],
@@ -38376,8 +38587,11 @@
     "lastmod": "2026-07-08T04:58:22+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-10.20.29.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/mous-and-strategic-partnerships",
       "local_url": "/goa/assets/media/6922c4df448736ef-whatsapp-image-2026-07-08-at-10-20-29.jpg",
-      "alt": "Maker's Asylm"
+      "alt": "Maker's Asylm",
+      "width": 414,
+      "height": 176
     },
     "card_image": null,
     "blocks": [
@@ -38411,8 +38625,11 @@
     "lastmod": "2026-06-22T10:01:44+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/Open-House-website-banner.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/open-house-may-2026",
       "local_url": "/goa/assets/media/6bde6f6373beedf8-open-house-website-banner.jpg",
-      "alt": "WPU Goa Open House May 2026 Event and Campus Experience"
+      "alt": "WPU Goa Open House May 2026 Event and Campus Experience",
+      "width": 1100,
+      "height": 420
     },
     "card_image": null,
     "blocks": [
@@ -39317,15 +39534,20 @@
     "route": "/goa/research/",
     "page_type": "research",
     "title": "Research",
-    "description": "Discover research institutes at WPU Goa driving innovation in sustainability, AI, materials, ocean sciences, and biotechnology through collaborative projects.",
+    "description": "Five research institutes and nine Centres of Excellence, with themes and external advisory networks.",
     "source_url": "https://wpugoa.edu.in/research-institute",
     "source_raw_path": "raw/bb9cea02deda1692b0030cbabfcca76c3db0c3ecd57a989ab2b62379a460ee96.html.gz",
     "captured_at": "2026-07-23T13:57:56.289626+00:00",
     "lastmod": "2026-04-09T06:08:37+00:00",
     "hero_image": {
-      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-27.webp",
-      "local_url": "/goa/assets/media/8f4087fb96c9025c-mask-group-27.webp",
-      "alt": "Research Institute"
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/92103d5db4b97a313e7c83e3504e46c82f2d8e56.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute",
+      "local_url": "/goa/assets/media/935ba27d70994198-92103d5db4b97a313e7c83e3504e46c82f2d8e56-hero-1600x900.webp",
+      "alt": "Researchers examining a crab beside the water",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "935ba27d7099419854fe2e1fcf455bfb8984db305bb165c0388f833989b81487",
+      "derivative_role": "hero"
     },
     "card_image": null,
     "blocks": [
@@ -39512,7 +39734,7 @@
   {
     "route": "/goa/research/institutes/ocean-sciences-and-management/",
     "page_type": "research-institute",
-    "title": "Researach Institutes: Ocean sciences and Management",
+    "title": "Ocean Sciences and Management",
     "description": "Explore ocean sciences and management research at WPU Goa focusing on marine ecosystems, sustainability, and environmental resilience.",
     "source_url": "https://wpugoa.edu.in/research-institute/researach-institutes-ocean-sciences-and-management",
     "source_raw_path": "raw/e3931d05b076d95560d90ab2189b0f5881c9abc1a1a514333fe65032c5130c65.html.gz",
@@ -39520,8 +39742,11 @@
     "lastmod": "2026-05-09T06:42:46+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Group-2147227027-2-rgwydawcszyyppmddly29siklrr2q4629z08yz46so.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute/researach-institutes-ocean-sciences-and-management",
       "local_url": "/goa/assets/media/9ffe3e9e560a4ede-group-2147227027-2-rgwydawcszyyppmddly29siklrr2q4629z08.webp",
-      "alt": "Prof. Gyana Ranjan Tripathy"
+      "alt": "Prof. Gyana Ranjan Tripathy",
+      "width": 198,
+      "height": 228
     },
     "card_image": null,
     "blocks": [
@@ -40013,7 +40238,7 @@
   {
     "route": "/goa/research/institutes/advanced-materials-manufacturing-and-emergent-device-systems/",
     "page_type": "research-institute",
-    "title": "Advanced Materials & Energy Systems Research",
+    "title": "Advanced Materials, Manufacturing and Emergent Device Systems",
     "description": "Discover advanced materials and manufacturing research at WPU Goa focused on energy systems, innovation, and next-generation technologies.",
     "source_url": "https://wpugoa.edu.in/research-institute/research-institute-on-advanced-materials-manufacturing-and-emergent-device-systems-updated",
     "source_raw_path": "raw/054ac6014c3022967f28c80f8b376f4da959b19e68613f3ada6d2ef8bb999056.html.gz",
@@ -40021,8 +40246,11 @@
     "lastmod": "2026-05-09T06:38:14+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/research-advanced-materials-img-12.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute/research-institute-on-advanced-materials-manufacturing-and-emergent-device-systems-updated",
       "local_url": "/goa/assets/media/00695480bc0622f8-research-advanced-materials-img-12.webp",
-      "alt": "Prof. Ashutosh Sharma"
+      "alt": "Prof. Ashutosh Sharma",
+      "width": 258,
+      "height": 297
     },
     "card_image": null,
     "blocks": [
@@ -40594,7 +40822,7 @@
   {
     "route": "/goa/research/institutes/biodesign-and-biotechnology/",
     "page_type": "research-institute",
-    "title": "Research Institute on Biodesign and Biotechnology",
+    "title": "Biodesign and Biotechnology",
     "description": "Explore bio-design and biotechnology research at WPU Goa advancing health, sustainability, and innovation through interdisciplinary science.",
     "source_url": "https://wpugoa.edu.in/research-institute/research-institute-on-biodesign-and-biotechnology",
     "source_raw_path": "raw/6204aee29d6f35012db1b316e2acb7cbf0bd98bb3607aae38eeca9ac968853c4.html.gz",
@@ -40602,8 +40830,11 @@
     "lastmod": "2026-05-09T07:35:00+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227020.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute/research-institute-on-biodesign-and-biotechnology",
       "local_url": "/goa/assets/media/d85ce121d6ede74c-group-2147227020.webp",
-      "alt": "Prof. Sanjay Balkrishna Maggirwar"
+      "alt": "Prof. Sanjay Balkrishna Maggirwar",
+      "width": 258,
+      "height": 297
     },
     "card_image": null,
     "blocks": [
@@ -40874,7 +41105,7 @@
   {
     "route": "/goa/research/institutes/human-machine-interaction/",
     "page_type": "research-institute",
-    "title": "Research Institute on Human - Machine Interaction",
+    "title": "Human–Machine Interaction",
     "description": "Review human machine interaction research at WPU Goa focused on ethical AI, data science, robotics, and human-centered technology innovation.",
     "source_url": "https://wpugoa.edu.in/research-institute/research-institute-on-human-machine-interaction",
     "source_raw_path": "raw/9b9103102e8aec4157eb51267aee749e1fd4f45c4c3ed51c307f286d2d6424ce.html.gz",
@@ -40882,8 +41113,11 @@
     "lastmod": "2026-05-11T09:15:26+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227028.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute/research-institute-on-human-machine-interaction",
       "local_url": "/goa/assets/media/79eaf3b809b1ec58-group-2147227028.webp",
-      "alt": "Prof. Siba K. Udgata"
+      "alt": "Prof. Siba K. Udgata",
+      "width": 258,
+      "height": 297
     },
     "card_image": null,
     "blocks": [
@@ -41047,8 +41281,11 @@
     "lastmod": "2026-05-06T07:40:33+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227028.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute/research-institute-on-human-machine-interaction-members",
       "local_url": "/goa/assets/media/79eaf3b809b1ec58-group-2147227028.webp",
-      "alt": "Prof. Siba K. Udgata"
+      "alt": "Prof. Siba K. Udgata",
+      "width": 258,
+      "height": 297
     },
     "card_image": null,
     "blocks": [
@@ -41079,7 +41316,7 @@
   {
     "route": "/goa/research/institutes/environmental-sustainability-and-resilience/",
     "page_type": "research-institute",
-    "title": "Research Institutes: Environmental Sustainability & Resilience",
+    "title": "Environmental Sustainability and Resilience",
     "description": "Discover environmental sustainability research at WPU Goa addressing climate change, ecosystems, and resilience through interdisciplinary innovation.",
     "source_url": "https://wpugoa.edu.in/research-institute/research-institutes-environmental-sustainability-resilience",
     "source_raw_path": "raw/d2a8a6718b06f2664a39d4efe52cff77f4bfbc19a80d97113996001bd2be81a5.html.gz",
@@ -41087,8 +41324,11 @@
     "lastmod": "2026-05-09T06:50:24+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227027-1.webp",
+      "source_page_url": "https://wpugoa.edu.in/research-institute/research-institutes-environmental-sustainability-resilience",
       "local_url": "/goa/assets/media/06527da8c470ebb2-group-2147227027-1.webp",
-      "alt": "Prof. Aditya D. Mohite"
+      "alt": "Prof. Aditya D. Mohite",
+      "width": 258,
+      "height": 296
     },
     "card_image": null,
     "blocks": [
@@ -41865,8 +42105,11 @@
     "lastmod": "2026-06-26T06:58:29+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Written.png",
+      "source_page_url": "https://wpugoa.edu.in/selection-process",
       "local_url": "/goa/assets/media/1d1f0b2fb5b805ba-written.png",
-      "alt": "Selection Process"
+      "alt": "Selection Process",
+      "width": 656,
+      "height": 656
     },
     "card_image": null,
     "blocks": [
@@ -42186,8 +42429,11 @@
     "lastmod": "2026-07-09T04:08:44+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-50.webp",
+      "source_page_url": "https://wpugoa.edu.in/student-experience-programmes",
       "local_url": "/goa/assets/media/029d015c53a4b573-mask-group-50.webp",
-      "alt": "Student Experience"
+      "alt": "Student Experience",
+      "width": 358,
+      "height": 283
     },
     "card_image": null,
     "blocks": [
@@ -43157,8 +43403,11 @@
     "lastmod": "2026-04-21T06:12:45+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/3374ab56e621cf7e774359f15dfc8357c9a59496-1024x588.png",
+      "source_page_url": "https://wpugoa.edu.in/tag/latest-news",
       "local_url": "/goa/assets/media/615f334e88c224da-3374ab56e621cf7e774359f15dfc8357c9a59496-1024x588.png",
-      "alt": "Latest News Archives"
+      "alt": "Latest News Archives",
+      "width": 1024,
+      "height": 588
     },
     "card_image": null,
     "blocks": [
@@ -43208,8 +43457,11 @@
     "lastmod": "2026-04-21T05:54:43+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/image-21.png",
+      "source_page_url": "https://wpugoa.edu.in/tag/trending-news",
       "local_url": "/goa/assets/media/67099b362fc1cc34-image-21.png",
-      "alt": "Trending News Archives"
+      "alt": "Trending News Archives",
+      "width": 89,
+      "height": 59
     },
     "card_image": null,
     "blocks": [
@@ -43249,8 +43501,11 @@
     "lastmod": "2026-07-02T10:04:28+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Background.png",
+      "source_page_url": "https://wpugoa.edu.in/tag/upcoming-events",
       "local_url": "/goa/assets/media/1e69155ecdde7e30-background.png",
-      "alt": "Upcoming Events Archives"
+      "alt": "Upcoming Events Archives",
+      "width": 45,
+      "height": 45
     },
     "card_image": null,
     "blocks": [
@@ -43300,8 +43555,11 @@
     "lastmod": "2026-07-02T10:04:28+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Background.png",
+      "source_page_url": "https://wpugoa.edu.in/uncategorized",
       "local_url": "/goa/assets/media/1e69155ecdde7e30-background.png",
-      "alt": "Uncategorized Archives"
+      "alt": "Uncategorized Archives",
+      "width": 45,
+      "height": 45
     },
     "card_image": null,
     "blocks": [
@@ -43657,8 +43915,11 @@
     "lastmod": "2026-06-18T12:36:44+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/unnamed-file.png",
+      "source_page_url": "https://wpugoa.edu.in/university-philosophy",
       "local_url": "/goa/assets/media/dfb0cea7a6daaa13-unnamed-file.png",
-      "alt": "University Philosophy"
+      "alt": "University Philosophy",
+      "width": 36,
+      "height": 126
     },
     "card_image": null,
     "blocks": [
@@ -43953,8 +44214,11 @@
     "lastmod": "2026-05-20T05:58:58+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Walter-Leal-Filho.webp",
+      "source_page_url": "https://wpugoa.edu.in/about-us",
       "local_url": "/goa/assets/media/d11f3a1f7ce82553-prof-walter-leal-filho.webp",
-      "alt": "Prof. Walter Leal Filho"
+      "alt": "Prof. Walter Leal Filho",
+      "width": 236,
+      "height": 270
     },
     "card_image": null,
     "blocks": [
@@ -45021,8 +45285,11 @@
     "lastmod": "2026-07-02T11:46:06+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-02-at-14.22.35-1024x576.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/wpu-goa-open-house-2026",
       "local_url": "/goa/assets/media/634ff7a5258cc4cb-whatsapp-image-2026-07-02-at-14-22-35-1024x576.jpg",
-      "alt": "Open house across india"
+      "alt": "Open house across india",
+      "width": 1024,
+      "height": 576
     },
     "card_image": null,
     "blocks": [
@@ -45107,8 +45374,11 @@
     "lastmod": "2026-07-08T04:59:57+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/Maker_asylum_banner.png",
+      "source_page_url": "https://wpugoa.edu.in/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning",
       "local_url": "/goa/assets/media/3c7fc4f0ec815b2d-maker-asylum-banner.png",
-      "alt": "Maker_asylum_banner"
+      "alt": "Maker_asylum_banner",
+      "width": 2560,
+      "height": 1440
     },
     "card_image": null,
     "blocks": [
@@ -45139,7 +45409,18 @@
       }
     ],
     "links": [],
-    "output": "news/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning/index.html"
+    "output": "news/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning/index.html",
+    "rail_image": {
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/Maker_asylum_banner.png",
+      "source_page_url": "https://wpugoa.edu.in/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning",
+      "local_url": "/goa/assets/media/5ca3fd2fd9b921fa-maker-asylum-banner-card-800x600.webp",
+      "alt": "",
+      "width": 800,
+      "height": 600,
+      "derivative_sha256": "5ca3fd2fd9b921fafe591fd21c31058107149fec096e1743e553371db423dac4",
+      "derivative_role": "card",
+      "decorative": true
+    }
   },
   {
     "route": "/goa/events/wpu-goa-x-bni-goa-region-leadership-that-delivers-one-day-leadership-conclave-past-event/",
@@ -45152,8 +45433,11 @@
     "lastmod": "2026-06-22T10:04:44+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-04-30-at-18.11.40.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/wpu-goa-x-bni-goa-region-leadership-that-delivers-one-day-leadership-conclave-past-event",
       "local_url": "/goa/assets/media/619a095bb2547b51-whatsapp-image-2026-04-30-at-18-11-40.jpg",
-      "alt": "Leadership That Delivers Conclave with BNI Goa Region"
+      "alt": "Leadership That Delivers Conclave with BNI Goa Region",
+      "width": 1600,
+      "height": 551
     },
     "card_image": null,
     "blocks": [
@@ -45777,12 +46061,21 @@
     "route": "/goa/people/",
     "page_type": "people-index",
     "title": "University leadership",
-    "description": "Leadership roles verified on the WPU Goa public About page, kept separate from advisors, centre members and event guests.",
+    "description": "University leadership roles, kept separate from external advisors, centre members, and event guests.",
     "source_url": "https://wpugoa.edu.in/about-us/",
     "source_raw_path": "",
     "captured_at": "2026-07-23",
     "lastmod": "",
-    "hero_image": null,
+    "hero_image": {
+      "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Group-scaled.jpg",
+      "source_page_url": "https://wpugoa.edu.in/about-us/",
+      "local_url": "/goa/assets/media/3a4d0b914f3f1f20-group-scaled-hero-1600x900.webp",
+      "alt": "A group gathered at a WPU Goa campus ceremony",
+      "width": 1600,
+      "height": 900,
+      "derivative_sha256": "3a4d0b914f3f1f2080dced62a94cc26fffe4a14b8e532b8bf40c211857398c93",
+      "derivative_role": "hero"
+    },
     "blocks": [],
     "links": [],
     "output": "people/index.html"
@@ -45799,13 +46092,16 @@
     "lastmod": "2026-06-22T09:17:47+00:00",
     "hero_image": {
       "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-05-11-at-12.24.30-rnag89p0ud08vhco8s5nlml2vz8akzpjczwlo114ek.jpeg",
+      "source_page_url": "https://wpugoa.edu.in/about-us",
       "local_url": "/goa/assets/media/77f1807d4ca3f0e7-whatsapp-image-2026-05-11-at-12-24-30-rnag89p0ud08vhco8.jpg",
-      "alt": "Dr Vijayan Karippal"
+      "alt": "Dr Vijayan Karippal",
+      "width": 236,
+      "height": 270
     },
     "blocks": [
       {
         "kind": "paragraph",
-        "text": "Dr Vijayan Karippal is identified as COO and Registrar on the captured WPU Goa About page.",
+        "text": "Dr Vijayan Karippal serves as COO and Registrar at WPU Goa.",
         "level": 0
       }
     ],
@@ -45830,7 +46126,7 @@
     "route": "/goa/search/",
     "page_type": "search",
     "title": "Search WPU Goa",
-    "description": "Search the complete crawl-backed WPU Goa campus export.",
+    "description": "Search programmes, research institutes, events, news, and university information at WPU Goa.",
     "source_url": "",
     "source_raw_path": "",
     "captured_at": "2026-07-23",
@@ -45844,7 +46140,7 @@
     "route": "/goa/sitemap/",
     "page_type": "sitemap",
     "title": "WPU Goa site index",
-    "description": "Browse every public route in the WPU Goa campus export.",
+    "description": "Browse pages across WPU Goa.",
     "source_url": "",
     "source_raw_path": "",
     "captured_at": "2026-07-23",

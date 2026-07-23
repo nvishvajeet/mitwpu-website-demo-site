@@ -37,7 +37,7 @@
       <div>
         <h3><a href="instruments.html#${encodeURIComponent(cluster.id)}">${escapeHtml(cluster.name)}</a></h3>
         <p>${escapeHtml(cluster.summary)}</p>
-        <p class="cluster-count">${cluster.instruments.length} ${cluster.instruments.length === 1 ? "major system" : "major systems"}</p>
+        <p class="cluster-count">${cluster.instruments.length} ${cluster.instruments.length === 1 ? "research system" : "research systems"}</p>
       </div>
     </article>`;
   }

@@ -4,6 +4,64 @@
   const storageKey = "site-theme";
   const root = document.documentElement;
   const media = window.matchMedia("(prefers-color-scheme: dark)");
+  const institutionalName =
+    "Dr. Vishwanath Karad MIT World Peace University";
+
+  function installInstitutionalLockup() {
+    const bar = document.querySelector(".institution-bar");
+    if (!bar || bar.querySelector(".institutional-lockup")) return;
+    const inner = bar.querySelector(".institution-inner");
+    if (!inner) return;
+
+    const institutionHome = inner.querySelector(
+      ".institution-home, .institution-name",
+    );
+    const href = institutionHome?.getAttribute("href") || "/";
+
+    const lockup = document.createElement("a");
+    lockup.className = "institutional-lockup";
+    lockup.href = href;
+    lockup.setAttribute("aria-label", `${institutionalName} home`);
+    lockup.innerHTML =
+      '<img class="institutional-lockup__logo" src="/demo-assets/brand/mitwpu-official-logo.webp" alt="" width="431" height="124" data-media-role="logo">';
+
+    if (institutionHome) institutionHome.replaceWith(lockup);
+    else inner.prepend(lockup);
+  }
+
+  function installInstitutionalNavigation() {
+    const bar = document.querySelector(".institution-bar");
+    if (!bar) return;
+    const nav = bar.querySelector(".institution-links");
+    if (!nav) return;
+
+    const links = [
+      ["About", "/about/"],
+      ["Academics", "/academics/"],
+      ["Admissions", "/admissions/"],
+      ["Research", "/research/"],
+      ["People", "/people/"],
+      ["Campus", "/life-at-mit-wpu/"],
+      ["Search", "/search/"],
+    ];
+    const path = window.location.pathname.replace(/\/+$/, "/");
+    const researchContext = /^\/(?:groups|facilities|photonics|quantum|astrophysics|bioinformatics)\//.test(path);
+    nav.replaceChildren();
+    nav.setAttribute("aria-label", "University navigation");
+    links.forEach(([label, href]) => {
+      const link = document.createElement("a");
+      link.textContent = label;
+      link.href = href;
+      if (
+        path === href
+        || path.startsWith(href)
+        || (href === "/research/" && researchContext)
+      ) {
+        link.setAttribute("aria-current", "page");
+      }
+      nav.append(link);
+    });
+  }
 
   function storedTheme() {
     try {
@@ -38,6 +96,9 @@
     }
     applyTheme(next);
   }
+
+  installInstitutionalLockup();
+  installInstitutionalNavigation();
 
   document.addEventListener("DOMContentLoaded", () => {
     applyTheme(preferredTheme());

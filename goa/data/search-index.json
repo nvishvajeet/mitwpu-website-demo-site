@@ -4,10 +4,10 @@
   "records": [
     {
       "route": "/goa/",
-      "title": "Academic life on a residential campus.",
-      "description": "Interdisciplinary teaching, research, and student life at WPU Goa.",
+      "title": "WPU Goa",
+      "description": "Programmes, research, and residential learning at WPU Goa.",
       "category": "WPU Goa",
-      "search_text": "academic life on a residential campus. interdisciplinary teaching, research, and student life at wpu goa. wpu goa four reasons wpu gōa is unlike any other university in india. academic programmes - one degree. many futures. 5 tier immersion. real world, every year. goa is your first classroom. what students actually do: western india and south asia, in the field. inside india's most respected institutions. the world is your campus. the most important journey ends inward."
+      "search_text": "wpu goa programmes, research, and residential learning at wpu goa. wpu goa four reasons wpu gōa is unlike any other university in india. academic programmes - one degree. many futures. 5 tier immersion. real world, every year. goa is your first classroom. what students actually do: western india and south asia, in the field. inside india's most respected institutions. the world is your campus. the most important journey ends inward."
     },
     {
       "route": "/goa/about/maeers-group/",
@@ -19,16 +19,16 @@
     {
       "route": "/goa/about/",
       "title": "About WPU Goa",
-      "description": "Know about World Peace University Goa, a transdisciplinary institution promoting global learning, sustainability, leadership, and innovation.",
+      "description": "Institutional background, campus life, partnerships, leadership, careers, brand, and policies.",
       "category": "About",
-      "search_text": "about wpu goa know about world peace university goa, a transdisciplinary institution promoting global learning, sustainability, leadership, and innovation. about globally informed. locally rooted. “to be the world’s leading interdisciplinary university dedicated to peace and sustainability, designing and demonstrating regenerative futures, where human societies thrive in harmony with planetary boundaries.” ōur vision ōur mission world-class programmes empowered leaders global partnerships inclusive sustainability chancellor & core advisors prof. satish tripathi mr. d.shivakumar"
+      "search_text": "about wpu goa institutional background, campus life, partnerships, leadership, careers, brand, and policies. about globally informed. locally rooted. “to be the world’s leading interdisciplinary university dedicated to peace and sustainability, designing and demonstrating regenerative futures, where human societies thrive in harmony with planetary boundaries.” ōur vision ōur mission world-class programmes empowered leaders global partnerships inclusive sustainability chancellor & core advisors prof. satish tripathi mr. d.shivakumar"
     },
     {
       "route": "/goa/academics/",
       "title": "Academics",
-      "description": "Learn about academic programs at WPU Goa including B.Tech, B.Des, B.Sc, and management courses designed for future-ready skills and real-world learning",
+      "description": "Programme families, detailed programme pages, and the academic model at WPU Goa.",
       "category": "Academics",
-      "search_text": "academics learn about academic programs at wpu goa including b.tech, b.des, b.sc, and management courses designed for future-ready skills and real-world learning academics b.tech. in computer science & engineering bachelor of management studies (bms) (hons.) b.des. in integrated product design b.des. in communication design b.sc. (hons.) in psychology b.tech. in electronics and semiconductor engineering b.tech. in energy systems engineering b. des. interaction design b.sc. (hons.) in economics b.sc. (hons.) in film, media and communications the future of learning at wpu gōa one degree. many possibilities."
+      "search_text": "academics programme families, detailed programme pages, and the academic model at wpu goa. academics b.tech. in computer science & engineering bachelor of management studies (bms) (hons.) b.des. in integrated product design b.des. in communication design b.sc. (hons.) in psychology b.tech. in electronics and semiconductor engineering b.tech. in energy systems engineering b. des. interaction design b.sc. (hons.) in economics b.sc. (hons.) in film, media and communications the future of learning at wpu gōa one degree. many possibilities."
     },
     {
       "route": "/goa/academics/programmes/bachelor-of-managementstudies/",
@@ -89,9 +89,9 @@
     {
       "route": "/goa/admissions/",
       "title": "Admissions",
-      "description": "Apply to WPU Goa and explore the complete admission process, eligibility, programs, and selection criteria for a future-focused learning experience.",
+      "description": "Application process, eligibility, assessment, documents, fees, scholarships, loans, and international-candidate guidance.",
       "category": "Admissions",
-      "search_text": "admissions apply to wpu goa and explore the complete admission process, eligibility, programs, and selection criteria for a future-focused learning experience. admissions quick navigation admissions at wpu gōa admission process flow & schedule eligibility criteria selection process document checklist admission status fee structure international student policy scholarship policy education loan faqs"
+      "search_text": "admissions application process, eligibility, assessment, documents, fees, scholarships, loans, and international-candidate guidance. admissions quick navigation admissions at wpu gōa admission process flow & schedule eligibility criteria selection process document checklist admission status fee structure international student policy scholarship policy education loan faqs"
     },
     {
       "route": "/goa/admissions/overview/",
@@ -130,10 +130,10 @@
     },
     {
       "route": "/goa/news/",
-      "title": "News and ideas",
-      "description": "Public articles, campus updates and thought leadership captured from WPU Goa.",
+      "title": "News",
+      "description": "Articles and campus updates from WPU Goa.",
       "category": "News and ideas",
-      "search_text": "news and ideas public articles, campus updates and thought leadership captured from wpu goa. news and ideas the transdisciplinary approach:reimagining higher education for sustainable futures. what makes wpu goa a leading transdisciplinary university the university’s academic model reflects the multidisciplinary and experiential learning priorities encouraged under nep 2020. what can you do after a b.sc. in psychology? how artificial intelligence is reshaping computer science careers how to identify a future-ready university that prepares industry-ready graduates how wpu gōa integrates multiple disciplines for industry-ready learning why product design is emerging as one of the most influential careers of the future how computer science education is changing in the ai era why students are looking beyond traditional universities why transdisciplinary universities may define the future of higher education all you need to know about bsc psychology: subjects, specialisations, and career paths"
+      "search_text": "news articles and campus updates from wpu goa. news and ideas the transdisciplinary approach:reimagining higher education for sustainable futures. what makes wpu goa a leading transdisciplinary university the university’s academic model reflects the multidisciplinary and experiential learning priorities encouraged under nep 2020. what can you do after a b.sc. in psychology? how artificial intelligence is reshaping computer science careers how to identify a future-ready university that prepares industry-ready graduates how wpu gōa integrates multiple disciplines for industry-ready learning why product design is emerging as one of the most influential careers of the future how computer science education is changing in the ai era why students are looking beyond traditional universities why transdisciplinary universities may define the future of higher education all you need to know about bsc psychology: subjects, specialisations, and career paths"
     },
     {
       "route": "/goa/news/ai-careers-btech-in-computer-science/",
@@ -446,9 +446,9 @@
     {
       "route": "/goa/events/",
       "title": "Events and public programmes",
-      "description": "Explore events at WPU Goa featuring workshops, seminars, cultural activities, and academic engagements shaping student experience and learning.",
+      "description": "Conferences, open houses, talks, and public programmes.",
       "category": "Events",
-      "search_text": "events and public programmes explore events at wpu goa featuring workshops, seminars, cultural activities, and academic engagements shaping student experience and learning. events"
+      "search_text": "events and public programmes conferences, open houses, talks, and public programmes. events"
     },
     {
       "route": "/goa/events/aditya-bhasin-filmmaker-lawyer-shamanic-practitioner-visioning-conference-mit-wpu-goa/",
@@ -1069,37 +1069,37 @@
     {
       "route": "/goa/research/",
       "title": "Research",
-      "description": "Discover research institutes at WPU Goa driving innovation in sustainability, AI, materials, ocean sciences, and biotechnology through collaborative projects.",
+      "description": "Five research institutes and nine Centres of Excellence, with themes and external advisory networks.",
       "category": "Research",
-      "search_text": "research discover research institutes at wpu goa driving innovation in sustainability, ai, materials, ocean sciences, and biotechnology through collaborative projects. research where ideas evolve and innovation takes shape human - machine interaction (al/data science for society) environmental sustainability and resilience ocean sciences and management advanced materials, manufacturing and energy systems bio-design and biotechnology research collaborations guiding our vision prof. satish tripathi mr. shiv shivkumar dr. suresh garimella dr. pankaj chandra"
+      "search_text": "research five research institutes and nine centres of excellence, with themes and external advisory networks. research where ideas evolve and innovation takes shape human - machine interaction (al/data science for society) environmental sustainability and resilience ocean sciences and management advanced materials, manufacturing and energy systems bio-design and biotechnology research collaborations guiding our vision prof. satish tripathi mr. shiv shivkumar dr. suresh garimella dr. pankaj chandra"
     },
     {
       "route": "/goa/research/institutes/ocean-sciences-and-management/",
-      "title": "Researach Institutes: Ocean sciences and Management",
+      "title": "Ocean Sciences and Management",
       "description": "Explore ocean sciences and management research at WPU Goa focusing on marine ecosystems, sustainability, and environmental resilience.",
       "category": "Research institute",
-      "search_text": "researach institutes: ocean sciences and management explore ocean sciences and management research at wpu goa focusing on marine ecosystems, sustainability, and environmental resilience. research institute our research themes and areas of focus our research areas areas and focus coral reef and mangrove ecology deep-sea ecosystems sustainable aquaculture ocean governance and protection microplastic pollution impact areas from research to real solutions coral reef protection and restoration sustainable fisheries and food security"
+      "search_text": "ocean sciences and management explore ocean sciences and management research at wpu goa focusing on marine ecosystems, sustainability, and environmental resilience. research institute our research themes and areas of focus our research areas areas and focus coral reef and mangrove ecology deep-sea ecosystems sustainable aquaculture ocean governance and protection microplastic pollution impact areas from research to real solutions coral reef protection and restoration sustainable fisheries and food security"
     },
     {
       "route": "/goa/research/institutes/advanced-materials-manufacturing-and-emergent-device-systems/",
-      "title": "Advanced Materials & Energy Systems Research",
+      "title": "Advanced Materials, Manufacturing and Emergent Device Systems",
       "description": "Discover advanced materials and manufacturing research at WPU Goa focused on energy systems, innovation, and next-generation technologies.",
       "category": "Research institute",
-      "search_text": "advanced materials & energy systems research discover advanced materials and manufacturing research at wpu goa focused on energy systems, innovation, and next-generation technologies. research institute rationale objectives mandate research themes advanced functional materials sustainable manufacturing smart manufacturing and industry 4.0 plan phase i (year 1–2) phase ii (year 3–5) phase iii (year 5+) impact and outcomes"
+      "search_text": "advanced materials, manufacturing and emergent device systems discover advanced materials and manufacturing research at wpu goa focused on energy systems, innovation, and next-generation technologies. research institute rationale objectives mandate research themes advanced functional materials sustainable manufacturing smart manufacturing and industry 4.0 plan phase i (year 1–2) phase ii (year 3–5) phase iii (year 5+) impact and outcomes"
     },
     {
       "route": "/goa/research/institutes/biodesign-and-biotechnology/",
-      "title": "Research Institute on Biodesign and Biotechnology",
+      "title": "Biodesign and Biotechnology",
       "description": "Explore bio-design and biotechnology research at WPU Goa advancing health, sustainability, and innovation through interdisciplinary science.",
       "category": "Research institute",
-      "search_text": "research institute on biodesign and biotechnology explore bio-design and biotechnology research at wpu goa advancing health, sustainability, and innovation through interdisciplinary science. research institute about institute vision aims and objectives mandate research themes biodesign for healthcare synthetic biology and bioengineering environmental biotechnology computational biology and ai agricultural biotechnology activities plan"
+      "search_text": "biodesign and biotechnology explore bio-design and biotechnology research at wpu goa advancing health, sustainability, and innovation through interdisciplinary science. research institute about institute vision aims and objectives mandate research themes biodesign for healthcare synthetic biology and bioengineering environmental biotechnology computational biology and ai agricultural biotechnology activities plan"
     },
     {
       "route": "/goa/research/institutes/human-machine-interaction/",
-      "title": "Research Institute on Human - Machine Interaction",
+      "title": "Human–Machine Interaction",
       "description": "Review human machine interaction research at WPU Goa focused on ethical AI, data science, robotics, and human-centered technology innovation.",
       "category": "Research institute",
-      "search_text": "research institute on human - machine interaction review human machine interaction research at wpu goa focused on ethical ai, data science, robotics, and human-centered technology innovation. research institute our research themes and areas of focus our research areas areas and focus design and interaction data science and impact robotics and embodiment ethics and governance foundational theory impact areas from research to real solutions healthcare and accessibility education and opportunity"
+      "search_text": "human–machine interaction review human machine interaction research at wpu goa focused on ethical ai, data science, robotics, and human-centered technology innovation. research institute our research themes and areas of focus our research areas areas and focus design and interaction data science and impact robotics and embodiment ethics and governance foundational theory impact areas from research to real solutions healthcare and accessibility education and opportunity"
     },
     {
       "route": "/goa/research/institutes/human-machine-interaction/members/",
@@ -1110,10 +1110,10 @@
     },
     {
       "route": "/goa/research/institutes/environmental-sustainability-and-resilience/",
-      "title": "Research Institutes: Environmental Sustainability & Resilience",
+      "title": "Environmental Sustainability and Resilience",
       "description": "Discover environmental sustainability research at WPU Goa addressing climate change, ecosystems, and resilience through interdisciplinary innovation.",
       "category": "Research institute",
-      "search_text": "research institutes: environmental sustainability & resilience discover environmental sustainability research at wpu goa addressing climate change, ecosystems, and resilience through interdisciplinary innovation. research institute our research themes and areas of focus our research areas areas and focus climate adaptation and impacts adaptation and resilience renewable energy systems industrial decarbonisation nature-based solutions impact areas from research to real solutions climate-resilient communities energy access and equity"
+      "search_text": "environmental sustainability and resilience discover environmental sustainability research at wpu goa addressing climate change, ecosystems, and resilience through interdisciplinary innovation. research institute our research themes and areas of focus our research areas areas and focus climate adaptation and impacts adaptation and resilience renewable energy systems industrial decarbonisation nature-based solutions impact areas from research to real solutions climate-resilient communities energy access and equity"
     },
     {
       "route": "/goa/admissions/scholarship-policy/",
@@ -1286,9 +1286,9 @@
     {
       "route": "/goa/people/",
       "title": "University leadership",
-      "description": "Leadership roles verified on the WPU Goa public About page, kept separate from advisors, centre members and event guests.",
+      "description": "University leadership roles, kept separate from external advisors, centre members, and event guests.",
       "category": "People Index",
-      "search_text": "university leadership leadership roles verified on the wpu goa public about page, kept separate from advisors, centre members and event guests. people index"
+      "search_text": "university leadership university leadership roles, kept separate from external advisors, centre members, and event guests. people index"
     },
     {
       "route": "/goa/people/vijayan-karippal/",

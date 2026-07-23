@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "valid": true,
+  "strict": true,
+  "pillow_available": true,
+  "summary": {
+    "files": 8,
+    "errors": 0,
+    "warnings": 0,
+    "layers": {
+      "layer-0": {
+        "files": 0,
+        "errors": 0,
+        "warnings": 0
+      },
+      "layer-1": {
+        "files": 8,
+        "errors": 0,
+        "warnings": 0
+      },
+      "layer-2": {
+        "files": 0,
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  },
+  "inputs": [
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/about/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/academics/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/admissions/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/events/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/news/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/people/index.html"
+    },
+    {
+      "layer": "layer-1",
+      "path": "/Users/vishvajeetn/Projects/mitwpu-website-demo/.goa-media-policy-21ltifww/goa/research/index.html"
+    }
+  ],
+  "issues": []
+}

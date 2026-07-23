@@ -42,6 +42,9 @@
   }
 
   function displayName(person) {
+    const preferred = String(person && person.preferredDisplayName || "").trim();
+    if (preferred) return preferred;
+
     const source = String(person && person.name || "").trim();
     const bareName = source
       .replace(/^(?:prof(?:essor)?\.?\s+dr\.?|prof(?:essor)?|dr|mr|mrs|ms)\.?\s+/i, "")
@@ -87,6 +90,14 @@
   }
 
   function groupMembers(a, b) {
+    const explicitA = Number(a && a.groupOrder);
+    const explicitB = Number(b && b.groupOrder);
+    if (Number.isFinite(explicitA) || Number.isFinite(explicitB)) {
+      const rankA = Number.isFinite(explicitA) ? explicitA : groupRank(a);
+      const rankB = Number.isFinite(explicitB) ? explicitB : groupRank(b);
+      if (rankA !== rankB) return rankA - rankB;
+    }
+
     return groupRank(a) - groupRank(b)
       || academicRank(a) - academicRank(b)
       || bySurname(a, b);

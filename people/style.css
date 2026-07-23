@@ -1,4 +1,4 @@
-@import url("../group-assets/site.css?v=20260723e");
+@import url("../group-assets/site.css?v=20260724a");
 
 :root {
   --shell: 1180px;
@@ -86,7 +86,7 @@ body {
 
 .directory-filters {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1.4fr auto;
+  grid-template-columns: 1.05fr 1.2fr 1.25fr 0.9fr auto;
   align-items: end;
   gap: 14px;
   padding: 20px;
@@ -160,6 +160,64 @@ button:hover {
   color: var(--on-solid-blue);
 }
 
+.alphabet-filter {
+  min-width: 0;
+  margin: 2px 0 0;
+  padding: 14px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  grid-column: 1 / -1;
+}
+
+.alphabet-filter legend {
+  padding: 0 8px 0 0;
+  color: var(--heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.alphabet-filter__buttons {
+  display: flex;
+  gap: 5px;
+  padding: 3px 2px 5px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-gutter: stable;
+}
+
+.alphabet-filter button {
+  min-width: 36px;
+  min-height: 36px;
+  flex: 0 0 36px;
+  padding: 5px;
+  color: var(--blue);
+  background: var(--paper);
+  border-color: var(--line-dark);
+  font-size: 0.76rem;
+}
+
+.alphabet-filter button:first-child {
+  min-width: 48px;
+  flex-basis: 48px;
+}
+
+.alphabet-filter button[aria-pressed="true"] {
+  color: var(--on-solid-blue);
+  background: var(--solid-blue);
+  border-color: var(--solid-blue);
+}
+
+.alphabet-filter button:disabled {
+  color: var(--muted);
+  background: var(--subtle);
+  border-color: var(--line);
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
 .directory-status {
   display: flex;
   min-height: 74px;
@@ -169,6 +227,12 @@ button:hover {
   padding-block: 14px;
   border-bottom: 1px solid var(--line);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.directory-status > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .directory-status p {
@@ -194,6 +258,7 @@ button:hover {
 .people-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: start;
   gap: 0;
   border-left: 1px solid var(--line);
 }
@@ -201,8 +266,9 @@ button:hover {
 .person-card {
   display: grid;
   grid-template-columns: 94px minmax(0, 1fr);
-  min-height: 215px;
-  padding: 26px;
+  min-height: 158px;
+  align-items: start;
+  padding: 24px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -220,7 +286,6 @@ button:hover {
   object-position: center 18%;
   background: var(--blue-pale);
   border: 1px solid var(--line);
-  border-top: 3px solid var(--photo-accent);
 }
 
 .person-placeholder {
@@ -234,8 +299,7 @@ button:hover {
 }
 
 .person-department,
-.person-designation,
-.person-research {
+.person-designation {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -250,42 +314,25 @@ button:hover {
 
 .person-card h2 {
   margin-bottom: 5px;
-  font-size: 1.22rem;
+  overflow-wrap: break-word;
+  font-size: clamp(1.05rem, 1.35vw, 1.22rem);
+  line-height: 1.22;
+  text-wrap: balance;
 }
 
 .person-card-main {
   display: flex;
   min-width: 0;
   flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
 }
 
 .person-designation {
-  margin-bottom: 12px;
+  margin-bottom: 0;
   color: var(--muted);
   font-size: 0.84rem;
-}
-
-.person-research {
-  display: -webkit-box;
-  max-width: 40ch;
-  margin-bottom: 12px;
-  padding-left: 10px;
-  overflow: hidden;
-  color: var(--ink);
-  border-left: 2px solid var(--gold);
-  font-size: 0.84rem;
-  line-height: 1.5;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-
-.person-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 13px;
-  margin-top: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
+  line-height: 1.45;
 }
 
 .empty-state,
@@ -397,6 +444,12 @@ button:hover {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .directory-status > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 

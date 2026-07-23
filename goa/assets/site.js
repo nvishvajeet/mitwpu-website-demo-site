@@ -53,6 +53,36 @@
     });
   }
 
+  Array.prototype.forEach.call(
+    document.querySelectorAll("[data-latest-rail]"),
+    function (rail) {
+      var track = rail.querySelector("[data-latest-track]");
+      var previous = rail.querySelector("[data-latest-previous]");
+      var next = rail.querySelector("[data-latest-next]");
+      if (!track || !previous || !next) return;
+
+      function updateRailControls() {
+        var maximum = Math.max(0, track.scrollWidth - track.clientWidth);
+        previous.disabled = track.scrollLeft <= 4;
+        next.disabled = track.scrollLeft >= maximum - 4;
+      }
+
+      function moveRail(direction) {
+        var firstCard = track.querySelector(".latest-card");
+        var distance = firstCard
+          ? firstCard.getBoundingClientRect().width + 16
+          : track.clientWidth * 0.8;
+        track.scrollBy({ left: distance * direction, behavior: "smooth" });
+      }
+
+      previous.addEventListener("click", function () { moveRail(-1); });
+      next.addEventListener("click", function () { moveRail(1); });
+      track.addEventListener("scroll", updateRailControls, { passive: true });
+      window.addEventListener("resize", updateRailControls);
+      updateRailControls();
+    }
+  );
+
   var form = document.querySelector("[data-search-form]");
   var input = document.querySelector("[data-search-input]");
   var results = document.querySelector("[data-search-results]");

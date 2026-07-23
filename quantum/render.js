@@ -1,7 +1,15 @@
 (function () {
   "use strict";
 
-  const group = window.QUANTUM_GROUP || { people: [], researchAreas: [] };
+  const group = window.RESEARCH_GROUP || window.QUANTUM_GROUP || {
+    meta: {},
+    people: [],
+    researchAreas: []
+  };
+  const groupMeta = {
+    name: group.meta?.name || "Quantum Science & Technology Group",
+    shortName: group.meta?.shortName || "Quantum group"
+  };
   const peopleOrder = window.MITWPU_PEOPLE_ORDER || {
     groupMembers: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN"),
     displayName: (person) => String(person.name || "")
@@ -179,7 +187,7 @@
     }
 
     const name = peopleOrder.displayName(person);
-    document.title = `${name} · Quantum Science & Technology Group · MIT-WPU`;
+    document.title = `${name} · ${groupMeta.name} · MIT-WPU`;
     const links = profileLinks(person);
     target.innerHTML = `<section class="profile-hero"><div class="shell profile-hero-grid">
       <div>${portrait(person, "member-portrait-large")}</div>
@@ -202,28 +210,43 @@
   function renderPublications() {
     const target = document.getElementById("publications-list");
     if (!target) return;
+    const scholarlyProfiles = ["scholar", "scopus", "orcid", "research", "publication"];
     target.innerHTML = group.people
-      .filter((person) => (person.publications || []).length)
-      .map((person) => `<section class="publication-group">
+      .filter((person) =>
+        (person.publications || []).length
+        || scholarlyProfiles.some((key) => person.links?.[key]))
+      .map((person) => {
+        const hasSelectedPublications = (person.publications || []).length > 0;
+        return `<section class="publication-group">
         <div class="publication-person">
-          <p class="eyebrow">${escapeHtml(person.publicationHeading || "Selected publications")}</p>
+          <p class="eyebrow">${escapeHtml(
+            hasSelectedPublications
+              ? (person.publicationHeading || "Selected publications")
+              : "Research profiles",
+          )}</p>
           <h2><a href="${profileUrl(person)}">${escapeHtml(peopleOrder.displayName(person))}</a></h2>
           <div class="profile-link-row">${profileLinks(person)}</div>
         </div>
-        ${publicationList(person.publications, "publication-list numbered")}
-      </section>`).join("");
+        ${hasSelectedPublications
+          ? publicationList(person.publications, "publication-list numbered")
+          : ""}
+      </section>`;
+      }).join("");
   }
 
   function renderContacts() {
     const target = document.getElementById("contact-list");
     if (!target) return;
     const contacts = group.people.filter((person) => person.email);
-    target.innerHTML = contacts.map((person) => `<article class="contact-person">
+    const visiblePeople = contacts.length ? contacts : group.people;
+    target.innerHTML = visiblePeople.map((person) => `<article class="contact-person">
       <div class="contact-avatar" aria-hidden="true">${escapeHtml(initials(peopleOrder.displayName(person)))}</div>
       <div>
         <h3><a href="${profileUrl(person)}">${escapeHtml(peopleOrder.displayName(person))}</a></h3>
         <p>${escapeHtml(person.groupRole)} · ${escapeHtml(person.designation)}</p>
-        <a href="mailto:${escapeHtml(person.email)}">${escapeHtml(person.email)}</a>
+        ${person.email
+          ? `<a href="mailto:${escapeHtml(person.email)}">${escapeHtml(person.email)}</a>`
+          : `<a href="${profileUrl(person)}">View university profile</a>`}
       </div>
     </article>`).join("");
   }

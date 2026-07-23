@@ -38,12 +38,12 @@
     "type": "Conference",
     "status": "Past event",
     "title": "NSRTC 2025",
-    "subtitle": "Science, innovation, and the vision for Viksit Bharat",
+    "subtitle": "Science, innovation, and national research priorities",
     "startDate": "2025-07-18",
     "endDate": "",
     "dateLabel": "18 July 2025 · three-day conference",
     "venue": "MIT World Peace University, Pune",
-    "summary": "A national meeting of scientists, technologists, researchers, policy leaders, and students organised around research priorities for Viksit Bharat.",
+    "summary": "A national meeting of scientists, technologists, researchers, policy leaders, and students organised around research priorities for India.",
     "overview": [
       "The programme opened with plenary sessions on Nobel Prize-recognised work in medicine, chemistry, physics, and engineering, followed by specialist talks and a formal inaugural session.",
       "Technical sessions and round tables connected fundamental research, applied science, technology development, and questions of national capacity."
@@ -57,7 +57,7 @@
     "programme": [
       {
         "label": "Special talks",
-        "text": "Ashutosh Sharma spoke on science and technology for Viksit Bharat; Arindam Ghosh on materials for quantum technologies; and Ajit Kembhavi on the life and scientific journey of Jayant Vishnu Narlikar."
+        "text": "Ashutosh Sharma spoke on science and technology for national development; Arindam Ghosh on materials for quantum technologies; and Ajit Kembhavi on the life and scientific journey of Jayant Vishnu Narlikar."
       },
       {
         "label": "Scientific programme",

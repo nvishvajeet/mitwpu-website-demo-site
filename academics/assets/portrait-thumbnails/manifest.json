@@ -1,0 +1,647 @@
+{
+  "schema": "mitwpu-academic-portrait-derivatives-v1",
+  "policy": {
+    "role": "thumbnail",
+    "format": "webp",
+    "width": 192,
+    "height": 240,
+    "maximum_bytes": 49152,
+    "upscaling": false,
+    "focal_point": {
+      "x": 0.5,
+      "y": 0.25
+    }
+  },
+  "assets": [
+    {
+      "source_path": "people/assets/campus/abhijit-manikrao-bhagat.webp",
+      "local_path": "academics/assets/portrait-thumbnails/abhijit-manikrao-bhagat-263ce6ff6c47-thumbnail.webp",
+      "source_sha256": "263ce6ff6c47286fea58c1d4f88ca07279a98501fdcdaa6b938d36bf3f92c980",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4448,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/abhijit-nair.webp",
+      "local_path": "academics/assets/portrait-thumbnails/abhijit-nair-ab3fcf4beb00-thumbnail.webp",
+      "source_sha256": "ab3fcf4beb00794e8bd34b938f8c58dd4ac6a2bfc9be5165d6952059a237f146",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3604,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/abhijith-b.webp",
+      "local_path": "academics/assets/portrait-thumbnails/abhijith-b-3235b7cefda4-thumbnail.webp",
+      "source_sha256": "3235b7cefda425dd9dd523b521a9c594a993f993bb641e2f74aa3d87d2ab9281",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 8854,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/abhinay-kamble.webp",
+      "local_path": "academics/assets/portrait-thumbnails/abhinay-kamble-07f04bf686fb-thumbnail.webp",
+      "source_sha256": "07f04bf686fb2645929fedb01b701e23fd9515ed8cefc48989ac032e3fe79c80",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3938,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/akshay-motilal-baheti.jpg",
+      "local_path": "academics/assets/portrait-thumbnails/akshay-motilal-baheti-de5aa02cfdad-thumbnail.webp",
+      "source_sha256": "de5aa02cfdad2c9c24867dacb280187be21530712e65f16728941c8d880c2f2c",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3074,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/anik-karan.webp",
+      "local_path": "academics/assets/portrait-thumbnails/anik-karan-4d4fbe713a45-thumbnail.webp",
+      "source_sha256": "4d4fbe713a45ec7efa68133c2406e06197f1c250a355e57fdb0e922300f61859",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4522,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/anjali-ajit-sane.webp",
+      "local_path": "academics/assets/portrait-thumbnails/anjali-ajit-sane-e9b07ba10895-thumbnail.webp",
+      "source_sha256": "e9b07ba108958d8d1bd276be6942b8305f686bdf4b0ea6355dbcd5701a3fecc9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 5410,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/ankita-agarwal.webp",
+      "local_path": "academics/assets/portrait-thumbnails/ankita-agarwal-c154704d0f9d-thumbnail.webp",
+      "source_sha256": "c154704d0f9d7c1d9a32d53c2d3d55153519bb59f1526688a8226a8f4f940c0b",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3272,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/ashish-andhale.webp",
+      "local_path": "academics/assets/portrait-thumbnails/ashish-andhale-725b255943a2-thumbnail.webp",
+      "source_sha256": "725b255943a271ed712d532f3b68f597c7d778d7a9919acf499a18595ea5f60a",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 12968,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/ashok-shripati-deokar.png",
+      "local_path": "academics/assets/portrait-thumbnails/ashok-shripati-deokar-e88651d861a3-thumbnail.webp",
+      "source_sha256": "e88651d861a3b5cd7703a66a03ba632a002c5d1e5ea05d55cc75598e93b986c9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 1216,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/ashwin-bhanudas-kuchekar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/ashwin-bhanudas-kuchekar-e9a1647f06ea-thumbnail.webp",
+      "source_sha256": "e9a1647f06ea7cf1b081b090c68193d8dffd5314160df7f23d47fe5d810bb2de",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4322,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/ashwini-bagkar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/ashwini-bagkar-775d5b0a2f91-thumbnail.webp",
+      "source_sha256": "775d5b0a2f917663f12cfa31876dac8be21e8400a8039783f8419df70d1d11fb",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 7662,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/barnali-banerjee.webp",
+      "local_path": "academics/assets/portrait-thumbnails/barnali-banerjee-33bfd3f33d06-thumbnail.webp",
+      "source_sha256": "33bfd3f33d06d81b3a47ad8e648e9bcdd2428307bb9e91760508b72736b8e81c",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 7152,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/bhushan-ganurkar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/bhushan-ganurkar-f00f1e644ea4-thumbnail.webp",
+      "source_sha256": "f00f1e644ea4aae5e62282d06457edc583e29f4a26e8431b54455c118ebd9adf",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 8262,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/deependra-sharma.webp",
+      "local_path": "academics/assets/portrait-thumbnails/deependra-sharma-fae1750c7103-thumbnail.webp",
+      "source_sha256": "fae1750c7103249ea65d68c60a1deadaf973e08608078c4f44715c103d0290e8",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3954,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/gauri-rahul-dhongade.jpg",
+      "local_path": "academics/assets/portrait-thumbnails/gauri-rahul-dhongade-294764d759e3-thumbnail.webp",
+      "source_sha256": "294764d759e3900b3f55d935b85fab31d69a63fcd1271ac0fc6f3b953dcc6866",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3880,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/heenakshi-bhansali.jpg",
+      "local_path": "academics/assets/portrait-thumbnails/heenakshi-bhansali-68a00c8b4ff4-thumbnail.webp",
+      "source_sha256": "68a00c8b4ff4e67ba4e9d28e3b067d30bf8d8858f894235227e28b210e9a4717",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 7838,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/hossein-martin-fazeli.webp",
+      "local_path": "academics/assets/portrait-thumbnails/hossein-martin-fazeli-58d8befa66dd-thumbnail.webp",
+      "source_sha256": "58d8befa66dd04d0db0a2aa7fce64d76577bd4a0662bd2a9480905861e560a7d",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3070,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/jivan-pandharinath-biradar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/jivan-pandharinath-biradar-5041d605ec11-thumbnail.webp",
+      "source_sha256": "5041d605ec11b45e2d75776173981fc1c994801e15a730aa099b79054f2ae068",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3952,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/kamakshi-goyal.webp",
+      "local_path": "academics/assets/portrait-thumbnails/kamakshi-goyal-281149dd0d5d-thumbnail.webp",
+      "source_sha256": "281149dd0d5d21a92b70b598b69608023537c690fb44e65abad5820f8eb320d3",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3254,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/kausik-bhattacharyya.webp",
+      "local_path": "academics/assets/portrait-thumbnails/kausik-bhattacharyya-c98c7bec643e-thumbnail.webp",
+      "source_sha256": "c98c7bec643eec53865587bf75b4c866c035551c3c3ac5a33c7277f2bbe6d11d",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4292,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/maisam-ali.webp",
+      "local_path": "academics/assets/portrait-thumbnails/maisam-ali-ad59c4e59aed-thumbnail.webp",
+      "source_sha256": "ad59c4e59aed3d8614c7ec19a47882241f48764c304c24397ba0e246104b11f3",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 2550,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/mandar-bopardikar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/mandar-bopardikar-b79c9172253c-thumbnail.webp",
+      "source_sha256": "b79c9172253c626adc5ef6947686008e19ca8d9a4fcaf526608783ee8ee3ea61",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 6304,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/mrudul-chilmulwar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/mrudul-chilmulwar-adeb794046a0-thumbnail.webp",
+      "source_sha256": "adeb794046a0de6d8e43d2329c8d6f62eafd97e226abd712f7472236c2a49ef4",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4664,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/neha-bokey.webp",
+      "local_path": "academics/assets/portrait-thumbnails/neha-bokey-b2291bf94248-thumbnail.webp",
+      "source_sha256": "b2291bf94248fd3e6cb91b38c2cd42fff41a4a25d52cd0d290206328cac55f53",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 6436,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/nikhilesh-joardar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/nikhilesh-joardar-7f06dd890cfb-thumbnail.webp",
+      "source_sha256": "7f06dd890cfb0d0e51289aa3ccf903d9623b2e3d592e2eb578d5d576e8b0be24",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4096,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/pallavi-choudhary.webp",
+      "local_path": "academics/assets/portrait-thumbnails/pallavi-choudhary-7867451ff6b5-thumbnail.webp",
+      "source_sha256": "7867451ff6b5336b60e713478aeff5bb135baf9f584e041445d686a2ca903ac9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 5358,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/prajakta-vishal-adsule.webp",
+      "local_path": "academics/assets/portrait-thumbnails/prajakta-vishal-adsule-750d8eba045b-thumbnail.webp",
+      "source_sha256": "750d8eba045b512e5fedcdee14ccf14ec95f1e22978a8af512a58af4d53b0929",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 2836,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/raj-agarwal.webp",
+      "local_path": "academics/assets/portrait-thumbnails/raj-agarwal-11187d886f78-thumbnail.webp",
+      "source_sha256": "11187d886f784a624c4cdefdf5d9c145c80a6893a7aa51ac3676aa801b00bf34",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4166,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/rehan-deshmukh.webp",
+      "local_path": "academics/assets/portrait-thumbnails/rehan-deshmukh-146364679f5f-thumbnail.webp",
+      "source_sha256": "146364679f5f1058f99c82af5f168709702253c56fe74202cbd4da115c107464",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3236,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/rucha-deshpande.webp",
+      "local_path": "academics/assets/portrait-thumbnails/rucha-deshpande-d3973081a0e4-thumbnail.webp",
+      "source_sha256": "d3973081a0e4bf12d4bf71c7491f3fb8c3f1621f5e6d47f65b005a67c806d255",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4002,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/sachin-bhimrao-bhoite.jpg",
+      "local_path": "academics/assets/portrait-thumbnails/sachin-bhimrao-bhoite-8fb80fadaacf-thumbnail.webp",
+      "source_sha256": "8fb80fadaacffe9ca5562704187d6cca473f0548f7fa50241e7e14ef9618b32d",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 5048,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/saloni-kumar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/saloni-kumar-eefe96d0bd50-thumbnail.webp",
+      "source_sha256": "eefe96d0bd505d6cb5bbebaf7c59243c05e9af49679f115ee2fc544ba47454ed",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4568,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/saurabh-ardra.webp",
+      "local_path": "academics/assets/portrait-thumbnails/saurabh-ardra-59233cba3f35-thumbnail.webp",
+      "source_sha256": "59233cba3f3571c210c10535b811899bb4cde1543d585739620e9fe1febca21d",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3890,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/shamim-mohammad.webp",
+      "local_path": "academics/assets/portrait-thumbnails/shamim-mohammad-678790ecfec9-thumbnail.webp",
+      "source_sha256": "678790ecfec9d24b8920b265f3d526d6c40738038d2c80da2149bbe1bc27b6f9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3070,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/sharbani-kaushik.webp",
+      "local_path": "academics/assets/portrait-thumbnails/sharbani-kaushik-403173c9306c-thumbnail.webp",
+      "source_sha256": "403173c9306c6ef797e0f148dda1f753f743cda91e02bc31717245123a2724f9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4752,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/shilpa-samir-chapadgaonkar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/shilpa-samir-chapadgaonkar-24d99445fe15-thumbnail.webp",
+      "source_sha256": "24d99445fe1537058d790cb15382017e08dc67bb1cad739c3a439b0e9791fdf9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 7414,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/sudeepta-banerjee.webp",
+      "local_path": "academics/assets/portrait-thumbnails/sudeepta-banerjee-4036dfe224c0-thumbnail.webp",
+      "source_sha256": "4036dfe224c0a2407ed0d7dac1a49cf0df6a6aee63f7941700bb497ac93f8df3",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 6276,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/suman-devadula.webp",
+      "local_path": "academics/assets/portrait-thumbnails/suman-devadula-85ea0e149767-thumbnail.webp",
+      "source_sha256": "85ea0e14976793941012f7d3a01880085e5ac11e4bc16c54d457545f374564e9",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4664,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/sunil-machindra-adhav.webp",
+      "local_path": "academics/assets/portrait-thumbnails/sunil-machindra-adhav-b8df8ff99b20-thumbnail.webp",
+      "source_sha256": "b8df8ff99b206982054571c29e3a07522b74034ee1493e3f7420a0f17f61e8cb",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4172,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/sushil-kumar-gupta.webp",
+      "local_path": "academics/assets/portrait-thumbnails/sushil-kumar-gupta-2e99fd14ba91-thumbnail.webp",
+      "source_sha256": "2e99fd14ba9121b25e0fe3b2be5865d760c231cb1b75a09bc24fdcc86547275f",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 6186,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/swapnil-mahesh-gupta.webp",
+      "local_path": "academics/assets/portrait-thumbnails/swapnil-mahesh-gupta-c95240b28302-thumbnail.webp",
+      "source_sha256": "c95240b28302ebd30c4c31f1486e79ba1dfe86fc39617734f129e84903c45a65",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 3408,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/swati-deepak-bankar.webp",
+      "local_path": "academics/assets/portrait-thumbnails/swati-deepak-bankar-0228f29285f9-thumbnail.webp",
+      "source_sha256": "0228f29285f96e3774bed50ea0fa4e0a140cc5868aced086fc40621db8a209a7",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4560,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/tejaswini-bharati.webp",
+      "local_path": "academics/assets/portrait-thumbnails/tejaswini-bharati-21ddf9975fe4-thumbnail.webp",
+      "source_sha256": "21ddf9975fe4cae1922a3c4d02bacf12eda3badac71971363d66dc1d4d7677c3",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 4242,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "source_path": "people/assets/campus/vandana-kushwaha.jpg",
+      "local_path": "academics/assets/portrait-thumbnails/vandana-kushwaha-afd180b86c23-thumbnail.webp",
+      "source_sha256": "afd180b86c23e49a8e540ce1bef07012a0b19a348b2959a88c7cb7e2a5ce2159",
+      "format": "webp",
+      "width": 192,
+      "height": 240,
+      "bytes": 5096,
+      "role": "thumbnail",
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    }
+  ]
+}

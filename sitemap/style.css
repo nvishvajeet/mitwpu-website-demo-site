@@ -1,10 +1,12 @@
 .sitemap-main {
-  padding-block: 72px 100px;
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
 }
 
 .sitemap-main > header {
-  margin-bottom: 58px;
-  padding-bottom: 42px;
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 4px solid var(--gold);
 }
 
@@ -13,67 +15,151 @@
   font-size: clamp(3rem, 7vw, 5rem);
 }
 
-.sitemap-main h2 {
-  margin-bottom: 20px;
-  font-size: 1.55rem;
+.sitemap-main > header p:last-child {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--muted);
 }
 
-.sitemap-main ul {
+.sitemap-search {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 46rem;
+}
+
+.sitemap-search label {
+  color: var(--heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.sitemap-search input {
+  width: 100%;
+  min-height: 3.25rem;
+  padding: 0.75rem 1rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 0.35rem;
+  font: inherit;
+}
+
+.sitemap-search input:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.sitemap-status {
+  min-height: 1.5rem;
+  margin: 0.7rem 0 1.75rem;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+}
+
+.sitemap-groups {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.sitemap-group {
+  overflow: clip;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+}
+
+.sitemap-group summary {
+  display: flex;
+  min-height: 3.7rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.8rem 1rem;
+  color: var(--heading);
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 750;
+}
+
+.sitemap-group summary:hover {
+  color: var(--blue);
+}
+
+.sitemap-group summary span:last-child {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sitemap-group[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.sitemap-group ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.sitemap-main li {
-  padding-block: 8px;
+.sitemap-group li {
+  display: grid;
+  min-width: 0;
+  gap: 0.2rem;
+  align-content: start;
+  padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--line);
 }
 
-.sitemap-main li a {
+.sitemap-group li:nth-child(odd) {
+  border-right: 1px solid var(--line);
+}
+
+.sitemap-group li a {
   color: var(--heading);
+  font-weight: 700;
+  line-height: 1.35;
   text-decoration: none;
 }
 
-.sitemap-main li a:hover {
+.sitemap-group li a:hover,
+.sitemap-group li a:focus-visible {
   color: var(--blue);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
-.sitemap-core {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 70px;
+.sitemap-group code {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.68rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.sitemap-academics {
-  margin-top: 78px;
-  padding-top: 64px;
-  border-top: 1px solid var(--line-strong);
+.sitemap-empty {
+  margin: 2rem 0 0;
+  padding: 1rem;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
 }
 
-.sitemap-academics > ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 60px;
+[hidden] {
+  display: none !important;
 }
 
-.sitemap-academics > ul > li {
-  padding-block: 18px;
-}
-
-.sitemap-academics ul ul {
-  margin: 8px 0 0 17px;
-}
-
-.sitemap-academics ul ul li {
-  border-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.78rem;
-}
-
-@media (max-width: 700px) {
-  .sitemap-core,
-  .sitemap-academics > ul {
+@media (max-width: 48rem) {
+  .sitemap-group ul {
     grid-template-columns: 1fr;
+  }
+
+  .sitemap-group li:nth-child(odd) {
+    border-right: 0;
   }
 }

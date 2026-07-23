@@ -16,10 +16,20 @@
     "generated_html_routes": 188,
     "search_index_records": 186,
     "skipped_source_records": 16,
-    "local_media_files": 84,
+    "local_media_files": 94,
+    "optimized_media_derivatives": 6,
     "failed_media_downloads": 0,
     "document_link_references": 15,
-    "review_flags": 3
+    "review_flags": 3,
+    "first_layer_routes": 8,
+    "first_layer_routes_with_media": 8,
+    "latest_rail_items": 4,
+    "advisor_context_routes": 15,
+    "resident_researcher_records": 0,
+    "validated_local_links": 4148,
+    "validation_issues": 0,
+    "media_policy_errors": 0,
+    "media_policy_warnings": 0
   },
   "routes_by_type": {
     "about": 1,
@@ -323,5 +333,103 @@
     "https://wpugoa.edu.in/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning": "/goa/news/wpu-goa-signs-mou-with-makers-asylum-foundation-to-advance-innovation-and-maker-led-learning/",
     "https://wpugoa.edu.in/wpu-goa-x-bni-goa-region-leadership-that-delivers-one-day-leadership-conclave-past-event": "/goa/events/wpu-goa-x-bni-goa-region-leadership-that-delivers-one-day-leadership-conclave-past-event/",
     "https://wpugoa.edu.in/written-essay": "/goa/admissions/written-essay/"
+  },
+  "first_layer_media_coverage": {
+    "/goa/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/3a4d0b914f3f1f20-group-scaled-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/about/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/3a4d0b914f3f1f20-group-scaled-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/academics/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/3701891b56b5a5b4-1f15b84e6922b30404e20931daff90a98604c27d-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/admissions/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/0c88c9d959040cde-goupp1-scaled-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/events/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/0c88c9d959040cde-goupp1-scaled-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/news/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/7524a8bfe582d5dc-maker-asylum-banner-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/people/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/3a4d0b914f3f1f20-group-scaled-hero-1600x900.webp"
+      ],
+      "covered": true
+    },
+    "/goa/research/": {
+      "media_count": 1,
+      "local_urls": [
+        "/goa/assets/media/935ba27d70994198-92103d5db4b97a313e7c83e3504e46c82f2d8e56-hero-1600x900.webp"
+      ],
+      "covered": true
+    }
+  },
+  "role_classification": {
+    "leadership_records": 3,
+    "advisor_context_routes": 15,
+    "resident_researcher_records": 0,
+    "future_hiring_model_published": false
+  },
+  "validation": {
+    "schema": "wpu-goa.export-validation.v1",
+    "generated_html_routes": 188,
+    "expected_routes": 188,
+    "validated_local_links": 4148,
+    "validated_local_assets": 300,
+    "first_layer_routes_covered": 8,
+    "latest_rail_items": 4,
+    "advisor_context_routes": 15,
+    "resident_researcher_records": 0,
+    "issues": []
+  },
+  "media_policy_validation": {
+    "files": 8,
+    "errors": 0,
+    "warnings": 0,
+    "layers": {
+      "layer-0": {
+        "files": 0,
+        "errors": 0,
+        "warnings": 0
+      },
+      "layer-1": {
+        "files": 8,
+        "errors": 0,
+        "warnings": 0
+      },
+      "layer-2": {
+        "files": 0,
+        "errors": 0,
+        "warnings": 0
+      }
+    }
   }
 }

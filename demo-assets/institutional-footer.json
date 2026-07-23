@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "name": "MAEER’s MIT World Peace University",
+    "location": "Pune, Maharashtra, India"
+  },
+  "groups": [
+    {
+      "label": "University",
+      "links": [
+        {"label": "About", "local": "about/"},
+        {"label": "Mission & Values", "local": "about-us/about-mit/"},
+        {"label": "MAEER", "local": "about/maeer/"}
+      ]
+    },
+    {
+      "label": "Support and obligations",
+      "links": [
+        {"label": "Accessibility", "local": "accessibility/"},
+        {"label": "Anti-ragging", "local": "student-affairs/anti-ragging-committee/"},
+        {"label": "Mandatory disclosures", "local": "mandatory-disclosures/"}
+      ]
+    },
+    {
+      "label": "Information",
+      "links": [
+        {"label": "Privacy", "local": "privacy-policy/"},
+        {"label": "Copyright", "local": "copyright-statement/"},
+        {"label": "Sitemap", "local": "sitemap/"}
+      ]
+    },
+    {
+      "label": "Quick links",
+      "hide_heading": true,
+      "links": [
+        {"label": "People", "local": "people/"},
+        {"label": "Search", "local": "search/"},
+        {"label": "Intranet", "local": "intranet/"},
+        {"label": "Contact", "local": "contact-us/"}
+      ]
+    }
+  ]
+}
