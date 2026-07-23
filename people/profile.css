@@ -148,6 +148,14 @@
   border-top: 1px solid var(--line);
 }
 
+.profile-main-sections,
+.profile-research,
+.profile-qualifications,
+.profile-links-section {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .education-timeline {
   position: relative;
   margin: 0;

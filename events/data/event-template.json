@@ -1,0 +1,48 @@
+{
+  "publicationStatus": "draft",
+  "slug": "replace-with-event-slug",
+  "type": "Workshop",
+  "status": "Registration opens soon",
+  "title": "Replace with event title",
+  "subtitle": "One clear sentence describing the academic purpose",
+  "startDate": "2027-01-01",
+  "endDate": "2027-01-01",
+  "dateLabel": "Date to be confirmed",
+  "timezone": "Asia/Kolkata",
+  "venue": "Venue to be confirmed",
+  "attendanceMode": "offline",
+  "audience": "State the intended participants",
+  "summary": "Use two concise sentences explaining the question, subject, or purpose of the event.",
+  "overview": [
+    "Add only information that is useful to a prospective participant."
+  ],
+  "themes": [
+    "Replace with a scientific or academic theme"
+  ],
+  "programme": [
+    {
+      "label": "09:30",
+      "title": "Opening session",
+      "summary": "Replace with the session purpose.",
+      "venue": ""
+    }
+  ],
+  "people": [
+    {
+      "name": "Replace with verified name",
+      "role": "Speaker",
+      "affiliation": "Replace with verified affiliation",
+      "shortBio": "Use one short, verified paragraph.",
+      "profileUrl": ""
+    }
+  ],
+  "registration": {
+    "label": "Register",
+    "url": "",
+    "deadline": ""
+  },
+  "resources": [],
+  "contactEmail": "",
+  "sourceUrl": "",
+  "sourceLabel": "Official event page"
+}

@@ -200,6 +200,7 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   padding: clamp(1.25rem, 4vw, 3.5rem);
   background: var(--surface);
   border: 1px solid var(--line);
+  overflow-wrap: anywhere;
 }
 .prose > :first-child { margin-top: 0; }
 .prose p, .prose li { max-width: 75ch; }
@@ -221,6 +222,7 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   background: var(--surface);
   border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
 }
 .related h2 { margin: 0 0 1rem; font-size: 1.35rem; }
 .related ul { display: grid; gap: .7rem; margin: 0; padding-left: 1.1rem; }
