@@ -1,8 +1,8 @@
 {
-  "percentage": 88,
-  "phase": "Intranet operations and rendered desktop/mobile validation",
-  "updated_at": "23 July 2026, 19:08 CEST",
-  "eta": "Full crawl-backed demo: approximately 2–3 focused hours",
+  "percentage": 100,
+  "phase": "Crawl-backed public demo deployed",
+  "updated_at": "23 July 2026, 19:35 CEST",
+  "eta": "Demo complete; production reconciliation starts when access is provided",
   "pune_pages": 2044,
   "pune_media": 2017,
   "goa_pages": 188,
@@ -10,16 +10,16 @@
   "completed": [
     "Complete MIT-WPU crawl retained with provenance and unresolved URLs",
     "PostgreSQL, Wagtail CMS, public directory, research groups, events, and news",
-    "2,232 crawl-backed Pune and Goa pages with localised media",
+    "2,233 sitemap routes built from 2,232 Pune and Goa content pages",
     "Single stable navigation header, responsive layout, and light/dark themes",
     "Faculty self-service profile editing and faculty-owned research-site forms",
     "All 14 schools visible in one grouped directory without pagination",
-    "Core staff intranet services and a small network-operations interface"
+    "Seven verified intranet services with staff and shared access rules",
+    "Desktop and mobile browser validation completed; all flagged routes rechecked clean",
+    "Public build committed, pushed, and deployed"
   ],
-  "in_progress": [
-    "Staff/student intranet separation and rendered desktop/mobile crawling"
-  ],
+  "in_progress": [],
   "blockers": [
-    "Tomorrow's private production export is still required for final source-of-truth reconciliation"
+    "Production export and server access are required only for source-of-truth reconciliation and cutover"
   ]
 }
