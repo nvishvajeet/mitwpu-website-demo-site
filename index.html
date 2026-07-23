@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Working demonstration of a clear, accessible academic and research website for MIT-WPU.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <title>MIT-WPU Academic &amp; Research Website — Working Demo</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("site-theme");
+        var dark = saved === "dark" ||
+          (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="demo-assets/site.css">
+  <script src="demo-assets/theme.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="status-bar">
+    <div class="shell status-inner">
+      <p>Unofficial working demonstration for review</p>
+      <a href="https://mitwpu.edu.in/">Official MIT-WPU website <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-current="page">
+        <strong>MIT World Peace University</strong>
+        <span>Academic &amp; research website demo</span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="research/">Research</a>
+          <a href="science/">Science</a>
+          <a href="people/">People</a>
+          <a href="search/">Search</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false">
+          <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+          <span class="switch-thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="shell hero-inner">
+        <div>
+          <p class="eyebrow">Website working demonstration</p>
+          <h1 id="page-title">Academic work,<br>clearly organised.</h1>
+        </div>
+        <p class="hero-lede">
+          A unified home for departments, research groups, shared facilities,
+          and the people behind them.
+        </p>
+      </div>
+    </section>
+
+    <section class="directory" aria-labelledby="explore-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Current scope</p>
+          <h2 id="explore-title">Explore the demonstration</h2>
+        </div>
+
+        <div class="directory-groups">
+          <section class="directory-group" aria-labelledby="research-title">
+            <h3 id="research-title">Research</h3>
+            <div class="link-list">
+              <a class="directory-link" href="research/">
+                <span>
+                  <strong>Research at MIT-WPU</strong>
+                  <small>Overview, leadership, facilities and groups</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="directory-link" href="facilities/">
+                <span>
+                  <strong>Research facilities</strong>
+                  <small>Significant instruments and shared capabilities</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="directory-link" href="groups/">
+                <span>
+                  <strong>Research groups</strong>
+                  <small>Directory of active groups and centres</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="directory-group" aria-labelledby="academic-title">
+            <h3 id="academic-title">Academic</h3>
+            <div class="link-list">
+              <a class="directory-link" href="science/">
+                <span>
+                  <strong>School of Science</strong>
+                  <small>Physics, chemistry, mathematics and life sciences</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="directory-link" href="people/">
+                <span>
+                  <strong>People directory</strong>
+                  <small>Faculty, researchers and professional staff</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="directory-link" href="search/">
+                <span>
+                  <strong>Site search</strong>
+                  <small>Find people, groups, facilities and pages</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="directory-group" aria-labelledby="groups-title">
+            <h3 id="groups-title">Group websites</h3>
+            <div class="link-list">
+              <a class="directory-link" href="photonics/">
+                <span>
+                  <strong>Photonics Research Group</strong>
+                  <small>Research, people and publications</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="directory-link" href="quantum/">
+                <span>
+                  <strong>Quantum Science &amp; Technology</strong>
+                  <small>Research, people, publications and courses</small>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>MIT-WPU website working demonstration</p>
+      <nav aria-label="Footer navigation">
+        <a href="research/">Research</a>
+        <a href="science/">Science</a>
+        <a href="people/">People</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

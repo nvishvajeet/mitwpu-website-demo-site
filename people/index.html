@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Search the MIT-WPU people directory by name, department, and research interest.">
+  <title>People Directory · MIT-WPU</title>
+  <link rel="icon" type="image/svg+xml" href="../research/favicon.svg">
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}})();</script>
+  <link rel="stylesheet" href="style.css?v=20260723d">
+  <script src="../group-assets/theme.js" defer></script>
+  <script src="../group-assets/people-order.js" defer></script>
+  <script src="../science/content/faculty.js" defer></script>
+  <script src="directory.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#directory">Skip to directory</a>
+
+  <div class="institution-bar">
+    <div class="shell institution-inner">
+      <a class="institution-name" href="../">MIT World Peace University · Pune, India</a>
+      <nav class="institution-links" aria-label="Institutional links">
+        <a href="../science/">Science departments</a>
+        <a href="../search/">Search the website</a>
+        <a href="https://mitwpu.edu.in/" target="_blank" rel="noopener noreferrer">University <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../">
+        <strong>People Directory</strong>
+        <small>MIT World Peace University</small>
+      </a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+        <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+        <span class="switch-thumb" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="directory">
+    <section class="directory-intro">
+      <div class="shell directory-intro-grid">
+        <div>
+          <p class="eyebrow">People</p>
+          <h1>Find faculty and researchers.</h1>
+          <p class="intro-copy">The first release covers the School of Science and Environmental Studies. The same directory model can extend across MIT-WPU without changing how people search it.</p>
+        </div>
+        <aside aria-label="Directory scope">
+          <strong id="directory-total">68</strong>
+          <span>science faculty records</span>
+          <small>Based on currently published university profiles; employment status remains subject to institutional verification.</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="directory-section">
+      <div class="shell">
+        <form class="directory-filters" id="directory-filters" role="search">
+          <div class="filter-field filter-name">
+            <label for="name-filter">Name</label>
+            <input id="name-filter" name="name" type="search" autocomplete="off" placeholder="Search by name">
+          </div>
+          <div class="filter-field">
+            <label for="department-filter">Department</label>
+            <select id="department-filter" name="department">
+              <option value="">All departments</option>
+            </select>
+          </div>
+          <div class="filter-field filter-research">
+            <label for="research-filter">Research interest</label>
+            <input id="research-filter" name="research" type="search" autocomplete="off" placeholder="e.g. photonics or statistics">
+          </div>
+          <button class="clear-filters" id="clear-filters" type="reset">Clear filters</button>
+        </form>
+
+        <div class="directory-status">
+          <p id="result-count" tabindex="-1" role="status" aria-live="polite" aria-atomic="true">Loading directory…</p>
+          <label for="sort-order">Sort
+            <select id="sort-order" name="sort">
+              <option value="name">Academic role, then surname</option>
+              <option value="department">Department, role, then surname</option>
+            </select>
+          </label>
+        </div>
+
+        <noscript>
+          <p class="notice">JavaScript is required to filter this directory. Department people pages remain available from the <a href="../science/">School of Science page</a>.</p>
+        </noscript>
+
+        <div class="people-grid" id="people-grid" aria-describedby="result-count"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <h2>No matching people</h2>
+          <p>Try a shorter name, a broader research term, or clear one of the filters.</p>
+          <button type="button" id="empty-clear">Clear all filters</button>
+        </div>
+
+        <nav class="pagination" id="pagination" aria-label="Directory pages" hidden>
+          <button type="button" id="previous-page">← Previous</button>
+          <span id="page-status">Page 1 of 1</span>
+          <button type="button" id="next-page">Next →</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <strong>MIT-WPU People Directory</strong>
+        <p>Pune, India</p>
+      </div>
+      <nav aria-label="Directory links">
+        <a href="../science/">Science departments</a>
+        <a href="../groups/">Research groups</a>
+        <a href="../facilities/">Research facilities</a>
+      </nav>
+      <div>
+        <a href="../search/">Site search</a>
+        <span>© 2026 MIT-WPU</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

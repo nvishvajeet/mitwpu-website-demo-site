@@ -1,0 +1,214 @@
+@import url("../group-assets/site.css?v=20260723d");
+
+:root {
+  --shell: 1080px;
+}
+
+.profile-context {
+  background: var(--subtle);
+  border-bottom: 1px solid var(--line);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.profile-context-inner {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.context-back,
+.department-context-link {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 3px 11px;
+  color: var(--blue);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 650;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.context-back:hover,
+.context-back:focus-visible {
+  color: var(--blue-dark);
+  background: var(--blue-pale);
+  border-color: var(--line);
+}
+
+.context-back:focus-visible,
+.department-context-link:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.department-context-link {
+  padding-inline: 0;
+  color: var(--muted);
+  border-radius: 0;
+  font-size: 0.72rem;
+}
+
+.department-context-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.profile-hero {
+  background: var(--subtle);
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-hero-grid {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  min-height: 390px;
+  align-items: start;
+  gap: clamp(44px, 8vw, 88px);
+  padding-block: 54px;
+}
+
+.profile-photo,
+.profile-placeholder {
+  width: 220px;
+  height: 270px;
+  background: var(--blue-pale);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+}
+
+.profile-photo {
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.profile-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.profile-identity {
+  max-width: 720px;
+}
+
+.profile-identity h1 {
+  margin-bottom: 20px;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+}
+
+.profile-designation {
+  margin-bottom: 0;
+  color: var(--copy);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+}
+
+.profile-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(230px, 0.6fr);
+  gap: clamp(50px, 8vw, 100px);
+  min-height: 310px;
+  padding-block: 68px 82px;
+}
+
+.profile-body-single {
+  grid-template-columns: minmax(0, 760px);
+}
+
+.profile-body-single .profile-links-section {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.profile-research h2 {
+  margin-bottom: 20px;
+  font-size: clamp(1.9rem, 3vw, 2.45rem);
+}
+
+.profile-research > p:last-child {
+  max-width: 700px;
+  margin-bottom: 0;
+  color: var(--copy);
+  font-size: 1.12rem;
+}
+
+.profile-links-section {
+  padding-left: 26px;
+  border-left: 1px solid var(--line);
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-links a {
+  display: inline-block;
+  padding-block: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+@media (max-width: 760px) {
+  .profile-nav a {
+    display: none;
+  }
+
+  .profile-context-inner {
+    min-height: 46px;
+  }
+
+  .department-context-link {
+    display: none;
+  }
+
+  .profile-hero-grid {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 30px;
+    padding-block: 42px 50px;
+  }
+
+  .profile-photo,
+  .profile-placeholder {
+    width: 150px;
+    height: 184px;
+  }
+
+  .profile-identity h1 {
+    margin-bottom: 15px;
+    font-size: clamp(2.35rem, 12vw, 3.5rem);
+  }
+
+  .profile-body {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 42px;
+    padding-block: 48px 60px;
+  }
+
+  .profile-links-section {
+    padding: 28px 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo,
+  .profile-placeholder {
+    width: 128px;
+    height: 157px;
+  }
+}

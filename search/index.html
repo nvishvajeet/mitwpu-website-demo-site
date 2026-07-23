@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Search MIT-WPU departments, people, research groups, facilities, programmes, and publications.">
+  <title>Search · MIT-WPU</title>
+  <link rel="icon" type="image/svg+xml" href="../research/favicon.svg">
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}})();</script>
+  <link rel="stylesheet" href="style.css?v=20260723d">
+  <script src="../group-assets/theme.js" defer></script>
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#site-search">Skip to search</a>
+
+  <div class="institution-bar">
+    <div class="shell institution-inner">
+      <a class="institution-name" href="../">MIT World Peace University · Pune, India</a>
+      <nav class="institution-links" aria-label="Institutional links">
+        <a href="../people/">People directory</a>
+        <a href="../science/">Science departments</a>
+        <a href="https://mitwpu.edu.in/" target="_blank" rel="noopener noreferrer">University <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../">
+        <strong>Website Search</strong>
+        <small>MIT World Peace University</small>
+      </a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+        <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+        <span class="switch-thumb" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="site-search">
+    <section class="search-hero">
+      <div class="shell">
+        <p class="eyebrow">Search</p>
+        <h1>Find people, research, and academic information.</h1>
+        <p>This preview search runs entirely in the browser from a small, generated index. It does not send queries to an external service.</p>
+
+        <form id="search-form" class="search-form" role="search">
+          <div class="query-field">
+            <label for="search-query">Search the website</label>
+            <input id="search-query" name="q" type="search" autocomplete="off" placeholder="Try a person, research topic, department, or programme" autofocus>
+            <span class="key-hint" aria-hidden="true">Press / to search</span>
+          </div>
+          <div class="search-filter">
+            <label for="type-filter">Content type</label>
+            <select id="type-filter" name="type">
+              <option value="">All content</option>
+            </select>
+          </div>
+          <div class="search-filter">
+            <label for="department-filter">Department</label>
+            <select id="department-filter" name="department">
+              <option value="">All departments</option>
+            </select>
+          </div>
+          <button type="reset" id="clear-search">Clear</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="shell results-layout">
+        <div class="results-heading">
+          <p id="search-status" tabindex="-1" role="status" aria-live="polite" aria-atomic="true">Loading search index…</p>
+          <small>Use <kbd>/</kbd> to focus search and <kbd>Esc</kbd> to clear the query.</small>
+        </div>
+
+        <ol id="search-results" class="search-results"></ol>
+
+        <div id="search-empty" class="search-empty" hidden>
+          <h2>No matching pages</h2>
+          <p>Check the spelling, try fewer words, or remove one of the filters.</p>
+        </div>
+
+        <div id="search-error" class="search-empty" hidden>
+          <h2>Search is temporarily unavailable</h2>
+          <p>The local index could not be loaded. You can still browse the <a href="../people/">people directory</a> or <a href="../science/">science departments</a>.</p>
+        </div>
+
+        <button class="show-more" id="show-more" type="button" hidden>Show more results</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <strong>MIT-WPU Website Search</strong>
+        <p>Pune, India</p>
+      </div>
+      <nav aria-label="Search links">
+        <a href="../people/">People directory</a>
+        <a href="../groups/">Research groups</a>
+        <a href="../facilities/">Research facilities</a>
+      </nav>
+      <span>© 2026 MIT-WPU</span>
+    </div>
+  </footer>
+</body>
+</html>
