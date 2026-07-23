@@ -1,6 +1,6 @@
 {
   "schema": "wpu-goa.search-index.v1",
-  "count": 185,
+  "count": 186,
   "records": [
     {
       "route": "/goa/",
@@ -1286,9 +1286,9 @@
     {
       "route": "/goa/people/",
       "title": "University leadership",
-      "description": "Leadership roles verified on the WPU Goa public About page, kept separate from advisers, centre members and event guests.",
+      "description": "Leadership roles verified on the WPU Goa public About page, kept separate from advisors, centre members and event guests.",
       "category": "People Index",
-      "search_text": "university leadership leadership roles verified on the wpu goa public about page, kept separate from advisers, centre members and event guests. people index"
+      "search_text": "university leadership leadership roles verified on the wpu goa public about page, kept separate from advisors, centre members and event guests. people index"
     },
     {
       "route": "/goa/people/vijayan-karippal/",
@@ -1296,6 +1296,13 @@
       "description": "COO and Registrar",
       "category": "University leadership",
       "search_text": "dr vijayan karippal coo and registrar university leadership"
+    },
+    {
+      "route": "/goa/latest/",
+      "title": "Latest from WPU Goa",
+      "description": "News and events in reverse chronological order. Older items remain searchable without competing with the current update.",
+      "category": "Latest",
+      "search_text": "latest from wpu goa news and events in reverse chronological order. older items remain searchable without competing with the current update. latest"
     }
   ]
 }

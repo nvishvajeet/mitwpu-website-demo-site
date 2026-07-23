@@ -30,6 +30,29 @@
     });
   }
 
+  var archiveButton = document.querySelector("[data-archive-more]");
+  var archiveGrid = document.querySelector("[data-archive-grid]");
+  if (archiveButton && archiveGrid) {
+    archiveButton.addEventListener("click", function () {
+      var hidden = Array.prototype.slice.call(
+        archiveGrid.querySelectorAll(".archive-item[hidden]")
+      );
+      hidden.slice(0, 12).forEach(function (item) {
+        item.hidden = false;
+      });
+      var remaining = archiveGrid.querySelectorAll(".archive-item[hidden]").length;
+      if (remaining === 0) {
+        archiveButton.closest(".archive-controls").hidden = true;
+      } else {
+        archiveButton.textContent = "Show 12 more";
+        archiveButton.setAttribute(
+          "aria-label",
+          "Show 12 more archive items; " + remaining + " remain"
+        );
+      }
+    });
+  }
+
   var form = document.querySelector("[data-search-form]");
   var input = document.querySelector("[data-search-input]");
   var results = document.querySelector("[data-search-results]");

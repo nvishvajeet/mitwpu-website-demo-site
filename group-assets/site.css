@@ -1206,10 +1206,15 @@ h3 {
   }
 
   .site-nav {
-    flex-wrap: wrap;
-    gap: 2px 18px;
-    overflow: visible;
+    min-height: 43px;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
   }
+
+  .site-nav a { flex: 0 0 auto; white-space: nowrap; }
 
   .breadcrumbs {
     min-height: 0;

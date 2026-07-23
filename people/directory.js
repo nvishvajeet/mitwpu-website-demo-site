@@ -214,8 +214,22 @@
     state.page = Math.min(state.page, pageCount);
     const start = (state.page - 1) * pageSize;
     const visible = matches.slice(start, start + pageSize);
+    const previousGridHeight = Math.ceil(elements.grid.getBoundingClientRect().height);
+    const paginationTop = options.preservePagination && !elements.pagination.hidden
+      ? elements.pagination.getBoundingClientRect().top
+      : null;
 
+    if (matches.length > pageSize && previousGridHeight > 0) {
+      elements.grid.style.minHeight = `${previousGridHeight}px`;
+    } else {
+      elements.grid.style.minHeight = "";
+    }
     elements.grid.replaceChildren(...visible.map(personCard));
+    if (matches.length > pageSize) {
+      const renderedGridHeight = Math.ceil(elements.grid.scrollHeight);
+      elements.grid.style.minHeight =
+        `${Math.max(previousGridHeight, renderedGridHeight)}px`;
+    }
     elements.grid.hidden = matches.length === 0;
     elements.empty.hidden = matches.length !== 0;
     elements.count.textContent = `${matches.length} ${matches.length === 1 ? "person" : "people"} found`;
@@ -226,9 +240,17 @@
     elements.pageStatus.textContent = `Page ${state.page} of ${pageCount}`;
 
     writeUrlState();
+    if (paginationTop !== null) {
+      const movement = elements.pagination.getBoundingClientRect().top - paginationTop;
+      if (Math.abs(movement) > 0.5) {
+        const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scrollBy(0, movement);
+        document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      }
+    }
     if (options.focusResults) {
       elements.count.focus({ preventScroll: true });
-      document.querySelector("#directory").scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 
@@ -273,11 +295,11 @@
   elements.emptyClear.addEventListener("click", resetFilters);
   elements.previous.addEventListener("click", () => {
     state.page -= 1;
-    render({ focusResults: true });
+    render({ focusResults: true, preservePagination: true });
   });
   elements.next.addEventListener("click", () => {
     state.page += 1;
-    render({ focusResults: true });
+    render({ focusResults: true, preservePagination: true });
   });
 
   window.addEventListener("popstate", () => {

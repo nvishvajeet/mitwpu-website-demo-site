@@ -45777,7 +45777,7 @@
     "route": "/goa/people/",
     "page_type": "people-index",
     "title": "University leadership",
-    "description": "Leadership roles verified on the WPU Goa public About page, kept separate from advisers, centre members and event guests.",
+    "description": "Leadership roles verified on the WPU Goa public About page, kept separate from advisors, centre members and event guests.",
     "source_url": "https://wpugoa.edu.in/about-us/",
     "source_raw_path": "",
     "captured_at": "2026-07-23",
@@ -45811,6 +45811,20 @@
     ],
     "links": [],
     "output": "people/vijayan-karippal/index.html"
+  },
+  {
+    "route": "/goa/latest/",
+    "page_type": "latest",
+    "title": "Latest from WPU Goa",
+    "description": "News and events in reverse chronological order. Older items remain searchable without competing with the current update.",
+    "source_url": "",
+    "source_raw_path": "",
+    "captured_at": "2026-07-23",
+    "lastmod": "",
+    "hero_image": null,
+    "blocks": [],
+    "links": [],
+    "output": "latest/index.html"
   },
   {
     "route": "/goa/search/",

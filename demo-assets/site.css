@@ -53,6 +53,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -512,6 +513,22 @@ h3 {
   color: var(--copy);
   font-size: 0.93rem;
   line-height: 1.55;
+}
+
+.archive-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 35px;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.archive-link:hover {
+  color: var(--blue-dark);
 }
 
 .directory {
