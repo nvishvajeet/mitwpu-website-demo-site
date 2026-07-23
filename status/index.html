@@ -8,9 +8,9 @@
   <title>Development status · MIT-WPU demo</title>
   <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}})();</script>
   <link rel="stylesheet" href="../group-assets/site.css">
-  <link rel="stylesheet" href="status.css?v=20260723a">
+  <link rel="stylesheet" href="status.css?v=20260723b">
   <script src="../group-assets/theme.js" defer></script>
-  <script src="status.js?v=20260723a" defer></script>
+  <script src="status.js?v=20260723b" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -38,19 +38,19 @@
       <div class="shell hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Live development status</p>
-          <h1><span data-percentage>87</span>% complete</h1>
+          <h1><span data-percentage>88</span>% complete</h1>
         </div>
         <aside class="hero-aside">
           <p class="eyebrow">Current phase</p>
-          <p data-phase>Crawl-data propagation, media integration, and final validation</p>
+          <p data-phase>Intranet operations and rendered desktop/mobile validation</p>
         </aside>
       </div>
     </section>
     <section class="section">
       <div class="shell status-layout">
         <div>
-          <p class="status-updated">Updated <span data-updated>23 July 2026, 18:36 CEST</span> · refreshes automatically</p>
-          <div class="status-meter" role="progressbar" aria-label="Overall completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87"><span data-meter></span></div>
+          <p class="status-updated">Updated <span data-updated>23 July 2026, 19:08 CEST</span> · refreshes automatically</p>
+          <div class="status-meter" role="progressbar" aria-label="Overall completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><span data-meter></span></div>
           <dl class="status-counts">
             <div><dt>Pune pages</dt><dd data-pune-pages>2044</dd></div>
             <div><dt>Pune media</dt><dd data-pune-media>2017</dd></div>
@@ -60,9 +60,33 @@
           <p class="status-eta"><strong>Current ETA</strong><br><span data-eta>Full crawl-backed demo: approximately 2–3 focused hours</span></p>
         </div>
         <div class="status-work">
-          <section><p class="eyebrow">Completed</p><h2>Validated work</h2><ul class="status-list" data-completed></ul></section>
-          <section><p class="eyebrow">In progress</p><h2>Active work</h2><ul class="status-list" data-in-progress></ul></section>
-          <section data-blockers-section><p class="eyebrow">Blockers</p><h2>External inputs</h2><ul class="status-list" data-blockers></ul></section>
+          <section>
+            <p class="eyebrow">Completed</p>
+            <h2>Validated work</h2>
+            <ul class="status-list" data-completed>
+              <li>Complete MIT-WPU crawl retained with provenance and unresolved URLs</li>
+              <li>PostgreSQL, Wagtail CMS, public directory, research groups, events, and news</li>
+              <li>2,232 crawl-backed Pune and Goa pages with localised media</li>
+              <li>Single stable navigation header, responsive layout, and light/dark themes</li>
+              <li>Faculty self-service profile editing and faculty-owned research-site forms</li>
+              <li>All 14 schools visible in one grouped directory without pagination</li>
+              <li>Core staff intranet services and a small network-operations interface</li>
+            </ul>
+          </section>
+          <section>
+            <p class="eyebrow">In progress</p>
+            <h2>Active work</h2>
+            <ul class="status-list" data-in-progress>
+              <li>Staff/student intranet separation and rendered desktop/mobile crawling</li>
+            </ul>
+          </section>
+          <section data-blockers-section>
+            <p class="eyebrow">Blockers</p>
+            <h2>External inputs</h2>
+            <ul class="status-list" data-blockers>
+              <li>Tomorrow's private production export is still required for final source-of-truth reconciliation</li>
+            </ul>
+          </section>
         </div>
       </div>
     </section>

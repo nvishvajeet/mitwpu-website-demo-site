@@ -1,7 +1,7 @@
 {
-  "percentage": 87,
-  "phase": "Crawl-data propagation, media integration, and final validation",
-  "updated_at": "23 July 2026, 18:36 CEST",
+  "percentage": 88,
+  "phase": "Intranet operations and rendered desktop/mobile validation",
+  "updated_at": "23 July 2026, 19:08 CEST",
   "eta": "Full crawl-backed demo: approximately 2–3 focused hours",
   "pune_pages": 2044,
   "pune_media": 2017,
@@ -14,10 +14,10 @@
     "Single stable navigation header, responsive layout, and light/dark themes",
     "Faculty self-service profile editing and faculty-owned research-site forms",
     "All 14 schools visible in one grouped directory without pagination",
-    "Peace Studies fixed under MIT-WPU School of Liberal Arts"
+    "Core staff intranet services and a small network-operations interface"
   ],
   "in_progress": [
-    "Final crawl-data propagation and visual validation"
+    "Staff/student intranet separation and rendered desktop/mobile crawling"
   ],
   "blockers": [
     "Tomorrow's private production export is still required for final source-of-truth reconciliation"
