@@ -3,20 +3,16 @@
 
   var search = document.querySelector("[data-unit-search]");
   var faculty = document.querySelector("[data-faculty-filter]");
-  var grid = document.querySelector(".directory-grid");
   var cards = Array.prototype.slice.call(
     document.querySelectorAll("[data-unit-card]"),
   );
+  var groups = Array.prototype.slice.call(
+    document.querySelectorAll("[data-faculty-group]"),
+  );
   var count = document.querySelector("[data-unit-count]");
   var empty = document.querySelector("[data-no-results]");
-  var pagination = document.querySelector("[data-unit-pagination]");
-  var previous = document.querySelector("[data-page-previous]");
-  var next = document.querySelector("[data-page-next]");
-  var pageStatus = document.querySelector("[data-page-status]");
-  var pageSize = 6;
-  var currentPage = 1;
 
-  if (!search || !faculty || cards.length === 0) return;
+  if (cards.length === 0) return;
 
   function normalise(value) {
     return (value || "")
@@ -26,25 +22,9 @@
       .trim();
   }
 
-  function reserveGridHeight(matches, pageCount) {
-    if (!grid) return;
-    grid.style.minHeight = "";
-    var tallest = 0;
-    for (var page = 0; page < pageCount; page += 1) {
-      var first = page * pageSize;
-      var last = first + pageSize;
-      cards.forEach(function (card) {
-        var matchIndex = matches.indexOf(card);
-        card.hidden = matchIndex < first || matchIndex >= last;
-      });
-      tallest = Math.max(tallest, grid.getBoundingClientRect().height);
-    }
-    grid.style.minHeight = Math.ceil(tallest) + "px";
-  }
-
-  function applyFilters(resetPage) {
-    var query = normalise(search.value);
-    var facultyValue = faculty.value;
+  function applyFilters() {
+    var query = normalise(search ? search.value : "");
+    var facultyValue = faculty ? faculty.value : "";
     var matches = cards.filter(function (card) {
       var matchesQuery =
         !query || normalise(card.getAttribute("data-search")).indexOf(query) !== -1;
@@ -52,16 +32,24 @@
         !facultyValue || card.getAttribute("data-faculty") === facultyValue;
       return matchesQuery && matchesFaculty;
     });
-    var pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
-    if (resetPage) currentPage = 1;
-    currentPage = Math.min(currentPage, pageCount);
-    var first = (currentPage - 1) * pageSize;
-    var last = first + pageSize;
 
-    reserveGridHeight(matches, pageCount);
     cards.forEach(function (card) {
-      var matchIndex = matches.indexOf(card);
-      card.hidden = matchIndex < first || matchIndex >= last;
+      card.hidden = matches.indexOf(card) === -1;
+    });
+    groups.forEach(function (group) {
+      var visibleCards = Array.prototype.filter.call(
+        group.querySelectorAll("[data-unit-card]"),
+        function (card) {
+          return !card.hidden;
+        },
+      );
+      group.hidden = visibleCards.length === 0;
+      var groupCount = group.querySelector("[data-faculty-count]");
+      if (groupCount) {
+        groupCount.textContent =
+          visibleCards.length +
+          (visibleCards.length === 1 ? " school" : " schools");
+      }
     });
 
     if (count) {
@@ -70,39 +58,17 @@
         (matches.length === 1 ? " school" : " schools");
     }
     if (empty) empty.hidden = matches.length !== 0;
-    if (pagination) pagination.hidden = matches.length <= pageSize;
-    if (previous) previous.disabled = currentPage <= 1;
-    if (next) next.disabled = currentPage >= pageCount;
-    if (pageStatus) {
-      pageStatus.textContent = "Page " + currentPage + " of " + pageCount;
-    }
   }
 
-  search.addEventListener("input", function () {
-    applyFilters(true);
-  });
-  faculty.addEventListener("change", function () {
-    applyFilters(true);
-  });
-  if (previous) {
-    previous.addEventListener("click", function () {
-      if (currentPage <= 1) return;
-      currentPage -= 1;
-      applyFilters(false);
+  if (search) {
+    search.addEventListener("input", function () {
+      applyFilters();
     });
   }
-  if (next) {
-    next.addEventListener("click", function () {
-      currentPage += 1;
-      applyFilters(false);
+  if (faculty) {
+    faculty.addEventListener("change", function () {
+      applyFilters();
     });
   }
-  var resizeFrame = 0;
-  window.addEventListener("resize", function () {
-    window.cancelAnimationFrame(resizeFrame);
-    resizeFrame = window.requestAnimationFrame(function () {
-      applyFilters(false);
-    });
-  });
-  applyFilters(true);
+  applyFilters();
 })();
