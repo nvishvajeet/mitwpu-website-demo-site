@@ -3,7 +3,8 @@
 
   const group = window.QUANTUM_GROUP || { people: [], researchAreas: [] };
   const peopleOrder = window.MITWPU_PEOPLE_ORDER || {
-    groupMembers: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN")
+    groupMembers: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN"),
+    displayName: (person) => String(person.name || "")
   };
   const orderedPeople = group.people.slice().sort(peopleOrder.groupMembers);
   const peopleLabels = {
@@ -34,6 +35,14 @@
     }
   }
 
+  function profileUrl(person) {
+    const slug = String(person.profileSlug || "");
+    if (/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+      return `../people/${encodeURIComponent(slug)}/`;
+    }
+    return `member.html?id=${encodeURIComponent(person.id)}`;
+  }
+
   function initials(name) {
     const ignored = new Set(["dr", "prof", "mr", "mrs", "ms"]);
     return String(name).replace(/[.]/g, "").split(/\s+/)
@@ -42,24 +51,26 @@
   }
 
   function portrait(person, modifier = "") {
+    const name = peopleOrder.displayName(person);
     const photo = safeUrl(person.photo);
     if (photo) {
-      return `<img class="member-portrait ${modifier}" src="${escapeHtml(photo)}" alt="${escapeHtml(person.name)}" loading="lazy">`;
+      return `<img class="member-portrait ${modifier}" src="${escapeHtml(photo)}" alt="${escapeHtml(name)}" loading="lazy">`;
     }
-    return `<div class="member-portrait portrait-placeholder ${modifier}" aria-hidden="true"><span>${escapeHtml(initials(person.name))}</span></div>`;
+    return `<div class="member-portrait portrait-placeholder ${modifier}" aria-hidden="true"><span>${escapeHtml(initials(name))}</span></div>`;
   }
 
   function personCard(person) {
+    const name = peopleOrder.displayName(person);
     const interests = (person.interests || []).slice(0, 3);
+    const href = profileUrl(person);
     return `<article class="person-card">
-      <a class="portrait-link" href="member.html?id=${encodeURIComponent(person.id)}" aria-label="View ${escapeHtml(person.name)}'s profile">${portrait(person)}</a>
+      <a class="portrait-link" href="${href}" aria-label="View ${escapeHtml(name)}'s profile">${portrait(person)}</a>
       <div class="person-card-body">
         <span class="member-flair">${escapeHtml(peopleLabels[person.memberType] || "Group member")}</span>
         <p class="person-role">${escapeHtml(person.groupRole)}</p>
-        <h3><a href="member.html?id=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a></h3>
+        <h3><a href="${href}">${escapeHtml(name)}</a></h3>
         <p class="person-designation">${escapeHtml(person.designation)} · ${escapeHtml(person.affiliation)}</p>
         <div class="tag-row">${interests.map((interest) => `<span>${escapeHtml(interest)}</span>`).join("")}</div>
-        <a class="card-link" href="member.html?id=${encodeURIComponent(person.id)}">View profile →</a>
       </div>
     </article>`;
   }
@@ -164,11 +175,12 @@
       return;
     }
 
-    document.title = `${person.name} · Quantum Science & Technology Group · MIT-WPU`;
+    const name = peopleOrder.displayName(person);
+    document.title = `${name} · Quantum Science & Technology Group · MIT-WPU`;
     const links = profileLinks(person);
     target.innerHTML = `<section class="profile-hero"><div class="shell profile-hero-grid">
       <div>${portrait(person, "member-portrait-large")}</div>
-      <div class="profile-intro"><p class="eyebrow">${escapeHtml(person.groupRole)}</p><h1>${escapeHtml(person.name)}</h1>
+      <div class="profile-intro"><p class="eyebrow">${escapeHtml(person.groupRole)}</p><h1>${escapeHtml(name)}</h1>
         <p class="profile-designation">${escapeHtml(person.designation)}<br>${escapeHtml(person.affiliation)}</p>
         ${person.email ? `<a class="email-link" href="mailto:${escapeHtml(person.email)}">${escapeHtml(person.email)}</a>` : ""}
         ${links ? `<div class="profile-link-row">${links}</div>` : ""}
@@ -177,6 +189,7 @@
         <div class="profile-details">
           ${section("Profile", person.bio ? `<p class="profile-bio">${escapeHtml(person.bio)}</p>` : "")}
           ${section("Research interests", `<div class="tag-row tag-row-large">${(person.interests || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>`)}
+          ${section("Education", (person.qualifications || []).length ? `<ol class="detail-list">${person.qualifications.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>` : "")}
           ${section("Selected background", `<ul class="detail-list">${(person.highlights || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`)}
           ${section(person.publicationHeading || "Selected publications", publicationList(person.publications))}
         </div>
@@ -191,7 +204,7 @@
       .map((person) => `<section class="publication-group">
         <div class="publication-person">
           <p class="eyebrow">${escapeHtml(person.publicationHeading || "Selected publications")}</p>
-          <h2><a href="member.html?id=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a></h2>
+          <h2><a href="${profileUrl(person)}">${escapeHtml(peopleOrder.displayName(person))}</a></h2>
           <div class="profile-link-row">${profileLinks(person)}</div>
         </div>
         ${publicationList(person.publications, "publication-list numbered")}
@@ -203,9 +216,9 @@
     if (!target) return;
     const contacts = group.people.filter((person) => person.email);
     target.innerHTML = contacts.map((person) => `<article class="contact-person">
-      <div class="contact-avatar" aria-hidden="true">${escapeHtml(initials(person.name))}</div>
+      <div class="contact-avatar" aria-hidden="true">${escapeHtml(initials(peopleOrder.displayName(person)))}</div>
       <div>
-        <h3><a href="member.html?id=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a></h3>
+        <h3><a href="${profileUrl(person)}">${escapeHtml(peopleOrder.displayName(person))}</a></h3>
         <p>${escapeHtml(person.groupRole)} · ${escapeHtml(person.designation)}</p>
         <a href="mailto:${escapeHtml(person.email)}">${escapeHtml(person.email)}</a>
       </div>

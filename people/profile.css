@@ -1,4 +1,4 @@
-@import url("../group-assets/site.css?v=20260723d");
+@import url("../group-assets/site.css?v=20260723e");
 
 :root {
   --shell: 1080px;
@@ -55,7 +55,7 @@
 
 .department-context-link:hover {
   color: var(--blue);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .profile-hero {
@@ -129,7 +129,8 @@
   border-left: 0;
 }
 
-.profile-research h2 {
+.profile-research h2,
+.profile-qualifications h2 {
   margin-bottom: 20px;
   font-size: clamp(1.9rem, 3vw, 2.45rem);
 }
@@ -139,6 +140,51 @@
   margin-bottom: 0;
   color: var(--copy);
   font-size: 1.12rem;
+}
+
+.profile-main-sections > section + section {
+  margin-top: 50px;
+  padding-top: 44px;
+  border-top: 1px solid var(--line);
+}
+
+.education-timeline {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 28px;
+  list-style: none;
+}
+
+.education-timeline::before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 5px;
+  width: 1px;
+  content: "";
+  background: var(--line-strong);
+}
+
+.education-timeline li {
+  position: relative;
+  padding: 0 0 20px;
+  color: var(--copy);
+}
+
+.education-timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.education-timeline li::before {
+  position: absolute;
+  top: 0.55em;
+  left: -27px;
+  width: 9px;
+  height: 9px;
+  content: "";
+  background: var(--paper);
+  border: 2px solid var(--blue);
+  border-radius: 50%;
 }
 
 .profile-links-section {

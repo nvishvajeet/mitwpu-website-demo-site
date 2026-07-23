@@ -59,8 +59,8 @@ body {
 
 a {
   color: var(--blue);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
+  transition: color 150ms ease;
 }
 
 a:hover {
@@ -142,7 +142,8 @@ h3 {
 }
 
 .status-inner a:hover {
-  text-decoration: underline;
+  opacity: 0.82;
+  text-decoration: none;
 }
 
 .site-header {
@@ -430,7 +431,8 @@ h3 {
 }
 
 .footer-inner a:hover {
-  text-decoration: underline;
+  opacity: 0.82;
+  text-decoration: none;
 }
 
 @media (max-width: 940px) {

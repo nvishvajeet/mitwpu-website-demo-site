@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "nsrtc-2026",
+    "type": "Conference",
+    "status": "Past event",
+    "title": "NSRTC 2026",
+    "subtitle": "A three-day conclave advancing science, technology, and innovation",
+    "startDate": "2026-07-17",
+    "endDate": "2026-07-19",
+    "dateLabel": "17–19 July 2026",
+    "venue": "MIT World Peace University, Pune",
+    "summary": "Scientists, researchers, industry leaders, policymakers, innovators, and students met for interdisciplinary discussions on emerging research and technology.",
+    "overview": [
+      "The programme combined invited talks and parallel technical sessions with round-table discussions, poster presentations, project exhibitions, and a Scholars-to-Scientists Connect initiative.",
+      "The conference brought together contributors from universities, national laboratories, research institutes, industry, and public organisations."
+    ],
+    "themes": [
+      "Reimagining the future with artificial intelligence",
+      "Materials, energy, and sustainability",
+      "Emergent device technologies",
+      "New biology and health sciences"
+    ],
+    "programme": [
+      {
+        "label": "Day 1",
+        "text": "Opening sessions considered major scientific and engineering prizes, followed by the inaugural programme, research and entrepreneurship awards, keynote addresses, and a lecture on national wealth through science and technology."
+      },
+      {
+        "label": "Days 2–3",
+        "text": "Four parallel research tracks covered artificial intelligence, sustainable energy, advanced materials, semiconductors, health technologies, biotechnology, quantum technologies, and indigenous innovation."
+      }
+    ],
+    "sourceUrl": "https://mitwpu.edu.in/events/mit-wpu-hosts-nsrtc-2026-a-three-day-conclave-advancing-science-technology-and-innovation",
+    "sourceLabel": "Official MIT-WPU event report"
+  },
+  {
+    "slug": "nsrtc-2025",
+    "type": "Conference",
+    "status": "Past event",
+    "title": "NSRTC 2025",
+    "subtitle": "Science, innovation, and the vision for Viksit Bharat",
+    "startDate": "2025-07-18",
+    "endDate": "",
+    "dateLabel": "18 July 2025 · three-day conference",
+    "venue": "MIT World Peace University, Pune",
+    "summary": "A national meeting of scientists, technologists, researchers, policy leaders, and students organised around research priorities for Viksit Bharat.",
+    "overview": [
+      "The programme opened with plenary sessions on Nobel Prize-recognised work in medicine, chemistry, physics, and engineering, followed by specialist talks and a formal inaugural session.",
+      "Technical sessions and round tables connected fundamental research, applied science, technology development, and questions of national capacity."
+    ],
+    "themes": [
+      "Artificial intelligence",
+      "Advanced materials and processing",
+      "Digital transformation, energy, and sustainability",
+      "Healthcare, pharmaceutical science, and biotechnology"
+    ],
+    "programme": [
+      {
+        "label": "Special talks",
+        "text": "Ashutosh Sharma spoke on science and technology for Viksit Bharat; Arindam Ghosh on materials for quantum technologies; and Ajit Kembhavi on the life and scientific journey of Jayant Vishnu Narlikar."
+      },
+      {
+        "label": "Scientific programme",
+        "text": "Parallel sessions covered artificial intelligence, materials and devices, energy and sustainability, healthcare, pharmaceuticals, and biotechnology, with posters and round-table discussions."
+      }
+    ],
+    "sourceUrl": "https://mitwpu.edu.in/events/nsrtc-2025-a-grand-confluence-of-science-innovation-and-vision-for-viksit-bharat",
+    "sourceLabel": "Official MIT-WPU event report"
+  }
+]

@@ -1,17 +1,11 @@
 (function () {
   "use strict";
 
-  const departments = {
-    physics: "Physics",
-    chemistry: "Chemistry",
-    mathematics: "Mathematics & Statistics",
-    biosciences: "Biosciences & Technology",
-    "environmental-studies": "Environmental Studies"
-  };
   const pageSize = 24;
   const state = { page: 1 };
   const peopleOrder = window.MITWPU_PEOPLE_ORDER || {
-    faculty: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN")
+    faculty: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN"),
+    displayName: (person) => String(person.name || "")
   };
 
   const elements = {
@@ -68,27 +62,61 @@
   }
 
   function allPeople() {
-    const source = window.SCIENCE_FACULTY || {};
-    return Object.entries(source).flatMap(([department, people]) =>
-      people
+    const campus = (window.MITWPU_CAMPUS_PEOPLE || []).map((person) => ({
+      ...person,
+      id: person.profile_slug || person.id,
+      department: person.primary_unit_route,
+      departmentName: person.primary_unit_name,
+      photoPath: person.photo_path
+        ? person.photo_path.replace(/^people\//, "./")
+        : "",
+      research: person.research || person.summary || "",
+      displayName: peopleOrder.displayName(person)
+    }));
+    const peopleById = new Map(campus.map((person) => [person.id, person]));
+
+    // Science records carry richer reviewed research descriptions. Merge those
+    // details into the campus record instead of creating a second person.
+    const science = window.SCIENCE_FACULTY || {};
+    Object.entries(science).forEach(([department, records]) => {
+      records
         .filter((person) => person.publicVisibility !== "hidden" && person.employmentStatus !== "former")
-        .map((person) => ({
-          ...person,
-          department,
-          departmentName: departments[department] || department
-        }))
-    );
+        .forEach((person) => {
+          const existing = peopleById.get(person.id);
+          const merged = existing ? {
+            ...existing,
+            research: person.research || existing.research,
+            summary: person.summary || existing.summary,
+            links: { ...existing.links, ...person.links }
+          } : {
+            ...person,
+            department,
+            departmentName: department,
+            photoPath: person.photoPath ? `../science/${person.photoPath}` : ""
+          };
+          merged.displayName = peopleOrder.displayName(merged);
+          peopleById.set(merged.id, merged);
+        });
+    });
+    return [...peopleById.values()];
   }
 
   const people = allPeople();
 
   function populateDepartments() {
-    Object.entries(departments).forEach(([value, label]) => {
-      if (!people.some((person) => person.department === value)) return;
-      const option = element("option", "", label);
-      option.value = value;
-      elements.department.append(option);
+    const departments = new Map();
+    people.forEach((person) => {
+      if (person.department && person.departmentName) {
+        departments.set(person.department, person.departmentName);
+      }
     });
+    [...departments.entries()]
+      .sort((a, b) => a[1].localeCompare(b[1], "en-IN"))
+      .forEach(([value, label]) => {
+        const option = element("option", "", label);
+        option.value = value;
+        elements.department.append(option);
+      });
   }
 
   function readUrlState() {
@@ -118,7 +146,7 @@
 
     const matches = people.filter((person) => {
       const researchText = normalize(`${person.research || ""} ${person.summary || ""}`);
-      return (!name || normalize(person.name).includes(name))
+      return (!name || normalize(`${person.displayName} ${person.name}`).includes(name))
         && (!department || person.department === department)
         && (!research || researchText.includes(research));
     });
@@ -154,18 +182,18 @@
 
     if (person.photoPath) {
       const photo = element("img", "person-photo");
-      photo.src = `../science/${person.photoPath}`;
+      photo.src = person.photoPath;
       photo.alt = "";
       photo.loading = "lazy";
       photo.decoding = "async";
       photo.addEventListener("error", () => {
-        const placeholder = element("div", "person-placeholder", initials(person.name));
+        const placeholder = element("div", "person-placeholder", initials(person.displayName));
         placeholder.setAttribute("aria-hidden", "true");
         photo.replaceWith(placeholder);
       }, { once: true });
       card.append(photo);
     } else {
-      const placeholder = element("div", "person-placeholder", initials(person.name));
+      const placeholder = element("div", "person-placeholder", initials(person.displayName));
       placeholder.setAttribute("aria-hidden", "true");
       card.append(placeholder);
     }
@@ -173,7 +201,7 @@
     const main = element("div", "person-card-main");
     main.append(element("p", "person-department", person.departmentName));
     const heading = element("h2");
-    const profileLink = element("a", "person-profile-link", person.name);
+    const profileLink = element("a", "person-profile-link", person.displayName);
     profileLink.href = `./${encodeURIComponent(person.id)}/`;
     heading.append(profileLink);
     main.append(heading);

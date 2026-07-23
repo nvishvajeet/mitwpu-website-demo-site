@@ -3,6 +3,7 @@
 window.PHOTONICS_MEMBERS = [
   {
     id: "apurv-nellikka",
+    profileSlug: "apurv-chaitanya-nellikka",
     memberType: "faculty",
     role: "Faculty",
     name: "Dr. Apurv Chaitanya Nellikka",
@@ -60,6 +61,7 @@ window.PHOTONICS_MEMBERS = [
   },
   {
     id: "aavishkar-katti",
+    profileSlug: "aavishkar-chittaranjan-katti",
     memberType: "faculty",
     role: "Faculty",
     name: "Dr. Aavishkar Chittaranjan Katti",
@@ -108,6 +110,7 @@ window.PHOTONICS_MEMBERS = [
   },
   {
     id: "jagadish-naik",
+    profileSlug: "jagadish-hammu-naik",
     memberType: "faculty",
     role: "Faculty",
     name: "Dr. Jagadish Hammu Naik",

@@ -41,6 +41,28 @@
     return 11;
   }
 
+  function displayName(person) {
+    const source = String(person && person.name || "").trim();
+    const bareName = source
+      .replace(/^(?:prof(?:essor)?\.?\s+dr\.?|prof(?:essor)?|dr|mr|mrs|ms)\.?\s+/i, "")
+      .trim();
+    if (!bareName) return source;
+    if (/^vishwanath\s+(?:d\.?\s+)?karad$/i.test(bareName)) {
+      return `Prof. Dr. ${bareName}`;
+    }
+
+    const role = normalized(`${person && person.designation} ${person && person.role}`);
+    const academicRole = /\b(professor|lecturer|instructor|faculty|dean|vice chancellor)\b/.test(role);
+    const seniorAcademic = /\b(associate professor|professor|dean|vice chancellor|pro vice chancellor)\b/.test(role)
+      && !/\bassistant professor\b/.test(role);
+    if (seniorAcademic) return `Prof. ${bareName}`;
+    if (/^dr\.?\s+/i.test(source) || /^prof(?:essor)?\.?\s+dr\.?\s+/i.test(source)) {
+      return `Dr. ${bareName}`;
+    }
+    if (academicRole && /^(mr|mrs|ms)\.?\s+/i.test(source)) return bareName;
+    return source;
+  }
+
   function groupRank(person) {
     const role = normalized(person && (person.groupRole || person.role));
     if (/\bprincipal investigator\b/.test(role) && !/\bco principal\b/.test(role)) return 0;
@@ -73,6 +95,7 @@
   window.MITWPU_PEOPLE_ORDER = {
     academicRank,
     bySurname,
+    displayName,
     faculty,
     groupMembers,
     groupRank,

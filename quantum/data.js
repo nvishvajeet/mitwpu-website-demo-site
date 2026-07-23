@@ -23,6 +23,7 @@ window.QUANTUM_GROUP = {
   people: [
     {
       id: "vishvajeet-n",
+      profileSlug: "vishvajeet-n",
       memberType: "postdoctoral-researcher",
       name: "Dr. Vishvajeet N",
       groupRole: "Project Coordinator & Principal Investigator",
@@ -32,7 +33,8 @@ window.QUANTUM_GROUP = {
       photo: "assets/vishvajeet.jpg",
       bio: "Vishvajeet N is a theoretical computer scientist working at the intersection of algorithms, randomness, and quantum information. He received his Ph.D. from Rutgers University and is currently a postdoctoral researcher with the Quantum Information and Computation group at LaBRI.",
       interests: ["Theoretical computer science", "Quantum information", "Randomness and computation", "Algorithms and complexity"],
-      highlights: ["Ph.D., Rutgers University", "Postdoctoral research at CNRS / LaBRI", "Visiting graduate research at the Institute for Advanced Study"],
+      qualifications: ["Ph.D., Rutgers University"],
+      highlights: ["Postdoctoral research at CNRS / LaBRI", "Visiting graduate research at the Institute for Advanced Study"],
       publicationHeading: "Selected publications",
       publications: [
         {
@@ -60,6 +62,7 @@ window.QUANTUM_GROUP = {
     },
     {
       id: "apurv-nellikka",
+      profileSlug: "apurv-chaitanya-nellikka",
       memberType: "faculty",
       name: "Dr. Apurv Chaitanya Nellikka",
       groupRole: "Co-Principal Investigator",
@@ -69,7 +72,8 @@ window.QUANTUM_GROUP = {
       photo: "",
       bio: "Apurv Chaitanya Nellikka works in experimental and quantum optics, with interests spanning structured beams, nonlinear optics, nanophotonics, entangled photons, and single-photon sources.",
       interests: ["Quantum optics", "Structured optical beams", "Entangled photons", "Single-photon sources", "Nanophotonics"],
-      highlights: ["Ph.D. in Physics, IIT Gandhinagar", "Research experience in Mexico, Germany, Canada, and Spain", "Teaching and mentorship in optics and quantum physics"],
+      qualifications: ["Ph.D. in Physics, IIT Gandhinagar (2016)", "Integrated M.Sc. in Physics, Amrita University (2012)"],
+      highlights: ["Research experience in Mexico, Germany, Canada, and Spain", "Teaching and mentorship in optics and quantum physics"],
       publicationHeading: "Selected publications",
       publications: [
         {
@@ -97,6 +101,7 @@ window.QUANTUM_GROUP = {
     },
     {
       id: "debabrata-saha",
+      profileSlug: "debabrata-saha",
       memberType: "faculty",
       name: "Dr. Debabrata Saha",
       groupRole: "Member Faculty",
@@ -106,7 +111,8 @@ window.QUANTUM_GROUP = {
       photo: "",
       bio: "Debabrata Saha is an experimental semiconductor physicist with a Ph.D. from RRCAT, Indore, and research experience at IITs and in South Korea. His work focuses on solid-state electronic devices and functional thin films.",
       interests: ["Semiconductor physics", "Solid-state electronic devices", "Ferroelectric and dielectric thin films", "Photodetectors"],
-      highlights: ["Ph.D., RRCAT Indore", "Research experience at IITs and in South Korea", "Experimental thin-film and device research"],
+      qualifications: ["Ph.D., RRCAT Indore"],
+      highlights: ["Research experience at IITs and in South Korea", "Experimental thin-film and device research"],
       publicationHeading: "Selected publications",
       publications: [
         {
@@ -134,6 +140,7 @@ window.QUANTUM_GROUP = {
     },
     {
       id: "dev-kumar-thapa",
+      profileSlug: "dev-kumar-thapa",
       memberType: "faculty",
       name: "Dr. Dev Kumar Thapa",
       groupRole: "Member Faculty",
@@ -143,7 +150,8 @@ window.QUANTUM_GROUP = {
       photo: "",
       bio: "Dev Kumar Thapa works on quantum materials, photonic devices, nanomaterials, and their optical properties. He received his Ph.D. in Chemistry from the Indian Institute of Science, Bengaluru.",
       interests: ["Quantum materials", "Photonic devices", "Nanomaterials", "Optical properties"],
-      highlights: ["Ph.D. in Chemistry, Indian Institute of Science", "CSIR-UGC NET and GATE qualified", "Research spanning nanostructures and photonic materials"],
+      qualifications: ["Ph.D. in Chemistry, Indian Institute of Science"],
+      highlights: ["CSIR-UGC NET and GATE qualified", "Research spanning nanostructures and photonic materials"],
       publicationHeading: "Selected publication",
       publications: [
         {
@@ -159,6 +167,7 @@ window.QUANTUM_GROUP = {
     },
     {
       id: "anagha-karne",
+      profileSlug: "anagha-sudhir-karne",
       memberType: "faculty",
       name: "Dr. Anagha Sudhir Karne",
       groupRole: "Member Faculty",
@@ -178,6 +187,7 @@ window.QUANTUM_GROUP = {
     },
     {
       id: "preeti-kale",
+      profileSlug: "preeti-kale",
       memberType: "faculty",
       name: "Dr. Preeti Kale",
       groupRole: "Member Faculty",
@@ -187,7 +197,8 @@ window.QUANTUM_GROUP = {
       photo: "",
       bio: "Preeti Kale works in algorithms, artificial intelligence, sensor networks, and computational systems. Her interdisciplinary portfolio includes work connected with quantum cloud gateway systems.",
       interests: ["Algorithms", "Artificial intelligence and machine learning", "Sensor networks", "Quantum computing systems"],
-      highlights: ["Ph.D., Defence Institute of Advanced Technology", "Research in algorithms and intelligent systems", "Granted quantum cloud gateway device patent"],
+      qualifications: ["Ph.D., Defence Institute of Advanced Technology"],
+      highlights: ["Research in algorithms and intelligent systems", "Granted quantum cloud gateway device patent"],
       links: {
         profile: "https://mitwpu.irins.org/profile/148543",
         research: "https://research.mitwpu.edu.in/researcher/preeti-kale"
@@ -195,6 +206,7 @@ window.QUANTUM_GROUP = {
     },
     {
       id: "balaji-patil",
+      profileSlug: "balaji-madhavrao-patil",
       memberType: "faculty",
       name: "Dr. Balaji Madhavrao Patil",
       groupRole: "Administrative & Institutional Advisor",

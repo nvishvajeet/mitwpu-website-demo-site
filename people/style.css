@@ -1,4 +1,4 @@
-@import url("../group-assets/site.css?v=20260723d");
+@import url("../group-assets/site.css?v=20260723e");
 
 :root {
   --shell: 1180px;
@@ -15,7 +15,8 @@ body {
 
 .institution-name:hover {
   color: #fff;
-  text-decoration: underline;
+  opacity: 0.82;
+  text-decoration: none;
 }
 
 .directory-intro {

@@ -1,0 +1,79 @@
+.sitemap-main {
+  padding-block: 72px 100px;
+}
+
+.sitemap-main > header {
+  margin-bottom: 58px;
+  padding-bottom: 42px;
+  border-bottom: 4px solid var(--gold);
+}
+
+.sitemap-main h1 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 5rem);
+}
+
+.sitemap-main h2 {
+  margin-bottom: 20px;
+  font-size: 1.55rem;
+}
+
+.sitemap-main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemap-main li {
+  padding-block: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.sitemap-main li a {
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.sitemap-main li a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.sitemap-core {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px;
+}
+
+.sitemap-academics {
+  margin-top: 78px;
+  padding-top: 64px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.sitemap-academics > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 60px;
+}
+
+.sitemap-academics > ul > li {
+  padding-block: 18px;
+}
+
+.sitemap-academics ul ul {
+  margin: 8px 0 0 17px;
+}
+
+.sitemap-academics ul ul li {
+  border-bottom: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 700px) {
+  .sitemap-core,
+  .sitemap-academics > ul {
+    grid-template-columns: 1fr;
+  }
+}

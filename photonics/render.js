@@ -4,7 +4,8 @@
   const members = Array.isArray(window.PHOTONICS_MEMBERS) ? window.PHOTONICS_MEMBERS : [];
   const site = window.PHOTONICS_SITE || { researchThemes: [] };
   const peopleOrder = window.MITWPU_PEOPLE_ORDER || {
-    groupMembers: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN")
+    groupMembers: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN"),
+    displayName: (person) => String(person.name || "")
   };
   const orderedMembers = members.slice().sort(peopleOrder.groupMembers);
   const peopleTypes = [
@@ -35,6 +36,14 @@
     }
   }
 
+  function profileUrl(member) {
+    const slug = String(member.profileSlug || "");
+    if (/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+      return `../people/${encodeURIComponent(slug)}/`;
+    }
+    return `member.html?id=${encodeURIComponent(member.id)}`;
+  }
+
   function initials(name) {
     const ignored = new Set(["dr", "prof", "mr", "ms", "mrs"]);
     return String(name)
@@ -47,11 +56,12 @@
   }
 
   function portrait(member, modifier = "") {
+    const name = peopleOrder.displayName(member);
     const photo = safeUrl(member.photo);
     if (photo) {
-      return `<img class="member-portrait ${modifier}" src="${escapeHtml(photo)}" alt="${escapeHtml(member.name)}" loading="lazy">`;
+      return `<img class="member-portrait ${modifier}" src="${escapeHtml(photo)}" alt="${escapeHtml(name)}" loading="lazy">`;
     }
-    return `<div class="member-portrait portrait-placeholder ${modifier}" aria-hidden="true"><span>${escapeHtml(initials(member.name))}</span></div>`;
+    return `<div class="member-portrait portrait-placeholder ${modifier}" aria-hidden="true"><span>${escapeHtml(initials(name))}</span></div>`;
   }
 
   function list(items, className = "detail-list") {
@@ -77,20 +87,21 @@
   }
 
   function memberCard(member) {
+    const name = peopleOrder.displayName(member);
     const interests = (member.researchInterests || []).slice(0, 3);
     const type = peopleTypes.find((item) => item.id === member.memberType);
+    const href = profileUrl(member);
     return `
       <article class="person-card">
-        <a class="portrait-link" href="member.html?id=${encodeURIComponent(member.id)}" aria-label="View ${escapeHtml(member.name)}'s profile">
+        <a class="portrait-link" href="${href}" aria-label="View ${escapeHtml(name)}'s profile">
           ${portrait(member)}
         </a>
         <div class="person-card-body">
           <span class="member-flair">${escapeHtml(type ? type.label.replace(/s$/, "") : member.role)}</span>
           <p class="person-role">${escapeHtml(member.role)}</p>
-          <h3><a href="member.html?id=${encodeURIComponent(member.id)}">${escapeHtml(member.name)}</a></h3>
+          <h3><a href="${href}">${escapeHtml(name)}</a></h3>
           <p class="person-designation">${escapeHtml(member.designation)}</p>
           <div class="tag-row">${interests.map((interest) => `<span>${escapeHtml(interest)}</span>`).join("")}</div>
-          <a class="card-link" href="member.html?id=${encodeURIComponent(member.id)}">View profile <span aria-hidden="true">→</span></a>
         </div>
       </article>`;
   }
@@ -103,12 +114,9 @@
       : peopleTypes.filter((type) => type.id === activeType);
     target.innerHTML = visibleTypes.map((type) => {
       const people = orderedMembers.filter((member) => member.memberType === type.id);
-      const content = people.length
-        ? `<div class="people-grid people-grid-full">${people.map(memberCard).join("")}</div>`
-        : `<div class="pending-card"><strong>Profiles to be added</strong><p>${escapeHtml(type.description)}</p></div>`;
       return `<section class="directory-section" data-people-type="${escapeHtml(type.id)}">
-        <div class="directory-heading"><p class="eyebrow">${String(people.length).padStart(2, "0")} ${people.length === 1 ? "person" : "people"}</p><h2>${escapeHtml(type.label)}</h2><p>${escapeHtml(type.description)}</p></div>
-        ${content}
+        <div class="directory-heading"><p class="eyebrow">${String(people.length).padStart(2, "0")} ${people.length === 1 ? "person" : "people"}</p><h2>${escapeHtml(type.label)}</h2></div>
+        <div class="people-grid people-grid-full">${people.map(memberCard).join("")}</div>
       </section>`;
     }).join("");
     const count = document.getElementById("people-count");
@@ -119,7 +127,10 @@
   function renderPeopleFilters() {
     const target = document.getElementById("people-filters");
     if (!target) return;
-    const filters = [{ id: "all", label: "All people" }, ...peopleTypes];
+    const filters = [
+      { id: "all", label: "All people" },
+      ...peopleTypes.filter((type) => orderedMembers.some((member) => member.memberType === type.id))
+    ];
     target.innerHTML = filters.map((filter, index) => {
       const count = filter.id === "all" ? orderedMembers.length : orderedMembers.filter((member) => member.memberType === filter.id).length;
       return `<button class="people-filter${index === 0 ? " is-active" : ""}" type="button" data-filter="${escapeHtml(filter.id)}" aria-pressed="${index === 0 ? "true" : "false"}">${escapeHtml(filter.label)} <span>${count}</span></button>`;
@@ -207,7 +218,8 @@
       return;
     }
 
-    document.title = `${member.name} · Photonics Research Group · MIT-WPU`;
+    const name = peopleOrder.displayName(member);
+    document.title = `${name} · Photonics Research Group · MIT-WPU`;
     const links = academicLinks(member);
     target.innerHTML = `
       <section class="profile-hero">
@@ -215,7 +227,7 @@
           <div>${portrait(member, "member-portrait-large")}</div>
           <div class="profile-intro">
             <p class="eyebrow">${escapeHtml(member.role)}</p>
-            <h1>${escapeHtml(member.name)}</h1>
+            <h1>${escapeHtml(name)}</h1>
             <p class="profile-designation">${escapeHtml(member.designation)}<br>${escapeHtml(member.institution)}</p>
             <a class="email-link" href="mailto:${escapeHtml(member.email)}">${escapeHtml(member.email)}</a>
             ${links ? `<div class="profile-link-row">${links}</div>` : ""}
@@ -241,7 +253,7 @@
       <section class="publication-group">
         <div class="publication-person">
           <p class="eyebrow">${escapeHtml(member.publicationHeading || "Selected publications")}</p>
-          <h2><a href="member.html?id=${encodeURIComponent(member.id)}">${escapeHtml(member.name)}</a></h2>
+          <h2><a href="${profileUrl(member)}">${escapeHtml(peopleOrder.displayName(member))}</a></h2>
           <div class="profile-link-row">${academicLinks(member)}</div>
         </div>
         ${publicationList(member.publications, "publication-list numbered")}
@@ -253,9 +265,9 @@
     if (!target) return;
     target.innerHTML = members.map((member) => `
       <article class="contact-person">
-        <div class="contact-avatar" aria-hidden="true">${escapeHtml(initials(member.name))}</div>
+        <div class="contact-avatar" aria-hidden="true">${escapeHtml(initials(peopleOrder.displayName(member)))}</div>
         <div>
-          <h3><a href="member.html?id=${encodeURIComponent(member.id)}">${escapeHtml(member.name)}</a></h3>
+          <h3><a href="${profileUrl(member)}">${escapeHtml(peopleOrder.displayName(member))}</a></h3>
           <p>${escapeHtml(member.designation)}</p>
           <a href="mailto:${escapeHtml(member.email)}">${escapeHtml(member.email)}</a>
         </div>

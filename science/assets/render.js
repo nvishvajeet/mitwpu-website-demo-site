@@ -9,7 +9,8 @@
   const department = departments[departmentId];
   const facultyRecords = Array.isArray(facultyByDepartment[departmentId]) ? facultyByDepartment[departmentId] : [];
   const peopleOrder = window.MITWPU_PEOPLE_ORDER || {
-    faculty: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN")
+    faculty: (a, b) => String(a.name).localeCompare(String(b.name), "en-IN"),
+    displayName: (person) => String(person.name || "")
   };
   const faculty = facultyRecords
     .filter((person) =>
@@ -55,8 +56,9 @@
   }
 
   function facultyPortrait(person) {
+    const name = peopleOrder.displayName(person);
     if (!person.photoPath) {
-      return `<div class="faculty-initials" aria-hidden="true">${escapeHtml(initials(person.name))}</div>`;
+      return `<div class="faculty-initials" aria-hidden="true">${escapeHtml(initials(name))}</div>`;
     }
     const prefix = page === "school" ? "" : "../";
     return `<img class="faculty-photo" src="${prefix}${escapeHtml(person.photoPath)}" alt="" loading="lazy" decoding="async">`;
@@ -80,11 +82,11 @@
       : `<a class="brand" href="index.html"><strong>${escapeHtml(department.name)}</strong><small>School of Science &amp; Environmental Studies</small></a>`;
     const navItems = department ? [
       ["home", "Home", "index.html"],
-      ["research", "Research", "research.html"],
-      ["people", "People", "people.html"],
-      ["academics", "Academics", "academics.html"],
-      ["events", "Events", "events.html"],
-      ["facilities", "Facilities", "facilities.html"]
+      ...(department.researchThemes.length ? [["research", "Research", "research.html"]] : []),
+      ...(faculty.length ? [["people", "People", "people.html"]] : []),
+      ...(department.programmes.length ? [["academics", "Academics", "academics.html"]] : []),
+      ...((department.events || []).length || (department.eventSeries || []).length ? [["events", "Events", "events.html"]] : []),
+      ...(department.facilities.length ? [["facilities", "Facilities", "facilities.html"]] : [])
     ] : [];
     target.innerHTML = `
       <div class="institution-bar">
@@ -201,7 +203,7 @@
       </section>
       <section class="section department-introduction">
         <div class="shell intro-grid">
-          <div><p class="eyebrow">Department</p><h2>Teaching grounded in active scientific work.</h2></div>
+          <div><h2>Overview</h2></div>
           <div class="prose-large"><p>${escapeHtml(department.introduction)}</p><div class="inline-links"><a class="text-link" href="people.html">People →</a><a class="text-link" href="academics.html">Academic programmes →</a></div></div>
         </div>
       </section>
@@ -216,22 +218,6 @@
           ${sectionHeading("Academics", "Programmes", '<a class="text-link" href="academics.html">All programmes →</a>')}
           <div class="programme-list programme-list-home">${department.programmes.slice(0, 4).map(programmeRow).join("")}</div>
         </div>
-      </section>
-      <section class="section compact-callouts">
-        <div class="shell compact-callout-grid">
-          <article>
-            <p class="eyebrow">People</p>
-            <h2>One department, varied academic roles.</h2>
-            <p>Browse faculty profiles, research interests, and academic roles in one directory.</p>
-            <a class="text-link" href="people.html">Faculty directory →</a>
-          </article>
-          <article>
-            <p class="eyebrow">${events.length ? "Recent record" : "Seminars & workshops"}</p>
-            <h2>${events.length ? escapeHtml(events[0].title) : "Seminars, workshops, and conferences."}</h2>
-            <p>${events.length ? escapeHtml(events[0].dates) : "Department events and scholarly activities will appear here."}</p>
-            <a class="text-link" href="events.html">Events & series →</a>
-          </article>
-        </div>
       </section>`;
   }
 
@@ -244,29 +230,20 @@
         <div class="shell">
           <div class="research-theme-list">${department.researchThemes.map(themeCard).join("")}</div>
         </div>
-      </section>
-      <section class="section section-tint">
-        <div class="shell research-pathways">
-          <div><p class="eyebrow">Work with us</p><h2>Research pathways</h2></div>
-          <div class="pathway-grid">
-            <article><h3>Doctoral research</h3><p>Review the department’s doctoral programme, supervisors, and current research areas.</p><a class="text-link" href="academics.html#doctoral">Doctoral programmes →</a></article>
-            <article><h3>Student projects</h3><p>Students can identify relevant themes and contact faculty through the directory.</p><a class="text-link" href="people.html">Faculty profiles →</a></article>
-            <article><h3>Collaboration</h3><p>Use faculty profiles and research-group pages to find the closest scientific contact.</p><a class="text-link" href="people.html">Find a faculty member →</a></article>
-          </div>
-        </div>
       </section>`;
   }
 
   function facultyCard(person) {
+    const name = peopleOrder.displayName(person);
     const links = Object.entries(person.links || {}).map(([key, value]) => {
       const labels = { profile: "Profile", scholar: "Scholar", scopus: "Scopus", orcid: "ORCID" };
       return labels[key] ? externalLink(value, labels[key]) : "";
     }).join("");
     const summary = person.research || person.summary || "";
-    return `<article class="faculty-card" id="${escapeHtml(person.id)}" data-name="${escapeHtml(person.name.toLowerCase())}">
+    return `<article class="faculty-card" id="${escapeHtml(person.id)}" data-name="${escapeHtml(`${name} ${person.name}`.toLowerCase())}">
       ${facultyPortrait(person)}
       <div class="faculty-card-main">
-        <h2><a class="faculty-profile-link" href="../../people/${encodeURIComponent(person.id)}/">${escapeHtml(person.name)}</a></h2>
+        <h2><a class="faculty-profile-link" href="../../people/${encodeURIComponent(person.id)}/">${escapeHtml(name)}</a></h2>
         <p class="faculty-designation">${escapeHtml(person.designation)}</p>
         ${summary ? `<p class="faculty-research">${escapeHtml(summary)}</p>` : ""}
         <div class="faculty-links">${links}${person.email ? `<a href="mailto:${escapeHtml(person.email)}">Email</a>` : ""}</div>
@@ -279,7 +256,7 @@
     if (!target) return;
     const normalizedQuery = query.trim().toLowerCase();
     const visible = faculty.filter((person) => {
-      const haystack = `${person.name} ${person.designation} ${person.research} ${person.summary}`.toLowerCase();
+      const haystack = `${peopleOrder.displayName(person)} ${person.name} ${person.designation} ${person.research} ${person.summary}`.toLowerCase();
       return !normalizedQuery || haystack.includes(normalizedQuery);
     });
     target.innerHTML = visible.length
@@ -293,10 +270,10 @@
     const target = document.getElementById("page-content");
     if (!target || !department) return;
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>People</h1></div><p>Faculty profiles include research information where it is available in current MIT-WPU records.</p></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>People</h1></div></div></section>
       <section class="directory-controls-wrap">
         <div class="shell directory-controls">
-          <div><p class="eyebrow">Faculty</p><p class="directory-note">Research interests appear directly on each profile where published.</p></div>
+          <div><h2>Faculty</h2></div>
           <label class="faculty-search"><span class="sr-only">Search faculty</span><input id="faculty-search" type="search" placeholder="Search name or research area"><small id="faculty-count" aria-live="polite">${faculty.length} records</small></label>
         </div>
       </section>
@@ -316,13 +293,12 @@
       return result;
     }, {});
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Academics</h1></div><p>Programmes combine disciplinary foundations, practical work, and opportunities to engage with current research.</p></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Academics</h1></div></div></section>
       <section class="section"><div class="shell academic-groups">${Object.entries(grouped).map(([level, programmes]) => `
         <section${level === "Doctoral" ? ' id="doctoral"' : ""} class="academic-group">
           <div class="academic-level"><p class="eyebrow">${escapeHtml(level)}</p><h2>${escapeHtml(level)} programmes</h2></div>
           <div class="programme-list">${programmes.map(programmeRow).join("")}</div>
-        </section>`).join("")}</div></section>
-      <section class="section section-tint"><div class="shell academic-note"><div><p class="eyebrow">Research connection</p><h2>Study within an active department.</h2></div><p>Research themes and faculty profiles help students identify projects, doctoral supervisors, laboratories, and interdisciplinary links.</p><a class="text-link" href="research.html">Explore research →</a></div></section>`;
+        </section>`).join("")}</div></section>`;
   }
 
   function renderEvents() {
@@ -330,27 +306,26 @@
     if (!target || !department) return;
     const events = department.events || [];
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)} · Workshops &amp; conferences</p><h1>Events</h1></div><p>Seminars, workshops, colloquia, conferences, and research programmes from across the department.</p></div></section>
-      <section class="section">
+      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Events</h1></div></div></section>
+      ${events.length ? `<section class="section">
         <div class="shell">
-          ${sectionHeading(events.length ? "Published records" : "Events", events.length ? "Recent and past events" : "Schedule to be published")}
-          ${events.length ? `<div class="event-list">${events.map(eventRow).join("")}</div>` : `<div class="event-empty"><h3>No department events are currently listed.</h3><p>New seminars, workshops, and conferences will be added as their details are confirmed.</p></div>`}
+          ${sectionHeading("Events", "Recent and past events")}
+          <div class="event-list">${events.map(eventRow).join("")}</div>
         </div>
-      </section>
+      </section>` : ""}
       ${(department.eventSeries || []).length ? `<section class="section section-tint">
         <div class="shell">
           ${sectionHeading("Recurring activity", "Department series")}
           <div class="series-grid">${(department.eventSeries || []).map((series) => `<article><span aria-hidden="true">—</span><h3>${escapeHtml(series)}</h3></article>`).join("")}</div>
         </div>
-      </section>` : ""}
-      <section class="section event-model-section"><div class="shell event-model"><div><p class="eyebrow">Event record</p><h2>One entry, complete information.</h2></div><ul><li>Date, time, and venue</li><li>Event type and associated research theme</li><li>Organisers and speakers</li><li>Schedule, registration, and access information</li><li>Slides, recordings, and archive status</li></ul></div></section>`;
+      </section>` : ""}`;
   }
 
   function renderFacilities() {
     const target = document.getElementById("page-content");
     if (!target || !department) return;
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Facilities</h1></div><p>Teaching and research environments across the department.</p></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Facilities</h1></div></div></section>
       <section class="section"><div class="shell facility-list">${department.facilities.map((facility, index) => `<article class="facility-row"><span>${String(index + 1).padStart(2, "0")}</span><div><h2>${escapeHtml(facility.name)}</h2><p>${escapeHtml(facility.note)}</p></div></article>`).join("")}</div></section>
       <section class="section section-tint"><div class="shell central-facility-link"><div><p class="eyebrow">Shared infrastructure</p><h2>MIT-WPU Research Facilities</h2><p>Significant shared research instruments and faculty contacts are maintained separately from routine teaching equipment.</p></div><a class="button button-primary" href="../../facilities/">Central facilities</a></div></section>`;
   }
@@ -365,14 +340,14 @@
       ["Environment, climate & sustainability", "Environmental Studies with cross-school collaboration"]
     ];
     target.innerHTML = `
-      <section class="school-hero"><div class="shell school-hero-grid"><div><p class="eyebrow">MIT World Peace University</p><h1>School of Science &amp; Environmental Studies</h1><p class="hero-lede">Five departments connecting foundational education, laboratory practice, and research.</p></div><aside><p>Explore by department, research theme, academic programme, people, or event.</p><a class="text-link" href="#departments">Browse departments ↓</a></aside></div></section>
+      <section class="school-hero"><div class="shell school-hero-grid"><div><p class="eyebrow">MIT World Peace University</p><h1>School of Science &amp; Environmental Studies</h1></div></div></section>
       <section id="departments" class="section"><div class="shell">${sectionHeading("Departments", "Science at MIT-WPU")}<div class="department-card-grid">${departmentOrder.map((id, index) => {
         const item = departments[id];
         const people = facultyByDepartment[id] || [];
-        return `<article class="department-card"><span>${String(index + 1).padStart(2, "0")}</span><h2><a href="${id}/">${escapeHtml(item.shortName)}</a></h2><p>${escapeHtml(item.strapline)}</p><small>${people.length} faculty · ${item.programmes.length} programmes · ${item.researchThemes.length} research themes</small><a class="text-link" href="${id}/">Open department →</a></article>`;
+        return `<article class="department-card"><span>${String(index + 1).padStart(2, "0")}</span><h2><a href="${id}/">${escapeHtml(item.shortName)}</a></h2><p>${escapeHtml(item.strapline)}</p><small>${people.length} faculty · ${item.programmes.length} programmes · ${item.researchThemes.length} research themes</small></article>`;
       }).join("")}</div></div></section>
       <section class="section section-tint"><div class="shell">${sectionHeading("Across departments", "Shared research directions")}<div class="cross-theme-grid">${themes.map(([title, note]) => `<article><h3>${escapeHtml(title)}</h3><p>${escapeHtml(note)}</p></article>`).join("")}</div></div></section>
-      <section class="section school-actions"><div class="shell compact-callout-grid"><article><p class="eyebrow">Research groups</p><h2>Focused communities within the wider school.</h2><p>Research-group microsites carry detailed projects, publications, and member records without overloading department pages.</p><a class="text-link" href="../groups/">Research groups →</a></article><article><p class="eyebrow">Shared facilities</p><h2>Significant research infrastructure.</h2><p>Central facilities organise major instruments and faculty contacts across scientific clusters.</p><a class="text-link" href="../facilities/">Research facilities →</a></article></div></section>`;
+      <section class="section school-actions"><div class="shell compact-callout-grid"><article><h2><a href="../groups/">Research groups →</a></h2></article><article><h2><a href="../facilities/">Research facilities →</a></h2></article></div></section>`;
   }
 
   function initialise() {

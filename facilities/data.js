@@ -137,7 +137,7 @@ window.MITWPU_CRF = {
       source: "https://mitwpu.edu.in/leadership/dr-bharat-s-chaudhari-204"
     },
     {
-      name: "Prof. Dr. Satishchandra B. Ogale",
+      name: "Prof. Satishchandra B. Ogale",
       role: "Hon. Distinguished Professor",
       source: "https://mitwpu.edu.in/research"
     },

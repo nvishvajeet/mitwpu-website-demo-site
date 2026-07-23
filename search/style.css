@@ -1,4 +1,4 @@
-@import url("../group-assets/site.css?v=20260723d");
+@import url("../group-assets/site.css?v=20260723e");
 
 :root {
   --shell: 1080px;
@@ -15,7 +15,8 @@ body {
 
 .institution-name:hover {
   color: #fff;
-  text-decoration: underline;
+  opacity: 0.82;
+  text-decoration: none;
 }
 
 .search-hero {
@@ -218,7 +219,7 @@ kbd {
 
 .result-main h2 a:hover {
   color: var(--blue);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .result-main p {

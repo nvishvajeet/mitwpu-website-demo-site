@@ -1,4 +1,4 @@
-@import url("../group-assets/site.css?v=20260723d");
+@import url("../group-assets/site.css?v=20260723e");
 
 .group-directory {
   border-top: 1px solid var(--line-dark);
@@ -24,7 +24,7 @@
 
 .group-row h2 a:hover {
   color: var(--blue);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .group-row p {
