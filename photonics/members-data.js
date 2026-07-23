@@ -10,7 +10,7 @@ window.PHOTONICS_MEMBERS = [
     designation: "Assistant Professor, Physics",
     institution: "MIT World Peace University, Pune",
     email: "apurv.nellikka@mitwpu.edu.in",
-    photo: "",
+    photo: "../people/assets/campus/apurv-chaitanya-nellikka.webp",
     bio: "Apurv Chaitanya Nellikka is an experimental physicist working on structured optical beams, nonlinear and quantum optics, nanophotonics, entangled photons, and single-photon sources.",
     education: [
       "Integrated M.Sc. in Physics, Amrita University (2012)",
@@ -68,7 +68,7 @@ window.PHOTONICS_MEMBERS = [
     designation: "Assistant Professor, Physics",
     institution: "MIT World Peace University, Pune",
     email: "aavishkar.katti@mitwpu.edu.in",
-    photo: "",
+    photo: "../people/assets/campus/aavishkar-chittaranjan-katti.jpg",
     bio: "Aavishkar Chittaranjan Katti is a theoretical physicist whose research focuses on nonlinear optics, photorefractive media, optical spatial solitons, and photonic lattices.",
     education: [
       "Ph.D. in Physics, Banaras Hindu University, Varanasi",
@@ -117,7 +117,7 @@ window.PHOTONICS_MEMBERS = [
     designation: "Assistant Professor, Physics",
     institution: "MIT World Peace University, Pune",
     email: "jagadish.naik@mitwpu.edu.in",
-    photo: "",
+    photo: "../science/assets/people/jagadish-hammu-naik.jpg",
     bio: "Jagadish Hammu Naik works in dielectrics and spectroscopy, including the optical, luminescent, electrical, and transport properties of polymer nanocomposites and electrolyte materials.",
     education: [
       "Ph.D. in Physics (Electrolytes), Mangalore University (2018)"

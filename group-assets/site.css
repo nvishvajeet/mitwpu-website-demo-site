@@ -299,11 +299,8 @@ h3 {
 }
 
 .breadcrumbs [aria-current="page"] {
-  padding: 3px 8px;
   color: var(--heading);
-  background: var(--blue-pale);
-  border-left: 2px solid var(--blue);
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .theme-toggle {

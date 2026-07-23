@@ -1,0 +1,37 @@
+{
+  "schema": "wpu-goa.review-flags.v1",
+  "captured_at": "2026-07-23",
+  "flags": [
+    {
+      "id": "programme-start-year-conflict",
+      "status": "requires_authoritative_review",
+      "summary": "The academic landing/current CSE material says 2027 while stale or duplicate programme detail copy refers to 2026.",
+      "public_action": "The export does not assert a programme start year. Conflicting year-bearing programme blocks were omitted.",
+      "affected_sources": [
+        "https://wpugoa.edu.in/academic-programs",
+        "https://wpugoa.edu.in/academic-programs/bachelor-of-managementstudies",
+        "https://wpugoa.edu.in/academic-programs/bdes-in-communication-design",
+        "https://wpugoa.edu.in/academic-programs/bdes-in-integrated-product-design",
+        "https://wpugoa.edu.in/academic-programs/bsc-hons-in-psychology",
+        "https://wpugoa.edu.in/academic-programs/btech-in-computer-science-engineering-cse",
+        "https://wpugoa.edu.in/admission-process-faq",
+        "https://wpugoa.edu.in/eligibility-criteria",
+        "https://wpugoa.edu.in/faqs",
+        "https://wpugoa.edu.in/fee-structure-2",
+        "https://wpugoa.edu.in/international-candidates-2"
+      ]
+    },
+    {
+      "id": "phd-authority",
+      "status": "not_established",
+      "summary": "No public WPU Goa PhD degree or admissions route was found, and public status wording requires verification.",
+      "public_action": "Do not advertise a PhD until legal and academic authority is confirmed."
+    },
+    {
+      "id": "faculty-directory",
+      "status": "not_found",
+      "summary": "No canonical public directory of employed WPU Goa teaching faculty was found.",
+      "public_action": "Do not convert institute, centre, board, advisory, vacancy or speaker listings into faculty appointments."
+    }
+  ]
+}

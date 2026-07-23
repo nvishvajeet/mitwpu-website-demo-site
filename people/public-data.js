@@ -331,7 +331,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": "",
+    "photoPath": ".",
     "research": "Sampling, ranked-set sampling, statistical inference, quality control, time series, data science, and machine learning.",
     "summary": "",
     "links": {
@@ -2241,7 +2241,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "research-groups/quantum": "Quantum Science & Technology Group"
     },
-    "photoPath": "",
+    "photoPath": "../../media/mitwpu-public/optimized/faculty_profile/ae/ae126388134e6642-ae126388134e6642-Balaji-Madhavrao-Patil.webp",
     "research": "Computer networks; Cybersecurity; Cyber forensics; Internet of Things",
     "summary": "Balaji Patil works in networks, cybersecurity, cyber forensics, and IoT, and supports institutional coordination for the group.",
     "links": {
@@ -6366,7 +6366,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": "",
+    "photoPath": ".",
     "research": "",
     "summary": "",
     "links": {},
@@ -6503,7 +6503,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "research-groups/quantum": "Quantum Science & Technology Group"
     },
-    "photoPath": "",
+    "photoPath": "../../people/assets/campus/preeti-amit-kale.jpg",
     "research": "Algorithms; Artificial intelligence and machine learning; Sensor networks; Quantum computing systems",
     "summary": "Preeti Kale works in algorithms, artificial intelligence, sensor networks, and computational systems. Her interdisciplinary portfolio includes work connected with quantum cloud gateway systems.",
     "links": {
@@ -9891,7 +9891,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": "",
+    "photoPath": ".",
     "research": "Graph theory, discrete mathematics, matroid theory, and connectivity of interconnection networks.",
     "summary": "",
     "links": {

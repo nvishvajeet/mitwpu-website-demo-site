@@ -1,0 +1,904 @@
+{
+  "generated_at": "2026-07-23T14:38:54.109992+00:00",
+  "crawl_root": "/Users/vishvajeetn/Projects/mitwpu-website-research/data/crawls/2026-07-23",
+  "evidence_policy": "Public crawl evidence only. Records are draft reconciliation data; employment, lifecycle, and publication require authoritative review.",
+  "schema": "mitwpu.canonical-public-leadership.v1",
+  "summary": {
+    "sitemap_profiles": 24,
+    "captured_profiles": 16,
+    "capture_failures": 8,
+    "matching_faculty_profiles": 9,
+    "missing_titles": 8
+  },
+  "leadership": [
+    {
+      "id": "mr-ganesh-b-pokale-5",
+      "title": "Mr Ganesh B Pokale 5",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/mr-ganesh-b-pokale-5",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Mr Ganesh B Pokale",
+      "normalised_name": "ganesh b pokale",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-siddharth-chakarbarti-173",
+      "title": "Dr. Siddharth Chakarbarti",
+      "description": "Dr. Siddharth Chakrabarti is a distinguished academic leader and he worked as Dean- SoE & Dean Academics at OP Jindal University (OPJU), supported by Jindal Steel & Power prior to joining MIT-WPU, Pune.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Siddharth-Chakrabarti.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-siddharth-chakarbarti-173",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-siddharth-chakarbarti-173",
+        "status": 200,
+        "captured_at": "2026-07-23T08:41:09.547419+00:00",
+        "raw_file": "raw/2812bb6f1727a9ad36289987b738f1c0017686243a289cf6f7b99dc70a0d1921.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-siddharth-chakarbarti-173"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Siddharth Chakarbarti",
+      "normalised_name": "siddharth chakarbarti",
+      "leadership_title": "Dean - School of Engineering & Technology",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Siddharth Chakarbarti Dean - School of Engineering & Technology Dr. Siddharth Chakrabarti is a distinguished academic leader and he worked as Dean- SoE & Dean Academics at OP Jindal University (OPJU), supported by Jindal Steel & Power prior to joining MIT-WPU, Pune. Also, held key positions at GH Raisoni College of Engineering, Nagpur, Shri Shankaracharya Technical Campus Bhilai, and Raipur Institute of Technology. With a Ph.D. from the IIT- Kharagpur, and an M.Tech from the National Institute of Technology, Warangal, supported by an MHRD scholarship and a research project at BHEL R&D Hyderabad, Dr. Siddharth brings a wealth of expertise to his roles. He has also completed his PG Diploma in Artificial Intelligence and Machine Learning from the University of Hyderabad and the Senior Executive Leadership Program from XLRI Jamshedpur. He has over 24 years of experience in teaching, research, and academic management, Dr. Siddharth has been instrumental in driving the growth of the previous organizations. He shared his expertise as a vital member of their Board of Management, industry-academia collaboration, and institutional innovation council (IIC) in different capacities. He has fostered collaborations that enhance research, internships, and industry-aligned programs. Dr.Siddharth's international exposure spans visits to the USA, China, Finland, France, and Thailand, enriching his global perspective and international collaborations for the organization. Under his leadership, OPJU has been awarded NAAC accreditation A Grade in the first cycle itself, winner in the AICTE-CII Survey ranking 2021, Institution Innovation Council's highest star rating, ranking in the world green metric, highest placements, full implementation of NEP 2020 in all the Schools, ARIIA ranking and many others. His expertise includes setting up Fab lab, skill centers, and exposure of World skill competitions, collaborations with the National Skill Development Council, TEQIP 1, TEQIP 2, executing hardware and software hackathons, and establishing more than 30 clubs in the University for the overall development of the students. An accomplished researcher and author, he has over 60 publications in leading journals and conferences, four granted patents, and six published patents. His leadership and contributions have been recognized with awards, including the \"Best Researcher Award\" and \"Excellent Teacher Award for outstanding contribution in Engineering and Allied\" from The Institution of Engineers (India), Chhattisgarh. Additionally, he has mentored numerous B.Tech, M.Tech, and Ph.D. students, organized 5+ international conferences, 6+ industry Academia Conclaves, 25+ academic events.",
+      "qualification_evidence": [
+        "With a Ph.D. from the IIT- Kharagpur, and an M.Tech from the National Institute of Technology, Warangal, supported by an MHRD scholarship and a research project at BHEL R&D Hyderabad, Dr. Siddharth brings a wealth of expertise to his roles.",
+        "An accomplished researcher and author, he has over 60 publications in leading journals and conferences, four granted patents, and six published patents. His leadership and contributions have been recognized with awards, including the \"Best Researcher Award\" and \"Excellent Teacher Award for outstanding contribution in Engineering and Allied\" from The Institution of Engineers (India), Chhattisgarh. Additionally, he has mentored numerous B.Tech, M.Tech, and Ph.D. students, organized 5+ international conferences, 6+ industry Academia Conclaves, 25+ academic events."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-r-m-chitnis-2",
+      "title": "Dr R M Chitnis 2",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-r-m-chitnis-2",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Dr R M Chitnis",
+      "normalised_name": "r m chitnis",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-prakash-m-mainkar-110",
+      "title": "Dr. Prakash M. Mainkar",
+      "description": "Dr. Prakash Mohan Mainkar is the Director of Admissions and Associate Professor in Electronics & Communication Engineering at MIT-WPU.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Prakash Mohan Mainkar.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-prakash-m-mainkar-110",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-prakash-m-mainkar-110",
+        "status": 200,
+        "captured_at": "2026-07-23T08:41:20.122538+00:00",
+        "raw_file": "raw/4cfaa6aee61846c1464ee5dac95d8ff492e7ec5fb1c8d7cde0d84cc055b76993.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-prakash-m-mainkar-110"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Prakash M. Mainkar",
+      "normalised_name": "prakash m mainkar",
+      "leadership_title": "Director - Admissions",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Prakash M. Mainkar Director - Admissions Dr. Prakash Mohan Mainkar is the Director of Admissions and Associate Professor in Electronics & Communication Engineering at MIT-WPU. He earned his Bachelor's degree from Shivaji University in 2001, a Master's degree in Electronics (VLSI Design) in 2007, and a Doctor of Philosophy (Engineering) from RTM Nagpur University, Nagpur, India, in 2019. In his capacity as Director of Admissions, Dr. Mainkar plays a crucial role in shaping the academic landscape. Alongside his teaching responsibilities, he actively contributes to various institute committees, focusing on the enhancement of laboratory infrastructure and curriculum development. Dr. Mainkar is dedicated to bridging the gap between academia and industry. He consistently engages with industry professionals to identify employment opportunities for students and actively promotes international collaborations with universities. His role as an International Study Tour Coordinator has led him to universities in China, Singapore, Hong Kong, and Nepal, fostering global connections for MIT-WPU. Over the past eight years, he has served as a National Study Tour Coordinator, organising visits to industries across India to provide students with valuable real-world insights into their coursework applications.",
+      "qualification_evidence": [
+        "He earned his Bachelor's degree from Shivaji University in 2001, a Master's degree in Electronics (VLSI Design) in 2007, and a Doctor of Philosophy (Engineering) from RTM Nagpur University, Nagpur, India, in 2019. In his capacity as Director of Admissions, Dr. Mainkar plays a crucial role in shaping the academic landscape. Alongside his teaching responsibilities, he actively contributes to various institute committees, focusing on the enhancement of laboratory infrastructure and curriculum development."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-milind-pande-3",
+      "title": "Dr Milind Pande 3",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-milind-pande-3",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Dr Milind Pande",
+      "normalised_name": "milind pande",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-hitesh-joshi-165",
+      "title": "Dr. Hitesh Joshi",
+      "description": "Dr. Hitesh Joshi is a highly accomplished professional with a rich academic and administrative background, spanning over 20 years.Dr. Joshi currently holds the position of Director of Student Affairs.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Hitesh-Joshi.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-hitesh-joshi-165",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-hitesh-joshi-165",
+        "status": 200,
+        "captured_at": "2026-07-23T08:41:30.703000+00:00",
+        "raw_file": "raw/77e85780001f738670869684242e88af0cd040046b18aa19db81e9346e04e80a.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-hitesh-joshi-165"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Hitesh Joshi",
+      "normalised_name": "hitesh joshi",
+      "leadership_title": "Dean - Student Affairs",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Hitesh Joshi Dean - Student Affairs Dr. Hitesh Joshi is a highly accomplished professional with a rich academic and administrative background, spanning over 22 years. His impressive qualifications include a PhD in Electronic & Communication Engineering, an M.Tech in VLSI Design, an MBA in Human Resource Management, and a Bachelor's in Electronics & Communication Engineering. Dr. Joshi's career has been marked by a wealth of experiences in both academia and administration. Dr. Joshi currently holds the position of Dean Student Affairs. In the previous organisation he also served as the Dean of Engineering, Director of Admissions, and Dean of Student Affairs. His responsibilities are extensive and include overseeing academic and administrative functions for multiple universities and engineering colleges for various aspects of student development. In addition to his academic and research endeavours, Dr. Joshi is known for his involvement in various research projects, seminars, and workshops. His ability to manage complex academic and administrative tasks, along with his extensive experience, is a testament to his exceptional leadership in the field of higher education.",
+      "qualification_evidence": [
+        "Leadership Home About Us Leadership Dr. Hitesh Joshi Dean - Student Affairs Dr. Hitesh Joshi is a highly accomplished professional with a rich academic and administrative background, spanning over 22 years. His impressive qualifications include a PhD in Electronic & Communication Engineering, an M.Tech in VLSI Design, an MBA in Human Resource Management, and a Bachelor's in Electronics & Communication Engineering."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-deependra-sharma-113",
+      "title": "Dr Deependra Sharma 113",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-deependra-sharma-113",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Dr Deependra Sharma",
+      "normalised_name": "deependra sharma",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": [
+        "deependra-sharma"
+      ]
+    },
+    {
+      "id": "dr-anjali-sane-164",
+      "title": "Dr. Anjali Sane",
+      "description": "Dr. Anjali Sane is an accomplished educator with over twenty years of experience in economics and banking. She is renowned for her expertise in managerial economics, micro and macroeconomics, and financial literacy.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Anjali Ajit Sane.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-anjali-sane-164",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-anjali-sane-164",
+        "status": 200,
+        "captured_at": "2026-07-23T08:41:41.296522+00:00",
+        "raw_file": "raw/97625a4700646b91e144ae4713f144c49b045f54f03ffbf4b669323e7d9bb319.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-anjali-sane-164"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Anjali Sane",
+      "normalised_name": "anjali sane",
+      "leadership_title": "Dean - School of Economics and Commerce",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Anjali Sane Dean - School of Economics and Commerce Dr. Anjali Sane is an accomplished educator with over twenty years of experience in Economics and Banking. She is renowned for her expertise in Managerial Economics, Micro and Macro Economics, and Financial Literacy. She adeptly uses practical examples and case studies to enrich classroom learning. In addition to her role in academic administration, Dr. Sane actively engages in interdisciplinary research, focusing on areas such as higher education and sustainable consumption. Her research endeavours include a Minor Research Project on Financial Literacy, supported by the Board of College and University Development (BCUD), Savitribai Phule Pune University. Dr. Sane employs quantitative and qualitative research tools, utilising an exploratory research methodology. With a prolific scholarly output, Dr. Sane has authored over 20 research papers in peer-reviewed management journals and contributed to numerous national and international conference proceedings. She has also co-authored multiple books on Business Economics, showcasing her extensive knowledge in the field. Dr. Anjali Sane has earned prestigious awards, including the \"Ideal Teacher Award\" from MAEER’s MIT Group of Institutions and the \"Super Achiever in the Field of Education Award\" from Kaveri Group of Institutions, Pune. For research excellence, she received recognition as a Research fellow at the Centre for International Trade and Business in Asia (CITBA) at James Cook University, Australia. Furthermore, she received the \"Best Paper\" award at the International Conference on Innovation in Business, Trade, and Commerce in March 2022 & 2023.",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-santosh-aghav-189",
+      "title": "Dr. Santosh Aghav",
+      "description": "Dr Santosh Aghav, has experience of more than 22 years in Academics. Since 1st Oct 2003, he was associated with Symbiosis Law School, Symbiosis International (Deemed University) Pune.Panelists for Nationwide consultation on Safety of women and child and trafficking organized by Pune Police Commissionerate.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Santosh-Aghav-law.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-santosh-aghav-189",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-santosh-aghav-189",
+        "status": 200,
+        "captured_at": "2026-07-23T09:09:39.585425+00:00",
+        "raw_file": "raw/90aa8b783f4af59108c844ba5de85297c845cd7e10d067f5f612111a57725869.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-santosh-aghav-189"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Santosh Aghav",
+      "normalised_name": "santosh aghav",
+      "leadership_title": "Professor & Dean - School of Law",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Santosh Aghav Professor & Dean - School of Law Dr Santosh Aghav, has experience of more than 22 years in Academics. Since 1st Oct 2003, he was associated with Symbiosis Law School Symbiosis International (Deemed University) Pune. He has served Director of Symbiosis Law School Hyderabad and contributed in various leadership positions. He was a member of the Academic Council, Board of Studies Faculty of Law SIU and Shri RG Assam University School of law, Public policy and Cooperative Management. He was also a Member, Global Alliance of Justice Education (GAJE) -Global Network, Network Member of Transparency International, International Papers Committee Reviewer Global Science Technology Forum, Singapore, Member -Indian Council of Human Rights. He has presented papers in national international conferences and seminars. Has published papers in various journals. He worked in various spheres of academic and administration as in charge of various degree and diploma programmes, Centre of Excellence and leaded as faculty in charge Community Legal Care Centre catering to justice education, legal services to innovate, facilitate exposure to students and interdisciplinary researchers. Served as faculty in charge of Community Legal Resource Network Programme with City University of New York, USA and SLSP SIU and participated in training for course development under Erasmus Mundus EURASIA Programme with St Kliment Ohradiski, Sofia University, Bulgaria. Participated in various Edu programmes from local to global and urban to rural. Strived by taking steps to develop distinct institutional collaborations with various partners including international resources, training academy for Police, Prison, Government officials to private sector and incubators programme with team. He worked on various Research Projects including Handbook on Indian Penal Code sponsored by Adv Ram Jethmalani. Was the Member on the implementation of the Juvenile Justice Act under the guidance of Hon'ble Justice Madan Lokur, Supreme Court of India. Awarded by Community Justice Welfare, Award in 2015 by Adarsha Mitra Mandal,(Guiness Book of Record Holder for Peace Reading ) Pune Maharashtra. Panelists for Nationwide consultation on Safety of women and child and trafficking organized by Pune Police Commissionerate, The Indian Police Foundation, Bureau of Police Research and Development, Centre for Police Research and Yashda.",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": [
+        "santosh-aghav"
+      ]
+    },
+    {
+      "id": "dr-prasad-d-khandekar-190",
+      "title": "Dr. Prasad D. Khandekar",
+      "description": "Dr. Prasad D. Khandekar brings over 30 years of rich experience in higher education leadership, academic governance, and research. A distinguished academician and administrator, he holds a Ph.D. in Electronics Engineering, M.E. in Electronics, and a B.E. in Industrial Electronics.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Prasad-Khandekar.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-prasad-d-khandekar-190",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-prasad-d-khandekar-190",
+        "status": 200,
+        "captured_at": "2026-07-23T09:09:50.134067+00:00",
+        "raw_file": "raw/08584dcacd44d91a2c39e5ddfcbb7fb483bd6598c01e39c94f477abe4badd63d.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-prasad-d-khandekar-190"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Prasad D. Khandekar",
+      "normalised_name": "prasad d khandekar",
+      "leadership_title": "Chief Academic Officer Dr. Prasad D. Khandekar brings over 30 years of rich experience in higher education leadership, academic governance, and research. A distinguished academician and administrator,",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Prasad D. Khandekar Chief Academic Officer Dr. Prasad D. Khandekar brings over 30 years of rich experience in higher education leadership, academic governance, and research. A distinguished academician and administrator, he holds a Ph.D. in Electronics Engineering, M.E. in Electronics, and a B.E. in Industrial Electronics. He has served in various leadership roles including Vice Chancellor at DES Pune University, Dean of Engineering and Technology at MIT-WPU, and Senior Director of Industry Partnerships and Quality Assurance. His contributions include establishing 31 academic programs and multiple research centers. Led Faculty of Engineering and Technology at MITWPU to the “Top Private Engineering Institution\" in Maharashtra” based on NIRF 2022 ranking with 116th rank including initiating global collaborations and significantly boosting institutional revenue and research funding. He has also led national and international efforts in quality assurance and accreditation (NBA, NAAC, ABET) and is a Fellow of multiple prestigious engineering institutions including IEI, India and IEEE, USA etc. With over 39 research publications, 8 patents (5 granted internationally), several authored textbooks, and keynote addresses at international forums including the G20 Education Expo, Dr. Khandekar Sir’s vision and commitment to academic excellence make him a valuable addition to our leadership team.",
+      "qualification_evidence": [
+        "A distinguished academician and administrator, he holds a Ph.D. in Electronics Engineering, M.E. in Electronics, and a B.E. in Industrial Electronics."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "prof-dr-urvashi-makkar-121",
+      "title": "Prof Dr Urvashi Makkar 121",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/prof-dr-urvashi-makkar-121",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Prof Dr Urvashi Makkar",
+      "normalised_name": "dr urvashi makkar",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": [
+        "urvashi-makkar"
+      ]
+    },
+    {
+      "id": "mr-haranath-ghosh-193",
+      "title": "Mr. Haranath Ghosh",
+      "description": "At MIT-WPU, the Branding & Communications Department drives the university’s identity and vision through strategic branding, creative content, and effective communication across all platforms.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Haranath-Ghosh-Director-Branding-and-Communications.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/mr-haranath-ghosh-193",
+        "requested_url": "https://mitwpu.edu.in/leadership/mr-haranath-ghosh-193",
+        "status": 200,
+        "captured_at": "2026-07-23T09:13:56.576732+00:00",
+        "raw_file": "raw/cdd6a14ab8eb21b30b70b004c87111c28c585f576bfb2d3a747a6c82a2ae8dae.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/mr-haranath-ghosh-193"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Mr. Haranath Ghosh",
+      "normalised_name": "haranath ghosh",
+      "leadership_title": "Director - Branding & Communications",
+      "biography_excerpt": "Leadership Home About Us Leadership Mr. Haranath Ghosh Director - Branding & Communications Mr. Haranath Ghosh brings over 24 years of extensive experience in brand management, corporate communications, marketing, public relations, and event management across education, media, advertising, and financial sectors. Throughout his distinguished career, he has successfully operated in both national and international markets, driving impactful content creation, digital promotion, advertising campaigns, and strategic communication initiatives. He holds an MBA in Marketing and a B.Sc. (Hons) in Physics from Delhi University. Before joining MIT-WPU, Mr. Ghosh served as Director of Branding & Communications at Chandigarh University. He also led marketing efforts for Infinity Media Networks, a Johannesburg-based media conglomerate, for over six years. Additionally, he was Regional Manager at ICICI Bank, overseeing the Premium and Travel Cards business for North India. Earlier in his career, he gained valuable experience with reputed advertising agencies in Delhi. Under his visionary leadership and deep business acumen, organizations have experienced significant growth in brand visibility and business performance. Besides his corporate expertise, Mr. Ghosh is also an accomplished author of three published fiction novels, reflecting his passion for storytelling. He has spearheaded numerous successful national campaigns across TV, print, and outdoor media, strengthening brand equity for multiple organizations.",
+      "qualification_evidence": [
+        "He holds an MBA in Marketing and a B.Sc. (Hons) in Physics from Delhi University."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-suman-devadula-196",
+      "title": "Dr. Suman Devadula",
+      "description": "Explore the leadership profile of Dr. Suman Devadula at MIT-WPU and learn about contributions to bioengineering education, research development, and academic excellence.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Suman-Devadula.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-suman-devadula-196",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-suman-devadula-196",
+        "status": 200,
+        "captured_at": "2026-07-23T09:14:02.277233+00:00",
+        "raw_file": "raw/09946c587b2ecb4753b511025370d47aa416550801e03fe442d1f2e6b39edf45.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-suman-devadula-196"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Suman Devadula",
+      "normalised_name": "suman devadula",
+      "leadership_title": "Professor & Dean, School of Design",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Suman Devadula Professor & Dean, School of Design Prof. Dr. Suman Devadula, is a passionate advocate of design-led innovation and its role in advancing sustainability across institutions. With over thirteen years of distinguished experience in the design industry and academia, Dr. Devadula brings exceptional expertise in integrating technology, research, and sustainability by design. Prior to joining MIT-WPU in this stint, Dr. Devadula served as Associate Professor, and in leadership positions like Head of Design and Dep. Director at JAIN School of Design, Media and Creative Arts, Bengaluru and also as Research Co-ordinator for Faculty of Creativity and Design. He led curriculum design, program management, and Outcome-Based Education (OBE) initiatives across several UG, PG and PhD programmes. Earlier to this, he served as the founding Head of School at MIT-WPU School of Design, Pune during 2018-2022. His corporate experience includes working as an Industrial Designer at John Deere Technology Centre India, where he managed global design and engineering projects across the U.S., Europe, and Asia. Prof. Devadula holds a Ph.D. in Sustainability by Design from IISc Bangalore, an M.Des. in Product Design from the Department of Design and Manufacturing (formerly CPDM), IISc Bangalore, a B.Tech. in Mechanical Engineering from JNTU Hyderabad, and a Postgraduate Diploma in Re- designing Human Rights from IIHR, New Delhi. He has been recognised on numerous national and international platforms for his impactful contributions to design research, sustainability, and to design education. His students have consistently excelled under his mentorship, securing accolades in prominent design competitions globally. An academic leader, Dr. Devadula has served as Chairperson and Board Member in various academic bodies, contributing to the development of design curriculum at undergraduate, postgraduate, and doctoral levels. His research interests span design, cognition, and sustainability, with over twenty-five articles in reputed journals of direct impact to design education and the human condition in several national and international journals and conferences. He holds several design registrations and published patents, individually and collaboratively.",
+      "qualification_evidence": [
+        "He led curriculum design, program management, and Outcome-Based Education (OBE) initiatives across several UG, PG and PhD programmes. Earlier to this, he served as the founding Head of School at MIT-WPU School of Design, Pune during 2018-2022. His corporate experience includes working as an Industrial Designer at John Deere Technology Centre India, where he managed global design and engineering projects across the U.S., Europe, and Asia.",
+        "Prof. Devadula holds a Ph.D. in Sustainability by Design from IISc Bangalore, an M.Des. in Product Design from the Department of Design and Manufacturing (formerly CPDM), IISc Bangalore, a B.Tech. in Mechanical Engineering from JNTU Hyderabad, and a Postgraduate Diploma in Re- designing Human Rights from IIHR, New Delhi.",
+        "An academic leader, Dr. Devadula has served as Chairperson and Board Member in various academic bodies, contributing to the development of design curriculum at undergraduate, postgraduate, and doctoral levels. His research interests span design, cognition, and sustainability, with over twenty-five articles in reputed journals of direct impact to design education and the human condition in several national and international journals and conferences."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": [
+        "suman-devadula"
+      ]
+    },
+    {
+      "id": "dr-santosh-jaybhay-197",
+      "title": "Dr. Santosh Jaybhay",
+      "description": "Dr. Santosh Jaybhay holds a BSc, LLM, and PhD, bringing over 27 years of rich teaching experience primarily at ILS Law College and JSPM University.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Dr-Jaybhay-Santosh2.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-santosh-jaybhay-197",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-santosh-jaybhay-197",
+        "status": 200,
+        "captured_at": "2026-07-23T09:17:12.333388+00:00",
+        "raw_file": "raw/aa4704e11cd4bb6a6992d2fd79755827963f98adfa2ff9dd665a4446df07427d.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-santosh-jaybhay-197"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Santosh Jaybhay",
+      "normalised_name": "santosh jaybhay",
+      "leadership_title": "Director - Legal Affairs",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Santosh Jaybhay Director - Legal Affairs Dr. Santosh Jaybhay holds a BSc, LLM, and PhD, bringing over 27 years of rich teaching experience primarily at ILS Law College and JSPM University. Recognized as a PhD guide and member of the Board of Studies at Savitribai Phule Pune University (SPPU), he has significantly contributed to legal academia and governance. Dr. Santosh has served as Rector of the Indian Law Society Pune for 27 years and held leadership roles including Vice Principal of a Law College and Director at JSPM University Pune. He has played an important role in various academic committees at ILS Law College such as the College Development Committee, Anti-Ragging Committee, and Quality Assurance Cell. As an Appellate Authority under the Right to Information Act, he has also coordinated key legal courses and organized national and international conferences and moot court competitions. Honored as the \"Most Popular Teacher in Pune\" by Times of India in 2009, Dr. Santosh has presented over 30 papers at national and international forums, contributed to faculty development programs, and served as a paper setter and examiner for over 27 years at SPPU. His dedication to legal education and student development is exemplary.",
+      "qualification_evidence": [
+        "Leadership Home About Us Leadership Dr. Santosh Jaybhay Director - Legal Affairs Dr. Santosh Jaybhay holds a BSc, LLM, and PhD, bringing over 27 years of rich teaching experience primarily at ILS Law College and JSPM University. Recognized as a PhD guide and member of the Board of Studies at Savitribai Phule Pune University (SPPU), he has significantly contributed to legal academia and governance."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": [
+        "santosh-jaybhay"
+      ]
+    },
+    {
+      "id": "dr-vinod-shastri-198",
+      "title": "Dr. Vinod Shastri",
+      "description": "Dr. Vinod Shastri has 40 years of diverse experience spanning entrepreneurship, entrepreneurship education, administration, training, teaching, finance, and production.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Vinod-Shastri.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-vinod-shastri-198",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-vinod-shastri-198",
+        "status": 200,
+        "captured_at": "2026-07-23T09:17:39.511855+00:00",
+        "raw_file": "raw/ff932b7bfe110881830b26ac395a814dd891b9b568923447f40e3b3e7d072f3b.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-vinod-shastri-198"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Vinod Shastri",
+      "normalised_name": "vinod shastri",
+      "leadership_title": "Director - Entrepreneurship",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Vinod Shastri Director - Entrepreneurship Dr. Vinod Shastri has 40 years of diverse experience spanning entrepreneurship, entrepreneurship education, administration, training, teaching, finance, and production, but he is essentially an entrepreneurship educator at heart. Prior to joining MIT-WPU, he served as Dean of Student Affairs and Head of the Centre for Innovation & Entrepreneurship (CIE) at Bennett University, and earlier as Deputy Director at Symbiosis. He successfully built an entrepreneurial culture at both universities. From co-founding a unique start-up to co-authoring the Global Entrepreneurship Monitor (GEM) Report, he belongs to the rare breed of educators who practice what they preach and is widely acknowledged as a culture builder par excellence.",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": [
+        "vinod-shastri"
+      ]
+    },
+    {
+      "id": "dr-priya-pise-199",
+      "title": "Dr Priya Pise 199",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-priya-pise-199",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Dr Priya Pise",
+      "normalised_name": "priya pise",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-nitin-khedkar-200",
+      "title": "Dr. Nitin Khedkar",
+      "description": "View the professional profile of Dr. Nitin Khedkar at MIT World Peace University. Explore his academic background, expertise, and leadership contributions.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Nitin-Khedkar-HR-director.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-nitin-khedkar-200",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-nitin-khedkar-200",
+        "status": 200,
+        "captured_at": "2026-07-23T09:20:28.180803+00:00",
+        "raw_file": "raw/0662bda07ac03b8017538c2a1feac3cd02191ea0b5a55bc822ba5a4c16320c2d.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-nitin-khedkar-200"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Nitin Khedkar",
+      "normalised_name": "nitin khedkar",
+      "leadership_title": "Director – Human Resources",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Nitin Khedkar Director – Human Resources Dr. Nitin Khedkar is presently working as Professor of Design and HR Director at MIT World Peace University (MIT-WPU), bringing over 24 years of academic and administrative experience in mechanical engineering, research management, and institutional development. Throughout his distinguished career, he has made significant contributions to engineering education, advanced manufacturing research, and academic quality assurance at leading universities in India. His areas of expertise include additive manufacturing, surface engineering, vibration analysis, and automation, complemented by a strong record of industry collaboration and innovation-driven teaching. Dr. Khedkar earned his Ph.D. in Mechanical Engineering from Symbiosis International University in 2016. He has published over 60 research papers in reputed international journals (SCI, Scopus, WoS), holds eight patents, and has successfully completed multiple funded projects, including those supported by DRDO, universities’ funding, and various funding agencies. At the Symbiosis Institute of Technology, he served as Professor of Mechanical Engineering and Deputy Director (Administration), where he played a pivotal role in academic strategy, institutional accreditation (NAAC, NBA, AICTE), and infrastructure development. He spearheaded key initiatives such as the first-ever six-month compulsory internship program, a dual-degree collaboration with SIBM, and a national-level skill development program with the Bajaj Group, leading to the establishment of 14 state-of-the-art Centre of Excellence (CoEs) worth ₹16 crore. He has been instrumental in developing the first-ever Advanced Manufacturing Technology (AMT) Lab at SIT, equipped for non-conventional, advanced, and digital manufacturing research. He has also been instrumental in establishing 5G Lab under the Hon’ble Prime Minister’s Scheme with the Ministry of Telecommunication, Government of India, Makers Lab supported by Infosys (₹5 crore donation), and the AICTE-funded Idea Lab. He has provided consultancy to various universities, enabling them to file 51 patents in just 25 days. He has also organized industry conclaves across all SIT departments, attracting over 200 industry HR and technical officers, and more than eight international and national conferences. His sustained focus on industry-academia collaboration has resulted in over 90 MoUs with leading industrial partners. Dr. Khedkar’s leadership extends to quality assurance and institutional excellence, having served on several key committees at Symbiosis International University, which contributed to earn an A++ NAAC grade in all three cycles and NBA accreditation to various department. A member of several professional bodies including SAE, IEEE, IEI, ISTE, and ADI. He has chaired national and international conferences, reviewed for leading journals, and guided numerous Ph.D., M.Tech., and B. Des. and B.Tech. scholars. He is currently supervising four Ph.D. candidates, while three have successfully completed their research under his guidance. His vision continues to advance a transdisciplinary, industry-integrated approach to engineering education and research excellence, aligning with India’s evolving innovation and industrial landscape.",
+      "qualification_evidence": [
+        "Dr. Khedkar earned his Ph.D. in Mechanical Engineering from Symbiosis International University in 2016.",
+        "He has chaired national and international conferences, reviewed for leading journals, and guided numerous Ph.D., M.Tech., and B. Des. and B.Tech. scholars.",
+        "He is currently supervising four Ph.D. candidates, while three have successfully completed their research under his guidance. His vision continues to advance a transdisciplinary, industry-integrated approach to engineering education and research excellence, aligning with India’s evolving innovation and industrial landscape."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-vikrant-devidas-gaikwad-201",
+      "title": "Dr. Vikrant Devidas Gaikwad",
+      "description": "Dr. Vikrant Devidas Gaikwad is a distinguished academic leader with over 26 years of experience in advancing educational excellence and institutional growth.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Dr-Vikrant-Gaikwad.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-vikrant-devidas-gaikwad-201",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-vikrant-devidas-gaikwad-201",
+        "status": 200,
+        "captured_at": "2026-07-23T09:20:50.130121+00:00",
+        "raw_file": "raw/531e63cdf2ffb7e48a0a9aa2567fa11d35fce5853cc6fb06452f2e6684c1835a.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-vikrant-devidas-gaikwad-201"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Vikrant Devidas Gaikwad",
+      "normalised_name": "vikrant devidas gaikwad",
+      "leadership_title": "Dean - Academics",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Vikrant Devidas Gaikwad Dean - Academics Dr. Vikrant Devidas Gaikwad is a distinguished academic leader with over 26 years of experience in advancing educational excellence and institutional growth. As Dean–Academics at Dr. Vishwanath Karad MIT World Peace University, he has consistently demonstrated exceptional leadership in formulating academic strategies, enhancing staff productivity, and driving institutional reforms aligned with the university’s vision and mission. With a proven record of establishing and stabilizing academic operations in compliance with regulatory requirements, Dr. Gaikwad has significantly contributed to curriculum development, policy formulation, and quality assurance measures. He is widely recognized for his reformist approach and commitment to educational innovation, ensuring that quality education reaches students from all backgrounds. Dr. Gaikwad actively fosters a culture of open communication and intellectual growth, mentoring students and faculty alike. His focus on developing research-oriented environments and promoting industry–institute partnerships has helped nurture an undergraduate research culture and strengthen practical learning outcomes. Deeply committed to academic excellence, Dr. Gaikwad has played a pivotal role in enhancing educational processes through technology integration, innovative teaching methodologies, and the continuous development of academic programs across disciplines. His visionary leadership and emphasis on holistic student development continue to shape the university’s academic landscape.",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": [
+        "vikrant-devidas-gaikwad"
+      ]
+    },
+    {
+      "id": "dr-bharat-s-chaudhari-204",
+      "title": "Dr. Bharat S. Chaudhari",
+      "description": "Profile of Dr. Bharat S. Chaudhari, Senior Professor (HAG) and Dean of Research & Development at MIT-WPU Pune. Explore his academic leadership and contributions to engineering.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Dr-Bharat-Chaudhari.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-bharat-s-chaudhari-204",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-bharat-s-chaudhari-204",
+        "status": 200,
+        "captured_at": "2026-07-23T09:21:56.810692+00:00",
+        "raw_file": "raw/85c0b11a78465ac13019c2be4f0fbf7d5cc7b47eccbbb49233bddcf99ec7930c.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-bharat-s-chaudhari-204"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Bharat S. Chaudhari",
+      "normalised_name": "bharat s chaudhari",
+      "leadership_title": "Senior Professor (HAG) and Dean - Research and Development Dr. Bharat S. Chaudhari is a Senior Professor (HAG) and Dean, Research and Development at MIT World Peace University, Pune. With over 35 years of experience,",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Bharat S. Chaudhari Senior Professor (HAG) and Dean - Research and Development Dr. Bharat S. Chaudhari is a Senior Professor (HAG) and Dean, Research and Development at MIT World Peace University, Pune. With over 35 years of experience, he has made significant contributions in the fields of IoT, wireless, telecom, and optical networks, publishing 125+ research papers, four books, and securing four granted patents. He has previously served as Dean of Academics, Associate Dean of Faculty of Engineering and Technology, and Head of the School of Electrical Engineering/Electronics and Telecommunication Engineering at MIT-WPU. Before joining MIT-WPU, he was Dean/Principal at International Institute of Information Technology, Pune. He has actively fostered research culture and mentored numerous students and faculty. Dr. Chaudhari is a Visiting Scientist (Simons Associate) at ICTP, Trieste, and has led several national and international research projects. He is a Fellow of the Maharashtra Academy of Sciences, IETE, and IE(I), Founder Chair of the IEEE Pune Section, and Program Evaluator for the Engineering Accreditation Commission (EAC) of ABET with accreditation experience in the US and other countries. He is a recipient of the IETE N.V. Gadadhar Award, MAEER Ideal Teacher Award, and DST Young Scientist Grant, and serves as a jury member for reputed national awards.",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "mr-pradnesh-desai-209",
+      "title": "Mr Pradnesh Desai 209",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/mr-pradnesh-desai-209",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Mr Pradnesh Desai",
+      "normalised_name": "pradnesh desai",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-makarand-hastak-210",
+      "title": "Dr. Makarand Hastak",
+      "description": "Dr. Hastak is the immediate past President of the International Council for Research and Innovation in Building and Construction (CIB).",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/makrand-hasktak.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-makarand-hastak-210",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-makarand-hastak-210",
+        "status": 200,
+        "captured_at": "2026-07-23T09:30:23.823436+00:00",
+        "raw_file": "raw/033394f5205c092f616b5aee02d4e06529779284fdd7d7eec4fc0fba41daeab4.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-makarand-hastak-210"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Makarand Hastak",
+      "normalised_name": "makarand hastak",
+      "leadership_title": "Honorary Chairman",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Makarand Hastak Honorary Chairman Dr. Hastak is the immediate past President of the International Council for Research and Innovation in Building and Construction (CIB). He is the Reilly Professor in the Lyles School of Civil and Construction Engineering at Purdue University. He has served as the Associate Dean of Engineering and Dernlan Family Head of Construction Engineering and Management. He was an Honorary Distinguished Visiting Professor at Tsinghua University in China for several years. Dr. Hastak has assisted the construction industry for the past 39 years through consulting, research, teaching, and service to the community. Recognized around the world as an expert in the area of construction engineering and management he brings specific expertise in profitability of construction companies, disaster risk reduction, infrastructure management, project control, and risk management. He is a licensed Professional Engineer (PE), a Construction Risk Insurance Specialist (CRIS), a Certified Cost Professional (CCP), and a Nationally Certified Professional in Mediation (NCPM). Prof. Hastak has worked on numerous projects sponsored by the NSF, State DOTs, City Agencies, and the Construction Industry Institute (CII). As a Fellow of the American Council on Education (cohort of 2013-14) at Cornell University his work focused on Hybrid RCM budget, engaged institution, and Public-Private Partnership in academia. He is an elected member of the National Academy of Construction (NAC) and a Fellow of the American Society of Civil Engineers (ASCE). He recently served as the co-chair of the WBC2025 as well as one of the editors of the conference proceedings. He has served as the Academic Advisor to the CII Downstream and Chemicals Committee (DCC) as well as the Department Academic Advisor for Building and Real Estate, Hong Kong Polytechnic University, Hong Kong. As an educator and consultant, he has given over 70 keynotes and invited lectures around the world. Prof. Hastak has authored/co-authored over 250 publications and reports in his area of expertise as well as co-authored and edited seven books including (1) Infrastructure Planning, Engineering, and Economics (McGraw-Hill 2006 and 2015), (2) Skills and Knowledge of Cost Engineering (AACE 6 th Ed. 2015), and (3) CCP Certification Study Guide (AACE 2 nd Ed. 2016). He served on the AACE Education Board from 2004-2016. In 2012, Prof. Hastak chaired the ASCE Construction Research Congress and co-edited the conference proceedings. He was also the Editor-in-Chief of the ASCE Journal of Management in Engineering (2009-2016) and currently serves on its board. He is one of the founders and the past chair of the GLF-CEM, the Global Leadership Forum for Construction Engineering and Management programs and has served as the Chair of the Advisory Board and member of the ExCom. From 2008-2010, he served as the Chair of the National Consortium of Housing Research Centres (NCHRC) and was the invited Scholar-in-Residence (2006) at the National Association of Home Builders (NAHB) Research Centre. Dr. Hastak has developed and managed (2007-2019) several websites as a public service to the industry, such as: (1) Emerging Construction Technologies (ECT) and (2) Purdue Index for Construction (Pi-C) that illustrated the periodic health of the construction industry. Dr. Hastak received his BE (Civil) from Nagpur University, India, MS (Civil) from the University of Cincinnati, and PhD (Civil) from Purdue University, USA. He received a Master of Science in Law (MSL) from the Pritzker School of Law, Northwestern University with a focus on Intellectual Property and Contracts. He is a trained university planner through SCUP and has received training at Cornell University in Executive Leadership, Financial Mgmt., and Advanced Strategic Human Resource Mgmt. Dr. Hastak has completed 30-Hour OSHA Hazard Recognition Training for the Construction Industry. He has worked at Georgia",
+      "qualification_evidence": [
+        "Dr. Hastak received his BE (Civil) from Nagpur University, India, MS (Civil) from the University of Cincinnati, and PhD (Civil) from Purdue University, USA.",
+        "He received a Master of Science in Law (MSL) from the Pritzker School of Law, Northwestern University with a focus on Intellectual Property and Contracts."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-namesh-killemsetty-213",
+      "title": "Dr. Namesh Killemsetty",
+      "description": "Meet Dr. Namesh Killemsetty, a distinguished academic leader at MIT-WPU Pune. Explore his vision, leadership journey, academic contributions, and role in advancing innovation-driven education.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/Namesh-Killemsetty.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-namesh-killemsetty-213",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-namesh-killemsetty-213",
+        "status": 200,
+        "captured_at": "2026-07-23T09:30:50.584471+00:00",
+        "raw_file": "raw/58845451ed76905db14a7e86b98c81a2ea65db6a380cb8681904b4d08fe6e1e6.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-namesh-killemsetty-213"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Namesh Killemsetty",
+      "normalised_name": "namesh killemsetty",
+      "leadership_title": "Director - School of Government",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Namesh Killemsetty Director - School of Government Dr. Namesh Killemsetty comes with over a decade of academic and corporate experience. Bridging his backgrounds in civil engineering and public policy, he is a transdisciplinary scholar with a focus on urban governance, housing, and community rights for marginalized populations. Prior to joining MIT-WPU, he was previously working as an Associate Professor and Dean for Academic Affairs at the Jindal School of Government and Public Policy, O.P. Jindal Global University. Dr. Killemsetty holds a Ph.D. in Public Policy from the University of Massachusetts Boston (2021), an M.S. in Public Policy from the same institution, an M.Tech in Infrastructure Management from CEPT University, and a B.Tech in Civil Engineering from MNNIT Allahabad. Prior to his doctoral studies, he gained practical experience in the civil engineering industry, working with the Mumbai Metro and Jindal Steel and Power Limited. Dr. Killemsetty’s research is predominantly ethnographic, conducting extensive fieldwork across multiple Indian states including Odisha, Gujarat, Andhra Pradesh, and Delhi. By integrating theories from Urban Studies, Policy Analysis, Operations Research, and Decision Sciences, he creataes participatory approaches to policymaking that examine urban marginalization through lenses of gender, identity, class, and caste. Dr. Killemsetty's scholarly contributions have been widely recognized, including the 2021 Urban Affairs Association Alma H. Young Emerging Scholar Award and a global research award from the Woodrow Wilson International Center for Scholars, USAID, and the World Bank Group. In his academic role, he has taught courses on GIS in Policy Analysis, Project Management, Research Design, Statistics, and Qualitative Research Methods.",
+      "qualification_evidence": [
+        "Dr. Killemsetty holds a Ph.D. in Public Policy from the University of Massachusetts Boston (2021), an M.S. in Public Policy from the same institution, an M.Tech in Infrastructure Management from CEPT University, and a B.Tech in Civil Engineering from MNNIT Allahabad.",
+        "Prior to his doctoral studies, he gained practical experience in the civil engineering industry, working with the Mumbai Metro and Jindal Steel and Power Limited."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": [
+        "namesh-killemsetty"
+      ]
+    },
+    {
+      "id": "dr-sushma-s-kulkarni-219",
+      "title": "Dr. Sushma S. Kulkarni",
+      "description": "Dr. Sushma S. Kulkarni is a distinguished academician, researcher, and institutional leader with 38 years of experience dedicated to teaching, engineering pedagogy, and university governance.",
+      "image_urls": [
+        "https://mitwpu.edu.in/uploads/trustees/sushuma-kulkarni.webp"
+      ],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-sushma-s-kulkarni-219",
+        "requested_url": "https://mitwpu.edu.in/leadership/dr-sushma-s-kulkarni-219",
+        "status": 200,
+        "captured_at": "2026-07-23T09:34:01.513356+00:00",
+        "raw_file": "raw/137a771596a5769aee5f1c1e025554c96ac5f82298fb4369f853352fc8bdce77.html.gz",
+        "canonical": "https://mitwpu.edu.in/leadership/dr-sushma-s-kulkarni-219"
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "generic_site_contact_not_person_contact"
+      ],
+      "name": "Dr. Sushma S. Kulkarni",
+      "normalised_name": "sushma s kulkarni",
+      "leadership_title": "is a distinguished academician, researcher, and institutional leader with 38 years of experience dedicated to teaching, engineering pedagogy, and university governance.",
+      "biography_excerpt": "Leadership Home About Us Leadership Dr. Sushma S. Kulkarni Professor and Principal Advisor Dr. Sushma S. Kulkarni is a distinguished academician, researcher, and institutional leader with 38 years of experience dedicated to teaching, engineering pedagogy, and university governance. She has recently taken charge as the Professor and Principal Advisor of the Prof. Makarand Hastak School of Construction Engineering & Management at MIT-WPU, playing a pivotal role in shaping its first foundational batch commencing in August 2026. Academic Background & Career Highlights Dr. Kulkarni completed her B.E. in Civil Engineering from VNIT Nagpur, followed by an M.E. in Civil (Construction and Management) and a Ph.D. in Civil Engineering specializing in Total Quality Management (TQM) from Shivaji University. Her illustrative administrative journey includes serving as the Founding Vice- Chancellor of NICMAR University, Pune (2023–2026). At NICMAR, she led the strategic transformation of the institute into a multidisciplinary, NEP-2020-compliant university, designing high-impact programs in Built environment. She has served as Director (2011–2023) and Principal (2005-2011) at Rajarambapu Institute of Technology (RIT), elevating the institute to national prominence with top NAAC rankings, comprehensive NBA accreditations, and World Bank-funded TEQIP phase implementations. Global Leadership & Professional Contributions A globally recognized figure in engineering education, Dr. Kulkarni has sat at the forefront of international academic bodies: GEDC Chair (2023–2025) : Elected as Chair of the Global Engineering Deans Council, she orchestrated international summits in South Korea, Australia, and Mexico. CIB Board Member : Serves on the Board of the International Council for Research and Innovation in Building and Construction (since January 2026). IUCEE Director : Board Director for the Indo-Universal Collaboration for Engineering Education. Scholarly Editing : Serving as Editor of the Scopus-indexed Journal of Engineering Education Transformations (JEET), transforming it into a Q2- ranked global journal. Research, Innovation, & Accolades Dr. Kulkarni possesses a rich research profile with 149 publications spanning international journals and conferences. Her research highlights sustainable built environments, watershed management, concrete quality, Academic excellence and women empowerment. She has successfully guided numerous Ph.D. scholars, handled over ₹6.5 crores in consultancy and incubation grants, and has 2 patents registered/ published including fuzzy approach optimization for pond ash in concrete). In recognition of her global impact, she was honoured with the prestigious 2019 IFEES Duncan Fraser Global Award for Excellence in Engineering Education in Chennai. Her other distinct honours include the Lexicon Group \"Excellence Enablers Award - Vice Chancellor\" (2024), the ISTE Bhartiya Vidya Bhavan \"Best Engineering College Principal Award\" (2011) and being listed among \"India’s 10 Most Ambitious Women in Education Sector\". At the Prof. Makarand Hastak School of Construction Engineering & Management, Dr. Kulkarni brings her vast reservoir of experience in Outcome-Based Education (OBE), deep industry-academia linkages, and international collaboration networks to nurture future-ready leaders for the global construction and infrastructure sectors.",
+      "qualification_evidence": [
+        "She has recently taken charge as the Professor and Principal Advisor of the Prof. Makarand Hastak School of Construction Engineering & Management at MIT-WPU, playing a pivotal role in shaping its first foundational batch commencing in August 2026. Academic Background & Career Highlights Dr. Kulkarni completed her B.E. in Civil Engineering from VNIT Nagpur, followed by an M.E. in Civil (Construction and Management) and a Ph.D. in Civil Engineering specializing in Total Quality Management (TQM) from Shivaji University. Her illustrative administrative journey includes serving as the Founding Vice- Chancellor of NICMAR University, Pune (2023–2026). At NICMAR, she led the strategic transformation of the institute into a multidisciplinary, NEP-2020-compliant university, designing high-impact programs in Built environment.",
+        "She has successfully guided numerous Ph.D. scholars, handled over ₹6.5 crores in consultancy and incubation grants, and has 2 patents registered/ published including fuzzy approach optimization for pond ash in concrete). In recognition of her global impact, she was honoured with the prestigious 2019 IFEES Duncan Fraser Global Award for Excellence in Engineering Education in Chennai. Her other distinct honours include the Lexicon Group \"Excellence Enablers Award - Vice Chancellor\" (2024), the ISTE Bhartiya Vidya Bhavan \"Best Engineering College Principal Award\" (2011) and being listed among \"India’s 10 Most Ambitious Women in Education Sector\". At the Prof. Makarand Hastak School of Construction Engineering & Management, Dr. Kulkarni brings her vast reservoir of experience in Outcome-Based Education (OBE), deep industry-academia linkages, and international collaboration networks to nurture future-ready leaders for the global construction and infrastructure sectors."
+      ],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [
+          "admissions@mitwpu.edu.in"
+        ],
+        "source_phone_values": [
+          "+91",
+          "+912071177104"
+        ]
+      },
+      "matching_faculty_profile_refs": []
+    },
+    {
+      "id": "dr-abhijit-nair-221",
+      "title": "Dr Abhijit Nair 221",
+      "description": "",
+      "image_urls": [],
+      "source": {
+        "url": "https://mitwpu.edu.in/leadership/dr-abhijit-nair-221",
+        "status": null,
+        "captured_at": null,
+        "raw_file": null,
+        "canonical": null
+      },
+      "duplicate_group": null,
+      "conflict_flags": [
+        "also_has_faculty_profile",
+        "missing_leadership_title",
+        "source_capture_failed"
+      ],
+      "name": "Dr Abhijit Nair",
+      "normalised_name": "abhijit nair",
+      "leadership_title": "",
+      "biography_excerpt": "",
+      "qualification_evidence": [],
+      "research_interest_evidence": [],
+      "contact": {
+        "person_specific_emails": [],
+        "generic_site_emails": [],
+        "source_phone_values": []
+      },
+      "matching_faculty_profile_refs": [
+        "abhijit-nair"
+      ]
+    }
+  ]
+}

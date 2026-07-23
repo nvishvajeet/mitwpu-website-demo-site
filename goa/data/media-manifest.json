@@ -1,0 +1,842 @@
+[
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bms.svg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bms.svg",
+    "status": "downloaded",
+    "filename": "a0a47c47ae8e0eaf-bms.svg",
+    "sha256": "a0a47c47ae8e0eaf6329ce4e7791e4b5a657c86edd8aefcdb798b30e588dc35d",
+    "bytes": 3721,
+    "content_type": "image/svg+xml",
+    "local_path": "assets/media/a0a47c47ae8e0eaf-bms.svg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/academic-core-01.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/academic-core-01.jpg",
+    "status": "downloaded",
+    "filename": "7ecd1b10ce898047-academic-core-01.jpg",
+    "sha256": "7ecd1b10ce898047ad3ecaa63126545fed656511c58afb0b38aa263da1bdfaf6",
+    "bytes": 98505,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/7ecd1b10ce898047-academic-core-01.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Student-Experince-Program--1024x530.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Student-Experince-Program--1024x530.webp",
+    "status": "downloaded",
+    "filename": "a8d90de14be112d2-student-experince-program-1024x530.webp",
+    "sha256": "a8d90de14be112d2b0eda2cbb604ef4beb7ed92953c3eb9cf0e00fed34b75d63",
+    "bytes": 53676,
+    "content_type": "image/webp",
+    "local_path": "assets/media/a8d90de14be112d2-student-experince-program-1024x530.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/BCS.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/BCS.jpg",
+    "status": "downloaded",
+    "filename": "9f6ec317a6c01a0a-bcs.jpg",
+    "sha256": "9f6ec317a6c01a0a33e3bf44e4ceaa4ab06e8317d09836128e05cfc739695d95",
+    "bytes": 59636,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/9f6ec317a6c01a0a-bcs.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/Transdiciplinary-1.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/Transdiciplinary-1.webp",
+    "status": "downloaded",
+    "filename": "50ac6a5ce9df5b32-transdiciplinary-1.webp",
+    "sha256": "50ac6a5ce9df5b324368b219a6865cc3bf1f5a3303d8041b0a1d359b6e866033",
+    "bytes": 130750,
+    "content_type": "image/webp",
+    "local_path": "assets/media/50ac6a5ce9df5b32-transdiciplinary-1.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/06/WPU-GOA-NEW-Logo.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/06/WPU-GOA-NEW-Logo.png",
+    "status": "downloaded",
+    "filename": "2831bbe9855f3794-wpu-goa-new-logo.png",
+    "sha256": "2831bbe9855f3794c93a3fa487928778bab8a7c95d805a0da4f511ed9ab198bf",
+    "bytes": 112501,
+    "content_type": "image/png",
+    "local_path": "assets/media/2831bbe9855f3794-wpu-goa-new-logo.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bdes-communication-design.svg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bdes-communication-design.svg",
+    "status": "downloaded",
+    "filename": "a5b3d76c084dd2b4-bdes-communication-design.svg",
+    "sha256": "a5b3d76c084dd2b454f050b0da74a09702bff474bd146568bef2758a4849d44f",
+    "bytes": 2688,
+    "content_type": "image/svg+xml",
+    "local_path": "assets/media/a5b3d76c084dd2b4-bdes-communication-design.svg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bsc-psycho.svg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bsc-psycho.svg",
+    "status": "downloaded",
+    "filename": "4fc054f039106b4b-bsc-psycho.svg",
+    "sha256": "4fc054f039106b4b6110a5055a6bbb01640fe83e65553283704145e36cc879b9",
+    "bytes": 3124,
+    "content_type": "image/svg+xml",
+    "local_path": "assets/media/4fc054f039106b4b-bsc-psycho.svg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/btech-cse.svg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/btech-cse.svg",
+    "status": "downloaded",
+    "filename": "4fc313adea52e65f-btech-cse.svg",
+    "sha256": "4fc313adea52e65fb0c2330a3cca5d3bb1892e89cc8ef6b1b7f62d9f03603d4b",
+    "bytes": 4313,
+    "content_type": "image/svg+xml",
+    "local_path": "assets/media/4fc313adea52e65f-btech-cse.svg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bdes-integrated-product.svg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bdes-integrated-product.svg",
+    "status": "downloaded",
+    "filename": "cd3eb8419a33e1ca-bdes-integrated-product.svg",
+    "sha256": "cd3eb8419a33e1cae0d2e91a1f7266849b0a3b6ef0829b875264e62603febde9",
+    "bytes": 4676,
+    "content_type": "image/svg+xml",
+    "local_path": "assets/media/cd3eb8419a33e1ca-bdes-integrated-product.svg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/What-Do-We-%CE%93C%C2%BFSeek-in-Our-Students_-1024x833.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/What-Do-We-%CE%93C%C2%BFSeek-in-Our-Students_-1024x833.webp",
+    "status": "downloaded",
+    "filename": "1cdb4c56038aefe0-what-do-we-ce-93c-c2-bfseek-in-our-students-1024x833.webp",
+    "sha256": "1cdb4c56038aefe03e2510bbbf7db03bc5a7546d5db68d17dd9e83048a69b8c6",
+    "bytes": 38854,
+    "content_type": "image/webp",
+    "local_path": "assets/media/1cdb4c56038aefe0-what-do-we-ce-93c-c2-bfseek-in-our-students-1024x833.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/transdisiplinary-approch-wpu-goa-1-1024x320.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/transdisiplinary-approch-wpu-goa-1-1024x320.jpg",
+    "status": "downloaded",
+    "filename": "359f5cb9dbe9bcc0-transdisiplinary-approch-wpu-goa-1-1024x320.jpg",
+    "sha256": "359f5cb9dbe9bcc08ad88c7c5c59056d792fa7d5ca85d20fbe7334643febfcba",
+    "bytes": 60745,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/359f5cb9dbe9bcc0-transdisiplinary-approch-wpu-goa-1-1024x320.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/bsc-psychology-careers-wpu-goa-1024x320.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/bsc-psychology-careers-wpu-goa-1024x320.jpg",
+    "status": "downloaded",
+    "filename": "89a6ef67bd009164-bsc-psychology-careers-wpu-goa-1024x320.jpg",
+    "sha256": "89a6ef67bd0091643d5ace71f0ac5b56544c044294d61951efed56c3877b8762",
+    "bytes": 49276,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/89a6ef67bd009164-bsc-psychology-careers-wpu-goa-1024x320.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/bsc-psychology-subjects-career-paths-india-1024x320.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/bsc-psychology-subjects-career-paths-india-1024x320.jpg",
+    "status": "downloaded",
+    "filename": "2e178f7b8b31f87d-bsc-psychology-subjects-career-paths-india-1024x320.jpg",
+    "sha256": "2e178f7b8b31f87da45d8853ca8843b8731ac2c88c1e0fb9e302af6f0a14803d",
+    "bytes": 58603,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/2e178f7b8b31f87d-bsc-psychology-subjects-career-paths-india-1024x320.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/ai-careers-computer-science-wpu-goa.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/ai-careers-computer-science-wpu-goa.jpg",
+    "status": "downloaded",
+    "filename": "3176d5f8fc5649b5-ai-careers-computer-science-wpu-goa.jpg",
+    "sha256": "3176d5f8fc5649b516897072ddf480d41783069347716209a64f88bcdb86dd62",
+    "bytes": 263268,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/3176d5f8fc5649b5-ai-careers-computer-science-wpu-goa.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/wpu-goa-transdisciplinary-university.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/wpu-goa-transdisciplinary-university.jpg",
+    "status": "downloaded",
+    "filename": "4776a874c4b000bd-wpu-goa-transdisciplinary-university.jpg",
+    "sha256": "4776a874c4b000bd5cd98bb7f2d894b9370362d754678457cd5f5ceda2c2c577",
+    "bytes": 647170,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/4776a874c4b000bd-wpu-goa-transdisciplinary-university.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/bsc-hons-economics-career-scope.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/bsc-hons-economics-career-scope.jpg",
+    "status": "downloaded",
+    "filename": "54ff23c08dd43801-bsc-hons-economics-career-scope.jpg",
+    "sha256": "54ff23c08dd438011a3fe7124bf60dd0916a8161b7e5662945c4179086980601",
+    "bytes": 373251,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/54ff23c08dd43801-bsc-hons-economics-career-scope.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/why-btech-computer-science-wpu-goa-1024x320.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/why-btech-computer-science-wpu-goa-1024x320.jpg",
+    "status": "downloaded",
+    "filename": "54c39726d59f1d1a-why-btech-computer-science-wpu-goa-1024x320.jpg",
+    "sha256": "54c39726d59f1d1af91f05bbd5cb9854ce0808c61861a26ff0ce526b720b49d8",
+    "bytes": 66597,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/54c39726d59f1d1a-why-btech-computer-science-wpu-goa-1024x320.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/bsc-psychology-subjects-career-paths-india.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/bsc-psychology-subjects-career-paths-india.jpg",
+    "status": "downloaded",
+    "filename": "13289ef2c5d96f8e-bsc-psychology-subjects-career-paths-india.jpg",
+    "sha256": "13289ef2c5d96f8e105ecd6c64905ee5674c3ea0782e3ba237db8e3f3de95330",
+    "bytes": 1152634,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/13289ef2c5d96f8e-bsc-psychology-subjects-career-paths-india.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/identify-best-university-career-goals-1.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/identify-best-university-career-goals-1.jpg",
+    "status": "downloaded",
+    "filename": "4cae098a07fe07a7-identify-best-university-career-goals-1.jpg",
+    "sha256": "4cae098a07fe07a7828b3ce66d1593d84236acc0b65275916e45b3093bc7453d",
+    "bytes": 250999,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/4cae098a07fe07a7-identify-best-university-career-goals-1.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bsc-media-communication-films-future-career-scope-1.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/bsc-media-communication-films-future-career-scope-1.jpg",
+    "status": "downloaded",
+    "filename": "069215de58894cd8-bsc-media-communication-films-future-career-scope-1.jpg",
+    "sha256": "069215de58894cd84a7c59b15a29379ed5e644972a3f64da1329b631b000a409",
+    "bytes": 246631,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/069215de58894cd8-bsc-media-communication-films-future-career-scope-1.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/why-btech-computer-science-wpu-goa.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/why-btech-computer-science-wpu-goa.jpg",
+    "status": "downloaded",
+    "filename": "0f80d9ad73ef8051-why-btech-computer-science-wpu-goa.jpg",
+    "sha256": "0f80d9ad73ef80510072460061cbe637ef18a0d7cb16b94e77a18d8eaf254a1f",
+    "bytes": 309295,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/0f80d9ad73ef8051-why-btech-computer-science-wpu-goa.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/careers-in-communication-design.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/careers-in-communication-design.jpg",
+    "status": "downloaded",
+    "filename": "8eb4583000d68cf3-careers-in-communication-design.jpg",
+    "sha256": "8eb4583000d68cf366adc875f79499ea0f75124256ba153deb8d8d08f0723fef",
+    "bytes": 368563,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/8eb4583000d68cf3-careers-in-communication-design.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/wpugoa-ai-education-computer-science.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/wpugoa-ai-education-computer-science.jpg",
+    "status": "downloaded",
+    "filename": "57f5a21a2fdb1f08-wpugoa-ai-education-computer-science.jpg",
+    "sha256": "57f5a21a2fdb1f080a6ca17b0aa67fa5af6199fd5661fa0bb4a2d7ccdc8e8f4a",
+    "bytes": 1121179,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/57f5a21a2fdb1f08-wpugoa-ai-education-computer-science.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/future-ready-university-career-success.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/future-ready-university-career-success.jpg",
+    "status": "downloaded",
+    "filename": "436d5c0bc5b126c9-future-ready-university-career-success.jpg",
+    "sha256": "436d5c0bc5b126c9f45262c693080e656a9ec42ed8ca3438be9fadbad37274b9",
+    "bytes": 293951,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/436d5c0bc5b126c9-future-ready-university-career-success.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/what-to-expect-integrated-product-design-program-1024x320.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/what-to-expect-integrated-product-design-program-1024x320.jpg",
+    "status": "downloaded",
+    "filename": "911b4fc98446c7e6-what-to-expect-integrated-product-design-program-1024x3.jpg",
+    "sha256": "911b4fc98446c7e60c3bf93ebf4c147ae4dc1818620849f66321f96acc54aac0",
+    "bytes": 70204,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/911b4fc98446c7e6-what-to-expect-integrated-product-design-program-1024x3.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/energy-systems-engineering-renewable-future-1.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/energy-systems-engineering-renewable-future-1.jpg",
+    "status": "downloaded",
+    "filename": "fd9e42bbf7958782-energy-systems-engineering-renewable-future-1.jpg",
+    "sha256": "fd9e42bbf79587823862397dd80a8996339f572cd6f4f66839941939da16e38f",
+    "bytes": 1287513,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/fd9e42bbf7958782-energy-systems-engineering-renewable-future-1.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/wpu-goa-extends-mit-pune-legacy.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/wpu-goa-extends-mit-pune-legacy.png",
+    "status": "downloaded",
+    "filename": "78f68d9563f70cff-wpu-goa-extends-mit-pune-legacy.png",
+    "sha256": "78f68d9563f70cff35868a34e5bdcb2851e5e47e7f10cfb621c283bcfa1700aa",
+    "bytes": 763848,
+    "content_type": "image/png",
+    "local_path": "assets/media/78f68d9563f70cff-wpu-goa-extends-mit-pune-legacy.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/what-to-expect-integrated-product-design-program.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/what-to-expect-integrated-product-design-program.jpg",
+    "status": "downloaded",
+    "filename": "d7e54c31bd6ceb8f-what-to-expect-integrated-product-design-program.jpg",
+    "sha256": "d7e54c31bd6ceb8f228f0e2d1b721747b7b121fe773c06d28e44db6beb291311",
+    "bytes": 341249,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/d7e54c31bd6ceb8f-what-to-expect-integrated-product-design-program.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/rise-of-transdisciplinary-education-wpu-goa-1024x320.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/rise-of-transdisciplinary-education-wpu-goa-1024x320.jpg",
+    "status": "downloaded",
+    "filename": "65cba6fa74c96ee5-rise-of-transdisciplinary-education-wpu-goa-1024x320.jpg",
+    "sha256": "65cba6fa74c96ee57a527cb657409fe9d36e2ed14a117d84b5b2cbec6bf201f3",
+    "bytes": 53451,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/65cba6fa74c96ee5-rise-of-transdisciplinary-education-wpu-goa-1024x320.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/product-design-career-future-wpu-goa.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/product-design-career-future-wpu-goa.jpeg",
+    "status": "downloaded",
+    "filename": "20ff69cacb0dd32f-product-design-career-future-wpu-goa.jpg",
+    "sha256": "20ff69cacb0dd32f19ca095308735a28c3430601eee0ea4a95a14131ff4f944f",
+    "bytes": 406506,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/20ff69cacb0dd32f-product-design-career-future-wpu-goa.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/rise-of-transdisciplinary-education-wpu-goa.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/rise-of-transdisciplinary-education-wpu-goa.jpg",
+    "status": "downloaded",
+    "filename": "03996e3a85466b00-rise-of-transdisciplinary-education-wpu-goa.jpg",
+    "sha256": "03996e3a85466b00503aec6ce8b9f0eeb29953d71a704c65dbf67d33cbf8c510",
+    "bytes": 246755,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/03996e3a85466b00-rise-of-transdisciplinary-education-wpu-goa.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/transdisiplinary-approch-wpu-goa-1.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/transdisiplinary-approch-wpu-goa-1.jpg",
+    "status": "downloaded",
+    "filename": "7b731508eb4cab74-transdisiplinary-approch-wpu-goa-1.jpg",
+    "sha256": "7b731508eb4cab7452bd6c7a027cfd7949d6bbf4087d567eaaf38783b373e4c6",
+    "bytes": 424749,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/7b731508eb4cab74-transdisiplinary-approch-wpu-goa-1.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/wpu-goa-integrates-industry-ready-learning.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/wpu-goa-integrates-industry-ready-learning.jpg",
+    "status": "downloaded",
+    "filename": "d6ce918bae5b6590-wpu-goa-integrates-industry-ready-learning.jpg",
+    "sha256": "d6ce918bae5b65908bdea2ffedc210c2bbba617ce0651bd548200c08ee7f432d",
+    "bytes": 294030,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/d6ce918bae5b6590-wpu-goa-integrates-industry-ready-learning.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/bsc-psychology-careers-wpu-goa.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/bsc-psychology-careers-wpu-goa.jpg",
+    "status": "downloaded",
+    "filename": "971e628a2ddfdc50-bsc-psychology-careers-wpu-goa.jpg",
+    "sha256": "971e628a2ddfdc50b88a2f259fe48af9d30962338e0b784343deab3b6cf883b2",
+    "bytes": 232614,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/971e628a2ddfdc50-bsc-psychology-careers-wpu-goa.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/transdisciplinary-university-future-education-wpu-goa.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/transdisciplinary-university-future-education-wpu-goa.jpg",
+    "status": "downloaded",
+    "filename": "314a553e5c565351-transdisciplinary-university-future-education-wpu-goa.jpg",
+    "sha256": "314a553e5c5653511f203d3425ae78e08acbb774c4cf8543bbde740368ee117a",
+    "bytes": 1138586,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/314a553e5c565351-transdisciplinary-university-future-education-wpu-goa.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/students-beyond-traditional-universities-wpu-goa.jpg.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/students-beyond-traditional-universities-wpu-goa.jpg.jpg",
+    "status": "downloaded",
+    "filename": "95fc1513afaa5380-students-beyond-traditional-universities-wpu-goa-jpg.jpg",
+    "sha256": "95fc1513afaa53800fa38abcfaa03a7681c8daecc0a77068ee08e3641244dffe",
+    "bytes": 1154436,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/95fc1513afaa5380-students-beyond-traditional-universities-wpu-goa-jpg.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/The-Goa-Proposition.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/The-Goa-Proposition.webp",
+    "status": "downloaded",
+    "filename": "697e7472b3902426-the-goa-proposition.webp",
+    "sha256": "697e7472b3902426e6a5de5bd744b3d84bf1491045092805a6b7235efc748f35",
+    "bytes": 100166,
+    "content_type": "image/webp",
+    "local_path": "assets/media/697e7472b3902426-the-goa-proposition.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/wpu-goa-key-features-1.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/wpu-goa-key-features-1.jpg",
+    "status": "downloaded",
+    "filename": "b59eb46d80791f5c-wpu-goa-key-features-1.jpg",
+    "sha256": "b59eb46d80791f5c6224cb4f4f69c1e2d1cc65e2b84748c92b9903429f967d02",
+    "bytes": 375967,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/b59eb46d80791f5c-wpu-goa-key-features-1.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Mask-group.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Mask-group.png",
+    "status": "downloaded",
+    "filename": "6e1a7387d80f0862-mask-group.png",
+    "sha256": "6e1a7387d80f086296eb56fc74f08c75a87faa0b87b6da970a9541d8d473b1ea",
+    "bytes": 374753,
+    "content_type": "image/png",
+    "local_path": "assets/media/6e1a7387d80f0862-mask-group.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Pandit-Niladri-Kumaar-rkxhtbtdvadpok0m36hfcpyh1ym1v0nya1auknrc7g.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Pandit-Niladri-Kumaar-rkxhtbtdvadpok0m36hfcpyh1ym1v0nya1auknrc7g.jpg",
+    "status": "downloaded",
+    "filename": "ebffc1e8e78d43b1-pandit-niladri-kumaar-rkxhtbtdvadpok0m36hfcpyh1ym1v0nya.jpg",
+    "sha256": "ebffc1e8e78d43b1f2b590356be3351eb9454992e1f5e934017dea2d554fe286",
+    "bytes": 12373,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/ebffc1e8e78d43b1-pandit-niladri-kumaar-rkxhtbtdvadpok0m36hfcpyh1ym1v0nya.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Prof.-Barbara-Regeer-rgkpv16o0t4welmxzijlw2cxmea87z1bz1mzs869ho.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Prof.-Barbara-Regeer-rgkpv16o0t4welmxzijlw2cxmea87z1bz1mzs869ho.webp",
+    "status": "downloaded",
+    "filename": "c641368618d55bed-prof-barbara-regeer-rgkpv16o0t4welmxzijlw2cxmea87z1bz1m.webp",
+    "sha256": "c641368618d55bed98e5640b30b84378fdb1926d24a7edc90d00430098e99371",
+    "bytes": 4316,
+    "content_type": "image/webp",
+    "local_path": "assets/media/c641368618d55bed-prof-barbara-regeer-rgkpv16o0t4welmxzijlw2cxmea87z1bz1m.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/HOSTEL-COURTYARD-rloulujp68dsxgcc8j7ppo460c0zt2jnace2fh8bzs.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/HOSTEL-COURTYARD-rloulujp68dsxgcc8j7ppo460c0zt2jnace2fh8bzs.png",
+    "status": "downloaded",
+    "filename": "80dac961349008c3-hostel-courtyard-rloulujp68dsxgcc8j7ppo460c0zt2jnace2fh.png",
+    "sha256": "80dac961349008c37063ff9e4420f5a20a204f83c9ee68b90440703149770423",
+    "bytes": 209307,
+    "content_type": "image/png",
+    "local_path": "assets/media/80dac961349008c3-hostel-courtyard-rloulujp68dsxgcc8j7ppo460c0zt2jnace2fh.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Delfina-Fantini-van-Ditmar-rgmps2t2lrcdcawks56ra88tor7kuwd6xmmy0rdcwc.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Delfina-Fantini-van-Ditmar-rgmps2t2lrcdcawks56ra88tor7kuwd6xmmy0rdcwc.webp",
+    "status": "downloaded",
+    "filename": "8fd20395739e6ff7-delfina-fantini-van-ditmar-rgmps2t2lrcdcawks56ra88tor7k.webp",
+    "sha256": "8fd20395739e6ff735747072ea1d4b686042e935f91dee7e08ed1ed84a6e4850",
+    "bytes": 3440,
+    "content_type": "image/webp",
+    "local_path": "assets/media/8fd20395739e6ff7-delfina-fantini-van-ditmar-rgmps2t2lrcdcawks56ra88tor7k.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Vishwanath-Karad.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Vishwanath-Karad.webp",
+    "status": "downloaded",
+    "filename": "7f6a5c84082bf134-prof-vishwanath-karad.webp",
+    "sha256": "7f6a5c84082bf13480e7ac8ccc0f06e31935c174814deeeee2f472fbde388e06",
+    "bytes": 301354,
+    "content_type": "image/webp",
+    "local_path": "assets/media/7f6a5c84082bf134-prof-vishwanath-karad.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-M.-S.-Swaminathan-1.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-M.-S.-Swaminathan-1.webp",
+    "status": "downloaded",
+    "filename": "0c157ab5bbc664fa-prof-m-s-swaminathan-1.webp",
+    "sha256": "0c157ab5bbc664fa1b5ce7c27fabac239758cb7956dc3365a0201e7f7ad6099b",
+    "bytes": 41478,
+    "content_type": "image/webp",
+    "local_path": "assets/media/0c157ab5bbc664fa-prof-m-s-swaminathan-1.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/12121-rgm71w2eomfk1076k80yduvr2k6yyaw18pmhb0ztsc.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/12121-rgm71w2eomfk1076k80yduvr2k6yyaw18pmhb0ztsc.webp",
+    "status": "downloaded",
+    "filename": "45cc47ac2b39d3af-12121-rgm71w2eomfk1076k80yduvr2k6yyaw18pmhb0ztsc.webp",
+    "sha256": "45cc47ac2b39d3afd3c59f3ef516ca63b50c81eb06dbfb9132ade7a19d34246d",
+    "bytes": 7238,
+    "content_type": "image/webp",
+    "local_path": "assets/media/45cc47ac2b39d3af-12121-rgm71w2eomfk1076k80yduvr2k6yyaw18pmhb0ztsc.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Seema-Purushothaman.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Seema-Purushothaman.webp",
+    "status": "downloaded",
+    "filename": "0e5db03fe771785d-prof-seema-purushothaman.webp",
+    "sha256": "0e5db03fe771785d1ad7b7034abf93b7021f4c7fa7fe8c6fd167a552f8921661",
+    "bytes": 8152,
+    "content_type": "image/webp",
+    "local_path": "assets/media/0e5db03fe771785d-prof-seema-purushothaman.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Shaphali-Gupta-rgmkc6a07t5zm1grpyoy45xcmqsllvn4zzuu9nu7po.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Shaphali-Gupta-rgmkc6a07t5zm1grpyoy45xcmqsllvn4zzuu9nu7po.webp",
+    "status": "downloaded",
+    "filename": "4a2cc0e290c78f7b-shaphali-gupta-rgmkc6a07t5zm1grpyoy45xcmqsllvn4zzuu9nu7.webp",
+    "sha256": "4a2cc0e290c78f7be4f7944df6470a1a1407a97f97a6ee7512438b91e4ad17d7",
+    "bytes": 5748,
+    "content_type": "image/webp",
+    "local_path": "assets/media/4a2cc0e290c78f7b-shaphali-gupta-rgmkc6a07t5zm1grpyoy45xcmqsllvn4zzuu9nu7.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Paul-Gordon-Emerson-rlqwjl0qsfzdrvxu5jotm86bzz5q6cin5v5lubj2i0.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Paul-Gordon-Emerson-rlqwjl0qsfzdrvxu5jotm86bzz5q6cin5v5lubj2i0.jpeg",
+    "status": "downloaded",
+    "filename": "5935fdc83c4958ca-paul-gordon-emerson-rlqwjl0qsfzdrvxu5jotm86bzz5q6cin5v5.jpg",
+    "sha256": "5935fdc83c4958cafde19e47aa934a17414a6909240c2cd8326a4801f243b934",
+    "bytes": 6249,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/5935fdc83c4958ca-paul-gordon-emerson-rlqwjl0qsfzdrvxu5jotm86bzz5q6cin5v5.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Outcomes-and-Impact-rleyhxbca9i7sa4y01ws9o3l999zvpo7qrbvayvjb4.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Outcomes-and-Impact-rleyhxbca9i7sa4y01ws9o3l999zvpo7qrbvayvjb4.jpeg",
+    "status": "downloaded",
+    "filename": "64ee2cf5dbac1f15-outcomes-and-impact-rleyhxbca9i7sa4y01ws9o3l999zvpo7qrb.jpg",
+    "sha256": "64ee2cf5dbac1f15ba429c8efedd992d1868721e0248cde4cecb32baf00c96e8",
+    "bytes": 71131,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/64ee2cf5dbac1f15-outcomes-and-impact-rleyhxbca9i7sa4y01ws9o3l999zvpo7qrb.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/events-main-vid-e1767167594328.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/events-main-vid-e1767167594328.webp",
+    "status": "downloaded",
+    "filename": "87075cc8079adb35-events-main-vid-e1767167594328.webp",
+    "sha256": "87075cc8079adb35d3192101e64703185e68d6b998af21acb0accc675ce60a1d",
+    "bytes": 21596,
+    "content_type": "image/webp",
+    "local_path": "assets/media/87075cc8079adb35-events-main-vid-e1767167594328.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Global-Visioning-Conference-Dublin-Ireland.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Global-Visioning-Conference-Dublin-Ireland.jpeg",
+    "status": "downloaded",
+    "filename": "694e45a0caa77548-global-visioning-conference-dublin-ireland.jpg",
+    "sha256": "694e45a0caa77548f818c79ffc817732623a3276286a1778a4ab0edb2c04848b",
+    "bytes": 40555,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/694e45a0caa77548-global-visioning-conference-dublin-ireland.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/fitness.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/fitness.png",
+    "status": "downloaded",
+    "filename": "cb84077e4992f2fb-fitness.png",
+    "sha256": "cb84077e4992f2fb2ed344644e1f8d972f4ed6024149f4c77ffdb59e524bef35",
+    "bytes": 510598,
+    "content_type": "image/png",
+    "local_path": "assets/media/cb84077e4992f2fb-fitness.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/Walter-Leal-Filho-Transdisciplinary-Education.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/Walter-Leal-Filho-Transdisciplinary-Education.png",
+    "status": "downloaded",
+    "filename": "3613e74df7a38c89-walter-leal-filho-transdisciplinary-education.png",
+    "sha256": "3613e74df7a38c89f5d1acbb51c98031710ed6d9adfdffd821609b18140720a8",
+    "bytes": 315036,
+    "content_type": "image/png",
+    "local_path": "assets/media/3613e74df7a38c89-walter-leal-filho-transdisciplinary-education.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-11.16.09.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-11.16.09.jpeg",
+    "status": "downloaded",
+    "filename": "2b8ff0cee41be39b-whatsapp-image-2026-04-10-at-11-16-09.jpg",
+    "sha256": "2b8ff0cee41be39bb04efe530596c4000f743199aaeabe9f0c33c890660e2729",
+    "bytes": 243248,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/2b8ff0cee41be39b-whatsapp-image-2026-04-10-at-11-16-09.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-7.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-7.png",
+    "status": "downloaded",
+    "filename": "c126293aef8feefa-group-7.png",
+    "sha256": "c126293aef8feefa55e52b0d077e13abf92ac3ab265f57d4fef06422b36d3128",
+    "bytes": 1410,
+    "content_type": "image/png",
+    "local_path": "assets/media/c126293aef8feefa-group-7.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/student-experience-and-counselling-e1775128535829.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/student-experience-and-counselling-e1775128535829.jpeg",
+    "status": "downloaded",
+    "filename": "bf460493cbf50612-student-experience-and-counselling-e1775128535829.jpg",
+    "sha256": "bf460493cbf506120ce85769f30d9e7fcf84fc2de8ba1aca194915bdc7398fd6",
+    "bytes": 70341,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/bf460493cbf50612-student-experience-and-counselling-e1775128535829.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Inaugural-Visioning-Conference.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Inaugural-Visioning-Conference.png",
+    "status": "downloaded",
+    "filename": "fb0c8e77e81964ec-inaugural-visioning-conference.png",
+    "sha256": "fb0c8e77e81964ec71480d76269be0fcd68eff64cce2fed75e7a5c5fba47fad8",
+    "bytes": 2806199,
+    "content_type": "image/png",
+    "local_path": "assets/media/fb0c8e77e81964ec-inaugural-visioning-conference.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-08-at-18.34.55.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-08-at-18.34.55.jpeg",
+    "status": "downloaded",
+    "filename": "e5464837b5bdaa89-whatsapp-image-2026-05-08-at-18-34-55.jpg",
+    "sha256": "e5464837b5bdaa8901d7a49fcc325ba8bcc512d10e6b70ff1900c1570a34609a",
+    "bytes": 262466,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/e5464837b5bdaa89-whatsapp-image-2026-05-08-at-18-34-55.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-23-768x528.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-23-768x528.webp",
+    "status": "downloaded",
+    "filename": "e959e162a552eec3-mask-group-23-768x528.webp",
+    "sha256": "e959e162a552eec3aae008aa5dad0ba58bd10424e46dcc0d115a0cc163ee9ae7",
+    "bytes": 34814,
+    "content_type": "image/webp",
+    "local_path": "assets/media/e959e162a552eec3-mask-group-23-768x528.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-30-at-18.12.14-724x1024.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-30-at-18.12.14-724x1024.jpeg",
+    "status": "downloaded",
+    "filename": "5c37bc4486313de7-whatsapp-image-2026-04-30-at-18-12-14-724x1024.jpg",
+    "sha256": "5c37bc4486313de77c2d6784fd5e3a0a453240d13ba971400c38180d19df3eea",
+    "bytes": 133305,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/5c37bc4486313de7-whatsapp-image-2026-04-30-at-18-12-14-724x1024.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-10.20.29.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-10.20.29.jpeg",
+    "status": "downloaded",
+    "filename": "6922c4df448736ef-whatsapp-image-2026-07-08-at-10-20-29.jpg",
+    "sha256": "6922c4df448736ef292d5a91768c54c650029b57eda7c477157da22c7c3e5c23",
+    "bytes": 18551,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/6922c4df448736ef-whatsapp-image-2026-07-08-at-10-20-29.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Ashish-Bharadwaj-PRO-VC.jpg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/05/Ashish-Bharadwaj-PRO-VC.jpg",
+    "status": "downloaded",
+    "filename": "2e9cc0d2c1c3ff99-ashish-bharadwaj-pro-vc.jpg",
+    "sha256": "2e9cc0d2c1c3ff99221d842824301c3f523884732ed249e41b522a954398fa19",
+    "bytes": 57588,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/2e9cc0d2c1c3ff99-ashish-bharadwaj-pro-vc.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-27.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-27.webp",
+    "status": "downloaded",
+    "filename": "8f4087fb96c9025c-mask-group-27.webp",
+    "sha256": "8f4087fb96c9025cd97fef2bd64e1c712ebec552525d73f1249010363cbb25c2",
+    "bytes": 38386,
+    "content_type": "image/webp",
+    "local_path": "assets/media/8f4087fb96c9025c-mask-group-27.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/Open-House-website-banner.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/Open-House-website-banner.jpeg",
+    "status": "downloaded",
+    "filename": "6bde6f6373beedf8-open-house-website-banner.jpg",
+    "sha256": "6bde6f6373beedf8e0b2b99e85dea740ab406a4e67c1f92289e20b0c889df200",
+    "bytes": 57475,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/6bde6f6373beedf8-open-house-website-banner.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Group-2147227027-2-rgwydawcszyyppmddly29siklrr2q4629z08yz46so.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Group-2147227027-2-rgwydawcszyyppmddly29siklrr2q4629z08yz46so.webp",
+    "status": "downloaded",
+    "filename": "9ffe3e9e560a4ede-group-2147227027-2-rgwydawcszyyppmddly29siklrr2q4629z08.webp",
+    "sha256": "9ffe3e9e560a4edecb7a4d65b316c1b50d10c1688297f188b85a806a23ecd947",
+    "bytes": 2856,
+    "content_type": "image/webp",
+    "local_path": "assets/media/9ffe3e9e560a4ede-group-2147227027-2-rgwydawcszyyppmddly29siklrr2q4629z08.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/research-advanced-materials-img-12.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/research-advanced-materials-img-12.webp",
+    "status": "downloaded",
+    "filename": "00695480bc0622f8-research-advanced-materials-img-12.webp",
+    "sha256": "00695480bc0622f8947363db68a6db05d7be5f3f47297b783e81c0d8d88f718f",
+    "bytes": 11234,
+    "content_type": "image/webp",
+    "local_path": "assets/media/00695480bc0622f8-research-advanced-materials-img-12.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227020.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227020.webp",
+    "status": "downloaded",
+    "filename": "d85ce121d6ede74c-group-2147227020.webp",
+    "sha256": "d85ce121d6ede74c90287e2de7252107d0b50c7c099e20dea36e3fa0cab5cba8",
+    "bytes": 40268,
+    "content_type": "image/webp",
+    "local_path": "assets/media/d85ce121d6ede74c-group-2147227020.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227028.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227028.webp",
+    "status": "downloaded",
+    "filename": "79eaf3b809b1ec58-group-2147227028.webp",
+    "sha256": "79eaf3b809b1ec582de7d04462ed4a0d9b9e47579d5456ea08a686dec071d4cd",
+    "bytes": 48354,
+    "content_type": "image/webp",
+    "local_path": "assets/media/79eaf3b809b1ec58-group-2147227028.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Written.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Written.png",
+    "status": "downloaded",
+    "filename": "1d1f0b2fb5b805ba-written.png",
+    "sha256": "1d1f0b2fb5b805ba2b810ed9a38effff3821aa2092be860859bd0cac76a95e86",
+    "bytes": 29374,
+    "content_type": "image/png",
+    "local_path": "assets/media/1d1f0b2fb5b805ba-written.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227027-1.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Group-2147227027-1.webp",
+    "status": "downloaded",
+    "filename": "06527da8c470ebb2-group-2147227027-1.webp",
+    "sha256": "06527da8c470ebb24f0b27d6e5acd6d9246f9925952b12536b16472f18d9a2e0",
+    "bytes": 45502,
+    "content_type": "image/webp",
+    "local_path": "assets/media/06527da8c470ebb2-group-2147227027-1.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-50.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mask-group-50.webp",
+    "status": "downloaded",
+    "filename": "029d015c53a4b573-mask-group-50.webp",
+    "sha256": "029d015c53a4b573a6576c89e20202d841dafdaae8d630611c6c83120cea3345",
+    "bytes": 15962,
+    "content_type": "image/webp",
+    "local_path": "assets/media/029d015c53a4b573-mask-group-50.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/image-21.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/image-21.png",
+    "status": "downloaded",
+    "filename": "67099b362fc1cc34-image-21.png",
+    "sha256": "67099b362fc1cc3421aa7e75db543f7f135c5d6aaf950451a4a5601fa788bb63",
+    "bytes": 16785,
+    "content_type": "image/png",
+    "local_path": "assets/media/67099b362fc1cc34-image-21.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Background.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/Background.png",
+    "status": "downloaded",
+    "filename": "1e69155ecdde7e30-background.png",
+    "sha256": "1e69155ecdde7e301bb9127e1e6e3237d537d6f00092670615ee4e12fec8572b",
+    "bytes": 1001,
+    "content_type": "image/png",
+    "local_path": "assets/media/1e69155ecdde7e30-background.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/unnamed-file.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/unnamed-file.png",
+    "status": "downloaded",
+    "filename": "dfb0cea7a6daaa13-unnamed-file.png",
+    "sha256": "dfb0cea7a6daaa13c098e869cea729004d2f7dd548ce01cbf98948eafdd59d4d",
+    "bytes": 1153,
+    "content_type": "image/png",
+    "local_path": "assets/media/dfb0cea7a6daaa13-unnamed-file.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/3374ab56e621cf7e774359f15dfc8357c9a59496-1024x588.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/04/3374ab56e621cf7e774359f15dfc8357c9a59496-1024x588.png",
+    "status": "downloaded",
+    "filename": "615f334e88c224da-3374ab56e621cf7e774359f15dfc8357c9a59496-1024x588.png",
+    "sha256": "615f334e88c224da79462a39b5eaec96989896a7bc7d2a95ada17f757e1f4d64",
+    "bytes": 764672,
+    "content_type": "image/png",
+    "local_path": "assets/media/615f334e88c224da-3374ab56e621cf7e774359f15dfc8357c9a59496-1024x588.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-02-at-14.22.35-1024x576.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-02-at-14.22.35-1024x576.jpeg",
+    "status": "downloaded",
+    "filename": "634ff7a5258cc4cb-whatsapp-image-2026-07-02-at-14-22-35-1024x576.jpg",
+    "sha256": "634ff7a5258cc4cba720b18b5704ad3593a33fb645e5258b6a32fad505b4f353",
+    "bytes": 106093,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/634ff7a5258cc4cb-whatsapp-image-2026-07-02-at-14-22-35-1024x576.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Walter-Leal-Filho.webp",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Walter-Leal-Filho.webp",
+    "status": "downloaded",
+    "filename": "d11f3a1f7ce82553-prof-walter-leal-filho.webp",
+    "sha256": "d11f3a1f7ce825535087014570b3078c7c1f368e6b80a56e7c86d305f4fde0db",
+    "bytes": 42726,
+    "content_type": "image/webp",
+    "local_path": "assets/media/d11f3a1f7ce82553-prof-walter-leal-filho.webp"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/Mobile-VC_Profile-Page-Mobile.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/03/Mobile-VC_Profile-Page-Mobile.png",
+    "status": "downloaded",
+    "filename": "2efa3a652d8ee924-mobile-vc-profile-page-mobile.png",
+    "sha256": "2efa3a652d8ee9240ee45f43881eef755c09c220677df16f8e2f0d22b3e0404d",
+    "bytes": 251389,
+    "content_type": "image/png",
+    "local_path": "assets/media/2efa3a652d8ee924-mobile-vc-profile-page-mobile.png"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Ashish-Bharadwaj-rn7bhcy930nypl57fantmvn9jd2u984bb9dfzj7szw.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/Ashish-Bharadwaj-rn7bhcy930nypl57fantmvn9jd2u984bb9dfzj7szw.jpeg",
+    "status": "downloaded",
+    "filename": "8143c002fcd49f50-ashish-bharadwaj-rn7bhcy930nypl57fantmvn9jd2u984bb9dfzj.jpg",
+    "sha256": "8143c002fcd49f5066c7ad8bf9b4a29854fefc1098e644062165394eb7163955",
+    "bytes": 9945,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/8143c002fcd49f50-ashish-bharadwaj-rn7bhcy930nypl57fantmvn9jd2u984bb9dfzj.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-04-30-at-18.11.40.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-04-30-at-18.11.40.jpeg",
+    "status": "downloaded",
+    "filename": "619a095bb2547b51-whatsapp-image-2026-04-30-at-18-11-40.jpg",
+    "sha256": "619a095bb2547b51ee850fd6fef82adf8b70047126a07950c912114d108c517c",
+    "bytes": 162789,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/619a095bb2547b51-whatsapp-image-2026-04-30-at-18-11-40.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-05-11-at-12.24.30-rnag89p0ud08vhco8s5nlml2vz8akzpjczwlo114ek.jpeg",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-05-11-at-12.24.30-rnag89p0ud08vhco8s5nlml2vz8akzpjczwlo114ek.jpeg",
+    "status": "downloaded",
+    "filename": "77f1807d4ca3f0e7-whatsapp-image-2026-05-11-at-12-24-30-rnag89p0ud08vhco8.jpg",
+    "sha256": "77f1807d4ca3f0e755dfc09cc23c0469fa6a5b2988e3dbe407f0d734f213d2e1",
+    "bytes": 9158,
+    "content_type": "image/jpeg",
+    "local_path": "assets/media/77f1807d4ca3f0e7-whatsapp-image-2026-05-11-at-12-24-30-rnag89p0ud08vhco8.jpg"
+  },
+  {
+    "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/Maker_asylum_banner.png",
+    "final_url": "https://wpugoa.edu.in/wp-content/uploads/2026/07/Maker_asylum_banner.png",
+    "status": "downloaded",
+    "filename": "3c7fc4f0ec815b2d-maker-asylum-banner.png",
+    "sha256": "3c7fc4f0ec815b2da0a454a617dcda7db7558bf33b94fe71bc7e26be11450fc5",
+    "bytes": 2802753,
+    "content_type": "image/png",
+    "local_path": "assets/media/3c7fc4f0ec815b2d-maker-asylum-banner.png"
+  }
+]
