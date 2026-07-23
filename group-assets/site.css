@@ -6,6 +6,8 @@
   --blue: #2d6786;
   --blue-dark: #204e67;
   --solid-blue: #2d6786;
+  --solid-blue-hover: #204e67;
+  --photo-accent: #2d6786;
   --blue-pale: #edf3f6;
   --paper: #ffffff;
   --subtle: #f8fafb;
@@ -36,6 +38,8 @@
   --blue: #8cc1de;
   --blue-dark: #b5d8eb;
   --solid-blue: #2b4b62;
+  --solid-blue-hover: #35617d;
+  --photo-accent: #6fa6c4;
   --blue-pale: #1d2d38;
   --paper: #111a21;
   --subtle: #151f27;
@@ -132,7 +136,7 @@ h3 {
   z-index: 100;
   padding: 8px 12px;
   color: #fff;
-  background: var(--blue-dark);
+  background: var(--solid-blue);
   transform: translateY(-160%);
 }
 
@@ -404,8 +408,8 @@ h3 {
 }
 
 .button-primary:hover {
-  background: var(--blue-dark);
-  border-color: var(--blue-dark);
+  background: var(--solid-blue-hover);
+  border-color: var(--solid-blue-hover);
 }
 
 .section {
@@ -533,6 +537,7 @@ h3 {
   height: 126px;
   object-fit: cover;
   background: var(--blue-pale);
+  border-top: 3px solid var(--photo-accent);
 }
 
 .portrait-placeholder {

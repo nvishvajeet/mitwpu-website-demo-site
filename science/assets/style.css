@@ -432,6 +432,7 @@ body {
   object-position: center top;
   background: var(--blue-pale);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--photo-accent);
 }
 
 .faculty-card h2 {

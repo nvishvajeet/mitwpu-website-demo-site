@@ -49,193 +49,67 @@
     </section>
     <section id="directory" class="section">
       <div class="shell">
-        <div class="section-heading"><div><h2>Directory</h2></div></div>
         <div class="directory-controls">
-          <label>Search<input type="search" data-unit-search placeholder="Name, school, or discipline" autocomplete="off"></label>
+          <label>Search<input type="search" data-unit-search placeholder="School or department" autocomplete="off"></label>
           <label>Faculty<select data-faculty-filter><option value="">All faculties</option><option value="faculty-of-business-and-leadership">Faculty of Business and Leadership</option><option value="faculty-of-design-humanities-and-liberal-arts">Faculty of Design Humanities and Liberal Arts</option><option value="faculty-of-engineering-and-technology">Faculty of Engineering and Technology</option><option value="faculty-of-science-and-health-science">Faculty of Science and Health Science</option></select></label>
-          <label>Type<select data-kind-filter><option value="">All types</option><option value="school">Schools</option><option value="department">Departments and institutes</option></select></label>
         </div>
-        <div class="directory-summary"><span class="unit-count" data-unit-count>45 schools, departments and institutes</span></div>
-        <div class="directory-grid"><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-business-and-leadership" data-search="MIT-WPU School of Business Faculty of Business and Leadership  ">
-        <span class="unit-kind">School</span>
-        <h2><a href="business/">MIT-WPU School of Business</a></h2>
-        <small>Faculty of Business and Leadership · 2 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-business-and-leadership" data-search="Department of Business Faculty of Business and Leadership MIT-WPU School of Business The residential BBA programs at MIT-WPU provide a comprehensive curriculum encompassing core, interdisciplinary, and elective courses, bolstered by skill-based certifications.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="business/business/">Department of Business</a></h2>
-        <small>Faculty of Business and Leadership · MIT-WPU School of Business</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-business-and-leadership" data-search="Department of Hospitality Management Faculty of Business and Leadership MIT-WPU School of Business ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="business/hospitality-management/">Department of Hospitality Management</a></h2>
-        <small>Faculty of Business and Leadership · MIT-WPU School of Business</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-business-and-leadership" data-search="School of Economics and Commerce Faculty of Business and Leadership  ">
-        <span class="unit-kind">School</span>
-        <h2><a href="economics-and-commerce/">School of Economics and Commerce</a></h2>
-        <small>Faculty of Business and Leadership · 2 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-business-and-leadership" data-search="Department of Commerce &amp; Accounting Faculty of Business and Leadership School of Economics and Commerce ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="economics-and-commerce/commerce/">Department of Commerce &amp; Accounting</a></h2>
-        <small>Faculty of Business and Leadership · School of Economics and Commerce</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-business-and-leadership" data-search="Department of Economics Faculty of Business and Leadership School of Economics and Commerce ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="economics-and-commerce/economics/">Department of Economics</a></h2>
-        <small>Faculty of Business and Leadership · School of Economics and Commerce</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-business-and-leadership" data-search="MIT School of Government Faculty of Business and Leadership  ">
-        <span class="unit-kind">School</span>
+        <div class="directory-summary"><span class="unit-count" data-unit-count>14 schools</span></div>
+        <div class="directory-grid"><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-business-and-leadership" data-search="MIT School of Government Faculty of Business and Leadership ">
         <h2><a href="government/">MIT School of Government</a></h2>
         <small>Faculty of Business and Leadership</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-business-and-leadership" data-search="Ram Charan School of Leadership Faculty of Business and Leadership  ">
-        <span class="unit-kind">School</span>
+
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-business-and-leadership" data-search="MIT-WPU School of Business Faculty of Business and Leadership  Department of Business The residential BBA programs at MIT-WPU provide a comprehensive curriculum encompassing core, interdisciplinary, and elective courses, bolstered by skill-based certifications. Department of Hospitality Management ">
+        <h2><a href="business/">MIT-WPU School of Business</a></h2>
+        <small>Faculty of Business and Leadership</small>
+        <ul class="directory-child-links"><li><a href="business/business/">Department of Business</a></li><li><a href="business/hospitality-management/">Department of Hospitality Management</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-business-and-leadership" data-search="Ram Charan School of Leadership Faculty of Business and Leadership ">
         <h2><a href="leadership/">Ram Charan School of Leadership</a></h2>
         <small>Faculty of Business and Leadership</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Consciousness Faculty of Design Humanities and Liberal Arts  ">
-        <span class="unit-kind">School</span>
+
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-business-and-leadership" data-search="School of Economics and Commerce Faculty of Business and Leadership  Department of Commerce &amp; Accounting  Department of Economics ">
+        <h2><a href="economics-and-commerce/">School of Economics and Commerce</a></h2>
+        <small>Faculty of Business and Leadership</small>
+        <ul class="directory-child-links"><li><a href="economics-and-commerce/commerce/">Department of Commerce &amp; Accounting</a></li><li><a href="economics-and-commerce/economics/">Department of Economics</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Consciousness Faculty of Design Humanities and Liberal Arts ">
         <h2><a href="consciousness/">MIT-WPU School of Consciousness</a></h2>
         <small>Faculty of Design Humanities and Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Design Faculty of Design Humanities and Liberal Arts  ">
-        <span class="unit-kind">School</span>
+
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Design Faculty of Design Humanities and Liberal Arts  Department of Design  Department of Visual Arts ">
         <h2><a href="design/">MIT-WPU School of Design</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · 2 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Design Faculty of Design Humanities and Liberal Arts MIT-WPU School of Design ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="design/design/">Department of Design</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Design</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Visual Arts Faculty of Design Humanities and Liberal Arts MIT-WPU School of Design ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="design/visual-arts/">Department of Visual Arts</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Design</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Law Faculty of Design Humanities and Liberal Arts  ">
-        <span class="unit-kind">School</span>
+        <small>Faculty of Design Humanities and Liberal Arts</small>
+        <ul class="directory-child-links"><li><a href="design/design/">Department of Design</a></li><li><a href="design/visual-arts/">Department of Visual Arts</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Law Faculty of Design Humanities and Liberal Arts ">
         <h2><a href="law/">MIT-WPU School of Law</a></h2>
         <small>Faculty of Design Humanities and Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Liberal Arts Faculty of Design Humanities and Liberal Arts  ">
-        <span class="unit-kind">School</span>
+
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="MIT-WPU School of Liberal Arts Faculty of Design Humanities and Liberal Arts  Dadasaheb Phalke International Film Institute Dadasaheb Phalke International Film Institute is established with the aim of training young India into building promising careers in the highest-grossing industries - Cinema, OTT, Digital Media, among others. The School focuses on teaching the art of filmmaking that challenges traditional stereotypes and provides a comprehensive education with an emphasis on the skills and knowledge needed to excel in the industry. Department of Education  Department of Liberal Arts The Department of Liberal Arts at MIT-WPU stands proudly among the top 100 institutes for Liberal Arts in India. Offering a diverse array of undergraduate and postgraduate degree programmes encompassing varied disciplines like English, Psychology, Political Science, and Liberal Arts, the department champions interdisciplinary knowledge and experiential learning. Department of Media and Communication  Department of Peace Studies The Department of Peace Studies at the MIT World Peace University, guided by UNESCO Chair Dr. Vishwanath Karad, offers a comprehensive and interdisciplinary programme that focuses on promoting, understanding, and sustaining peace. The programme emphasizes ethical leadership, innovative research, and community outreach. The curriculum integrates meditation to help students develop inner peace and resilience, and… Department of Photography ">
         <h2><a href="liberal-arts-humanities/">MIT-WPU School of Liberal Arts</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · 6 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Dadasaheb Phalke International Film Institute Faculty of Design Humanities and Liberal Arts MIT-WPU School of Liberal Arts Dadasaheb Phalke International Film Institute is established with the aim of training young India into building promising careers in the highest-grossing industries - Cinema, OTT, Digital Media, among others. The School focuses on teaching the art of filmmaking that challenges traditional stereotypes and provides a comprehensive education with an emphasis on the skills and knowledge needed to excel in the industry.">
-        <span class="unit-kind">Institute</span>
-        <h2><a href="liberal-arts-humanities/dadasaheb-phalke-international-film-institute/">Dadasaheb Phalke International Film Institute</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Education Faculty of Design Humanities and Liberal Arts MIT-WPU School of Liberal Arts ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="liberal-arts-humanities/education/">Department of Education</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Liberal Arts Faculty of Design Humanities and Liberal Arts MIT-WPU School of Liberal Arts The Department of Liberal Arts at MIT-WPU stands proudly among the top 100 institutes for Liberal Arts in India. Offering a diverse array of undergraduate and postgraduate degree programmes encompassing varied disciplines like English, Psychology, Political Science, and Liberal Arts, the department champions interdisciplinary knowledge and experiential learning.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="liberal-arts-humanities/liberal-arts/">Department of Liberal Arts</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Media and Communication Faculty of Design Humanities and Liberal Arts MIT-WPU School of Liberal Arts ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="liberal-arts-humanities/media-and-communication/">Department of Media and Communication</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Peace Studies Faculty of Design Humanities and Liberal Arts MIT-WPU School of Liberal Arts The Department of Peace Studies at the MIT World Peace University, guided by UNESCO Chair Dr. Vishwanath Karad, offers a comprehensive and interdisciplinary programme that focuses on promoting, understanding, and sustaining peace. The programme emphasizes ethical leadership, innovative research, and community outreach. The curriculum integrates meditation to help students develop inner peace and resilience, and…">
-        <span class="unit-kind">Department</span>
-        <h2><a href="liberal-arts-humanities/peace-studies/">Department of Peace Studies</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-design-humanities-and-liberal-arts" data-search="Department of Photography Faculty of Design Humanities and Liberal Arts MIT-WPU School of Liberal Arts ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="liberal-arts-humanities/photography/">Department of Photography</a></h2>
-        <small>Faculty of Design Humanities and Liberal Arts · MIT-WPU School of Liberal Arts</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-engineering-and-technology" data-search="Hafeez Contractor School of Architecture Faculty of Engineering and Technology  ">
-        <span class="unit-kind">School</span>
+        <small>Faculty of Design Humanities and Liberal Arts</small>
+        <ul class="directory-child-links"><li><a href="liberal-arts-humanities/dadasaheb-phalke-international-film-institute/">Dadasaheb Phalke International Film Institute</a></li><li><a href="liberal-arts-humanities/education/">Department of Education</a></li><li><a href="liberal-arts-humanities/liberal-arts/">Department of Liberal Arts</a></li><li><a href="liberal-arts-humanities/media-and-communication/">Department of Media and Communication</a></li><li><a href="liberal-arts-humanities/peace-studies/">Department of Peace Studies</a></li><li><a href="liberal-arts-humanities/photography/">Department of Photography</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-engineering-and-technology" data-search="Hafeez Contractor School of Architecture Faculty of Engineering and Technology ">
         <h2><a href="architecture/">Hafeez Contractor School of Architecture</a></h2>
         <small>Faculty of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-engineering-and-technology" data-search="MIT-WPU School of Computer Science &amp; Engineering Faculty of Engineering and Technology  ">
-        <span class="unit-kind">School</span>
+
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-engineering-and-technology" data-search="MIT-WPU School of Computer Science &amp; Engineering Faculty of Engineering and Technology  Department of Computer Engineering and Technology The ubiquity of digitisation in all aspects of life has led to a significant surge in Computer Science &amp; Engineering. Skills related to innovation, design, development, deployment, usability, &amp; presentation are highly sought after in the field of computer engineering &amp; technology. Department of Computer Science and Applications ">
         <h2><a href="computer-engineering-and-technology/">MIT-WPU School of Computer Science &amp; Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · 2 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Computer Engineering and Technology Faculty of Engineering and Technology MIT-WPU School of Computer Science &amp; Engineering The ubiquity of digitisation in all aspects of life has led to a significant surge in Computer Science &amp; Engineering. Skills related to innovation, design, development, deployment, usability, &amp; presentation are highly sought after in the field of computer engineering &amp; technology.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="computer-engineering-and-technology/computer-engineering-and-technology/">Department of Computer Engineering and Technology</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Computer Science &amp; Engineering</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Computer Science and Applications Faculty of Engineering and Technology MIT-WPU School of Computer Science &amp; Engineering ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="computer-engineering-and-technology/computer-science-and-applications/">Department of Computer Science and Applications</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Computer Science &amp; Engineering</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-engineering-and-technology" data-search="Prof Makarand Hastak School of Construction Engineering and Management Faculty of Engineering and Technology  ">
-        <span class="unit-kind">School</span>
+        <small>Faculty of Engineering and Technology</small>
+        <ul class="directory-child-links"><li><a href="computer-engineering-and-technology/computer-engineering-and-technology/">Department of Computer Engineering and Technology</a></li><li><a href="computer-engineering-and-technology/computer-science-and-applications/">Department of Computer Science and Applications</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-engineering-and-technology" data-search="MIT-WPU School of Engineering and Technology Faculty of Engineering and Technology  Department of Bioengineering The Department of Bioengineering at MIT-WPU, Pune offers an interdisciplinary programme that seamlessly integrates biology, engineering, and technology to address some of the most pressing global challenges. Situated within the vibrant ecosystem of the School of Engineering and Technology and the School of Computer Science and Engineering - both with a rich legacy of over 43 years - the department benefits from a… Department of Chemical Engineering The Department of Chemical Engineering at MIT-WPU offers a comprehensive blend of academics, experiential research, industrial training, and practical projects to prepare students for diverse careers. Graduates are equipped for roles in industries spanning petroleum refining, petrochemicals, polymers, biochemicals, biomedical devices, materials, drugs, fertilizers, dyes, textiles, ceramics, and foods. Department of Civil Engineering The Department of Civil Engineering fosters a deep understanding of the engineering field, emphasising creativity and razor-sharp analytical skills. The department inspires and instil in students the values of discipline and teamwork. It places a strong emphasis on cultivating a robust research ecosystem, equipping students with the ethical values of integrity and social responsibility as well as technical skills… Department of Electrical and Electronics Engineering  Department of Materials Science &amp; Engineering At the Department of Materials Science Engineering, MIT-WPU, students delve into the intricacies of designing and improving products, systems, and processes using an array of materials such as metals, polymers, ceramics, and more. The applications of Material Science Engineering span across diverse sectors, including medicine, agriculture, automation, electronics, and sports. Department of Mechanical Engineering The Department of Mechanical Engineering at MIT-WPU covers a wide range of disciplines, including design, thermodynamics, materials science, manufacturing processes, automation, and robotics. Students explore areas like e-mobility, bio-medical applications, aircraft, energy systems, and modern industrial processes, gaining a holistic view of mechanical engineering. Department of Petroleum Engineering The Department of Petroleum Engineering, the second oldest in India &amp; the only one in Maharashtra, offers a distinctive B.Tech Petroleum Engineering with a specialised, industry-focused curriculum. This programme prepares students to tackle challenges &amp; contribute to the nation’s energy security. Department of Polytechnic ">
+        <h2><a href="engineering-and-technology/">MIT-WPU School of Engineering and Technology</a></h2>
+        <small>Faculty of Engineering and Technology</small>
+        <ul class="directory-child-links"><li><a href="engineering-and-technology/bioengineering/">Department of Bioengineering</a></li><li><a href="engineering-and-technology/chemical-engineering/">Department of Chemical Engineering</a></li><li><a href="engineering-and-technology/civil-engineering/">Department of Civil Engineering</a></li><li><a href="engineering-and-technology/electronics-and-electrical-engineering/">Department of Electrical and Electronics Engineering</a></li><li><a href="engineering-and-technology/material-science-engineering/">Department of Materials Science &amp; Engineering</a></li><li><a href="engineering-and-technology/mechanical-engineering/">Department of Mechanical Engineering</a></li><li><a href="engineering-and-technology/petroleum-engineering/">Department of Petroleum Engineering</a></li><li><a href="engineering-and-technology/polytechnic-skill-development/">Department of Polytechnic</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-engineering-and-technology" data-search="Prof Makarand Hastak School of Construction Engineering and Management Faculty of Engineering and Technology ">
         <h2><a href="construction-engineering-management/">Prof Makarand Hastak School of Construction Engineering and Management</a></h2>
         <small>Faculty of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-engineering-and-technology" data-search="MIT-WPU School of Engineering and Technology Faculty of Engineering and Technology  ">
-        <span class="unit-kind">School</span>
-        <h2><a href="engineering-and-technology/">MIT-WPU School of Engineering and Technology</a></h2>
-        <small>Faculty of Engineering and Technology · 8 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Bioengineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology The Department of Bioengineering at MIT-WPU, Pune offers an interdisciplinary programme that seamlessly integrates biology, engineering, and technology to address some of the most pressing global challenges. Situated within the vibrant ecosystem of the School of Engineering and Technology and the School of Computer Science and Engineering - both with a rich legacy of over 43 years - the department benefits from a…">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/bioengineering/">Department of Bioengineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Chemical Engineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology The Department of Chemical Engineering at MIT-WPU offers a comprehensive blend of academics, experiential research, industrial training, and practical projects to prepare students for diverse careers. Graduates are equipped for roles in industries spanning petroleum refining, petrochemicals, polymers, biochemicals, biomedical devices, materials, drugs, fertilizers, dyes, textiles, ceramics, and foods.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/chemical-engineering/">Department of Chemical Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Civil Engineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology The Department of Civil Engineering fosters a deep understanding of the engineering field, emphasising creativity and razor-sharp analytical skills. The department inspires and instil in students the values of discipline and teamwork. It places a strong emphasis on cultivating a robust research ecosystem, equipping students with the ethical values of integrity and social responsibility as well as technical skills…">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/civil-engineering/">Department of Civil Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Electrical and Electronics Engineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/electronics-and-electrical-engineering/">Department of Electrical and Electronics Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Materials Science &amp; Engineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology At the Department of Materials Science Engineering, MIT-WPU, students delve into the intricacies of designing and improving products, systems, and processes using an array of materials such as metals, polymers, ceramics, and more. The applications of Material Science Engineering span across diverse sectors, including medicine, agriculture, automation, electronics, and sports.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/material-science-engineering/">Department of Materials Science &amp; Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Mechanical Engineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology The Department of Mechanical Engineering at MIT-WPU covers a wide range of disciplines, including design, thermodynamics, materials science, manufacturing processes, automation, and robotics. Students explore areas like e-mobility, bio-medical applications, aircraft, energy systems, and modern industrial processes, gaining a holistic view of mechanical engineering.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/mechanical-engineering/">Department of Mechanical Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Petroleum Engineering Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology The Department of Petroleum Engineering, the second oldest in India &amp; the only one in Maharashtra, offers a distinctive B.Tech Petroleum Engineering with a specialised, industry-focused curriculum. This programme prepares students to tackle challenges &amp; contribute to the nation’s energy security.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/petroleum-engineering/">Department of Petroleum Engineering</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-engineering-and-technology" data-search="Department of Polytechnic Faculty of Engineering and Technology MIT-WPU School of Engineering and Technology ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="engineering-and-technology/polytechnic-skill-development/">Department of Polytechnic</a></h2>
-        <small>Faculty of Engineering and Technology · MIT-WPU School of Engineering and Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-science-and-health-science" data-search="MIT-WPU School of Health Sciences &amp; Technology Faculty of Science and Health Science  ">
-        <span class="unit-kind">School</span>
+
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-science-and-health-science" data-search="MIT-WPU School of Health Sciences &amp; Technology Faculty of Science and Health Science  Department of Clinical Sciences  Department of Pharmaceutical Sciences Department of Pharmaceutical Sciences is consistently ranked amongst the top 100 institutions for Pharmacy in India for last five years by National Institutional Ranking Framework (NIRF), Ministry of Human Resource and Development. Department of Public Health The Department of Public Health at MIT-WPU is dedicated to advancing knowledge and innovation in public health with a clear mission: ‘Health for all.’ The department focuses on educating students about the socio-economic disparities and their impact on the well-being of populations, as well as addressing public health sector needs in a sustainable manner. Department of Wellness and Yogic Science The Department of Wellness and Yogic Science at the School of Health Science and Technologies, MIT-WPU offers a rewarding learning experience through its M.Sc Yoga and Meditation programme. The programme offers holistic education through a vibrant environment for academics, research, curricular and extracurricular activities.">
         <h2><a href="health-science-technologies/">MIT-WPU School of Health Sciences &amp; Technology</a></h2>
-        <small>Faculty of Science and Health Science · 4 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Clinical Sciences Faculty of Science and Health Science MIT-WPU School of Health Sciences &amp; Technology ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="health-science-technologies/clinical-sciences/">Department of Clinical Sciences</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Health Sciences &amp; Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Pharmaceutical Sciences Faculty of Science and Health Science MIT-WPU School of Health Sciences &amp; Technology Department of Pharmaceutical Sciences is consistently ranked amongst the top 100 institutions for Pharmacy in India for last five years by National Institutional Ranking Framework (NIRF), Ministry of Human Resource and Development.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="health-science-technologies/pharmaceutical-sciences/">Department of Pharmaceutical Sciences</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Health Sciences &amp; Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Public Health Faculty of Science and Health Science MIT-WPU School of Health Sciences &amp; Technology The Department of Public Health at MIT-WPU is dedicated to advancing knowledge and innovation in public health with a clear mission: ‘Health for all.’ The department focuses on educating students about the socio-economic disparities and their impact on the well-being of populations, as well as addressing public health sector needs in a sustainable manner.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="health-science-technologies/public-health/">Department of Public Health</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Health Sciences &amp; Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Wellness and Yogic Science Faculty of Science and Health Science MIT-WPU School of Health Sciences &amp; Technology The Department of Wellness and Yogic Science at the School of Health Science and Technologies, MIT-WPU offers a rewarding learning experience through its M.Sc Yoga and Meditation programme. The programme offers holistic education through a vibrant environment for academics, research, curricular and extracurricular activities.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="health-science-technologies/yogic-science/">Department of Wellness and Yogic Science</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Health Sciences &amp; Technology</small>
-      </article><article class="directory-card" data-unit-card data-kind="school" data-faculty="faculty-of-science-and-health-science" data-search="MIT-WPU School of Science &amp; Environmental Studies Faculty of Science and Health Science  ">
-        <span class="unit-kind">School</span>
+        <small>Faculty of Science and Health Science</small>
+        <ul class="directory-child-links"><li><a href="health-science-technologies/clinical-sciences/">Department of Clinical Sciences</a></li><li><a href="health-science-technologies/pharmaceutical-sciences/">Department of Pharmaceutical Sciences</a></li><li><a href="health-science-technologies/public-health/">Department of Public Health</a></li><li><a href="health-science-technologies/yogic-science/">Department of Wellness and Yogic Science</a></li></ul>
+      </article><article class="directory-card directory-card--school" data-unit-card data-faculty="faculty-of-science-and-health-science" data-search="MIT-WPU School of Science &amp; Environmental Studies Faculty of Science and Health Science  Department of Biosciences and Technology The Department of Biosciences &amp; Technology offers industry-oriented undergraduate, postgraduate, and doctoral programmes that focus on contemporary and futuristic technical and scientific knowledge in the fields of biological sciences, and biotechnology. Department of Chemistry  Department of Environmental Studies The Department of Environmental Science at MIT-WPU has a resolute mission to cultivate the professionals of tomorrow, individuals who are dedicated to contributing towards the betterment of our planet through informed decision-making and active engagement in environmental preservation. Department of Mathematics and Statistics The Department of Mathematics and Statistics is a dynamic academic hub that embraces a holistic approach to education, integrating traditional quantitative disciplines with courses in peace studies and yoga. Our commitment extends beyond technical expertise, fostering the comprehensive development of students. Department of Physics ">
         <h2><a href="science/">MIT-WPU School of Science &amp; Environmental Studies</a></h2>
-        <small>Faculty of Science and Health Science · 5 constituent units</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Biosciences and Technology Faculty of Science and Health Science MIT-WPU School of Science &amp; Environmental Studies The Department of Biosciences &amp; Technology offers industry-oriented undergraduate, postgraduate, and doctoral programmes that focus on contemporary and futuristic technical and scientific knowledge in the fields of biological sciences, and biotechnology.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="science/biosciences-and-technology/">Department of Biosciences and Technology</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Science &amp; Environmental Studies</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Chemistry Faculty of Science and Health Science MIT-WPU School of Science &amp; Environmental Studies ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="science/chemistry/">Department of Chemistry</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Science &amp; Environmental Studies</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Environmental Studies Faculty of Science and Health Science MIT-WPU School of Science &amp; Environmental Studies The Department of Environmental Science at MIT-WPU has a resolute mission to cultivate the professionals of tomorrow, individuals who are dedicated to contributing towards the betterment of our planet through informed decision-making and active engagement in environmental preservation.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="science/environmental-studies/">Department of Environmental Studies</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Science &amp; Environmental Studies</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Mathematics and Statistics Faculty of Science and Health Science MIT-WPU School of Science &amp; Environmental Studies The Department of Mathematics and Statistics is a dynamic academic hub that embraces a holistic approach to education, integrating traditional quantitative disciplines with courses in peace studies and yoga. Our commitment extends beyond technical expertise, fostering the comprehensive development of students.">
-        <span class="unit-kind">Department</span>
-        <h2><a href="science/mathematics-and-statistics/">Department of Mathematics and Statistics</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Science &amp; Environmental Studies</small>
-      </article><article class="directory-card" data-unit-card data-kind="department" data-faculty="faculty-of-science-and-health-science" data-search="Department of Physics Faculty of Science and Health Science MIT-WPU School of Science &amp; Environmental Studies ">
-        <span class="unit-kind">Department</span>
-        <h2><a href="science/physics/">Department of Physics</a></h2>
-        <small>Faculty of Science and Health Science · MIT-WPU School of Science &amp; Environmental Studies</small>
+        <small>Faculty of Science and Health Science</small>
+        <ul class="directory-child-links"><li><a href="science/biosciences-and-technology/">Department of Biosciences and Technology</a></li><li><a href="science/chemistry/">Department of Chemistry</a></li><li><a href="science/environmental-studies/">Department of Environmental Studies</a></li><li><a href="science/mathematics-and-statistics/">Department of Mathematics and Statistics</a></li><li><a href="science/physics/">Department of Physics</a></li></ul>
       </article></div>
         <p class="no-results" data-no-results hidden>No results.</p>
         <nav class="directory-pagination" data-unit-pagination aria-label="Academic directory pages" hidden>

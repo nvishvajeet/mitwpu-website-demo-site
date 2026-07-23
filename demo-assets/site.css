@@ -9,6 +9,9 @@
   --muted: #657682;
   --blue: #2d6786;
   --blue-dark: #204e67;
+  --solid-blue: #2d6786;
+  --solid-blue-hover: #204e67;
+  --on-solid-blue: #ffffff;
   --blue-pale: #edf3f6;
   --gold: #f3be34;
   --line: #d8e0e5;
@@ -30,6 +33,9 @@
   --muted: #9fb0bc;
   --blue: #8cc1de;
   --blue-dark: #b5d8eb;
+  --solid-blue: #2b4b62;
+  --solid-blue-hover: #35617d;
+  --on-solid-blue: #ffffff;
   --blue-pale: #1d2d38;
   --gold: #d8ad3c;
   --line: #2a3b48;
@@ -436,8 +442,34 @@ h3 {
 }
 
 @media (max-width: 940px) {
+  .header-inner {
+    min-height: 0;
+    flex-wrap: wrap;
+    padding-top: 18px;
+  }
+
+  .header-actions {
+    display: contents;
+  }
+
   .site-nav {
-    display: none;
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    gap: 23px;
+    border-top: 1px solid var(--line);
+    scrollbar-width: thin;
+  }
+
+  .site-nav a {
+    flex: 0 0 auto;
+    padding: 13px 0 11px;
+    white-space: nowrap;
+  }
+
+  .theme-toggle {
+    order: 2;
+    margin-left: auto;
   }
 
   .hero-inner {
@@ -475,7 +507,8 @@ h3 {
   }
 
   .header-inner {
-    min-height: 78px;
+    min-height: 0;
+    gap: 14px;
   }
 
   .brand strong {

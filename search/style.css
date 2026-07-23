@@ -112,8 +112,9 @@ body {
 
 .search-form button:hover,
 .show-more:hover {
-  color: #fff;
-  background: var(--blue);
+  color: var(--on-solid-blue);
+  background: var(--solid-blue);
+  border-color: var(--solid-blue);
 }
 
 input:focus-visible,

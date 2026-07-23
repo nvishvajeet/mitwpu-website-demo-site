@@ -35,11 +35,12 @@
   }
 
   function initials(name) {
-    return String(name || "")
-      .replace(/^(dr|prof|mr|mrs|ms)\.?\s+/i, "")
+    const parts = String(name || "")
+      .replace(/^(?:(?:prof(?:essor)?|dr|mr|mrs|ms)\.?\s+)+/i, "")
       .split(/\s+/)
+      .filter(Boolean);
+    return [...new Set([parts[0], parts.at(-1)])]
       .filter(Boolean)
-      .slice(0, 2)
       .map((part) => part.charAt(0))
       .join("")
       .toUpperCase() || "MW";
@@ -62,53 +63,31 @@
   }
 
   function allPeople() {
-    const campus = (window.MITWPU_CAMPUS_PEOPLE || []).map((person) => ({
+    return (window.MITWPU_PUBLIC_PEOPLE || []).map((person) => ({
       ...person,
-      id: person.profile_slug || person.id,
-      department: person.primary_unit_route,
-      departmentName: person.primary_unit_name,
-      photoPath: person.photo_path
-        ? person.photo_path.replace(/^people\//, "./")
-        : "",
-      research: person.research || person.summary || "",
       displayName: peopleOrder.displayName(person)
     }));
-    const peopleById = new Map(campus.map((person) => [person.id, person]));
-
-    // Science records carry richer reviewed research descriptions. Merge those
-    // details into the campus record instead of creating a second person.
-    const science = window.SCIENCE_FACULTY || {};
-    Object.entries(science).forEach(([department, records]) => {
-      records
-        .filter((person) => person.publicVisibility !== "hidden" && person.employmentStatus !== "former")
-        .forEach((person) => {
-          const existing = peopleById.get(person.id);
-          const merged = existing ? {
-            ...existing,
-            research: person.research || existing.research,
-            summary: person.summary || existing.summary,
-            links: { ...existing.links, ...person.links }
-          } : {
-            ...person,
-            department,
-            departmentName: department,
-            photoPath: person.photoPath ? `../science/${person.photoPath}` : ""
-          };
-          merged.displayName = peopleOrder.displayName(merged);
-          peopleById.set(merged.id, merged);
-        });
-    });
-    return [...peopleById.values()];
   }
 
   const people = allPeople();
 
+  function primaryUnitName(person) {
+    return person.unitNames && person.unitNames[person.department]
+      ? person.unitNames[person.department]
+      : person.departmentName || "";
+  }
+
   function populateDepartments() {
     const departments = new Map();
     people.forEach((person) => {
-      if (person.department && person.departmentName) {
-        departments.set(person.department, person.departmentName);
-      }
+      (person.unitRoutes || [person.department]).forEach((route) => {
+        const name = person.unitNames && person.unitNames[route]
+          ? person.unitNames[route]
+          : route === person.department
+            ? person.departmentName
+            : route;
+        if (route && name) departments.set(route, name);
+      });
     });
     [...departments.entries()]
       .sort((a, b) => a[1].localeCompare(b[1], "en-IN"))
@@ -147,13 +126,13 @@
     const matches = people.filter((person) => {
       const researchText = normalize(`${person.research || ""} ${person.summary || ""}`);
       return (!name || normalize(`${person.displayName} ${person.name}`).includes(name))
-        && (!department || person.department === department)
+        && (!department || (person.unitRoutes || [person.department]).includes(department))
         && (!research || researchText.includes(research));
     });
 
     return matches.sort((a, b) => {
       if (elements.sort.value === "department") {
-        return a.departmentName.localeCompare(b.departmentName, "en-IN")
+        return primaryUnitName(a).localeCompare(primaryUnitName(b), "en-IN")
           || peopleOrder.faculty(a, b);
       }
       return peopleOrder.faculty(a, b);
@@ -199,7 +178,16 @@
     }
 
     const main = element("div", "person-card-main");
-    main.append(element("p", "person-department", person.departmentName));
+    const contextualUnit = elements.department.value &&
+      person.unitNames &&
+      person.unitNames[elements.department.value]
+      ? person.unitNames[elements.department.value]
+      : primaryUnitName(person);
+  const affiliationCount = (person.unitRoutes || []).length;
+  const affiliationLabel = !elements.department.value && affiliationCount > 1
+      ? `${contextualUnit} · +${affiliationCount - 1} ${affiliationCount === 2 ? "affiliation" : "affiliations"}`
+      : contextualUnit;
+    main.append(element("p", "person-department", affiliationLabel));
     const heading = element("h2");
     const profileLink = element("a", "person-profile-link", person.displayName);
     profileLink.href = `./${encodeURIComponent(person.id)}/`;

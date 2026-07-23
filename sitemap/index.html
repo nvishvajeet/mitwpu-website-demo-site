@@ -5,15 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Sitemap for the MIT-WPU academic and research website demonstration.">
+  <meta name="color-scheme" content="light dark">
   <title>Sitemap · MIT-WPU</title>
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}})();</script>
   <link rel="stylesheet" href="../demo-assets/site.css">
   <link rel="stylesheet" href="style.css">
+  <script src="../demo-assets/theme.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="status-bar"><div class="shell status-inner"><p>Unofficial working demonstration for review</p></div></div>
   <header class="site-header"><div class="shell header-inner">
     <a class="brand" href="../"><strong>MIT World Peace University</strong><span>Academic &amp; research website demo</span></a>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../academics/">Academics</a>
+        <a href="../research/">Research</a>
+        <a href="../people/">People</a>
+        <a href="../events/">Events</a>
+        <a href="../search/">Search</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false">
+        <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+        <span class="switch-thumb" aria-hidden="true"></span>
+      </button>
+    </div>
   </div></header>
   <main id="main" class="shell sitemap-main">
     <header><p class="eyebrow">Website map</p><h1>Sitemap</h1></header>

@@ -63,11 +63,14 @@
     const name = peopleOrder.displayName(person);
     const interests = (person.interests || []).slice(0, 3);
     const href = profileUrl(person);
+    const specificRole = /^(?:faculty|member faculty|group member)$/i.test(person.groupRole || "")
+      ? ""
+      : person.groupRole;
     return `<article class="person-card">
       <a class="portrait-link" href="${href}" aria-label="View ${escapeHtml(name)}'s profile">${portrait(person)}</a>
       <div class="person-card-body">
         <span class="member-flair">${escapeHtml(peopleLabels[person.memberType] || "Group member")}</span>
-        <p class="person-role">${escapeHtml(person.groupRole)}</p>
+        ${specificRole ? `<p class="person-role">${escapeHtml(specificRole)}</p>` : ""}
         <h3><a href="${href}">${escapeHtml(name)}</a></h3>
         <p class="person-designation">${escapeHtml(person.designation)} · ${escapeHtml(person.affiliation)}</p>
         <div class="tag-row">${interests.map((interest) => `<span>${escapeHtml(interest)}</span>`).join("")}</div>

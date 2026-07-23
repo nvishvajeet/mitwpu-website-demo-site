@@ -142,7 +142,7 @@
   }
 
   function sectionHeading(eyebrow, title, action = "") {
-    return `<div class="section-heading"><div><p class="eyebrow">${escapeHtml(eyebrow)}</p><h2>${escapeHtml(title)}</h2></div>${action}</div>`;
+    return `<div class="section-heading"><div>${eyebrow ? `<p class="eyebrow">${escapeHtml(eyebrow)}</p>` : ""}<h2>${escapeHtml(title)}</h2></div>${action}</div>`;
   }
 
   function themeCard(theme, index, compact = false) {
@@ -209,13 +209,13 @@
       </section>
       <section class="section section-tint">
         <div class="shell">
-          ${sectionHeading("Research", "Areas of enquiry", '<a class="text-link" href="research.html">Research overview →</a>')}
+          ${sectionHeading("", "Areas of enquiry", '<a class="text-link" href="research.html">Research overview →</a>')}
           <div class="science-theme-grid">${department.researchThemes.map((theme, index) => themeCard(theme, index, true)).join("")}</div>
         </div>
       </section>
       <section class="section">
         <div class="shell">
-          ${sectionHeading("Academics", "Programmes", '<a class="text-link" href="academics.html">All programmes →</a>')}
+          ${sectionHeading("", "Programmes", '<a class="text-link" href="academics.html">All programmes →</a>')}
           <div class="programme-list programme-list-home">${department.programmes.slice(0, 4).map(programmeRow).join("")}</div>
         </div>
       </section>`;
@@ -225,7 +225,7 @@
     const target = document.getElementById("page-content");
     if (!target || !department) return;
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Research</h1></div><p>${escapeHtml(department.introduction)}</p></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><h1>Research</h1></div><p>${escapeHtml(department.introduction)}</p></div></section>
       <section class="section">
         <div class="shell">
           <div class="research-theme-list">${department.researchThemes.map(themeCard).join("")}</div>
@@ -270,10 +270,10 @@
     const target = document.getElementById("page-content");
     if (!target || !department) return;
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>People</h1></div></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><h1>Faculty</h1></div></div></section>
       <section class="directory-controls-wrap">
         <div class="shell directory-controls">
-          <div><h2>Faculty</h2></div>
+          <div></div>
           <label class="faculty-search"><span class="sr-only">Search faculty</span><input id="faculty-search" type="search" placeholder="Search name or research area"><small id="faculty-count" aria-live="polite">${faculty.length} records</small></label>
         </div>
       </section>
@@ -293,10 +293,10 @@
       return result;
     }, {});
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Academics</h1></div></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><h1>Academics</h1></div></div></section>
       <section class="section"><div class="shell academic-groups">${Object.entries(grouped).map(([level, programmes]) => `
         <section${level === "Doctoral" ? ' id="doctoral"' : ""} class="academic-group">
-          <div class="academic-level"><p class="eyebrow">${escapeHtml(level)}</p><h2>${escapeHtml(level)} programmes</h2></div>
+          <div class="academic-level"><h2>${escapeHtml(level)} programmes</h2></div>
           <div class="programme-list">${programmes.map(programmeRow).join("")}</div>
         </section>`).join("")}</div></section>`;
   }
@@ -306,10 +306,10 @@
     if (!target || !department) return;
     const events = department.events || [];
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Events</h1></div></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><h1>Events</h1></div></div></section>
       ${events.length ? `<section class="section">
         <div class="shell">
-          ${sectionHeading("Events", "Recent and past events")}
+          ${sectionHeading("", "Recent and past events")}
           <div class="event-list">${events.map(eventRow).join("")}</div>
         </div>
       </section>` : ""}
@@ -325,7 +325,7 @@
     const target = document.getElementById("page-content");
     if (!target || !department) return;
     target.innerHTML = `
-      <section class="page-hero"><div class="shell page-hero-inner"><div><p class="eyebrow">${escapeHtml(department.shortName)}</p><h1>Facilities</h1></div></div></section>
+      <section class="page-hero"><div class="shell page-hero-inner"><div><h1>Facilities</h1></div></div></section>
       <section class="section"><div class="shell facility-list">${department.facilities.map((facility, index) => `<article class="facility-row"><span>${String(index + 1).padStart(2, "0")}</span><div><h2>${escapeHtml(facility.name)}</h2><p>${escapeHtml(facility.note)}</p></div></article>`).join("")}</div></section>
       <section class="section section-tint"><div class="shell central-facility-link"><div><p class="eyebrow">Shared infrastructure</p><h2>MIT-WPU Research Facilities</h2><p>Significant shared research instruments and faculty contacts are maintained separately from routine teaching equipment.</p></div><a class="button button-primary" href="../../facilities/">Central facilities</a></div></section>`;
   }

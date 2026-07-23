@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="style.css?v=20260723d">
   <script src="../group-assets/theme.js" defer></script>
   <script src="../group-assets/people-order.js" defer></script>
-  <script src="campus-data.js" defer></script>
-  <script src="../science/content/faculty.js" defer></script>
+  <script src="public-data.js" defer></script>
   <script src="directory.js" defer></script>
 </head>
 <body>
@@ -47,12 +46,11 @@
     <section class="directory-intro">
       <div class="shell directory-intro-grid">
         <div>
-          <p class="eyebrow">People</p>
           <h1>Find people.</h1>
           <p class="intro-copy">Search by name, academic unit, or research area.</p>
         </div>
         <aside aria-label="Directory scope">
-          <strong id="directory-total">488</strong>
+          <strong id="directory-total">502</strong>
           <span>public profiles</span>
         </aside>
       </div>
@@ -66,9 +64,9 @@
             <input id="name-filter" name="name" type="search" autocomplete="off" placeholder="Search by name">
           </div>
           <div class="filter-field">
-            <label for="department-filter">Department</label>
+            <label for="department-filter">Unit or group</label>
             <select id="department-filter" name="department">
-              <option value="">All departments</option>
+              <option value="">All units and groups</option>
             </select>
           </div>
           <div class="filter-field filter-research">
@@ -83,7 +81,7 @@
           <label for="sort-order">Sort
             <select id="sort-order" name="sort">
               <option value="name">Academic role, then surname</option>
-              <option value="department">Department, role, then surname</option>
+              <option value="department">Unit, role, then surname</option>
             </select>
           </label>
         </div>

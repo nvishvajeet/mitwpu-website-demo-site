@@ -139,16 +139,16 @@ a:focus-visible {
 button {
   min-height: 46px;
   padding: 9px 16px;
-  color: #fff;
-  background: var(--blue);
-  border: 1px solid var(--blue);
+  color: var(--on-solid-blue);
+  background: var(--solid-blue);
+  border: 1px solid var(--solid-blue);
   border-radius: 0;
   cursor: pointer;
 }
 
 button:hover {
-  background: var(--blue-dark);
-  border-color: var(--blue-dark);
+  background: var(--solid-blue-hover);
+  border-color: var(--solid-blue-hover);
 }
 
 .clear-filters {
@@ -157,7 +157,7 @@ button:hover {
 }
 
 .clear-filters:hover {
-  color: #fff;
+  color: var(--on-solid-blue);
 }
 
 .directory-status {
@@ -220,13 +220,13 @@ button:hover {
   object-position: center 18%;
   background: var(--blue-pale);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--photo-accent);
 }
 
 .person-placeholder {
   display: grid;
   place-items: center;
   color: var(--blue);
-  border-top: 3px solid var(--gold);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1rem;
   font-weight: 700;

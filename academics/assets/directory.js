@@ -3,7 +3,6 @@
 
   var search = document.querySelector("[data-unit-search]");
   var faculty = document.querySelector("[data-faculty-filter]");
-  var kind = document.querySelector("[data-kind-filter]");
   var cards = Array.prototype.slice.call(
     document.querySelectorAll("[data-unit-card]"),
   );
@@ -13,10 +12,10 @@
   var previous = document.querySelector("[data-page-previous]");
   var next = document.querySelector("[data-page-next]");
   var pageStatus = document.querySelector("[data-page-status]");
-  var pageSize = 12;
+  var pageSize = 6;
   var currentPage = 1;
 
-  if (!search || !faculty || !kind || cards.length === 0) return;
+  if (!search || !faculty || cards.length === 0) return;
 
   function normalise(value) {
     return (value || "")
@@ -39,15 +38,12 @@
   function applyFilters(resetPage) {
     var query = normalise(search.value);
     var facultyValue = faculty.value;
-    var kindValue = kind.value;
     var matches = cards.filter(function (card) {
       var matchesQuery =
         !query || normalise(card.getAttribute("data-search")).indexOf(query) !== -1;
       var matchesFaculty =
         !facultyValue || card.getAttribute("data-faculty") === facultyValue;
-      var matchesKind =
-        !kindValue || card.getAttribute("data-kind") === kindValue;
-      return matchesQuery && matchesFaculty && matchesKind;
+      return matchesQuery && matchesFaculty;
     });
     var pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
     if (resetPage) currentPage = 1;
@@ -63,7 +59,7 @@
     if (count) {
       count.textContent =
         matches.length +
-        (matches.length === 1 ? " result" : " results");
+        (matches.length === 1 ? " school" : " schools");
     }
     if (empty) empty.hidden = matches.length !== 0;
     if (pagination) pagination.hidden = matches.length <= pageSize;
@@ -78,9 +74,6 @@
     applyFilters(true);
   });
   faculty.addEventListener("change", function () {
-    applyFilters(true);
-  });
-  kind.addEventListener("change", function () {
     applyFilters(true);
   });
   if (previous) {

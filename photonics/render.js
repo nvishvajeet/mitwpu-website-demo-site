@@ -91,6 +91,9 @@
     const interests = (member.researchInterests || []).slice(0, 3);
     const type = peopleTypes.find((item) => item.id === member.memberType);
     const href = profileUrl(member);
+    const specificRole = /^(?:faculty|member faculty|group member)$/i.test(member.role || "")
+      ? ""
+      : member.role;
     return `
       <article class="person-card">
         <a class="portrait-link" href="${href}" aria-label="View ${escapeHtml(name)}'s profile">
@@ -98,7 +101,7 @@
         </a>
         <div class="person-card-body">
           <span class="member-flair">${escapeHtml(type ? type.label.replace(/s$/, "") : member.role)}</span>
-          <p class="person-role">${escapeHtml(member.role)}</p>
+          ${specificRole ? `<p class="person-role">${escapeHtml(specificRole)}</p>` : ""}
           <h3><a href="${href}">${escapeHtml(name)}</a></h3>
           <p class="person-designation">${escapeHtml(member.designation)}</p>
           <div class="tag-row">${interests.map((interest) => `<span>${escapeHtml(interest)}</span>`).join("")}</div>

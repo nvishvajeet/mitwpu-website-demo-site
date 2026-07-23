@@ -78,7 +78,7 @@
   height: 270px;
   background: var(--blue-pale);
   border: 1px solid var(--line);
-  border-top: 4px solid var(--gold);
+  border-top: 4px solid var(--photo-accent);
 }
 
 .profile-photo {
