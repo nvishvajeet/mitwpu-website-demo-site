@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Live development status for the MIT-WPU website demonstration.">
+  <title>Development status · MIT-WPU demo</title>
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}})();</script>
+  <link rel="stylesheet" href="../group-assets/site.css">
+  <link rel="stylesheet" href="status.css?v=20260723a">
+  <script src="../group-assets/theme.js" defer></script>
+  <script src="status.js?v=20260723a" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="institution-bar">
+    <div class="shell institution-inner">
+      <a class="institution-home" href="../">MIT World Peace University · Pune, India</a>
+      <nav class="institution-links" aria-label="Institutional links">
+        <a href="../academics/">Academics</a>
+        <a href="../research/">Research</a>
+      </nav>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./"><strong>Development status</strong><small>MIT-WPU crawl-backed demonstration</small></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../">Demo</a>
+        <a href="../academics/">Academics</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero status-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Live development status</p>
+          <h1><span data-percentage>87</span>% complete</h1>
+        </div>
+        <aside class="hero-aside">
+          <p class="eyebrow">Current phase</p>
+          <p data-phase>Crawl-data propagation, media integration, and final validation</p>
+        </aside>
+      </div>
+    </section>
+    <section class="section">
+      <div class="shell status-layout">
+        <div>
+          <p class="status-updated">Updated <span data-updated>23 July 2026, 18:36 CEST</span> · refreshes automatically</p>
+          <div class="status-meter" role="progressbar" aria-label="Overall completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87"><span data-meter></span></div>
+          <dl class="status-counts">
+            <div><dt>Pune pages</dt><dd data-pune-pages>2044</dd></div>
+            <div><dt>Pune media</dt><dd data-pune-media>2017</dd></div>
+            <div><dt>Goa pages</dt><dd data-goa-pages>188</dd></div>
+            <div><dt>Goa media</dt><dd data-goa-media>84</dd></div>
+          </dl>
+          <p class="status-eta"><strong>Current ETA</strong><br><span data-eta>Full crawl-backed demo: approximately 2–3 focused hours</span></p>
+        </div>
+        <div class="status-work">
+          <section><p class="eyebrow">Completed</p><h2>Validated work</h2><ul class="status-list" data-completed></ul></section>
+          <section><p class="eyebrow">In progress</p><h2>Active work</h2><ul class="status-list" data-in-progress></ul></section>
+          <section data-blockers-section><p class="eyebrow">Blockers</p><h2>External inputs</h2><ul class="status-list" data-blockers></ul></section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><strong>MIT-WPU website demonstration</strong><p>Public-safe progress only; no private migration data.</p></div>
+      <div class="footer-links"><a href="../">Demo</a><a href="../academics/">Academics</a><a href="../research/">Research</a></div>
+    </div>
+  </footer>
+</body>
+</html>

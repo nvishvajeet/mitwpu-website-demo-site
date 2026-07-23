@@ -1,0 +1,99 @@
+.status-hero {
+  min-height: 15rem;
+}
+
+.status-layout {
+  display: grid;
+  grid-template-columns: minmax(20rem, .8fr) minmax(0, 1.2fr);
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.status-updated {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.status-meter {
+  height: .85rem;
+  margin: 1.5rem 0 2rem;
+  overflow: hidden;
+  background: var(--blue-pale);
+  border: 1px solid var(--line);
+}
+
+.status-meter span {
+  display: block;
+  width: 87%;
+  height: 100%;
+  background: var(--solid-blue);
+  transition: width 300ms ease;
+}
+
+.status-counts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.status-counts div {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.status-counts div:nth-child(odd) {
+  padding-right: 1rem;
+  border-right: 1px solid var(--line);
+}
+
+.status-counts div:nth-child(even) {
+  padding-left: 1rem;
+}
+
+.status-counts dt {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.status-counts dd {
+  margin: .2rem 0 0;
+  color: var(--heading);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.status-eta {
+  margin-top: 2rem;
+}
+
+.status-work {
+  display: grid;
+  align-content: start;
+  gap: 3rem;
+}
+
+.status-work h2 {
+  font-size: 1.65rem;
+}
+
+.status-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.status-list li {
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .status-layout {
+    grid-template-columns: 1fr;
+  }
+}
