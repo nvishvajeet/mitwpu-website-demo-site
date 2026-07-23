@@ -361,6 +361,26 @@ h3 {
   font-size: 0.78rem;
 }
 
+.hero--editorial {
+  display: block;
+  max-width: var(--max);
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.hero--editorial .hero-copy {
+  max-width: 58rem;
+}
+
+.hero--editorial h1 {
+  max-width: 11ch;
+  font-size: clamp(3.4rem, 8vw, 7.4rem);
+}
+
+.hero--editorial .lede {
+  max-width: 46ch;
+  font-size: clamp(1.18rem, 2.1vw, 1.55rem);
+}
+
 .leadership-feature {
   padding-block: clamp(3.8rem, 8vw, 7rem);
   background: var(--paper);
@@ -416,6 +436,136 @@ h3 {
   margin: 0.35rem 0 0;
   color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.leadership-editorial {
+  padding-block: clamp(4rem, 8vw, 7.5rem);
+  background: var(--paper);
+  border-block: 1px solid var(--line);
+}
+
+.leadership-editorial__header,
+.leadership-index__header {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.38fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  align-items: start;
+  padding-bottom: clamp(2.4rem, 5vw, 4.5rem);
+}
+
+.leadership-editorial__header h2,
+.leadership-index__header h2 {
+  max-width: 20ch;
+}
+
+.leadership-offices {
+  border-top: 4px solid var(--gold);
+}
+
+.leadership-office {
+  display: grid;
+  grid-template-columns: minmax(17rem, 0.84fr) minmax(0, 1.16fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: center;
+  padding-block: clamp(3rem, 7vw, 6.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.leadership-office--reverse {
+  grid-template-columns: minmax(0, 1.16fr) minmax(17rem, 0.84fr);
+}
+
+.leadership-office--reverse .leadership-office__media {
+  order: 2;
+}
+
+.leadership-office__media {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.leadership-office__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--office-ratio);
+  object-fit: cover;
+}
+
+.leadership-office__copy {
+  max-width: 41rem;
+}
+
+.leadership-office__copy h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(2.1rem, 4.4vw, 4.25rem);
+}
+
+.leadership-office__role {
+  margin: 0.8rem 0 0;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.leadership-office__summary {
+  max-width: 54ch;
+  margin: 1.7rem 0 1.5rem;
+  color: var(--copy);
+  font-size: clamp(1.03rem, 1.55vw, 1.25rem);
+}
+
+.leadership-index {
+  padding-block: clamp(4rem, 8vw, 7.5rem);
+  background: var(--surface);
+}
+
+.leadership-index__group {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.58fr) minmax(0, 1.42fr);
+  gap: clamp(1.5rem, 6vw, 6rem);
+  padding-block: clamp(2rem, 4vw, 3.4rem);
+  border-top: 1px solid var(--line);
+}
+
+.leadership-index__group:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.leadership-index__group h3 {
+  font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+}
+
+.leadership-index__group p {
+  max-width: 34ch;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.leadership-index__group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leadership-index__group li + li {
+  border-top: 1px solid var(--line);
+}
+
+.leadership-index__group a {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-block: 0.8rem;
+  color: var(--heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 700;
+}
+
+.leadership-index__group a:hover {
+  color: var(--blue);
 }
 
 .maeer-founder {
@@ -977,8 +1127,17 @@ h3 {
 
   .section-heading,
   .source-panel,
-  .maeer-founder__grid {
+  .maeer-founder__grid,
+  .leadership-editorial__header,
+  .leadership-index__header,
+  .leadership-office,
+  .leadership-office--reverse,
+  .leadership-index__group {
     grid-template-columns: 1fr;
+  }
+
+  .leadership-office--reverse .leadership-office__media {
+    order: 0;
   }
 
   .directory-grid,
