@@ -1,0 +1,79 @@
+/*
+ * Shared readability contract for the public release.
+ *
+ * Individual page families retain their visual identity. This last-loaded
+ * layer only establishes legible floors, comfortable reading rhythm, usable
+ * controls, and safe text reflow. It deliberately does not disable browser
+ * zoom or replace user font preferences.
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-size: max(1rem, 16px);
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+:where(p, li, dd, dt, address, blockquote, td, th) {
+  overflow-wrap: anywhere;
+}
+
+:where(
+  small,
+  figcaption,
+  label,
+  .eyebrow,
+  .kicker,
+  .meta,
+  .media-caption,
+  .status-updated,
+  .field-help,
+  .event-card__date,
+  .education-timeline__year,
+  .advisor-tag,
+  .latest-card time,
+  .latest-card .media-placeholder span,
+  .global-footer-contact
+) {
+  font-size: max(.875rem, 14px);
+  line-height: 1.45;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+:where(.prose, .story-body, .profile-content, .article-body) p {
+  max-width: 72ch;
+  line-height: 1.72;
+}
+
+:where(button, input, select, textarea, [role="button"]) {
+  min-height: 44px;
+  font-size: max(1rem, 16px);
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline-offset: 3px;
+}
+
+@media (max-width: 42rem) {
+  body {
+    line-height: 1.62;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    hyphens: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}

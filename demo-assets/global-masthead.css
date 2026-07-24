@@ -109,7 +109,7 @@
   color: rgba(255, 255, 255, .9) !important;
   font-family: inherit !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  font-size: 13.5px !important;
+  font-size: 15px !important;
   font-weight: 650 !important;
   line-height: 1 !important;
   letter-spacing: .01em !important;
@@ -129,11 +129,34 @@
 }
 
 [data-global-masthead] .theme-toggle {
+  position: relative !important;
   flex: 0 0 44px !important;
   width: 44px !important;
   min-width: 44px !important;
-  height: 25px !important;
+  height: 44px !important;
+  min-height: 44px !important;
   margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+[data-global-masthead] .theme-toggle::before {
+  position: absolute !important;
+  inset: 9.5px 0 !important;
+  content: "" !important;
+  background: var(--toggle-track, #edf3f7) !important;
+  border: 1px solid var(--line-strong, #aebdca) !important;
+  border-radius: 999px !important;
+}
+
+[data-global-masthead] .theme-toggle .theme-icon {
+  top: 17.5px !important;
+}
+
+[data-global-masthead] .theme-toggle .switch-thumb {
+  top: 13px !important;
 }
 
 /* The source templates remain available for provenance, but never render a
@@ -225,7 +248,7 @@ body > [data-global-masthead] ~ :is(
   }
 
   [data-global-nav] a {
-    font-size: .8rem !important;
+    font-size: .9375rem !important;
   }
 }
 
@@ -239,7 +262,7 @@ body > [data-global-masthead] ~ :is(
   color: inherit;
   border-top: 1px solid rgb(255 255 255 / 18%);
   font-style: normal;
-  font-size: .84rem;
+  font-size: .9rem;
   line-height: 1.55;
 }
 

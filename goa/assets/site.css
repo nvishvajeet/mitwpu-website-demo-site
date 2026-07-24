@@ -29,7 +29,12 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { scroll-behavior: smooth; scrollbar-gutter: stable; }
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 body {
   min-width: 20rem;
   margin: 0;
@@ -104,7 +109,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   position: relative;
   padding-block: .45rem;
   color: var(--ink);
-  font-size: .91rem;
+  font-size: .94rem;
   font-weight: 720;
   text-decoration: none;
 }
@@ -594,7 +599,7 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
 @media (max-width: 42rem) {
   .brand-mark { width: 8.6rem; }
   .site-nav { gap: .2rem .75rem; }
-  .site-nav a { font-size: .83rem; }
+  .site-nav a { font-size: .94rem; }
   .stat-grid, .card-grid, .people-grid, .compact-list,
   .directory-grid, .document-list { grid-template-columns: 1fr; }
   .latest-rail { grid-auto-columns: 84%; }
