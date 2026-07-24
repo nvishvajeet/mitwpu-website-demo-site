@@ -1,0 +1,25 @@
+{
+  "schema": "mitwpu.people.faculty-media-current.v1",
+  "retrieved_at": "2026-07-24T12:48:00+02:00",
+  "evidence_policy": "A record is present only when the current public faculty page exposes the named portrait and the retained public-media library contains that exact source asset.",
+  "records": [
+    {
+      "person_id": "abhishek-singh",
+      "portrait_path": "/media/mitwpu-public/optimized/faculty_profile/43/43a3d17cdcdb9ae8-43a3d17cdcdb9ae8-Abhishek-Singh.webp",
+      "source_url": "https://mitwpu.edu.in/faculty/abhishek-singh",
+      "source_image_url": "https://mitwpu.edu.in/uploads/faculty_images/Abhishek-Singh.webp"
+    },
+    {
+      "person_id": "pratibha-sharad-kshirsagar",
+      "portrait_path": "/media/mitwpu-public/optimized/faculty_profile/3d/3dc9baa1ca9b3869-3dc9baa1ca9b3869-643cfdbcb77a81681718716.webp",
+      "source_url": "https://mitwpu.edu.in/faculty/pratibha-sharad-kshirsagar",
+      "source_image_url": "https://mitwpu.edu.in/uploads/faculty_images/643cfdbcb77a81681718716.jpg"
+    },
+    {
+      "person_id": "uday-vilas-jagadale",
+      "portrait_path": "/media/mitwpu-public/optimized/faculty_profile/ab/aba3b48b551fbff2-aba3b48b551fbff2-6437a7461db2b1681368902.webp",
+      "source_url": "https://mitwpu.edu.in/faculty/uday-vilas-jagadale",
+      "source_image_url": "https://mitwpu.edu.in/uploads/faculty_images/6437a7461db2b1681368902.jpg"
+    }
+  ]
+}

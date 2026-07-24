@@ -453,7 +453,7 @@ h3 {
 }
 
 .activity {
-  padding-block: 94px;
+  padding-block: 76px;
   background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
@@ -576,7 +576,7 @@ h3 {
 }
 
 .directory {
-  padding-block: 94px 112px;
+  padding-block: 76px 92px;
 }
 
 .directory .section-heading {
@@ -588,8 +588,8 @@ h3 {
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
   gap: clamp(46px, 8vw, 100px);
   align-items: end;
-  margin-bottom: 60px;
-  padding-bottom: 28px;
+  margin-bottom: 46px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--line-strong);
 }
 
@@ -637,8 +637,8 @@ h3 {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 18px;
   align-items: start;
-  min-height: 114px;
-  padding: 24px 2px 21px;
+  min-height: 104px;
+  padding: 20px 2px 18px;
   color: var(--ink);
   border-bottom: 1px solid var(--line);
   text-decoration: none;

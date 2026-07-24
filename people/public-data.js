@@ -349,7 +349,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": "",
+    "photoPath": "/media/mitwpu-public/optimized/faculty_profile/43/43a3d17cdcdb9ae8-43a3d17cdcdb9ae8-Abhishek-Singh.webp",
     "research": "Sampling, ranked-set sampling, statistical inference, quality control, time series, data science, and machine learning.",
     "summary": "",
     "links": {
@@ -2506,7 +2506,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/bharat-sambhu-chaudhari.webp",
     "research": "AIoT, TinyML, LPWANs, Si-Photonics, Optical Networks, Switching & Routing Technologies",
-    "summary": "Dr. Bharat S. Chaudhari has pursued the BE in Industrial Electronics from Amravati University in 1989 and then METelE and PhD in Engineering from Jadavpur University, Kolkata, India, in 1993 and 2000, respectively. After being a Full Professor in Electronics and Telecommunication Engineering with the Pune Institute of Computer Technology and the Dean and Principal of the International Institute of Information Technology, Pune, he joined MIT World Peace University (then MIT Pune) in 2014 as a Professor. Currently, he is working as a Senior Professor (Higher Administrative Group) in Electronics and Communication Engineering and Dean – Research and Development. He held additional responsibilities as Dean of Academics (July 2021 - Sept 2022), Associate Dean - Faculty of Engineering and Technology (Feb 2020 - June 2023), and Head of the School of Electrical/Electronics and Telecommunication Engineering (July 2017 - December 2023) at MIT World Peace University. With 35 years of experience in teaching and research, he has authored more than 125 research papers in wireless, telecom, and optical networks and edited several conference proceedings and four books. He has four granted patents, and two patents are in the published stage. Since 2007, Dr. Chaudhari has been appointed as a Visiting Scientist (Simons Associate/Regular Associate) to ICTP, a Tier I research organization of UNESCO established by Nobel Laureate Dr. Abdus Salam in Trieste, Italy. Dr. Chaudhari has successfully executed several research and consultancy projects and accomplished international research collaborations. He has delivered technical talks at various conferences and platforms in different countries. Dr. Chaudhari is a recipient of the 2020 IETE N V Gadadhar Memorial Award for outstanding contribution in fostering research and education, the MAEER Pune’s Ideal Teacher Award 2015, and the Young Scientist Research Grant from the Department of Science and Technology, Government of India, in 2003. Dr. Chaudhari is a Fellow of the Maharashtra Academy of Sciences, IETE and IE (I), the Founder Chair of IEEE Pune Section (R-10), and a Senior Member of IEEE. He also chaired the IEEE Communications Society Pune Chapter. He serves as a Program Evaluator of the Engineering Accreditation Commission (EAC) of ABET, United States, for accreditation of computer, communications, and similar engineering programs. He has been part of ABET Teams for onsite accreditation at several U.S. and other foreign Universities. He has also undertaken NAAC accreditation peer team visits to various colleges and Universities in India. He has been on the panel of juries of several prestigious national awards and as a member of multiple committees related to higher education, research, and administration established by various universities/agencies.",
+    "summary": "Dr. Bharat S. Chaudhari is Senior Professor (Higher Administrative Group) and Dean of Research and Development at MIT-WPU. His work spans AIoT, TinyML, low-power wide-area networks, silicon photonics, optical networks, switching, and routing.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/bharat-sambhu-chaudhari",
       "scholar": "https://scholar.google.com/citations?user=pd-vRWgAAAAJ&hl=en&oi=ao",
@@ -3318,7 +3318,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   },
   {
     "id": "dr-milind-pande-3",
-    "name": "Dr Milind Pande",
+    "name": "Dr. Milind Pande",
     "preferredDisplayName": "Prof. Milind Pande",
     "designation": "Pro Vice Chancellor",
     "department": "university-leadership",
@@ -3331,8 +3331,10 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "/media/mitwpu-public/optimized/leadership/86/8620d1e46a5423bd-8620d1e46a5423bd-63e62fd9e4e8c1676029913.webp",
     "research": "",
-    "summary": "",
-    "links": {},
+    "summary": "Dr. Milind Pande is an academic leader with more than twenty-five years of experience in technology transfer, international collaboration, and education.",
+    "links": {
+      "profile": "https://mitwpu.edu.in/leadership/dr-milind-pande-3"
+    },
     "memberType": "university-leadership"
   },
   {
@@ -3393,8 +3395,29 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "memberType": "university-leadership"
   },
   {
+    "id": "dr-priya-pise-199",
+    "name": "Dr. Priya Pise",
+    "preferredDisplayName": "",
+    "designation": "Director - Alumni Relations",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/other/81/810b1d68115d359a-810b1d68115d359a-Priya-Pise-Alumni-director.webp",
+    "research": "",
+    "summary": "Dr. Priya Pise is an academician and researcher with more than twenty years of experience across higher education and industry.",
+    "links": {
+      "profile": "https://mitwpu.edu.in/leadership/dr-priya-pise-199"
+    },
+    "memberType": "university-leadership"
+  },
+  {
     "id": "dr-r-m-chitnis-2",
-    "name": "Dr R M Chitnis",
+    "name": "Dr. R. M. Chitnis",
     "preferredDisplayName": "Prof. R. M. Chitnis",
     "designation": "Vice Chancellor",
     "department": "university-leadership",
@@ -3407,8 +3430,10 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "/media/mitwpu-public/optimized/other/c6/c6003b4f054ec7a6-c6003b4f054ec7a6-RM-Chitnis-hswtech-conf-1.webp",
     "research": "",
-    "summary": "",
-    "links": {},
+    "summary": "Dr. R. M. Chitnis has more than three decades of experience in education and academic leadership.",
+    "links": {
+      "profile": "https://mitwpu.edu.in/leadership/dr-r-m-chitnis-2"
+    },
     "memberType": "university-leadership"
   },
   {
@@ -5571,7 +5596,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   },
   {
     "id": "mr-ganesh-b-pokale-5",
-    "name": "Mr Ganesh B Pokale",
+    "name": "Mr. Ganesh B. Pokale",
     "preferredDisplayName": "Mr. Ganesh B. Pokale",
     "designation": "Registrar",
     "department": "university-leadership",
@@ -5584,8 +5609,10 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "/media/mitwpu-public/optimized/other/99/995d681618c645d7-995d681618c645d7-GANESH_POKALE.webp",
     "research": "",
-    "summary": "",
-    "links": {},
+    "summary": "Mr. Ganesh B. Pokale leads university administration with experience in outcome-based education, academic processes, learning technology, and quality assurance.",
+    "links": {
+      "profile": "https://mitwpu.edu.in/leadership/mr-ganesh-b-pokale-5"
+    },
     "memberType": "university-leadership"
   },
   {
@@ -5605,6 +5632,27 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "research": "",
     "summary": "At MIT-WPU, the Branding & Communications Department drives the university’s identity and vision through strategic branding, creative content, and effective communication across all platforms.",
     "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "mr-pradnesh-desai-209",
+    "name": "Mr. Pradnesh Desai",
+    "preferredDisplayName": "",
+    "designation": "Director - International",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/8b/8b378b1a9b7298bc-8b378b1a9b7298bc-Director-international.webp",
+    "research": "",
+    "summary": "Mr. Pradnesh Desai has more than two decades of experience in international relations, business management, diplomatic missions, and higher education.",
+    "links": {
+      "profile": "https://mitwpu.edu.in/leadership/mr-pradnesh-desai-209"
+    },
     "memberType": "university-leadership"
   },
   {
@@ -6930,7 +6978,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": "",
+    "photoPath": "/media/mitwpu-public/optimized/faculty_profile/3d/3dc9baa1ca9b3869-3dc9baa1ca9b3869-643cfdbcb77a81681718716.webp",
     "research": "",
     "summary": "",
     "links": {},
@@ -10617,7 +10665,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": "",
+    "photoPath": "/media/mitwpu-public/optimized/faculty_profile/ab/aba3b48b551fbff2-aba3b48b551fbff2-6437a7461db2b1681368902.webp",
     "research": "Graph theory, discrete mathematics, matroid theory, and connectivity of interconnection networks.",
     "summary": "",
     "links": {

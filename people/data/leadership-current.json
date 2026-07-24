@@ -1,0 +1,75 @@
+{
+  "schema": "mitwpu.people.leadership-current.v1",
+  "retrieved_at": "2026-07-24T12:40:05+02:00",
+  "evidence_policy": "Only fields visible on the named public MIT-WPU leadership page are retained. These records supplement leadership routes that were listed in the frozen sitemap but were unavailable during the first crawl.",
+  "records": [
+    {
+      "source_id": "dr-r-m-chitnis-2",
+      "person_id": "dr-r-m-chitnis-2",
+      "name": "Dr. R. M. Chitnis",
+      "designation": "Vice Chancellor",
+      "summary": "Dr. R. M. Chitnis has more than three decades of experience in education and academic leadership.",
+      "education": [],
+      "portrait_path": "/media/mitwpu-public/optimized/other/c6/c6003b4f054ec7a6-c6003b4f054ec7a6-RM-Chitnis-hswtech-conf-1.webp",
+      "source_url": "https://mitwpu.edu.in/leadership/dr-r-m-chitnis-2"
+    },
+    {
+      "source_id": "dr-milind-pande-3",
+      "person_id": "dr-milind-pande-3",
+      "name": "Dr. Milind Pande",
+      "designation": "Pro Vice-Chancellor",
+      "summary": "Dr. Milind Pande is an academic leader with more than twenty-five years of experience in technology transfer, international collaboration, and education.",
+      "education": [
+        "Ph.D. in International Trade",
+        "Ph.D. in Wireless Technology",
+        "M.E. in Electronics",
+        "MBA in Marketing",
+        "M.P.M. in Personnel Management"
+      ],
+      "portrait_path": "/media/mitwpu-public/optimized/leadership/86/8620d1e46a5423bd-8620d1e46a5423bd-63e62fd9e4e8c1676029913.webp",
+      "source_url": "https://mitwpu.edu.in/leadership/dr-milind-pande-3"
+    },
+    {
+      "source_id": "mr-ganesh-b-pokale-5",
+      "person_id": "mr-ganesh-b-pokale-5",
+      "name": "Mr. Ganesh B. Pokale",
+      "designation": "Registrar",
+      "summary": "Mr. Ganesh B. Pokale leads university administration with experience in outcome-based education, academic processes, learning technology, and quality assurance.",
+      "education": [],
+      "portrait_path": "/media/mitwpu-public/optimized/other/99/995d681618c645d7-995d681618c645d7-GANESH_POKALE.webp",
+      "source_url": "https://mitwpu.edu.in/leadership/mr-ganesh-b-pokale-5"
+    },
+    {
+      "source_id": "dr-priya-pise-199",
+      "person_id": "dr-priya-pise-199",
+      "name": "Dr. Priya Pise",
+      "designation": "Director - Alumni Relations",
+      "summary": "Dr. Priya Pise is an academician and researcher with more than twenty years of experience across higher education and industry.",
+      "education": [
+        "Ph.D. in Computer Engineering"
+      ],
+      "portrait_path": "/media/mitwpu-public/optimized/other/81/810b1d68115d359a-810b1d68115d359a-Priya-Pise-Alumni-director.webp",
+      "source_url": "https://mitwpu.edu.in/leadership/dr-priya-pise-199"
+    },
+    {
+      "source_id": "mr-pradnesh-desai-209",
+      "person_id": "mr-pradnesh-desai-209",
+      "name": "Mr. Pradnesh Desai",
+      "designation": "Director - International",
+      "summary": "Mr. Pradnesh Desai has more than two decades of experience in international relations, business management, diplomatic missions, and higher education.",
+      "education": [],
+      "portrait_path": "/media/mitwpu-public/optimized/leadership/8b/8b378b1a9b7298bc-8b378b1a9b7298bc-Director-international.webp",
+      "source_url": "https://mitwpu.edu.in/leadership/mr-pradnesh-desai-209"
+    },
+    {
+      "source_id": "dr-abhijit-nair-221",
+      "person_id": "abhijit-nair",
+      "name": "Dr. Abhijit Nair",
+      "designation": "Associate Professor & Dean",
+      "summary": "",
+      "education": [],
+      "portrait_path": "",
+      "source_url": "https://mitwpu.edu.in/leadership/dr-abhijit-nair-221"
+    }
+  ]
+}

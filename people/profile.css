@@ -153,6 +153,7 @@
   grid-template-columns: minmax(0, 760px);
 }
 
+.profile-body-single .profile-sidebar,
 .profile-body-single .profile-links-section {
   padding-left: 0;
   border-left: 0;
@@ -180,6 +181,7 @@
 }
 
 .profile-main-sections,
+.profile-sidebar,
 .profile-research,
 .profile-qualifications,
 .profile-details,
@@ -290,9 +292,20 @@
   margin-bottom: 1rem;
 }
 
-.profile-links-section {
+.profile-sidebar {
   padding-left: 26px;
   border-left: 1px solid var(--line);
+}
+
+.profile-sidebar .profile-links-section {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.profile-sidebar .profile-links-section + .profile-links-section {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
 }
 
 .profile-links {
@@ -345,7 +358,7 @@
     padding-block: 48px 60px;
   }
 
-  .profile-links-section {
+  .profile-sidebar {
     padding: 28px 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;
