@@ -67,6 +67,13 @@ body {
   gap: 10px;
 }
 
+.context-current {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .context-inner a {
   color: var(--title);
   text-decoration: none;
@@ -878,7 +885,8 @@ summary:focus-visible {
     display: none;
   }
 
-  .context-inner > span {
+  .context-separator,
+  .context-school {
     display: none;
   }
 

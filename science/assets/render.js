@@ -78,7 +78,7 @@
     const schoolHref = page === "school" ? "index.html" : "../index.html";
     const demoHomeHref = page === "school" ? "../" : "../../";
     const brand = page === "school"
-      ? `<a class="brand" href="${demoHomeHref}"><strong>School of Science &amp; Environmental Studies</strong><small>MIT World Peace University</small></a>`
+      ? `<a class="brand" href="index.html"><strong>School of Science &amp; Environmental Studies</strong><small>MIT World Peace University</small></a>`
       : `<a class="brand" href="index.html"><strong>${escapeHtml(department.name)}</strong><small>School of Science &amp; Environmental Studies</small></a>`;
     const navItems = department ? [
       ["home", "Home", "index.html"],
@@ -100,12 +100,7 @@
       </div>
       <header class="site-header">
         <div class="shell header-inner">
-          <div class="masthead-brands">
-            <a class="institutional-lockup" href="${demoHomeHref}" aria-label="Dr. Vishwanath Karad MIT World Peace University home">
-              <img class="institutional-lockup__logo" src="/demo-assets/brand/mitwpu-official-logo.jpg" alt="" width="431" height="124">
-            </a>
-            ${brand}
-          </div>
+          ${brand}
           ${department ? `
             <nav class="site-nav" aria-label="Department navigation">
               ${navItems.map(([id, label, href]) => `<a data-nav="${id}" href="${href}"${page === id ? ' aria-current="page"' : ""}>${label}</a>`).join("")}
@@ -117,7 +112,21 @@
             </div>`}
         </div>
       </header>
-      ${department ? `<div class="department-context"><div class="shell context-inner"><a href="${schoolHref}">School of Science</a><span aria-hidden="true">/</span><span>${escapeHtml(department.shortName)}</span><details><summary>Other departments</summary><div class="department-menu">${departmentOrder.filter((id) => id !== departmentId).map((id) => `<a href="${localHref(id)}">${escapeHtml(departments[id].shortName)}</a>`).join("")}</div></details></div></div>` : ""}`;
+      <nav class="department-context" aria-label="Breadcrumb">
+        <div class="shell context-inner">
+          <a href="/academics/">Academics</a>
+          <span class="context-separator" aria-hidden="true">/</span>
+          ${department ? `
+            <a class="context-school" href="${schoolHref}">School of Science</a>
+            <span class="context-separator" aria-hidden="true">/</span>
+            <span class="context-current" aria-current="page">${escapeHtml(department.shortName)}</span>
+            <details>
+              <summary>Other departments</summary>
+              <div class="department-menu">${departmentOrder.filter((id) => id !== departmentId).map((id) => `<a href="${localHref(id)}">${escapeHtml(departments[id].shortName)}</a>`).join("")}</div>
+            </details>` : `
+            <span class="context-current" aria-current="page">School of Science &amp; Environmental Studies</span>`}
+        </div>
+      </nav>`;
   }
 
   function renderFooter() {
