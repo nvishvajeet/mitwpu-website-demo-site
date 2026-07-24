@@ -18,7 +18,10 @@
     if (/\/people\/(?:index\.html)?$/.test(referrer.pathname)) {
       return "← Back to people directory";
     }
-    if (/\/science\/[^/]+\/people\.html$/.test(referrer.pathname)) {
+    if (
+      /\/science\/[^/]+\/people\.html$/.test(referrer.pathname) ||
+      /\/academics\/(?:[^/]+\/)+people\.html$/.test(referrer.pathname)
+    ) {
       return "← Back to department people";
     }
     return "← Back";
