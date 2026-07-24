@@ -1,20 +1,21 @@
 {
   "percentage": 100,
   "phase": "Validated crawl-backed public demo deployed",
-  "updated_at": "24 July 2026, 13:42 CEST",
+  "updated_at": "24 July 2026, 14:00 CEST",
   "eta": "Production reconciliation can begin when the authoritative export is available",
   "pune_pages": 2298,
   "pune_media": 3518,
   "goa_pages": 165,
   "goa_media": 80,
   "completed": [
-    "2,463 HTML pages assembled into the exact public artifact",
+    "2,464 HTML pages assembled into the exact public artifact, including a branded recovery page",
     "1,903 canonical routes rendered at desktop and mobile widths with zero issue pages",
     "1,899 search records covering 518 people and 1,381 pages",
     "Strict layer 0, 1, and 2 media gate passed with zero errors and zero warnings",
     "Single stable navigation order across institutional, academic, research, and group templates",
     "Responsive layout, native scrolling, accessible image labels, and light and dark themes",
     "All 13 schools shown in one searchable directory without pagination",
+    "About theme control and branded 404 recovery verified on desktop and mobile",
     "Public artifact committed, deployed, and verified on the custom domain"
   ],
   "in_progress": [],
