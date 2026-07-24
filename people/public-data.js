@@ -1236,7 +1236,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "id": "anjali-ajit-sane",
     "name": "Dr. Anjali Ajit Sane",
     "preferredDisplayName": "",
-    "designation": "Professor & Dean",
+    "designation": "Dean - School of Economics and Commerce",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
     "unitRoutes": [
@@ -1509,8 +1509,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anup-atul-kale",
     "name": "Prof. Dr. Anup Atul Kale",
-    "preferredDisplayName": "",
-    "designation": "Professor & Dean",
+    "preferredDisplayName": "Prof. Anup Atul Kale",
+    "designation": "Dean - School of Science & Environmental Studies",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
     "unitRoutes": [
@@ -2495,7 +2495,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "id": "bharat-sambhu-chaudhari",
     "name": "Dr. Bharat Sambhu Chaudhari",
     "preferredDisplayName": "",
-    "designation": "Senior Professor (HAG) and Dean - Research and Development",
+    "designation": "Dean - Research and Development",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
     "unitRoutes": [
@@ -2912,8 +2912,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deependra-sharma",
     "name": "Dr. Deependra Sharma",
-    "preferredDisplayName": "",
-    "designation": "Professor and Dean School of Business",
+    "preferredDisplayName": "Prof. Deependra Sharma",
+    "designation": "Dean - School of Business",
     "department": "business/business",
     "departmentName": "Department of Business",
     "unitRoutes": [
@@ -3277,6 +3277,234 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "scopus": "https://www.scopus.com/results/authorNamesList.uri?st1=Waghole&st2=Dnyaneshwar&origin=sea"
     },
     "memberType": ""
+  },
+  {
+    "id": "dr-hitesh-joshi-165",
+    "name": "Dr. Hitesh Joshi",
+    "preferredDisplayName": "",
+    "designation": "Dean - Student Affairs",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/04/0426c8ffba9f9e31-0426c8ffba9f9e31-Hitesh-Joshi.webp",
+    "research": "",
+    "summary": "Dr. Hitesh Joshi is a highly accomplished professional with a rich academic and administrative background, spanning over 20 years.Dr. Joshi currently holds the position of Director of Student Affairs.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-makarand-hastak-210",
+    "name": "Dr. Makarand Hastak",
+    "preferredDisplayName": "",
+    "designation": "Honorary Chairman",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/1f/1f467cd8de78b7da-1f467cd8de78b7da-makrand-hasktak.webp",
+    "research": "",
+    "summary": "Dr. Hastak is the immediate past President of the International Council for Research and Innovation in Building and Construction (CIB).",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-milind-pande-3",
+    "name": "Dr Milind Pande",
+    "preferredDisplayName": "Prof. Milind Pande",
+    "designation": "Pro Vice Chancellor",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "",
+    "research": "",
+    "summary": "",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-namesh-killemsetty-213",
+    "name": "Dr. Namesh Killemsetty",
+    "preferredDisplayName": "",
+    "designation": "Director - School of Government",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/c9/c9b0e2b9af9f6888-c9b0e2b9af9f6888-Namesh-Killemsetty.webp",
+    "research": "",
+    "summary": "Meet Dr. Namesh Killemsetty, a distinguished academic leader at MIT-WPU Pune. Explore his vision, leadership journey, academic contributions, and role in advancing innovation-driven education.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-nitin-khedkar-200",
+    "name": "Dr. Nitin Khedkar",
+    "preferredDisplayName": "",
+    "designation": "Director – Human Resources",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/b0/b0a33086e0dad919-b0a33086e0dad919-Nitin-Khedkar-HR-director.webp",
+    "research": "",
+    "summary": "View the professional profile of Dr. Nitin Khedkar at MIT World Peace University. Explore his academic background, expertise, and leadership contributions.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-prasad-d-khandekar-190",
+    "name": "Dr. Prasad D. Khandekar",
+    "preferredDisplayName": "Dr. Prasad D. Khandekar",
+    "designation": "Chief Academic Officer",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/09/09a40aed1a6e54f5-09a40aed1a6e54f5-Prasad-Khandekar.webp",
+    "research": "",
+    "summary": "Dr. Prasad D. Khandekar brings over 30 years of rich experience in higher education leadership, academic governance, and research. A distinguished academician and administrator, he holds a Ph.D. in Electronics Engineering, M.E. in Electronics, and a B.E. in Industrial Electronics.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-r-m-chitnis-2",
+    "name": "Dr R M Chitnis",
+    "preferredDisplayName": "Prof. R. M. Chitnis",
+    "designation": "Vice Chancellor",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "",
+    "research": "",
+    "summary": "",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-santosh-aghav-189",
+    "name": "Dr. Santosh Aghav",
+    "preferredDisplayName": "",
+    "designation": "Dean - School of Law",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/a3/a3bb3b1b9ffe1d7f-a3bb3b1b9ffe1d7f-Santosh-Aghav-law.webp",
+    "research": "",
+    "summary": "Dr Santosh Aghav, has experience of more than 22 years in Academics. Since 1st Oct 2003, he was associated with Symbiosis Law School, Symbiosis International (Deemed University) Pune.Panelists for Nationwide consultation on Safety of women and child and trafficking organized by Pune Police Commissionerate.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-santosh-jaybhay-197",
+    "name": "Dr. Santosh Jaybhay",
+    "preferredDisplayName": "",
+    "designation": "Director - Legal Affairs",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/15/1505a7804a69149f-1505a7804a69149f-Dr-Jaybhay-Santosh2.webp",
+    "research": "",
+    "summary": "Dr. Santosh Jaybhay holds a BSc, LLM, and PhD, bringing over 27 years of rich teaching experience primarily at ILS Law College and JSPM University.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-siddharth-chakarbarti-173",
+    "name": "Dr. Siddharth Chakarbarti",
+    "preferredDisplayName": "",
+    "designation": "Dean - School of Engineering & Technology",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/98/980887946c4eb61b-980887946c4eb61b-Siddharth-Chakrabarti.webp",
+    "research": "",
+    "summary": "Dr. Siddharth Chakrabarti is a distinguished academic leader and he worked as Dean- SoE & Dean Academics at OP Jindal University (OPJU), supported by Jindal Steel & Power prior to joining MIT-WPU, Pune.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-sushma-s-kulkarni-219",
+    "name": "Dr. Sushma S. Kulkarni",
+    "preferredDisplayName": "",
+    "designation": "Professor and Principal Advisor",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/5b/5bdebb9a8c1376c1-5bdebb9a8c1376c1-sushuma-kulkarni.webp",
+    "research": "",
+    "summary": "Dr. Sushma S. Kulkarni is a distinguished academician, researcher, and institutional leader with 38 years of experience dedicated to teaching, engineering pedagogy, and university governance.",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "dr-vinod-shastri-198",
+    "name": "Dr. Vinod Shastri",
+    "preferredDisplayName": "",
+    "designation": "Director - Entrepreneurship",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/a5/a54d7d2e8924ef2b-a54d7d2e8924ef2b-Vinod-Shastri.webp",
+    "research": "",
+    "summary": "Dr. Vinod Shastri has 40 years of diverse experience spanning entrepreneurship, entrepreneurship education, administration, training, teaching, finance, and production.",
+    "links": {},
+    "memberType": "university-leadership"
   },
   {
     "id": "esha-bansal",
@@ -4940,7 +5168,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "id": "mangesh-vilas-bedekar",
     "name": "Dr. Mangesh Vilas Bedekar",
     "preferredDisplayName": "",
-    "designation": "Professor",
+    "designation": "Dean - School of Computer Science & Engineering",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
@@ -5340,6 +5568,44 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "profile": "https://mitwpu.edu.in/faculty/mohit-kant-kaushik"
     },
     "memberType": ""
+  },
+  {
+    "id": "mr-ganesh-b-pokale-5",
+    "name": "Mr Ganesh B Pokale",
+    "preferredDisplayName": "Mr. Ganesh B. Pokale",
+    "designation": "Registrar",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "",
+    "research": "",
+    "summary": "",
+    "links": {},
+    "memberType": "university-leadership"
+  },
+  {
+    "id": "mr-haranath-ghosh-193",
+    "name": "Mr. Haranath Ghosh",
+    "preferredDisplayName": "",
+    "designation": "Director - Branding & Communications",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "/media/mitwpu-public/optimized/leadership/0e/0e8048c55ae9b57a-0e8048c55ae9b57a-Haranath-Ghosh-Director-Branding-and-Communications.webp",
+    "research": "",
+    "summary": "At MIT-WPU, the Branding & Communications Department drives the university’s identity and vision through strategic branding, creative content, and effective communication across all platforms.",
+    "links": {},
+    "memberType": "university-leadership"
   },
   {
     "id": "mrudul-chilmulwar",
@@ -6312,7 +6578,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "id": "prakash-mohan-mainkar",
     "name": "Dr. Prakash Mohan Mainkar",
     "preferredDisplayName": "",
-    "designation": "Associate Professor and Director Admissions",
+    "designation": "Director - Admissions",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
     "unitRoutes": [
@@ -6908,6 +7174,25 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "linkedin": "https://www.linkedin.com/in/priyanka-rajmane/"
     },
     "memberType": ""
+  },
+  {
+    "id": "prof-dr-urvashi-makkar-121",
+    "name": "Prof Dr Urvashi Makkar",
+    "preferredDisplayName": "Prof. Urvashi Makkar",
+    "designation": "Dean - Ram Charan School of Leadership",
+    "department": "university-leadership",
+    "departmentName": "University leadership",
+    "unitRoutes": [
+      "university-leadership"
+    ],
+    "unitNames": {
+      "university-leadership": "University leadership"
+    },
+    "photoPath": "",
+    "research": "",
+    "summary": "",
+    "links": {},
+    "memberType": "university-leadership"
   },
   {
     "id": "purna-kumari",
@@ -9770,7 +10055,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "id": "suman-devadula",
     "name": "Dr. Suman Devadula",
     "preferredDisplayName": "",
-    "designation": "Professor & Dean",
+    "designation": "Dean - School of Design",
     "department": "design/design",
     "departmentName": "Department of Design",
     "unitRoutes": [
@@ -11030,7 +11315,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "id": "vikrant-devidas-gaikwad",
     "name": "Dr. Vikrant Devidas Gaikwad",
     "preferredDisplayName": "",
-    "designation": "Associate Professor",
+    "designation": "Dean - Academics",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
     "unitRoutes": [

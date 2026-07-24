@@ -1963,6 +1963,94 @@
       "target": "/people/yogita-sachin-ozarde/"
     },
     {
+      "source": "/leadership/",
+      "target": "/people/"
+    },
+    {
+      "source": "/leadership/dr-anjali-sane-164/",
+      "target": "/people/anjali-ajit-sane/"
+    },
+    {
+      "source": "/leadership/dr-bharat-s-chaudhari-204/",
+      "target": "/people/bharat-sambhu-chaudhari/"
+    },
+    {
+      "source": "/leadership/dr-deependra-sharma-113/",
+      "target": "/people/deependra-sharma/"
+    },
+    {
+      "source": "/leadership/dr-hitesh-joshi-165/",
+      "target": "/people/dr-hitesh-joshi-165/"
+    },
+    {
+      "source": "/leadership/dr-makarand-hastak-210/",
+      "target": "/people/dr-makarand-hastak-210/"
+    },
+    {
+      "source": "/leadership/dr-milind-pande-3/",
+      "target": "/people/dr-milind-pande-3/"
+    },
+    {
+      "source": "/leadership/dr-namesh-killemsetty-213/",
+      "target": "/people/dr-namesh-killemsetty-213/"
+    },
+    {
+      "source": "/leadership/dr-nitin-khedkar-200/",
+      "target": "/people/dr-nitin-khedkar-200/"
+    },
+    {
+      "source": "/leadership/dr-prakash-m-mainkar-110/",
+      "target": "/people/prakash-mohan-mainkar/"
+    },
+    {
+      "source": "/leadership/dr-prasad-d-khandekar-190/",
+      "target": "/people/dr-prasad-d-khandekar-190/"
+    },
+    {
+      "source": "/leadership/dr-r-m-chitnis-2/",
+      "target": "/people/dr-r-m-chitnis-2/"
+    },
+    {
+      "source": "/leadership/dr-santosh-aghav-189/",
+      "target": "/people/dr-santosh-aghav-189/"
+    },
+    {
+      "source": "/leadership/dr-santosh-jaybhay-197/",
+      "target": "/people/dr-santosh-jaybhay-197/"
+    },
+    {
+      "source": "/leadership/dr-siddharth-chakarbarti-173/",
+      "target": "/people/dr-siddharth-chakarbarti-173/"
+    },
+    {
+      "source": "/leadership/dr-suman-devadula-196/",
+      "target": "/people/suman-devadula/"
+    },
+    {
+      "source": "/leadership/dr-sushma-s-kulkarni-219/",
+      "target": "/people/dr-sushma-s-kulkarni-219/"
+    },
+    {
+      "source": "/leadership/dr-vikrant-devidas-gaikwad-201/",
+      "target": "/people/vikrant-devidas-gaikwad/"
+    },
+    {
+      "source": "/leadership/dr-vinod-shastri-198/",
+      "target": "/people/dr-vinod-shastri-198/"
+    },
+    {
+      "source": "/leadership/mr-ganesh-b-pokale-5/",
+      "target": "/people/mr-ganesh-b-pokale-5/"
+    },
+    {
+      "source": "/leadership/mr-haranath-ghosh-193/",
+      "target": "/people/mr-haranath-ghosh-193/"
+    },
+    {
+      "source": "/leadership/prof-dr-urvashi-makkar-121/",
+      "target": "/people/prof-dr-urvashi-makkar-121/"
+    },
+    {
       "source": "/schools/faculty-of-business-and-leadership/school-of-business/",
       "target": "/academics/business/"
     },
