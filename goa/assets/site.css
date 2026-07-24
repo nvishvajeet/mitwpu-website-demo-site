@@ -59,8 +59,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .skip-link:focus { transform: none; }
 
 .site-header {
-  position: relative;
+  position: sticky;
   z-index: 10;
+  top: 0;
   border-bottom: 1px solid var(--line);
   background: color-mix(in srgb, var(--paper) 94%, transparent);
   backdrop-filter: blur(14px);
@@ -97,6 +98,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   flex-wrap: wrap;
   gap: .35rem .95rem;
   margin-left: auto;
+  overscroll-behavior-x: contain;
 }
 .site-nav a {
   position: relative;
