@@ -1268,3 +1268,29 @@ h3 {
     grid-column: auto;
   }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --ink: #e6eef3;
+      --heading: #e5eef4;
+      --copy: #c0cdd5;
+      --muted: #a7b8c3;
+      --paper: #0f1920;
+      --surface: #16232c;
+      --surface-strong: #1c2c37;
+      --blue: #8fc4df;
+      --blue-dark: #b5d9ea;
+      --navy: #102842;
+      --gold: #e3b94f;
+      --gold-soft: #55451e;
+      --line: #30434f;
+      --footer: #09131a;
+      --focus: #9fd9f4;
+      color-scheme: dark;
+  }
+
+  :root:not([data-theme]) .theme-toggle::after {
+    transform: translateX(19px);
+  }
+}

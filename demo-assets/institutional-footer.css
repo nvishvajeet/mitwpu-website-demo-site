@@ -136,3 +136,12 @@
     justify-content: flex-start;
   }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .institutional-footer {
+    color: #e7eef2;
+      background: #071722;
+      border-top-color: #5d96bd;
+  }
+}

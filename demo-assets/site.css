@@ -961,3 +961,34 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     transition: none;
   }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --paper: #111a21;
+      --subtle: #151f27;
+      --institution: #152c4f;
+      --institution-deep: #0e213d;
+      --ink: #e5edf4;
+      --heading: #d6e2ec;
+      --copy: #bac7d1;
+      --muted: #9fb0bc;
+      --blue: #8cc1de;
+      --blue-dark: #b5d8eb;
+      --solid-blue: #2b4b62;
+      --solid-blue-hover: #35617d;
+      --on-solid-blue: #ffffff;
+      --blue-pale: #1d2d38;
+      --accent-line: #6fa6c4;
+      --gold: #d8ad3c;
+      --line: #2a3b48;
+      --line-strong: #3d5262;
+      --focus: #9fd5f2;
+      --switch-knob: #ffffff;
+      color-scheme: dark;
+  }
+
+  :root:not([data-theme]) .switch-thumb {
+    transform: translateX(19px);
+  }
+}

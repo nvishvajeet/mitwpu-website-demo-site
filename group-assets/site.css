@@ -1423,3 +1423,38 @@ h3 {
     transition: none;
   }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --ink: #e5edf4;
+      --heading: #d6e2ec;
+      --title: #c8d9e7;
+      --muted: #a9b8c4;
+      --blue: #8cc1de;
+      --blue-dark: #b5d8eb;
+      --solid-blue: #2b4b62;
+      --solid-blue-hover: #35617d;
+      --photo-accent: #6fa6c4;
+      --blue-pale: #1d2d38;
+      --paper: #111a21;
+      --subtle: #151f27;
+      --topbar: #18242e;
+      --institution: #152c4f;
+      --gold: #d8ad3c;
+      --line: #2a3b48;
+      --line-dark: #3d5262;
+      --nav: #d4dde5;
+      --copy: #bac7d1;
+      --topic: #aebbc5;
+      --tag: #aebbc5;
+      --footer: #0d151b;
+      --focus: #8cc1de;
+      --switch-knob: #ffffff;
+      color-scheme: dark;
+  }
+
+  :root:not([data-theme]) .switch-thumb {
+    transform: translateX(19px);
+  }
+}

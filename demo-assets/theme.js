@@ -95,7 +95,7 @@
 
   function applyTheme(theme) {
     if (theme === "dark") root.setAttribute("data-theme", "dark");
-    else root.removeAttribute("data-theme");
+    else root.setAttribute("data-theme", "light");
 
     document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
       var dark = theme === "dark";

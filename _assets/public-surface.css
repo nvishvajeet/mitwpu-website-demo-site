@@ -534,3 +534,29 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --ink: #e5edf4;
+      --heading: #d6e2ec;
+      --copy: #bac7d1;
+      --muted: #a9b8c4;
+      --paper: #111a21;
+      --surface: #151f27;
+      --topbar: #152c4f;
+      --footer: #0d151b;
+      --line: #2a3b48;
+      --line-strong: #3d5262;
+      --brand: #8cc1de;
+      --brand-dark: #b5d8eb;
+      --accent: #d8ad3c;
+      --focus: #9fd5f2;
+      --switch-knob: #ffffff;
+      color-scheme: dark;
+  }
+
+  :root:not([data-theme]) .switch-thumb {
+    transform: translateX(19px);
+  }
+}

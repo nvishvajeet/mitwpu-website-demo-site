@@ -553,3 +553,20 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   .hero-media { max-width: 30rem; }
   .prose { padding: 0; border: 0; }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+      --goa-cobalt: #8bb0ff;
+      --goa-crimson: #ff9cb5;
+      --ink: #f4f7ff;
+      --muted: #b5c1d7;
+      --paper: #071326;
+      --pale: #091a33;
+      --surface: #0d203d;
+      --line: #2d4770;
+      --blue-soft: #102a52;
+      --shadow: 0 24px 70px rgb(0 0 0 / .3);
+  }
+}

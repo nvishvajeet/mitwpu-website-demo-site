@@ -89,7 +89,7 @@
 
   function applyTheme(theme) {
     if (theme === "dark") root.setAttribute("data-theme", "dark");
-    else root.removeAttribute("data-theme");
+    else root.setAttribute("data-theme", "light");
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
       const dark = theme === "dark";
       button.setAttribute("aria-pressed", String(dark));

@@ -1006,3 +1006,11 @@ summary:focus-visible {
     gap: 28px;
   }
 }
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --accent-text: #ffffff;
+      --strong-focus: #9fd5f2;
+  }
+}
