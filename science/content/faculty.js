@@ -23,7 +23,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=aRAErjsAAAAJ&hl=en",
         "scopus": "http://www.scopus.com/inward/authorDetails.url?authorID=57198856954&partnerID=MN8TOARS",
         "orcid": "https://orcid.org/0000-0003-0425-3243"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "sachin-arun-kulkarni",
@@ -46,7 +48,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-9490-1883",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58075980100",
         "scholar": "https://scholar.google.com/citations?user=cNJ_0GwAAAAJ&hl=en"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "shital-vasant-kahane",
@@ -68,7 +72,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/shital-vasant-kahane",
         "scholar": "https://scholar.google.com/citations?user=Ec6ychUAAAAJ&hl=en&authuser=1",
         "orcid": "https://orcid.org/0000-0002-9556-1868"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "narendra-laxman-mathakari",
@@ -91,7 +97,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0003-3195-9700",
         "scholar": "https://scholar.google.com/citations?user=TJS3VsIAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=23098452200"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "ajit-baburao-deore",
@@ -111,7 +119,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/ajit-baburao-deore.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/ajit-baburao-deore"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "jagadish-hammu-naik",
@@ -133,7 +143,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/jagadish-hammu-naik",
         "scholar": "https://scholar.google.com/citations?hl=en&user=LPN9TuAAAAAJ&view_op=list_works&sortby=pubdate",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56225585900"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "prasantakumar-sudarshan-ghosh",
@@ -156,7 +168,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=Qhnz_wIAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56388157800",
         "orcid": "https://orcid.org/0000-0001-5680-1673"
-      }
+      },
+      "photoWidth": 468,
+      "photoHeight": 473
     },
     {
       "id": "aavishkar-chittaranjan-katti",
@@ -178,7 +192,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/aavishkar-chittaranjan-katti",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57191970629",
         "scholar": "https://scholar.google.co.in/citations?user=NVdkslgAAAAJ&hl=en&oi=ao"
-      }
+      },
+      "photoWidth": 468,
+      "photoHeight": 473
     },
     {
       "id": "apurv-chaitanya-nellikka",
@@ -201,7 +217,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-0516-7200",
         "scholar": "https://scholar.google.com/citations?user=rQh89TsAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56210838000"
-      }
+      },
+      "photoWidth": 468,
+      "photoHeight": 473
     },
     {
       "id": "rahul-ashokrao-aher",
@@ -222,7 +240,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/rahul-ashokrao-aher",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57225239893"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "anagha-sudhir-karne",
@@ -245,7 +265,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=4uTr0aQtXEsC&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55875374200",
         "orcid": "https://orcid.org/0000-0002-3053-0235"
-      }
+      },
+      "photoWidth": 468,
+      "photoHeight": 473
     },
     {
       "id": "debabrata-saha",
@@ -268,7 +290,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0001-6469-6391",
         "scholar": "https://scholar.google.com/citations?user=TBgCfg0AAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55828097100"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "raju-shivaji-ingale",
@@ -290,7 +314,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/raju-shivaji-ingale",
         "orcid": "https://orcid.org/0000-0002-1195-8092",
         "scholar": "https://scholar.google.com/citations?hl=en&user=vW_99pMAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "abhijit-bendre",
@@ -312,7 +338,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/abhijit-bendre",
         "scholar": "https://scholar.google.com/citations?user=hwwmIKcAAAAJ&hl=en&authuser=1",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55600446700"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     }
   ],
   "chemistry": [
@@ -337,7 +365,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-7502-570X",
         "scholar": "https://scholar.google.com/citations?user=qes29e8AAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6507546181"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "kiran-kisan-kokate",
@@ -357,7 +387,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/kiran-kisan-kokate.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/kiran-kisan-kokate"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "meghana-ganesh-gote",
@@ -380,7 +412,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=1g7FYW8AAAAJ&hl=en",
         "scopus": "https://www.scopus.com/inward/authorDetails.url?authorID=8632924000&partnerID=MN8TOARS",
         "orcid": "https://orcid.org/0000-0002-7862-9621"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "vandana-aryan-mooss",
@@ -403,7 +437,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=sRiD7RwAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57191201665",
         "orcid": "https://orcid.org/0000-0002-5499-9097"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "sanjay-babanrao-bhagwat",
@@ -424,7 +460,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/sanjay-babanrao-bhagwat",
         "scholar": "https://scholar.google.com/citations?user=jGWsIP0AAAAJ&hl=en&authuser=1"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "vaishali-hanumant-gaikwad",
@@ -444,7 +482,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/vaishali-hanumant-gaikwad.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/vaishali-hanumant-gaikwad"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "dev-kumar-thapa",
@@ -465,7 +505,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/dev-kumar-thapa",
         "scholar": "https://scholar.google.com/citations?user=kUXHgjAAAAAJ&hl=en"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "soumava-biswas",
@@ -488,7 +530,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0003-0107-7264",
         "scholar": "https://scholar.google.co.in/citations?user=CU2b_t0AAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55598984000"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "parineeta-das",
@@ -509,7 +553,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/parineeta-das",
         "scholar": "https://scholar.google.com/citations?hl=en&user=P0S3QZAAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     }
   ],
   "mathematics": [
@@ -532,7 +578,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/mukesh-kumar-pal",
         "scholar": "https://scholar.google.com/citations?user=N2hkcH8AAAAJ&hl=en"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "rupal-chandulal-shroff",
@@ -554,7 +602,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/rupal-chandulal-shroff",
         "orcid": "https://orcid.org/0000-0002-5258-9107",
         "scholar": "https://scholar.google.co.in/citations?hl=en&user=T1B8k1kAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "prashant-pralhad-malavadkar",
@@ -577,7 +627,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0001-7706-3286",
         "scholar": "https://scholar.google.com/citations?user=r4Xog48AAAAJ",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=37056044300"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "priyanka-kumari",
@@ -600,7 +652,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0003-4453-8518",
         "scholar": "https://scholar.google.com/citations?user=wscF198AAAAJ",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57660659400"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "umeshkumar-bhaiyalal-dubey",
@@ -623,7 +677,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0003-1241-7332",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57203638756",
         "scholar": "https://scholar.google.com/citations?user=tJLzPh0AAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "veena-pravin-kshirsagar",
@@ -641,7 +697,9 @@ window.SCIENCE_FACULTY = {
       "email": "",
       "photoSource": "https://mitwpu.edu.in/uploads/faculty_images/Veena-Kshirsagar.webp",
       "photoPath": "assets/people/veena-pravin-kshirsagar.webp",
-      "links": {}
+      "links": {},
+      "photoWidth": 270,
+      "photoHeight": 267
     },
     {
       "id": "akilbasha-a",
@@ -664,7 +722,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0001-6914-0667",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56940684100",
         "scholar": "https://scholar.google.co.in/citations?user=Ebq28Z8AAAAJ&hl=en"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "abdul-nasir-khan",
@@ -687,7 +747,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=0XaX0u0AAAAJ",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57219130406",
         "orcid": "https://orcid.org/0000-0002-5260-7555"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "gajanan-malleshi-birajdar",
@@ -710,7 +772,9 @@ window.SCIENCE_FACULTY = {
         "scholar": "https://scholar.google.com/citations?user=Qa61X3sAAAAJ",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57732563500",
         "orcid": "https://orcid.org/0000-0002-1915-921X"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "amol-prakash-narke",
@@ -730,7 +794,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/amol-prakash-narke.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/amol-prakash-narke"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 469
     },
     {
       "id": "kundan-ramesh-nagare",
@@ -750,7 +816,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/kundan-ramesh-nagare.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/kundan-ramesh-nagare"
-      }
+      },
+      "photoWidth": 270,
+      "photoHeight": 267
     },
     {
       "id": "vaishali-manish-joshi",
@@ -770,7 +838,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/vaishali-manish-joshi.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/vaishali-manish-joshi"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "pratibha-sharad-kshirsagar",
@@ -810,7 +880,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/sachin-shivaji-gunjal",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57372983000",
         "scholar": "https://scholar.google.com/citations?user=twkGytYAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "uday-vilas-jagadale",
@@ -853,7 +925,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/rajashree-sahadeo-jadhav.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/rajashree-sahadeo-jadhav"
-      }
+      },
+      "photoWidth": 468,
+      "photoHeight": 473
     },
     {
       "id": "suvarna-gopal-ranade",
@@ -873,7 +947,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/suvarna-gopal-ranade.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/suvarna-gopal-ranade"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "abhishek-singh",
@@ -916,7 +992,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/ashok-kumar-jaiswal",
         "scholar": "https://scholar.google.com/citations?user=IDp14JYAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "hemant-shripad-kulkarni",
@@ -937,7 +1015,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/hemant-shripad-kulkarni",
         "scholar": "https://scholar.google.com/citations?user=ga71KboAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "ramaa-ashish-sandu",
@@ -957,7 +1037,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/ramaa-ashish-sandu.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/ramaa-ashish-sandu"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "mukund-gokhale",
@@ -977,7 +1059,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/mukund-gokhale.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/mukund-gokhale"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 467
     },
     {
       "id": "vijay-kumar-kalyani",
@@ -997,7 +1081,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/vijay-kumar-kalyani.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/vijay-kumar-kalyani"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     }
   ],
   "biosciences": [
@@ -1022,7 +1108,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-2529-8080",
         "scholar": "https://scholar.google.co.in/citations?user=KFtqHjwAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57201300890#tab=metrics"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "shilpa-samir-chapadgaonkar",
@@ -1043,7 +1131,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/shilpa-samir-chapadgaonkar",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=14045418300"
-      }
+      },
+      "photoWidth": 474,
+      "photoHeight": 486
     },
     {
       "id": "manasi-mishra",
@@ -1064,7 +1154,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/manasi-mishra",
         "orcid": "https://orcid.org/0000-0002-3304-9105"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "rehan-deshmukh",
@@ -1086,7 +1178,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/rehan-deshmukh",
         "orcid": "https://orcid.org/0000-0002-0261-102X",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57190178102"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "shikha-vikrant-gaikwad",
@@ -1107,7 +1201,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/shikha-vikrant-gaikwad",
         "scholar": "https://scholar.google.com/citations?hl=en&authuser=2&user=pD4ECgoAAAAJ"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "anup-atul-kale",
@@ -1125,7 +1221,9 @@ window.SCIENCE_FACULTY = {
       "email": "",
       "photoSource": "https://mitwpu.edu.in/uploads/faculty_images/643cf4957126e1681716373.jpg",
       "photoPath": "assets/people/anup-atul-kale.jpg",
-      "links": {}
+      "links": {},
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "mukul-sacchit-godbole",
@@ -1145,7 +1243,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/mukul-sacchit-godbole.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/mukul-sacchit-godbole"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "amruta-sameer-naik",
@@ -1168,7 +1268,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-8023-6376",
         "scholar": "https://scholar.google.com/citations?user=dbz44YoAAAAJ&hl=en&authuser=1&oi=ao",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=35558053900"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "tejaswini-pachpor",
@@ -1188,7 +1290,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/tejaswini-pachpor.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/tejaswini-pachpor"
-      }
+      },
+      "photoWidth": 270,
+      "photoHeight": 267
     },
     {
       "id": "kausik-bhattacharyya",
@@ -1210,7 +1314,9 @@ window.SCIENCE_FACULTY = {
         "profile": "https://mitwpu.edu.in/faculty/kausik-bhattacharyya",
         "orcid": "https://orcid.org/0000-0002-4033-676X",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55313145700"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "bishnudeo-roy",
@@ -1230,7 +1336,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/bishnudeo-roy.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/bishnudeo-roy"
-      }
+      },
+      "photoWidth": 364,
+      "photoHeight": 368
     },
     {
       "id": "sachin-harle",
@@ -1251,7 +1359,9 @@ window.SCIENCE_FACULTY = {
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/sachin-harle",
         "scholar": "https://scholar.google.com/citations?user=1CuLqrEAAAAJ&hl=en"
-      }
+      },
+      "photoWidth": 364,
+      "photoHeight": 364
     },
     {
       "id": "mandar-bopardikar",
@@ -1271,7 +1381,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/mandar-bopardikar.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/mandar-bopardikar"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "neha-bokey",
@@ -1291,7 +1403,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/neha-bokey.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/neha-bokey"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "amit-kumar",
@@ -1311,7 +1425,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/amit-kumar.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/amit-kumar"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "shalaka-patil",
@@ -1334,7 +1450,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-5859-4417",
         "scholar": "https://scholar.google.com/citations?user=3i4jVsgAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57225810076"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "meenakshi-shankar-iyer",
@@ -1357,7 +1475,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-0488-7193",
         "scholar": "https://scholar.google.com/citations?user=IVkcvqQAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58245455600"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "kirtikumar-kondhare",
@@ -1377,7 +1497,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/kirtikumar-kondhare.webp",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/kirtikumar-kondhare"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 467
     },
     {
       "id": "preethi-sunkara",
@@ -1400,7 +1522,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-3600-2089",
         "scholar": "https://scholar.google.com/citations?user=_bZD3msAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57203310105"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     }
   ],
   "environmental-studies": [
@@ -1425,7 +1549,9 @@ window.SCIENCE_FACULTY = {
         "orcid": "https://orcid.org/0000-0002-7418-8814",
         "scholar": "https://scholar.google.com/citations?user=xmcTPqsAAAAJ&hl=en",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55612726200"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "prasad-anil-kulkarni",
@@ -1445,7 +1571,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/prasad-anil-kulkarni.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/prasad-anil-kulkarni"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     },
     {
       "id": "soma-mishra",
@@ -1465,7 +1593,9 @@ window.SCIENCE_FACULTY = {
       "photoPath": "assets/people/soma-mishra.jpg",
       "links": {
         "profile": "https://mitwpu.edu.in/faculty/soma-mishra"
-      }
+      },
+      "photoWidth": 473,
+      "photoHeight": 468
     }
   ]
 };

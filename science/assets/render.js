@@ -61,7 +61,13 @@
       return `<div class="faculty-initials" aria-hidden="true">${escapeHtml(initials(name))}</div>`;
     }
     const prefix = page === "school" ? "" : "../";
-    return `<img class="faculty-photo" src="${prefix}${escapeHtml(person.photoPath)}" alt="" loading="lazy" decoding="async">`;
+    const dimensions = Number.isInteger(person.photoWidth)
+      && Number.isInteger(person.photoHeight)
+      && person.photoWidth > 0
+      && person.photoHeight > 0
+      ? ` width="${person.photoWidth}" height="${person.photoHeight}"`
+      : "";
+    return `<img class="faculty-photo" src="${prefix}${escapeHtml(person.photoPath)}" alt=""${dimensions} loading="lazy" decoding="async">`;
   }
 
   function externalLink(url, label, className = "") {
