@@ -476,14 +476,18 @@ h3 {
 
 .activity-viewport {
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   overscroll-behavior-inline: contain;
+  overscroll-behavior-y: auto;
   scroll-behavior: smooth;
   scroll-padding-inline: 1px;
   scroll-snap-type: x proximity;
   scrollbar-color: var(--line-strong) transparent;
   scrollbar-width: thin;
-  touch-action: pan-x pan-y;
+  /* The rail advances itself and supports keyboard arrows. Touch gestures
+     remain vertical so the component never traps normal page scrolling. */
+  touch-action: pan-y pinch-zoom;
   -webkit-overflow-scrolling: touch;
 }
 

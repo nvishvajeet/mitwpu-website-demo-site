@@ -169,6 +169,35 @@ body {
   padding-block: 42px;
 }
 
+.academic-hero--media .academic-hero__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  align-items: stretch;
+  gap: clamp(36px, 6vw, 88px);
+  padding-block: 34px;
+}
+
+.academic-hero__copy {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+}
+
+.academic-hero__media {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--subtle);
+  border-left: 3px solid var(--blue);
+}
+
+.academic-hero__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .academic-hero .eyebrow {
   margin-bottom: 13px;
 }
@@ -1036,6 +1065,18 @@ body {
     height: auto;
     min-height: 270px;
     padding-block: 52px;
+  }
+
+  .academic-hero--media .academic-hero__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding-block: 38px;
+  }
+
+  .academic-hero__media {
+    aspect-ratio: 16 / 9;
+    border-left: 0;
+    border-top: 3px solid var(--blue);
   }
 
   .directory-hero__layout {

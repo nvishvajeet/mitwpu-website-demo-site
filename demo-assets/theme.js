@@ -55,6 +55,7 @@
     if (!nav) return;
 
     var links = [
+      ["Home", "/"],
       ["About", "/about/"],
       ["Academics", "/academics/"],
       ["Admissions", "/admissions/"],

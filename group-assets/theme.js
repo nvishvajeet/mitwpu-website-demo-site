@@ -49,6 +49,7 @@
     );
 
     const links = [
+      ["Home", "/"],
       ["About", "/about/"],
       ["Academics", "/academics/"],
       ["Admissions", "/admissions/"],
