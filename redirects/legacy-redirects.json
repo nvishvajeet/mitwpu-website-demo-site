@@ -1,0 +1,2146 @@
+{
+  "schema": "mitwpu.legacy-redirects.v1",
+  "status_code": 301,
+  "rules": [
+    {
+      "source": "/events/mit-wpu-hosts-nsrtc-2026-a-three-day-conclave-advancing-science-technology-and-innovation/",
+      "target": "/events/nsrtc-2026/"
+    },
+    {
+      "source": "/events/nsrtc-2025-a-grand-confluence-of-science-innovation-and-vision-for-viksit-bharat/",
+      "target": "/events/nsrtc-2025/"
+    },
+    {
+      "source": "/faculty/aachal-taywade/",
+      "target": "/people/aachal-taywade/"
+    },
+    {
+      "source": "/faculty/aaditi-khare/",
+      "target": "/people/aaditi-khare/"
+    },
+    {
+      "source": "/faculty/aarti-renukadas-shastri/",
+      "target": "/people/aarti-renukadas-shastri/"
+    },
+    {
+      "source": "/faculty/aavishkar-chittaranjan-katti/",
+      "target": "/people/aavishkar-chittaranjan-katti/"
+    },
+    {
+      "source": "/faculty/abdul-nasir-khan/",
+      "target": "/people/abdul-nasir-khan/"
+    },
+    {
+      "source": "/faculty/abhaysinha-gunvantrao-shelake/",
+      "target": "/people/abhaysinha-gunvantrao-shelake/"
+    },
+    {
+      "source": "/faculty/abhijeet-shrikrishna-kokare/",
+      "target": "/people/abhijeet-shrikrishna-kokare/"
+    },
+    {
+      "source": "/faculty/abhijeet-subhash-sutar/",
+      "target": "/people/abhijeet-subhash-sutar/"
+    },
+    {
+      "source": "/faculty/abhijit-bendre/",
+      "target": "/people/abhijit-bendre/"
+    },
+    {
+      "source": "/faculty/abhijit-manikrao-bhagat/",
+      "target": "/people/abhijit-manikrao-bhagat/"
+    },
+    {
+      "source": "/faculty/abhijit-nair/",
+      "target": "/people/abhijit-nair/"
+    },
+    {
+      "source": "/faculty/abhijith-b/",
+      "target": "/people/abhijith-b/"
+    },
+    {
+      "source": "/faculty/abhinay-kamble/",
+      "target": "/people/abhinay-kamble/"
+    },
+    {
+      "source": "/faculty/abhishek-madhukar-thote/",
+      "target": "/people/abhishek-madhukar-thote/"
+    },
+    {
+      "source": "/faculty/abhishek-prakash-chunawale/",
+      "target": "/people/abhishek-prakash-chunawale/"
+    },
+    {
+      "source": "/faculty/adinath-dnyandev-yadhav/",
+      "target": "/people/adinath-dnyandev-yadhav/"
+    },
+    {
+      "source": "/faculty/aditi-shantanu-jahagirdar/",
+      "target": "/people/aditi-shantanu-jahagirdar/"
+    },
+    {
+      "source": "/faculty/ajay-sahu/",
+      "target": "/people/ajay-sahu/"
+    },
+    {
+      "source": "/faculty/ajit-baburao-deore/",
+      "target": "/people/ajit-baburao-deore/"
+    },
+    {
+      "source": "/faculty/akanksha-jaiswal/",
+      "target": "/people/akanksha-jaiswal/"
+    },
+    {
+      "source": "/faculty/akanksha-tandon/",
+      "target": "/people/akanksha-tandon/"
+    },
+    {
+      "source": "/faculty/akashdeep-sharma/",
+      "target": "/people/akashdeep-sharma/"
+    },
+    {
+      "source": "/faculty/akilbasha-a/",
+      "target": "/people/akilbasha-a/"
+    },
+    {
+      "source": "/faculty/akshat-bhargava/",
+      "target": "/people/akshat-bhargava/"
+    },
+    {
+      "source": "/faculty/akshay-bura/",
+      "target": "/people/akshay-bura/"
+    },
+    {
+      "source": "/faculty/akshay-motilal-baheti/",
+      "target": "/people/akshay-motilal-baheti/"
+    },
+    {
+      "source": "/faculty/akshita-sparshneel-chanchlani/",
+      "target": "/people/akshita-sparshneel-chanchlani/"
+    },
+    {
+      "source": "/faculty/alamgir-sani/",
+      "target": "/people/alamgir-sani/"
+    },
+    {
+      "source": "/faculty/alka-surendra-barhatte/",
+      "target": "/people/alka-surendra-barhatte/"
+    },
+    {
+      "source": "/faculty/alok-kumar-yadav/",
+      "target": "/people/alok-kumar-yadav/"
+    },
+    {
+      "source": "/faculty/ambrish-gaur/",
+      "target": "/people/ambrish-gaur/"
+    },
+    {
+      "source": "/faculty/ameya-anil-patil/",
+      "target": "/people/ameya-anil-patil/"
+    },
+    {
+      "source": "/faculty/amir-shikalgar/",
+      "target": "/people/amir-shikalgar/"
+    },
+    {
+      "source": "/faculty/amit-liladhar-nehete/",
+      "target": "/people/amit-liladhar-nehete/"
+    },
+    {
+      "source": "/faculty/amit-mishra/",
+      "target": "/people/amit-mishra/"
+    },
+    {
+      "source": "/faculty/amit-vishnu-jomde/",
+      "target": "/people/amit-vishnu-jomde/"
+    },
+    {
+      "source": "/faculty/amol-ambadas-tagalpallewar/",
+      "target": "/people/amol-ambadas-tagalpallewar/"
+    },
+    {
+      "source": "/faculty/amol-prakash-narke/",
+      "target": "/people/amol-prakash-narke/"
+    },
+    {
+      "source": "/faculty/amruta-pradeep-dixit/",
+      "target": "/people/amruta-pradeep-dixit/"
+    },
+    {
+      "source": "/faculty/amruta-sameer-naik/",
+      "target": "/people/amruta-sameer-naik/"
+    },
+    {
+      "source": "/faculty/anagha-arun-mahajan/",
+      "target": "/people/anagha-arun-mahajan/"
+    },
+    {
+      "source": "/faculty/anagha-yogesh-deshpande/",
+      "target": "/people/anagha-yogesh-deshpande/"
+    },
+    {
+      "source": "/faculty/anand-dhananjay-kulkarni/",
+      "target": "/people/anand-dhananjay-kulkarni/"
+    },
+    {
+      "source": "/faculty/anant-srivastava/",
+      "target": "/people/anant-srivastava/"
+    },
+    {
+      "source": "/faculty/anik-karan/",
+      "target": "/people/anik-karan/"
+    },
+    {
+      "source": "/faculty/anil-satishrao-hiwale/",
+      "target": "/people/anil-satishrao-hiwale/"
+    },
+    {
+      "source": "/faculty/anil-shivsharan-mashalkar/",
+      "target": "/people/anil-shivsharan-mashalkar/"
+    },
+    {
+      "source": "/faculty/anil-tukaram-pawar/",
+      "target": "/people/anil-tukaram-pawar/"
+    },
+    {
+      "source": "/faculty/aniruddh-gupta/",
+      "target": "/people/aniruddh-gupta/"
+    },
+    {
+      "source": "/faculty/anita-kumari/",
+      "target": "/people/anita-kumari/"
+    },
+    {
+      "source": "/faculty/anita-mahesh-thengade/",
+      "target": "/people/anita-mahesh-thengade/"
+    },
+    {
+      "source": "/faculty/anjali-ajit-sane/",
+      "target": "/people/anjali-ajit-sane/"
+    },
+    {
+      "source": "/faculty/anjali-milind-purohit/",
+      "target": "/people/anjali-milind-purohit/"
+    },
+    {
+      "source": "/faculty/anjali-rajesh-askhedkar/",
+      "target": "/people/anjali-rajesh-askhedkar/"
+    },
+    {
+      "source": "/faculty/anjoo-sharan-upadhyaya/",
+      "target": "/people/anjoo-sharan-upadhyaya/"
+    },
+    {
+      "source": "/faculty/ankita-agarwal/",
+      "target": "/people/ankita-agarwal/"
+    },
+    {
+      "source": "/faculty/ankita-kotalwar/",
+      "target": "/people/ankita-kotalwar/"
+    },
+    {
+      "source": "/faculty/anshul-gupta/",
+      "target": "/people/anshul-gupta/"
+    },
+    {
+      "source": "/faculty/anu-nair/",
+      "target": "/people/anu-nair/"
+    },
+    {
+      "source": "/faculty/anu-singha/",
+      "target": "/people/anu-singha/"
+    },
+    {
+      "source": "/faculty/anugamini-p-srivastava/",
+      "target": "/people/anugamini-p-srivastava/"
+    },
+    {
+      "source": "/faculty/anuja-amlesh-askhedkar/",
+      "target": "/people/anuja-amlesh-askhedkar/"
+    },
+    {
+      "source": "/faculty/anuja-dilip-dhulekar/",
+      "target": "/people/anuja-dilip-dhulekar/"
+    },
+    {
+      "source": "/faculty/anuradha-chetan-phadke/",
+      "target": "/people/anuradha-chetan-phadke/"
+    },
+    {
+      "source": "/faculty/anuradha-shantanu-kanade/",
+      "target": "/people/anuradha-shantanu-kanade/"
+    },
+    {
+      "source": "/faculty/anuruddha-rajaram-chabukswar/",
+      "target": "/people/anuruddha-rajaram-chabukswar/"
+    },
+    {
+      "source": "/faculty/anusha-raghavendra-pai/",
+      "target": "/people/anusha-raghavendra-pai/"
+    },
+    {
+      "source": "/faculty/anushri-kulkarni/",
+      "target": "/people/anushri-kulkarni/"
+    },
+    {
+      "source": "/faculty/aparna-ashok-kamble/",
+      "target": "/people/aparna-ashok-kamble/"
+    },
+    {
+      "source": "/faculty/aparna-dattatraya-pathak/",
+      "target": "/people/aparna-dattatraya-pathak/"
+    },
+    {
+      "source": "/faculty/aparna-sameer-dixit/",
+      "target": "/people/aparna-sameer-dixit/"
+    },
+    {
+      "source": "/faculty/aparna-virendra-shete/",
+      "target": "/people/aparna-virendra-shete/"
+    },
+    {
+      "source": "/faculty/apurv-chaitanya-nellikka/",
+      "target": "/people/apurv-chaitanya-nellikka/"
+    },
+    {
+      "source": "/faculty/apurva-abhijit-naik/",
+      "target": "/people/apurva-abhijit-naik/"
+    },
+    {
+      "source": "/faculty/apurva-sharma/",
+      "target": "/people/apurva-sharma/"
+    },
+    {
+      "source": "/faculty/aquil-ahmad-khan/",
+      "target": "/people/aquil-ahmad-khan/"
+    },
+    {
+      "source": "/faculty/archana-pradip-varade/",
+      "target": "/people/archana-pradip-varade/"
+    },
+    {
+      "source": "/faculty/arti-girish-swami/",
+      "target": "/people/arti-girish-swami/"
+    },
+    {
+      "source": "/faculty/arun-balaso-mali/",
+      "target": "/people/arun-balaso-mali/"
+    },
+    {
+      "source": "/faculty/arun-prakash/",
+      "target": "/people/arun-prakash/"
+    },
+    {
+      "source": "/faculty/asha-rajendra-sanap/",
+      "target": "/people/asha-rajendra-sanap/"
+    },
+    {
+      "source": "/faculty/ashish-andhale/",
+      "target": "/people/ashish-andhale/"
+    },
+    {
+      "source": "/faculty/ashish-haribhau-pawar/",
+      "target": "/people/ashish-haribhau-pawar/"
+    },
+    {
+      "source": "/faculty/ashish-kulkarni/",
+      "target": "/people/ashish-kulkarni/"
+    },
+    {
+      "source": "/faculty/ashish-shivkumar-utage/",
+      "target": "/people/ashish-shivkumar-utage/"
+    },
+    {
+      "source": "/faculty/ashish-singh-tomar/",
+      "target": "/people/ashish-singh-tomar/"
+    },
+    {
+      "source": "/faculty/ashok-kumar-jaiswal/",
+      "target": "/people/ashok-kumar-jaiswal/"
+    },
+    {
+      "source": "/faculty/ashok-shripati-deokar/",
+      "target": "/people/ashok-shripati-deokar/"
+    },
+    {
+      "source": "/faculty/ashwin-bhanudas-kuchekar/",
+      "target": "/people/ashwin-bhanudas-kuchekar/"
+    },
+    {
+      "source": "/faculty/ashwini-bagkar/",
+      "target": "/people/ashwini-bagkar/"
+    },
+    {
+      "source": "/faculty/ashwini-ramkrishana-gawade/",
+      "target": "/people/ashwini-ramkrishana-gawade/"
+    },
+    {
+      "source": "/faculty/ashwini-vinayak-zadgaonkar/",
+      "target": "/people/ashwini-vinayak-zadgaonkar/"
+    },
+    {
+      "source": "/faculty/asim-samanta/",
+      "target": "/people/asim-samanta/"
+    },
+    {
+      "source": "/faculty/asmita-gaikwad/",
+      "target": "/people/asmita-gaikwad/"
+    },
+    {
+      "source": "/faculty/atanu-hazarika/",
+      "target": "/people/atanu-hazarika/"
+    },
+    {
+      "source": "/faculty/atul-uddhavrao-palange/",
+      "target": "/people/atul-uddhavrao-palange/"
+    },
+    {
+      "source": "/faculty/baidehish-sahoo/",
+      "target": "/people/baidehish-sahoo/"
+    },
+    {
+      "source": "/faculty/balagangadhar-reddy-kandula/",
+      "target": "/people/balagangadhar-reddy-kandula/"
+    },
+    {
+      "source": "/faculty/balaso-nivruti-jagdale/",
+      "target": "/people/balaso-nivruti-jagdale/"
+    },
+    {
+      "source": "/faculty/barnali-banerjee/",
+      "target": "/people/barnali-banerjee/"
+    },
+    {
+      "source": "/faculty/basant-tiwari/",
+      "target": "/people/basant-tiwari/"
+    },
+    {
+      "source": "/faculty/basavaraj-shantaram-kothavale/",
+      "target": "/people/basavaraj-shantaram-kothavale/"
+    },
+    {
+      "source": "/faculty/bhakti-amogh-paranjape/",
+      "target": "/people/bhakti-amogh-paranjape/"
+    },
+    {
+      "source": "/faculty/bharat-burghate/",
+      "target": "/people/bharat-burghate/"
+    },
+    {
+      "source": "/faculty/bharat-sambhu-chaudhari/",
+      "target": "/people/bharat-sambhu-chaudhari/"
+    },
+    {
+      "source": "/faculty/bhushan-ganurkar/",
+      "target": "/people/bhushan-ganurkar/"
+    },
+    {
+      "source": "/faculty/bipin-vishvas-palande/",
+      "target": "/people/bipin-vishvas-palande/"
+    },
+    {
+      "source": "/faculty/bishnu-prasad-mohapatra/",
+      "target": "/people/bishnu-prasad-mohapatra/"
+    },
+    {
+      "source": "/faculty/brijesh-kumar/",
+      "target": "/people/brijesh-kumar/"
+    },
+    {
+      "source": "/faculty/chaitali-vivek-chandankhede/",
+      "target": "/people/chaitali-vivek-chandankhede/"
+    },
+    {
+      "source": "/faculty/chaitanya-girish-burande/",
+      "target": "/people/chaitanya-girish-burande/"
+    },
+    {
+      "source": "/faculty/chandrashekhar-digambarrao-bobade/",
+      "target": "/people/chandrashekhar-digambarrao-bobade/"
+    },
+    {
+      "source": "/faculty/chetan-bhimrao-khadse/",
+      "target": "/people/chetan-bhimrao-khadse/"
+    },
+    {
+      "source": "/faculty/chinmay-devidas-deshmukh/",
+      "target": "/people/chinmay-devidas-deshmukh/"
+    },
+    {
+      "source": "/faculty/debabrata-saha/",
+      "target": "/people/debabrata-saha/"
+    },
+    {
+      "source": "/faculty/deepa-soumik-nath/",
+      "target": "/people/deepa-soumik-nath/"
+    },
+    {
+      "source": "/faculty/deepak-kumar/",
+      "target": "/people/deepak-kumar/"
+    },
+    {
+      "source": "/faculty/deepak-popat-hujare/",
+      "target": "/people/deepak-popat-hujare/"
+    },
+    {
+      "source": "/faculty/deepali-dhananjay-shahane/",
+      "target": "/people/deepali-dhananjay-shahane/"
+    },
+    {
+      "source": "/faculty/deepali-sanjay-kulkarni/",
+      "target": "/people/deepali-sanjay-kulkarni/"
+    },
+    {
+      "source": "/faculty/deepali-sonawane/",
+      "target": "/people/deepali-sonawane/"
+    },
+    {
+      "source": "/faculty/deependra-sharma/",
+      "target": "/people/deependra-sharma/"
+    },
+    {
+      "source": "/faculty/deobrat-singh/",
+      "target": "/people/deobrat-singh/"
+    },
+    {
+      "source": "/faculty/dev-kumar-thapa/",
+      "target": "/people/dev-kumar-thapa/"
+    },
+    {
+      "source": "/faculty/devashish-shedge/",
+      "target": "/people/devashish-shedge/"
+    },
+    {
+      "source": "/faculty/devendra-joshi/",
+      "target": "/people/devendra-joshi/"
+    },
+    {
+      "source": "/faculty/dhaarna-rathore/",
+      "target": "/people/dhaarna-rathore/"
+    },
+    {
+      "source": "/faculty/dhanashree-umesh-tharkude/",
+      "target": "/people/dhanashree-umesh-tharkude/"
+    },
+    {
+      "source": "/faculty/dhanashri-narayan-wategaonkar/",
+      "target": "/people/dhanashri-narayan-wategaonkar/"
+    },
+    {
+      "source": "/faculty/dhiresh-someshrao-shastri/",
+      "target": "/people/dhiresh-someshrao-shastri/"
+    },
+    {
+      "source": "/faculty/dibyangana-chakraborty/",
+      "target": "/people/dibyangana-chakraborty/"
+    },
+    {
+      "source": "/faculty/diksha-dinar-bedekar/",
+      "target": "/people/diksha-dinar-bedekar/"
+    },
+    {
+      "source": "/faculty/dinesh-shivratan-bhutada/",
+      "target": "/people/dinesh-shivratan-bhutada/"
+    },
+    {
+      "source": "/faculty/dipak-abnave/",
+      "target": "/people/dipak-abnave/"
+    },
+    {
+      "source": "/faculty/dipali-prashant-baviskar/",
+      "target": "/people/dipali-prashant-baviskar/"
+    },
+    {
+      "source": "/faculty/divyanshi-pal/",
+      "target": "/people/divyanshi-pal/"
+    },
+    {
+      "source": "/faculty/dnyaneshwar-ramchandra-waghole/",
+      "target": "/people/dnyaneshwar-ramchandra-waghole/"
+    },
+    {
+      "source": "/faculty/esha-bansal/",
+      "target": "/people/esha-bansal/"
+    },
+    {
+      "source": "/faculty/gajanan-malleshi-birajdar/",
+      "target": "/people/gajanan-malleshi-birajdar/"
+    },
+    {
+      "source": "/faculty/ganesh-bhaurao-choudhari/",
+      "target": "/people/ganesh-bhaurao-choudhari/"
+    },
+    {
+      "source": "/faculty/ganesh-pralhadrao-borikar/",
+      "target": "/people/ganesh-pralhadrao-borikar/"
+    },
+    {
+      "source": "/faculty/ganesh-shivaji-ingle/",
+      "target": "/people/ganesh-shivaji-ingle/"
+    },
+    {
+      "source": "/faculty/ganesh-suresh-jadhav/",
+      "target": "/people/ganesh-suresh-jadhav/"
+    },
+    {
+      "source": "/faculty/garima-chaudhary/",
+      "target": "/people/garima-chaudhary/"
+    },
+    {
+      "source": "/faculty/gauri-bilaye/",
+      "target": "/people/gauri-bilaye/"
+    },
+    {
+      "source": "/faculty/gauri-rahul-dhongade/",
+      "target": "/people/gauri-rahul-dhongade/"
+    },
+    {
+      "source": "/faculty/gautam-surendra-bapat/",
+      "target": "/people/gautam-surendra-bapat/"
+    },
+    {
+      "source": "/faculty/girish-shamraoji-mude/",
+      "target": "/people/girish-shamraoji-mude/"
+    },
+    {
+      "source": "/faculty/girish-sharad-barpande/",
+      "target": "/people/girish-sharad-barpande/"
+    },
+    {
+      "source": "/faculty/gopal-sakarkar/",
+      "target": "/people/gopal-sakarkar/"
+    },
+    {
+      "source": "/faculty/harshal-salunkhe/",
+      "target": "/people/harshal-salunkhe/"
+    },
+    {
+      "source": "/faculty/harshali-digambar-zodpe/",
+      "target": "/people/harshali-digambar-zodpe/"
+    },
+    {
+      "source": "/faculty/harshit-pratap-singh/",
+      "target": "/people/harshit-pratap-singh/"
+    },
+    {
+      "source": "/faculty/heenakshi-bhansali/",
+      "target": "/people/heenakshi-bhansali/"
+    },
+    {
+      "source": "/faculty/hemant-shripad-kulkarni/",
+      "target": "/people/hemant-shripad-kulkarni/"
+    },
+    {
+      "source": "/faculty/hemlata-sandip-ohal/",
+      "target": "/people/hemlata-sandip-ohal/"
+    },
+    {
+      "source": "/faculty/heramb-chintamani-phadake/",
+      "target": "/people/heramb-chintamani-phadake/"
+    },
+    {
+      "source": "/faculty/himangi-milind-pande/",
+      "target": "/people/himangi-milind-pande/"
+    },
+    {
+      "source": "/faculty/himangi-tanmay-neve/",
+      "target": "/people/himangi-tanmay-neve/"
+    },
+    {
+      "source": "/faculty/hossein-martin-fazeli/",
+      "target": "/people/hossein-martin-fazeli/"
+    },
+    {
+      "source": "/faculty/jagruti-divakar-patil/",
+      "target": "/people/jagruti-divakar-patil/"
+    },
+    {
+      "source": "/faculty/jaideep-gulabrao-jadhav/",
+      "target": "/people/jaideep-gulabrao-jadhav/"
+    },
+    {
+      "source": "/faculty/jayshree-ajit-aher/",
+      "target": "/people/jayshree-ajit-aher/"
+    },
+    {
+      "source": "/faculty/jehath-syed/",
+      "target": "/people/jehath-syed/"
+    },
+    {
+      "source": "/faculty/jivan-pandharinath-biradar/",
+      "target": "/people/jivan-pandharinath-biradar/"
+    },
+    {
+      "source": "/faculty/joseph-vidyasagar-tandhara/",
+      "target": "/people/joseph-vidyasagar-tandhara/"
+    },
+    {
+      "source": "/faculty/jyoti-anirudha-lele/",
+      "target": "/people/jyoti-anirudha-lele/"
+    },
+    {
+      "source": "/faculty/jyoti-ganesh-mante-khurpade/",
+      "target": "/people/jyoti-ganesh-mante-khurpade/"
+    },
+    {
+      "source": "/faculty/jyotsna-srivastava/",
+      "target": "/people/jyotsna-srivastava/"
+    },
+    {
+      "source": "/faculty/kajal-vatekar/",
+      "target": "/people/kajal-vatekar/"
+    },
+    {
+      "source": "/faculty/kamakshi-goyal/",
+      "target": "/people/kamakshi-goyal/"
+    },
+    {
+      "source": "/faculty/kausik-bhattacharyya/",
+      "target": "/people/kausik-bhattacharyya/"
+    },
+    {
+      "source": "/faculty/kaustubh-arvind-sontakke/",
+      "target": "/people/kaustubh-arvind-sontakke/"
+    },
+    {
+      "source": "/faculty/kaustubh-vishwas-yadav/",
+      "target": "/people/kaustubh-vishwas-yadav/"
+    },
+    {
+      "source": "/faculty/ketaki-hanamant-kulkarni/",
+      "target": "/people/ketaki-hanamant-kulkarni/"
+    },
+    {
+      "source": "/faculty/kiran-bidua/",
+      "target": "/people/kiran-bidua/"
+    },
+    {
+      "source": "/faculty/kiran-kisan-kokate/",
+      "target": "/people/kiran-kisan-kokate/"
+    },
+    {
+      "source": "/faculty/kiran-nagare/",
+      "target": "/people/kiran-nagare/"
+    },
+    {
+      "source": "/faculty/kiran-prakash-shejale/",
+      "target": "/people/kiran-prakash-shejale/"
+    },
+    {
+      "source": "/faculty/kishanprasad-gangadhar-gunale/",
+      "target": "/people/kishanprasad-gangadhar-gunale/"
+    },
+    {
+      "source": "/faculty/kishor-rambhau-kolhe/",
+      "target": "/people/kishor-rambhau-kolhe/"
+    },
+    {
+      "source": "/faculty/krishna-keshavrao-warhade/",
+      "target": "/people/krishna-keshavrao-warhade/"
+    },
+    {
+      "source": "/faculty/krishna-kumar-saini/",
+      "target": "/people/krishna-kumar-saini/"
+    },
+    {
+      "source": "/faculty/kulamala-vinod-kumar/",
+      "target": "/people/kulamala-vinod-kumar/"
+    },
+    {
+      "source": "/faculty/kumar-abhijeet-raj/",
+      "target": "/people/kumar-abhijeet-raj/"
+    },
+    {
+      "source": "/faculty/kunal-gaurav/",
+      "target": "/people/kunal-gaurav/"
+    },
+    {
+      "source": "/faculty/kunal-modak/",
+      "target": "/people/kunal-modak/"
+    },
+    {
+      "source": "/faculty/kundan-ramesh-nagare/",
+      "target": "/people/kundan-ramesh-nagare/"
+    },
+    {
+      "source": "/faculty/kundlik-vitthal-mali/",
+      "target": "/people/kundlik-vitthal-mali/"
+    },
+    {
+      "source": "/faculty/lipsa-mishra/",
+      "target": "/people/lipsa-mishra/"
+    },
+    {
+      "source": "/faculty/madhumita-mukherjee/",
+      "target": "/people/madhumita-mukherjee/"
+    },
+    {
+      "source": "/faculty/madhura-vishnu-phatak/",
+      "target": "/people/madhura-vishnu-phatak/"
+    },
+    {
+      "source": "/faculty/madhuri-amol-bhalekar/",
+      "target": "/people/madhuri-amol-bhalekar/"
+    },
+    {
+      "source": "/faculty/mahesh-balwant-sonawane/",
+      "target": "/people/mahesh-balwant-sonawane/"
+    },
+    {
+      "source": "/faculty/mahesh-kulkarni/",
+      "target": "/people/mahesh-kulkarni/"
+    },
+    {
+      "source": "/faculty/mahesh-maganlal-makwana/",
+      "target": "/people/mahesh-maganlal-makwana/"
+    },
+    {
+      "source": "/faculty/mahesh-nana-pradhan/",
+      "target": "/people/mahesh-nana-pradhan/"
+    },
+    {
+      "source": "/faculty/mahesh-salunkhe/",
+      "target": "/people/mahesh-salunkhe/"
+    },
+    {
+      "source": "/faculty/mahesh-vasantrao-kulkarni/",
+      "target": "/people/mahesh-vasantrao-kulkarni/"
+    },
+    {
+      "source": "/faculty/maisam-ali/",
+      "target": "/people/maisam-ali/"
+    },
+    {
+      "source": "/faculty/makrand-mahadev-wagale/",
+      "target": "/people/makrand-mahadev-wagale/"
+    },
+    {
+      "source": "/faculty/malhari-bhimrao-kulkarni/",
+      "target": "/people/malhari-bhimrao-kulkarni/"
+    },
+    {
+      "source": "/faculty/manali-joshi/",
+      "target": "/people/manali-joshi/"
+    },
+    {
+      "source": "/faculty/manasi-mishra/",
+      "target": "/people/manasi-mishra/"
+    },
+    {
+      "source": "/faculty/mandar-bopardikar/",
+      "target": "/people/mandar-bopardikar/"
+    },
+    {
+      "source": "/faculty/mandar-madhukar-lele/",
+      "target": "/people/mandar-madhukar-lele/"
+    },
+    {
+      "source": "/faculty/mangesh-raghvendra-mahajan/",
+      "target": "/people/mangesh-raghvendra-mahajan/"
+    },
+    {
+      "source": "/faculty/mangesh-ramesh-saraf/",
+      "target": "/people/mangesh-ramesh-saraf/"
+    },
+    {
+      "source": "/faculty/mangesh-vilas-bedekar/",
+      "target": "/people/mangesh-vilas-bedekar/"
+    },
+    {
+      "source": "/faculty/manish-kumar-sharma/",
+      "target": "/people/manish-kumar-sharma/"
+    },
+    {
+      "source": "/faculty/manisha-mohan-wani/",
+      "target": "/people/manisha-mohan-wani/"
+    },
+    {
+      "source": "/faculty/manisha-rajendra-kuveskar/",
+      "target": "/people/manisha-rajendra-kuveskar/"
+    },
+    {
+      "source": "/faculty/manisha-ravikumar-kowdiki/",
+      "target": "/people/manisha-ravikumar-kowdiki/"
+    },
+    {
+      "source": "/faculty/manisha-ravindra-ingle/",
+      "target": "/people/manisha-ravindra-ingle/"
+    },
+    {
+      "source": "/faculty/manjiri-vishal-gadekar/",
+      "target": "/people/manjiri-vishal-gadekar/"
+    },
+    {
+      "source": "/faculty/manjushri-sanjay-joshi/",
+      "target": "/people/manjushri-sanjay-joshi/"
+    },
+    {
+      "source": "/faculty/manoj-pralhad-nigadkar/",
+      "target": "/people/manoj-pralhad-nigadkar/"
+    },
+    {
+      "source": "/faculty/meenakshi-shankar-iyer/",
+      "target": "/people/meenakshi-shankar-iyer/"
+    },
+    {
+      "source": "/faculty/meenal-kaustubh-jabde/",
+      "target": "/people/meenal-kaustubh-jabde/"
+    },
+    {
+      "source": "/faculty/meenal-kaustubh-pendse/",
+      "target": "/people/meenal-kaustubh-pendse/"
+    },
+    {
+      "source": "/faculty/meera-jeevanreddy-chintala/",
+      "target": "/people/meera-jeevanreddy-chintala/"
+    },
+    {
+      "source": "/faculty/meghana-ganesh-gote/",
+      "target": "/people/meghana-ganesh-gote/"
+    },
+    {
+      "source": "/faculty/minal-prashant-deshmukh/",
+      "target": "/people/minal-prashant-deshmukh/"
+    },
+    {
+      "source": "/faculty/mithila-arvind-biniwale/",
+      "target": "/people/mithila-arvind-biniwale/"
+    },
+    {
+      "source": "/faculty/mitulkumar-thakorbhai-solanki/",
+      "target": "/people/mitulkumar-thakorbhai-solanki/"
+    },
+    {
+      "source": "/faculty/mohit-kant-kaushik/",
+      "target": "/people/mohit-kant-kaushik/"
+    },
+    {
+      "source": "/faculty/mrudul-chilmulwar/",
+      "target": "/people/mrudul-chilmulwar/"
+    },
+    {
+      "source": "/faculty/mrudula-sanjay-kulkarni/",
+      "target": "/people/mrudula-sanjay-kulkarni/"
+    },
+    {
+      "source": "/faculty/mrunal-ninad-annadate/",
+      "target": "/people/mrunal-ninad-annadate/"
+    },
+    {
+      "source": "/faculty/mukesh-kumar-pal/",
+      "target": "/people/mukesh-kumar-pal/"
+    },
+    {
+      "source": "/faculty/mukund-gokhale/",
+      "target": "/people/mukund-gokhale/"
+    },
+    {
+      "source": "/faculty/namrata-sathe/",
+      "target": "/people/namrata-sathe/"
+    },
+    {
+      "source": "/faculty/narendra-laxman-mathakari/",
+      "target": "/people/narendra-laxman-mathakari/"
+    },
+    {
+      "source": "/faculty/nathrao-bhimrao-jadhav/",
+      "target": "/people/nathrao-bhimrao-jadhav/"
+    },
+    {
+      "source": "/faculty/navnath-lahu-shete/",
+      "target": "/people/navnath-lahu-shete/"
+    },
+    {
+      "source": "/faculty/neha-bokey/",
+      "target": "/people/neha-bokey/"
+    },
+    {
+      "source": "/faculty/neha-prasad-sathe/",
+      "target": "/people/neha-prasad-sathe/"
+    },
+    {
+      "source": "/faculty/netra-manoj-lokhande/",
+      "target": "/people/netra-manoj-lokhande/"
+    },
+    {
+      "source": "/faculty/nikhil-dattatray-deshmukh/",
+      "target": "/people/nikhil-dattatray-deshmukh/"
+    },
+    {
+      "source": "/faculty/nikhil-vijaykumar-soniminde/",
+      "target": "/people/nikhil-vijaykumar-soniminde/"
+    },
+    {
+      "source": "/faculty/nikhilesh-joardar/",
+      "target": "/people/nikhilesh-joardar/"
+    },
+    {
+      "source": "/faculty/nilam-mahesh-pradhan/",
+      "target": "/people/nilam-mahesh-pradhan/"
+    },
+    {
+      "source": "/faculty/nilesh-bajad/",
+      "target": "/people/nilesh-bajad/"
+    },
+    {
+      "source": "/faculty/niraj-subhashrao-topare/",
+      "target": "/people/niraj-subhashrao-topare/"
+    },
+    {
+      "source": "/faculty/nithya-n-kutty/",
+      "target": "/people/nithya-n-kutty/"
+    },
+    {
+      "source": "/faculty/nitinkumar-raghunath-anekar/",
+      "target": "/people/nitinkumar-raghunath-anekar/"
+    },
+    {
+      "source": "/faculty/nivedita-gunesh-gogate/",
+      "target": "/people/nivedita-gunesh-gogate/"
+    },
+    {
+      "source": "/faculty/omkar-kamalakant-kulkarni/",
+      "target": "/people/omkar-kamalakant-kulkarni/"
+    },
+    {
+      "source": "/faculty/pallavi-choudhary/",
+      "target": "/people/pallavi-choudhary/"
+    },
+    {
+      "source": "/faculty/pallavi-prashant-tatpate/",
+      "target": "/people/pallavi-prashant-tatpate/"
+    },
+    {
+      "source": "/faculty/pallavi-rajwade/",
+      "target": "/people/pallavi-rajwade/"
+    },
+    {
+      "source": "/faculty/pallavi-utkarsh-nehete/",
+      "target": "/people/pallavi-utkarsh-nehete/"
+    },
+    {
+      "source": "/faculty/pankaj-nivrutti-dhatrak/",
+      "target": "/people/pankaj-nivrutti-dhatrak/"
+    },
+    {
+      "source": "/faculty/pankaj-pramod-koparde/",
+      "target": "/people/pankaj-pramod-koparde/"
+    },
+    {
+      "source": "/faculty/parineeta-das/",
+      "target": "/people/parineeta-das/"
+    },
+    {
+      "source": "/faculty/parshant-kumar/",
+      "target": "/people/parshant-kumar/"
+    },
+    {
+      "source": "/faculty/parul-ghole/",
+      "target": "/people/parul-ghole/"
+    },
+    {
+      "source": "/faculty/parul-madhuraj-jadhav/",
+      "target": "/people/parul-madhuraj-jadhav/"
+    },
+    {
+      "source": "/faculty/parveen-kumar/",
+      "target": "/people/parveen-kumar/"
+    },
+    {
+      "source": "/faculty/piyush-shaha/",
+      "target": "/people/piyush-shaha/"
+    },
+    {
+      "source": "/faculty/pooja-pradiprao-unhale/",
+      "target": "/people/pooja-pradiprao-unhale/"
+    },
+    {
+      "source": "/faculty/pooja-pravin-gundewar/",
+      "target": "/people/pooja-pravin-gundewar/"
+    },
+    {
+      "source": "/faculty/poonam-inamdar/",
+      "target": "/people/poonam-inamdar/"
+    },
+    {
+      "source": "/faculty/pradeep-kumar-tiwari/",
+      "target": "/people/pradeep-kumar-tiwari/"
+    },
+    {
+      "source": "/faculty/pradnya-siddhivinayak-kulkarni/",
+      "target": "/people/pradnya-siddhivinayak-kulkarni/"
+    },
+    {
+      "source": "/faculty/prajakta-balchandra-khanwalkar/",
+      "target": "/people/prajakta-balchandra-khanwalkar/"
+    },
+    {
+      "source": "/faculty/prajakta-vishal-adsule/",
+      "target": "/people/prajakta-vishal-adsule/"
+    },
+    {
+      "source": "/faculty/prajkta-bhide/",
+      "target": "/people/prajkta-bhide/"
+    },
+    {
+      "source": "/faculty/prakash-mohan-mainkar/",
+      "target": "/people/prakash-mohan-mainkar/"
+    },
+    {
+      "source": "/faculty/pralhad-atmaram-pesode/",
+      "target": "/people/pralhad-atmaram-pesode/"
+    },
+    {
+      "source": "/faculty/pramod-bapu-mali/",
+      "target": "/people/pramod-bapu-mali/"
+    },
+    {
+      "source": "/faculty/pranali-kashinath-kosamkar/",
+      "target": "/people/pranali-kashinath-kosamkar/"
+    },
+    {
+      "source": "/faculty/pranati-prabhakar-waghodekar/",
+      "target": "/people/pranati-prabhakar-waghodekar/"
+    },
+    {
+      "source": "/faculty/prasad-anil-kulkarni/",
+      "target": "/people/prasad-anil-kulkarni/"
+    },
+    {
+      "source": "/faculty/prasad-pathak/",
+      "target": "/people/prasad-pathak/"
+    },
+    {
+      "source": "/faculty/prasanna-gautam-kate/",
+      "target": "/people/prasanna-gautam-kate/"
+    },
+    {
+      "source": "/faculty/prasantakumar-sudarshan-ghosh/",
+      "target": "/people/prasantakumar-sudarshan-ghosh/"
+    },
+    {
+      "source": "/faculty/prasantanu-mohapatra/",
+      "target": "/people/prasantanu-mohapatra/"
+    },
+    {
+      "source": "/faculty/prashant-joshi/",
+      "target": "/people/prashant-joshi/"
+    },
+    {
+      "source": "/faculty/prashant-mahadeo-patane/",
+      "target": "/people/prashant-mahadeo-patane/"
+    },
+    {
+      "source": "/faculty/prashant-pralhad-malavadkar/",
+      "target": "/people/prashant-pralhad-malavadkar/"
+    },
+    {
+      "source": "/faculty/prashant-sudhakar-lahane/",
+      "target": "/people/prashant-sudhakar-lahane/"
+    },
+    {
+      "source": "/faculty/prathamesh-sonawani/",
+      "target": "/people/prathamesh-sonawani/"
+    },
+    {
+      "source": "/faculty/pratiksha-deepak-khurpade/",
+      "target": "/people/pratiksha-deepak-khurpade/"
+    },
+    {
+      "source": "/faculty/pratvina-vinayak-talele/",
+      "target": "/people/pratvina-vinayak-talele/"
+    },
+    {
+      "source": "/faculty/pravin-raghunath-minde/",
+      "target": "/people/pravin-raghunath-minde/"
+    },
+    {
+      "source": "/faculty/preethi-sunkara/",
+      "target": "/people/preethi-sunkara/"
+    },
+    {
+      "source": "/faculty/preeti-amit-kale/",
+      "target": "/people/preeti-amit-kale/"
+    },
+    {
+      "source": "/faculty/priya-bahirnath-kale/",
+      "target": "/people/priya-bahirnath-kale/"
+    },
+    {
+      "source": "/faculty/priya-nagargoje/",
+      "target": "/people/priya-nagargoje/"
+    },
+    {
+      "source": "/faculty/priyamwada-sachindra-mahajani/",
+      "target": "/people/priyamwada-sachindra-mahajani/"
+    },
+    {
+      "source": "/faculty/priyanka-kumari/",
+      "target": "/people/priyanka-kumari/"
+    },
+    {
+      "source": "/faculty/priyanka-rohit-rajmane/",
+      "target": "/people/priyanka-rohit-rajmane/"
+    },
+    {
+      "source": "/faculty/purna-kumari/",
+      "target": "/people/purna-kumari/"
+    },
+    {
+      "source": "/faculty/radhakrishnan-subramaniam/",
+      "target": "/people/radhakrishnan-subramaniam/"
+    },
+    {
+      "source": "/faculty/raghunath-subhanrao-bhadade/",
+      "target": "/people/raghunath-subhanrao-bhadade/"
+    },
+    {
+      "source": "/faculty/rahul-ashokrao-aher/",
+      "target": "/people/rahul-ashokrao-aher/"
+    },
+    {
+      "source": "/faculty/rahul-gaikwad/",
+      "target": "/people/rahul-gaikwad/"
+    },
+    {
+      "source": "/faculty/rahul-kisan-jagtap/",
+      "target": "/people/rahul-kisan-jagtap/"
+    },
+    {
+      "source": "/faculty/rahul-verma/",
+      "target": "/people/rahul-verma/"
+    },
+    {
+      "source": "/faculty/rahul-vishwanath-dandage/",
+      "target": "/people/rahul-vishwanath-dandage/"
+    },
+    {
+      "source": "/faculty/raj-agarwal/",
+      "target": "/people/raj-agarwal/"
+    },
+    {
+      "source": "/faculty/rajashree-sahadeo-jadhav/",
+      "target": "/people/rajashree-sahadeo-jadhav/"
+    },
+    {
+      "source": "/faculty/rajashri-amit-kadam/",
+      "target": "/people/rajashri-amit-kadam/"
+    },
+    {
+      "source": "/faculty/rajeev-sengupta/",
+      "target": "/people/rajeev-sengupta/"
+    },
+    {
+      "source": "/faculty/rajesh-kanzade/",
+      "target": "/people/rajesh-kanzade/"
+    },
+    {
+      "source": "/faculty/rajib-kumar-sinharay/",
+      "target": "/people/rajib-kumar-sinharay/"
+    },
+    {
+      "source": "/faculty/rajkumar-damodar-komati/",
+      "target": "/people/rajkumar-damodar-komati/"
+    },
+    {
+      "source": "/faculty/raju-shivaji-ingale/",
+      "target": "/people/raju-shivaji-ingale/"
+    },
+    {
+      "source": "/faculty/rakhi-khedkar/",
+      "target": "/people/rakhi-khedkar/"
+    },
+    {
+      "source": "/faculty/ramaa-ashish-sandu/",
+      "target": "/people/ramaa-ashish-sandu/"
+    },
+    {
+      "source": "/faculty/ranjana-anup-agrawal/",
+      "target": "/people/ranjana-anup-agrawal/"
+    },
+    {
+      "source": "/faculty/ranjeet-vinayak-gadhave/",
+      "target": "/people/ranjeet-vinayak-gadhave/"
+    },
+    {
+      "source": "/faculty/rashmi-ashtagi/",
+      "target": "/people/rashmi-ashtagi/"
+    },
+    {
+      "source": "/faculty/rashmi-ashwinikumar-rane/",
+      "target": "/people/rashmi-ashwinikumar-rane/"
+    },
+    {
+      "source": "/faculty/rashmi-sridhara/",
+      "target": "/people/rashmi-sridhara/"
+    },
+    {
+      "source": "/faculty/rashmi-suhas-phalnikar/",
+      "target": "/people/rashmi-suhas-phalnikar/"
+    },
+    {
+      "source": "/faculty/rasika-ramendra-beohar/",
+      "target": "/people/rasika-ramendra-beohar/"
+    },
+    {
+      "source": "/faculty/ratna-vadra/",
+      "target": "/people/ratna-vadra/"
+    },
+    {
+      "source": "/faculty/ratnadip-rajabhau-joshi/",
+      "target": "/people/ratnadip-rajabhau-joshi/"
+    },
+    {
+      "source": "/faculty/ravi-nikam/",
+      "target": "/people/ravi-nikam/"
+    },
+    {
+      "source": "/faculty/rehan-deshmukh/",
+      "target": "/people/rehan-deshmukh/"
+    },
+    {
+      "source": "/faculty/renuka-amit-mane/",
+      "target": "/people/renuka-amit-mane/"
+    },
+    {
+      "source": "/faculty/riddhi-gaurav-panchal/",
+      "target": "/people/riddhi-gaurav-panchal/"
+    },
+    {
+      "source": "/faculty/rohini-revansiddappa-pujari/",
+      "target": "/people/rohini-revansiddappa-pujari/"
+    },
+    {
+      "source": "/faculty/rohit-kumar-sharma/",
+      "target": "/people/rohit-kumar-sharma/"
+    },
+    {
+      "source": "/faculty/rohit-raghunath-ghadge/",
+      "target": "/people/rohit-raghunath-ghadge/"
+    },
+    {
+      "source": "/faculty/rohit-rajabhau-salgude/",
+      "target": "/people/rohit-rajabhau-salgude/"
+    },
+    {
+      "source": "/faculty/rucha-deshpande/",
+      "target": "/people/rucha-deshpande/"
+    },
+    {
+      "source": "/faculty/ruchi-rani/",
+      "target": "/people/ruchi-rani/"
+    },
+    {
+      "source": "/faculty/ruhi-ajit-patankar/",
+      "target": "/people/ruhi-ajit-patankar/"
+    },
+    {
+      "source": "/faculty/rupal-chandulal-shroff/",
+      "target": "/people/rupal-chandulal-shroff/"
+    },
+    {
+      "source": "/faculty/rupali-kanade/",
+      "target": "/people/rupali-kanade/"
+    },
+    {
+      "source": "/faculty/rupali-ram-sonolikar/",
+      "target": "/people/rupali-ram-sonolikar/"
+    },
+    {
+      "source": "/faculty/rupali-sandip-kute/",
+      "target": "/people/rupali-sandip-kute/"
+    },
+    {
+      "source": "/faculty/sachin-arun-kulkarni/",
+      "target": "/people/sachin-arun-kulkarni/"
+    },
+    {
+      "source": "/faculty/sachin-bhimrao-bhoite/",
+      "target": "/people/sachin-bhimrao-bhoite/"
+    },
+    {
+      "source": "/faculty/sachin-harle/",
+      "target": "/people/sachin-harle/"
+    },
+    {
+      "source": "/faculty/sachin-naik/",
+      "target": "/people/sachin-naik/"
+    },
+    {
+      "source": "/faculty/sachin-prakash-srivastava/",
+      "target": "/people/sachin-prakash-srivastava/"
+    },
+    {
+      "source": "/faculty/sachin-ratnakar-deshmukh/",
+      "target": "/people/sachin-ratnakar-deshmukh/"
+    },
+    {
+      "source": "/faculty/sachin-shivaji-gunjal/",
+      "target": "/people/sachin-shivaji-gunjal/"
+    },
+    {
+      "source": "/faculty/saee-omkar-sumant/",
+      "target": "/people/saee-omkar-sumant/"
+    },
+    {
+      "source": "/faculty/sagar-gothkhindikar/",
+      "target": "/people/sagar-gothkhindikar/"
+    },
+    {
+      "source": "/faculty/sagar-sunil-kolapkar/",
+      "target": "/people/sagar-sunil-kolapkar/"
+    },
+    {
+      "source": "/faculty/saket-ravindra-yeolekar/",
+      "target": "/people/saket-ravindra-yeolekar/"
+    },
+    {
+      "source": "/faculty/saloni-kumar/",
+      "target": "/people/saloni-kumar/"
+    },
+    {
+      "source": "/faculty/samarth-dilip-patwardhan/",
+      "target": "/people/samarth-dilip-patwardhan/"
+    },
+    {
+      "source": "/faculty/samidha-anand-jawade/",
+      "target": "/people/samidha-anand-jawade/"
+    },
+    {
+      "source": "/faculty/samuel-jacob-kuruvilla/",
+      "target": "/people/samuel-jacob-kuruvilla/"
+    },
+    {
+      "source": "/faculty/sandeep-chandrakant-potnis/",
+      "target": "/people/sandeep-chandrakant-potnis/"
+    },
+    {
+      "source": "/faculty/sandeep-namdev-dhikale/",
+      "target": "/people/sandeep-namdev-dhikale/"
+    },
+    {
+      "source": "/faculty/sandeep-sampatrao-sathe/",
+      "target": "/people/sandeep-sampatrao-sathe/"
+    },
+    {
+      "source": "/faculty/sandhya-mathapati/",
+      "target": "/people/sandhya-mathapati/"
+    },
+    {
+      "source": "/faculty/sandip-navnathrao-palve/",
+      "target": "/people/sandip-navnathrao-palve/"
+    },
+    {
+      "source": "/faculty/sandip-tukaram-chavan/",
+      "target": "/people/sandip-tukaram-chavan/"
+    },
+    {
+      "source": "/faculty/sanjay-babanrao-bhagwat/",
+      "target": "/people/sanjay-babanrao-bhagwat/"
+    },
+    {
+      "source": "/faculty/sanmit-sanjit-sarkar/",
+      "target": "/people/sanmit-sanjit-sarkar/"
+    },
+    {
+      "source": "/faculty/sarang-gore/",
+      "target": "/people/sarang-gore/"
+    },
+    {
+      "source": "/faculty/sarika-sanjay-bobde/",
+      "target": "/people/sarika-sanjay-bobde/"
+    },
+    {
+      "source": "/faculty/satish-arunrao-polshettiwar/",
+      "target": "/people/satish-arunrao-polshettiwar/"
+    },
+    {
+      "source": "/faculty/saurabh-ardra/",
+      "target": "/people/saurabh-ardra/"
+    },
+    {
+      "source": "/faculty/savitri-nathrao-jadhav/",
+      "target": "/people/savitri-nathrao-jadhav/"
+    },
+    {
+      "source": "/faculty/seema-idhate/",
+      "target": "/people/seema-idhate/"
+    },
+    {
+      "source": "/faculty/seema-jitendra-patil/",
+      "target": "/people/seema-jitendra-patil/"
+    },
+    {
+      "source": "/faculty/shahbazmubarak-abdulkhadar-dandin/",
+      "target": "/people/shahbazmubarak-abdulkhadar-dandin/"
+    },
+    {
+      "source": "/faculty/shailendra-ashok-dayane/",
+      "target": "/people/shailendra-ashok-dayane/"
+    },
+    {
+      "source": "/faculty/shailendra-jagdish-naik/",
+      "target": "/people/shailendra-jagdish-naik/"
+    },
+    {
+      "source": "/faculty/shailendra-kumar-kale/",
+      "target": "/people/shailendra-kumar-kale/"
+    },
+    {
+      "source": "/faculty/shailesh-varade/",
+      "target": "/people/shailesh-varade/"
+    },
+    {
+      "source": "/faculty/shakti-sanjay-kinger/",
+      "target": "/people/shakti-sanjay-kinger/"
+    },
+    {
+      "source": "/faculty/shalaka-patil/",
+      "target": "/people/shalaka-patil/"
+    },
+    {
+      "source": "/faculty/shamim-mohammad/",
+      "target": "/people/shamim-mohammad/"
+    },
+    {
+      "source": "/faculty/shantini-aniruddha-bokil/",
+      "target": "/people/shantini-aniruddha-bokil/"
+    },
+    {
+      "source": "/faculty/sharbani-kaushik/",
+      "target": "/people/sharbani-kaushik/"
+    },
+    {
+      "source": "/faculty/sharmishta-suhas-desai/",
+      "target": "/people/sharmishta-suhas-desai/"
+    },
+    {
+      "source": "/faculty/sheetal-pravin-girase/",
+      "target": "/people/sheetal-pravin-girase/"
+    },
+    {
+      "source": "/faculty/sheetal-suresh-rajapurkar/",
+      "target": "/people/sheetal-suresh-rajapurkar/"
+    },
+    {
+      "source": "/faculty/shikha-vikrant-gaikwad/",
+      "target": "/people/shikha-vikrant-gaikwad/"
+    },
+    {
+      "source": "/faculty/shilpa-samir-chapadgaonkar/",
+      "target": "/people/shilpa-samir-chapadgaonkar/"
+    },
+    {
+      "source": "/faculty/shilpa-snehal-sonawani/",
+      "target": "/people/shilpa-snehal-sonawani/"
+    },
+    {
+      "source": "/faculty/shital-pathak/",
+      "target": "/people/shital-pathak/"
+    },
+    {
+      "source": "/faculty/shital-vasant-kahane/",
+      "target": "/people/shital-vasant-kahane/"
+    },
+    {
+      "source": "/faculty/shiv-havgirao-sutar/",
+      "target": "/people/shiv-havgirao-sutar/"
+    },
+    {
+      "source": "/faculty/shivprakash-bhagwatrao-barve/",
+      "target": "/people/shivprakash-bhagwatrao-barve/"
+    },
+    {
+      "source": "/faculty/shounak-rushikesh-sugave/",
+      "target": "/people/shounak-rushikesh-sugave/"
+    },
+    {
+      "source": "/faculty/shraddha-kulkarni/",
+      "target": "/people/shraddha-kulkarni/"
+    },
+    {
+      "source": "/faculty/shraddha-salvi/",
+      "target": "/people/shraddha-salvi/"
+    },
+    {
+      "source": "/faculty/shraddha-subhash-kokane/",
+      "target": "/people/shraddha-subhash-kokane/"
+    },
+    {
+      "source": "/faculty/shreeya-chidambar-rajpurohit/",
+      "target": "/people/shreeya-chidambar-rajpurohit/"
+    },
+    {
+      "source": "/faculty/shreya-bera/",
+      "target": "/people/shreya-bera/"
+    },
+    {
+      "source": "/faculty/shridevi-chandraprakash-karande/",
+      "target": "/people/shridevi-chandraprakash-karande/"
+    },
+    {
+      "source": "/faculty/shrikant-krishnanath-yadav/",
+      "target": "/people/shrikant-krishnanath-yadav/"
+    },
+    {
+      "source": "/faculty/shruti-shukla/",
+      "target": "/people/shruti-shukla/"
+    },
+    {
+      "source": "/faculty/shubhalaxmi-sanjay-joshi/",
+      "target": "/people/shubhalaxmi-sanjay-joshi/"
+    },
+    {
+      "source": "/faculty/shubhangi-rajesh-shekokar/",
+      "target": "/people/shubhangi-rajesh-shekokar/"
+    },
+    {
+      "source": "/faculty/shubhangi-rastogi/",
+      "target": "/people/shubhangi-rastogi/"
+    },
+    {
+      "source": "/faculty/shubhika-malara/",
+      "target": "/people/shubhika-malara/"
+    },
+    {
+      "source": "/faculty/shvetank-bhatt/",
+      "target": "/people/shvetank-bhatt/"
+    },
+    {
+      "source": "/faculty/shweta-devendra-shirolkar/",
+      "target": "/people/shweta-devendra-shirolkar/"
+    },
+    {
+      "source": "/faculty/shweta-hitesh-gade/",
+      "target": "/people/shweta-hitesh-gade/"
+    },
+    {
+      "source": "/faculty/shweta-yogesh-kukade/",
+      "target": "/people/shweta-yogesh-kukade/"
+    },
+    {
+      "source": "/faculty/siddharth-shriram-shimpi/",
+      "target": "/people/siddharth-shriram-shimpi/"
+    },
+    {
+      "source": "/faculty/siddhivinayak-arvind-kulkarni/",
+      "target": "/people/siddhivinayak-arvind-kulkarni/"
+    },
+    {
+      "source": "/faculty/siraj-ahmed-bhatkar/",
+      "target": "/people/siraj-ahmed-bhatkar/"
+    },
+    {
+      "source": "/faculty/smita-sanjay-paithankar/",
+      "target": "/people/smita-sanjay-paithankar/"
+    },
+    {
+      "source": "/faculty/soma-mishra/",
+      "target": "/people/soma-mishra/"
+    },
+    {
+      "source": "/faculty/sonal-manohar-muluk/",
+      "target": "/people/sonal-manohar-muluk/"
+    },
+    {
+      "source": "/faculty/sonali-potadar/",
+      "target": "/people/sonali-potadar/"
+    },
+    {
+      "source": "/faculty/soubir-das/",
+      "target": "/people/soubir-das/"
+    },
+    {
+      "source": "/faculty/soumava-biswas/",
+      "target": "/people/soumava-biswas/"
+    },
+    {
+      "source": "/faculty/suchitra-renguntwar/",
+      "target": "/people/suchitra-renguntwar/"
+    },
+    {
+      "source": "/faculty/sudeepta-banerjee/",
+      "target": "/people/sudeepta-banerjee/"
+    },
+    {
+      "source": "/faculty/sudhanshu-jaiswal/",
+      "target": "/people/sudhanshu-jaiswal/"
+    },
+    {
+      "source": "/faculty/sudhir-pandurang-patil/",
+      "target": "/people/sudhir-pandurang-patil/"
+    },
+    {
+      "source": "/faculty/suja-sreejith-panickar/",
+      "target": "/people/suja-sreejith-panickar/"
+    },
+    {
+      "source": "/faculty/sujata-jagadale/",
+      "target": "/people/sujata-jagadale/"
+    },
+    {
+      "source": "/faculty/sukhada-prasad-bhingarkar/",
+      "target": "/people/sukhada-prasad-bhingarkar/"
+    },
+    {
+      "source": "/faculty/sulakshana-sagar-malwade/",
+      "target": "/people/sulakshana-sagar-malwade/"
+    },
+    {
+      "source": "/faculty/suman-devadula/",
+      "target": "/people/suman-devadula/"
+    },
+    {
+      "source": "/faculty/suman-rawat/",
+      "target": "/people/suman-rawat/"
+    },
+    {
+      "source": "/faculty/sumant-nivarutti-shinde/",
+      "target": "/people/sumant-nivarutti-shinde/"
+    },
+    {
+      "source": "/faculty/sumedha-dhananjay-sirsikar/",
+      "target": "/people/sumedha-dhananjay-sirsikar/"
+    },
+    {
+      "source": "/faculty/sunil-brijlal-somani/",
+      "target": "/people/sunil-brijlal-somani/"
+    },
+    {
+      "source": "/faculty/sunil-machindra-adhav/",
+      "target": "/people/sunil-machindra-adhav/"
+    },
+    {
+      "source": "/faculty/sunil-shriram-karad/",
+      "target": "/people/sunil-shriram-karad/"
+    },
+    {
+      "source": "/faculty/supriya-paigude/",
+      "target": "/people/supriya-paigude/"
+    },
+    {
+      "source": "/faculty/surendra-hawgirao-barhatte/",
+      "target": "/people/surendra-hawgirao-barhatte/"
+    },
+    {
+      "source": "/faculty/sushil-kumar-gupta/",
+      "target": "/people/sushil-kumar-gupta/"
+    },
+    {
+      "source": "/faculty/sushila-manish-palwe/",
+      "target": "/people/sushila-manish-palwe/"
+    },
+    {
+      "source": "/faculty/sushma-verma/",
+      "target": "/people/sushma-verma/"
+    },
+    {
+      "source": "/faculty/sushrut-hemant-vinchurkar/",
+      "target": "/people/sushrut-hemant-vinchurkar/"
+    },
+    {
+      "source": "/faculty/suvarna-gopal-ranade/",
+      "target": "/people/suvarna-gopal-ranade/"
+    },
+    {
+      "source": "/faculty/swapnil-mahesh-gupta/",
+      "target": "/people/swapnil-mahesh-gupta/"
+    },
+    {
+      "source": "/faculty/swapnil-narayan-undale/",
+      "target": "/people/swapnil-narayan-undale/"
+    },
+    {
+      "source": "/faculty/swapnil-virendra-chalwadi/",
+      "target": "/people/swapnil-virendra-chalwadi/"
+    },
+    {
+      "source": "/faculty/swati-b-mahanoor/",
+      "target": "/people/swati-b-mahanoor/"
+    },
+    {
+      "source": "/faculty/swati-changdeo-jagdale/",
+      "target": "/people/swati-changdeo-jagdale/"
+    },
+    {
+      "source": "/faculty/swati-deepak-bankar/",
+      "target": "/people/swati-deepak-bankar/"
+    },
+    {
+      "source": "/faculty/swetha-rayala/",
+      "target": "/people/swetha-rayala/"
+    },
+    {
+      "source": "/faculty/tanya-kumar/",
+      "target": "/people/tanya-kumar/"
+    },
+    {
+      "source": "/faculty/tejaswini-bharati/",
+      "target": "/people/tejaswini-bharati/"
+    },
+    {
+      "source": "/faculty/trushita-sandeep-chaware/",
+      "target": "/people/trushita-sandeep-chaware/"
+    },
+    {
+      "source": "/faculty/ujjwala-shitalkumar-rawandale/",
+      "target": "/people/ujjwala-shitalkumar-rawandale/"
+    },
+    {
+      "source": "/faculty/uma-ramachandra-pujeri/",
+      "target": "/people/uma-ramachandra-pujeri/"
+    },
+    {
+      "source": "/faculty/umesh-kisan-raut/",
+      "target": "/people/umesh-kisan-raut/"
+    },
+    {
+      "source": "/faculty/umesh-shrivastava/",
+      "target": "/people/umesh-shrivastava/"
+    },
+    {
+      "source": "/faculty/umeshkumar-bhaiyalal-dubey/",
+      "target": "/people/umeshkumar-bhaiyalal-dubey/"
+    },
+    {
+      "source": "/faculty/v-n-v-rama-sastry/",
+      "target": "/people/v-n-v-rama-sastry/"
+    },
+    {
+      "source": "/faculty/vaibhav-narendra-deshmukh/",
+      "target": "/people/vaibhav-narendra-deshmukh/"
+    },
+    {
+      "source": "/faculty/vaidehi-vaibhav-deshmukh/",
+      "target": "/people/vaidehi-vaibhav-deshmukh/"
+    },
+    {
+      "source": "/faculty/vaishali-hanumant-gaikwad/",
+      "target": "/people/vaishali-hanumant-gaikwad/"
+    },
+    {
+      "source": "/faculty/vaishali-manish-joshi/",
+      "target": "/people/vaishali-manish-joshi/"
+    },
+    {
+      "source": "/faculty/vaishali-namdevrao-choudhari/",
+      "target": "/people/vaishali-namdevrao-choudhari/"
+    },
+    {
+      "source": "/faculty/vaishali-pankaj-suryawanshi/",
+      "target": "/people/vaishali-pankaj-suryawanshi/"
+    },
+    {
+      "source": "/faculty/vandana-aryan-mooss/",
+      "target": "/people/vandana-aryan-mooss/"
+    },
+    {
+      "source": "/faculty/vandana-kushwaha/",
+      "target": "/people/vandana-kushwaha/"
+    },
+    {
+      "source": "/faculty/vandana-swapnil-jagtap/",
+      "target": "/people/vandana-swapnil-jagtap/"
+    },
+    {
+      "source": "/faculty/vanisree-trippayya-ramanathan/",
+      "target": "/people/vanisree-trippayya-ramanathan/"
+    },
+    {
+      "source": "/faculty/vanita-raj-tank/",
+      "target": "/people/vanita-raj-tank/"
+    },
+    {
+      "source": "/faculty/varsha-shriram-nerlekar/",
+      "target": "/people/varsha-shriram-nerlekar/"
+    },
+    {
+      "source": "/faculty/vasiahmed-ebrahim-shaikh/",
+      "target": "/people/vasiahmed-ebrahim-shaikh/"
+    },
+    {
+      "source": "/faculty/vedashree-tushar-mali/",
+      "target": "/people/vedashree-tushar-mali/"
+    },
+    {
+      "source": "/faculty/veena-pravin-kshirsagar/",
+      "target": "/people/veena-pravin-kshirsagar/"
+    },
+    {
+      "source": "/faculty/vibha-utpal-patel/",
+      "target": "/people/vibha-utpal-patel/"
+    },
+    {
+      "source": "/faculty/vidya-balaji-patil/",
+      "target": "/people/vidya-balaji-patil/"
+    },
+    {
+      "source": "/faculty/vijay-kumar-kalyani/",
+      "target": "/people/vijay-kumar-kalyani/"
+    },
+    {
+      "source": "/faculty/vijaya-vijaykumar-pangave/",
+      "target": "/people/vijaya-vijaykumar-pangave/"
+    },
+    {
+      "source": "/faculty/vijayapandi-pandy/",
+      "target": "/people/vijayapandi-pandy/"
+    },
+    {
+      "source": "/faculty/vijaykumar-bilolikar/",
+      "target": "/people/vijaykumar-bilolikar/"
+    },
+    {
+      "source": "/faculty/vikas-jaywant-magar/",
+      "target": "/people/vikas-jaywant-magar/"
+    },
+    {
+      "source": "/faculty/vikas-keshav-jadhav/",
+      "target": "/people/vikas-keshav-jadhav/"
+    },
+    {
+      "source": "/faculty/vikram-shete/",
+      "target": "/people/vikram-shete/"
+    },
+    {
+      "source": "/faculty/vikrant-devidas-gaikwad/",
+      "target": "/people/vikrant-devidas-gaikwad/"
+    },
+    {
+      "source": "/faculty/vilas-sahebrao-kanthale/",
+      "target": "/people/vilas-sahebrao-kanthale/"
+    },
+    {
+      "source": "/faculty/vinaya-vijay-gohokar/",
+      "target": "/people/vinaya-vijay-gohokar/"
+    },
+    {
+      "source": "/faculty/vinayak-sudhakar-wadgaonkar/",
+      "target": "/people/vinayak-sudhakar-wadgaonkar/"
+    },
+    {
+      "source": "/faculty/vinita-kale/",
+      "target": "/people/vinita-kale/"
+    },
+    {
+      "source": "/faculty/vinod-sartape/",
+      "target": "/people/vinod-sartape/"
+    },
+    {
+      "source": "/faculty/vishakha-vivek-pethkar/",
+      "target": "/people/vishakha-vivek-pethkar/"
+    },
+    {
+      "source": "/faculty/vivek-patel/",
+      "target": "/people/vivek-patel/"
+    },
+    {
+      "source": "/faculty/vrunda-hemant-agarkar/",
+      "target": "/people/vrunda-hemant-agarkar/"
+    },
+    {
+      "source": "/faculty/waseem-khan/",
+      "target": "/people/waseem-khan/"
+    },
+    {
+      "source": "/faculty/yashpal-dashrath-netragaonkar/",
+      "target": "/people/yashpal-dashrath-netragaonkar/"
+    },
+    {
+      "source": "/faculty/yogadrum-kelkar/",
+      "target": "/people/yogadrum-kelkar/"
+    },
+    {
+      "source": "/faculty/yogesh-raghunath-kulkarni/",
+      "target": "/people/yogesh-raghunath-kulkarni/"
+    },
+    {
+      "source": "/faculty/yogini-mukherjee/",
+      "target": "/people/yogini-mukherjee/"
+    },
+    {
+      "source": "/faculty/yogita-sachin-ozarde/",
+      "target": "/people/yogita-sachin-ozarde/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/",
+      "target": "/academics/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/",
+      "target": "/academics/economics-and-commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/",
+      "target": "/academics/consciousness/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/",
+      "target": "/academics/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/",
+      "target": "/academics/liberal-arts-humanities/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/",
+      "target": "/academics/liberal-arts-humanities/media-and-communication/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-peace-studies/",
+      "target": "/academics/liberal-arts-humanities/peace-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-photography/",
+      "target": "/academics/liberal-arts-humanities/photography/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/",
+      "target": "/academics/architecture/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/",
+      "target": "/academics/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/",
+      "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/",
+      "target": "/academics/engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-bioengineering/",
+      "target": "/academics/engineering-and-technology/bioengineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-chemical-engineering/",
+      "target": "/academics/engineering-and-technology/chemical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/",
+      "target": "/academics/health-science-technologies/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/",
+      "target": "/academics/health-science-technologies/clinical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/",
+      "target": "/academics/science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-environmental-studies/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/",
+      "target": "/academics/science/physics/"
+    }
+  ]
+}
