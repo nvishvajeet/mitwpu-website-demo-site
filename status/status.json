@@ -1,8 +1,8 @@
 {
   "percentage": 100,
-  "phase": "Validated crawl-backed public demo deployed",
-  "updated_at": "24 July 2026, 14:00 CEST",
-  "eta": "Production reconciliation can begin when the authoritative export is available",
+  "phase": "Validated public demo deployed; institutional refinements continuing",
+  "updated_at": "24 July 2026, 14:44 CEST",
+  "eta": "Current deployment is live; the next refinement package will follow validation",
   "pune_pages": 2298,
   "pune_media": 3518,
   "goa_pages": 165,
@@ -12,13 +12,17 @@
     "1,903 canonical routes rendered at desktop and mobile widths with zero issue pages",
     "1,899 search records covering 518 people and 1,381 pages",
     "Strict layer 0, 1, and 2 media gate passed with zero errors and zero warnings",
-    "Single stable navigation order across institutional, academic, research, and group templates",
+    "One 115 px institutional masthead with fixed logo, link order, active state, and theme control across all core template families",
     "Responsive layout, native scrolling, accessible image labels, and light and dark themes",
     "All 13 schools shown in one searchable directory without pagination",
     "About theme control and branded 404 recovery verified on desktop and mobile",
     "Public artifact committed, deployed, and verified on the custom domain"
   ],
-  "in_progress": [],
+  "in_progress": [
+    "Strengthening the existing World Peace Dome and Founder President pages from verified public evidence",
+    "Adding five evidence-backed Central Research Facility capability pages for the 12 significant systems",
+    "Integrating the durable Catalyst notification outbox after its PostgreSQL validation"
+  ],
   "blockers": [
     "The production export is needed only for authoritative reconciliation, redirects, original media, and final cutover"
   ]
