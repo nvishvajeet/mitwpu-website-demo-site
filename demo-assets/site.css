@@ -159,6 +159,9 @@ h3 {
 }
 
 .site-header {
+  position: sticky;
+  z-index: 70;
+  top: 0;
   color: #ffffff;
   background: var(--institution);
   border-bottom: 3px solid var(--gold);

@@ -23,8 +23,8 @@
   --footer: #274257;
   --focus: #9dc4de;
   --switch-knob: #ffffff;
-  --shell: 1080px;
-  --institution-bar-height: 76px;
+  --shell: 1180px;
+  --institution-bar-height: 112px;
   --site-header-height: 80px;
   --page-hero-height: 272px;
   color-scheme: light;
@@ -167,6 +167,8 @@ h3 {
 }
 
 .institution-home {
+  width: clamp(178px, 18vw, 225px);
+  flex: 0 0 auto;
   color: #fff;
   text-decoration: none;
 }
@@ -183,7 +185,9 @@ h3 {
   min-width: 0;
   max-width: 100%;
   flex: 1 1 auto;
-  gap: 22px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(14px, 1.55vw, 23px);
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
@@ -191,9 +195,15 @@ h3 {
 }
 
 .institution-links a {
+  display: flex;
+  height: var(--institution-bar-height);
   flex: 0 0 auto;
+  align-items: center;
+  padding-top: 2px;
   color: #fff;
-  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  font-size: 0.84rem;
+  font-weight: 650;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -201,8 +211,13 @@ h3 {
 .institution-links a:hover,
 .institution-links a[aria-current="page"] {
   color: #fff;
-  opacity: 0.82;
+  border-bottom-color: var(--gold);
+  opacity: 1;
   text-decoration: none;
+}
+
+.institution-links .theme-toggle {
+  margin-left: 4px;
 }
 
 .site-header {
@@ -258,7 +273,7 @@ h3 {
 
 .institutional-lockup__logo {
   display: block;
-  width: clamp(150px, 13vw, 180px);
+  width: clamp(178px, 18vw, 225px);
   height: auto;
   padding: 3px 5px;
   background: #ffffff;
@@ -1269,7 +1284,16 @@ h3 {
   .institution-links {
     width: 100%;
     flex: 0 0 auto;
+    justify-content: flex-start;
     gap: 16px;
+  }
+
+  .institution-links a {
+    height: 44px;
+  }
+
+  .institution-home {
+    width: 142px;
   }
 
   .brand small {

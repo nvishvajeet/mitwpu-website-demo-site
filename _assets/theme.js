@@ -34,6 +34,10 @@
     if (!bar) return;
     const nav = bar.querySelector(".institution-links");
     if (!nav) return;
+    const themeToggle = document.querySelector("[data-theme-toggle]");
+    const duplicateInstitutionalNav = document.querySelector(
+      ".site-header .site-nav.institutional-nav",
+    );
 
     const links = [
       ["About", "/about/"],
@@ -61,6 +65,13 @@
       }
       nav.append(link);
     });
+    if (themeToggle) nav.append(themeToggle);
+    if (duplicateInstitutionalNav && duplicateInstitutionalNav !== nav) {
+      duplicateInstitutionalNav.remove();
+      document.querySelector(".site-header")?.classList.add(
+        "site-header--context-only",
+      );
+    }
   }
 
   function storedTheme() {

@@ -19,6 +19,15 @@ body {
   gap: 30px;
 }
 
+.academic-header {
+  position: sticky;
+  z-index: 70;
+  top: 0;
+  color: #ffffff;
+  background: var(--institution);
+  border-bottom: 3px solid var(--gold);
+}
+
 .academic-header .institutional-lockup__logo {
   width: clamp(178px, 18vw, 225px);
 }
@@ -39,7 +48,14 @@ body {
 
 .institutional-nav a {
   height: var(--academic-masthead-height);
+  color: #ffffff;
   font-size: 0.84rem;
+}
+
+.institutional-nav a:hover,
+.institutional-nav a[aria-current="page"] {
+  color: #ffffff;
+  border-bottom-color: var(--gold);
 }
 
 .academic-unit-row {

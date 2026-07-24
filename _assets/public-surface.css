@@ -14,7 +14,7 @@
   --accent: #f3be34;
   --focus: #185f86;
   --switch-knob: #ffffff;
-  --max: 74rem;
+  --max: 73.75rem;
   color-scheme: light;
 }
 
@@ -92,6 +92,10 @@ a:focus-visible, button:focus-visible {
 .status-bar a { color: #fff; }
 
 .site-header {
+  position: sticky;
+  z-index: 70;
+  top: 0;
+  overflow-x: clip;
   color: #ffffff;
   background: var(--topbar);
   border-bottom: 3px solid var(--accent);
@@ -487,7 +491,14 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
 
 @media (max-width: 54rem) {
   .status-bar__inner { align-items: flex-start; flex-direction: column; padding-block: .65rem; }
-  .site-header__inner { align-items: flex-start; flex-direction: column; padding-block: 1.1rem; }
+  .site-header__inner {
+    height: 112px;
+    min-height: 112px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding-block: 8px;
+  }
   .header-actions { width: 100%; min-width: 0; align-items: flex-start; }
   .primary-nav {
     min-width: 0;
@@ -505,7 +516,7 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   .related { position: static; }
   .hero { min-height: 330px; }
   .editorial-page .hero { min-height: 0; }
-  .institutional-lockup__logo { width: 178px; }
+  .institutional-lockup__logo { width: 142px; }
 }
 
 @media print {

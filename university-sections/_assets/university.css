@@ -14,7 +14,7 @@
   --line: #ccd8de;
   --footer: #102b40;
   --focus: #176d99;
-  --max: 78rem;
+  --max: 73.75rem;
   color-scheme: light;
 }
 
@@ -141,6 +141,7 @@ video {
   position: sticky;
   z-index: 15;
   top: 0;
+  overflow-x: clip;
   color: #ffffff;
   background: var(--navy);
   border-bottom: 3px solid var(--gold);
@@ -901,6 +902,16 @@ h3 {
   color: var(--copy);
 }
 
+.directory-index {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.directory-index .directory-link {
+  width: min(100%, 18rem);
+}
+
 .link-list {
   display: grid;
   gap: 0;
@@ -1127,9 +1138,10 @@ h3 {
 
 @media (max-width: 75rem) {
   .header-inner {
+    height: 112px;
+    min-height: 112px;
     grid-template-columns: 1fr;
     gap: 0.55rem;
-    min-height: 0;
     padding-block: 0.65rem;
   }
 
@@ -1204,7 +1216,7 @@ h3 {
   }
 
   .institutional-lockup__logo {
-    width: 178px;
+    width: 142px;
   }
 
   .hero {
