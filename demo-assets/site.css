@@ -243,7 +243,10 @@ h3 {
 }
 
 .site-nav a {
-  padding: 31px 0 27px;
+  display: flex;
+  height: 112px;
+  align-items: center;
+  padding: 2px 0 0;
   color: #ffffff;
   border-bottom: 2px solid transparent;
   font-size: 0.84rem;
@@ -811,6 +814,7 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   }
 
   .site-nav a {
+    height: auto;
     flex: 0 0 auto;
     padding: 13px 0 11px;
     white-space: nowrap;
