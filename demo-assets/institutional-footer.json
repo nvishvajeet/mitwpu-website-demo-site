@@ -3,6 +3,13 @@
     "name": "MAEER’s MIT World Peace University",
     "location": "Pune, Maharashtra, India"
   },
+  "social": [
+    {"label": "LinkedIn", "official": "https://www.linkedin.com/school/mitwpuofficial/"},
+    {"label": "Instagram", "official": "https://www.instagram.com/mitwpuofficial/"},
+    {"label": "YouTube", "official": "https://www.youtube.com/c/MITWorldPeaceUniversity"},
+    {"label": "Facebook", "official": "https://www.facebook.com/MIT-WPUOfficial/"},
+    {"label": "X", "official": "https://twitter.com/mitwpuofficial"}
+  ],
   "groups": [
     {
       "label": "University",

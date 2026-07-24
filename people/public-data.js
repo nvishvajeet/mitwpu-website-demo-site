@@ -2,6 +2,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aachal-taywade",
     "name": "Dr. Aachal Taywade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -13,7 +14,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aachal-taywade.webp",
     "research": "Personality, Smartphone Addiction, Parenting, youth mental health, and interpersonal relationships.",
-    "summary": "Dr. Aachal is a distinguished academician and researcher, holding a PhD in Psychology with a specialization in Personality Factors, Psychopathology, Intelligence, and Smartphone Usage Behavior of Adolescents. A gold medalist in her MA Psychology program, she has in depth understanding of areas like Developmental Psychology, Educational Psychology, Personality Psychology, and Smartphone Addiction.",
+    "summary": "Dr. Aachal is a distinguished academician and researcher, holding a PhD in Psychology with a specialization in Personality Factors, Psychopathology, Intelligence, and Smartphone Usage Behavior of Adolescents. A gold medalist in her MA Psychology program, she has in depth understanding of areas like Developmental Psychology, Educational Psychology, Personality Psychology, and Smartphone Addiction. Dr. Aachal has worked with renowned institutions, including Bharatiya Vidya Bhavan, Podar International School, Matru Sewa Sangh Institute of Social Work, Amity University, giving her a very broad perspective in her teaching practices. Her expertise has been pivotal in designing syllabi and developing course structures for some private universities in Maharashtra. Her counseling practice is grounded in humanistic and cognitive approaches, with a strong focus on the work of eminent psychologists such as Viktor Frankl, Abraham Maslow, Aaron Beck, Robert McCrae, Albert Ellis, Alfred Adler, and Karen Horney. She has received professional training and certifications in Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT), and her practice reflects her deep belief that every individual has a unique potential deserving of encouragement and opportunities for growth. As a passionate researcher and academic, Dr. Aachal has published and presented her work in various national and international journals and conferences. Her areas of interest include youth mental health, couple's therapy, and family therapy, with a focus on creating healthier, more resilient individuals and communities.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aachal-taywade",
       "scholar": "https://scholar.google.co.in/citations?user=315SC4kAAAAJ&hl=en"
@@ -23,6 +24,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aaditi-khare",
     "name": "Dr. Aaditi Khare",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -43,6 +45,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aarti-renukadas-shastri",
     "name": "Dr. Aarti Renukadas Shastri",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -54,7 +57,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aarti-renukadas-shastri.jpg",
     "research": "Natural Products",
-    "summary": "Dr. Aarti Shastri is an Assistant Professor in the field of Pharmacognosy and Phytochemistry, specializing in the extraction, isolation and separation of chemical constituents from herbal drugs. She has a PhD in the same field and has extensive experience in pharmacological and phytochemical evaluation of herbal drugs/formulations for new therapeutic indications. Her research work is focused on natural products and their therapeutic uses.",
+    "summary": "Dr. Aarti Shastri is an Assistant Professor in the field of Pharmacognosy and Phytochemistry, specializing in the extraction, isolation and separation of chemical constituents from herbal drugs. She has a PhD in the same field and has extensive experience in pharmacological and phytochemical evaluation of herbal drugs/formulations for new therapeutic indications. Her research work is focused on natural products and their therapeutic uses. Dr. Shastri has published several research papers and articles in national and international journals and has presented her work at various conferences and seminars. Her expertise in natural products has been recognized by her peers and she is often invited as a speaker at conferences and workshops. As an academic, Dr. Shastri is passionate about teaching and mentoring students. She uses her research work to enrich her teaching and provide real-world examples to students. Her enthusiasm and dedication have earned her the respect and admiration of her students and colleagues.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aarti-renukadas-shastri",
       "scholar": "https://scholar.google.co.in/citations?user=6FChCEoAAAAJ&hl=en",
@@ -65,6 +68,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aavishkar-chittaranjan-katti",
     "name": "Dr. Aavishkar Chittaranjan Katti",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -78,7 +82,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aavishkar-chittaranjan-katti.jpg",
     "research": "Theoretical nonlinear optics, nonlinear dynamics, optical solitons, and photonic systems.",
-    "summary": "Dr. Aavishkar Katti obtained his Ph.D. in Physics from Banaras Hindu University, Varanasi, and his Master’s degree in Physics from the University of Delhi. His doctoral research specialized in theoretical nonlinear optics, with a focus on optical solitons and photonic systems.",
+    "summary": "Dr. Aavishkar Katti obtained his Ph.D. in Physics from Banaras Hindu University, Varanasi, and his Master’s degree in Physics from the University of Delhi. His doctoral research specialized in theoretical nonlinear optics, with a focus on optical solitons and photonic systems. He has qualified several prestigious national-level examinations, including CSIR- NET (All India Rank 15), GATE, and SET (Gujarat), demonstrating strong academic excellence and foundational expertise in physics. Dr. Katti has nearly a decade of teaching experience. He is currently serving as Assistant Professor in the Department of Physics at Dr. Vishwanath Karad MIT World Peace University, Pune, and has previously taught at Banasthali Vidyapith, Rajasthan. His teaching spans core physics courses alongwith specialized courses across the spectrum of optics and photonics. He has secured competitive research funding from government agencies. As Principal Investigator, he was awarded a Core Research Grant from the Science and Engineering Research Board (SERB-DST), Government of India. He is also Co- Principal Investigator on an ongoing A2K+ Studies grant from the Department of Scientific and Industrial Research (DSIR), Government of India, and served as Principal Investigator for an A2K+ Events grant supporting the organization of an international conference. Dr. Katti has made significant scholarly contributions, with over 60 publications, including more than 35 journal articles in SCI and Scopus-indexed journals. He is the author of two research monographs published by Springer Nature: Optical Spatial Solitons in Photorefractive Materials and Bragg Fibers: From Optical Properties to Applications. In addition, he has edited five research volumes published by leading international publishers including Springer Nature, SPIE (USA), and Bentham Science (Singapore). He serves on the Editorial Boards of several reputed international journals, including Scientific Reports (Nature Portfolio), Discover Applied Sciences (Springer), Physics Open (Elsevier), and Jurnal Ilmu Fisika (Universitas Andalas). He has also served as Guest Editor for Interactions (Springer) and SPIE conference proceedings. Dr. Katti has been actively involved in academic leadership and community building, having organized multiple international conferences as Convenor and Organizing Secretary, including ICCTPP-2022, ICCTPP-2024, RTEP 2024 conference supported by DSIR and RTEP-2026. He has supervised many students for their Master’s and Doctoral degrees till now. He has also contributed to academic administration through roles such as Ph.D. Coordinator, NAAC Criteria Coordinator, and Research Project Coordinator.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aavishkar-chittaranjan-katti",
       "scholar": "https://scholar.google.co.in/citations?user=NVdkslgAAAAJ&hl=en&oi=ao",
@@ -92,6 +96,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abdul-nasir-khan",
     "name": "Dr. Abdul Nasir Khan",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -115,6 +120,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhaysinha-gunvantrao-shelake",
     "name": "Mr. Abhaysinha Gunvantrao Shelake",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -136,6 +142,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhijeet-shrikrishna-kokare",
     "name": "Mr. Abhijeet Shrikrishna Kokare",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -156,6 +163,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhijeet-subhash-sutar",
     "name": "Dr. Abhijeet Subhash Sutar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Director",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -167,7 +175,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/abhijeet-subhash-sutar.webp",
     "research": "",
-    "summary": "Dr. Abhijeet Subhash Sutar is a distinguished academician and researcher in the domain of Pharmaceutical Chemistry and Pharmaceutical Analysis, currently serving as Program Director) at Dr. Vishwanath Karad MIT World Peace University, Pune. With over 20 years of extensive teaching and research experience, he has consistently contributed to academic excellence, research innovation, and student mentorship.",
+    "summary": "Dr. Abhijeet Subhash Sutar is a distinguished academician and researcher in the domain of Pharmaceutical Chemistry and Pharmaceutical Analysis, currently serving as Program Director) at Dr. Vishwanath Karad MIT World Peace University, Pune. With over 20 years of extensive teaching and research experience, he has consistently contributed to academic excellence, research innovation, and student mentorship. He earned his Bachelor of Pharmacy degree from Pune University in 2002, followed by a Master of Pharmacy in Pharmaceutical Chemistry from Shivaji University in 2005, and was awarded a Ph.D. in Pharmacy by Shivaji University in 2021. His doctoral research focused on advanced analytical methodologies and pharmaceutical quality evaluation. Dr. Sutar has successfully guided more than 15 undergraduate and 12 postgraduate and currently 3 research scholars registered for PhD research projects, fostering a strong research culture among students. He has been recognized for the quality and relevance of his research through competitive research grants totalling ₹4.2 lakhs from BCUD, Savitribai Phule Pune University. He is also the author of a book in Pharmaceutical Analysis and has published multiple research articles in reputed national and international journals. His work is particularly recognized for integrating advanced chemometric tools and modern analytical technologies into pharmaceutical research, aligning with contemporary regulatory and industrial expectations.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/abhijeet-subhash-sutar",
       "scholar": "https://scholar.google.com/citations?user=fr0A5acAAAAJ&hl=en",
@@ -179,6 +187,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhijit-bendre",
     "name": "Dr. Abhijit Bendre",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -203,6 +212,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhijit-manikrao-bhagat",
     "name": "Mr. Abhijit Manikrao Bhagat",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -214,7 +224,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/abhijit-manikrao-bhagat.webp",
     "research": "",
-    "summary": "Abhijit Bhagat brings over two decades of industry experience, along with more than ten years of shaping young designers in the classroom. He understands the realities of the field, having worked on major projects with Mahindra & Mahindra, Bajaj Auto, and Tata Motors, before going on to establish his own architecture practice.",
+    "summary": "Abhijit Bhagat brings over two decades of industry experience, along with more than ten years of shaping young designers in the classroom. He understands the realities of the field, having worked on major projects with Mahindra & Mahindra, Bajaj Auto, and Tata Motors, before going on to establish his own architecture practice. Teaching, for him, is far more than a side pursuit. He has spent significant time mentoring students at D Y Patil Design School, PDEA College of Architecture, Anantrao Pawar College of Architecture, and Minerva College of Architecture. Rather than limiting himself to textbooks, he works closely with students in the studio—guiding them through design thinking, helping them tackle real-world challenges, and building their confidence for the profession. Abhijit’s approach moves beyond traditional lectures. He emphasizes hands-on learning and live projects, encouraging students to question, think critically, and explore solutions that are both creative and meaningful. He is deeply committed to helping aspiring designers discover their interests, stay curious, and continuously refine their skills. At the core of his teaching is a focus on creating inclusive spaces where every idea is valued and has the opportunity to grow. This philosophy aligns seamlessly with MIT-WPU, Pune’s vision. Abhijit believes in a holistic approach to education—one that integrates research with practice and prepares students to succeed in a global environment. With his industry experience and genuine enthusiasm, he inspires students to think independently, innovate boldly, and create work that makes a real impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/abhijit-manikrao-bhagat",
       "linkedin": "https://www.linkedin.com/in/abhijit-bhagat"
@@ -224,6 +234,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhijit-nair",
     "name": "Dr. Abhijit Nair",
+    "preferredDisplayName": "",
     "designation": "Associate Professor & Dean",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -235,7 +246,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/abhijit-nair.webp",
     "research": "",
-    "summary": "Dr. Abhijit Nair has over 25 years of experience and held prominent academic and administrative positions, including Dean-Online Programs, Pan-Campus Area Chair for Liberal Arts and Business Communication, Head Placements and Head Admissions at Jaipuria Institute of Management Noida. He has dabbled in entrepreneurship running an ad-agency, a travel magazine and an agriculture-venture.",
+    "summary": "Dr. Abhijit Nair has over 25 years of experience and held prominent academic and administrative positions, including Dean-Online Programs, Pan-Campus Area Chair for Liberal Arts and Business Communication, Head Placements and Head Admissions at Jaipuria Institute of Management Noida. He has dabbled in entrepreneurship running an ad-agency, a travel magazine and an agriculture-venture. His contributions involve being part of academic quality enhancement, institutional accreditation (NBA, NAAC), AACSB, curriculum building and designing courses and programs. He has been involved in building curricula based on Objective Based Education (OBE). He has also designed learner engagement differentiating based on pedagogy, andragogy and Heutagogy. He has also taken part in improving industry- academia engagements, student training and development, and student affairs to improve their life at campus. Dr. Nair holds a Ph.D. in English language and literature, an Executive Program in HR Leadership from SP Jain, and MA and BA in English language and literature with Sociology and Anthropology as minors. He has been involved in Management Development programs for SME's, Public Sector undertakings and consulting assignments as a communication consultant with marketing sales boutiques and advertising agencies",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/abhijit-nair"
     },
@@ -244,6 +255,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhijith-b",
     "name": "Dr. Abhijith B",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -264,6 +276,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhinay-kamble",
     "name": "Mr. Abhinay Kamble",
+    "preferredDisplayName": "",
     "designation": "Teaching Associate",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -275,7 +288,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/abhinay-kamble.webp",
     "research": "",
-    "summary": "Abhinay Kamble brings together academic depth and creative practice as a filmmaker and media professional, A UGC-NET Qualified with a strong academic foundation in Psychology (B.A.) and Media and Communication Studies (M.Sc. Savitribai Phule Pune University). Specializing in video production, his work spans direction, cinematography, and documentary filmmaking.",
+    "summary": "Abhinay Kamble brings together academic depth and creative practice as a filmmaker and media professional, A UGC-NET Qualified with a strong academic foundation in Psychology (B.A.) and Media and Communication Studies (M.Sc. Savitribai Phule Pune University). Specializing in video production, his work spans direction, cinematography, and documentary filmmaking. Abhinay Shot & co-directed Bhutacha Mala, inspired by the writings of Annabhau Sathe, and contributed as a camera assistant to Gana Gondhal, a feature film exploring subaltern art and politics. His latest documentary film project, The Bombay Philatelist, traces the journey of a retired PWD worker whose vast collection of rare postage stamps serves as a testament to cultural preservation. A 2024 fellow of PSBT’s Doc_Commune project, Abhinay’s practice lies at the intersection of creative storytelling and academic inquiry. With expertise in multimedia production, photojournalism, and visual design, he works across diverse mediums to engage with themes of culture, identity, and social consciousness.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/abhinay-kamble"
     },
@@ -284,6 +297,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhishek-madhukar-thote",
     "name": "Dr. Abhishek Madhukar Thote",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -295,7 +309,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/abhishek-madhukar-thote.webp",
     "research": "Biomedical Engineering, Mechanical Design and Finite Element Analysis",
-    "summary": "Dr. Abhishek M. Thote is an accomplished researcher and assistant professor in Mechanical Engineering at Visvesvaraya National Institute of Technology (VNIT), Nagpur. He has a strong academic background, having completed his graduation in Mechanical Engineering in 2011 from St. Vincent Pallotti College of Engineering and Technology, Nagpur. He later pursued post-graduation in CAD-CAM specialization in 2014 from VNIT, Nagpur, and completed his Ph.D. in Mechanical Engineering from the same institute in 2019. His Ph.D. research, titled \"\"Biomechanics of orthodontic tooth movement in invisible braces: mathematical and experimental approach,\"\" has gained widespread recognition in the field of orthodontics.",
+    "summary": "Dr. Abhishek M. Thote is an accomplished researcher and assistant professor in Mechanical Engineering at Visvesvaraya National Institute of Technology (VNIT), Nagpur. He has a strong academic background, having completed his graduation in Mechanical Engineering in 2011 from St. Vincent Pallotti College of Engineering and Technology, Nagpur. He later pursued post-graduation in CAD-CAM specialization in 2014 from VNIT, Nagpur, and completed his Ph.D. in Mechanical Engineering from the same institute in 2019. His Ph.D. research, titled \"\"Biomechanics of orthodontic tooth movement in invisible braces: mathematical and experimental approach,\"\" has gained widespread recognition in the field of orthodontics. Dr. Thote's core areas of research include Biomedical Engineering, Mechanical Design, and Finite Element Analysis. He has published seven papers in reputed international journals, all of which are either SCIE or Scopus indexed. He has also been granted two patents named \"\"Loop device for a plurality of teeth\"\" and \"\"A Nail Rubbing Exercise Machine.\"\" Additionally, he has the copyright of developed computer software named TRAC (Tooth Retraction Activity Calculator). Dr. Thote's achievements also include receiving a Travel Grant by CSIR (Council of Scientific and Industrial Research), India, for Paper Presentation in \"\"The Asia-Pacific Conference on Life Sciences and Biological Engineering 2017\"\" held in Nagoya, Japan. His commitment to research and academic excellence is further demonstrated by his active participation in national and international conferences and seminars.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/abhishek-madhukar-thote"
     },
@@ -304,6 +318,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhishek-prakash-chunawale",
     "name": "Mr. Abhishek Prakash Chunawale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -324,6 +339,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "abhishek-singh",
     "name": "Dr. Abhishek Singh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -333,7 +349,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": ".",
+    "photoPath": "",
     "research": "Sampling, ranked-set sampling, statistical inference, quality control, time series, data science, and machine learning.",
     "summary": "",
     "links": {
@@ -346,6 +362,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "adinath-dnyandev-yadhav",
     "name": "Mr. Adinath Dnyandev Yadhav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -357,7 +374,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/adinath-dnyandev-yadhav.jpg",
     "research": "Rigidity Analysis of structures, Optimization, Offshore Structures",
-    "summary": "Prof. Adinath Yadhav, an Assistant Professor at MIT World Peace University, Pune. With 9 years of teaching experience under his belt, he completed his B.E. in Civil Engineering from Savitribai Phule Pune University and his MTech in Marine Structures from National Institute of Technology, Surathkal. He has completed Ph.D. in Structural Engineering at MITWPU.",
+    "summary": "Prof. Adinath Yadhav, an Assistant Professor at MIT World Peace University, Pune. With 9 years of teaching experience under his belt, he completed his B.E. in Civil Engineering from Savitribai Phule Pune University and his MTech in Marine Structures from National Institute of Technology, Surathkal. He has completed Ph.D. in Structural Engineering at MITWPU. Prof. Yadhav teaches postgraduate courses such as Advanced DEsign Design of Steel Structures, Plastic Design of Steel Structures and also undergraduate courses such as Design of Steel Structures, Design of RCC Structures, Theory of Structures, Strength of Materials, etc. He is proficient in software tools such as ETABS, STAAD PRO, ANSYS Auto CAD Civil 3D, and more. Rigidity Analysis of Floating Offshore Platforms is his area of interest, and he has published 7 research papers in international journals. He also published Indian patent on \"A Precast Single Tee Girder with Glass Fibre Reinforced Polymer in Bridge Construction.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/adinath-dnyandev-yadhav",
       "scholar": "https://scholar.google.com/citations?user=PRFmEnwAAAAJ&hl=en",
@@ -369,6 +386,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aditi-shantanu-jahagirdar",
     "name": "Dr. Aditi Shantanu Jahagirdar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -380,7 +398,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aditi-shantanu-jahagirdar.webp",
     "research": "",
-    "summary": "Dr. Aditi Jahagirdar is a committed academician with over 31 years of teaching experience. She earned her Ph.D. in the field of Computer vision. She has more than 35 research papers to her credit. She holds two granted patents and two published patents. Renowned for her strong pedagogical skills, she actively adopts innovative teaching methodologies.",
+    "summary": "Dr. Aditi Jahagirdar is a committed academician with over 31 years of teaching experience. She earned her Ph.D. in the field of Computer vision. She has more than 35 research papers to her credit. She holds two granted patents and two published patents. Renowned for her strong pedagogical skills, she actively adopts innovative teaching methodologies. Her excellence in teaching was recognized with the Best Teacher Award 2013 by MAEER’s Group of Institutions. She was conferred the “Distinguished Woman Researcher in Computer Vision – 2025” award by Venus International Foundation. Her research interests include computer vision, healthcare, Image and Video processing. She believes in lifelong learning and translating research into meaningful societal impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aditi-shantanu-jahagirdar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57204575827",
@@ -393,6 +411,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ajay-sahu",
     "name": "Dr. Ajay Sahu",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -404,7 +423,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ajay-sahu.webp",
     "research": "",
-    "summary": "Dr. Ajay K. Sahu has completed his doctoral study (Ph.D.) from IIT Kharagpur with special focus on “Characterization of fracture networks from outcrop analogous: A flow simulation approach”. During his doctoral study, He has also carried out collaborative research work in the area of reservoir modelling and fluid flow simulation. He has published research papers in several reputed journals and also presented his works at several national and international conferences. He pursued his post-graduation (M. Tech) in Petroleum Engineering from IIT(ISM) Dhanbad and completed his graduation (B. Tech) in Petroleum Engineering from Dibrugarh University, Dibrugarh. His research area of interests includes Fractured Reservoir Simulation and Characterization, Flow in Porous Media, Optimized Filed Development Approaches, Enhanced Oil Recovery: Screening and Application, Matlab in Geoscience, Python for Oil and Gas. Presently, he is teaching basic and applied courses at undergraduate and post graduate. He also mentors students for their research projects. He is also an active professional member of oil and gas scientific societies like; SPE, SEG, ARMA, AAPG and EGU.",
+    "summary": "Dr. Ajay K. Sahu has completed his doctoral study (Ph.D.) from IIT Kharagpur with special focus on “Characterization of fracture networks from outcrop analogous: A flow simulation approach”. During his doctoral study, He has also carried out collaborative research work in the area of reservoir modelling and fluid flow simulation. He has published research papers in several reputed journals and also presented his works at several national and international conferences. He pursued his post-graduation (M. Tech) in Petroleum Engineering from IIT(ISM) Dhanbad and completed his graduation (B. Tech) in Petroleum Engineering from Dibrugarh University, Dibrugarh. His research area of interests includes Fractured Reservoir Simulation and Characterization, Flow in Porous Media, Optimized Filed Development Approaches, Enhanced Oil Recovery: Screening and Application, Matlab in Geoscience, Python for Oil and Gas. Presently, he is teaching basic and applied courses at undergraduate and post graduate. He also mentors students for their research projects. He is also an active professional member of oil and gas scientific societies like; SPE, SEG, ARMA, AAPG and EGU. Ph.D. from Indian Institute of Technology (IIT) Kharagpur. Reservoir Engineering, Production Enhancement and Optimization, Well Completion and Workover, Field Development Planning, Petroleum Engineering Practices Laboratory, and Reservoir Engineering Laboratory. His research area of interests includes: Computational techniques for fracture network characterization, Fluid flow in naturally fractured reservoirs, Optimized field development techniques using Petrel-RE, Fractals and Multifractals, Carbon Storage in Fractured reservoirs. Sahu, A. K. and Talukdar P., (2025), Optimizing Field Development with Petrel-14: A Case Study of the Penobscot Field in Nova Scotia, Canada, International Journal of Geoinformatics. (accepted) Talukdar, P., Sahu, A. K., Dey, K. K., Akhter, S., Hazarika, N., Talukdar, A. and Bora, N. P., (2024), A Critical Review on the Advancements in Exploration and Production of Shale Gas, International Journal of Experimental Research and Review. 42, 199-209, ISSN 2455-4855, https://doi.org/10.52756/ijerr.2024.v42.017 Sahu, A. K., and Roy, A., (2024), Predicting Fluid Flow in Reservoirs: analysis of Fracture Clustering in Outcrop Analogues, Petroleum Geoscience Journal. 30, 1- 9, petgeo2023-091, https://doi.org/10.1144/petgeo2023-091 Sahu, A. K., and Roy, A., (2023), Characterizing Fractured Reservoirs by Integrating Outcrop Analog Studies with Flow Simulations, Petroleum Geoscience Journal. 29,1- 11, petgeo2023 – 032 https://doi.org/10.1144/petgeo2023-032 Sahu, A. K., and Talukdar, P., (2022), Optimizing wellbore conditions with concurrent heat transfer to address paraffin deposition in HTHP reservoirs Eur. Chem. Bull. 11, ,2445-2452, 56, 117–128. https://doi.org/ 10.53555/ecb.v11:i11.17687 Sahu, A. K., and Roy, A., (2021), Evaluating Flow Responses in Fractal-Fracture Networks: Effect of Variable Apertures, Advances in Geoscience, 56, 117–128. https://doi.org/10.5194/adgeo-56-117-2021 Sahu, A.K. and Roy, A. (2020), Clustering, Connectivity and Flow Responses of Deterministic Fractal- Fracture Networks, Advances in Geoscience, 54, 149–156. https://doi.org/10.5194/adgeo-54-149-202 Sahu, A. K., Biswas, A. and Roy, A., (2025), Does Directional Changes in Fracture Frequency and Clustering Control Flow Patterns in Fractured Reservoirs? 59th US Rock Mechanics/Geomechanics Symposium held in Santa Fe, New Mexico, USA, 8-11 June 2025, ARMA 25–0783 (accepted). Sahu, A. K. and Roy, A., (2024), Analysis of Rotational Anisotropy in Fractured Reservoir Analogues by Correlation of Network Geometry and Flow Responses, India Energy Week - 2024, South Goa, 06 – 09 February, 2024. Sahu, A. K. and Roy, A., (2023), Analysis of Anisotropy in Fracture Network Geometry by Application of Optimized Waterflood Patterns in Fractured Reservoirs, International Conference on Petroleum Hydrogen & Decarbonization, IIT - Guwahati, Assam, India, 03 - 05 November, 2023. OP-79. Sahu, A. K. and Roy, A., (2021), Analyzing Anisotropy in Fracture Networks: A Flow Simulation Approach. DFNE 22–2358,3 rd International Discrete Fracture Network Engineering Conference, Santa Fe, New Mexico, USA, 29 June – 01 July, 2022. https://doi.org/10.56952/ARMA-DFNE-22-2358 Roy, A. and Sahu, A. K. and Singh, A., (2021), Anisotropy in Fracture Clustering and Its Effect on Flow. 3rd International Discrete Fracture Network Engineering Conference, Virtual, June 2021. ARMA-DFNE-21- 2358 Sahu, A. K. and Roy, A., (2021), Clustering, Connectivity and Flow in Naturally Fractured Reservoir Analogs.SPE-206009-MS, SPE Annual Technical Conference and Exhibition, Dubai, UAE, 21 - 23 Sept 2021. https://doi.org/10.2118/206009-MS Roy, A. and Sahu, A. K., (2021), Anisotropy in Fracture Networks: Scale-dependent Clustering and Flow Behavior. URTEC-2021-5339-MS, SPE/AAPG/SEG Unconventional Resources Technology Conference, Houston, Texas, USA, July 2021. https://doi.org/10.15530/urtec-2021-5339 Sahu, A. K. and Roy, A., (2021), Influence of Aperture Distribution on Flow in Fractal-Fracture Networks.EGU21-4050, EGU General Assembly 2021, online, 19–30 Apr 2021.https://doi.org/10.5194/egusphere-egu21-4050 Sahu, A. K. and Roy, A., (2020), Clustering and Connectivity of Fractal-Fracture Networks: Are they related? EGU 2020 – 2950, EGU General Assembly 2020, Austria, 4 – 8 May 2020. https://doi.org/10.5194/egusphere-egu2020-2950 Roy, A. and Sahu, A. K., (2019), Connectivity in Fracture Networks: Is Lacunarity a better indicator than Fractal Dimension? Abstract no: 2019AGUFMNG13C0759R, American Geophysical Union, Fall Meeting 2019, San Francisco, 9 – 13 December 2019. https://ui.adsabs.harvard.edu/abs/2019AGUFMNG13C0759R Sahu, A. K., (2019), Application of Concurrent Heat Transfer within the Wellbore for Passively Enhancing Oil Recovery by Reducing Deposition of Heavy Components of Crude. SPE-194610-MS, SPE Oil and Gas India Conference and Exhibition, Mumbai, India, 9-11 April 2019. https://doi.org/10.2118/194610-MS Kulkarni, S. D and Sahu, A. K., (2018), Evolving Rheology of Oil-based Drilling Muds/Fluids. Indian Oil Field Chemistry Conference, Ahmedabad, India, 27-28 September 2018. Sahu, A. K., (2015), Extracting Electricity from the Oil and Gas Well Blowout Disasters by Application of Supercritical Steam Generators. IISF - Waste20, India International Science Festival, IIT - Delhi, India, 4-8 December 2015.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ajay-sahu",
       "scholar": "https://scholar.google.com/citations?user=kqcaQX4AAAAJ&hl=en&oi=ao",
@@ -417,6 +436,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ajit-baburao-deore",
     "name": "Dr. Ajit Baburao Deore",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -437,6 +457,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akanksha-jaiswal",
     "name": "Dr. Akanksha Jaiswal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -457,6 +478,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akanksha-tandon",
     "name": "Dr. Akanksha Tandon",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -468,7 +490,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/akanksha-tandon.webp",
     "research": "",
-    "summary": "Ms. Akanksha Tandon is currently pursuing her Ph.D. in Computer Science and Engineering at the National Institute of Technology, Rourkela. Her research focuses on energy-efficient Virtual Machine (VM) placement and optimization in cloud computing environments.",
+    "summary": "Ms. Akanksha Tandon is currently pursuing her Ph.D. in Computer Science and Engineering at the National Institute of Technology, Rourkela. Her research focuses on energy-efficient Virtual Machine (VM) placement and optimization in cloud computing environments. She holds an M.Tech in Information System Security from NIT Jamshedpur and a B.Tech in Computer Science and Engineering from Punjabi University, Patiala. Her technical expertise includes CloudSim, iFogSim, Java, and data analytics. With a strong foundation in research and problem-solving, she contributes to advancing knowledge in cloud computing and IoT-based systems.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/akanksha-tandon"
     },
@@ -477,6 +499,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akashdeep-sharma",
     "name": "Mr. Akashdeep Sharma",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -488,7 +511,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/akashdeep-sharma.webp",
     "research": "Architecture, Spiritual Architecture, Concrete",
-    "summary": "Akashdeep Sharma is an Assistant Professor with over Eight years of academic and professional experience in the fields of architecture and interior design. He holds a Master of Architecture (M.Arch) in Construction Management and is currently pursuing a Ph.D. in Design and Architecture at Symbiosis International University (SIU). He is a Certified Architect registered with the Council of Architecture, New Delhi.",
+    "summary": "Akashdeep Sharma is an Assistant Professor with over Eight years of academic and professional experience in the fields of architecture and interior design. He holds a Master of Architecture (M.Arch) in Construction Management and is currently pursuing a Ph.D. in Design and Architecture at Symbiosis International University (SIU). He is a Certified Architect registered with the Council of Architecture, New Delhi. With extensive exposure to residential, commercial, and institutional projects, he brings strong practical insight into design education. His core competencies include a solid understanding of design principles, proficiency in AutoCAD, SketchUp, and other design tools, and effective verbal and written communication skills. Actively engaged with the industry, he facilitates student internships, collaborative projects, and placement opportunities, while demonstrating leadership in academic programs and design initiatives.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/akashdeep-sharma",
       "linkedin": "https://www.linkedin.com/in/akashdeep-sharma-34b34b64/"
@@ -498,6 +521,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akilbasha-a",
     "name": "Dr. Akilbasha A",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -522,6 +546,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akshat-bhargava",
     "name": "Mr. Akshat Bhargava",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -533,7 +558,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/akshat-bhargava.webp",
     "research": "",
-    "summary": "Akshat Bhargava is currently an Assistant Professor in the School of Business at Dr. Vishwanath Karad MIT World Peace University, Pune, India and a Doctoral Candidate at the Indian Institute of Management, Shillong, India. He holds a Bachelor of Engineering (B.E) in Information Technology (IT) degree from MJP Rohilkhand University, Bareilly and a Master of Human Resource Management (MHRM) degree from Indian Institute of Social Welfare & Business Management (IISWBM), University of Calcutta. His research interests cover talent management, leadership development in social enterprises, social stock exchanges, impact investment, performance of social enterprises, business analytics, organizational network analysis and public policy frameworks for nature positive economies. His dissertation work has been published in the journals of international repute. He has also presented papers in several International Conferences. In addition to his doctoral work, Akshat has worked for around 15 years in different private and public sector organizations.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/akshat-bhargava",
       "scholar": "https://scholar.google.com/citations?user=OUWTqegAAAAJ&hl=en"
@@ -543,6 +568,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akshay-bura",
     "name": "Dr. Akshay Bura",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -554,7 +580,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/akshay-bura.webp",
     "research": "1. Corrosion in reinforced concrete structures 2. Durability and service-life assessment of concrete 3. Sustainable and low-carbon concrete materials 4. Ultra-High-Performance Concrete (UHPC) 5. Microstructural and electrochemical characterization of cementitious materials",
-    "summary": "Dr. Akshay Ramesh Bura is an Assistant Professor in Civil Engineering with over 11 years of combined teaching and research experience at premier technical institutions in India. He earned his Ph.D. in Civil Engineering from Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat, where his doctoral research focused on carbonation-induced corrosion behaviour of reinforced concrete, with particular emphasis on CO₂ sequestration, durability assessment, and electrochemical characterization techniques. He completed his M.Tech. in Structural Engineering from the Indian Institute of Technology (IIT) Guwahati, where he investigated the influence of fly ash on the mechanical performance and chloride-induced corrosion of reinforced concrete. He holds a B.Tech. degree in Civil Engineering from Walchand College of Engineering, Sangli, Maharashtra.",
+    "summary": "Dr. Akshay Ramesh Bura is an Assistant Professor in Civil Engineering with over 11 years of combined teaching and research experience at premier technical institutions in India. He earned his Ph.D. in Civil Engineering from Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat, where his doctoral research focused on carbonation-induced corrosion behaviour of reinforced concrete, with particular emphasis on CO₂ sequestration, durability assessment, and electrochemical characterization techniques. He completed his M.Tech. in Structural Engineering from the Indian Institute of Technology (IIT) Guwahati, where he investigated the influence of fly ash on the mechanical performance and chloride-induced corrosion of reinforced concrete. He holds a B.Tech. degree in Civil Engineering from Walchand College of Engineering, Sangli, Maharashtra. His research experience includes postdoctoral work at the Indian Institute of Technology (IIT) Madras, contributing to advanced studies on low-carbon and durable cementitious materials. Dr. Bura has published extensively in reputed international journals, authored book chapters, and presented his research at leading national and international conferences. He is actively involved in sponsored and industry-oriented research proposals aligned with sustainable, resilient, and low-carbon infrastructure development. Dr. Bura has served as Assistant Professor at Visvesvaraya National Institute of Technology (VNIT), Nagpur, and Vishwakarma Institute of Information Technology (VIIT), Pune. In recognition of his research excellence in corrosion science and durability of concrete structures, he was awarded the prestigious NACE Foundation India Scholarship (2021) by the NACE International Foundation, Houston, USA, conferred on promising young researchers for impactful contributions in corrosion engineering and materials durability.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/akshay-bura",
       "scholar": "https://scholar.google.com/citations?user=gfglVRQAAAAJ&hl=en&oi=ao",
@@ -566,6 +592,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akshay-motilal-baheti",
     "name": "Dr. Akshay Motilal Baheti",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -577,7 +604,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/akshay-motilal-baheti.jpg",
     "research": "",
-    "summary": "Dr. Akshay M. Baheti is a Professor of Pharmacognosy at the School of Health Sciences and Technology, Dr. Vishwanath Karad MIT World Peace University, Pune, with over 25 years of experience in teaching, research, and administration in pharmaceutical education. He holds a B.Pharm from North Maharashtra University, M.Pharm in Pharmacognosy and Phytochemistry from Savitribai Phule Pune University, and a Ph.D. in Pharmaceutical Sciences from JNTU, Hyderabad, and is a Registered Patent Agent (IN/PA 5393). Dr. Baheti has served in key leadership roles as Head of the School of Pharmacy and Head, Department of Pharmacognosy. He has published over 30 peer-reviewed research papers, contributed to multiple book chapters, and has 14 patents filed/granted to his credit. He has guided several M.Pharm dissertations, successfully supervised one Ph.D. scholar to completion, and is currently supervising seven Ph.D. scholars in the areas of Pharmaceutical Sciences. Dr. Baheti has been recognized with several awards, including the MIT Foundation Day Award (2014) and the Best Innovative Teacher Award by Savitribai Phule Pune University (2017). He has also received a fellowship in Traditional Medicines and Integrative Health. Educational Qualifications M. Pharm, PhD",
+    "summary": "Dr. Akshay M. Baheti is a Professor of Pharmacognosy at the School of Health Sciences and Technology, Dr. Vishwanath Karad MIT World Peace University, Pune, with over 25 years of experience in teaching, research, and administration in pharmaceutical education. He holds a B.Pharm from North Maharashtra University, M.Pharm in Pharmacognosy and Phytochemistry from Savitribai Phule Pune University, and a Ph.D. in Pharmaceutical Sciences from JNTU, Hyderabad, and is a Registered Patent Agent (IN/PA 5393). Dr. Baheti has served in key leadership roles as Head of the School of Pharmacy and Head, Department of Pharmacognosy. He has published over 30 peer-reviewed research papers, contributed to multiple book chapters, and has 14 patents filed/granted to his credit. He has guided several M.Pharm dissertations, successfully supervised one Ph.D. scholar to completion, and is currently supervising seven Ph.D. scholars in the areas of Pharmaceutical Sciences. Dr. Baheti has been recognized with several awards, including the MIT Foundation Day Award (2014) and the Best Innovative Teacher Award by Savitribai Phule Pune University (2017). He has also received a fellowship in Traditional Medicines and Integrative Health. Standardization of traditional medicines. Extraction, Isolation and Separation of Chemical Constituents from herbal drugs. Development of nano formulation of herbal drugs for cancer treatment Preclinical studies Insilco studies Ram S, More-Adate P, Tagalpallewar AA, Pawar AT, Nagar S, Nimbalkar R, Kolte S, Nimbalkar RG, Srinivasan M, Gangurde A, Chandane AY, Tagalpallewar AA, Pawar AT, Gomase VG, Murudkar PH, Mote CS, Andrade F, Jenipher C, Gurav N, Nadaf S, Khan MS, Mahajan N, Bhagwat D, Kalaskar M, Chikhale R, Bhole R, Lalsare S, Nimbalkar RG, Pawar AT, Tagalpallewar AA, Hinge PH, Tambe MS, Murudkar PH, Sardeshmukh SP, Hardikar S, Prakash S, Nimbalkar RG, Pawar AT, Tambe MS, Shinde SR, Kulkarni VM, Srinivasan M, Gangurde A, Marne PA, Salvi DS, Tagalpallewar AA, Nagar S, Pawar AT, More-Adate P, Kale A, Pawar AT, Tagalpallewar AA, Badhe P, Gawai B, Tagalpallewar AA, Pawar AT, Srinivasan M, Bhavsar D, Ahiwale R, Chandane AY, Pawar AT, Tagalpallewar AA, Murudkar PH,",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/akshay-motilal-baheti",
       "scholar": "https://scholar.google.com/citations?user=WRypFuIAAAAJ&hl=en",
@@ -589,6 +616,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "akshita-sparshneel-chanchlani",
     "name": "Dr. Akshita Sparshneel Chanchlani",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -600,7 +628,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/akshita-sparshneel-chanchlani.webp",
     "research": "",
-    "summary": "Dr. Akshita Sparshneel Chanchlani has a Ph.D. in Computer Science and Engineering. She is involved in the education team and in the technical industry as an Associate Head technical trainer and assistant professor with over 14 years of teaching with industrial and technical corporate training experience. She is known as a good communicator with excellent presentation skills. Moreover, she can guide and develop technical training materials by translating complex concepts into systematic and understandable terms using creative training and teaching methods.",
+    "summary": "Dr. Akshita Sparshneel Chanchlani has a Ph.D. in Computer Science and Engineering. She is involved in the education team and in the technical industry as an Associate Head technical trainer and assistant professor with over 14 years of teaching with industrial and technical corporate training experience. She is known as a good communicator with excellent presentation skills. Moreover, she can guide and develop technical training materials by translating complex concepts into systematic and understandable terms using creative training and teaching methods. Dr. Akshita has a proven track record of preparing students to produce quality work across a variety of technical training like C and C++ programming, Core Java, Python Programming, Big Data Technologies, Machine Learning and Deep learning. Her research topic was in the domain of Machine Learning and Deep Learning and a healthcare application. Moreover, she has been working in the healthcare domain for five years using machine learning and deep learning technology. Dr. Akshita has two patents published in the healthcare domain in ML and DL and has a total of 15+ research paper publications in reputed journals. Her Areas of Domain are Healthcare, AI, Machine Learning, Deep Learning, Python, Data Science, and Big Data Technologies.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/akshita-sparshneel-chanchlani"
     },
@@ -609,6 +637,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "alamgir-sani",
     "name": "Dr. Alamgir Sani",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -620,7 +649,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/alamgir-sani.webp",
     "research": "Dr. Alamgir Sani is actively pursuing and publishing research in the domain of Consumer Buying Behaviour and Brand Preference drivers; Multi-Sided Technology Platform Business Models; Passenger Cars Buying Behaviour and Preference Drivers, Impact of emerging technologies, including Blockchain Technologies on business models and Supply Chains, Application of AI and Human Mimicking Technology (HMT) in Customer Engagement etc.",
-    "summary": "Dr. Alamgir Sani is a distinguished academician and professional with over 24 years of combined experience across academia and industry, marked by a rich blend of teaching, research, and corporate exposure. He holds a Ph.D. in Management (Marketing) from Patna University and an MBA in Marketing and Finance from Aligarh Muslim University, and has qualified the UGC- NET. Dr. Sani’s corporate tenure includes impactful roles such as Cargo Manager with the Airports Authority of India and customer operations with EXL Services and DHL, which provided him deep expertise in logistics, air cargo operations, and global supply chains.",
+    "summary": "Dr. Alamgir Sani is a distinguished academician and professional with over 24 years of combined experience across academia and industry, marked by a rich blend of teaching, research, and corporate exposure. He holds a Ph.D. in Management (Marketing) from Patna University and an MBA in Marketing and Finance from Aligarh Muslim University, and has qualified the UGC- NET. Dr. Sani’s corporate tenure includes impactful roles such as Cargo Manager with the Airports Authority of India and customer operations with EXL Services and DHL, which provided him deep expertise in logistics, air cargo operations, and global supply chains. Transitioning to academia, he has held prominent teaching and administrative positions at institutions such as MIT-WPU, PIBM Pune, Brainware University Kolkata, Jamia Millia Islamia New Delhi and Sharda University (Greater Noida), among others, where he actively contributed to curriculum development, NAAC accreditation, and student mentoring. He is a prolific researcher with numerous SCOPUS, ABDC, and UGC-CARE indexed publications, and has presented widely at national and international conferences. His areas of expertise include marketing, digital transformation, consumer behavior, and emerging technologies in business. Dr. Sani also holds design patents, is a lifetime member of professional bodies, and has played key roles in organizing international conferences, making him a well-rounded scholar- practitioner dedicated to academic excellence, industry engagement, and nation-building through education. He has published over 25 research papers in high impact journals and edited one book. He holds two patents and one copyrights, including one UK design patent on “Automated Inventory Management Device using RFID technology”.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/alamgir-sani",
       "linkedin": "https://www.linkedin.com/in/dr-alamgir-sani-318264135/",
@@ -631,6 +660,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "alka-surendra-barhatte",
     "name": "Dr. Alka Surendra Barhatte",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -651,6 +681,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "alok-kumar-yadav",
     "name": "Dr. Alok Kumar Yadav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -662,7 +693,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/alok-kumar-yadav.webp",
     "research": "",
-    "summary": "Dr. Alok Kumar Yadav is an Assistant Professor in the School of Business at MIT-WPU, Pune. He has completed Doctor of Philosophy (Ph.D.) in the area of Economics from the Indian Institute of Management Mumbai (IIM Mumbai), India. He completed his Master of Philosophy (M. Phil.) and master’s degree in the Economics Area. Fundamentally, he believes in a pedagogy where the knowledge cultivated at institutions has to be nurtured in real-world settings. Teaching provides him the opportunity to practice what he has researched, yet at the same time, it helps the students stay updated with the recent advancements in the field of Economics. Thus, it emerges as a win-win situation for all the institute's stakeholders. Importantly, Dr. Yadav would like to develop an innovative teaching approach which may promote progressive critical thinking and create inclusive learning experiences that align with the institution’s academic values. He has published various research papers in highly reputed journals.",
+    "summary": "Dr. Alok Kumar Yadav is an Assistant Professor in the School of Business at MIT-WPU, Pune. He has completed Doctor of Philosophy (Ph.D.) in the area of Economics from the Indian Institute of Management Mumbai (IIM Mumbai), India. He completed his Master of Philosophy (M. Phil.) and master’s degree in the Economics Area. Fundamentally, he believes in a pedagogy where the knowledge cultivated at institutions has to be nurtured in real-world settings. Teaching provides him the opportunity to practice what he has researched, yet at the same time, it helps the students stay updated with the recent advancements in the field of Economics. Thus, it emerges as a win-win situation for all the institute's stakeholders. Importantly, Dr. Yadav would like to develop an innovative teaching approach which may promote progressive critical thinking and create inclusive learning experiences that align with the institution’s academic values. He has published various research papers in highly reputed journals. He worked as a young professional (Y.P.) at the Agricultural Trade Policy, Promotion, and Logistics Development Division, Ministry of Agriculture & Farmers' Welfare, Government of India, Central Secretariat, New Delhi. His research interest lies in the International Economics, Macroeconomics, Global Competitiveness, Economics of Commodity Markets, Agri-Business Trade, and Trade Policies. He gained knowledge on India’s agricultural trade policies, the country's views on the Agreement on Agriculture (AOA), domestic support notifications to the WTO, and worked on WTO tariff-rate quota apportionment, competition policy, market access, rules, trade and development trade policy analysis as well analyze regional and international trade issues.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/alok-kumar-yadav",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55669373100",
@@ -673,6 +704,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ambrish-gaur",
     "name": "Mr. Ambrish Gaur",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -684,7 +716,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ambrish-gaur.webp",
     "research": "Illustration, textile and fashion design, art and craft",
-    "summary": "Ambrish Gaur is presently an assistant professor at MIT World Peace University, Pune, school of design. He accomplishes Govt. projects through DC Handicrafts, attending seminars as a guest speaker.",
+    "summary": "Ambrish Gaur is presently an assistant professor at MIT World Peace University, Pune, school of design. He accomplishes Govt. projects through DC Handicrafts, attending seminars as a guest speaker. As an academician, his area of interest is illustration, textile and fashion design, educational leadership, curriculum development, sustainable design, syllabus creation, conducting workshop, traditional textiles and crafts, student and artisan linkage, student and industry linkage, enabling educational workshop, entrepreneurial ability, design and product development, market research, print courses, elements and principal of design, fashion illustration, freehand design drawing, the process of design and documentation, surface design technique, figure drawing, Indian craft, and a several courses for B. Des, M. sc. and M. des. He actively participates in administrative work, new course launches, course design and review, constructing student assessments, and preparing examinations. He is versatile with capacity in the design process at all levels and skilled in digital techniques like Photoshop, Coral draw, InDesign, and NedGraphics. He advises and mentors students about their coursework and professional planning. Provide departmental leadership and coordination as needed. Additional responsibilities include academic and administrative work for the School and University, and graduate advising assignments. He has been an innovative teacher with expertise in curriculum design, and innovative teaching pedagogy with 16+ years of rich experience including 09 years of industrial experience and 6.5 years of teaching experience. As an interdisciplinary professional practice at Lovely Professional University, he successfully launched in house brand “UNIFASHION” including the brand’s logo design. The motto of the brand is to facilitate custom-made uniforms and accessories through design solutions for other departments. Unifashion was successfully launched in the year 2022. As a part of consultation projects, he has done 4 govt. research projects in the area of fashion, textiles, and crafts. Worked with Taiping carpets USA as sr. Designer based in Gurgaon and Brintons carpets Asia Pvt. Ltd. Pune, Maharashtra",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ambrish-gaur",
       "linkedin": "https://www.linkedin.com/in/ambrish-gaur-15b12729/"
@@ -694,6 +726,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ameya-anil-patil",
     "name": "Dr. Ameya Anil Patil",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -717,6 +750,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amir-shikalgar",
     "name": "Mr. Amir Shikalgar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -728,7 +762,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/amir-shikalgar.webp",
     "research": "",
-    "summary": "Mr. Amir Shikalgar is a Practitioner turned Academician. He is a successful professional with 30+ years of multi-faceted experience across industries like FMCG, Retail, IT, Training and Education in India and abroad.",
+    "summary": "Mr. Amir Shikalgar is a Practitioner turned Academician. He is a successful professional with 30+ years of multi-faceted experience across industries like FMCG, Retail, IT, Training and Education in India and abroad. Mr. Amir Shikalgar began his career as a Management Trainee with Britannia Industries Ltd., where he rose to the position of Sales Operations Manager. Subsequently, he joined Frito Lay India as Regional Sales Manager – West. Over the years, he has held key roles at companies such as Conagra Foods and NIS Sparta, taking on diverse responsibilities across functions. He also served as Head – Sales Capability Building at PepsiCo (Beverages). His international assignment was with Ajmal Perfumes, where he led operations across Kuwait, Qatar, Bahrain, and Malaysia. In leadership roles, he has worked as Vice President at VitalSmarts India and as National Head at Pragati Leadership. He has worked with the School of Retail Management at Symbiosis Skills and Professional University, Pune. Mr. Amir Shikalgar was also a visiting faculty at Symbiosis Institute of Business Management, Pune. He has trained and guided 2000+ students, UG as well as PG, till date in various Engineering and Management Institutes. He is currently working with the School of Business, MIT World Peace University, Kothrud, Pune Mr. Amir Shikalgar is a Certified Trainer in four international training programs- He has worked with prestigious clients across various industries. His client list includes Accenture, Caterpillar, Citibank, Deutsche Bank, Fidelity Investments, Hettich, Infosys, Ministry of MSME, Mitsubishi, PI Industries, TCS, Vivo, etc.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/amir-shikalgar"
     },
@@ -737,6 +771,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amit-kumar",
     "name": "Dr. Amit Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -757,6 +792,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amit-liladhar-nehete",
     "name": "Mr. Amit Liladhar Nehete",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -768,7 +804,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/amit-liladhar-nehete.jpg",
     "research": "Power system protection, electric vehicles, industrial automation, and energy management",
-    "summary": "Amit L. Nehete received a B.E. degree in Electrical Engineering from North Maharashtra University, Jalgaon, India and M.Tech. Degree in Electrical Power Systems from Bharti Vidyapeeth (Deemed to be University), College of Engineering, Pune, India. He is currently pursuing PhD degree in Engineering from Bharti Vidyapeeth (Deemed to be University), Pune, India with a focus on developing innovative protection schemes for power systems using non-contact electromagnetic current sensing.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/amit-liladhar-nehete",
       "linkedin": "http://linkedin.com/in/amit-nehete-06402aa9",
@@ -781,6 +817,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amit-mishra",
     "name": "Dr. Amit Mishra",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -792,7 +829,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/amit-mishra.webp",
     "research": "Computer Science, Software Engineering, AI, ML",
-    "summary": "Dr. Amit, an accomplished academician with over 20 years of experience in India and overseas, has a proven track record in university settings. Proficient in Department Administration, Computer Science, Software Engineering, Databases, Management, Networking and Organizational Development he holds a PhD degree. Currently, he is associated with Dr. Vishwanath Karad MIT-WPU in Pune, India, following over 17 years of academic service abroad.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/amit-mishra",
       "scopus": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85209151143&origin=resultslist",
@@ -805,6 +842,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amit-vishnu-jomde",
     "name": "Dr. Amit Vishnu Jomde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -816,7 +854,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/amit-vishnu-jomde.webp",
     "research": "Thermal Engineering, Refrigeration & AC, Fuel Cell",
-    "summary": "Dr. Amit V. Jomde is an accomplished Assistant Professor of Mechanical Engineering at Dr. V. D. Karad MIT World Peace University in Pune. He holds a Ph.D. in Mechanical Engineering from the prestigious Sathyabama Institute of Science & Technology, which he completed in 2019. With 13 years of extensive experience in teaching, research, and administration, he has an impressive portfolio of achievements.",
+    "summary": "Dr. Amit V. Jomde is an accomplished Assistant Professor of Mechanical Engineering at Dr. V. D. Karad MIT World Peace University in Pune. He holds a Ph.D. in Mechanical Engineering from the prestigious Sathyabama Institute of Science & Technology, which he completed in 2019. With 13 years of extensive experience in teaching, research, and administration, he has an impressive portfolio of achievements. Dr. Jomde is a prolific author with 17 publications in International Journals (SCI, Scopus Indexed) and conferences. He is also a highly respected member of the Reviewer committee for 6+ International Journals (SCI, Scopus Indexed), including the International Journal of Refrigeration Elsevier and Applied Thermal Engineering Elsevier. He holds three Patent Grants registered in Mechanical Engineering. Dr. Jomde has chaired sessions at numerous International and National Conferences and has received a grant of Rs. 1.4 Lakh from Pune University for his 'Experimental Analysis of Linear Compressor for Refrigeration Applications' project. He has also worked on several high-impact research projects, including the 'Design, Development and Testing of Linear Compressor for Refrigeration Applications to improve system performance and part-load efficiency of Household Refrigerators' funded (22.56 Lakh) by DST, Govt. of India during 2013-16 and the 'Valve-less linear compressor driven Stirling cycle Cryocooler for space applications' funded (22.1 Lakh) by ISRO-UoP cell under the supervision of Dr. Virendra K. Bhojwani. Dr. Jomde has received many honors and accolades throughout his career, including the 'Dr. APJ Abdul Kalam MIT-WPU Research and Innovation Promising Prize 2019,' chosen by the MITWPU Institution's Innovation Council (MHRD Initiative). He is also a professional member of various societies, including Life Member of ISTE, IET, and SAE, and has worked as a Member of BoS, School of Mechanical Engineering, Faculty of Engineering at MIT World Peace University.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/amit-vishnu-jomde"
     },
@@ -825,6 +863,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amol-ambadas-tagalpallewar",
     "name": "Dr. Amol Ambadas Tagalpallewar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -836,7 +875,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/amol-ambadas-tagalpallewar.webp",
     "research": "",
-    "summary": "Dr. Amol Tagalpallewar completed his graduation and post-graduation from Sudhakarrao Naik Institute of Pharmacy Pusad in June 2003 and May 2005. He Obtained Ph.D. on topic “Formulation and Evaluation of Novel Ophthalmic Drug Delivery Systems” from NMIMS University Mumbai in 2009. He has more than 17 years of teaching and 01 year of industrial experience. Presently he is working as Associate Professor and in-charge mentor mentee at School of Health Sciences and Technology, Dr. Vishwanth Karad MIT World Peace University, Pune, Maharashtra 411038",
+    "summary": "Dr. Amol Tagalpallewar completed his graduation and post-graduation from Sudhakarrao Naik Institute of Pharmacy Pusad in June 2003 and May 2005. He Obtained Ph.D. on topic “Formulation and Evaluation of Novel Ophthalmic Drug Delivery Systems” from NMIMS University Mumbai in 2009. He has more than 17 years of teaching and 01 year of industrial experience. Presently he is working as Associate Professor and in-charge mentor mentee at School of Health Sciences and Technology, Dr. Vishwanth Karad MIT World Peace University, Pune, Maharashtra 411038 He has completed 05 research project sanction by ICMR, AICTE, BCUD and has the privilege of completing 08 Industry Project. He has published 45 research articles in peer reviewed National and International Journal. He has 05 product patents granted in his credits, 02 design patent and 01 Utility Patent. He presented 25 research projects at many National and International Conferences. He has received 15 Best Poster Awards in National and International Conference.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/amol-ambadas-tagalpallewar",
       "scholar": "https://scholar.google.com/citations?user=MJflBUEAAAAJ&hl=en&oi=ao",
@@ -848,6 +887,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amol-prakash-narke",
     "name": "Mr. Amol Prakash Narke",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -868,6 +908,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amruta-pradeep-dixit",
     "name": "Ms. Amruta Pradeep Dixit",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -879,7 +920,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/amruta-pradeep-dixit.webp",
     "research": "",
-    "summary": "Ms. Amruta Dixit brings over 16 years of rich experience in teaching and academic mentoring in the field of finance and accounting. She has taught diverse subjects including Financial Management, Cost & Management Accounting, Financial Accounting, and Business Simulation.",
+    "summary": "Ms. Amruta Dixit brings over 16 years of rich experience in teaching and academic mentoring in the field of finance and accounting. She has taught diverse subjects including Financial Management, Cost & Management Accounting, Financial Accounting, and Business Simulation. Currently pursuing her Ph.D. in Financial Management under SPPU, she is also a certified Business Simulation trainer from Marketplace Simulations (USA). Apart from her teaching responsibilities, Ms. Dixit contributes actively to curriculum restructuring, student mentoring, project guidance, academic audits, and SOP design. She has two patents to her credit. Ms. Dixit is committed to supporting students not just in academics but also in their holistic professional and personal development.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/amruta-pradeep-dixit"
     },
@@ -888,6 +929,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "amruta-sameer-naik",
     "name": "Dr. Amruta Sameer Naik",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -912,6 +954,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anagha-arun-mahajan",
     "name": "Mrs. Anagha Arun Mahajan",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/education",
     "departmentName": "Department of Education",
@@ -934,6 +977,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anagha-sudhir-karne",
     "name": "Dr. Anagha Sudhir Karne",
+    "preferredDisplayName": "Prof. Anagha Sudhir Karne",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -959,6 +1003,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anagha-yogesh-deshpande",
     "name": "Dr. Anagha Yogesh Deshpande",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -970,7 +1015,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anagha-yogesh-deshpande.jpg",
     "research": "Video Processing, Artificial Intelligence",
-    "summary": "Anagha Deshpande is an experienced Assistant Professor in the School of Electronics and Communication Engineering at an esteemed university. She completed her Bachelor's degree in Electronics Engineering from North Maharashtra University and went on to pursue a Master's degree in Digital Systems from Pune University. With 17 years of teaching experience and 1.5 years of industry experience, she has gained extensive knowledge and expertise in her field.",
+    "summary": "Anagha Deshpande is an experienced Assistant Professor in the School of Electronics and Communication Engineering at an esteemed university. She completed her Bachelor's degree in Electronics Engineering from North Maharashtra University and went on to pursue a Master's degree in Digital Systems from Pune University. With 17 years of teaching experience and 1.5 years of industry experience, she has gained extensive knowledge and expertise in her field. Her contributions to research have also been recognized, as she has been awarded research funding by BCUD, Pune, and twice by IEEE SPS and AICTE. She has utilized these grants to organize summer schools, winter schools, and events, allowing her to share her expertise with students and peers in the field. Overall, Anagha Deshpande's impressive background and experience make her a valuable member of the School of Electronics and Communication Engineering, and her dedication to research and teaching have made her a respected figure in the academic community.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anagha-yogesh-deshpande"
     },
@@ -979,6 +1024,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anand-dhananjay-kulkarni",
     "name": "Dr. Anand Dhananjay Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Program Coordinator (Chemical) & Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -1001,6 +1047,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anant-srivastava",
     "name": "Mr. Anant Srivastava",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -1014,7 +1061,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anant-srivastava.webp",
     "research": "",
-    "summary": "Anant Srivastava is committed to creating a student-centric learning environment that encourages independent thinking, self-confidence, curiosity, and lifelong learning. His teaching philosophy focuses on helping students build strong fundamentals while nurturing their distinct identities and individual potential.",
+    "summary": "Anant Srivastava is committed to creating a student-centric learning environment that encourages independent thinking, self-confidence, curiosity, and lifelong learning. His teaching philosophy focuses on helping students build strong fundamentals while nurturing their distinct identities and individual potential. He encourages learners to ask questions freely, explore multiple perspectives, and connect theoretical concepts with real-world applications. Through his approach, he aims to inspire students to become self-reliant learners, ethical professionals, and confident individuals capable of contributing meaningfully to society. Anant Srivastava firmly believes in the holistic development of students through the harmonious integration of science and spirituality.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anant-srivastava",
       "scholar": "https://scholar.google.com/citations?user=VmPeAzAAAAAJ&amp;hl=en",
@@ -1025,6 +1072,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anik-karan",
     "name": "Dr. Anik Karan",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -1048,6 +1096,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anil-satishrao-hiwale",
     "name": "Dr. Anil Satishrao Hiwale",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -1070,6 +1119,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anil-shivsharan-mashalkar",
     "name": "Dr. Anil Shivsharan Mashalkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -1080,8 +1130,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/anil-shivsharan-mashalkar.webp",
-    "research": "",
-    "summary": "With 15 years of experience in industrial product design and development, Prof. Anil Mashalkar is a renowned expert in his field. He specializes in design analysis using analytical techniques and finite element analysis (FEA), as well as design validation through experimental trials. Prof. Mashalkar is skilled at implementing design changes that conform to industry standards, and has a talent for creating intellectual property and innovation. His expertise and contributions have made him a respected figure in the industry. Research Area 1. CAD /CAM/CAE, Numerical Methods, Advance manufacturing, PLM, Design, FEA, Optimization of product, Micro Forming, and Manufacturing process. Publication 1. Micro-forming analysis of ultra-thin brass foil A Mashalkar, G Kakandikar, V Nandedkar Materials and Manufacturing Processes 34 (13), 1509-1515 2. A comprehensive review of agriculture irrigation using artificial intelligence for crop production MA Chougule, AS Mashalkar 3. Computational Intelligence in Manufacturing, 187-200 Effect of crystallographic texture on the forming limit in microforming of brass A Mashalkar, V Nandedkar Manufacturing Review 6, 27 4. A Review Thin-Wall-Tube Energy-Absorbing Structure: Crash-Box K Memane, A Mashalkar, P Kumar Journal of Physics: Conference Series 2426 (1), 012060 5. Grain Size Regulation During LDH Test A Mashalkar, S Mishra, V Nandedkar, R Bobade ICDSMLA 2019: Proceedings of the 1st International Conference on Data … 6. Crash Analysis of Automotive Chassis Structure Considering the Strain Hardening Effect AS Mashalkar, RP Parvekar AIP Conference Proceedings 1383 (1), 237-242 Google Scholar Link https://scholar.google.com/citations?user=4QfKKSkAAAAJ Scopus Link https://www.scopus.com/authid/detail.uri?authorId=50262434100 Orcid Link https://orcid.org/0000-0003-1272-8827",
+    "research": "1. CAD /CAM/CAE, Numerical Methods, Advance manufacturing, PLM, Design, FEA, Optimization of product, Micro Forming, and Manufacturing process. Publication 1. Micro-forming analysis of ultra-thin brass foil A Mashalkar, G Kakandikar, V Nandedkar Materials and Manufacturing Processes 34 (13), 1509-1515 2. A comprehensive review of agriculture irrigation using artificial intelligence for crop production MA Chougule, AS Mashalkar 3. Computational Intelligence in Manufacturing, 187-200 Effect of crystallographic texture on the forming limit in microforming of brass A Mashalkar, V Nandedkar Manufacturing Review 6, 27 4. A Review Thin-Wall-Tube Energy-Absorbing Structure: Crash-Box K Memane, A Mashalkar, P Kumar Journal of Physics: Conference Series 2426 (1), 012060 5. Grain Size Regulation During LDH Test A Mashalkar, S Mishra, V Nandedkar, R Bobade ICDSMLA 2019: Proceedings of the 1st International Conference on Data … 6. Crash Analysis of Automotive Chassis Structure Considering the Strain Hardening Effect AS Mashalkar, RP Parvekar AIP Conference Proceedings 1383 (1), 237-242 Google Scholar Link https://scholar.google.com/citations?user=4QfKKSkAAAAJ Scopus Link https://www.scopus.com/authid/detail.uri?authorId=50262434100 Orcid Link https://orcid.org/0000-0003-1272-8827",
+    "summary": "With 15 years of experience in industrial product design and development, Prof. Anil Mashalkar is a renowned expert in his field. He specializes in design analysis using analytical techniques and finite element analysis (FEA), as well as design validation through experimental trials. Prof. Mashalkar is skilled at implementing design changes that conform to industry standards, and has a talent for creating intellectual property and innovation. His expertise and contributions have made him a respected figure in the industry.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anil-shivsharan-mashalkar",
       "scholar": "https://scholar.google.com/citations?user=4QfKKSkAAAAJ",
@@ -1093,6 +1143,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anil-tukaram-pawar",
     "name": "Dr. Anil Tukaram Pawar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -1116,6 +1167,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aniruddh-gupta",
     "name": "CMA Aniruddh Gupta",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -1127,7 +1179,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aniruddh-gupta.webp",
     "research": "",
-    "summary": "Aniruddha Gupta is a highly qualified professional with a diverse academic background, holding degrees and certifications including B.Com., F.C.M.A. (All India CMA Merit Holder), M.B.A. (Finance), LL.M., M.A. (Psychology), PGDFM, LL.B., C.S. Executive, and DIM, and is currently pursuing a Ph.D. in Law.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aniruddh-gupta"
     },
@@ -1136,6 +1188,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anita-kumari",
     "name": "Dr. Anita Kumari",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -1157,6 +1210,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anita-mahesh-thengade",
     "name": "Mrs. Anita Mahesh Thengade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -1168,7 +1222,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anita-mahesh-thengade.jpg",
     "research": "",
-    "summary": "Dr. Anita Thengade is an Assistant Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, India. With over 24 years of teaching experience, She earned her Ph.D. in Computer Engineering from Swami Ramanand Teerth Marathwada University, Nanded.",
+    "summary": "Dr. Anita Thengade is an Assistant Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, India. With over 24 years of teaching experience, She earned her Ph.D. in Computer Engineering from Swami Ramanand Teerth Marathwada University, Nanded. Her research interests include Machine Learning, Medical Image Processing, and Augmented Reality and Virtual Reality. She has published more than 30 research papers in reputed international journals and conferences and holds two granted patents. She was also selected through the Maharashtra Public Service Commission (MPSC) for the position of Assistant Professor early in her career.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anita-mahesh-thengade",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57208574640",
@@ -1181,6 +1235,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anjali-ajit-sane",
     "name": "Dr. Anjali Ajit Sane",
+    "preferredDisplayName": "",
     "designation": "Professor & Dean",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -1192,7 +1247,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anjali-ajit-sane.webp",
     "research": "Financial Literacy, Banking",
-    "summary": "An accomplished teacher with over 20 years of experience in the areas of Economics and Banking, Dr. Anjali Sane is also a capable administrator. In addition to academic administration, her research areas include Managerial Economics, Micro and Macro Economics and various areas in international business. A dedicated and sincere teacher, she is known for use of practical examples and case studies to supplement classroom learning.",
+    "summary": "An accomplished teacher with over 20 years of experience in the areas of Economics and Banking, Dr. Anjali Sane is also a capable administrator. In addition to academic administration, her research areas include Managerial Economics, Micro and Macro Economics and various areas in international business. A dedicated and sincere teacher, she is known for use of practical examples and case studies to supplement classroom learning. Apart from pursuing research in her domain areas, she is also involved in interdisciplinary areas of research such as higher education, financial literacy and so on. She has completed Minor Research Project in the area of Financial Literacy with grant from Board of College and University Development (BCUD), Savitribai Phule Pune University. Dr. Anjali Sane prefers to use a combination of quantitative and qualitative research tools while using exploratory research methodology. She has published more than 20 research papers in peer reviewed management journals of repute as well as in conference proceedings of national and international seminars and conferences. She has co-authored 3 books on Business Economics (Micro), 1 book each on Analysis of Financial Statements and Business Economics (Macro). Dr. Anjali Sane has been awarded with the “Ideal Teacher Award” by MAEER’s MIT Group of Institutions and also as the “Super Achiever in the field of Education” from Kaveri Group of Institutions, Pune. She was also recognized as Research fellow at Centre for International Trade and Business in Asia (CITBA) at James Cook University, Australia. She has also received the “Best Paper” award for during the International Conference on Innovation in Business, Trade and Commerce in March 2022 and March 2023. She is recognized as the Member of Academic Council at H. L. College of Commerce, Ahmedabad, and as Member of Faculty of Commerce and Management at the DY Patil University, Pune.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anjali-ajit-sane"
     },
@@ -1201,6 +1256,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anjali-milind-purohit",
     "name": "Dr. Anjali Milind Purohit",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -1224,6 +1280,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anjali-rajesh-askhedkar",
     "name": "Dr. Anjali Rajesh Askhedkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -1234,8 +1291,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/electronics-and-electrical-engineering": "Department of Electrical and Electronics Engineering"
     },
     "photoPath": "./assets/campus/anjali-rajesh-askhedkar.jpg",
-    "research": "",
-    "summary": "Prof. Anjali Askhedkar is an Assistant Professor in Electronics and Telecommunication Engineering at MIT World Peace University (MITWPU), Pune since 2004. She holds a master's degree in Microwave Engineering from College of Engineering, Pune and is currently pursuing her Ph.D. in Electronics and Communication Engineering from MIT-WPU Research Centre, Pune. She has been actively involved in research projects with organizations like Aashay Measurements Pvt. Ltd. and The Pranic Healing Centre, Pune. She has attended international workshops on LoRa technology and is a member of IETE and ISTE. She has also handled major administrative responsibilities at MITWPU. Research Area Wireless communication, LPWAN, IoT Publication An innovative wireless design for a car infotainment system S Gupte, AR Askhedkar 2018 Second International Conference on Intelligent Computing and Control … Design and Finite Element Analysis of IoT based Smart Helmet NV Joshi, SP Joshi, MS Jojare, NS Joshi, AR Askhedkar 2020 IEEE International IOT, Electronics and Mechatronics Conference … TV white spaces for low-power wide-area networks A Askhedkar, B Chaudhari, M Zennaro, E Pietrosemoli LPWAN Technologies for IoT and M2M Applications, 167-179 Design of a Microstrip Patch Antenna as a Moisture Sensor PP Gundewar, VU Patel, TS Chaware, AR Askhedkar, RS Raje, ... 2019 IEEE Pune Section International Conference (PuneCon), 1-5 IoT based Smart Vest and Helmet for Defence Sector NV Joshi, SP Joshi, MS Jojare, AR Askhedkar 2021 International Conference on Communication information and Computing … LiFi and Voice Based Indoor Navigation System for Visually Impaired People MR Botre, AR Askhedkar 2019 IEEE Pune Section International Conference (PuneCon), 1-4 Hardware and software platforms for low-power wide-area networks A Askhedkar, B Chaudhari, M Zennaro LPWAN Technologies for IoT and M2M Applications, 397-407 Google Scholar Link https://scholar.google.com/citations?user=00-S49wAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57217204067 Orcid Link https://orcid.org/0000-0002-6781-4098",
+    "research": "Wireless communication, LPWAN, IoT Publication An innovative wireless design for a car infotainment system S Gupte, AR Askhedkar 2018 Second International Conference on Intelligent Computing and Control … Design and Finite Element Analysis of IoT based Smart Helmet NV Joshi, SP Joshi, MS Jojare, NS Joshi, AR Askhedkar 2020 IEEE International IOT, Electronics and Mechatronics Conference … TV white spaces for low-power wide-area networks A Askhedkar, B Chaudhari, M Zennaro, E Pietrosemoli LPWAN Technologies for IoT and M2M Applications, 167-179 Design of a Microstrip Patch Antenna as a Moisture Sensor PP Gundewar, VU Patel, TS Chaware, AR Askhedkar, RS Raje, ... 2019 IEEE Pune Section International Conference (PuneCon), 1-5 IoT based Smart Vest and Helmet for Defence Sector NV Joshi, SP Joshi, MS Jojare, AR Askhedkar 2021 International Conference on Communication information and Computing … LiFi and Voice Based Indoor Navigation System for Visually Impaired People MR Botre, AR Askhedkar 2019 IEEE Pune Section International Conference (PuneCon), 1-4 Hardware and software platforms for low-power wide-area networks A Askhedkar, B Chaudhari, M Zennaro LPWAN Technologies for IoT and M2M Applications, 397-407 Google Scholar Link https://scholar.google.com/citations?user=00-S49wAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57217204067 Orcid Link https://orcid.org/0000-0002-6781-4098",
+    "summary": "Prof. Anjali Askhedkar is an Assistant Professor in Electronics and Telecommunication Engineering at MIT World Peace University (MITWPU), Pune since 2004. She holds a master's degree in Microwave Engineering from College of Engineering, Pune and is currently pursuing her Ph.D. in Electronics and Communication Engineering from MIT-WPU Research Centre, Pune. She has been actively involved in research projects with organizations like Aashay Measurements Pvt. Ltd. and The Pranic Healing Centre, Pune. She has attended international workshops on LoRa technology and is a member of IETE and ISTE. She has also handled major administrative responsibilities at MITWPU.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anjali-rajesh-askhedkar",
       "scholar": "https://scholar.google.com/citations?user=00-S49wAAAAJ&hl=en",
@@ -1246,6 +1303,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anjoo-sharan-upadhyaya",
     "name": "Dr. Anjoo Sharan Upadhyaya",
+    "preferredDisplayName": "",
     "designation": "Distinguish Professor & Senior Advisor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -1257,7 +1315,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anjoo-sharan-upadhyaya.webp",
     "research": "",
-    "summary": "Dr. Anjoo Sharan Upadhyaya is a distinguished Political Scientist from Banaras Hindu University (BHU), where she served over four decades in pivotal roles including Senior Professor and Chair of Political Science, Dean of Social Sciences, Director of the Centre for Nepal Studies, Director of the Centre for Integrated Rural Development, and Adjunct Professor at the Malaviya Centre for Peace Research. Her academic journey includes a PhD from BHU (1981), MA from Allahabad University (1974), post-doctoral research at the London School of Economics, Woodrow Wilson International Centre for Scholars, Brown University, and an Advanced International Diploma in Conflict Resolution from Uppsala University. She has held prestigious positions such as Research Director at the UN University Institute on Conflict Resolution and Ethnicity (UK), Scholar-in-Residence at Woodrow Wilson Centre (USA), foundational ICCR Chair at Tribhuvan University (Nepal), India Chair by ICSSR New Delhi, and visiting professorships at institutions like Wellesley College, Concordia University, Stanford University, PRIO Oslo, and universities across Sweden, Germany, Australia, Canada, and Poland.",
+    "summary": "Dr. Anjoo Sharan Upadhyaya is a distinguished Political Scientist from Banaras Hindu University (BHU), where she served over four decades in pivotal roles including Senior Professor and Chair of Political Science, Dean of Social Sciences, Director of the Centre for Nepal Studies, Director of the Centre for Integrated Rural Development, and Adjunct Professor at the Malaviya Centre for Peace Research. Her academic journey includes a PhD from BHU (1981), MA from Allahabad University (1974), post-doctoral research at the London School of Economics, Woodrow Wilson International Centre for Scholars, Brown University, and an Advanced International Diploma in Conflict Resolution from Uppsala University. She has held prestigious positions such as Research Director at the UN University Institute on Conflict Resolution and Ethnicity (UK), Scholar-in-Residence at Woodrow Wilson Centre (USA), foundational ICCR Chair at Tribhuvan University (Nepal), India Chair by ICSSR New Delhi, and visiting professorships at institutions like Wellesley College, Concordia University, Stanford University, PRIO Oslo, and universities across Sweden, Germany, Australia, Canada, and Poland. Dr. Upadhyaya, a prolific scholar, has authored groundbreaking publications with leading presses such as Manchester University Press, Cambridge University Press, Routledge, and Macmillan. Her work spans critical themes including ethnic conflicts, peace studies, election reforms in India, women and peace, food security, governance, and digital technologies. She has led funded research projects supported by the German Foundation for Peace Research, Norwegian Ministry of Foreign Affairs, and Research Council of Norway, focusing on peaceful coexistence, peacebuilding, diversity, human security, and women's roles in peace. Currently, she serves as Distinguished Professor of Public Policy at MIT World Peace University (MIT-WPU), a UNESCO Chair institution, and as a Global Fellow at the Peace Research Institute Oslo (PRIO). She continues to shape global discourse through lectures, policy briefs, edited volumes, and events such as the PRIO-MITWPU workshop on digital designs.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anjoo-sharan-upadhyaya"
     },
@@ -1266,6 +1324,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ankita-agarwal",
     "name": "Dr. Ankita Agarwal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -1289,6 +1348,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ankita-kotalwar",
     "name": "Prof. Ankita Kotalwar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -1312,6 +1372,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anshul-gupta",
     "name": "Mr. Anshul Gupta",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -1323,7 +1384,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anshul-gupta.webp",
     "research": "",
-    "summary": "Mr. Anshul Gupta is a designer with a strong understanding of human behaviour and user- centric design principles. His approach focuses on creating solutions that not only meet functional requirements but also establish meaningful emotional connections with users.",
+    "summary": "Mr. Anshul Gupta is a designer with a strong understanding of human behaviour and user- centric design principles. His approach focuses on creating solutions that not only meet functional requirements but also establish meaningful emotional connections with users. He integrates experience design and gamification to develop innovative, practical, and engaging products. His work aims to address contemporary challenges while ensuring accessibility, inclusivity, and personalization. By blending usability with thoughtful interaction design, he strives to make every day experiences intuitive, impactful, and rewarding.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anshul-gupta",
       "orcid": "https://orcid.org/0000-0001-5257-5197",
@@ -1334,6 +1395,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anu-nair",
     "name": "Dr. Anu Nair",
+    "preferredDisplayName": "",
     "designation": "Programme Director & Assistant Professor",
     "department": "liberal-arts-humanities/media-and-communication",
     "departmentName": "Department of Media and Communication",
@@ -1345,7 +1407,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anu-nair.webp",
     "research": "",
-    "summary": "Dr. Anu Nair is a dedicated academician with over 13 years of experience in media and communication education, academic administration, and curriculum development. She joined as an Assistant Professor and is currently serving as Program Director at the Department of Media and Communication at MIT World Peace University, Pune. Her areas of specialization include Advertising, Branding, Consumer Psychology, Consumer Behaviour, Media Psychology and Strategic Communication.",
+    "summary": "Dr. Anu Nair is a dedicated academician with over 13 years of experience in media and communication education, academic administration, and curriculum development. She joined as an Assistant Professor and is currently serving as Program Director at the Department of Media and Communication at MIT World Peace University, Pune. Her areas of specialization include Advertising, Branding, Consumer Psychology, Consumer Behaviour, Media Psychology and Strategic Communication. She has held several key academic and administrative responsibilities, including academic planning and coordination, internship and placement coordination, curriculum development, and industry engagement initiatives. She has played an instrumental role in strengthening experiential learning opportunities, fostering collaborations with media organizations, and facilitating industry-academia partnerships to enhance student employability. Her academic interests focus on the integration of Artificial Intelligence into media education and innovative teaching-learning practices. She has presented and published research in the areas of media, communication, advertising,psychology and neuro marketing . Through her teaching, research, and institutional service, Dr. Nair remains committed to preparing future media professionals with the knowledge, ethical values, and technological competencies required to thrive in the rapidly evolving media landscape.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anu-nair",
       "scholar": "https://scholar.google.com/citations?user=oboszhMAAAAJ&hl=en",
@@ -1356,6 +1418,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anu-singha",
     "name": "Dr. Anu Singha",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -1367,7 +1430,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anu-singha.webp",
     "research": "",
-    "summary": "Dr. Anu Singha is a seasoned academician and researcher, currently working as an Assistant Professor in the School of Computer Science & Engineering at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune. Prior to this, he served as a faculty member at SRM Institute of Science and Technology, Delhi-NCR Campus, and Sri Ramachandra Institute of Higher Education and Research, Chennai.",
+    "summary": "Dr. Anu Singha is a seasoned academician and researcher, currently working as an Assistant Professor in the School of Computer Science & Engineering at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune. Prior to this, he served as a faculty member at SRM Institute of Science and Technology, Delhi-NCR Campus, and Sri Ramachandra Institute of Higher Education and Research, Chennai. He obtained his Ph.D. in Computer Science and Engineering from Tripura Central University in 2021, following his M.Tech. completion in 2015. His educational background also includes an MCA from South Asian University, New Delhi. He initiated his research career as a Junior/Senior Research Fellow (JRF/SRF) under a DRDO-sponsored project at the Computer Vision Laboratory, Tripura University. Dr. Singha’s research expertise lies in artificial intelligence, with a strong focus on machine learning and deep learning techniques, particularly convolutional neural networks (CNNs). His work includes object detection in adverse weather conditions and several impactful healthcare applications, such as histopathology-based breast cancer detection, MRI-based brain tumor classification, knee joint inflammation detection, and fetus detection using medical imaging. His broader research interests cover computer vision, image and medical image processing, human–computer interaction, and text analytics. He has an extensive publication record in reputed SCI Indexed journals/IEEE Transactions and top Tier conferences, along with multiple granted and published patents. He has actively contributed as a reviewer, chaired technical sessions at conferences, and delivered expert lectures in faculty development programs (FDPs) and workshops. Additionally, he has successfully completed several FDPs and Short-Term Courses (STCs) with distinction.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anu-singha",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57073048700&eid=2-s2.0-84955312959",
@@ -1380,6 +1443,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anugamini-p-srivastava",
     "name": "Dr. Anugamini P. Srivastava",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -1391,7 +1455,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anugamini-p-srivastava.webp",
     "research": "",
-    "summary": "Dr. Anugamini P. Srivastava is an accomplished academic, researcher, and management educator with over a decade of experience in teaching, research, and doctoral supervision. She currently serves as Associate Professor at Dr. Vishwanath Karad's MIT World Peace University (MIT-WPU), Pune, India, and is also associated with INTI International University, Nilai, Malaysia, as a Research Fellow, contributing to international research collaborations and interdisciplinary scholarship.",
+    "summary": "Dr. Anugamini P. Srivastava is an accomplished academic, researcher, and management educator with over a decade of experience in teaching, research, and doctoral supervision. She currently serves as Associate Professor at Dr. Vishwanath Karad's MIT World Peace University (MIT-WPU), Pune, India, and is also associated with INTI International University, Nilai, Malaysia, as a Research Fellow, contributing to international research collaborations and interdisciplinary scholarship. She earned her Ph.D. from the Indian Institute of Technology (IIT) Roorkee, India, as a UGC-NET Junior Research Fellow and completed her higher education at the University of Allahabad (Prayagraj), India. She has further strengthened her academic expertise through professional learning and certifications from globally renowned institutions, including Rice University, USA, and Johns Hopkins University, USA. Dr. Srivastava has published extensively in leading international journals indexed in Scopus, Web of Science, and ABDC, including the Journal of Cleaner Production, Business Ethics, the Environment & Responsibility, Journal of Global Information Management, Tourism Management Perspectives, and the International Journal of Productivity and Performance Management. Her research spans leadership, human resource management, sustainability, digital transformation, entrepreneurship, analytics, and higher education. Her recent work, published in the Australasian Journal of Engineering Education (Q1), focuses on marine engineering students, competency development, learning outcomes, and engineering education. An active contributor to the global academic community, Dr. Srivastava serves on the editorial boards and reviewer panels of more than 30 international journals published by Elsevier, Emerald, Springer Nature, Wiley, Taylor & Francis, and IGI Global. She has also served as a Guest Editor for several reputed international journals. Her scholarly excellence has been recognized through multiple Best Paper Awards at prestigious conferences, including those hosted by IIM Ahmedabad, O.P. Jindal Global University, and other leading institutions. Through her research, mentorship, and international collaborations, Dr. Srivastava continues to advance knowledge and contribute significantly to global management and higher education scholarship.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anugamini-p-srivastava"
     },
@@ -1400,6 +1464,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anuja-amlesh-askhedkar",
     "name": "Dr. Anuja Amlesh Askhedkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -1411,7 +1476,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anuja-amlesh-askhedkar.webp",
     "research": "",
-    "summary": "Dr. Anuja Askhekdar is an associate professor at MIT-WPU. She has 23 years of teaching experience. She completed her B. E from Shivaji University in the year 1997 and her Masters from Pune University in the year 2003. She completed her Ph. D from PIET, Nagpur University in the year 2019. Her research interest includes VLSI Design, Digital CMOS Design, and Analog CMOS Design. She has published 15 research papers. She has received one patent grant for her research work.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anuja-amlesh-askhedkar",
       "scholar": "https://scholar.google.com/citations?user=WNYHCawAAAAJ&hl=en&oi=ao",
@@ -1422,6 +1487,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anuja-dilip-dhulekar",
     "name": "Ms. Anuja Dilip Dhulekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -1433,7 +1499,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anuja-dilip-dhulekar.webp",
     "research": "Indian Handicrafts, Pottery, Ergonomics",
-    "summary": "Ms. Anuja Dhulekar is an experienced design professional and academic with over 14 years of combined experience across industry and academia. She is a graduate of Sir J. J. School of Art, Mumbai, and holds a postgraduate degree in Industrial Design (Ceramics and Glass Design) from the National Institute of Design (NID), Ahmedabad.",
+    "summary": "Ms. Anuja Dhulekar is an experienced design professional and academic with over 14 years of combined experience across industry and academia. She is a graduate of Sir J. J. School of Art, Mumbai, and holds a postgraduate degree in Industrial Design (Ceramics and Glass Design) from the National Institute of Design (NID), Ahmedabad. Her professional journey includes extensive work in product development, particularly in the fields of ceramics and lifestyle accessories. She has also successfully led projects under the Ministry of Micro, Small & Medium Enterprises (MSME), contributing to innovation and entrepreneurship in the design and craft sectors. Ms. Dhulekar has been associated with leading design institutes as both a full-time and visiting faculty member. Her academic interests include Systems Thinking, Design Thinking, Form Development, Pottery and Ceramics manufacturing, and in the handicraft sector. Currently, she is serving as an Assistant Professor at MIT World Peace University and is pursuing her Ph.D. from the Indian Institute of Technology (IIT) Guwahati.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anuja-dilip-dhulekar",
       "linkedin": "https://www.linkedin.com/in/anuja-dhulekar-67781316/"
@@ -1443,6 +1509,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anup-atul-kale",
     "name": "Prof. Dr. Anup Atul Kale",
+    "preferredDisplayName": "",
     "designation": "Professor & Dean",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -1461,6 +1528,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anuradha-chetan-phadke",
     "name": "Dr. Anuradha Chetan Phadke",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -1471,8 +1539,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/electronics-and-electrical-engineering": "Department of Electrical and Electronics Engineering"
     },
     "photoPath": "./assets/campus/anuradha-chetan-phadke.webp",
-    "research": "Image Processing, Machine Learning, Embedded System Design",
-    "summary": "Dr. Anuradha Chetan Phadke holds a Ph.D. degree in Computer Vision, and received BE and ME degrees in Electronics from Walchand College of Engineering, Sangli, India in 1993 and 1995 respectively. She is presently working as Associate Professor and Associate Head at the School of Electronics and Communication Engineering, Dr. Vishwanath Karad Maharashtra Institute of Technology World Peace University. She has authored two books, granted one patent, published and presented several papers in indexed Journals and conferences, and has contributed to the initiation, development, and up-gradation of elective subject Laboratories in VLSI Design, Embedded Systems, Image processing, and Machine Learning. Research Area Image Processing, Machine Learning, Embedded System Design Publication 1.Vrushali Pagire, Anuradha C. Phadke, “Underwater Fish Detection and Classification using Deep Learning”, International Conference on Intelligent Controller and Computing for Smart Power, 2022, July 21st -23rd, 2022 Hyderabad, India, DOI: 10.1109/ICICCSP53532.2022.9862410, 25 August 2022 2.Vaibhav Bahel, Tejas Khare, Anuradha C. Phadke, “PCB-Fire: Automated classification and fault detection in PCB”, IEEE Third International Conference on “Multimedia Processing, Communications and Information Technology” MPCIT-2020, hosted by J. N. N. College of Engg., Shivamogga, Karnataka on 11-12 Dec. 2020, 16 February 2021, DOI: 10.1109/MPCIT51588.2020.9350324 3. Subrata Kumar Das, Pranjal Joshi, Rohit Kokitkar, U V Murali Krishna, Anuradha C. Phadke, \"Detection of cloud boundaries from scanning Ka-band radar measurements using digital image processing technique\", IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, Vol. 14, pp 1848 – 1856, DOI: 10.1109/JSTARS.2020.3042868, 17 December 2020 4. Anuradha C Phadke, Priti P Rege, “Algorithms for Detection and Classification of Abnormality in Mammograms: An Overview”. In: Chittaranjan Pradhan, Himansu Das, Bighnaraj Naik and Nilanjan Dey (eds) Handbook of Research on Information Security in Biomedical Signal Processing, pp. 255-280, Apr 2018, IGI Global 5. Anuradha C Phadke, Priti P Rege, “Fusion of Local and Global Features for Classification of Abnormality in Mammograms”, Springer Sadhana - Academy Proceedings in Engineering Science, Vol. 41 No. 4, pp 385-395, April 2016, DOI 10.1007/s12046-016-0482-y 6. Anuradha C Phadke, P. P Rege, “Comparison of SVM & ANN Classifier for Mammogram classification Using ICA features”, Future Information Engineering Volume I, WIT Transaction on Information and Communication Technologies, Vol. 49, pp. 499-506, 2014 WIT press, Doi: 10.2495/ ICIE20130581 Google Scholar link https://scholar.google.com/citations?hl=en&user=N3l-S3wAAAAJ&view_op=list_works Scopus Link https://www.scopus.com/authid/detail.uri?authorId=35766876000 Orcid Link https://www.scopus.com/authid/detail.uri?authorId=35766876000",
+    "research": "Image Processing, Machine Learning, Embedded System Design Publication 1.Vrushali Pagire, Anuradha C. Phadke, “Underwater Fish Detection and Classification using Deep Learning”, International Conference on Intelligent Controller and Computing for Smart Power, 2022, July 21st -23rd, 2022 Hyderabad, India, DOI: 10.1109/ICICCSP53532.2022.9862410, 25 August 2022 2.Vaibhav Bahel, Tejas Khare, Anuradha C. Phadke, “PCB-Fire: Automated classification and fault detection in PCB”, IEEE Third International Conference on “Multimedia Processing, Communications and Information Technology” MPCIT-2020, hosted by J. N. N. College of Engg., Shivamogga, Karnataka on 11-12 Dec. 2020, 16 February 2021, DOI: 10.1109/MPCIT51588.2020.9350324 3. Subrata Kumar Das, Pranjal Joshi, Rohit Kokitkar, U V Murali Krishna, Anuradha C. Phadke, \"Detection of cloud boundaries from scanning Ka-band radar measurements using digital image processing technique\", IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, Vol. 14, pp 1848 – 1856, DOI: 10.1109/JSTARS.2020.3042868, 17 December 2020 4. Anuradha C Phadke, Priti P Rege, “Algorithms for Detection and Classification of Abnormality in Mammograms: An Overview”. In: Chittaranjan Pradhan, Himansu Das, Bighnaraj Naik and Nilanjan Dey (eds) Handbook of Research on Information Security in Biomedical Signal Processing, pp. 255-280, Apr 2018, IGI Global 5. Anuradha C Phadke, Priti P Rege, “Fusion of Local and Global Features for Classification of Abnormality in Mammograms”, Springer Sadhana - Academy Proceedings in Engineering Science, Vol. 41 No. 4, pp 385-395, April 2016, DOI 10.1007/s12046-016-0482-y 6. Anuradha C Phadke, P. P Rege, “Comparison of SVM & ANN Classifier for Mammogram classification Using ICA features”, Future Information Engineering Volume I, WIT Transaction on Information and Communication Technologies, Vol. 49, pp. 499-506, 2014 WIT press, Doi: 10.2495/ ICIE20130581 Google Scholar link https://scholar.google.com/citations?hl=en&user=N3l-S3wAAAAJ&view_op=list_works Scopus Link https://www.scopus.com/authid/detail.uri?authorId=35766876000 Orcid Link https://www.scopus.com/authid/detail.uri?authorId=35766876000",
+    "summary": "Dr. Anuradha Chetan Phadke holds a Ph.D. degree in Computer Vision, and received BE and ME degrees in Electronics from Walchand College of Engineering, Sangli, India in 1993 and 1995 respectively. She is presently working as Associate Professor and Associate Head at the School of Electronics and Communication Engineering, Dr. Vishwanath Karad Maharashtra Institute of Technology World Peace University. She has authored two books, granted one patent, published and presented several papers in indexed Journals and conferences, and has contributed to the initiation, development, and up-gradation of elective subject Laboratories in VLSI Design, Embedded Systems, Image processing, and Machine Learning.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anuradha-chetan-phadke",
       "scholar": "https://scholar.google.com/citations?hl=en&user=N3l-S3wAAAAJ&view_op=list_works",
@@ -1483,6 +1551,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anuradha-shantanu-kanade",
     "name": "Dr. Anuradha Shantanu Kanade",
+    "preferredDisplayName": "",
     "designation": "Program Director & Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -1494,7 +1563,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anuradha-shantanu-kanade.webp",
     "research": "",
-    "summary": "Dr. Anuradha Kanade is the Program Director of the Department of Computer Science and Applications at Dr. Vishwanath Karad MIT World Peace University, Pune. She holds a Ph.D. from Savitribai Phule Pune University, an M.Phil., MCA, MBA (Business Analytics), and a B.Sc. (Physics). With over 24 years of academic and industry experience, she has made significant contributions to teaching, research, academic leadership, and curriculum development. She is starving for the excellence to ensure the overall growth of the students, department and faculty members. Her teaching philosophy emphasizes learner-centric, value-based, and outcome-oriented education that nurtures technical competence, ethical values, innovation, and lifelong learning. She is passionate about motivating students through research, industry interaction, internships, and project-based learning Through her contributions in research, patents, publications, academic leadership, and industry collaborations, she actively supports MIT-WPU’s vision of promoting excellence in education, innovation, research, and holistic development of socially responsible global professionals. She is an approved Ph.D. supervisor and has guided research scholars in emerging areas of computer science. Dr. Kanade has authored 50+ research publications, several books, and holds multiple Indian and UK patents, with a number of them granted. She has successfully completed funded research projects and actively collaborates with academia and industry to promote innovation and applied research.",
+    "summary": "Dr. Anuradha Kanade is the Program Director of the Department of Computer Science and Applications at Dr. Vishwanath Karad MIT World Peace University, Pune. She holds a Ph.D. from Savitribai Phule Pune University, an M.Phil., MCA, MBA (Business Analytics), and a B.Sc. (Physics). With over 24 years of academic and industry experience, she has made significant contributions to teaching, research, academic leadership, and curriculum development. She is starving for the excellence to ensure the overall growth of the students, department and faculty members. Her teaching philosophy emphasizes learner-centric, value-based, and outcome-oriented education that nurtures technical competence, ethical values, innovation, and lifelong learning. She is passionate about motivating students through research, industry interaction, internships, and project-based learning Through her contributions in research, patents, publications, academic leadership, and industry collaborations, she actively supports MIT-WPU’s vision of promoting excellence in education, innovation, research, and holistic development of socially responsible global professionals. She is an approved Ph.D. supervisor and has guided research scholars in emerging areas of computer science. Dr. Kanade has authored 50+ research publications, several books, and holds multiple Indian and UK patents, with a number of them granted. She has successfully completed funded research projects and actively collaborates with academia and industry to promote innovation and applied research. As Program Director, Dr. Kanade has been instrumental in strengthening academic quality, fostering industry collaborations, organizing international conferences, faculty development programs, hackathons, and research initiatives. She is an active member of professional bodies, serves on Boards of Studies, and regularly contributes as a keynote speaker, session chair, reviewer, and mentor. She is committed to nurturing industry-ready graduates through outcome-based education, interdisciplinary learning, and research-driven academic excellence.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anuradha-shantanu-kanade",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55787355900",
@@ -1507,6 +1576,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anuruddha-rajaram-chabukswar",
     "name": "Dr. Anuruddha Rajaram Chabukswar",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -1518,7 +1588,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/anuruddha-rajaram-chabukswar.webp",
     "research": "",
-    "summary": "Dr. A. R. Chabukswar is an esteemed Professor in Pharmaceutical & Medicinal Chemistry at Dr. Vishwanath Karad MIT World Peace University, with a rich academic and research experience of 25 years. He has made significant contributions to the field, having published over 100 research papers in various National & International Journals. His remarkable achievements include securing 2 Major Research Grants (DST RS. 31.60 Lacs & AICTE - Rs. 11.33 Lacs) and being a Co-PI for CSIR Funded Project (Amount Rs 21.31 Lacs). Additionally, he has completed 2 Minor Research projects worth Rs. 4.9 Lacs and has 2 granted patents to his credit.",
+    "summary": "Dr. A. R. Chabukswar is an esteemed Professor in Pharmaceutical & Medicinal Chemistry at Dr. Vishwanath Karad MIT World Peace University, with a rich academic and research experience of 25 years. He has made significant contributions to the field, having published over 100 research papers in various National & International Journals. His remarkable achievements include securing 2 Major Research Grants (DST RS. 31.60 Lacs & AICTE - Rs. 11.33 Lacs) and being a Co-PI for CSIR Funded Project (Amount Rs 21.31 Lacs). Additionally, he has completed 2 Minor Research projects worth Rs. 4.9 Lacs and has 2 granted patents to his credit. Dr. Chabukswar has successfully guided 05 Ph.D. students, and 07 Ph.D. students are currently working under his guidance. He has also mentored more than 65 M. Pharm students, helping them achieve their academic and professional goals. Furthermore, he has authored 5 books and 10 book chapters, showcasing his expertise in the field of Pharmaceutical & Medicinal Chemistry. Dr. Chabukswar has been an active participant in various National & International Conferences, where he has presented his research papers. He is a well-respected member of the academic community, and his significant contributions have been acknowledged through various awards and accolades.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anuruddha-rajaram-chabukswar",
       "scholar": "https://scholar.google.com/citations?hl=en&user=lRE2MgcAAAAJ&view_op=list_works&sortby=pubdate",
@@ -1530,6 +1600,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anusha-raghavendra-pai",
     "name": "Dr. Anusha Raghavendra Pai",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -1554,6 +1625,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "anushri-kulkarni",
     "name": "Dr. Anushri Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -1577,6 +1649,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aparna-ashok-kamble",
     "name": "Ms. Aparna Ashok Kamble",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -1601,6 +1674,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aparna-dattatraya-pathak",
     "name": "Dr. Aparna Dattatraya Pathak",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -1611,8 +1685,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "liberal-arts-humanities/liberal-arts": "Department of Liberal Arts"
     },
     "photoPath": "./assets/campus/aparna-dattatraya-pathak.webp",
-    "research": "Management and Law",
-    "summary": "Dr. Aparna Pathak has been associated with MIT since April 2008, where she teaches various courses like Human Resource Management, Business Laws, Corporate Laws, Labour Laws, Organizational Behaviour, Organizational Development, and Marketing Management, among others. Prior to joining MIT, she practiced law for 9 years. Dr. Pathak has presented about 18 research papers in national and international journals and attended more than 20 national and international seminars. She was awarded the 'Ideal Teacher Award' in September 2017 for her dedication to teaching. Dr. Pathak is passionate about teaching and believes in bringing variations in teaching methodology to prepare her students to face the future with confidence. Research Area Management and Law Publication 1. A study of problems faced by female entrepreneurs in managing talent in Kothrud area in city of Pune. Advanced Management Compendium, Vol 3, Issue-01. Pgs. 35-44. Dec 2016 ISSN 2249 – 5681 2. “Problems faced by women working in the BPOs: A study of some select BPOs in the city of Pune” Research Trends in Economics, Finance and HRM. Pgs. 241-253 ISBN 978-93-85777-44-8 3. “A study of problems of women employees about their safety and security in few information technology companies in the city of Pune” Indian Journal of Research Vol 6, No. 1 Jan-Jun 2016. Pgs. 63-72. ISSN 2231-6655 Google Scolar Link https://scholar.google.com/citationsview_op=list_works&hl=en&user=Dp65T8gAAAAJ Scopus Link https://id.elsevier.com/settings/redirect?code=O9WN8vI0WTfb83F32MVs3h5DRjOKP0WwlSQQ4bv1 Orcid Link https://orcid.org/0000-0001-9359-5653",
+    "research": "Management and Law Publication 1. A study of problems faced by female entrepreneurs in managing talent in Kothrud area in city of Pune. Advanced Management Compendium, Vol 3, Issue-01. Pgs. 35-44. Dec 2016 ISSN 2249 – 5681 2. “Problems faced by women working in the BPOs: A study of some select BPOs in the city of Pune” Research Trends in Economics, Finance and HRM. Pgs. 241-253 ISBN 978-93-85777-44-8 3. “A study of problems of women employees about their safety and security in few information technology companies in the city of Pune” Indian Journal of Research Vol 6, No. 1 Jan-Jun 2016. Pgs. 63-72. ISSN 2231-6655 Google Scolar Link https://scholar.google.com/citationsview_op=list_works&hl=en&user=Dp65T8gAAAAJ Scopus Link https://id.elsevier.com/settings/redirect?code=O9WN8vI0WTfb83F32MVs3h5DRjOKP0WwlSQQ4bv1 Orcid Link https://orcid.org/0000-0001-9359-5653",
+    "summary": "Dr. Aparna Pathak has been associated with MIT since April 2008, where she teaches various courses like Human Resource Management, Business Laws, Corporate Laws, Labour Laws, Organizational Behaviour, Organizational Development, and Marketing Management, among others. Prior to joining MIT, she practiced law for 9 years. Dr. Pathak has presented about 18 research papers in national and international journals and attended more than 20 national and international seminars. She was awarded the 'Ideal Teacher Award' in September 2017 for her dedication to teaching. Dr. Pathak is passionate about teaching and believes in bringing variations in teaching methodology to prepare her students to face the future with confidence.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aparna-dattatraya-pathak",
       "scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=Dp65T8gAAAAJ",
@@ -1623,6 +1697,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aparna-sameer-dixit",
     "name": "Dr. Aparna Sameer Dixit",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -1634,7 +1709,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aparna-sameer-dixit.webp",
     "research": "",
-    "summary": "Dr. Aparna Dixit is a dedicated academician with over 25 years of experience in management education, research, and academic leadership. She is an Associate Professor and currently serves as the Program Director at the School of Business, MIT World Peace University, Pune. Her area of specialization is Human Resource Management, and her area of expertise includes Employer Branding, Organizational Behaviour, Training and Development and Strategic Management.",
+    "summary": "Dr. Aparna Dixit is a dedicated academician with over 25 years of experience in management education, research, and academic leadership. She is an Associate Professor and currently serves as the Program Director at the School of Business, MIT World Peace University, Pune. Her area of specialization is Human Resource Management, and her area of expertise includes Employer Branding, Organizational Behaviour, Training and Development and Strategic Management. Dr. Dixit has held several key positions, including Head of the School of Management (PG). She is an approved Ph.D. guide in the area of Human Resource Management. She has also published numerous research papers in reputed national and international journals. Over the years, Dr. Dixit has contributed extensively to curriculum development, innovative pedagogy, and strategic academic planning.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aparna-sameer-dixit"
     },
@@ -1643,6 +1718,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aparna-virendra-shete",
     "name": "Mrs. Aparna Virendra Shete",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -1654,7 +1730,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/aparna-virendra-shete.jpg",
     "research": "Water Resources Engineering, Town planning",
-    "summary": "Prof. Aparna V. Shete is an Assistant Professor in the Department of Civil Engineering at MIT WPU, Pune. She holds a Bachelor's degree in Civil Engineering from MGM, Nanded, and a Master's degree in Civil- Town and Country Planning from the prestigious College of Engineering, Pune in 2010.She has been associated with MIT-WPU since 2014 and has taught various subjects such as Basics of Civil and Environmental Engineering, Applied Mechanics, Surveying, Advanced Surveying, Irrigation Engineering, Building Design and Drawing, Building Information Modelling, and Management Information System.",
+    "summary": "Prof. Aparna V. Shete is an Assistant Professor in the Department of Civil Engineering at MIT WPU, Pune. She holds a Bachelor's degree in Civil Engineering from MGM, Nanded, and a Master's degree in Civil- Town and Country Planning from the prestigious College of Engineering, Pune in 2010.She has been associated with MIT-WPU since 2014 and has taught various subjects such as Basics of Civil and Environmental Engineering, Applied Mechanics, Surveying, Advanced Surveying, Irrigation Engineering, Building Design and Drawing, Building Information Modelling, and Management Information System. Prof. Shete completed her Ph.D. in Civil Engineering from Savitribai Phule Pune University, specializing in the area of Water Resources Engineering under the guidance of Dr. S. S. Shahapure. Her expertise in the field has earned her life membership of the prestigious Indian Society of Hydraulics (ISH) and the Indian Society of Technical Education (ISTE).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/aparna-virendra-shete",
       "scholar": "https://scholar.google.com/citations?user=3YOsIbAAAAAJ&hl=en",
@@ -1665,6 +1741,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "apurv-chaitanya-nellikka",
     "name": "Dr. Apurv Chaitanya Nellikka",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -1680,7 +1757,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/apurv-chaitanya-nellikka.webp",
     "research": "Experimental nonlinear and quantum optics, structured light, and nanophotonics.",
-    "summary": "Dr. Apurv Chaitanya Nellikka received his Integrated M.Sc. in Physics from Amrita University in 2012. He qualified for several entrance tests, including JAM, GATE, JEST, PRL (Ahmedabad), IPR (Gandhinagar), and IISc (Bangalore), before joining the Physical Research Laboratory, Ahmedabad, as a Ph.D. scholar in 2012. He earned his Ph.D. in 2016 from the Indian Institute of Technology, Gandhinagar, India. After graduation, he was a postdoctoral investigator at Tecnologico de Monterrey, Mexico, and gained research experience as a guest scientist at the Max Planck Institute for the Science of Light (Germany), Max Planck – uOttawa Centre for Extreme Quantum Photonics (Canada), and The Institute of Photonic Sciences (Spain). Before taking up his current position at MIT- WPU, he was a research professor at Tecnologico de Monterrey, Puebla, Mexico.",
+    "summary": "Dr. Apurv Chaitanya Nellikka received his Integrated M.Sc. in Physics from Amrita University in 2012. He qualified for several entrance tests, including JAM, GATE, JEST, PRL (Ahmedabad), IPR (Gandhinagar), and IISc (Bangalore), before joining the Physical Research Laboratory, Ahmedabad, as a Ph.D. scholar in 2012. He earned his Ph.D. in 2016 from the Indian Institute of Technology, Gandhinagar, India. After graduation, he was a postdoctoral investigator at Tecnologico de Monterrey, Mexico, and gained research experience as a guest scientist at the Max Planck Institute for the Science of Light (Germany), Max Planck – uOttawa Centre for Extreme Quantum Photonics (Canada), and The Institute of Photonic Sciences (Spain). Before taking up his current position at MIT- WPU, he was a research professor at Tecnologico de Monterrey, Puebla, Mexico. Dr. Nellikka specializes in experimental optics, focusing on light-matter interactions using structured optical beams and quantum optics. His research includes generating and characterizing single photon sources, studying entangled photons, and designing nanoplasmonic devices that exhibit quantum behaviors. Additionally, he explores the generation of exotic light beams with challenging temporal and spatial profiles.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/apurv-chaitanya-nellikka",
       "scholar": "https://scholar.google.com/citations?user=rQh89TsAAAAJ&hl=en",
@@ -1694,6 +1771,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "apurva-abhijit-naik",
     "name": "Dr. Apurva Abhijit Naik",
+    "preferredDisplayName": "",
     "designation": "Research and Ph.D. Coordinator School of Engineering and Technology, Associate Professor and Ph.D. Coordinator",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -1704,8 +1782,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/electronics-and-electrical-engineering": "Department of Electrical and Electronics Engineering"
     },
     "photoPath": "./assets/campus/apurva-abhijit-naik.webp",
-    "research": "Embedded Systems, Biomedical Engineering",
-    "summary": "Dr. Apurva Naik is an accomplished Associate Professor at the School of Electronics and Communication, MIT World Peace University in Kothrud, Pune, India. With her expertise in Computer Vision, Embedded Systems and IoT, Cubesat Development, and Biomedical Engineering, she has made remarkable contributions to her field.",
+    "research": "Embedded Systems, Biomedical Engineering Embedded Systems, IoT",
+    "summary": "Dr. Apurva Naik is an accomplished Associate Professor at the School of Electronics and Communication, MIT World Peace University in Kothrud, Pune, India. With her expertise in Computer Vision, Embedded Systems and IoT, Cubesat Development, and Biomedical Engineering, she has made remarkable contributions to her field. Dr. Naik has an impressive track record of research, with 29 published research papers in renowned international conferences and journals such as IEEE, IARIA, and Elsevier, along with three book chapters to her credit. She has also been granted an Indian patent for her innovative work. Dr. Naik's dedication and hard work have earned her recognition in the form of two best paper awards at international conferences. She has also served as a session chair at various international conferences, showcasing her proficiency in the field. Overall, Dr. Apurva Naik is a respected academician who has made a significant contribution to her field and continues to inspire her students and colleagues to strive for excellence.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/apurva-abhijit-naik",
       "scholar": "https://scholar.google.co.in/citations?user=86gTUygAAAAJ&hl=en",
@@ -1716,6 +1794,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "apurva-sharma",
     "name": "Dr. Apurva Sharma",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -1727,7 +1806,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/apurva-sharma.png",
     "research": "",
-    "summary": "Apurva Sharma is an Assistant Professor at Dr. Vishwanath Karad MIT World Peace University. She has previously worked at Central University of Haryana and Zeal College of Engineering, SPPU as an Assistant Professor. She has four years of prior teaching and research experience. She has qualified the intensely competitive UGC NET and NET-JRF examination in Computer Sciences. She has qualified the prestigious GATE held by IIT twice. She is also HTET qualified. Her research areas are Social Network Analysis, Link Prediction in complex networks and Machine Learning. She already has four indexed publications in reputed journals and conferences.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/apurva-sharma"
     },
@@ -1736,6 +1815,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "aquil-ahmad-khan",
     "name": "Dr. Aquil Ahmad Khan",
+    "preferredDisplayName": "",
     "designation": "Program Coordinator & Assistant Professor",
     "department": "liberal-arts-humanities/media-and-communication",
     "departmentName": "Department of Media and Communication",
@@ -1758,6 +1838,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "archana-pradip-varade",
     "name": "Mrs. Archana Pradip Varade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -1769,7 +1850,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/archana-pradip-varade.webp",
     "research": "",
-    "summary": "Mrs. Archana Pradip Varade is committed to utilizing her academic knowledge and skills for the betterment of students and the institution, while continuously striving for excellence in teaching, learning, and professional growth. She focuses on integrating research and collaborative problem-solving into the classroom to enhance the overall learning experience.",
+    "summary": "Mrs. Archana Pradip Varade is committed to utilizing her academic knowledge and skills for the betterment of students and the institution, while continuously striving for excellence in teaching, learning, and professional growth. She focuses on integrating research and collaborative problem-solving into the classroom to enhance the overall learning experience. Aligned with MIT-WPU’s vision of providing value-based quality education, she aims to foster holistic student development, contributing to social transformation and institutional excellence.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/archana-pradip-varade",
       "scholar": "https://scholar.google.com/citations?user=Io3Xn8oAAAAJ&hl=en&oi=ao",
@@ -1780,6 +1861,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "arti-girish-swami",
     "name": "Dr. Arti Girish Swami",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -1791,7 +1873,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/arti-girish-swami.webp",
     "research": "",
-    "summary": "Dr. Arti Swami is an Assistant Professor in the Department of Pharmaceutical Chemistry at the School of Health Sciences and Technology, Dr. Vishwanath Karad, MIT World Peace University, Kothrud, Pune. She has over 15 years of academic experience with a strong emphasis on pharmaceutical research and advanced analytical sciences.",
+    "summary": "Dr. Arti Swami is an Assistant Professor in the Department of Pharmaceutical Chemistry at the School of Health Sciences and Technology, Dr. Vishwanath Karad, MIT World Peace University, Kothrud, Pune. She has over 15 years of academic experience with a strong emphasis on pharmaceutical research and advanced analytical sciences. She completed her Ph.D. and Post-Graduation from Savitribai Phule Pune University and obtained her undergraduate degree from Shivaji University, Kolhapur. Dr. Swami has published several research articles in reputed national and international journals, contributing significantly to the field of pharmaceutical analysis and quality-by-design approaches. Her research interests primarily focus on impurity profiling, Analytical Quality by Design (AQbD), Design of Experiments (DoE), in vitro–in vivo correlation (IVIVC), in vitro permeation testing (IVPT), and stability studies, with an aim to enhance product quality, robustness, and regulatory compliance.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/arti-girish-swami",
       "scholar": "https://scholar.google.com/citations?user=fBTwvbwAAAAJ&hl=en",
@@ -1803,6 +1885,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "arun-balaso-mali",
     "name": "Mr. Arun Balaso Mali",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -1823,6 +1906,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "arun-prakash",
     "name": "Dr. Arun Prakash",
+    "preferredDisplayName": "",
     "designation": "Program Director & Assistant Professor",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -1834,7 +1918,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/arun-prakash.webp",
     "research": "Films and New Media",
-    "summary": "Dr. Arun Prakash is a distinguished academician and accomplished professional, currently serving as a Program Director & Assistant Professor at the Dadasaheb Phalke International Film School, MIT World Peace University, Pune. With expertise in Photography, Cinematography, Qualitative Research, and Online Content Creation, Dr. Prakash seamlessly integrates theoretical knowledge with practical application, equipping students for successful careers in the dynamic fields of media and film.",
+    "summary": "Dr. Arun Prakash is a distinguished academician and accomplished professional, currently serving as a Program Director & Assistant Professor at the Dadasaheb Phalke International Film School, MIT World Peace University, Pune. With expertise in Photography, Cinematography, Qualitative Research, and Online Content Creation, Dr. Prakash seamlessly integrates theoretical knowledge with practical application, equipping students for successful careers in the dynamic fields of media and film. A UGC NET and Junior Research Fellowship (JRF) qualified scholar, Dr. Prakash earned his PhD in Film Studies from Banaras Hindu University (BHU), Varanasi. He also holds a BA (Hons.) and MA in Mass Communication from BHU, specialising in Television, Radio, and Films. As a testament to his leadership and global engagement, he represented India as part of the official delegation at the 2017 World Festival for Youth & Sports (WFYS) in Russia, under the Ministry of Youth Affairs and Sports, Government of India. Dr. Prakash’s professional journey spans more than seven years, including three years in the media industry and more than four years in academia after PhD. Before joining MIT-WPU, he served as an Assistant Professor at Chandigarh University, where he excelled in both academic and administrative roles. His contributions included coordinating admissions, establishing advanced multimedia labs, and setting up a community radio station. With a robust industry background in Photography, Cinematography, and Graphic design, Dr. Prakash brings practical insights that resonate with his students. One of Dr. Prakash's most significant achievements at MIT-WPU has been the establishment of the Dadasaheb Phalke International Film School (DPIFS). Starting with minimal resources and a small team, he showcased exceptional leadership, strategic vision, and resource management, transforming DPIFS into a thriving academic institution. Today, the school is recognised for its comprehensive academic programs, cutting-edge infrastructure, and commitment to cinematic excellence. Dr. Prakash’s scholarly contributions are equally notable. He has presented and published numerous research papers in Scopus and UGC Care-listed journals and book chapters. He is also the recipient of an Indian patent for his research on the Impact of Digital and Social Media on Customer Behavior, underscoring his commitment to academic innovation. A regular participant in Faculty Development Programs (FDPs), seminars, and conferences, Dr. Prakash remains at the forefront of advancements in film and media education. As a passionate educator and mentor, Dr. Prakash fosters a learning environment that encourages critical thinking, creative problem-solving, and collaboration. His dedication to academic excellence, coupled with his industry experience, has made him a pillar of MIT-WPU’s academic community. Through his vision and relentless efforts, Dr. Prakash continues to shape the next generation of media and film professionals, ensuring they are well-prepared to meet the demands of an ever-evolving industry.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/arun-prakash",
       "scholar": "https://scholar.google.com/citations?view_op=new_profile&hl=en",
@@ -1846,6 +1930,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "asha-rajendra-sanap",
     "name": "Mrs. Asha Rajendra Sanap",
+    "preferredDisplayName": "",
     "designation": "Lecturer",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -1869,6 +1954,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashish-andhale",
     "name": "Dr. Ashish Andhale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -1890,6 +1976,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashish-haribhau-pawar",
     "name": "Dr. Ashish Haribhau Pawar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -1901,7 +1988,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ashish-haribhau-pawar.jpg",
     "research": "",
-    "summary": "Prof. Ashish Pawar is an Assistant Professor in the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He has 9 years of experience in teaching and research, as well as 1 year of industry experience. Prof. Pawar is currently pursuing his PhD in \"Experimental study on Hybrid ECM for machining of High Temperature Titanium alloys\" at Savitribai Phule Pune University. He has published more than 10 papers in the field of Robotics, Non-Conventional Machining, and Design and Optimization. Prof. Pawar has also been involved in organizing workshops and conferences, such as SMF2022. He is in charge of admissions-related activities for the School of Mechanical Engineering and is currently guiding the Electric Two Wheeler Team of MITWPU, which won the overall 1st Rank in a competition organized by IIT GOA and ATHER. Publication 1. Overview on electro-chemical machining of super alloys, Materials Today: Proceedings, Elsevier, 2021. 2. Performance evaluation of different hole profiles using 2-D CFD model, Book Chapter in CRC Press, RAMMML, ISBN 9781032441313. 3. Indian Patent- Enhancement in material removal rate and hole quality of titanium aluminide (Light Weight High Temperature Resistance) Material using Hybrid Ultrasonic Assisted Pulse Electrochemical Machining, Patent no- 202221017052. 4. Copyright- Analytical and Experimental Study On Hybrid Electro Chemical Machining Of High Temperature Titanium, Copyright office, Government of India. 5. A State-of-the-Art Review on Robotics in Waste Sorting: Scope and Challenges, International Journal on Interactive Design and Manufacturing (IJIDeM), Springer,2023 6. Modelling and Comparative Study for Deep Groove Ball Bearing Based on Structural Analysis using FE Simulation, JNERS, 2022. Google Scholar Link https://scholar.google.com/citations?user=xivitAcAAAAJ&hl=en Orcid Link https://orcid.org/my-orcid?orcid=0000-0001-5996-8209",
+    "summary": "Prof. Ashish Pawar is an Assistant Professor in the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He has 9 years of experience in teaching and research, as well as 1 year of industry experience. Prof. Pawar is currently pursuing his PhD in \"Experimental study on Hybrid ECM for machining of High Temperature Titanium alloys\" at Savitribai Phule Pune University. He has published more than 10 papers in the field of Robotics, Non-Conventional Machining, and Design and Optimization. Prof. Pawar has also been involved in organizing workshops and conferences, such as SMF2022. He is in charge of admissions-related activities for the School of Mechanical Engineering and is currently guiding the Electric Two Wheeler Team of MITWPU, which won the overall 1st Rank in a competition organized by IIT GOA and ATHER.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashish-haribhau-pawar",
       "scholar": "https://scholar.google.com/citations?user=xivitAcAAAAJ&hl=en",
@@ -1912,6 +1999,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashish-kulkarni",
     "name": "Dr. Ashish Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -1932,6 +2020,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashish-shivkumar-utage",
     "name": "Dr. Ashish Shivkumar Utage",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -1942,8 +2031,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/ashish-shivkumar-utage.jpg",
-    "research": "",
-    "summary": "Ashish Shivkumar Utage is an Assistant Professor of Thermal Engineering at MIT World Peace University (MITWPU). With extensive teaching experience, he is committed to developing innovative pedagogical approaches that enhance student learning outcomes. He fosters a stimulating learning environment that encourages critical thinking, creativity, and collaboration. Ashish's research focuses on areas such as Alternative refrigerants for air conditioners, and he has published several research papers in top-tier international journals and presented his work at various conferences. He actively collaborates with industry partners on research projects aimed at solving real-world problems. Research Area Refrigeration and Air Conditioning, Alternative refrigerants, Energy efficiency, Heat Transfer Publication Ashish S. Utage, Kundlik V. Mali, Heramb C. Phadake, Performance simulation of HFC-161 as an alternative refrigerant to HCFC-22 for room air conditioner, Materials Today: Proceedings, Volume 47, Part 16, 2021, Pages 5594-5597, https://doi.org/10.1016/j.matpr.2021.03.474. Kundlik V. Mali, Ashish S. Utage, Heramb C. Phadake, Performance evaluation of hydrocarbon and its blend in split packaged inverter operated air conditioner, Materials Today: Proceedings, Volume 47, Part 16, 2021, Pages 5589-5593, https://doi.org/10.1016/j.matpr.2021.03.470. Jadhao, M., Patane, P., Nadgire, A., Utage, A. (2022). A Study on Impact of Various Solar Panel Cleaning Methods on Its Performance. In: Palani, I.A., Sathiya, P., Palanisamy, D. (eds) Recent Advances in Materials and Modern Manufacturing. Lecture Notes in Mechanical Engineering. Springer, Singapore. https://doi.org/10.1007/978-981-19-0244-4_78 Ashish S. Utage, Kundlik V. Mali, Ashish D. Kadam, Performance simulation of cold storage using EnergyPlus, International Journal of Engineering Science and Technology 5, 2013, 286-297 Google Scholar Link https://scholar.google.com/citations?user=fXWb5b0AAAAJ&hl=en&oi=ao Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57298728800 Orcid Link https://orcid.org/0000-0003-1085-458X",
+    "research": "Refrigeration and Air Conditioning, Alternative refrigerants, Energy efficiency, Heat Transfer Publication Ashish S. Utage, Kundlik V. Mali, Heramb C. Phadake, Performance simulation of HFC-161 as an alternative refrigerant to HCFC-22 for room air conditioner, Materials Today: Proceedings, Volume 47, Part 16, 2021, Pages 5594-5597, https://doi.org/10.1016/j.matpr.2021.03.474. Kundlik V. Mali, Ashish S. Utage, Heramb C. Phadake, Performance evaluation of hydrocarbon and its blend in split packaged inverter operated air conditioner, Materials Today: Proceedings, Volume 47, Part 16, 2021, Pages 5589-5593, https://doi.org/10.1016/j.matpr.2021.03.470. Jadhao, M., Patane, P., Nadgire, A., Utage, A. (2022). A Study on Impact of Various Solar Panel Cleaning Methods on Its Performance. In: Palani, I.A., Sathiya, P., Palanisamy, D. (eds) Recent Advances in Materials and Modern Manufacturing. Lecture Notes in Mechanical Engineering. Springer, Singapore. https://doi.org/10.1007/978-981-19-0244-4_78 Ashish S. Utage, Kundlik V. Mali, Ashish D. Kadam, Performance simulation of cold storage using EnergyPlus, International Journal of Engineering Science and Technology 5, 2013, 286-297 Google Scholar Link https://scholar.google.com/citations?user=fXWb5b0AAAAJ&hl=en&oi=ao Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57298728800 Orcid Link https://orcid.org/0000-0003-1085-458X",
+    "summary": "Ashish Shivkumar Utage is an Assistant Professor of Thermal Engineering at MIT World Peace University (MITWPU). With extensive teaching experience, he is committed to developing innovative pedagogical approaches that enhance student learning outcomes. He fosters a stimulating learning environment that encourages critical thinking, creativity, and collaboration. Ashish's research focuses on areas such as Alternative refrigerants for air conditioners, and he has published several research papers in top-tier international journals and presented his work at various conferences. He actively collaborates with industry partners on research projects aimed at solving real-world problems.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashish-shivkumar-utage",
       "scholar": "https://scholar.google.com/citations?user=fXWb5b0AAAAJ&hl=en&oi=ao",
@@ -1955,6 +2044,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashish-singh-tomar",
     "name": "Mr. Ashish Singh Tomar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -1975,6 +2065,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashok-kumar-jaiswal",
     "name": "Dr. Ashok Kumar Jaiswal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -1997,6 +2088,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashok-shripati-deokar",
     "name": "Mr. Ashok Shripati Deokar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -2008,7 +2100,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ashok-shripati-deokar.png",
     "research": "",
-    "summary": "Mr. Ashok S. Deokar has successfully completed his MCA and MBA from Savitribai Phule Pune University. He is presently pursuing his Ph.D. at the same university, specializing in Big Data and Digital Marketing. With over 22 years of teaching experience & 1.5 as Industry Experience, he has imparted knowledge across a wide range of subjects including Database Management Systems, Advanced DBMS, Web Technologies, Big Data Analytics, Cloud Computing, Cyber Security, Mobile Application Development, Operating Systems, Network Technologies, Data Structures, C, and C++.",
+    "summary": "Mr. Ashok S. Deokar has successfully completed his MCA and MBA from Savitribai Phule Pune University. He is presently pursuing his Ph.D. at the same university, specializing in Big Data and Digital Marketing. With over 22 years of teaching experience & 1.5 as Industry Experience, he has imparted knowledge across a wide range of subjects including Database Management Systems, Advanced DBMS, Web Technologies, Big Data Analytics, Cloud Computing, Cyber Security, Mobile Application Development, Operating Systems, Network Technologies, Data Structures, C, and C++. He has contributed extensively to academia through the publication of numerous research papers in reputed journals and conferences and holds two patents to his credit. In addition, he has actively participated in various STTPs and FDPs organized by AICTE, IITs, and leading universities. In 2025, he joined MIT World Peace University as an Assistant Professor in the Department of Computer Science and Applications, where he also serves as the CAP Coordinator. Previously, he worked as a College Examination Officer for Savitribai Phule Pune University. Beyond his academic responsibilities, he has successfully organized and conducted several co-curricular activities for students and professional organizations. He is also a certified ISO auditor, with hands-on experience in managing ISO audits.]",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashok-shripati-deokar"
     },
@@ -2017,6 +2109,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashwin-bhanudas-kuchekar",
     "name": "Dr. Ashwin Bhanudas Kuchekar",
+    "preferredDisplayName": "",
     "designation": "Dean & Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -2028,7 +2121,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ashwin-bhanudas-kuchekar.webp",
     "research": "Novel Drug Delivery Systems, Formulation and Development, Design of Experiments, Quality by Design, Six Sigma",
-    "summary": "Dr. Ashwin Kuchekar is an accomplished M. Pharm in Pharmaceutics (2009) from R. C. Patel College of Pharmacy, Shirpur, and a Ph.D. in Pharmaceutics (2015) from Bharati Vidyapeeth Poona College of Pharmacy, Pune. He is also a certified Lean Six-Sigma Black Belt (LSSBB) professional and was awarded the Council of Scientific Industrial and Research (CSIR) - Senior Research Fellow (SRF) Award in (2012).",
+    "summary": "Dr. Ashwin Kuchekar is an accomplished M. Pharm in Pharmaceutics (2009) from R. C. Patel College of Pharmacy, Shirpur, and a Ph.D. in Pharmaceutics (2015) from Bharati Vidyapeeth Poona College of Pharmacy, Pune. He is also a certified Lean Six-Sigma Black Belt (LSSBB) professional and was awarded the Council of Scientific Industrial and Research (CSIR) - Senior Research Fellow (SRF) Award in (2012). Dr. Kuchekar has over seven years of industrial experience in research and development (R&D) in the area of formulation development using Quality by Design. He has extensive exposure in areas such as branded and generic product development and has worked with leading pharmaceutical companies like Piramal, Lupin, and Abbott Healthcare. He has successfully completed the development and commercial launch of leading brands such as Esgipyrin injection and Orahex-Pro Mouthwash. Currently, Dr. Kuchekar is a Professor of Pharmaceutics at Dr. Vishwanath Karad MIT-WPU, Pune, where he also heads the Career Services and Placement division. He has served as a member of the Board of Studies Pharmaceutics, Savitri Phule Pune University, Pune, and a member of the Board of Studies, Faculty of Pharmacy, Dr. Vishwanath Karad, MIT World Peace University, Pune. He is a Life Member of The Association of Pharmaceutical Teachers of India (APTI). Dr. Kuchekar's expertise lies in the unique combination of statistics and formulation development. He has hands-on experience in the use of Design of Experiments (DOE) and optimization of formulation and process optimization of products for regulated and domestic products, with software expertise in Design Expert, SAS-JMP, and Statgraphics. He has published several national and international papers and has filed several patents. He is an approved guide for PG and Ph.D. students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashwin-bhanudas-kuchekar",
       "scholar": "https://scholar.google.com/citations?hl=en&user=aUrD3ZsAAAAJ",
@@ -2040,6 +2133,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashwini-bagkar",
     "name": "Dr. Ashwini Bagkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -2060,6 +2154,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashwini-ramkrishana-gawade",
     "name": "Dr. Ashwini Ramkrishana Gawade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -2071,7 +2166,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ashwini-ramkrishana-gawade.webp",
     "research": "",
-    "summary": "Dr. Ashwini Gawade is a highly qualified academic with a diverse range of experience in the pharmaceutical industry. She holds a B. Pharm. (2011), M. Pharm (2013) and Ph.D (2020) from Pune University. After completing her studies, she joined Sai Life Sciences in Pune as a Research Associate, where she gained valuable experience in formulation development of innovative drug delivery systems, scale-up of formulations, and product technology transfer. Dr. Gawade is currently an Assistant Professor at Department of Pharmaceutical Sciences, School of Health Sciences and Technology, Dr. Vishwanath Karad’s MIT World Peace University, Pune.",
+    "summary": "Dr. Ashwini Gawade is a highly qualified academic with a diverse range of experience in the pharmaceutical industry. She holds a B. Pharm. (2011), M. Pharm (2013) and Ph.D (2020) from Pune University. After completing her studies, she joined Sai Life Sciences in Pune as a Research Associate, where she gained valuable experience in formulation development of innovative drug delivery systems, scale-up of formulations, and product technology transfer. Dr. Gawade is currently an Assistant Professor at Department of Pharmaceutical Sciences, School of Health Sciences and Technology, Dr. Vishwanath Karad’s MIT World Peace University, Pune. She has an impressive track record in research and has presented her work at various International and National conferences. Dr. Gawade has also published several research and review articles in National and International journals. She is a lifetime member of APTI, which reflects her commitment to the field of pharmacy.. Dr. Gawade's expertise in the pharmaceutical industry is vast. She has worked on different projects, including oncology projects, during her industrial tenure. She has sound knowledge of GMP, cGMP, and has experience in handling various instruments such as Double Beam UV Spectrophotometer, Brookfield Viscometer, Rotary Tablet Compression Machine, Digital Tablet Dissolution Test Apparatus, R & D Coater, Lyophilizer, and Fluidized bed coater. Additionally, she has hands-on experience with software like PCP Disso and Design Expert Software.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashwini-ramkrishana-gawade",
       "scholar": "https://scholar.google.com/citations?user=TA6TKlsAAAAJ&hl=en",
@@ -2082,6 +2177,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ashwini-vinayak-zadgaonkar",
     "name": "Dr. Ashwini Vinayak Zadgaonkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -2093,7 +2189,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ashwini-vinayak-zadgaonkar.webp",
     "research": "",
-    "summary": "Dr. Ashwini Vinayak Zadgaonkar is an educationist, researcher, and Assistant Professor at MIT World Peace University, Pune, with over 16 years of teaching experience. She is pursuing her Ph.D. under the prestigious Visvesvaraya PhD Scheme for Electronics and IT at Nagpur University.",
+    "summary": "Dr. Ashwini Vinayak Zadgaonkar is an educationist, researcher, and Assistant Professor at MIT World Peace University, Pune, with over 16 years of teaching experience. She is pursuing her Ph.D. under the prestigious Visvesvaraya PhD Scheme for Electronics and IT at Nagpur University. Her research interests include Natural Language Processing, Knowledge Base Population, and Text Mining. She has an extensive research portfolio with 26 publications in reputed journals and conferences indexed in Web of Science (SCI/ESCI), Scopus, and ICI. Dr. Zadgaonkar is committed to advancing research-driven teaching and contributing to academic excellence through innovation, scholarly work, and student mentorship.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashwini-vinayak-zadgaonkar",
       "scholar": "https://scholar.google.com/citations?view_op=new_profile&hl=en\n0000-0003-2207-6500",
@@ -2104,6 +2200,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "asim-samanta",
     "name": "Dr. Asim Samanta",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -2127,6 +2224,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "asmita-gaikwad",
     "name": "Prof. Asmita Gaikwad",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -2138,7 +2236,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/asmita-gaikwad.webp",
     "research": "",
-    "summary": "Prof. Asmita Gaikwad is a passionate and experienced academician with over a decade of expertise in teaching, research, and professional training. She is currently serving as an Assistant Professor at MIT World Peace University (MIT-WPU), Pune, where she specializes in Business Analytics, Data Science, and Marketing.",
+    "summary": "Prof. Asmita Gaikwad is a passionate and experienced academician with over a decade of expertise in teaching, research, and professional training. She is currently serving as an Assistant Professor at MIT World Peace University (MIT-WPU), Pune, where she specializes in Business Analytics, Data Science, and Marketing. Prof. Gaikwad is a Lean Six Sigma Green Belt holder and a UGC-NET qualified educator. She is also a certified trainer under the Wadhwani Foundation's Ignite Entrepreneurship Development Programme, reflecting her dedication to fostering entrepreneurial thinking and data-driven decision-making. Currently pursuing her Ph.D. from Savitribai Phule Pune University, she has contributed significantly to academic literature through publications in UGC-CARE, ABDC indexed journals, along with co-authoring nationally recognized books on SPSS and data analytics. Her hands-on training in tools like Power BI, Tableau, SPSS, Excel, and DBMS, combined with a deep understanding of Emotional Intelligence and SEM, makes her a valuable mentor and educator. Prof. Gaikwad is committed to creating engaging, impactful learning experiences and empowering students to thrive in the world of analytics and research.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/asmita-gaikwad"
     },
@@ -2147,6 +2245,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "atanu-hazarika",
     "name": "Dr. Atanu Hazarika",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -2169,6 +2268,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "atul-uddhavrao-palange",
     "name": "Mr. Atul Uddhavrao Palange",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -2180,7 +2280,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/atul-uddhavrao-palange.jpg",
     "research": "Lean Manufacturing and DOE in dental implants",
-    "summary": "",
+    "summary": "Meet eminent MIT-WPU faculty member Atul Uddhavrao Palange. Find out about his academic background, work experience, and commitment to provide a dynamic and interesting classroom for students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/atul-uddhavrao-palange"
     },
@@ -2189,6 +2289,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "baidehish-sahoo",
     "name": "Dr. Baidehish Sahoo",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -2199,8 +2300,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/baidehish-sahoo.webp",
-    "research": "",
-    "summary": "Dr. Baidehish Sahoo is an Assistant Professor at the School of Mechanical Engineering. His primary research interests lie in the development and fabrication of composites for tribological and mechanical applications. Dr. Sahoo holds a Ph.D. in Mechanical Engineering, an M.Tech. in Metallurgical and Materials Engineering, and a B.Tech. in Mechanical Engineering. He has published 18 papers in international journals and has one year of experience in his field. Dr. Sahoo is also a member of The Indian Society for Technical Education and teaches subjects such as Advanced Manufacturing Techniques, Materials Science, and Design Thinking Laboratory. Research Area Surface Modification, Composite Materials, Solid-state welding Publication [1] B. SAHOO, T. DAS, J. PAUL, THERMAL SPRAYING AND RELATED TECHNOLOGIES FOR THE SURFACE MODIFICATION OF AL ALLOYS: REVIEW, Surf. Rev. Lett. 29 (2022). https://doi.org/10.1142/S0218625X2230009X. [2] B. Sahoo, D. Narsimhachary, J. Paul, Surface mechanical and self-lubricating properties of MWCNT impregnated aluminium surfaces, Surf. Eng. 35 (2019) 970–981. https://doi.org/10.1080/02670844.2019.1584959. [3] B. Sahoo, S.D. Girhe, J. Paul, Influence of process parameters and temperature on the solid state fabrication of multilayered graphene-aluminium surface nanocomposites, J. Manuf. Process. 34 (2018) 486–494. https://doi.org/10.1016/j.jmapro.2018.06.042. [4] B. Sahoo, D. Narsimhachary, J. Paul, Tribological Behavior of Solid-State Processed Al-1100/GNP Surface Nanocomposites, J. Mater. Eng. Perform. 27 (2018) 6529–6544. https://doi.org/10.1007/s11665-018-3727-6. [5] B. Sahoo, J. Joseph, A. Sharma, J. Paul, Surface modification of aluminium by graphene impregnation, Mater. Des. 116 (2017) 51–64. https://doi.org/10.1016/j.matdes.2016.11.075. [6] B. Sahoo, R. Kumar, J. Joseph, A. Sharma, J. Paul, Preparation of aluminium 6063-graphite surface composites by an electrical resistance heat assisted pressing technique, Surf. Coatings Technol. 309 (2017) 563–572. https://doi.org/10.1016/j.surfcoat.2016.12.011. Google Scholar Link https://scholar.google.com/citations?user=D-Rn99EAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=37063654800 Orcid Link https://orcid.org/0000-0003-0812-6970",
+    "research": "Surface Modification, Composite Materials, Solid-state welding Publication [1] B. SAHOO, T. DAS, J. PAUL, THERMAL SPRAYING AND RELATED TECHNOLOGIES FOR THE SURFACE MODIFICATION OF AL ALLOYS: REVIEW, Surf. Rev. Lett. 29 (2022). https://doi.org/10.1142/S0218625X2230009X. [2] B. Sahoo, D. Narsimhachary, J. Paul, Surface mechanical and self-lubricating properties of MWCNT impregnated aluminium surfaces, Surf. Eng. 35 (2019) 970–981. https://doi.org/10.1080/02670844.2019.1584959. [3] B. Sahoo, S.D. Girhe, J. Paul, Influence of process parameters and temperature on the solid state fabrication of multilayered graphene-aluminium surface nanocomposites, J. Manuf. Process. 34 (2018) 486–494. https://doi.org/10.1016/j.jmapro.2018.06.042. [4] B. Sahoo, D. Narsimhachary, J. Paul, Tribological Behavior of Solid-State Processed Al-1100/GNP Surface Nanocomposites, J. Mater. Eng. Perform. 27 (2018) 6529–6544. https://doi.org/10.1007/s11665-018-3727-6. [5] B. Sahoo, J. Joseph, A. Sharma, J. Paul, Surface modification of aluminium by graphene impregnation, Mater. Des. 116 (2017) 51–64. https://doi.org/10.1016/j.matdes.2016.11.075. [6] B. Sahoo, R. Kumar, J. Joseph, A. Sharma, J. Paul, Preparation of aluminium 6063-graphite surface composites by an electrical resistance heat assisted pressing technique, Surf. Coatings Technol. 309 (2017) 563–572. https://doi.org/10.1016/j.surfcoat.2016.12.011. Google Scholar Link https://scholar.google.com/citations?user=D-Rn99EAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=37063654800 Orcid Link https://orcid.org/0000-0003-0812-6970",
+    "summary": "Dr. Baidehish Sahoo is an Assistant Professor at the School of Mechanical Engineering. His primary research interests lie in the development and fabrication of composites for tribological and mechanical applications. Dr. Sahoo holds a Ph.D. in Mechanical Engineering, an M.Tech. in Metallurgical and Materials Engineering, and a B.Tech. in Mechanical Engineering. He has published 18 papers in international journals and has one year of experience in his field. Dr. Sahoo is also a member of The Indian Society for Technical Education and teaches subjects such as Advanced Manufacturing Techniques, Materials Science, and Design Thinking Laboratory.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/baidehish-sahoo",
       "scholar": "https://scholar.google.com/citations?user=D-Rn99EAAAAJ&hl=en",
@@ -2212,6 +2313,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "balagangadhar-reddy-kandula",
     "name": "Mr. Balagangadhar Reddy Kandula",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -2234,6 +2336,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "balaji-madhavrao-patil",
     "name": "Dr. Balaji Madhavrao Patil",
+    "preferredDisplayName": "",
     "designation": "Professor and Head, Computer Science",
     "department": "research-groups/quantum",
     "departmentName": "Quantum Science & Technology Group",
@@ -2254,6 +2357,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "balaso-nivruti-jagdale",
     "name": "Dr. Balaso Nivruti Jagdale",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -2265,7 +2369,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/balaso-nivruti-jagdale.jpg",
     "research": "",
-    "summary": "Balaso Jagdale received a Diploma in Industrial Electronics from Govt. Polytechnic Latur and BE Computer Engineering degree from Pune University in 1992. He received ME in Computer Engineering from VJTI, under Mumbai University in 1999. He has been awarded Ph.D. in the field of Computer Science and Technology from G H Raisoni College of Engineering affiliated to RTM Nagpur University, India.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/balaso-nivruti-jagdale",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=48662453500",
@@ -2278,6 +2382,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "barnali-banerjee",
     "name": "Dr. Barnali Banerjee",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -2298,6 +2403,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "basant-tiwari",
     "name": "Dr. Basant Tiwari",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -2309,7 +2415,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/basant-tiwari.webp",
     "research": "",
-    "summary": "Dr. Basant Tiwari is currently an Associate Professor in the Department of Computer Science at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune. He brings extensive experience in teaching undergraduate and postgraduate programs across national and international universities.",
+    "summary": "Dr. Basant Tiwari is currently an Associate Professor in the Department of Computer Science at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune. He brings extensive experience in teaching undergraduate and postgraduate programs across national and international universities. Dr. Tiwari has authored numerous research papers published in national and international journals and conferences, with over 25 publications indexed in SCI and Scopus. He has also contributed to edited handbooks published by Springer, Taylor & Francis, and IGI Global. Additionally, he has actively participated in various national and international conferences, workshops, seminars, and symposiums. His current research focuses on Cyber Security in Pervasive Computing, with special emphasis on applications in Healthcare, Internet of Things (IoT), and Data Analysis. Dr. Tiwari is a Senior Member of IEEE and ACM, as well as a Life Member of CSI and IACSIT. He has been honored with leadership roles such as Bhopal Representative in the IEEE M.P. Sub-section, Secretary of CSI Bhopal Chapter, and Secretary of ACM Indore Chapter. He has organized several national and international conferences, delivered invited talks, and have served as session chair for technical sessions. He is also an active reviewer for reputed international journals including IEEE, Springer and ACM. Dr. Tiwari holds an M.Tech in Computer Science and Engineering from Rajiv Gandhi Technical University, Bhopal, and earned his Ph.D. from Devi Ahilya University, Indore (M.P.), India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/basant-tiwari"
     },
@@ -2318,6 +2424,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "basavaraj-shantaram-kothavale",
     "name": "Dr. Basavaraj Shantaram Kothavale",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -2328,8 +2435,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/basavaraj-shantaram-kothavale.webp",
-    "research": "",
-    "summary": "Prof. Basavaraj S Kothavale, has a Ph.D. in Mechanical Engineering and has more than 20 years of experience in the field of teaching and research. Currently, they serve as a Professor and Head of the Mechanical Engineering Department at the S.G. Balekundri Institute of Technology, Belgaum, Karnataka, India. Their research interests include Composite Materials, Tribology, and Sustainable Energy. They have guided several research scholars and published numerous papers in reputed international journals and conferences. The individual's contributions have been recognized with awards and honors, including the Best Teacher Award from Visvesvaraya Technological University in 2015.",
+    "research": "Product Design, Reliability, NVH",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/basavaraj-shantaram-kothavale",
       "scholar": "https://scholar.google.co.th/citations?hl=en&user=5kOIhjAAAAAJ",
@@ -2341,6 +2448,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bhakti-amogh-paranjape",
     "name": "Dr. Bhakti Amogh Paranjape",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -2352,7 +2460,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/bhakti-amogh-paranjape.jpg",
     "research": "",
-    "summary": "Prof. Bhakti Paranjape holds a Bachelor's degree in Electronics from Shivaji University and a Masters in Digital Systems from Pune University. With over 14 years of teaching experience and 2 years of industry experience, she is currently working as an Assistant Professor at MIT-WPU. She is also pursuing a PhD in Machine Learning from Dr. Vishwanath Karad MIT World Peace University. Her expertise lies in the areas of digital systems, machine learning, and electronics. Rearch Area Machine Learning, Artificial Intelligence Publication 1. Paranjape Bhakti Amogh, and Apurva Abhijit Naik. \"Object Detection Using SSD MobileNet on Indian Dataset.\" Modern Approaches in Machine Learning & Cognitive Science: A Walkthrough. Cham: Springer International Publishing, 2022. 257-267. DOI: 10.1007/978-3-030-96634-8_24 2. Paranjape Bhakti A., and Apurva A. Naik. \"DATS_2022: A versatile Indian Dataset for Object Detection in Unstructured Traffic Conditions.\" Data in brief 43 (2022): 108470. https://doi.org/10.1016/j.dib.2022.108470 3. Joshi Atharva, Abhishek Shelke, and Bhakti Paranjape. \"A Comprehensive Comparison Between Pre-trained and Custom Trained Object Detection Model for Indian Traffic Scenarios.\" Intelligent Systems and Applications: Select Proceedings of ICISA 2022. Singapore: Springer Nature Singapore, 2023. 209-218. DOI: 10.1007/978-981-19-6581-4_17 4. Gaikwad Ashwini, et al. \"Stair Detection and Classification Using Deep Neural Network for the Visually Impaired.\" NVEO-NATURAL VOLATILES & ESSENTIAL OILS Journal| NVEO (2021): 8312-8321. https://www.nveo.org/index.php/journal/article/view/2209 5. Kute R., Anuse, A., Paranjape, B., & Munot, M. Transform Domain Approaches for Biometric Fusion of Fingerprint and Palmprint. 6. Rupali Kute, Alwin Anuse, Pranav Bhat, Bhakti Paranjape. Liveness Detection of Fingerprints using Noise in Ridge-Valley Structure and Texture Analysis Method Google Scholar Link https://scholar.google.co.in/citations?hl=en&user=jp1aBoUAAAAJ Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57657395400 Orcid Link https://orcid.org/0000-0002-2101-5266",
+    "summary": "Prof. Bhakti Paranjape holds a Bachelor's degree in Electronics from Shivaji University and a Masters in Digital Systems from Pune University. With over 14 years of teaching experience and 2 years of industry experience, she is currently working as an Assistant Professor at MIT-WPU. She is also pursuing a PhD in Machine Learning from Dr. Vishwanath Karad MIT World Peace University. Her expertise lies in the areas of digital systems, machine learning, and electronics.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/bhakti-amogh-paranjape",
       "scholar": "https://scholar.google.co.in/citations?hl=en&user=jp1aBoUAAAAJ",
@@ -2364,6 +2472,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bharat-burghate",
     "name": "Prof. Bharat Burghate",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -2385,6 +2494,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bharat-sambhu-chaudhari",
     "name": "Dr. Bharat Sambhu Chaudhari",
+    "preferredDisplayName": "",
     "designation": "Senior Professor (HAG) and Dean - Research and Development",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -2396,7 +2506,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/bharat-sambhu-chaudhari.webp",
     "research": "AIoT, TinyML, LPWANs, Si-Photonics, Optical Networks, Switching & Routing Technologies",
-    "summary": "Dr. Bharat S. Chaudhari has pursued the BE in Industrial Electronics from Amravati University in 1989 and then METelE and PhD in Engineering from Jadavpur University, Kolkata, India, in 1993 and 2000, respectively. After being a Full Professor in Electronics and Telecommunication Engineering with the Pune Institute of Computer Technology and the Dean and Principal of the International Institute of Information Technology, Pune, he joined MIT World Peace University (then MIT Pune) in 2014 as a Professor. Currently, he is working as a Senior Professor (Higher Administrative Group) in Electronics and Communication Engineering and Dean – Research and Development. He held additional responsibilities as Dean of Academics (July 2021 - Sept 2022), Associate Dean - Faculty of Engineering and Technology (Feb 2020 - June 2023), and Head of the School of Electrical/Electronics and Telecommunication Engineering (July 2017 - December 2023) at MIT World Peace University.",
+    "summary": "Dr. Bharat S. Chaudhari has pursued the BE in Industrial Electronics from Amravati University in 1989 and then METelE and PhD in Engineering from Jadavpur University, Kolkata, India, in 1993 and 2000, respectively. After being a Full Professor in Electronics and Telecommunication Engineering with the Pune Institute of Computer Technology and the Dean and Principal of the International Institute of Information Technology, Pune, he joined MIT World Peace University (then MIT Pune) in 2014 as a Professor. Currently, he is working as a Senior Professor (Higher Administrative Group) in Electronics and Communication Engineering and Dean – Research and Development. He held additional responsibilities as Dean of Academics (July 2021 - Sept 2022), Associate Dean - Faculty of Engineering and Technology (Feb 2020 - June 2023), and Head of the School of Electrical/Electronics and Telecommunication Engineering (July 2017 - December 2023) at MIT World Peace University. With 35 years of experience in teaching and research, he has authored more than 125 research papers in wireless, telecom, and optical networks and edited several conference proceedings and four books. He has four granted patents, and two patents are in the published stage. Since 2007, Dr. Chaudhari has been appointed as a Visiting Scientist (Simons Associate/Regular Associate) to ICTP, a Tier I research organization of UNESCO established by Nobel Laureate Dr. Abdus Salam in Trieste, Italy. Dr. Chaudhari has successfully executed several research and consultancy projects and accomplished international research collaborations. He has delivered technical talks at various conferences and platforms in different countries. Dr. Chaudhari is a recipient of the 2020 IETE N V Gadadhar Memorial Award for outstanding contribution in fostering research and education, the MAEER Pune’s Ideal Teacher Award 2015, and the Young Scientist Research Grant from the Department of Science and Technology, Government of India, in 2003. Dr. Chaudhari is a Fellow of the Maharashtra Academy of Sciences, IETE and IE (I), the Founder Chair of IEEE Pune Section (R-10), and a Senior Member of IEEE. He also chaired the IEEE Communications Society Pune Chapter. He serves as a Program Evaluator of the Engineering Accreditation Commission (EAC) of ABET, United States, for accreditation of computer, communications, and similar engineering programs. He has been part of ABET Teams for onsite accreditation at several U.S. and other foreign Universities. He has also undertaken NAAC accreditation peer team visits to various colleges and Universities in India. He has been on the panel of juries of several prestigious national awards and as a member of multiple committees related to higher education, research, and administration established by various universities/agencies.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/bharat-sambhu-chaudhari",
       "scholar": "https://scholar.google.com/citations?user=pd-vRWgAAAAJ&hl=en&oi=ao",
@@ -2408,6 +2518,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bhushan-ganurkar",
     "name": "Mr. Bhushan Ganurkar",
+    "preferredDisplayName": "",
     "designation": "Teaching Assistant cum Studio Executive",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -2419,7 +2530,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/bhushan-ganurkar.webp",
     "research": "",
-    "summary": "Bhushan Ganurkar is a Creative Videographer with 9 years of Video Production Expertise. He has a postgraduate degree in mass communication (video production) from Pune University and is associated with Dadasaheb Phalke International Film School as a Teaching Assistant cum Studio Executive.",
+    "summary": "Bhushan Ganurkar is a Creative Videographer with 9 years of Video Production Expertise. He has a postgraduate degree in mass communication (video production) from Pune University and is associated with Dadasaheb Phalke International Film School as a Teaching Assistant cum Studio Executive. Ganurkar has worked as an AD for films such as ‘Merit Animal’, ‘Khwada’ and ‘Purushottam’ and as an editor and script writer for multiple short films and documentaries. He is a regular member of the Screenwriter’s Association and has completed the Film Appreciation Course conducted by NFAI in 2017. Ganurkar has also worked as a cinematographer for several documentaries, short films, ad films, brand films and music videos before joining as a Teaching Assistant at MIT-WPU.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/bhushan-ganurkar"
     },
@@ -2428,6 +2539,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bipin-vishvas-palande",
     "name": "CA Bipin Vishvas Palande",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -2451,6 +2563,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bishnu-prasad-mohapatra",
     "name": "Dr. Bishnu Prasad Mohapatra",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -2474,6 +2587,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "bishnudeo-roy",
     "name": "Dr. Bishnudeo Roy",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -2494,6 +2608,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "brijesh-kumar",
     "name": "Dr. Brijesh Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -2505,7 +2620,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/brijesh-kumar.webp",
     "research": "",
-    "summary": "Dr. Brijesh Kumar is a developmental biologist with extensive research experience in genome engineering, including CRISPR/Cas, animal models (chicken and zebrafish), and Drug/Target Discovery technologies.",
+    "summary": "Dr. Brijesh Kumar is a developmental biologist with extensive research experience in genome engineering, including CRISPR/Cas, animal models (chicken and zebrafish), and Drug/Target Discovery technologies. After completing his master's thesis on developmental metabolomics in chicken embryos at IIT Kanpur, Dr. Kumar obtained his PhD on pancreatic beta cell function and regeneration, mitigating diabetes using a zebrafish model from the Max Planck Institute for Heart and Lung Research, Bad Nauheim, Germany. His work led to the identification of several targets and drugs holding potential for therapeutic interventions. Scholastically, Dr. Kumar was selected for developmental biology training at the Marine Biological Laboratory, Woods Hole, Massachusetts, USA, where he witnessed the Nobel laureates and learnt state-of-the-art molecular tools and techniques from world leaders in the field. For his postdoctoral training in disease modelling for Congenital Disorder of Glycosylation and Heart Failure, he worked at Greenwood Genetic Center, South Carolina, USA, Heidelberg University Hospital, Germany, and Duke University, USA, where he contributed to projects focused on molecular genetics, functional genomics, and prime editing. Dr. Kumar has actively supervised laboratory courses, led journal clubs, and mentored researchers, fostering scientific curiosity and technical excellence. Throughout, Dr. Kumar has presented his research at numerous national and international conferences and won several travel and poster awards. Dr. Kumar's research interests focus on leveraging genome engineering and high- throughput technologies, including omics, to uncover molecular mechanisms underlying disease and develop innovative strategies for therapeutic intervention.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/brijesh-kumar",
       "orcid": "https://orcid.org/0000-0002-7251-492X",
@@ -2517,6 +2632,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "chaitali-vivek-chandankhede",
     "name": "Dr. Chaitali Vivek Chandankhede",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -2528,7 +2644,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/chaitali-vivek-chandankhede.jpg",
     "research": "",
-    "summary": "Dr. Chaitali Vivek Chandankhede is an experienced academician and researcher in the field of Computer Science and Engineering. She serves as an Assistant Professor at Dr. Vishwanath Karad MIT World Peace University with over 23 years of teaching experience.",
+    "summary": "Dr. Chaitali Vivek Chandankhede is an experienced academician and researcher in the field of Computer Science and Engineering. She serves as an Assistant Professor at Dr. Vishwanath Karad MIT World Peace University with over 23 years of teaching experience. Her expertise includes Machine Learning, Deep Learning, Data Analytics, Computer Vision, and Information Security. She holds a Ph.D. in Computer Science along with an M.E. in IT and an MBA in HR. She has guided numerous undergraduate and postgraduate projects and published several research papers in international journals and conferences, actively contributing to research, innovation, and student mentoring in emerging AI technologies.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/chaitali-vivek-chandankhede",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56568428600",
@@ -2541,6 +2657,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "chaitanya-girish-burande",
     "name": "Dr. Chaitanya Girish Burande",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -2564,6 +2681,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "chandrashekhar-digambarrao-bobade",
     "name": "Dr. Chandrashekhar Digambarrao Bobade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -2575,7 +2693,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/chandrashekhar-digambarrao-bobade.jpg",
     "research": "Biomaterials, thin polymeric films, bioengineering, nanotechnology, and advanced drug delivery systems",
-    "summary": "Dr. Chandrashekhar D. Bobade is an accomplished academician, researcher, and academic leader and career blog writer with over 17 years of experience in pharmaceutical education and research. He is a DHR–ICMR International Fellow (Government of India, 2025–26) and a DST-SERB & INSA Travel Grant Awardee (Government of India, 2023, USA). Currently, he serves as the President of the Indian Pharmaceutical Association (IPA), Pune (2024–26).",
+    "summary": "Dr. Chandrashekhar D. Bobade is an accomplished academician, researcher, and academic leader and career blog writer with over 17 years of experience in pharmaceutical education and research. He is a DHR–ICMR International Fellow (Government of India, 2025–26) and a DST-SERB & INSA Travel Grant Awardee (Government of India, 2023, USA). Currently, he serves as the President of the Indian Pharmaceutical Association (IPA), Pune (2024–26). Dr. Bobade is an active member of the Biopolymers and Drug Delivery Research Group, with a strong research focus on advanced drug delivery systems and biomaterials. His scholarly work has been published in high-impact international journals, including RSC, ACS, and Springer Nature. He has received multiple research and travel grants from SPPU, DST-SERB, and INSA, Pharmacy council of India including support for presenting his research at ACS Fall 2023, USA. His leadership journey spans key academic and administrative roles such as UG Program Head and Research Coordinator, contributing significantly to institutional growth and academic governance. As a committed professional leader, he holds lifetime memberships in ACS, IPA and APTI and continues to strengthen professional networks at regional and national levels. An engaging educator and mentor, Dr. Bobade has delivered over 20 invited talks on pedagogy, research methodology, and professional skill development. Widely recognized as a motivational speaker, effective communicator, and dynamic administrator, he inspires students and faculty alike With 17 research articles, 6 review papers, 6 patent applications, and 25 international conference presentations, Dr. Bobade continues to make impactful contributions to pharmaceutical sciences. His work is guided by a clear mission—to inspire minds, foster innovation, and lead transformative growth in academia and research.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/chandrashekhar-digambarrao-bobade",
       "scholar": "https://scholar.google.com/citations?user=0-ICyxMAAAAJ&hl=en",
@@ -2587,6 +2705,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "chetan-bhimrao-khadse",
     "name": "Dr. Chetan Bhimrao Khadse",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -2609,6 +2728,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "chinmay-devidas-deshmukh",
     "name": "Dr. Chinmay Devidas Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -2620,7 +2740,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/chinmay-devidas-deshmukh.webp",
     "research": "Preclinical screening of diabetes and Inflammatory Disease models",
-    "summary": "Dr. Chinmay D. Deshmukh is an Assistant Professor at the Department of Pharmacology in the School of Health Sciences and Technology at Dr. Vishwanath Karad MIT World Peace University, Kothrud, Pune, India. He holds a B.Pharm degree from the Institute of Pharmaceutical Education and Research, Borgaon (Meghe), Wardha, Maharashtra, which he completed in 2005 with first division. Later, in 2007, he completed the Executive Master’s Program in Pharmacy Management (MBA) from Mitcon Institute of Management, Balewadi, Pune, Maharashtra. He also holds a Master of Pharmacy degree in Pharmacology, which he completed in 2009 with first division from Jawaharlal Nehru Medical College, Belgaum, Karnataka. He has been teaching for the last 14 years and completed his Ph.D. in Pharmacology in 2017 from Pacific Academy of Higher Education and Research (PAHER), Udaipur, Rajasthan.",
+    "summary": "Dr. Chinmay D. Deshmukh is an Assistant Professor at the Department of Pharmacology in the School of Health Sciences and Technology at Dr. Vishwanath Karad MIT World Peace University, Kothrud, Pune, India. He holds a B.Pharm degree from the Institute of Pharmaceutical Education and Research, Borgaon (Meghe), Wardha, Maharashtra, which he completed in 2005 with first division. Later, in 2007, he completed the Executive Master’s Program in Pharmacy Management (MBA) from Mitcon Institute of Management, Balewadi, Pune, Maharashtra. He also holds a Master of Pharmacy degree in Pharmacology, which he completed in 2009 with first division from Jawaharlal Nehru Medical College, Belgaum, Karnataka. He has been teaching for the last 14 years and completed his Ph.D. in Pharmacology in 2017 from Pacific Academy of Higher Education and Research (PAHER), Udaipur, Rajasthan. In addition to his academic achievements, Dr. Deshmukh has passed 30 and 40 words per minute typing exams and has participated in various extracurricular activities and social work. He has attended nearly 80 conferences and workshops across India and has worked as an organizing committee member for several national and international conferences. He has also attended faculty development programs, NBA/ISO workshops, and various social and religious programs conducted by the World Peace University. He has contributed various articles to college magazines, published 21 articles, and authored one book chapter. He has also presented two poster presentations. Dr. Deshmukh has served as an external examiner, external senior supervisor, and expert assistant in Savitribai Phule Pune University's practical examinations for the B.Pharm course. He has moderated the Pathophysiology subject and handled the catering committee for various college-level programs. He has also handled maintenance (Electrical/Plumbing/Civil) portfolios for the last 10 years and has been handling student feedback for the last 3 years. He is currently the sports and library coordinator and is responsible for M.Pharm seminar coordination and Yoga coordination works. He has also contributed to the development of the museum and animal house of the School. Dr. Deshmukh has guided students in undergraduate projects and is currently a mentor to students and the laboratory in-charge of two laboratories in his department. He recently participated, conducted, and coordinated an industrial visit to NuLife Pharmaceuticals, MIDC area, Bhosari Pune, on 30/03/2022. He was also selected to participate in \"\"Dubai Expo-2022,\"\" which was focused on the themes of opportunity, mobility, and sustainability. During the visit, he visited 25 pavilions of Germany, India, Peru, USA, Saudi Arabia, Alif, and France, along with local sightseeing in Dubai.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/chinmay-devidas-deshmukh"
     },
@@ -2629,6 +2749,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "debabrata-saha",
     "name": "Dr. Debabrata Saha",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -2642,7 +2763,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/debabrata-saha.jpg",
     "research": "Semiconductor, ferroelectric, and dielectric thin films for solid-state devices, including photodetectors and thin-film transistors.",
-    "summary": "Dr. Debabrata Saha has a Ph.D. from RRCAT, Indore, and research experience from IITs and South Korea. With a research interest in experimental semiconductor physics, he has contributed to the field with his expertise. He has a passion for exploring the properties and characteristics of semiconductors, and has published several research papers in renowned international journals. His research findings have been appreciated in the scientific community, and he continues to strive towards new discoveries and advancements in this field. Research Area Solid state electronic devices Publication 1. Spectroscopic ellipsometry characterization of amorphous and crystalline TiO2 thin films grown by atomic layer deposition at different temperatures D Saha, RS Ajimsha, K Rajiv, C Mukherjee, M Gupta, P Misra, LM Kukreja Applied surface science 315, 116-123 2. Phase-coherent electron transport in (Zn, Al)Ox thin films grown by atomic layer deposition D Saha, P Misra, RS Ajimsha, MP Joshi, LM Kukreja Applied Physics Letters 105 (21), 212102 3.Investigating Optical Properties of Atomic Layer Deposited ZnO/TiOx Multi-stacked Thin Films Above Mott Critical Density D Saha, P Misra, MP Joshi, LM Kukreja The Journal of Physical Chemistry C 121 (33), 18129-18136 4. Comment on “Structural and Electrical Properties of Atomic Layer Deposited Al‐Doped ZnO Films” D Saha, P Misra, M Joshi, LM Kukreja Advanced Functional Materials 28 (15), 1702875 Google Scolar Link https://scholar.google.com/citations?user=TBgCfg0AAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=55828097100 Orcid Link https://orcid.org/0000-0001-6469-6391",
+    "summary": "Dr. Debabrata Saha has a Ph.D. from RRCAT, Indore, and research experience from IITs and South Korea. With a research interest in experimental semiconductor physics, he has contributed to the field with his expertise. He has a passion for exploring the properties and characteristics of semiconductors, and has published several research papers in renowned international journals. His research findings have been appreciated in the scientific community, and he continues to strive towards new discoveries and advancements in this field.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/debabrata-saha",
       "scholar": "https://scholar.google.com/citations?user=TBgCfg0AAAAJ&hl=en",
@@ -2654,6 +2775,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deepa-soumik-nath",
     "name": "Dr. Deepa Soumik Nath",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -2674,6 +2796,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deepak-kumar",
     "name": "Dr. Deepak Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -2685,7 +2808,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/deepak-kumar.jpg",
     "research": "Vortex-induced Vibrations, Drag reduction and Flow Control, Fluid-Structure Interaction, Thermal management of systems",
-    "summary": "\"Dr. Deepak Kumar is an accomplished Assistant Professor at the School of Mechanical Engineering, Dr. Vishwanath Karad, MIT World Peace University in Pune, Maharashtra. He is a highly regarded researcher with a passion for the numerical analysis of fluid-structure interactions, refrigeration and air-conditioning, and solar energy.",
+    "summary": "\"Dr. Deepak Kumar is an accomplished Assistant Professor at the School of Mechanical Engineering, Dr. Vishwanath Karad, MIT World Peace University in Pune, Maharashtra. He is a highly regarded researcher with a passion for the numerical analysis of fluid-structure interactions, refrigeration and air-conditioning, and solar energy. Having earned his PhD in Mechanical Engineering from the Indian Institute of Technology (ISM) Dhanbad, Dr. Kumar's research has resulted in numerous peer-reviewed publications in top-tier international journals and conferences. His innovative and impactful contributions have received recognition and numerous awards. In addition to his research, Dr. Kumar is an active mentor and instructor. He has taught a range of mechanical engineering undergraduate and graduate courses, and has supervised multiple postgraduate students in their research projects. Dr. Kumar is committed to inspiring and guiding the next generation of engineers and researchers in India. To learn more about Dr. Kumar's research interests, publications, and teaching activities, visit his website at https://sites.google.com/view/drkumardeepak/home.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/deepak-kumar"
     },
@@ -2694,6 +2817,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deepak-popat-hujare",
     "name": "Dr. Deepak Popat Hujare",
+    "preferredDisplayName": "",
     "designation": "Professor & Program Director",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -2717,6 +2841,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deepali-dhananjay-shahane",
     "name": "Dr. Deepali Dhananjay Shahane",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -2728,7 +2853,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/deepali-dhananjay-shahane.webp",
     "research": "Agile Methodology, Software Engineering, Information Systems, Computer Management, Digital Transformation, Analytical Study",
-    "summary": "Dr. Deepali Shahane is an academic professional with over 25 years of experience in teaching, research, and academic administration. She is currently serving as an Associate Professor at MIT World Peace University, Pune. Her academic interests include agile methodology, software engineering, information systems, digital transformation, and computer management.",
+    "summary": "Dr. Deepali Shahane is an academic professional with over 25 years of experience in teaching, research, and academic administration. She is currently serving as an Associate Professor at MIT World Peace University, Pune. Her academic interests include agile methodology, software engineering, information systems, digital transformation, and computer management. She has guided undergraduate, postgraduate, and Ph.D. students, and has also conducted pre-Ph.D. coursework sessions. She has been actively involved in curriculum design, aligning programs such as BBA, MBA, and MCA with NEP 2020 guidelines. Dr. Shahane has contributed to quality assurance as IQAC Convener and Secretary of the Board of Studies at MITWPU, and has participated in NBA and NAAC accreditation processes. Dr. Shahane has a publication record that reflects her research interests in agile practices, educational informatics, healthcare IT, digital transformation, and management education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/deepali-dhananjay-shahane",
       "scholar": "https://scholar.google.com/citationsuser=ARlQkToAAAAJ&hl=en",
@@ -2740,6 +2865,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deepali-sanjay-kulkarni",
     "name": "Mrs. Deepali Sanjay Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -2752,8 +2878,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/material-science-engineering": "Department of Materials Science & Engineering"
     },
     "photoPath": "./assets/campus/deepali-sanjay-kulkarni.webp",
-    "research": "POLYMER MATERIALS ,NANOMATERIALS ,COMPOSITES",
-    "summary": "Mrs. Deepali Kulkarni has a vast teaching experience of 28 years in the field of polymer materials, processing of composites, rubber technology, and design of equipment and machine elements. She has also conducted research on topics such as the effect of egg shell powder and fish bone powder content on the mechanical performance of PP, the effect of Nano Silica on phase transformation from Form-II to Form-I of Polybutene-1, and polyfurfuryl-based polymer concrete. Research Area POLYMER MATERIALS ,NANOMATERIALS ,COMPOSITES Publication 1)Effect of egg shell powder and fish bone powder content on mechanical performance of PP 2)Synthesis of Unsaturated Polyester Resin Based on Pet Waste 3)Synthesis Of Bio-Polyurethane Foam Using Liquefied Pine Wood 4)Effect of nano silica on phase transformation from form-II to form –I of Polybutene-1 5)Polyfurfuryl based Polymer Concrete Google Scholar Link https://scholar.google.com/citations?user=uL5abvEAAAAJ&hl=en&oi=ao Orcid Link https://orcid.org/0000-0002-0309-3519",
+    "research": "POLYMER MATERIALS ,NANOMATERIALS ,COMPOSITES Publication 1)Effect of egg shell powder and fish bone powder content on mechanical performance of PP 2)Synthesis of Unsaturated Polyester Resin Based on Pet Waste 3)Synthesis Of Bio-Polyurethane Foam Using Liquefied Pine Wood 4)Effect of nano silica on phase transformation from form-II to form –I of Polybutene-1 5)Polyfurfuryl based Polymer Concrete Google Scholar Link https://scholar.google.com/citations?user=uL5abvEAAAAJ&hl=en&oi=ao Orcid Link https://orcid.org/0000-0002-0309-3519",
+    "summary": "Mrs. Deepali Kulkarni has a vast teaching experience of 28 years in the field of polymer materials, processing of composites, rubber technology, and design of equipment and machine elements. She has also conducted research on topics such as the effect of egg shell powder and fish bone powder content on the mechanical performance of PP, the effect of Nano Silica on phase transformation from Form-II to Form-I of Polybutene-1, and polyfurfuryl-based polymer concrete.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/deepali-sanjay-kulkarni",
       "orcid": "https://orcid.org/0000-0002-0309-3519"
@@ -2763,6 +2889,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deepali-sonawane",
     "name": "Ms. Deepali Sonawane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -2785,6 +2912,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deependra-sharma",
     "name": "Dr. Deependra Sharma",
+    "preferredDisplayName": "",
     "designation": "Professor and Dean School of Business",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -2796,7 +2924,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/deependra-sharma.webp",
     "research": "",
-    "summary": "Dr. Deependra Sharma is a visionary academic leader and the Dean of the School of Business at MIT World Peace University, Pune. With a dynamic career spanning over 25 years, he brings a future-focused approach to management education i.e. constantly evolving, refining, and adapting to the needs of an ever-changing global business landscape.",
+    "summary": "Dr. Deependra Sharma is a visionary academic leader and the Dean of the School of Business at MIT World Peace University, Pune. With a dynamic career spanning over 25 years, he brings a future-focused approach to management education i.e. constantly evolving, refining, and adapting to the needs of an ever-changing global business landscape. An alumnus of the Indian Institute of Management Ahmedabad (IIM-A), Dr. Sharma combines deep academic insight with practical industry experience. His early career in managerial roles across Indian industries shaped his pragmatic approach to education, blending theory with real-world relevance. Throughout his academic journey, Dr. Sharma has led curriculum transformation, fostered innovation, and championed collaboration between academia and industry. His leadership is rooted in a strong belief in empowering students, not just as learners, but as future entrepreneurs and changemakers. He has played a key role in nurturing a culture of innovation and enterprise, championing incubation initiatives, experiential learning, and industry-aligned pedagogy across his leadership roles. His research areas such as innovation diffusion, entrepreneurship, consumer behaviour, and university–industry partnerships, with publications in leading journals indexed in Scopus, Emerald, and Elsevier. A strong proponent of global academic exchange, he has contributed to international curriculum development, student mentorship, and partnerships with institutions such as UCLA and the University of Maryland. Dr. Sharma continues to inspire through his editorial work, active conference participation, and mentorship of the next generation of business leaders. His passion for continuous improvement and strategic foresight make him a driving force behind the School of Business’s mission to deliver relevant, world-class education for tomorrow's leaders.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/deependra-sharma"
     },
@@ -2805,6 +2933,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "deobrat-singh",
     "name": "Dr. Deobrat Singh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -2816,7 +2945,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/deobrat-singh.webp",
     "research": "High-energy theory, gravitation, and fundamental interactions.",
-    "summary": "Dr. Deobrat Singh is an Assistant Professor of Physics. He completed his Ph.D. from the University of Delhi in theoretical High Energy Physics. His research interests lie in the field of Theoretical High Energy Physics. Dr. Singh has published several papers in various international journals and conferences. Some of his notable research publications include:",
+    "summary": "Dr. Deobrat Singh is an Assistant Professor of Physics. He completed his Ph.D. from the University of Delhi in theoretical High Energy Physics. His research interests lie in the field of Theoretical High Energy Physics. Dr. Singh has published several papers in various international journals and conferences. Some of his notable research publications include: Quantum effects in topological and Schwarzschild de Sitter brane: Aspects of torsion on (DD)4-brane universe\"\" by Richa Kapoor, Supriya Kar, and Deobrat Singh, published in the International Journal of Modern Physics D24, No:2 (2015) 15 50015. CFT6 Bulk/Boundary AdS5 Q Correspondence and Emergent Gravity\"\" by R. Nitish, Deobrat Singh, and Supriya Kar, published in Physica Scripta. DOI: https://doi.org/10.1088/1402-4896/ab144e ArXiv:1612.01065 Torsion geometries in U (1) gauge theory on D5-brane\"\" by Deobrat Singh, Richa Kapoor, and Supriya Kar, published in Springer Proceedings in Physics Vol.174, Ch.77, pg.507-512, ISBN 978-3-319-25617-7. Dr. Singh's research contributions have been recognized in the academic community, and he has an impressive citation record on Google Scholar and Scopus. He also has an ORCID ID with publications listed in his profile.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/deobrat-singh",
       "scholar": "https://scholar.google.com/citations?user=aRAErjsAAAAJ&hl=en",
@@ -2828,6 +2957,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dev-kumar-thapa",
     "name": "Dr. Dev Kumar Thapa",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -2852,6 +2982,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "devashish-shedge",
     "name": "Mr. Devashish Shedge",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/media-and-communication",
     "departmentName": "Department of Media and Communication",
@@ -2876,6 +3007,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "devendra-joshi",
     "name": "Dr. Devendra Joshi",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -2887,7 +3019,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/devendra-joshi.webp",
     "research": "",
-    "summary": "My teaching philosophy focuses on fostering critical thinking, innovation, and practical problem-solving among students. I aim to integrate theoretical knowledge with real-world applications, particularly in areas such as artificial intelligence, data science, and optimization.",
+    "summary": "My teaching philosophy focuses on fostering critical thinking, innovation, and practical problem-solving among students. I aim to integrate theoretical knowledge with real-world applications, particularly in areas such as artificial intelligence, data science, and optimization. I am motivated to create an engaging learning environment that encourages research, collaboration, and ethical values. Through effective teaching, mentoring, and research contributions, I strive to support MIT-WPU’s vision of developing socially responsible professionals and advancing knowledge that contributes to technological progress and societal well-being.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/devendra-joshi",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57221869205",
@@ -2900,6 +3032,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dhaarna-rathore",
     "name": "CA Dhaarna Rathore",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -2923,6 +3056,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dhanashree-umesh-tharkude",
     "name": "Dr. Dhanashree Umesh Tharkude",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -2934,7 +3068,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/dhanashree-umesh-tharkude.jpg",
     "research": "Human Resource Management/ OB, Sustainability",
-    "summary": "Dr. Dhanashree Tharkude is an accomplished academic and industry professional with more than two decades of experience. She holds a doctoral degree in Human Resource Management from Savitribai Phule Pune University and has been recognized for her research work at several levels. Dr. Tharkude has published two patents for her research and was awarded \"\"Best PhD Thesis\"\" at the Jaipuria Institute of Management Conference.",
+    "summary": "Dr. Dhanashree Tharkude is an accomplished academic and industry professional with more than two decades of experience. She holds a doctoral degree in Human Resource Management from Savitribai Phule Pune University and has been recognized for her research work at several levels. Dr. Tharkude has published two patents for her research and was awarded \"\"Best PhD Thesis\"\" at the Jaipuria Institute of Management Conference. Currently serving as the Associate Dean for External Relations and HR Faculty at MIT World Peace University's Ramcharan School of Leadership, Dr. Tharkude is also a recognized PhD guide at Dr. Vishwanath Karad MIT World Peace University. Her areas of expertise include Organizational Behaviour, Human Resource Management, Talent Management, and Organizational Development. In addition to her academic and industry experience, Dr. Tharkude has also been involved in course design, student development, academic programming and planning, policies and procedures development, and designing syllabus frameworks. She has previously worked with Aptech Ltd. for five years and has conducted training sessions for organizations such as National Defence Academy, AXA-Abs, Daimler Chrysler, IBM, TCS, Airtel, and KPIT Cummins. Dr. Tharkude's research interests revolve around studying diverse business models, processes, behavioural patterns, and collaborations. Her research work is characterized by a carefully chosen focus on industry and a practical orientation towards problem-solving. Dr. Tharkude has filed two patents for her research contributions in the Human Resource domain and has authored over 12 research papers and two case studies in renowned national and international journals. She has successfully completed research projects with Cummins India Ltd. and Vinsys IT Services.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/dhanashree-umesh-tharkude"
     },
@@ -2943,6 +3077,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dhanashri-narayan-wategaonkar",
     "name": "Dr. Dhanashri Narayan Wategaonkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -2954,7 +3089,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/dhanashri-narayan-wategaonkar.webp",
     "research": "",
-    "summary": "I, Dhanashri Wategaonkar working as an Assistant professor in School of Computer Engineering at MIT-World Peace University, Pune, India. Dr. Wategaonkar has completed her doctoral degree (Ph.D.) from the premier and India’s top-ranked institutes in engineering, VIT University Chennai Campus, India. Her area of research in Wireless Sensor Network. In the same domain, I have published 1 patent and 15 papers.",
+    "summary": "I, Dhanashri Wategaonkar working as an Assistant professor in School of Computer Engineering at MIT-World Peace University, Pune, India. Dr. Wategaonkar has completed her doctoral degree (Ph.D.) from the premier and India’s top-ranked institutes in engineering, VIT University Chennai Campus, India. Her area of research in Wireless Sensor Network. In the same domain, I have published 1 patent and 15 papers. All Papers are published in various reputed journals with standard indexing like IEEE, Scopus, and Elsevier Scopus. Recently she has completed two consultancy projects. One is funded by BCUD, Pune with the amount of 2 Lakhs. Another project was under the guidance of TechMahindra where they have implemented a retail system and also we have signed MoU with them. Currently, in the school, she is programme coordinator for the Cybersecurity and Forensics programme. She has successfully completed Remote Pilot Certification, on 05th March 2023 for 10 years from Directorate General of Civil Aviation (DCGA), Certificate No. PC032300002NW.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/dhanashri-narayan-wategaonkar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55580011100",
@@ -2967,6 +3102,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dhiresh-someshrao-shastri",
     "name": "Mr. Dhiresh Someshrao Shastri",
+    "preferredDisplayName": "",
     "designation": "Lecturer",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -2977,8 +3113,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/polytechnic-skill-development": "Department of Polytechnic"
     },
     "photoPath": "./assets/campus/dhiresh-someshrao-shastri.jpg",
-    "research": "",
-    "summary": "As a lecturer at DVKMIT School Of Polytechnic and Skill Development in Pune, Maharashtra, India, Prof. Dhiresh Someshrao Shastri has 18 years of teaching experience and 5 years of industrial experience. He prioritizes vibrant and lively student-teacher interactions and is passionate about teaching his subjects. Prof. Shastri's ultimate objective is to equip students with the necessary skills to overcome any challenge they may face in the world. Research Area Wind Energy, Refrigeration, Automobiles Scopus Link: https://www.scopus.com/authid/detail.uri?authorId=58107581900&origin=recordPage Orcid Link : https://orcid.org/0009-0000-6302-2002",
+    "research": "Wind Energy, Refrigeration, Automobiles Scopus Link: https://www.scopus.com/authid/detail.uri?authorId=58107581900&origin=recordPage Orcid Link : https://orcid.org/0009-0000-6302-2002",
+    "summary": "As a lecturer at DVKMIT School Of Polytechnic and Skill Development in Pune, Maharashtra, India, Prof. Dhiresh Someshrao Shastri has 18 years of teaching experience and 5 years of industrial experience. He prioritizes vibrant and lively student-teacher interactions and is passionate about teaching his subjects. Prof. Shastri's ultimate objective is to equip students with the necessary skills to overcome any challenge they may face in the world.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/dhiresh-someshrao-shastri",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58107581900&origin=recordPage",
@@ -2989,6 +3125,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dibyangana-chakraborty",
     "name": "Dr. Dibyangana Chakraborty",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3000,7 +3137,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/dibyangana-chakraborty.webp",
     "research": "",
-    "summary": "Dr. Dibyangana Chakraborty is an accomplished academician and researcher with a Ph.D. in Economics from the renowned Gokhale Institute of Politics and Economics, Pune. She joined MIT World Peace University (MIT-WPU) in July 2024, where she currently serves as a faculty member, teaching Managerial Economics, Statistics, and Research Methodology to undergraduate and postgraduate students in the BBA and MBA programs.",
+    "summary": "Dr. Dibyangana Chakraborty is an accomplished academician and researcher with a Ph.D. in Economics from the renowned Gokhale Institute of Politics and Economics, Pune. She joined MIT World Peace University (MIT-WPU) in July 2024, where she currently serves as a faculty member, teaching Managerial Economics, Statistics, and Research Methodology to undergraduate and postgraduate students in the BBA and MBA programs. With a strong foundation in applied economics, Dr. Chakraborty’s research interests lie at the intersection of Rural Economy, Livelihood Studies, and Development Economics. Her work is driven by a deep commitment to understanding grassroots economic challenges and contributing to policy- oriented solutions that support sustainable development. Dr. Chakraborty has presented her research at numerous prestigious national and international conferences and has several peer-reviewed publications to her name. Her academic contributions reflect a blend of rigorous analysis and real-world relevance, making her a valuable asset to both the academic community and the broader field of development economics.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/dibyangana-chakraborty"
     },
@@ -3009,6 +3146,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "diksha-dinar-bedekar",
     "name": "Mrs. Diksha Dinar Bedekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3020,7 +3158,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/diksha-dinar-bedekar.webp",
     "research": "Sustainable Consumption, Consumer Behavior, Marketing Management",
-    "summary": "Prof. Diksha Bedekar is an academician with over 15 years of teaching experience at the School of Business, MIT World Peace University (MIT-WPU), Pune. and is currently pursuing her Ph.D. in the adoption of sustainable consumption behaviour under Marketing specialization.",
+    "summary": "Prof. Diksha Bedekar is an academician with over 15 years of teaching experience at the School of Business, MIT World Peace University (MIT-WPU), Pune. and is currently pursuing her Ph.D. in the adoption of sustainable consumption behaviour under Marketing specialization. She has served as the Program Head of BBA (International Business) and has been actively engaged in administrative roles, curriculum design, and academic restructuring in line with the guidelines of NEP 2020. At present, she is a member of the Internal Quality Assurance Cell (IQAC) at MIT-WPU, where she contributes to Communication and Documentation and has played an important role in institutional quality processes, including NAAC accreditation cycles. She is also a Board of Studies Member at Modern College, Pune, and her research contributions span Consumer Behavior pertaining to Sustainable Consumption. She has presented papers at several national and international conferences, including those hosted by IIMs and leading B-Schools in India. She has received a research grant for her doctoral work and has been awarded the Best Paper Award for her Ph.D. research. In addition, Prof. Bedekar successfully completed a 45-day Faculty Development Programme at IIM Ahmedabad and is an alumnus of the institute. Her academic pursuits are complemented by her strong passion for environmental sustainability and integrating sustainable practices into management education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/diksha-dinar-bedekar",
       "scholar": "https://scholar.google.com/citations?user=z0MHj7IAAAAJ&hl=en"
@@ -3030,6 +3168,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dinesh-shivratan-bhutada",
     "name": "Dr. Dinesh Shivratan Bhutada",
+    "preferredDisplayName": "",
     "designation": "Program Director & Associate Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -3042,8 +3181,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/material-science-engineering": "Department of Materials Science & Engineering"
     },
     "photoPath": "./assets/campus/dinesh-shivratan-bhutada.jpg",
-    "research": "Environmental Engineering, Advanced Separation processes, Material science, Energy",
-    "summary": "Dr. Dinesh Bhutada is an accomplished scholar and associate professor of Chemical Engineering at MIT World Peace University in Pune. He holds a Bachelor's, Master's, and PhD in Chemical Engineering, and has amassed 17 years of teaching and research experience. Dr. Bhutada is a prolific writer and presenter, having published more than 20 research papers in peer-reviewed journals and conferences, and holds 5 Indian Patents in Environmental Engineering. He is currently leading a RGSTC Funded research project and has completed 2 BCUD Funded research projects from University of Pune. He is also a core team member of MIT World Peace University's Admission Committee for UG and PG Admissions, and is instrumental in the development of the laboratory and curriculum. Additionally, he frequently interacts with industry leaders as placement coordinator and facilitates industry-institute collaborations. Research Area Environmental Engineering, Advanced Separation processes, Material science, Energy Publication 1) Nur Ain Fitriah Zamrisham, Abdul Malek Abdul Wahab, Afifi Zainal, Dogan Karadag, Dinesh Bhutada, Sri Suhartini, Mohamed Ali Musa, Syazwani Idrus “State of the Art in Anaerobic Treatment of Landfill Leachate: A Review on Integrated System, Additive Materials, and Machine Learning Application.” Water Journal, Volume 15, Issue 7, 1303 (Impact Factor: 3.530) Q-1 Journal 2) P Kurhade, S Kodape, K Junghare, PG Bansod, Dinesh Bhutada, “Development of MgO nanoparticles via green synthesis at varying concentrations of precursor and mahua flower extract” Inorganic and Nano-Metal Chemistry, April 2022, Taylor and Francis Ltd., Impact Factor: 1.60 https://doi.org/10.1080/24701556.2022.2068581 Q4 (JCR) SCIE 3) Minal Deshmukh, A.B. Marathe, Dinesh Bhutada, The Study of Bio-Fuel Generation and Characteristics Analysis from Jatropha, Karanja and Styrax Officinalis L Seed Cakes, Distributed Generation & Alternative Energy Journal, July 2021, Vol. 36 3, 301–334. doi: https://doi.org/10.13052/dgaej2156-3306.3636 Q4 (JCR) SCIE 4) Niraj S. Topare, Dinesh B. Bhutada, Praful G. Bansod, “Ultrasonic Degradation Of Rhodamine-B In Presences Of Tio2 And Nb2O5”, paper submitted to Material Today: Proceedings, Volume 51, Part 1, 2022, Pages 125-128 https://doi.org/10.1016/j.matpr.2021.05.015 5) P. G. Banssod, Dinesh Bhutada, S.S.Barkade \"Biodiesel Production From Nagpur Thermal Power Plant Ash Used As Catalyst” Indian Journal of Environmental Protection, September 2020 Vol 40, No.9, 921-926 6) 13. P Katkar, I. Sancheti, D. S. Bhutada, A. Rajput, S. Thorat, S. Radhakrishnan, A. Sabnis, P.A. Mahanwar and M. B. Kulkarni, “Card phenol based benzoxazine resin and its blends with epoxy and saturated polyester for coating application” Surface Coating International, Vol 6, Dec 2020, 108-115 Google scolar link https://scholar.google.com/citations?user=O1CLF3oAAAAJ&hl=en Scopus link https://www.scopus.com/authid/detail.uri?authorId=57210574851 Orcid Link 0000-0002-0282-4017",
+    "research": "Environmental Engineering, Advanced Separation processes, Material science, Energy Publication 1) Nur Ain Fitriah Zamrisham, Abdul Malek Abdul Wahab, Afifi Zainal, Dogan Karadag, Dinesh Bhutada, Sri Suhartini, Mohamed Ali Musa, Syazwani Idrus “State of the Art in Anaerobic Treatment of Landfill Leachate: A Review on Integrated System, Additive Materials, and Machine Learning Application.” Water Journal, Volume 15, Issue 7, 1303 (Impact Factor: 3.530) Q-1 Journal 2) P Kurhade, S Kodape, K Junghare, PG Bansod, Dinesh Bhutada, “Development of MgO nanoparticles via green synthesis at varying concentrations of precursor and mahua flower extract” Inorganic and Nano-Metal Chemistry, April 2022, Taylor and Francis Ltd., Impact Factor: 1.60 https://doi.org/10.1080/24701556.2022.2068581 Q4 (JCR) SCIE 3) Minal Deshmukh, A.B. Marathe, Dinesh Bhutada, The Study of Bio-Fuel Generation and Characteristics Analysis from Jatropha, Karanja and Styrax Officinalis L Seed Cakes, Distributed Generation & Alternative Energy Journal, July 2021, Vol. 36 3, 301–334. doi: https://doi.org/10.13052/dgaej2156-3306.3636 Q4 (JCR) SCIE 4) Niraj S. Topare, Dinesh B. Bhutada, Praful G. Bansod, “Ultrasonic Degradation Of Rhodamine-B In Presences Of Tio2 And Nb2O5”, paper submitted to Material Today: Proceedings, Volume 51, Part 1, 2022, Pages 125-128 https://doi.org/10.1016/j.matpr.2021.05.015 5) P. G. Banssod, Dinesh Bhutada, S.S.Barkade \"Biodiesel Production From Nagpur Thermal Power Plant Ash Used As Catalyst” Indian Journal of Environmental Protection, September 2020 Vol 40, No.9, 921-926 6) 13. P Katkar, I. Sancheti, D. S. Bhutada, A. Rajput, S. Thorat, S. Radhakrishnan, A. Sabnis, P.A. Mahanwar and M. B. Kulkarni, “Card phenol based benzoxazine resin and its blends with epoxy and saturated polyester for coating application” Surface Coating International, Vol 6, Dec 2020, 108-115 Google scolar link https://scholar.google.com/citations?user=O1CLF3oAAAAJ&hl=en Scopus link https://www.scopus.com/authid/detail.uri?authorId=57210574851 Orcid Link 0000-0002-0282-4017",
+    "summary": "Dr. Dinesh Bhutada is an accomplished scholar and associate professor of Chemical Engineering at MIT World Peace University in Pune. He holds a Bachelor's, Master's, and PhD in Chemical Engineering, and has amassed 17 years of teaching and research experience. Dr. Bhutada is a prolific writer and presenter, having published more than 20 research papers in peer-reviewed journals and conferences, and holds 5 Indian Patents in Environmental Engineering. He is currently leading a RGSTC Funded research project and has completed 2 BCUD Funded research projects from University of Pune. He is also a core team member of MIT World Peace University's Admission Committee for UG and PG Admissions, and is instrumental in the development of the laboratory and curriculum. Additionally, he frequently interacts with industry leaders as placement coordinator and facilitates industry-institute collaborations.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/dinesh-shivratan-bhutada"
     },
@@ -3052,6 +3191,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dipak-abnave",
     "name": "Dr. Dipak Abnave",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/public-health",
     "departmentName": "Department of Public Health",
@@ -3073,6 +3213,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dipali-prashant-baviskar",
     "name": "Mrs. Dipali Prashant Baviskar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -3084,7 +3225,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/dipali-prashant-baviskar.jpg",
     "research": "",
-    "summary": "Dr. Dipali Baviskar adopts a clear, student-centric teaching approach that emphasizes strong fundamentals and practical understanding. As an educator, she is motivated to guide students in building confidence, critical thinking, and problem-solving abilities. She actively engages in mentoring, academic coordination, and research to enhance the overall learning experience.",
+    "summary": "Dr. Dipali Baviskar adopts a clear, student-centric teaching approach that emphasizes strong fundamentals and practical understanding. As an educator, she is motivated to guide students in building confidence, critical thinking, and problem-solving abilities. She actively engages in mentoring, academic coordination, and research to enhance the overall learning experience. Through her consistent efforts in teaching and professional development, she contributes to academic excellence. In alignment with the vision of MIT World Peace University, she strives to nurture responsible, skilled, and ethically aware graduates who can contribute positively to society.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/dipali-prashant-baviskar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57221235200",
@@ -3097,6 +3238,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "divyanshi-pal",
     "name": "Dr. Divyanshi Pal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3117,6 +3259,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "dnyaneshwar-ramchandra-waghole",
     "name": "Dr. Dnyaneshwar Ramchandra Waghole",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -3138,6 +3281,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "esha-bansal",
     "name": "Dr. Esha Bansal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3159,6 +3303,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "gajanan-malleshi-birajdar",
     "name": "Dr. Gajanan Malleshi Birajdar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -3182,6 +3327,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ganesh-bhaurao-choudhari",
     "name": "Dr. Ganesh Bhaurao Choudhari",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -3205,6 +3351,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ganesh-pralhadrao-borikar",
     "name": "Dr. Ganesh Pralhadrao Borikar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -3225,6 +3372,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ganesh-shivaji-ingle",
     "name": "Dr. Ganesh Shivaji Ingle",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -3235,7 +3383,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/civil-engineering": "Department of Civil Engineering"
     },
     "photoPath": "./assets/campus/ganesh-shivaji-ingle.webp",
-    "research": "",
+    "research": "Geotechnical Engineering, Pavement Engineering",
     "summary": "Prf. Dr. Ganesh Ingle is an Associate Professor in Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He has completed his Ph.D. in Transportation Engineering from College of Engineering Pune (COEP) in the year 2018, received his B. E. in Civil Engineering from Govt. College of Engineering, Amravati in the year 2000 and Masters (M. E. Civil) in technical Engineering in the year of 2003, from College of Engineering Pune (COEP). He is working with MIT-WPU since August 2008 and has been teaching various subjects like soil Mechanics, Foundation Engineering, soil structure and interaction, concrete technology, construction materials and advanced transportation Engineering. As a part of Ph. D work, he has indigenously designed and developed a Laboratory Full scale Accelerated Pavement Testing Set Up (APT) in COEP campus through an R&D Grant of 13.5 Lac. This is a unique facility which is not available in India where the performance of any pavement can be tested within a short period. It was also applied for Indian Patent. He has published more than 15 research papers in Scopus and SCI Journals and also published three Indian Patent and one Australian Patent granted on stabilization of soil. He is also doing Testing and consultancy in the field of Geotechnical Engineering and completed more than 4.0 Lac testing and consultancy related to slope stability analysis in Chiplun, Dapoli area as well as geotechnical investigation for SBC of soil for some of the project. He also conducted the training sessions for Border Road Organization (BRO) Engineers related to Geotechnical aspects during road constructions. He also received the BCUD Grants of 1.40 Lac.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ganesh-shivaji-ingle",
@@ -3248,6 +3396,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ganesh-suresh-jadhav",
     "name": "Dr. Ganesh Suresh Jadhav",
+    "preferredDisplayName": "",
     "designation": "Program Director",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -3259,7 +3408,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ganesh-suresh-jadhav.webp",
     "research": "",
-    "summary": "Dr. Ganesh Jadhav is the Associate Professor & Program Director, School of Design at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune, and a design academician with a rare blend of deep research, industry practice, and academic leadership. He holds a PhD in Design from IIT Guwahati, with specialized expertise in Ergonomics, Product Design, and Industrial Design, and over 16 years of combined academic and industrial experience. Dr. Jadhav has worked with leading organizations such as Philips India Pvt. Ltd., bringing strong industry relevance into design education through practice-driven pedagogy and innovation-led mentoring.",
+    "summary": "Dr. Ganesh Jadhav is the Associate Professor & Program Director, School of Design at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune, and a design academician with a rare blend of deep research, industry practice, and academic leadership. He holds a PhD in Design from IIT Guwahati, with specialized expertise in Ergonomics, Product Design, and Industrial Design, and over 16 years of combined academic and industrial experience. Dr. Jadhav has worked with leading organizations such as Philips India Pvt. Ltd., bringing strong industry relevance into design education through practice-driven pedagogy and innovation-led mentoring. An active researcher and innovator, Dr. Jadhav has multiple national and international patents, over fifteen design registrations, and SCI/Scopus-indexed publications in high-impact journals. His research focuses on human-centred design, ergonomic interventions, indigenous craft innovation, and sustainable product development, bridging traditional knowledge with contemporary design solutions. At MIT-WPU, he has played a pivotal role in curriculum development, program leadership, PhD program establishment, accreditation processes (NAAC/NIRF), and industry-academia integration. As an educator, researcher, and mentor, Dr. Jadhav is committed to shaping future- ready designers who combine creativity, empathy, technology, and societal relevance. Dr. Ganesh S. Jadhav brings over 16 years of combined academic and industrial experience in the fields of Product Design, Industrial Design, and Occupational Ergonomics. He holds a Ph.D. with a focus on Product/Industrial Design and Occupational Ergonomics, and his academic journey is marked by a deep commitment to interdisciplinary and industry-relevant research and education. Dr. Jadhav has worked for five years with Vishay (Philips) Components India Pvt. Ltd., Pune, where he was responsible for overseeing comprehensive maintenance activities. His industrial experience includes the deft application of preventive, predictive, planned, and corrective maintenance strategies across various machinery and systems. As a passionate educator and researcher, Dr. Jadhav has published extensively in reputed national and international journals and conferences. He actively collaborates with professionals and students across diverse creative disciplines and integrates design thinking with engineering applications in both academic and industrial contexts. He has filed 20 Indian patents and 1 South African patent, reflecting his commitment to innovation and practical problem-solving. His work often bridges the gap between ergonomic design principles and real-world production environments, aiming to enhance both productivity and user well-being. Dr. Jadhav is also a Life Member of ISTE (Indian Society for Technical Education).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ganesh-suresh-jadhav"
     },
@@ -3268,6 +3417,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "garima-chaudhary",
     "name": "Ms. Garima Chaudhary",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -3288,6 +3438,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "gauri-bilaye",
     "name": "Prof. Gauri Bilaye",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -3310,6 +3461,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "gauri-rahul-dhongade",
     "name": "Mrs. Gauri Rahul Dhongade",
+    "preferredDisplayName": "",
     "designation": "Teaching Associate",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -3321,7 +3473,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/gauri-rahul-dhongade.jpg",
     "research": "",
-    "summary": "Gauri Dhongade has completed her M.Sc. in Computer Science and has qualified the State Eligibility Test (SET). She is currently pursuing her Ph.D. in the field of Cybersecurity and Machine Learning. She has a total of 14 years of teaching and industry experience.",
+    "summary": "Gauri Dhongade has completed her M.Sc. in Computer Science and has qualified the State Eligibility Test (SET). She is currently pursuing her Ph.D. in the field of Cybersecurity and Machine Learning. She has a total of 14 years of teaching and industry experience. At present, she is working as a Teaching Associate in the School of Computer Science at MIT World Peace University, Pune. Her research areas include Cybersecurity, Machine Learning, Artificial Intelligence, Data Analysis, and Ransomware Detection. She has published research papers in National and International Conferences and Journals and has also contributed to patents in her domain. She has prior industry experience as a C#.NET Developer, which adds practical exposure to her teaching. She has actively participated in various FDP, Training Programs, workshops, seminars, and conferences at both National and International levels. She is actively involved in academic and administrative responsibilities, contributing to student development, research activities, and departmental coordination, thereby supporting a research-oriented and innovative learning environment.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/gauri-rahul-dhongade",
       "scholar": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Gauri+Dhongade&hl=en&oi=ao",
@@ -3332,6 +3484,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "gautam-surendra-bapat",
     "name": "Dr. Gautam Surendra Bapat",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Director",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3352,6 +3505,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "girish-shamraoji-mude",
     "name": "Dr. Girish Shamraoji Mude",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Director",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3374,6 +3528,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "girish-sharad-barpande",
     "name": "Dr. Girish Sharad Barpande",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -3384,7 +3539,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/girish-sharad-barpande.webp",
-    "research": "",
+    "research": "Engineering Design, Design Thinking, Computational Fluid Dynamics, Tribology",
     "summary": "Dr. Girish Sharad Barpande is a multi-faceted professional with diverse interests ranging from aerospace and design to social issues and films. With a Ph.D. in Mechanical Engineering (Aerospace-Scramjet) from Savitribai Phule Pune University, he has 27 years of professional experience, out of which 24 years are in teaching. His areas of interest and expertise include engineering design, design thinking, computational fluid dynamics, tribology, and total quality management. He has authored 11 research papers in various international journals and conferences. He founded and headed the SUPRA SAEINDIA team at MIT since 2011 with an impressive track record at national and international levels.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/girish-sharad-barpande",
@@ -3395,6 +3550,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "gopal-sakarkar",
     "name": "Dr. Gopal Sakarkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -3406,7 +3562,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/gopal-sakarkar.png",
     "research": "",
-    "summary": "Dr. Gopal Sakarkar successfully earned his Ph.D. in the field of Science and Technology( Computer Science and Engineering), in 2017. He also holds a Master's degree in Computer Applications (MCA) from S.G. B. Amravati University, Amravati, Maharashtra. He has an impressive track record, having filed seven patents. Additionally, he is an esteemed life member of ISTE (Indian Society for Technical Education).",
+    "summary": "Dr. Gopal Sakarkar successfully earned his Ph.D. in the field of Science and Technology( Computer Science and Engineering), in 2017. He also holds a Master's degree in Computer Applications (MCA) from S.G. B. Amravati University, Amravati, Maharashtra. He has an impressive track record, having filed seven patents. Additionally, he is an esteemed life member of ISTE (Indian Society for Technical Education). His expertise lies in the domains of Artificial Intelligence, Machine Learning, and Data Science. He has contributed significantly to the academic and research community with over 50 publications in various esteemed international journals and conferences, collaborating with researchers from around the world, including professors from IITs and NITs. Dr. Sakarkar has authored three textbooks and published three book chapters, showcasing his commitment to knowledge dissemination. He currently holds the position of the publication chair at the 10th International Conference on Smart Computing and Communication (ICSCC 2024), scheduled to take place in Bali, Indonesia",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/gopal-sakarkar"
     },
@@ -3415,6 +3571,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "harshal-salunkhe",
     "name": "Dr. Harshal Salunkhe",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3426,7 +3583,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/harshal-salunkhe.webp",
     "research": "",
-    "summary": "Dr. Harshal Salunkhe completed a Ph.D. from North Maharashtra University, Jalgaon. Dr. Harshal has completed his master’s in business administration from North Maharashtra University, Jalgaon, specializing in Financial Management. Being an avid reader and a contributor to the field of research, He has also written 32 publications in Journals and attended 35 conferences. Dr. Harshal has been appointed a distinguished review member. Many researchers have also acknowledged Dr. Harshal's work on agricultural subsidies to date; his Google citation index is 165 & h-index is 7. He has filed four patents. With more than 17th experience in education and academia, his expertise in Commodity Market, Indirect Tax Financial Management, Income Tax, International Financial Management, Financial derivatives, Bank Management, Investment Management, Family Business Management, and Corporate Social Responsibility.",
+    "summary": "Dr. Harshal Salunkhe completed a Ph.D. from North Maharashtra University, Jalgaon. Dr. Harshal has completed his master’s in business administration from North Maharashtra University, Jalgaon, specializing in Financial Management. Being an avid reader and a contributor to the field of research, He has also written 32 publications in Journals and attended 35 conferences. Dr. Harshal has been appointed a distinguished review member. Many researchers have also acknowledged Dr. Harshal's work on agricultural subsidies to date; his Google citation index is 165 & h-index is 7. He has filed four patents. With more than 17th experience in education and academia, his expertise in Commodity Market, Indirect Tax Financial Management, Income Tax, International Financial Management, Financial derivatives, Bank Management, Investment Management, Family Business Management, and Corporate Social Responsibility. He handled the UGC visit work at the school level. Apart from that, he has faced four times NAAC accreditation & one time NBA accreditation during his service. Dr. Harshal's Key Responsibility Areas (KRA) included IQAC, teaching, mentoring, research, publication, and being a member of various administrative committees, etc., which he was able to do in a most professional and efficient manner.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/harshal-salunkhe"
     },
@@ -3435,6 +3592,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "harshali-digambar-zodpe",
     "name": "Dr. Harshali Digambar Zodpe",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -3446,7 +3604,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/harshali-digambar-zodpe.jpg",
     "research": "VLSI, Cryptography & Embedded Systems",
-    "summary": "Dr. Harshali Zodpe is a highly experienced academic, currently serving as an Associate Professor in the School of ECE. With an impressive 16 years of teaching experience, she is widely regarded as a leading authority in the field of electronics and communication engineering.",
+    "summary": "Dr. Harshali Zodpe is a highly experienced academic, currently serving as an Associate Professor in the School of ECE. With an impressive 16 years of teaching experience, she is widely regarded as a leading authority in the field of electronics and communication engineering. Dr. Zodpe's academic background is characterized by a deep understanding of the fundamental principles of electronics and communication engineering. She completed her B.E. in Electronics Engineering from VNIT Nagpur in 2004 and went on to earn an M.Tech in VLSI Design from Nagpur University in 2006. She later obtained her Doctor of Philosophy (Electronics & Telecommunication) degree from Savitribai Phule Pune University in 2019, further solidifying her expertise in the field. Dr. Zodpe's research interests are focused on VLSI, Cryptography, and Embedded Systems. Her work in these areas has been instrumental in advancing the field of electronics and communication engineering, with her research being published in numerous top-tier scientific journals. Additionally, she has presented her work at conferences and symposia around the world. To learn more about Dr. Zodpe's research and professional background, please visit her personal webpage at [insert webpage URL]. On this site, you can find additional information about her publications, research projects, and academic accomplishments.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/harshali-digambar-zodpe"
     },
@@ -3455,6 +3613,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "harshit-pratap-singh",
     "name": "Mr. Harshit Pratap Singh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -3466,7 +3625,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/harshit-pratap-singh.webp",
     "research": "",
-    "summary": "Harshit is an educator and designer, specializing in areas of research, graphic design, and film-making. He holds a UGC-NET qualification, and has completed an M.A. in Education from Tata Institute of Social Sciences, Mumbai and a Bachelor of Design from Indian Institute of Technology, Bombay. Before joining the Department of Design at MIT World Peace University as an Assistant Professor, he has worked with multiple NGOs including Mantra4Change, Simple Education Foundation, Myna Mahila Foundation in varying capacities of researcher, designer, and educator.",
+    "summary": "Harshit is an educator and designer, specializing in areas of research, graphic design, and film-making. He holds a UGC-NET qualification, and has completed an M.A. in Education from Tata Institute of Social Sciences, Mumbai and a Bachelor of Design from Indian Institute of Technology, Bombay. Before joining the Department of Design at MIT World Peace University as an Assistant Professor, he has worked with multiple NGOs including Mantra4Change, Simple Education Foundation, Myna Mahila Foundation in varying capacities of researcher, designer, and educator. He excels in weaving individual narratives with contextual research to design visual communication solutions that are thought-provoking and insightful. Having a keen interest in storytelling, his projects include multiple short films and books along with published papers and articles. He tries to encourage his students to think critically and analytically to design solutions that contribute to the upliftment of the marginalized, and the society at large.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/harshit-pratap-singh",
       "linkedin": "https://www.linkedin.com/in/harshit-pratap-0b0137329/"
@@ -3476,6 +3635,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "heenakshi-bhansali",
     "name": "Dr. Heenakshi Bhansali",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/clinical-sciences",
     "departmentName": "Department of Clinical Sciences",
@@ -3499,6 +3659,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "hemant-shripad-kulkarni",
     "name": "Dr. Hemant Shripad Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -3520,6 +3681,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "hemlata-sandip-ohal",
     "name": "Mrs. Hemlata Sandip Ohal",
+    "preferredDisplayName": "",
     "designation": "Lecturer (Sr. Scale)",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -3531,7 +3693,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/hemlata-sandip-ohal.webp",
     "research": ": AI in Health Care",
-    "summary": "Mrs. Hemlata Sandip Ohal is an accomplished academician with over 26 years of teaching experience and is currently serving as an Assistant Professor at the School of Polytechnic, Dr. Vishwanath Karad MIT World Peace University, Pune. She holds an M.E. in Information Technology from the University of Pune and is currently pursuing her Ph.D. at Dr. Vishwanath Karad MIT World Peace University, Pune.",
+    "summary": "Mrs. Hemlata Sandip Ohal is an accomplished academician with over 26 years of teaching experience and is currently serving as an Assistant Professor at the School of Polytechnic, Dr. Vishwanath Karad MIT World Peace University, Pune. She holds an M.E. in Information Technology from the University of Pune and is currently pursuing her Ph.D. at Dr. Vishwanath Karad MIT World Peace University, Pune. Mrs. Ohal has made notable contributions to technical education through research, innovation, and authorship. She has published 14 research papers in reputed Scopus-indexed journals and conference proceedings and has three Indian patents to her credit. She has also authored several textbooks for Diploma Engineering students, published by Nirali Prakashan. Her areas of expertise include Object-Oriented Programming, Computer Graphics, and Machine Learning. A dedicated mentor, she actively guides students in project-based learning and innovation activities. Under her mentorship, students have secured several prizes and awards at various technical competitions and events. Mrs. Ohal is a Life Member of ISTE and is actively involved in promoting holistic well-being through yoga. She is a certified Assistant Yoga Teacher from Patanjali Yogpeeth, Haridwar (2020), and a certified Level-3 Yoga Teacher and Evaluator recognized by the Yoga Certification Board, Ministry of AYUSH, Government of India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/hemlata-sandip-ohal",
       "scholar": "https://scholar.google.com/citations?user=KvtXw6cAAAAJ&hl=en",
@@ -3543,6 +3705,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "heramb-chintamani-phadake",
     "name": "Mr. Heramb Chintamani Phadake",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -3566,6 +3729,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "himangi-milind-pande",
     "name": "Dr. Himangi Milind Pande",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -3577,7 +3741,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/himangi-milind-pande.jpg",
     "research": "",
-    "summary": "Dr. Himangi Pande is Associate professor at MIT World Peace University. She has 26 years of experience in field of education also has been delivering experts talks and professing in vast area like Mathematical Foundation, Mobile Computing, Discrete Structure, Multimedia Technologies, Data Structures & Files, Fundamental of Data Structure, Natural Language Processing, Object Oriented Modeling and Design, Design and Analysis of Algorithm, Object Oriented Programming Language.",
+    "summary": "Dr. Himangi Pande is Associate professor at MIT World Peace University. She has 26 years of experience in field of education also has been delivering experts talks and professing in vast area like Mathematical Foundation, Mobile Computing, Discrete Structure, Multimedia Technologies, Data Structures & Files, Fundamental of Data Structure, Natural Language Processing, Object Oriented Modeling and Design, Design and Analysis of Algorithm, Object Oriented Programming Language. Dr. Himangi Pande is a researcher. Her area of research is Wireless Body Area Network, Wireless Sensor Networks & IOT, Date Structure, and Data Analytics. Her core research area is in the field of Wireless Body Area Network in health care. She has developed a system for Adaptive Energy Efficient MAC for Wireless Body Area Network in health care. She has been a mentor and guide for more than 200 students. She has published more than 25 quality papers till now. A dedicated Professional with excellent Logic and Analytical Skills, Excellent Academic track record, Exceptional student relationship skills, relate and interface easily at student levels, in-depth understanding of various academic processes",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/himangi-milind-pande",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56027827700",
@@ -3590,6 +3754,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "himangi-tanmay-neve",
     "name": "Mrs. Himangi Tanmay Neve",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -3601,7 +3766,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/himangi-tanmay-neve.webp",
     "research": "Polymers, Biomaterials, Biodegradation, Waste management and valorisation, Life Cycle Assessment",
-    "summary": "Himangi Neve is an Assistant Professor in the Bioengineering Department of Dr. Vishwanath Karad MIT World Peace University in Pune, India. She has a master’s degree in polymer engineering and is now pursuing a PhD in chemical engineering. She has 11 years of combined job experience in industry and academia. Her research focuses on developing more effective and efficient bioconversion technologies for converting agricultural waste into high-value items, as well as evaluating the significance of life cycle assessment in processes ranging from waste collection to product distribution. She has produced over 5 research articles in international journals and 3 book chapters, and has garnered numerous accolades, including two Best Paper awards at international conferences and a runner-up team at the MITWPU Hackathon. She also won a Rs. 3 lakh research grant from MITWPU, as well as Rs. 1 lakh in the Hackathon. Himangi has also completed a number of waste management consulting projects for national and multinational companies. She has also published an Indian patent. In addition to her teaching and research responsibilities, Himangi is the department’s IQAC, Exam, Infrastructure, and Rural Immersion Coordinator.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/himangi-tanmay-neve",
       "scholar": "https://scholar.google.com/citations?user=mcP9Tm4AAAAJ&hl=en&oi=ao",
@@ -3613,6 +3778,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "hossein-martin-fazeli",
     "name": "Prof. Hossein Martin Fazeli",
+    "preferredDisplayName": "",
     "designation": "Professor of Practice",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -3624,7 +3790,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/hossein-martin-fazeli.webp",
     "research": "",
-    "summary": "Hossein Martin Fazeli is a distinguished Iranian writer, producer, and director who has been an A-list filmmaker in North America for many years and currently serves as a Professor of Practice at Dadasaheb Phalke International Film School. With over two decades of experience in producing, directing, and writing fiction and non-fiction television and films, Fazeli has built an illustrious career marked by his extensive international collaborations across more than a dozen countries. His works have been broadcast globally on leading networks such as CBC, BBC, ARTE, and Canal+, earning 37 international awards and critical acclaim.",
+    "summary": "Hossein Martin Fazeli is a distinguished Iranian writer, producer, and director who has been an A-list filmmaker in North America for many years and currently serves as a Professor of Practice at Dadasaheb Phalke International Film School. With over two decades of experience in producing, directing, and writing fiction and non-fiction television and films, Fazeli has built an illustrious career marked by his extensive international collaborations across more than a dozen countries. His works have been broadcast globally on leading networks such as CBC, BBC, ARTE, and Canal+, earning 37 international awards and critical acclaim. Fazeli’s films often explore themes of human rights, women’s rights, and minority rights, underscoring his commitment to social justice. He has collaborated with prominent organizations, including the United Nations Development Programme (UNDP), the European Commission, and Nonviolence International, contributing to impactful film and television projects and national and regional campaigns. One of his landmark productions, the 2007 documentary “The Tale of Two Nazanins”, spotlighted the plight of a teenage girl imprisoned on death row in Iran. Broadcast on major international networks such as BBC and CNN, the film ignited a global campaign that ultimately saved her life, exemplifying Fazeli’s ability to harness the power of storytelling for change. In 2008, Fazeli was honored by the Sundance Institute, participating in their International Filmmakers Award program. As a sought-after speaker, he has lectured globally on the evolving landscape of film production and conducted workshops at prestigious institutions like Simon Fraser University (Canada), SOAS University of London (UK), Aarhus University (Denmark), and the European Film Academy. In addition to his filmmaking, Fazeli is a celebrated Persian poet, known under the pen name “Naanaam”. Currently, Fazeli is completing three human rights-related films, including “PHOOLAN”, a docu-drama on the life and legacy of India’s Bandit Queen.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/hossein-martin-fazeli"
     },
@@ -3633,6 +3799,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jagadish-hammu-naik",
     "name": "Dr. Jagadish Hammu Naik",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -3660,6 +3827,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jagruti-divakar-patil",
     "name": "Ms. Jagruti Divakar Patil",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -3680,6 +3848,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jaideep-gulabrao-jadhav",
     "name": "Dr. Jaideep Gulabrao Jadhav",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3691,7 +3860,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/jaideep-gulabrao-jadhav.webp",
     "research": "MSME Financing, Banking, Financial Analytics, Insurance Analytics, and International Finance.",
-    "summary": "\"Dr. Jaideep Jadhav is a seasoned academician with over 20 years of experience in the areas of Finance, Banking, Financial Services, Insurance and Analytics. He is currently working as a Professor in the School of Business (SoB) and has been associated with the institute for several years.",
+    "summary": "\"Dr. Jaideep Jadhav is a seasoned academician with over 20 years of experience in the areas of Finance, Banking, Financial Services, Insurance and Analytics. He is currently working as a Professor in the School of Business (SoB) and has been associated with the institute for several years. Dr. Jadhav holds an MBA degree, a Master's degree in Commerce, and a Post Graduate Program (PGP) in Data Science. He also holds a second MBA degree in Finance. His research interests are in the areas of MSME Financing, Banking, Financial Analytics, Insurance Analytics, and International Finance. He has published several research papers in reputed national and international journals and has contributed chapters in books in his area of expertise. Dr. Jadhav is known for his exceptional teaching skills and his ability to make complex financial concepts understandable for his students. He is also actively involved in research and has presented",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/jaideep-gulabrao-jadhav"
     },
@@ -3700,6 +3869,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jayshree-ajit-aher",
     "name": "Mrs. Jayshree Ajit Aher",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -3711,7 +3881,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/jayshree-ajit-aher.jpg",
     "research": "",
-    "summary": "Dr. Jayshree Aher(Ghorpade) is committed to a student-centric teaching philosophy that blends conceptual clarity, innovation, and real-world application. Her motivation lies in nurturing curious, responsible learners who can contribute meaningfully to society and the evolving knowledge economy.",
+    "summary": "Dr. Jayshree Aher(Ghorpade) is committed to a student-centric teaching philosophy that blends conceptual clarity, innovation, and real-world application. Her motivation lies in nurturing curious, responsible learners who can contribute meaningfully to society and the evolving knowledge economy. She emphasizes interdisciplinary learning, research orientation, and industry collaboration to prepare students for future challenges and strives to foster creativity, critical thinking, and ethical values. She has mentored students at SIH, IEEE, various national/international Hackathons/Projects, research scholarships for students, etc. She also holds granted patents, copyrights and actively contributes as a reviewer, mentor, and research leader, committed to developing scalable, explainable, and transformative AI-driven systems. Jayshree actively contributes to the vision of MIT-WPU by promoting excellence in education, research, and societal impact while cultivating globally competent professionals.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/jayshree-ajit-aher",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56538563100",
@@ -3724,6 +3894,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jehath-syed",
     "name": "Dr. Jehath Syed",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -3735,7 +3906,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/jehath-syed.webp",
     "research": "",
-    "summary": "Dr. Jehath Syed is a clinical pharmacist and researcher currently serving as Assistant Professor in the Department of Pharmaceutical Sciences at MIT World Peace University, Pune. With specialized expertise in geriatric care, pharmacoepidemiology, and digital health solutions, Dr. Syed integrates evidence-based pharmaceutical care with innovative healthcare technology to optimize patient outcomes.",
+    "summary": "Dr. Jehath Syed is a clinical pharmacist and researcher currently serving as Assistant Professor in the Department of Pharmaceutical Sciences at MIT World Peace University, Pune. With specialized expertise in geriatric care, pharmacoepidemiology, and digital health solutions, Dr. Syed integrates evidence-based pharmaceutical care with innovative healthcare technology to optimize patient outcomes. A Registered Pharmacist with the Maharashtra State Pharmacy Council, Dr. Syed earned her PhD from JSS Academy of Higher Education and Research, Mysuru, focusing on \"Implementation and Evaluation of Clinical Pharmacist's Comprehensive Geriatric Care Model.\" She also holds a Doctor of Pharmacy (PharmD) and is certified as an Age-Friendly Pharmacist by the American Society of Consultant Pharmacists. Dr. Syed's professional journey includes experience as Clinical Research Coordinator at JSS Hospital, where she coordinated multiple COVID-19 clinical trials. Her notable contributions include developing EldenCare (a comprehensive geriatric care application in collaboration with L&T Technologies), De-Med webpage for identifying potentially inappropriate medications, and \"Dose 4 You\" dose calculator. Dr. Syed has published over 25 peer-reviewed articles in prestigious international journals. She is an active member of ISPE, ISPOR and Cochrane Collaboration. She also serves as abstract reviewer for international conferences – ICPE, ISPOR, ISOQOL and peer reviewer for journals including American Journal of Health-System Pharmacy and Journal of Medical Internet Research. At MIT-WPU, she coordinates courses in Pharmacy Practice, Pharmacotherapeutics, and Clinical Pharmacy, emphasizing case-based learning and evidence-based practice.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/jehath-syed",
       "scholar": "https://scholar.google.com/citations?hl=en&user=ewXQ4ncAAAAJ",
@@ -3747,6 +3918,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jivan-pandharinath-biradar",
     "name": "Dr. Jivan Pandharinath Biradar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -3757,7 +3929,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "economics-and-commerce/commerce": "Department of Commerce & Accounting"
     },
     "photoPath": "./assets/campus/jivan-pandharinath-biradar.webp",
-    "research": "",
+    "research": "General area of research interest is in Development Economics. Specific area interest in Agriculture and Rural Development, Banking and Finance, Insurance",
     "summary": "Dr. Jivan Biradar is an experienced assistant professor of economics in the School of Economics and Commerce at MIT-WPU. He holds a Ph.D. and M.Phil. in economics from Pune University, and has over 10 years of teaching experience. Prior to joining MIT, he worked at the Gokhale Institute of Politics and Economics, where he conducted research on various projects sponsored by NABARD and the Ministry of Agriculture, Government of India. His areas of research include banking, health insurance, rural development, agriculture finance, and public policy. He teaches microeconomics, macroeconomics, and managerial economics to undergraduate and postgraduate students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/jivan-pandharinath-biradar",
@@ -3770,6 +3942,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "joseph-vidyasagar-tandhara",
     "name": "Dr. Joseph Vidyasagar Tandhara",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3781,7 +3954,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/joseph-vidyasagar-tandhara.jpg",
     "research": "",
-    "summary": "Professional Qualifications : PhD in Management (Symbiosis International University), and completed PG in Commerce, Management (dual) and Law.",
+    "summary": "Meet respected MIT-WPU academic member Joseph Vidyasagar Tandhara. Examine his academic background, professional experience, and commitment to create a stimulating classroom for his students..",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/joseph-vidyasagar-tandhara"
     },
@@ -3790,6 +3963,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jyoti-anirudha-lele",
     "name": "Mrs. Jyoti Anirudha Lele",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -3810,6 +3984,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jyoti-ganesh-mante-khurpade",
     "name": "Dr. Jyoti Ganesh Mante (Khurpade)",
+    "preferredDisplayName": "",
     "designation": "Programme Head CSE and AI DS",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -3821,7 +3996,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/jyoti-ganesh-mante-khurpade.webp",
     "research": "Security and Machine Learning",
-    "summary": "Prof. Jyoti Mante is an experienced educator with over 24 years of teaching experience.Jyoti's analytical and administrative skills are highly regarded by her peers and colleagues. She has a strong passion for teaching and has a keen interest in the latest developments in her field, including Security, IoT, and Machine Learning. Jyoti is committed to ensuring that her students receive the best possible education and is dedicated to their success.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/jyoti-ganesh-mante-khurpade",
       "scholar": "https://scholar.google.com/citations?hl=en&user=R48tvV8AAAAJ&view_op=list_works&sortby=pubdate",
@@ -3833,6 +4008,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "jyotsna-srivastava",
     "name": "Dr. Jyotsna Srivastava",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/peace-studies",
     "departmentName": "Department of Peace Studies",
@@ -3853,6 +4029,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kajal-vatekar",
     "name": "Prof. Kajal Vatekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -3875,6 +4052,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kamakshi-goyal",
     "name": "Ms. Kamakshi Goyal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -3895,6 +4073,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kausik-bhattacharyya",
     "name": "Dr. Kausik Bhattacharyya",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -3908,7 +4087,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kausik-bhattacharyya.webp",
     "research": "Infectious-disease biology, microbial and viral genomics, bioinformatics, host–pathogen interactions, and antimicrobial resistance.",
-    "summary": "Dr. Kausik Bhattacharyya is an Assistant Professor at the Department of Biosciences and Technology (DoBT) and Revvity – MIT-WPU Centre of Excellence for Bioimaging Technologies and Innovation. Serving additionally as a Departmental Placement coordinator for the department of Biosciences and Technology, Dr Kausik has more than 12 years of research experience in Infectious Disease biology, Microbiology, Genomics and Bioinformatics and 7 years of teaching experience. He has completed his Ph.D. from Department of Biomedical Sciences (ACBR), University of Delhi. During his Ph.D., he has demonstrated how genomic sequence and novel genomic variations can have functional significance in Multi-Drug Resistant (MDR) clinical isolates of M. tuberculosis through Bioinformatics and Experimental approaches, including altering protein 3D structure, causing drug resistance, altering host-pathogen interactions, Molecular mimicry, and Evasion of Immune responses. Before joining Ph.D., he worked as a junior Team Mentor and Project Fellow in the area of drug discovery against Tuberculosis (OSDD), a CSIR-led Team India Consortium with global participation. (https://en.wikipedia.org/wiki/Open_Source_Drug_Discovery) at Institute of Genomics and Integrative Biology (IGIB), Delhi and Institute of Microbial Technology (IMTECH), Chandigarh.",
+    "summary": "Dr. Kausik Bhattacharyya is an Assistant Professor at the Department of Biosciences and Technology (DoBT) and Revvity – MIT-WPU Centre of Excellence for Bioimaging Technologies and Innovation. Serving additionally as a Departmental Placement coordinator for the department of Biosciences and Technology, Dr Kausik has more than 12 years of research experience in Infectious Disease biology, Microbiology, Genomics and Bioinformatics and 7 years of teaching experience. He has completed his Ph.D. from Department of Biomedical Sciences (ACBR), University of Delhi. During his Ph.D., he has demonstrated how genomic sequence and novel genomic variations can have functional significance in Multi-Drug Resistant (MDR) clinical isolates of M. tuberculosis through Bioinformatics and Experimental approaches, including altering protein 3D structure, causing drug resistance, altering host-pathogen interactions, Molecular mimicry, and Evasion of Immune responses. Before joining Ph.D., he worked as a junior Team Mentor and Project Fellow in the area of drug discovery against Tuberculosis (OSDD), a CSIR-led Team India Consortium with global participation. (https://en.wikipedia.org/wiki/Open_Source_Drug_Discovery) at Institute of Genomics and Integrative Biology (IGIB), Delhi and Institute of Microbial Technology (IMTECH), Chandigarh. He has contributed to the development of India's first consolidated Genetic Disease Database (https://en.wikipedia.org/wiki/Indian_Genetic_Disease_Database) during his research at Indian Institute of Chemical biology (IICB), Kolkata. Dr. Kausik has 3 years of Post-Doctoral research experience at Indian Institute of Technology (IIT) Delhi, Indian Institute of Science (IISc), Bangalore and SSSIHL, Puttaparthi where he worked on habitat-specific bacterial behaviour, bacterial gene expression and Anti-Microbial Resistance (AMR). Dr Kausik trained students in different Bioinformatics and Molecular biology workshops. Dr Kausik has worked with different Industry experts during his research journey. Currently, Dr Kausik works in the amalgamation of both Bioinformatics as well as Experimental approaches in the area of Bacterial and Viral genomics.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kausik-bhattacharyya",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55313145700",
@@ -3922,6 +4101,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kaustubh-arvind-sontakke",
     "name": "Dr. Kaustubh Arvind Sontakke",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -3933,7 +4113,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kaustubh-arvind-sontakke.webp",
     "research": "",
-    "summary": "Dr. Kaustubh Arvind Sontakke is the Associate Professor at The School of Business, MIT World Peace University. He is a teacher and researcher with more than 22 years’ rich experience in the field of management and finance. He has completed two doctorate / Ph.D. degrees. He holds Ph.D. (Business Management) and Ph.D. (Accountancy) from University of Mumbai. He is M. Phil (Finance) and Gold Medallist for M. Com (Accounts and Finance) from the University of Mumbai. Also, he has completed an MBA (Finance) and MA (Economics) and MBA (HRM).",
+    "summary": "Dr. Kaustubh Arvind Sontakke is the Associate Professor at The School of Business, MIT World Peace University. He is a teacher and researcher with more than 22 years’ rich experience in the field of management and finance. He has completed two doctorate / Ph.D. degrees. He holds Ph.D. (Business Management) and Ph.D. (Accountancy) from University of Mumbai. He is M. Phil (Finance) and Gold Medallist for M. Com (Accounts and Finance) from the University of Mumbai. Also, he has completed an MBA (Finance) and MA (Economics) and MBA (HRM). He has authored twelve books and various research papers in the field of accounting and finance. He has attended and chaired many technical sessions in national and international conferences. He is Life Member of Indian Accounting Association and a Life Member of Higher Education Forum. He has his special devotional interest in Bhagavad Gita studies. He is Elite Life Member of International Society for Krsna Consciousness (ISKCON).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kaustubh-arvind-sontakke",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57205562037",
@@ -3945,6 +4125,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kaustubh-vishwas-yadav",
     "name": "Dr. Kaustubh Vishwas Yadav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -3955,7 +4136,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "liberal-arts-humanities/liberal-arts": "Department of Liberal Arts"
     },
     "photoPath": "./assets/campus/kaustubh-vishwas-yadav.jpg",
-    "research": "",
+    "research": "Positive Psychology, Educational Psychology, Psychometry, Clinical Psychology",
     "summary": "Dr. Kaustubh V. Yadav is an experienced educator with 17 years of teaching experience at both the undergraduate and postgraduate levels. He has presented research papers in national and international conferences and has co-authored several publications catering to the distance learning curriculum. He is passionate about using effective instructional strategies to develop students' academic skills. Dr. Yadav is dedicated to providing high-quality education and is committed to fostering a positive and supportive learning environment.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kaustubh-vishwas-yadav",
@@ -3966,6 +4147,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ketaki-hanamant-kulkarni",
     "name": "Dr. Ketaki Hanamant Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -3986,6 +4168,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kiran-bidua",
     "name": "Prof. Kiran Bidua",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -3997,7 +4180,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kiran-bidua.webp",
     "research": "",
-    "summary": "Prof. Kiran Bidua brings over a decade of experience in teaching B.Tech students, primarily in the areas of networking and cybersecurity. He combines strong academic expertise with industry-aligned knowledge to create a relevant and engaging learning environment.",
+    "summary": "Prof. Kiran Bidua brings over a decade of experience in teaching B.Tech students, primarily in the areas of networking and cybersecurity. He combines strong academic expertise with industry-aligned knowledge to create a relevant and engaging learning environment. A certified professional in Palo Alto Networks technologies, OPSWAT Network Security, and OSINT, he continuously upskills to deliver industry-relevant insights that enhance student employability in a competitive landscape. He is passionate about translating theoretical concepts into real-world applications and actively contributes to technical initiatives and student clubs. Prof. Bidua remains committed to contributing meaningfully to the sustained excellence and innovation of MIT World Peace University.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kiran-bidua",
       "scopus": "https://www.scopus.com/results/authorNamesList.uri?name=name&st1=Bidua&st2=Kiran&origin=searchauthorlookup",
@@ -4010,6 +4193,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kiran-kisan-kokate",
     "name": "Dr. Kiran Kisan Kokate",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -4030,6 +4214,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kiran-nagare",
     "name": "Dr. Kiran Nagare",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4050,6 +4235,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kiran-prakash-shejale",
     "name": "Dr. Kiran Prakash Shejale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -4063,7 +4249,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kiran-prakash-shejale.webp",
     "research": "1. Energy Storage & Conversion – Development of high-performance lithium-ion and solid-state batteries, supercapacitors, and fuel cells with advanced electrode materials and electrocatalysts. 2. Nanomaterials & Functional Coatings – Synthesis of functional nanostructures, carbon nano-assemblies, quantum dots, and ionic polymer films for energy, catalysis, and environmental applications. 3. Solar Energy & Photocatalysis – Design of dye-sensitized (DSSC) and perovskite solar cells, along with nanostructured catalysts for solar-driven hydrogen production and water purification. 4. Electrochemical Systems & Smart Interfaces – Development of bioelectrochemical interfaces, conductive polymers, and heterostructured materials for sensors, energy devices and electrocatalysis. 5. Water Treatment & Environmental Sustainability – Advanced membrane-integrated nanomaterials, activated carbon and photocatalytic processes for water purification, CO₂ capture and pollution control.",
-    "summary": "Dr. Kiran P. Shejale is a renowned researcher, innovator, and educator in Chemical Engineering, Materials Science and Bioengineering with a Ph.D. from IIT Jodhpur, he also holds an M.Tech. in Nanotechnology from IIT Roorkee and a B.E. in Biotechnology from Shivaji University.",
+    "summary": "Dr. Kiran P. Shejale is a renowned researcher, innovator, and educator in Chemical Engineering, Materials Science and Bioengineering with a Ph.D. from IIT Jodhpur, he also holds an M.Tech. in Nanotechnology from IIT Roorkee and a B.E. in Biotechnology from Shivaji University. With over 12 years of cutting-edge research and academic excellence, Dr. Shejale has made ground-breaking contributions in energy harvesting-storage, electrochemical systems, nanomaterials, catalysis, biosensors, biomaterials and sustainable water-air treatment technologies. His postdoctoral research at POSTECH, Kyungpook National University (South Korea), and IIT Bombay has led to pioneering developments in ionic polymer coatings, next-generation batteries, functional nanomaterials and electrochemical interfaces. His work has been internationally recognized, with over 40 publications in top-tier journals, 6 patents (India & US), 2 book chapters, and his research featured on the cover of Energy Technology Journal. A recipient of numerous prestigious awards, including a Gold Medal & Best Paper Awards, Dr. Shejale has been honoured for his excellence in research and innovation. He has actively contributed to 20+ international conferences, symposiums and workshops, serving as a session chair, keynote speaker and judge. His technology-driven approach has enabled real-world applications of his research in renewable energy and environmental engineering. Beyond research, Dr. Shejale is a dedicated educator and mentor, having trained undergraduate, postgraduate, and doctoral students at premier institutions. His ability to bridge academic knowledge with industrial innovation makes him a transformative leader in engineering education. Dr. Shejale is also an active contributor to the global scientific community, serving as a Topic Editor for Frontiers in Materials and a reviewer for high-impact journals, including Materials Letters, Solar Energy Materials & Solar Cells, and Energy Technology. He is a member of prestigious organizations such as the American Chemical Society (ACS), Materials Research Society (MRS), and Electrochemical Society (ECS), strengthening the scientific and industrial advancements in energy and materials science. Driven by a vision for innovation, sustainability and academic excellence, Dr. Shejale aligns perfectly with MIT-WPU’s mission to advance technology, interdisciplinary research and impactful education.”",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kiran-prakash-shejale",
       "scholar": "https://scholar.google.com/citations?user=9m25BZwAAAAJ&hl=en",
@@ -4075,6 +4261,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kirtikumar-kondhare",
     "name": "Dr. Kirtikumar Kondhare",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -4095,6 +4282,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kishanprasad-gangadhar-gunale",
     "name": "Dr. Kishanprasad Gangadhar Gunale",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Director, Career Development Centre (CDC)",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -4106,7 +4294,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kishanprasad-gangadhar-gunale.jpg",
     "research": "Automotive Electronics, Computer Vision",
-    "summary": "\"Dr. Kishanprasad Gunale is a highly motivated academic professional and a dedicated career counsellor. He received his Ph.D. from Savitribai Phule Pune University in 2019 and completed his B.Tech. and M.Tech. degrees with First Class with Distinction from Dr. Babasaheb Ambedkar Technological University, Lonere, in 2001 and 2006, respectively.",
+    "summary": "\"Dr. Kishanprasad Gunale is a highly motivated academic professional and a dedicated career counsellor. He received his Ph.D. from Savitribai Phule Pune University in 2019 and completed his B.Tech. and M.Tech. degrees with First Class with Distinction from Dr. Babasaheb Ambedkar Technological University, Lonere, in 2001 and 2006, respectively. Since joining MAEERs, MIT Group of Institutions, Kothrud, Pune, in 2012, Dr. Gunale has contributed significantly to the organization's growth in academic processes, industry collaboration, research, and industry-based competitions such as Smart India Hackathon, IIT-B e-Yantra, Texas Instruments, KPIT Sparkle, TCS Code Vita, and L&T TECHgium, among others. He played an instrumental role in establishing an IIT Bombay Remote Center and running Faculty/student Development Programs under National Mission on Education through ICT for the overall development of students and faculty. As a workshop coordinator, he organized FDPs on \"\"Foundation Program in ICT for Education\"\" and \"\"Pedagogy for Online and Blended Teaching-Learning Process,\"\" initiated IIT Bombay Spoken Tutorial activity, and mentored over 1000 students. Dr. Gunale's industry collaborations include signing MoUs with MAN Trucks and Buses, Devise Electronics, ARAI MIT-WPU joint Ph.D. Collaboration, Tech Mahindra Makers Lab, and KPIT Technologies. To provide students with quality internships, PPOs, and placements, he developed relationships with numerous prominent industries. As the internship and placement coordinator for the School of Electronics and Communication Engineering, Dr. Gunale is actively working on students' technical skill development according to industry requirements, incorporating industry input for curriculum enhancement, training students, and facilitating paid internships. He firmly believes in innovative teaching methodology and being a facilitator of learning. Dr. Gunale has held various academic administrative roles such as coordinator of NBA accreditation, academic Coordinator, curriculum planning and execution, strategic planning, hackathon coordination, training programs for skilling, Ph.D. Entrance examination coordination, internship, and placement coordination. He coordinated the MIT-WPU Hackathon - 2021 at the university level and is actively involved in MHRD- Smart India Hackathon Coordination, leading to consistent student success. With 22 years of teaching experience, Dr. Gunale has taught various subjects in Automotive, Mechatronics, and Computer Vision domains at undergraduate and postgraduate levels. He has published 15 papers in reputable journals and conferences in the computer vision and automotive fields, filed four patents, two of which are in the examination stage, and has one copyright to his credit. At KPIT Technologies, he recently finished a two-month sabbatical where he worked on \"\"Development of FlexCP model using Autosar.\"\" In 2014-15, he completed 15 days of training sponsored by KPIT Technologies on Automotive Electronics and Autosar domain. Dr. Gunale is also involved in corporate training and consultancy services in the area of Automotive Electronics and fetched consultancy of Rs. 2.42 Lakhs. He has applied for various funding proposals to DST, MODROB, and AICTE. Under AICTE-ISTE Induction/Refresher Program, Rs. 93000/ were approved to this team for organizing \"\"Professional Development Programme for Digital Transformation in Teaching and Learning.\"\" He has 18 publications to his credit. He has been invited as an expert in conferences and seminars on computer vision and is a reviewer for SCOPUS and the ESCI journal. His contributions to the KPIT Sparkle competition, the Industry-Academic Conclave (INDCON-2019), admission responsibility,\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kishanprasad-gangadhar-gunale"
     },
@@ -4115,6 +4303,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kishor-rambhau-kolhe",
     "name": "Dr. Kishor Rambhau Kolhe",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -4126,7 +4315,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kishor-rambhau-kolhe.webp",
     "research": "",
-    "summary": "Dr. Kishor Kolhe has more than 28.6 years of teaching and industry experience. His areas of interest are Network and Security, Cyber Security, Blockchain Technology, and Internet of Things. He has published more than 79 research papers in reputed journals and conferences. He has also guided more than 76 undergraduate students, 18 post graduate students.",
+    "summary": "Dr. Kishor Kolhe has more than 28.6 years of teaching and industry experience. His areas of interest are Network and Security, Cyber Security, Blockchain Technology, and Internet of Things. He has published more than 79 research papers in reputed journals and conferences. He has also guided more than 76 undergraduate students, 18 post graduate students. 1 Research Scholar: completed her PhD under his supervision and is presently guiding. 2 Ph.D. research scholars. He has also worked as Head, I.T. Department, System In-charge of Center for Professional Courses and Member of various committees. He has reviewed research papers in national and international conferences and journals. He is a life member of CSI, ISTE and Fellow member of IETE etc. He has organized several conferences, workshops, seminars, Graduation Ceremony programs and short term training programmes etc. He had been invited as session chair of National and International conferences. He participated in various innovative workshops on Education and Training.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kishor-rambhau-kolhe",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6507998695",
@@ -4139,6 +4328,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "krishna-keshavrao-warhade",
     "name": "Dr. Krishna Keshavrao Warhade",
+    "preferredDisplayName": "",
     "designation": "Professor and Director Doctoral Programme",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -4150,7 +4340,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/krishna-keshavrao-warhade.webp",
     "research": "Signal Processing, Communication",
-    "summary": "Dr. Krishna Warhade is an accomplished educator and researcher, with over 27 years of experience in teaching and research. He completed his PhD with specialization in communications and signal processing from IIT Bombay and currently serves as a Professor at School of Electronics and Communication Engineering, Dr. Vishwanath Karad MIT World Peace University (MITWPU), Pune.",
+    "summary": "Dr. Krishna Warhade is an accomplished educator and researcher, with over 27 years of experience in teaching and research. He completed his PhD with specialization in communications and signal processing from IIT Bombay and currently serves as a Professor at School of Electronics and Communication Engineering, Dr. Vishwanath Karad MIT World Peace University (MITWPU), Pune. Dr. Warhade has held various administrative positions, including the Dean of Research and Doctoral Program at MITWPU, Pune, and Vice President of Institutions Innovation Council (Part of MHRD’s Innovation Cell) at MITWPU. He was also the SPOC from MITWPU for Smart India Hackathon organized by MHRD, AICTE, i4C and Persistent from 2017 to 2021. Dr. Warhade has also served as the Remote Center Coordinator for MHRD-IIT Bombay National Mission on Education through ICT from MITWPU. He is the author of the book titled “Video Shot Boundary Detection,” co-authored by Dr. S. N. Merchant (Professor IIT Bombay), and Dr. U. B. Desai, Director IIT Hyderabad, published by River Publishers, Denmark. Dr. Warhade has also contributed a chapter to the book titled “Research Methodology, A practical and scientific-based approach,” published by CRC Press, Taylor and Francis. Dr. Warhade has published a total of 27 papers in international journals and 17 papers in international conferences. He has guided 22 M.Tech students and two Ph.D. students and is currently guiding five Ph.D. students. He has completed several collaborative projects, including \"\"Intelligent Health Monitoring System for the Point Machine\"\" with Konkan Railway, \"\"Missing Children\"\" with Blackberry, \"\"Carbon footprint App development\"\" with TERRE policy center, and \"\"Air Quality Index App development\"\" with IITM. Dr. Warhade has received numerous awards and recognition, including the \"\"Ideal Teacher Award\"\" in 2019 from MAEER’s MIT Group of Institutions. He holds two international patents and three copyrights to his credit, and his research interests include communications, signal processing, and machine learning.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/krishna-keshavrao-warhade",
       "scholar": "https://scholar.google.com/citations?hl=en&user=QDEX3B8AAAAJ",
@@ -4161,6 +4351,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "krishna-kumar-saini",
     "name": "Dr. Krishna Kumar Saini",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -4172,7 +4363,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/krishna-kumar-saini.webp",
     "research": "",
-    "summary": "Krishna Kumar Saini is an Assistant Professor in the Department of Electrical and Electronics Engineering at MIT World Peace University (MIT-WPU), Pune. He has over 10 years of academic and research experience in the field of Electrical Engineering. He submitted his Ph.D. titled “Techno-Economic Assessment and Development of Microgrid Operation Strategies with Their Digital Replica Validation” in the Department of Electrical and Electronics Engineering at Birla Institute of Technology and Science (BITS), Pilani. He holds M.Tech. degree in Electrical and Electronics Engineering from Maharishi Dayanand University, Rohtak, and B.Tech. in Electrical Engineering from Rajasthan Technical University, Kota.",
+    "summary": "Krishna Kumar Saini is an Assistant Professor in the Department of Electrical and Electronics Engineering at MIT World Peace University (MIT-WPU), Pune. He has over 10 years of academic and research experience in the field of Electrical Engineering. He submitted his Ph.D. titled “Techno-Economic Assessment and Development of Microgrid Operation Strategies with Their Digital Replica Validation” in the Department of Electrical and Electronics Engineering at Birla Institute of Technology and Science (BITS), Pilani. He holds M.Tech. degree in Electrical and Electronics Engineering from Maharishi Dayanand University, Rohtak, and B.Tech. in Electrical Engineering from Rajasthan Technical University, Kota. His research interests include renewable energy-integrated power systems, microgrid operation and control, demand-side management, forecasting techniques, energy management strategies, and digital twin applications for smart energy systems. He has significant experience in the design and deployment of solar photovoltaic microgrids with battery energy storage systems and IoT-based monitoring. He is the inventor of a published patent on microgrid management using digital twin technology and has authored 11 research articles in reputed international journals, book chapters, and conference papers. He has also presented his work at international IEEE conference, IEEE PECON 2024 in Kuala Lumpur, Malaysia, where he received the International Travel Award from BITS Pilani.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/krishna-kumar-saini",
       "scholar": "https://scholar.google.com/citations?user=KJyLLqkAAAAJ&hl=en&oi=ao",
@@ -4183,6 +4374,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kulamala-vinod-kumar",
     "name": "Prof. Kulamala Vinod Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -4207,6 +4399,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kumar-abhijeet-raj",
     "name": "Dr. Kumar Abhijeet Raj",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -4218,7 +4411,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kumar-abhijeet-raj.webp",
     "research": "",
-    "summary": "Dr. Kumar Abhijeet Raj obtained his Ph.D. in Petroleum Engineering from IIT (ISM) Dhanbad. His doctoral research focused on the development of Viscoelastic Surfactant (VES) fracturing fluids for high- temperature reservoirs, integrating key parameters to enhance temperature stability and proppant- carrying capacity. As part of his study, he designed and conducted minifrac tests using specially formulated fracturing fluids and custom-built experimental setups to interpret critical fracturing parameters. He completed both his B.Tech and M.Tech also in Petroleum Engineering from IIT (ISM) Dhanbad.",
+    "summary": "Dr. Kumar Abhijeet Raj obtained his Ph.D. in Petroleum Engineering from IIT (ISM) Dhanbad. His doctoral research focused on the development of Viscoelastic Surfactant (VES) fracturing fluids for high- temperature reservoirs, integrating key parameters to enhance temperature stability and proppant- carrying capacity. As part of his study, he designed and conducted minifrac tests using specially formulated fracturing fluids and custom-built experimental setups to interpret critical fracturing parameters. He completed both his B.Tech and M.Tech also in Petroleum Engineering from IIT (ISM) Dhanbad. Dr. Abhijeet has also worked extensively on the synthesis, characterization, and application of natural bio-based surfactants for VES fracturing fluids, exploring their potential as environmentally sustainable alternatives in hydraulic fracturing. His research area includes Hydraulic Fracturing optimization, enhanced oil recovery (EOR), reservoir simulation and Carbon Capture Utilization and Storage Prior to joining MIT-WPU Dr. Abhijeet has worked in Presidency University and DIT University where He took core Petroleum Engineering subjects and mentored many students in accomplishing their goals. Currently he is teaching advance courses for post graduate students at MIT-WPU. He is also mentoring students for their research project. Geology and Geophysical Methods, Reservoir Engineering, Reservoir Engineering Laboratory, Design in Production Engineering, Offshore Drilling & Production Practices, Shale Gas, Carbon Capture Utilization and Storage. Dr. Kumar Abhijeet Raj's research interests include hydraulic fracturing design and optimization, proppant transport, optimizing fracture conductivity, development of fracturing fluids for high- temperature and high-pressure reservoirs, reservoir simulation, CO₂ Enhanced Oil Recovery (EOR), and Carbon Capture, Utilization, and Storage (CCUS).. Kumar Abhijeet Raj, Archana Balikram, Keka Ojha, 2022. “Impact assessment of nanoparticles on microstructure and rheological behavior of VES fracturing fluid formulated with mixed surfactant system”. Journal of Molecular Liquid. 345, 118241. https://doi.org/10.1016/j.molliq.2021.118241 (Impact Factor: 6.633). Kumar Abhijeet Raj and Keka Ojha, 2023, Determination of fracture parameters using viscoelastic surfactant fracturing fluid through Mini-frac test, 84th EAGE Annual Conference & Exhibition, Jun 2023, Volume 2023, p.1 - 5 DOI: https://doi.org/10.3997/2214-4609.2023101216 Kumar Abhijeet Raj, Keka Ojha, 2019, “Development and characterization of nanoparticles- enhanced viscoelastic fracturing fluid for hydraulic fracturing, 81st EAGE Annual Conference & Exhibition, Jun 2019, Volume 2019, p.1 – 5 DOI: https://doi.org/10.3997/2214-4609.201901442 For more detailed list check",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kumar-abhijeet-raj",
       "scholar": "https://scholar.google.co.in/citations?user=HexWqxIAAAAJ&hl=en",
@@ -4230,6 +4423,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kunal-gaurav",
     "name": "Dr. Kunal Gaurav",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4241,7 +4435,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kunal-gaurav.webp",
     "research": "",
-    "summary": "Dr. Kunal Gaurav is a Professor of Marketing & Strategy at the School of Business, MIT World Peace University, Pune. With over two decades of experience in academia, research, and academic leadership, he has played a pivotal role in enhancing the quality and relevance of business education across diverse institutions.",
+    "summary": "Dr. Kunal Gaurav is a Professor of Marketing & Strategy at the School of Business, MIT World Peace University, Pune. With over two decades of experience in academia, research, and academic leadership, he has played a pivotal role in enhancing the quality and relevance of business education across diverse institutions. He holds a PhD in Business Administration and an MBA earned with top academic honours. His teaching and research interests span Strategic Management, Digital Transformation, Digital Marketing, and Customer Relationship Management (CRM). He is widely recognized for integrating emerging industry trends with pedagogical innovation, particularly in the areas of blended learning and faculty development. A prolific academic author, Dr. Gaurav has published several books on general management, brand management, and social entrepreneurship. His research is extensively published in reputed ABDC and Scopus indexed journals and reflects a strong focus on applied business insights and interdisciplinary inquiry. Dr. Gaurav is also actively engaged in editorial and advisory roles and has contributed to institutional development through research mentoring, curriculum design, and leadership of national and international conferences. His work exemplifies a deep commitment to academic excellence, innovation, and impactful education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kunal-gaurav"
     },
@@ -4250,6 +4444,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kunal-modak",
     "name": "Dr. Kunal Modak",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -4261,7 +4456,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/kunal-modak.webp",
     "research": "",
-    "summary": "Dr. Kunal Modak holds a Ph.D. in Structural Geology from IIT ISM Dhanbad, where he conducted research on the structural geometry, structural mapping, deformation, paleopeizometry, and metamorphism of the Mesoproterozoic Kaladgi Basin. His work provided critical insights into basin evolution and its implications for hydrocarbon and mineral exploration. He also holds an MSc in Geology and an M.Tech in Petroleum Exploration from IIT ISM Dhanbad, equipping him with a strong foundation in both fundamental geological processes and their applications in petroleum systems. He has over 6 years of experience as a scientist under the Ministry of Earth Sciences, where he worked on the prestigious \"Scientific Deep Drilling in Koyna Intraplate Seismic Zone\" project. His research in this project focused on understanding the mechanisms of reservoir-triggered seismicity through core logging, petrography, microstructural analysis, SEM, and EDS. His research contributions include both single-author and leading-author publications, including a 2022 paper proposing a hypothetical 5 km deep borehole in the Koyna region to study reservoir-triggered seismicity. He also serves as a reviewer for several reputed peer-reviewed journals, contributing to the advancement of geoscientific research.",
+    "summary": "Dr. Kunal Modak holds a Ph.D. in Structural Geology from IIT ISM Dhanbad, where he conducted research on the structural geometry, structural mapping, deformation, paleopeizometry, and metamorphism of the Mesoproterozoic Kaladgi Basin. His work provided critical insights into basin evolution and its implications for hydrocarbon and mineral exploration. He also holds an MSc in Geology and an M.Tech in Petroleum Exploration from IIT ISM Dhanbad, equipping him with a strong foundation in both fundamental geological processes and their applications in petroleum systems. He has over 6 years of experience as a scientist under the Ministry of Earth Sciences, where he worked on the prestigious \"Scientific Deep Drilling in Koyna Intraplate Seismic Zone\" project. His research in this project focused on understanding the mechanisms of reservoir-triggered seismicity through core logging, petrography, microstructural analysis, SEM, and EDS. His research contributions include both single-author and leading-author publications, including a 2022 paper proposing a hypothetical 5 km deep borehole in the Koyna region to study reservoir-triggered seismicity. He also serves as a reviewer for several reputed peer-reviewed journals, contributing to the advancement of geoscientific research. Basic concept of Geology, Petroleum Geology, Petroleum Exploration, and Formation Evaluation. Petroleum Formation Evaluation, Engineering Geology. Ph.D. from Indian Institute of Technology (IIT), ISM Dhanbad. Dr. Kunal Modak is a geoscientist specializing in structural geology, focusing on Earth's deformation processes and their implications for petroleum exploration. He studies structural geometry, deformation patterns, and low-grade metamorphism within sedimentary basins. He actively conducts detailed geological mapping to analyze deformation patterns, fault systems, and fold structures within sedimentary basins. His structural mapping focuses on understanding the kinematics and geometry of deformed rock units, particularly in Sedimentary Basin. His work involves mapping basement-cover relationships and analyzing detachment mechanisms, such as gravity gliding along unconformities. In microstructural studies, he investigates rock deformation at the thin-section scale, examining mineral fabrics, strain indicators, and deformation mechanisms. His work in the Mesoproterozoic Kaladgi Basin of southwestern India provides insights into basin development and its potential for uranium and hydrocarbon exploration. He is a field geologist specializing in structural mapping, thematic mapping, and microstructural studies. He actively conducts detailed geological mapping to analyze deformation patterns, fault systems, and fold structures within sedimentary basins. His structural mapping focuses on understanding the kinematics and geometry of deformed rock units, particularly in Sedimentary Basin. He applies thematic mapping techniques to integrate geological, geophysical, and geochemical data for interpreting basin evolution and identifying structural controls on resource distribution.. His research extends to reservoir-triggered seismicity, where he examines the structural and microstructural factors influencing fault reactivation in seismically active regions. 1) Kunal Modak*, 2024. Evidences of water percolation in granitic basement in Koyna seismogenic zone: Implications to reservoir triggered seismicity, Journal of Earth System Science. Vol 124, 1-8. 2) Kunal Modak*, Sunil Rohilla, Nagaraju Podugu, Deepjyoti Goswami, Sukanta Roy, 2022. Fault associated with the 1967 M 6.3 Koyna earthquake, India: a review of recent studies and perspectives for further probing, Journal of Asian Earth Sciences: X, 100123 3) Mukherjee, M.K., Das, S., Modak, K., 2016. Basement-cover structural relationships in the Kaladgi Basin, southwestern India: Indications towards a Mesoproterozoic gravity gliding of the cover along a detached unconformity. Precambrian Research 281, 495-520. URL: https://doi.org/10.1016/j.precamres.2016.06.013 ISSN 0301-9268, IF 4.725 4) Mukherjee, M.K., Modak, K., 2019. Timing of cleavage development in relation to folding and its implications; an example from the deformed Mesoproterozoic sedimentary cover of Kaladgi basin, southwestern India. Journal of Geological Society of India. Vol.93, April 2019, pp.379-391. URL: https://doi.org/10.1007/s12594-019-1192-y ISSN 0974-6889, IF 1.459 5) Mukherjee, M.K., Modak, K., Ghosh, J., 2019. Illite crystallinity index from the Mesoproterozoic sedimentary cover of the Kaladgi basin, southwestern India: Implications on crustal depths of subsidence and deformation. Journal of Earth System Science. 128, 112 (2019). https://doi.org/10.1007/s12040-019-1163-0 URL: https://doi.org/10.1007/s12040-019-1124-7 ISSN 0253-4126, IF 1.423 6) Mukherjee, M.K., Modak, K., 2017. Structural Geometry and Deformation Patterns in Mesoproterozoic Cover Sediments of Kaladgi Basin: Implications for Exploration of Uranium and Hydrocarbons. Journal of Geosciences Research. Special vol No. 1, pp. 217-225 7) Mukherjee, M. K., Modak, K., Das, S., 2015. Deformation scenario and metamorphism of the Mesoproterozoic cover rocks of the Kaladgi basin, southwestern India. In: Proceedings of the 4th Annual International Conference on Geological & Earth Sciences (GEOS 2015), October 2015, Singapore, Global Science and Technology Forum, pp. 50–61. 1. Kunal Modak. 2014. Tectonics and structural controls on the development of Kaladgi basin, south west India: Implication on basin opening. In: Proceedings of the International seminar on Sedimentary processes and Metallogeny through time, Dharwad Engineering College, Karnataka, January 21- 23, 2014.(Presented) 2. Kunal Modak, Mrinal Kanti Mukherjee, 2017. Structural Geometry and Deformation Patterns in Mesoproterozoic Cover Sediments of Kaladgi Basin: Implications for Exploration of Uranium and Hydrocarbons. In: Challenges and Strategies in mineral exploration and mining. Gondwana society of India, Nagpur and RTM Nagpur University, Nagpur. Special vol No. 1, pp. 217-225. 9th and 10th Feb 2017. (Presented) 3. Kunal Modak, Mrinal Kanti Mukherjee, 2015. Timing of cleavage development in relation to folding in the Meso -Proterozoic cover sediments of the Kaladgi Basin, South western India. Recent Advances in Research on Precambrian Terrains in India. XIV Convention of Mineralogical Society of India. University of Mysore. 31st March 2015. (accepted) 4. Kunal Modak. Fracture networks in the granitic basement in Koyna seismogenic zone: implications for channelization of water at depth. 36th International Geological Congress, India 2020. 2nd-8th March 2020. (accepted) 5. Kunal Modak. Evidences of water percolation in granitic basement in Koyna seismogenic zone: Implications to reservoir triggered seismicity. International Conference on Advances in Sciences of the Earth: Relevance to Society at SRTM University, Nanded Maharashtra. 2022. 24th-26th November 2022. (Presented) 6. Chinmay Joshi, Deepak Wable, Digant Vyas, Kunal Modak, Swapnil Patil, Shubham Kamane. Study of Slickenlines in drill cores from Koyna seismogenic zone, Maharashtra. International Conference on Advances in Sciences of the Earth: Relevance to Society at SRTM University, Nanded Maharashtra. 2022. 24th-26th November 2023. (Coauthor) 7. Kunal Modak, Deepak Wable, Chinmay Joshi, Ganesh Shinde, Archan Bhise Vulnerable fractures for future failure: Insights from the drillcore samples of the basement granitoids underlying the Deccan traps of the Koyna-Warna region, India. International Conference ‘Deccan Next’; 29th September- 5th October 2023. (Presented) 8. Roy, S., Goswami, D., Sutar, A., Akkiraju, V. V., Rohilla, S., Misra, S., Podugu, N., Wiersberg, T., Chitralekha S, V., Shukla, M., Modak, K. (2023): Recurrent reservoir triggered seismicity in Koyna, western India for the past six decades: What keeps it going?, XXVIII General Assembly of the International Union of Geodesy and Geophysics (IUGG) (Berlin 2023). (Co-author) Publisher GFZ German Research Centre for Geosciences https://doi.org/10.57757/IUGG23-3162 9. Kunal Modak and Dinesh Kumar. (2024): A Comprehensive Assessment of Hydro Pump Storage in Abandoned Mines. National conference on Geosciences for sustainable world (GSW)- March 06-07, 2024. 10. Dinesh Kumar and Kunal Modak. (2024): Geological Complexity and Engineering Solutions: India’s Unique Rock Mass Classification Approach. National conference on Geosciences for sustainable world (GSW)- March 06-07, 2024. (Co-author) 11. Dinesh Kumar and Kunal Modak. (2023): Unearthing Potential: A Comprehensive Review of Hydro Pump Storage in Abandoned Mines. 5th World Environment Summit and International Conference on \"Technological Innovations for Climate Change Mitigation and Global Warming\" December 12- 13- 14, 2023. Received best paper award. In: Proceedings of the 4th Annual International Conference on Geological & Earth Sciences (GEOS 2015), October 2015, Singapore, Global Science and Technology Forum. Deformation scenario and metamorphism of the Mesoproterozoic cover rocks of the Kaladgi basin, southwestern India. In: Proceedings of the 4th Annual International Conference on Geological & Earth Sciences (GEOS 2015), October 2015, Singapore, Global Science and Technology Forum, pp. 50–61. Received JGSI Radhakrishna Prize for best research paper of 2019. Geological Society of India (Annual General Meeting – 24 th September 2021) Timing of cleavage development in relation to folding and its implications; an example from the deformed Mesoproterozoic sedimentary cover of Kaladgi basin, southwestern India. Journal of Geological Society of India. Vol.93, April 2019, pp.379-391 Qualified National Eligibility Test (lectureship) NET, June 2011: Lectureship (LS); AIR: 24. Qualified Graduate Aptitude Test in Engineering (GATE) in 2015 Qualified Graduate Aptitude Test in Engineering (GATE) in 2017 Ranked 1 in the Institute JRF entrance exam of ISM,Dhanbad. IIT ISM Dhanbad, Junior Research Fellowship: 06/08/2012-05/08/2014 IIT ISM Dhanbad, Senior Research Fellowship: 06/08/2014-05/08/2016",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/kunal-modak",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57189868849",
@@ -4273,6 +4468,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kundan-ramesh-nagare",
     "name": "Mr. Kundan Ramesh Nagare",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -4293,6 +4489,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "kundlik-vitthal-mali",
     "name": "Dr. Kundlik Vitthal Mali",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -4313,6 +4510,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "lipsa-mishra",
     "name": "Dr. Lipsa Mishra",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -4324,7 +4522,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/lipsa-mishra.webp",
     "research": "",
-    "summary": "Dr. Lipsa Mishra is an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune from September 2024. She completed her B. Tech in Civil Engineering from KIIT Deemed to be University, Bhubaneswar in 2013, followed by an M.Tech in Environmental Science and Engineering from VSSUT, Burla in 2015 and PhD. in Environmental Engineering from NIT Rourkela, Odisha in 2023. Her research interests include water and wastewater treatment, Industrial wastewater treatment, Adsorption and biological treatment methods, optimization study, usage of natural/biobased materials as a coagulant.",
+    "summary": "Dr. Lipsa Mishra is an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune from September 2024. She completed her B. Tech in Civil Engineering from KIIT Deemed to be University, Bhubaneswar in 2013, followed by an M.Tech in Environmental Science and Engineering from VSSUT, Burla in 2015 and PhD. in Environmental Engineering from NIT Rourkela, Odisha in 2023. Her research interests include water and wastewater treatment, Industrial wastewater treatment, Adsorption and biological treatment methods, optimization study, usage of natural/biobased materials as a coagulant. Dr. Lipsa Mishra has worked as an Assistant Professor at MITS, Andhra Pradesh for 2 years and 6years of research experience. Dr. Mishra has published 3 research papers (SCI) and 2 International conference papers (Scopus).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/lipsa-mishra",
       "scholar": "https://scholar.google.co.in/citations?user=vA8oDP4AAAAJ&hl=en"
@@ -4334,6 +4532,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "madhumita-mukherjee",
     "name": "Dr. Madhumita Mukherjee",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4345,7 +4544,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/madhumita-mukherjee.webp",
     "research": "",
-    "summary": "Dr. Madhumita Mukherjee is currently serving as an Associate Professor at Dr. Vishwanath Karad MIT World Peace University, Pune in School of Business (SOB). Previously, she held the esteemed position of Director-Principal at the University School of Tourism, Airlines, and Hotel Management, Rayat Bahra University, Chandigarh, for Three and half years.",
+    "summary": "Dr. Madhumita Mukherjee is currently serving as an Associate Professor at Dr. Vishwanath Karad MIT World Peace University, Pune in School of Business (SOB). Previously, she held the esteemed position of Director-Principal at the University School of Tourism, Airlines, and Hotel Management, Rayat Bahra University, Chandigarh, for Three and half years. With a Ph.D. in Tourism Management and certification from the International Air Transport Association (Canada), Dr. Mukherjee boasts over 22 years of comprehensive experience in academia and the corporate sector. Her professional journey includes associations with renowned universities such as Jamia Millia Islamia (Delhi), Lovely Professional University (Punjab), and Amity University (Kolkata), and aviation sector like Air Sahara. Dr. Mukherjee has made significant contributions to the fields of tourism, airlines, and hotel management through her publications in prestigious national and international journals including Scopus indexed Journals, as well as authorship of books. She has actively participated in numerous international conferences and summits, earning accolades and recognition, including awards at platforms like Edu Summit and NEP forums. A visionary leader, Dr. Mukherjee is dedicated to fostering student growth by understanding their interests and mental frameworks, helping them achieve their academic and professional aspirations. Her innovative and student-centric approach continues to make a profound impact in her field, positioning her as a respected thought leader in academic as well as corporate sector. Her area of specialisation is Aviation, Tourism, Hospitality and Event Management.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/madhumita-mukherjee"
     },
@@ -4354,6 +4553,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "madhura-vishnu-phatak",
     "name": "Ms. Madhura Vishnu Phatak",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -4365,7 +4565,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/madhura-vishnu-phatak.jpg",
     "research": "",
-    "summary": "Dr. Madhura Phatak is a dedicated educator by choice, committed to her profession with passion, integrity, honesty, and humility for the benefit of her students and institution. She possesses strong analytical and logical abilities, along with an effective command of English.",
+    "summary": "Dr. Madhura Phatak is a dedicated educator by choice, committed to her profession with passion, integrity, honesty, and humility for the benefit of her students and institution. She possesses strong analytical and logical abilities, along with an effective command of English. She thrives in challenging environments that foster continuous learning and professional growth, and remains focused on evolving as a responsible and committed academic professional.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/madhura-vishnu-phatak",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55786868000",
@@ -4378,6 +4578,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "madhuri-amol-bhalekar",
     "name": "Dr. Madhuri Amol Bhalekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -4389,7 +4590,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/madhuri-amol-bhalekar.jpg",
     "research": "",
-    "summary": "Specialisation: Cloud Computing",
+    "summary": "Explore the profile of Madhuri Amol Bhalekar at MIT-WPU Pune. Learn about academic expertise, teaching experience, research interests, publications, and contributions to student learning and higher education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/madhuri-amol-bhalekar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57198809769",
@@ -4401,6 +4602,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mahesh-balwant-sonawane",
     "name": "Dr. Mahesh Balwant Sonawane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -4412,7 +4614,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mahesh-balwant-sonawane.webp",
     "research": "Building Energy Simulation, Building energy analysis, GIS applications.",
-    "summary": "Dr. Mahesh B. Sonawane has been working as an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, since July 2017. He received his Ph.D. from the prestigious Veermata Jijabai Technological Institute (VJTI), Mumbai, in March 2021 for his work \"GIS-based building energy simulation studies\". He obtained his BE (Civil Eng.) and M.E. (Civil- Building Science & Technology) degrees from North Maharashtra University, Jalgaon, in 1998 and 2008, respectively.",
+    "summary": "Dr. Mahesh B. Sonawane has been working as an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, since July 2017. He received his Ph.D. from the prestigious Veermata Jijabai Technological Institute (VJTI), Mumbai, in March 2021 for his work \"GIS-based building energy simulation studies\". He obtained his BE (Civil Eng.) and M.E. (Civil- Building Science & Technology) degrees from North Maharashtra University, Jalgaon, in 1998 and 2008, respectively. Dr. Sonawane has been associated with the Maharashtra Institute of Technology (MIT), Pune, since December 2006 and has been teaching various subjects such as Building Design & Drawing, Green building & Infrastructure, Smart City Planning & Development, Building Control Procedure & Legislation. He had presented research papers in reputable international conferences in India and abroad. In 2016, he presented a research paper at the International Conference held in Kuala Lumpur, Malaysia. He has published 8 research papers in international journals and presented 8 research papers in international conferences. His research interests include energy simulation of buildings, building physics, and GIS-based energy simulation studies. He has been granted three international patents, two from the Government of Australia and one from the Government of South Africa; two patents are published by the Government of India. In addition, Dr. Sonawane has served as the chairman of various subjects at SP Pune University and MITWPU Pune and worked as an LIC committee member of Pune University. He holds a life membership of Indian Society for Technical Education (ISTE) New Delhi.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mahesh-balwant-sonawane",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57190949218",
@@ -4423,6 +4625,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mahesh-kulkarni",
     "name": "Mr. Mahesh Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -4443,6 +4646,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mahesh-maganlal-makwana",
     "name": "Dr. Mahesh Maganlal Makwana",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -4454,7 +4658,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mahesh-maganlal-makwana.webp",
     "research": "Structural Engineering, Precast concrete, Structural Health Monitoring",
-    "summary": "Dr. Mahesh Maganlal Makwana is an Assistant Professor in the Department of Civil Engineering at MIT WPU, Pune. He completed his master’s in civil-Structures from the College of Engineering Pune and PhD (Structural Engineering) from Maharashtra Institute of Technology Pune. Since joining MIT in 2008, he has taught a range of subjects, including Applied Mechanics, Strength of Materials, Structural Analysis, and Structural Design. He has more than 21 years of teaching and 6 years of industrial experience. Presently he is working as Program coordinator of Civil Smart Infrastructure and construction program, Departmental Budget and Purchase coordinator.",
+    "summary": "Dr. Mahesh Maganlal Makwana is an Assistant Professor in the Department of Civil Engineering at MIT WPU, Pune. He completed his master’s in civil-Structures from the College of Engineering Pune and PhD (Structural Engineering) from Maharashtra Institute of Technology Pune. Since joining MIT in 2008, he has taught a range of subjects, including Applied Mechanics, Strength of Materials, Structural Analysis, and Structural Design. He has more than 21 years of teaching and 6 years of industrial experience. Presently he is working as Program coordinator of Civil Smart Infrastructure and construction program, Departmental Budget and Purchase coordinator. Dr. Makwana's specific areas of interest include Structural Engineering, Precast Concrete, Durability of Concrete, and Structural Health Monitoring. He has published around 17 research papers in international journals and presented 1 research paper at an international conference. He has received Research grant of Rs 13 Lacs from AICTE. Dr. Makwana guides undergraduate and postgraduate students and is a Member of the Institute of Engineers, as well as a life member of the Indian Society of Structural Engineering and the Indian Society of Technical Education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mahesh-maganlal-makwana",
       "scholar": "https://scholar.google.com/citations?hl=en&user=NkIs0CUAAAAJ",
@@ -4466,6 +4670,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mahesh-nana-pradhan",
     "name": "Mr. Mahesh Nana Pradhan",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Coordinator (R&A)",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -4489,6 +4694,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mahesh-salunkhe",
     "name": "Prof. Mahesh Salunkhe",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -4511,6 +4717,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mahesh-vasantrao-kulkarni",
     "name": "Dr. Mahesh Vasantrao Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -4534,6 +4741,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "maisam-ali",
     "name": "Mr. Maisam Ali",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -4554,6 +4762,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "makrand-mahadev-wagale",
     "name": "Dr. Makrand Mahadev Wagale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -4565,7 +4774,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/makrand-mahadev-wagale.webp",
     "research": "",
-    "summary": "Dr. Makrand Wagale is an Assistant Professor at the Department of Civil Engineering, MIT World Peace University in Pune. He completed his B.E. in Civil Engineering from Walchand College of Engineering, Sangli, and his M.E. and Ph. D in Transportation Engineering from Birla Institute of Technology and Science, Pilani. Dr. Wagale specializes in Transportation Planning, Public Transportation, Rural Road Assessment and Design, Artificial Intelligence, soft computing, Computational Intelligence, Augmented Reality Applications for Civil Engineering Design, and Transportation Safety.",
+    "summary": "Dr. Makrand Wagale is an Assistant Professor at the Department of Civil Engineering, MIT World Peace University in Pune. He completed his B.E. in Civil Engineering from Walchand College of Engineering, Sangli, and his M.E. and Ph. D in Transportation Engineering from Birla Institute of Technology and Science, Pilani. Dr. Wagale specializes in Transportation Planning, Public Transportation, Rural Road Assessment and Design, Artificial Intelligence, soft computing, Computational Intelligence, Augmented Reality Applications for Civil Engineering Design, and Transportation Safety. He has authored several research papers in international journals and conferences and actively reviews journals of international repute, such as the Journal of Traffic and Transportation Engineering and the Transportation Research Board. Dr. Wagale is proficient in software such as HDM-4, VISSIM, MX ROAD, GIS, and computing tools like SPPS and R-Programming. He has over three years of combined experience in teaching and industry. Dr. Wagale also worked as a road safety auditor for the Bikaner to Phalodi section of NH-15 for four-laning from km 4.200 to 55.250 and two-laning with paved shoulder from km 55.250 to 163.500 in the state of Rajasthan, India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/makrand-mahadev-wagale"
     },
@@ -4574,6 +4783,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "malhari-bhimrao-kulkarni",
     "name": "Dr. Malhari Bhimrao Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Program Coordinator (MS & E) & Associate Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -4596,6 +4806,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manali-joshi",
     "name": "Prof. Dr. Manali Joshi",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -4607,7 +4818,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/manali-joshi.webp",
     "research": "",
-    "summary": "Dr. Manali Joshi is an Assistant Professor in the Department of Civil Engineering at MIT-WPU, Kothrud, Pune. She has over 5+ years of total experience, including 3 years of experience in teaching and 2+ years of experience in industry, which comprises MEPF design, and active involvement in R and D department of a slope erosion control company. She completed her PhD at the Symbiosis Institute of Technology, Symbiosis International (Deemed) University in 2024. She has pursued her M.E. in Environmental Engineering in 2019 from The Maharaja Sayajirao University of Baroda and B.E. in Civil Engineering in 2016, from L.D. College of Engineering (Gujarat Technological University), Ahmedabad, with a high merit percentage.",
+    "summary": "Dr. Manali Joshi is an Assistant Professor in the Department of Civil Engineering at MIT-WPU, Kothrud, Pune. She has over 5+ years of total experience, including 3 years of experience in teaching and 2+ years of experience in industry, which comprises MEPF design, and active involvement in R and D department of a slope erosion control company. She completed her PhD at the Symbiosis Institute of Technology, Symbiosis International (Deemed) University in 2024. She has pursued her M.E. in Environmental Engineering in 2019 from The Maharaja Sayajirao University of Baroda and B.E. in Civil Engineering in 2016, from L.D. College of Engineering (Gujarat Technological University), Ahmedabad, with a high merit percentage. Her key research areas include wastewater remediation, water supply and distribution, plumbing and firefighting design, design of STP and ETP, integrated treatment methods primarily novel techniques of photocatalysis, and phytoremediation along with conventional techniques for complete remediation of wastewater targeting the possible reuse, recycle and recovery, zero waste generation, zero liquid discharge technologies especially for industrial wastewater, green building and zero energy building design as per IGBC and USGBC standards. She is a member of the Institute of Engineers (India), Gujarat Institute of Civil Engineers and Architects, and Indian Green Building Council. She is an IGBC Accredited Professional and a Chartered Engineer of IEI. She has published 11 research papers in SCI/Scopus/WoS/ Google Scholar-indexed journals and conferences, and 2 book chapters in SCI/Scopus/Elsevier publications.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/manali-joshi"
     },
@@ -4616,6 +4827,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manasi-mishra",
     "name": "Dr. Manasi Mishra",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -4627,7 +4839,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/manasi-mishra.webp",
     "research": "Plant defence proteins and peptides, bioactive molecules, protein engineering, botanical therapeutics, molecular diversity, and evolution.",
-    "summary": "Dr. Manasi Mishra is working as Associate Professor in Department of Biosciences & Technology, MIT-World Peace University. She has been actively working in the area of plant immunity proteins and peptides involved in defense against insect pest infestation and those with relevance in the context of crop improvement. Her research has been focused on structure-function correlation of diverse plant defense proteins, molecular diversity and their functional significance. She is also working extensively towards understanding the defense peptides distribution within individual plants and their tissues, factors influencing their expression, gene architecture, post-translational mechanisms, bioactivities and designing synthetic peptides directed towards therapeutic molecular targets.",
+    "summary": "Dr. Manasi Mishra is working as Associate Professor in Department of Biosciences & Technology, MIT-World Peace University. She has been actively working in the area of plant immunity proteins and peptides involved in defense against insect pest infestation and those with relevance in the context of crop improvement. Her research has been focused on structure-function correlation of diverse plant defense proteins, molecular diversity and their functional significance. She is also working extensively towards understanding the defense peptides distribution within individual plants and their tissues, factors influencing their expression, gene architecture, post-translational mechanisms, bioactivities and designing synthetic peptides directed towards therapeutic molecular targets. Her research Interests include Plant immunity proteins and peptides, Plant bioactive molecules, Botanical therapeutics, Protein engineering, Molecular diversity and evolution. She is a recipient of short-term DAAD fellowship and conducted collaborative research at EMBL Hamburg, Germany. She is also the recipient of DST-INSPIRE Faculty Fellowship award from Department of Science & Technology and Indo-Australian Career Boosting Gold Fellowship from Department of Biotechnology, Govt. of India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/manasi-mishra",
       "linkedin": "https://www.linkedin.com/in/manasi-mishra-89549452/",
@@ -4638,6 +4850,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mandar-bopardikar",
     "name": "Dr. Mandar Bopardikar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -4658,6 +4871,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mandar-madhukar-lele",
     "name": "Dr. Mandar Madhukar Lele",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -4669,7 +4883,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mandar-madhukar-lele.webp",
     "research": "Heat Exchanger, HVAC, Cryogenic Engineering, Thermal Insulation, Heat Pipe and Heat Transfer Applications......... but not limited to\"",
-    "summary": "Dr. Mandar M. Lele is a distinguished academic scholar who earned his Ph.D. in 2006 from I.I.T. Bombay, Powai, Mumbai-76, India in the field of Mech. Engg. (Cryogenic Engineering). He completed his M.E. (Mech) with Power Engineering as Specialization in 1997 from Walchand College of Engineering, Sangli, which is one of the leading institutes in India. He earned his B.E. (Mech) in 1992 from Vishwakarma Institute of Technology, Pune, which is one of the most reputed institutes in India.",
+    "summary": "Dr. Mandar M. Lele is a distinguished academic scholar who earned his Ph.D. in 2006 from I.I.T. Bombay, Powai, Mumbai-76, India in the field of Mech. Engg. (Cryogenic Engineering). He completed his M.E. (Mech) with Power Engineering as Specialization in 1997 from Walchand College of Engineering, Sangli, which is one of the leading institutes in India. He earned his B.E. (Mech) in 1992 from Vishwakarma Institute of Technology, Pune, which is one of the most reputed institutes in India. With over 28 years of experience in the field, Dr. Lele has guided 17 PG and 6 PhD students, with one student submitting a thesis, and more than 25 UG projects to his credit. He has published more than 75 papers and holds 4 patents. Dr. Lele has been recognized for his outstanding contributions and awarded as a Fellow & Chartered Engineer of the Institution of Engineers, India (Membership No: F-1271411). He is also an ASHRAE member from 2006 onwards, a Life Member of ISHRAE, Indian Cryogenic Council, ISHMT, IIT Bombay Alumni Association, and ISTE. Dr. Lele has served as a member of the Board of Studies, Mechanical Engineering, under Savitribai Phule Pune University (Formerly University of Pune) and the Faculty of Engineering, Mechanical Engineering, Savitribai Phule Pune University (Formerly University of Pune). He has also worked as a Chief Coordinator for various Syllabus Revision & Restructuring Committees for BOS, Mechanical Engineering, under Savitribai Phule Pune University (Formerly University of Pune) (For UG/PG Level - 2008 & 2012) and as a Chief Coordinator & Secretary for Post Graduate Conference (MECH PGCON- 2016) for Mechanical Engineering for BOS, Mechanical Engineering, under Savitribai Phule Pune University in 2016 at MIT COE, Pune. Dr. Lele has served as a Chairman/member for various Faculty Selection Committees (UGC) under Savitribai Phule Pune University (Formerly University of Pune) and has coordinated NBA in various Colleges/Institutions. He has also served as a Chairman/member for various Local Inspection Committees and Flying Squad Committees under Savitribai Phule Pune University (Formerly University of Pune). Dr. Lele is the Chief Coordinator of MITWPU ISRO Cell and has been the Chief Evaluator & Reviewer for BCUD Project Funding, under Savitribai Phule Pune University (Formerly University of Pune) for the last 8 years. He has also worked as a Project Evaluator for Govt. Funding Agencies like TIFAC, New Delhi, India, and as a reviewer for SCI listed International Journals. Dr. Lele has worked in collaborations with I.I.T. Bombay, ISRO Bangalore, and is currently serving as an External Examiner for various universities like Shivaji, Solapur & Mumbai, Satyabhama University, Chennai, I.I.T. Bombay, etc., for PG & Ph.D. He has also chaired several Ph.D. Viva-Voce under Savitribai Phule Pune University (Formerly University of Pune) and has given several invited talks at the national level. In addition to his academic accomplishments, Dr. Lele has also served as the Program Head for MTech (Thermal Engineering) for the last few years and was a member of the Organizing Committee for India’s First Inter-Collegiate Teaching Staff Sports Meet, MITWPU, 24-29 April\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mandar-madhukar-lele",
       "scholar": "https://scholar.google.com/citations?user=J_E8XJoAAAAJ",
@@ -4680,6 +4894,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mangesh-raghvendra-mahajan",
     "name": "Mr. Mangesh Raghvendra Mahajan",
+    "preferredDisplayName": "",
     "designation": "Lecturer",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -4703,6 +4918,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mangesh-ramesh-saraf",
     "name": "Mr. Mangesh Ramesh Saraf",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -4714,7 +4930,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mangesh-ramesh-saraf.jpg",
     "research": "tribology, robotics",
-    "summary": "",
+    "summary": "Kinematic Modelling and Motion Mapping of Robotic Arms Published under licence by IOP Publishing Ltd Journal of Physics: Conference Series, Volume 1969, International Virtual Conference on Intelligent Robotics, Mechatronics and Automation Systems 2021 (IRMAS 2021), 26-27 March 2021, Chennai, India",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mangesh-ramesh-saraf"
     },
@@ -4723,6 +4939,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mangesh-vilas-bedekar",
     "name": "Dr. Mangesh Vilas Bedekar",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -4733,8 +4950,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
     },
     "photoPath": "./assets/campus/mangesh-vilas-bedekar.webp",
-    "research": "",
-    "summary": "Dr. Mangesh V. Bedekar earned his Ph.D in Computer Science and Engineering from BITS Pilani, India, after completing his graduation from SSGMCE, Shegaon, and obtaining his Masters from BITS Pilani. He currently serves as the Professor & Dean, School of Computer Science & Engineering at MIT-WPU. Dr. Bedekar's research interests are focused on areas such as Web Data Mining, Web Personalization, User Interface Design, User Interface Improvements, Browser Customization, Affective Computing, and Information Visualization. Throughout his career, he has supervised numerous bachelors and masters students and has many national and international publications to his credit. In addition to his academic pursuits, Dr. Bedekar is an outdoors enthusiast and a certified First-Aider who enjoys hiking and trekking regularly. Research Area Web Data Mining, Personalisation, User Modelling, Human Computer Interaction Publication DOI: 10.1007/978-981-15-1366-4_3 doi.org/10.1007/978-981-10-6916-1_17 DOI: 10.1109/ICETET.2008.70 DOI: 10.1109/ICETET.2010.31 Google Scholar Link https://scholar.google.co.in/citations?hl=en&user=-HPbcJ0AAAAJ Scopus Link https://www.scopus.com/authid/detail.uri?authorId=24828950900 Orcid Link orcid.org/0000-0003-4461-9641",
+    "research": "Web Data Mining, Personalisation, User Modelling, Human Computer Interaction Publication DOI: 10.1007/978-981-15-1366-4_3 doi.org/10.1007/978-981-10-6916-1_17 DOI: 10.1109/ICETET.2008.70 DOI: 10.1109/ICETET.2010.31 Google Scholar Link https://scholar.google.co.in/citations?hl=en&user=-HPbcJ0AAAAJ Scopus Link https://www.scopus.com/authid/detail.uri?authorId=24828950900 Orcid Link orcid.org/0000-0003-4461-9641",
+    "summary": "Dr. Mangesh V. Bedekar earned his Ph.D in Computer Science and Engineering from BITS Pilani, India, after completing his graduation from SSGMCE, Shegaon, and obtaining his Masters from BITS Pilani. He currently serves as the Professor & Dean, School of Computer Science & Engineering at MIT-WPU. Dr. Bedekar's research interests are focused on areas such as Web Data Mining, Web Personalization, User Interface Design, User Interface Improvements, Browser Customization, Affective Computing, and Information Visualization. Throughout his career, he has supervised numerous bachelors and masters students and has many national and international publications to his credit. In addition to his academic pursuits, Dr. Bedekar is an outdoors enthusiast and a certified First-Aider who enjoys hiking and trekking regularly.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mangesh-vilas-bedekar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=24828950900"
@@ -4744,6 +4961,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manish-kumar-sharma",
     "name": "Prof. Manish Kumar Sharma",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4767,6 +4985,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manisha-mohan-wani",
     "name": "Mrs. Manisha Mohan Wani",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -4790,6 +5009,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manisha-rajendra-kuveskar",
     "name": "Mrs. Manisha Rajendra Kuveskar",
+    "preferredDisplayName": "",
     "designation": "Lecturer (Selection Grade)",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -4800,8 +5020,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/polytechnic-skill-development": "Department of Polytechnic"
     },
     "photoPath": "./assets/campus/manisha-rajendra-kuveskar.jpg",
-    "research": "",
-    "summary": "Prof. Manisha Rajendra Kuveskar is an experienced Assistant Professor at MIT-WPU Department of Polytechnic with 25 years of teaching experience. She completed her post-graduation, Master of Engineering in Digital Systems from Pune University. She has presented four conference papers in National and International Conference. Research Areas",
+    "research": "IOT, Automation, Robotics",
+    "summary": "Prof. Manisha Rajendra Kuveskar is an experienced Assistant Professor at MIT-WPU Department of Polytechnic with 25 years of teaching experience. She completed her post-graduation, Master of Engineering in Digital Systems from Pune University. She has presented four conference papers in National and International Conference.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/manisha-rajendra-kuveskar"
     },
@@ -4810,6 +5030,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manisha-ravikumar-kowdiki",
     "name": "Dr. Manisha Ravikumar Kowdiki",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -4830,6 +5051,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manisha-ravindra-ingle",
     "name": "Mrs. Manisha Ravindra Ingle",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -4841,7 +5063,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/manisha-ravindra-ingle.jpg",
     "research": "VLSI Design",
-    "summary": "Manisha Ingle is an Associate Professor at the School of Electronics and Communication Engineering. She earned her Bachelor's degree in Electronics from Nagpur University and her Master's degree in Electronics and Telecommunication/Control Systems from the University of Pune.",
+    "summary": "Manisha Ingle is an Associate Professor at the School of Electronics and Communication Engineering. She earned her Bachelor's degree in Electronics from Nagpur University and her Master's degree in Electronics and Telecommunication/Control Systems from the University of Pune. With over 10 years of experience in academia, her area of specialization is VLSI Design. She is passionate about teaching and mentoring students, and has guided several undergraduate and graduate level projects in her field of expertise. Apart from teaching, Manisha has also been involved in research and has published numerous research papers in reputed international journals and conferences. Her research interests include low-power VLSI design, digital signal processing, and embedded systems. With her expertise and contributions to the field, Manisha is a valuable member of the School of Electronics and Communication Engineering at her university.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/manisha-ravindra-ingle"
     },
@@ -4850,6 +5072,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manjiri-vishal-gadekar",
     "name": "CA Manjiri Vishal Gadekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4871,6 +5094,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manjushri-sanjay-joshi",
     "name": "Mrs. Manjushri Sanjay Joshi",
+    "preferredDisplayName": "",
     "designation": "Lecturer",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -4893,6 +5117,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "manoj-pralhad-nigadkar",
     "name": "Dr. Manoj Pralhad Nigadkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4904,7 +5129,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/manoj-pralhad-nigadkar.webp",
     "research": "",
-    "summary": "Dr. Manoj Pralhad Nigadkar is an accomplished academic and social work professional with a strong commitment to teaching, research, and rural development. Currently serving as an Assistant Professor at the School of Business, Dr. Vishwanath Karad MIT World Peace University, Pune, he brings over 15 years of progressive experience in academia and the development sector.",
+    "summary": "Dr. Manoj Pralhad Nigadkar is an accomplished academic and social work professional with a strong commitment to teaching, research, and rural development. Currently serving as an Assistant Professor at the School of Business, Dr. Vishwanath Karad MIT World Peace University, Pune, he brings over 15 years of progressive experience in academia and the development sector. Dr. Nigadkar holds a PhD in Social Work from Tata Institute of Social Sciences (TISS), Mumbai, along with a Master's in Social Work and a law degree from Shivaji University. His academic journey reflects a vibrant blend of social science and legal studies, underpinned by his ongoing engagement with curriculum development and outreach programs. He has been instrumental in designing and delivering courses on Micro-Finance, Corporate Social Responsibility, Rural Livelihoods, Social Entrepreneurship, and Environmental Governance at both undergraduate and postgraduate levels. In his outreach role, Dr. Nigadkar has coordinated multiple national academic and rural immersion programs, facilitating experiential learning for hundreds of students across Maharashtra and beyond. Dr. Nigadkar’s professional experience includes pivotal roles as Associate Professor at the University of Science & Technology, Meghalaya, and executive positions in reputed development organizations such as Tata Steel Rural Development Society and Lupin Foundation. His work encompasses stakeholder engagement, livelihood project implementation, and building the capacities of community-based institutions. A researcher at heart, Dr. Nigadkar’s scholarship is reflected in numerous publications in Scopus-indexed and refereed journals, covering themes like sustainable development, social exclusion, indigenous rights, and rural livelihoods. He is also a co-inventor on a patent for a Smart Health Prediction System. Active as a mentor and resource person, Dr. Nigadkar has supervised doctoral and postgraduate research, delivered lectures and sessions nationwide, and contributed to national seminars and conferences. He is fluent in English, Hindi, Odiya, and Marathi, and continues to advance the field through research, teaching, and community engagement.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/manoj-pralhad-nigadkar"
     },
@@ -4913,6 +5138,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "meenakshi-shankar-iyer",
     "name": "Dr. Meenakshi Shankar Iyer",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -4938,6 +5164,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "meenal-kaustubh-jabde",
     "name": "Dr. Meenal Kaustubh Jabde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -4962,6 +5189,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "meenal-kaustubh-pendse",
     "name": "Dr. Meenal Kaustubh Pendse",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -4973,7 +5201,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/meenal-kaustubh-pendse.webp",
     "research": "",
-    "summary": "Dr. Meenal Pendse is an experienced academician with over 17 years of teaching and leadership experience in Marketing. Currently serving as Associate Professor at MIT World Peace University, Pune, she has held key positions including Program Head for Digital Marketing and Marketing Area Chair. With a Ph.D. in Marketing and multiple research publications in Scopus and UGC-listed journals, her expertise spans Services Marketing, Sustainable Marketing, and Digital Strategy.",
+    "summary": "Dr. Meenal Pendse is an experienced academician with over 17 years of teaching and leadership experience in Marketing. Currently serving as Associate Professor at MIT World Peace University, Pune, she has held key positions including Program Head for Digital Marketing and Marketing Area Chair. With a Ph.D. in Marketing and multiple research publications in Scopus and UGC-listed journals, her expertise spans Services Marketing, Sustainable Marketing, and Digital Strategy. She is a certified digital marketing professional (IIM Jammu) and has delivered sessions on Personal Branding, the Metaverse, and Green Marketing. Her award- winning work in greenwashing and consumer behavior has been recognized at several international conferences.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/meenal-kaustubh-pendse"
     },
@@ -4982,6 +5210,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "meera-jeevanreddy-chintala",
     "name": "Dr. Meera JeevanReddy Chintala",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -4992,8 +5221,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/civil-engineering": "Department of Civil Engineering"
     },
     "photoPath": "./assets/campus/meera-jeevanreddy-chintala.jpeg",
-    "research": "",
-    "summary": "Dr. Miss Meera currently works as an assistant professor of civil engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, India, and heads Building Materials & Sustainability (BM&S) team. The researchers of BM&S Group are devoted to elucidating the fundamental science and performance of sustainable building materials. The research mainly focuses on developing green concrete utilizing various wastes through experimentation and implementing AI&ML. Before Joining as an assistant professor, she worked as a research scientist at Shriram Institute for Industrial Research, New Delhi, and developed a strength prediction model for hardened mortar by determining reactive silica content.",
+    "research": "1. Macro & Micro mechanics of concrete 2. The durability of concrete structures 3. Green building materials 4. Material optimization 5. Waste utilization and sustainability studies 6. Concrete composites",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/meera-jeevanreddy-chintala"
     },
@@ -5002,6 +5231,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "meghana-ganesh-gote",
     "name": "Dr. Meghana Ganesh Gote",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -5026,6 +5256,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "minal-prashant-deshmukh",
     "name": "Dr. Minal Prashant Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -5037,7 +5268,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/minal-prashant-deshmukh.webp",
     "research": "",
-    "summary": "Dr. Minal Deshmukh is an Associate Professor in the Department of Chemical Engineering at MIT-WPU and has been associated with the institution for the past 15 years. She brings over 17 years of combined teaching and industry experience.",
+    "summary": "Dr. Minal Deshmukh is an Associate Professor in the Department of Chemical Engineering at MIT-WPU and has been associated with the institution for the past 15 years. She brings over 17 years of combined teaching and industry experience. She has successfully completed a DST-funded research project worth INR 50 lakhs under the Young Scientist Scheme, along with a research project funded by BCUD, Savitribai Phule Pune University. She has also undertaken several consultancy assignments based on her domain expertise. Dr. Deshmukh has published 35 international research papers, attended numerous national and international conferences, and holds 7 patents to her credit. Her consultancy and research work focuses on biofuels, carbon capture, oil spill removal, water treatment, and solid waste management. Dr. Deshmukh completed her Ph.D. in Bioenergy and M.Tech in Chemical Engineering from Pune University. Her key research areas include bioenergy, drilling operations and drilling fluids, enhanced oil recovery, eco-friendly solutions for oil spill remediation, and carbon sequestration. Her research has been published in reputed journals such as Renewable and Sustainable Energy Reviews, Energy & Fuels, and Environmental Science and Pollution Research. She has been honoured with the Women Achievers Award for Excellence, Leadership, and Impact by the Society of Women Engineers and the Outstanding Researcher Award in Chemical Engineering by VIVA Foundation. Throughout her academic career, she has taught various chemical and petroleum engineering subjects and guided numerous B.Tech, M.Tech, and Ph.D. students. Apart from academics and research, Dr. Deshmukh has actively contributed to several administrative responsibilities, including NAAC and IQAC activities, CAP Finance Director duties, industrial study tours at organizations such as ONGC and Cairn, national and international immersion programmes, research coordination, Ph.D. coordination, admissions, and examination coordination.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/minal-prashant-deshmukh",
       "linkedin": "https://www.linkedin.com/in/dr-minal-deshmukh"
@@ -5047,6 +5278,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mithila-arvind-biniwale",
     "name": "Dr. Mithila Arvind Biniwale",
+    "preferredDisplayName": "",
     "designation": "Program Coordinator & Assistant Professor",
     "department": "liberal-arts-humanities/media-and-communication",
     "departmentName": "Department of Media and Communication",
@@ -5070,6 +5302,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mitulkumar-thakorbhai-solanki",
     "name": "Dr. Mitulkumar Thakorbhai Solanki",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -5090,6 +5323,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mohit-kant-kaushik",
     "name": "Dr. Mohit Kant Kaushik",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -5101,7 +5335,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mohit-kant-kaushik.webp",
     "research": "",
-    "summary": "Dr. Mohit Kant Kaushik is an experienced academician specialising in Marketing and Communication, with over 10 years of teaching and research experience. He holds a Ph.D. in Management and has contributed significantly to curriculum development, academic coordination, and faculty training.",
+    "summary": "Dr. Mohit Kant Kaushik is an experienced academician specialising in Marketing and Communication, with over 10 years of teaching and research experience. He holds a Ph.D. in Management and has contributed significantly to curriculum development, academic coordination, and faculty training. Dr. Kaushik’s research interests include consumer behaviour, integrated marketing communication, and digital branding. He is known for his student-centric approach, practical teaching methodology, and commitment to academic excellence.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mohit-kant-kaushik"
     },
@@ -5110,6 +5344,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mrudul-chilmulwar",
     "name": "Mr. Mrudul Chilmulwar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -5121,7 +5356,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mrudul-chilmulwar.webp",
     "research": "",
-    "summary": "Mrudul Chilmulwar began his journey as a mechanical engineer before discovering that product design was where he truly belonged. He went on to pursue a Master’s in Product Design from the National Institute of Design (NID), Ahmedabad.",
+    "summary": "Mrudul Chilmulwar began his journey as a mechanical engineer before discovering that product design was where he truly belonged. He went on to pursue a Master’s in Product Design from the National Institute of Design (NID), Ahmedabad. His work spans creating livelihood opportunities for underserved communities in Delhi for the Somfy Foundation, designing products for people with visual impairments, and developing structural packaging for brands such as Ponds, Lifebuoy, Indulekha, and more. Over the past four years, he has been in academia, where he enjoys helping students frame better questions, think beyond tools, embrace ambiguity, and develop the depth needed to create meaningful design outcomes. He believes design education is less about teaching what to think and more about nurturing how to think. He has also facilitated design thinking workshops for corporate teams, school principals, and university students. When he isn’t teaching or designing, you’ll likely find him on a frisbee field, playing badminton, experimenting in the kitchen, travelling, or immersed in a good film, book, cartoon, or anime. He enjoys making things with his hands and is endlessly curious about how people think, create, and experience the world around them.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mrudul-chilmulwar",
       "linkedin": "https://www.linkedin.com/in/mrudul-chilmulwar-154092183"
@@ -5131,6 +5366,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mrudula-sanjay-kulkarni",
     "name": "Dr. Mrudula Sanjay Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -5152,6 +5388,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mrunal-ninad-annadate",
     "name": "Dr. Mrunal Ninad Annadate",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -5163,7 +5400,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/mrunal-ninad-annadate.webp",
     "research": "Image/Video Processing, Biomedical Engineering, Programming/Coding",
-    "summary": "Dr. Mrunal Ninad Annadate holds a Ph.D. in Electronics Engineering from SPPU and has over 24 years of experience in the Technical Educational Field. With extensive teaching experience, she possesses skills in SQL, Python, Java, C, C++, VHDL, ALP, MATLAB, and DBMS. She successfully manages multiple portfolios such as being a member of the Internal Complaints Committee (ICC), NAAC coordinator at the school level, Auditor, and a member of PMQIC, to name a few.",
+    "summary": "Dr. Mrunal Ninad Annadate holds a Ph.D. in Electronics Engineering from SPPU and has over 24 years of experience in the Technical Educational Field. With extensive teaching experience, she possesses skills in SQL, Python, Java, C, C++, VHDL, ALP, MATLAB, and DBMS. She successfully manages multiple portfolios such as being a member of the Internal Complaints Committee (ICC), NAAC coordinator at the school level, Auditor, and a member of PMQIC, to name a few. Dr. Annadate has published several research papers in reputed journals and holds two patents, one granted and one filed under her name. She has also contributed a book chapter to the field of Electronics Engineering. Her expertise in various technical fields and active involvement in multiple committees and projects demonstrates her dedication to excellence in education.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/mrunal-ninad-annadate"
     },
@@ -5172,6 +5409,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mukesh-kumar-pal",
     "name": "Dr. Mukesh Kumar Pal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -5193,6 +5431,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mukul-sacchit-godbole",
     "name": "Dr. Mukul Sacchit Godbole",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -5213,6 +5452,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "mukund-gokhale",
     "name": "Dr. Mukund Gokhale",
+    "preferredDisplayName": "",
     "designation": "Professor Emeritus",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -5233,6 +5473,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "namrata-sathe",
     "name": "Dr. Namrata Sathe",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -5244,7 +5485,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/namrata-sathe.webp",
     "research": "",
-    "summary": "Dr. Namrata Sathe is an Assistant Professor at the Dadasaheb Phalke International Film Institute, MIT-WPU. She holds a PhD in Media Studies from Southern Illinois University, Carbondale. Her book, The Neoliberal Self in Bollywood: Cinema, Popular Culture, and Identity (Intellect Books, 2024), examines the consequences of unbridled expansion of neoliberal values within India through the lens of popular film and culture. Her scholarship has been published in prominent academic journals including Jump Cut, Journal of Cinema and Media Studies, and New Review of Film and Television Studies , as well as in edited collections on Indian cinema and media. She serves as the Assistant Editor for the SCOPUS-listed academic journal Studies in South Asian Film and Media . Her research interests include feminist media studies, queer studies, sexuality studies, and popular culture.",
+    "summary": "Dr. Namrata Sathe is an Assistant Professor at the Dadasaheb Phalke International Film Institute, MIT-WPU. She holds a PhD in Media Studies from Southern Illinois University, Carbondale. Her book,",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/namrata-sathe"
     },
@@ -5253,6 +5494,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "narendra-laxman-mathakari",
     "name": "Dr. Narendra Laxman Mathakari",
+    "preferredDisplayName": "",
     "designation": "Professor of Practice",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -5276,6 +5518,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nathrao-bhimrao-jadhav",
     "name": "Dr. Nathrao Bhimrao Jadhav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor and Assistant Director, Admissions",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -5296,6 +5539,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "navnath-lahu-shete",
     "name": "Mr. Navnath Lahu Shete",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -5316,6 +5560,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "neha-bokey",
     "name": "Dr. Neha Bokey",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -5336,6 +5581,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "neha-prasad-sathe",
     "name": "Mrs. Neha Prasad Sathe",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -5360,6 +5606,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "netra-manoj-lokhande",
     "name": "Dr. Netra Manoj Lokhande",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -5380,6 +5627,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nikhil-dattatray-deshmukh",
     "name": "Mr. Nikhil Dattatray Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Laboratory Assistant",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -5391,7 +5639,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/nikhil-dattatray-deshmukh.png",
     "research": "",
-    "summary": "Nikhil Dattatray Deshmukh has pursued M.Sc in Analytical Chemistry from Bharati Vidyapeeth Deemed University, Pune. He also holds a B.Sc in Chemistry degree from the same university.",
+    "summary": "Nikhil Dattatray Deshmukh has pursued M.Sc in Analytical Chemistry from Bharati Vidyapeeth Deemed University, Pune. He also holds a B.Sc in Chemistry degree from the same university. He is now working as a Lab Assistant at MIT World Peace University, Pune. Before this, he worked as a Quality Officer at Rajaswa Pharmaceuticals Pvt. Ltd. in Pune. Nikhil’s responsibilities included working with instruments such as pH meters, conductivity meters, UV and IR spectroscopy, and performing various chemical analyses like HPLC and LOD. He has good communication, teamwork, and analytical skills. He is always eager to learn new things and grow in career while contributing to the organization’s success.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/nikhil-dattatray-deshmukh"
     },
@@ -5400,6 +5648,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nikhil-vijaykumar-soniminde",
     "name": "Mr. Nikhil Vijaykumar Soniminde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -5411,7 +5660,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/nikhil-vijaykumar-soniminde.webp",
     "research": "",
-    "summary": "Prof. Nikhil Soniminde is an Assistant Professor committed to outcome-based education, experiential learning, and research-driven teaching. His teaching approach emphasizes conceptual clarity, hands-on learning, and the integration of emerging technologies such as artificial intelligence, machine learning, and image processing to address real-world challenges.",
+    "summary": "Prof. Nikhil Soniminde is an Assistant Professor committed to outcome-based education, experiential learning, and research-driven teaching. His teaching approach emphasizes conceptual clarity, hands-on learning, and the integration of emerging technologies such as artificial intelligence, machine learning, and image processing to address real-world challenges. Actively engaged in research, publications, and innovation initiatives, he strives to create an inclusive, engaging, and student-centric learning environment. Aligned with the vision of MIT World Peace University, he focuses on fostering critical thinking, ethical values, innovation, and lifelong learning among students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/nikhil-vijaykumar-soniminde",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57208576713",
@@ -5424,6 +5673,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nikhilesh-joardar",
     "name": "Dr. Nikhilesh Joardar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -5444,6 +5694,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nilam-mahesh-pradhan",
     "name": "Dr. Nilam Mahesh Pradhan",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -5467,6 +5718,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nilesh-bajad",
     "name": "Dr. Nilesh Bajad",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -5478,7 +5730,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/nilesh-bajad.webp",
     "research": "",
-    "summary": "Dr. Nilesh Bajad completed his Doctoral degree from the Indian Institute of Technology (BHU), Varanasi, under the Prime Minister’s Research Fellowship (PMRF), India’s most prestigious doctoral fellowship awarded by the Ministry of Education, Government of India. He earned his Master’s degree from IIT (BHU), where he developed a strong foundation in Pharmaceutical Chemistry, and completed his B Pharm from the Government College of Pharmacy, Amravati. He is an active Member of the Royal Society of Chemistry (MRSC) (2025–Present). He has qualified several national-level competitive examinations, including GPAT (AIR 260), GATE (Life Sciences), GAT-B/JNU-CEEB (AIR 29), and NIPER-JEE in 2019.",
+    "summary": "Dr. Nilesh Bajad completed his Doctoral degree from the Indian Institute of Technology (BHU), Varanasi, under the Prime Minister’s Research Fellowship (PMRF), India’s most prestigious doctoral fellowship awarded by the Ministry of Education, Government of India. He earned his Master’s degree from IIT (BHU), where he developed a strong foundation in Pharmaceutical Chemistry, and completed his B Pharm from the Government College of Pharmacy, Amravati. He is an active Member of the Royal Society of Chemistry (MRSC) (2025–Present). He has qualified several national-level competitive examinations, including GPAT (AIR 260), GATE (Life Sciences), GAT-B/JNU-CEEB (AIR 29), and NIPER-JEE in 2019. His Ph.D. research, titled “Exploring the diagnostic and therapeutic potential of rationally designed and synthesized novel multifunctional ligands for Alzheimer’s disease,” focused on the design, synthesis, and biological evaluation of multifunctional small molecules integrating therapeutic and diagnostic (theranostic) functionalities. The work aimed to develop novel agents capable of crossing the blood–brain barrier, detecting amyloid aggregates, and modulating key enzymatic and oxidative pathways implicated in Alzheimer’s disease pathogenesis. Dr. Bajad possesses extensive experience in organic synthesis, biophysical and biochemical assays, cell-based evaluations, assay development, and animal model studies. His research lies at the interface of medicinal chemistry, drug discovery, and neuroscience, with a strong translational focus. He has presented his work at major international conferences including AD/PD 2024 (Lisbon, Portugal), SNAIA 2024 (Paris, France), and AICBBM-1 2024 (Perugia, Italy), and received SERB–International Travel Support for AD/PD 2024. He was awarded with the Best Presentation Award by the Royal Society of Chemistry (RSC) at SNAIA 2024, National School of Chemistry of Paris, PSL University, France. His long-term vision is to advance neuroscience-driven drug discovery by integrating chemistry and biology to develop innovative theranostic and therapeutic agents for neurodegenerative diseases.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/nilesh-bajad",
       "scholar": "https://scholar.google.com/citations?user=vp53ewkAAAAJ&hl=en&oi=ao",
@@ -5490,6 +5742,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "niraj-subhashrao-topare",
     "name": "Mr. Niraj Subhashrao Topare",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -5503,7 +5756,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/niraj-subhashrao-topare.jpg",
     "research": "Separation Processes, Bio-energy (Biofuels, Biodiesel Production, Biochar), Wastewater Treatment, Photocatalysis and Ultrasound",
-    "summary": "Niraj S. Topare is a Chemical Engineering professional with a Master's degree and is currently pursuing his Ph.D. in the same field. He is an Assistant Professor in the School of Chemical Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune (MIT-WPU, Pune), where he has been teaching for more than 10 years.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/niraj-subhashrao-topare"
     },
@@ -5512,6 +5765,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nithya-n-kutty",
     "name": "Dr. Nithya N Kutty",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -5536,6 +5790,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nitinkumar-raghunath-anekar",
     "name": "Mr. Nitinkumar Raghunath Anekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -5547,7 +5802,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/nitinkumar-raghunath-anekar.jpg",
     "research": "Stress Analysis, Failure Analysis, Corrosion and Wear Analysis, Mechanical Engineering Design, Mechanical Vibrations, Biomechanics, Energy Harvesting, Nano technology",
-    "summary": "Nitinkumar Anekar is a highly skilled and experienced Mechanical Engineer with expertise in Manufacturing Techniques, Nano technology, Nano energy, Vibration Analysis, Mechanism and Synthesis, Design Engineering and Failure Analysis. Currently, he is an Assistant Professor at the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University in Pune, India. He has conducted extensive research in the field of Mechanical Engineering and has published several research papers in renowned international journals. He is also an accomplished lecturer and has delivered talks on various subjects related to Mechanical Engineering. In addition to his academic pursuits, Nitinkumar maintains an online presence through his website nitinanekar.wixsite.com/nitinkumar-anekar, which showcases his research and academic achievements.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/nitinkumar-raghunath-anekar"
     },
@@ -5556,6 +5811,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "nivedita-gunesh-gogate",
     "name": "Dr. Nivedita Gunesh Gogate",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -5576,6 +5832,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "omkar-kamalakant-kulkarni",
     "name": "Dr. Omkar Kamalakant Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -5586,8 +5843,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/omkar-kamalakant-kulkarni.jpg",
-    "research": "",
-    "summary": "Prof. Omkar Kulkarni is an Assistant Professor in the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University in Pune, India. With 9 years of experience in education, teaching, and research, he has been actively involved in undergraduate and postgraduate teaching, as well as departmental and university-level activities. He recently earned his PhD in \"Investigations on Micro-Forming of Bio-Materials\" from MIT World Peace University and has published over 25 papers in optimization, algorithms, and micro-forming. He has also organized and participated in various workshops, conferences, and training programs. Research Area Cohort intelligence, Optimization, Nature inspired algorithms, Scocio inspired algorithms Publication 1) Novel product design of tool for investigating formability with microstructural study of bio-material titanium grade-II thin foils 2) Formability Assessment with Microstructural Investigations for Zirconium 702 Thin Foils: Bio-Material Applications. 3) Experimental and numerical investigations on forming limit curves in micro forming 4) Optimization of Railway Bogie Snubber Spring with Grasshopper Algorithm 5) Cuckoo Search Optimization- A Review Google Scholar Link https://scholar.google.co.in/citations?user=QvKqIyQAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=56743026100 Orcid Link https://orcid.org/0000-0003-2375-959X",
+    "research": "Cohort intelligence, Optimization, Nature inspired algorithms, Scocio inspired algorithms Publication 1) Novel product design of tool for investigating formability with microstructural study of bio-material titanium grade-II thin foils 2) Formability Assessment with Microstructural Investigations for Zirconium 702 Thin Foils: Bio-Material Applications. 3) Experimental and numerical investigations on forming limit curves in micro forming 4) Optimization of Railway Bogie Snubber Spring with Grasshopper Algorithm 5) Cuckoo Search Optimization- A Review Google Scholar Link https://scholar.google.co.in/citations?user=QvKqIyQAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=56743026100 Orcid Link https://orcid.org/0000-0003-2375-959X",
+    "summary": "Prof. Omkar Kulkarni is an Assistant Professor in the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University in Pune, India. With 9 years of experience in education, teaching, and research, he has been actively involved in undergraduate and postgraduate teaching, as well as departmental and university-level activities. He recently earned his PhD in \"Investigations on Micro-Forming of Bio-Materials\" from MIT World Peace University and has published over 25 papers in optimization, algorithms, and micro-forming. He has also organized and participated in various workshops, conferences, and training programs.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/omkar-kamalakant-kulkarni",
       "scholar": "https://scholar.google.co.in/citations?user=QvKqIyQAAAAJ&hl=en",
@@ -5599,6 +5856,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pallavi-choudhary",
     "name": "Ms. Pallavi Choudhary",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -5619,6 +5877,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pallavi-prashant-tatpate",
     "name": "Dr. Pallavi Prashant Tatpate",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -5644,6 +5903,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pallavi-rajwade",
     "name": "Ms. Pallavi Rajwade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor, Program Co-ordinator BFA & MFA (Applied Arts)",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -5655,7 +5915,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pallavi-rajwade.webp",
     "research": "Brand Perception and Packaging Visuals",
-    "summary": "Ms. Pallavi Rajwade is passionate about communication design and believes that curiosity and creativity make life fun and enriched. She has received her formal education in Applied Arts along with a Post Graduate Diploma in Public Relations & Advertising. She has worked as a Visualiser and Graphic Designer for over 15 years. in India as well as abroad. She has almost 5+ years of enriching experience in Academics as BFA and MFA Program Coordinator for AY 2023-2024. Also, she is currently pursuing PhD from Symbiosis International University. Currently, she is teaching courses such as Advertising, Branding, and Visualisation and has mentored final-year students for Visual Communication Design projects for the last 2 years at MIT WPU Department of Visual Arts, School of Design.",
+    "summary": "Ms. Pallavi Rajwade is passionate about communication design and believes that curiosity and creativity make life fun and enriched. She has received her formal education in Applied Arts along with a Post Graduate Diploma in Public Relations & Advertising. She has worked as a Visualiser and Graphic Designer for over 15 years. in India as well as abroad. She has almost 5+ years of enriching experience in Academics as BFA and MFA Program Coordinator for AY 2023-2024. Also, she is currently pursuing PhD from Symbiosis International University. Currently, she is teaching courses such as Advertising, Branding, and Visualisation and has mentored final-year students for Visual Communication Design projects for the last 2 years at MIT WPU Department of Visual Arts, School of Design. Communication Design is her passion and believes Curiosity and Creativity makes life fun and enriched! With formal education in Applied Arts along with Post Graduate Diploma in Public relations & Advertising, she has worked as a Visualizer and Graphic Designer for over 15 yrs. in India & Abroad. 5+ enriching years in Academics with valuable experience as BFA & MFA Program Co-ordinator for AY 2023-2024 she is currently persuing PhD from Symbiosys International University. Currently teaching courses such as Advertising, Branding, Visulization and has mentored Final Year students for Visual Communication Design projects for last 2 years at MIT WPU Department of Visual Arts, School of Design.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pallavi-rajwade",
       "linkedin": "https://www.linkedin.com/in/pallavi-rajwade-a6a33a1a/",
@@ -5667,6 +5927,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pallavi-utkarsh-nehete",
     "name": "Mrs. Pallavi Utkarsh Nehete",
+    "preferredDisplayName": "",
     "designation": "Lecturer in Computer Science & Engineering",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -5678,7 +5939,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pallavi-utkarsh-nehete.jpg",
     "research": "Machine Learning,Computer Vision",
-    "summary": "Mrs.Pallavi U. Nehete is working as an Lecturer at School of Polytechnic, Dr. Vishwanath Karad MIT World Peace University, Pune, India. She has 14 years of teaching experience.She has completed his post-graduation, Master of Engineering in Information Technology from Pune University. She is pursuing PhD from Symbiosis International University, Pune. She has presented various conference papers in National and International Conference and also published papers in international journals such as IEEE, UGC and Other.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pallavi-utkarsh-nehete",
       "scholar": "https://scholar.google.com/citations?user=DLiSYPwAAAAJ&hl=en",
@@ -5690,6 +5951,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pankaj-nivrutti-dhatrak",
     "name": "Dr. Pankaj Nivrutti Dhatrak",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -5710,6 +5972,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pankaj-pramod-koparde",
     "name": "Dr. Pankaj Pramod Koparde",
+    "preferredDisplayName": "",
     "designation": "Program Coordinator & Assistant Professor",
     "department": "science/environmental-studies",
     "departmentName": "Department of Environmental Studies",
@@ -5734,6 +5997,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "parineeta-das",
     "name": "Dr. Parineeta Das",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -5755,6 +6019,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "parshant-kumar",
     "name": "Dr. Parshant Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -5766,7 +6031,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/parshant-kumar.jpg",
     "research": "Composite Materials, Tribology, Experimental Mechanics, Mechanical Metallurgy",
-    "summary": "Dr. Parshant Kumar is currently working as Assistant Professor in the School of Mechanical Engineering. His research interests are mainly focused on the development of composites for mechanical and tribological applications. Please refer to his personal webpage for more information. (https://sites.google.com/view/parshantkumar\"Dr. Parshant Kumar is an accomplished Assistant Professor in the School of Mechanical Engineering, where he brings extensive expertise and knowledge to his work. His research interests are centered on the design and development of high-performance composites for mechanical and tribological applications.",
+    "summary": "Dr. Parshant Kumar is currently working as Assistant Professor in the School of Mechanical Engineering. His research interests are mainly focused on the development of composites for mechanical and tribological applications. Please refer to his personal webpage for more information. (https://sites.google.com/view/parshantkumar\"Dr. Parshant Kumar is an accomplished Assistant Professor in the School of Mechanical Engineering, where he brings extensive expertise and knowledge to his work. His research interests are centered on the design and development of high-performance composites for mechanical and tribological applications. As an expert in his field, Dr. Kumar is highly skilled in the study of materials science and engineering, with a focus on the mechanical and tribological properties of composites. His work is characterized by a deep understanding of the fundamental principles governing the behavior of these materials, as well as a practical approach to their design and development. Dr. Kumar's contributions to the field of mechanical engineering have been widely recognized, both nationally and internationally. His research has been published in numerous top-tier scientific journals, and he has presented his work at conferences and symposia around the world. To learn more about Dr. Kumar's research and professional background, please visit his personal webpage at https://sites.google.com/view/parshantkumar. On this site, you can find additional information about his publications, research projects, and academic accomplishments.\" )",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/parshant-kumar"
     },
@@ -5775,6 +6040,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "parul-ghole",
     "name": "Mrs. Parul Ghole",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -5786,7 +6052,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/parul-ghole.webp",
     "research": "",
-    "summary": "Parul Ghole is a distinguished Visual Artist with extensive experience in academia and design training. She has served as an Assistant Professor at JNAFAU(4 years), Hyderabad, and Bharati Vidyapeeth, Pune(1 year), and is currently (since jan 2023 )a faculty member at MIT-WPU,Pune, where her research interests include Illustration, Visualization, and Fundamentals of Design. Additionally, since 2019, she has contributed as a Senior Design Trainer at MAD School in Hyderabad. Her diverse roles highlight her commitment to fostering artistic talent and design principles across various educational institutions.",
+    "summary": "Parul Ghole is a distinguished Visual Artist with extensive experience in academia and design training. She has served as an Assistant Professor at JNAFAU(4 years), Hyderabad, and Bharati Vidyapeeth, Pune(1 year), and is currently (since jan 2023 )a faculty member at MIT-WPU,Pune, where her research interests include Illustration, Visualization, and Fundamentals of Design. Additionally, since 2019, she has contributed as a Senior Design Trainer at MAD School in Hyderabad. Her diverse roles highlight her commitment to fostering artistic talent and design principles across various educational institutions. LinkedIn Profile : https://www.linkedin.com/in/parul-ghole-536a98247/",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/parul-ghole",
       "linkedin": "https://www.linkedin.com/in/parul-ghole-536a98247/"
@@ -5796,6 +6062,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "parul-madhuraj-jadhav",
     "name": "Dr. Parul Madhuraj Jadhav",
+    "preferredDisplayName": "",
     "designation": "Program Director",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -5807,7 +6074,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/parul-madhuraj-jadhav.webp",
     "research": "Signal Processing, AI-ML, Computer Vision",
-    "summary": "Dr. Parul Jadhav is an associate professor with almost 30 years of experience at Dr. Vishwanath Karad MIT World Peace University. She has held various roles in academics, restructuring, research, operations, and accreditation, and has successfully led several portfolios at the Faculty of Engineering and Technology (FoET).",
+    "summary": "Dr. Parul Jadhav is an associate professor with almost 30 years of experience at Dr. Vishwanath Karad MIT World Peace University. She has held various roles in academics, restructuring, research, operations, and accreditation, and has successfully led several portfolios at the Faculty of Engineering and Technology (FoET). Dr. Jadhav's research interests include Artificial Intelligence, Machine Learning, Deep Learning Architecture, Video and Image Analytics, Compression Techniques, and Signal Processing. She has published over 30 papers in international journals/conferences, holds three patents, and has multiple datasets/copyrights. Her research has been recognized through grants from organizations such as the Department of Science & Technology, BCUD, ASPIRE, and KIRAN Division - Women Scientists Scheme. She designed the Post Graduate Diploma in AI&ML, which was created in collaboration with Infosys, and has established many Labs across universities, where she is regarded as an expert in embedded signal processing. She has also conducted many faculty development programs and is a reviewer for Elsevier and IEEE journals. Dr. Jadhav contributed significantly to academic restructuring at the FoET, aligning the academic structure of engineering programs with the National Education Policy framework. She was instrumental in implementing Outcome Based Education (OBE) processes, training and change management, and computing learning outcomes through courses and assessments. Dr. Jadhav has also been at the forefront of national and international accreditation for the department. She completed her Bachelor’s, Master’s, and Doctoral degrees with an exemplary academic record from College of Engineering Pune (CoEP) and has received numerous awards and recognition for her work. She is an outgoing person with excellent leadership capabilities and has good connections with peers, students, and seniors.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/parul-madhuraj-jadhav",
       "scholar": "https://scholar.google.com/citations?user=DObFL0IAAAAJ&hl=en",
@@ -5818,6 +6085,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "parveen-kumar",
     "name": "Dr. Parveen Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -5841,6 +6109,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "piyush-shaha",
     "name": "Mr. Piyush Shaha",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -5852,7 +6121,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/piyush-shaha.webp",
     "research": "",
-    "summary": "Mr. Piyush Shaha is an accomplished academician with extensive experience in the fields of Statistics, Operations Management, and Business Administration. He holds multiple postgraduate degrees, including an M.Sc. in Statistics, M.B.A. in Operations, and M.Com. in Business Administration, along with a B.Sc. in Statistics. He has also qualified the SET (State Eligibility Test) in Mathematical Sciences and is currently pursuing a Ph.D. in Statistics.",
+    "summary": "Mr. Piyush Shaha is an accomplished academician with extensive experience in the fields of Statistics, Operations Management, and Business Administration. He holds multiple postgraduate degrees, including an M.Sc. in Statistics, M.B.A. in Operations, and M.Com. in Business Administration, along with a B.Sc. in Statistics. He has also qualified the SET (State Eligibility Test) in Mathematical Sciences and is currently pursuing a Ph.D. in Statistics. Mr. Shaha has been serving as an Assistant Professor at MIT-WPU since January 2024. Prior to this, he held key academic positions at several reputed institutions, including NMIMS University, St. John College of Humanities and Science, The New College – Kolhapur, and others. His teaching career spans over 15 years, covering diverse roles such as full-time faculty, visiting professor, academic coordinator, and secondary school mathematics teacher. He began his academic journey as a Visiting Professor (CHB) in 2005, and since then, has consistently contributed to higher education through teaching, academic administration, and assessment roles. Mr. Shaha has served as an invigilator, moderator, and paper setter across various reputed institutions affiliated to Shivaji University, Mumbai University, Bharati Vidyapeeth, Tilak Maharashtra Vidyapeeth, Mahatma Phule Krishi Vidyapeeth, and YCMOU. With a strong academic foundation and versatile teaching portfolio, Mr. Piyush Shaha is deeply committed to student success, academic excellence, and continuous learning in the domain of statistics and business education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/piyush-shaha"
     },
@@ -5861,6 +6130,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pooja-pradiprao-unhale",
     "name": "Mrs. Pooja Pradiprao Unhale",
+    "preferredDisplayName": "",
     "designation": "Teaching Associate",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -5872,7 +6142,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pooja-pradiprao-unhale.webp",
     "research": "",
-    "summary": "Mrs. Pooja Pradiprao Unhale is a dedicated and passionate educator committed to fostering a student-centric learning environment that promotes critical thinking, practical knowledge, and continuous growth. She believes in blending theoretical concepts with real-world applications to enhance students’ understanding and skills.",
+    "summary": "Mrs. Pooja Pradiprao Unhale is a dedicated and passionate educator committed to fostering a student-centric learning environment that promotes critical thinking, practical knowledge, and continuous growth. She believes in blending theoretical concepts with real-world applications to enhance students’ understanding and skills. At MIT-WPU, she strives to contribute to the university’s vision by encouraging innovation, ethical values, and holistic development among students. Through interactive teaching methods, mentoring, and active engagement, she aims to empower students to become responsible professionals and lifelong learners. professionals and lifelong learners.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pooja-pradiprao-unhale",
       "linkedin": "https://www.linkedin.com/in/pooja-unhale"
@@ -5882,6 +6152,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pooja-pravin-gundewar",
     "name": "Dr. Pooja Pravin Gundewar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -5893,7 +6164,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pooja-pravin-gundewar.webp",
     "research": "Computer Vision, Digital Image Processing, Transducer and Signal Conditioning, Robotics and Automation, Mechatronics",
-    "summary": "Pooja Gundewar is a highly qualified engineer with extensive experience in the field of Instrumentation Engineering. She graduated from SGGS College of Engineering, Marathwada University in 1992, and went on to complete her master's degree in M.E. (Instrumentation) from Govt. College of Engineering, Pune, Pune University in 2005. She has since pursued her Ph.D. from VIT Research Centre, SPPU, Pune, which she successfully completed in 2021.",
+    "summary": "Pooja Gundewar is a highly qualified engineer with extensive experience in the field of Instrumentation Engineering. She graduated from SGGS College of Engineering, Marathwada University in 1992, and went on to complete her master's degree in M.E. (Instrumentation) from Govt. College of Engineering, Pune, Pune University in 2005. She has since pursued her Ph.D. from VIT Research Centre, SPPU, Pune, which she successfully completed in 2021. Pooja has been a dedicated faculty member at MITCOE since August 2005. She has published over 34 research papers in various conferences and journals and authored the book “Instrumentation and Control” in Oct 2000. Pooja has also mentored both undergraduate and postgraduate students in their projects and has successfully completed three BCUD-funded research Projects. In recognition of her contribution to the institute, Pooja was conferred the Ideal Teacher Award in 2014. She is highly skilled in industry-oriented projects, and under the Industry-Academia Immersion Program, she worked with Forbes Marshall, Chakan, for three months in 2022. With her vast knowledge and experience, Pooja is a valuable member of the engineering faculty and continues to inspire and guide her students towards success.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pooja-pravin-gundewar"
     },
@@ -5902,6 +6173,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "poonam-inamdar",
     "name": "Dr. Poonam Inamdar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -5925,6 +6197,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pradeep-kumar-tiwari",
     "name": "Dr. Pradeep Kumar Tiwari",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -5936,7 +6209,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pradeep-kumar-tiwari.png",
     "research": "",
-    "summary": "Dr. Pradeep Kumar Tiwari is an Associate Professor at Dr. Vishwanath Karad MIT World Peace University. He has previously worked at Birla Global University and Manipal University Jaipur as an Associate Professor and Assistant Professor. Dr. Tiwari holds a Ph.D. in the Faculty of Engineering, along with M.Tech in CSE and M.Phil in Computer Science. Currently he is pursuing a Postdoctoral. His research areas cloud computing, distributed systems, AI, and IoT. With over fifteen years of experience in teaching and research, Dr. Tiwari has authored more than fifty publications in Web of Science and Scopus indexed journals, conferences, and book chapters in the field of computer science. Additionally, he has received three patent grants and published three patents. One scholar has completed and five scholars are currently pursuing their Ph.D. under the supervision of Dr. Tiwari.",
+    "summary": "Dr. Pradeep Kumar Tiwari is an Associate Professor at Dr. Vishwanath Karad MIT World Peace University. He has previously worked at Birla Global University and Manipal University Jaipur as an Associate Professor and Assistant Professor. Dr. Tiwari holds a Ph.D. in the Faculty of Engineering, along with M.Tech in CSE and M.Phil in Computer Science. Currently he is pursuing a Postdoctoral. His research areas cloud computing, distributed systems, AI, and IoT. With over fifteen years of experience in teaching and research, Dr. Tiwari has authored more than fifty publications in Web of Science and Scopus indexed journals, conferences, and book chapters in the field of computer science. Additionally, he has received three patent grants and published three patents. One scholar has completed and five scholars are currently pursuing their Ph.D. under the supervision of Dr. Tiwari. Dr. Tiwari serves as the editor of two books indexed in Scopus and has actively contributed as the Organizing Chair and TPC member for numerous international conferences. Recognizing his outstanding contributions, Dr. Tiwari has been honored with the \"Best Researcher\" award by a reputed organization. He is also serving as a reviewer for several SCI and Scopus journals.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pradeep-kumar-tiwari"
     },
@@ -5945,6 +6218,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pradnya-siddhivinayak-kulkarni",
     "name": "Dr. Pradnya Siddhivinayak Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -5956,7 +6230,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pradnya-siddhivinayak-kulkarni.webp",
     "research": "",
-    "summary": "Dr. Pradnya S. Kulkarni is an Associate Professor at MIT-WPU, whose teaching philosophy focuses on bridging the gap between theoretical computer engineering and industrial application. Guided by the university’s vision of holistic, research-driven education, she brings valuable international academic and industry experience from Australia, Canada, and India to create a collaborative learning environment.",
+    "summary": "Dr. Pradnya S. Kulkarni is an Associate Professor at MIT-WPU, whose teaching philosophy focuses on bridging the gap between theoretical computer engineering and industrial application. Guided by the university’s vision of holistic, research-driven education, she brings valuable international academic and industry experience from Australia, Canada, and India to create a collaborative learning environment. Her contributions include leading high-impact research in medical image processing. Through guiding industry-sponsored projects and coordinating academic curricula, she strives to empower students with the technical expertise and ethical grounding required for global leadership.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pradnya-siddhivinayak-kulkarni",
       "linkedin": "https://www.linkedin.com/in/pradnya-kulkarni-589096284/",
@@ -5969,6 +6243,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prajakta-balchandra-khanwalkar",
     "name": "Ms. Prajakta Balchandra Khanwalkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -5990,6 +6265,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prajakta-vishal-adsule",
     "name": "Dr. Prajakta Vishal Adsule",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -6013,6 +6289,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prajkta-bhide",
     "name": "Dr. Prajkta Bhide",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/public-health",
     "departmentName": "Department of Public Health",
@@ -6034,6 +6311,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prakash-mohan-mainkar",
     "name": "Dr. Prakash Mohan Mainkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Director Admissions",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -6054,6 +6332,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pralhad-atmaram-pesode",
     "name": "Dr. Pralhad Atmaram Pesode",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -6064,8 +6343,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/pralhad-atmaram-pesode.jpg",
-    "research": "Biomaterial, Surface modification of biomaterial, Material science, Materials Characterization, Advanced Manufacturing Processes, Nanocomposites for biomedical applications.",
-    "summary": "Prof. Pralhad Pesode is an Assistant Professor in the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University in Pune, Maharashtra, India. He is currently pursuing a PhD from the same university. He completed his postgraduation in Manufacturing Technology from NIT Trichy in Tamilnadu, India and his graduation in Mechanical Engineering from Government College of Engineering Aurangabad in Maharashtra, India. Prof. Pesode specializes in Material Science, Engineering Metallurgy, Advanced Manufacturing Processes, Biomaterials, Surface modification of biomaterials, Biomaterial coating, Composites and Nanocomposites for biomedical applications. He is a life member of several professional bodies, including the Indian Society for Technical Education (ISTE) and the Society of Automotive Engineers (SAE). Prof. Pesode has published more than 19 research papers in various international journals and conferences and has worked for numerous conferences, seminars, and educational workshops. Research Area Biomaterial, Surface modification of biomaterial, Material science, Materials Characterization, Advanced Manufacturing Processes, Nanocomposites for biomedical applications. Publication 1)Thakur Bhaskar, Shivprakash Barve, and Pralhad Pesode. \"Investigation on mechanical properties of AZ31B magnesium alloy manufactured by stir casting process.\" Journal of the Mechanical Behavior of Biomedical Materials 138 (2023): 105641. (2) Pesode Pralhad, and Shivprakash Barve. \"Surface modification of titanium and titanium alloy by plasma electrolytic oxidation process for biomedical applications: A review.\" Materials Today: Proceedings 46 (2021): 594-602. (3)Pesode Pralhad A., and Shivprakash B. Barve. \"Recent advances on the antibacterial coating on titanium implant by micro-Arc oxidation process.\" Materials Today: Proceedings 47 (2021): 5652-5662. (4) Wankhede Sagar, Pralhad Pesode, Sanjay Gaikwad, Sumod Pawar, and Amar Chipade. \"Implementing Combinative Distance Base Assessment (CODAS) for Selection of Natural Fibre for Long Lasting Composites.\" In Materials Science Forum, vol. 1081, pp. 41-48. Trans Tech Publications Ltd, 2023. (5)Pralhad Pesode, Shivprakash Barve, Yogesh Mane,Shailendra Dayane, Snehal Kolekar, Kahtan A. Mohammed. “Recent Advances on Biocompatible Coating on Magnesium Alloys by Micro Arc Oxidation Technique” Key Engineering Materials 944 (2023):117-134. (6)Pesode Pralhad, Shivprakash Barve, Sagar V. Wankhede, and Amar Chipade. \"Metal oxide coating on biodegradable magnesium alloys.\" 3c Empresa: investigación y pensamiento crítico 12, no. 1 (2023): 392-421. (7)Pesode Pralhad, and Shivprakash Barve. \"Magnesium Alloy for Biomedical Applications.\" In Advanced Materials for Biomechanical Applications, pp. 133-158. CRC Press, 2022. (8)Thakur Bhaskar, Shivprakash Barve, and Pralhad Pesode. \"Magnesium-Based Nanocomposites for Biomedical Applications.\" In Advanced Materials for Biomechanical Applications, pp. 113-131. CRC Press, 2022. Google Scholar Link https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=4NBv0vMAAAAJ Scopus Link https://www.scopus.com/results/authorNamesList.uri?st1=pesode&st2=pralhad&origin=searchauthorlookup Orcid Link https://orcid.org/0000-0001-5604-5740",
+    "research": "Biomaterial, Surface modification of biomaterial, Material science, Materials Characterization, Advanced Manufacturing Processes, Nanocomposites for biomedical applications. Publication 1)Thakur Bhaskar, Shivprakash Barve, and Pralhad Pesode. \"Investigation on mechanical properties of AZ31B magnesium alloy manufactured by stir casting process.\" Journal of the Mechanical Behavior of Biomedical Materials 138 (2023): 105641. (2) Pesode Pralhad, and Shivprakash Barve. \"Surface modification of titanium and titanium alloy by plasma electrolytic oxidation process for biomedical applications: A review.\" Materials Today: Proceedings 46 (2021): 594-602. (3)Pesode Pralhad A., and Shivprakash B. Barve. \"Recent advances on the antibacterial coating on titanium implant by micro-Arc oxidation process.\" Materials Today: Proceedings 47 (2021): 5652-5662. (4) Wankhede Sagar, Pralhad Pesode, Sanjay Gaikwad, Sumod Pawar, and Amar Chipade. \"Implementing Combinative Distance Base Assessment (CODAS) for Selection of Natural Fibre for Long Lasting Composites.\" In Materials Science Forum, vol. 1081, pp. 41-48. Trans Tech Publications Ltd, 2023. (5)Pralhad Pesode, Shivprakash Barve, Yogesh Mane,Shailendra Dayane, Snehal Kolekar, Kahtan A. Mohammed. “Recent Advances on Biocompatible Coating on Magnesium Alloys by Micro Arc Oxidation Technique” Key Engineering Materials 944 (2023):117-134. (6)Pesode Pralhad, Shivprakash Barve, Sagar V. Wankhede, and Amar Chipade. \"Metal oxide coating on biodegradable magnesium alloys.\" 3c Empresa: investigación y pensamiento crítico 12, no. 1 (2023): 392-421. (7)Pesode Pralhad, and Shivprakash Barve. \"Magnesium Alloy for Biomedical Applications.\" In Advanced Materials for Biomechanical Applications, pp. 133-158. CRC Press, 2022. (8)Thakur Bhaskar, Shivprakash Barve, and Pralhad Pesode. \"Magnesium-Based Nanocomposites for Biomedical Applications.\" In Advanced Materials for Biomechanical Applications, pp. 113-131. CRC Press, 2022. Google Scholar Link https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=4NBv0vMAAAAJ Scopus Link https://www.scopus.com/results/authorNamesList.uri?st1=pesode&st2=pralhad&origin=searchauthorlookup Orcid Link https://orcid.org/0000-0001-5604-5740",
+    "summary": "Prof. Pralhad Pesode is an Assistant Professor in the School of Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University in Pune, Maharashtra, India. He is currently pursuing a PhD from the same university. He completed his postgraduation in Manufacturing Technology from NIT Trichy in Tamilnadu, India and his graduation in Mechanical Engineering from Government College of Engineering Aurangabad in Maharashtra, India. Prof. Pesode specializes in Material Science, Engineering Metallurgy, Advanced Manufacturing Processes, Biomaterials, Surface modification of biomaterials, Biomaterial coating, Composites and Nanocomposites for biomedical applications. He is a life member of several professional bodies, including the Indian Society for Technical Education (ISTE) and the Society of Automotive Engineers (SAE). Prof. Pesode has published more than 19 research papers in various international journals and conferences and has worked for numerous conferences, seminars, and educational workshops.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pralhad-atmaram-pesode",
       "scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=4NBv0vMAAAAJ",
@@ -6077,6 +6356,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pramod-bapu-mali",
     "name": "Mr. Pramod Bapu Mali",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6088,7 +6368,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pramod-bapu-mali.jpg",
     "research": "",
-    "summary": "Mr. Pramod Mali is currently working as Assistant Professor in Department of Computer Science and Engineering at MIT-World Peace University since 6th December 2021, has completed his B.E (Computer Engg.) from North Maharashtra University and M. Tech (Computer Engg.) from College of Engineering, Shivajinagar, Pune and currently Pursuing Ph.D (Computer) from SPPU with VIIT Research Center.",
+    "summary": "Mr. Pramod Mali is currently working as Assistant Professor in Department of Computer Science and Engineering at MIT-World Peace University since 6th December 2021, has completed his B.E (Computer Engg.) from North Maharashtra University and M. Tech (Computer Engg.) from College of Engineering, Shivajinagar, Pune and currently Pursuing Ph.D (Computer) from SPPU with VIIT Research Center. He has more than 25 Years of Experience which consist of around UGC Approved Teaching Experience of 16 years and also worked in IT Industry for more than 2 years and a Research experience of more than 2 years. He has Published 11+ Papers in International Journals, National Journals, and conferences. He had received Sponsorship and Research Grants of Rs. 3 lakhs from Persistent Pvt.Ltd for the research work, Received Recognition as Post Graduate Teacher from SPPU on 11th July 2016 and carried consultancy work for Aditi IT Solutions, Pune Health Care Systems in 2019-2020, Zensar, Pune Product Management Chain System in year 2010-2011, Cognizant Technologies, Pune for the year 2006-07. His Research domains are Artificial Intelligence, Machine Learning and Database Management. He is currently working on different Machine Learning and Deep Learning algorithms in the field of Medical Science for his research work.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pramod-bapu-mali",
       "scholar": "https://scholar.google.com/citations?hl=en&user=B9yTOTQAAAAJ",
@@ -6099,6 +6379,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pranali-kashinath-kosamkar",
     "name": "Dr. Pranali Kashinath Kosamkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6123,6 +6404,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pranati-prabhakar-waghodekar",
     "name": "Ms. Pranati Prabhakar Waghodekar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6146,6 +6428,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prasad-anil-kulkarni",
     "name": "Dr. Prasad Anil Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Program Director and Assistant Professor",
     "department": "science/environmental-studies",
     "departmentName": "Department of Environmental Studies",
@@ -6167,6 +6450,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prasad-pathak",
     "name": "Dr. Prasad Pathak",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -6178,7 +6462,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/prasad-pathak.webp",
     "research": "",
-    "summary": "Dr. Prasad Pathak is an Associate Professor at the School of Business, MIT-WPU, with over two decades of academic experience in management education. He holds a Ph.D. in Human Resource Management and has successfully guided doctoral research at MIT-WPU. His academic interests span strategic management, HR practices, peace studies, and socio-cultural dimensions of leadership.",
+    "summary": "Dr. Prasad Pathak is an Associate Professor at the School of Business, MIT-WPU, with over two decades of academic experience in management education. He holds a Ph.D. in Human Resource Management and has successfully guided doctoral research at MIT-WPU. His academic interests span strategic management, HR practices, peace studies, and socio-cultural dimensions of leadership. He has published extensively in Scopus, Web of Science, and ABDC-indexed journals, with notable work on topics such as Dasbodh philosophy, agile project management, and ethical leadership. Dr. Pathak has presented papers at prestigious international conferences, earning multiple Best Paper Awards. He has held key academic and administrative roles, including Ph.D. Course Trainer, NAAC Criteria Head, Peace Courses Coordinator, and Member Secretary of the Board of Studies for BBA. Deeply influenced by philosophical and spiritual thought, Dr. Pathak brings a values-based approach to education, fostering holistic growth among students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/prasad-pathak"
     },
@@ -6187,6 +6471,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prasanna-gautam-kate",
     "name": "Mr. Prasanna Gautam Kate",
+    "preferredDisplayName": "",
     "designation": "Associate Professor of Practice",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -6208,6 +6493,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prasantakumar-sudarshan-ghosh",
     "name": "Dr. PrasantaKumar Sudarshan Ghosh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -6219,7 +6505,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/prasantakumar-sudarshan-ghosh.jpg",
     "research": "Organic and inorganic functional nanomaterials, organic field-effect transistors, hybrid materials, chemical sensors, and research instrumentation.",
-    "summary": "Dr. Prasanta Ghosh is an applied physicist with 16 years of research experience and 9 years of teaching experience. He conducts research in organic/inorganic functional nanomaterials, including organic Field Effect Transistors, inorganic/organic hybrids, and advanced sensors. Dr. Ghosh has published 47 research papers in SCI journals, conferences, and books, and has been granted 3 patents by South African Innovation Patent. He is an advisory board member of Materials Research Express and Nanotechnology, both peer-reviewed SCOPUS indexed journals. Dr. Ghosh has also received several awards, including the Top Peer Reviewer in Materials Science by Publons. Apart from his scientific work, he has also developed indigenous instruments and provides low-cost automation and instrumentation solutions for research and industry. Research Area Organic/inorganic functional nanomaterials- including organic Field Effect Transistors, inorganic/organic hybrids and advanced sensors based on organic matter and SHI Irradiation Publication • “Exercising substituents in porphyrins for real time selective sensing of volatile organic compounds”; Sensors and Actuators B: Chemical (Elsevier), 257, (2018), Pg no. 389–397 ISSN 0925-4005 (JCR Impact Factor - 7.460) • “Selective Discrimination among BTX: Probing Metalloporphyrin Functionalized SWNTs based Field Effect Transistors”; Journal of Physical Chemistry C (American Chemical Society) (2014), 118 (41), 24034–24041 (JCR Impact Factor- 4.126) • “Poly (O-Toluidine) nanowires based Organic Field Effect Transistors - A study on influence of Anionic Size of Dopants and SWNTs as a dopant”; Journal of Physical Chemistry C (American Chemical Society), 117, ( 2013), 15414-15420 (JCR Impact Factor- 4.126) • “A Chemiresistive Sensor based on Conducting Polymer / SWNTs Composite Nanofibrilar matrix – Effect of 100 MeV O16 Ion Irradiation on Gas sensing properties”; Smart Materials and Structures (IOP Science Publishing) , 22, (2013), 035004 (8pp). (JCR Impact Factor- 3.585) • “Iron Tetraphenyl Porphyrin functionalized Single Wall Carbon Nanotubes For Detection of Benzene ”; Materials Letters ( Elsevier), 96, (2013), 38–41 (JCR Impact Factor- 3.423) • “Fe nanoparticle tailored poly(N-methylpyrrole) nanowire matrix: a CHEMFET study from the perspective of discrimination among electron donating analytes”; Journal of Physics D: Appl. Phys. (IOP Science Publishing), (2015),48, 195301. (JCR Impact Factor- 3.207) Google Scholar Link https://scholar.google.com/citations?user=Qhnz_wIAAAAJ&hl=en Scopus Link www.scopus.com/authid/detail.uri?authorId=56388157800 Orcid Link https://www.scopus.com/redirect.uri?url=https://orcid.org/0000-0001-5680-1673&authorId=56388157800&origin=AuthorProfile&orcId=0000-0001-5680-1673&category=orcidLink",
+    "summary": "Dr. Prasanta Ghosh is an applied physicist with 16 years of research experience and 9 years of teaching experience. He conducts research in organic/inorganic functional nanomaterials, including organic Field Effect Transistors, inorganic/organic hybrids, and advanced sensors. Dr. Ghosh has published 47 research papers in SCI journals, conferences, and books, and has been granted 3 patents by South African Innovation Patent. He is an advisory board member of Materials Research Express and Nanotechnology, both peer-reviewed SCOPUS indexed journals. Dr. Ghosh has also received several awards, including the Top Peer Reviewer in Materials Science by Publons. Apart from his scientific work, he has also developed indigenous instruments and provides low-cost automation and instrumentation solutions for research and industry.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/prasantakumar-sudarshan-ghosh",
       "scholar": "https://scholar.google.com/citations?user=Qhnz_wIAAAAJ&hl=en",
@@ -6231,6 +6517,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prasantanu-mohapatra",
     "name": "Prof. Prasantanu Mohapatra",
+    "preferredDisplayName": "",
     "designation": "Professor of Practice",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -6242,7 +6529,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/prasantanu-mohapatra.webp",
     "research": "",
-    "summary": "Prasantanu Mohapatra is a Professor of Practice at the Dadasaheb Phalke International Film School, MIT-WPU. He is the renowned Director of Photography for ‘Kerala Story’ and has been a part of the Indian film industry for over 35 years.",
+    "summary": "Prasantanu Mohapatra is a Professor of Practice at the Dadasaheb Phalke International Film School, MIT-WPU. He is the renowned Director of Photography for ‘Kerala Story’ and has been a part of the Indian film industry for over 35 years. Mohapatra grew up toying with photography in a family-owned photo studio. Later he indulged in art and literature that drew him towards cinema that culminated in a degree from FTII (1992) with specialization in Cinematography. In between professional cinematography, he pursued teaching cinema as guest faculty across India, including at FTII.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/prasantanu-mohapatra"
     },
@@ -6251,6 +6538,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prashant-joshi",
     "name": "Dr. Prashant Joshi",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -6274,6 +6562,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prashant-mahadeo-patane",
     "name": "Dr. Prashant Mahadeo Patane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -6297,6 +6586,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prashant-pralhad-malavadkar",
     "name": "Dr. Prashant Pralhad Malavadkar",
+    "preferredDisplayName": "",
     "designation": "Professor & Program Director",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -6320,6 +6610,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prashant-sudhakar-lahane",
     "name": "Mr. Prashant Sudhakar Lahane",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6331,7 +6622,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/prashant-sudhakar-lahane.jpg",
     "research": "",
-    "summary": "Dr. Prashant S. Lahane is an Associate Professor in the School of Computer Science Engineering at MIT-WPU, Pune, with over 17 years of teaching and academic administration experience.",
+    "summary": "Dr. Prashant S. Lahane is an Associate Professor in the School of Computer Science Engineering at MIT-WPU, Pune, with over 17 years of teaching and academic administration experience. He completed his Ph.D. in Computer Science and Engineering from VIT University, Vellore, and holds B.Tech. and M.Tech. degrees in Computer Science and Information Technology. His contributions include academic coordination, industry collaboration, NAIP training, and conducting major national examinations such as JEE, GATE, MHT-CET, and AIAPGET. He has published 42 research papers and holds 5 patents in areas including machine learning, EEG-based stress detection, and intelligent systems, focusing on industry-oriented learning, innovation, and student skill development",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/prashant-sudhakar-lahane",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56771400300",
@@ -6342,6 +6633,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "prathamesh-sonawani",
     "name": "Mr. Prathamesh Sonawani",
+    "preferredDisplayName": "",
     "designation": "Teaching Associate",
     "department": "liberal-arts-humanities/dadasaheb-phalke-international-film-institute",
     "departmentName": "Dadasaheb Phalke International Film Institute",
@@ -6362,6 +6654,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pratibha-sharad-kshirsagar",
     "name": "Mrs. Pratibha Sharad Kshirsagar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -6371,7 +6664,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": ".",
+    "photoPath": "",
     "research": "",
     "summary": "",
     "links": {},
@@ -6380,6 +6673,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pratiksha-deepak-khurpade",
     "name": "Dr. Pratiksha Deepak Khurpade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -6405,6 +6699,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pratvina-vinayak-talele",
     "name": "Prof. Pratvina Vinayak Talele",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6416,7 +6711,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pratvina-vinayak-talele.jpg",
     "research": "",
-    "summary": "Dr. Pratvina Talele is an Assistant Professor in the Department of Computer Science and Engineering, School of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, with 18+ years of experience in higher education.",
+    "summary": "Dr. Pratvina Talele is an Assistant Professor in the Department of Computer Science and Engineering, School of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, with 18+ years of experience in higher education. She previously served at MIT College of Engineering since 2007. Her research focuses on Artificial Intelligence, Machine Learning and Requirement Engineering with an emphasis on learner-centric and inclusive education. She has completed consultancy projects for Trident Services Pvt Ltd, Knowledge Waves Skill Development Centre Pvt. Ltd. and Pragmatic Techsoft Pvt. Ltd., translating academic research into industry-oriented solutions.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pratvina-vinayak-talele",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57212007030",
@@ -6429,6 +6724,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "pravin-raghunath-minde",
     "name": "Mr. Pravin Raghunath Minde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -6440,7 +6736,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/pravin-raghunath-minde.webp",
     "research": "Construction Management, Ferrocement , Sustainable construction",
-    "summary": "Dr. Pravin Minde is working as an Assistant Professor and PG Coordinator (CEM) in the Department of Civil Engineering at MIT-WPU, Pune. He has over 12 years academic & administrative experience. He completed his Ph.D. in the domain of Construction Project Management from MIT-WPU in April 2025. He earned his M.E. in Construction Management in 2014 and B.E. in Civil Engineering in 2012, both from Pune University.",
+    "summary": "Dr. Pravin Minde is working as an Assistant Professor and PG Coordinator (CEM) in the Department of Civil Engineering at MIT-WPU, Pune. He has over 12 years academic & administrative experience. He completed his Ph.D. in the domain of Construction Project Management from MIT-WPU in April 2025. He earned his M.E. in Construction Management in 2014 and B.E. in Civil Engineering in 2012, both from Pune University. His key research interests include project management, sustainable construction materials, and total quality management. He has served as Subject Chairman for UG and PG courses in Pune University, and is a Life Member of ISTE and IWWA, as well as an Associate Member of the Institute of Engineers. He has authored 10+ books and published 21+ research papers in SCI/Scopus/WoS-indexed journals and conferences. He has authored over 5 book chapters with reputed international publishers, including Elsevier, Taylor & Francis, and Wiley. He also holds 3 published patents. Dr. Minde is an ISO 9001:2015 QMS Auditor and Six Sigma Green Belt certified. He actively reviews papers for journals like Springer, Elsevier, and ASCE. He has also served as a reviewer for a Building Construction textbook published by AICTE. He is affiliated with institutions such as Bharati Vidyapeeth, Mumbai University, and SPPU, and is a BOS member at DY Patil College, Pune. As the Faculty Coordinator for CESA in the Department of Civil Engineering, he actively mentors students and makes meaningful contributions to academic and co-curricular development.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pravin-raghunath-minde",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57652525100",
@@ -6451,6 +6747,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "preethi-sunkara",
     "name": "Dr. Preethi Sunkara",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -6475,18 +6772,21 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "preeti-amit-kale",
     "name": "Mrs. Preeti Amit Kale",
+    "preferredDisplayName": "Dr. Preeti Kale",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
     "unitRoutes": [
-      "computer-engineering-and-technology/computer-engineering-and-technology"
+      "computer-engineering-and-technology/computer-engineering-and-technology",
+      "research-groups/quantum"
     ],
     "unitNames": {
-      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering"
+      "computer-engineering-and-technology/computer-engineering-and-technology": "Department of Computer Science and Engineering",
+      "research-groups/quantum": "Quantum Science & Technology Group"
     },
     "photoPath": "./assets/campus/preeti-amit-kale.jpg",
     "research": "",
-    "summary": "Associate Professor with more than 20 years teaching in higher education settings. Passionate about motivating and encouraging students to think critically about course material. Applies curriculum development knowledge to assist in cultivating challenging educational courses. Skilled at applying various learning methods and tools to optimize student experience and academic journey.",
+    "summary": "Associate Professor with more than 20 years teaching in higher education settings. Passionate about motivating and encouraging students to think critically about course material. Applies curriculum development knowledge to assist in cultivating challenging educational courses. Skilled at applying various learning methods and tools to optimize student experience and academic journey. A recognized reviewer for SCIE indexed journals. Researched and published articles on Artificial Intelligence, Natural Language Processing, Analysis of Algorithms, Wireless Sensor Networks and Computational biology in peer reviewed journals and conferences.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/preeti-amit-kale",
       "scholar": "https://scholar.google.com/citations?hl=en&user=qjAK7_IAAAAJ&view_op=list_works&authuser=3&sortby=pubdate",
@@ -6497,32 +6797,9 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "memberType": ""
   },
   {
-    "id": "preeti-kale",
-    "name": "Dr. Preeti Kale",
-    "designation": "Associate Professor, Department of Computer Engineering and Technology",
-    "department": "research-groups/quantum",
-    "departmentName": "Quantum Science & Technology Group",
-    "unitRoutes": [
-      "research-groups/quantum"
-    ],
-    "unitNames": {
-      "research-groups/quantum": "Quantum Science & Technology Group"
-    },
-    "photoPath": "../../people/assets/campus/preeti-amit-kale.jpg",
-    "research": "Algorithms; Artificial intelligence and machine learning; Sensor networks; Quantum computing systems",
-    "summary": "Preeti Kale works in algorithms, artificial intelligence, sensor networks, and computational systems. Her interdisciplinary portfolio includes work connected with quantum cloud gateway systems.",
-    "links": {
-      "profile": "https://mitwpu.irins.org/profile/148543",
-      "scholar": "https://scholar.google.com/citations?hl=en&user=qjAK7_IAAAAJ&view_op=list_works&authuser=3&sortby=pubdate",
-      "scopus": "https://www.scopus.com/authid/detail.uri?authorId=35487807200",
-      "orcid": "https://orcid.org/0000-0002-1571-9208",
-      "research": "https://vidwan.inflibnet.ac.in/profile/148543"
-    },
-    "memberType": ""
-  },
-  {
     "id": "priya-bahirnath-kale",
     "name": "Ms. Priya Bahirnath Kale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/education",
     "departmentName": "Department of Education",
@@ -6534,7 +6811,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/priya-bahirnath-kale.jpg",
     "research": "Education, Psychology",
-    "summary": "Mrs. Priya Kale is an experienced Assistant Professor at Dr. Vishwanath Karad MIT World Peace University, with 17 years of teaching experience. She holds a Master's degree in Marathi, a Master's in Education, a SET qualification, and a Diploma in Communication and Journalism. Currently, she is pursuing her Ph.D. in Stress Management and Happiness Index of secondary School students from Savitribai Phule Pune University.",
+    "summary": "Mrs. Priya Kale is an experienced Assistant Professor at Dr. Vishwanath Karad MIT World Peace University, with 17 years of teaching experience. She holds a Master's degree in Marathi, a Master's in Education, a SET qualification, and a Diploma in Communication and Journalism. Currently, she is pursuing her Ph.D. in Stress Management and Happiness Index of secondary School students from Savitribai Phule Pune University. Priya specializes in Pedagogy of Language, Reading and Reflecting on Text, Guidance and Counseling, Learning and Teaching, and Use of ICT in the Classroom. She is a State Level Certified Trainer from MSCERT for making audio-visual aids for Primary and Secondary School Teachers, and conducts workshops on ‘Making Traditional and Advanced Teaching Aids’ for school teachers. She is also an approved counselor for IGNOU Courses. Priya has presented 10 research papers at national and international conferences and journals and attended over 100 seminars, workshops, conferences, and symposiums at the state/national and international levels. Her mentees received 2nd Prize in MIT-WPU's Innovation Hackathon 2022 under her guidance, and she won 3rd Prize in the Teaching Learning Evaluation Hackathon organized by Symbiosis International University. Priya is associated with various secondary schools in Pune for academic collaboration and has guided more than 500 school teachers about Pedagogy and Research. She has contributed 1 article to a Marathi book titled ‘Maayleki-Baapleki,’ which won the R. N. Chavan Award by Maharashtra Govt. in 2021. She is also a freelance writer for Marathi News Portals, including ‘Aksharnama’, \"ESakal', 'Lokmat'. Priya has written a textbook titled “Bhashik Kaushalya Vikas ani Adhunik Marathi Sahityaprakar: Kadambari ani Lalit Gadya” for Second Year B.A. (Marathi) program and “Teaching – Learning Process” (Adhyapan –Adhyayan Prakriya) Third Year B.A. (Education) Programs at Savitribai Phule Pune University.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/priya-bahirnath-kale"
     },
@@ -6543,6 +6820,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "priya-nagargoje",
     "name": "Prof. Priya Nagargoje",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6554,7 +6832,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/priya-nagargoje.webp",
     "research": "",
-    "summary": "My teaching approach focuses on practical learning, curiosity, and industry relevance. I believe education should go beyond textbooks and help students develop the ability to think critically, solve real-world problems, and adapt to emerging technologies.",
+    "summary": "My teaching approach focuses on practical learning, curiosity, and industry relevance. I believe education should go beyond textbooks and help students develop the ability to think critically, solve real-world problems, and adapt to emerging technologies. I am motivated to create an engaging learning environment where students gain both strong conceptual understanding and hands-on experience, especially in areas like cloud computing, DevOps, and AI. Through mentorship, research, and industry collaboration, I aim to contribute to the vision of MIT World Peace University by nurturing skilled, ethical, and innovative professionals who can create meaningful impact in society.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/priya-nagargoje",
       "scopus": "https://www.scopus.com/pages/home",
@@ -6567,6 +6845,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "priyamwada-sachindra-mahajani",
     "name": "Mrs. Priyamwada Sachindra Mahajani",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -6578,7 +6857,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/priyamwada-sachindra-mahajani.jpg",
     "research": "Signal Processing",
-    "summary": "Priyamwada Mahajani is an Assistant Professor in the School of Engineering and Technology at MIT World Peace University. She received her Bachelor of Engineering in Electronics and Telecommunication and Master of Engineering in Electronics and Telecommunication from Govt. College of Engineering, Pune, India.",
+    "summary": "Priyamwada Mahajani is an Assistant Professor in the School of Engineering and Technology at MIT World Peace University. She received her Bachelor of Engineering in Electronics and Telecommunication and Master of Engineering in Electronics and Telecommunication from Govt. College of Engineering, Pune, India. Ms. Mahajani's research interests lie in the areas of signal processing and error control coding for communication systems. She is passionate about developing innovative techniques to improve the performance of communication systems, and her research has focused on developing novel signal processing algorithms for communication applications. As an Assistant Professor, Ms. Mahajani is committed to teaching and mentoring students, sharing her knowledge and expertise with the next generation of engineers. Her dedication to her students and her contributions to the field of signal processing make her a valuable member of the academic community.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/priyamwada-sachindra-mahajani"
     },
@@ -6587,6 +6866,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "priyanka-kumari",
     "name": "Dr. Priyanka Kumari",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -6610,6 +6890,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "priyanka-rohit-rajmane",
     "name": "Prof. Priyanka Rohit Rajmane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -6631,6 +6912,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "purna-kumari",
     "name": "Dr. Purna Kumari",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -6651,6 +6933,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "radhakrishnan-subramaniam",
     "name": "Prof. Dr. Radhakrishnan Subramaniam",
+    "preferredDisplayName": "",
     "designation": "Professor Emeritus and Director Research",
     "department": "engineering-and-technology/material-science-engineering",
     "departmentName": "Department of Materials Science & Engineering",
@@ -6662,7 +6945,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/radhakrishnan-subramaniam.webp",
     "research": "",
-    "summary": "Prof. Radhakrishnan Subramaniam is dedicated to cultivating strong foundational knowledge and fostering a deep interest in the subject among students. He strives to create an academic environment that encourages innovative thinking and promotes the application of knowledge through research and development activities.",
+    "summary": "Prof. Radhakrishnan Subramaniam is dedicated to cultivating strong foundational knowledge and fostering a deep interest in the subject among students. He strives to create an academic environment that encourages innovative thinking and promotes the application of knowledge through research and development activities. His teaching and mentoring approach emphasises project-based learning, guiding both faculty members and students toward practical and research-oriented education. He actively promotes and leads R&D initiatives while mentoring postgraduate and Ph.D. projects. Prof. Dr. Radhakrishnan Subramaniam also believes in strengthening academic and research collaborations with other institutes to encourage collaborative research and the development of advanced materials for specialised applications.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/radhakrishnan-subramaniam",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7103415034",
@@ -6674,6 +6957,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "raghunath-subhanrao-bhadade",
     "name": "Dr. Raghunath Subhanrao Bhadade",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Coordinator (ECE)",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -6685,7 +6969,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/raghunath-subhanrao-bhadade.webp",
     "research": "RF, Microwave and Antennas, Wireless Communications, Software Defined and Cognitive Radio, Television Engineering",
-    "summary": "Dr. Raghunath S. Bhadade is an accomplished Assistant Professor in the department of Electrical and Electronics Engineering at Dr. Vishwanath Kard MIT World Peace University, Pune. With a Ph.D degree from the Savitribai Phule Pune University, he is an approved Ph.D guide and holds two patents in his name.",
+    "summary": "Dr. Raghunath S. Bhadade is an accomplished Assistant Professor in the department of Electrical and Electronics Engineering at Dr. Vishwanath Kard MIT World Peace University, Pune. With a Ph.D degree from the Savitribai Phule Pune University, he is an approved Ph.D guide and holds two patents in his name. Dr. Bhadade has presented and published numerous research papers in National and International conferences and journals indexed in SCI/SCOPUS. He specializes in RF, Microwave and Antennas, Wireless Communications, Software Defined and Cognitive Radio, and Television Engineering. He also provides Testing and Calibration services, and serves as a faculty mentor for Vishwashanti CanSat Team. As a life member of the Indian Society for Technical Education, Dr. Bhadade has been invited as a resource person in FDP/STTPs in his research areas and as a guest speaker across India in the field of Electronics and Communication Engineering. He has organized various social events at his birthplace to aid the overall development of rural people. Dr. Bhadade also has a passion for trekking and has actively participated in various treks across India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/raghunath-subhanrao-bhadade"
     },
@@ -6694,6 +6978,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rahul-ashokrao-aher",
     "name": "Dr. Rahul Ashokrao Aher",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -6715,6 +7000,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rahul-gaikwad",
     "name": "Mr. Rahul Gaikwad",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -6735,6 +7021,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rahul-kisan-jagtap",
     "name": "Dr. Rahul Kisan Jagtap",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -6755,6 +7042,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rahul-verma",
     "name": "Dr. Rahul Verma",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -6765,8 +7053,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "liberal-arts-humanities/liberal-arts": "Department of Liberal Arts"
     },
     "photoPath": "./assets/campus/rahul-verma.jpg",
-    "research": "Classical Sociological Theories, Sociology of Religion, Social Networks, Sociology of Industry",
-    "summary": "Dr. Rahul Verma is a trained and qualified sociologist with a passion for Pedagogy and Social Research. He possesses an in-depth understanding and interpretation of empirical reality, which has been acquired through the collection and analysis of primary data from various themes such as the use of Social Media, Social Change and Modernity, Religious Pluralism, and Inter-Religious Interaction. Driven by a natural curiosity towards investigating social phenomena, he employs both Qualitative and Quantitative research methods. Research Area Classical Sociological Theories, Sociology of Religion, Social Networks, Sociology of Industry Publication Published a research paper titled “The Prevalence of Religious Pluralism and Inter-Faith Dialogue in India: An Empirical Comparison of Hindus and Muslims of Bhopal” in Panjab University Research Journal (Arts), January-June Issue 2019, ISSN: 0970-5260, pp – 46-67. (UGC-CARE Approved) Orchid Link https://orcid.org/0000-0001-7413-0244",
+    "research": "Classical Sociological Theories, Sociology of Religion, Social Networks, Sociology of Industry Publication Published a research paper titled “The Prevalence of Religious Pluralism and Inter-Faith Dialogue in India: An Empirical Comparison of Hindus and Muslims of Bhopal” in Panjab University Research Journal (Arts), January-June Issue 2019, ISSN: 0970-5260, pp – 46-67. (UGC-CARE Approved) Orchid Link https://orcid.org/0000-0001-7413-0244",
+    "summary": "Dr. Rahul Verma is a trained and qualified sociologist with a passion for Pedagogy and Social Research. He possesses an in-depth understanding and interpretation of empirical reality, which has been acquired through the collection and analysis of primary data from various themes such as the use of Social Media, Social Change and Modernity, Religious Pluralism, and Inter-Religious Interaction. Driven by a natural curiosity towards investigating social phenomena, he employs both Qualitative and Quantitative research methods.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rahul-verma",
       "orcid": "https://orcid.org/0000-0001-7413-0244"
@@ -6776,6 +7064,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rahul-vishwanath-dandage",
     "name": "Dr. Rahul Vishwanath Dandage",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -6787,7 +7076,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rahul-vishwanath-dandage.jpg",
     "research": "",
-    "summary": "Dr. Rahul Vishwanath Dandage is an academician with over 21 years of teaching experience in the engineering and management education, including one semester as an International Faculty. He also brings 2.5 years of industrial experience, enriching his academic work with practical insights. He holds a Ph.D. in Mechanical Engineering under the supervision of Dr. S. S. Mantha, former Chairman of AICTE, New Delhi, along with an M.E. in Mechanical (Production) Engineering and a B.E. in Mechanical Engineering. Currently he is pursuing One Year Duration Future Leadership Program in Supply Chain Management jointly conducted by IIM, Mumbai & Thunderbird School of Global Management, US. (Sept 2025- Aug 2026).",
+    "summary": "Dr. Rahul Vishwanath Dandage is an academician with over 21 years of teaching experience in the engineering and management education, including one semester as an International Faculty. He also brings 2.5 years of industrial experience, enriching his academic work with practical insights. He holds a Ph.D. in Mechanical Engineering under the supervision of Dr. S. S. Mantha, former Chairman of AICTE, New Delhi, along with an M.E. in Mechanical (Production) Engineering and a B.E. in Mechanical Engineering. Currently he is pursuing One Year Duration Future Leadership Program in Supply Chain Management jointly conducted by IIM, Mumbai & Thunderbird School of Global Management, US. (Sept 2025- Aug 2026). His core research interest lies in risk management in international projects, with several publications in reputed journals. He has published 5 research papers in Scopus-indexed journals (including 4 ABDC-indexed papers) and has presented 25 papers at national and international conferences. Dr. Dandage has also authored 2 books and 8 book chapters and has delivered 25+ expert sessions as a resource person in online and offline modes. With more than six years of administrative leadership experience as Head of Department, Program Head, Program Director, and Head of Industry–Institute Interaction Cell, he has played a significant role in academic governance and industry engagement. He serves as a reviewer for leading international journals published by Emerald, Springer, InderScience, IGI Global, and Bentham Open (UAE), and is an active member of Boards of Studies at autonomous and university-affiliated institutions in India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rahul-vishwanath-dandage",
       "scholar": "https://scholar.google.co.in/citations?user=_JHPX60AAAAJ&hl=en",
@@ -6800,6 +7089,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "raj-agarwal",
     "name": "Dr. Raj Agarwal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor & Program Coordinator (M.Tech Medical Devices)",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -6825,6 +7115,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rajashree-sahadeo-jadhav",
     "name": "Mrs. Rajashree Sahadeo Jadhav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -6845,6 +7136,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rajashri-amit-kadam",
     "name": "Dr. Rajashri Amit Kadam",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -6856,7 +7148,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rajashri-amit-kadam.webp",
     "research": "",
-    "summary": "Dr. Rajashri Kadam is dedicated Associate Professor in the domain of Marketing and currently handling additional responsibility as the Associate Dean – Academics at the School of Business since January 2022. With over 22 years of combined industry and academic experience, she has been a passionate educator for the past 18 years, known for her interactive and learner- centric pedagogy. Dr. Kadam holds a Ph.D. in Marketing Management and an Executive Diploma in Digital Marketing from IIM Jammu. Her teaching interests include Advertising, Services Marketing, Integrated Marketing Communication, and Strategic Marketing. She has contributed significantly to academic research with publications in reputed national and international journals, Scopus-indexed book chapters, Case studies and numerous conference papers. She has also guided student-led case studies and research publications. She is also a Ph.D. supervisor and certified trainer, with prior experience in consulting and content development. Known for her strong rapport with students and alumni, Dr. Kadam continues to inspire learners with her dynamic teaching, academic leadership, and commitment to educational excellence.",
+    "summary": "Dr. Rajashri Kadam is dedicated Associate Professor in the domain of Marketing and currently handling additional responsibility as the Associate Dean – Academics at the School of Business since January 2022. With over 22 years of combined industry and academic experience, she has been a passionate educator for the past 18 years, known for her interactive and learner- centric pedagogy. Dr. Kadam holds a Ph.D. in Marketing Management and an Executive Diploma in Digital Marketing from IIM Jammu. Her teaching interests include Advertising, Services Marketing, Integrated Marketing Communication, and Strategic Marketing. She has contributed significantly to academic research with publications in reputed national and international journals, Scopus-indexed book chapters, Case studies and numerous conference papers. She has also guided student-led case studies and research publications. She is also a Ph.D. supervisor and certified trainer, with prior experience in consulting and content development. Known for her strong rapport with students and alumni, Dr. Kadam continues to inspire learners with her dynamic teaching, academic leadership, and commitment to educational excellence. In her current leadership role, Dr. Kadam oversees academic operations for multiple undergraduate and postgraduate programs across the School of Business, including curriculum design, academic planning, evaluation systems, and industry integration. She is actively involved in promoting outcome-based education, NEP-aligned curriculum reforms, and faculty resource planning.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rajashri-amit-kadam"
     },
@@ -6865,6 +7157,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rajeev-sengupta",
     "name": "Dr. Rajeev Sengupta",
+    "preferredDisplayName": "",
     "designation": "Associate Professor & Program Director",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -6876,7 +7169,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rajeev-sengupta.webp",
     "research": "",
-    "summary": "Dr. Rajeev Sengupta brings over two decades of industry experience in the BFSI sector across leadership roles in insurance, banking, and financial services. Currently serving as Associate Professor and Program Director for Banking & Finance at MIT-WPU, he leads academic delivery for BBA-BFI, MBA Finance, and MBA-BFS programs. A PhD from KIIT University, Dr. Sengupta holds qualifications in Finance, Insurance (FIII), Law, and Education Management.",
+    "summary": "Dr. Rajeev Sengupta brings over two decades of industry experience in the BFSI sector across leadership roles in insurance, banking, and financial services. Currently serving as Associate Professor and Program Director for Banking & Finance at MIT-WPU, he leads academic delivery for BBA-BFI, MBA Finance, and MBA-BFS programs. A PhD from KIIT University, Dr. Sengupta holds qualifications in Finance, Insurance (FIII), Law, and Education Management. He has published extensively in Scopus, Springer, Routledge, and ABDC-indexed journals, with research interests spanning financial literacy, bancassurance, behavioural finance, and sustainable finance. His teaching portfolio includes Managerial Economics, Financial Management, Corporate Finance, Financial Markets, Financial Planning & Wealth Management and Legal Aspects of Business.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rajeev-sengupta"
     },
@@ -6885,6 +7178,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rajesh-kanzade",
     "name": "Mr. Rajesh Kanzade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -6896,7 +7190,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rajesh-kanzade.webp",
     "research": "",
-    "summary": "Mr. Rajesh S. Kanzade is an Assistant Professor with over 25 years of extensive teaching experience in the field of Computer Science and Applications. Currently associated with MIT World Peace University, he is dedicated to fostering a dynamic and student-centric learning environment through effective pedagogy, research, and academic engagement.",
+    "summary": "Mr. Rajesh S. Kanzade is an Assistant Professor with over 25 years of extensive teaching experience in the field of Computer Science and Applications. Currently associated with MIT World Peace University, he is dedicated to fostering a dynamic and student-centric learning environment through effective pedagogy, research, and academic engagement. He holds an MBA and an M.Sc. in Computer Applications, and is currently pursuing his Ph.D., reflecting his commitment to continuous learning and academic advancement. His areas of expertise span a wide range of subjects, including programming languages (C, C++, Java, Python), Data Science, Artificial Intelligence, Cloud Computing, Cyber Security, and Software Engineering. Mr. Kanzade has actively contributed to research, with multiple publications focusing on mobile marketing, digital transformation, and sustainable business strategies in the evolving digital landscape. His work has been recognized at national and international platforms, including award-winning research contributions. Beyond academics, he has held several key leadership and administrative roles, including Head of Department (BBA-CA), Placement Coordinator, IQAC Member, and Student Development Officer. His contributions reflect strong capabilities in academic administration, curriculum development, and student mentorship. With a focus on innovation, digital transformation in education, and holistic student development, Mr. Kanzade continues to inspire learners to achieve academic excellence and adapt to the ever-evolving technological landscape.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rajesh-kanzade"
     },
@@ -6905,6 +7199,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rajib-kumar-sinharay",
     "name": "Dr. Rajib Kumar Sinharay",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -6916,7 +7211,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rajib-kumar-sinharay.webp",
     "research": "",
-    "summary": "A geophysicist with total 25 years of experiences in industry as well as research mainly in geophysical investigations, hydrocarbon exploration, engineering geophysics, deep crustal studies and Antarctic research. Having a MScTech and PhD degree in Applied Geophysics from IIT(ISM), Dhanbad, I have worked for Central Water and Power Research Station (CWPRS), Govt. of India, WesternGeco- Schlumberger (SLB) and Reliance Industries Limited (RIL). Presently working as a Professor in School of Petroleum Engineering, Dr. Vishwanath Karad MIT World Peace University (MITWPU), Pune. My fields of researches are Petroleum Exploration and Production, Unconventional Hydrocarbon, Geothermal Exploration, Underground Carbon Sequestration (UCS), Machine Learning (ML), Mineral Exploration, Antarctic Geoscience and near surface geophysics. A passionate innovator, vigorous learner, motivated leader and critical thinker. Published more than 25 research paper in different peer-reviewed journals, books and conferences.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rajib-kumar-sinharay",
       "linkedin": "https://www.linkedin.com/in/prof-rajib-kumar-sinharay-6142b921",
@@ -6927,6 +7222,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rajkumar-damodar-komati",
     "name": "Dr. Rajkumar Damodar Komati",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -6947,6 +7243,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "raju-shivaji-ingale",
     "name": "Dr. Raju Shivaji Ingale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -6969,6 +7266,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rakhi-khedkar",
     "name": "Dr. Rakhi Khedkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -6980,7 +7278,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rakhi-khedkar.webp",
     "research": "",
-    "summary": "Dr. Rakhi Khedkar is an Assistant Professor in the Department of Electrical and Electronics Engineering at MIT World Peace University, Pune, with nearly 23 years of academic and research experience. She holds a Ph.D. and M.Tech. in Electronics and Telecommunication Engineering from Savitribai Phule Pune University, completed at the College of Engineering Pune (COEP).",
+    "summary": "Dr. Rakhi Khedkar is an Assistant Professor in the Department of Electrical and Electronics Engineering at MIT World Peace University, Pune, with nearly 23 years of academic and research experience. She holds a Ph.D. and M.Tech. in Electronics and Telecommunication Engineering from Savitribai Phule Pune University, completed at the College of Engineering Pune (COEP). She has contributed extensively to academic administration, research and development, and accreditation activities. She currently serves as the Vice Chair of the SIG Smart City Cell, IEEE Pune Section (since January 2025), and previously held the position of Secretary of the Smart City Cell, IEEE Pune Section (January 2023 – December 2024). She is a Life Member of IETE and a Member of IEEE. Dr. Khedkar has published 11 research papers in reputed national and international journals and has presented five papers at national and international conferences. She is a co-author of the book “Solid State Devices and Circuits” and holds five registered copyrights. She has actively participated in and coordinated numerous national and international workshops, seminars, and faculty development programs, and has guided over 100 UG and PG student projects. During her doctoral research at COEP, she implemented spectrum sensing and dynamic spectrum allocation in Cognitive Radio Networks using a USRP-based testbed. Currently, her work focuses on Wireless Sensor Networks and IoT-based applications. Her research interests include Signal Processing, Wireless Networks, Cognitive Radio Communication, Communication Systems, Fiber Optic Communication, Mobile Communication, and the Internet of Things (IoT).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rakhi-khedkar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=26650061800"
@@ -6990,6 +7288,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ramaa-ashish-sandu",
     "name": "Mrs. Ramaa Ashish Sandu",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -7011,6 +7310,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ranjana-anup-agrawal",
     "name": "Dr. Ranjana Anup Agrawal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7022,7 +7322,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ranjana-anup-agrawal.jpg",
     "research": "",
-    "summary": "My teaching philosophy is centered on experiential, research-driven learning that bridges theory with real-world application. I believe in nurturing curiosity, critical thinking, and ethical responsibility among students.",
+    "summary": "My teaching philosophy is centered on experiential, research-driven learning that bridges theory with real-world application. I believe in nurturing curiosity, critical thinking, and ethical responsibility among students. By integrating emerging technologies such as AI and data-driven methods into the curriculum, I strive to create an engaging and future-ready learning environment. My motivation lies in mentoring students to become innovative problem-solvers and socially responsible professionals. Through interdisciplinary research, industry collaboration, and student-centric pedagogy, I actively contribute to MIT-WPU’s vision of academic excellence, innovation, and societal impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ranjana-anup-agrawal",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55786551900",
@@ -7035,6 +7335,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ranjeet-vinayak-gadhave",
     "name": "Dr. Ranjeet Vinayak Gadhave",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -7046,7 +7347,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ranjeet-vinayak-gadhave.webp",
     "research": "",
-    "summary": "Dr. Ranjit Vinayak Gadhave is an experienced academician and researcher in Pharmaceutical Sciences with over 20 years of experience in teaching and research. He completed his post-graduation and doctoral studies in Pharmaceutical Sciences from Savitribai Phule Pune University, Pune. Currently, he is working as an Associate Professor at the School of Health Sciences and Technology, Dr. Vishwanath Karad MIT World Peace University, Pune.",
+    "summary": "Dr. Ranjit Vinayak Gadhave is an experienced academician and researcher in Pharmaceutical Sciences with over 20 years of experience in teaching and research. He completed his post-graduation and doctoral studies in Pharmaceutical Sciences from Savitribai Phule Pune University, Pune. Currently, he is working as an Associate Professor at the School of Health Sciences and Technology, Dr. Vishwanath Karad MIT World Peace University, Pune. His primary research interests include the synthesis and biological evaluation of rationally designed heterocyclic molecules. Dr. Gadhave has made significant contributions to pharmaceutical research through publications in reputed national and international journals and by presenting his work at various academic and scientific forums. He has successfully guided more than 20 postgraduate students and continues to actively contribute to academics, research, and student mentorship.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ranjeet-vinayak-gadhave",
       "scholar": "https://scholar.google.com/citations?hl=en&user=6ogV0VgAAAAJ",
@@ -7058,6 +7359,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rashmi-ashtagi",
     "name": "Dr. Rashmi Ashtagi",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7069,7 +7371,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rashmi-ashtagi.webp",
     "research": "",
-    "summary": "Dr. Rashmi Murgendra Ashtagi is an Associate Professor in the Department of Computer Science and Engineering at MIT World Peace University, Pune, with expertise in Artificial Intelligence, Machine Learning, and Medical Image Analysis. She is committed to fostering outcome-based, research-driven learning that integrates innovation with societal impact.",
+    "summary": "Dr. Rashmi Murgendra Ashtagi is an Associate Professor in the Department of Computer Science and Engineering at MIT World Peace University, Pune, with expertise in Artificial Intelligence, Machine Learning, and Medical Image Analysis. She is committed to fostering outcome-based, research-driven learning that integrates innovation with societal impact. With extensive publications in Scopus and SCIE indexed journals, patents, and interdisciplinary research contributions, she actively mentors students in emerging technologies. Her teaching philosophy emphasizes experiential learning, ethical innovation, and collaborative problem-solving, aligning with MIT-WPU’s vision of developing globally competent engineers who contribute to sustainable technological advancement",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rashmi-ashtagi",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57738018000",
@@ -7082,6 +7384,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rashmi-ashwinikumar-rane",
     "name": "Mrs. Rashmi Ashwinikumar Rane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7093,7 +7396,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rashmi-ashwinikumar-rane.jpg",
     "research": "",
-    "summary": "I believe in fostering analytical thinking, practical problem-solving, and lifelong learning among engineering students. As a faculty member in Computer Engineering, my teaching philosophy emphasizes concept clarity, real-world application, and active learning through labs, case studies, and collaborative challenges.",
+    "summary": "I believe in fostering analytical thinking, practical problem-solving, and lifelong learning among engineering students. As a faculty member in Computer Engineering, my teaching philosophy emphasizes concept clarity, real-world application, and active learning through labs, case studies, and collaborative challenges. I am motivated to bridge the gap between theory and industry expectations, especially in core areas like Operating Systems and Systems Programming. Through innovative pedagogy and research engagement, I strive to contribute to MIT-WPU’s vision of developing globally competent, ethically grounded, and socially responsible technology professionals.Professional Affiliations: Life Membership of ISTE",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rashmi-ashwinikumar-rane",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57191090200",
@@ -7106,6 +7409,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rashmi-sridhara",
     "name": "Mrs. Rashmi Sridhara",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -7117,7 +7421,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rashmi-sridhara.webp",
     "research": "",
-    "summary": "Rashmi Sridhara is a multidisciplinary Textile and Surface Designer, Print Maker, DIY Content Developer, and Educator with over a decade of professional experience in the design industry. A postgraduate from the National Institute of Design (NID), Paldi, and an undergraduate from the National Institute of Fashion Technology (NIFT), Bangalore, she has worked extensively across sectors including fashion, craft research, home furnishings, and education. Her areas of academic and creative expertise include surface ornamentation, functional fashion, traditional textile crafts, and game-based design learning.",
+    "summary": "Rashmi Sridhara is a multidisciplinary Textile and Surface Designer, Print Maker, DIY Content Developer, and Educator with over a decade of professional experience in the design industry. A postgraduate from the National Institute of Design (NID), Paldi, and an undergraduate from the National Institute of Fashion Technology (NIFT), Bangalore, she has worked extensively across sectors including fashion, craft research, home furnishings, and education. Her areas of academic and creative expertise include surface ornamentation, functional fashion, traditional textile crafts, and game-based design learning. Prior to joining MIT-WPU, Rashmi held key roles at Pidilite Industries, where she led design strategy and product development for DIY and craft-based content. She was also part of the core team of the Association of Designers of India (ADI), Mumbai Chapter, and contributed to the Pune design community. As an Assistant Professor at the School of Design, she is deeply committed to fostering innovation, sustainability, and hands-on learning in design education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rashmi-sridhara"
     },
@@ -7126,6 +7430,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rashmi-suhas-phalnikar",
     "name": "Dr. Rashmi Suhas Phalnikar",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7137,7 +7442,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rashmi-suhas-phalnikar.webp",
     "research": "",
-    "summary": "I am guided by strong work ethics rooted in integrity, accountability, and methodological rigor, maintaining high ethical standards throughout research and development. With a proactive and collaborative approach, I emphasize attention to detail, continuous learning, and timely delivery of high-quality outcomes. This integrated perspective allows me to bridge technical excellence with responsible and impactful practice.",
+    "summary": "I am guided by strong work ethics rooted in integrity, accountability, and methodological rigor, maintaining high ethical standards throughout research and development. With a proactive and collaborative approach, I emphasize attention to detail, continuous learning, and timely delivery of high-quality outcomes. This integrated perspective allows me to bridge technical excellence with responsible and impactful practice. My work encompasses software engineering practices, insightful data analysis, and user-centered interface design, with a focus on developing scalable, reliable, and efficient systems. I employ data-driven methodologies to extract meaningful insights while ensuring that software solutions remain intuitive, accessible, and aligned with user needs.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rashmi-suhas-phalnikar",
       "scholar": "https://scholar.google.com/citations?hl=en&user=yU8BqHAAAAAJ",
@@ -7149,6 +7454,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rasika-ramendra-beohar",
     "name": "Mrs. Rasika Ramendra Beohar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -7160,7 +7466,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rasika-ramendra-beohar.webp",
     "research": "EnTC and Philosophy",
-    "summary": "Meet Prof Rasika Beohar, an accomplished Assistant Professor in the Department of Electrical & Electronics Engineering at MIT World Peace University, Pune. With a Master's degree in E&TC Engineering (VLSI and Embedded systems), she brings a wealth of knowledge and expertise from over 15 years of teaching and one year of industrial experience.",
+    "summary": "Meet Prof Rasika Beohar, an accomplished Assistant Professor in the Department of Electrical & Electronics Engineering at MIT World Peace University, Pune. With a Master's degree in E&TC Engineering (VLSI and Embedded systems), she brings a wealth of knowledge and expertise from over 15 years of teaching and one year of industrial experience. Prof Beohar has published 9 research papers in reputed international journals and conferences and has attended over 15 conferences and workshops. Her outstanding contributions have been recognized by the Bharatratna Maulana Azad Social, Education and Sports Association, Pune, who awarded her the coveted \"Ideal Teacher Award\" on 5th Sept 2022. In addition to her academic pursuits, Prof Beohar has also been selected as a \"Volunteer\" for the UNESCO Body & Mind Wellness Club in Maryland, USA, where she will assist with social media, organize events, and deliver meditation sessions.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rasika-ramendra-beohar"
     },
@@ -7169,6 +7475,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ratna-vadra",
     "name": "Dr. Ratna Vadra",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -7180,7 +7487,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ratna-vadra.webp",
     "research": "",
-    "summary": "Dr. Ratna Vadra is currently working as an Associate Professor in the Department of Business - School of Business under Division-2 (Faculty of Business and Leadership), Dr. Vishwanath Karad MIT World Peace University, Pune.",
+    "summary": "Dr. Ratna Vadra is currently working as an Associate Professor in the Department of Business - School of Business under Division-2 (Faculty of Business and Leadership), Dr. Vishwanath Karad MIT World Peace University, Pune. Prior to MIT World Peace University she was an Assistant Professor in the area of Economics and Sustainability, Institute of Management Technology, Ghaziabad. With over 19 years of teaching and research experience, she's a true veteran in management education. She has a Ph.D. in Economics with specialization in Public Finance, and an M.A. (Economics) from Aligarh Muslim University, Aligarh. She has also qualified UGC (NET) exam in Economics. She's a prolific researcher with 54 papers published in various international/national journals, contributed to book chapters in various management books, and also published 13 Case Studies in Business Management. She has presented her research work in 37 plus conferences globally. She has also attended Faculty Development Programme in the area of International Business at Georgia State University, Atlanta, Georgia, and at Darla Moore School of Business, University of South Carolina, USA. Her areas of teaching and research interest are Macroeconomics, Public Finance, International Trade, International Business, Multinational Strategy, Case study teaching, and writing.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ratna-vadra"
     },
@@ -7189,6 +7496,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ratnadip-rajabhau-joshi",
     "name": "Dr. Ratnadip Rajabhau Joshi",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -7202,7 +7510,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ratnadip-rajabhau-joshi.webp",
     "research": "1. Affordable production of Green Hydrogen through thermochemical as well as bio-digetion routes 2. BioCNG from mixed agro-waste, particularly from millet crop residues 3. Delayed release Smart Bio-fertilizers 4. Health devices for Green Hydrogen and Oxygen concentrator 5. Biodegradation of pharmaceutical process effluents",
-    "summary": "\"Dr. Ratnadip R. Joshi is a highly accomplished academic administrator with a wealth of experience in various key roles. As Associate Dean for Quality Assurance and Chief Coordinator for the Internal Quality Assurance Cell (IQAC), Dr. Joshi has led the successful NBA accreditation of nine engineering programs. He has also played a pivotal role in devising and implementing mechanisms for Quality Management Systems (QMS) and Learning Management Systems (LMS) for professional courses.",
+    "summary": "\"Dr. Ratnadip R. Joshi is a highly accomplished academic administrator with a wealth of experience in various key roles. As Associate Dean for Quality Assurance and Chief Coordinator for the Internal Quality Assurance Cell (IQAC), Dr. Joshi has led the successful NBA accreditation of nine engineering programs. He has also played a pivotal role in devising and implementing mechanisms for Quality Management Systems (QMS) and Learning Management Systems (LMS) for professional courses. Dr. Joshi's impressive track record of academic administration includes the establishment of a private university, where he has framed rules, regulations, and ordinances, designed university frameworks and policies, and upgraded academic and research standards. He has also spearheaded innovation initiatives that address societal needs and increase the visibility of the organization. Dr. Joshi is an esteemed international advisor, having served as a consultant to Noe21-cBalance Geneva and CCE Finland. His extensive experience and expertise in academic administration make him a highly respected figure in the field.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ratnadip-rajabhau-joshi"
     },
@@ -7211,6 +7519,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ravi-nikam",
     "name": "Mr. Ravi Nikam",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/media-and-communication",
     "departmentName": "Department of Media and Communication",
@@ -7234,6 +7543,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rehan-deshmukh",
     "name": "Dr. Rehan Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -7245,7 +7555,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rehan-deshmukh.webp",
     "research": "Electrochemical and optical biosensors for pathogen detection, surface functionalisation, nanomaterials, PCR-based sensing, and enzyme technology.",
-    "summary": "Dr. Rehan Deshmukh is a Mentor and Assistant Professor at the Dept. of Biosciences and Technology, MIT WPU. He earned his Ph.D. from BITS Pilani in 2020, bolstered by the ICMR Senior Research Fellowship awarded in 2018. During his postdoctoral tenure at IIT Madras, Dr. Rehan worked on the development of an optical assay for amplification-free detection of SARS-CoV-2 using fiber-optic U-bent probes.",
+    "summary": "Dr. Rehan Deshmukh is a Mentor and Assistant Professor at the Dept. of Biosciences and Technology, MIT WPU. He earned his Ph.D. from BITS Pilani in 2020, bolstered by the ICMR Senior Research Fellowship awarded in 2018. During his postdoctoral tenure at IIT Madras, Dr. Rehan worked on the development of an optical assay for amplification-free detection of SARS-CoV-2 using fiber-optic U-bent probes. Dr. Rehan's research spans electrochemical and optical biosensors, with a focus on pathogen detection, disease diagnostics, nanoelectrochemical/optical applications, and surface modifications for sensors. His scholarly output includes 15 publications, a patent, and three book chapters, with key contributions published in Chemical Society Reviews, Bioresource Technology, and Analyst. In addition to his research, Dr. Rehan serves as a reviewer for prestigious journals like PLOS One, Natural Product Research, and Microbial Cell Factories, etc. He is currently editing a special issue on \"Biosensors for Detection of Waterborne Pathogens: Recent Advances and Future Horizons\" for Frontiers in Water Journal. Dr. Rehan’s involvement in industry consultancy projects underscores his commitment to turning research into practical solutions. By collaborating with industry partners, he applies his expertise in biosensors and surface chemistry to address real-world challenges. These projects allow him to directly impact industrial processes, enhance product development, and ensure his research drives tangible innovation beyond academia. Dr. Rehan can be reached at rehan.deshmukh@mitwpu.edu.in for research and collaboration.https://rehandeshmukh.wixsite.com/website",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rehan-deshmukh",
       "linkedin": "https://in.linkedin.com/in/imrehan",
@@ -7257,6 +7567,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "renuka-amit-mane",
     "name": "Mrs. Renuka Amit Mane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7279,6 +7590,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "riddhi-gaurav-panchal",
     "name": "Dr. Riddhi Gaurav Panchal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -7299,6 +7611,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rohini-revansiddappa-pujari",
     "name": "Dr. Rohini Revansiddappa Pujari",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -7310,7 +7623,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rohini-revansiddappa-pujari.webp",
     "research": "Neuropharmacology, Alzheimer’s disease, Cerebral ischemia Cancer chemotherapy, Toxicology, Immunopharmacology, Metabolic syndrome",
-    "summary": "Dr. Rohini R. Pujari is currently working as an Assistant Professor at Sc earned her PhD from Savitribai Phule Pune University in 2020. She completed her post-graduation from AISSMS College of Pharmacy affiliated with the same university in 2009 and graduation (B. Pharm.) from Bharati Vidyapeeth’s Poona college of Pharmacy, Pune in 2007. Additionally, she received a D. Pharm. from the Institute of Pharmacy, Bharati Vidyapeeth, Pune affiliated with MSBTE and secured the third rank in Maharashtra. With over 16 years of teaching and 10 years of research experience, she has cracked GATE 2007 with an All India Ranking of 209.",
+    "summary": "Dr. Rohini R. Pujari is currently working as an Assistant Professor at Sc earned her PhD from Savitribai Phule Pune University in 2020. She completed her post-graduation from AISSMS College of Pharmacy affiliated with the same university in 2009 and graduation (B. Pharm.) from Bharati Vidyapeeth’s Poona college of Pharmacy, Pune in 2007. Additionally, she received a D. Pharm. from the Institute of Pharmacy, Bharati Vidyapeeth, Pune affiliated with MSBTE and secured the third rank in Maharashtra. With over 16 years of teaching and 10 years of research experience, she has cracked GATE 2007 with an All India Ranking of 209. Dr. Pujari has been a principal investigator for a research project funded by BCUD, Savitribai Phule Pune University and has received a research grant of 2.2 Lakhs. She has contributed to various research areas such as Neuropharmacology, Alzheimer’s disease, Cerebral ischemia Cancer chemotherapy, Toxicology, Immunopharmacology, Metabolic syndrome and more. She has over 70 review and research publications in several standard national and international journals, including 46 indexed in Scopus and 18 indexed in Web of Science. Furthermore, she has authored 15 book chapters and 04 textbooks. Dr. Pujari has presented her research work at various national and international conferences (40 presentations) and is actively involved in the research activities of her institution. Dr. Pujari has guided 12 M. Pharm. (Pharmacology) students and currently guiding 3 PhD students. Her current Google Scholar H-index is 14 (I10 index- 16) with 807 citations. Additionally, she is handling the portfolio of overall PhD coordinator of School of Health Sciences and Technology.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rohini-revansiddappa-pujari",
       "scholar": "https://scholar.google.com/citations?hl=en&user=wsk1XzgAAAAJ&view_op=list_works&sortby=pubdate",
@@ -7322,6 +7635,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rohit-kumar-sharma",
     "name": "Dr. Rohit Kumar Sharma",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -7333,7 +7647,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rohit-kumar-sharma.webp",
     "research": "",
-    "summary": "Dr. Rohit Kumar Sharma is currently working as Associate Professor at School of Business, Dr. Vishwanath Karad MIT World Peace University. Previously he was associated with Centre for Management Studies Dibrugarh University, The Assam Kaziranga University, Amity University Mumbai campus, Adamas University, Kolkata and Christ University Pune Lavasa campus. He has a total of 17 years of teaching and academic administration experience. He has completed his master’s in finance and Ph.D. from Dibrugarh University.",
+    "summary": "Dr. Rohit Kumar Sharma is currently working as Associate Professor at School of Business, Dr. Vishwanath Karad MIT World Peace University. Previously he was associated with Centre for Management Studies Dibrugarh University, The Assam Kaziranga University, Amity University Mumbai campus, Adamas University, Kolkata and Christ University Pune Lavasa campus. He has a total of 17 years of teaching and academic administration experience. He has completed his master’s in finance and Ph.D. from Dibrugarh University. He has published 1 book and published many research papers including Scopus indexed research papers and have keen interest in academic administration. He has also headed the Planning and Monitoring Department at Adamas University as Director. His research interest is in the area of Behavioural Finance.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rohit-kumar-sharma"
     },
@@ -7342,6 +7656,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rohit-raghunath-ghadge",
     "name": "Dr. Rohit Raghunath Ghadge",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -7353,7 +7668,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rohit-raghunath-ghadge.webp",
     "research": "Al/ML applications in mechanical engineering, Composite materials & structures,Optimization techniques, Design Thinking , Product design",
-    "summary": "Dr. Rohit Ghadge is a distinguished professional who has made a significant impact in the field of Mechanical Engineering. Dr. Ghadge is a faculty member at the School of Mechanical Engineering, where he brings his rich experience and knowledge to educate and inspire the next generation of mechanical engineers.",
+    "summary": "Dr. Rohit Ghadge is a distinguished professional who has made a significant impact in the field of Mechanical Engineering. Dr. Ghadge is a faculty member at the School of Mechanical Engineering, where he brings his rich experience and knowledge to educate and inspire the next generation of mechanical engineers. Dr. Ghadge is a seasoned professional with a well-rounded career that spans over two decades. He has honed his skills and expertise in Mechanical Engineering through a combination of industrial and academic experience. With 3.5 years of industry experience and around 20 years of teaching experience, Dr. Ghadge is a well-respected figure in the field. As an educator, Dr. Ghadge has dedicated himself to imparting knowledge and skills to students, nurturing their potential and helping them grow as engineers. He is passionate about creating a stimulating learning environment that encourages students to explore and innovate, equipping them with the tools they need to excel in their careers. In addition to his extensive teaching experience, Dr. Ghadge also has hands-on experience in the industry. This practical experience has given him a unique perspective on the field of Mechanical Engineering, allowing him to bring real-world examples and insights to his classroom teaching. Overall, Dr. Ghadge's wealth of knowledge, expertise, and experience make him a valuable asset to the School of Mechanical Engineering and an inspiring teacher and mentor to his students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rohit-raghunath-ghadge"
     },
@@ -7362,6 +7677,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rohit-rajabhau-salgude",
     "name": "Dr. Rohit Rajabhau Salgude",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -7373,7 +7689,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rohit-rajabhau-salgude.jpg",
     "research": "",
-    "summary": "Dr. Rohit Salgude is an Assistant Professor in the Department of Civil Engineering at MIT World Peace University (MIT-WPU), Pune, with over 14 years of academic experience. He is actively engaged in teaching, research, and academic administration. He completed his Master’s degree in Construction and Management in 2011 and earned his Ph.D. in Transportation Engineering in 2022 from Savitribai Phule Pune University, Pune. Dr. Salgude teaches both undergraduate and postgraduate courses and has published several research papers in reputed international journals and conference proceedings. He is a recipient of two Best Paper Awards at international conferences and has served as a reviewer for various journals and conferences.",
+    "summary": "Dr. Rohit Salgude is an Assistant Professor in the Department of Civil Engineering at MIT World Peace University (MIT-WPU), Pune, with over 14 years of academic experience. He is actively engaged in teaching, research, and academic administration. He completed his Master’s degree in Construction and Management in 2011 and earned his Ph.D. in Transportation Engineering in 2022 from Savitribai Phule Pune University, Pune. Dr. Salgude teaches both undergraduate and postgraduate courses and has published several research papers in reputed international journals and conference proceedings. He is a recipient of two Best Paper Awards at international conferences and has served as a reviewer for various journals and conferences. During his academic career, he has guided more than 35 postgraduate dissertations and is currently supervising two Ph.D. research scholars. Presently, he serves as the Alumni Coordinator and B. Tech Coordinator and is actively contributing to NAAC-related activities at the departmental level. He has also worked as a Co-Convener for the national-level NIRMITEE event and has coordinated several national-level immersion programs and industrial visits.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rohit-rajabhau-salgude",
       "scholar": "https://scholar.google.com/citations?user=ruS5QGUAAAAJ&hl=en"
@@ -7383,6 +7699,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rucha-deshpande",
     "name": "Mrs. Rucha Deshpande",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -7394,7 +7711,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rucha-deshpande.webp",
     "research": "Generative AI, User Experience, Design Education",
-    "summary": "Rucha Deshpande is a seasoned design educator with over 14 years of experience in design strategy, user experience, and creative thinking. She has worked with leading brands such as Lifestyles and Reliance Trends as a Concept Designer for retail store experiences before transitioning into academia with institutions including the Symbiosis Institute of Design and MIT-WPU, Pune. An alumna of NID Ahmedabad and a certified UX Designer from IIT Delhi, she brings a strong foundation in user-centred design and cross-functional collaboration.",
+    "summary": "Rucha Deshpande is a seasoned design educator with over 14 years of experience in design strategy, user experience, and creative thinking. She has worked with leading brands such as Lifestyles and Reliance Trends as a Concept Designer for retail store experiences before transitioning into academia with institutions including the Symbiosis Institute of Design and MIT-WPU, Pune. An alumna of NID Ahmedabad and a certified UX Designer from IIT Delhi, she brings a strong foundation in user-centred design and cross-functional collaboration. Rucha is currently pursuing her PhD at IIT Hyderabad, where she continues to thrive at the intersection of design, user experience, and innovation. Known for her adaptability, empathy, and strategic thinking, she consistently contributes to shaping meaningful learning experiences and future-ready design frameworks.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rucha-deshpande",
       "linkedin": "https://www.linkedin.com/in/rucha-arundhati-deshpande-351341b/"
@@ -7404,6 +7721,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ruchi-rani",
     "name": "Ms. Ruchi Rani",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7415,7 +7733,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/ruchi-rani.webp",
     "research": "",
-    "summary": "Ruchi Rani received her Bachelor’s degree in Computer Science Engineering from Kurukshetra University, Kurukshetra in 2008. She received her Master’s degree from Maharshi Dayanand University, Haryana, India in 2012. Currently, she is pursuing her PhD degree from the Department of Computer Science Engineering, Indian Institute of Information Technology, Kottayam, Kerala.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ruchi-rani"
     },
@@ -7424,6 +7742,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ruhi-ajit-patankar",
     "name": "Mrs. Ruhi Ajit Patankar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -7448,6 +7767,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rupal-chandulal-shroff",
     "name": "Dr. Rupal Chandulal Shroff",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -7470,6 +7790,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rupali-kanade",
     "name": "Dr. Rupali Kanade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -7490,6 +7811,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rupali-ram-sonolikar",
     "name": "Dr. Rupali Ram Sonolikar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -7512,6 +7834,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "rupali-sandip-kute",
     "name": "Dr. Rupali Sandip Kute",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -7523,7 +7846,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/rupali-sandip-kute.webp",
     "research": "Computer Vision, AI ML",
-    "summary": "Dr. Rupali Kute is an accomplished assistant professor at the School of Electronics and Communication. She completed her undergraduate studies at the Maharashtra Institute of Technology and earned her master's and doctorate degrees in electronics and communication from the College of Engineering Pune and SPPU Pune, respectively. Dr. Kute has published numerous papers in prestigious journals and book chapters, and presented several research papers at national and international conferences. She also holds two Austrian patents and has recently completed a consulting project on \"AI-based retail product detection and identification for unmanned vending machines.\"",
+    "summary": "Dr. Rupali Kute is an accomplished assistant professor at the School of Electronics and Communication. She completed her undergraduate studies at the Maharashtra Institute of Technology and earned her master's and doctorate degrees in electronics and communication from the College of Engineering Pune and SPPU Pune, respectively. Dr. Kute has published numerous papers in prestigious journals and book chapters, and presented several research papers at national and international conferences. She also holds two Austrian patents and has recently completed a consulting project on \"AI-based retail product detection and identification for unmanned vending machines.\" Her research interests are primarily in image reconstruction, machine learning, and object detection using deep learning. At the school level, she has held various administrative responsibilities, including project coordinator and final year coordinator. She is currently in charge of managing research activities and has also conducted a workshop on data science and visualization for students. Her teaching expertise includes machine learning, data science, data structures and algorithms, digital signal processing, Python programming, and R programming.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/rupali-sandip-kute",
       "scholar": "https://scholar.google.com/citations?hl=en&user=IrWxOggAAAAJ&view_op=list_works&gmla=AJsN-F5HyU6fKOvFySboh5DbfeAglRLET8ZrZufHFQcHb0vkvwFFZueHE9ELPnuLbD2fq_02acHeYEhkS94RXjrH5tV95d3Hzjoe-F-3JPq3O_Zg5Cl4XQA",
@@ -7534,6 +7857,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-arun-kulkarni",
     "name": "Dr. Sachin Arun Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Associate Professor & Head of Department",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -7545,7 +7869,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sachin-arun-kulkarni.webp",
     "research": "Nanomaterials and nanocomposites: synthesis, characterisation, and applications.",
-    "summary": "Dr. Sachin Kulkarni is a distinguished academician with a Ph.D. in Physics, specializing in nanomaterials. With an impressive career spanning over 24 years in teaching and 5 years in industry, he brings a rare blend of academic excellence and practical insight to his profession. Currently serving as an Associate Professor and Head of the Department of Physics, he has played a pivotal role in shaping both curriculum and research culture.",
+    "summary": "Dr. Sachin Kulkarni is a distinguished academician with a Ph.D. in Physics, specializing in nanomaterials. With an impressive career spanning over 24 years in teaching and 5 years in industry, he brings a rare blend of academic excellence and practical insight to his profession. Currently serving as an Associate Professor and Head of the Department of Physics, he has played a pivotal role in shaping both curriculum and research culture. He has authored more than 15 research articles published in reputed peer-reviewed journals and conference proceedings, reflecting his strong commitment to scholarly work. At present, he is actively leading a seed-funded research project, contributing to advancements in his field of expertise. Dr. Kulkarni’s dedication, integrity, and passion for teaching have earned him the prestigious Ideal Teacher Award. He has also demonstrated exceptional leadership on the global stage by serving as Chairman of an international conference jointly organized by IOP (U.K.) and SPIE (U.S.A.). His contributions to academia, research, and academic administration make him a respected figure in the scientific community and an inspiration to students and colleagues alike. Engineering magnetite (Fe 3 O 4 ) nanoparticles: Controlled synthesis, surface functionalization, and multidisciplinary technological applications: A Review, Progress in Crystal Growth and Characterization of Materials. 72 (2026) 100698. https://doi.org/10.1016/j.pcrysgrow.2026.100698 Synthesis and In Silico Evaluation of Novel 1,2,3-Triazole Derivatives as Antibacterial Agents with Predicted Binding Affinity for Penicillin-Binding Proteins of Methicillin- Resistant Staphylococcus aureus. Journal of Molecular Structure.1362 (2026) 145686. 1362 (2026) 145686 . https://doi.org/10.1016/j.molstruc.2026.145686 Al 3+ Impregnated photolithograophically fabricated sensor material La 2-x Al x ZnO 4: structural investigation and acute gas sensing study for Hazardous air pollutant gases and humidity assay. Springer- Journal of Sensing and Imaging, 25(1), 36,2024. https://link.springer.com/article/10.1007/s11220-024-00488-z Gap Solitons supported by Photonic Lattices in Photovoltaic Crystals , Frontiers in Optics: Proceedings Frontiers in Optics + Laser Science 2023, FiO, LS 2023. Antibacterial Performance of Synthesized Superparamagnetic Fe3O4@TiO2 Nanoparticles .IOP Conf. Series: Materials Science and Engineering 1221 (2022) 012049 doi:10.1088/1757-899X/1221/1/012049 Synthesis and Characterization of Superparamagnetic Fe3O4@SiO2 Nanoparticles, Journal of the Korean Chemical Society. 58 (2014) 1. Effect of synthesis route on the structural, optical and magnetic properties of Fe3O4 nanoparticles Ceramics International. 40 (2014) 1945–1949.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sachin-arun-kulkarni",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58075980100",
@@ -7557,6 +7881,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-bhimrao-bhoite",
     "name": "Dr. Sachin Bhimrao Bhoite",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -7581,6 +7906,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-harle",
     "name": "Dr. Sachin Harle",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -7604,6 +7930,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-naik",
     "name": "Dr. Sachin Naik",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -7627,6 +7954,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-prakash-srivastava",
     "name": "Dr. Sachin Prakash Srivastava",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -7647,6 +7975,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-ratnakar-deshmukh",
     "name": "Mr. Sachin Ratnakar Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -7667,6 +7996,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sachin-shivaji-gunjal",
     "name": "Dr. Sachin Shivaji Gunjal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -7689,6 +8019,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "saee-omkar-sumant",
     "name": "CA Saee Omkar Sumant",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -7709,6 +8040,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sagar-gothkhindikar",
     "name": "Mr. Sagar Gothkhindikar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -7720,7 +8052,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sagar-gothkhindikar.webp",
     "research": "Visual Communication",
-    "summary": "Dr. Sagar Gotkhindikar has over all 30+ Years of Advertising & Industrial Photography and Film making Experience & 13+ Years of Teaching experience. Applied Art Education (GD Art) from Abhinav kala Mahavidyalaya, MFA From Dr. Babasaheb Ambedkar Marathwada University and Phd from Swami Vivekanand University Sagar Madhya Pradesh. Currently Working as Assistant Professor at Department of Visual Arts School of Design MIT-WPU Kothrud.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sagar-gothkhindikar",
       "orcid": "https://orcid.org/0009-0000-5711-8921"
@@ -7730,6 +8062,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sagar-sunil-kolapkar",
     "name": "Mr. Sagar Sunil Kolapkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -7752,6 +8085,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "saket-ravindra-yeolekar",
     "name": "Dr. Saket Ravindra Yeolekar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Coordinator(E & CE)",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -7762,8 +8096,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/electronics-and-electrical-engineering": "Department of Electrical and Electronics Engineering"
     },
     "photoPath": "./assets/campus/saket-ravindra-yeolekar.webp",
-    "research": "Power Electronics, Electric Machines, Robotics, Electric Vehicles Technologies, and Renewable Energy Systems.",
-    "summary": "Dr. Saket Yeolekar completed his Diploma from Bharati Vidyapeeth, Pune. He was graduated in Electrical Engineering from Government College of Engineering under Pune University in 1997 then received M. E. Electrical (Power System) from same institute in 2004. He has completed Doctor of Philosophy (Electrical Engineering) from R.S.T.M. Nagpur University in 2017.",
+    "research": ": Power Electronics, Electric Machines, Robotics, Electric Vehicles Technologies, and Renewable Energy Systems.",
+    "summary": "Dr. Saket Yeolekar completed his Diploma from Bharati Vidyapeeth, Pune. He was graduated in Electrical Engineering from Government College of Engineering under Pune University in 1997 then received M. E. Electrical (Power System) from same institute in 2004. He has completed Doctor of Philosophy (Electrical Engineering) from R.S.T.M. Nagpur University in 2017. Currently, he is working as Program Co-ordinator, and Associate Professor in the Department of Electrical & Electronics Engineering. Prior to this, he has his experience in teaching with AISSMS College of Engineering, Pune and Industrial experience in Company Crompton Greaves Ltd. Dr. Yeolekar has 25 years of experience in teaching and 1.5 years of experience from industry. He is having his expertise in the field of Power Electronics, Electrical Machines, Renewable Energy, Robotics, and Electric Vehicles. He is actively associated with Centre of Excellence eMobility. He is working as an instructor for MIT Tech Team since 2006. Under his guidance ROBOCON team has represented India in International Contest held in Egypt, Hong Kong, and Vietnam. He was a member of technical committee of ROBOCON for international contest held in India. He has also delivered the expert talk at various Institutes like CIRT, AISSMS, Bharati Vidyapeeth, & D.Y. Patil Engineering College. He has also invited as a guest faculty for MIT School of Telecom, MIT School of Design, MIT MAE and MANET. He is working as a treasurer for Indian Society of Lighting Engineers (ISLE), Mumbai State centre and earlier as treasurer for Pune Local Chapter. He has also worked as a consultant in UK Government project on drone delivery worth Rs. 1.6 Lakhs.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/saket-ravindra-yeolekar",
       "scholar": "https://scholar.google.com/citations?view_op=new_articles&hl=en&imq=Saket+Yeolekar#",
@@ -7777,6 +8111,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "saloni-kumar",
     "name": "Dr. Saloni Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/clinical-sciences",
     "departmentName": "Department of Clinical Sciences",
@@ -7800,6 +8135,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "samarth-dilip-patwardhan",
     "name": "Dr. Samarth Dilip Patwardhan",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -7811,7 +8147,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/samarth-dilip-patwardhan.jpg",
     "research": "",
-    "summary": "Samarth D. Patwardhan serves as Head of Centre for Subsea Engineering Research (CSER), and Professor in the Department of Petroleum Engineering at MITWPU, Pune, India. His research interests include production and reservoir engineering, enhanced oil recovery, HSE, as well as applying data analytics to the oil and gas domain. Through research grants he has procured; he has been instrumental in revamping the reservoir characterization laboratory and upgrading the simulation lab with industry-benchmarked software tools at the department. He is involved in collaborating with industry to further the academic and research partnerships for the recently commissioned CSER lab, a one-of-its-kind lab established through a common shared vision with Aker Solutions. Further, his current efforts are also directed towards setting up a stateof-the-art research lab for testing various characteristics of Nano-dusts, which span across industries. The lab is jointly funded by the Department of Science and Technology (DST), Government of India (GoI), and Techniche Engineering Private Limited (TEPL), an HSE company based out of Pune, India. He works closely with his undergraduate, graduate and doctorate students on topics spanning from characterizing various rock types using data analytics, to enhanced oil recovery, and applying computational fluid dynamics to problems being faced in the oil and gas industry. He serves as a reviewer on multiple prestigious peer-reviewed journals and funding agencies and is involved in collaborative work on research proposals on multiple platforms, including academia and industry, both at national and international levels. He is the recipient of the 2019 APJ Abdul Kalam MIT WPU Research and Innovation Award, and the SPE 2022 Regional Distinguished Achievement Award for Petroleum Engineering Faculty for South Asia and Pacific Region. Samarth serves as a Member on the Enhanced Recovery Committee (ERC), formed under the Ministry of Petroleum and Natural Gas (MoPNG), Government of India (GoI), Director on the SPE International Mumbai Section board, Faculty Advisor to the MITWPU – SPE Student Chapter, and a Member on the Energy4Me committee formed for South Asia, under SPE International. Apart from serving as a SPE Student Chapter Faculty Advisor since 2014, he has volunteered for multiple activities within SPE, including acting in the capacity of a judge for Regional Student Paper Contest (RSPC) for all categories (U.G., P.G., and Ph.D.) since 2017, as well as volunteering under SPE Cares initiative. Through industry support, he has been instrumental in organizing the RSPC at the MITWPU campus in 2014, as well as planning and organizing multiple technical workshops, guest lectures and field visits for student members, keeping up with SPE’s mission of disseminating and exchanging knowledge concerning oil and gas industry, to build technical and professional competence in the next generation workforce, thereby bridging the gap between industry and academics.",
+    "summary": "Samarth D. Patwardhan serves as Head of Centre for Subsea Engineering Research (CSER), and Professor in the Department of Petroleum Engineering at MITWPU, Pune, India. His research interests include production and reservoir engineering, enhanced oil recovery, HSE, as well as applying data analytics to the oil and gas domain. Through research grants he has procured; he has been instrumental in revamping the reservoir characterization laboratory and upgrading the simulation lab with industry-benchmarked software tools at the department. He is involved in collaborating with industry to further the academic and research partnerships for the recently commissioned CSER lab, a one-of-its-kind lab established through a common shared vision with Aker Solutions. Further, his current efforts are also directed towards setting up a stateof-the-art research lab for testing various characteristics of Nano-dusts, which span across industries. The lab is jointly funded by the Department of Science and Technology (DST), Government of India (GoI), and Techniche Engineering Private Limited (TEPL), an HSE company based out of Pune, India. He works closely with his undergraduate, graduate and doctorate students on topics spanning from characterizing various rock types using data analytics, to enhanced oil recovery, and applying computational fluid dynamics to problems being faced in the oil and gas industry. He serves as a reviewer on multiple prestigious peer-reviewed journals and funding agencies and is involved in collaborative work on research proposals on multiple platforms, including academia and industry, both at national and international levels. He is the recipient of the 2019 APJ Abdul Kalam MIT WPU Research and Innovation Award, and the SPE 2022 Regional Distinguished Achievement Award for Petroleum Engineering Faculty for South Asia and Pacific Region. Samarth serves as a Member on the Enhanced Recovery Committee (ERC), formed under the Ministry of Petroleum and Natural Gas (MoPNG), Government of India (GoI), Director on the SPE International Mumbai Section board, Faculty Advisor to the MITWPU – SPE Student Chapter, and a Member on the Energy4Me committee formed for South Asia, under SPE International. Apart from serving as a SPE Student Chapter Faculty Advisor since 2014, he has volunteered for multiple activities within SPE, including acting in the capacity of a judge for Regional Student Paper Contest (RSPC) for all categories (U.G., P.G., and Ph.D.) since 2017, as well as volunteering under SPE Cares initiative. Through industry support, he has been instrumental in organizing the RSPC at the MITWPU campus in 2014, as well as planning and organizing multiple technical workshops, guest lectures and field visits for student members, keeping up with SPE’s mission of disseminating and exchanging knowledge concerning oil and gas industry, to build technical and professional competence in the next generation workforce, thereby bridging the gap between industry and academics. Over several years, he has inspired student members to undertake activities like tree plantations, donation drives, and cleanliness drives under the banner of SPE Cares, instilling in them a feeling of caring for the planet, and giving back to both nature and society. Under his guidance, MITWPU SPE Student Chapter carried out the first ever “Pink Energy4Me” drive for female high school students in Pune and Mumbai, and the largest ever Energy4Me drive, which was appreciated in the form of a special mention in the SPE publication “The Way Ahead”. This led to a positive impact of having generated curiosity and interest within the high school students, especially females, in considering Petroleum Engineering and upstream oil and gas industry as a possible career choice. His leadership and involvement have led to the MITWPU Student Chapter winning both the SPE Gold as well as Outstanding Awards multiple times. Prior to joining academics in India, he has worked with Schlumberger Technology Corporation, both in the U.S., as well as in India, in various roles including consulting and well services. Samarth holds a Bachelors in Mechanical Engineering from University of Pune, a Masters in Engineering Management from University of Missouri-Rolla, a Masters in Petroleum Engineering from University of Tulsa, and a Doctorate in Petroleum Engineering from Indian Institute of Technology Madras.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/samarth-dilip-patwardhan"
     },
@@ -7820,6 +8156,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "samidha-anand-jawade",
     "name": "Dr. Samidha Anand Jawade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -7840,6 +8177,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "samuel-jacob-kuruvilla",
     "name": "Dr. Samuel Jacob Kuruvilla",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -7851,7 +8189,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/samuel-jacob-kuruvilla.webp",
     "research": "Politics of the Middle EAST, International Relations, Political Theory, Indian Foreign Policy",
-    "summary": "Dr. Samuel Jacob Kuruvilla is an Associate Professor at the MIT-WPU School of Liberal Arts. He completed his BA, majoring in Indian History (with minors in Economics & Political Science) from CMS College, Kottayam, followed by an MA in Politics & International Relations from the School of International Relations & Politics, Mahatma Gandhi University, Kottayam. He pursued his M.Phil in Diplomacy at Jawaharlal Nehru University (JNU), New Delhi, and obtained his Ph.D. in Religion & Politics from the University of Exeter, United Kingdom. Previously, he served as a Post-Doctoral Fellow at the School of International Relations and Politics of Mahatma Gandhi University, Kottayam, Kerala. Additionally, he received his Doctorate in Politics and Theology from the University of Exeter in the United Kingdom.",
+    "summary": "Dr. Samuel Jacob Kuruvilla is an Associate Professor at the MIT-WPU School of Liberal Arts. He completed his BA, majoring in Indian History (with minors in Economics & Political Science) from CMS College, Kottayam, followed by an MA in Politics & International Relations from the School of International Relations & Politics, Mahatma Gandhi University, Kottayam. He pursued his M.Phil in Diplomacy at Jawaharlal Nehru University (JNU), New Delhi, and obtained his Ph.D. in Religion & Politics from the University of Exeter, United Kingdom. Previously, he served as a Post-Doctoral Fellow at the School of International Relations and Politics of Mahatma Gandhi University, Kottayam, Kerala. Additionally, he received his Doctorate in Politics and Theology from the University of Exeter in the United Kingdom. Dr. Kuruvilla's research interests primarily focus on West Asian Politics, the Israel-Palestine Conflict, and Indian Foreign Policy. His teaching experience encompasses Political Thought, Theory & International Relations, as well as various Area studies courses at both the Undergraduate & Postgraduate levels. He held the position of Visiting Fellow at the Manohar Parikkar Centre for Defense Studies and Analyses in New Delhi during the period January-April 2012. His life ambition is to write a history of the world from the perspective of the Global South. Dr. Kuruvilla has over 10 years of experience as an Assistant Professor of Political Science at the University of Kerala and over 10 years of separate experience as an M.Phil/Ph.D/Post-Doctoral Researcher in various reputed universities in India & the United Kingdom.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/samuel-jacob-kuruvilla",
       "scholar": "https://scholar.google.com/citations?user=ALS9h4IAAAAJ&hl=en",
@@ -7862,6 +8200,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sandeep-chandrakant-potnis",
     "name": "Dr. Sandeep Chandrakant Potnis",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -7873,7 +8212,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sandeep-chandrakant-potnis.webp",
     "research": "",
-    "summary": "Prof. Sandeep Potnis has more than 35 years of teaching and industrial experience. He is Head of Tunnel Engineering program at MIT WPU. Seven research scholars are pursuing Ph.D. in Tunnel Engineering under his guidance. Three scholars have completed their Ph.D. under the guidance of Dr. Potnis. More than 50 Research papers are published in reputed journals.",
+    "summary": "Prof. Sandeep Potnis has more than 35 years of teaching and industrial experience. He is Head of Tunnel Engineering program at MIT WPU. Seven research scholars are pursuing Ph.D. in Tunnel Engineering under his guidance. Three scholars have completed their Ph.D. under the guidance of Dr. Potnis. More than 50 Research papers are published in reputed journals. Dr. Potnis conducted six months ‘Certificate Programs in Tunnel Engineering’ in collaboration with Montan University, Leoben, Austria. (First of its kind in India) since 2017. He was instrumental in developing the unique M.Tech.(Tunnel Engineering) program at MITWPU, Pune. This program is endorsed by International Tunnelling Association (ITA). Only five programs in the world are presently endorsed by ITA. (https://about.ita-aites.org/wg-committees/ita-cet/master-courses). Dr. Potnis has been providing consultancy services to various Tunnel Projects such as Pune Metro TBM and NATM Tunnel, NATM Tunnel and Road Projectat Package XVII, Vadodara Mumbai Express Way, Bhoj and Morbe. He has provided satisfactory solutions to control the overcut and also for improving the shotcrete quality. Dr. Potnis is Member of Governing Council of Tunnelling Association of India (TAI), New Delhi. Dr. Potnis is Member of Executive Council of Indian Society for Rock Mechanics and Tunnelling Technology (ISRMTT), New Delhi. Dr Potnis is member of Committee of Underground Space of International Tunnelling Association (ITACUS). He is also Member of Steering Board of ITA Committee for Education and Training (ITACET). Dr. Potnis is renowned Tunnel Expert and is associated with various tunnel projects in India. Dr. Potnis has been conducting Training Programs on ‘Planning, Design, Construction and Equipment Management for Tunnel Construction works’ for the Officers of Border Road Organisation (BRO) at MIT World Peace University, Pune. Professor Potnis is Member of Scientific Committee of World Tunnel Congress – 2024, Shenzhen, China and World Tunnel Congress – 2025, Stockholm, Sweden. Prof. Potnis is Member of Editorial Board of Journal of Rock Mechanics and Tunnelling Technology (JRMTT). (www.isrmtt.com) He is recipient of 'Best Innovative teacher Award' of Pune University, Pune. He has presented papers in various conferences in India and abroad including Montan University, Leoben, Austria and Stanford University, USA. He is recipient of 'IUCEE Faculty Fellow Award' by Indo-Universal Collaboration for Engineering Education (IUCEE), 2018. He has been awarded Fellowship by Institute of Engineers, India. He has presented more than 15 Research papers in number of World Tunnel Congress (WTC) and other International Tunnel Conferences across the globe. I was instrumental in having Memorandum of Understanding (MoU) between Indian Army and MIT World Peace University, Pune.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sandeep-chandrakant-potnis"
     },
@@ -7882,6 +8221,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sandeep-namdev-dhikale",
     "name": "Dr. Sandeep Namdev Dhikale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor & Peace Studies Coordinator",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -7902,6 +8242,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sandeep-sampatrao-sathe",
     "name": "Mr. Sandeep Sampatrao Sathe",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -7913,7 +8254,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sandeep-sampatrao-sathe.jpg",
     "research": "Corrosion in reinforced concrete, Fiber reinforced concrete, Steel Structures, Pervious Concrete, Ferrocement Technology, Recycled Aggregate Concrete, Concrete with Admixtures and Non-Destructive Testing",
-    "summary": "Dr. Sandeep Sathe is an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He earned his bachelor’s degree in civil engineering from the University of Pune in 2011, followed by a Master’s in Structural Engineering from MIT, Pune in 2013. He was awarded a Ph.D. in 2024, with a specialization in Corrosion in Reinforced Concrete.",
+    "summary": "Dr. Sandeep Sathe is an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He earned his bachelor’s degree in civil engineering from the University of Pune in 2011, followed by a Master’s in Structural Engineering from MIT, Pune in 2013. He was awarded a Ph.D. in 2024, with a specialization in Corrosion in Reinforced Concrete. His research expertise spans a wide array of domains within Civil and Structural Engineering, including Corrosion in Reinforced Concrete Structures, Fiber Reinforced Concrete, Concrete Durability, Concrete with Admixtures, Lightweight and Pervious Concrete, Bituminous (Flexible) and Rigid Pavements, Recycled Aggregate Concrete, Non- Destructive Testing (NDT), Structural Health Monitoring, Retrofitting of Structures, Ferrocement Technology, Geopolymer Concrete, and Sustainable Construction Materials. With over 15 postgraduate research projects guided to completion and three Ph.D. candidates currently under supervision, he has made a consistent contribution to academic mentorship. His scholarly output includes more than 40 research papers indexed in Scopus, Web of Science, and SCI, with 10 appearing in SCIE-indexed international journals. He also holds three patents in the area of Civil and Structural Engineering. Beyond teaching and research, he plays an active role in academic service. He is a reviewer for more than 10 reputed national and international journals, including several SCI-indexed publications, and serves on editorial boards of multiple international journals. His expertise is frequently sought by universities such as Bharati Vidyapeeth Deemed University and Savitribai Phule Pune University, where he serves as an external examiner. He is a Life Member of leading professional organizations, including the Indian Society for Technical Education (ISTE), the Institution of Engineers (India), and the International Geosynthetics Society, and also holds Associate Membership in the Institution of Engineers (India).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sandeep-sampatrao-sathe",
       "scholar": "https://scholar.google.com/citations?user=pR9fd0oAAAAJ",
@@ -7925,6 +8266,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sandhya-mathapati",
     "name": "Dr. Sandhya Mathapati",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -7936,7 +8278,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sandhya-mathapati.webp",
     "research": "",
-    "summary": "Dr. Sandhya Mathapati is working as an Assistant Professor in the Department of Civil Engineering at MIT-WPU, Pune. She has over 19 + years’ academic & industrial experience. She completed her Ph.D. in the Civil Structural Engineering in 2020. She completed her M.E. in Structural Engineering in 2007 and B.E. in Civil Engineering in 2004, from Dr. Babasaheb Ambedkar Marathwada University Aurangabad",
+    "summary": "Dr. Sandhya Mathapati is working as an Assistant Professor in the Department of Civil Engineering at MIT-WPU, Pune. She has over 19 + years’ academic & industrial experience. She completed her Ph.D. in the Civil Structural Engineering in 2020. She completed her M.E. in Structural Engineering in 2007 and B.E. in Civil Engineering in 2004, from Dr. Babasaheb Ambedkar Marathwada University Aurangabad Her key research interests include Structural Engineering, analysis of plates and shells, sustainable construction materials, and non-destructive testing methods. She has served as Subject Chairman for UG and PG courses in Dr. Babasaheb Ambedkar Marathwada University Aurangabad, and is a Life Member of ISTE, IGS and IEI. She published 16+ research papers in SCI/Scopus/WoS/ Google scholar -indexed journals and conferences.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sandhya-mathapati"
     },
@@ -7945,6 +8287,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sandip-navnathrao-palve",
     "name": "Mr. Sandip Navnathrao Palve",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -7966,6 +8309,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sandip-tukaram-chavan",
     "name": "Dr. Sandip Tukaram Chavan",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -7976,8 +8320,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/sandip-tukaram-chavan.webp",
-    "research": "",
-    "summary": "Prof. Sandip T. Chavan is a highly accomplished Mechanical Engineering Professor at Dr. Vishwanath Karad MIT World Peace University, with an impressive 34 years of teaching and research experience. He has served as a member of the academic council of two universities and has been recognized for his outstanding contributions to the field of engineering with several awards, including the GYTI (Gandhian Young Technology Innovation 2016) award and the \"Ideal Teacher Award\" from MAEER's Pune in 2019. He is also the recipient of the \"Outstanding Engineering Services to Society\" award from \"The Institute of Engineers\" (India) Rajasthan State Centre Jaipur and Special Recognition for worthy work in the \"Academic Excellence (Head of the Department)\" category from Institution of Engineers and Fr. Conceicao Rodrigues Institute of Technology, Navi-Mumbai. Research Area Tribology, Design Engineering, Manufacturing Design Publication • Ravindra Kumar and Sandip Chavan, “Numerical and Experimental Investigation of Thermal Behavior for Fast Charging and Discharging of Various 18650 Lithium Batteries of Electric Vehicles”, International Journal of Heat and Technology, Vol. 40, No.6, Dec 2022, pp. 1492-1499 | ISSN 0392876 | Q3: https://doi.org/10.18280/ijht.400618 • Ravindra Kumar and Sandip Chavan, “Thermal Investigation of Cylindrical Lithium-ion Batteries for Different Loading using Experimental and Numerical Techniques”, Journal of The Electrochemical Society, Vol. 169, No.12, Dec 2022 | ISSN 00134651, 19457111 | Q1: DOI 10.1149/1945-7111/aca6a1 • Ravindra Kumar and Sandip Chavan, “Investigation of Thermal Behaviour of Cylindrical Lithium-ion Batteries for Electric Vehicle”, SAE Technical Paper, Sept. 2022 | ISSN 0148-7191 | Q3: Doi: 10.4271/2021-26-0156 • Sunil R. Patil, Sandip T. Chavan, Nitin S. Jadhav, Shivaraj S. Vadgeria, “Effect of Volute Tongue Clearance Variation on Performance of Centrifugal Blower by Numerical and Experimental Analysis”, Proceedings of materials today, Elsevier, with International Conference on Material Processing and Characterization, March 17-19, Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, Telangana, 2017 • Shivaraj S. Vadgeria, Sunil R. Patil, Sandip T.Chavan, “Static and Fatigue Analysis of Lathe spindle for Maximum Cutting Force”, Proceedings of materials today, Elsevier, with International Conference on Material Processing and Characterization, March 17-19, Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, Telangana, 2017 • Chavan S.T. and Ahuja B. B., “Effect of cone angle and length of the slot on the performance of feed slot conical air bearing,” International Journal of Design Engineering, Inderscience Enterprises Ltd.UK., Issue No. 2, Vol. 2.,2009 Google Scholar Link https://scholar.google.com/citations?user=i9ThOOQAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57200815933 Orcid Link https://orcid.org/0000-0001-7167-3059",
+    "research": "Tribology, Design Engineering, Manufacturing Design Publication • Ravindra Kumar and Sandip Chavan, “Numerical and Experimental Investigation of Thermal Behavior for Fast Charging and Discharging of Various 18650 Lithium Batteries of Electric Vehicles”, International Journal of Heat and Technology, Vol. 40, No.6, Dec 2022, pp. 1492-1499 | ISSN 0392876 | Q3: https://doi.org/10.18280/ijht.400618 • Ravindra Kumar and Sandip Chavan, “Thermal Investigation of Cylindrical Lithium-ion Batteries for Different Loading using Experimental and Numerical Techniques”, Journal of The Electrochemical Society, Vol. 169, No.12, Dec 2022 | ISSN 00134651, 19457111 | Q1: DOI 10.1149/1945-7111/aca6a1 • Ravindra Kumar and Sandip Chavan, “Investigation of Thermal Behaviour of Cylindrical Lithium-ion Batteries for Electric Vehicle”, SAE Technical Paper, Sept. 2022 | ISSN 0148-7191 | Q3: Doi: 10.4271/2021-26-0156 • Sunil R. Patil, Sandip T. Chavan, Nitin S. Jadhav, Shivaraj S. Vadgeria, “Effect of Volute Tongue Clearance Variation on Performance of Centrifugal Blower by Numerical and Experimental Analysis”, Proceedings of materials today, Elsevier, with International Conference on Material Processing and Characterization, March 17-19, Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, Telangana, 2017 • Shivaraj S. Vadgeria, Sunil R. Patil, Sandip T.Chavan, “Static and Fatigue Analysis of Lathe spindle for Maximum Cutting Force”, Proceedings of materials today, Elsevier, with International Conference on Material Processing and Characterization, March 17-19, Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, Telangana, 2017 • Chavan S.T. and Ahuja B. B., “Effect of cone angle and length of the slot on the performance of feed slot conical air bearing,” International Journal of Design Engineering, Inderscience Enterprises Ltd.UK., Issue No. 2, Vol. 2.,2009 Google Scholar Link https://scholar.google.com/citations?user=i9ThOOQAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57200815933 Orcid Link https://orcid.org/0000-0001-7167-3059",
+    "summary": "Prof. Sandip T. Chavan is a highly accomplished Mechanical Engineering Professor at Dr. Vishwanath Karad MIT World Peace University, with an impressive 34 years of teaching and research experience. He has served as a member of the academic council of two universities and has been recognized for his outstanding contributions to the field of engineering with several awards, including the GYTI (Gandhian Young Technology Innovation 2016) award and the \"Ideal Teacher Award\" from MAEER's Pune in 2019. He is also the recipient of the \"Outstanding Engineering Services to Society\" award from \"The Institute of Engineers\" (India) Rajasthan State Centre Jaipur and Special Recognition for worthy work in the \"Academic Excellence (Head of the Department)\" category from Institution of Engineers and Fr. Conceicao Rodrigues Institute of Technology, Navi-Mumbai.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sandip-tukaram-chavan",
       "scholar": "https://scholar.google.com/citations?user=i9ThOOQAAAAJ&hl=en",
@@ -7989,6 +8333,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sanjay-babanrao-bhagwat",
     "name": "Mr. Sanjay Babanrao Bhagwat",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -8010,6 +8355,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sanmit-sanjit-sarkar",
     "name": "Mr. Sanmit Sanjit Sarkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -8031,6 +8377,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sarang-gore",
     "name": "Mr. Sarang Gore",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -8042,7 +8389,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sarang-gore.webp",
     "research": "",
-    "summary": "Mr. Sarang Gore is passionate about crafting compelling visual narratives and nurturing creative talent. With a strong foundation in design and a deep commitment to teaching, he effectively bridges industry practices with academic learning.",
+    "summary": "Mr. Sarang Gore is passionate about crafting compelling visual narratives and nurturing creative talent. With a strong foundation in design and a deep commitment to teaching, he effectively bridges industry practices with academic learning. He currently teaches UI/UX, Graphic Design, and Portfolio Development, guiding students to develop both conceptual clarity and practical skills. Actively engaged with the evolving landscape of visual communication, he encourages innovation, critical thinking, and industry readiness among aspiring designers.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sarang-gore"
     },
@@ -8051,6 +8398,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sarika-sanjay-bobde",
     "name": "Mrs. Sarika Sanjay Bobde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8062,7 +8410,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sarika-sanjay-bobde.jpg",
     "research": "",
-    "summary": "Dedicated teacher and researcher specializing in Data Structures, Software Engineering, Machine Learning with a Ph.D. in Code Refactoring. Clarity, inquiry, and character development are at the core of my teaching philosophy. In my opinion, education should foster ethical responsibility in addition to imparting knowledge.",
+    "summary": "Dedicated teacher and researcher specializing in Data Structures, Software Engineering, Machine Learning with a Ph.D. in Code Refactoring. Clarity, inquiry, and character development are at the core of my teaching philosophy. In my opinion, education should foster ethical responsibility in addition to imparting knowledge. My goal is to establish an engaging and welcoming classroom where students are inspired to ask questions, investigate, and come up with new ideas. Specialisation: Computer Science and Engineering",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sarika-sanjay-bobde",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57193133803",
@@ -8075,6 +8423,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "satish-arunrao-polshettiwar",
     "name": "Dr. Satish Arunrao Polshettiwar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -8086,7 +8435,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/satish-arunrao-polshettiwar.webp",
     "research": "",
-    "summary": "Dr. Satish A. Polshettiwar is a highly accomplished Researcher Associate Professor and Academic Co-ordinator PG Program, at Dept of Pharmaceutics, School of Health Sciences and Technology, Dr Vishwanath Karad MIT World Peace University, Pune-India. With over 21 years of teaching and research experience, Dr. Polshettiwar has been recognized for his excellence in the field, having been awarded the Ideal Teacher Award 2021 from the MIT Group of Institutions in Pune and the Prestigious ICT Educator Award 2020 from the Association of Pharmaceutical Teachers of India (APTI), New Delhi.",
+    "summary": "Dr. Satish A. Polshettiwar is a highly accomplished Researcher Associate Professor and Academic Co-ordinator PG Program, at Dept of Pharmaceutics, School of Health Sciences and Technology, Dr Vishwanath Karad MIT World Peace University, Pune-India. With over 21 years of teaching and research experience, Dr. Polshettiwar has been recognized for his excellence in the field, having been awarded the Ideal Teacher Award 2021 from the MIT Group of Institutions in Pune and the Prestigious ICT Educator Award 2020 from the Association of Pharmaceutical Teachers of India (APTI), New Delhi. Dr. Polshettiwar is an active researcher who has presented numerous research papers at international and national conferences. He has also authored over 60 research and review articles in peer-reviewed, Scopus and WoS indexed journals, and written 4 textbooks on Pharm Microbiology, Pharmaceutical engineering, pharmacotherapeutics, and more. Additionally, he has contributed 30 book chapters to Elsevier’s, Sprinter Nature, Bentham Science, Wiley, IGI, CRS Press Publication, been granted 2 international patents, one Indian design patent, and filed 10 Indian patents. He is also NPTEL-SWAYAM speaker and AI Expert in Pharmaceutical Science contributed for designing FormulationAI web-based prediction tool. Dr. Polshettiwar is a life member of APTI and MSPC and has been recognized with multiple awards, including the Winner of Asia Continent Samarashta Award 2019, the Shikshan Shree Award, Best Innovative Teacher Award, राज्यस्तरीय गुणवंत शिक्षक गुरुगौरव शिक्षकरत्न पुरस्कार २०२०, Global Excellent Award 2021 by KomTV and World Arya Vaishya Community, among many others. Host of a Pharma educational YouTube channel with 6 thousand + subscribers and 4 lakh + student followers. Coordinated RIDE, HackMITWPU, Pharmathon and Co-Creation activities at Division 3 University level.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/satish-arunrao-polshettiwar",
       "scholar": "https://scholar.google.com/citations?user=xeRYyBkAAAAJ",
@@ -8098,6 +8447,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "saurabh-ardra",
     "name": "Dr. Saurabh Ardra",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -8109,7 +8459,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/saurabh-ardra.webp",
     "research": "",
-    "summary": "Dr. Saurabh Ardra has earned his Ph.D. in Operations and Supply Chain Management from the Department of Management Studies, Indian Institute of Technology (IIT) Roorkee. His doctoral research was titled \"Analysis and Design of Framework for Circular Food Supply Chain in India\". He holds a B. Tech in Mechanical Engineering and an M. Tech in Industrial Engineering from Lovely Professional University, Punjab, where he was honoured with the Academic Excellence Award.",
+    "summary": "Dr. Saurabh Ardra has earned his Ph.D. in Operations and Supply Chain Management from the Department of Management Studies, Indian Institute of Technology (IIT) Roorkee. His doctoral research was titled \"Analysis and Design of Framework for Circular Food Supply Chain in India\". He holds a B. Tech in Mechanical Engineering and an M. Tech in Industrial Engineering from Lovely Professional University, Punjab, where he was honoured with the Academic Excellence Award. Dr. Ardra has contributed to high-impact research, with publications in reputed A-category and Q1 journals. He presented his research at the Society of Operations Management (SOM) Conference held at IIT Kanpur in December 2019. He also serves as a reviewer for esteemed international journals, including the Journal of Cleaner Production and Environment, Development and Sustainability. His teaching interests span across core and applied areas such as Operations Management, Supply Chain Management, Supply Chain Analytics, Inventory Management, Project Management, and Operations Research. Dr. Ardra brings academic rigour combined with practical insight to his teaching and research in the field of operations and supply chain management.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/saurabh-ardra"
     },
@@ -8118,6 +8468,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "savitri-nathrao-jadhav",
     "name": "Dr. Savitri Nathrao Jadhav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -8138,6 +8489,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "seema-idhate",
     "name": "Prof. Seema Idhate",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8149,7 +8501,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/seema-idhate.webp",
     "research": "",
-    "summary": "Mrs. Seema B. Idhate is an Assistant Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University. With 19 years of teaching experience, she is dedicated to nurturing analytical thinking, innovation, and research aptitude among students. Her expertise spans Digital Electronics, Algorithms, Computer Organization, Cloud Computing, Analog Communication, and MMA.",
+    "summary": "Mrs. Seema B. Idhate is an Assistant Professor in the Department of Computer Science and Engineering at Dr. Vishwanath Karad MIT World Peace University. With 19 years of teaching experience, she is dedicated to nurturing analytical thinking, innovation, and research aptitude among students. Her expertise spans Digital Electronics, Algorithms, Computer Organization, Cloud Computing, Analog Communication, and MMA. She believes in outcome-based, student-centric learning aligned with industry and research needs. With notable publications and a patented innovation, she actively contributes to academic excellence, technological advancement, and the university’s vision of value-based, research-driven education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/seema-idhate",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=59536789400&notSignedIn=true",
@@ -8161,6 +8513,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "seema-jitendra-patil",
     "name": "Mrs. Seema Jitendra Patil",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8184,6 +8537,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shahbazmubarak-abdulkhadar-dandin",
     "name": "Dr. Shahbazmubarak Abdulkhadar Dandin",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -8195,7 +8549,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shahbazmubarak-abdulkhadar-dandin.jpg",
     "research": "",
-    "summary": "Dr. Shahbaz Dandin is an Assistant Professor in the Department of Civil Engineering at MIT WPU, Pune, India. He completed his B.E in Civil Engineering from VTU, Belgaum in 2012, M.Tech in Geotechnical Engineering from Govt. Basaveshwar Engineering College, Bagalkot in 2014 and Ph.D. in Civil Engineering from Dr. Vishwanath Karad MIT World Peace University, Pune, India in 2023.",
+    "summary": "Dr. Shahbaz Dandin is an Assistant Professor in the Department of Civil Engineering at MIT WPU, Pune, India. He completed his B.E in Civil Engineering from VTU, Belgaum in 2012, M.Tech in Geotechnical Engineering from Govt. Basaveshwar Engineering College, Bagalkot in 2014 and Ph.D. in Civil Engineering from Dr. Vishwanath Karad MIT World Peace University, Pune, India in 2023. He is a renowned geotechnical consultant, and his primary research interests include mechanical soil stabilization, cellular reinforcement, geophysical testing, and numerical modeling of structural fills. His research journal publicatin_ link https://scholar.google.com/citations?user=9jy9wA4AAAAJ&hl=en . Currently, he is engaged in geophysical subsurface investigations, including GPR and tomographical studies on cementitious soils. At present, three PhD scholars are pursuing their doctoral research under his supervision. Prof. Dandin is the recipient of a Ph.D. fellowship (tenure of 30 months) from DoM, Government of India. He also holds an Patent (Granted)- Multi-utility Instant Dryer.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shahbazmubarak-abdulkhadar-dandin"
     },
@@ -8204,6 +8558,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shailendra-ashok-dayane",
     "name": "Mr. Shailendra Ashok Dayane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -8224,6 +8579,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shailendra-jagdish-naik",
     "name": "Dr. Shailendra Jagdish Naik",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -8244,6 +8600,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shailendra-kumar-kale",
     "name": "Dr. Shailendra Kumar Kale",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -8255,7 +8612,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shailendra-kumar-kale.webp",
     "research": "Logistics, Supply Chain Management, Operations, Entrepreneurship",
-    "summary": "Dr. Shailendra Kumar Kale is a proficient teacher with over 23 years of experience in the faculty of management. He is passionate about work. Being an academic leader, he has proficiency in handling the institutional academic activities and administrative activities as well. As a Ph.D. research guide, he worked to develop a research attitude among his scholars. Four research scholars completed Ph.D. under his guidance. He has worked for developing the curriculum for MBA in academic autonomy structure. Dr. Kale has served as a member of the Board of Studies and Academic Council at a few autonomous colleges and universities. In his research domain, he has published 2 books, 2 book chapters and his 13 research articles are indexed in Scopus database. He has completed two minor research projects.",
+    "summary": "Dr. Shailendra Kumar Kale is a proficient teacher with over 23 years of experience in the faculty of management. He is passionate about work. Being an academic leader, he has proficiency in handling the institutional academic activities and administrative activities as well. As a Ph.D. research guide, he worked to develop a research attitude among his scholars. Four research scholars completed Ph.D. under his guidance. He has worked for developing the curriculum for MBA in academic autonomy structure. Dr. Kale has served as a member of the Board of Studies and Academic Council at a few autonomous colleges and universities. In his research domain, he has published 2 books, 2 book chapters and his 13 research articles are indexed in Scopus database. He has completed two minor research projects. Dr. Kale holds a BE, MBA, and a PhD in Management. Dr. Kale has undergone Faculty Development Program from IIM-A. He is currently working as a Professor in the School of Business (SoB), MIT WPU, Pune",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shailendra-kumar-kale",
       "scholar": "https://scholar.google.co.in/citations?user=qnlJQdUAAAAJ&hl=en",
@@ -8267,6 +8624,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shailesh-varade",
     "name": "Dr. Shailesh Varade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -8278,7 +8636,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shailesh-varade.webp",
     "research": "",
-    "summary": "Dr. Shailesh Varade serves as an Assistant Professor in the Department of Chemical Engineering at MIT-WPU, where he focuses on bridging rigorous scientific thinking with practical application. Drawing from his research in soft matter, postdoctoral work at Paris- Saclay, and industry experience in cosmetic formulations, he emphasizes curiosity-driven learning that equips students with both analytical depth and industry readiness.",
+    "summary": "Dr. Shailesh Varade serves as an Assistant Professor in the Department of Chemical Engineering at MIT-WPU, where he focuses on bridging rigorous scientific thinking with practical application. Drawing from his research in soft matter, postdoctoral work at Paris- Saclay, and industry experience in cosmetic formulations, he emphasizes curiosity-driven learning that equips students with both analytical depth and industry readiness. Beyond the classroom, Dr. Varade brings insights from international postdoctoral research, space-based experiments, and industry formulation work to foster a culture of curiosity, rigour, and applied thinking among students. His efforts align with MIT-WPU’s vision of sustainable and inclusive transformation, nurturing professionals who lead by example and create meaningful societal impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shailesh-varade",
       "scholar": "https://scholar.google.com/citations?user=OP713uEAAAAJ&hl=en&authuser=1",
@@ -8289,6 +8647,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shakti-sanjay-kinger",
     "name": "Mrs. Shakti Sanjay Kinger",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8300,7 +8659,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shakti-sanjay-kinger.jpg",
     "research": "",
-    "summary": "Prof. Shakti Kinger is a highly experienced professional with more than 20 years in the fields of machine learning, AI, and database management. She is known for guiding many graduate and postgraduate students, encouraging a culture of excellence in their work.",
+    "summary": "Prof. Shakti Kinger is a highly experienced professional with more than 20 years in the fields of machine learning, AI, and database management. She is known for guiding many graduate and postgraduate students, encouraging a culture of excellence in their work. Prof. Kinger has written many articles for both national and international journals, showcasing her dedication to tackling important issues in AI and explainable AI. Recognized for her innovative thinking, Professor Shakti Kinger remains at the forefront of shaping the future of technology through her expertise and leadership.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shakti-sanjay-kinger",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55782658100",
@@ -8312,6 +8671,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shalaka-patil",
     "name": "Dr. Shalaka Patil",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -8336,6 +8696,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shamim-mohammad",
     "name": "Dr. Shamim Mohammad",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/clinical-sciences",
     "departmentName": "Department of Clinical Sciences",
@@ -8356,6 +8717,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shantini-aniruddha-bokil",
     "name": "Dr. Shantini Aniruddha Bokil",
+    "preferredDisplayName": "",
     "designation": "HOD, Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -8367,7 +8729,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shantini-aniruddha-bokil.webp",
     "research": "Environmental and Sustainable Engineering M.E.Construction Management",
-    "summary": "Dr. Shantini Bokil is a fine professional, responsible in preparing and delivering lectures in classroom discussions. She has completed a doctorate degree in the area of “Environmental and Sustainable Engineering and has formed lesson strategies, presented creative presentation material to students, responding to students learning needs and evaluating students’ progress. She has a sound background in engineering and the ability to conduct research and feasibility studies in fields of interest; has a touch base with other engineering professionals to update on latest principles that govern the field that will enhance the learning experience of students. She has worked as Student’s Counsellor and a women grievance cell member. She delivers lectures on “Sharing Happiness” for women and “Science and Spirituality.”",
+    "summary": "Dr. Shantini Bokil is a fine professional, responsible in preparing and delivering lectures in classroom discussions. She has completed a doctorate degree in the area of “Environmental and Sustainable Engineering and has formed lesson strategies, presented creative presentation material to students, responding to students learning needs and evaluating students’ progress. She has a sound background in engineering and the ability to conduct research and feasibility studies in fields of interest; has a touch base with other engineering professionals to update on latest principles that govern the field that will enhance the learning experience of students. She has worked as Student’s Counsellor and a women grievance cell member. She delivers lectures on “Sharing Happiness” for women and “Science and Spirituality.” A great value addition to team engagements, she also has contributed greatly to the success of Aarohan, a National Level Cultural fest at MIT-WPU. As an avid educator, she is extremely passionate about guiding and facilitating the younger generation for their overall development and is driven use her cognitive assets for the sole benefit of her students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shantini-aniruddha-bokil",
       "scholar": "https://scholar.google.com/schhp?hl=en",
@@ -8378,6 +8740,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sharbani-kaushik",
     "name": "Dr. Sharbani Kaushik",
+    "preferredDisplayName": "",
     "designation": "Program Director",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -8389,7 +8752,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sharbani-kaushik.webp",
     "research": "Biomaterials, Bioenergy, Electrochemical devices, Biosensors, Microbial Electrolysis, CO2 conversion",
-    "summary": "Dr. Sharbani Kaushik is a renowned biotechnology researcher with expertise in bioenergy, bioelectronics, and membrane proteins. She completed her Ph.D. in the School of Energy Science and Engineering from IIT Guwahati. Her work in renewable energy and bioanalytical applications includes pioneering research on microbial fuel cells and biofuel cell biosensing devices. As a postdoctoral researcher at The Ohio State University, USA, she made significant contributions to chemistry and biochemistry, especially in membrane proteins, synthetic biology and drug discovery, resulting in multiple high-impact publications. She has also served as an Assistant Professor at the Regional Institute of Science and Technology in Meghalaya, where she introduced new courses and mentored students in biosensors and biomedical instrumentation.",
+    "summary": "Dr. Sharbani Kaushik is a renowned biotechnology researcher with expertise in bioenergy, bioelectronics, and membrane proteins. She completed her Ph.D. in the School of Energy Science and Engineering from IIT Guwahati. Her work in renewable energy and bioanalytical applications includes pioneering research on microbial fuel cells and biofuel cell biosensing devices. As a postdoctoral researcher at The Ohio State University, USA, she made significant contributions to chemistry and biochemistry, especially in membrane proteins, synthetic biology and drug discovery, resulting in multiple high-impact publications. She has also served as an Assistant Professor at the Regional Institute of Science and Technology in Meghalaya, where she introduced new courses and mentored students in biosensors and biomedical instrumentation. Dr. Kaushik has received numerous accolades, including the Young Scientist Award from the Materials Research Society of India and the ISEES Best PhD Thesis Award from the International Society of Energy Environment and Sustainability.. Her excellent presentations and publications at international conferences reflect her ability to communicate complex scientific concepts effectively. In addition to her research, Dr. Kaushik has held administrative roles, such as Travel Award Co-Chair for the Postdoctoral Association at the Ohio State University and Departmental PhD Representative to the Student Academic Board, IIT Guwahati. Her extensive publications in prestigious journals and book chapters highlight her contributions to sustainable energy and membrane protein biogenesis. Dr. Kaushik remains dedicated to advancing science through her research and education, driving innovations in bioelectrochemical devices and sustainable energy solutions.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sharbani-kaushik",
       "scholar": "https://scholar.google.co.in/citations?user=xRajzIgAAAAJ&hl=en",
@@ -8401,6 +8764,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sharmishta-suhas-desai",
     "name": "Dr. Sharmishta Suhas Desai",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8412,7 +8776,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sharmishta-suhas-desai.jpg",
     "research": "",
-    "summary": "My teaching philosophy emphasizes experiential learning, research-driven education, and strong industry collaboration to prepare students for real-world challenges. I am motivated to cultivate innovation, critical thinking, and entrepreneurship among students through project-based learning and mentorship.",
+    "summary": "My teaching philosophy emphasizes experiential learning, research-driven education, and strong industry collaboration to prepare students for real-world challenges. I am motivated to cultivate innovation, critical thinking, and entrepreneurship among students through project-based learning and mentorship. My contributions include securing funded research grants from ICMR,AICTE etc, leading innovative projects such as drone-based plant identification and portable agribots, and mentoring a student-led startup operating nationally and internationally. Through research, industry partnerships, and innovation initiatives, I strive to support MIT World Peace University’s vision of value-based education, technological advancement, and creating socially responsible innovators.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sharmishta-suhas-desai",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56642308200",
@@ -8425,6 +8789,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sheetal-pravin-girase",
     "name": "Mrs. Sheetal Pravin Girase",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8436,7 +8801,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sheetal-pravin-girase.jpg",
     "research": "",
-    "summary": "Dr. Sheetal Girase is an enthusiastic educator and dedicated researcher affiliated with Maharashtra Institute of Technology, World Peace University (MIT-WPU), Pune, where she has been serving since January 2002. She has earned her Ph.D. from MIT World Peace University, Pune, India after completing her Post-graduation from Vishwakarma Institute of Technology, Pune and Graduation from SSVP’s College of Engineering, Dhule.",
+    "summary": "Dr. Sheetal Girase is an enthusiastic educator and dedicated researcher affiliated with Maharashtra Institute of Technology, World Peace University (MIT-WPU), Pune, where she has been serving since January 2002. She has earned her Ph.D. from MIT World Peace University, Pune, India after completing her Post-graduation from Vishwakarma Institute of Technology, Pune and Graduation from SSVP’s College of Engineering, Dhule. Over the years, she has taught a diverse range of subjects including: Theory of Computation, Database Management Systems, Software Engineering, Advanced Database Management Systems, Data Warehousing and Data Mining, Big Data Analytics. Her academic journey is driven by a passion for both teaching as well as research. She has published more than 20 papers in reputed International Journals with her research domains as recommendation Systems and Computer Vision, Artificial Intelligence. Throughout her career she has supervised numerous Bachelors and Masters students for projects.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sheetal-pravin-girase",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56764358200",
@@ -8449,6 +8814,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sheetal-suresh-rajapurkar",
     "name": "Mrs. Sheetal Suresh Rajapurkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -8460,7 +8826,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sheetal-suresh-rajapurkar.jpg",
     "research": "",
-    "summary": "Ms. Sheetal Rajapurkar has completed her M.Sc. Electronics from Shivaji University, Kolhapur and has qualified National Eligibility Test (UGC – NET) in December 2012. She is pursuing her Ph.D. from Shivaji University, Kolhapur. She has a total of 17 years of Teaching Experience.",
+    "summary": "Ms. Sheetal Rajapurkar has completed her M.Sc. Electronics from Shivaji University, Kolhapur and has qualified National Eligibility Test (UGC – NET) in December 2012. She is pursuing her Ph.D. from Shivaji University, Kolhapur. She has a total of 17 years of Teaching Experience. At present, she is working as an Assistant Professor in School of Computer Science , MIT WPU. Her research areas include Microcontroller, Microprocessor, Anettena, Fuzzy Logic, Digital Image Processing, etc. She has published 14 research papers in National and International Conferences. Her 6 patents are published. She authored two books namely Analog Systems and 8051 Microcontroller. She has attended many workshops, seminars and conferences at the National and International Level. She worked as Student Development Officer for Savitribai Phule Pune University, Pune. She worked as College Examination Officer for Savitribai Phule Pune University, Pune. She is presently working as an Assistant Controller of Examinations at MIT-WPU, Pune. She is also working as ERP Coordinator for Faculty of Science, MIT-WPU. She worked as a Secretory for Students Grievance Redressal Committee, MIT-WPU. She is working as UG Program Coordinator in Department of Computer Science and Applications, MIT WPU.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sheetal-suresh-rajapurkar"
     },
@@ -8469,6 +8835,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shikha-vikrant-gaikwad",
     "name": "Dr. Shikha Vikrant Gaikwad",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -8480,7 +8847,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shikha-vikrant-gaikwad.webp",
     "research": "Microbial metabolites and biosurfactants, bioprocess engineering, plant–microbe interactions, biostimulants, circular economy, and environmental biotechnology.",
-    "summary": "\"Dr. Shikha Vikrant Gaikwad is a distinguished microbiologist and senior educationist with over 18 years of academic and research experience. She currently serves as an Assistant Professor in the Department of Biosciences and Technology, Dr. Vishwanath Karad MIT World Peace University, Pune, where she also coordinates postgraduate program of Microbiology. She has doctorate degree in Microbiology. Her expertise spans in the fields of Agriculture, Health care, Plant growth Promontory Bacteria (PGPB), Biocontrol agents, Biostimulants, Bioprocess Technology, Circular Economy, and Metabolomics, Plant–Microbe Interactions.",
+    "summary": "\"Dr. Shikha Vikrant Gaikwad is a distinguished microbiologist and senior educationist with over 18 years of academic and research experience. She currently serves as an Assistant Professor in the Department of Biosciences and Technology, Dr. Vishwanath Karad MIT World Peace University, Pune, where she also coordinates postgraduate program of Microbiology. She has doctorate degree in Microbiology. Her expertise spans in the fields of Agriculture, Health care, Plant growth Promontory Bacteria (PGPB), Biocontrol agents, Biostimulants, Bioprocess Technology, Circular Economy, and Metabolomics, Plant–Microbe Interactions. Dr. Gaikwad has made notable contributions to microbial biosurfactants, focusing on their isolation, optimization, and sustainable applications in agriculture and bioremediation. Her research further explores bioactive microbial metabolites such as β-glucans and melanin, emphasizing their potential in drug delivery, immunotherapy, and cosmetic biotechnology. She has pioneered eco-friendly bioprocesses, including hydrodynamic cavitation-based polymer extraction and biosurfactant-assisted remediation of polluted environments. She has successfully led several funded research projects under BCUD-SPPU, ONGC Chair MIT, and MIT-WPU Innovation and Seed Grant programs, resulting in international publications, patents, and culture depositions with CSIR–NCL and NCBI. Dr. Gaikwad’s goals focus on advancing research-integrated learning, fostering curriculum innovation aligned with global education standards, and promoting sustainable biomanufacturing and environmental stewardship in line with UN SDGs (SDG 3 – Good Health and Well-being, SDG 6 – Clean Water and Sanitation, SDG 9 – Industry, Innovation, and Infrastructure, SDG 13 – Climate Action, and SDG 15 – Life on Land), promoting sustainable biomanufacturing and environmental stewardship. She aims to mentor young researchers and strengthen interdisciplinary education for societal benefit.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shikha-vikrant-gaikwad",
       "scholar": "https://scholar.google.com/citations?hl=en&authuser=2&user=pD4ECgoAAAAJ",
@@ -8492,6 +8859,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shilpa-samir-chapadgaonkar",
     "name": "Dr. Shilpa Samir Chapadgaonkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor and Program Director",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -8503,7 +8871,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shilpa-samir-chapadgaonkar.webp",
     "research": "Bioprocess and enzyme technology, biopharmaceutical production and purification, tissue engineering, disease models, and sustainable biotechnology.",
-    "summary": "Dr. Shilpa S. Chapadgaonkar is an experienced academician and researcher with expertise in upstream processing, bioseparation, and enzyme technology. With over 15 years of teaching experience at UG, PG, and PhD levels, she has guided four PhD candidates to completion and is currently supervising three more, along with several M.Sc. and M.Tech. projects. She is leading the Department of Biosciences and Technology at MITWPU as Program Director. She has held key roles such as MSc (Biotech) Program Coordinator, Research Cluster Head, and PhD Program Coordinator, contributing significantly to NAAC and UGC audits. Her research focuses on drug discovery, bioprocess development for biopharmaceuticals, and investigating genetic disorders like infertility and autism. Passionate about sustainability, she has developed technologies for waste valorization, enzyme formulations, and textile wastewater treatment. Dr. Chapadgaonkar’s work has been supported by grants from the Science and Engineering Research Board (SERB), and she has led industrial collaborations with global companies like BASF and Gennova Biopharmaceuticals.",
+    "summary": "Dr. Shilpa S. Chapadgaonkar is an experienced academician and researcher with expertise in upstream processing, bioseparation, and enzyme technology. With over 15 years of teaching experience at UG, PG, and PhD levels, she has guided four PhD candidates to completion and is currently supervising three more, along with several M.Sc. and M.Tech. projects. She is leading the Department of Biosciences and Technology at MITWPU as Program Director. She has held key roles such as MSc (Biotech) Program Coordinator, Research Cluster Head, and PhD Program Coordinator, contributing significantly to NAAC and UGC audits. Her research focuses on drug discovery, bioprocess development for biopharmaceuticals, and investigating genetic disorders like infertility and autism. Passionate about sustainability, she has developed technologies for waste valorization, enzyme formulations, and textile wastewater treatment. Dr. Chapadgaonkar’s work has been supported by grants from the Science and Engineering Research Board (SERB), and she has led industrial collaborations with global companies like BASF and Gennova Biopharmaceuticals. She has published over 40 papers in high-impact journals and authored two textbooks adopted by universities worldwide. Qualification: B.Pharm, M.Sc. Tech (ICT Mumbai), Ph.D. IIT Delhi Experience: 16Y Research: Enzyme Technology, Bioprocess Technology,",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shilpa-samir-chapadgaonkar",
       "linkedin": "https://www.linkedin.com/in/shilpa-chapadgaonkar-54810412/",
@@ -8514,6 +8882,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shilpa-snehal-sonawani",
     "name": "Dr. Shilpa Snehal Sonawani",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8525,7 +8894,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shilpa-snehal-sonawani.jpg",
     "research": "",
-    "summary": "Associate Professor in the Department of Computer Science and Engineering, has over two decades of combined teaching and industry experience. She works in the field of Artificial Intelligence, Data Analytics, and Sustainable Technologies. Her research focuses on AI-driven solutions for environmental sustainability, including air quality prediction, climate analytics, biodiversity monitoring and forest encroachment. She actively collaborates with BAIF Development Research Foundation and Bombay Natural History Society (BNHS), contributing to initiatives aligned with the Sustainable Development Goals (SDGs).",
+    "summary": "Associate Professor in the Department of Computer Science and Engineering, has over two decades of combined teaching and industry experience. She works in the field of Artificial Intelligence, Data Analytics, and Sustainable Technologies. Her research focuses on AI-driven solutions for environmental sustainability, including air quality prediction, climate analytics, biodiversity monitoring and forest encroachment. She actively collaborates with BAIF Development Research Foundation and Bombay Natural History Society (BNHS), contributing to initiatives aligned with the Sustainable Development Goals (SDGs). Her work integrates technology with ecological conservation and rural development, promoting data-driven approaches for sustainable agriculture, environmental monitoring, and community resilience. She has published 45+ research papers, 7 patents (national & international) and contributed as a reviewer for reputed journals and conferences. Her work has been recognized with Best Paper Awards, Hackathon wins.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shilpa-snehal-sonawani",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=36706629400",
@@ -8538,6 +8907,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shital-pathak",
     "name": "Dr. Shital Pathak",
+    "preferredDisplayName": "",
     "designation": "Professor of Practices",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -8558,6 +8928,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shital-vasant-kahane",
     "name": "Dr. Shital Vasant Kahane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/physics",
     "departmentName": "Department of Physics",
@@ -8569,7 +8940,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shital-vasant-kahane.webp",
     "research": "Metal–semiconductor quantum dots and nanomaterials for optoelectronic, energy-storage, and biological applications.",
-    "summary": "Dr. Shital Kahane, a Ph.D. holder in Physics with a focus on nanomaterials from Pune University, has been teaching for 5 years and currently holds the position of Assistant Professor at the Department of Physics in MIT-WPU, Kothrud, Pune. Her recent studies have been centered around the synthesis of metal-semiconductor quantum dots/nanomaterials, with applications ranging from liquid crystal displays, supercapacitors, to biological applications. Research Area Metal-semiconductor quantum dots, Applications Publication 1. CdO-CdS nanocomposites with enhanced photocatalytic activity for hydrogen generation. 2. A study of charge transfer mechanism and optical properties of Au-CdS core-shell nanocrystals. 3. Anomalous photoluminescence enhancement due to hot electron transfer in core shell Au-CdS nanocrystals Google Scholar Link https://scholar.google.com/citations?user=Ec6ychUAAAAJ&hl=en&authuser=1 Scopus Link https://www.scopus.com/search/form.uri?display=basic#author Orcid Link https://orcid.org/my-orcid?orcid=0000-0002-9556-1868",
+    "summary": "Dr. Shital Kahane, a Ph.D. holder in Physics with a focus on nanomaterials from Pune University, has been teaching for 5 years and currently holds the position of Assistant Professor at the Department of Physics in MIT-WPU, Kothrud, Pune. Her recent studies have been centered around the synthesis of metal-semiconductor quantum dots/nanomaterials, with applications ranging from liquid crystal displays, supercapacitors, to biological applications.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shital-vasant-kahane",
       "scholar": "https://scholar.google.com/citations?user=Ec6ychUAAAAJ&hl=en&authuser=1",
@@ -8581,6 +8952,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shiv-havgirao-sutar",
     "name": "Mr. Shiv Havgirao Sutar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8604,6 +8976,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shivprakash-bhagwatrao-barve",
     "name": "Dr. Shivprakash Bhagwatrao Barve",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -8614,7 +8987,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/mechanical-engineering": "Department of Mechanical Engineering"
     },
     "photoPath": "./assets/campus/shivprakash-bhagwatrao-barve.webp",
-    "research": "",
+    "research": "Material Characterization, Advanced Manufacturing Processes",
     "summary": "Prof. Shivprakash B. Barve is a Mechanical Engineering Ph.D. holder from Chhatrapati Shivaji Maharaj University, Kolhapur. He completed his post-graduation in Mechanical Engineering from the Government College of Engineering Karad and graduation in Mechanical Engineering from Jawaharlal Nehru Engineering College Aurangabad with distinction. With areas of specialization in Materials, Composites, Nanocomposites, Manufacturing System, Renewable Energy Technologies, Power Generation, Waste Heat Recovery, Emission, Operations Research, Research Methodology, Applied Thermodynamics, Project Management, and Operations Research, he possesses exceptional skills and expertise. He has been honored with the MIT Ideal Teacher Award in September 2017 and elected as a Member of the Committee of the Institution of Engineers (India), Pune Local Center for the period of August 2021-July 2023. Dr. Barve has also served as a Member of the Board of Studies (BOS) for Mechanical Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune (2019-2021) and recognized as a PG Teacher and Ph.D. Guide in Mechanical Engineering by the same institution in 2017",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shivprakash-bhagwatrao-barve",
@@ -8627,6 +9000,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shounak-rushikesh-sugave",
     "name": "Dr. Shounak Rushikesh Sugave",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8638,7 +9012,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shounak-rushikesh-sugave.webp",
     "research": "",
-    "summary": "Dr. Shounak Rushikesh Sugave is an Associate Professor in the School of Computer Engineering and Technology at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune, India. He has over 17 years of experience in academics and industry.",
+    "summary": "Dr. Shounak Rushikesh Sugave is an Associate Professor in the School of Computer Engineering and Technology at Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune, India. He has over 17 years of experience in academics and industry. Dr. Sugave completed his B.E. in Computer Science and Engineering from Dr. Babasaheb Ambedkar Marathwada University, Aurangabad, India in 2003. He later earned his M.Tech in Network and Internet Engineering from Sri Jayachamarajendra College of Engineering (SJCE), Mysore, under Visvesvaraya Technological University (VTU) in 2005. He obtained his Ph.D. in Software Testing from Jawaharlal Nehru Technological University (JNTU), Anantapur, Andhra Pradesh, India. He has published several research papers in reputed journals and conference proceedings. His research and academic interests include Software Engineering, Software Testing, and Computer Networks. Dr. Sugave is actively involved in teaching, research supervision, curriculum development, and mentoring undergraduate and postgraduate students, contributing to the promotion of industry-relevant skills and research-driven learning.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shounak-rushikesh-sugave",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57195600106",
@@ -8651,6 +9025,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shraddha-kulkarni",
     "name": "Dr. Shraddha Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -8674,6 +9049,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shraddha-salvi",
     "name": "Ms. Shraddha Salvi",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -8685,7 +9061,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shraddha-salvi.webp",
     "research": "Visual Analysis, Media and Communication Studies",
-    "summary": "Ms. Shraddha Salvi is an Assistant Professor at the School of Visual Arts, Dr. Vishwanath Karad MIT World Peace University, Pune. With over two years of teaching experience, she brings a creative and research-driven approach to the classroom. Her academic and creative interests lie at the intersection of visual arts and cultural studies. Her areas of interest include typography, visual storytelling, semiotics, and the role of visual media in preserving cultural narratives.",
+    "summary": "Ms. Shraddha Salvi is an Assistant Professor at the School of Visual Arts, Dr. Vishwanath Karad MIT World Peace University, Pune. With over two years of teaching experience, she brings a creative and research-driven approach to the classroom. Her academic and creative interests lie at the intersection of visual arts and cultural studies. Her areas of interest include typography, visual storytelling, semiotics, and the role of visual media in preserving cultural narratives. Ms. Salvi is passionate about teaching creatively to make learning more engaging and accessible for students. She designs interactive assignments that foster critical thinking, conceptual clarity, and visual experimentation. She has worked extensively on themes such as expressive typography, semiotic analysis, and cultural representation in cinema and print. Her approach to teaching emphasizes student involvement, encouraging them to explore ideas deeply while building strong foundations in visual communication and cultural understanding.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shraddha-salvi"
     },
@@ -8694,6 +9070,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shraddha-subhash-kokane",
     "name": "Dr. Shraddha Subhash Kokane",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -8714,6 +9091,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shreeya-chidambar-rajpurohit",
     "name": "Mrs. Shreeya Chidambar Rajpurohit",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -8725,7 +9103,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shreeya-chidambar-rajpurohit.jpg",
     "research": "Behavioral Finance, Supply Chain Management",
-    "summary": "Shreeya Rajpurohit is a faculty for Accounting, Costing and Finance subjects has been a wide teaching experience of 12+ years in the field of Commerce with and industry experience of two years. She has completed MCom with Costing specialisation, MBA in Financial Management, CMA Inter, UGC - NET in Commerce and currently pursuing PhD in Behavioral Finance from Symbiosis International (Deemed)University Pune.",
+    "summary": "Shreeya Rajpurohit is a faculty for Accounting, Costing and Finance subjects has been a wide teaching experience of 12+ years in the field of Commerce with and industry experience of two years. She has completed MCom with Costing specialisation, MBA in Financial Management, CMA Inter, UGC - NET in Commerce and currently pursuing PhD in Behavioral Finance from Symbiosis International (Deemed)University Pune. Working with Department of Commerce and Accounting as an Internship and Placement Coordinator and IQAC coordinator.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shreeya-chidambar-rajpurohit",
       "scholar": "https://scholar.google.com/citations?user=Hcgn-voAAAAJ&hl=en",
@@ -8737,6 +9115,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shreya-bera",
     "name": "Dr. Shreya Bera",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -8759,6 +9138,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shridevi-chandraprakash-karande",
     "name": "Mrs. Shridevi Chandraprakash Karande",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -8783,6 +9163,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shrikant-krishnanath-yadav",
     "name": "Mr. Shrikant Krishnanath Yadav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -8805,6 +9186,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shruti-shukla",
     "name": "Mrs. Shruti Shukla",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -8816,7 +9198,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shruti-shukla.webp",
     "research": "",
-    "summary": "Shruti Shukla is an Assistant Professor in the Department of Visual Arts at the School of Design, MIT World Peace University (MIT-WPU). Shruti Shukla is a passionate Graphic Designer with over 8 years of experience in the design industry and 2+ years in the teaching field. My specialization lies in Visualization, with a strong focus on conceptual thinking, aesthetic composition, and impactful communication through design.",
+    "summary": "Shruti Shukla is an Assistant Professor in the Department of Visual Arts at the School of Design, MIT World Peace University (MIT-WPU). Shruti Shukla is a passionate Graphic Designer with over 8 years of experience in the design industry and 2+ years in the teaching field. My specialization lies in Visualization, with a strong focus on conceptual thinking, aesthetic composition, and impactful communication through design. Throughout my career, I’ve worked extensively across various domains, including Outdoor Advertising, Publication Design, Illustration, and Graphic Design. These diverse experiences have helped me build a strong understanding of both print and digital mediums, allowing me to deliver practical, creative, and result-oriented design solutions. As an educator, I’m committed to bridging the gap between classroom learning and real-world industry practices. I believe in hands-on learning and strive to provide my students with an immersive and practical understanding of design workflows, industry expectations, and creative problem-solving.Whether working on client projects or mentoring students, I bring the same energy and enthusiasm to every opportunity—dedicated to shaping meaningful visual narratives and nurturing the next generation of creative thinkers.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shruti-shukla"
     },
@@ -8825,6 +9207,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shubhalaxmi-sanjay-joshi",
     "name": "Dr. Shubhalaxmi Sanjay Joshi",
+    "preferredDisplayName": "",
     "designation": "Professor & Associate Dean",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -8836,7 +9219,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shubhalaxmi-sanjay-joshi.webp",
     "research": "",
-    "summary": "Associate Dean for Faculty Affairs at School of Computer Science and Engineering, Dr. Vishwanath Karad MIT World Peace University, Pune since last four years. Serving in MIT Pune Kothrud campus since July 2001.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shubhalaxmi-sanjay-joshi"
     },
@@ -8845,6 +9228,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shubhangi-rajesh-shekokar",
     "name": "Mrs. Shubhangi Rajesh Shekokar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -8865,6 +9249,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shubhangi-rastogi",
     "name": "Dr. Shubhangi Rastogi",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/bioengineering",
     "departmentName": "Department of Bioengineering",
@@ -8888,6 +9273,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shubhika-malara",
     "name": "Ms. Shubhika Malara",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -8899,7 +9285,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shubhika-malara.webp",
     "research": "Biophilia, Type Research, Indian Heritage and Visual Cultures.",
-    "summary": "Shubhika Malara is a passionate Visual Artist, Designer and Educator, with over 5 years of expertise in Communication and Outreach, and a strong interest in sustainability, public spaces, heritage and culture studies. As an Assistant Professor at MIT-WPU School of Design in Visual Communication Design, she facilitates courses on Design History, Strategy and Research Methods, Branding, Illustration, Typography and Publication Design. She is a strong advocate of impact-driven design solutions, and attempts to nurture lateral thinking and interdisciplinary approach to problem-solving.",
+    "summary": "Shubhika Malara is a passionate Visual Artist, Designer and Educator, with over 5 years of expertise in Communication and Outreach, and a strong interest in sustainability, public spaces, heritage and culture studies. As an Assistant Professor at MIT-WPU School of Design in Visual Communication Design, she facilitates courses on Design History, Strategy and Research Methods, Branding, Illustration, Typography and Publication Design. She is a strong advocate of impact-driven design solutions, and attempts to nurture lateral thinking and interdisciplinary approach to problem-solving. Shubhika holds a M.Des. in Graphic Design from the National Institute of Design (Ahmedabad), and B.Des. in Public Space Design from Srishti Institute of Art Design and Technology, (Bengaluru), with an Exchange semester at Massachusetts College of Art and Design (Boston, USA). Highlights of her work include contributing creatives for Science Gallery Bengaluru’s exhibition-season ‘CARBON’ (2024), and designing Art Deco Mumbai’s ‘Map for the Victorian Gothic and Art Deco Ensembles of Mumbai - a UNESCO World Heritage Site’ (2019).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shubhika-malara",
       "linkedin": "https://www.linkedin.com/in/shubhikamalara/"
@@ -8909,6 +9295,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shvetank-bhatt",
     "name": "Dr. Shvetank Bhatt",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -8920,7 +9307,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shvetank-bhatt.webp",
     "research": "Neuropharmacology, CNS dis, Pharmacokinetics and Toxicology",
-    "summary": "Dr. Shvetank Bhatt is an Associate Professor at the School of Science and Technology, MIT World Peace University (MIT-WPU), with over 15 years of experience in teaching and research and 4 years of industry experience. He has previously served at BITS Pilani (Pilani Campus), Ramaiah University of Applied Sciences, Bengaluru, and Amity University Madhya Pradesh, Gwalior, and has worked in industries including Ranbaxy Research Laboratories, Gurugram, Microtherapeutic Research Labs, Chennai, and Smart Analyst India Pvt. Ltd., Gurugram.",
+    "summary": "Dr. Shvetank Bhatt is an Associate Professor at the School of Science and Technology, MIT World Peace University (MIT-WPU), with over 15 years of experience in teaching and research and 4 years of industry experience. He has previously served at BITS Pilani (Pilani Campus), Ramaiah University of Applied Sciences, Bengaluru, and Amity University Madhya Pradesh, Gwalior, and has worked in industries including Ranbaxy Research Laboratories, Gurugram, Microtherapeutic Research Labs, Chennai, and Smart Analyst India Pvt. Ltd., Gurugram. He completed his B.Pharm from the University of Rajasthan, Jaipur, M.Pharm in Pharmacology from the Manipal Academy of Higher Education (MAHE), Manipal, and Ph.D. in Pharmaceutical Sciences from BITS Pilani, Pilani Campus, Rajasthan. His research focuses on neuropharmacology, particularly depression, anxiety, Alzheimer’s disease, and other CNS disorders. Dr. Bhatt has authored over 100 research publications, 7 books, and 40 book chapters, and has completed one UGC-funded project and five industry-sponsored projects. He holds two Indian patents and one Australian patent. His research impact includes 2,829 citations, an h-index of 24, and an i10-index of 54. He is listed among the Top 2% Scientists globally (Stanford–Elsevier, 2024 & 2025), has received over 10 awards, and serves as an editor and reviewer for leading international journals. He is a life member of the Association of Pharmaceutical Teachers of India (APTI) and the Indian Pharmacological Society (IPS).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shvetank-bhatt",
       "scholar": "https://scholar.google.com/citations?user=sWVSgIwAAAAJ&hl=en",
@@ -8932,6 +9319,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shweta-devendra-shirolkar",
     "name": "Dr. Shweta Devendra Shirolkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -8943,7 +9331,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shweta-devendra-shirolkar.webp",
     "research": "",
-    "summary": "Dr. Shweta Shirolkar is an Assistant Professor at Dr. Vishwanath Karad MIT World Peace University, Pune. She holds a Ph.D. in Management from Symbiosis International (Deemed University), Pune, with a research focus on Information Systems Adoption and Usage.",
+    "summary": "Dr. Shweta Shirolkar is an Assistant Professor at Dr. Vishwanath Karad MIT World Peace University, Pune. She holds a Ph.D. in Management from Symbiosis International (Deemed University), Pune, with a research focus on Information Systems Adoption and Usage. Her research interests span technology adoption and usage, the sharing economy, collaborative consumption, and technology in education management. She also specializes in Marketing Management, Marketing Research, Business Research, and Research Methodology. Dr. Shirolkar brings over 16 years of professional experience, including 4.5 years in the commercial research industry and 12 years in academia. She has actively contributed to academic discourse through paper presentations at various national and international conferences. Her scholarly work includes publications in Scopus-indexed, ABDC-listed, and UGC-CARE- approved journals. She has also contributed research papers to journals bearing both ISBN and ISSN identifiers. Additionally, she has authored a case study featured in the European Case Centre and ET Cases. She holds two published patents registered with the Government of India. and has also contributed a research paper to a journal bearing both ISBN and ISSN identifiers. Dr. Shirolkar remains committed to advancing knowledge in her fields of interest and contributing to research and innovation in management education. She is also actively contributing to academic administration activities, curriculum development, etc., at Dr Vishwanath Karad MIT World Peace University",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shweta-devendra-shirolkar"
     },
@@ -8952,6 +9340,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shweta-hitesh-gade",
     "name": "Prof. Shweta Hitesh Gade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -8963,7 +9352,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shweta-hitesh-gade.webp",
     "research": "",
-    "summary": "Shweta Gade is an Architect and Industrial Product Designer. She is an esteemed alumna of the National Institute of Design (NID) Ahmedabad, where she completed her advanced studies in Product Design (M.DES) in 2009 after her Bachelors in Architecture (B.Arch.) from Savitribai Phule Pune University. Currently she is pursuing Ph.D. in Design.",
+    "summary": "Shweta Gade is an Architect and Industrial Product Designer. She is an esteemed alumna of the National Institute of Design (NID) Ahmedabad, where she completed her advanced studies in Product Design (M.DES) in 2009 after her Bachelors in Architecture (B.Arch.) from Savitribai Phule Pune University. Currently she is pursuing Ph.D. in Design. During her Master studies she has received awards for her projects and as a young designer she has gained recognition from design fraternity. Her expertise spans across various domains, including industrial design, design thinking, and design research. She has academic teaching experience over 15 years as she has taught at various premier Design and Architecture institutes in Pune. In her academic capacity, she has conducted specialized master courses as a visiting faculty in product design, product ergonomics, form Studies and Design thinking and interior space and furniture design. Before joining academia, she has worked in the industry as industrial designer and designed products in lighting and renewable energy domain. As an architect she has worked on residential and commercial interior design projects for more than 10 years as practicing freelance design consultant. Her career trajectory is marked by a continuous integration of academic theory and practical design application. Her multidisciplinary approach allows her to address complex design challenges from both aesthetic and functional perspectives. Through her teaching and mentorship, she emphasizes the importance of design thinking in solving real-world problems. Her work exemplifies the bridge between traditional design principles and modern industrial design practices. Beyond the classroom, she is a committed design researcher. She is known for mentoring students in design thinking and fostering innovation with design process and research-driven methodologies. Her students have shown excellence across various design domains by building careers and gaining national and international recognition. Through mentorship and curriculum development, she inspires the next generation of designers to approach problem-solving with both technical precision and creative empathy.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shweta-hitesh-gade",
       "scholar": "https://scholar.google.com/citations?user=dLjKapAAAAAJ&hl=en&authuser=1",
@@ -8975,6 +9364,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "shweta-yogesh-kukade",
     "name": "Dr. Shweta Yogesh Kukade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -8986,7 +9376,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/shweta-yogesh-kukade.webp",
     "research": "Wireless Communication / IoT",
-    "summary": "Dr. Shweta Kukade is a highly accomplished academician who has achieved numerous milestones in the field of Electronics and Communication Engineering. With over 14 years of experience in teaching and research, she is a highly respected figure in the academic community. In 2022, she received her Ph.D. degree from Pune University, Pune, India, which was the culmination of years of hard work and dedication.",
+    "summary": "Dr. Shweta Kukade is a highly accomplished academician who has achieved numerous milestones in the field of Electronics and Communication Engineering. With over 14 years of experience in teaching and research, she is a highly respected figure in the academic community. In 2022, she received her Ph.D. degree from Pune University, Pune, India, which was the culmination of years of hard work and dedication. As an Assistant Professor at the School of Electronics and Communication Engineering, MITWPU, Pune, India, Dr. Kukade is able to combine her passion for teaching with her love for research. Her research interests are varied and include electronics circuits, mobile communication, Internet of Things, physical layer design, and resource allocation in wireless communication. She has published numerous research papers in prestigious international journals and has presented her work at various national and international conferences. Dr. Kukade is known for her innovative and insightful approach to teaching and research. Her students benefit greatly from her extensive experience and her ability to connect complex concepts to real-world applications. She is a firm believer in the power of education to transform lives and is dedicated to helping her students achieve their academic and professional goals. With her impressive credentials and unwavering commitment to excellence, Dr. Kukade is a true asset to the academic community.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/shweta-yogesh-kukade",
       "scholar": "https://scholar.google.com/citations?user=jsDDdIQAAAAJ&hl=en",
@@ -8998,6 +9388,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "siddharth-shriram-shimpi",
     "name": "Dr. Siddharth Shriram Shimpi",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9021,6 +9412,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "siddhivinayak-arvind-kulkarni",
     "name": "Dr. Siddhivinayak Arvind Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9032,7 +9424,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/siddhivinayak-arvind-kulkarni.webp",
     "research": "",
-    "summary": "Dr. Siddhivinayak Kulkarni holds a Master's degree and a Ph.D. from Griffith University, Australia, and has worked at prestigious universities such as Nipissing University in Canada and Federation University in Australia. He has been awarded the esteemed title of Honorary Research Fellow (HRF) by the Faculty of Science and Technology at Federation University Australia in recognition of his outstanding research contributions.",
+    "summary": "Dr. Siddhivinayak Kulkarni holds a Master's degree and a Ph.D. from Griffith University, Australia, and has worked at prestigious universities such as Nipissing University in Canada and Federation University in Australia. He has been awarded the esteemed title of Honorary Research Fellow (HRF) by the Faculty of Science and Technology at Federation University Australia in recognition of his outstanding research contributions. Dr. Kulkarni has also received the Griffith Sciences International Alumnus Award from Griffith University, Australia for his noteworthy achievements in teaching, research, and community service on an international level. His research interests include Pattern Recognition, Machine Intelligence, Natural Language Processing, and Health Informatics.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/siddhivinayak-arvind-kulkarni",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7403057003",
@@ -9045,6 +9437,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "siraj-ahmed-bhatkar",
     "name": "Dr. Siraj Ahmed Bhatkar",
+    "preferredDisplayName": "",
     "designation": "Program Director",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -9056,7 +9449,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/siraj-ahmed-bhatkar.jpg",
     "research": "Enhanced Oil Recovery (EOR),Artificial Lift Systems, Petroleum Produced Water Treatment, Drilling and Well Design",
-    "summary": "Dr. Siraj Ahmed Bhatkar is a prominent figure in the field of Petroleum Engineering, currently serving as the Program Director at the Department of Petroleum Engineering at Dr. Vishwanath Karad MIT World Peace University (MIT WPU), Pune. With over 15 years of experience in academia and research, Dr. Bhatkar has made significant contributions to the advancement of petroleum engineering education and practices.",
+    "summary": "Dr. Siraj Ahmed Bhatkar is a prominent figure in the field of Petroleum Engineering, currently serving as the Program Director at the Department of Petroleum Engineering at Dr. Vishwanath Karad MIT World Peace University (MIT WPU), Pune. With over 15 years of experience in academia and research, Dr. Bhatkar has made significant contributions to the advancement of petroleum engineering education and practices. Ph.D. from Savitribai Phule Pune University (SPPU). Dr. Bhatkar holds a Ph.D. in Petroleum Engineering from Savitribai Phule Pune University, complemented by a Master of Engineering in Petroleum Engineering from Maharashtra Institute of Technology and a Bachelor of Engineering in Chemical Engineering from Vishwakarma Institute of Technology. His specialization encompasses Enhanced Oil Recovery (EOR), drilling engineering, artificial lift systems, and produced water management. Since joining MIT WPU in 2010, Dr. Bhatkar has been instrumental in curriculum development and student placements, successfully coordinating opportunities for over 250 students. He has chaired multiple subjects within the Petroleum Engineering curriculum and has held various administrative roles, including admission coordinator for academic collaborations. Dr. Bhatkar is also an active researcher with a focus on clean energy solutions and optimizing oil production processes. His notable publications include studies on dynamic adsorption in alkaline surfactant polymer flooding and optimization techniques for produced water quality. His research contributions have garnered recognition in international journals, covering topics such as EOR, petroleum produced water treatment, and drilling well design. He is affiliated with several professional organizations, including the Society of Petroleum Engineers (SPE) and the International Association of Drilling Contractors (IADC), where he serves as a faculty advisor. Through his commitment to education, research, and industry collaboration, Dr. Siraj Bhatkar continues to be a pivotal force in shaping the future of Petroleum Engineering at MIT WPU. His dedication not only enhances the academic landscape but also contributes to sustainable practices within the petroleum industry. Dr. Bhatkar's research is heavily focused on clean energy solutions and optimizing oil production processes. He has published extensively in international journals on topics related to petroleum engineering, including :",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/siraj-ahmed-bhatkar",
       "scholar": "https://scholar.google.com/citations?view_op=new_profile&hl=en",
@@ -9069,6 +9462,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "smita-sanjay-paithankar",
     "name": "Mrs. Smita Sanjay Paithankar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -9089,6 +9483,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "soma-mishra",
     "name": "Dr. Soma Mishra",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/environmental-studies",
     "departmentName": "Department of Environmental Studies",
@@ -9109,6 +9504,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sonal-manohar-muluk",
     "name": "Mrs. Sonal Manohar Muluk",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9120,7 +9516,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sonal-manohar-muluk.webp",
     "research": "Research Interests: Marketing Management, Sustainability, Circular Economy",
-    "summary": "Dr. Sonal Muluk is an accomplished academician with over 16 years of experience in higher education. She currently serves as an Assistant Professor at the School of Business, Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune. Specializing in Marketing Management, she is widely recognized for her student-centric and application-oriented teaching methodology.",
+    "summary": "Dr. Sonal Muluk is an accomplished academician with over 16 years of experience in higher education. She currently serves as an Assistant Professor at the School of Business, Dr. Vishwanath Karad MIT World Peace University (MIT-WPU), Pune. Specializing in Marketing Management, she is widely recognized for her student-centric and application-oriented teaching methodology. Dr. Muluk is also a recognized Ph.D. Research Supervisor, mentoring doctoral scholars in the field of Marketing Management. In addition, she guides postgraduate students in fieldwork, research projects, and practical application of business concepts. Dr. Muluk has further enriched her teaching approach by completing the prestigious “Teaching with Cases: Engage, Energize, and Challenge Your Students” program at Harvard Business School, gaining global insights into effective case-based pedagogy and classroom engagement strategies. Her academic contributions include the publication of over 25 research papers in reputed national and international journals and conferences, including Scopus-indexed and ABDC-listed outlets. She has authored several book chapters and contributed to edited volumes published by leading international publishers such as Springer, Taylor & Francis, and Paramount Publishing House, focusing on emerging themes in marketing, entrepreneurship, sustainability, and innovation. Dr. Muluk has been honored with Best Paper Awards at two international conferences, recognizing her impactful contributions to academic research. Her commitment to research and innovation is reflected in two published patents—one on a Holistic Mental Health Management System and another on Sustainable Urban Development. She continues to make meaningful contributions to academia and society through interdisciplinary research and academic leadership. Dr. Muluk remains committed to nurturing future business leaders while advancing impactful, interdisciplinary research in marketing and sustainability.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sonal-manohar-muluk",
       "scholar": "https://scholar.google.com/citations?user=lIcudZ8AAAAJ&hl=en",
@@ -9131,6 +9527,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sonali-potadar",
     "name": "Prof. Sonali Potadar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9142,7 +9539,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sonali-potadar.webp",
     "research": "",
-    "summary": "I am a dedicated academician with a strong interest in teaching, and student development in the field of Computer Science. My teaching philosophy focuses on creating an interactive learning environment where students are encouraged to think critically, explore new ideas, and apply knowledge to real-world problems. I am motivated to continuously improve my teaching methods through research and innovation, particularly in deep learning and video processing.",
+    "summary": "I am a dedicated academician with a strong interest in teaching, and student development in the field of Computer Science. My teaching philosophy focuses on creating an interactive learning environment where students are encouraged to think critically, explore new ideas, and apply knowledge to real-world problems. I am motivated to continuously improve my teaching methods through research and innovation, particularly in deep learning and video processing. I aim to contribute to MIT-WPU’s vision by promoting academic excellence, ethical values, and research-driven learning that prepares students for future technological challenges. Specialisation: Artificial Intelligence and Data Science",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sonali-potadar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57212467073",
@@ -9155,6 +9552,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "soubir-das",
     "name": "Dr. Soubir Das",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -9166,7 +9564,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/soubir-das.webp",
     "research": "",
-    "summary": "Dr. Soubir Das holds a Ph.D. in Petroleum Engineering from IIT (ISM) Dhanbad, specializing in the development of clay-free drilling fluid systems for gas hydrate-bearing formations. His research focused on formulating low-dosage hydrate inhibitors (LDHIs) for water-based, non-damaging polymeric drilling fluids, ensuring enhanced performance and minimal reservoir damage. With expertise in drilling technology, drilling fluids, and LDHI synthesis, Dr. Das has extensive experience with advanced analytical instruments such as FT-IR, TGA-DTA-DSC, Particle Size Analyzer, Zeta Potential Analyzer, and high- pressure dynamic flow-loop systems (up to 10,000 psi). He holds an MTech. Petroleum Engineering and B.E. Petroleum and Offshore Engineering from IIT(ISM) Dhanbad and AMET University Chennai as well. He has collaborated with the Gas Hydrate Research & Technology Centre (GHRTC), ONGC, Panvel, Navi Mumbai applying theoretical insights to industry challenges during his Ph.D. Dr. Das has authored multiple SCI-indexed journal publications and presented at national and international conferences. He is skilled in both independent research and multidisciplinary teamwork, contributing to advancements in petroleum engineering.",
+    "summary": "Dr. Soubir Das holds a Ph.D. in Petroleum Engineering from IIT (ISM) Dhanbad, specializing in the development of clay-free drilling fluid systems for gas hydrate-bearing formations. His research focused on formulating low-dosage hydrate inhibitors (LDHIs) for water-based, non-damaging polymeric drilling fluids, ensuring enhanced performance and minimal reservoir damage. With expertise in drilling technology, drilling fluids, and LDHI synthesis, Dr. Das has extensive experience with advanced analytical instruments such as FT-IR, TGA-DTA-DSC, Particle Size Analyzer, Zeta Potential Analyzer, and high- pressure dynamic flow-loop systems (up to 10,000 psi). He holds an MTech. Petroleum Engineering and B.E. Petroleum and Offshore Engineering from IIT(ISM) Dhanbad and AMET University Chennai as well. He has collaborated with the Gas Hydrate Research & Technology Centre (GHRTC), ONGC, Panvel, Navi Mumbai applying theoretical insights to industry challenges during his Ph.D. Dr. Das has authored multiple SCI-indexed journal publications and presented at national and international conferences. He is skilled in both independent research and multidisciplinary teamwork, contributing to advancements in petroleum engineering. Ph.D. from Indian Institute of Technology (IIT), ISM Dhanbad. Drilling Fluids and Cements, Enhanced Oil Recovery, Petroleum Production Engineering, Drilling Fluids and Cementing Laboratory. HP-HT Drilling Fluids, Oil Well Cementing, Gas Hydrates, Flow Assurance, Syntheses, Characterization, and Application of Low Dosage Kinetic Inhibitors Das, S., Ojha, A., Mahto, V., & Gopalakrishnan Nair, U. (2023). Evaluation of the xanthan gum, gum acacia, and their graft copolymers with acrylamide as low-dosage hydrate inhibitors for their application in the drilling of gas hydrate reservoirs. Energy & Fuels, 37(11), 7728-7745. Das, S., Mahto, V., Udayabhanu, G., Lall, M. V., Singh, K., & Deepak, M. (2023). Evaluation of L-ascorbic acid as a green low-dosage hydrate inhibitor in water-based drilling fluid for the drilling of gas hydrate reservoirs. Journal of Petroleum Science and Engineering, 220, 111156. Das, S., Mahto, V., Udayabhanu, G., Lall, M. V., Singh, K., & Deepak, M. (2022). Experimental evaluation of Sarcosine as an eco-friendly green hydrate inhibitor for the drilling of gas hydrate-bearing formations. Journal of Petroleum Science and Engineering, 208, 109764.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/soubir-das",
       "scholar": "https://scholar.google.com/citations?user=kqcaQX4AAAAJ&hl=en&oi=ao",
@@ -9178,6 +9576,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "soumava-biswas",
     "name": "Dr. Soumava Biswas",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -9201,6 +9600,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "suchitra-renguntwar",
     "name": "Dr. Suchitra Renguntwar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -9221,6 +9621,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sudeepta-banerjee",
     "name": "Dr. Sudeepta Banerjee",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9232,7 +9633,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sudeepta-banerjee.webp",
     "research": "",
-    "summary": "With over 19 years of diverse experience in higher education, Dr. Sudeep¬ta Banerjee brings together academic excellence, people leadership, and international engagement. As a senior faculty member at MIT World Peace University, she has successfully headed programs like MCA and BBA (Business Analytics), led international MOUs with globally ranked universities, and played a key role in achieving NAAC 'A' grade accreditation.",
+    "summary": "With over 19 years of diverse experience in higher education, Dr. Sudeep¬ta Banerjee brings together academic excellence, people leadership, and international engagement. As a senior faculty member at MIT World Peace University, she has successfully headed programs like MCA and BBA (Business Analytics), led international MOUs with globally ranked universities, and played a key role in achieving NAAC 'A' grade accreditation. Her work spans across teaching, institutional branding, strategic partnerships, and curriculum design, while her research contributions include publications in SCOPUS and UGC Care journals on topics such as digital transformation, consumer behaviour, IoT, and cybersecurity. A passionate advocate for global learning, Dr. Banerjee has led multiple student immersion programs across Singapore, France, and the UAE. Whether mentoring students or driving institutional initiatives, Dr. Banerjee thrives at the intersection of education, innovation, and impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sudeepta-banerjee"
     },
@@ -9241,6 +9642,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sudhanshu-jaiswal",
     "name": "Mr. Sudhanshu Jaiswal",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -9261,6 +9663,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sudhir-pandurang-patil",
     "name": "Dr. Sudhir Pandurang Patil",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -9281,6 +9684,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "suja-sreejith-panickar",
     "name": "Ms. Suja Sreejith Panickar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9292,7 +9696,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/suja-sreejith-panickar.jpg",
     "research": "Cognitive Computing & NLP, Machine Learning, Databases, Deep Learning",
-    "summary": "Prof. Suja Panicker is an Assistant Professor in the School of CET, with 19 years of experience. She is currently pursuing her Ph.D in Computer Engineering at VIT University, Tamil Nadu, after completing her M.Tech in IT from VIT Pune. Prof. Panicker has taught a wide range of subjects including Big Data Analytics, Computer Forensics and Cyber Applications, and Object-Oriented Modeling and Design. She has numerous publications in well-known International Conferences and Journals, and has been supervising research projects at both undergraduate and postgraduate levels. In addition to her academic pursuits, Prof. Panicker has a passion for writing.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/suja-sreejith-panickar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56642547200"
@@ -9302,6 +9706,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sujata-jagadale",
     "name": "Prof. Sujata Jagadale",
+    "preferredDisplayName": "",
     "designation": "Teaching Associate",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9322,6 +9727,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sukhada-prasad-bhingarkar",
     "name": "Dr. Sukhada Prasad Bhingarkar",
+    "preferredDisplayName": "",
     "designation": "Associate Dean - External Relations",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9333,7 +9739,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sukhada-prasad-bhingarkar.jpg",
     "research": "Cloud Computing, Information Security, Machine Learning",
-    "summary": "Dr. Sukhada Bhingarkar is an Associate Professor at the School of Computer Science and Engineering, MIT World Peace University in Pune. With over 20 years of teaching experience, she earned her PhD in Information Technology from Mumbai University. Dr. Bhingarkar's research interests span across Cloud Computing, Information Security, and Machine Learning, which have been published in more than 40 research papers in renowned international journals and conferences.",
+    "summary": "Dr. Sukhada Bhingarkar is an Associate Professor at the School of Computer Science and Engineering, MIT World Peace University in Pune. With over 20 years of teaching experience, she earned her PhD in Information Technology from Mumbai University. Dr. Bhingarkar's research interests span across Cloud Computing, Information Security, and Machine Learning, which have been published in more than 40 research papers in renowned international journals and conferences. She serves as the Program Coordinator for the 4-year Undergraduate Program - Computer Science & Business Systems, which is conducted in association with Tata Consultancy Services. Additionally, she serves as the Industry Collaboration Coordinator for the School of Computer Science and Engineering.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sukhada-prasad-bhingarkar"
     },
@@ -9342,6 +9748,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sulakshana-sagar-malwade",
     "name": "Mrs. Sulakshana Sagar Malwade",
+    "preferredDisplayName": "",
     "designation": "Lecturer",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -9353,7 +9760,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sulakshana-sagar-malwade.jpg",
     "research": "",
-    "summary": "Prof. Sagar Kolapkar is an Assistant Professor in the School of Civil Engineering, MIT World Peace University, Pune. He received his B.E. in Civil Engineering (2010) from Pune University and M.Tech (Transportation Systems Engineering) in 2013 from IIT Guwahati. His research focuses on Parking Demand Management and Supply Regulation and Warm Mix Asphalt. He is a certified Road Safety Auditor by Ministry of Road Transport and Highways and Indian Roads Congress. He has actively worked with Pune Municipal Corporation on Parking Policy. He qualified GATE in 2011 and has published several research papers in top-ranked journals in Civil Engineering. He has been an active reviewer of international journal Materials Today (Elsevier). He has written a book on Advanced Transportation Engineering. He actively working as Infrastructure Cordinator at School of Civil Engineering.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sulakshana-sagar-malwade"
     },
@@ -9362,6 +9769,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "suman-devadula",
     "name": "Dr. Suman Devadula",
+    "preferredDisplayName": "",
     "designation": "Professor & Dean",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -9375,7 +9783,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/suman-devadula.webp",
     "research": "",
-    "summary": "Prof. Suman Devadula, is a passionate advocate of design-led innovation and its role in advancing sustainability across institutions. With over thirteen years of distinguished experience in the design industry and academia, Dr. Devadula brings exceptional expertise in integrating technology, research, and sustainability by design.",
+    "summary": "Prof. Suman Devadula, is a passionate advocate of design-led innovation and its role in advancing sustainability across institutions. With over thirteen years of distinguished experience in the design industry and academia, Dr. Devadula brings exceptional expertise in integrating technology, research, and sustainability by design. Prior to joining MIT-WPU in this stint, Dr. Devadula served as Associate Professor, and in leadership positions like Head of Design and Dep. Director at JAIN School of Design, Media and Creative Arts, Bengaluru and also as Research Co-ordinator for Faculty of Creativity and Design. He led curriculum design, program management, and Outcome-Based Education (OBE) initiatives across several UG, PG and PhD programmes. Earlier to this, he served as the founding Head of School at MIT-WPU School of Design, Pune during 2018-2022. His corporate experience includes working as an Industrial Designer at John Deere Technology Centre India, where he managed global design and engineering projects across the U.S., Europe, and Asia. Prof. Devadula holds a Ph.D. in Sustainability by Design from IISc Bangalore, an M.Des. in Product Design from the Department of Design and Manufacturing (formerly CPDM), IISc Bangalore, a B.Tech. in Mechanical Engineering from JNTU Hyderabad, and a Postgraduate Diploma in Re- designing Human Rights from IIHR, New Delhi. He has been recognised on numerous national and international platforms for his impactful contributions to design research, sustainability, and to design education. His students have consistently excelled under his mentorship, securing accolades in prominent design competitions globally. An academic leader, Dr. Devadula has served as Chairperson and Board Member in various academic bodies, contributing to the development of design curriculum at undergraduate, postgraduate, and doctoral levels. His research interests span design, cognition, and sustainability, with over twenty-five articles in reputed journals of direct impact to design education and the human condition in several national and international journals and conferences. He holds several design registrations and published patents, individually and collaboratively.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/suman-devadula"
     },
@@ -9384,6 +9792,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "suman-rawat",
     "name": "Dr. Suman Rawat",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/yogic-science",
     "departmentName": "Department of Wellness and Yogic Science",
@@ -9404,6 +9813,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sumant-nivarutti-shinde",
     "name": "Dr. Sumant Nivarutti Shinde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -9415,7 +9825,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sumant-nivarutti-shinde.webp",
     "research": "Structural Engineering , Ferrocement construction , Composite Structures , Precast constructure , Waste material based composite .Light weight concrete , Fiber Reinforced Concrete composite .",
-    "summary": "Dr. Sumant N Shinde has been an assistant professor in the Department of Civil Engineering at MITWPU (formerly known as MIT) since 2005. With a strong industrial background of 3 years and teaching experience of 17 years, he is a knowledgeable and experienced educator. Dr. Shinde received his Bachelor's degree from Dr. Babasaheb Ambedkar Marathwada University Aurangabad and Masters in Structural Engineering from M I T Pune.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sumant-nivarutti-shinde",
       "scholar": "https://scholar.google.com/citations?user=9lByouMAAAAJ&hl=en&oi=ao",
@@ -9427,6 +9837,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sumedha-dhananjay-sirsikar",
     "name": "Dr. Sumedha Dhananjay Sirsikar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9438,7 +9849,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sumedha-dhananjay-sirsikar.webp",
     "research": "",
-    "summary": "Sumedha Sirsikar is an Associate Professor at School of Computer Engineering and Technology, Faculty of Engineering and Technology, Dr Vishwanath Karad MIT World Peace University, Pune, MH-India. Her area of research includes Self-organized Wireless Sensor Networks, Computer Networks, Information and Network Security, Wireless Sensor Networks and Internet of Things, She has over 33 years of experience in academic teaching and 20 years of research. She received Bachelors of Computer Science of Engineering from Govt.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sumedha-dhananjay-sirsikar",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55479363700",
@@ -9451,6 +9862,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sunil-brijlal-somani",
     "name": "Dr. Sunil Brijlal Somani",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -9461,8 +9873,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/electronics-and-electrical-engineering": "Department of Electrical and Electronics Engineering"
     },
     "photoPath": "./assets/campus/sunil-brijlal-somani.webp",
-    "research": "Mobile Communication, Wireless Communication, Computer Networks,IoT...",
-    "summary": "Dr. Sunil Somani is an Associate Professor and M.Tech. Coordinator in the School of Electronics & Communication Engineering, VLSI & Embedded System Specialization, MITWPU. He received his Bachelor's degree in Electronics Engineering from Marathwada University in 1993, followed by an M.Tech. in Electronics & Telecommunication from Govt. College of Engineering Pune, and a Doctor of Philosophy in Electronics & Communication.",
+    "research": "Mobile Communication, Wireless Communication, Computer Networks,IoT... Wireless Communication, IOT",
+    "summary": "Dr. Sunil Somani is an Associate Professor and M.Tech. Coordinator in the School of Electronics & Communication Engineering, VLSI & Embedded System Specialization, MITWPU. He received his Bachelor's degree in Electronics Engineering from Marathwada University in 1993, followed by an M.Tech. in Electronics & Telecommunication from Govt. College of Engineering Pune, and a Doctor of Philosophy in Electronics & Communication. Dr. Somani has over 25 years of teaching experience and has served as an Assistant Professor at A C Patil College of Engineering, Navi Mumbai, prior to joining MIT Group of Institutions. He is a Fellow of IETE, Member of IE, Life member of ISTE, and Senior member of IEEE. His research interests lie in the fields of Wireless Communication, Digital Communication, Computer networks, IoT, and Signal processing. He has authored over 42 research papers in international and national-level journals and has reviewed conference papers in the field of communication engineering, Wireless communication, wireless networks, and converging telecom technologies. Dr. Somani has filed and published one patent and a copyright in the VLSI domain. Dr. Somani has supervised over 40 Master's dissertations and 50 undergraduate projects. He has developed and delivered several courses, such as GSM Technology, 3G & 4G wireless communication Technologies, and Wireless Sensor Networks, alongside his regular teaching responsibilities. Additionally, he was appointed Head of Student Affairs in March 2019 to address various issues faced by university students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sunil-brijlal-somani",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55602997000"
@@ -9472,6 +9884,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sunil-machindra-adhav",
     "name": "Dr. Sunil Machindra Adhav",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9483,7 +9896,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sunil-machindra-adhav.webp",
     "research": "",
-    "summary": "Presently working as Associate Professor with School of Business, Dr. Vishwanath Karad MIT World Peace University, Pune . Total Academic experience @15 years. I have completed my BE (Civil Engg.) from Govt. College of Engg. Pune (COEP Technological University) one of the best Institute in India. MBA (Financial Management) from Sinhgad Institute of Management, Pune (SIOM), PHD (Financial Management) from RTM Nagpur University. UGC-NET (Financial Management) Qualified. MITWPU appointed me as Ph,D Giude. My area of interest is in Financial Management and Operations Management. Total Publication 85 including Research papers, Book chapters, Conference Proceeding, Books, Patent publication.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sunil-machindra-adhav",
       "scholar": "https://scholar.google.com.tw/citations?hl=en&user=jEjkhdkAAAAJ",
@@ -9495,6 +9908,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sunil-shriram-karad",
     "name": "Dr. Sunil Shriram Karad",
+    "preferredDisplayName": "",
     "designation": "Programme Coordinator",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -9506,7 +9920,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sunil-shriram-karad.jpg",
     "research": "Nanomaterials",
-    "summary": "Dr. Sunil S Karad is currently working as Assistant Professor in Department of polytechnic, Dr. Vishwanath Karad MIT World Peace University, Kothrud Pune. He is having more than 29 years of teaching and administrative experiance. He holds M.Sc. PhD. in physics. His research area is synthesis and applications of nanomaterials. His commitment to fostering intellectual growth reflects his belief in the transformative power of education. Hehas published more than 3 text books for diploma engineering students. He was previously servewd as a panel member in faculty selection for DTE and MSBTE. He has prepared curriculums for MSBTE and WPU.He was a external academic monitoring committee member for MSBTE. He was coordinator for government polytechnic distance learning for 8 years. He is a life member of ISTE, New Delhi.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sunil-shriram-karad",
       "scholar": "https://scholar.google.com/citations?user=76ijmC4AAAAJ&hl=en"
@@ -9516,6 +9930,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "supriya-paigude",
     "name": "Dr. Supriya Paigude",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9527,7 +9942,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/supriya-paigude.webp",
     "research": "",
-    "summary": "Dr. Supriya Paigude is a seasoned academic and HR professional with over 20 years of experience spanning academia, executive search, and industry-academia collaborations. She holds a Ph.D. in Management and multiple master’s degrees in HR and business systems from Pune University.",
+    "summary": "Dr. Supriya Paigude is a seasoned academic and HR professional with over 20 years of experience spanning academia, executive search, and industry-academia collaborations. She holds a Ph.D. in Management and multiple master’s degrees in HR and business systems from Pune University. At MIT-WPU, she teaches HR-focused courses such as Organizational Behavior, Strategic HRM, HR Analytics, and Corporate Governance. She has held leadership roles as Assistant Director – Industry Partnerships and currently serves on the NAAC Committee and as a Placement Representative. Her research focuses on AI in HRM, work-life balance, digital transformation, and sustainability. She has published in reputed journals such as the South Eastern European Journal of Public Health and presented at conferences organized by EDII, IMT Nagpur, and ICFAI Business School. She has also coordinated impactful CSR initiatives and live industry projects with firms like Piaggio and Jendamark India.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/supriya-paigude"
     },
@@ -9536,6 +9951,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "surendra-hawgirao-barhatte",
     "name": "Dr. Surendra Hawgirao Barhatte",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -9547,7 +9963,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/surendra-hawgirao-barhatte.jpg",
     "research": "",
-    "summary": "It seems like Dr. Barhatte has had a long and varied career at MIT-WPU. He began as a lecturer in 2007, bringing with him a decade of industry experience. Over the years, he has taken on several roles within the Mechanical Engineering department, including academic coordinator, senior supervisor, exam coordinator, and industrial visits in-charge. He has also served as the CEEP coordinator at the institute level and has been a part of the Grievance Cell.",
+    "summary": "It seems like Dr. Barhatte has had a long and varied career at MIT-WPU. He began as a lecturer in 2007, bringing with him a decade of industry experience. Over the years, he has taken on several roles within the Mechanical Engineering department, including academic coordinator, senior supervisor, exam coordinator, and industrial visits in-charge. He has also served as the CEEP coordinator at the institute level and has been a part of the Grievance Cell. Currently, Dr. Barhatte holds the position of Assistant Professor in Mechanical Engineering and serves as the faculty advisor for Team-Prokarters. He is also a member of the Admissions committee of the department. It seems like he has been actively involved in various aspects of the institute's functioning and has contributed significantly to its growth and development over the years.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/surendra-hawgirao-barhatte"
     },
@@ -9556,6 +9972,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sushil-kumar-gupta",
     "name": "Dr. Sushil Kumar Gupta",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -9567,7 +9984,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sushil-kumar-gupta.webp",
     "research": "",
-    "summary": "Dr. Sushil Kumar Gupta brings over 21 years of distinguished experience, equally divided between corporate leadership and academic excellence. A UGC-NET qualified professional in Management (June 2012), he holds a Ph.D. in Management from Amity University, Uttar Pradesh, and is an alumnus of IIM Ahmedabad, having completed the prestigious 43rd Faculty Development Programme in Pedagogy and Research Methods (April–May 2023). His academic portfolio includes 12 Scopus-indexed publications and 9 ABDC-listed papers (2 in category B and 7 in category C), alongside five patents in the domains of finance and behavioural analytics. He is also a recipient of a research grant from IIM Ahmedabad, further reinforcing his scholarly engagement. His research focuses on contemporary trends in finance, fintech, wealth management etc. He has been honoured with the Outstanding Educator Award 2025 by Lexicon Group of Institutions and the Global Teacher Award 2021 by AKS Education.",
+    "summary": "Dr. Sushil Kumar Gupta brings over 21 years of distinguished experience, equally divided between corporate leadership and academic excellence. A UGC-NET qualified professional in Management (June 2012), he holds a Ph.D. in Management from Amity University, Uttar Pradesh, and is an alumnus of IIM Ahmedabad, having completed the prestigious 43rd Faculty Development Programme in Pedagogy and Research Methods (April–May 2023). His academic portfolio includes 12 Scopus-indexed publications and 9 ABDC-listed papers (2 in category B and 7 in category C), alongside five patents in the domains of finance and behavioural analytics. He is also a recipient of a research grant from IIM Ahmedabad, further reinforcing his scholarly engagement. His research focuses on contemporary trends in finance, fintech, wealth management etc. He has been honoured with the Outstanding Educator Award 2025 by Lexicon Group of Institutions and the Global Teacher Award 2021 by AKS Education. In the corporate domain, Dr. Gupta has held senior leadership roles, including Assistant Vice President positions at reputed organizations such as Motilal Oswal Purple Client Group, BRICS Securities, and ICICI AMC. He is a SEBI-certified Authorized Resource Person (Trainer) and actively contributed to financial literacy initiatives until May 2020. His professional certifications include: He has also completed advanced training in Financial Modelling & Company Valuation (Excel & VBA) from the Investment Banking Institute and a Certificate Course in Stock Markets from BSE. His technical acumen is further supported by a Merit Recognition Certificate from NIIT and an IT Certificate from CMC, reflecting a robust blend of financial and technological expertise.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sushil-kumar-gupta"
     },
@@ -9576,6 +9993,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sushila-manish-palwe",
     "name": "Dr. Sushila Manish Palwe",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9596,6 +10014,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sushma-verma",
     "name": "Dr. Sushma Verma",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9607,7 +10026,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sushma-verma.webp",
     "research": "",
-    "summary": "Dr. Sushma Verma is currently serving as an Associate Professor at the School of Business, Dr. Vishwanath Karad MIT World Peace University, Pune. She is an accomplished academician and result-oriented professional with over 17 years of experience in teaching and research.",
+    "summary": "Dr. Sushma Verma is currently serving as an Associate Professor at the School of Business, Dr. Vishwanath Karad MIT World Peace University, Pune. She is an accomplished academician and result-oriented professional with over 17 years of experience in teaching and research. She has an extensive publication record in reputed ABDC, Scopus, and Web of Science– indexed journals, including International Review of Economics and Finance, European Management Journal, Management Review Quarterly, and Benchmarking, among others. She has also presented her research at prestigious international conferences and has received several Best Paper Awards. Dr. Verma is the author of books on Advanced Financial Management, Management Accounting and Financial Risk Management. Her research interests span multiple dimensions of corporate finance, with a strong emphasis on sustainability-related issues. An avid researcher, she takes keen interests in contemporary issues. In addition, she actively contributes to the academic and research community as an Associate Editor of MUDRA, published by Journal Press India. Passionate about academic excellence and research capacity building, she has also contributed as a resource person for several Faculty Development Programmes (FDPs).",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sushma-verma",
       "scholar": "https://scholar.google.com/citations?user=-u-oa3IAAAAJ&hl=en",
@@ -9619,6 +10038,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "sushrut-hemant-vinchurkar",
     "name": "Dr. Sushrut Hemant Vinchurkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -9630,7 +10050,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/sushrut-hemant-vinchurkar.webp",
     "research": "",
-    "summary": "Dr. Sushrut H. Vinchurkar is an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He received his Doctorate in Philosophy with specialization in Water Resources Engineering from Sardar Vallabhbhai National Institute of Technology, Surat. With an overall experience of 8 years, including 4 years in academics and 4 years in research, Dr. Vinchurkar has published 4 research papers in international journals and presented over 15 articles at various national and international conferences. In his free time, he enjoys writing blogs on case-studies related to the field of Water Resources Engineering.",
+    "summary": "Dr. Sushrut H. Vinchurkar is an Assistant Professor in the Department of Civil Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune. He received his Doctorate in Philosophy with specialization in Water Resources Engineering from Sardar Vallabhbhai National Institute of Technology, Surat. With an overall experience of 8 years, including 4 years in academics and 4 years in research, Dr. Vinchurkar has published 4 research papers in international journals and presented over 15 articles at various national and international conferences. In his free time, he enjoys writing blogs on case-studies related to the field of Water Resources Engineering. Dr. Vinchurkar has a strong interest in Fluid Mechanics, Open Channel Flow, Hydrology and Water Resources Engineering, and Design of Hydraulic Structures, which is evident from his academic and research background. His expertise in these areas makes him a valuable asset to the Department l of Civil Engineering.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sushrut-hemant-vinchurkar"
     },
@@ -9639,6 +10059,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "suvarna-gopal-ranade",
     "name": "Mrs. Suvarna Gopal Ranade",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -9659,6 +10080,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swapnil-mahesh-gupta",
     "name": "CA Swapnil Mahesh Gupta",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -9680,6 +10102,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swapnil-narayan-undale",
     "name": "Dr. Swapnil Narayan Undale",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9691,7 +10114,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/swapnil-narayan-undale.webp",
     "research": "Marketing, Sales, Use of technology in sales & marketing. Diffusion of Technology, Educational Technology.",
-    "summary": "Dr. Swapnil Undale is a seasoned academician and accomplished industry professional with over 20 years of diverse experience in Sales and Marketing across Institutional, Industrial, and Pharmaceutical sectors. Throughout his career, he has served renowned multinational companies such as L&T, ESAB, and SKF through their channel partners, and served as a Regional Sales Manager at FDC Ltd.",
+    "summary": "Dr. Swapnil Undale is a seasoned academician and accomplished industry professional with over 20 years of diverse experience in Sales and Marketing across Institutional, Industrial, and Pharmaceutical sectors. Throughout his career, he has served renowned multinational companies such as L&T, ESAB, and SKF through their channel partners, and served as a Regional Sales Manager at FDC Ltd. His core areas of expertise and research include Sales & Marketing, Marketing Research and the use of technology in sales and marketing, Pharmaceutical Marketing. He has a keen interest in how emerging digital tools and platforms are transforming marketing practices, sales processes, and customer engagement strategies. An active contributor to academia and industry, he regularly conducts workshops on marketing research and advanced research methodologies using tools such as SPSS, AMOS, Python, and R. He is the author of a book titled Business Research Methods and has published several high-quality research papers in reputed journals. His work reflects a deep understanding of both traditional marketing principles and the evolving role of technology in shaping modern marketing strategies.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swapnil-narayan-undale",
       "scholar": "https://scholar.google.co.in/citations?user=2NFBuKcAAAAJ&hl=en",
@@ -9703,6 +10126,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swapnil-virendra-chalwadi",
     "name": "Mr. Swapnil Virendra Chalwadi",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -9723,6 +10147,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swati-b-mahanoor",
     "name": "CA Swati B Mahanoor",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -9734,7 +10159,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/swati-b-mahanoor.webp",
     "research": "",
-    "summary": "CA Swati B.Mahanoor is Assistent Professor in School of Economics & Commerce at Dr. Vishwanath Karad MIT World Peace University. She has 9 years of teaching experience.She has qualified SET, CS (Inter) and MBA. She is persuing Ph.D from Savitribai Phule Pune University,Pune in Business Administration. She teaches International Tax Laws, GST, Audit & Assurance, Security Analysis & Portfolio Manangement etc.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swati-b-mahanoor"
     },
@@ -9743,6 +10168,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swati-changdeo-jagdale",
     "name": "Dr. Swati Changdeo Jagdale",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -9754,7 +10180,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/swati-changdeo-jagdale.jpg",
     "research": "",
-    "summary": "Dr. Swati Jagdale is a highly accomplished academic and researcher in the field of pharmaceutics. She earned her B. Pharm. (1998), M. Pharm. (2000) from Pune University, and Ph.D. (2009) from Shivaji University Kolhapur. Currently, she holds the prestigious position of Professor in the Department of Pharmaceutics at the School of Health Sciences and Technology in Pune.",
+    "summary": "Dr. Swati Jagdale is a highly accomplished academic and researcher in the field of pharmaceutics. She earned her B. Pharm. (1998), M. Pharm. (2000) from Pune University, and Ph.D. (2009) from Shivaji University Kolhapur. Currently, she holds the prestigious position of Professor in the Department of Pharmaceutics at the School of Health Sciences and Technology in Pune. Dr. Jagdale's significant contributions to the field of pharmaceutics are widely recognized, with more than 100 research articles published in reputed national and international journals, along with five authored books and more than ten book chapters. She holds two Indian patents and two patents from the Republic of South Africa, with an additional four Indian patents currently in process. She has also received funding for her research projects from the Council of Scientific and Industrial Research (CSIR) (Amount 21.36 Lakh) and AICTE-MODROB grant (Rs. 17.22 Lacs), in addition to completing two minor research projects at Savitribai Phule Pune University (4.9 Lakhs). As an experienced guide, Dr. Jagdale has successfully mentored 80 M. Pharm. students and 06 Ph.D. students, with three M. Pharm and five Ph.D. students currently working on their projects under her guidance. Dr. Jagdale has presented her research work at various national and international conferences. Her research article on \"\"Formulation and Evaluation of Gastroretentive Drug Delivery System of Propranolol Hydrochloride\"\" was one of the top five downloaded articles in AAPS PharmSciTech in 2012. She was awarded as ‘Best Teacher Award 2017-18 – Professional Category (Urban)’ by Savitribai Phule Pune University, Pune. She also had awarded with ‘DR. G.R. Ekbote Women Pharmacist Award’ of MAHA-APTICON-2016 & PHARMA AWARD-2016 by APTI. She had previously served as a member of the Board of Studies for Faculty of Pharmaceutics at the University of Pune from 2011-15 and a member of the Board of Studies under Science and Technology for Faculty of Pharmaceutics at Savitribai Phule Pune University from 2019-22. Overall, Dr. Jagdale's expertise, dedication, and research contributions have made her a valuable member of the academic community in pharmaceutics.\"",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swati-changdeo-jagdale",
       "scholar": "https://scholar.google.com/citations?hl=en&pli=1&authuser=1&user=kpeEeHwAAAAJ",
@@ -9766,6 +10192,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swati-deepak-bankar",
     "name": "Dr. Swati Deepak Bankar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor & Associate Dean - External Relations",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9777,7 +10204,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/swati-deepak-bankar.webp",
     "research": "",
-    "summary": "Dr. Swati Bankar is currently serving as the Associate Dean – External Relations and Associate Professor at the School of Business, MIT World Peace University since 2006. XIn her role as Associate Dean, she has developed strong industry linkages and has successfully led numerous collaborative initiatives with industry experts to bridge the gap between academia and industry.",
+    "summary": "Dr. Swati Bankar is currently serving as the Associate Dean – External Relations and Associate Professor at the School of Business, MIT World Peace University since 2006. XIn her role as Associate Dean, she has developed strong industry linkages and has successfully led numerous collaborative initiatives with industry experts to bridge the gap between academia and industry. With 19 years of extensive experience in the field of Human Resource Management, Dr. Bankar has made significant contributions to both academia and industry. She is a recognized Ph.D. Research Guide, a Board of Studies (BOS) member at universities, and serves as an expert on Research Advisory Committees (RACs) across institutions. As a research guide, she has successfully supervised two Ph.D. scholars. She has published two books and several research papers in reputed Scopus and ABDC-indexed journals. Dr. Bankar also holds four patents to her credit, reflecting her innovation-driven academic approach. Certified by the Department of Science and Technology (DST), Government of India, she is an accredited trainer for Entrepreneurship Development. She has actively trained and mentored students on startup development and has worked closely with Self-Help Groups (SHGs) of women, empowering them through entrepreneurial training. She has taught a range of Human Resource subjects, including HR Analytics, International HRD and Organizational Development (IHRDOD), and Training & Development. Her dedication to teaching was recognized when she received the Best Teacher Award from the International Lions Club. Dr. Bankar has also facilitated global learning experiences, having led a two-week University Winter Program on International Management at the University of Hull, UK, and a one-week international program in Bur Dubai. She is also a Project guide for the students of Teesside University UK. Her research and teaching interests lie in Employee Engagement, Talent Management, Leadership, Coaching and Mentoring, and exploring the link between branding and employee behavior using HR instruments.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swati-deepak-bankar"
     },
@@ -9786,6 +10213,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "swetha-rayala",
     "name": "Dr. Swetha Rayala",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -9797,7 +10225,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/swetha-rayala.webp",
     "research": "Drug design, discovery against Neurodegenerative disorders. Computational design, molecular docking, molecular dynamics simulations, QSAR modelling. AI and ML based screening and design of small molecules. Synthetic medicinal chemistry, in vitro, in vivo assays, solubility enhancement for poorly soluble drugs",
-    "summary": "Dr. Rayala Swetha is a medicinal chemist specializing in drug discovery for neurodegenerative diseases, with a particular focus on Alzheimer’s disease. Her research integrates computational design, chemical synthesis, and biological evaluation across enzyme assays, cell-based systems, and animal models to identify and design novel therapeutic molecules.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swetha-rayala",
       "scholar": "https://scholar.google.com/citations?user=eo135j4AAAAJ&hl=en&oi=ao",
@@ -9809,6 +10237,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "tanya-kumar",
     "name": "Dr. Tanya Kumar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -9829,6 +10258,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "tejaswini-bharati",
     "name": "Ms. Tejaswini Bharati",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/design",
     "departmentName": "Department of Design",
@@ -9850,6 +10280,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "tejaswini-pachpor",
     "name": "Dr. Tejaswini Pachpor",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
@@ -9870,6 +10301,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "trushita-sandeep-chaware",
     "name": "Dr. Trushita Sandeep Chaware",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -9890,6 +10322,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "uday-vilas-jagadale",
     "name": "Dr. Uday Vilas Jagadale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -9899,7 +10332,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "science/mathematics-and-statistics": "Department of Mathematics and Statistics"
     },
-    "photoPath": ".",
+    "photoPath": "",
     "research": "Graph theory, discrete mathematics, matroid theory, and connectivity of interconnection networks.",
     "summary": "",
     "links": {
@@ -9913,6 +10346,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "ujjwala-shitalkumar-rawandale",
     "name": "Dr. Ujjwala Shitalkumar Rawandale",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -9923,8 +10357,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "engineering-and-technology/electronics-and-electrical-engineering": "Department of Electrical and Electronics Engineering"
     },
     "photoPath": "./assets/campus/ujjwala-shitalkumar-rawandale.jpg",
-    "research": "",
-    "summary": "Mrs. Ujjwala Rawandale holds a Bachelor's degree in Electronics & Telecommunication Engineering from North Maharashtra University and a Master's degree in Digital Electronics from Amravati University. She is currently pursuing a Ph.D. from SCOE Research Centre, Savitribai Phule Pune University. With 19 years of teaching experience, she is currently working as an Assistant Professor in the School of Electronics and Telecommunication Engineering at Dr. Vishwanath Karad MIT World Peace University. She has presented papers at various prestigious conferences and published research papers in reputed journals. She is an IEEE member and a Life Member of ISTE, and has taken up several administrative responsibilities. Research Area VLSI Design ,Signal Processing Publication [1] Rawandale, U. S., & Kolte, M. T. (2021). “Design, development and analysis of variable bandwidth filter bank for enhancing the performance of hearing aid system.” International Journal of Intelligent Engineering and Systems, 14(6), 391-401. doi:10.22266/ijies2021.1231.35 [2] Ujjwala S Rawandale, Sanjay R. Ganorkar and Mahesh T. Kolte, “VHDL based Design of an Efficient Hearing Aid Filter using an Intelligent Variable-Bandwidth-Filter” International Journal of Advanced Computer Science and Applications(IJACSA),14(1), 2023. http://dx.doi.org/10.14569/IJACSA.2023.0140122 [3] Ujjwala S Rawandale, Sanjay R. Ganorkar and Mahesh T. Kolte, “Aquila Based Adaptive Filtering for Hearing Aid with Optimized Performance” International Journal of Intelligent Engineering and Systems, Vol.16,No.3,2023 doi: 10.22266/ijies2023.0630.12 [4] Shitalkumar A Rawandale, Vijay N Kalbande, Arvind Bodhe, Ujjwala Rawandale, Ratna Patil, \"Estimating the Employment Opportunity of Engineering Students with the Aid of Fuzzy Logic Controller,\" International Journal of Engineering Trends and Technology, vol. 70, no. 3, pp. 319-326, 2022. Crossref, https://doi.org/10.14445/22315381/IJETT-V70I3P236 [5] Ratna Nitin Patil, Shitalkumar Rawandale, Nirmalkumar Rawandale, Ujjwala Rawandale,, Shrishti Patil \"An efficient stacking based NSGA-II approach for predicting type 2 diabetes \"International Journal of Electrical and Computer Engineering (IJECE)Vol. 13, No. 1, February 2023, pp. 1015~1023,ISSN: 2088-8708, DOI:10.11591/ijece.v13i1.pp1015-1023 Google Scholar Link https://scholar.google.com/citations?user=9tFVHdIAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57217205540 Orcid Link https://orcid.org/0000-0001-5254-4956",
+    "research": "VLSI Design ,Signal Processing Publication [1] Rawandale, U. S., & Kolte, M. T. (2021). “Design, development and analysis of variable bandwidth filter bank for enhancing the performance of hearing aid system.” International Journal of Intelligent Engineering and Systems, 14(6), 391-401. doi:10.22266/ijies2021.1231.35 [2] Ujjwala S Rawandale, Sanjay R. Ganorkar and Mahesh T. Kolte, “VHDL based Design of an Efficient Hearing Aid Filter using an Intelligent Variable-Bandwidth-Filter” International Journal of Advanced Computer Science and Applications(IJACSA),14(1), 2023. http://dx.doi.org/10.14569/IJACSA.2023.0140122 [3] Ujjwala S Rawandale, Sanjay R. Ganorkar and Mahesh T. Kolte, “Aquila Based Adaptive Filtering for Hearing Aid with Optimized Performance” International Journal of Intelligent Engineering and Systems, Vol.16,No.3,2023 doi: 10.22266/ijies2023.0630.12 [4] Shitalkumar A Rawandale, Vijay N Kalbande, Arvind Bodhe, Ujjwala Rawandale, Ratna Patil, \"Estimating the Employment Opportunity of Engineering Students with the Aid of Fuzzy Logic Controller,\" International Journal of Engineering Trends and Technology, vol. 70, no. 3, pp. 319-326, 2022. Crossref, https://doi.org/10.14445/22315381/IJETT-V70I3P236 [5] Ratna Nitin Patil, Shitalkumar Rawandale, Nirmalkumar Rawandale, Ujjwala Rawandale,, Shrishti Patil \"An efficient stacking based NSGA-II approach for predicting type 2 diabetes \"International Journal of Electrical and Computer Engineering (IJECE)Vol. 13, No. 1, February 2023, pp. 1015~1023,ISSN: 2088-8708, DOI:10.11591/ijece.v13i1.pp1015-1023 Google Scholar Link https://scholar.google.com/citations?user=9tFVHdIAAAAJ&hl=en Scopus Link https://www.scopus.com/authid/detail.uri?authorId=57217205540 Orcid Link https://orcid.org/0000-0001-5254-4956",
+    "summary": "Mrs. Ujjwala Rawandale holds a Bachelor's degree in Electronics & Telecommunication Engineering from North Maharashtra University and a Master's degree in Digital Electronics from Amravati University. She is currently pursuing a Ph.D. from SCOE Research Centre, Savitribai Phule Pune University. With 19 years of teaching experience, she is currently working as an Assistant Professor in the School of Electronics and Telecommunication Engineering at Dr. Vishwanath Karad MIT World Peace University. She has presented papers at various prestigious conferences and published research papers in reputed journals. She is an IEEE member and a Life Member of ISTE, and has taken up several administrative responsibilities.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ujjwala-shitalkumar-rawandale",
       "scholar": "https://scholar.google.com/citations?user=9tFVHdIAAAAJ&hl=en",
@@ -9936,6 +10370,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "uma-ramachandra-pujeri",
     "name": "Dr. Uma Ramachandra Pujeri",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9947,7 +10382,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/uma-ramachandra-pujeri.jpg",
     "research": "Computer Networks, Cryptography, loud computing, encryption algorithm, Post Quantum Lattice algorithm",
-    "summary": "Dr. Uma R Pujeri was born in Sangli, India in 1981. She earned her M.Tech degree from PSG Tech College of Engineering, Coimbatore in 2008 and received her doctorate degree from Anna University, Chennai in May 2017. Her research area focuses on computer network congestion control algorithms. With fourteen years of teaching experience, she has worked as an Assistant Professor at Adithya College of Engineering, Coimbatore for six years and is currently serving as an Associate Professor at Dr. Vishwanath Karad MIT World Peace University, Pune, Maharashtra. Dr. Pujeri is a Life Member of the Indian Society for Technical Education (ISTE) and has conducted several workshops, FDPs, and conferences. Her post-doctoral fellowship from Srinivas University, Mangalore, under the guidance of Dr. P.S. Aitthal, is registered under the ID 20SUPDROO9. Dr. Pujeri has published 40 research papers in international journals, and her PhD thesis is available on the UGC website https://shodhganga.inflibnet.ac.in/handle/10603/196148. Contact her at uma.pujeri@mitwpu.edu.in.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/uma-ramachandra-pujeri"
     },
@@ -9956,6 +10391,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "umesh-kisan-raut",
     "name": "Dr. Umesh Kisan Raut",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -9967,7 +10403,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/umesh-kisan-raut.jpg",
     "research": "",
-    "summary": "Dr. Umesh Raut is an Associate Professor in the Department of Computer Science and Engineering at MIT-WPU, with over 23 years of teaching experience. His teaching philosophy centers on student-centric, outcome-based learning that combines strong theoretical foundations with practical and research-oriented exposure.",
+    "summary": "Dr. Umesh Raut is an Associate Professor in the Department of Computer Science and Engineering at MIT-WPU, with over 23 years of teaching experience. His teaching philosophy centers on student-centric, outcome-based learning that combines strong theoretical foundations with practical and research-oriented exposure. Motivated by a commitment to academic excellence and innovation, he engages students across UG, PG, and Ph.D. programs through mentoring and research guidance. As a recognized Ph.D. supervisor and researcher with publications, design patents, and a co-authored textbook, he actively contributes to research and innovation in computer engineering. He is actively involved in extracurricular and institutional activities and serves as the Coordinator of the National Academic Immersion Program (NAIP), collaborating with institutions such as IITs and NITs, and aligning his efforts with MIT-WPU’s vision of excellence, holistic development, and societal impact.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/umesh-kisan-raut",
       "scholar": "https://scholar.google.com/citations?user=WhYLrPQAAAAJ&hl=en",
@@ -9979,6 +10415,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "umesh-shrivastava",
     "name": "Dr. Umesh Shrivastava",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10003,6 +10440,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "umeshkumar-bhaiyalal-dubey",
     "name": "Dr. Umeshkumar Bhaiyalal Dubey",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -10026,6 +10464,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "v-n-v-rama-sastry",
     "name": "Dr. V N V Rama Sastry",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10037,7 +10476,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/v-n-v-rama-sastry.webp",
     "research": "",
-    "summary": "He currently serves as Associate Professor at the School of Business, MIT-WPU, Pune, India. He has held prior academic positions at Texas A&M University and University of Wisconsin–Eau Claire among other institutions. His teaching portfolio includes a broad spectrum of finance courses including Corporate Finance, Investment Banking, Fixed Income Securities, International Finance, and Commercial Bank Management. His current research interests lie in Corporate Governance and Corporate Social Responsibility.",
+    "summary": "He currently serves as Associate Professor at the School of Business, MIT-WPU, Pune, India. He has held prior academic positions at Texas A&M University and University of Wisconsin–Eau Claire among other institutions. His teaching portfolio includes a broad spectrum of finance courses including Corporate Finance, Investment Banking, Fixed Income Securities, International Finance, and Commercial Bank Management. His current research interests lie in Corporate Governance and Corporate Social Responsibility. His published work appears in peer-reviewed journals such as International Journal of Social Economics, Corporate Ownership and Control, Research in Finance, Corporate Governance and Sustainability Review. Several of his publications are indexed in Scopus and ranked in ABDC Journal categories.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/v-n-v-rama-sastry"
     },
@@ -10046,6 +10485,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vaibhav-narendra-deshmukh",
     "name": "Dr. Vaibhav Narendra Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -10069,6 +10509,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vaidehi-vaibhav-deshmukh",
     "name": "Dr. Vaidehi Vaibhav Deshmukh",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -10080,7 +10521,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vaidehi-vaibhav-deshmukh.webp",
     "research": "image processing, deep learning",
-    "summary": "Dr. Vaidehi Vaibhav Deshmukh is an accomplished Electronics and Communication engineering faculty member with a wealth of experience teaching Computer Engineering subjects, including Machine Learning, Python, and Java Programming. Their doctoral research focused on image fusion using image processing-based algorithms, and they have developed their own algorithm for image fusion. They have published a book on Image Fusion and a book chapter on image fusion, demonstrating their expertise in this area.",
+    "summary": "Dr. Vaidehi Vaibhav Deshmukh is an accomplished Electronics and Communication engineering faculty member with a wealth of experience teaching Computer Engineering subjects, including Machine Learning, Python, and Java Programming. Their doctoral research focused on image fusion using image processing-based algorithms, and they have developed their own algorithm for image fusion. They have published a book on Image Fusion and a book chapter on image fusion, demonstrating their expertise in this area. Dr. Deshmukh is actively involved in curriculum development, delivering effective lectures, achieving course outcomes, and managing projects. They possess strong administrative, leadership, and communication skills, and their administrative responsibilities involve communicating with SY B Tech students regarding their course enrollment, conducting student orientation, registering students in the ERP system, monitoring their progress, and providing mentorship. With research publications in Scopus/WoS indexed international journals and conferences, Dr. Deshmukh has also worked on various projects related to image fusion, emotion detection, disease detection, object detection, and more. They possess excellent proficiency in MS Excel, Python Programming, MATLAB, and have collaborated with industries to assist them in solving problems in the domain of AI machine learning and deep learning. In addition, Dr. Deshmukh has upgraded their skills in Artificial Intelligence and Data Science through a KPMG course and has conducted and organized workshops for students on various topics like scilab programming, deep learning, python programming, tableau dashboard, and more.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vaidehi-vaibhav-deshmukh"
     },
@@ -10089,6 +10530,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vaishali-hanumant-gaikwad",
     "name": "Dr. Vaishali Hanumant Gaikwad",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -10109,6 +10551,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vaishali-manish-joshi",
     "name": "Mrs. Vaishali Manish Joshi",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -10130,6 +10573,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vaishali-namdevrao-choudhari",
     "name": "Dr. Vaishali Namdevrao Choudhari",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -10140,8 +10584,8 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "liberal-arts-humanities/liberal-arts": "Department of Liberal Arts"
     },
     "photoPath": "./assets/campus/vaishali-namdevrao-choudhari.webp",
-    "research": "Psychology, Mental health",
-    "summary": "Dr. Vaishali Choudhari is a scholar with UGC NET and PhD in Psychology. Her research interests include workplace conflict, positive psychology, mental health, and gender differences. She has authored several articles in reputed journals such as the Indian Journal of Psychology and Education, International Journal of Indian Psychology, and Indian Journal of Natural Sciences. Dr. Choudhari's work includes a systematic review of prenatal mental health in India, a comparative investigation of personality traits and gender differences among management students, and a study on haptic memory in deaf adolescents. She is a dedicated researcher and has made significant contributions to the field of psychology. Research Areas Psychology, Mental health Publications Positivity at Work-Place: A Comparative Investigation & An Inevitable Work-Place Conflict: An Overview Google Scholar link: Google Scholar",
+    "research": "Psychology, Mental health Publications Positivity at Work-Place: A Comparative Investigation & An Inevitable Work-Place Conflict: An Overview Google Scholar link: Google Scholar",
+    "summary": "Dr. Vaishali Choudhari is a scholar with UGC NET and PhD in Psychology. Her research interests include workplace conflict, positive psychology, mental health, and gender differences. She has authored several articles in reputed journals such as the Indian Journal of Psychology and Education, International Journal of Indian Psychology, and Indian Journal of Natural Sciences. Dr. Choudhari's work includes a systematic review of prenatal mental health in India, a comparative investigation of personality traits and gender differences among management students, and a study on haptic memory in deaf adolescents. She is a dedicated researcher and has made significant contributions to the field of psychology.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vaishali-namdevrao-choudhari",
       "scholar": "https://scholar.google.com/citations?user=1UT3lQkAAAAJ&hl=en&oi=ao"
@@ -10151,6 +10595,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vaishali-pankaj-suryawanshi",
     "name": "Mrs. Vaishali Pankaj Suryawanshi",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -10162,7 +10607,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vaishali-pankaj-suryawanshi.jpg",
     "research": "",
-    "summary": "I have extensive academic experience with around 20-23 years of teaching experience in computer engineering fields like data mining, data warehousing, machine learning, and data analytics. I have published more than 20 research publications in international journals and conference proceedings related to data analytics and mining .",
+    "summary": "I have extensive academic experience with around 20-23 years of teaching experience in computer engineering fields like data mining, data warehousing, machine learning, and data analytics. I have published more than 20 research publications in international journals and conference proceedings related to data analytics and mining . I am also involved in department activities such as academic coordination, student technical events, and ISO quality processes. My vision is to contribute effectively to the academic environment through continuous professional growth, responsible leadership, and collaborative teamwork that brings out the best in everyone.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vaishali-pankaj-suryawanshi",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57202986630",
@@ -10175,6 +10620,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vandana-aryan-mooss",
     "name": "Dr. Vandana Aryan Mooss",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -10198,6 +10644,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vandana-kushwaha",
     "name": "Dr. Vandana Kushwaha",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "economics-and-commerce/commerce",
     "departmentName": "Department of Commerce & Accounting",
@@ -10221,6 +10668,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vandana-swapnil-jagtap",
     "name": "Mrs. Vandana Swapnil Jagtap",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -10244,6 +10692,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vanisree-trippayya-ramanathan",
     "name": "Dr. Vanisree Trippayya Ramanathan",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/public-health",
     "departmentName": "Department of Public Health",
@@ -10267,6 +10716,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vanita-raj-tank",
     "name": "Mrs. Vanita Raj Tank",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -10287,6 +10737,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "varsha-shriram-nerlekar",
     "name": "Dr. Varsha Shriram Nerlekar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10310,6 +10761,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vasiahmed-ebrahim-shaikh",
     "name": "Dr. VasiAhmed Ebrahim Shaikh",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "science/chemistry",
     "departmentName": "Department of Chemistry",
@@ -10321,7 +10773,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vasiahmed-ebrahim-shaikh.webp",
     "research": "Liquid-crystalline polymers, biopolymers, microplastics, water purification, and polymer chemistry.",
-    "summary": "Prof. Vasi Shaikh is a highly experienced academician and researcher with over 30 years of teaching and research experience in various science and engineering institutes and universities in India. Over the last few years, Dr. Shaikh played a key role in the successful implementation of a new PG program at the university from its conceptualization to its launch, all while maintaining high academic standards and growing revenue.",
+    "summary": "Prof. Vasi Shaikh is a highly experienced academician and researcher with over 30 years of teaching and research experience in various science and engineering institutes and universities in India. Over the last few years, Dr. Shaikh played a key role in the successful implementation of a new PG program at the university from its conceptualization to its launch, all while maintaining high academic standards and growing revenue. Dr. Shaikh has headed the M.Sc. Industrial Polymer Chemistry program, which has an enrollment of about 60 students. Dr. Shaikh has built a reputation for consistently attracting good admissions and placements. In this role, Dr. Shaikh has implemented several innovative practices that have improved the quality of education and the employability of students. Dr. Shaikh's other achievements include one year of industrial working experience with Asian Paints India Ltd., being a JRF & SRF on DST funded research project, receiving Young Scientist research funding from SERC-DST, New Delhi, being a recognized Ph.D. guide in both chemistry and chemical engineering, and being a member of the BoS and faculty of chemical engineering and chemistry. Dr. Shaikh also served as the ex-chairman of the BoS chemical engineering and has several publications with an impact factor as high as 10. Dr. Shaikh also provides industrial consultancy services. Dr. Shaikh has been recognized for his dedication with prestigious awards such as the Best Teacher award by Savitribai Phule, Pune University and an Ideal Teacher award by MIT, Pune. Currently, Dr. Shaikh is working as a Professor and Associate Dean at MIT World Peace University, where he continues to inspire and lead students to achieve academic excellence.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vasiahmed-ebrahim-shaikh",
       "scholar": "https://scholar.google.com/citations?user=qes29e8AAAAJ&hl=en",
@@ -10333,6 +10785,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vedashree-tushar-mali",
     "name": "Dr. Vedashree Tushar Mali",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10353,6 +10806,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "veena-pravin-kshirsagar",
     "name": "Dr. Veena Pravin Kshirsagar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -10364,7 +10818,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/veena-pravin-kshirsagar.webp",
     "research": "",
-    "summary": "Dr. Veena Vishwanath Sangvikar is an Asst. Prof and Program Head for B.Sc. Computational Mathematics & Statistics, Dept. of Mathematics and Statistics at Dr. Vishwanath Karad MIT World Peace University in Pune, India. She holds a Ph.D. in Mathematics with M.Sc. and M.Phil. qualified degrees. Has an experience of more than 16 years in higher education teaching & more than 6 years of research experience. She is a Life Member of the Indian Mathematical Society. She has published five research papers in Numerical Analysis of Fractional PDE and eight reference books for UG under Pune University. Her current research interest is Applications of Machine Learning and Deep Learning.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/veena-pravin-kshirsagar",
       "scholar": "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=veena+sangvikar&oq=v",
@@ -10376,6 +10830,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vibha-utpal-patel",
     "name": "Dr. Vibha Utpal Patel",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -10396,6 +10851,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vidya-balaji-patil",
     "name": "Mrs. Vidya Balaji Patil",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -10407,7 +10863,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vidya-balaji-patil.jpg",
     "research": "",
-    "summary": "In a variety of areas, including Python programming, machine learning, microprocessors, digital electronics, computer architecture, and network security, my teaching strategy is focused on conceptual clarity, hands-on learning, and problem-based learning.",
+    "summary": "In a variety of areas, including Python programming, machine learning, microprocessors, digital electronics, computer architecture, and network security, my teaching strategy is focused on conceptual clarity, hands-on learning, and problem-based learning. Through projects, coding exercises, and using real world analogy, I encourage students to apply theoretical knowledge to practical issues. I want to develop technically proficient and socially conscious engineers by encouraging curiosity, creativity, and ethical responsibility. This strategy is consistent with MIT-WPU's objective to merge academics, technology, research, and social innovation for societal impact and global peace, as well as its vision of \"Powering the Future\" through education, innovation, and culture.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vidya-balaji-patil",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56642375900",
@@ -10420,6 +10876,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vijay-kumar-kalyani",
     "name": "Dr. Vijay Kumar Kalyani",
+    "preferredDisplayName": "",
     "designation": "Professor of Practice",
     "department": "science/mathematics-and-statistics",
     "departmentName": "Department of Mathematics and Statistics",
@@ -10440,6 +10897,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vijaya-vijaykumar-pangave",
     "name": "Mrs. Vijaya Vijaykumar Pangave",
+    "preferredDisplayName": "",
     "designation": "Lecturer (Selection Grade)",
     "department": "engineering-and-technology/polytechnic-skill-development",
     "departmentName": "Department of Polytechnic",
@@ -10463,6 +10921,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vijayapandi-pandy",
     "name": "Dr. Vijayapandi Pandy",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -10474,7 +10933,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vijayapandi-pandy.webp",
     "research": "",
-    "summary": "Dr. Vijayapandi Pandy is an Associate Professor in the Department of Pharmaceutical Sciences at the School of Health Sciences & Technology, MIT World Peace University, Pune, Maharashtra, India. He obtained his B. Pharm degree with first-class honors in 1997 and completed his M. Pharm in Pharmacology in 2000, securing the first rank at SCS College of Pharmacy, Harapanahalli, Karnataka. He earned his Ph.D. in Psychopharmacology from the prestigious Birla Institute of Technology and Science (BITS), Pilani.",
+    "summary": "Dr. Vijayapandi Pandy is an Associate Professor in the Department of Pharmaceutical Sciences at the School of Health Sciences & Technology, MIT World Peace University, Pune, Maharashtra, India. He obtained his B. Pharm degree with first-class honors in 1997 and completed his M. Pharm in Pharmacology in 2000, securing the first rank at SCS College of Pharmacy, Harapanahalli, Karnataka. He earned his Ph.D. in Psychopharmacology from the prestigious Birla Institute of Technology and Science (BITS), Pilani. Dr. Pandy’s research primarily focuses on the psychopharmacological evaluation of psychoactive natural substances for the discovery of novel therapeutic agents to treat substance use disorders, employing validated animal models. He is a life member of several professional bodies, including the Tamil Nadu Pharmacy Council, the Indian Pharmacological Society, the Laboratory Animal Scientist’s Association (LASA, India), the Association of Pharmaceutical Teachers of India (APTI), the Antiviral Research Society (AVRS), and the Indian Pharmacy Graduate Association. With more than 25 years of teaching and research experience across India, Malaysia, Libya, and Ethiopia, Dr. Pandy has authored 76 research and review articles in peer-reviewed journals and contributed two book chapters. Notably, two of his publications were cited in the World Health Organization’s 44th Report on Drug Dependence. He serves as an Editorial Board Member of Scientific Reports (Nature) and Frontiers in Pharmacology, and acts as a reviewer for several national and international journals. He has delivered invited talks as an eminent speaker at several national and international conferences. He has received multiple research grants, including BKP, UMRG, and HIR-MOHE from Malaysia. In November 2022, Dr. Pandy successfully completed a research project (CRG/2018/000813) as Principal Investigator, funded by the Department of Science and Technology–Science and Engineering Research Board (DST-SERB), Government of India, with a grant of ₹34 lakhs. He is also a recipient of the Mahatma Gandhi Samman Award, conferred by the NRI Welfare Society, Bangkok, Thailand, on 27 May 2017. To date, he has successfully supervised six Ph.D. and fifteen M. Pharm research projects and is currently guiding two Ph.D. and three M. Pharm scholars.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vijayapandi-pandy",
       "scholar": "https://scholar.google.com/citations?hl=en&user=QCRlCDgAAAAJ",
@@ -10486,6 +10945,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vijaykumar-bilolikar",
     "name": "Dr. Vijaykumar Bilolikar",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10506,6 +10966,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vikas-jaywant-magar",
     "name": "Dr. Vikas Jaywant Magar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-science-and-applications",
     "departmentName": "Department of Computer Science and Applications",
@@ -10526,6 +10987,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vikas-keshav-jadhav",
     "name": "Dr. Vikas Keshav Jadhav",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -10546,6 +11008,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vikram-shete",
     "name": "Dr. Vikram Shete",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10566,6 +11029,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vikrant-devidas-gaikwad",
     "name": "Dr. Vikrant Devidas Gaikwad",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/chemical-engineering",
     "departmentName": "Department of Chemical Engineering",
@@ -10579,7 +11043,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vikrant-devidas-gaikwad.webp",
     "research": "",
-    "summary": "Dr. Vikrant Devidas Gaikwad is a distinguished academic leader with over 26 years of experience in advancing educational excellence and institutional growth. As Dean–Academics at Dr. Vishwanath Karad MIT World Peace University, he has consistently demonstrated exceptional leadership in formulating academic strategies, enhancing staff productivity, and driving institutional reforms aligned with the university’s vision and mission.",
+    "summary": "Dr. Vikrant Devidas Gaikwad is a distinguished academic leader with over 26 years of experience in advancing educational excellence and institutional growth. As Dean–Academics at Dr. Vishwanath Karad MIT World Peace University, he has consistently demonstrated exceptional leadership in formulating academic strategies, enhancing staff productivity, and driving institutional reforms aligned with the university’s vision and mission. With a proven record of establishing and stabilizing academic operations in compliance with regulatory requirements, Dr. Gaikwad has significantly contributed to curriculum development, policy formulation, and quality assurance measures. He is widely recognized for his reformist approach and commitment to educational innovation, ensuring that quality education reaches students from all backgrounds. Dr. Gaikwad actively fosters a culture of open communication and intellectual growth, mentoring students and faculty alike. His focus on developing research-oriented environments and promoting industry–institute partnerships has helped nurture an undergraduate research culture and strengthen practical learning outcomes. Deeply committed to academic excellence, Dr. Gaikwad has played a pivotal role in enhancing educational processes through technology integration, innovative teaching methodologies, and the continuous development of academic programs across disciplines. His visionary leadership and emphasis on holistic student development continue to shape the university’s academic landscape.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vikrant-devidas-gaikwad"
     },
@@ -10588,6 +11052,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vilas-sahebrao-kanthale",
     "name": "Dr. Vilas Sahebrao Kanthale",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -10611,6 +11076,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vinaya-vijay-gohokar",
     "name": "Dr. Vinaya Vijay Gohokar",
+    "preferredDisplayName": "",
     "designation": "Professor",
     "department": "engineering-and-technology/electronics-and-electrical-engineering",
     "departmentName": "Department of Electrical and Electronics Engineering",
@@ -10622,7 +11088,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vinaya-vijay-gohokar.webp",
     "research": ": IoT, Computer Vision, Edge Intelligence, Embedded System",
-    "summary": "With over 30 years of experience in teaching and research in Electronics and Communication Engineering, Dr. Vinaya Gohokar is a highly accomplished academician. She completed her graduation in Electronics and Telecommunication Engineering from S.G.B. Amravati University in 1991, and went on to obtain an M.S. in Electronics and Control from B.I.T.S, Pilani. She received her Ph.D. in Electronics Engineering from Amravati University in 2009.",
+    "summary": "With over 30 years of experience in teaching and research in Electronics and Communication Engineering, Dr. Vinaya Gohokar is a highly accomplished academician. She completed her graduation in Electronics and Telecommunication Engineering from S.G.B. Amravati University in 1991, and went on to obtain an M.S. in Electronics and Control from B.I.T.S, Pilani. She received her Ph.D. in Electronics Engineering from Amravati University in 2009. Dr. Gohokar has published over 60 research papers in international journals and conferences, showcasing her expertise in various areas of electronics and communication engineering. Her research interests include IoT, computer vision, and signal processing, and she has successfully guided 6 Ph.D. scholars in these domains. Dr. Gohokar's contribution to the field has been recognized by several funding agencies, including DST and AICTE, with grants worth 60 lakhs to her credit. Her passion for research and teaching has made her a respected figure in the academic community, and she continues to inspire the next generation of engineers and researchers.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vinaya-vijay-gohokar",
       "scholar": "https://scholar.google.com/citations?user=T9i37YkAAAAJ&hl=en",
@@ -10635,6 +11101,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vinayak-sudhakar-wadgaonkar",
     "name": "Dr. Vinayak Sudhakar Wadgaonkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/petroleum-engineering",
     "departmentName": "Department of Petroleum Engineering",
@@ -10646,7 +11113,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vinayak-sudhakar-wadgaonkar.webp",
     "research": "",
-    "summary": "Dr. Vinayak S. Wadgaonkar has completed his doctoral study from L.I.T. nagpur. His doctoral study was focused on Studies on Removal of Heavy Metals By Low Cost Adsorbents. During his doctoral study, he has also carried out collaborative research work in the area of waste water treatment and environmental engineering. He has also presented her research work in several national and international conferences. He pursued his post-graduation (M. E.) in Chemical Engineering from Shivaji University and completed his graduation (B.E) in Chemical Engineering from Amravati University, Amravati. His research area of interests includes natural gas engineering, enhanced oil recovery, flow assurance, waste water treatment, hydrogen production and environmental engineering. Presently he is teaching basic and applied courses at undergraduate, post graduate. He is also recognized Phd guide in Petroleum and Chemical Engineering. He also mentors students for their research project.",
+    "summary": "Dr. Vinayak S. Wadgaonkar has completed his doctoral study from L.I.T. nagpur. His doctoral study was focused on Studies on Removal of Heavy Metals By Low Cost Adsorbents. During his doctoral study, he has also carried out collaborative research work in the area of waste water treatment and environmental engineering. He has also presented her research work in several national and international conferences. He pursued his post-graduation (M. E.) in Chemical Engineering from Shivaji University and completed his graduation (B.E) in Chemical Engineering from Amravati University, Amravati. His research area of interests includes natural gas engineering, enhanced oil recovery, flow assurance, waste water treatment, hydrogen production and environmental engineering. Presently he is teaching basic and applied courses at undergraduate, post graduate. He is also recognized Phd guide in Petroleum and Chemical Engineering. He also mentors students for their research project. Ph.D. from Laxminarayan Institute of Technology (L.I.T.), Nagpur. Offshore Production Engineering, Natural Gas Engineering, HSE in Oil and Gas, Flow Assurance, Petroleum Field Instrumentation and Control, Pipeline Design and Construction Engineering, Piping Engineering, Natural Gas Engineering and Technology, Petroleum Engineering Practices. His research area of interests includes hydrogen production, natural gas engineering and waste water treatment using adsorption, environmental engineering. 1) Vinayak S. Wadgaonkar, R.P., Ugwekar, Removal of Cr(VI) From Waste Water By Powdered Husk of Red Gram As Adsorbent, “Process, Modeling, Simulation and Environmental Applications in Chemical engineering”, APPLE Academic Press (Taylor & Francis Group) , U.S.A., Book Chapter 6 (Scopus), 2015. 2) Vinayak S. Wadgaonkar, R.P., Ugwekar, Removal of Cr(VI) From Waste Water By Powdered Husk of Peas As Adsorbent, “Treatise on Modeling, Separation and Environmental Applications in Chemical Industries”, APPLE Academic Press (Taylor & Francis Group), U.S.A., Book Chapter 8 (Scopus), 2016. 3) Vinayak S. Wadgaonkar., R.P. Ugwekar, Removal of Heavy Metals From Waste Water By Low Cost Adsorbent, International Journal of Biotechnology, Chemical & Environmental Engineering (IJBCEE), Vol.2, (2), August 2013, ISSN 2278 – 0696. 4) Vinayak S. Wadgaonkar, Niraj Topare, A review on application of low cost adsorbents for heavy metals removal from wastewater, Materials Today Proceedings (Q2 Journal), Volume 77, Part 1, 2023, Pages 8- 18. 5) Siraj Bhatkar,Vinayak S. Wadgaonkar, Optimizing produced water quality for enhancing oil recovery, Materials Today Proceedings (Q2 Journal), Volume 77, Part 1, 2023, Pages 81-85. 6) Siraj Bhatkar,Vinayak S. Wadgaonkar, Modifications of Petroleum Industry Effluent Treatment Method: An approach for Quality Improvement of process water for ASP flooding and Chemical EOR, Materials Today Proceedings (Q2 Journal), Volume 77, Part 1, 2023, Pages 371-375. 7) Siraj Bhatkar,Vinayak S. Wadgaonkar, Dose Optimization of Oil Field Produced Water and Advanced Water Treatment for Heavy Viscous oil, Materials Today Proceedings (Q 2 Journal), Volume 77, Part 1, 2023, Pages 376-381. 8) Siraj Bhatkar,Vinayak S. Wadgaonkar, Application of chemical EOR in viscous, heavy crude in thin stacked heterogeneous reservoirs using CMG simulator, Petroleum and Coal (Q 4 Journal), Volume 64, Issue 4, 2022. 9) Mitikesh Mali, Vinayak S. Wadgaonkar, Niraj Topare, Completion Strategy for Water Control inHorizontal Wells of an Indian Western Offshore Oilfield: A Case Study, Advanced Production and Industrial Engineering, Book Chapter (Scopus), 2022, 108-115. 10) Pallavi Mahajan-Tatpate, Supriya Dhume, Naveenkumar Jayakumar, Yogesh Chendake , Sachin Chavan, Ramdas Khomane, Vinayak Wadagaonkar, “Separation of Cr and Mn by polysulfone (PSF) based ultrafiltration (UF) membranes anchored with nanoparticles - Mathematical analysis of rejection properties”, Environ. Eng. Res. (Q2 Journal) 2024; 29(4): 230543. 11) Sarthak Ghatage, Vinayak S. Wadgaonkar, Pallavi Tatpate, Dinesh Bhutada and Himangi Neve, A Review Of Produced Water Characteristics, Methods and Its Reuse”, Indian Journal of Environmental Protection (Q4 Journal), 44(3) : 235-249(2024). 12) Siddharth M. Satbhai, Niraj S. Topare, Dinesh S. Bhutada, Shantini A. Bokil, Vinayak S. Wadgaonkar, Prem Gunnasegaran, “ Review on Biodiesel Wastewater Treatment Using Membrane Bioreactor (MBR) Technology”, International Journal of Membrane Science and Technology (Q 4 Journal), 2023, Vol. 10, No. 3, pp 795-814. 13) Akhil Tewari, Dinesh S. Bhutada and Vinayak Wadgaonkar, “ Heavy Metal Remediation from Water/Wastewater Using Bioadsorbents - A Review, Nature Environment and Pollution Technology (Q4 Journal) ”, Vol. 22 (4), pp 2039-2053, 2023. 14) Vinayak S. Wadgaonkar, Siraj Bhatkar, Dinesh Bhutada, Pratiksha Khurpade, Himangi Neve and Pallavi Tatpate, Completion Strategy: A Case Study of Using Autonomous Inflow Control Technology to Manage Water, Exploring the World of Drilling, Book Chapter, DOI: 10.5772/intechopen.114988.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vinayak-sudhakar-wadgaonkar",
       "scholar": "https://scholar.google.com/citations?user=AsvOM7QAAAAJ&hl=en&oi=ao",
@@ -10659,6 +11126,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vinita-kale",
     "name": "Dr. Vinita Kale",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10670,7 +11138,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vinita-kale.webp",
     "research": "",
-    "summary": "Dr. Vinita holds a PhD in Finance and is a SEBI-certified Resource Person for financial literacy, with extensive experience in conducting training programs. As a certified Entrepreneurship Mentor by NIESBUD, Govt. of India, her expertise spans Entrepreneurship Development, Startups, Risk Management, Accounting for Business Decisions, Banking, and Project Finance.",
+    "summary": "Dr. Vinita holds a PhD in Finance and is a SEBI-certified Resource Person for financial literacy, with extensive experience in conducting training programs. As a certified Entrepreneurship Mentor by NIESBUD, Govt. of India, her expertise spans Entrepreneurship Development, Startups, Risk Management, Accounting for Business Decisions, Banking, and Project Finance. She has presented research at premier institutions like IIM Calcutta, IIM Ahmedabad, and IITs, and has published Scopus-indexed papers in finance and entrepreneurship. With a strong passion for academia and entrepreneurship, she has organized workshops in collaboration with IIMs, IIT Bombay, and government bodies like EDII and DIC. A dynamic trainer, mentor, and consultant, she is dedicated to fostering financial literacy and incubating entrepreneurs, blending finance and entrepreneurship to drive impactful learning and innovation.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vinita-kale"
     },
@@ -10679,6 +11147,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vinod-sartape",
     "name": "Dr. Vinod Sartape",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor(Sociology)",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -10700,6 +11169,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vishakha-vivek-pethkar",
     "name": "Ms. Vishakha Vivek Pethkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "liberal-arts-humanities/liberal-arts",
     "departmentName": "Department of Liberal Arts",
@@ -10710,7 +11180,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "liberal-arts-humanities/liberal-arts": "Department of Liberal Arts"
     },
     "photoPath": "./assets/campus/vishakha-vivek-pethkar.jpg",
-    "research": "",
+    "research": "English Literature and queer studies",
     "summary": "Ms. Vishakha Pethkar holds a Masters Degree in English Literature and is currently pursuing her PhD in Queer studies. With a passion for teaching, she specializes in literature, communication and literary criticism. Her unique perspective and innovative teaching methods have made her a popular figure among her students. She has presented her research papers in various national and international seminars and conferences, and has contributed to multiple publications. With her expertise in the field, she is constantly striving to bring new insights and knowledge to her students.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vishakha-vivek-pethkar"
@@ -10720,6 +11190,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vishvajeet-n",
     "name": "Dr. Vishvajeet Nagargoje",
+    "preferredDisplayName": "Dr. Vishvajeet Nagargoje",
     "designation": "Postdoctoral Researcher, CNRS / LaBRI",
     "department": "research-groups/quantum",
     "departmentName": "Quantum Science & Technology Group",
@@ -10743,6 +11214,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vivek-patel",
     "name": "Dr. Vivek Patel",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/mechanical-engineering",
     "departmentName": "Department of Mechanical Engineering",
@@ -10754,7 +11226,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/vivek-patel.webp",
     "research": "Crashworthiness, Impact analysis, Design, Non-linear analysis, FEA",
-    "summary": "An Assistant Professor in the School of Engineering and Technology, Dr. Vivek Patel's research interests center around nonlinear structural analysis with a particular focus on studying the impact behavior of tubular components in the automobile industry. He is an expert in modeling and simulation of engineering parts using software such as AutoCAD, LS-Dyna, Ansys, and Abaqus. In addition, he has hands-on experience with experimental set-ups such as UTM, Hardness tester, and Ultrasonic assisted casting process. With his technical competency and expertise, he is capable of confirming the statistics of experimental tests with accuracy.",
+    "summary": "",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vivek-patel"
     },
@@ -10763,6 +11235,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "vrunda-hemant-agarkar",
     "name": "Mrs. Vrunda Hemant Agarkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "engineering-and-technology/civil-engineering",
     "departmentName": "Department of Civil Engineering",
@@ -10783,6 +11256,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "waseem-khan",
     "name": "Dr. Waseem Khan",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "business/business",
     "departmentName": "Department of Business",
@@ -10794,7 +11268,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/waseem-khan.webp",
     "research": "",
-    "summary": "Dr. Waseem Khan is currently working as an Assistant Professor in the School of Business at Dr. Vishwanath Karad MIT World Peace University, Pune. He has over six years of diverse experience across academia, research, and industry, having been associated with reputed institutions such as Aligarh Muslim University, Jamia Hamdard, GLA University (Mathura), and the Indian Institute of Management, Lucknow, as well as with ICICI Bank Ltd. He holds a master’s degree and a Ph.D. in Agricultural Economics and Business Management from Aligarh Muslim University and is also qualified in the ASRB-NET in both Agricultural Business Management and Agricultural Economics.",
+    "summary": "Dr. Waseem Khan is currently working as an Assistant Professor in the School of Business at Dr. Vishwanath Karad MIT World Peace University, Pune. He has over six years of diverse experience across academia, research, and industry, having been associated with reputed institutions such as Aligarh Muslim University, Jamia Hamdard, GLA University (Mathura), and the Indian Institute of Management, Lucknow, as well as with ICICI Bank Ltd. He holds a master’s degree and a Ph.D. in Agricultural Economics and Business Management from Aligarh Muslim University and is also qualified in the ASRB-NET in both Agricultural Business Management and Agricultural Economics. His teaching and research interests includes Agricultural and Food Marketing, Agricultural Economics, Research in Agribusiness, Business Statistics, Managerial Economics, Entrepreneurship, and Consumer Behaviour. Dr. Khan has successfully completed a research project funded by the Indian Council of Social Science Research (ICSSR) as Co-Project Director and is currently serving in the same role for a Collaborative Research Project under \"Vision Viksit Bharat@2047.\" Dr. Khan has published more than 50 research papers in leading international journals such as Energy for Sustainable Development (Elsevier), British Food Journal (Emerald), Economic and Political Weekly (EPW), Forum for Social Economics (Routledge), Journal of Public Affairs (Wiley-Blackwell), and South Asian Survey (SAGE). Among these, 40 papers are indexed in Scopus and Journal Citation Reports of Clarivate Analytics and ABDC. His research impact is demonstrated by an H-index of 16 on Google Scholar and 10 on Scopus. In addition to his research contributions, Dr. Khan is actively involved in peer-reviewing for prestigious international journals. He has participated in and chaired technical sessions at various international conferences and has also served as a resource person and session chair for workshops, value-added courses, and events such as the Young Economist Conclave.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/waseem-khan"
     },
@@ -10803,6 +11277,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "yashpal-dashrath-netragaonkar",
     "name": "Dr. Yashpal Dashrath Netragaonkar",
+    "preferredDisplayName": "",
     "designation": "Associate Professor",
     "department": "liberal-arts-humanities/education",
     "departmentName": "Department of Education",
@@ -10825,6 +11300,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "yogadrum-kelkar",
     "name": "Mr. Yogadrum Kelkar",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "design/visual-arts",
     "departmentName": "Department of Visual Arts",
@@ -10845,6 +11321,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "yogesh-raghunath-kulkarni",
     "name": "Dr. Yogesh Raghunath Kulkarni",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -10856,7 +11333,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/yogesh-raghunath-kulkarni.webp",
     "research": "",
-    "summary": "Dr. Yogesh R. Kulkarni serves as an Assistant Professor at SCET, MIT World Peace University College of Engineering and brings over 18 years of rich teaching experience in the field of engineering education. His primary research interests include Data Mining and Data Warehousing, areas in which he has made notable academic contributions.",
+    "summary": "Dr. Yogesh R. Kulkarni serves as an Assistant Professor at SCET, MIT World Peace University College of Engineering and brings over 18 years of rich teaching experience in the field of engineering education. His primary research interests include Data Mining and Data Warehousing, areas in which he has made notable academic contributions. Dr. Kulkarni has published research papers indexed in Elsevier Scopus and several additional papers in reputed national and international journals and conferences. He is an active member of professional bodies and holds lifetime memberships in the Computer Society of India (CSI) and the Indian Society for Technical Education (ISTE). Known for his dedication and strong work ethic, Dr. Kulkarni has successfully guided more than ten undergraduate project groups, MTech students, PhD Scholar in process, supporting students in developing practical and research-oriented skills. In addition to his academic contributions, his effective administrative and organizational abilities enable him to efficiently manage teaching responsibilities and institutional academic activities.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/yogesh-raghunath-kulkarni",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57192315058",
@@ -10869,6 +11346,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "yogini-mukherjee",
     "name": "Prof. Yogini Mukherjee",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "computer-engineering-and-technology/computer-engineering-and-technology",
     "departmentName": "Department of Computer Science and Engineering",
@@ -10880,7 +11358,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/yogini-mukherjee.webp",
     "research": "",
-    "summary": "Yogini Mukherjee, with around 19 years of corporate experience in software development has expertise in working on different projects in various domains. With the extensive corporate experience, I believe firmly in bridging the industry and academia gap by bringing more skilled oriented courses and assignments for students.",
+    "summary": "Yogini Mukherjee, with around 19 years of corporate experience in software development has expertise in working on different projects in various domains. With the extensive corporate experience, I believe firmly in bridging the industry and academia gap by bringing more skilled oriented courses and assignments for students. The best way of learning anything is doing it on our own.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/yogini-mukherjee",
       "linkedin": "https://www.linkedin.com/in/yogini-mukherjee-48891449/"
@@ -10890,6 +11368,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
   {
     "id": "yogita-sachin-ozarde",
     "name": "Dr. Yogita Sachin Ozarde",
+    "preferredDisplayName": "",
     "designation": "Assistant Professor",
     "department": "health-science-technologies/pharmaceutical-sciences",
     "departmentName": "Department of Pharmaceutical Sciences",
@@ -10901,7 +11380,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/yogita-sachin-ozarde.webp",
     "research": "",
-    "summary": "Dr. Yogita Ozarde is an accomplished researcher and teacher with a total of 20 years of experience. She completed her B. Pharmacy and M. Pharmacy from Shivaji University, Kolhapur and her Ph.D from Savitribai Phule Pune University, Pune. Currently, she serves as an Assistant Professor in Pharmaceutical Chemistry at MIT World Peace University, School of Health Science and Technology.",
+    "summary": "Dr. Yogita Ozarde is an accomplished researcher and teacher with a total of 20 years of experience. She completed her B. Pharmacy and M. Pharmacy from Shivaji University, Kolhapur and her Ph.D from Savitribai Phule Pune University, Pune. Currently, she serves as an Assistant Professor in Pharmaceutical Chemistry at MIT World Peace University, School of Health Science and Technology. Dr. Ozarde has supervised over 20 undergraduate students and 7 Postgraduate students, and has received research grants from BCUD, Savitribai Phule Pune University. Her research interests lie in the phytochemical and pharmacological evaluation of herbal plants, as well as the isolation and spectral analysis of phytoconstituents. She has presented her research work at national and international conferences and has multiple research publications to her credit.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/yogita-sachin-ozarde",
       "scholar": "https://scholar.google.com/citations?hl=en&user=bX1BPcgAAAAJ",

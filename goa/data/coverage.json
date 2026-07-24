@@ -11,12 +11,14 @@
   },
   "counts": {
     "source_html_pages": 199,
-    "source_backed_routes": 183,
+    "source_backed_routes": 159,
     "synthetic_reviewed_routes": 5,
-    "generated_html_routes": 188,
-    "search_index_records": 186,
-    "skipped_source_records": 16,
-    "local_media_files": 94,
+    "generated_html_routes": 164,
+    "search_index_records": 162,
+    "skipped_source_records": 40,
+    "editorial_blog_exclusions": 24,
+    "suppressed_editorial_links": 11,
+    "local_media_files": 71,
     "optimized_media_derivatives": 6,
     "failed_media_downloads": 0,
     "document_link_references": 15,
@@ -26,7 +28,7 @@
     "latest_rail_items": 4,
     "advisor_context_routes": 15,
     "resident_researcher_records": 0,
-    "validated_local_links": 4148,
+    "validated_local_links": 3581,
     "validation_issues": 0,
     "media_policy_errors": 0,
     "media_policy_warnings": 0
@@ -42,10 +44,10 @@
     "events": 1,
     "home": 1,
     "latest": 1,
-    "news": 31,
+    "news": 10,
     "news-author": 3,
     "news-index": 1,
-    "news-topic": 7,
+    "news-topic": 4,
     "people-index": 1,
     "person": 3,
     "programme": 5,
@@ -62,6 +64,7 @@
     "duplicate_page": 3,
     "duplicate_programme": 2,
     "duplicate_source_url": 1,
+    "editorial_seo_blog_excluded": 24,
     "test_page": 1,
     "transactional_form": 3,
     "transactional_page": 3,
@@ -87,6 +90,126 @@
       "source_url": "https://wpugoa.edu.in/apply",
       "source_path": "apply",
       "reason": "transactional_page"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/ai-careers-btech-in-computer-science",
+      "source_path": "blog/ai-careers-btech-in-computer-science",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/bsc-hons-in-economics-career-scope",
+      "source_path": "blog/bsc-hons-in-economics-career-scope",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/bsc-psychology-subjects-career-scope",
+      "source_path": "blog/bsc-psychology-subjects-career-scope",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design",
+      "source_path": "blog/communication-design",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/best-university-for-career-goals",
+      "source_path": "blog/communication-design/best-university-for-career-goals",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/bsc-media-communication-films-career-scope",
+      "source_path": "blog/communication-design/bsc-media-communication-films-career-scope",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/btech-computer-science-subjects-careers",
+      "source_path": "blog/communication-design/btech-computer-science-subjects-careers",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/careers-in-communication-design-skills-industry-trends",
+      "source_path": "blog/communication-design/careers-in-communication-design-skills-industry-trends",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/cs-education-ai-era-wpu-goa",
+      "source_path": "blog/cs-education-ai-era-wpu-goa",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/energy-systems-engineering-worth-it",
+      "source_path": "blog/energy-systems-engineering-worth-it",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/how-to-identify-a-future-ready-university",
+      "source_path": "blog/how-to-identify-a-future-ready-university",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/how-wpu-goa-extends-mit-pune-legacy",
+      "source_path": "blog/how-wpu-goa-extends-mit-pune-legacy",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/integrated-product-design",
+      "source_path": "blog/integrated-product-design",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/integrated-product-design/what-to-expect-integrated-product-design-program",
+      "source_path": "blog/integrated-product-design/what-to-expect-integrated-product-design-program",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/product-design-career-future-wpu-goa",
+      "source_path": "blog/product-design-career-future-wpu-goa",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-education",
+      "source_path": "blog/transdisciplinary-education",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-education/rise-of-transdisciplinary-education-higher-learning",
+      "source_path": "blog/transdisciplinary-education/rise-of-transdisciplinary-education-higher-learning",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-education/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures",
+      "source_path": "blog/transdisciplinary-education/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-industry-ready-learning",
+      "source_path": "blog/transdisciplinary-industry-ready-learning",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-universities-future-of-higher-education",
+      "source_path": "blog/transdisciplinary-universities-future-of-higher-education",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/what-can-you-do-after-bsc-psychology",
+      "source_path": "blog/what-can-you-do-after-bsc-psychology",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/why-students-are-looking-beyond-traditional-universities",
+      "source_path": "blog/why-students-are-looking-beyond-traditional-universities",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/why-wpu-goa-leading-transdisciplinary-university",
+      "source_path": "blog/why-wpu-goa-leading-transdisciplinary-university",
+      "reason": "editorial_seo_blog_excluded"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/wpu-goa-key-features",
+      "source_path": "blog/wpu-goa-key-features",
+      "reason": "editorial_seo_blog_excluded"
     },
     {
       "source_url": "https://wpugoa.edu.in/blogs",
@@ -168,30 +291,6 @@
     "https://wpugoa.edu.in/author/oze": "/goa/news/authors/oze/",
     "https://wpugoa.edu.in/author/pratibha-kathar": "/goa/news/authors/pratibha-kathar/",
     "https://wpugoa.edu.in/author/wpugoa": "/goa/news/authors/wpugoa/",
-    "https://wpugoa.edu.in/blog/ai-careers-btech-in-computer-science": "/goa/news/ai-careers-btech-in-computer-science/",
-    "https://wpugoa.edu.in/blog/bsc-hons-in-economics-career-scope": "/goa/news/bsc-hons-in-economics-career-scope/",
-    "https://wpugoa.edu.in/blog/bsc-psychology-subjects-career-scope": "/goa/news/bsc-psychology-subjects-career-scope/",
-    "https://wpugoa.edu.in/blog/communication-design": "/goa/news/topics/communication-design/",
-    "https://wpugoa.edu.in/blog/communication-design/best-university-for-career-goals": "/goa/news/best-university-for-career-goals/",
-    "https://wpugoa.edu.in/blog/communication-design/bsc-media-communication-films-career-scope": "/goa/news/bsc-media-communication-films-career-scope/",
-    "https://wpugoa.edu.in/blog/communication-design/btech-computer-science-subjects-careers": "/goa/news/btech-computer-science-subjects-careers/",
-    "https://wpugoa.edu.in/blog/communication-design/careers-in-communication-design-skills-industry-trends": "/goa/news/careers-in-communication-design-skills-industry-trends/",
-    "https://wpugoa.edu.in/blog/cs-education-ai-era-wpu-goa": "/goa/news/cs-education-ai-era-wpu-goa/",
-    "https://wpugoa.edu.in/blog/energy-systems-engineering-worth-it": "/goa/news/energy-systems-engineering-worth-it/",
-    "https://wpugoa.edu.in/blog/how-to-identify-a-future-ready-university": "/goa/news/how-to-identify-a-future-ready-university/",
-    "https://wpugoa.edu.in/blog/how-wpu-goa-extends-mit-pune-legacy": "/goa/news/how-wpu-goa-extends-mit-pune-legacy/",
-    "https://wpugoa.edu.in/blog/integrated-product-design": "/goa/news/topics/integrated-product-design/",
-    "https://wpugoa.edu.in/blog/integrated-product-design/what-to-expect-integrated-product-design-program": "/goa/news/what-to-expect-integrated-product-design-program/",
-    "https://wpugoa.edu.in/blog/product-design-career-future-wpu-goa": "/goa/news/product-design-career-future-wpu-goa/",
-    "https://wpugoa.edu.in/blog/transdisciplinary-education": "/goa/news/topics/transdisciplinary-education/",
-    "https://wpugoa.edu.in/blog/transdisciplinary-education/rise-of-transdisciplinary-education-higher-learning": "/goa/news/rise-of-transdisciplinary-education-higher-learning/",
-    "https://wpugoa.edu.in/blog/transdisciplinary-education/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures": "/goa/news/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures/",
-    "https://wpugoa.edu.in/blog/transdisciplinary-industry-ready-learning": "/goa/news/transdisciplinary-industry-ready-learning/",
-    "https://wpugoa.edu.in/blog/transdisciplinary-universities-future-of-higher-education": "/goa/news/transdisciplinary-universities-future-of-higher-education/",
-    "https://wpugoa.edu.in/blog/what-can-you-do-after-bsc-psychology": "/goa/news/what-can-you-do-after-bsc-psychology/",
-    "https://wpugoa.edu.in/blog/why-students-are-looking-beyond-traditional-universities": "/goa/news/why-students-are-looking-beyond-traditional-universities/",
-    "https://wpugoa.edu.in/blog/why-wpu-goa-leading-transdisciplinary-university": "/goa/news/why-wpu-goa-leading-transdisciplinary-university/",
-    "https://wpugoa.edu.in/blog/wpu-goa-key-features": "/goa/news/wpu-goa-key-features/",
     "https://wpugoa.edu.in/blogs": "/goa/news/",
     "https://wpugoa.edu.in/build-whats-next": "/goa/academics/build-whats-next/",
     "https://wpugoa.edu.in/campus-life": "/goa/about/campus-life/",
@@ -400,10 +499,10 @@
   },
   "validation": {
     "schema": "wpu-goa.export-validation.v1",
-    "generated_html_routes": 188,
-    "expected_routes": 188,
-    "validated_local_links": 4148,
-    "validated_local_assets": 300,
+    "generated_html_routes": 164,
+    "expected_routes": 164,
+    "validated_local_links": 3581,
+    "validated_local_assets": 231,
     "first_layer_routes_covered": 8,
     "latest_rail_items": 4,
     "advisor_context_routes": 15,
@@ -431,5 +530,28 @@
         "warnings": 0
       }
     }
+  },
+  "editorial_exclusion_validation": {
+    "schema": "wpu-goa.editorial-exclusion-validation.v1",
+    "status": "passed",
+    "excluded_source_records": 24,
+    "excluded_previous_routes": 24,
+    "public_records_checked": 164,
+    "search_records_checked": 162,
+    "html_files_checked": 164,
+    "visible_feed_routes_checked": [
+      "/goa/",
+      "/goa/latest/",
+      "/goa/news/"
+    ],
+    "route_leaks": [],
+    "search_leaks": [],
+    "public_record_title_leaks": [],
+    "search_text_leaks": [],
+    "source_leaks": [],
+    "output_leaks": [],
+    "visible_link_leaks": [],
+    "feed_route_leaks": [],
+    "issues": []
   }
 }

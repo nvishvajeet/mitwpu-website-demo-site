@@ -647,6 +647,63 @@ h3 {
   color: var(--blue);
 }
 
+.unesco-focus {
+  color: #e8f0f4;
+  background: var(--institution);
+  border-bottom: 3px solid var(--gold);
+}
+
+.unesco-focus__grid {
+  display: grid;
+  grid-template-columns: minmax(11rem, 0.38fr) minmax(0, 1.62fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  padding-block: clamp(3.6rem, 8vw, 6.5rem);
+}
+
+.unesco-focus__label {
+  max-width: 12ch;
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 3vw, 2.35rem);
+  line-height: 1.15;
+}
+
+.unesco-focus__copy {
+  max-width: 50rem;
+}
+
+.unesco-focus__copy .section-label {
+  color: #bcd5e3;
+}
+
+.unesco-focus__copy h2 {
+  max-width: 18ch;
+  margin-top: 0.65rem;
+  color: #fff;
+}
+
+.unesco-focus__copy > p:not(.section-label) {
+  max-width: 62ch;
+  margin: 1.1rem 0 0;
+  color: #d6e3ea;
+}
+
+.unesco-focus__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.unesco-focus__links .text-link {
+  color: #fff;
+}
+
+.unesco-focus__links .text-link:hover {
+  color: #d6e3ea;
+}
+
 .legacy-timeline {
   padding-block: clamp(4rem, 9vw, 8rem);
 }
@@ -925,6 +982,23 @@ h3 {
   font-size: 0.88rem;
 }
 
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.footer-social a {
+  color: #dbe6ec;
+  font-size: 0.82rem;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: #fff;
+}
+
 .footer-group h2 {
   margin: 0 0 0.9rem;
   color: #fff;
@@ -1128,6 +1202,7 @@ h3 {
   .section-heading,
   .source-panel,
   .maeer-founder__grid,
+  .unesco-focus__grid,
   .leadership-editorial__header,
   .leadership-index__header,
   .leadership-office,

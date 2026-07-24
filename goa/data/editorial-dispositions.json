@@ -1,0 +1,285 @@
+{
+  "schema": "wpu-goa.editorial-dispositions.v1",
+  "policy": {
+    "id": "exclude-seo-career-listicle-blog",
+    "decision": "Retain the captured source evidence, but do not publish Goa /blog/ career-listicle pages as university news.",
+    "scope": "Source paths /blog and /blog/**",
+    "reason": "editorial_seo_blog_excluded",
+    "evidence": "reports/read-only-audit/goa-completeness-2026-07-24/README.md",
+    "genuine_news_and_events_retained": true
+  },
+  "retained_crawl_evidence": {
+    "crawl_root": "/Users/vishvajeetn/Projects/wpu-goa-website-research/data/crawls/2026-07-23",
+    "pages_sha256": "bf2da1675fedc2283b5fdd2846ca4708865fe955f4a1012f83aa477ca61a2328",
+    "successful_html_pages": 199
+  },
+  "counts": {
+    "excluded_source_records": 24,
+    "suppressed_links": 11
+  },
+  "dispositions": [
+    {
+      "source_url": "https://wpugoa.edu.in/blog/ai-careers-btech-in-computer-science",
+      "source_path": "blog/ai-careers-btech-in-computer-science",
+      "source_raw_path": "raw/07c34cfb141527c806eb5d5de30cf4760c8889cbda31230fe1406cf9d07021c5.html.gz",
+      "captured_at": "2026-07-23T13:52:41.246662+00:00",
+      "title": "AI Careers After B.Tech in Computer Science",
+      "previous_public_route": "/goa/news/ai-careers-btech-in-computer-science/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/bsc-hons-in-economics-career-scope",
+      "source_path": "blog/bsc-hons-in-economics-career-scope",
+      "source_raw_path": "raw/99ee437d068cac245e898b63d7f383c71ed82daea1da024b136a1d281a31831d.html.gz",
+      "captured_at": "2026-07-23T13:52:43.350624+00:00",
+      "title": "Career Opportunities and Higher Studies After B.Sc Hons in Economics",
+      "previous_public_route": "/goa/news/bsc-hons-in-economics-career-scope/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/bsc-psychology-subjects-career-scope",
+      "source_path": "blog/bsc-psychology-subjects-career-scope",
+      "source_raw_path": "raw/3943fc359476cda54e692b92f0ff7a380ab525b07e93294db67fa3002b80e0a9.html.gz",
+      "captured_at": "2026-07-23T13:52:45.483773+00:00",
+      "title": "BSc Psychology Subjects and Career Scope in India",
+      "previous_public_route": "/goa/news/bsc-psychology-subjects-career-scope/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design",
+      "source_path": "blog/communication-design",
+      "source_raw_path": "raw/4243758a7a5ff0029097697bbc5a38f4213e627eda1e8d78f778b04955f7c314.html.gz",
+      "captured_at": "2026-07-23T13:52:47.576488+00:00",
+      "title": "Communication design Archives",
+      "previous_public_route": "/goa/news/topics/communication-design/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/best-university-for-career-goals",
+      "source_path": "blog/communication-design/best-university-for-career-goals",
+      "source_raw_path": "raw/0ed1a8ebdabe6e0db1b54517682f486957ffb81efb1990f1ab561aadd839de9c.html.gz",
+      "captured_at": "2026-07-23T13:52:49.712580+00:00",
+      "title": "How to Choose the Best University for Your Career Goals in 2026",
+      "previous_public_route": "/goa/news/best-university-for-career-goals/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/bsc-media-communication-films-career-scope",
+      "source_path": "blog/communication-design/bsc-media-communication-films-career-scope",
+      "source_raw_path": "raw/92595de540405b46efec475a3b3ce4dabc41a278fd98166fca9ac004066c615c.html.gz",
+      "captured_at": "2026-07-23T13:52:51.871291+00:00",
+      "title": "B.Sc in Media Communication and Films Career Scope",
+      "previous_public_route": "/goa/news/bsc-media-communication-films-career-scope/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/btech-computer-science-subjects-careers",
+      "source_path": "blog/communication-design/btech-computer-science-subjects-careers",
+      "source_raw_path": "raw/1965649e855fe9b37fa00d88d062449ed3b31a7270b6b03fae0dc0b9f8a5d4c8.html.gz",
+      "captured_at": "2026-07-23T13:52:54.022970+00:00",
+      "title": "B.Tech Computer Science at WPU Goa: Subjects & Career Paths",
+      "previous_public_route": "/goa/news/btech-computer-science-subjects-careers/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/communication-design/careers-in-communication-design-skills-industry-trends",
+      "source_path": "blog/communication-design/careers-in-communication-design-skills-industry-trends",
+      "source_raw_path": "raw/6d666cedde2b9757693d843cc09bc6368e294fc677ba4a291e28fa99eb7d935d.html.gz",
+      "captured_at": "2026-07-23T13:52:56.178444+00:00",
+      "title": "B.Des in Communication Design: Career Scope and Industry Trends",
+      "previous_public_route": "/goa/news/careers-in-communication-design-skills-industry-trends/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/cs-education-ai-era-wpu-goa",
+      "source_path": "blog/cs-education-ai-era-wpu-goa",
+      "source_raw_path": "raw/bf600e09495d72368ce881ec09a2f512a9fc3af6f82e903f12fe88ddc6bc63c2.html.gz",
+      "captured_at": "2026-07-23T13:52:58.276938+00:00",
+      "title": "Future-Focused AI Learning in Computer Science at WPU GŌA",
+      "previous_public_route": "/goa/news/cs-education-ai-era-wpu-goa/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/energy-systems-engineering-worth-it",
+      "source_path": "blog/energy-systems-engineering-worth-it",
+      "source_raw_path": "raw/bfb0bc2caec438237758b4b5936aa335b97395564ba48bb61df38aef030286aa.html.gz",
+      "captured_at": "2026-07-23T13:53:00.562742+00:00",
+      "title": "Is Energy Systems Engineering Worth It in 2026",
+      "previous_public_route": "/goa/news/energy-systems-engineering-worth-it/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/how-to-identify-a-future-ready-university",
+      "source_path": "blog/how-to-identify-a-future-ready-university",
+      "source_raw_path": "raw/cb208564fb90d226cf437f330e7b66aeb6a6dc0e5bc2c4da010237593f7f07e4.html.gz",
+      "captured_at": "2026-07-23T13:53:02.791119+00:00",
+      "title": "How to Choose a Future-Ready University for Career Success",
+      "previous_public_route": "/goa/news/how-to-identify-a-future-ready-university/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/how-wpu-goa-extends-mit-pune-legacy",
+      "source_path": "blog/how-wpu-goa-extends-mit-pune-legacy",
+      "source_raw_path": "raw/af102fb7455bbc340288b279d95254dbe1132f581d7b2c0716d6f197d85dc494.html.gz",
+      "captured_at": "2026-07-23T13:53:04.906194+00:00",
+      "title": "How MIT Pune Legacy Reflected in WPU Goa Education",
+      "previous_public_route": "/goa/news/how-wpu-goa-extends-mit-pune-legacy/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/integrated-product-design",
+      "source_path": "blog/integrated-product-design",
+      "source_raw_path": "raw/675465e42362787e46447679dfb258a0111e31c4d33c557a1d8b8281da779562.html.gz",
+      "captured_at": "2026-07-23T13:53:07.041041+00:00",
+      "title": "Integrated product design Archives",
+      "previous_public_route": "/goa/news/topics/integrated-product-design/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/integrated-product-design/what-to-expect-integrated-product-design-program",
+      "source_path": "blog/integrated-product-design/what-to-expect-integrated-product-design-program",
+      "source_raw_path": "raw/5343a97a5bb96ec4fb139cfcaf35239c0c1f6b66d10d0d57eec923ce51357335.html.gz",
+      "captured_at": "2026-07-23T13:53:09.161655+00:00",
+      "title": "Inside an Integrated Product Design Program: What You Should Know",
+      "previous_public_route": "/goa/news/what-to-expect-integrated-product-design-program/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/product-design-career-future-wpu-goa",
+      "source_path": "blog/product-design-career-future-wpu-goa",
+      "source_raw_path": "raw/c5906b2225e361a528933bec624f776dbfd8facf53c91dfe4afb7c3b3eb66df7.html.gz",
+      "captured_at": "2026-07-23T13:53:11.372385+00:00",
+      "title": "Why Product Design is a Leading Career Choice",
+      "previous_public_route": "/goa/news/product-design-career-future-wpu-goa/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-education",
+      "source_path": "blog/transdisciplinary-education",
+      "source_raw_path": "raw/5d82b254204dc5602b6f8c78c52c46d4aa412cef22c9a49756e6eb33dd81db32.html.gz",
+      "captured_at": "2026-07-23T13:53:13.421164+00:00",
+      "title": "Transdisciplinary Education Archives",
+      "previous_public_route": "/goa/news/topics/transdisciplinary-education/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-education/rise-of-transdisciplinary-education-higher-learning",
+      "source_path": "blog/transdisciplinary-education/rise-of-transdisciplinary-education-higher-learning",
+      "source_raw_path": "raw/2c128126588b774891abf1748961dcd8055321c9e33ff6a35734b720b64dcb9c.html.gz",
+      "captured_at": "2026-07-23T13:53:15.531519+00:00",
+      "title": "How Transdisciplinary Education Is Transforming Higher Education",
+      "previous_public_route": "/goa/news/rise-of-transdisciplinary-education-higher-learning/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-education/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures",
+      "source_path": "blog/transdisciplinary-education/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures",
+      "source_raw_path": "raw/235913b115b915e7ac07b7b3e8967780ba4cc8e4a265e34da542be94bed606cc.html.gz",
+      "captured_at": "2026-07-23T13:53:17.614933+00:00",
+      "title": "Transdisciplinary Approach for Sustainable Futures",
+      "previous_public_route": "/goa/news/the-transdisciplinary-approachreimagining-higher-education-for-sustainable-futures/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-industry-ready-learning",
+      "source_path": "blog/transdisciplinary-industry-ready-learning",
+      "source_raw_path": "raw/c2948f1eb41d4adce922249f598b110e1b91e78e29c690dd5db9cfb35a01366d.html.gz",
+      "captured_at": "2026-07-23T13:53:19.744113+00:00",
+      "title": "How WPU GŌA Builds Industry-Ready Graduates Through Integration",
+      "previous_public_route": "/goa/news/transdisciplinary-industry-ready-learning/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/transdisciplinary-universities-future-of-higher-education",
+      "source_path": "blog/transdisciplinary-universities-future-of-higher-education",
+      "source_raw_path": "raw/1102fe5b315bb34dc158127418364d69b1caa121407488f404be22a58b83b908.html.gz",
+      "captured_at": "2026-07-23T13:53:22.071427+00:00",
+      "title": "Why Transdisciplinary Universities Are Shaping Future Education",
+      "previous_public_route": "/goa/news/transdisciplinary-universities-future-of-higher-education/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/what-can-you-do-after-bsc-psychology",
+      "source_path": "blog/what-can-you-do-after-bsc-psychology",
+      "source_raw_path": "raw/2b17a538e7da7409479922dcb0d14990785cccda736be5ddb1fb8a2f7180ea1f.html.gz",
+      "captured_at": "2026-07-23T13:53:24.206824+00:00",
+      "title": "Psychology Careers After B.Sc. at WPU GŌA",
+      "previous_public_route": "/goa/news/what-can-you-do-after-bsc-psychology/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/why-students-are-looking-beyond-traditional-universities",
+      "source_path": "blog/why-students-are-looking-beyond-traditional-universities",
+      "source_raw_path": "raw/5e1ed3eb2993713cbcc95a1613689414791cee26de1f4e6eb401ff156900ef8b.html.gz",
+      "captured_at": "2026-07-23T13:53:26.369910+00:00",
+      "title": "Why Modern Students Prefer Future-Focused Universities",
+      "previous_public_route": "/goa/news/why-students-are-looking-beyond-traditional-universities/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/why-wpu-goa-leading-transdisciplinary-university",
+      "source_path": "blog/why-wpu-goa-leading-transdisciplinary-university",
+      "source_raw_path": "raw/d96d06d5921fb0d8e113e28c68559b200da1af0a121dcf0fb30aa08cfdbbb072.html.gz",
+      "captured_at": "2026-07-23T13:53:28.561655+00:00",
+      "title": "Why WPU Goa Stands Out as a Leading Transdisciplinary University",
+      "previous_public_route": "/goa/news/why-wpu-goa-leading-transdisciplinary-university/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    },
+    {
+      "source_url": "https://wpugoa.edu.in/blog/wpu-goa-key-features",
+      "source_path": "blog/wpu-goa-key-features",
+      "source_raw_path": "raw/d07cbc32215c116586199700bb1066b7287f9f98c4101cee458222c7faf38671.html.gz",
+      "captured_at": "2026-07-23T13:53:30.688631+00:00",
+      "title": "Why WPU Goa is the Right Choice for Career-Focused Students in 2026",
+      "previous_public_route": "/goa/news/wpu-goa-key-features/",
+      "reason": "editorial_seo_blog_excluded",
+      "disposition": "retained_in_crawl_excluded_from_public_export"
+    }
+  ],
+  "validation": {
+    "schema": "wpu-goa.editorial-exclusion-validation.v1",
+    "status": "passed",
+    "excluded_source_records": 24,
+    "excluded_previous_routes": 24,
+    "public_records_checked": 164,
+    "search_records_checked": 162,
+    "html_files_checked": 164,
+    "visible_feed_routes_checked": [
+      "/goa/",
+      "/goa/latest/",
+      "/goa/news/"
+    ],
+    "route_leaks": [],
+    "search_leaks": [],
+    "public_record_title_leaks": [],
+    "search_text_leaks": [],
+    "source_leaks": [],
+    "output_leaks": [],
+    "visible_link_leaks": [],
+    "feed_route_leaks": [],
+    "issues": []
+  }
+}

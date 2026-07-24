@@ -263,7 +263,7 @@ window.QUANTUM_GROUP = {
     },
     {
       "id": "preeti-kale",
-      "profileSlug": "preeti-kale",
+      "profileSlug": "preeti-amit-kale",
       "memberType": "faculty",
       "name": "Dr. Preeti Kale",
       "preferredDisplayName": "Dr. Preeti Kale",

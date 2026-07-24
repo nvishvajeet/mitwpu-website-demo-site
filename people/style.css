@@ -410,10 +410,6 @@ button:hover {
     padding-block: 9px;
   }
 
-  .institution-links a:not(:last-child) {
-    display: none;
-  }
-
   .directory-intro-grid,
   .footer-grid {
     grid-template-columns: 1fr;

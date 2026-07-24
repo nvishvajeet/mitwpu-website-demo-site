@@ -1,9 +1,9 @@
 {
   "schema": "wpu-goa.export-validation.v1",
-  "generated_html_routes": 188,
-  "expected_routes": 188,
-  "validated_local_links": 4148,
-  "validated_local_assets": 300,
+  "generated_html_routes": 164,
+  "expected_routes": 164,
+  "validated_local_links": 3581,
+  "validated_local_assets": 231,
   "first_layer_media_coverage": {
     "/goa/": {
       "media_count": 1,

@@ -296,10 +296,6 @@ mark {
     padding-block: 9px;
   }
 
-  .institution-links a:not(:last-child) {
-    display: none;
-  }
-
   .search-form {
     grid-template-columns: 1fr;
   }
