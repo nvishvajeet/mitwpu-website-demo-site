@@ -232,13 +232,13 @@ h3 {
 }
 
 .header-actions {
-  gap: 27px;
+  gap: 1rem;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: clamp(14px, 1.55vw, 23px);
+  gap: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -741,7 +741,7 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   text-decoration: none;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 58.75rem) {
   .header-inner {
     height: 112px;
     min-height: 112px;

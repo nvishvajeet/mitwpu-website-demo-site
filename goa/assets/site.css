@@ -398,6 +398,67 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   background: var(--blue-soft);
 }
 .person-card p { margin: 0; color: var(--muted); }
+.directory-grid, .document-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.directory-card {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: .2rem;
+  background: var(--surface);
+}
+.directory-card h3 { margin: 0; font-size: 1.25rem; }
+.advisor-card {
+  display: grid;
+  grid-template-columns: 4.8rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.advisor-card img {
+  display: block;
+  width: 4.8rem;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: .15rem;
+  background: var(--blue-soft);
+}
+.evidence-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 46rem);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.evidence-gallery figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: .2rem;
+  background: var(--surface);
+}
+.evidence-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.document-library {
+  margin-top: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: .2rem;
+  background: var(--pale);
+}
+.document-library h2 { font-size: clamp(1.45rem, 3vw, 2rem); }
+.document-library p { max-width: 65ch; color: var(--muted); }
+.document-card a { font-weight: 700; }
+.document-card small { display: block; margin-top: .45rem; color: var(--muted); }
 
 .detail-layout {
   display: grid;
@@ -534,7 +595,8 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   .brand-mark { width: 8.6rem; }
   .site-nav { gap: .2rem .75rem; }
   .site-nav a { font-size: .83rem; }
-  .stat-grid, .card-grid, .people-grid, .compact-list { grid-template-columns: 1fr; }
+  .stat-grid, .card-grid, .people-grid, .compact-list,
+  .directory-grid, .document-list { grid-template-columns: 1fr; }
   .latest-rail { grid-auto-columns: 84%; }
   .latest-card { height: 20.5rem; }
   .search-form { grid-template-columns: 1fr; }

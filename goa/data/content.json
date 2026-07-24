@@ -19,6 +19,8 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -713,6 +715,8 @@
       "height": 280
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -934,6 +938,16 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/02/WPU-GOA_-Brochure_2026.pdf",
+        "text": "WPU Goa Brochure 2026",
+        "source_page_url": "https://wpugoa.edu.in/about-us",
+        "source_raw_path": "raw/5885582a542dd4518b9dda48f606bf172670307253cda11c80b344957ff50596.html.gz",
+        "captured_at": "2026-07-23T13:51:53.495212+00:00"
+      }
+    ],
     "blocks": [
       {
         "kind": "heading",
@@ -1181,6 +1195,56 @@
         "level": 2
       }
     ],
+    "advisor_portraits": {
+      "Prof. Satish Tripathi": {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Prof.-Satish-Tripathi.webp",
+        "source_page_url": "https://wpugoa.edu.in/about-us",
+        "source_raw_path": "raw/5885582a542dd4518b9dda48f606bf172670307253cda11c80b344957ff50596.html.gz",
+        "captured_at": "2026-07-23T13:51:53.495212+00:00",
+        "local_url": "/goa/assets/media/040da396da348b77-prof-satish-tripathi-thumbnail-192x240.webp",
+        "alt": "",
+        "width": 192,
+        "height": 240,
+        "derivative_sha256": "040da396da348b771525d39417feca4c49ddb2222ea7c18f45cfed8a3a2602c3",
+        "derivative_role": "thumbnail"
+      },
+      "Mr. D. Shivakumar": {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Mr.-Shiv-Shivkumar.webp",
+        "source_page_url": "https://wpugoa.edu.in/about-us",
+        "source_raw_path": "raw/5885582a542dd4518b9dda48f606bf172670307253cda11c80b344957ff50596.html.gz",
+        "captured_at": "2026-07-23T13:51:53.495212+00:00",
+        "local_url": "/goa/assets/media/6f7781049063d1a8-mr-shiv-shivkumar-thumbnail-192x240.webp",
+        "alt": "",
+        "width": 192,
+        "height": 240,
+        "derivative_sha256": "6f7781049063d1a8ff5d2650f9cb7fd34698cd8a1a50831bf7ab2034395e199b",
+        "derivative_role": "thumbnail"
+      },
+      "Prof. Suresh Garimella": {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Dr.-Suresh-Garimella-Updated-e1772110925851.webp",
+        "source_page_url": "https://wpugoa.edu.in/about-us",
+        "source_raw_path": "raw/5885582a542dd4518b9dda48f606bf172670307253cda11c80b344957ff50596.html.gz",
+        "captured_at": "2026-07-23T13:51:53.495212+00:00",
+        "local_url": "/goa/assets/media/054aa84243c7b0b6-dr-suresh-garimella-updated-e1772110925851-thumbnail-192x240.webp",
+        "alt": "",
+        "width": 192,
+        "height": 240,
+        "derivative_sha256": "054aa84243c7b0b6ec4a5b9f1a4842c1a090ca267a9dbd580f0392c859e658ef",
+        "derivative_role": "thumbnail"
+      },
+      "Prof. Pankaj Chandra": {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Dr.-Pankaj-Chandra.webp",
+        "source_page_url": "https://wpugoa.edu.in/about-us",
+        "source_raw_path": "raw/5885582a542dd4518b9dda48f606bf172670307253cda11c80b344957ff50596.html.gz",
+        "captured_at": "2026-07-23T13:51:53.495212+00:00",
+        "local_url": "/goa/assets/media/3657372790010150-dr-pankaj-chandra-thumbnail-192x240.webp",
+        "alt": "",
+        "width": 192,
+        "height": 240,
+        "derivative_sha256": "3657372790010150289006a3f473d00e6308525f5e7d1bbfae81dbb890011360",
+        "derivative_role": "thumbnail"
+      }
+    },
     "links": [],
     "output": "about/index.html"
   },
@@ -1204,6 +1268,8 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -2063,6 +2129,8 @@
       "width": 71,
       "height": 82
     },
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -3662,6 +3730,8 @@
       "width": 71,
       "height": 55
     },
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -5601,6 +5671,8 @@
       "width": 69,
       "height": 69
     },
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -7540,6 +7612,8 @@
       "width": 66,
       "height": 71
     },
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -9549,6 +9623,8 @@
       "width": 65,
       "height": 69
     },
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -11206,6 +11282,8 @@
     "lastmod": "2026-06-25T07:22:58+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -11468,6 +11546,8 @@
     "lastmod": "2026-06-27T10:46:01+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -12490,6 +12570,8 @@
     "lastmod": "2026-04-03T10:10:57+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -12691,6 +12773,8 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -13030,6 +13114,8 @@
       "height": 833
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -13432,6 +13518,8 @@
     "lastmod": "2026-04-03T10:59:40+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -13646,6 +13734,8 @@
       "height": 320
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -13679,6 +13769,8 @@
       "height": 320
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -13782,6 +13874,8 @@
       "height": 320
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -13913,6 +14007,8 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "news/index.html"
@@ -13935,6 +14031,8 @@
       "height": 518
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -14288,6 +14386,8 @@
       "height": 424
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -14837,6 +14937,8 @@
       "height": 300
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -15084,6 +15186,8 @@
     "lastmod": "2026-06-22T09:56:04+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "about/policies/cautionary-notice/index.html"
@@ -15106,6 +15210,8 @@
       "height": 664
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -15725,6 +15831,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -16304,6 +16412,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -16938,6 +17048,8 @@
       "height": 335
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -17432,6 +17544,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -18086,6 +18200,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -18690,6 +18806,8 @@
       "height": 576
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -19259,6 +19377,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -19848,6 +19968,8 @@
       "height": 228
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -20071,6 +20193,8 @@
       "height": 228
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -20685,6 +20809,8 @@
       "height": 511
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -20897,6 +21023,8 @@
     "lastmod": "2026-04-09T05:30:51+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -21038,6 +21166,8 @@
     "lastmod": "2026-06-10T05:15:10+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -21330,6 +21460,8 @@
     "lastmod": "2026-04-09T05:33:54+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [
       {
@@ -21363,6 +21495,8 @@
       "height": 214
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -21755,6 +21889,8 @@
     "lastmod": "2026-06-25T07:26:27+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -22051,6 +22187,8 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/index.html"
@@ -22066,6 +22204,8 @@
     "lastmod": "2026-03-10T09:49:07+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/aditya-bhasin-filmmaker-lawyer-shamanic-practitioner-visioning-conference-mit-wpu-goa/index.html"
@@ -22081,6 +22221,8 @@
     "lastmod": "2026-03-10T09:48:32+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/adv-nina-gupta-advocate-supreme-court-high-court/index.html"
@@ -22096,6 +22238,8 @@
     "lastmod": "2026-03-12T12:52:36+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-anil-kumar-gupta-on-grassroots-innovation-and-transdisciplinary-learning/index.html"
@@ -22111,6 +22255,8 @@
     "lastmod": "2026-03-10T09:47:59+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-atul-kumar-pandey-dean-ug-studies-nliu-delhi/index.html"
@@ -22126,6 +22272,8 @@
     "lastmod": "2026-03-10T09:48:02+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-ca-varadraj-bapat/index.html"
@@ -22141,6 +22289,8 @@
     "lastmod": "2026-03-10T07:17:37+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-d-p-agrawal-former-chairman-of-the-union-public-service-commission-of-india/index.html"
@@ -22156,6 +22306,8 @@
     "lastmod": "2026-03-10T09:46:20+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-deepak-b-salunke/index.html"
@@ -22171,6 +22323,8 @@
     "lastmod": "2026-03-10T09:45:41+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-gayatri-menon/index.html"
@@ -22186,6 +22340,8 @@
     "lastmod": "2026-03-10T09:45:06+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-ivneet-kaur-walia/index.html"
@@ -22201,6 +22357,8 @@
     "lastmod": "2026-03-10T09:44:34+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-javed-ali/index.html"
@@ -22216,6 +22374,8 @@
     "lastmod": "2026-03-10T09:43:56+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-krati-rajoria/index.html"
@@ -22231,6 +22391,8 @@
     "lastmod": "2026-03-10T09:41:52+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-mohan-raghavan/index.html"
@@ -22246,6 +22408,8 @@
     "lastmod": "2026-03-10T09:41:17+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-nikhil-k-mehta/index.html"
@@ -22261,6 +22425,8 @@
     "lastmod": "2026-03-10T09:40:39+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-p-k-v-kishan/index.html"
@@ -22276,6 +22442,8 @@
     "lastmod": "2026-03-10T09:39:47+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-prasad-s-onkar/index.html"
@@ -22291,6 +22459,8 @@
     "lastmod": "2026-03-10T09:39:49+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-pratapsingh-salunke/index.html"
@@ -22306,6 +22476,8 @@
     "lastmod": "2026-03-10T09:38:36+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-pushpa-kumar-lakshmanan/index.html"
@@ -22321,6 +22493,8 @@
     "lastmod": "2026-03-10T09:38:14+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-sanjay-shrikant-jain/index.html"
@@ -22336,6 +22510,8 @@
     "lastmod": "2026-03-12T12:50:41+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-satish-tripathi/index.html"
@@ -22351,6 +22527,8 @@
     "lastmod": "2026-03-10T09:35:59+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-satishchandra-b-ogale/index.html"
@@ -22366,6 +22544,8 @@
     "lastmod": "2026-03-12T06:08:20+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/dr-sohom-chakrabarty/index.html"
@@ -22381,6 +22561,8 @@
     "lastmod": "2026-02-10T08:59:31+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/global-visioning-conference-belgrade-serbia/index.html"
@@ -22396,6 +22578,8 @@
     "lastmod": "2026-02-11T13:04:48+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/global-visioning-conference-dublin-ireland/index.html"
@@ -22418,6 +22602,99 @@
       "height": 348
     },
     "card_image": null,
+    "gallery_images": [
+      {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Doha-HEC.png",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00",
+        "local_url": "/goa/assets/media/045314d057a7d9fa-doha-hec-card-800x600.webp",
+        "alt": "",
+        "width": 800,
+        "height": 600,
+        "derivative_sha256": "045314d057a7d9fa8e7d3aa33eca5c6987a537b43f4ead7806ff308aa53b504c",
+        "derivative_role": "card"
+      }
+    ],
+    "documents": [
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Belfast_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Belfast WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Belgrade_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Belgrade WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Berlin_WPU-GOA-1.docx.pdf",
+        "text": "Visioning Workshop Berlin WPU Goa 1",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Berlin_WPU-GOA-2.docx.pdf",
+        "text": "Visioning Workshop Berlin WPU Goa 2",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Doha_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Doha WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Dublin_WPU-GOA.pdf",
+        "text": "Visioning Workshop Dublin WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Karlstad_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Karlstad WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_New-Jersey_-WPU-GOA.pdf",
+        "text": "Visioning Workshop New Jersey WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Suny-Buffalo_WPU-GOA.pdf",
+        "text": "Visioning Workshop Suny Buffalo WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Tokyo_WPU-GOA.pdf",
+        "text": "Visioning Workshop Tokyo WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/02/WPU-GOA_-Brochure_2026.pdf",
+        "text": "WPU Goa Brochure 2026",
+        "source_page_url": "https://wpugoa.edu.in/events/global-visioning-conference-event",
+        "source_raw_path": "raw/e32cdba9052ee1b179a0fa613a1d93e06e959a7cec0d1bbc204c4d29e581140d.html.gz",
+        "captured_at": "2026-07-23T13:55:23.386996+00:00"
+      }
+    ],
     "blocks": [],
     "links": [],
     "output": "events/series/global-visioning-conference/index.html"
@@ -22433,6 +22710,8 @@
     "lastmod": "2026-02-10T08:38:31+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/global-visioning-conference-karlstad-sweden/index.html"
@@ -22448,6 +22727,8 @@
     "lastmod": "2026-02-10T09:00:03+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/global-visioning-conference-new-jersey-usa/index.html"
@@ -22463,6 +22744,8 @@
     "lastmod": "2026-02-10T08:59:08+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/global-visioning-conference-new-york-usa/index.html"
@@ -22485,6 +22768,29 @@
       "height": 894
     },
     "card_image": null,
+    "gallery_images": [
+      {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Screenshot-2026-02-12-at-6.00.40-PM.png",
+        "source_page_url": "https://wpugoa.edu.in/events/inaugural-visioning-conference-event",
+        "source_raw_path": "raw/41aa1dcac921104606ad783c60ca7df8eb7b81fc848955c96c9f4d1637a3bf5b.html.gz",
+        "captured_at": "2026-07-23T13:55:32.523812+00:00",
+        "local_url": "/goa/assets/media/1b3c7fcc84fb8fa0-screenshot-2026-02-12-at-6-00-40-pm-card-800x600.webp",
+        "alt": "",
+        "width": 800,
+        "height": 600,
+        "derivative_sha256": "1b3c7fcc84fb8fa0a481388a616c21370676afee6d596dc178ccd6cae5d1b95b",
+        "derivative_role": "card"
+      }
+    ],
+    "documents": [
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/02/WPU-GOA_-Brochure_2026.pdf",
+        "text": "WPU Goa Brochure 2026",
+        "source_page_url": "https://wpugoa.edu.in/events/inaugural-visioning-conference-event",
+        "source_raw_path": "raw/41aa1dcac921104606ad783c60ca7df8eb7b81fc848955c96c9f4d1637a3bf5b.html.gz",
+        "captured_at": "2026-07-23T13:55:32.523812+00:00"
+      }
+    ],
     "blocks": [],
     "links": [],
     "output": "events/series/inaugural-visioning-conference/index.html"
@@ -22500,6 +22806,8 @@
     "lastmod": "2026-03-10T07:08:24+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/inaugural-visioning-conference-wpu-goa/index.html"
@@ -22515,6 +22823,8 @@
     "lastmod": "2026-03-10T09:34:27+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/kavil-ramchandran/index.html"
@@ -22530,6 +22840,8 @@
     "lastmod": "2026-03-14T06:56:11+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/mastering-the-transdisciplinary-mindset-in-the-age-of-ai-dr-nishith-desai/index.html"
@@ -22545,6 +22857,8 @@
     "lastmod": "2026-03-12T12:48:10+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/mr-d-shivakumar-on-industry-collaboration-ai-and-transdisciplinary-learning/index.html"
@@ -22560,6 +22874,8 @@
     "lastmod": "2026-02-10T08:59:50+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/mr-sushil-borde-on-future-ready-education-and-leadership-at-wpu-goa-conference/index.html"
@@ -22575,6 +22891,8 @@
     "lastmod": "2026-03-10T09:33:28+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/ms-shresha/index.html"
@@ -22590,6 +22908,8 @@
     "lastmod": "2026-02-11T13:37:26+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-amit-prashant/index.html"
@@ -22605,6 +22925,8 @@
     "lastmod": "2026-03-12T06:42:20+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-amit-shankar-2/index.html"
@@ -22620,6 +22942,8 @@
     "lastmod": "2026-04-06T11:26:09+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-chintan-vaishav/index.html"
@@ -22635,6 +22959,8 @@
     "lastmod": "2026-02-11T13:41:27+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-deepak-ranade/index.html"
@@ -22650,6 +22976,8 @@
     "lastmod": "2026-03-12T06:39:38+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-jitendra-singh-rajput-2/index.html"
@@ -22665,6 +22993,8 @@
     "lastmod": "2026-02-11T13:43:06+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-naveen-m-b/index.html"
@@ -22680,6 +23010,8 @@
     "lastmod": "2026-03-12T07:10:15+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-dr-surjya-kanta-pal/index.html"
@@ -22702,6 +23034,211 @@
       "height": 1080
     },
     "card_image": null,
+    "gallery_images": [
+      {
+        "source_url": "https://wpugoa.edu.in/wp-content/uploads/2026/02/Screenshot-2026-02-12-at-5.51.22-PM.png",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00",
+        "local_url": "/goa/assets/media/039704b9785db3b7-screenshot-2026-02-12-at-5-51-22-pm-card-800x600.webp",
+        "alt": "",
+        "width": 800,
+        "height": 600,
+        "derivative_sha256": "039704b9785db3b739d67a28ce4a21ab1ec320db0d0731b7bce0584321530b81",
+        "derivative_role": "card"
+      }
+    ],
+    "documents": [
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Ahmedabad_Workshop-Template-for-Web_Upload.pdf",
+        "text": "Ahmedabad Workshop Template for Web Upload",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2025/12/BBAU-Lucknow-Visioning-Workshop-report-for-Web1.pdf",
+        "text": "BBAU Lucknow Visioning Workshop report for Web1",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Delhi-Visioning-Workshop-i.pdf",
+        "text": "Delhi Visioning Workshop i",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2025/12/Visioning-Workshop-Template-for-Web_IIIT-Dharwad_Karnataka.pdf",
+        "text": "Visioning Workshop Template for Web IIIT Dharwad Karnataka",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_-Chandigarh_WPU-GOA.pdf",
+        "text": "Visioning Workshop Chandigarh WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_-Guwahati_-Assam_WPU-GOA.pdf",
+        "text": "Visioning Workshop Guwahati Assam WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_-Jorhat_Assam_WPU-GOA.pdf",
+        "text": "Visioning Workshop Jorhat Assam WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Ahmedabad_WPU-GOA-.pdf",
+        "text": "Visioning Workshop Ahmedabad WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Bengaluru_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Bengaluru WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Bhopal_WPU-GOA.pdf",
+        "text": "Visioning Workshop Bhopal WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Bhubaneshwar_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Bhubaneshwar WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Cochin_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Cochin WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Dehradun_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Dehradun WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Hyderabad_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Hyderabad WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Indore_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Indore WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Jaipur_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Jaipur WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Jammu-and-Kashmir_WPU-GOA.pdf",
+        "text": "Visioning Workshop Jammu and Kashmir WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Kancheepuram_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Kancheepuram WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Kolkata_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Kolkata WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Mandi_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Mandi WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Patna_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Patna WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Raipur_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Raipur WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Ranchi_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Ranchi WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Tirupati_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Tirupati WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Varanasi_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Varanasi WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/01/Visioning-Workshop_Vijaywada_WPU-GOA.docx.pdf",
+        "text": "Visioning Workshop Vijaywada WPU Goa",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      },
+      {
+        "href": "https://wpugoa.edu.in/wp-content/uploads/2026/02/WPU-GOA_-Brochure_2026.pdf",
+        "text": "WPU Goa Brochure 2026",
+        "source_page_url": "https://wpugoa.edu.in/events/national-visioning-conference-event",
+        "source_raw_path": "raw/061a67053ba58ecc5a180e2deaf18618579f121fb473b1952091254b35627cf4.html.gz",
+        "captured_at": "2026-07-23T13:56:03.252132+00:00"
+      }
+    ],
     "blocks": [],
     "links": [],
     "output": "events/series/national-visioning-conference/index.html"
@@ -22717,6 +23254,8 @@
     "lastmod": "2026-03-12T06:35:53+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-shekhar-khanolkar/index.html"
@@ -22732,6 +23271,8 @@
     "lastmod": "2026-03-12T06:14:16+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/national-visioning-conference-suril-desai-2/index.html"
@@ -22747,6 +23288,8 @@
     "lastmod": "2026-03-11T08:12:59+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-aditya-kolachana/index.html"
@@ -22762,6 +23305,8 @@
     "lastmod": "2026-03-10T09:30:08+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-ankur-sarin/index.html"
@@ -22777,6 +23322,8 @@
     "lastmod": "2026-03-10T09:29:10+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-ashish-pandey/index.html"
@@ -22792,6 +23339,8 @@
     "lastmod": "2026-03-13T10:28:06+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-bhushan-patwardhan-on-transdisciplinary-education-in-bharat-wpu-goa/index.html"
@@ -22807,6 +23356,8 @@
     "lastmod": "2026-03-10T09:32:41+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-dr-manisha-pathak-shelat/index.html"
@@ -22822,6 +23373,8 @@
     "lastmod": "2026-03-10T09:28:31+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-dr-ravindra-s-kulkarni/index.html"
@@ -22837,6 +23390,8 @@
     "lastmod": "2026-03-14T06:55:51+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-pankaj-chandra-on-leadership-transformative-education-wpu-goa/index.html"
@@ -22852,6 +23407,8 @@
     "lastmod": "2026-03-10T09:26:27+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-pooja-purang/index.html"
@@ -22867,6 +23424,8 @@
     "lastmod": "2026-03-16T06:14:36+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-priyankar-upadhyay-on-transdisciplinary-education-wpu-goa/index.html"
@@ -22882,6 +23441,8 @@
     "lastmod": "2026-03-10T09:25:47+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-srinath-srinivasa/index.html"
@@ -22897,6 +23458,8 @@
     "lastmod": "2026-03-10T09:25:13+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-sudipto-acharya/index.html"
@@ -22912,6 +23475,8 @@
     "lastmod": "2026-03-10T09:23:09+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-trilochan-sastry/index.html"
@@ -22927,6 +23492,8 @@
     "lastmod": "2026-02-10T08:59:34+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-utpal-tatu-speaks-at-wpu-goa-transdisciplinarity-life-transformation/index.html"
@@ -22942,6 +23509,8 @@
     "lastmod": "2026-03-13T10:47:16+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-varun-sahni/index.html"
@@ -22957,6 +23526,8 @@
     "lastmod": "2026-03-13T07:28:47+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/prof-walter-leal-filho-on-the-power-of-transdisciplinary-education-at-wpu-goa/index.html"
@@ -22972,6 +23543,8 @@
     "lastmod": "2026-03-10T09:13:49+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/purba-joshi/index.html"
@@ -22987,6 +23560,8 @@
     "lastmod": "2026-03-10T07:18:01+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/ramagopal-v-s-uppaluri/index.html"
@@ -23002,6 +23577,8 @@
     "lastmod": "2026-04-06T11:02:56+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/reimagining-higher-education-through-transdisciplinary-learning-prof-suresh-garimella/index.html"
@@ -23017,6 +23594,8 @@
     "lastmod": "2026-02-10T08:59:43+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/reimagining-management-through-transdisciplinarity-prof-arvind-sahay-at-wpu-goa/index.html"
@@ -23032,6 +23611,8 @@
     "lastmod": "2026-02-11T13:39:40+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/siddharth-kak-on-creative-futures-and-transdisciplinary-film-education-at-wpu-goa/index.html"
@@ -23047,6 +23628,8 @@
     "lastmod": "2026-03-13T09:19:01+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/solving-complex-problems-through-transdisciplinary-learning-dr-shiv-tripathi-2/index.html"
@@ -23062,6 +23645,8 @@
     "lastmod": "2026-03-10T07:03:45+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/surabhi-khanna-associate-senior-designer-national-institute-of-design-harayana/index.html"
@@ -23077,6 +23662,8 @@
     "lastmod": "2026-03-14T06:55:35+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/transdisciplinary-education-solving-societal-challenges-dr-varun-sahni/index.html"
@@ -23092,6 +23679,8 @@
     "lastmod": "2026-06-27T05:54:11+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -23829,6 +24418,8 @@
     "lastmod": "2026-06-25T16:49:15+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -24068,6 +24659,8 @@
       "height": 692
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "list_item",
@@ -24457,6 +25050,8 @@
       "height": 690
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -24770,6 +25365,8 @@
       "height": 607
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -25112,6 +25709,8 @@
     "lastmod": "2026-04-03T10:15:26+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -25339,6 +25938,8 @@
     "lastmod": "2026-06-22T09:59:16+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -25785,6 +26386,8 @@
     "lastmod": "2026-04-03T10:18:12+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -27249,6 +27852,8 @@
       "height": 39
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -27525,6 +28130,8 @@
     "lastmod": "2026-06-26T10:49:17+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -27869,6 +28476,8 @@
       "height": 1024
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "links": [],
     "output": "events/leadership-that-delivers/index.html"
@@ -27891,6 +28500,8 @@
       "height": 528
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -28318,6 +28929,8 @@
     "lastmod": "2026-04-09T06:07:04+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -28602,6 +29215,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [],
     "role": "Pro Vice Chancellor and Dean of Academics",
     "links": [],
@@ -28625,6 +29240,8 @@
       "height": 176
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -28663,6 +29280,8 @@
       "height": 420
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -28689,6 +29308,8 @@
     "lastmod": "2026-04-09T06:06:57+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -28931,6 +29552,8 @@
     "lastmod": "2026-05-28T05:53:21+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -28997,6 +29620,8 @@
     "lastmod": "2026-04-09T06:07:17+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -29199,6 +29824,8 @@
     "lastmod": "2026-04-09T06:07:33+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -29405,6 +30032,8 @@
     "lastmod": "2026-01-24T13:43:17+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -29581,6 +30210,8 @@
       "derivative_role": "hero"
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -29780,6 +30411,8 @@
       "height": 228
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -30284,6 +30917,8 @@
       "height": 297
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -30868,6 +31503,8 @@
       "height": 297
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -31151,6 +31788,8 @@
       "height": 297
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -31319,6 +31958,8 @@
       "height": 297
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -31362,6 +32003,8 @@
       "height": 296
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -31854,6 +32497,8 @@
     "lastmod": "2026-06-23T05:19:00+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -32143,6 +32788,8 @@
       "height": 656
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -32467,6 +33114,8 @@
       "height": 283
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33441,6 +34090,8 @@
       "height": 588
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33495,6 +34146,8 @@
       "height": 59
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33539,6 +34192,8 @@
       "height": 45
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33593,6 +34248,8 @@
       "height": 45
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33690,6 +34347,8 @@
     "lastmod": "2026-07-02T10:04:28+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33722,6 +34381,8 @@
     "lastmod": "2026-04-21T05:47:10+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33754,6 +34415,8 @@
     "lastmod": "2026-04-21T10:02:34+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33786,6 +34449,8 @@
     "lastmod": "2026-04-21T05:54:43+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33818,6 +34483,8 @@
     "lastmod": "2026-04-21T06:12:45+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33850,6 +34517,8 @@
     "lastmod": "2026-04-21T06:06:41+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33882,6 +34551,8 @@
     "lastmod": "2026-04-21T06:11:51+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33914,6 +34585,8 @@
     "lastmod": "2026-04-21T10:01:48+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -33953,6 +34626,8 @@
       "height": 126
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -34252,6 +34927,8 @@
       "height": 270
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -34475,6 +35152,8 @@
     "lastmod": "2026-04-09T06:16:16+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -34657,6 +35336,8 @@
     "lastmod": "2026-06-22T10:02:37+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -35129,6 +35810,8 @@
     "lastmod": "2026-04-03T10:28:21+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -35323,6 +36006,8 @@
       "height": 576
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "list_item",
@@ -35412,6 +36097,8 @@
       "height": 1440
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",
@@ -35471,6 +36158,8 @@
       "height": 551
     },
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "heading",
@@ -35807,6 +36496,8 @@
     "lastmod": "2026-04-09T06:16:04+00:00",
     "hero_image": null,
     "card_image": null,
+    "gallery_images": [],
+    "documents": [],
     "blocks": [
       {
         "kind": "paragraph",

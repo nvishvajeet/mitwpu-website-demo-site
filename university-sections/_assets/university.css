@@ -646,6 +646,54 @@ h3 {
   color: var(--copy);
 }
 
+.maeer-mission {
+  color: #e8f0f4;
+  background: var(--navy);
+  border-bottom: 1px solid rgb(255 255 255 / 16%);
+}
+
+.maeer-mission__grid {
+  display: grid;
+  grid-template-columns: minmax(11rem, 0.38fr) minmax(0, 1.62fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  padding-block: clamp(3.6rem, 8vw, 6.5rem);
+}
+
+.maeer-mission__label {
+  max-width: 10ch;
+  margin: 0;
+  color: #bcd5e3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.maeer-mission__copy {
+  max-width: 50rem;
+}
+
+.maeer-mission__copy h2 {
+  max-width: 17ch;
+  margin: 0;
+  color: #fff;
+}
+
+.maeer-mission__copy p {
+  max-width: 58ch;
+  margin: 1.1rem 0 1.6rem;
+  color: #d6e3ea;
+}
+
+.maeer-mission__copy .text-link {
+  color: #fff;
+}
+
+.maeer-mission__copy .text-link:hover {
+  color: #d6e3ea;
+}
+
 .text-link {
   display: inline-grid;
   grid-template-columns: auto auto;
@@ -1143,26 +1191,12 @@ h3 {
 }
 
 @media (max-width: 75rem) {
-  .header-inner {
-    height: 112px;
-    min-height: 112px;
-    grid-template-columns: minmax(13rem, 1fr) auto;
-    gap: 1.5rem 2rem;
-    padding-block: 0;
-  }
-
-  .header-actions,
-  .primary-nav {
-    justify-content: flex-end;
-  }
-
   .institutional-lockup__logo {
-    width: 180px;
-    padding: 2px 4px;
+    width: clamp(178px, 18vw, 225px);
   }
 
   .primary-nav a {
-    font-size: 0.78rem;
+    font-size: 0.83rem;
   }
 
   .hero {
@@ -1191,7 +1225,7 @@ h3 {
   }
 }
 
-@media (max-width: 46rem) {
+@media (max-width: 58.75rem) {
   body {
     font-size: 17px;
   }
@@ -1242,6 +1276,7 @@ h3 {
   .section-heading,
   .source-panel,
   .maeer-founder__grid,
+  .maeer-mission__grid,
   .unesco-focus__grid,
   .leadership-editorial__header,
   .leadership-index__header,

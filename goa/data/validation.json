@@ -3,7 +3,7 @@
   "generated_html_routes": 164,
   "expected_routes": 164,
   "validated_local_links": 3581,
-  "validated_local_assets": 231,
+  "validated_local_assets": 238,
   "first_layer_media_coverage": {
     "/goa/": {
       "media_count": 1,
@@ -65,6 +65,10 @@
   "first_layer_routes_covered": 8,
   "latest_rail_items": 4,
   "advisor_context_routes": 15,
+  "about_advisor_portraits": 4,
+  "visioning_gallery_images": 3,
+  "retained_document_references": 40,
+  "retained_unique_documents": 37,
   "resident_researcher_records": 0,
   "issues": []
 }
