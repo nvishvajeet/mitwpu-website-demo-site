@@ -97,7 +97,8 @@ a:hover {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 4px;
 }
@@ -302,6 +303,77 @@ video {
   margin-bottom: 1.5rem;
   content: "";
   background: var(--gold);
+}
+
+.not-found {
+  display: grid;
+  min-height: min(68vh, 44rem);
+  align-content: center;
+  justify-items: start;
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.not-found h1 {
+  margin: 0.55rem 0 1rem;
+  font-size: clamp(2.8rem, 8vw, 6rem);
+}
+
+.not-found .lede {
+  max-width: 36rem;
+  margin-bottom: 2rem;
+}
+
+.not-found-search {
+  display: flex;
+  width: min(100%, 36rem);
+  gap: 0.65rem;
+}
+
+.not-found-search input {
+  min-width: 0;
+  flex: 1 1 auto;
+  padding: 0.8rem 0.9rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  font: inherit;
+}
+
+.not-found-search button,
+.not-found-links a {
+  padding: 0.8rem 1rem;
+  color: var(--heading);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.not-found-search button,
+.not-found-links .not-found-primary {
+  color: #ffffff;
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.not-found-search button {
+  cursor: pointer;
+}
+
+.not-found-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.not-found-search button:hover,
+.not-found-links .not-found-primary:hover {
+  color: #ffffff;
+  background: var(--blue-dark);
 }
 
 .eyebrow,
