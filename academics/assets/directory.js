@@ -48,14 +48,14 @@
       if (groupCount) {
         groupCount.textContent =
           visibleCards.length +
-          (visibleCards.length === 1 ? " school" : " schools");
+          (visibleCards.length === 1 ? " academic unit" : " academic units");
       }
     });
 
     if (count) {
       count.textContent =
         matches.length +
-        (matches.length === 1 ? " school" : " schools");
+        (matches.length === 1 ? " academic unit" : " academic units");
     }
     if (empty) empty.hidden = matches.length !== 0;
   }

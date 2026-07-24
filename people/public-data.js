@@ -3428,7 +3428,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "unitNames": {
       "university-leadership": "University leadership"
     },
-    "photoPath": "/media/mitwpu-public/optimized/other/c6/c6003b4f054ec7a6-c6003b4f054ec7a6-RM-Chitnis-hswtech-conf-1.webp",
+    "photoPath": "/media/mitwpu-public/optimized/curated/leadership-r-m-chitnis.webp",
     "research": "",
     "summary": "Dr. R. M. Chitnis has more than three decades of experience in education and academic leadership.",
     "links": {

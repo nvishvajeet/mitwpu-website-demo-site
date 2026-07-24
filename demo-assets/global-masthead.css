@@ -229,6 +229,35 @@ body > [data-global-masthead] ~ :is(
   }
 }
 
+.global-footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1rem;
+  align-items: baseline;
+  margin: 1.5rem 0 0;
+  padding: 1rem 0 0;
+  color: inherit;
+  border-top: 1px solid rgb(255 255 255 / 18%);
+  font-style: normal;
+  font-size: .84rem;
+  line-height: 1.55;
+}
+
+.global-footer-contact span {
+  max-width: 48rem;
+}
+
+.global-footer-contact a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.global-footer-contact a:hover,
+.global-footer-contact a:focus-visible {
+  color: #fff;
+}
+
 @media print {
   [data-global-nav],
   [data-global-masthead] .theme-toggle {

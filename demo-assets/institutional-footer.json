@@ -1,7 +1,7 @@
 {
   "identity": {
     "name": "MAEER’s MIT World Peace University",
-    "location": "Pune, Maharashtra, India"
+    "location": "Survey No. 124, Paud Road, Kothrud, Pune, Maharashtra 411038, India"
   },
   "social": [
     {"label": "LinkedIn", "official": "https://www.linkedin.com/school/mitwpuofficial/"},
@@ -42,7 +42,7 @@
         {"label": "People", "local": "people/"},
         {"label": "Search", "local": "search/"},
         {"label": "Intranet", "local": "intranet/"},
-        {"label": "Contact", "local": "contact-us/"}
+        {"label": "Contact & office directory", "local": "contact-us/"}
       ]
     }
   ]

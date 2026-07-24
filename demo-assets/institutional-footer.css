@@ -31,10 +31,11 @@
   line-height: 1.15;
 }
 
-.institutional-footer__lead p {
+.institutional-footer__lead address {
   max-width: 42rem;
   margin: 0.65rem 0 0;
   color: #b9ccd7;
+  font-style: normal;
 }
 
 .institutional-footer__contact {
