@@ -154,9 +154,110 @@
   font-size: 0.84rem;
 }
 
+.capability-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+}
+
+.capability-hero-meta strong {
+  color: var(--ink);
+}
+
+.capability-page .page-hero-inner {
+  height: auto;
+  min-height: 360px;
+  padding-block: 52px;
+}
+
+.capability-page .page-hero h1 {
+  font-size: clamp(2.7rem, 5vw, 4.15rem);
+}
+
+.capability-system-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line-dark);
+}
+
+.capability-system-list .instrument-card {
+  padding-right: 36px;
+}
+
+.capability-system-list .instrument-card:nth-child(even) {
+  padding-right: 0;
+  padding-left: 36px;
+  border-left: 1px solid var(--line);
+}
+
+.capability-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.capability-navigation-single {
+  grid-template-columns: 1fr;
+}
+
+.capability-navigation a {
+  display: block;
+  min-height: 116px;
+  padding: 25px 28px;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.capability-navigation a:hover {
+  color: var(--blue);
+  background: var(--subtle);
+}
+
+.capability-navigation span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.capability-navigation .next {
+  text-align: right;
+}
+
 @media (max-width: 760px) {
   .instrument-grid {
     grid-template-columns: 1fr;
+  }
+
+  .capability-system-list,
+  .capability-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-page .page-hero-inner {
+    min-height: 0;
+    padding-block: 42px;
+  }
+
+  .capability-system-list .instrument-card,
+  .capability-system-list .instrument-card:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .capability-navigation .next {
+    text-align: left;
   }
 
   .facility-person {

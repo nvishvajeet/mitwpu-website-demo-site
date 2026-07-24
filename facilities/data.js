@@ -1,5 +1,42 @@
 window.MITWPU_CRF = {
   updated: "23 July 2026",
+  capabilities: [
+    {
+      id: "imaging-microanalysis",
+      number: "01",
+      name: "Imaging & Microanalysis",
+      summary: "High-resolution imaging, morphology, elemental microanalysis, and optical examination.",
+      clusterIds: ["imaging"]
+    },
+    {
+      id: "structural-optical-characterisation",
+      number: "02",
+      name: "Structural & Optical Characterisation",
+      summary: "Crystallographic, vibrational, absorption, transmission, and reflectance measurements.",
+      clusterIds: ["structure", "optical"]
+    },
+    {
+      id: "elemental-particle-analysis",
+      number: "03",
+      name: "Elemental & Particle Analysis",
+      summary: "Trace elemental measurement and particle-size or surface-charge analysis.",
+      clusterIds: ["elemental"]
+    },
+    {
+      id: "surface-thin-films-nanofabrication",
+      number: "04",
+      name: "Surface, Thin Films & Nanofabrication",
+      summary: "Surface and nanoscale mechanical measurement with research-scale thin-film deposition.",
+      clusterIds: ["surface", "thin-films"]
+    },
+    {
+      id: "energy-storage-cell-fabrication",
+      number: "05",
+      name: "Energy Storage & Cell Fabrication",
+      summary: "Research-scale preparation and assembly of lithium-ion and sodium-ion cells.",
+      clusterIds: ["energy"]
+    }
+  ],
   clusters: [
     {
       id: "imaging",

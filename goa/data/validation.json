@@ -2,7 +2,7 @@
   "schema": "wpu-goa.export-validation.v1",
   "generated_html_routes": 164,
   "expected_routes": 164,
-  "validated_local_links": 3581,
+  "validated_local_links": 3586,
   "validated_local_assets": 238,
   "first_layer_media_coverage": {
     "/goa/": {

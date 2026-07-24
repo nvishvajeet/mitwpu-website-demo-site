@@ -2,6 +2,7 @@
   "use strict";
 
   const facility = window.MITWPU_CRF || {
+    capabilities: [],
     clusters: [],
     leadership: [],
     facultyContacts: []
@@ -31,13 +32,21 @@
     return facility.clusters.reduce((total, cluster) => total + cluster.instruments.length, 0);
   }
 
-  function clusterSummary(cluster) {
+  function capabilityInstruments(capability) {
+    const clusterIds = new Set(capability.clusterIds || []);
+    return facility.clusters
+      .filter((cluster) => clusterIds.has(cluster.id))
+      .flatMap((cluster) => cluster.instruments);
+  }
+
+  function capabilitySummary(capability) {
+    const instruments = capabilityInstruments(capability);
     return `<article class="cluster-summary">
-      <span class="cluster-number">${escapeHtml(cluster.number)}</span>
+      <span class="cluster-number">${escapeHtml(capability.number)}</span>
       <div>
-        <h3><a href="instruments.html#${encodeURIComponent(cluster.id)}">${escapeHtml(cluster.name)}</a></h3>
-        <p>${escapeHtml(cluster.summary)}</p>
-        <p class="cluster-count">${cluster.instruments.length} ${cluster.instruments.length === 1 ? "research system" : "research systems"}</p>
+        <h3><a href="capabilities/${encodeURIComponent(capability.id)}/">${escapeHtml(capability.name)}</a></h3>
+        <p>${escapeHtml(capability.summary)}</p>
+        <p class="cluster-count">${instruments.length} ${instruments.length === 1 ? "research system" : "research systems"}</p>
       </div>
     </article>`;
   }
@@ -52,13 +61,13 @@
   }
 
   function renderOverview() {
-    const target = document.getElementById("cluster-overview");
-    if (target) target.innerHTML = facility.clusters.map(clusterSummary).join("");
+    const target = document.getElementById("capability-overview");
+    if (target) target.innerHTML = facility.capabilities.map(capabilitySummary).join("");
     document.querySelectorAll("[data-equipment-count]").forEach((node) => {
       node.textContent = equipmentCount();
     });
-    document.querySelectorAll("[data-cluster-count]").forEach((node) => {
-      node.textContent = facility.clusters.length;
+    document.querySelectorAll("[data-capability-count]").forEach((node) => {
+      node.textContent = facility.capabilities.length;
     });
   }
 
