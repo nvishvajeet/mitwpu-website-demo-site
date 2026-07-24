@@ -1,5 +1,13 @@
 @import url("../../group-assets/site.css?v=20260723f");
 
+#site-header {
+  /*
+   * The legacy renderer needs a mount point, but a normal wrapper bounds
+   * sticky descendants. Keep the mount point without trapping the masthead.
+   */
+  display: contents;
+}
+
 :root {
   --shell: 1180px;
   --accent-text: #ffffff;

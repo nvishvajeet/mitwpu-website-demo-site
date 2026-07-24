@@ -976,11 +976,21 @@ body {
 }
 
 @media (max-width: 900px) {
+  .academic-header .header-inner {
+    height: var(--academic-masthead-height);
+    min-height: var(--academic-masthead-height);
+    gap: 0;
+    padding-top: 8px;
+  }
+
   .institutional-actions {
+    height: 44px;
+    flex: 0 0 44px;
     width: 100%;
   }
 
   .institutional-actions .institutional-nav {
+    height: 44px;
     width: auto;
     min-width: 0;
     flex: 1 1 auto;

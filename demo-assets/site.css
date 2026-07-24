@@ -764,9 +764,11 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
 @media (max-width: 940px) {
   .header-inner {
-    min-height: 0;
+    height: 112px;
+    min-height: 112px;
     flex-wrap: wrap;
-    padding-top: 18px;
+    gap: 0;
+    padding-top: 8px;
   }
 
   .header-actions {
@@ -835,8 +837,9 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   }
 
   .header-inner {
-    min-height: 0;
-    gap: 14px;
+    height: 112px;
+    min-height: 112px;
+    gap: 0;
   }
 
   .brand strong {
