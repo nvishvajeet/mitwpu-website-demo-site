@@ -1501,6 +1501,17 @@ h3 {
   }
 }
 
+/*
+ * Phone readability floor (<=767px only; desktop is untouched).
+ * The hero media caption is real descriptive content; its base rule
+ * (0.78rem) renders ~12.5px, so raise it to >=13px on phones.
+ */
+@media (max-width: 767px) {
+  .hero-media figcaption {
+    font-size: 0.82rem;
+  }
+}
+
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {

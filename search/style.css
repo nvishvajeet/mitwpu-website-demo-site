@@ -348,6 +348,22 @@ mark {
   }
 }
 
+/*
+ * Phone readability floor (<=767px only; desktop is untouched).
+ * Raises real-content result metadata and the results-heading helper
+ * text (and its inline <kbd>, which inherits) to >=13px. The uppercase
+ * .result-type badge and .search-form labels stay as small caps.
+ */
+@media (max-width: 767px) {
+  .results-heading small {
+    font-size: 0.82rem;
+  }
+
+  .result-department {
+    font-size: 0.82rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

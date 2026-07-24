@@ -1164,6 +1164,42 @@ body {
   }
 }
 
+/*
+ * Phone readability floor (<=767px only; desktop is untouched).
+ * Raises genuinely-too-small real-content text — department/directory
+ * links, metadata, breadcrumbs, section tabs and inline CTAs — to >=13px.
+ * Deliberate uppercase small-caps labels (.unit-kind, eyebrows) are left small.
+ */
+@media (max-width: 767px) {
+  .academic-context {
+    font-size: 0.82rem;
+  }
+
+  .academic-nav a {
+    font-size: 0.82rem;
+  }
+
+  .text-link {
+    font-size: 0.82rem;
+  }
+
+  .directory-card small {
+    font-size: 0.82rem;
+  }
+
+  .directory-child-links li {
+    font-size: 0.82rem;
+  }
+
+  .school-metrics dd {
+    font-size: 0.82rem;
+  }
+
+  .school-mini-person__name {
+    font-size: 0.82rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
