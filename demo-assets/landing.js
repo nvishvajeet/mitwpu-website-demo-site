@@ -6,7 +6,6 @@
     if (motion.matches || !("IntersectionObserver" in window)) return;
 
     var groups = [
-      [".orientation-panel", 0],
       [".activity .section-heading", 0],
       [".activity-card", 45],
       [".directory .section-heading", 0],

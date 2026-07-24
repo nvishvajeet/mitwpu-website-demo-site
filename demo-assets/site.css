@@ -408,20 +408,11 @@ h3 {
   border-color: var(--solid-blue);
 }
 
-.orientation-panel {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-top: 0;
-}
-
 .hero-visual {
   align-self: stretch;
   display: grid;
   min-width: 0;
-  grid-template-rows: minmax(280px, 1fr) auto;
+  grid-template-rows: minmax(280px, 1fr);
 }
 
 .hero-media {
@@ -438,69 +429,6 @@ h3 {
   height: 100%;
   object-fit: cover;
   object-position: center 42%;
-}
-
-.orientation-content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  justify-content: center;
-  padding: 24px 28px 25px;
-}
-
-.orientation-panel h2 {
-  max-width: 22ch;
-  margin-bottom: 18px;
-  font-size: clamp(1.35rem, 2vw, 1.7rem);
-  text-wrap: balance;
-}
-
-.orientation-facts {
-  margin: 0;
-  border-top: 1px solid var(--line-strong);
-}
-
-.orientation-facts > div {
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  align-items: baseline;
-  gap: 17px;
-  padding-block: 13px;
-  border-bottom: 1px solid var(--line);
-}
-
-.orientation-facts dt {
-  color: var(--heading);
-  font-size: 1.65rem;
-  font-variant-numeric: tabular-nums;
-  font-weight: 650;
-  line-height: 1;
-}
-
-.orientation-facts dd {
-  margin: 0;
-  color: var(--muted);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.76rem;
-  line-height: 1.4;
-}
-
-.orientation-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  margin-top: 25px;
-  color: var(--blue);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.77rem;
-  font-weight: 700;
-  line-height: 1.4;
-  text-decoration: none;
-}
-
-.orientation-link:hover {
-  color: var(--blue-dark);
 }
 
 .activity {
@@ -904,16 +832,8 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     width: 100%;
   }
 
-  .orientation-panel {
-    padding: 0;
-  }
-
   .hero-visual {
-    grid-template-rows: minmax(240px, 68vw) auto;
-  }
-
-  .orientation-content {
-    padding: 28px 24px;
+    grid-template-rows: minmax(240px, 68vw);
   }
 
   .directory {
