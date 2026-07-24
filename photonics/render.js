@@ -41,7 +41,7 @@
     if (/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
       return `../people/${encodeURIComponent(slug)}/`;
     }
-    return `member.html?id=${encodeURIComponent(member.id)}`;
+    return "../people/";
   }
 
   function initials(name) {
