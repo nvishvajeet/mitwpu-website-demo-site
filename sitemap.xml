@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://mitwpu.vishwanathgrid.org/AlChE/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/aakriti-centre-for-holistic-well-being/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/aatman/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about/directory/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about/maeer/</loc></url>
@@ -15,10 +17,13 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/iqac/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/leadership-and-governance/academic-council/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/about-us/leadership-and-governance/board-of-management/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/leadership-and-governance/board-of-studies/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/leadership-and-governance/governing-body/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/leadership-and-governance/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/about-us/leadership-and-governance/leadership/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/national-ragging-prevention-programme/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/about-us/nirf/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/ranking-accreditation/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/social-initiatives/bharat-asmita-national-awards/categories/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/about-us/social-initiatives/bharat-asmita-national-awards/</loc></url>
@@ -54,6 +59,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/consciousness/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/consciousness/research.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/construction-engineering-management/academics.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/academics/construction-engineering-management/events.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/construction-engineering-management/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/design/academics.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/design/design/academics.html</loc></url>
@@ -73,6 +79,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/economics-and-commerce/commerce/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/economics-and-commerce/economics/academics.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/economics-and-commerce/economics/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/academics/economics-and-commerce/economics/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/economics-and-commerce/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/economics-and-commerce/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/engineering-and-technology/academics.html</loc></url>
@@ -112,8 +119,10 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/engineering-and-technology/polytechnic-skill-development/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/engineering-and-technology/polytechnic-skill-development/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/evaluation-criteria/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/academics/exam-activity-schedule/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/exam-timetable/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/examination-contact-us/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/academics/faq/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/government/academics.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/government/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/health-science-technologies/academics.html</loc></url>
@@ -166,6 +175,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/liberal-arts-humanities/photography/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/liberal-arts-humanities/research.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/list-of-holidays/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/academics/mode-of-exams/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/ordinances/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/results/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/science/academics.html</loc></url>
@@ -191,22 +201,29 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/student-assistance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/academics/student-grievance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/accessibility/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/1st-place-at-protech-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/a-stellar-odyssey-anurag-vaidyas-journey-from-mit-wpu-to-isro/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/aaditya-talkhande/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/aaryesh-honrao/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/abeer-atmesh-dhond/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/achievement-of-team-pro-karters/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/akanksha-verma/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/akshita-saxena-shines-bright-at-viksit-youth-bharat-parliament-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/anoushka-parikh/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/atharv-belsare/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/best-paper-award/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/celebrating-excellence-congratulations-to-our-champions/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/champions-rise-stellar-wins-for-our-teams-at-iit-bombay-aavhan-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/chem-e-car-team-felicitation/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/electric-pulse-secures-3rd-place-at-edge-ai-innovation-challenge-2024/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/first-prize-in-the-green-campus-challenge/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/gold-medal-victory-at-all-india-inter-institutional-table-tennis-championship-2024/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/harshil-mane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/inayat-dua/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/isha-ostwal/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/jalishmita-kalita-and-neha-barua/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/janhavi-kalal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/janhavi-vinod-shrungare/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/jaskiran-kaur-dhami/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/jay-pendse-ty-integrated-b-tech-in-mechanical-engineering/</loc></url>
@@ -216,10 +233,15 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/kirtana-kumar-achary/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/kuhoo-khandekar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/malhar-sameer-atre/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/manvi-singhal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/meet-abhishek-nanaware---the-endurance-king/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/miss-parevi-brahmbhatt/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-acceleracers/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-punes-team-bolt-driving-innovation-at-fmae-moto-student-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-punes-team-robovin-redefining-military-robotics-and-next-gen-mobility/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-students-attend-wwdc26-at-apple-park-usa/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-students-represent-india-at-indianorway-green-strategic-partnership-summit-2026/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-team-acceleracers-raising-the-benchmark-at-supra-sae-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-team-avion-soaring-high-at-sae-aerothon-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-team-chemy-chem-champions-of-innovation-at-yuva-ai-thon-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/mit-wpu-team-clinches-top-position-at-hackademia-2025/</loc></url>
@@ -231,10 +253,12 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/ms-pritha-vartikar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/ms-sayali-r-wani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/ms-taneesha-kotecha/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/namrata-vaghani--nandini-vaghani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/reva-somani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/rishil-gupta-triathlon-event/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/riya-marathe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/saakshi-ajay-patadiya/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/schaleen-fernandes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/shantanu-hade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/shravani-katke/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/shreyas-ravindra-shinde/</loc></url>
@@ -250,18 +274,22 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-piranha-racing-dominates-baja-2025-with-engineering-mastery/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-piranha-racing-is-the-official-baja-sae-team-of-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-piranha-racing-secures-air-1-at-sae-m-baja-2026/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-robocon/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-skytroopers-secures-3rd-prize-at-saeindia-drone-development-challenge-202526/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-vegapod-hyperloop-shines-at-european-hyperloop-week-2025/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/team-visionary-vanguards-triumph-at-smart-india-hackathon/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/the-best-startup-award/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/triumph-at-the-62nd-national-skating--championship-2024/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/vaidehi-abhale--rishav-bhalotia-clinch-1st-at-economics-qui/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/varun-kapur/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/achievements/viraj-joshi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/yashodhan-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/achievements/yeshaya-h-contractor/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/acm-club/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/admissions/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/admissions-contact-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/advanced-manufacturing-and-engineering-centre/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/advanced-welding-and-simulator/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/alumni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/application-process/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/asme/</loc></url>
@@ -270,43 +298,56 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/people.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/publications.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/astrophysics/research.html</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/avyanna-club/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-abhay-bang-182/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-ashok-gadgil-177/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-chandrakant-pandav-153/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-debashis-chatterjee-150/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-jayant-narlikar-158/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-kiran-mazumdar-shaw-146/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-krishna-ella-141/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-prabha-atre-144/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-rajendra-singh-175/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-ritu-karidhal-134/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-shekhar-c-mande-154/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-soumya-swaminathan-185/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-srikant-datar-142/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/dr-srivardhini-k-jha-215/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/ms-nandita-das-133/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/ms-s-jothimani-216/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/padma-bhushan-dr-f-c-kohli-155/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/padma-shri-dr-mohan-agashe-217/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/padma-vibhushan-ustad-amjad-ali-khan-218/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/padmashri-dr-pritam-singh-149/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/prof-bharat-bhasker-183/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/prof-dr-archana-shukla-127/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/prof-dr-gagandeep-kang-148/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/prof-g-raghuram-174/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/prof-kavil-ramachandran-136/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/prof-ram-charan-147/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/pt-rajan-misra-160/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/pt-sajan-misra-161/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shereen-bhan-138/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-gaurav-gogoi-137/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-jamyang-tsering-namgyal-143/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-mani-ratnam-140/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-manoj-joshi-159/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-rajeev-satav-157/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-ram-mohan-naidu-kinjarapu-184/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-shankar-mahadevan-139/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-shekhar-sen-187/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-swanand-kirkire-152/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/shri-vivek-agnihotri-186/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-kavita-bundelkhandi-131/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-naina-lal-kidwai-135/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-palki-sharma-132/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-pramila-bisoyi-130/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-rama-bijapurkar-156/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-sai-paranjpye-145/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/awardee-profiles/smt-supriya-sule-151/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/baja-sae/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/banking-forum/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/contact.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/people.html</loc></url>
@@ -314,40 +355,59 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/bioinformatics/research.html</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/blockchain-coe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/career/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/cautionary-notice/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/center-of-excellence-in-tunneling-and-underground-construction/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/centre-for-womens-studies-and-development/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/centre-of-excellence-in-emobility/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/centre-of-excellence-technology-and-visualization-centre-1/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/cesa/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/chalchitra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/chem-e-car/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/contact-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/copyright-statement/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/corporate-social-responsibility-csr/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/cosmos/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/csi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/disclaimer/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/e-sports-squad-up/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/15th-bharatiya-chhatra-sansad-empowering-the-leaders-of-tomorrow/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/16th-national-rankers-felicitation-ceremony-upsc-cse-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/22nd-bharat-asmita-national-awards-honouring-indias-changemakers/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/30th-endowment-lecture-series-and-orientation-workshop-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/a-tribute-to-a-legend--mit-wpu-honors-chhatrapati-shivaji-maharajs-legacy/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-hivare-bazar-ahmednagar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-khadaki-village-daund/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-malwadi-village-bhor/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-naigaon-village-satara/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-ranwad-village/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-ravangaon-village-daund/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/a-visit-to-sarole-khurd-village-nashik/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/aarohan-2025-featuring-the-cascades-of-oriental-mystique/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/aarohan-2026-a-three-day-symphony-of-talent-passion--glory/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/ai-conclave-2026-brings-together-innovation-industry-and-emerging-ai-technologies/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/aws-student-community-day-pune-2024-at-mit-wpu-a-day-of-cloud-innovation-and-learning/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/bharatiya-chhatra-sansad--empowering-future-leaders-at-mit-wpu/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/bioconclave-20-at-mit-wpu-explores-the-future-of-ai-in-healthcare-and-bioengineering/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/blood-donation-drive/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/boston-alumni-meet-2025-celebrating-nostalgia-connections-and-inspiration/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/bridging-education-and-industry-mit-wpu-hosts-industry-academia-conclave/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/bridging-law-and-peace-insights-from-the-4th-international-symposium-on-law-and-peace/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-excellence-21st-bana-ceremony-illuminates-world-peace-dome/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-excellence-mit-wpu-hosts-the-15th-upsc-felicitation-ceremony-honouring-indias-future-leaders/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-excellence-with-mit-wpu-6th-convocation-ceremony/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-excellence-with-the-inauguration-of-mit-wpus-central-research-facility/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-the-light-within-deepotsav-2025-at-mit-wpupune/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-unity-and-patriotism--76th-republic-day-celebration-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/celebrating-womanhood-international-womens-day-2025-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/civil-engineering-students-participate-in-international-immersion-programme-in-china/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/co-creation-programme-2026-fostering-students-to-find-creative-solutions-to-complex-societal-problems/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/codearena-2025-a-battle-of-the-best-coders/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/commemorating-the-commencement-of-the-20th-year-of-excellence-at-mit-school-of-government-mit-sog/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/cxo-meet-2025-industry-leaders-address-ais-potential-and-ethical-challenges/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/cybersecurity-placement-accelerator-bootcamp/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/design-discovery-exploring-dubai-design-week-23-with-the-wpu-school-of-design/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/design-xpo-2026-from-indian-hands-to-global-hearts/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/devconfin-2026-advancing-open-innovation-through-collaboration/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/driving-change-e-waste-collection-drive-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/empowering-future-petroleum-engineers-through-industry-engagement/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/excellence-awards-2025-celebrating-leadership-on-the-birthday-of-our-visionary-executive-president/</loc></url>
@@ -365,23 +425,31 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/events/igniting-young-innovators-mit-wpu-punes-winter-school-2025-sparks-future-tech-leaders/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/industry-academia-conclave-2026-empowering-talent-for-industry-50/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/industry-academia-conclave-2026-shaping-future-talent-in-the-age-of-ai/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/international-conference-on-bridging-ancient-and-advanced-technology-of-nanomaterials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/international-day-of-yoga-programme/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/international-immersion-programme-at-the-national-university-of-singapore/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/international-immersion-programme-in-association-with-bloomsbury-institute-london-uk/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/international-industry-academia-summit-on-materials-science-and-engineering-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/international-yoga-day-embodying-balance-wellness-and-inner-peace/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/learnings-from-international-immersion-programme---2023-24-multimedia-university---malacca-campus-malaysia/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/magma-2026-geothermal-energy-technical-event/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/mahasummit-2025-cultivating-entrepreneurial-excellence-at-mit-wpu/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-at-cop28-leading-green-hydrogen-innovation/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-celebrates-indias-79th-independence-day-with-pride-and-purpose/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-celebrates-world-environment-day-with-renowned-climate-scientist-dr-dev-niyogi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-co-creation-programme-empowering-students-to-solve-societal-challenges/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-conducted-comprehensive-health--wellness-initiative-for-staff-members/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-foundation-day-2025-celebrating-four-decades-of-leadership-and-innovation/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-hosts-groundbreaking-pharma-entrepreneurship-summit/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-hosts-icsscc-2026-to-advance-sustainable-smart-computing-and-communication-research/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-hosts-viksit-bharat-ambassador-yuva-connect-programme-inspiring-youth-for-nation-building/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-pune-celebrates-the-12th-international-day-of-yoga/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-pune-hosts-cxo-meet-2025-a-confluence-of-industry-leaders-and-academic-visionaries/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-pune-students-explore-global-engineering-ecosystems-in-china/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-reaches-for-the-stars-historic-achievement-in-isros-pslv-c60-launch/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-school-of-law-inaugurates-centre-for-cybersecurity-forensics-and-criminal-law/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-shines-on-the-international-stage/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-students-explore-global-innovation-at-gitex-global-2025-dubai/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-successfully-hosts-90th-annual-conference-of-the-indian-mathematical-society/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/mit-wpu-summer-school-2025-empowering-young-innovators/</loc></url>
@@ -395,10 +463,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/events/national-academic-immersion-programme-at-nit-goa/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/national-level-cybersecurity-hackathon-and-ctf-ciphathon-2026/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/nlc-bharat-2025-empowering-leaders-strengthening-democracy/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/nostalgia-2024-celebrating-the-grand-reunion-of-2000-mit-wpu-alumni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/nsrtc-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/nsrtc-2026/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/one-day-international-conclave-on-urban-planning-and-land-use-science-a-civil-engineering-perspective/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/pharmaceutical-sciences-students-enhance-clinical-skills-through-3-day-clinical-training-programme/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/pride-20-promoting-research-innovation-design-and-entrepreneurship/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/ram-charan-school-of-leadership-sends-first-year-mbas-to-insead-for-international-immersion-programme/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/randeep-hooda-lights-up-fireside-chat-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/ride-2024--five-days-of-innovation-research-and-entrepreneurship-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/ride-2025-a-journey-of-innovation-design-thinking--entrepreneurship/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/rural-immersion-program--sy-mechanical-engineering/</loc></url>
@@ -415,8 +487,11 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/events/syntropy-2026-showcased-innovation-research-and-engineering-excellence/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/team-cloudweave-from-mit-wpu-shines-bright-at-the-smart-india-hackathon-2024/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/technophilia-2026/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/the-5th-international-symposium-on-law--peace-2025-advancing-global-dialogue-on-law--peace/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/udyamostav-2025-a-remarkable-celebration-of-national-startup-day/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/viksit-bharat-youth-parliament-2025--empowering-the-voices-of-youth/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/walk-for-peace-a-global-commitment-at-mit-wpu-on-international-day-of-peace/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/events/world-technology-summit-2025-mit-wpu-pune-sets-the-stage-for-global-innovation/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/world-tuberculosis-day/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/events/xchange-sphere-2026-fostering-global-entrepreneurship/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/exam-notices/</loc></url>
@@ -440,8 +515,9 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/akshay-ugale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/akshita-s-chanchlani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/amey-chavan/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/amit-s-savyanavar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/amrin-noor/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/amruta-anil-kulkarni/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/anamika-singh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/anand-j-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/anuttama-ghose/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/aproova-shastri/</loc></url>
@@ -449,7 +525,6 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ashwani-pant/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ashwini-v-zadgaonkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/asish-saha/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/bhushan-rameshwar-shete/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/chaitali-v-chandankhede/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/chinmay-sanjay-bendre/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/dhanashri-n-wategaonkar/</loc></url>
@@ -457,9 +532,9 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/gaurav-saxena/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/geetika-rohit-parmar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/gopal-vasudeo-wamane/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/harshal-bhusari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ishaan-r-kale/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/kavita-karan-ingale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/kishen-r-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/mandar-bapat/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/mandar-sapre/</loc></url>
@@ -474,7 +549,9 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/nidhi-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/nikhil-kunnath/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/nikhil-v-soniminde/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/nuvita-kalra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/parimal-maya-sudhakar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/pournima-nilesh-inamdar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/pradnya-s-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/praful-pawar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/pranali-k-kosamkar/</loc></url>
@@ -483,11 +560,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/prashant-s-lahane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/prerna-sharma/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/priyanka-pathak/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/pruthviraj-kamble/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/punit-kumar-mishra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/rachit-agarwal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/rahul-roy/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ramkrishna-manatkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/rashmi-a-rane/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ritu-goel/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ruchika-khetarpal/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/ruchika-raj-saxena/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/rushabh-trivedi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/rushil-chandra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sachin-balwantrao-deshmukh/</loc></url>
@@ -495,8 +575,8 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sanjeev-kumar-shangary/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/santosh-aghav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/santosh-jaybhay/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sasmita-behera/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/satish-chinchorkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/shaeyuq-ahmad-shah/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/shefali-deepak-arora/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/shilpa-s-sonawani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/shounak-r-sugave/</loc></url>
@@ -506,7 +586,6 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/smriti-tanvani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sonali-beri/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sudhirkumar-a-shinde/</loc></url>
-  <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sugeeta-upadhyay/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sukhada-p-bhingarkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/sumedha-d-sirsikar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/summon-kaul/</loc></url>
@@ -525,6 +604,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty/yogesh-r-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/500-gw-by-2030-india-s-green-leap-towards-becoming-a-superpower/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/a-future-ready-management-program-for-global-and-tech-driven-leaders/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/a-strong-m-com-programme-matters-in-today-s-commerce-education/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/atithi-devo-bhava-mapping-your-future-in-the-global-hospitality-revolution/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/b-arch-vs-b-e-civil-engineering-which-one-should-you-choose/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/beyond-the-blueprint-why-the-built-environment-needs-techno-managers/</loc></url>
@@ -534,9 +614,11 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/m-sc-economics-a-strong-choice-for-students-who-want-depth-direction-and-real-world-relevance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/public-health-as-a-career-what-every-medical-graduate-should-think-about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/public-health-leadership-for-a-new-era/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/public-health-promising-career-path/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/what-is-bba-in-international-business-and-how-is-it-different-from-a-regular-bba/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/faculty-articles/why-b-com-financial-analysis-is-a-strong-pathway-to-a-career-in-finance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/ferrocement-society-of-india-student-chapter/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/finance-forum/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/finfluencers/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/goa/about/brand/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/goa/about/campus-life/</loc></url>
@@ -711,7 +793,9 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-call-for-workshops-tutorials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-committee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-contact-us/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-important-dates/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-registration/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-sponsorship/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-submission-guidelines/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-technical-program-committee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/hswtech-travel-and-venue/</loc></url>
@@ -719,15 +803,21 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/bba-event-12th-november/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/bcs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/convocation/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/design-expo/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/global-education-fair/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/hackathon/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/hoop-it-up/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/ih-connect-11th-nov/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/mba-chai-wala/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/mit-wpu-alumotsav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/ncmj/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/nylc/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/peace-marathon/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/image-gallery/ride/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/important-dates/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/indradhanu-club/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/industry-40-technology-laboratory/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/init-cloud-club/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/innovation/cbie-startup-accelerator/</loc></url>
@@ -738,6 +828,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/innovation-clubs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/innovation-clubs/innovation-hub/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/innovation-hub-club/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/innovative-design-and-construction-technologies-lab/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/institute-of-ai/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/iic-downloads/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/</loc></url>
@@ -745,6 +836,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/pre-incubation-labs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/institution-innovation-council/yukti/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/international/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/international-immersion/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/intranet/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/leadership/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-at-mit-wpu/</loc></url>
@@ -753,20 +845,25 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/about-adventure-club/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-activities-calendar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/adventure-club-launch/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/andharban-forest-trek-20230722/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/deo-tibba-base-camp/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/deo-tibba-base-camp-felicitation/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/lohgad-fort-20230418/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/nisargvedh-trek-day-one/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/telni-waterfall-trek-20230826/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/adventure-gallery/tikona-fort-20230419/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/executive-council/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/adventure-club/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/clubs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/eco-friendly-campus/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/event-calendar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/hostel-facilities/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/library/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/medical-facilities/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/other-facilities/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/rowing-club/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/sports/elite-sportsperson-scholarship/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/sports/events/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/sports/</loc></url>
@@ -775,30 +872,41 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/sports/sports-committee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/sports/sports-infrastructure/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/sports/super-achievers/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-achievements/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-affairs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-council/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-council/student-council-members/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/comparative-investigation-on-battery-thermal-management-system-for-nano-fluids/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/design-and-development-of-hydrokinetic-turbine-for-ocean-energy/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/design-and-development-of-valve-stem-seal-test-rig/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/development-of-a-rover-for-soil-sampling--fertility-testing/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/high-speed-flame-imaging-of-solid-rocket-propellant-srp-in-a-laser-illuminated-window-bomb/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/investigation-on-varied-porosity-levels-in-scaffolds-to-improve-biocompatibility/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/lightweight-brick-products/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/life-wpu/student-projects/plasma-based-ozone-o3-generation-and-its-applications/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/mandatory-disclosures/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/mba/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/melodic/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/micro-forming-research/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/mit-wpu-cet-2026/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/mit-wpu-cultural-club/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/mit-wpu-sports/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/national-conference-towards-a-self-reliant-and-inclusive-economy-for-viksit-bharat-2047/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/national-immersion/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/national-ragging-prevention-programme/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/national-service-scheme/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-about-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-awards--certification/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-committee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-contact-us/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-important-dates/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-submission-guidelines/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/nctsrie-tracks/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/a-recognition-of-vision-and-commitment-dr-rahul-v-karad-honoured-by-legal-fraternity/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/arnd-franz-ceo-of-mahle-group-germany-inspires-innovation-at-mit-world-peace-university/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/bridging-design-and-healthcare-new-mou-between-mit-wpu-and-pacify-medical/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/celebrating-a-milestone-mit-wpu-inaugurates-state-of-the-art-ios-development-centre-powered-by-apple-and-infosys/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/celebrating-prof-dr-mrudula-kulkarnis-winning-performance-at-asian-rowing-indoor-championship/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/collaboration-alert-department-of-media-and-communication-joins-forces-with-sakal-media-group/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/delegation-visit-from-nottingham-trent-university-to-mit-wpu/</loc></url>
@@ -806,6 +914,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/news/department-of-mechanical-engineering-mou-with-regal-rexnord-company/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/dr-anand-j-kulkarni-appointed-as-adjunct-professor-at-victorian-institute-of-technology-vit-melbourne-australia/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/dr-anand-j-kulkarni-featured-in-exclusive-live-interview-on-dd-sahyadri/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/dr-ganesh-kakandikar-receives-maharashtra-state-national-award-for-outstanding-research-work/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/dr-gopinath-t-elected-as-a-young-associate-member-of-the-masc-for-his-contributions-under-engineering-and-technology/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/dr-omkar-kulkarni-honored-with-the-prestigious-teaching-excellence-award/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/dr-pournima-inamdar-receives-prestigious-iba-award-as-emerging-law-teacheripr/</loc></url>
@@ -825,11 +934,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-and-whirlpool-corporation-forge-industry-academia-partnership/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-at-bse-a-historic-celebration-of-financial-awareness-and-global-recognition/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-at-nafsa-2025--strengthening-global-educational-alliances/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-baja-team-shines-bright-triumph-at-m-baja-event-in-pithampur-natrax-facility-madhya-pradesh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-celebrates-excellence-dr-bharat-kale-receives-prestigious-award-by-csi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-champions-sustainable-transport-with-eco-friendly-e-scooters/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-degree-now-accepted-in-germany/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-engineering-students-experienced-japan-through-international-immersion/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-international-collaboration-with-university-of-southern-california-and-university-of-sussex/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-launches-prof-makarand-hastak-school-of-construction-engineering--management/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-professors-ranked-among-worlds-top-2-scientists/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-pune-receives-the-prestigious-national-heartful-campus-award/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-pune-students-shine-globally-at-apples-swift-student-challenge-2026/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-pune-tops-maharashtra-in-ui-greenmetric-rankings-2025/</loc></url>
@@ -837,6 +949,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-school-of-business-ranks-9th-nationally/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-school-of-law-inaugurates-upgraded-free-legal-aid-clinic/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-signs-landmark-mou-with-michigan-state-university-to-strengthen-global-academic-collaboration/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-signs-mou-with-elevanta-systems-pvt-ltd-to-strengthen-industry-academia-collaboration/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-signs-mou-with-nirvaa-solutions-to-launch-indias-first-mtech-in-data-centre-systems-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-signs-mou-with-waaree-energies-limited-to-advance-renewable-energy-education/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpu-strengthens-global-partnership-with-japanese-tech-giant/</loc></url>
@@ -846,13 +959,18 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpus-department-of-computer-engineering--technology-receives-nexus-2026-catalyst-award/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpus-school-of-engineering--technology-makes-its-mark-in-2025-times-rankings/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/mit-wpus-school-of-law-honoured-with-distinguished-award-of-excellence/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/national-academic-immersion-programme-svnit-surat-gujarat/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/national-study-tour-of-school-of-economics-and-commerce/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/pioneering-clean-energy-research-mit-wpus-strategic-visit-to-cetri-canada/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/pioneering-innovation-mit-wpu-and-konkan-railway-establish-a-strategic-partnership/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/promoting-wellness-across-borders--yoga-session-for-university-of-mondragon-delegation/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/ram-charan-school-of-leadership-mit-wpu-signs-mou-with-berlin-school-of-business-and-innovation-bsbi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/ramcharan-school-of-leadership-signs-strategic-mou-for-global-immersion-programme/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/rev-prof-dr-vishwanath-karad-conferred-the-arutchelvar-dr-n-mahalingam-award-for-2024/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/school-of-law-partners-with-adv-abhijeet-kasbekar--associates-to-elevate-legal-education/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/shaping-the-future-of-democracy-dr-rahul-v-karad-honoured-at-cpa-india-conference/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/team-vegapod-hyperloop-receives-recognition-from-union-minister-nitin-gadkari/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/news/team-vishwashanti-sterg-triumphs-at-in-space-cansat-competition/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/tech-training-initiatives-for-future-medical-professionals/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/the-mit-world-peace-university-welcomes-prof-solankis-energy-swaraj-yatra-paving-the-way-for-a-greener-tomorrow/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/news/vegapod-hyperloop-team-wins-outreach-award-at-european-hyperloop-week/</loc></url>
@@ -878,12 +996,15 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/abhijit-nair/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/abhijith-b/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/abhinay-kamble/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/abhishek-bratindranath-mukherjee/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/abhishek-dutta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/abhishek-madhukar-thote/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/abhishek-prakash-chunawale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/abhishek-singh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/adinath-dnyandev-yadhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/aditi-shantanu-jahagirdar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ajay-sahu/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/ajendra-singh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ajit-baburao-deore/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/akanksha-jaiswal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/akanksha-tandon/</loc></url>
@@ -899,12 +1020,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ambrish-gaur/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ameya-anil-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amir-shikalgar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/amit-ambar-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amit-kumar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amit-liladhar-nehete/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amit-mishra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amit-vishnu-jomde/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amol-ambadas-tagalpallewar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amol-prakash-narke/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/amruta-anil-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amruta-pradeep-dixit/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/amruta-sameer-naik/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anagha-arun-mahajan/</loc></url>
@@ -919,7 +1042,9 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/aniruddh-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anita-kumari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anita-mahesh-thengade/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/anita-shivaji-gunjal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anjali-ajit-sane/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/anjali-meshram/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anjali-milind-purohit/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anjali-rajesh-askhedkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/anjoo-sharan-upadhyaya/</loc></url>
@@ -949,6 +1074,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/arti-girish-swami/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/arun-balaso-mali/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/arun-prakash/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/arunabh-pandey/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/asha-rajendra-sanap/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ashish-andhale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ashish-haribhau-pawar/</loc></url>
@@ -969,13 +1095,17 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/balagangadhar-reddy-kandula/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/balaji-madhavrao-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/balaso-nivruti-jagdale/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/bandhali-dutta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/barnali-banerjee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/basant-tiwari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/basavaraj-shantaram-kothavale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bhakti-amogh-paranjape/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bharat-burghate/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bharat-sambhu-chaudhari/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/bharat-santhalia/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/bhavana-subhash-tiple/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bhushan-ganurkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/bhushan-rameshwar-shete/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bipin-vishvas-palande/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bishnu-prasad-mohapatra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/bishnudeo-roy/</loc></url>
@@ -985,11 +1115,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/chandrashekhar-digambarrao-bobade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/chetan-bhimrao-khadse/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/chinmay-devidas-deshmukh/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/darshan-gopalrao-gaidhankar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/debabrata-saha/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deepa-soumik-nath/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deepak-kumar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deepak-popat-hujare/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/deepak-prashar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deepali-dhananjay-shahane/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/deepali-pankaj-javale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deepali-sanjay-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deepali-sonawane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/deependra-sharma/</loc></url>
@@ -1003,6 +1136,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/dhiresh-someshrao-shastri/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/dibyangana-chakraborty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/diksha-dinar-bedekar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/dinesh-chandrakant-nikalje/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/dinesh-shivratan-bhutada/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/dipak-abnave/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/dipali-prashant-baviskar/</loc></url>
@@ -1023,6 +1157,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/dr-vinod-shastri-198/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/esha-bansal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/gajanan-malleshi-birajdar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/gallipally-srishailam/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ganesh-bhaurao-choudhari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ganesh-pralhadrao-borikar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ganesh-shivaji-ingle/</loc></url>
@@ -1031,9 +1166,12 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/gauri-bilaye/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/gauri-rahul-dhongade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/gautam-surendra-bapat/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/gayatri-lele/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/girish-shamraoji-mude/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/girish-sharad-barpande/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/gopal-sakarkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/gourav-ramesh-pednekar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/goutam-bhaskar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/harshal-salunkhe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/harshali-digambar-zodpe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/harshit-pratap-singh/</loc></url>
@@ -1060,6 +1198,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/kausik-bhattacharyya/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/kaustubh-arvind-sontakke/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/kaustubh-vishwas-yadav/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/kavita-karan-ingale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ketaki-hanamant-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/kiran-bidua/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/kiran-kisan-kokate/</loc></url>
@@ -1078,10 +1217,13 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/kundlik-vitthal-mali/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/lipsa-mishra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/madhumita-mukherjee/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/madhura-dilip-londhe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/madhura-vishnu-phatak/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/madhuri-amol-bhalekar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/madhuri-rao/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mahesh-balwant-sonawane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mahesh-kulkarni/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/mahesh-kumar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mahesh-maganlal-makwana/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mahesh-nana-pradhan/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mahesh-salunkhe/</loc></url>
@@ -1090,13 +1232,16 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/makrand-mahadev-wagale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/malhari-bhimrao-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manali-joshi/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/manasi-gokhale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manasi-mishra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mandar-bopardikar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mandar-madhukar-lele/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mangesh-raghvendra-mahajan/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mangesh-ramesh-saraf/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mangesh-vilas-bedekar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/mangeshkumar-shendkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manish-kumar-sharma/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/manisha-chandrashekhar-kumawat/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manisha-mohan-wani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manisha-rajendra-kuveskar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manisha-ravikumar-kowdiki/</loc></url>
@@ -1104,14 +1249,17 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manjiri-vishal-gadekar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manjushri-sanjay-joshi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/manoj-pralhad-nigadkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/mayuri-dabhi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/meenakshi-shankar-iyer/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/meenal-kaustubh-jabde/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/meenal-kaustubh-pendse/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/meera-jeevanreddy-chintala/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/meghana-ganesh-gote/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/milan-yadav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/minal-prashant-deshmukh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mithila-arvind-biniwale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mitulkumar-thakorbhai-solanki/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/mohit-awasthi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mohit-kant-kaushik/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mr-ganesh-b-pokale-5/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/mr-haranath-ghosh-193/</loc></url>
@@ -1126,6 +1274,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/narendra-laxman-mathakari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/nathrao-bhimrao-jadhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/navnath-lahu-shete/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/neha-bharti/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/neha-bokey/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/neha-prasad-sathe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/netra-manoj-lokhande/</loc></url>
@@ -1136,6 +1285,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/nilesh-bajad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/niraj-subhashrao-topare/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/nithya-n-kutty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/nitin-namdeo-pise/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/nitinkumar-raghunath-anekar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/nivedita-gunesh-gogate/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/omkar-kamalakant-kulkarni/</loc></url>
@@ -1147,6 +1297,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pankaj-pramod-koparde/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/parineeta-das/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/parshant-kumar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/partha-das/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/parul-ghole/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/parul-madhuraj-jadhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/parveen-kumar/</loc></url>
@@ -1156,6 +1307,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/poonam-inamdar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pradeep-kumar-tiwari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pradnya-siddhivinayak-kulkarni/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/pradnya-vaibhav-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prajakta-balchandra-khanwalkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prajakta-vishal-adsule/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prajkta-bhide/</loc></url>
@@ -1173,13 +1325,16 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prashant-mahadeo-patane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prashant-pralhad-malavadkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prashant-sudhakar-lahane/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/prashant-vilas-chaudhary/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prathamesh-sonawani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pratibha-sharad-kshirsagar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pratiksha-deepak-khurpade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pratvina-vinayak-talele/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/pravin-raghunath-minde/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/pravin-satyanarayan-metkewar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/preethi-sunkara/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/preeti-amit-kale/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/prince-dubey/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/priya-bahirnath-kale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/priya-nagargoje/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/priyamwada-sachindra-mahajani/</loc></url>
@@ -1187,14 +1342,18 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/priyanka-rohit-rajmane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/prof-dr-urvashi-makkar-121/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/purna-kumari/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/puskaraj-devidas-sonawwanay/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/rachealnikita-sharma/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/radhakrishnan-subramaniam/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/raghunath-subhanrao-bhadade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rahul-ashokrao-aher/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/rahul-borah/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rahul-gaikwad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rahul-kisan-jagtap/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rahul-verma/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rahul-vishwanath-dandage/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/raj-agarwal/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/raj-kumar-rajak/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rajashree-sahadeo-jadhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rajashri-amit-kadam/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rajeev-sengupta/</loc></url>
@@ -1214,9 +1373,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ratna-vadra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ratnadip-rajabhau-joshi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ravi-nikam/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/ravikant-dnyaneshwar-kale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rehan-deshmukh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/renuka-amit-mane/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/renuka-deshmukh/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/renuka-pohnerkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/reshma-sujal-sonar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/riddhi-gaurav-panchal/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/ritu-goel/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rohini-revansiddappa-pujari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rohit-kumar-sharma/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rohit-raghunath-ghadge/</loc></url>
@@ -1225,40 +1389,56 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ruchi-rani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ruhi-ajit-patankar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rupal-chandulal-shroff/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/rupali-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rupali-kanade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rupali-ram-sonolikar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/rupali-sandip-kute/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/rutwick-vyas/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-arun-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-bhimrao-bhoite/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-harle/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-jagannath-sakhare/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-naik/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-prakash-srivastava/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-ratnakar-deshmukh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sachin-shivaji-gunjal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/saee-omkar-sumant/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sagar-gothkhindikar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sagar-kanekar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sagar-ramdas-sonawane/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sagar-sambhaji-apune/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sagar-sunil-kolapkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/saket-ravindra-yeolekar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/saloni-kumar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/samarth-dilip-patwardhan/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/samidha-anand-jawade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/samuel-jacob-kuruvilla/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sandeep-balasaheb-pagar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sandeep-banerjee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sandeep-chandrakant-potnis/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sandeep-namdev-dhikale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sandeep-sampatrao-sathe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sandhya-mathapati/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sandip-navnathrao-palve/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sandip-tukaram-chavan/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sangeetha-d/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sanjay-babanrao-bhagwat/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sanjyotee-patil/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sanket-rajesh-tirpude/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sanmit-sanjit-sarkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sarang-gore/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sarika-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sarika-sanjay-bobde/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/saroj-shinde/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sasmita-behera/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/satish-arunrao-polshettiwar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/satyendra-kumar-prasad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/saurabh-ardra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/savitri-nathrao-jadhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/seema-idhate/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/seema-jitendra-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shahbazmubarak-abdulkhadar-dandin/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shahrukh-sayyed/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shailendra-ashok-dayane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shailendra-jagdish-naik/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shailendra-kumar-kale/</loc></url>
@@ -1266,18 +1446,25 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shakti-sanjay-kinger/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shalaka-patil/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shamim-mohammad/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shankar-maruti-mali/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shantaram-kisan-dond/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shantini-aniruddha-bokil/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shanu-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sharbani-kaushik/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sharmishta-suhas-desai/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sheetal-kiran-pawar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sheetal-pravin-girase/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sheetal-suresh-rajapurkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shikha-vikrant-gaikwad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shilpa-samir-chapadgaonkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shilpa-shirish-paygude/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shilpa-snehal-sonawani/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shital-kakad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shital-pathak/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shital-vasant-kahane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shiv-havgirao-sutar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shivprakash-bhagwatrao-barve/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shoma-mitkari/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shounak-rushikesh-sugave/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shraddha-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shraddha-salvi/</loc></url>
@@ -1285,11 +1472,16 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shreeya-chidambar-rajpurohit/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shreya-bera/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shridevi-chandraprakash-karande/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shrihari-mahadeo-bondar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shrikant-krishnanath-yadav/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shrirang-chaudhary/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shruti-godbole/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shruti-ravindra-danve/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shruti-shukla/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shubhalaxmi-sanjay-joshi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shubhangi-rajesh-shekokar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shubhangi-rastogi/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/shubhangi-vitthal-gaikwad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shubhika-malara/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shvetank-bhatt/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/shweta-devendra-shirolkar/</loc></url>
@@ -1299,6 +1491,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/siddhivinayak-arvind-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/siraj-ahmed-bhatkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/smita-sanjay-paithankar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/snehal-sayajirao-wagh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/soma-mishra/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sonal-manohar-muluk/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sonali-potadar/</loc></url>
@@ -1308,6 +1501,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sudeepta-banerjee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sudhanshu-jaiswal/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sudhir-pandurang-patil/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sugeeta-upadhyay/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/suja-sreejith-panickar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sujata-jagadale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sukhada-prasad-bhingarkar/</loc></url>
@@ -1316,11 +1510,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/suman-rawat/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sumant-nivarutti-shinde/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sumedha-dhananjay-sirsikar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sumitra-narayan-motade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sunil-brijlal-somani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sunil-machindra-adhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sunil-shriram-karad/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/sunita-mahesh-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/supriya-paigude/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/surendra-hawgirao-barhatte/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/suryakant-karande/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sushil-kumar-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sushila-manish-palwe/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/sushma-verma/</loc></url>
@@ -1328,14 +1525,18 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/suvarna-gopal-ranade/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swapnil-mahesh-gupta/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swapnil-narayan-undale/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/swapnil-sonawane/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swapnil-virendra-chalwadi/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swati-b-mahanoor/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swati-changdeo-jagdale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swati-deepak-bankar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/swati-jadhav/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/swati-snehal-wagh/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/swetha-rayala/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/tanya-kumar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/tejaswini-bharati/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/tejaswini-pachpor/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/trupti-nitin-baraskar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/trushita-sandeep-chaware/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/uday-vilas-jagadale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/ujjwala-shitalkumar-rawandale/</loc></url>
@@ -1364,16 +1565,20 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vijay-kumar-kalyani/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vijaya-vijaykumar-pangave/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vijayapandi-pandy/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/vijayashri-machindra-gurme/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vijaykumar-bilolikar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vikas-jaywant-magar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vikas-keshav-jadhav/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vikram-shete/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vikrant-devidas-gaikwad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vilas-sahebrao-kanthale/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/vinay-munde/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vinaya-vijay-gohokar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/vinayak-prabhakar-musale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vinayak-sudhakar-wadgaonkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vinita-kale/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vinod-sartape/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/vishakha-vijay-sakhare/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vishakha-vivek-pethkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vishvajeet-n/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/vivek-patel/</loc></url>
@@ -1381,6 +1586,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/people/waseem-khan/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/yashpal-dashrath-netragaonkar/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/yogadrum-kelkar/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/people/yogesh-jayant-gaikwad/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/yogesh-raghunath-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/yogini-mukherjee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/people/yogita-sachin-ozarde/</loc></url>
@@ -1403,6 +1609,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/ba-photography/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/bachelor-of-architecture-barch/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/bachelor-of-education-bed/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programme/bba/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/bba-banking-finance-and-insurance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/bba-business-analytics/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/bba-digital-marketing/</loc></url>
@@ -1444,6 +1651,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-computer-science-and-engineering-artificial-intelligence-and-data-science/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-computer-science-and-engineering-cloud-computing/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-computer-science-and-engineering-cyber-security-and-forensics/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-electrical-and-computer-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-electronics-and-communication-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-electronics-and-communication-engineering-artificial-intelligence-and-machine-learning/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/btech-electronics-semiconductor-and-vlsi-design/</loc></url>
@@ -1479,12 +1687,14 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-finance/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-healthcare-management/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-human-resource-management/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-in-construction-management-cm/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-international-business/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-marketing/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mba-operations-and-supply-chain-management/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mca/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mcom/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mdes-strategic-product-design/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programme/mdes-user-experience-design/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mfa-applied-arts/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mpharm-pharmaceutical-analysis/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mpharm-pharmaceutical-chemistry/</loc></url>
@@ -1513,6 +1723,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-civil-engineering-tunnel-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-computer-science-and-engineering-artificial-intelligence-and-optimization-methods/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-computer-science-and-engineering-cyber-security/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-computer-science-and-engineering-data-centre-systems-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-computer-science-and-engineering-data-science-and-analytics/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-e-mobility/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/mtech-electronics-and-communication-engineering-vlsi-and-embedded-systems/</loc></url>
@@ -1541,6 +1752,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-mathematics/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-mechanical-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-microbiology/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-peace-studies/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-petroleum-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-pharmaceutical-sciences/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programme/phd-in-physics/</loc></url>
@@ -1565,7 +1777,9 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-design/department-of-visual-arts/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-design/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-economics-and-commerce/department-of-commerce/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-economics-and-commerce/department-of-economics/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-economics-and-commerce/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-engineering-and-technology/department-of-bioengineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-engineering-and-technology/department-of-chemical-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-engineering-and-technology/department-of-civil-engineering/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/programmes/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/</loc></url>
@@ -1610,7 +1824,11 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/research/ipr/design-registrations/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/ipr/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/ipr/patent/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/ipr/published-patent/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/research-areas/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/research-news/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/research-papers/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/consultancy/2017-2018/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/consultancy/2018-2019/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/consultancy/2019-2020/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/consultancy/2020-2021/</loc></url>
@@ -1619,9 +1837,12 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/consultancy/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2015-2016/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2016-2017/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2017-2018/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2018-2019/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2019-2020/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2020-2021/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2021-2022/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2022-2023/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/2023-2024/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/grants/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/research/sponsored-research/</loc></url>
@@ -1629,8 +1850,11 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/researcher/celebrating-the-remarkable-achievement-of-dr-anand-kulkarni/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/researcher/icssr-sanctions-rs-16-lakhs-for-research-on-elderly-well-being-in-rural-india/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/researcher/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/researcher/international-conference-on-bridging-ancient-and-advanced-technology-of-nanomaterials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/researcher/mit-wpu-faculty-member-recognised-among-the-worlds-top-5-scientists/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/researcher/mit-wpu-professors-ranked-among-worlds-top-2-scientists/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/researcher/mit-wpu-pune-faculty-honoured-by-springer-nature/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/researcher/mit-wpu-receives-prestigious-1-5-crore-icmr-research-grant/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/researcher/mit-wpu-researchers-make-significant-contribution-to-biodiversity-discovery/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/revvity/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/rtep-advisory-committee/</loc></url>
@@ -1643,8 +1867,11 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/dean/dr-deependra-sharma-168/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/faculty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/about/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/dean/dr-deependra-sharma-77/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/about/</loc></url>
@@ -1663,16 +1890,22 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-government/dean/dr-rahul-v-karad-82/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-government/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-government/faculty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-government/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-government/testimonials/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-leadership/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-leadership/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-leadership/dean/prof-dr-urvashi-makkar-80/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-leadership/faculty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-leadership/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-business-and-leadership/school-of-leadership/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/about/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/dean/dr-suman-devadula-91/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/happenings/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/programmes/</loc></url>
@@ -1682,12 +1915,15 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/happenings/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/testimonials/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/dean/dr-santosh-aghav-192/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/testimonials/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/dean/abhijit-panse-179/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/faculty/</loc></url>
@@ -1696,12 +1932,15 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/happenings/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/faculty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/faculty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-peace-studies/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-peace-studies/programmes/</loc></url>
@@ -1710,6 +1949,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-photography/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/faculty/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/dean/dr-makarand-hastak-211/</loc></url>
@@ -1720,6 +1960,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/happenings/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/testimonials/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/testimonials/</loc></url>
@@ -1740,6 +1981,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/dean/dr-siddharth-chakarbarti-74/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/programmes/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/dean/dr-siddharth-chakarbarti-73/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/faculty/</loc></url>
@@ -1755,15 +1997,22 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/happenings/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/about/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/dean/dr-siddharth-chakarbarti-76/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/faculty/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/happenings/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/newsletter/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/about/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/dean/dr-ashwin-bhanudas-kuchekar-208/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/about/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/dean/dr-ashwin-bhanudas-kuchekar-205/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/dean/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/mandatory-disclosures/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/programmes/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/testimonials/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/about/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/dean/dr-ashwin-bhanudas-kuchekar-206/</loc></url>
@@ -1842,6 +2091,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/society-of-women-engineers/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/status/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/student-affairs/anti-ragging-committee/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/student-affairs/discipline-committee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/student-affairs/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/student-affairs/internal-complaints-committee/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/student-information/</loc></url>
@@ -1863,6 +2113,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/events/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/green-team/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/projects-and-research/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/reports/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/social-empowerment/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/sustainability/student-achievements-and-projects/</loc></url>
@@ -1882,6 +2133,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/vegapod-hyperloop/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/alumotsav-22/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/bana-2025/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/bana-2026/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/bcs-glimpses/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/career-connect-seminar-at-surat--anand-kumar--super-30-fame/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/conclave-2025/</loc></url>
@@ -1891,6 +2143,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/dr-yogesh-joshi---mit-wpu-alumni-bags-the-shanti-swarup-bhatnagar-prize-for-science-and-technology/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/experience-value-based-education-and-learn-what-matters-at-mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/fireside-chat-with-icons-r-balki--siddharth-kak/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/hackmit-wpu-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/honoring-musical-heritage/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/life-at-mit-world-peace-university/</loc></url>
@@ -1900,6 +2153,7 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/mit-wpu-nostalgia24/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/nsrtc-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/ride-2024/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/ride-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/shubharambh-2024/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/sldp-2025/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/spandan-2025/</loc></url>
@@ -1907,5 +2161,6 @@
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/video-on-an-article-from-the-economic-and-political-weekly-epw-archives-by-the-mit-sog--mit-wpu/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/video-gallery/world-peace-day/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/virtual-tour/</loc></url>
+  <url><loc>https://mitwpu.vishwanathgrid.org/writers-web/</loc></url>
   <url><loc>https://mitwpu.vishwanathgrid.org/young-democrates/</loc></url>
 </urlset>

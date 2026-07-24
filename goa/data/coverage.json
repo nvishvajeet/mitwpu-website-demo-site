@@ -32,7 +32,7 @@
     "latest_rail_items": 4,
     "advisor_context_routes": 15,
     "resident_researcher_records": 0,
-    "validated_local_links": 3586,
+    "validated_local_links": 3588,
     "validation_issues": 0,
     "media_policy_errors": 0,
     "media_policy_warnings": 0
@@ -505,7 +505,7 @@
     "schema": "wpu-goa.export-validation.v1",
     "generated_html_routes": 164,
     "expected_routes": 164,
-    "validated_local_links": 3586,
+    "validated_local_links": 3588,
     "validated_local_assets": 238,
     "first_layer_routes_covered": 8,
     "latest_rail_items": 4,

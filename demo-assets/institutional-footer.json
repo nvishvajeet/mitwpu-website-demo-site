@@ -41,8 +41,7 @@
       "links": [
         {"label": "People", "local": "people/"},
         {"label": "Search", "local": "search/"},
-        {"label": "Intranet", "local": "intranet/"},
-        {"label": "Contact & office directory", "local": "contact-us/"}
+        {"label": "Intranet", "local": "intranet/"}
       ]
     }
   ]
