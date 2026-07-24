@@ -381,10 +381,54 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
 .office-card__email {
   display: inline-block;
   margin-bottom: 1rem;
+  padding: .58rem .82rem;
+  color: #fff;
+  background: var(--brand);
+  border: 1px solid var(--brand);
+  border-radius: .2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: .82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
 }
+.office-card__email:hover { color: #fff; background: var(--heading); border-color: var(--heading); }
 .office-card__description p { margin-block: 0 1rem; }
+
+.contact-page .hero { min-height: 290px; }
+.contact-overview {
+  display: grid;
+  gap: 1.5rem;
+}
+.contact-overview > section {
+  padding: clamp(1.2rem, 4vw, 2rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.contact-overview h2 { margin-top: 0; }
+.contact-overview address { color: var(--copy); font-style: normal; }
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-top: 1.2rem;
+}
+.contact-action {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: .6rem .9rem;
+  color: #fff;
+  background: var(--brand);
+  border: 1px solid var(--brand);
+  border-radius: .2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: .86rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.contact-action:hover { color: #fff; background: var(--heading); border-color: var(--heading); }
 
 .video-gallery {
   display: grid;
