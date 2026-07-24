@@ -691,6 +691,18 @@ body {
   border-left: 0;
 }
 
+/* The 3-column ":not(:nth-child(3n + 1))" divider rule above has specificity
+   (0,2,0) and out-specifies the plain .directory-card--school reset (0,1,0),
+   so every even-position school card was getting a 25px left pad + 1px border
+   — shrinking its 16:9 image by 26px and making it shorter than its row-mate.
+   The schools grid is two columns separated by the column-gap, so no left
+   gutter is wanted. Re-assert it at matching specificity (wins on source
+   order) so every school image renders at one uniform size. */
+.directory-grid .directory-card--school {
+  padding-left: 0;
+  border-left: 0;
+}
+
 .directory-card__media {
   display: block;
   aspect-ratio: 16 / 9;

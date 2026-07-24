@@ -304,7 +304,7 @@ window.MITWPU_PUBLIC_LEADERSHIP = [
     },
     "photoPath": "/media/mitwpu-public/optimized/leadership/e6/e620b4e244f9239b-e620b4e244f9239b-Urvashi-Makkar.webp",
     "research": "",
-    "summary": "",
+    "summary": "Dean & Professor - Ram Charan School of Leadership",
     "links": {},
     "memberType": "university-leadership",
     "directoryRole": "university-leadership",

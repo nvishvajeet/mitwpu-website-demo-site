@@ -159,6 +159,68 @@
   top: 13px !important;
 }
 
+/* Hamburger toggle — hidden on desktop, revealed at the mobile breakpoint
+ * below. It reveals the full nav so no link is stranded off-screen on phones. */
+[data-global-masthead] .masthead-nav-toggle {
+  display: none !important;
+  position: relative !important;
+  flex: 0 0 44px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+}
+
+[data-global-masthead] .masthead-nav-toggle__bars,
+[data-global-masthead] .masthead-nav-toggle__bars::before,
+[data-global-masthead] .masthead-nav-toggle__bars::after {
+  position: absolute !important;
+  left: 11px !important;
+  width: 22px !important;
+  height: 2.5px !important;
+  background: #fff !important;
+  border-radius: 2px !important;
+  content: "" !important;
+  transition: transform 180ms ease, opacity 120ms ease !important;
+}
+
+[data-global-masthead] .masthead-nav-toggle__bars {
+  top: 21px !important;
+}
+
+[data-global-masthead] .masthead-nav-toggle__bars::before {
+  top: -7px !important;
+}
+
+[data-global-masthead] .masthead-nav-toggle__bars::after {
+  top: 7px !important;
+}
+
+/* Animate to an X when the menu is open. */
+[data-global-masthead] .masthead-nav-toggle[aria-expanded="true"]
+  .masthead-nav-toggle__bars {
+  background: transparent !important;
+}
+
+[data-global-masthead] .masthead-nav-toggle[aria-expanded="true"]
+  .masthead-nav-toggle__bars::before {
+  top: 0 !important;
+  transform: rotate(45deg) !important;
+}
+
+[data-global-masthead] .masthead-nav-toggle[aria-expanded="true"]
+  .masthead-nav-toggle__bars::after {
+  top: 0 !important;
+  transform: rotate(-45deg) !important;
+}
+
 /* The source templates remain available for provenance, but never render a
  * second institutional bar after the canonical release masthead is installed.
  */
@@ -249,6 +311,62 @@ body > [data-global-masthead] ~ :is(
 
   [data-global-nav] a {
     font-size: .9375rem !important;
+  }
+}
+
+/* Phones and small tablets: collapse the nav behind a hamburger so every
+ * global link is reachable, and drop the horizontal-scroll strip that made
+ * page scrolling feel unreliable. */
+@media (max-width: 767px) {
+  [data-global-masthead] > .global-masthead__inner {
+    grid-template-columns: 1fr auto !important;
+    gap: 10px !important;
+  }
+
+  [data-global-masthead] .masthead-nav-toggle {
+    display: inline-flex !important;
+  }
+
+  [data-global-nav] {
+    position: absolute !important;
+    inset-inline: 0 !important;
+    top: var(--mitwpu-masthead-height) !important;
+    z-index: 1000 !important;
+    display: none !important;
+    flex-flow: column nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    height: auto !important;
+    max-height: calc(100vh - var(--mitwpu-masthead-height)) !important;
+    max-height: calc(100dvh - var(--mitwpu-masthead-height)) !important;
+    padding: 6px 0 10px !important;
+    overflow-x: visible !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+    background: var(--mitwpu-masthead-navy) !important;
+    border-bottom: 3px solid var(--mitwpu-masthead-gold) !important;
+    box-shadow: 0 18px 40px rgb(0 0 0 / 35%) !important;
+  }
+
+  [data-global-nav].is-open {
+    display: flex !important;
+  }
+
+  [data-global-nav] a {
+    height: auto !important;
+    padding: 15px 24px !important;
+    font-size: 1.0625rem !important;
+    border-bottom: 1px solid rgb(255 255 255 / 12%) !important;
+  }
+
+  [data-global-nav] a[aria-current="page"] {
+    background: rgb(255 255 255 / 8%) !important;
+  }
+
+  [data-global-masthead] .theme-toggle {
+    align-self: flex-start !important;
+    margin: 8px 0 0 20px !important;
   }
 }
 

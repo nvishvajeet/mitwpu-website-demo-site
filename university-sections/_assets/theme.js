@@ -90,9 +90,41 @@
     });
   }
 
+  function initMobileNav() {
+    var toggle = document.querySelector("[data-nav-toggle]");
+    var nav = document.querySelector("[data-global-nav]");
+    if (!toggle || !nav) return;
+    function setOpen(open) {
+      nav.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    }
+    toggle.addEventListener("click", function () {
+      setOpen(!nav.classList.contains("is-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") setOpen(false);
+    });
+    document.addEventListener("click", function (event) {
+      if (
+        nav.classList.contains("is-open")
+        && !event.target.closest("[data-global-masthead]")
+      ) {
+        setOpen(false);
+      }
+    });
+    window.matchMedia("(min-width: 768px)").addEventListener("change", function (event) {
+      if (event.matches) setOpen(false);
+    });
+  }
+
   installInstitutionalLockup();
   installInstitutionalNavigation();
   installScrollReveal();
+  initMobileNav();
   if (!button) return;
 
   function currentTheme() {

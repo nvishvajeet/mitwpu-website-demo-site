@@ -175,6 +175,34 @@
   font-size: clamp(1.15rem, 2.4vw, 1.55rem);
 }
 
+.event-hero-media {
+  margin: 42px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.event-media-link {
+  display: block;
+}
+
+.event-media-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 180ms ease;
+  cursor: zoom-in;
+}
+
+.event-media-link:hover img {
+  opacity: 0.92;
+}
+
+.event-media-link:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
 .event-detail-grid {
   display: grid;
   grid-template-columns: minmax(210px, 0.32fr) minmax(0, 1fr);
@@ -290,6 +318,46 @@
   margin: 0;
 }
 
+.event-gallery-disclosure {
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
+}
+
+.event-gallery-disclosure summary {
+  padding: 20px 0;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.event-gallery-disclosure summary:hover {
+  color: var(--heading);
+}
+
+.event-gallery-disclosure summary:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.event-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 0 20px;
+}
+
+.event-gallery-grid .event-media-link {
+  overflow: hidden;
+  background: var(--subtle);
+}
+
+.event-gallery-grid img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
 @media (max-width: 840px) {
   .event-hero-grid,
   .event-detail-grid {
@@ -364,5 +432,15 @@
   .programme-list > div {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .event-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-media-link img {
+    transition: none;
   }
 }

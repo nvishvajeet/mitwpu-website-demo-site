@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1140" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .b{fill:#e9edf1;stroke:#8898a6;stroke-width:1.5}
+      .res{fill:#eef4ea;stroke:#8fb37c;stroke-width:1.5}
+      .hos{fill:#ece3f0;stroke:#b09bbd;stroke-width:1.5}
+      .lbl{fill:#173a55;font-size:13px;font-weight:700}
+      .sub{fill:#5b6b7a;font-size:9.5px}
+      .rd{stroke:#c4cbd3;stroke-width:12;fill:none;stroke-linecap:round}
+      .rdl{fill:#8a97a4;font-size:11px;font-style:italic}
+    </style>
+  </defs>
+  <rect width="960" height="1140" fill="#f7f5ef"/>
+
+  <!-- Vetal Tekdi hill WEST -->
+  <path d="M 0 0 L 140 0 C 115 300, 165 560, 115 820 C 92 960, 150 1060, 85 1140 L 0 1140 Z" fill="#cfe0c4"/>
+  <g fill="#8fb37c"><circle cx="55" cy="140" r="8"/><circle cx="90" cy="300" r="8"/><circle cx="65" cy="470" r="8"/><circle cx="105" cy="650" r="8"/><circle cx="65" cy="840" r="8"/><circle cx="95" cy="1010" r="8"/></g>
+  <text x="52" y="640" fill="#5f7a4f" font-size="12" font-weight="700" transform="rotate(90 52 640)" text-anchor="middle">VETAL TEKDI · wooded hill (west)</text>
+
+  <!-- adjacent societies EAST -->
+  <rect x="840" y="0" width="120" height="1140" fill="#ececec"/>
+  <text x="900" y="570" fill="#a2a2a2" font-size="11" transform="rotate(90 900 570)" text-anchor="middle">adjacent residential societies (outside campus)</text>
+
+  <!-- Vishwashanti Marg (NORTH) + main north-south spine + roundabout -->
+  <path class="rd" d="M 220 210 L 800 210"/>
+  <text class="rdl" x="470" y="198" text-anchor="middle">Vishwashanti Marg</text>
+  <path class="rd" d="M 400 210 L 400 980"/>
+  <path class="rd" d="M 260 560 L 560 560"/>
+  <circle cx="400" cy="560" r="24" fill="none" stroke="#c4cbd3" stroke-width="12"/>
+
+  <!-- OUTSIDE the back gate (north): Vyas + Swapnapurti -->
+  <rect class="b" x="600" y="60" width="150" height="70" rx="6"/>
+  <text class="lbl" x="610" y="90">Vyas Building</text>
+  <text class="sub" x="610" y="105">outside back gate</text>
+  <rect class="hos" x="600" y="140" width="150" height="55" rx="6"/>
+  <text class="lbl" x="610" y="165">Swapnapurti Hall</text>
+  <text class="sub" x="610" y="180">events</text>
+
+  <!-- BACK GATE on Vishwashanti Marg -->
+  <g>
+    <rect x="374" y="196" width="9" height="28" fill="#b8860b"/><rect x="417" y="196" width="9" height="28" fill="#b8860b"/>
+    <text x="300" y="240" class="lbl" fill="#8a6400" text-anchor="end">BACK GATE ›</text>
+  </g>
+
+  <!-- NORTH cluster near back gate: Chanakya, Saraswati, Ganga, Maitreyi -->
+  <rect class="b" x="470" y="250" width="150" height="60" rx="6"/>
+  <text class="lbl" x="480" y="277">Chanakya</text>
+  <text class="sub" x="480" y="291">Intl Ed Centre (IEC)</text>
+  <rect class="b" x="640" y="250" width="150" height="60" rx="6"/>
+  <text class="lbl" x="650" y="277">Saraswati / Vishwa</text>
+  <text class="sub" x="650" y="291">Examinations · Chanakya Hall</text>
+  <rect class="b" x="640" y="325" width="150" height="60" rx="6"/>
+  <text class="lbl" x="650" y="352">Ganga Building</text>
+  <rect class="b" x="470" y="325" width="150" height="60" rx="6"/>
+  <text class="lbl" x="480" y="352">Maitreyi</text>
+  <text class="sub" x="480" y="366">Central Research Facility</text>
+
+  <!-- CENTER: MIT COE core + Mech + main body -->
+  <rect class="b" x="230" y="300" width="130" height="120" rx="6"/>
+  <text class="lbl" x="240" y="352">MIT College</text>
+  <text class="lbl" x="240" y="369">of Engineering</text>
+  <text class="sub" x="240" y="384">academic core</text>
+  <rect class="b" x="470" y="600" width="150" height="65" rx="6"/>
+  <text class="lbl" x="480" y="632">MIT Mech Dept</text>
+  <text class="sub" x="480" y="647">Mechanical Engg</text>
+  <rect class="b" x="220" y="600" width="150" height="140" rx="6"/>
+  <text class="lbl" x="232" y="668">MIT-WPU</text>
+  <text class="sub" x="232" y="683">main academic body</text>
+
+  <!-- WEST hill-side: Foothill Arena + Girls Hostel -->
+  <rect class="res" x="160" y="450" width="90" height="65" rx="32"/>
+  <text class="lbl" x="205" y="478" text-anchor="middle" fill="#4f7a3f" font-size="11">Foothill</text>
+  <text class="lbl" x="205" y="493" text-anchor="middle" fill="#4f7a3f" font-size="11">Arena</text>
+  <rect class="hos" x="155" y="560" width="105" height="65" rx="6"/>
+  <text class="lbl" x="165" y="588" font-size="12">Foothill</text>
+  <text class="lbl" x="165" y="603" font-size="12">Girls' Hostel</text>
+
+  <!-- SOUTH: Blue Hills + MAIN GATE -->
+  <rect class="b" x="240" y="800" width="130" height="65" rx="6"/>
+  <text class="lbl" x="250" y="832">Blue Hills</text>
+  <text class="sub" x="250" y="847">residential</text>
+  <path class="rd" d="M 200 980 L 720 980"/>
+  <text class="rdl" x="470" y="1002" text-anchor="middle">Paud Road / MIT Road</text>
+  <g>
+    <rect x="374" y="966" width="9" height="30" fill="#b8860b"/><rect x="417" y="966" width="9" height="30" fill="#b8860b"/>
+    <rect x="370" y="960" width="60" height="8" fill="#173a55"/>
+    <text x="440" y="978" class="lbl" fill="#8a6400">MAIN GATE</text>
+    <text x="440" y="992" class="sub">entry — you walk NORTH from here</text>
+  </g>
+
+  <!-- title + north arrow + note -->
+  <rect x="30" y="26" width="8" height="34" fill="#b8860b"/>
+  <text x="50" y="46" fill="#173a55" font-size="21" font-weight="800">MIT-WPU Kothrud — Campus Map</text>
+  <text x="50" y="64" fill="#5b6b7a" font-size="12">Main Gate (south, Paud/MIT Rd) → north to the Back Gate on Vishwashanti Marg · north up</text>
+  <g transform="translate(900,95)"><circle r="20" fill="#fff" stroke="#173a55" stroke-width="1.5"/><path d="M 0 -14 L 6 6 L 0 1 L -6 6 Z" fill="#173a55"/><text y="18" text-anchor="middle" fill="#173a55" font-size="10" font-weight="700">N</text></g>
+  <text x="50" y="1110" fill="#8a97a4" font-size="11" font-style="italic">Simple schematic — cluster (Chanakya/Saraswati/Ganga/Maitreyi) sits near the back gate per your note. Correct any positions and I'll redraw.</text>
+</svg>
