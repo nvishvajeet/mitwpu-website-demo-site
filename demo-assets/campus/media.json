@@ -1,0 +1,15 @@
+{
+  "mitwpu-campus-lead.webp": {
+    "source_url": "https://mitwpu.edu.in/uploads/images/MIT-Campus-img.webp",
+    "source_asset": "/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp",
+    "source_page": "https://mitwpu.edu.in/sustainability",
+    "derivative": {
+      "role": "lead",
+      "crop": "centred",
+      "width": 1557,
+      "height": 599,
+      "format": "webp",
+      "quality": 82
+    }
+  }
+}

@@ -51,10 +51,11 @@
     const links = [
       ["Home", "/"],
       ["About", "/about/"],
+      ["Research", "/research/"],
       ["Academics", "/academics/"],
       ["Admissions", "/admissions/"],
-      ["Research", "/research/"],
       ["People", "/people/"],
+      ["Contact", "/contact-us/"],
       ["Campus", "/life-at-mit-wpu/"],
       ["Search", "/search/"],
     ];
