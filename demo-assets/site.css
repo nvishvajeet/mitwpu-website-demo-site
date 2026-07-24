@@ -522,7 +522,7 @@ h3 {
   min-width: 0;
   border-bottom: 1px solid var(--line-strong);
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  scroll-snap-stop: normal;
 }
 
 .activity-viewport {
@@ -531,7 +531,7 @@ h3 {
   overscroll-behavior-inline: contain;
   scroll-behavior: smooth;
   scroll-padding-inline: 1px;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   scrollbar-color: var(--line-strong) transparent;
   scrollbar-width: thin;
   touch-action: pan-x pan-y;
