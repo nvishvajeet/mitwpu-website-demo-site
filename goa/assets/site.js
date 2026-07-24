@@ -2,6 +2,7 @@
   "use strict";
   var root = document.documentElement;
   var toggle = document.querySelector("[data-theme-toggle]");
+  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   function preferredTheme() {
     try {
@@ -72,7 +73,10 @@
         var distance = firstCard
           ? firstCard.getBoundingClientRect().width + 16
           : track.clientWidth * 0.8;
-        track.scrollBy({ left: distance * direction, behavior: "smooth" });
+        track.scrollBy({
+          left: distance * direction,
+          behavior: reducedMotion.matches ? "auto" : "smooth"
+        });
       }
 
       previous.addEventListener("click", function () { moveRail(-1); });
