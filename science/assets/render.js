@@ -165,7 +165,8 @@
     return `<div class="section-heading"><div>${eyebrow ? `<p class="eyebrow">${escapeHtml(eyebrow)}</p>` : ""}<h2>${escapeHtml(title)}</h2></div>${action}</div>`;
   }
 
-  function themeCard(theme, index, compact = false) {
+  function themeCard(theme, index, compact = false, headingLevel = 3) {
+    const safeHeadingLevel = headingLevel === 2 ? 2 : 3;
     const people = Array.isArray(theme.faculty) && theme.faculty.length
       ? `<p class="theme-faculty"><strong>Selected faculty</strong> ${theme.faculty.map((name) => escapeHtml(name)).join(" · ")}</p>`
       : "";
@@ -175,7 +176,7 @@
     return `<article class="science-theme${compact ? " science-theme-compact" : ""}">
       <span class="theme-index">${String(index + 1).padStart(2, "0")}</span>
       <div>
-        <h3>${escapeHtml(theme.title)}</h3>
+        <h${safeHeadingLevel}>${escapeHtml(theme.title)}</h${safeHeadingLevel}>
         <p>${escapeHtml(theme.summary)}</p>
         ${compact ? "" : people}
         ${links}
@@ -248,7 +249,7 @@
       <section class="page-hero"><div class="shell page-hero-inner"><div><h1>Research</h1></div><p>${escapeHtml(department.introduction)}</p></div></section>
       <section class="section">
         <div class="shell">
-          <div class="research-theme-list">${department.researchThemes.map(themeCard).join("")}</div>
+          <div class="research-theme-list">${department.researchThemes.map((theme, index) => themeCard(theme, index, true, 2)).join("")}</div>
         </div>
       </section>`;
   }
