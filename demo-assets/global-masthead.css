@@ -1,0 +1,237 @@
+/*
+ * One institutional masthead for every MIT-WPU Pune template.
+ *
+ * Page families keep their own content styling. The public release builder
+ * marks only the real university masthead and its global navigation, so this
+ * file cannot restyle research-group or WPU Goa navigation.
+ */
+:root {
+  --mitwpu-masthead-navy: #173456;
+  --mitwpu-masthead-gold: #d8a72c;
+  --mitwpu-masthead-height: 115px;
+  --mitwpu-masthead-content-height: 112px;
+  --mitwpu-masthead-width: 1180px;
+}
+
+[data-global-masthead] {
+  position: sticky !important;
+  inset-block-start: 0 !important;
+  z-index: 1000 !important;
+  width: 100% !important;
+  height: var(--mitwpu-masthead-height) !important;
+  min-height: var(--mitwpu-masthead-height) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff !important;
+  background: var(--mitwpu-masthead-navy) !important;
+  border: 0 !important;
+  border-bottom: 3px solid var(--mitwpu-masthead-gold) !important;
+  box-shadow: none !important;
+}
+
+[data-global-masthead] > .global-masthead__inner {
+  display: grid !important;
+  grid-template-columns: 300px minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 24px !important;
+  width: calc(100% - 100px) !important;
+  max-width: var(--mitwpu-masthead-width) !important;
+  height: var(--mitwpu-masthead-content-height) !important;
+  min-height: var(--mitwpu-masthead-content-height) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+[data-global-masthead] .masthead-brands {
+  display: flex !important;
+  align-items: center !important;
+  width: 300px !important;
+  height: var(--mitwpu-masthead-content-height) !important;
+  margin: 0 !important;
+}
+
+[data-global-masthead] :is(
+  .global-masthead__brand,
+  .institutional-lockup,
+  .institution-home,
+  .wordmark,
+  .brand
+) {
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  width: 300px !important;
+  min-width: 0 !important;
+  height: 92px !important;
+  margin: 0 !important;
+  padding: 7px 10px !important;
+  color: var(--mitwpu-masthead-navy) !important;
+  background: #fff !important;
+  border-radius: 3px !important;
+  text-decoration: none !important;
+}
+
+[data-global-masthead] .institutional-lockup__logo {
+  display: block !important;
+  width: 280px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 78px !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+[data-global-nav] {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-flow: row nowrap !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 16px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: var(--mitwpu-masthead-content-height) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+[data-global-nav] a {
+  display: flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+  height: var(--mitwpu-masthead-content-height) !important;
+  margin: 0 !important;
+  padding: 3px 0 0 !important;
+  color: rgba(255, 255, 255, .9) !important;
+  font-family: inherit !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 650 !important;
+  line-height: 1 !important;
+  letter-spacing: .01em !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-global-nav] a:hover,
+[data-global-nav] a:focus-visible,
+[data-global-nav] a[aria-current="page"] {
+  color: #f0c75e !important;
+  text-decoration: none !important;
+}
+
+[data-global-masthead] .theme-toggle {
+  flex: 0 0 44px !important;
+  width: 44px !important;
+  min-width: 44px !important;
+  height: 25px !important;
+  margin: 0 !important;
+}
+
+/* The source templates remain available for provenance, but never render a
+ * second institutional bar after the canonical release masthead is installed.
+ */
+[data-legacy-masthead] {
+  display: none !important;
+}
+
+/* Profile and directory families sometimes carried another direct-child
+ * header after the first legacy strip. Once the canonical bar is present,
+ * those old wrappers must not render or participate in page geometry.
+ */
+body > [data-global-masthead] ~ :is(
+  [data-legacy-masthead],
+  .site-header,
+  .institution-bar
+) {
+  display: none !important;
+}
+
+@media (max-width: 1050px) {
+  [data-global-masthead] > .global-masthead__inner {
+    grid-template-columns: 220px minmax(0, 1fr) !important;
+    gap: 18px !important;
+    width: calc(100% - 48px) !important;
+  }
+
+  [data-global-masthead] :is(
+    .global-masthead__brand,
+    .institutional-lockup,
+    .institution-home,
+    .wordmark,
+    .brand
+  ) {
+    width: 220px !important;
+  }
+
+  [data-global-masthead] .masthead-brands {
+    width: 220px !important;
+  }
+
+  [data-global-masthead] .institutional-lockup__logo {
+    width: 200px !important;
+  }
+
+  [data-global-nav] {
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    overscroll-behavior-inline: contain !important;
+    scrollbar-width: none !important;
+  }
+
+  [data-global-nav]::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  [data-global-masthead] > .global-masthead__inner {
+    grid-template-columns: 150px minmax(0, 1fr) !important;
+    gap: 14px !important;
+    width: calc(100% - 32px) !important;
+  }
+
+  [data-global-masthead] :is(
+    .global-masthead__brand,
+    .institutional-lockup,
+    .institution-home,
+    .wordmark,
+    .brand
+  ) {
+    width: 150px !important;
+    height: 72px !important;
+    padding: 5px 7px !important;
+  }
+
+  [data-global-masthead] .masthead-brands {
+    width: 150px !important;
+  }
+
+  [data-global-masthead] .institutional-lockup__logo {
+    width: 136px !important;
+    max-height: 62px !important;
+  }
+
+  [data-global-nav] {
+    gap: 14px !important;
+  }
+
+  [data-global-nav] a {
+    font-size: .8rem !important;
+  }
+}
+
+@media print {
+  [data-global-nav],
+  [data-global-masthead] .theme-toggle {
+    display: none !important;
+  }
+}

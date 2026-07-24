@@ -71,7 +71,10 @@
       var link = document.createElement("a");
       link.textContent = item[0];
       link.href = item[1];
-      if (path === item[1] || path.indexOf(item[1]) === 0) {
+      if (
+        path === item[1]
+        || (item[1] !== "/" && path.indexOf(item[1]) === 0)
+      ) {
         link.setAttribute("aria-current", "page");
       }
       nav.appendChild(link);

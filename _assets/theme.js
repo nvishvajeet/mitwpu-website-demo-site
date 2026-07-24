@@ -61,6 +61,7 @@
     ];
     const path = window.location.pathname.replace(/\/+$/, "/");
     const researchContext = /^\/(?:groups|facilities|photonics|quantum|astrophysics|bioinformatics)\//.test(path);
+    const admissionsContext = /^\/programme\//.test(path);
     nav.replaceChildren();
     nav.setAttribute("aria-label", "University navigation");
     links.forEach(([label, href]) => {
@@ -69,8 +70,9 @@
       link.href = href;
       if (
         path === href
-        || path.startsWith(href)
+        || (href !== "/" && path.startsWith(href))
         || (href === "/research/" && researchContext)
+        || (href === "/admissions/" && admissionsContext)
       ) {
         link.setAttribute("aria-current", "page");
       }

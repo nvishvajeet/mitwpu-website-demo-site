@@ -69,7 +69,7 @@
       link.href = href;
       if (
         path === href
-        || path.startsWith(href)
+        || (href !== "/" && path.startsWith(href))
         || (href === "/research/" && researchContext)
       ) {
         link.setAttribute("aria-current", "page");
