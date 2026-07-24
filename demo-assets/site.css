@@ -332,10 +332,10 @@ h3 {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(330px, 0.68fr);
-  min-height: 540px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.75fr);
+  min-height: 620px;
   align-items: center;
-  gap: clamp(58px, 8vw, 105px);
+  gap: clamp(42px, 6vw, 82px);
   padding-block: 78px;
 }
 
@@ -406,12 +406,35 @@ h3 {
 }
 
 .orientation-panel {
-  align-self: stretch;
   display: flex;
   min-width: 0;
   flex-direction: column;
   background: var(--paper);
   border: 1px solid var(--line);
+  border-top: 0;
+}
+
+.hero-visual {
+  align-self: stretch;
+  display: grid;
+  min-width: 0;
+  grid-template-rows: minmax(280px, 1fr) auto;
+}
+
+.hero-media {
+  min-height: 280px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.hero-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .orientation-content {
@@ -419,13 +442,13 @@ h3 {
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(30px, 4vw, 46px);
+  padding: 24px 28px 25px;
 }
 
 .orientation-panel h2 {
-  max-width: 15ch;
-  margin-bottom: 27px;
-  font-size: clamp(1.75rem, 2.8vw, 2.45rem);
+  max-width: 22ch;
+  margin-bottom: 18px;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
   text-wrap: balance;
 }
 
@@ -805,6 +828,10 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     padding-block: 68px;
   }
 
+  .hero-visual {
+    grid-template-rows: minmax(340px, 54vw) auto;
+  }
+
   .directory-groups {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -875,6 +902,10 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
   .orientation-panel {
     padding: 0;
+  }
+
+  .hero-visual {
+    grid-template-rows: minmax(240px, 68vw) auto;
   }
 
   .orientation-content {

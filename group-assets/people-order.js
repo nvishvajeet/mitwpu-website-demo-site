@@ -42,11 +42,10 @@
   }
 
   function displayName(person) {
-    const preferred = String(person && person.preferredDisplayName || "").trim();
-    if (preferred) return preferred;
-
     const source = String(person && person.name || "").trim();
-    const bareName = source
+    const preferred = String(person && person.preferredDisplayName || "").trim();
+    const displaySource = preferred || source;
+    const bareName = displaySource
       .replace(/^(?:prof(?:essor)?\.?\s+dr\.?|prof(?:essor)?|dr|mr|mrs|ms)\.?\s+/i, "")
       .trim();
     if (!bareName) return source;
@@ -56,14 +55,22 @@
 
     const role = normalized(`${person && person.designation} ${person && person.role}`);
     const academicRole = /\b(professor|lecturer|instructor|faculty|dean|vice chancellor)\b/.test(role);
-    const seniorAcademic = /\b(associate professor|professor|dean|vice chancellor|pro vice chancellor)\b/.test(role)
-      && !/\bassistant professor\b/.test(role);
-    if (seniorAcademic) return `Prof. ${bareName}`;
-    if (/^dr\.?\s+/i.test(source) || /^prof(?:essor)?\.?\s+dr\.?\s+/i.test(source)) {
+    const education = Array.isArray(person && person.education) ? person.education : [];
+    const qualifications = Array.isArray(person && person.qualifications) ? person.qualifications : [];
+    const degreeEvidence = [source, ...education, ...qualifications].join(" ");
+    if (
+      /^(?:prof(?:essor)?\.?\s+)?dr\.?\s+/i.test(source)
+      || /\b(?:ph\.?\s*d\.?|d\.?\s*phil\.?|doctor(?:ate|al))\b/i.test(degreeEvidence)
+    ) {
       return `Dr. ${bareName}`;
     }
-    if (academicRole && /^(mr|mrs|ms)\.?\s+/i.test(source)) return bareName;
-    return source;
+    if (academicRole || /^prof(?:essor)?\.?\s+/i.test(displaySource)) {
+      return `Prof. ${bareName}`;
+    }
+    const staffTitle = displaySource.match(/^(mr|mrs|ms)\.?\s+/i)?.[1];
+    return staffTitle
+      ? `${staffTitle.charAt(0).toUpperCase()}${staffTitle.slice(1).toLowerCase()}. ${bareName}`
+      : bareName;
   }
 
   function groupRank(person) {
