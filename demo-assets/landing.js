@@ -161,8 +161,82 @@
     startTimer();
   }
 
+  function initialiseHeroCarousel(carousel) {
+    if (!carousel) return;
+    var slides = Array.prototype.slice.call(
+      carousel.querySelectorAll("[data-hero-slide]")
+    );
+    if (slides.length < 2) return;
+
+    var motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var activeIndex = 0;
+    var pointerInside = false;
+    var focusInside = false;
+    var timer = null;
+
+    function show(index) {
+      activeIndex = index >= slides.length ? 0 : index < 0 ? slides.length - 1 : index;
+      slides.forEach(function (slide, slideIndex) {
+        var active = slideIndex === activeIndex;
+        slide.classList.toggle("is-active", active);
+        slide.setAttribute("aria-hidden", active ? "false" : "true");
+      });
+    }
+
+    function stopTimer() {
+      if (timer === null) return;
+      window.clearInterval(timer);
+      timer = null;
+    }
+
+    function startTimer() {
+      stopTimer();
+      if (motion.matches || pointerInside || focusInside || document.hidden) return;
+      timer = window.setInterval(function () {
+        show(activeIndex + 1);
+      }, 6000);
+    }
+
+    carousel.addEventListener("pointerenter", function () {
+      pointerInside = true;
+      stopTimer();
+    });
+    carousel.addEventListener("pointerleave", function () {
+      pointerInside = false;
+      startTimer();
+    });
+    carousel.addEventListener("focusin", function () {
+      focusInside = true;
+      stopTimer();
+    });
+    carousel.addEventListener("focusout", function (event) {
+      if (carousel.contains(event.relatedTarget)) return;
+      focusInside = false;
+      startTimer();
+    });
+    document.addEventListener("visibilitychange", startTimer);
+
+    function respondToMotionPreference() {
+      if (motion.matches) show(0);
+      startTimer();
+    }
+
+    if (motion.addEventListener) {
+      motion.addEventListener("change", respondToMotionPreference);
+    } else if (motion.addListener) {
+      motion.addListener(respondToMotionPreference);
+    }
+
+    show(0);
+    startTimer();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initialiseScrollReveals();
+    Array.prototype.forEach.call(
+      document.querySelectorAll("[data-hero-carousel]"),
+      initialiseHeroCarousel
+    );
     Array.prototype.forEach.call(
       document.querySelectorAll("[data-activity-rail]"),
       initialiseActivityRail

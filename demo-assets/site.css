@@ -409,18 +409,39 @@ h3 {
 }
 
 .hero-visual {
+  position: relative;
   align-self: stretch;
   display: grid;
   min-width: 0;
+  min-height: 280px;
   grid-template-rows: minmax(280px, 1fr);
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
 }
 
 .hero-media {
+  position: absolute;
+  inset: 0;
   min-height: 280px;
   margin: 0;
   overflow: hidden;
   background: var(--paper);
-  border: 1px solid var(--line);
+}
+
+.hero-slide {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 760ms ease,
+    visibility 0s linear 760ms;
+}
+
+.hero-slide.is-active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .hero-media img {
@@ -900,6 +921,7 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   }
 
   .activity-image img,
+  .hero-slide,
   .switch-thumb,
   .directory-link .arrow {
     transition: none;
