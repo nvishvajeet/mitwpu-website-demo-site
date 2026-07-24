@@ -77,21 +77,27 @@
   padding-block: 54px;
 }
 
+.profile-portrait {
+  width: 220px;
+}
+
 .profile-photo,
 .profile-placeholder {
-  width: 220px;
-  height: 270px;
+  display: block;
+  width: 100%;
   background: var(--blue-pale);
   border: 1px solid var(--line);
 }
 
 .profile-photo {
-  object-fit: cover;
-  object-position: center 18%;
+  height: auto;
+  max-height: 330px;
+  object-fit: contain;
 }
 
 .profile-placeholder {
   display: grid;
+  aspect-ratio: 22 / 27;
   place-items: center;
   color: var(--blue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -323,10 +329,8 @@
     padding-block: 42px 50px;
   }
 
-  .profile-photo,
-  .profile-placeholder {
+  .profile-portrait {
     width: 150px;
-    height: 184px;
   }
 
   .profile-identity h1 {
@@ -349,9 +353,7 @@
 }
 
 @media (max-width: 480px) {
-  .profile-photo,
-  .profile-placeholder {
+  .profile-portrait {
     width: 128px;
-    height: 157px;
   }
 }
