@@ -32,8 +32,17 @@
   function installInstitutionalNavigation() {
     const bar = document.querySelector(".institution-bar");
     if (!bar) return;
-    const nav = bar.querySelector(".institution-links");
-    if (!nav) return;
+    const inner = bar.querySelector(".institution-inner");
+    if (!inner) return;
+
+    // Older page templates only supplied the university lock-up. Create the
+    // standard navigation container so every page gets the same sticky bar.
+    let nav = bar.querySelector(".institution-links");
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.className = "institution-links";
+      inner.append(nav);
+    }
     const themeToggle = document.querySelector("[data-theme-toggle]");
     const duplicateInstitutionalNav = document.querySelector(
       ".site-header .site-nav.institutional-nav",
