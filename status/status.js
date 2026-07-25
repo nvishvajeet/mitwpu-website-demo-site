@@ -8,17 +8,6 @@
     }
   }
 
-  function setList(selector, items) {
-    var list = document.querySelector(selector);
-    if (!list || !Array.isArray(items)) return;
-    list.replaceChildren();
-    items.forEach(function (item) {
-      var row = document.createElement("li");
-      row.textContent = String(item);
-      list.appendChild(row);
-    });
-  }
-
   function setPhases(selector, phases) {
     var container = document.querySelector(selector);
     if (!container || !Array.isArray(phases)) return;
@@ -38,11 +27,6 @@
       summary.appendChild(percentage);
       summary.appendChild(document.createTextNode(" · " + String(phase.state)));
       card.appendChild(summary);
-
-      var detail = document.createElement("p");
-      detail.className = "status-phase-detail";
-      detail.textContent = String(phase.detail);
-      card.appendChild(detail);
 
       var track = document.createElement("div");
       track.className = "status-phase-meter";
@@ -81,26 +65,12 @@
     setText("[data-phase]", status.phase);
     setText("[data-updated]", status.updated_at);
     setText("[data-eta]", status.eta);
-    setText("[data-git-checkpoint]", status.git_checkpoint);
-    setText("[data-git-checkpoint-label]", status.git_checkpoint_label);
-    setText("[data-git-checkpoint-at]", status.git_checkpoint_at);
-    setText("[data-graph-nodes]", status.graph_nodes);
-    setText("[data-graph-pages]", status.graph_pages);
-    setText("[data-graph-edges]", status.graph_edges);
-    setText("[data-missing-documents]", status.missing_documents);
     setPhases("[data-phases]", status.phases);
-    setList("[data-completed]", status.completed);
-    setList("[data-in-progress]", status.in_progress);
-    setList("[data-blockers]", status.blockers);
 
     var meter = document.querySelector("[data-meter]");
     var progress = document.querySelector('[role="progressbar"]');
     if (meter) meter.style.width = percentage + "%";
     if (progress) progress.setAttribute("aria-valuenow", percentage);
-    var blockerSection = document.querySelector("[data-blockers-section]");
-    if (blockerSection) {
-      blockerSection.hidden = !status.blockers || status.blockers.length === 0;
-    }
   }
 
   async function refresh() {

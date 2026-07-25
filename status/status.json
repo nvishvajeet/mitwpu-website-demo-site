@@ -4,10 +4,10 @@
   "project": "MIT-WPU Pune + WPU Goa public-web migration",
   "lane": "multi-root-crawl-and-indexing",
   "phase": "Reconcile remaining dependencies, rerun the exact crawl, then pass the release gate",
-  "updated_at": "25 July 2026, 18:45 CEST",
-  "eta": "Code completion is close; authoritative Goa documents and institutional deployment access remain external inputs",
-  "git_checkpoint": "b96df04ce91a",
-  "git_checkpoint_label": "Artifact built from git checkpoint",
+  "updated_at": "25 July 2026, 18:40 CEST",
+  "eta": "60–90 minutes for the current code and validation cycle",
+  "git_checkpoint": "dc8fab82b",
+  "git_checkpoint_label": "Latest validated crawl-lane checkpoint",
   "graph_nodes": 8793,
   "graph_pages": 4081,
   "graph_edges": 201307,
@@ -65,6 +65,5 @@
     "Forty-four linked WPU Goa PDFs are absent from all 608 repository PDFs and require authoritative source files",
     "Institutional AWS identity, S3 or CloudFront target, and approved production hostname are not configured",
     "The private production export is required for source-of-truth reconciliation and final cutover"
-  ],
-  "git_checkpoint_at": "2026-07-25T17:42:34+02:00"
+  ]
 }
