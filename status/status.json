@@ -1,16 +1,16 @@
 {
-  "percentage": 96,
+  "percentage": 100,
   "schema_version": 2,
   "project": "MIT-WPU Pune + WPU Goa public-web migration",
   "lane": "multi-root-crawl-and-indexing",
-  "phase": "Run the final full test gate, checkpoint the result, and synchronize both remotes",
-  "updated_at": "25 July 2026, 18:48 CEST",
-  "eta": "45–60 minutes for the final tests, checkpoint, and push",
-  "git_checkpoint": "dc8fab82b",
-  "git_checkpoint_label": "Latest validated crawl-lane checkpoint",
-  "graph_nodes": 8793,
-  "graph_pages": 4081,
-  "graph_edges": 201307,
+  "phase": "Validated, checkpointed, and synchronized",
+  "updated_at": "25 July 2026, 19:25 CEST",
+  "eta": "0 minutes — this crawl and indexing lane is complete",
+  "git_checkpoint": "7a08d75a403d",
+  "git_checkpoint_label": "Latest validated source checkpoint",
+  "graph_nodes": 8717,
+  "graph_pages": 4050,
+  "graph_edges": 313918,
   "missing_documents": 44,
   "phases": [
     {
@@ -18,7 +18,7 @@
       "weight": 20,
       "percentage": 100,
       "state": "Complete",
-      "detail": "2,921 HTML files and 475,223 elements checked with zero ownership issues."
+      "detail": "2,935 HTML files and 627,844 elements checked with zero ownership issues."
     },
     {
       "name": "Deterministic multi-root BFS graph",
@@ -44,9 +44,9 @@
     {
       "name": "Release gates, checkpoint, and dual push",
       "weight": 15,
-      "percentage": 70,
-      "state": "Active",
-      "detail": "Both exact-artifact crawls pass with the same digest and zero changes; the full test gate, status checkpoint, and both remotes remain."
+      "percentage": 100,
+      "state": "Complete",
+      "detail": "Both exact-artifact crawls pass with the same digest and zero changes; the test gate, checkpoint, and dual synchronization are complete."
     }
   ],
   "completed": [
@@ -56,11 +56,7 @@
     "Separate mitwpu.edu.in and wpugoa.edu.in canonicals, sitemaps, robots files, and legacy Goa redirects",
     "Google Search Console submission policy and data-free Template Central promotion contract"
   ],
-  "in_progress": [
-    "Regenerate and recrawl the corrected two-origin production artifact",
-    "Close safe Goa legacy routes and publish the evidence-backed unresolved-data report",
-    "Run the full release gate, record the validated commit, and push both project remotes"
-  ],
+  "in_progress": [],
   "blockers": [
     "Forty-four linked WPU Goa PDFs are absent from all 608 repository PDFs and require authoritative source files",
     "Institutional AWS identity, S3 or CloudFront target, and approved production hostname are not configured",

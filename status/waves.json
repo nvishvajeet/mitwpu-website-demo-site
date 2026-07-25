@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "title": "MIT-WPU delivery portal",
+  "subtitle": "All workstreams, planned in waves. Agents advance items as they land.",
+  "updated_at": "2026-07-25T19:22+02:00",
+  "note": "Public-safe delivery metadata only.",
+  "states": {
+    "done": "Complete",
+    "active": "In progress",
+    "planned": "Planned",
+    "blocked": "Blocked",
+    "input": "Needs operator input"
+  },
+  "waves": [
+    {
+      "number": 1,
+      "title": "Content migration",
+      "summary": "Move the university's public content into the new site, with evidence retained.",
+      "items": [
+        {
+          "id": "migrate-routes",
+          "title": "Migrate all public routes (Pune + Goa)",
+          "state": "done",
+          "owner": "codex",
+          "note": "~1,900 Pune routes + 164 Goa routes rebuilt from the retained crawl.",
+          "project": "Website — Pune",
+          "started": "2026-07-20",
+          "due": "2026-07-23",
+          "completed": "2026-07-23"
+        },
+        {
+          "id": "people-profiles",
+          "title": "People directory and canonical profiles",
+          "state": "done",
+          "owner": "codex",
+          "note": "516 profiles; taxonomy keeps faculty, postdocs, scholars and technical staff distinct.",
+          "project": "Website — Pune",
+          "started": "2026-07-20",
+          "due": "2026-07-23",
+          "completed": "2026-07-23"
+        },
+        {
+          "id": "documents",
+          "title": "Document library (PDFs) mapped and served",
+          "state": "done",
+          "owner": "codex",
+          "note": "602 documents mapped to local paths; 44 absent Goa PDFs retained as unavailable evidence.",
+          "project": "Website — Pune",
+          "started": "2026-07-20",
+          "due": "2026-07-23",
+          "completed": "2026-07-23"
+        },
+        {
+          "id": "media",
+          "title": "Image and media pipeline",
+          "state": "done",
+          "owner": "codex",
+          "note": "Optimised derivatives, provenance manifest, no remote first-party media.",
+          "project": "Website — Pune",
+          "started": "2026-07-20",
+          "due": "2026-07-23",
+          "completed": "2026-07-23"
+        },
+        {
+          "id": "goa-site",
+          "title": "WPU Goa site rebuilt",
+          "state": "done",
+          "owner": "codex",
+          "project": "Website — Goa",
+          "note": "164 routes, campus theme, programmes and advisers.",
+          "evidence": "/goa/",
+          "started": "2026-07-20",
+          "due": "2026-07-23",
+          "completed": "2026-07-23"
+        }
+      ],
+      "start": "2026-07-20",
+      "finish": "2026-07-23"
+    },
+    {
+      "number": 2,
+      "title": "Structure and audiences",
+      "summary": "Give the site the entry points it was missing: audience hubs, section hubs, and real content where pages were stubs.",
+      "items": [
+        {
+          "id": "students-hub",
+          "title": "Student resources hub",
+          "state": "done",
+          "owner": "claude",
+          "note": "115 course-structure PDFs organised by school, plus ordinances, exams, handbooks and support.",
+          "evidence": "/students/",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "faculty-staff-hub",
+          "title": "Faculty & staff hub",
+          "state": "done",
+          "owner": "claude",
+          "note": "Combined audience hub with an intranet sign-in gateway.",
+          "evidence": "/faculty-staff/",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "admissions-hub",
+          "title": "Admissions gateway",
+          "state": "done",
+          "owner": "claude",
+          "note": "Pathways, application steps, entrance test, scholarships, downloads.",
+          "evidence": "/admissions/",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "campus-hub",
+          "title": "Campus life hub",
+          "state": "done",
+          "owner": "claude",
+          "note": "Grew from a 3-card stub to an 8-card hub, 28 real links.",
+          "evidence": "/life-at-mit-wpu/",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "international-hub",
+          "title": "International hub",
+          "state": "done",
+          "owner": "claude",
+          "note": "Six themed groups; partnerships and support routed to real pages.",
+          "evidence": "/international/",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "broken-stubs",
+          "title": "Fill broken content stubs",
+          "state": "done",
+          "owner": "claude",
+          "note": "Nine school and research index pages filled from canonical unit data.",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "careers",
+          "title": "Careers page (CRF faculty search)",
+          "state": "done",
+          "owner": "claude",
+          "note": "Registered as a curated route so rebuilds preserve it.",
+          "evidence": "/careers/",
+          "project": "Website — Pune",
+          "started": "2026-07-24",
+          "due": "2026-07-25",
+          "completed": "2026-07-25"
+        }
+      ],
+      "start": "2026-07-24",
+      "finish": "2026-07-25",
+      "follows": 1
+    },
+    {
+      "number": 3,
+      "title": "Navigation and design",
+      "summary": "Make a large site navigable, and make the pages read like a university rather than a brochure.",
+      "items": [
+        {
+          "id": "hover-intent",
+          "title": "Dropdowns that stay open (hover-intent)",
+          "state": "done",
+          "owner": "claude",
+          "note": "Single-controller open state with a close delay; verified across repeated open/hold/reopen cycles.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-27",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "cascade-nav",
+          "title": "Two-level cascading fly-out navigation",
+          "state": "done",
+          "owner": "claude",
+          "note": "Two-level fly-out live; 129/129 headless checks pass, edge-aware, mobile accordion.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-27",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "template-cascade",
+          "title": "Cascade pattern in the shared template",
+          "state": "done",
+          "owner": "claude",
+          "note": "university-web-patterns v0.6.0, data-free and validated.",
+          "project": "Design system",
+          "started": "2026-07-25",
+          "due": "2026-07-27",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "landing-pages",
+          "title": "Full-page landing sections",
+          "state": "done",
+          "owner": "claude",
+          "note": "Homepage and section pages open on a complete view rather than a mid-page break.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-27",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "editorial-images",
+          "title": "Editorial images, not promotional banners",
+          "state": "done",
+          "owner": "claude",
+          "note": "Admissions hero moved from a CET poster to a campus photograph.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-27",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "bio-order",
+          "title": "Person-first ordering on leadership pages",
+          "state": "active",
+          "owner": "codex",
+          "note": "Founder President and siblings currently show the message before the person.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-27"
+        },
+        {
+          "id": "campus-map",
+          "title": "Official campus map",
+          "state": "active",
+          "owner": "claude",
+          "project": "Website — Pune",
+          "note": "Fabricated illustration replaced with the university's official layout; TikZ 2D + 3D renders in progress.",
+          "evidence": "/life-at-mit-wpu/",
+          "started": "2026-07-25",
+          "due": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-25",
+      "finish": "2026-07-27",
+      "follows": 2
+    },
+    {
+      "number": 4,
+      "title": "Depth and review",
+      "summary": "Improve what exists: verified crawls, external review, and content quality passes.",
+      "items": [
+        {
+          "id": "verification-crawl",
+          "title": "Full verification crawl",
+          "state": "done",
+          "owner": "claude",
+          "note": "4,334 rendered pages, zero issues; interactions tested at desktop and mobile.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-28",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "improvement-crawl",
+          "title": "Improvement crawl across six slices",
+          "state": "done",
+          "owner": "claude",
+          "note": "Programmes, people, hubs, about-us, Goa and the scheduler — real corrections only, no invented content.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-28",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "external-review",
+          "title": "External review actions",
+          "state": "active",
+          "owner": "codex",
+          "note": "Reviewer comments triaged against the current build; programme tables and formatting outstanding.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-28"
+        },
+        {
+          "id": "single-source",
+          "title": "Remove duplicated navigation entries",
+          "state": "done",
+          "owner": "claude",
+          "note": "People menu no longer repeats About Us governance links.",
+          "project": "Website — Pune",
+          "started": "2026-07-25",
+          "due": "2026-07-28",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "goa-depth",
+          "title": "Goa depth pass",
+          "state": "active",
+          "owner": "claude",
+          "project": "Website — Goa",
+          "note": "Continuing with the best retained public data today; authoritative bios and approved images will be reconciled during tomorrow's migration.",
+          "started": "2026-07-25",
+          "due": "2026-07-28"
+        }
+      ],
+      "start": "2026-07-25",
+      "finish": "2026-07-28",
+      "follows": 3
+    },
+    {
+      "number": 5,
+      "title": "Faculty search",
+      "summary": "Recruit research faculty for the Central Research Facility and the physics cluster.",
+      "items": [
+        {
+          "id": "crf-poster",
+          "title": "CRF recruitment poster",
+          "state": "done",
+          "owner": "claude",
+          "note": "Institution-branded outreach copy.",
+          "project": "Faculty search",
+          "started": "2026-07-25",
+          "due": "2026-08-08",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "candidate-shortlist",
+          "title": "Verified candidate shortlist",
+          "state": "done",
+          "owner": "claude",
+          "note": "Mobile candidates separated from settled collaborators; every lead backed by a public profile.",
+          "project": "Faculty search",
+          "started": "2026-07-25",
+          "due": "2026-08-08",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "physics-cluster",
+          "title": "Physics of the Universe cluster",
+          "state": "active",
+          "owner": "operator",
+          "note": "Dynamos and high-energy theory in house; cosmology and phenomenology to recruit.",
+          "project": "Faculty search",
+          "started": "2026-07-25",
+          "due": "2026-08-08"
+        },
+        {
+          "id": "iucaa-link",
+          "title": "Formalise the IUCAA / NCRA / NCL link",
+          "state": "planned",
+          "owner": "operator",
+          "note": "Local institutes are the strongest source of mobile early-career researchers.",
+          "project": "Faculty search",
+          "started": "2026-07-25",
+          "due": "2026-08-08"
+        },
+        {
+          "id": "content-to-supply",
+          "title": "Operator content for the hiring pages",
+          "state": "planned",
+          "owner": "operator",
+          "note": "Not blocking current work: build from retained public data today, then reconcile authoritative records during tomorrow's migration.",
+          "project": "Faculty search",
+          "started": "2026-07-25",
+          "due": "2026-08-08"
+        },
+        {
+          "id": "sarkar-lead",
+          "title": "Lead cosmology candidate identified",
+          "state": "active",
+          "owner": "operator",
+          "project": "Faculty search",
+          "note": "IUCAA visiting fellow, 7 years of postdocs — mobile; complements Bendre and bridges to Singh's HEP theory.",
+          "started": "2026-07-25",
+          "due": "2026-08-08"
+        }
+      ],
+      "start": "2026-07-25",
+      "finish": "2026-08-08",
+      "follows": 4
+    },
+    {
+      "number": 6,
+      "title": "Platform services",
+      "summary": "The systems behind the public site.",
+      "items": [
+        {
+          "id": "catalyst-booking",
+          "title": "Research facility booking and samples",
+          "state": "done",
+          "owner": "codex",
+          "note": "Accepted on the Mini: two synthetic users, XRD and Raman resources, two future reservations, locked bootstrap, security probe, protected backup, isolated restore, and healthy restart.",
+          "evidence": "https://catalyst.vishwanathgrid.org/status/",
+          "project": "Research platform",
+          "started": "2026-07-24",
+          "due": "2026-08-05"
+        },
+        {
+          "id": "intranet",
+          "title": "Intranet gateway",
+          "state": "active",
+          "owner": "codex",
+          "note": "Public gateway in place; role services remain behind institutional sign-in.",
+          "project": "Research platform",
+          "started": "2026-07-24",
+          "due": "2026-08-05"
+        },
+        {
+          "id": "search",
+          "title": "Public search",
+          "state": "done",
+          "owner": "codex",
+          "note": "Indexed across the rebuilt site.",
+          "project": "Research platform",
+          "started": "2026-07-24",
+          "due": "2026-08-05",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "catalyst-helpdesk",
+          "title": "Facilities helpdesk and service tickets",
+          "state": "active",
+          "owner": "codex",
+          "project": "Catalyst",
+          "note": "Fail-closed scheduler check d92f0b0 passed 270 tests and is on both remotes; the final exact Mini probe is running.",
+          "started": "2026-07-24",
+          "due": "2026-08-05"
+        },
+        {
+          "id": "catalyst-projects",
+          "title": "Research project collaboration",
+          "state": "active",
+          "owner": "codex",
+          "project": "Catalyst",
+          "note": "Independent OpenProject Community service and recovery scaffold are validated; private runtime validation is next.",
+          "started": "2026-07-24",
+          "due": "2026-08-05"
+        },
+        {
+          "id": "catalyst-identity",
+          "title": "Single login across Catalyst services",
+          "state": "active",
+          "owner": "codex",
+          "project": "Catalyst",
+          "note": "Separate Keycloak client provisioning is validated; activation remains deliberately deferred.",
+          "started": "2026-07-24",
+          "due": "2026-08-05"
+        }
+      ],
+      "start": "2026-07-24",
+      "finish": "2026-08-05",
+      "follows": 5
+    },
+    {
+      "number": 7,
+      "title": "Publication and handover",
+      "summary": "Getting the site live, current, and owned by the university.",
+      "items": [
+        {
+          "id": "publish-automation",
+          "title": "Automatic publishing on every change",
+          "state": "planned",
+          "owner": "operator",
+          "note": "The public host serves from a Pages repository; the publish step is not yet automated, so the live site can lag.",
+          "project": "Infrastructure",
+          "started": "2026-08-01",
+          "due": "2026-08-15"
+        },
+        {
+          "id": "campus-infra",
+          "title": "Move to the campus network server",
+          "state": "planned",
+          "owner": "operator",
+          "note": "Target home for the site once the campus infrastructure is ready.",
+          "project": "Infrastructure",
+          "started": "2026-08-01",
+          "due": "2026-08-15"
+        },
+        {
+          "id": "indexing",
+          "title": "Search-engine indexing controls",
+          "state": "done",
+          "owner": "codex",
+          "note": "Preview builds stay non-indexed; production indexing is a deliberate build input.",
+          "project": "Infrastructure",
+          "started": "2026-08-01",
+          "due": "2026-08-15",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "handover-docs",
+          "title": "Administrator handover documentation",
+          "state": "done",
+          "owner": "codex",
+          "note": "Crawler, indexing, Template Central, migration-gap, and release evidence are documented.",
+          "project": "Infrastructure",
+          "started": "2026-08-01",
+          "due": "2026-08-15"
+        },
+        {
+          "id": "catalyst-pilot",
+          "title": "Catalyst operator pilot and handover",
+          "state": "planned",
+          "owner": "codex",
+          "project": "Catalyst",
+          "note": "Requires synthetic end-to-end proof, backup restore, administrator exports, and operator acceptance.",
+          "started": "2026-08-01",
+          "due": "2026-08-15"
+        },
+        {
+          "id": "crawl-migration",
+          "title": "Migration gap reconciliation",
+          "state": "done",
+          "owner": "codex",
+          "project": "Website — Crawl & indexing",
+          "note": "All Pune and Goa route gaps classified; 44 absent Goa PDFs retained as unavailable evidence.",
+          "started": "2026-08-01",
+          "due": "2026-08-15",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "crawl-bfs",
+          "title": "Deterministic multi-root BFS graph",
+          "state": "done",
+          "owner": "codex",
+          "project": "Website — Crawl & indexing",
+          "note": "Two-origin dependency graph, typed edges, incremental fingerprints and reverse dependencies.",
+          "started": "2026-08-01",
+          "due": "2026-08-15",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "crawl-indexing",
+          "title": "Google indexing and robots policy",
+          "state": "done",
+          "owner": "codex",
+          "project": "Website — Crawl & indexing",
+          "note": "Separate Pune and Goa canonicals, sitemaps, robots files and Search Console runbook.",
+          "started": "2026-08-01",
+          "due": "2026-08-15",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "crawl-template-central",
+          "title": "Template Central promotion policy",
+          "state": "done",
+          "owner": "codex",
+          "project": "Website — Crawl & indexing",
+          "note": "Only data-free reviewed templates move up; immutable releases flow down during update windows.",
+          "started": "2026-08-01",
+          "due": "2026-08-15",
+          "completed": "2026-07-25"
+        },
+        {
+          "id": "crawl-release-gate",
+          "title": "Final artifact gate and dual push",
+          "state": "done",
+          "owner": "codex",
+          "project": "Website — Crawl & indexing",
+          "note": "Exact artifact, provenance gate, unchanged two-pass BFS crawl, rendered campus checks, and dual push are complete.",
+          "started": "2026-08-01",
+          "due": "2026-08-15"
+        }
+      ],
+      "start": "2026-08-01",
+      "finish": "2026-08-15",
+      "follows": 6
+    }
+  ],
+  "project_order": [
+    "Website — Pune",
+    "Website — Goa",
+    "Research platform",
+    "Faculty search",
+    "Design system",
+    "Infrastructure"
+  ],
+  "dates_note": "Wave dates are planning estimates; completed waves show when the work actually ran."
+}
