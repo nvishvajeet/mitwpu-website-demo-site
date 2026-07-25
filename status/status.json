@@ -1,29 +1,70 @@
 {
-  "percentage": 100,
-  "phase": "Validated public demo deployed; institutional refinements continuing",
-  "updated_at": "24 July 2026, 14:44 CEST",
-  "eta": "Current deployment is live; the next refinement package will follow validation",
-  "pune_pages": 2298,
-  "pune_media": 3518,
-  "goa_pages": 165,
-  "goa_media": 80,
+  "percentage": 88,
+  "schema_version": 2,
+  "project": "MIT-WPU Pune + WPU Goa public-web migration",
+  "lane": "multi-root-crawl-and-indexing",
+  "phase": "Reconcile remaining dependencies, rerun the exact crawl, then pass the release gate",
+  "updated_at": "25 July 2026, 18:45 CEST",
+  "eta": "Code completion is close; authoritative Goa documents and institutional deployment access remain external inputs",
+  "git_checkpoint": "b96df04ce91a",
+  "git_checkpoint_label": "Artifact built from git checkpoint",
+  "graph_nodes": 8793,
+  "graph_pages": 4081,
+  "graph_edges": 201307,
+  "missing_documents": 44,
+  "phases": [
+    {
+      "name": "Migration inventory and template provenance",
+      "weight": 20,
+      "percentage": 100,
+      "state": "Complete",
+      "detail": "2,921 HTML files and 475,223 elements checked with zero ownership issues."
+    },
+    {
+      "name": "Deterministic multi-root BFS graph",
+      "weight": 25,
+      "percentage": 100,
+      "state": "Complete",
+      "detail": "Two-origin graph, sitemap reconciliation, reverse dependencies, robots enforcement, pacing, and 13 crawler tests are implemented."
+    },
+    {
+      "name": "Google indexing and dual-origin release policy",
+      "weight": 20,
+      "percentage": 95,
+      "state": "Validation",
+      "detail": "Separate Pune and Goa canonicals, sitemaps, robots files, compatibility redirects, and Search Console runbook are in final verification."
+    },
+    {
+      "name": "Dependency and source-data reconciliation",
+      "weight": 20,
+      "percentage": 78,
+      "state": "Active",
+      "detail": "Safe route fixes are staged; 44 linked Goa PDFs are proven absent from the scraped source data."
+    },
+    {
+      "name": "Release gates, checkpoint, and dual push",
+      "weight": 15,
+      "percentage": 56,
+      "state": "Active",
+      "detail": "Final exact-artifact crawl, unchanged second pass, full test gate, status checkpoint, and both remotes remain."
+    }
+  ],
   "completed": [
-    "2,464 HTML pages assembled into the exact public artifact, including a branded recovery page",
-    "1,903 canonical routes rendered at desktop and mobile widths with zero issue pages",
-    "1,899 search records covering 518 people and 1,381 pages",
-    "Strict layer 0, 1, and 2 media gate passed with zero errors and zero warnings",
-    "One 115 px institutional masthead with fixed logo, link order, active state, and theme control across all core template families",
-    "Responsive layout, native scrolling, accessible image labels, and light and dark themes",
-    "All 13 schools shown in one searchable directory without pagination",
-    "About theme control and branded 404 recovery verified on desktop and mobile",
-    "Public artifact committed, deployed, and verified on the custom domain"
+    "Exact template ownership is enforced for every release element and redirect alias",
+    "Multi-root BFS graph records Pune and Goa pages, assets, typed dependencies, and cross-campus edges",
+    "Five-second minimum delay per live origin, fail-closed robots handling, and fast loopback artifact mode",
+    "Separate mitwpu.edu.in and wpugoa.edu.in canonicals, sitemaps, robots files, and legacy Goa redirects",
+    "Google Search Console submission policy and data-free Template Central promotion contract"
   ],
   "in_progress": [
-    "Strengthening the existing World Peace Dome and Founder President pages from verified public evidence",
-    "Adding five evidence-backed Central Research Facility capability pages for the 12 significant systems",
-    "Integrating the durable Catalyst notification outbox after its PostgreSQL validation"
+    "Regenerate and recrawl the corrected two-origin production artifact",
+    "Close safe Goa legacy routes and publish the evidence-backed unresolved-data report",
+    "Run the full release gate, record the validated commit, and push both project remotes"
   ],
   "blockers": [
-    "The production export is needed only for authoritative reconciliation, redirects, original media, and final cutover"
-  ]
+    "Forty-four linked WPU Goa PDFs are absent from all 608 repository PDFs and require authoritative source files",
+    "Institutional AWS identity, S3 or CloudFront target, and approved production hostname are not configured",
+    "The private production export is required for source-of-truth reconciliation and final cutover"
+  ],
+  "git_checkpoint_at": "2026-07-25T17:42:34+02:00"
 }

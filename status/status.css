@@ -70,6 +70,20 @@
   margin-top: 2rem;
 }
 
+.status-checkpoint {
+  margin-top: 1.5rem;
+  color: var(--muted);
+}
+
+.status-checkpoint code {
+  color: var(--heading);
+  font-size: .95rem;
+}
+
+.status-checkpoint [data-git-checkpoint-at]:not(:empty)::before {
+  content: " · ";
+}
+
 .status-work {
   display: grid;
   align-content: start;
@@ -78,6 +92,46 @@
 
 .status-work h2 {
   font-size: 1.65rem;
+}
+
+.status-phases {
+  display: grid;
+  gap: 1rem;
+}
+
+.status-phase {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.status-phase h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.status-phase-summary {
+  margin: .45rem 0;
+  color: var(--muted);
+}
+
+.status-phase-detail {
+  margin: 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.status-phase-meter {
+  height: .45rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  background: var(--blue-pale);
+}
+
+.status-phase-meter span {
+  display: block;
+  height: 100%;
+  background: var(--solid-blue);
 }
 
 .status-list {
