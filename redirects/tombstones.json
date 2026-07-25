@@ -1,0 +1,15 @@
+{
+  "schema": "mitwpu.tombstones.v1",
+  "rules": [
+    {
+      "route": "/events/strengthening-legal-ethics-through-vigilance-awareness-week-2025/",
+      "status": 404,
+      "reason": "The retained source contains only a 404 shell and no recoverable event record."
+    },
+    {
+      "route": "/recent-technologies--innovations-in-electronics-and-photonics-second-edition/",
+      "status": 404,
+      "reason": "The conference landing content is unavailable; the narrower advisory-committee page is not a valid replacement."
+    }
+  ]
+}

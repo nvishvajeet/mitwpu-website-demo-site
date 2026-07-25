@@ -117,6 +117,17 @@
     window.matchMedia("(min-width: 768px)").addEventListener("change", function (event) {
       if (event.matches) setOpen(false);
     });
+
+    nav.querySelectorAll(".nav-item__disclosure").forEach(function (btn) {
+      btn.addEventListener("click", function (event) {
+        event.preventDefault();
+        var item = btn.closest(".nav-item--menu");
+        if (!item) return;
+        var open = !item.classList.contains("is-open");
+        item.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+      });
+    });
   }
 
   installInstitutionalLockup();

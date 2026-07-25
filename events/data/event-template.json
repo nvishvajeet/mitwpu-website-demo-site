@@ -19,14 +19,43 @@
   "themes": [
     "Replace with a scientific or academic theme"
   ],
+  "tracks": [
+    {
+      "name": "Track title",
+      "summary": "One sentence defining the track.",
+      "speakers": []
+    }
+  ],
   "programme": [
     {
       "label": "09:30",
       "title": "Opening session",
-      "summary": "Replace with the session purpose.",
-      "venue": ""
+      "text": "Replace with the session purpose."
     }
   ],
+  "featuredTalks": [
+    {
+      "speaker": "Replace with a verified name",
+      "title": "Talk title",
+      "context": "Keynote"
+    }
+  ],
+  "participants": [],
+  "awards": [
+    {
+      "name": "Award name",
+      "recipient": "",
+      "note": "Leave the recipient empty until verified."
+    }
+  ],
+  "outcomes": [],
+  "organisers": [
+    {
+      "name": "Replace with a verified name",
+      "role": "Convener"
+    }
+  ],
+  "closingSpeakers": [],
   "people": [
     {
       "name": "Replace with verified name",

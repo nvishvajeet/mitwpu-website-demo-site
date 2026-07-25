@@ -459,6 +459,52 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   font-size: .88rem;
 }
 
+.patent-register-section > h2 { margin-top: 0; }
+.patent-register {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding-left: 2.2rem;
+}
+.patent-register > li { padding-left: .35rem; }
+.patent-register article {
+  padding: clamp(1rem, 3vw, 1.35rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--brand);
+}
+.patent-register__title {
+  margin: 0 0 1rem;
+  color: var(--heading);
+  font-size: clamp(1.02rem, 2vw, 1.2rem);
+  line-height: 1.35;
+}
+.patent-register dl {
+  display: grid;
+  gap: .75rem;
+  margin: 0;
+}
+.patent-register dl > div {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, .35fr) minmax(0, 1fr);
+  gap: .75rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--line);
+}
+.patent-register dt {
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: .78rem;
+  font-weight: 750;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.patent-register dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
 .related {
   position: sticky;
   top: 1.5rem;
@@ -557,6 +603,7 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   .office-card { grid-template-columns: 1fr; }
   .profile-pane__media,
   .office-card__media { width: min(100%, 22rem); }
+  .patent-register dl > div { grid-template-columns: 1fr; gap: .25rem; }
   .related { position: static; }
   .hero { min-height: 330px; }
   .editorial-page .hero { min-height: 0; }

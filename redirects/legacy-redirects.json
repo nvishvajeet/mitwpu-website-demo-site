@@ -3,6 +3,10 @@
   "status_code": 301,
   "rules": [
     {
+      "source": "/events/devconfin-2026advancing-open-innovation-through-collaboration/",
+      "target": "/events/devconfin-2026-advancing-open-innovation-through-collaboration/"
+    },
+    {
       "source": "/events/mit-wpu-hosts-nsrtc-2026-a-three-day-conclave-advancing-science-technology-and-innovation/",
       "target": "/events/nsrtc-2026/"
     },
@@ -173,6 +177,10 @@
     {
       "source": "/faculty/amit-mishra/",
       "target": "/people/amit-mishra/"
+    },
+    {
+      "source": "/faculty/amit-sadanand-savyanavar/",
+      "target": "/faculty/amit-s-savyanavar/"
     },
     {
       "source": "/faculty/amit-vishnu-jomde/",
@@ -2349,6 +2357,10 @@
     {
       "source": "/faculty/yogita-sachin-ozarde/",
       "target": "/people/yogita-sachin-ozarde/"
+    },
+    {
+      "source": "/icsscc-submission/",
+      "target": "/events/mit-wpu-hosts-icsscc-2026-to-advance-sustainable-smart-computing-and-communication-research/"
     },
     {
       "source": "/leadership/dr-abhijit-nair-221/",

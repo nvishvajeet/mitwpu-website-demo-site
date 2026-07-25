@@ -4,32 +4,93 @@
     "type": "Conference",
     "status": "Past event",
     "title": "NSRTC 2026",
-    "subtitle": "A three-day conclave advancing science, technology, and innovation",
+    "subtitle": "A three-day conclave on science, technology, and innovation",
     "startDate": "2026-07-17",
     "endDate": "2026-07-19",
     "dateLabel": "17–19 July 2026",
     "venue": "MIT World Peace University, Pune",
-    "summary": "Scientists, researchers, industry leaders, policymakers, innovators, and students met for interdisciplinary discussions on emerging research and technology.",
+    "summary": "Scientists, researchers, industry leaders, policymakers, innovators, and students met for three days of interdisciplinary discussion on emerging research and technology.",
     "overview": [
-      "The programme combined invited talks and parallel technical sessions with round-table discussions, poster presentations, project exhibitions, and a Scholars-to-Scientists Connect initiative.",
-      "The conference brought together contributors from universities, national laboratories, research institutes, industry, and public organisations."
+      "The opening day examined the work recognised by the Nobel Prize and the Queen Elizabeth Prize for Engineering. The inaugural programme included keynote addresses, awards for contributions to research and technological innovation, and a special lecture on generating national wealth through science and technology.",
+      "The following two days combined parallel technical sessions with round-table discussions, poster presentations, project exhibitions, and a Scholars-to-Scientists Connect initiative. Contributors came from universities, national laboratories, research institutes, industry, and public organisations."
     ],
     "themes": [
-      "Reimagining the future with artificial intelligence",
-      "Materials, energy, and sustainability",
-      "Emergent device technologies",
-      "New biology and health sciences"
+      "Artificial intelligence",
+      "Sustainable energy and advanced materials",
+      "Semiconductors and quantum technologies",
+      "Healthcare technologies and biotechnology",
+      "Indigenous innovation"
+    ],
+    "tracks": [
+      {
+        "name": "Reimagining the Future with AI",
+        "summary": "Research and applications in artificial intelligence."
+      },
+      {
+        "name": "Materials, Energy and Sustainability",
+        "summary": "Advanced materials, sustainable energy, and related technologies."
+      },
+      {
+        "name": "Emergent Device Technologies",
+        "summary": "Semiconductors, quantum technologies, and emerging devices."
+      },
+      {
+        "name": "New Biology and Health Sciences",
+        "summary": "Healthcare technologies, biotechnology, and new directions in biology."
+      }
     ],
     "programme": [
       {
         "label": "Day 1",
-        "text": "Opening sessions considered major scientific and engineering prizes, followed by the inaugural programme, research and entrepreneurship awards, keynote addresses, and a lecture on national wealth through science and technology."
+        "title": "Prizes, inauguration, and awards",
+        "text": "Sessions considered the premise of the Nobel Prize and the Queen Elizabeth Prize for Engineering. The inaugural programme included keynote addresses, the Vigyan Maharshi Award, the DeepTech Young Entrepreneur Awards, and a special lecture on generation of national wealth through science and technology."
       },
       {
         "label": "Days 2–3",
-        "text": "Four parallel research tracks covered artificial intelligence, sustainable energy, advanced materials, semiconductors, health technologies, biotechnology, quantum technologies, and indigenous innovation."
+        "title": "Parallel scientific programme",
+        "text": "Four research tracks ran alongside round-table discussions, poster presentations, project exhibitions, and Scholars-to-Scientists Connect."
+      },
+      {
+        "label": "Closing session",
+        "title": "Valedictory",
+        "text": "The conference closed by recognising the contributions of speakers, participants, and organisers."
       }
     ],
+    "featuredTalks": [
+      {
+        "speaker": "",
+        "title": "Generation of National Wealth through Science and Technology",
+        "context": "Special lecture"
+      }
+    ],
+    "participants": [
+      "Indian Institute of Science Bengaluru",
+      "Indian Institutes of Technology",
+      "Indian Institutes of Science Education and Research",
+      "CSIR laboratories",
+      "Centre for Development of Advanced Computing",
+      "Indian Institutes of Information Technology",
+      "Serum Institute of India",
+      "Other research and industry organisations"
+    ],
+    "awards": [
+      {
+        "name": "Vigyan Maharshi Award",
+        "recipient": "",
+        "note": "Conferred during the inaugural programme for contribution to science and research."
+      },
+      {
+        "name": "DeepTech Young Entrepreneur Awards",
+        "recipient": "",
+        "note": "Conferred for achievement in technological innovation and entrepreneurship."
+      }
+    ],
+    "outcomes": [
+      "Round-table discussions connected academic, industry, and young-researcher perspectives.",
+      "Poster presentations and project exhibitions gave researchers and students a forum to present work.",
+      "Scholars-to-Scientists Connect created direct interaction between early-career researchers and established scientists."
+    ],
+    "organisers": [],
     "sourceUrl": "https://mitwpu.edu.in/events/mit-wpu-hosts-nsrtc-2026-a-three-day-conclave-advancing-science-technology-and-innovation",
     "sourceLabel": "Official MIT-WPU event report"
   },
@@ -43,10 +104,10 @@
     "endDate": "",
     "dateLabel": "Three-day conference · 2025",
     "venue": "MIT World Peace University, Pune",
-    "summary": "A national meeting of scientists, technologists, researchers, policy leaders, and students organised around research priorities for India.",
+    "summary": "A three-day national meeting of scientists, technologists, policy leaders, and students organised around scientific achievement, cross-disciplinary research, and national research priorities.",
     "overview": [
-      "The programme opened with plenary sessions on Nobel Prize-recognised work in medicine, chemistry, physics, and engineering, followed by specialist talks and a formal inaugural session.",
-      "Technical sessions and round tables connected fundamental research, applied science, technology development, and questions of national capacity."
+      "The opening programme considered Nobel Prize-recognised work in physiology or medicine, chemistry, physics, and engineering. Plenary speakers included Shekhar Mande, Vijayamohanan Pillai, Lakshmanan Muthusamy, and Deepak Ranade.",
+      "A formal inaugural ceremony brought together Vijay Bhatkar, N. Kalaiselvi, Ashutosh Sharma, Ashok Joshi, Prasad Khandekar, Milind Pande, and Vishwanath D. Karad. Kalaiselvi, Director General of CSIR, addressed students on pursuing excellence in professional work and in life."
     ],
     "themes": [
       "Artificial intelligence",
@@ -54,15 +115,125 @@
       "Digital transformation, energy, and sustainability",
       "Healthcare, pharmaceutical science, and biotechnology"
     ],
-    "programme": [
+    "tracks": [
       {
-        "label": "Special talks",
-        "text": "Ashutosh Sharma spoke on science and technology for national development; Arindam Ghosh on materials for quantum technologies; and Ajit Kembhavi on the life and scientific journey of Jayant Vishnu Narlikar."
+        "name": "Artificial Intelligence",
+        "summary": "AI with cryptology, materials design, multilingual applications, responsible AI systems, digital twins, and AI in scientific discovery.",
+        "speakers": [
+          "Bimal Kumar Roy",
+          "Sourav Pal",
+          "Radhakrishna Ganti",
+          "Yogesh Wadadekar",
+          "Amol Dhondse"
+        ]
       },
       {
-        "label": "Scientific programme",
-        "text": "Parallel sessions covered artificial intelligence, materials and devices, energy and sustainability, healthcare, pharmaceuticals, and biotechnology, with posters and round-table discussions."
+        "name": "Advanced Materials and Processing",
+        "summary": "Two-dimensional materials, CMOS and MEMS systems, clay-based electrolytes, carbon-dioxide conversion, and two-dimensional superconductors.",
+        "speakers": [
+          "V. Ramgopal Rao",
+          "Satishchandra Ogale",
+          "U. V. Waghmare",
+          "Vijayamohan Pillai",
+          "Sharad Lande",
+          "Bappi Paul"
+        ]
+      },
+      {
+        "name": "Digital Transformations in Energy and Sustainability",
+        "summary": "Photonic circuits, quantum imaging, scalable energy solutions, fusion energy, and hydrogen syngas.",
+        "speakers": [
+          "Shailendra Varshney",
+          "Rajnish Kumar",
+          "G. D. Yadav",
+          "Dinesh K. Aswal"
+        ]
+      },
+      {
+        "name": "Healthcare, Pharmaceutical Science, and Biotechnology",
+        "summary": "Infection control, nucleic-acid therapies, One Health, metabolic health, tuberculosis drug discovery, and plant-based bioactives.",
+        "speakers": [
+          "Ashok C. Khandkar",
+          "Pragya D. Yadav",
+          "Sanjay B. Maggirwar",
+          "Umesh Varshney",
+          "Ashok Giri",
+          "Pramod Tripathi"
+        ]
       }
+    ],
+    "programme": [
+      {
+        "label": "Day 1",
+        "title": "Plenaries and inauguration",
+        "text": "Plenary sessions examined Nobel Prize-recognised work across medicine, chemistry, physics, and engineering. The day continued with three special talks and the inaugural ceremony."
+      },
+      {
+        "label": "Day 2",
+        "title": "Technical sessions",
+        "text": "Four parallel tracks covered artificial intelligence, advanced materials, energy and sustainability, and health and biotechnology. Round-table discussions and poster presentations connected young researchers with invited scientists."
+      },
+      {
+        "label": "Day 3",
+        "title": "Advanced sessions and valedictory",
+        "text": "The four tracks continued with research on responsible AI, new materials, clean energy, metabolic health, and drug discovery. A valedictory session at Swami Vivekananda Auditorium included awards for outstanding poster presentations."
+      }
+    ],
+    "featuredTalks": [
+      {
+        "speaker": "Ashutosh Sharma",
+        "title": "Making science and technology work for national development",
+        "context": "Special talk"
+      },
+      {
+        "speaker": "Arindam Ghosh",
+        "title": "Materials for Quantum Technologies",
+        "context": "Special talk"
+      },
+      {
+        "speaker": "Ajit Kembhavi",
+        "title": "The Life and Scientific Journey of Jayant Vishnu Narlikar",
+        "context": "Special talk"
+      }
+    ],
+    "participants": [],
+    "awards": [
+      {
+        "name": "Vigyan Maharshi Award",
+        "recipient": "Jayant Vishnu Narlikar",
+        "note": "Conferred posthumously for contributions to science and cosmology."
+      },
+      {
+        "name": "Outstanding poster presentation awards",
+        "recipient": "",
+        "note": "Presented during the valedictory ceremony; the retained report does not name the recipients."
+      }
+    ],
+    "outcomes": [
+      "Young researchers presented posters and discussed their work directly with invited scientists.",
+      "Round-table sessions connected fundamental research, applied science, technology development, and national capacity.",
+      "The closing discussion reflected on interdisciplinary research, scientific development, and the next generation of researchers."
+    ],
+    "organisers": [
+      {
+        "name": "Bharat Kale",
+        "role": "Conference convener/co-convener"
+      },
+      {
+        "name": "Siddharth Chakrabarti",
+        "role": "Conference convener/co-convener"
+      },
+      {
+        "name": "Anup Kale",
+        "role": "Conference convener/co-convener"
+      }
+    ],
+    "closingSpeakers": [
+      "Bharat B. Kale",
+      "Rahul V. Karad",
+      "Anil P. Dash",
+      "Sagar Mitra",
+      "Vishwanath D. Karad"
     ],
     "sourceUrl": "https://mitwpu.edu.in/events/nsrtc-2025-a-grand-confluence-of-science-innovation-and-vision-for-viksit-bharat",
     "sourceLabel": "Official MIT-WPU event report"

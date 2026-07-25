@@ -1,26 +1,212 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="wpd-root">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, follow">
-  <meta name="description" content="The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune, and its place in MAEER's institutional legacy.">
+  <meta name="description" content="The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune — a monument to the union of science and spirituality, widely described as the world's largest dome, and its place in MIT-WPU's founding idea.">
   <link rel="canonical" href="https://mitwpu.edu.in/about-us/world-peace-dome/">
   <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
   <link rel="stylesheet" href="../../_assets/public-surface.css?v=20260724-global-nav-4">
   <script src="../../_assets/theme.js?v=20260724-global-nav-4" defer></script>
   <style>
-    .dome-hero { margin: 1.25rem 0 0; }
-    .dome-hero img { display: block; width: 100%; height: auto; max-height: 460px; object-fit: cover; border-radius: 12px; }
-    .dome-hero figcaption { margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted); }
-    .dome-gallery { list-style: none; padding: 0; margin: 1.75rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
-    .dome-gallery figure { margin: 0; }
-    .dome-gallery figure a { display: block; }
-    .dome-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; background: var(--surface); }
-    .dome-gallery figcaption { margin-top: 0.4rem; font-size: 0.82rem; line-height: 1.4; color: var(--muted); }
-    @media (max-width: 640px) {
-      .dome-gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
-      .dome-hero img { max-height: 260px; }
+    /* ---- World Peace Dome feature: self-contained editorial + lightbox ---- */
+    html.wpd-root { overflow-x: clip; }               /* full-bleed bands never cause horizontal scroll */
+    .wpd-page .page-shell { padding-top: 0; }
+    .wpd-page .breadcrumbs { margin-bottom: clamp(1.1rem, 3vw, 1.9rem); }
+
+    /* Breakout helpers, measured against the centred .page-shell */
+    .wpd-bleed { width: 100vw; margin-inline: calc(50% - 50vw); }
+    .wpd-wide  { width: min(100%, 68rem); margin-inline: auto; }
+    .wpd-col   { width: min(100%, 43rem); margin-inline: auto; }   /* ~688px reading measure */
+
+    /* ---- Hero ---- */
+    .wpd-hero {
+      position: relative; margin-block: 0 clamp(1.8rem, 5vw, 3.2rem);
+      min-height: clamp(360px, 66vh, 640px); display: grid; isolation: isolate;
+      background: var(--surface);
+    }
+    .wpd-hero .wpd-shot, .wpd-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .wpd-hero__img { object-fit: cover; object-position: 50% 42%; }
+    .wpd-hero__scrim {
+      position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(8,14,20,.20) 0%, rgba(8,14,20,0) 30%),
+        linear-gradient(4deg, rgba(5,10,16,.90) 2%, rgba(5,10,16,.58) 33%, rgba(5,10,16,.18) 56%, rgba(5,10,16,0) 74%);
+    }
+    .wpd-hero__text {
+      position: relative; z-index: 2; align-self: end; pointer-events: none;
+      width: min(calc(100% - 2rem), var(--max)); margin-inline: auto;
+      padding: clamp(1.4rem, 4vw, 3rem) 0 clamp(1.5rem, 4vw, 2.8rem); color: #fff;
+    }
+    .wpd-hero__text .wpd-col { margin-inline: 0; }
+    .wpd-kicker {
+      margin: 0 0 .7rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+      font-size: .74rem; color: #ffe6a1;
+    }
+    .wpd-hero__text h1 {
+      color: #fff; margin: 0; font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.03;
+      max-width: 18ch; text-shadow: 0 2px 22px rgba(0,0,0,.42);
+    }
+    .wpd-dek {
+      margin: 1rem 0 0; max-width: 46ch; color: rgba(255,255,255,.94);
+      font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.05rem, 1.9vw, 1.3rem);
+      line-height: 1.5; text-shadow: 0 1px 14px rgba(0,0,0,.5);
+    }
+    .wpd-byline {
+      margin: 1.1rem 0 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .82rem; letter-spacing: .02em; color: rgba(255,255,255,.82);
+    }
+
+    /* ---- Reading column ---- */
+    .wpd-col p, .wpd-standfirst {
+      font-family: Georgia, "Times New Roman", serif; color: var(--copy);
+      font-size: 1.16rem; line-height: 1.72; margin: 0 0 1.35rem;
+    }
+    .wpd-standfirst {
+      font-size: clamp(1.2rem, 2.2vw, 1.42rem); line-height: 1.6; color: var(--ink);
+    }
+    .wpd-standfirst strong { color: var(--heading); font-weight: 700; }
+    .wpd-col h2 {
+      margin: clamp(2.6rem, 5vw, 3.4rem) 0 .1rem; font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    }
+    .wpd-col h2 + .wpd-sub {
+      margin: .35rem 0 1.2rem; color: var(--brand); font-weight: 700;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .wpd-col a { color: var(--brand); text-underline-offset: 2px; }
+
+    /* Drop cap on the first standfirst line for editorial texture */
+    .wpd-standfirst.wpd-lead::first-letter {
+      float: left; font-size: 3.4em; line-height: .82; padding: .06em .12em 0 0;
+      color: var(--brand); font-weight: 700;
+    }
+
+    /* Pull quote */
+    .wpd-pull {
+      margin: clamp(2.2rem, 5vw, 3rem) auto; border: 0; padding: 0;
+      width: min(100%, 46rem);
+    }
+    .wpd-pull blockquote {
+      margin: 0; padding: .2rem 0 .2rem 1.4rem; border-left: 3px solid var(--accent);
+      font-family: Georgia, "Times New Roman", serif; color: var(--heading);
+      font-size: clamp(1.5rem, 3.2vw, 2.05rem); line-height: 1.32; font-style: italic;
+      text-wrap: pretty;
+    }
+    .wpd-pull cite {
+      display: block; margin-top: .9rem; padding-left: 1.4rem; font-style: normal;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .86rem; letter-spacing: .02em; color: var(--muted);
+    }
+
+    /* Key-facts panel */
+    .wpd-facts {
+      width: min(100%, 46rem); margin: clamp(1.6rem, 4vw, 2.2rem) auto;
+      border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+      padding: clamp(1.1rem, 3vw, 1.6rem) clamp(1.2rem, 3vw, 1.8rem);
+    }
+    .wpd-facts h3 {
+      margin: 0 0 .3rem; font-size: 1.08rem; color: var(--heading);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .wpd-facts dl {
+      margin: .6rem 0 0; display: grid; grid-template-columns: 1fr auto; gap: .05rem 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .wpd-facts dt { color: var(--muted); font-size: .95rem; padding: .42rem 0; border-top: 1px solid var(--line); }
+    .wpd-facts dd { margin: 0; color: var(--heading); font-weight: 650; font-size: .98rem; text-align: right; padding: .42rem 0; border-top: 1px solid var(--line); }
+    .wpd-facts dl > dt:first-of-type, .wpd-facts dl > dd:first-of-type { border-top: 0; }
+    .wpd-facts p.wpd-facts__note { margin: .8rem 0 0; font-size: .82rem; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+    /* ---- Figures & shots ---- */
+    .wpd-shot {
+      display: block; width: 100%; padding: 0; margin: 0; border: 0; background: none;
+      cursor: zoom-in; color: inherit; font: inherit; line-height: 0;
+    }
+    .wpd-shot img { display: block; width: 100%; height: 100%; object-fit: cover; background: var(--surface); }
+    .wpd-shot:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+    figure.wpd-fig { margin-block: clamp(1.6rem, 4vw, 2.4rem); }
+    figure.wpd-fig img { border-radius: 12px; }
+    figure.wpd-fig.wpd-bleedfig { margin-block: clamp(2rem, 5vw, 3.4rem); }
+    .wpd-bleedfig .wpd-shot img { border-radius: 0; aspect-ratio: 16 / 7; }
+    figure.wpd-fig.wpd-wide .wpd-shot img { aspect-ratio: 16 / 8; border-radius: 12px; }
+    figure.wpd-fig figcaption, .wpd-cap {
+      margin: .6rem 0 0; color: var(--muted); font-size: .85rem; line-height: 1.45;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .wpd-bleedfig figcaption { width: min(100% - 2rem, var(--max)); margin-inline: auto; padding-top: .55rem; }
+    figure.wpd-lead-fig .wpd-shot img { aspect-ratio: 3 / 2; border-radius: 12px; }
+
+    /* Three-up idol row */
+    .wpd-trio {
+      width: min(100%, 60rem); margin: clamp(1.8rem, 4vw, 2.6rem) auto; padding: 0; list-style: none;
+      display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr);
+    }
+    .wpd-trio figure { margin: 0; }
+    .wpd-trio .wpd-shot img { aspect-ratio: 3 / 4; border-radius: 10px; }
+    .wpd-trio figcaption { margin-top: .45rem; font-size: .8rem; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-align: center; }
+
+    /* ---- Closing photo grid ---- */
+    .wpd-gallery-head { width: min(100%, 43rem); margin: clamp(2.6rem,5vw,3.6rem) auto .2rem; }
+    .wpd-grid {
+      list-style: none; padding: 0; margin: 1.4rem auto 0; width: min(100%, 72rem);
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px;
+    }
+    .wpd-grid figure { margin: 0; }
+    .wpd-grid .wpd-shot img { aspect-ratio: 4 / 3; border-radius: 10px; }
+    .wpd-grid figcaption { margin-top: .4rem; font-size: .8rem; line-height: 1.4; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+    /* ---- Lightbox ---- */
+    .wpd-lb {
+      position: fixed; inset: 0; z-index: 9999; display: flex; flex-direction: column;
+      background: rgba(6,9,13,.94); padding: clamp(.6rem, 2vw, 1.4rem);
+      opacity: 0; visibility: hidden; transition: opacity .22s ease, visibility .22s ease;
+    }
+    .wpd-lb[data-open="1"] { opacity: 1; visibility: visible; }
+    .wpd-lb__stage { flex: 1 1 auto; display: grid; place-items: center; min-height: 0; position: relative; z-index: 1; }
+    .wpd-lb__img {
+      max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;
+      border-radius: 6px; box-shadow: 0 18px 60px rgba(0,0,0,.6);
+    }
+    .wpd-lb__cap {
+      flex: 0 0 auto; margin: .7rem auto 0; max-width: 60rem; text-align: center; color: #e8edf1;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem; line-height: 1.45;
+    }
+    .wpd-lb__count { display: block; margin-top: .25rem; color: #9fb0bd; font-size: .78rem; letter-spacing: .04em; }
+    .wpd-lb button {
+      position: absolute; z-index: 3; cursor: pointer; color: #fff;
+      background: rgba(20,26,32,.62); border: 1px solid rgba(255,255,255,.18);
+      width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
+      transition: background .15s ease, transform .15s ease;
+    }
+    .wpd-lb button:hover { background: rgba(60,72,84,.9); }
+    .wpd-lb button:focus-visible { outline: 3px solid #ffe6a1; outline-offset: 2px; }
+    .wpd-lb__close { top: clamp(.4rem,1.5vw,1rem); right: clamp(.4rem,1.5vw,1rem); font-size: 1.7rem; line-height: 1; }
+    .wpd-lb__nav { top: 50%; transform: translateY(-50%); font-size: 2rem; line-height: 1; }
+    .wpd-lb__prev { left: clamp(.3rem,1.5vw,1.1rem); }
+    .wpd-lb__next { right: clamp(.3rem,1.5vw,1.1rem); }
+    .wpd-lb__prev::before { content: "\2039"; margin-top: -4px; }
+    .wpd-lb__next::before { content: "\203A"; margin-top: -4px; }
+    .wpd-lb__close::before { content: "\00D7"; }
+
+    @media (max-width: 720px) {
+      .wpd-trio { gap: 8px; }
+      .wpd-lb__nav { width: 44px; height: 44px; }
+      .wpd-bleedfig .wpd-shot img { aspect-ratio: 4 / 3; }
+    }
+    @media (max-width: 480px) {
+      .wpd-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+      .wpd-hero { min-height: 74vh; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .wpd-lb, .wpd-lb button { transition: none; }
+    }
+    @media print {
+      .wpd-lb { display: none !important; }
     }
   </style>
   <title>World Peace Dome | MIT-WPU</title>
@@ -28,25 +214,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260724-brand-2">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=20260724-brand-2">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260724-brand-2">
-  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260724-3" data-global-masthead-style>
+  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260724-4" data-global-masthead-style>
   <link rel="stylesheet" href="/demo-assets/readability.css?v=20260724-1" data-global-readability-style>
   <meta property="og:title" content="World Peace Dome | MIT-WPU" data-release-generated="social">
-  <meta property="og:description" content="The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune, and its place in MAEER&#x27;s institutional legacy." data-release-generated="social">
+  <meta property="og:description" content="The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune — a monument to the union of science and spirituality, widely described as the world&#x27;s largest dome, and its place in MIT-WPU&#x27;s founding idea." data-release-generated="social">
   <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
   <meta property="og:type" content="website" data-release-generated="social">
   <meta property="og:url" content="https://mitwpu.edu.in/about-us/world-peace-dome/" data-release-generated="social">
   <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
   <meta name="twitter:title" content="World Peace Dome | MIT-WPU" data-release-generated="social">
-  <meta name="twitter:description" content="The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune, and its place in MAEER&#x27;s institutional legacy." data-release-generated="social">
+  <meta name="twitter:description" content="The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune — a monument to the union of science and spirituality, widely described as the world&#x27;s largest dome, and its place in MIT-WPU&#x27;s founding idea." data-release-generated="social">
   <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
-  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.edu.in/about-us/world-peace-dome/#webpage","name":"World Peace Dome | MIT-WPU","url":"https://mitwpu.edu.in/about-us/world-peace-dome/","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune, and its place in MAEER's institutional legacy."}</script>
+  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.edu.in/about-us/world-peace-dome/#webpage","name":"World Peace Dome | MIT-WPU","url":"https://mitwpu.edu.in/about-us/world-peace-dome/","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"The World Peace Dome at Vishwarajbaug, Loni Kalbhor, Pune — a monument to the union of science and spirituality, widely described as the world's largest dome, and its place in MIT-WPU's founding idea."}</script>
   <link rel="stylesheet" href="/group-assets/vendor/photoswipe/photoswipe.css?v=5.4.4" data-image-viewer-asset="photoswipe">
   <link rel="stylesheet" href="/group-assets/image-viewer.css?v=20260724-1" data-image-viewer-asset="site">
   <script type="module" src="/group-assets/image-viewer.mjs?v=20260724-1" data-image-viewer-asset="module"></script>
 </head>
-<body class="single-column editorial-page reading-article">
+<body class="single-column editorial-page reading-article wpd-page">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="global-masthead site-header institution-bar" data-global-masthead><div class="global-masthead__inner institution-inner"><div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><img class="institutional-lockup__logo" src="/demo-assets/brand/mitwpu-official-logo.webp?v=20260724-brand-4" alt="" width="1600" height="444" data-media-role="logo" decoding="async"></a></div><button class="masthead-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="global-primary-nav" aria-label="Open menu"><span class="masthead-nav-toggle__bars" aria-hidden="true"></span></button><nav class="global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav><a href="/about/" aria-current="page">About</a><a href="/academics/">Academics</a><a href="/admissions/">Admissions</a><a href="/research/">Research</a><a href="/people/">People</a><a href="/life-at-mit-wpu/">Campus</a><a href="/search/">Search</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false" title="Switch colour theme"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button></nav></div></header><header class="site-header" data-legacy-masthead>
+  <header class="global-masthead site-header institution-bar" data-global-masthead><div class="global-masthead__inner institution-inner"><div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div><button class="masthead-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="global-primary-nav" aria-label="Open menu"><span class="masthead-nav-toggle__bars" aria-hidden="true"></span></button><nav class="global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/about/" aria-current="page">About</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-about" aria-label="About submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-about"><a href="/about-us/founder/">Founder President</a><a href="/about-us/leadership-and-governance/">Leadership and governance</a><a href="/about-us/history-legacy/">History and legacy</a><a href="/about-us/world-peace-dome/">World Peace Dome</a><a href="/about-us/ranking-accreditation/">Rankings and accreditation</a><a href="/about-us/social-initiatives/">Social initiatives</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/academics/">Academics</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-academics" aria-label="Academics submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-academics"><a href="/academics/">Schools and departments</a><a href="/science/">Science and environment</a><a href="/programmes/">Programmes</a><a href="/academics/academic-calender/">Academic calendar</a><a href="/academics/exam-timetable/">Exam timetable</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/admissions/">Admissions</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-admissions" aria-label="Admissions submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-admissions"><a href="/admissions/">Admissions overview</a><a href="/programmes/">Programmes</a><a href="/application-process/">Application process</a><a href="/mit-wpu-cet-2026/">MIT-WPU CET 2026</a><a href="/scholarships/">Scholarships</a><a href="/placements/">Placements</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/research/">Research</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-research" aria-label="Research submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-research"><a href="/research/">Research overview</a><a href="/facilities/">Central Research Facility</a><a href="/groups/">Research groups</a><a href="/research/research-areas/">Research areas</a><a href="/research/centres-of-excellence/">Centres of excellence</a><a href="/research/sponsored-research/">Sponsored research</a></div></div><a href="/people/">People</a><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/life-at-mit-wpu/">Campus</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-campus" aria-label="Campus submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-campus"><a href="/life-at-mit-wpu/">Campus life</a><a href="/life-wpu/library/">Knowledge Resource Centre</a><a href="/life-wpu/hostel-facilities/">Hostel facilities</a><a href="/life-wpu/sports/">Sports</a><a href="/life-wpu/medical-facilities/">Medical facilities</a><a href="/life-wpu/student-affairs/">Student welfare</a></div></div><a href="/search/">Search</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false" title="Switch colour theme"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button></nav></div></header><header class="site-header" data-legacy-masthead>
     <div class="site-header__inner">
       <a class="wordmark" href="/">MIT World Peace University</a>
       <div class="header-actions">
@@ -72,77 +258,261 @@
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">MIT-WPU</a> <span aria-hidden="true">/</span> <a href="/about-us/">About Us</a> <span aria-hidden="true">/</span> <span aria-current="page">World Peace Dome</span>
     </nav>
-    <header class="hero">
-      <h1>World Peace Dome</h1>
-      <p class="lede">The peace monument at Vishwarajbaug, Loni Kalbhor, Pune.</p>
-    </header>
-    <article class="prose">
-      <figure class="dome-hero">
-        <img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior.webp" alt="The World Peace Dome at MIT-WPU in Pune, seen from the approach gardens" width="1024" height="768" loading="eager" decoding="async">
-        <figcaption>The World Peace Dome, seen from the approach gardens.</figcaption>
-      </figure>
-      <p>The World Peace Dome stands at Vishwarajbaug in Loni Kalbhor, Pune. Conceived by Prof. Dr. Vishwanath D. Karad as a space dedicated to the union of science and spirituality, it forms part of MAEER's institutional legacy and its public work for peace.</p>
-      <p>Beneath the dome lies a large prayer and assembly hall used for convocations, conferences, and public gatherings. The monument also houses a library and gilded statues of philosophers, scientists, and saints drawn from many traditions &mdash; the &ldquo;Idols of Peace&rdquo; &mdash; which together express the university's founding idea of peace through knowledge.</p>
-      <p>The photographs below show the monument's exterior by day and night, aerial views of the campus, the hall and its painted interior, and some of its statuary.</p>
 
-      <section aria-label="World Peace Dome photo gallery" data-image-gallery>
-        <h2>Gallery</h2>
-        <ul class="dome-gallery">
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior-dusk.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The World Peace Dome rising above the campus under an overcast sky" aria-label="Open larger view: The World Peace Dome rising above the campus under an overcast sky"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior-dusk.webp" alt="The World Peace Dome rising above the campus under an overcast sky" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>The dome above the campus under an overcast sky.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-colonnade.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The domed monument with its surrounding colonnade and tower" aria-label="Open larger view: The domed monument with its surrounding colonnade and tower"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-colonnade.webp" alt="The domed monument with its surrounding colonnade and tower" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>The monument with its colonnade and tower.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-marigolds.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome framed by flowers in the foreground gardens" aria-label="Open larger view: The dome framed by flowers in the foreground gardens"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-marigolds.webp" alt="The dome framed by flowers in the foreground gardens" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>The dome framed by the foreground gardens.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-aerial-plan.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="Aerial view looking down on the circular dome and surrounding buildings" aria-label="Open larger view: Aerial view looking down on the circular dome and surrounding buildings"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-aerial-plan.webp" alt="Aerial view looking down on the circular dome and surrounding buildings" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>Looking down on the circular dome and its surrounding buildings.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-campus-aerial.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="Aerial view of the Vishwarajbaug campus with the dome beside the river" aria-label="Open larger view: Aerial view of the Vishwarajbaug campus with the dome beside the river"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-campus-aerial.webp" alt="Aerial view of the Vishwarajbaug campus with the dome beside the river" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>The Vishwarajbaug campus with the dome beside the river.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-fountains.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome illuminated at night above its fountains and reflecting pool" aria-label="Open larger view: The dome illuminated at night above its fountains and reflecting pool"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-fountains.webp" alt="The dome illuminated at night above its fountains and reflecting pool" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>Illuminated at night above its fountains and reflecting pool.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-blue.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome under blue and green illumination at night" aria-label="Open larger view: The dome under blue and green illumination at night"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-blue.webp" alt="The dome under blue and green illumination at night" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>Under blue and green illumination at night.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-archway.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="1000" data-pswp-height="667" data-pswp-caption="The dome viewed through a tricolour-draped ceremonial archway on the approach" aria-label="Open larger view: The dome viewed through a tricolour-draped ceremonial archway on the approach"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-archway.webp" alt="The dome viewed through a tricolour-draped ceremonial archway on the approach" width="1000" height="667" loading="lazy" decoding="async"></a>
-            <figcaption>The dome viewed through a ceremonial archway.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-prayer-hall.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The assembly hall beneath the dome during a large gathering" aria-label="Open larger view: The assembly hall beneath the dome during a large gathering"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-prayer-hall.webp" alt="The assembly hall beneath the dome during a large gathering" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>The assembly hall beneath the dome during a gathering.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-ceiling.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The interior of the dome, painted as a sky with a central medallion" aria-label="Open larger view: The interior of the dome, painted as a sky with a central medallion"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-ceiling.webp" alt="The interior of the dome, painted as a sky with a central medallion" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>The dome's interior, painted as a sky with a central medallion.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="900" data-pswp-height="530" data-pswp-caption="A carved and gilded wooden gallery inside the monument, with panels for different faith traditions" aria-label="Open larger view: A carved and gilded wooden gallery inside the monument, with panels for different faith traditions"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library.webp" alt="A carved and gilded wooden gallery inside the monument, with panels for different faith traditions" width="900" height="530" loading="lazy" decoding="async"></a>
-            <figcaption>A carved and gilded gallery inside the monument.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-buddha.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A gilded statue of the Buddha among the monument&#x27;s Idols of Peace" aria-label="Open larger view: A gilded statue of the Buddha among the monument&#x27;s Idols of Peace"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-buddha.webp" alt="A gilded statue of the Buddha among the monument's Idols of Peace" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>A gilded statue of the Buddha, among the Idols of Peace.</figcaption>
-          </figure></li>
-          <li><figure>
-            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-saint.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A gilded statue of a philosopher-saint among the Idols of Peace" aria-label="Open larger view: A gilded statue of a philosopher-saint among the Idols of Peace"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-saint.webp" alt="A gilded statue of a philosopher-saint among the Idols of Peace" width="543" height="403" loading="lazy" decoding="async"></a>
-            <figcaption>A gilded statue of a philosopher-saint, among the Idols of Peace.</figcaption>
-          </figure></li>
-        </ul>
-      </section>
+    <!-- ===== Full-bleed hero ===== -->
+    <figure class="wpd-hero wpd-bleed">
+      <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-panorama-day.webp"
+        data-cap="The World Peace Dome above its approach fountains at Vishwarajbaug, Pune.">
+        <img class="wpd-hero__img" src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-panorama-day.webp"
+          alt="The white-and-crimson World Peace Dome rising above its approach fountains under a blue sky" width="1400" height="675" fetchpriority="high" decoding="async">
+      </button>
+      <div class="wpd-hero__scrim"></div>
+      <div class="wpd-hero__text">
+        <div class="wpd-col">
+          <p class="wpd-kicker">About Us · The Campus</p>
+          <h1>The World Peace Dome</h1>
+          <p class="wpd-dek">A monument to the union of science and spirituality, raised over fifteen years on a bend of the Indrayani — and widely described as the largest dome in the world.</p>
+          <p class="wpd-byline">Vishwarajbaug · Loni Kalbhor · Pune</p>
+        </div>
+      </div>
+    </figure>
+
+    <article data-image-gallery>
+      <div class="wpd-col">
+        <p class="wpd-standfirst wpd-lead">Set on the picturesque Vishwarajbaug campus at Loni Kalbhor, on the outskirts of Pune, the World Peace Dome is conceived as a living site of interreligious dialogue. Its formal name is longer than the one most visitors use — the <strong>Philosopher Saint Shri Dnyaneshwara World Peace Prayer Hall and World Peace Library</strong> — and it was built to hold a single idea in stone and bronze: that eastern spiritual wisdom and western scientific enquiry belong to one family.</p>
+
+        <p>Beneath the dome sits a prayer and assembly hall; below that, a library. Ringing the interior stand fifty-four larger-than-life bronze statues of saints, scientists and philosophers — a company that runs, in the monument's own phrase, &ldquo;from Saint Dnyaneshwar to Albert Einstein.&rdquo; The whole structure is an attempt to make an argument visible: that knowledge, whatever its tradition, points the same way.</p>
+
+        <h2>The world as one family</h2>
+        <p class="wpd-sub">Concept</p>
+        <p>The dome is the work of <a href="/about-us/founder/">Prof. Dr. Vishwanath D. Karad</a>, the founder of the MIT group of institutions in Pune and of MIT World Peace University. He describes it as a &ldquo;Centre of Wisdom, Knowledge Dissemination and Social Transformation,&rdquo; dedicated to the public rather than to any one faith. Its guiding text is the Sanskrit phrase <em>Vasudhaiva Kutumbakam</em> — &ldquo;the world is one family.&rdquo;</p>
+        <p>The idea took root long before the foundations. On a visit to Alandi in 1987 — the town near Pune associated with the thirteenth-century saint Dnyaneshwar — Karad has said the notion of a monument to peace took root in his mind on the banks of the Indrayani river. He had founded the Maharashtra Institute of Technology in 1983; the university around it would take the name MIT World Peace University in 2017, the year before the dome was completed.</p>
+      </div>
+
+      <figure class="wpd-fig wpd-lead-fig wpd-col">
+        <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-facade-day.webp"
+          data-cap="The dome and its ceremonial forecourt, with a dharma-chakra rangoli laid on the approach.">
+          <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-facade-day.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="600" data-pswp-height="600" data-pswp-caption="The World Peace Dome seen head-on across a decorated forecourt under a bright blue sky" aria-label="Open larger view: The World Peace Dome seen head-on across a decorated forecourt under a bright blue sky"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-facade-day.webp"
+            alt="The World Peace Dome seen head-on across a decorated forecourt under a bright blue sky" width="600" height="600" loading="lazy" decoding="async"></a>
+        </button>
+        <figcaption>The dome and its ceremonial forecourt, seen from the approach.</figcaption>
+      </figure>
+
+      <blockquote class="wpd-pull wpd-col">
+        <blockquote>&ldquo;Union of Science and Religion and Spirituality alone will bring Peace and Harmony to the entire Humanity.&rdquo;</blockquote>
+        <cite>Swami Vivekananda — the sentence the monument was built to illustrate</cite>
+      </blockquote>
+
+      <div class="wpd-col">
+        <h2>The architecture</h2>
+        <p class="wpd-sub">Grandeur</p>
+        <p>By the numbers the monument reports, it is a genuinely large structure. The dome measures 160 feet across; the building rises 263 feet from the ground to its apex, with the dome itself accounting for roughly the top 96 feet. Remarkably, the whole span rests on just twenty-four pillars. It is, on the project's own account, presently the world's largest dome — a claim best held lightly, but one supported by a straightforward comparison the monument invites (below).</p>
+        <p>The design is unashamedly symbolic. At the centre lies a meditation space intended to balance the seven <em>chakras</em>; around it, concentric rings of pillars carry meanings rather than loads alone. Twelve stand for the major world religions; twenty-four for the sciences that &ldquo;define and steer life&rdquo;; and, counted in full, one hundred and eight — a number long held sacred in Indian tradition — for the values of peace and sustainability. At the apex sits an idol of Saraswati, the goddess of knowledge.</p>
+      </div>
+
+      <aside class="wpd-facts wpd-col" aria-label="World Peace Dome — reported dimensions">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Diameter of the dome</dt><dd>160 ft</dd>
+          <dt>Height to the apex</dt><dd>263 ft</dd>
+          <dt>Supporting pillars</dt><dd>24</dd>
+          <dt>Prayer-hall capacity</dt><dd>~3,000</dd>
+          <dt>Library floor area</dt><dd>~62,500 sq ft</dd>
+          <dt>Bronze statues</dt><dd>54</dd>
+          <dt>Completed</dt><dd>2018</dd>
+        </dl>
+        <p class="wpd-facts__note">Figures as reported by the World Peace Dome. The monument was built over roughly fifteen years by a reported ten thousand engineers, workers and artists.</p>
+      </aside>
+
+      <figure class="wpd-fig wpd-bleedfig wpd-bleed">
+        <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-hall-aerial.webp"
+          data-cap="Looking down into the prayer hall during a full gathering — the monument seats about three thousand.">
+          <img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-hall-aerial.webp"
+            alt="An overhead view into the circular prayer hall, packed with people around a red radial carpet" width="1400" height="612" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Looking down into the prayer hall during a full gathering — the hall seats about three thousand.</figcaption>
+      </figure>
+
+      <div class="wpd-col">
+        <h2>The prayer hall and its painted sky</h2>
+        <p class="wpd-sub">Under the dome</p>
+        <p>The hall built inside the dome can take some three thousand people, in a room shaped for stillness. Across the inner surface of the dome a sunrise is painted, and tiny openings let daylight through so that the illumination shifts through the day. Seated below, a visitor is surrounded by the statues of the thinkers the monument honours — &ldquo;people who have shaped our thinking across all of history,&rdquo; as the project puts it — with the serene painted sky overhead.</p>
+      </div>
+
+      <figure class="wpd-fig wpd-wide">
+        <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-hall-interior.webp"
+          data-cap="The prayer hall in use, beneath its ring of arched windows and painted ceiling.">
+          <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-hall-interior.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The prayer hall interior, a wide ring of seating beneath arched windows and a domed ceiling" aria-label="Open larger view: The prayer hall interior, a wide ring of seating beneath arched windows and a domed ceiling"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-hall-interior.webp"
+            alt="The prayer hall interior, a wide ring of seating beneath arched windows and a domed ceiling" width="900" height="450" loading="lazy" decoding="async"></a>
+        </button>
+        <figcaption>The prayer hall in use, beneath its ring of arched windows.</figcaption>
+      </figure>
+
+      <div class="wpd-col">
+        <h2>The library below</h2>
+        <p class="wpd-sub">Knowledge under one roof</p>
+        <p>Under the prayer hall spreads the World Peace Library, an expanse the monument gives as about 62,500 square feet. It gathers texts on religion, spirituality, science and philosophy from across the world, with a circular room at its heart devoted to the histories of the major faiths — Judaism, Hinduism, Islam, Christianity, Zoroastrianism and Sikhism among them — set out so that a reader can trace both their differences and what they share. Panels along the walls carry the lives and work of some of the world's great scientists and thinkers.</p>
+      </div>
+
+      <figure class="wpd-fig wpd-wide">
+        <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library-corridor.webp"
+          data-cap="A corridor of the World Peace Library, its walls lined with illustrated panels.">
+          <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library-corridor.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="900" data-pswp-height="522" data-pswp-caption="A library corridor lined with gilt-framed illustrated panels along one wall" aria-label="Open larger view: A library corridor lined with gilt-framed illustrated panels along one wall"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library-corridor.webp"
+            alt="A library corridor lined with gilt-framed illustrated panels along one wall" width="900" height="450" loading="lazy" decoding="async"></a>
+        </button>
+        <figcaption>A corridor of the World Peace Library, lined with illustrated panels.</figcaption>
+      </figure>
+
+      <blockquote class="wpd-pull wpd-col">
+        <blockquote>&ldquo;Science without religion is lame; religion without science is blind.&rdquo;</blockquote>
+        <cite>Albert Einstein — a line the founder returns to often</cite>
+      </blockquote>
+
+      <div class="wpd-col">
+        <h2>The Idols of Peace</h2>
+        <p class="wpd-sub">Fifty-four in bronze</p>
+        <p>The dome's most striking feature is its company of fifty-four bronze figures — saints, scientists, social reformers and philosophers, cast larger than life and gathered, the monument says, under one roof for the first time. Saint Dnyaneshwar and Sant Tukaram stand among them, and so do Mahatma Gandhi, Jesus Christ, Swami Vivekananda, Moses, Hippocrates and the physicist Max Planck. The intent is not devotional but civilisational: to place, in one room, the people &ldquo;who have helped create civilisation and forward thought as we know it.&rdquo;</p>
+      </div>
+
+      <ul class="wpd-trio">
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-saint.webp"
+            data-cap="Saint Dnyaneshwar, the thirteenth-century philosopher-saint the monument is named for.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-saint.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A gilded bronze statue of the philosopher-saint Dnyaneshwar holding a veena" aria-label="Open larger view: A gilded bronze statue of the philosopher-saint Dnyaneshwar holding a veena"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-saint.webp"
+              alt="A gilded bronze statue of the philosopher-saint Dnyaneshwar holding a veena" width="543" height="724" loading="lazy" decoding="async"></a>
+          </button>
+          <figcaption>Saint Dnyaneshwar</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-buddha.webp"
+            data-cap="The Buddha, among the fifty-four Idols of Peace.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-buddha.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A gilded bronze statue of the seated Buddha" aria-label="Open larger view: A gilded bronze statue of the seated Buddha"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-buddha.webp"
+              alt="A gilded bronze statue of the seated Buddha" width="543" height="724" loading="lazy" decoding="async"></a>
+          </button>
+          <figcaption>The Buddha</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-christ.webp"
+            data-cap="Jesus Christ, one of the figures drawn from many faith traditions.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-christ.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A gilded bronze statue of Jesus Christ with arms open" aria-label="Open larger view: A gilded bronze statue of Jesus Christ with arms open"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-idol-christ.webp"
+              alt="A gilded bronze statue of Jesus Christ with arms open" width="543" height="724" loading="lazy" decoding="async"></a>
+          </button>
+          <figcaption>Jesus Christ</figcaption>
+        </figure></li>
+      </ul>
+
+      <div class="wpd-col">
+        <h2>From spirituality to science</h2>
+        <p class="wpd-sub">The founder's argument</p>
+        <p>The monument is the physical form of a long essay its founder has written and re-written — that the scriptures of the saints and the equations of the scientists are, read closely, describing the same reality. He points to Dnyaneshwar concluding, three centuries before Galileo, that the sun only appears to move; and to Einstein writing of &ldquo;the orderly harmony of the universe.&rdquo; The dome is where that correspondence is meant to be felt rather than merely read.</p>
+        <p>In 2018 the completed monument hosted a World Parliament of Science, Religion and Philosophy, the kind of gathering it was built to hold. Its ambition is deliberately outsized — an embodiment, the project notes, of the culture of peace and sustainable development &ldquo;at the heart of UNESCO's mandate.&rdquo;</p>
+
+        <h2>In context</h2>
+        <p class="wpd-sub">A note on the &ldquo;largest dome&rdquo; claim</p>
+        <p>The description most often attached to the monument — the world's largest dome — deserves a footnote rather than a fanfare. By the diameters the site sets side by side, its 160-foot span does exceed the celebrated domes usually cited: St Peter's Basilica in the Vatican at 138 feet, the Pantheon in Rome at 142, and the Gol Gumbaz at Bijapur at 124. Those older domes climb higher or carry more masonry; this one claims the widest clear span. It is a specific, checkable claim, and it is the one the monument makes.</p>
+      </div>
+
+      <figure class="wpd-fig wpd-bleedfig wpd-bleed">
+        <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-fountains.webp"
+          data-cap="The dome lit at night above its reflecting pool and fountains.">
+          <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-fountains.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome floodlit red and white at night, mirrored in the long reflecting pool before it" aria-label="Open larger view: The dome floodlit red and white at night, mirrored in the long reflecting pool before it"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-fountains.webp"
+            alt="The dome floodlit red and white at night, mirrored in the long reflecting pool before it" width="1400" height="612" loading="lazy" decoding="async"></a>
+        </button>
+        <figcaption>The dome lit at night above its reflecting pool.</figcaption>
+      </figure>
+
+      <!-- TODO: additional dome material arriving from operator; drop here -->
+
+      <div class="wpd-gallery-head wpd-col">
+        <h2>The monument in photographs</h2>
+        <p class="wpd-sub">Gallery · select any image to enlarge</p>
+        <p>The exterior by day and night, the campus from the air, the hall and its painted interior, the carved and gilded detail, and some of the statuary. Select any photograph to open it full-screen; use the arrows or your keyboard to move through the set.</p>
+      </div>
+
+      <ul class="wpd-grid" aria-label="World Peace Dome photo gallery">
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior.webp" data-cap="The World Peace Dome seen from the approach gardens.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="1024" data-pswp-height="768" data-pswp-caption="The World Peace Dome seen head-on from the approach gardens" aria-label="Open larger view: The World Peace Dome seen head-on from the approach gardens"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior.webp" alt="The World Peace Dome seen head-on from the approach gardens" width="1024" height="768" loading="lazy" decoding="async"></a></button>
+          <figcaption>The dome from the approach gardens.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-fountains-day.webp" data-cap="The approach water-channel leading to the monument by day.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-fountains-day.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A long water channel on the approach leading up to the dome by day" aria-label="Open larger view: A long water channel on the approach leading up to the dome by day"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-fountains-day.webp" alt="A long water channel on the approach leading up to the dome by day" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>The approach channel by day.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-marigolds.webp" data-cap="The dome framed by the foreground gardens.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-marigolds.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome framed by marigolds and flowers in the foreground gardens" aria-label="Open larger view: The dome framed by marigolds and flowers in the foreground gardens"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-marigolds.webp" alt="The dome framed by marigolds and flowers in the foreground gardens" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>Framed by the foreground gardens.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-colonnade.webp" data-cap="The monument with its surrounding colonnade and tower.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-colonnade.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The domed monument with its surrounding colonnade and tower against a pale sky" aria-label="Open larger view: The domed monument with its surrounding colonnade and tower against a pale sky"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-colonnade.webp" alt="The domed monument with its surrounding colonnade and tower against a pale sky" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>The colonnade and tower.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-tower.webp" data-cap="A carved minaret-tower rising beside the colonnade.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-tower.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A tall white carved tower rising beside the monument&#x27;s arched colonnade" aria-label="Open larger view: A tall white carved tower rising beside the monument&#x27;s arched colonnade"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-tower.webp" alt="A tall white carved tower rising beside the monument's arched colonnade" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>A tower beside the colonnade.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-aerial-plan.webp" data-cap="Looking straight down on the circular dome and the buildings around it.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-aerial-plan.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="An overhead aerial view looking straight down on the circular dome and surrounding buildings" aria-label="Open larger view: An overhead aerial view looking straight down on the circular dome and surrounding buildings"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-aerial-plan.webp" alt="An overhead aerial view looking straight down on the circular dome and surrounding buildings" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>The dome from directly above.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-campus-aerial.webp" data-cap="The Vishwarajbaug campus with the dome beside the river.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-campus-aerial.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="An aerial view of the Vishwarajbaug campus with the dome beside a river" aria-label="Open larger view: An aerial view of the Vishwarajbaug campus with the dome beside a river"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-campus-aerial.webp" alt="An aerial view of the Vishwarajbaug campus with the dome beside a river" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>The campus beside the river.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-archway.webp" data-cap="The dome seen through a tricolour ceremonial archway on the approach.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-archway.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="1000" data-pswp-height="667" data-pswp-caption="The dome viewed through a tall ceremonial archway draped in the national tricolour" aria-label="Open larger view: The dome viewed through a tall ceremonial archway draped in the national tricolour"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-archway.webp" alt="The dome viewed through a tall ceremonial archway draped in the national tricolour" width="1000" height="667" loading="lazy" decoding="async"></a></button>
+          <figcaption>Through a ceremonial archway.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-prayer-hall.webp" data-cap="The assembly hall beneath the dome during a large gathering.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-prayer-hall.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The ornate assembly hall beneath the dome during a large gathering" aria-label="Open larger view: The ornate assembly hall beneath the dome during a large gathering"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-prayer-hall.webp" alt="The ornate assembly hall beneath the dome during a large gathering" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>The assembly hall during a gathering.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-ceiling.webp" data-cap="The inside of the dome, painted as a sky with a central medallion.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-ceiling.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The interior of the dome painted as a pale sky with a central medallion" aria-label="Open larger view: The interior of the dome painted as a pale sky with a central medallion"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-ceiling.webp" alt="The interior of the dome painted as a pale sky with a central medallion" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>The painted interior of the dome.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-meditation.webp" data-cap="A wooden meditation chamber with a fire altar at its centre.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-meditation.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="An octagonal wooden meditation chamber with a fire altar set into the floor" aria-label="Open larger view: An octagonal wooden meditation chamber with a fire altar set into the floor"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-meditation.webp" alt="An octagonal wooden meditation chamber with a fire altar set into the floor" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>A meditation chamber within the monument.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library.webp" data-cap="A carved and gilded wooden gallery inside the monument.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="900" data-pswp-height="530" data-pswp-caption="A carved and gilded wooden gallery inside the monument" aria-label="Open larger view: A carved and gilded wooden gallery inside the monument"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-library.webp" alt="A carved and gilded wooden gallery inside the monument" width="900" height="530" loading="lazy" decoding="async"></a></button>
+          <figcaption>A carved and gilded gallery.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-carving.webp" data-cap="A hand-carved wooden peacock relief — part of the monument's ornament.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-carving.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="A detailed hand-carved wooden peacock relief panel" aria-label="Open larger view: A detailed hand-carved wooden peacock relief panel"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-carving.webp" alt="A detailed hand-carved wooden peacock relief panel" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>A hand-carved peacock relief.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior-dusk.webp" data-cap="The dome above the campus under an overcast sky.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior-dusk.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome rising above the campus under an overcast sky" aria-label="Open larger view: The dome rising above the campus under an overcast sky"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-exterior-dusk.webp" alt="The dome rising above the campus under an overcast sky" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>Above the campus under cloud.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-blue.webp" data-cap="The dome under blue and green illumination at night.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-blue.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome floodlit in blue and green against a black night sky" aria-label="Open larger view: The dome floodlit in blue and green against a black night sky"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-blue.webp" alt="The dome floodlit in blue and green against a black night sky" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>Under blue illumination at night.</figcaption>
+        </figure></li>
+        <li><figure>
+          <button type="button" class="wpd-shot" data-full="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-red.webp" data-cap="The dome under red and blue illumination at night.">
+            <a class="image-zoom-link" href="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-red.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="543" data-pswp-height="403" data-pswp-caption="The dome floodlit in red and blue against a black night sky" aria-label="Open larger view: The dome floodlit in red and blue against a black night sky"><img src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-night-red.webp" alt="The dome floodlit in red and blue against a black night sky" width="543" height="403" loading="lazy" decoding="async"></a></button>
+          <figcaption>Under red illumination at night.</figcaption>
+        </figure></li>
+      </ul>
     </article>
+
     <aside class="related" aria-labelledby="related-title">
       <h2 id="related-title">Related public links</h2>
       <ul>
@@ -156,5 +526,110 @@
       <p><strong>MIT World Peace University</strong> &middot; Pune, India</p>
     </div>
   </footer>
+
+  <!-- ===== Lightbox overlay (vanilla, self-contained) ===== -->
+  <div class="wpd-lb" id="wpd-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" data-open="0" hidden>
+    <button type="button" class="wpd-lb__close" data-lb-close aria-label="Close viewer (Escape)"></button>
+    <button type="button" class="wpd-lb__nav wpd-lb__prev" data-lb-prev aria-label="Previous photo"></button>
+    <button type="button" class="wpd-lb__nav wpd-lb__next" data-lb-next aria-label="Next photo"></button>
+    <div class="wpd-lb__stage">
+      <img class="wpd-lb__img" id="wpd-lb-img"
+        src="/media/mitwpu-public/optimized/world-peace-dome/world-peace-dome-panorama-day.webp"
+        alt="The World Peace Dome and its colonnade seen across the gardens" width="1024" height="494">
+    </div>
+    <p class="wpd-lb__cap"><span id="wpd-lb-cap"></span><span class="wpd-lb__count" id="wpd-lb-count"></span></p>
+  </div>
+
+  <script>
+  (function () {
+    var shots = Array.prototype.slice.call(document.querySelectorAll('.wpd-shot'));
+    if (!shots.length) return;
+    var lb = document.getElementById('wpd-lightbox');
+    var lbImg = document.getElementById('wpd-lb-img');
+    var lbCap = document.getElementById('wpd-lb-cap');
+    var lbCount = document.getElementById('wpd-lb-count');
+    var btnClose = lb.querySelector('[data-lb-close]');
+    var btnPrev = lb.querySelector('[data-lb-prev]');
+    var btnNext = lb.querySelector('[data-lb-next]');
+    var focusables = [btnPrev, btnNext, btnClose];
+    var index = -1;
+    var lastFocus = null;
+
+    var items = shots.map(function (btn) {
+      var img = btn.querySelector('img');
+      return {
+        full: btn.getAttribute('data-full') || (img && img.currentSrc) || (img && img.src),
+        cap: btn.getAttribute('data-cap') || (img && img.getAttribute('alt')) || '',
+        alt: (img && img.getAttribute('alt')) || ''
+      };
+    });
+
+    function preload(i) {
+      if (i < 0 || i >= items.length) return;
+      var im = new Image(); im.src = items[i].full;
+    }
+
+    function show(i) {
+      index = (i + items.length) % items.length;
+      var it = items[index];
+      lbImg.src = it.full;
+      lbImg.alt = it.alt;
+      lbCap.textContent = it.cap;
+      lbCount.textContent = (index + 1) + ' / ' + items.length;
+      preload(index + 1); preload(index - 1);
+    }
+
+    function open(i) {
+      lastFocus = document.activeElement;
+      lb.hidden = false;
+      /* force layout so the opacity transition runs */
+      void lb.offsetWidth;
+      lb.setAttribute('data-open', '1');
+      document.documentElement.style.overflow = 'hidden';
+      show(i);
+      btnClose.focus();
+    }
+
+    function close() {
+      lb.setAttribute('data-open', '0');
+      document.documentElement.style.overflow = '';
+      var onEnd = function () {
+        lb.hidden = true;
+        lb.removeEventListener('transitionend', onEnd);
+      };
+      lb.addEventListener('transitionend', onEnd);
+      /* fallback if transitionend does not fire */
+      setTimeout(function () { if (lb.getAttribute('data-open') === '0') lb.hidden = true; }, 320);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    shots.forEach(function (btn, i) {
+      btn.addEventListener('click', function (e) { e.preventDefault(); open(i); });
+    });
+    btnClose.addEventListener('click', close);
+    btnPrev.addEventListener('click', function () { show(index - 1); });
+    btnNext.addEventListener('click', function () { show(index + 1); });
+
+    /* click outside the image closes */
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target.classList.contains('wpd-lb__stage')) close();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (lb.getAttribute('data-open') !== '1') return;
+      if (e.key === 'Escape') { e.preventDefault(); close(); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); show(index + 1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); show(index - 1); }
+      else if (e.key === 'Tab') {
+        /* simple focus trap across the three controls */
+        var i = focusables.indexOf(document.activeElement);
+        if (i === -1) { e.preventDefault(); focusables[0].focus(); return; }
+        e.preventDefault();
+        var dir = e.shiftKey ? -1 : 1;
+        focusables[(i + dir + focusables.length) % focusables.length].focus();
+      }
+    });
+  })();
+  </script>
 </body>
 </html>

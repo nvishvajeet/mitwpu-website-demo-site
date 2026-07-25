@@ -32,6 +32,9 @@
   function installInstitutionalNavigation() {
     const bar = document.querySelector(".institution-bar");
     if (!bar) return;
+    // The release builder already ships the canonical masthead (with its
+    // dropdown mega-menu). Never rebuild it flat — that would wipe the menus.
+    if (bar.hasAttribute("data-global-masthead")) return;
     const inner = bar.querySelector(".institution-inner");
     if (!inner) return;
 
@@ -145,6 +148,17 @@
     });
     window.matchMedia("(min-width: 768px)").addEventListener("change", (event) => {
       if (event.matches) setOpen(false);
+    });
+
+    nav.querySelectorAll(".nav-item__disclosure").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        const item = btn.closest(".nav-item--menu");
+        if (!item) return;
+        const open = !item.classList.contains("is-open");
+        item.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+      });
     });
   };
 
