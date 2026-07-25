@@ -1,0 +1,800 @@
+<!doctype html>
+<!-- Curated source: copied into the generated public overlay at build time. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="The student front door at MIT-WPU: course material and curriculum by school, academic ordinances, exam schedules, handbooks, and student support and policies — all in one place.">
+  <link rel="canonical" href="https://mitwpu.edu.in/students/">
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <link rel="stylesheet" href="../_assets/public-surface.css?v=20260725-global-nav-5">
+  <script src="../_assets/theme.js?v=20260725-global-nav-5" defer></script>
+  <style>
+    /* ---- Students hub: self-contained, reuses public-surface tokens ---- */
+    .stud-shell { padding-top: clamp(1.6rem, 4vw, 2.6rem); }
+    .stud-intro { max-width: 62ch; }
+    .stud-toc {
+      display: flex; flex-wrap: wrap; gap: .5rem .7rem; margin: 1.6rem 0 0; padding: 0; list-style: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .stud-toc a {
+      display: inline-block; padding: .4rem .8rem; border: 1px solid var(--line);
+      border-radius: 999px; background: var(--surface); color: var(--brand);
+      font-size: .82rem; font-weight: 650;
+    }
+    .stud-toc a:hover { border-color: var(--brand); color: var(--brand-dark); }
+
+    .stud-section { margin-top: clamp(2.6rem, 6vw, 4rem); scroll-margin-top: 5rem; }
+    .stud-section > h2 {
+      margin: 0 0 .3rem; padding-bottom: .5rem; border-bottom: 2px solid var(--accent);
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem;
+    }
+    .stud-section__lead { margin: .7rem 0 1.4rem; max-width: 68ch; color: var(--copy); }
+
+    .stud-school { margin-top: 1.9rem; }
+    .stud-school > h3 {
+      margin: 0 0 .8rem; font-size: clamp(1.15rem, 2.4vw, 1.4rem);
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+    }
+    .stud-school__n {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .72rem; font-weight: 700; letter-spacing: .04em;
+      color: var(--muted); background: var(--surface); border: 1px solid var(--line);
+      border-radius: 999px; padding: .12rem .55rem;
+    }
+
+    .stud-docgrid {
+      display: grid; gap: .7rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    }
+    .stud-doc {
+      display: flex; align-items: center; gap: .8rem; min-height: 3.4rem;
+      padding: .7rem .9rem; background: var(--surface);
+      border: 1px solid var(--line); border-left: 3px solid var(--brand);
+      border-radius: .3rem; color: var(--ink); overflow-wrap: anywhere;
+    }
+    .stud-doc:hover { border-color: var(--brand); border-left-color: var(--accent); color: var(--ink); background: var(--paper); }
+    .stud-doc:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    .stud-doc__txt { flex: 1 1 auto; min-width: 0; }
+    .stud-doc__txt strong {
+      display: block; color: var(--heading); font-size: .96rem; line-height: 1.3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 640;
+    }
+    .stud-doc__txt small { display: block; margin-top: .18rem; color: var(--muted); font-size: .8rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .stud-doc__tag {
+      flex: 0 0 auto; align-self: center; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .66rem; font-weight: 800; letter-spacing: .06em; color: var(--brand);
+      background: var(--paper); border: 1px solid var(--line-strong); border-radius: .25rem; padding: .2rem .4rem;
+    }
+
+    .stud-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+    .stud-links a {
+      display: inline-flex; align-items: center; min-height: 2.75rem; padding: .55rem .9rem;
+      background: var(--surface); border: 1px solid var(--line); border-radius: .3rem;
+      color: var(--brand); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .88rem; font-weight: 650;
+    }
+    .stud-links a:hover { border-color: var(--brand); color: var(--brand-dark); }
+
+    .stud-note {
+      margin-top: 1.5rem; padding: .95rem 1.15rem; background: var(--surface);
+      border: 1px dashed var(--line-strong); border-left: 4px solid var(--accent); border-radius: .3rem;
+      color: var(--copy); font-size: .92rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .stud-note strong { color: var(--heading); }
+
+    @media (max-width: 40rem) {
+      .stud-docgrid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <title>Students | MIT-WPU</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260724-brand-2">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=20260724-brand-2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260724-brand-2">
+  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260725-uniform-nav-3" data-global-masthead-style>
+  <link rel="stylesheet" href="/demo-assets/readability.css?v=20260724-1" data-global-readability-style>
+  <meta property="og:title" content="Students | MIT-WPU" data-release-generated="social">
+  <meta property="og:description" content="The student front door at MIT-WPU: course material and curriculum by school, academic ordinances, exam schedules, handbooks, and student support and policies — all in one place." data-release-generated="social">
+  <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <meta property="og:type" content="website" data-release-generated="social">
+  <meta property="og:url" content="https://mitwpu.edu.in/students/" data-release-generated="social">
+  <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
+  <meta name="twitter:title" content="Students | MIT-WPU" data-release-generated="social">
+  <meta name="twitter:description" content="The student front door at MIT-WPU: course material and curriculum by school, academic ordinances, exam schedules, handbooks, and student support and policies — all in one place." data-release-generated="social">
+  <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.edu.in/students/#webpage","name":"Students | MIT-WPU","url":"https://mitwpu.edu.in/students/","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"The student front door at MIT-WPU: course material and curriculum by school, academic ordinances, exam schedules, handbooks, and student support and policies — all in one place."}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="global-masthead site-header institution-bar" data-global-masthead><div class="global-masthead__inner institution-inner"><div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div><button class="masthead-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="global-primary-nav" aria-label="Open menu"><span class="masthead-nav-toggle__bars" aria-hidden="true"></span></button><nav class="global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/about/">About</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-about" aria-label="About submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-about"><a href="/about-us/founder/">Founder President</a><a href="/about-us/executive-president/">Executive President</a><a href="/about-us/executive-director/">Executive Director</a><a href="/about-us/leadership-and-governance/">Leadership and governance</a><a href="/about-us/history-legacy/">History and legacy</a><a href="/about-us/world-peace-dome/">World Peace Dome</a><a href="/about-us/ranking-accreditation/">Rankings and accreditation</a><a href="/about-us/social-initiatives/">Social initiatives</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/academics/">Academics</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-academics" aria-label="Academics submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-academics"><a href="/academics/">Schools and departments</a><a href="/programmes/">Programmes</a><a href="/academics/academic-calender/">Academic calendar</a><a href="/academics/exam-timetable/">Exam timetable</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/admissions/">Admissions</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-admissions" aria-label="Admissions submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-admissions"><a href="/admissions/">Admissions overview</a><a href="/programmes/">Programmes</a><a href="/application-process/">Application process</a><a href="/mit-wpu-cet-2026/">MIT-WPU CET 2026</a><a href="/scholarships/">Scholarships</a><a href="/placements/">Placements</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/research/">Research</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-research" aria-label="Research submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-research"><a href="/research/">Research overview</a><a href="/facilities/">Central Research Facility</a><a href="/groups/">Research groups</a><a href="/research/research-areas/">Research areas</a><a href="/research/centres-of-excellence/">Centres of excellence</a><a href="/research/sponsored-research/">Sponsored research</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/people/">People</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-people" aria-label="People submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-people"><a href="/people/">People directory</a><a href="/leadership/">Leadership directory</a><a href="/about-us/administrative-offices/">Administrative offices</a><a href="/about-us/leadership-and-governance/">Leadership and governance</a><a href="/about-us/iqac/">Internal Quality Assurance Cell</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/life-at-mit-wpu/">Campus</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-campus" aria-label="Campus submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-campus"><a href="/life-at-mit-wpu/">Campus life</a><a href="/life-wpu/library/">Knowledge Resource Centre</a><a href="/life-wpu/hostel-facilities/">Hostel facilities</a><a href="/life-wpu/sports/">Sports</a><a href="/life-wpu/medical-facilities/">Medical facilities</a><a href="/life-wpu/student-affairs/">Student welfare</a></div></div><a href="/search/">Search</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false" title="Switch colour theme"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button></nav></div></header><header class="site-header" data-legacy-masthead>
+    <div class="site-header__inner">
+      <a class="wordmark" href="/">MIT World Peace University</a>
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/academics/">Academics</a>
+          <a href="/admissions/">Admissions</a>
+          <a href="/research/">Research</a>
+          <a href="/people/">People</a>
+          <a href="/life-at-mit-wpu/">Campus</a>
+          <a href="/search/">Search</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false">
+          <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+          <span class="switch-thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page-shell stud-shell">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">MIT-WPU</a> <span aria-hidden="true">/</span> <span aria-current="page">Students</span>
+    </nav>
+
+    <div class="hero">
+      <p class="eyebrow">For students</p>
+      <h1>Student resources</h1>
+      <p class="lede stud-intro">Your front door to the material you need day to day — course structures and curricula for every school, the academic ordinances that govern examinations, exam schedules, handbooks and manuals, and the offices and policies that support you. Findable in one place.</p>
+      <ul class="stud-toc">
+        <li><a href="#curriculum">Course material &amp; curriculum</a></li>
+        <li><a href="#ordinances">Ordinances &amp; regulations</a></li>
+        <li><a href="#exams">Exams &amp; schedules</a></li>
+        <li><a href="#handbooks">Handbooks &amp; manuals</a></li>
+        <li><a href="#support">Support &amp; policies</a></li>
+      </ul>
+    </div>
+
+    <section class="stud-section" id="curriculum" aria-labelledby="curriculum-h">
+      <h2 id="curriculum-h">Course material &amp; curriculum</h2>
+      <p class="stud-section__lead">Programme-wise course structures, grouped by school. Each links to the official MIT-WPU curriculum document (PDF). Where a programme has been revised, the most recent structure is shown.</p>
+      <section class="stud-school" aria-labelledby="sch-engineering-and-technology">
+        <h3 id="sch-engineering-and-technology"><a href="/academics/engineering-and-technology/">School of Engineering &amp; Technology</a> <span class="stud-school__n">21</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/55/559afc6c0cbb4b33-BTech-Bioengineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Bioengineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ed/ed3ec1ee135ed242-BTech-Chemical-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Chemical Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/6c/6c70b7256e0abd8c-BTech-Civil-Engineering-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Civil Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/cd/cdff3180a16dee56-BTech-Civil-Engineering-Smart-Infrastructure-and-Construction-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Civil Engineering Smart Infrastructure and Construction — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/c6/c697236e3ef6c749-BTech-Electrical-and-Computer-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Electrical and Computer Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/64/64244b26e5a06b61-BTech-Electronics-and-Communication-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Electronics and Communication Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/54/54f339c4e4dd2dae-BTech-Materials-Science-and-Engineering-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Materials Science and Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/52/5225bbf8f03a9380-BTech-Mechanical-Engineering-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Mechanical Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f1/f1753339c5806d8e-BTech-Mechanical-Engineering-Robotics-and-Automation-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Mechanical Engineering Robotics and Automation — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ad/ad7d25032a94c2db-BTech-Petroleum-Engineering-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Petroleum Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/0e/0e18935b1e9be0d6-BTech-Renewable-Energy-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Renewable Energy — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/7c/7c350133bb7a6194-BTech-Semiconductor-&amp;-VLSI-Design-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Semiconductor &amp; VLSI Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/d8/d80a1edea6d16ecf-MTech-Chemical-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Chemical Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/b6/b6dc1f56fae7f8b5-MTech-Civil-Engineering-Structural-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Civil Engineering Structural Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/e7/e7ff9b8c7fe274b1-MTech-Civil-Engineering-Tunnel-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Civil Engineering Tunnel Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/05/05b91e7dd4ec0d89-MTech-e-Mobility-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech e Mobility — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ac/accf0fb6b1423749-MTech-Electronics-and-Communication-Engineering-VLSI-and-Embedded-Systems-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Electronics and Communication Engineering VLSI and Embedded Systems — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/1d/1d9b3456a3d5b44c-MTech-Environmental-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Environmental Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/8d/8d1a6a99c4c24012-MTech-Mechanical-Engineering-Design-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Mechanical Engineering Design Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/c3/c30160bf8fd098d8-MTech-Mechanical-Engineering-Robotics-and-Automation-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Mechanical Engineering Robotics and Automation — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/cc/ccb9672db95f5aee-MTech-Petroleum-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Petroleum Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-computer-engineering-and-technology">
+        <h3 id="sch-computer-engineering-and-technology"><a href="/academics/computer-engineering-and-technology/">School of Computer Science &amp; Engineering</a> <span class="stud-school__n">19</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/a9/a91971b054308046-BCA-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BCA Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/32/329a67661f832bdb-BSc-Computer-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Sc Computer Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/99/99fd9f9de541cf43-BSc-Data-Science-and-Big-Data-Analytics-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Sc Data Science and Big Data Analytics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/e1/e1bfdcf422c308bd-BTech-After-10th-3years-Diploma-Degree-in-Computer-Science-and-Engineering-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Computer Science and Engineering (after-10th diploma-integrated pathway) — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/30/30cfd234ac427c1f-BTech-After-10th-3years-Diploma-Degree-in-Computer-Science-and-Engineering-Artificial-Intelligence-and-Data-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Computer Science and Engineering Artificial Intelligence and Data Science (after-10th diploma-integrated pathway) — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/4c/4c229a2c789d3ef2-BTech-After-10th-3years-Diploma-Degree-in-Electronics-and-Communication-Engineering-Artificial-Intelligence-and-Machine-Learning-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Electronics and Communication Engineering Artificial Intelligence and Machine Learning (after-10th diploma-integrated pathway) — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/da/da79c7a0a93c140b-BTech-Computer-Science-and-Engineering-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Computer Science and Engineering — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/42/42086464c9cc46b9-BTech-Computer-Science-and-Engineering-Artificial-Intelligence-and-Data-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Computer Science and Engineering Artificial Intelligence and Data Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/14/1441e52bd80ee061-BTech-Computer-Science-and-Engineering-Cloud-Computing-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Computer Science and Engineering Cloud Computing — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/d8/d8bc5c5bc64178df-BTech-Computer-Science-and-Engineering-Cyber-Security-and-Forensics-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Computer Science and Engineering Cyber Security and Forensics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/6c/6c3334e937da0f39-BTech-Electronics-and-Communication-Engineering-Artificial-Intelligence-and-Machine-Learning-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Tech Electronics and Communication Engineering Artificial Intelligence and Machine Learning — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/03/03999f1102a1d56b-MCA-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>MCA Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/e3/e37b8552e308b758-MSc-Blockchain-Technology-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Blockchain Technology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/72/72c9cd15ab6c56de-MSc-Computer-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Computer Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/5f/5f7808e3e9499718-MSc-Computer-Science-Data-Science-and-Data-Data-Analytics-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Computer Science (Data Science &amp; Analytics) — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/65/653f569cbcb09c06-MTech-Artificial-Intelligence-and-Machine-Learning-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Artificial Intelligence and Machine Learning — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/26/26b843cb1293260c-MTech-Computer-Science-and-Engineering-Artificial-Intelligence-and-Optimization-Methods-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Computer Science and Engineering Artificial Intelligence and Optimization Methods — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/94/944f190228c7bbd0-MTech-Computer-Science-and-Engineering-Cyber-Security-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Computer Science and Engineering Cyber Security — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f3/f35d227df686ce79-MTech-Computer-Science-and-Engineering-Data-Science-and-Analytics-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Computer Science and Engineering Data Science and Analytics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-science">
+        <h3 id="sch-science"><a href="/academics/science/">School of Science &amp; Environmental Studies</a> <span class="stud-school__n">12</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/69/695894e013666468-BSc-Applied-Statistics-and-Data-Analytics-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Sc Applied Statistics and Data Analytics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f6/f67a79fd3f8313d7-BSc-Chemistry-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Sc Chemistry — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/a8/a8dc6cae79cdfebf-BSc-Physics-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Sc Physics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/16/16bb51029c221c2b-Integrated-MSc-Biotechnology-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>Integrated M.Sc Biotechnology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/62/62a1ed42024d78be-MSc-Applied-Statistics-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Applied Statistics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/97/97aa9778ee6ff519-MSc-Biotechnology-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Biotechnology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ea/ea44c79c9fe815d5-MSc-Chemistry-Industrial-Polymer-Chemistry-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Chemistry Industrial Polymer Chemistry — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/06/06fc2bdbed525ee4-MSc-Chemistry-Organic-Chemistry-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Chemistry Organic Chemistry — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ae/aed2f0627b6c4525-MSc-Environment-Science-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Environment Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/41/4176b21bc9947d98-MSc-Mathematics-and-Data-Science-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Mathematics and Data Science — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/38/3854fad4021360e5-MSc-Microbiology-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Microbiology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/83/83c9f03b564a06ea-MSc-Physics-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Physics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-business">
+        <h3 id="sch-business"><a href="/academics/business/">School of Business</a> <span class="stud-school__n">21</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/9c/9cce8694b1cb67f4-BBA-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>BBA — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/8f/8f2d4aed3ecef4dc-BBA-Banking-Finance-and-Insurance-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BBA Banking Finance and Insurance — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/71/710ff56de597ff3b-BBA-Business-Analytics-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BBA Business Analytics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ca/cacf12869d17be44-BBA-Digital-Marketing-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BBA Digital Marketing — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/83/833591bbabc76b1a-BBA-Entrepreneurship-and-Family-Business-Management-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BBA Entrepreneurship and Family Business Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/92/925eba5e55295334-BBA-Global-Business-and-Management-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BBA Global Business and Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/60/60e3c556aab8522c-BBA-Global-Marketing-and-Event-Management-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BBA Global Marketing and Event Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/6f/6f9a56337326d76f-BBA-Hospitality-and-Hotel-Administration-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BBA Hospitality and Hotel Administration — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/63/631239d89e1adc97-BBA-International-Business-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BBA International Business — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/3c/3c2187c747c9ead5-BBA-Sales-and-Marketing-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BBA Sales and Marketing — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/e9/e908e0a56bfd4b2f-Integrated-Business-Management-BBA-MBA-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>Integrated BBA–MBA (Business Management) — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/7e/7ec5c675e266207e-MBA-Banking-and-Financial-Services-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA Banking and Financial Services — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/43/43fdccce11cf5027-MBA-Business-Analytics-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA Business Analytics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/8d/8d2e1b8699b9e53b-MBA-Digital-Marketing-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA Digital Marketing — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/bc/bc0455453d3e7b94-MBA-Dual-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>MBA Dual — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/c0/c021b16bc2b2f5dc-MBA-Finance-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA Finance — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/92/925e05376f498e2a-MBA-healthcare-management-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>MBA healthcare management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/b3/b35028e1cd7f0f42-MBA-Human-Resource-Management-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA Human Resource Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/18/18d099e15bf707ad-MBA-International-Business-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA International Business — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/dd/ddeb7eface32084c-MBA-Marketing-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MBA Marketing — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/b5/b5dfb85e15fba4ce-MBA-Operations-and-Supply-Chain-Management-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>MBA Operations and Supply Chain Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-economics-and-commerce">
+        <h3 id="sch-economics-and-commerce"><a href="/academics/economics-and-commerce/">School of Economics &amp; Commerce</a> <span class="stud-school__n">7</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/34/34f9aa84e90096b7-BCom-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Com — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f7/f75576b37454454a-BCom-Advanced-Accounting-and-Auditing-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Com Advanced Accounting and Auditing — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/4d/4d35e87c32345fb1-BCom-Financial-Analysis-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Com Financial Analysis — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/9f/9f5b7bb336efb0ef-BCom-FinTech-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Com FinTech — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/96/968908806804ea32-BCom-International-Accounting-and-Finance-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Com International Accounting and Finance — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/74/744f90fbbfb1856d-BSc-Economics-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>B.Sc Economics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ac/ac90e7a37e166924-MSc-Economics-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Economics — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-law">
+        <h3 id="sch-law"><a href="/academics/law/">School of Law</a> <span class="stud-school__n">4</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/b0/b069c44b871d938b-BA-LLB-Hons-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BA LLB Hons — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/64/649e597afa8645f0-BBA-LLB-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BBA LLB — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/15/15e703df73c13c72-LLB-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>LLB — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/4c/4cbd7606890a5168-LLM-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>LLM — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-design">
+        <h3 id="sch-design"><a href="/academics/design/">School of Design</a> <span class="stud-school__n">9</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/26/266c4eff68b63124-BDes-Animation-and-VFX-Design-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Des Animation and VFX Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f2/f2fe48f72ebe800b-BDes-Fashion-and-Apparel-Design-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Des Fashion and Apparel Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/aa/aa577955e1b808c0-BDes-Interior-and-Space-Design-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Des Interior and Space Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/86/86d716e6e30df0f9-Revised-BDes-Product-Design-course-structure-v2-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Des Product Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/7c/7cdd5b375e1c8039-BDes-User-Experience-Design-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Des User Experience Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/4b/4b1618e695c09b11-BDes-Visual-Communication-Design-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Des Visual Communication Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/39/397f4a99d9f09136-BFA-Applied-Arts-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>BFA Applied Arts — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/a7/a7be8936f417d0a3-MDes-User-Experience-Design-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Des User Experience Design — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/08/08c8c879a6ade666-MFA-Applied-Arts-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>MFA Applied Arts — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-liberal-arts-humanities">
+        <h3 id="sch-liberal-arts-humanities"><a href="/academics/liberal-arts-humanities/">School of Liberal Arts &amp; Consciousness</a> <span class="stud-school__n">9</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/c0/c04b382ae6797d01-BA-Filmmaking-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>BA Filmmaking — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/d9/d9087042cb1e27bd-BA-Media-and-Communication-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BA Media and Communication — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/96/96a7b2725df9aa19-BA-Photography-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>BA Photography — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/88/880fa34da27b6f0d-Bachelor-of-Education-Course-Structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>Bachelor of Education — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/46/460746c2fac5872d-MA-English-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>MA English — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/cd/cd4e459560c90263-MA-Media-&amp;-Communication-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>MA Media &amp; Communication — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/18/18c67b3b8a2d82e7-MA-Peace-and-Conflict-Management-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MA Peace and Conflict Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/50/50723363eed5bd76-MA-Psychology-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>MA Psychology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/a0/a02b71efcde1bf7c-Master-of-Education-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>Master of Education — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-health-science-technologies">
+        <h3 id="sch-health-science-technologies"><a href="/academics/health-science-technologies/">School of Health Sciences &amp; Technology</a> <span class="stud-school__n">11</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/e0/e0185075e88a99aa-BPharm-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>B.Pharm — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/85/85b73ccf83bd5e24-Master-of-Pharmacy-Pharmaceutics-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>Master of Pharmacy (Pharmaceutics) — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/56/56452e725fe6eb76-Master-of-Public-Health-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>Master of Public Health — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/6f/6ffeedbe5abbd896-MPharm-Pharmaceutical-Analysis-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Pharm Pharmaceutical Analysis — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f8/f8eec5eee83158af-MPharm-Pharmaceutical-Chemistry-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Pharm Pharmaceutical Chemistry — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/63/6372f5b2eb72ece8-MPharm-Pharmaceutical-Quality-Assurance-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Pharm Pharmaceutical Quality Assurance — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/c1/c1983693f438daa0-MPharm-Pharmacognosy-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Pharm Pharmacognosy — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/3a/3a2ce49059f7a5a6-MPharm-Pharmacology-course-structure-v1-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Pharm Pharmacology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/55/55766179bb70048a-MSc-Clinical-Psychology-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Clinical Psychology — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/3f/3f59f01b221c20e8-MSc-Yoga-and-Meditation-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>M.Sc Yoga and Meditation — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/33/3329823742920f00-MTech-Medical-Devices-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Medical Devices — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-construction-engineering-management">
+        <h3 id="sch-construction-engineering-management"><a href="/academics/construction-engineering-management/">School of Construction Engineering &amp; Management</a> <span class="stud-school__n">1</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/43/4382c7486eb70e1b-MTech-Civil-Engineering-Construction-Engineering-and-Management-course-structure-2026.pdf">
+          <span class="stud-doc__txt"><strong>M.Tech Civil Engineering Construction Engineering and Management — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-government">
+        <h3 id="sch-government"><a href="/academics/government/">MIT School of Government</a> <span class="stud-school__n">1</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/a0/a0c354151e92ddd2-MA-in-Political-Leadership-and-Government-course-structure-2025.pdf">
+          <span class="stud-doc__txt"><strong>MA Political Leadership &amp; Government — Course structure</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <section class="stud-school" aria-labelledby="sch-doctoral">
+        <h3 id="sch-doctoral">Doctoral &amp; Ph.D. entrance syllabi <span class="stud-school__n">6</span></h3>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/12/12ec91814b438436-PhD-Bioengineering-EntranceTest-Syllabus.pdf">
+          <span class="stud-doc__txt"><strong>Ph.D. entrance syllabus — Bioengineering</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/01/01e173d62bff1fd6-PhD_Entrance_Test_Syllabus_EVS.pdf">
+          <span class="stud-doc__txt"><strong>Ph.D. entrance syllabus — Environmental Science</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/ad/ad7a91e13c4985db-PhD-entrance-syllabus-management.pdf">
+          <span class="stud-doc__txt"><strong>Ph.D. entrance syllabus — Management</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/2e/2e1a0a4337e05a23-Phd-Entrance-Syllabus-MITWPU-Pharmaceutical-Sciences.pdf">
+          <span class="stud-doc__txt"><strong>Ph.D. entrance syllabus — Pharmaceutical Sciences</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/99/99af156092d1681f-PhD-Entrance-Test-PET-Syllabus.pdf">
+          <span class="stud-doc__txt"><strong>PhD Entrance Test (PET) — general syllabus</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/e9/e99fd2ebf8c1475f-Syllabus_PhD_Entrance_Statistics.pdf">
+          <span class="stud-doc__txt"><strong>Ph.D. entrance syllabus — Statistics</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+      <p class="stud-note"><strong>More course material is being added.</strong> Additional programmes — and course material for the Hafeez Contractor School of Architecture and the Ram Charan School of Leadership — are being compiled and will appear here as they are supplied. If a programme you are looking for is not yet listed, check your school page under <a href="/academics/">Academics</a>.</p>
+    </section>
+
+    <section class="stud-section" id="ordinances" aria-labelledby="ordinances-h">
+      <h2 id="ordinances-h">Academic ordinances &amp; regulations</h2>
+      <p class="stud-section__lead">The examination ordinances set out the rules that govern assessment, grading, and academic conduct. The full ordinance library is on the Academics site.</p>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/b3/b3ea0184b5428185-Examination-Ordinances-2017.pdf">
+          <span class="stud-doc__txt"><strong>Examination Ordinances 2017</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f0/f0d1aa2fd8b92251-Examination_Ordinances_2020.pdf">
+          <span class="stud-doc__txt"><strong>Examination Ordinances 2020</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f5/f5821d523be7c147-Examination-Ordinance-2022.pdf">
+          <span class="stud-doc__txt"><strong>Examination Ordinance 2022</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      <ul class="stud-links">
+        <li><a href="/academics/ordinances/">All ordinances &amp; regulations &rarr;</a></li>
+        <li><a href="/academics/evaluation-criteria/">Evaluation criteria</a></li>
+        <li><a href="/academics/mode-of-exams/">Mode of examinations</a></li>
+      </ul>
+    </section>
+
+    <section class="stud-section" id="exams" aria-labelledby="exams-h">
+      <h2 id="exams-h">Exams &amp; schedules</h2>
+      <p class="stud-section__lead">Current examination timetables, the activity schedule, and the academic calendar.</p>
+      <ul class="stud-links">
+        <li><a href="/academics/exam-timetable/">Exam timetable</a></li>
+        <li><a href="/academics/exam-activity-schedule/">Exam activity schedule</a></li>
+        <li><a href="/academics/academic-calender/">Academic calendar</a></li>
+        <li><a href="/academics/list-of-holidays/">List of holidays</a></li>
+        <li><a href="/academics/results/">Results</a></li>
+      </ul>
+    </section>
+
+    <section class="stud-section" id="handbooks" aria-labelledby="handbooks-h">
+      <h2 id="handbooks-h">Handbooks &amp; manuals</h2>
+      <p class="stud-section__lead">Practical guides for life on campus, in the labs, and online.</p>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/22/228dae7ced69f095-Hostel-Manual-2026-27-V6.pdf">
+          <span class="stud-doc__txt"><strong>Hostel Manual 2026–27</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/c2/c268af3991e96892-Students-Club-Handbook-2024-25.pdf">
+          <span class="stud-doc__txt"><strong>Students&#x27; Club Handbook 2024–25</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/60/60c33ce26b1b2a07-RESEARCH-MANUAL-2023-24-1.pdf">
+          <span class="stud-doc__txt"><strong>Research Manual 2023–24</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/89/89f9dc1cebe98258-A_Handbook_on_Basics_of_Cyber_Hygiene.pdf">
+          <span class="stud-doc__txt"><strong>A Handbook on the Basics of Cyber Hygiene</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+    </section>
+
+    <section class="stud-section" id="support" aria-labelledby="support-h">
+      <h2 id="support-h">Student support &amp; policies</h2>
+      <p class="stud-section__lead">The offices that help you, and the policies that set your rights and responsibilities as a student.</p>
+        <div class="stud-docgrid">
+        <a class="stud-doc" href="/media/mitwpu-public/documents/6a/6af638f0e0c84009-Student&#x27;s-Code-of-conduct.pdf">
+          <span class="stud-doc__txt"><strong>Student Code of Conduct</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/f4/f4af6873e9eee36e-Admission-Policy-for-AY-2026-2027.pdf">
+          <span class="stud-doc__txt"><strong>Admission Policy — AY 2026–27</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/cd/cdaf67c875938f21-Anti-Ragging-Committee-2025-2027.pdf">
+          <span class="stud-doc__txt"><strong>Anti-Ragging Committee 2025–27</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="stud-doc" href="/media/mitwpu-public/documents/fd/fd22e5c62bfd7f07-Anti-Ragging-Squad.pdf">
+          <span class="stud-doc__txt"><strong>Anti-Ragging Squad</strong></span>
+          <span class="stud-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      <ul class="stud-links">
+        <li><a href="/student-information/">Student information</a></li>
+        <li><a href="/academics/student-assistance/">Student assistance</a></li>
+        <li><a href="/academics/student-grievance/">Student grievance</a></li>
+        <li><a href="/life-wpu/student-affairs/">Student affairs</a></li>
+        <li><a href="/scholarships/">Scholarships</a></li>
+        <li><a href="/student-loans/">Student loans</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>MIT World Peace University</strong> &middot; Pune, India</p>
+      <p>Looking for something else? Try <a href="/academics/">Academics</a>, <a href="/search/">Search</a>, or the <a href="/intranet/">Intranet</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

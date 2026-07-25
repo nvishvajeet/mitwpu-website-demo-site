@@ -1,0 +1,354 @@
+<!doctype html>
+<!-- Curated source: copied into the generated public overlay at build time. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="The faculty and staff front door at MIT-WPU: teaching and academic-calendar resources, the people directory, research support and facilities, administration and HR, governance and IQAC, conduct and anti-ragging — plus the intranet for role services behind sign-in.">
+  <link rel="canonical" href="https://mitwpu.edu.in/faculty-staff/">
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <link rel="stylesheet" href="../_assets/public-surface.css?v=20260725-global-nav-5">
+  <script src="../_assets/theme.js?v=20260725-global-nav-5" defer></script>
+  <style>
+    /* ---- Faculty & staff hub: self-contained, reuses public-surface tokens ---- */
+    .fac-shell { padding-top: clamp(1.6rem, 4vw, 2.6rem); }
+    .fac-intro { max-width: 64ch; }
+    .fac-toc {
+      display: flex; flex-wrap: wrap; gap: .5rem .7rem; margin: 1.6rem 0 0; padding: 0; list-style: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .fac-toc a {
+      display: inline-block; padding: .4rem .8rem; border: 1px solid var(--line);
+      border-radius: 999px; background: var(--surface); color: var(--brand);
+      font-size: .82rem; font-weight: 650;
+    }
+    .fac-toc a:hover { border-color: var(--brand); color: var(--brand-dark); }
+
+    /* Prominent sign-in gateway callout */
+    .fac-signin {
+      margin-top: clamp(1.8rem, 4vw, 2.6rem); padding: clamp(1.1rem, 3vw, 1.6rem);
+      background: var(--surface); border: 1px solid var(--line-strong);
+      border-left: 4px solid var(--brand); border-radius: .4rem;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.4rem;
+    }
+    .fac-signin__body { flex: 1 1 22rem; min-width: 0; }
+    .fac-signin__body h2 {
+      margin: 0 0 .4rem; font-size: clamp(1.1rem, 2.4vw, 1.35rem); color: var(--heading);
+    }
+    .fac-signin__body p { margin: 0; color: var(--copy); font-size: .95rem; max-width: 60ch; }
+    .fac-signin__cta {
+      flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 2.9rem;
+      padding: .65rem 1.3rem; background: var(--brand); border: 1px solid var(--brand);
+      border-radius: .35rem; color: #fff; font-weight: 700; font-size: .92rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .fac-signin__cta:hover { background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; }
+    .fac-signin__cta:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+    .fac-section { margin-top: clamp(2.6rem, 6vw, 4rem); scroll-margin-top: 5rem; }
+    .fac-section > h2 {
+      margin: 0 0 .3rem; padding-bottom: .5rem; border-bottom: 2px solid var(--accent);
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem;
+    }
+    .fac-section__lead { margin: .7rem 0 1.4rem; max-width: 68ch; color: var(--copy); }
+
+    .fac-sub { margin-top: 1.9rem; }
+    .fac-sub > h3 {
+      margin: 0 0 .8rem; font-size: clamp(1.12rem, 2.4vw, 1.35rem);
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem; color: var(--heading);
+    }
+    .fac-sub__note { margin: 0 0 1rem; max-width: 66ch; color: var(--copy); font-size: .92rem; }
+
+    .fac-docgrid {
+      display: grid; gap: .7rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    }
+    .fac-doc {
+      display: flex; align-items: center; gap: .8rem; min-height: 3.4rem;
+      padding: .7rem .9rem; background: var(--surface);
+      border: 1px solid var(--line); border-left: 3px solid var(--brand);
+      border-radius: .3rem; color: var(--ink); overflow-wrap: anywhere;
+    }
+    .fac-doc:hover { border-color: var(--brand); border-left-color: var(--accent); color: var(--ink); background: var(--paper); }
+    .fac-doc:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    .fac-doc__txt { flex: 1 1 auto; min-width: 0; }
+    .fac-doc__txt strong {
+      display: block; color: var(--heading); font-size: .96rem; line-height: 1.3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 640;
+    }
+    .fac-doc__txt small { display: block; margin-top: .18rem; color: var(--muted); font-size: .8rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .fac-doc__tag {
+      flex: 0 0 auto; align-self: center; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .66rem; font-weight: 800; letter-spacing: .06em; color: var(--brand);
+      background: var(--paper); border: 1px solid var(--line-strong); border-radius: .25rem; padding: .2rem .4rem;
+    }
+
+    .fac-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+    .fac-links a {
+      display: inline-flex; align-items: center; min-height: 2.75rem; padding: .55rem .9rem;
+      background: var(--surface); border: 1px solid var(--line); border-radius: .3rem;
+      color: var(--brand); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .88rem; font-weight: 650;
+    }
+    .fac-links a:hover { border-color: var(--brand); color: var(--brand-dark); }
+
+    .fac-note {
+      margin-top: 1.5rem; padding: .95rem 1.15rem; background: var(--surface);
+      border: 1px dashed var(--line-strong); border-left: 4px solid var(--accent); border-radius: .3rem;
+      color: var(--copy); font-size: .92rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .fac-note strong { color: var(--heading); }
+    .fac-note ul { margin: .6rem 0 0; padding-left: 1.15rem; }
+    .fac-note li { margin: .3rem 0; }
+
+    .fac-behind {
+      display: inline-block; margin-left: .1rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .68rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
+      color: var(--muted); background: var(--paper); border: 1px solid var(--line-strong);
+      border-radius: .25rem; padding: .12rem .45rem; vertical-align: middle;
+    }
+
+    @media (max-width: 40rem) {
+      .fac-docgrid { grid-template-columns: 1fr; }
+      .fac-signin__cta { flex-basis: 100%; justify-content: center; }
+    }
+  </style>
+  <title>Faculty &amp; Staff | MIT-WPU</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260724-brand-2">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=20260724-brand-2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260724-brand-2">
+  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260725-uniform-nav-3" data-global-masthead-style>
+  <link rel="stylesheet" href="/demo-assets/readability.css?v=20260724-1" data-global-readability-style>
+  <meta property="og:title" content="Faculty &amp; Staff | MIT-WPU" data-release-generated="social">
+  <meta property="og:description" content="The faculty and staff front door at MIT-WPU: teaching and academic-calendar resources, the people directory, research support and facilities, administration and HR, governance and IQAC, conduct and anti-ragging — plus the intranet for role services behind sign-in." data-release-generated="social">
+  <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <meta property="og:type" content="website" data-release-generated="social">
+  <meta property="og:url" content="https://mitwpu.edu.in/faculty-staff/" data-release-generated="social">
+  <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
+  <meta name="twitter:title" content="Faculty &amp; Staff | MIT-WPU" data-release-generated="social">
+  <meta name="twitter:description" content="The faculty and staff front door at MIT-WPU: teaching and academic-calendar resources, the people directory, research support and facilities, administration and HR, governance and IQAC, conduct and anti-ragging — plus the intranet for role services behind sign-in." data-release-generated="social">
+  <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.edu.in/faculty-staff/#webpage","name":"Faculty & Staff | MIT-WPU","url":"https://mitwpu.edu.in/faculty-staff/","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"The faculty and staff front door at MIT-WPU: teaching and academic-calendar resources, the people directory, research support and facilities, administration and HR, governance and IQAC, conduct and anti-ragging — plus the intranet for role services behind sign-in."}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="global-masthead site-header institution-bar" data-global-masthead><div class="global-masthead__inner institution-inner"><div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div><button class="masthead-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="global-primary-nav" aria-label="Open menu"><span class="masthead-nav-toggle__bars" aria-hidden="true"></span></button><nav class="global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/about/">About</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-about" aria-label="About submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-about"><a href="/about-us/founder/">Founder President</a><a href="/about-us/executive-president/">Executive President</a><a href="/about-us/executive-director/">Executive Director</a><a href="/about-us/leadership-and-governance/">Leadership and governance</a><a href="/about-us/history-legacy/">History and legacy</a><a href="/about-us/world-peace-dome/">World Peace Dome</a><a href="/about-us/ranking-accreditation/">Rankings and accreditation</a><a href="/about-us/social-initiatives/">Social initiatives</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/academics/">Academics</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-academics" aria-label="Academics submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-academics"><a href="/academics/">Schools and departments</a><a href="/programmes/">Programmes</a><a href="/academics/academic-calender/">Academic calendar</a><a href="/academics/exam-timetable/">Exam timetable</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/admissions/">Admissions</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-admissions" aria-label="Admissions submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-admissions"><a href="/admissions/">Admissions overview</a><a href="/programmes/">Programmes</a><a href="/application-process/">Application process</a><a href="/mit-wpu-cet-2026/">MIT-WPU CET 2026</a><a href="/scholarships/">Scholarships</a><a href="/placements/">Placements</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/research/">Research</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-research" aria-label="Research submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-research"><a href="/research/">Research overview</a><a href="/facilities/">Central Research Facility</a><a href="/groups/">Research groups</a><a href="/research/research-areas/">Research areas</a><a href="/research/centres-of-excellence/">Centres of excellence</a><a href="/research/sponsored-research/">Sponsored research</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/people/" aria-current="page">People</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-people" aria-label="People submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-people"><a href="/people/">People directory</a><a href="/leadership/">Leadership directory</a><a href="/about-us/administrative-offices/">Administrative offices</a><a href="/about-us/leadership-and-governance/">Leadership and governance</a><a href="/about-us/iqac/">Internal Quality Assurance Cell</a></div></div><div class="nav-item nav-item--menu"><a class="nav-item__top" href="/life-at-mit-wpu/">Campus</a><button class="nav-item__disclosure" type="button" aria-expanded="false" aria-controls="navmenu-campus" aria-label="Campus submenu"><span aria-hidden="true"></span></button><div class="nav-menu" id="navmenu-campus"><a href="/life-at-mit-wpu/">Campus life</a><a href="/life-wpu/library/">Knowledge Resource Centre</a><a href="/life-wpu/hostel-facilities/">Hostel facilities</a><a href="/life-wpu/sports/">Sports</a><a href="/life-wpu/medical-facilities/">Medical facilities</a><a href="/life-wpu/student-affairs/">Student welfare</a></div></div><a href="/search/">Search</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false" title="Switch colour theme"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button></nav></div></header><header class="site-header" data-legacy-masthead>
+    <div class="site-header__inner">
+      <a class="wordmark" href="/">MIT World Peace University</a>
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/academics/">Academics</a>
+          <a href="/admissions/">Admissions</a>
+          <a href="/research/">Research</a>
+          <a href="/people/">People</a>
+          <a href="/life-at-mit-wpu/">Campus</a>
+          <a href="/search/">Search</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme" aria-pressed="false">
+          <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+          <span class="switch-thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page-shell fac-shell">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">MIT-WPU</a> <span aria-hidden="true">/</span> <span aria-current="page">Faculty &amp; Staff</span>
+    </nav>
+
+    <div class="hero">
+      <p class="eyebrow">For faculty &amp; staff</p>
+      <h1>Faculty &amp; staff</h1>
+      <p class="lede fac-intro">One front door for the people who run the university. Teaching and the academic calendar, the people directory, research support and facilities, administration and human resources, governance and quality, and the conduct and safety rules that apply to everyone. Day-to-day role services — pay, leave, attendance, and teaching tools — live behind institutional sign-in, and are gathered on the intranet.</p>
+      <ul class="fac-toc">
+        <li><a href="#faculty">For faculty</a></li>
+        <li><a href="#staff">For staff</a></li>
+        <li><a href="#governance">Governance &amp; quality</a></li>
+        <li><a href="#conduct">Conduct &amp; safety</a></li>
+      </ul>
+    </div>
+
+    <div class="fac-signin">
+      <div class="fac-signin__body">
+        <h2>Sign in for your role services</h2>
+        <p>Payroll and pay slips, leave and attendance, the learning-management and teaching tools, class timetables, reimbursements, and university email are available after institutional sign-in. Sign in once, then see the services available to your role.</p>
+      </div>
+      <a class="fac-signin__cta" href="/intranet/">Go to the intranet &rarr;</a>
+    </div>
+
+    <section class="fac-section" id="faculty" aria-labelledby="faculty-h">
+      <h2 id="faculty-h">For faculty</h2>
+      <p class="fac-section__lead">Teaching, examinations, colleagues, and research — the material and offices you draw on across a semester. Assessment and grading are governed by the examination ordinances; grant, IP, and facility support sits under Research.</p>
+
+      <section class="fac-sub" aria-labelledby="fac-teaching">
+        <h3 id="fac-teaching">Teaching &amp; academic operations</h3>
+        <p class="fac-sub__note">The academic calendar and examination schedules that structure the teaching year, alongside the ordinances and criteria that govern assessment.</p>
+        <ul class="fac-links">
+          <li><a href="/academics/academic-calender/">Academic calendar</a></li>
+          <li><a href="/academics/exam-timetable/">Exam timetable</a></li>
+          <li><a href="/academics/exam-activity-schedule/">Exam activity schedule</a></li>
+          <li><a href="/academics/ordinances/">Examination ordinances</a></li>
+          <li><a href="/academics/evaluation-criteria/">Evaluation criteria</a></li>
+          <li><a href="/academics/mode-of-exams/">Mode of examinations</a></li>
+          <li><a href="/academics/list-of-holidays/">List of holidays</a></li>
+          <li><a href="/academics/">Schools &amp; departments</a></li>
+          <li><a href="/programmes/">Programmes</a></li>
+        </ul>
+      </section>
+
+      <section class="fac-sub" aria-labelledby="fac-directories">
+        <h3 id="fac-directories">Colleagues &amp; directories</h3>
+        <ul class="fac-links">
+          <li><a href="/people/">People directory</a></li>
+          <li><a href="/leadership/">University leadership</a></li>
+          <li><a href="/about-us/faculty-achievements/">Faculty achievements</a></li>
+        </ul>
+      </section>
+
+      <section class="fac-sub" aria-labelledby="fac-research">
+        <h3 id="fac-research">Research support &amp; facilities</h3>
+        <p class="fac-sub__note">Where to find sponsored-research and IP support, the university's research areas and centres, the research groups, and the Central Research Facility. The published research and innovation policies are below.</p>
+        <ul class="fac-links">
+          <li><a href="/research/">Research overview</a></li>
+          <li><a href="/research/sponsored-research/">Sponsored research</a></li>
+          <li><a href="/research/research-areas/">Research areas</a></li>
+          <li><a href="/research/centres-of-excellence/">Centres of excellence</a></li>
+          <li><a href="/research/ipr/">Intellectual property (IPR)</a></li>
+          <li><a href="/groups/">Research groups</a></li>
+          <li><a href="/facilities/">Central Research Facility</a></li>
+        </ul>
+        <div class="fac-docgrid" style="margin-top:1rem">
+        <a class="fac-doc" href="/media/mitwpu-public/documents/d9/d960959691319aa6-MIT-WPU-Innovation-and-Start-up-Policy.pdf">
+          <span class="fac-doc__txt"><strong>Innovation &amp; Start-up Policy</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/06/06ee74893b54c5f4-Faculty-Publication-Research-Papers-February-2026.pdf">
+          <span class="fac-doc__txt"><strong>Faculty publications — research papers</strong><small>February 2026</small></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+
+      <section class="fac-sub" aria-labelledby="fac-recruit">
+        <h3 id="fac-recruit">Recruitment</h3>
+        <p class="fac-sub__note">Open teaching and research positions are listed on the university careers page.</p>
+        <ul class="fac-links">
+          <li><a href="/career/">Careers &amp; faculty openings</a></li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="fac-section" id="staff" aria-labelledby="staff-h">
+      <h2 id="staff-h">For staff</h2>
+      <p class="fac-section__lead">The administrative offices that run the university and the employee-support bodies behind them. Most day-to-day HR transactions — leave, attendance, pay slips, reimbursements — are handled after sign-in on the intranet.</p>
+
+      <section class="fac-sub" aria-labelledby="staff-admin">
+        <h3 id="staff-admin">Administration</h3>
+        <p class="fac-sub__note">The administrative offices support governance, academics, admissions, examinations, human resources, student affairs, infrastructure, finance, international collaboration, and public communication.</p>
+        <ul class="fac-links">
+          <li><a href="/about-us/administrative-offices/">Administrative offices</a></li>
+          <li><a href="/about-us/leadership-and-governance/">Leadership &amp; governance</a></li>
+        </ul>
+      </section>
+
+      <section class="fac-sub" aria-labelledby="staff-hr">
+        <h3 id="staff-hr">Employee support</h3>
+        <p class="fac-sub__note">The statutory body for employee grievances. Personal HR records and requests are available after sign-in on the intranet.</p>
+        <div class="fac-docgrid">
+        <a class="fac-doc" href="/media/mitwpu-public/documents/30/300ca92e332e1065-Employee-grievance-redressal-committee.pdf">
+          <span class="fac-doc__txt"><strong>Employee Grievance Redressal Committee</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+        <ul class="fac-links" style="margin-top:1rem">
+          <li><a href="/career/">Careers &amp; staff openings</a></li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="fac-section" id="governance" aria-labelledby="governance-h">
+      <h2 id="governance-h">Governance &amp; quality</h2>
+      <p class="fac-section__lead">Quality assurance and the statutory committees that govern the university. Faculty and staff serve on and answer to these bodies.</p>
+      <ul class="fac-links">
+        <li><a href="/about-us/iqac/">Internal Quality Assurance Cell (IQAC)</a></li>
+        <li><a href="/about-us/leadership-and-governance/">Leadership &amp; governance</a></li>
+      </ul>
+
+      <section class="fac-sub" aria-labelledby="gov-committees">
+        <h3 id="gov-committees">Statutory committees</h3>
+        <p class="fac-sub__note">Constitution and membership of the university's standing committees, as published. The consolidated list links to each committee's notice.</p>
+        <div class="fac-docgrid">
+        <a class="fac-doc" href="/media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf">
+          <span class="fac-doc__txt"><strong>University committees — consolidated list</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/fa/fa642ed75dc06737-iqac-committee.pdf">
+          <span class="fac-doc__txt"><strong>IQAC Committee</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/94/94c2ad203f031a15-University-Discipline-Committee-2025.pdf">
+          <span class="fac-doc__txt"><strong>University Discipline Committee 2025</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/e5/e546d61f18417d96-Internal-complaints-committee.pdf">
+          <span class="fac-doc__txt"><strong>Internal Complaints Committee (PoSH)</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/48/48ac4c59e1ceee13-SC-ST-Committee.pdf">
+          <span class="fac-doc__txt"><strong>SC/ST Committee</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      </section>
+    </section>
+
+    <section class="fac-section" id="conduct" aria-labelledby="conduct-h">
+      <h2 id="conduct-h">Conduct, safety &amp; compliance</h2>
+      <p class="fac-section__lead">The policies and bodies that set expected conduct and keep the campus safe — binding on faculty, staff, and students alike.</p>
+        <div class="fac-docgrid">
+        <a class="fac-doc" href="/media/mitwpu-public/documents/30/30d4618c12f85654-Policy-Equality-and-promoting-diversity-MIT-WPU-Campus.pdf">
+          <span class="fac-doc__txt"><strong>Policy on Equality &amp; Promoting Diversity</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/6a/6af638f0e0c84009-Student&#x27;s-Code-of-conduct.pdf">
+          <span class="fac-doc__txt"><strong>Student Code of Conduct</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/cd/cdaf67c875938f21-Anti-Ragging-Committee-2025-2027.pdf">
+          <span class="fac-doc__txt"><strong>Anti-Ragging Committee 2025–27</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        <a class="fac-doc" href="/media/mitwpu-public/documents/fd/fd22e5c62bfd7f07-Anti-Ragging-Squad.pdf">
+          <span class="fac-doc__txt"><strong>Anti-Ragging Squad</strong></span>
+          <span class="fac-doc__tag" aria-hidden="true">PDF</span>
+        </a>
+        </div>
+      <ul class="fac-links" style="margin-top:1rem">
+        <li><a href="/about-us/national-ragging-prevention-programme/">National Ragging Prevention Programme</a></li>
+      </ul>
+    </section>
+
+    <p class="fac-note"><strong>Operator needs to supply.</strong> The following are not yet published on the public site and are noted rather than invented:
+      <ul>
+        <li>Faculty &amp; staff service rules / employee handbook — conditions of service, leave, promotion, and benefits.</li>
+        <li>An employee-specific code of conduct. Only the Student Code of Conduct is published today; the version above is labelled accordingly.</li>
+        <li>A dedicated prospective-faculty / recruitment landing. Openings currently route to the general <a href="/career/">Careers</a> page.</li>
+        <li>HR self-service endpoints — payroll, leave, attendance, and reimbursements — to wire into the <a href="/intranet/">intranet</a> once the signed-in service URLs are provided.</li>
+      </ul>
+    </p>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>MIT World Peace University</strong> &middot; Pune, India</p>
+      <p>Looking for something else? Try <a href="/people/">People</a>, <a href="/search/">Search</a>, or the <a href="/intranet/">Intranet</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

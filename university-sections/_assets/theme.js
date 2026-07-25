@@ -162,3 +162,84 @@
 
   updateButton();
 })();
+
+/* ------------------------------------------------------------------ *
+ * Global masthead dropdowns — standard hover-intent (added 2026-07-25)
+ * Opens a menu when the pointer enters the item, and closes it ~240ms
+ * after the pointer has left BOTH the trigger and its panel. The short
+ * close-delay is the conventional fix for the "diagonal gap" problem:
+ * moving from a narrow trigger into a wider panel (or briefly clipping a
+ * sibling) no longer slams the menu shut. Drives the existing `.is-open`
+ * class, so the CSS that already reveals `.nav-menu.is-open` does the
+ * showing. Desktop pointers only; touch/mobile keep the click accordion.
+ * Self-contained + idempotent so it is safe to load once per page.
+ * ------------------------------------------------------------------ */
+(function () {
+  function ready(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
+  ready(function () {
+    if (document.documentElement.hasAttribute("data-nav-hover-intent")) return;
+    document.documentElement.setAttribute("data-nav-hover-intent", "1");
+
+    var desktop = window.matchMedia("(min-width: 768px) and (pointer: fine)");
+    var items = Array.prototype.slice.call(
+      document.querySelectorAll("[data-global-masthead] .nav-item--menu")
+    );
+    if (!items.length) return;
+
+    var timers = new WeakMap();
+
+    function closeAll(except) {
+      items.forEach(function (it) {
+        if (it !== except) {
+          clearTimeout(timers.get(it));
+          it.classList.remove("is-open");
+        }
+      });
+    }
+
+    items.forEach(function (item) {
+      function open() {
+        if (!desktop.matches) return;      // mobile uses the click accordion
+        clearTimeout(timers.get(item));
+        closeAll(item);                    // one menu open at a time
+        item.classList.add("is-open");
+      }
+      function scheduleClose() {
+        if (!desktop.matches) return;
+        clearTimeout(timers.get(item));
+        timers.set(
+          item,
+          setTimeout(function () { item.classList.remove("is-open"); }, 240)
+        );
+      }
+      // Pointer: mouseleave does not fire while the pointer is over the
+      // panel (it is a DOM descendant), so the menu stays open over it;
+      // the 240ms delay covers the brief off-element transit in between.
+      item.addEventListener("mouseenter", open);
+      item.addEventListener("mouseleave", scheduleClose);
+      // Keyboard parity: focus opens, focus leaving the item closes.
+      item.addEventListener("focusin", open);
+      item.addEventListener("focusout", function (event) {
+        if (desktop.matches && !item.contains(event.relatedTarget)) {
+          item.classList.remove("is-open");
+        }
+      });
+    });
+
+    // Click outside the masthead, or Escape, dismisses any open menu.
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest("[data-global-masthead]")) closeAll(null);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeAll(null);
+    });
+    // Crossing below the desktop breakpoint clears desktop open-state so the
+    // mobile panel never inherits a stuck-open submenu.
+    desktop.addEventListener("change", function (event) {
+      if (!event.matches) closeAll(null);
+    });
+  });
+})();
