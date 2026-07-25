@@ -36846,5 +36846,55 @@
     "blocks": [],
     "links": [],
     "output": "sitemap/index.html"
+  },
+  {
+    "route": "/goa/about/world-peace-dome/",
+    "page_type": "about-detail",
+    "title": "World Peace Dome",
+    "description": "The World Peace Dome at Vishwarajbaug, Pune — a monument to the union of science and spirituality, and part of the founding MAEER / MIT-WPU vision WPU Goa shares.",
+    "source_url": "",
+    "source_raw_path": "",
+    "captured_at": "2026-07-23",
+    "lastmod": "",
+    "hero_image": null,
+    "blocks": [
+      {
+        "kind": "heading",
+        "text": "The world as one family",
+        "level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "The architecture",
+        "level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "The prayer hall and its painted sky",
+        "level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "The library below",
+        "level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "The Idols of Peace",
+        "level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "From spirituality to science",
+        "level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "The monument in photographs",
+        "level": 2
+      }
+    ],
+    "links": [],
+    "output": "about/world-peace-dome/index.html"
   }
 ]

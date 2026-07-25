@@ -264,9 +264,9 @@
     "status": "passed",
     "excluded_source_records": 24,
     "excluded_previous_routes": 24,
-    "public_records_checked": 164,
-    "search_records_checked": 162,
-    "html_files_checked": 164,
+    "public_records_checked": 165,
+    "search_records_checked": 163,
+    "html_files_checked": 165,
     "visible_feed_routes_checked": [
       "/goa/",
       "/goa/latest/",

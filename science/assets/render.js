@@ -81,6 +81,9 @@
   function renderHeader() {
     const target = document.getElementById("site-header");
     if (!target) return;
+    // The release builder places the shared university masthead inside this
+    // wrapper. Preserve it while refreshing the school-specific navigation.
+    const globalMasthead = target.querySelector("[data-global-masthead]");
     const schoolHref = page === "school" ? "index.html" : "../index.html";
     const demoHomeHref = page === "school" ? "../" : "../../";
     const brand = page === "school"
@@ -133,6 +136,9 @@
             <span class="context-current" aria-current="page">School of Science &amp; Environmental Studies</span>`}
         </div>
       </nav>`;
+    if (globalMasthead && typeof target.prepend === "function") {
+      target.prepend(globalMasthead);
+    }
   }
 
   function renderFooter() {

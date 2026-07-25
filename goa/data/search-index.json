@@ -1,6 +1,6 @@
 {
   "schema": "wpu-goa.search-index.v1",
-  "count": 162,
+  "count": 163,
   "records": [
     {
       "route": "/goa/",
@@ -1135,6 +1135,13 @@
       "description": "News and events in reverse chronological order. Older items remain searchable without competing with the current update.",
       "category": "Latest",
       "search_text": "latest from wpu goa news and events in reverse chronological order. older items remain searchable without competing with the current update. latest"
+    },
+    {
+      "route": "/goa/about/world-peace-dome/",
+      "title": "World Peace Dome",
+      "description": "The World Peace Dome at Vishwarajbaug, Pune — a monument to the union of science and spirituality, and part of the founding MAEER / MIT-WPU vision WPU Goa shares.",
+      "category": "About WPU Goa",
+      "search_text": "world peace dome the world peace dome at vishwarajbaug, pune — a monument to the union of science and spirituality, and part of the founding maeer / mit-wpu vision wpu goa shares. about wpu goa the world as one family the architecture the prayer hall and its painted sky the library below the idols of peace from spirituality to science the monument in photographs"
     }
   ]
 }

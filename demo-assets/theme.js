@@ -171,13 +171,21 @@
   installInstitutionalLockup();
   installInstitutionalNavigation();
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function initPage() {
     applyTheme(preferredTheme());
     document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
       button.addEventListener("click", toggleTheme);
     });
     initMobileNav();
-  });
+  }
+
+  // Some pages load this shared file late while others defer it from <head>.
+  // Initialise correctly in both cases so the same masthead always behaves alike.
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPage, { once: true });
+  } else {
+    initPage();
+  }
 
   function followDeviceTheme(event) {
     if (!storedTheme()) applyTheme(event.matches ? "dark" : "light");
