@@ -2,7 +2,7 @@
   "schema_version": 1,
   "title": "MIT-WPU delivery portal",
   "subtitle": "All workstreams, planned in waves. Agents advance items as they land.",
-  "updated_at": "2026-07-25T19:22+02:00",
+  "updated_at": "2026-07-25T19:24+02:00",
   "note": "Public-safe delivery metadata only.",
   "states": {
     "done": "Complete",
@@ -403,9 +403,10 @@
           "owner": "codex",
           "note": "Accepted on the Mini: two synthetic users, XRD and Raman resources, two future reservations, locked bootstrap, security probe, protected backup, isolated restore, and healthy restart.",
           "evidence": "https://catalyst.vishwanathgrid.org/status/",
-          "project": "Research platform",
+          "project": "Catalyst",
           "started": "2026-07-24",
-          "due": "2026-08-05"
+          "due": "2026-08-05",
+          "completed": "2026-07-25"
         },
         {
           "id": "intranet",
@@ -431,12 +432,13 @@
         {
           "id": "catalyst-helpdesk",
           "title": "Facilities helpdesk and service tickets",
-          "state": "active",
+          "state": "done",
           "owner": "codex",
           "project": "Catalyst",
-          "note": "Fail-closed scheduler check d92f0b0 passed 270 tests and is on both remotes; the final exact Mini probe is running.",
+          "note": "Accepted on the Mini at d92f0b0: pinned applications, healthy database and Redis, two workers, active scheduler, loopback-only frontend, and closed public route.",
           "started": "2026-07-24",
-          "due": "2026-08-05"
+          "due": "2026-08-05",
+          "completed": "2026-07-25"
         },
         {
           "id": "catalyst-projects",
