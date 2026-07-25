@@ -1,11 +1,11 @@
 {
-  "percentage": 88,
+  "percentage": 96,
   "schema_version": 2,
   "project": "MIT-WPU Pune + WPU Goa public-web migration",
   "lane": "multi-root-crawl-and-indexing",
-  "phase": "Reconcile remaining dependencies, rerun the exact crawl, then pass the release gate",
-  "updated_at": "25 July 2026, 18:40 CEST",
-  "eta": "60–90 minutes for the current code and validation cycle",
+  "phase": "Run the final full test gate, checkpoint the result, and synchronize both remotes",
+  "updated_at": "25 July 2026, 18:48 CEST",
+  "eta": "45–60 minutes for the final tests, checkpoint, and push",
   "git_checkpoint": "dc8fab82b",
   "git_checkpoint_label": "Latest validated crawl-lane checkpoint",
   "graph_nodes": 8793,
@@ -30,23 +30,23 @@
     {
       "name": "Google indexing and dual-origin release policy",
       "weight": 20,
-      "percentage": 95,
-      "state": "Validation",
-      "detail": "Separate Pune and Goa canonicals, sitemaps, robots files, compatibility redirects, and Search Console runbook are in final verification."
+      "percentage": 100,
+      "state": "Complete",
+      "detail": "Separate Pune and Goa canonicals, sitemaps, robots files, compatibility redirects, and Search Console runbook pass exact-artifact verification."
     },
     {
       "name": "Dependency and source-data reconciliation",
       "weight": 20,
-      "percentage": 78,
-      "state": "Active",
-      "detail": "Safe route fixes are staged; 44 linked Goa PDFs are proven absent from the scraped source data."
+      "percentage": 100,
+      "state": "Complete",
+      "detail": "The corrected graph has zero broken dependencies, sitemap omissions, or orphans; 44 absent Goa PDFs are retained as unavailable evidence."
     },
     {
       "name": "Release gates, checkpoint, and dual push",
       "weight": 15,
-      "percentage": 56,
+      "percentage": 70,
       "state": "Active",
-      "detail": "Final exact-artifact crawl, unchanged second pass, full test gate, status checkpoint, and both remotes remain."
+      "detail": "Both exact-artifact crawls pass with the same digest and zero changes; the full test gate, status checkpoint, and both remotes remain."
     }
   ],
   "completed": [
