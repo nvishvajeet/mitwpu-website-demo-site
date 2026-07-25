@@ -1,0 +1,37 @@
+.privacy-embed-consent {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
+  place-content: center;
+  gap: .6rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 0;
+  color: #fff;
+  background: #081118;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.privacy-embed-consent:hover,
+.privacy-embed-consent:focus-visible {
+  background: #122a3a;
+}
+
+.privacy-embed-consent:focus-visible {
+  outline: 3px solid #f3be34;
+  outline-offset: -5px;
+}
+
+.privacy-embed-consent__action {
+  font-size: clamp(1.1rem, 3vw, 1.45rem);
+  font-weight: 700;
+}
+
+.privacy-embed-consent__notice {
+  max-width: 38rem;
+  color: #d6e2ec;
+  font-size: .9rem;
+  line-height: 1.5;
+}

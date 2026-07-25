@@ -1,0 +1,15 @@
+# MIT World Peace University
+
+> Official public academic and research information. This file is a discovery aid, not permission to train models or bypass robots.txt, authentication, or usage controls.
+
+## Public sections
+
+- [Home](https://mitwpu.vishwanathgrid.org/)
+- [Academics](https://mitwpu.vishwanathgrid.org/academics/)
+- [Programmes](https://mitwpu.vishwanathgrid.org/programmes/)
+- [Research](https://mitwpu.vishwanathgrid.org/research/)
+- [People](https://mitwpu.vishwanathgrid.org/people/)
+- [Admissions](https://mitwpu.vishwanathgrid.org/admissions/)
+- [News](https://mitwpu.vishwanathgrid.org/news/)
+- [Events](https://mitwpu.vishwanathgrid.org/events/)
+- [Sitemap](https://mitwpu.vishwanathgrid.org/sitemap.xml)

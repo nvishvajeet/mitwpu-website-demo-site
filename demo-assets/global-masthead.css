@@ -343,6 +343,19 @@
   display: flex !important;
 }
 
+/* Hover bridge: while the panel is open, a transparent strip spans its full
+   width up to the bar, so moving the pointer from the trigger down into the
+   panel (even diagonally toward a far sub-link) never crosses a dead gap that
+   would drop :hover and close the menu. Desktop-hover only; no mobile effect. */
+[data-global-masthead] .nav-item--menu:hover > .nav-menu::before,
+[data-global-masthead] .nav-item--menu:focus-within > .nav-menu::before {
+  content: "" !important;
+  position: absolute !important;
+  inset-block-end: 100% !important;
+  inset-inline: 0 !important;
+  block-size: 18px !important;
+}
+
 [data-global-masthead] .nav-item--menu:hover .nav-item__disclosure > span,
 [data-global-masthead] .nav-item--menu:focus-within .nav-item__disclosure > span,
 [data-global-masthead] .nav-item--menu.is-open .nav-item__disclosure > span {

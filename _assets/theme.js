@@ -129,14 +129,31 @@
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     };
+    const setSubmenuOpen = (button, open) => {
+      const item = button.closest(".nav-item--menu");
+      if (!item) return;
+      item.classList.toggle("is-open", open);
+      button.setAttribute("aria-expanded", String(open));
+    };
+    const closeSubmenus = (except) => {
+      nav.querySelectorAll(".nav-item__disclosure").forEach((button) => {
+        if (button !== except) setSubmenuOpen(button, false);
+      });
+    };
     toggle.addEventListener("click", () => {
       setOpen(!nav.classList.contains("is-open"));
     });
     nav.addEventListener("click", (event) => {
-      if (event.target.closest("a")) setOpen(false);
+      if (event.target.closest("a")) {
+        setOpen(false);
+        closeSubmenus();
+      }
     });
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        closeSubmenus();
+      }
     });
     document.addEventListener("click", (event) => {
       if (
@@ -145,6 +162,7 @@
       ) {
         setOpen(false);
       }
+      if (!event.target.closest("[data-global-masthead]")) closeSubmenus();
     });
     window.matchMedia("(min-width: 768px)").addEventListener("change", (event) => {
       if (event.matches) setOpen(false);
@@ -156,8 +174,96 @@
         const item = btn.closest(".nav-item--menu");
         if (!item) return;
         const open = !item.classList.contains("is-open");
-        item.classList.toggle("is-open", open);
-        btn.setAttribute("aria-expanded", String(open));
+        closeSubmenus(btn);
+        setSubmenuOpen(btn, open);
+      });
+    });
+  };
+
+  const initProgrammeDirectories = () => {
+    document.querySelectorAll("[data-programme-directory]").forEach((directory) => {
+      const search = directory.querySelector("[data-programme-search]");
+      const levelRoute = directory.querySelector("[data-programme-level-route]");
+      const discipline = directory.querySelector("[data-programme-discipline]");
+      const cards = Array.from(directory.querySelectorAll("[data-programme-card]"));
+      const count = directory.querySelector("[data-programme-count]");
+      const empty = directory.querySelector("[data-programme-empty]");
+      const selectedCount = directory.querySelector("[data-programme-selected-count]");
+      const compare = directory.querySelector("[data-programme-compare]");
+      const clear = directory.querySelector("[data-programme-clear]");
+      const comparison = directory.querySelector("[data-programme-comparison]");
+      const comparisonGrid = directory.querySelector("[data-programme-comparison-grid]");
+      if (!search || !discipline || cards.length === 0) return;
+
+      const update = () => {
+        const query = search.value.trim().toLocaleLowerCase();
+        const selectedDiscipline = discipline.value;
+        let visible = 0;
+        cards.forEach((card) => {
+          const matchesQuery = !query || card.dataset.search.includes(query);
+          const matchesDiscipline =
+            !selectedDiscipline || card.dataset.discipline === selectedDiscipline;
+          const show = matchesQuery && matchesDiscipline;
+          card.hidden = !show;
+          if (show) visible += 1;
+        });
+        if (count) count.textContent = `${visible} ${visible === 1 ? "programme" : "programmes"}`;
+        if (empty) empty.hidden = visible !== 0;
+      };
+
+      const selectedCards = () =>
+        cards.filter((card) => card.querySelector("[data-programme-select]")?.checked);
+
+      const updateSelection = () => {
+        const selected = selectedCards().length;
+        if (selectedCount) selectedCount.textContent = `${selected} selected`;
+        if (compare) compare.disabled = selected === 0;
+        if (clear) clear.disabled = selected === 0;
+        if (selected === 0 && comparison) comparison.hidden = true;
+      };
+
+      const renderComparison = () => {
+        if (!comparison || !comparisonGrid) return;
+        comparisonGrid.replaceChildren();
+        selectedCards().forEach((card) => {
+          const article = document.createElement("article");
+          const title = document.createElement("h3");
+          const facts = document.createElement("p");
+          const summary = document.createElement("p");
+          const link = document.createElement("a");
+          title.textContent = card.dataset.title;
+          facts.textContent = [card.dataset.level, card.dataset.discipline, card.dataset.duration]
+            .filter(Boolean)
+            .join(" · ");
+          summary.textContent = card.dataset.summary;
+          link.href = card.dataset.href;
+          link.textContent = "Programme details";
+          article.append(title, facts, summary, link);
+          comparisonGrid.append(article);
+        });
+        comparison.hidden = false;
+        comparison.querySelector("h2")?.focus();
+      };
+
+      levelRoute?.addEventListener("change", () => {
+        window.location.assign(levelRoute.value);
+      });
+      search.addEventListener("input", update);
+      discipline.addEventListener("change", update);
+      cards.forEach((card) => {
+        card.querySelector("[data-programme-select]")?.addEventListener(
+          "change",
+          updateSelection,
+        );
+      });
+      compare?.addEventListener("click", renderComparison);
+      clear?.addEventListener("click", () => {
+        cards.forEach((card) => {
+          const checkbox = card.querySelector("[data-programme-select]");
+          if (checkbox) checkbox.checked = false;
+        });
+        if (comparison) comparison.hidden = true;
+        updateSelection();
       });
     });
   };
@@ -171,6 +277,7 @@
       button.addEventListener("click", toggleTheme);
     });
     initMobileNav();
+    initProgrammeDirectories();
   });
 
   const followDeviceTheme = (event) => {

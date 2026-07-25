@@ -90,18 +90,37 @@
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     }
 
+    function setSubmenuOpen(button, open) {
+      var item = button.closest(".nav-item--menu");
+      if (!item) return;
+      item.classList.toggle("is-open", open);
+      button.setAttribute("aria-expanded", String(open));
+    }
+
+    function closeSubmenus(except) {
+      nav.querySelectorAll(".nav-item__disclosure").forEach(function (button) {
+        if (button !== except) setSubmenuOpen(button, false);
+      });
+    }
+
     toggle.addEventListener("click", function () {
       setOpen(!nav.classList.contains("is-open"));
     });
 
     // Tapping a destination closes the panel so the page is visible on arrival.
     nav.addEventListener("click", function (event) {
-      if (event.target.closest("a")) setOpen(false);
+      if (event.target.closest("a")) {
+        setOpen(false);
+        closeSubmenus();
+      }
     });
 
     // Escape and taps outside the masthead dismiss the menu.
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        closeSubmenus();
+      }
     });
     document.addEventListener("click", function (event) {
       if (
@@ -110,6 +129,7 @@
       ) {
         setOpen(false);
       }
+      if (!event.target.closest("[data-global-masthead]")) closeSubmenus();
     });
 
     // Returning to a wide viewport must never leave the page with a hidden nav.
@@ -123,9 +143,108 @@
         var item = btn.closest(".nav-item--menu");
         if (!item) return;
         var open = !item.classList.contains("is-open");
-        item.classList.toggle("is-open", open);
-        btn.setAttribute("aria-expanded", String(open));
+        closeSubmenus(btn);
+        setSubmenuOpen(btn, open);
       });
+    });
+  }
+
+  function initProgrammeDirectories() {
+    document.querySelectorAll("[data-programme-directory]").forEach(function (directory) {
+      var search = directory.querySelector("[data-programme-search]");
+      var levelRoute = directory.querySelector("[data-programme-level-route]");
+      var discipline = directory.querySelector("[data-programme-discipline]");
+      var cards = Array.from(directory.querySelectorAll("[data-programme-card]"));
+      var count = directory.querySelector("[data-programme-count]");
+      var empty = directory.querySelector("[data-programme-empty]");
+      var selectedCount = directory.querySelector("[data-programme-selected-count]");
+      var compare = directory.querySelector("[data-programme-compare]");
+      var clear = directory.querySelector("[data-programme-clear]");
+      var comparison = directory.querySelector("[data-programme-comparison]");
+      var comparisonGrid = directory.querySelector("[data-programme-comparison-grid]");
+      if (!search || !discipline || cards.length === 0) return;
+
+      function update() {
+        var query = search.value.trim().toLocaleLowerCase();
+        var selectedDiscipline = discipline.value;
+        var visible = 0;
+        cards.forEach(function (card) {
+          var matchesQuery = !query || card.dataset.search.indexOf(query) !== -1;
+          var matchesDiscipline =
+            !selectedDiscipline || card.dataset.discipline === selectedDiscipline;
+          var show = matchesQuery && matchesDiscipline;
+          card.hidden = !show;
+          if (show) visible += 1;
+        });
+        if (count) {
+          count.textContent = visible + " " + (visible === 1 ? "programme" : "programmes");
+        }
+        if (empty) empty.hidden = visible !== 0;
+      }
+
+      function selectedCards() {
+        return cards.filter(function (card) {
+          var checkbox = card.querySelector("[data-programme-select]");
+          return checkbox && checkbox.checked;
+        });
+      }
+
+      function updateSelection() {
+        var selected = selectedCards().length;
+        if (selectedCount) selectedCount.textContent = selected + " selected";
+        if (compare) compare.disabled = selected === 0;
+        if (clear) clear.disabled = selected === 0;
+        if (selected === 0 && comparison) comparison.hidden = true;
+      }
+
+      function renderComparison() {
+        if (!comparison || !comparisonGrid) return;
+        comparisonGrid.replaceChildren();
+        selectedCards().forEach(function (card) {
+          var article = document.createElement("article");
+          var title = document.createElement("h3");
+          var facts = document.createElement("p");
+          var summary = document.createElement("p");
+          var link = document.createElement("a");
+          title.textContent = card.dataset.title;
+          facts.textContent = [
+            card.dataset.level,
+            card.dataset.discipline,
+            card.dataset.duration,
+          ].filter(Boolean).join(" · ");
+          summary.textContent = card.dataset.summary;
+          link.href = card.dataset.href;
+          link.textContent = "Programme details";
+          article.append(title, facts, summary, link);
+          comparisonGrid.append(article);
+        });
+        comparison.hidden = false;
+        var heading = comparison.querySelector("h2");
+        if (heading) heading.focus();
+      }
+
+      if (levelRoute) {
+        levelRoute.addEventListener("change", function () {
+          window.location.assign(levelRoute.value);
+        });
+      }
+      search.addEventListener("input", update);
+      discipline.addEventListener("change", update);
+      cards.forEach(function (card) {
+        var checkbox = card.querySelector("[data-programme-select]");
+        if (checkbox) checkbox.addEventListener("change", updateSelection);
+      });
+      if (compare) compare.addEventListener("click", renderComparison);
+      if (clear) {
+        clear.addEventListener("click", function () {
+          cards.forEach(function (card) {
+            var checkbox = card.querySelector("[data-programme-select]");
+            if (checkbox) checkbox.checked = false;
+          });
+          if (comparison) comparison.hidden = true;
+          updateSelection();
+        });
+      }
     });
   }
 
@@ -177,6 +296,7 @@
       button.addEventListener("click", toggleTheme);
     });
     initMobileNav();
+    initProgrammeDirectories();
   }
 
   // Some pages load this shared file late while others defer it from <head>.
