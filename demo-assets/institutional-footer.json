@@ -23,7 +23,7 @@
     {
       "label": "Information",
       "links": [
-        {"label": "Privacy", "local": "privacy-policy/"},
+        {"label": "Privacy & compliance", "local": "privacy-policy/"},
         {"label": "Copyright", "local": "copyright-statement/"},
         {"label": "Sitemap", "local": "sitemap/"}
       ]
