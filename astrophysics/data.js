@@ -34,6 +34,16 @@ window.ASTROPHYSICS_GROUP = {
         "Interstellar medium",
         "Cosmic-ray dynamos"
       ]
+    },
+    {
+      "id": "gravitation-high-energy",
+      "number": "04",
+      "title": "Gravitation & high-energy theory",
+      "summary": "Branes, emergent gravity, and the mathematical structure of fundamental interactions.",
+      "topics": [
+        "Emergent gravity",
+        "Fundamental interactions"
+      ]
     }
   ],
   "people": [
@@ -61,6 +71,31 @@ window.ASTROPHYSICS_GROUP = {
         "profile": "https://mitwpu.edu.in/faculty/abhijit-bendre",
         "scholar": "https://scholar.google.com/citations?user=hwwmIKcAAAAJ&hl=en&authuser=1",
         "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55600446700"
+      }
+    },
+    {
+      "id": "deobrat-singh",
+      "profileSlug": "deobrat-singh",
+      "memberType": "faculty",
+      "name": "Dr. Deobrat Singh",
+      "groupRole": "Faculty",
+      "designation": "Assistant Professor",
+      "affiliation": "Department of Physics, MIT World Peace University",
+      "email": "",
+      "photo": "../people/assets/campus/deobrat-singh.webp",
+      "bio": "Deobrat Singh earned his PhD from the University of Delhi in theoretical high-energy physics. His work spans branes, emergent gravity, and the mathematical structure of fundamental interactions.",
+      "interests": [
+        "Theoretical high-energy physics",
+        "Gravitation",
+        "Branes and emergent gravity",
+        "Fundamental interactions"
+      ],
+      "highlights": [],
+      "publications": [],
+      "links": {
+        "profile": "https://mitwpu.edu.in/faculty/deobrat-singh",
+        "scholar": "https://scholar.google.com/citations?user=aRAErjsAAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0003-0425-3243"
       }
     }
   ]

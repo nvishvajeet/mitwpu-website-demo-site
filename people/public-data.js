@@ -1174,7 +1174,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "summary": "Anant Srivastava is committed to creating a student-centric learning environment that encourages independent thinking, self-confidence, curiosity, and lifelong learning. His teaching philosophy focuses on helping students build strong fundamentals while nurturing their distinct identities and individual potential. He encourages learners to ask questions freely, explore multiple perspectives, and connect theoretical concepts with real-world applications. Through his approach, he aims to inspire students to become self-reliant learners, ethical professionals, and confident individuals capable of contributing meaningfully to society. Anant Srivastava firmly believes in the holistic development of students through the harmonious integration of science and spirituality.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/anant-srivastava",
-      "scholar": "https://scholar.google.com/citations?user=VmPeAzAAAAAJ&amp;hl=en",
+      "scholar": "https://scholar.google.com/citations?user=VmPeAzAAAAAJ&hl=en",
       "linkedin": "http://www.linkedin.com/in/anant-srivastava-367442205"
     },
     "memberType": ""

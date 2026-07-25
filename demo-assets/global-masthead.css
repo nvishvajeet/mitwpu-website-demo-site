@@ -337,7 +337,9 @@
   box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
 }
 
-[data-global-masthead] .nav-item--menu:hover .nav-menu,
+/* Desktop dropdowns open via JS hover-intent (.is-open) or keyboard focus —
+   NOT raw :hover — so a diagonal move into the wider panel can't drop :hover
+   and slam the menu shut. .is-open is the single source of truth. */
 [data-global-masthead] .nav-item--menu:focus-within .nav-menu,
 [data-global-masthead] .nav-item--menu.is-open .nav-menu {
   display: flex !important;

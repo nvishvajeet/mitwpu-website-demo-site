@@ -338,7 +338,7 @@
     if (document.documentElement.hasAttribute("data-nav-hover-intent")) return;
     document.documentElement.setAttribute("data-nav-hover-intent", "1");
 
-    var desktop = window.matchMedia("(min-width: 768px) and (pointer: fine)");
+    var desktop = window.matchMedia("(min-width: 768px)");
     var items = Array.prototype.slice.call(
       document.querySelectorAll("[data-global-masthead] .nav-item--menu")
     );
