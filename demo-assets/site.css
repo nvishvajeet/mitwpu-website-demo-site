@@ -84,6 +84,13 @@ body {
   overflow-x: clip;
 }
 
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   color: var(--blue);
   text-decoration: none;
@@ -430,11 +437,13 @@ h3 {
 
 .hero-visual {
   position: relative;
-  align-self: stretch;
+  align-self: center;
   display: grid;
+  width: 100%;
+  aspect-ratio: 2 / 1;
   min-width: 0;
-  min-height: 280px;
-  grid-template-rows: minmax(280px, 1fr);
+  min-height: 0;
+  grid-template-rows: 1fr;
   overflow: hidden;
   background: var(--paper);
   border: 1px solid var(--line);
@@ -443,7 +452,7 @@ h3 {
 .hero-media {
   position: absolute;
   inset: 0;
-  min-height: 280px;
+  min-height: 0;
   margin: 0;
   overflow: hidden;
   background: var(--paper);
@@ -470,6 +479,10 @@ h3 {
   height: 100%;
   object-fit: cover;
   object-position: center 42%;
+}
+
+.hero-media[data-media-fit="contain"] img {
+  object-fit: contain;
 }
 
 .activity {
@@ -513,7 +526,10 @@ h3 {
 
 .activity-image {
   display: block;
-  aspect-ratio: 4 / 3;
+  /* The feed uses editorial banners, not portrait thumbnails. Keeping their
+     native landscape proportion prevents the former 4:3 frame from turning
+     each banner into an over-cropped close-up. */
+  aspect-ratio: 12 / 5;
   overflow: hidden;
   background: var(--blue-pale);
 }
@@ -524,6 +540,10 @@ h3 {
   height: 100%;
   object-fit: cover;
   transition: transform 280ms ease;
+}
+
+.activity-image--contain img {
+  object-fit: contain;
 }
 
 .activity-image:hover img {
@@ -806,7 +826,8 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   }
 
   .hero-visual {
-    grid-template-rows: minmax(340px, 54vw) auto;
+    aspect-ratio: 2 / 1;
+    grid-template-rows: 1fr;
   }
 
   .directory-groups {
@@ -878,7 +899,8 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   }
 
   .hero-visual {
-    grid-template-rows: minmax(240px, 68vw);
+    aspect-ratio: 2 / 1;
+    grid-template-rows: 1fr;
   }
 
   .directory {

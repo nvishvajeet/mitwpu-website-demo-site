@@ -1,8 +1,8 @@
 {
   "schema": "mitwpu.public-artifact.v1",
-  "source_commit": "5528d7b80a0f3aea716ae6fbca7ff6647e64a354",
+  "source_commit": "f17b43b6e011b4fc41a1ec8c2a6e41549f0dc5f4",
   "indexing": "disabled",
-  "routes": 2168,
-  "html_files": 2829,
-  "artifact_files": 7673
+  "routes": 2167,
+  "html_files": 2828,
+  "artifact_files": 7672
 }

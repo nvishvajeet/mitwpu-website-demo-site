@@ -83,6 +83,7 @@
     var toggle = document.querySelector("[data-nav-toggle]");
     var nav = document.querySelector("[data-global-nav]");
     if (!toggle || !nav) return;
+    var desktopNav = window.matchMedia("(min-width: 768px)");
 
     function setOpen(open) {
       nav.classList.toggle("is-open", open);
@@ -111,7 +112,7 @@
     nav.addEventListener("click", function (event) {
       if (event.target.closest("a")) {
         setOpen(false);
-        closeSubmenus();
+        if (!desktopNav.matches) closeSubmenus();
       }
     });
 
@@ -133,7 +134,7 @@
     });
 
     // Returning to a wide viewport must never leave the page with a hidden nav.
-    window.matchMedia("(min-width: 768px)").addEventListener("change", function (event) {
+    desktopNav.addEventListener("change", function (event) {
       if (event.matches) setOpen(false);
     });
 
@@ -355,12 +356,16 @@
       });
     }
 
+    function openItem(item) {
+      if (!desktop.matches) return;
+      clearTimeout(timers.get(item));
+      closeAll(item);
+      item.classList.add("is-open");
+    }
+
     items.forEach(function (item) {
       function open() {
-        if (!desktop.matches) return;      // mobile uses the click accordion
-        clearTimeout(timers.get(item));
-        closeAll(item);                    // one menu open at a time
-        item.classList.add("is-open");
+        openItem(item);
       }
       function scheduleClose() {
         if (!desktop.matches) return;
@@ -378,9 +383,27 @@
       // Keyboard parity: focus opens, focus leaving the item closes.
       item.addEventListener("focusin", open);
       item.addEventListener("focusout", function (event) {
-        if (desktop.matches && !item.contains(event.relatedTarget)) {
+        if (
+          desktop.matches
+          && !item.contains(event.relatedTarget)
+          && !item.matches(":hover")
+        ) {
           item.classList.remove("is-open");
         }
+      });
+    });
+
+    // History restoration can resume a document without firing mouseenter.
+    // Reconcile `.is-open` with the pointer after each initial load/BFCache
+    // return so a restored menu is neither stale nor inert.
+    window.addEventListener("pageshow", function () {
+      window.requestAnimationFrame(function () {
+        if (!desktop.matches) return;
+        var hovered = items.find(function (item) {
+          return item.matches(":hover");
+        });
+        if (hovered) openItem(hovered);
+        else closeAll(null);
       });
     });
 

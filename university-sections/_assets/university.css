@@ -107,6 +107,7 @@ img,
 video {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -482,6 +483,10 @@ h3 {
   aspect-ratio: 3 / 2;
   object-fit: cover;
   transition: transform 180ms ease;
+}
+
+.curated-media__card img[data-media-role="banner"] {
+  aspect-ratio: 12 / 5;
 }
 
 .curated-media__card::after {
