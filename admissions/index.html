@@ -3,14 +3,182 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Choose a programme, work through the application and entrance tests, and find scholarships, funding, and admissions support.">
+  <meta name="description" content="The admissions gateway at MIT-WPU, Pune: choose a pathway (UG, PG, PhD, international, or lateral entry), work through the MIT-WPU CET and application steps, and find scholarships, fees, key dates, downloads, and admissions contacts in one place.">
   <meta name="robots" content="index, follow">
   <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://mitwpu.edu.in/application-process">
+  <link rel="canonical" href="https://mitwpu.edu.in/admissions">
   <title>Admissions | MIT-WPU</title>
   <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(_error){}})();</script>
   <link rel="stylesheet" href="/university-sections/_assets/university.css?v=20260725-global-nav-5">
   <script src="/university-sections/_assets/theme.js?v=20260725-global-nav-5" defer></script>
+  <style>
+    /* ---- Admissions hub: self-contained, reuses university.css tokens ---- */
+    .adm-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.9rem; }
+    .adm-btn {
+      display: inline-flex; align-items: center; min-height: 2.9rem; gap: .5rem;
+      padding: .6rem 1.15rem; border-radius: .35rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .92rem; font-weight: 750; text-decoration: none;
+      color: #fff; background: var(--blue); border: 1px solid var(--blue);
+    }
+    .adm-btn:hover { color: #fff; background: var(--blue-dark); border-color: var(--blue-dark); }
+    .adm-btn--ghost { color: var(--blue); background: var(--paper); border-color: var(--line); }
+    .adm-btn--ghost:hover { color: var(--blue-dark); background: var(--surface); border-color: var(--blue); }
+
+    /* In-page navigation band */
+    .adm-toc-band { background: var(--surface); border-block: 1px solid var(--line); }
+    .adm-toc {
+      display: flex; flex-wrap: wrap; gap: .5rem .6rem; margin: 0; padding-block: 1.1rem; list-style: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .adm-toc a {
+      display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line);
+      border-radius: 999px; background: var(--paper); color: var(--blue);
+      font-size: .82rem; font-weight: 700; text-decoration: none;
+    }
+    .adm-toc a:hover { border-color: var(--blue); color: var(--blue-dark); }
+
+    /* Section bands + headings */
+    .adm-band { padding-block: clamp(3.2rem, 7vw, 5.75rem); scroll-margin-top: 6.5rem; }
+    .adm-band + .adm-band { border-top: 1px solid var(--line); }
+    .adm-band--tint { background: var(--surface); border-block: 1px solid var(--line); }
+    .adm-head { max-width: 62ch; margin-bottom: clamp(1.7rem, 4vw, 2.6rem); }
+    .adm-head h2 {
+      margin: .5rem 0 0; padding-bottom: .55rem;
+      border-bottom: 3px solid var(--gold); display: inline-block;
+    }
+    .adm-lead { margin: 1rem 0 0; max-width: 66ch; color: var(--copy); }
+
+    /* Pathway cards */
+    .adm-paths {
+      display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line);
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+    }
+    .adm-path { display: flex; flex-direction: column; padding: clamp(1.3rem, 3vw, 1.9rem); background: var(--paper); }
+    .adm-path__kicker {
+      margin: 0 0 .5rem; color: var(--blue);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+    }
+    .adm-path h3 { font-size: clamp(1.2rem, 2.2vw, 1.45rem); }
+    .adm-path p { margin: .6rem 0 1.1rem; color: var(--copy); font-size: .98rem; }
+    .adm-linklist { display: grid; gap: 0; margin: auto 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+    .adm-linklist a {
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: baseline;
+      padding-block: .72rem; border-bottom: 1px solid var(--line); color: var(--ink); text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .87rem; font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+    .adm-linklist a:hover { color: var(--blue); }
+    .adm-linklist a::after { content: "\2192"; color: var(--gold); font-weight: 800; }
+    .adm-linklist a[data-pdf]::after { content: "PDF"; font-size: .64rem; letter-spacing: .05em; align-self: center; }
+
+    /* Application steps */
+    .adm-steps { counter-reset: adm-step; margin: 0; padding: 0; list-style: none; display: grid; gap: .8rem; }
+    .adm-step {
+      position: relative; display: grid; grid-template-columns: 2.5rem 1fr; gap: 1rem; align-items: start;
+      padding: 1rem 1.15rem; background: var(--paper); border: 1px solid var(--line);
+      border-left: 3px solid var(--blue); border-radius: .3rem;
+    }
+    .adm-step::before {
+      counter-increment: adm-step; content: counter(adm-step);
+      display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 50%;
+      background: var(--navy); color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 800; font-size: 1.05rem;
+    }
+    .adm-step strong { display: block; color: var(--heading);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1rem; }
+    .adm-step p { margin: .3rem 0 0; color: var(--copy); font-size: .95rem; }
+
+    /* CET fact tiles */
+    .adm-facts {
+      display: grid; gap: .8rem; margin: 0 0 1.6rem; padding: 0; list-style: none;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    }
+    .adm-facts li { padding: 1.1rem 1.2rem; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: .3rem; }
+    .adm-facts strong { display: block; color: var(--heading); font-size: clamp(1.6rem, 3.4vw, 2.1rem); line-height: 1; }
+    .adm-facts span { display: block; margin-top: .4rem; color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .82rem; }
+
+    /* Key-dates table */
+    .adm-tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: .3rem; }
+    .adm-dates { width: 100%; min-width: 34rem; border-collapse: collapse;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem; background: var(--paper); }
+    .adm-dates caption { text-align: left; padding: .9rem 1rem; color: var(--muted); font-size: .82rem; }
+    .adm-dates th, .adm-dates td { padding: .7rem 1rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .adm-dates thead th { color: var(--heading); background: var(--surface); font-weight: 800; white-space: nowrap; }
+    .adm-dates tbody th { color: var(--ink); font-weight: 650; }
+    .adm-dates td { color: var(--copy); white-space: nowrap; }
+
+    /* Scholarship scheme cards */
+    .adm-schemes { display: grid; gap: 1rem; margin: 0 0 1.6rem; padding: 0; list-style: none;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+    .adm-scheme { padding: 1.2rem 1.3rem; background: var(--paper); border: 1px solid var(--line); border-radius: .3rem; }
+    .adm-scheme h3 { font-size: 1.1rem; }
+    .adm-scheme .adm-waiver { display: inline-block; margin: .5rem 0; padding: .2rem .6rem; border-radius: 999px;
+      background: var(--gold-soft); color: var(--heading);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .78rem; font-weight: 800; }
+    .adm-scheme p { margin: .3rem 0 0; color: var(--copy); font-size: .93rem; }
+
+    /* Generic pill link row */
+    .adm-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.3rem 0 0; padding: 0; list-style: none; }
+    .adm-links a {
+      display: inline-flex; align-items: center; min-height: 2.7rem; padding: .5rem .9rem;
+      background: var(--paper); border: 1px solid var(--line); border-radius: .3rem; color: var(--blue);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .87rem; font-weight: 650; text-decoration: none;
+    }
+    .adm-links a:hover { border-color: var(--blue); color: var(--blue-dark); }
+
+    /* Downloads / forms grid (doc cards) */
+    .adm-docgrid { display: grid; gap: .7rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); }
+    .adm-doc {
+      display: flex; align-items: center; gap: .8rem; min-height: 3.6rem; padding: .75rem .95rem;
+      background: var(--paper); border: 1px solid var(--line); border-left: 3px solid var(--blue);
+      border-radius: .3rem; color: var(--ink); text-decoration: none; overflow-wrap: anywhere;
+    }
+    .adm-doc:hover { border-color: var(--blue); border-left-color: var(--gold); background: var(--surface); }
+    .adm-doc__txt { flex: 1 1 auto; min-width: 0; }
+    .adm-doc__txt strong { display: block; color: var(--heading); font-size: .95rem; line-height: 1.3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 700; }
+    .adm-doc__txt small { display: block; margin-top: .18rem; color: var(--muted); font-size: .8rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .adm-doc__tag { flex: 0 0 auto; align-self: center; color: var(--blue); background: var(--surface);
+      border: 1px solid var(--line); border-radius: .25rem; padding: .2rem .45rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .66rem; font-weight: 800; letter-spacing: .06em; }
+
+    /* FAQ */
+    .adm-faq { display: grid; gap: .7rem; }
+    .adm-faq details { background: var(--paper); border: 1px solid var(--line); border-radius: .3rem; }
+    .adm-faq summary {
+      cursor: pointer; padding: .95rem 1.1rem; color: var(--heading); font-weight: 700;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .98rem;
+      list-style: none; display: flex; justify-content: space-between; gap: 1rem; align-items: center;
+    }
+    .adm-faq summary::-webkit-details-marker { display: none; }
+    .adm-faq summary::after { content: "+"; color: var(--gold); font-weight: 800; font-size: 1.3rem; line-height: 1; }
+    .adm-faq details[open] summary::after { content: "\2013"; }
+    .adm-faq summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    .adm-faq__a { padding: 0 1.1rem 1.1rem; margin: 0; color: var(--copy); font-size: .96rem; }
+
+    /* Contact */
+    .adm-contact { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+    .adm-contact__card { padding: 1.2rem 1.3rem; background: var(--paper); border: 1px solid var(--line); border-radius: .3rem; }
+    .adm-contact__card h3 { font-size: 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .adm-contact__card p { margin: .5rem 0 0; color: var(--copy); font-size: .93rem; overflow-wrap: anywhere; }
+    .adm-contact__card a { color: var(--blue); font-weight: 650; }
+
+    /* Provisional note */
+    .adm-note { margin-top: 1.5rem; padding: .95rem 1.15rem; background: var(--paper);
+      border: 1px dashed var(--muted); border-left: 4px solid var(--gold); border-radius: .3rem;
+      color: var(--copy); font-size: .92rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .adm-note strong { color: var(--heading); }
+
+    @media (max-width: 40rem) {
+      .adm-paths { grid-template-columns: 1fr; }
+    }
+  </style>
 
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260724-brand-2">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=20260724-brand-2">
@@ -18,15 +186,15 @@
   <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260725-uniform-nav-3" data-global-masthead-style>
   <link rel="stylesheet" href="/demo-assets/readability.css?v=20260724-1" data-global-readability-style>
   <meta property="og:title" content="Admissions | MIT-WPU" data-release-generated="social">
-  <meta property="og:description" content="Choose a programme, work through the application and entrance tests, and find scholarships, funding, and admissions support." data-release-generated="social">
+  <meta property="og:description" content="The admissions gateway at MIT-WPU, Pune: choose a pathway (UG, PG, PhD, international, or lateral entry), work through the MIT-WPU CET and application steps, and find scholarships, fees, key dates, downloads, and admissions contacts in one place." data-release-generated="social">
   <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/9d/9de1189cb786cb4e-9de1189cb786cb4e-mit-wpu-cet.webp" data-release-generated="social">
   <meta property="og:type" content="website" data-release-generated="social">
-  <meta property="og:url" content="https://mitwpu.edu.in/application-process" data-release-generated="social">
+  <meta property="og:url" content="https://mitwpu.edu.in/admissions" data-release-generated="social">
   <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
   <meta name="twitter:title" content="Admissions | MIT-WPU" data-release-generated="social">
-  <meta name="twitter:description" content="Choose a programme, work through the application and entrance tests, and find scholarships, funding, and admissions support." data-release-generated="social">
+  <meta name="twitter:description" content="The admissions gateway at MIT-WPU, Pune: choose a pathway (UG, PG, PhD, international, or lateral entry), work through the MIT-WPU CET and application steps, and find scholarships, fees, key dates, downloads, and admissions contacts in one place." data-release-generated="social">
   <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/9d/9de1189cb786cb4e-9de1189cb786cb4e-mit-wpu-cet.webp" data-release-generated="social">
-  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.edu.in/application-process#webpage","name":"Admissions | MIT-WPU","url":"https://mitwpu.edu.in/application-process","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"Choose a programme, work through the application and entrance tests, and find scholarships, funding, and admissions support."}</script>
+  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.edu.in/admissions#webpage","name":"Admissions | MIT-WPU","url":"https://mitwpu.edu.in/admissions","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"The admissions gateway at MIT-WPU, Pune: choose a pathway (UG, PG, PhD, international, or lateral entry), work through the MIT-WPU CET and application steps, and find scholarships, fees, key dates, downloads, and admissions contacts in one place."}</script>
   <link rel="stylesheet" href="/group-assets/vendor/photoswipe/photoswipe.css?v=5.4.4" data-image-viewer-asset="photoswipe">
   <link rel="stylesheet" href="/group-assets/image-viewer.css?v=20260724-1" data-image-viewer-asset="site">
   <script type="module" src="/group-assets/image-viewer.mjs?v=20260724-1" data-image-viewer-asset="module"></script>
@@ -50,44 +218,311 @@
       <div class="hero-copy">
         <p class="eyebrow">Study at MIT-WPU</p>
         <h1 id="page-title">Admissions</h1>
-        <p class="lede">Choose a programme, work through the application and entrance tests, and find scholarships, funding, and admissions support.</p>
+        <p class="lede">Everything you need to apply to MIT World Peace University, Pune — choose a pathway, work through the MIT-WPU CET and application steps, and find scholarships, fees, key dates, and admissions support in one place.</p>
+        <div class="adm-actions">
+          <a class="adm-btn" href="/application-process/">How to apply</a>
+          <a class="adm-btn adm-btn--ghost" href="/mit-wpu-cet-2026/">MIT-WPU CET 2026</a>
+          <a class="adm-btn adm-btn--ghost" href="https://admissions.mitwpu.edu.in/" target="_blank" rel="noopener noreferrer">Apply online &#8599;</a>
+        </div>
       </div>
       <figure class="hero-media" style="--media-ratio:1600/750">
       <a class="image-zoom-link" href="/media/mitwpu-public/optimized/other/9d/9de1189cb786cb4e-9de1189cb786cb4e-mit-wpu-cet.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="1600" data-pswp-height="750" data-pswp-caption="MIT-WPU CET 2026 admissions banner" aria-label="Open larger view: MIT-WPU CET 2026 admissions banner"><img src="/media/mitwpu-public/optimized/other/9d/9de1189cb786cb4e-9de1189cb786cb4e-mit-wpu-cet.webp" alt="MIT-WPU CET 2026 admissions banner" width="1600" height="750" data-media-role="lead" loading="eager" decoding="async" fetchpriority="high"></a>
-      <figcaption>MIT-WPU CET 2026 admissions information.</figcaption>
+      <figcaption>MIT-WPU CET 2026 — the university entrance exam for UG and PG admissions.</figcaption>
   </figure>
     </section>
 
-    <section class="directory" aria-labelledby="directory-title" data-image-gallery>
+    <nav class="adm-toc-band" aria-label="On this page">
       <div class="shell">
-        <h2 id="directory-title" class="visually-hidden">Admissions directory</h2>
-        <div class="directory-grid"><section class="directory-card">
-        <h3>Choose a programme</h3>
-        <p>Browse the university&#39;s programme listings.</p>
-        <div class="link-list">
-          <a class="directory-link" href="/programmes/" data-link-destination="local"><span>Programmes</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/pg-diploma-programmes/" data-link-destination="local"><span>PG Diploma Programmes</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/schools/" data-link-destination="local"><span>Schools</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/academics/" data-link-destination="local"><span>Academic Units</span><span aria-hidden="true">→</span></a>
-        </div>
-      </section><section class="directory-card">
-        <h3>Apply</h3>
-        <p>Application guidance and current entrance-test information.</p>
-        <div class="link-list">
-          <a class="directory-link" href="/application-process/" data-link-destination="local"><span>Application Process</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/mit-wpu-cet-2026/" data-link-destination="local"><span>MIT-WPU CET 2026</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/admissions-contact-us/" data-link-destination="local"><span>Admissions Contact</span><span aria-hidden="true">→</span></a>
-        </div>
-      </section><section class="directory-card">
-        <h3>Funding and student information</h3>
-        <p>Scholarship, finance, and student-information destinations.</p>
-        <div class="link-list">
-          <a class="directory-link" href="/scholarships/" data-link-destination="local"><span>Scholarships</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/student-loans/" data-link-destination="local"><span>Student Loans</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/student-information/" data-link-destination="local"><span>Student Information</span><span aria-hidden="true">→</span></a><a class="directory-link" href="/placements/" data-link-destination="local"><span>Placements</span><span aria-hidden="true">→</span></a>
-        </div>
-      </section></div>
+        <ul class="adm-toc">
+          <li><a href="#pathways">Admission pathways</a></li>
+          <li><a href="#apply">How to apply</a></li>
+          <li><a href="#cet">Entrance test &amp; dates</a></li>
+          <li><a href="#fees">Fees &amp; scholarships</a></li>
+          <li><a href="#downloads">Downloads &amp; forms</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <section class="adm-band" id="pathways" aria-labelledby="pathways-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Choose your route</p>
+          <h2 id="pathways-h">Admission pathways</h2>
+          <p class="adm-lead">MIT-WPU admits students across five broad routes. Start from the one that fits you, then explore the programme listings and school pages under Academics.</p>
+        </div>
+        <div class="adm-paths">
+          <article class="adm-path">
+            <p class="adm-path__kicker">Undergraduate</p>
+            <h3>Bachelor&#8217;s degrees</h3>
+            <p>Four-year and integrated bachelor&#8217;s programmes across engineering, science, business, commerce, design, law, health sciences, and the liberal arts.</p>
+            <ul class="adm-linklist">
+              <li><a href="/programmes/undergraduate/">Undergraduate programmes</a></li>
+              <li><a href="/programmes/">Browse all programmes</a></li>
+              <li><a href="/academics/">Schools &amp; departments</a></li>
+            </ul>
+          </article>
+          <article class="adm-path">
+            <p class="adm-path__kicker">Postgraduate</p>
+            <h3>Master&#8217;s &amp; diplomas</h3>
+            <p>Master&#8217;s degrees, integrated programmes, and postgraduate diplomas and certificates in specialised and professional fields.</p>
+            <ul class="adm-linklist">
+              <li><a href="/programmes/postgraduate/">Postgraduate programmes</a></li>
+              <li><a href="/pg-diploma-programmes/">PG diploma programmes</a></li>
+              <li><a href="/media/mitwpu-public/documents/8d/8d6aea3c764956b9-PGD-in-Management-brochure.pdf" data-pdf>PG Diploma in Management brochure</a></li>
+            </ul>
+          </article>
+          <article class="adm-path">
+            <p class="adm-path__kicker">Doctoral</p>
+            <h3>Ph.D. &amp; research</h3>
+            <p>Full-time and part-time doctoral research, admitted through the Ph.D. Entrance Test (PET) and interview across the university&#8217;s schools.</p>
+            <ul class="adm-linklist">
+              <li><a href="/programmes/phd/">Doctoral programmes</a></li>
+              <li><a href="/students/">Ph.D. entrance-test syllabi</a></li>
+              <li><a href="/media/mitwpu-public/documents/12/12fbec64ec14ef6e-PhD-Fees-Structure-2026-27.pdf" data-pdf>Ph.D. fee structure 2026&#8211;27</a></li>
+            </ul>
+          </article>
+          <article class="adm-path">
+            <p class="adm-path__kicker">International</p>
+            <h3>International applicants</h3>
+            <p>Study-in-India guidance for applicants from outside India — how to apply, visa guidance, arrival support, and international scholarships.</p>
+            <ul class="adm-linklist">
+              <li><a href="/international/">International at MIT-WPU</a></li>
+              <li><a href="/study-in-india/how-to-apply/">Study in India — how to apply</a></li>
+              <li><a href="/study-in-india/international-scholarships/">International scholarships</a></li>
+            </ul>
+          </article>
+          <article class="adm-path">
+            <p class="adm-path__kicker">Lateral entry</p>
+            <h3>Direct second-year B.Tech</h3>
+            <p>Direct second-year entry to B.Tech for candidates holding a three-year engineering diploma, subject to the eligibility in the admission policy.</p>
+            <ul class="adm-linklist">
+              <li><a href="/media/mitwpu-public/documents/01/017e32c387dddfa3-BTech-lateral-entry-brochure-2026-27-v1.pdf" data-pdf>B.Tech lateral-entry brochure 2026&#8211;27</a></li>
+              <li><a href="/media/mitwpu-public/documents/d6/d64fc6ae45f3a2d2-Integrated-Btech-brochure-2026-27-v1.pdf" data-pdf>Integrated B.Tech brochure 2026&#8211;27</a></li>
+              <li><a href="/important-dates/">Important dates</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="adm-band adm-band--tint" id="apply" aria-labelledby="apply-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Step by step</p>
+          <h2 id="apply-h">How to apply</h2>
+          <p class="adm-lead">The application for Indian students runs on the MIT-WPU admissions portal, from registration to joining. The full step-by-step guide, including score routes for engineering, management, and law, is on the application-process page.</p>
+        </div>
+        <ol class="adm-steps">
+          <li class="adm-step"><div><strong>Register online</strong><p>Create an account at admissions.mitwpu.edu.in and submit the registration form. You receive a login ID and password and land on your student dashboard.</p></div></li>
+          <li class="adm-step"><div><strong>Fill the application form</strong><p>Complete your personal and academic profile and pay the application fee of Rs. 2,000.</p></div></li>
+          <li class="adm-step"><div><strong>Take the MIT-WPU CET</strong><p>Your entrance-test link and date appear on the dashboard. Appear for the CET, or submit a valid national or state entrance score where that route is accepted.</p></div></li>
+          <li class="adm-step"><div><strong>Merit list &amp; provisional offer</strong><p>Check the merit list on your dashboard. On selection, you receive a provisional offer letter.</p></div></li>
+          <li class="adm-step"><div><strong>Pay &amp; verify</strong><p>Complete the first fee instalment, then payment, personal, education, and document verification.</p></div></li>
+          <li class="adm-step"><div><strong>Final offer &amp; join</strong><p>Receive your final offer letter and PRN, submit original documents, and join. Welcome to MIT-WPU.</p></div></li>
+        </ol>
+        <div class="adm-note">
+          <strong>Before you apply.</strong> The names of the candidate and parents must match the class-10 certificate exactly, with no prefixes. Marks from the qualifying examination and any national or state entrance test (MHT-CET / MIT-WPU CET) must be uploaded within 15 days of the results being announced, or the application will not be considered. Engineering admissions also accept MHT-CET and JEE (Main) scores; MBA accepts CAT, MAT, and XAT; Law accepts CLAT and MH-CET Law with the MIT-WPU personal interaction.
+        </div>
+        <ul class="adm-links">
+          <li><a href="/application-process/">Full application process</a></li>
+          <li><a href="/student-information/">Student information</a></li>
+          <li><a href="https://admissions.mitwpu.edu.in/" target="_blank" rel="noopener noreferrer">Admissions portal &#8599;</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="adm-band" id="cet" aria-labelledby="cet-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Entrance test &amp; key dates</p>
+          <h2 id="cet-h">MIT-WPU CET 2026</h2>
+          <p class="adm-lead">MIT-WPU CET 2026 is the university&#8217;s entrance exam for UG and PG admissions. It is conducted fully online and can be attempted from home. The Computer-Based Test covers general knowledge, logical reasoning, basic mathematics, English, and computer fundamentals; some streams add subject sections, a drawing test, or a portfolio.</p>
+        </div>
+        <ul class="adm-facts">
+          <li><strong>150</strong><span>total marks</span></li>
+          <li><strong>100</strong><span>Computer-Based Test (CBT)</span></li>
+          <li><strong>50</strong><span>Personal Interaction (PI)</span></li>
+          <li><strong>Online</strong><span>attempt from home</span></li>
+        </ul>
+        <div class="adm-tablewrap">
+          <table class="adm-dates">
+            <caption>Representative application and result dates from the 2026 admissions snapshot. Dates vary by programme &mdash; check Important dates for the full, current schedule.</caption>
+            <thead>
+              <tr><th scope="col">Programme</th><th scope="col">Last application date</th><th scope="col">Result</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">B.Tech (most branches)</th><td>5 August 2026</td><td>8 August 2026</td></tr>
+              <tr><th scope="row">Bachelor of Architecture (B.Arch.)</th><td>7 August 2026</td><td>&mdash;</td></tr>
+              <tr><th scope="row">B.Tech direct second-year (lateral entry)</th><td>Applications closed</td><td>&mdash;</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="adm-links">
+          <li><a href="/mit-wpu-cet-2026/">CET details &amp; sample papers</a></li>
+          <li><a href="/important-dates/">Important dates</a></li>
+          <li><a href="/academics/academic-calender/">Academic calendar</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="adm-band adm-band--tint" id="fees" aria-labelledby="fees-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Fees &amp; financial aid</p>
+          <h2 id="fees-h">Scholarships &amp; funding</h2>
+          <p class="adm-lead">MIT-WPU offers financial assistance and merit scholarships worth INR 50 crore for AY 2026&#8211;27, with 2,500+ scholarships awarded to meritorious students based on national and state entrance exams and the MIT-WPU CET. Awards are subject to the conditions set out in the Admission Policy.</p>
+        </div>
+        <ul class="adm-schemes">
+          <li class="adm-scheme">
+            <h3>Dr. Vishwanath Karad Scholarship</h3>
+            <span class="adm-waiver">Up to 100% fee waiver</span>
+            <p>A full fee waiver for the entire duration of the programme for the top 3% of the total intake.</p>
+          </li>
+          <li class="adm-scheme">
+            <h3>MIT-WPU Merit Scholarship&#8202;&#8211;&#8202;I</h3>
+            <span class="adm-waiver">50% fee waiver</span>
+            <p>A 50% fee waiver for the entire duration of the programme, applicable to around 8% of the total intake.</p>
+          </li>
+        </ul>
+        <ul class="adm-links">
+          <li><a href="/scholarships/">Scholarships overview</a></li>
+          <li><a href="/scholarship-details/">Scholarship details</a></li>
+          <li><a href="/student-loans/">Student loans</a></li>
+          <li><a href="/media/mitwpu-public/documents/f4/f4af6873e9eee36e-Admission-Policy-for-AY-2026-2027.pdf">Admission Policy AY 2026&#8211;27 (PDF)</a></li>
+          <li><a href="/media/mitwpu-public/documents/12/12fbec64ec14ef6e-PhD-Fees-Structure-2026-27.pdf">Ph.D. fee structure 2026&#8211;27 (PDF)</a></li>
+        </ul>
+        <div class="adm-note">
+          <strong>Fees.</strong> Programme-wise fee structures for UG and PG are published on each programme page and confirmed in your offer letter. A consolidated UG/PG fee schedule is not yet part of this preview &mdash; see &ldquo;operator needs to supply.&rdquo;
+        </div>
+      </div>
+    </section>
+
+    <section class="adm-band" id="downloads" aria-labelledby="downloads-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Downloads</p>
+          <h2 id="downloads-h">Forms &amp; documents</h2>
+          <p class="adm-lead">Official admissions documents and prospectus material. Programme-specific brochures are on the individual school and programme pages; the full set of CET sample papers is on the CET page.</p>
+        </div>
+        <div class="adm-docgrid">
+          <a class="adm-doc" href="/media/mitwpu-public/documents/f4/f4af6873e9eee36e-Admission-Policy-for-AY-2026-2027.pdf">
+            <span class="adm-doc__txt"><strong>Admission Policy &mdash; AY 2026&#8211;27</strong><small>Eligibility, reservation, scholarships &amp; refund rules</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/20/205ae3d2f44b7363-MIT-WPU_Brochure_2025.pdf">
+            <span class="adm-doc__txt"><strong>MIT-WPU Prospectus &mdash; Brochure 2025</strong><small>University-wide programme prospectus</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/01/017e32c387dddfa3-BTech-lateral-entry-brochure-2026-27-v1.pdf">
+            <span class="adm-doc__txt"><strong>B.Tech Lateral Entry &mdash; Brochure 2026&#8211;27</strong><small>Direct second-year entry for diploma holders</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/d6/d64fc6ae45f3a2d2-Integrated-Btech-brochure-2026-27-v1.pdf">
+            <span class="adm-doc__txt"><strong>Integrated B.Tech &mdash; Brochure 2026&#8211;27</strong><small>After-10th integrated engineering pathway</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/12/12fbec64ec14ef6e-PhD-Fees-Structure-2026-27.pdf">
+            <span class="adm-doc__txt"><strong>Ph.D. Fee Structure &mdash; 2026&#8211;27</strong><small>Doctoral programme fees</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/8d/8d6aea3c764956b9-PGD-in-Management-brochure.pdf">
+            <span class="adm-doc__txt"><strong>PG Diploma in Management &mdash; Brochure</strong><small>Postgraduate diploma programme</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/3b/3b9bcaa6e56384b8-School-of-Business-brochure-2026-27-v1.pdf">
+            <span class="adm-doc__txt"><strong>School of Business &mdash; Brochure 2026&#8211;27</strong><small>Example programme brochure</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/bd/bd8b71b995dd72c1-MIT-WPU_CET_General_UG_Sample_Paper.pdf">
+            <span class="adm-doc__txt"><strong>CET Sample Paper &mdash; General UG</strong><small>Practice paper for the UG entrance test</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/a2/a2db3dc26333108a-MIT-WPU_CET_General_PG_Sample_Paper.pdf">
+            <span class="adm-doc__txt"><strong>CET Sample Paper &mdash; General PG</strong><small>Practice paper for the PG entrance test</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+          <a class="adm-doc" href="/media/mitwpu-public/documents/ef/ef54d3ea85c2fd61-Admission-committee.pdf">
+            <span class="adm-doc__txt"><strong>Admission Committee</strong><small>Committee constitution &amp; contacts</small></span>
+            <span class="adm-doc__tag" aria-hidden="true">PDF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="adm-band adm-band--tint" id="faqs" aria-labelledby="faqs-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faqs-h">Admissions FAQs</h2>
+          <p class="adm-lead">Quick answers to common admissions questions. For examination, grade-card, and academic queries, see the academics FAQ.</p>
+        </div>
+        <div class="adm-faq">
+          <details>
+            <summary>What is MIT-WPU CET 2026?</summary>
+            <p class="adm-faq__a">It is the university&#8217;s entrance exam for UG and PG admissions, conducted online. It carries 150 marks &mdash; a 100-mark Computer-Based Test and a 50-mark Personal Interaction &mdash; and can be attempted from home. See the <a href="/mit-wpu-cet-2026/">CET page</a> for the syllabus and sample papers.</p>
+          </details>
+          <details>
+            <summary>How much is the application fee?</summary>
+            <p class="adm-faq__a">The application form fee is Rs. 2,000, paid on the admissions portal when you complete the form. See the <a href="/application-process/">application process</a> for the full sequence.</p>
+          </details>
+          <details>
+            <summary>Which other entrance scores does MIT-WPU accept?</summary>
+            <p class="adm-faq__a">Engineering admissions also accept MHT-CET and JEE (Main) scores; MBA accepts CAT, MAT, and XAT; Law accepts CLAT and MH-CET Law, with the MIT-WPU Personal Interaction. Qualifying scores must be uploaded within 15 days of results.</p>
+          </details>
+          <details>
+            <summary>Are scholarships available?</summary>
+            <p class="adm-faq__a">Yes. MIT-WPU offers merit scholarships worth INR 50 crore for AY 2026&#8211;27, including full (100%) fee waivers for the top of the intake. See <a href="/scholarships/">scholarships</a> and <a href="/scholarship-details/">scholarship details</a>.</p>
+          </details>
+          <details>
+            <summary>Can diploma holders get direct second-year entry?</summary>
+            <p class="adm-faq__a">Yes. Candidates with a three-year engineering diploma can apply for B.Tech direct second-year (lateral) entry, subject to eligibility. See the <a href="/media/mitwpu-public/documents/01/017e32c387dddfa3-BTech-lateral-entry-brochure-2026-27-v1.pdf">lateral-entry brochure</a>.</p>
+          </details>
+          <details>
+            <summary>How do international students apply?</summary>
+            <p class="adm-faq__a">International applicants apply through the Study-in-India route, which covers how to apply, visa guidance, and international scholarships. Start at <a href="/international/">International at MIT-WPU</a>.</p>
+          </details>
+        </div>
+        <ul class="adm-links">
+          <li><a href="/academics/faq/">Academics &amp; examination FAQ</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="adm-band" id="contact" aria-labelledby="contact-h" data-image-gallery>
+      <div class="shell">
+        <div class="adm-head">
+          <p class="eyebrow">Talk to us</p>
+          <h2 id="contact-h">Admissions contact</h2>
+          <p class="adm-lead">The MIT-WPU admissions team can help with programmes, eligibility, and the application. Enquiry hours are Monday to Saturday, 10:00 AM to 6:00 PM.</p>
+        </div>
+        <div class="adm-contact">
+          <div class="adm-contact__card">
+            <h3>Call</h3>
+            <p><a href="tel:+912071177104">+91 20 7117 7104</a><br><a href="tel:+912071177105">+91 20 7117 7105</a><br>WhatsApp (message only): +91 98814 92848</p>
+          </div>
+          <div class="adm-contact__card">
+            <h3>Email</h3>
+            <p><a href="mailto:admissions@mitwpu.edu.in">admissions@mitwpu.edu.in</a><br><a href="mailto:international.admissions@mitwpu.edu.in">international.admissions@mitwpu.edu.in</a></p>
+          </div>
+          <div class="adm-contact__card">
+            <h3>Visit</h3>
+            <p>MIT-WPU, Kothrud Campus, Pune, Maharashtra. Director &ndash; Admissions: Dr. Prakash Mainkar.</p>
+          </div>
+        </div>
+        <ul class="adm-links">
+          <li><a href="/admissions-contact-us/">Full admissions contact directory</a></li>
+          <li><a href="/students/">Student resources</a></li>
+          <li><a href="/placements/">Placements</a></li>
+        </ul>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div class="footer-identity">
-        <strong>MAEER’s MIT World Peace University</strong>
+        <strong>MAEER&#8217;s MIT World Peace University</strong>
         <nav class="footer-group" aria-label="Quick links footer links">
 
         <ul><li><a href="/people/">People</a></li><li><a href="/search/">Search</a></li><li><a href="/intranet/">Intranet</a></li></ul>
