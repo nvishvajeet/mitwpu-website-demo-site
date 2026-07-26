@@ -102,6 +102,7 @@ const TEMPLATE_IDS = [
   "profile-section",
   "profile-detail-list",
   "profile-links",
+  "notice",
 ];
 
 /* The stylesheets a page needs are recorded per component in components.json,

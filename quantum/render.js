@@ -93,16 +93,20 @@
    * leaves it empty in both forms, because the person's name is always beside
    * the picture. This site used alt="{name}", so screen-reader users heard
    * every name twice on the people page. */
-  function portrait(person, size) {
+  function portrait(person, size, href) {
     return uwp.render("portrait", {
       portrait: {
         src: safeUrl(person.photo),
         initials: initials(peopleOrder.displayName(person)),
-        /* --md is 126x126, which is the size .member-portrait was; --lg is
-         * 192x240 for the record page. At most one of the two, per the
-         * template's own note. */
+        /* --md is 126px wide and --lg 192px, both 4/5 since the package
+         * stopped letting a size modifier decide a shape. At most one of the
+         * two, per the template's own note. */
         medium: size === "medium",
-        large: size === "large"
+        large: size === "large",
+        /* Passed in rather than derived here, because the two callers differ:
+         * a listing card links the face to the person's record, and the
+         * record page itself has nowhere to send it. */
+        href: href || ""
       },
       portrait_loading: uwp.markup(' loading="lazy"')
     });
@@ -133,7 +137,8 @@
         unit: [person.designation, person.affiliation].filter(Boolean).join(" · "),
         summary: tagRow((person.interests || []).slice(0, 3), "tag-row")
       },
-      person_portrait: portrait(person, "medium")
+      /* Same destination as the name above, from the same call. */
+      person_portrait: portrait(person, "medium", profileUrl(person))
     });
   }
 
@@ -226,11 +231,46 @@
           <div class="research-index">${escapeHtml(area.number)}</div>
           <div class="research-copy">
             <h2>${escapeHtml(area.title)}</h2>
-            <p>${escapeHtml(area.summary)}</p>
-            <ul class="topic-list topic-list-wide">${(area.topics || []).map((topic) => `<li>${escapeHtml(topic)}</li>`).join("")}</ul>
+            <div class="research-detail">
+              <p>${escapeHtml(area.summary)}</p>
+              <ul class="topic-list topic-list-wide">${(area.topics || []).map((topic) => `<li>${escapeHtml(topic)}</li>`).join("")}</ul>
+            </div>
           </div>
         </article>`).join("");
     }
+  }
+
+  /* A standing announcement, rendered from the package's notice component
+   * rather than written as a banner in each page that carries it.
+   *
+   * The copy is the group's own and is all of it: there is no deadline, no
+   * count of posts, no funding body and no closing date on record, so none
+   * appears here. The address is the route to everything the notice does not
+   * say, which is what it is for. The second sentence exists because the
+   * reader it is aimed at — a student with no invitation — is the one who
+   * assumes an unsolicited email is unwelcome.
+   *
+   * The mailto is a plain anchor labelled with the address, which is how the
+   * contact page on this site already publishes one. */
+  const HIRING_EMAIL = "hiring.research@mitwpu.edu.in";
+
+  function renderHiringNotice() {
+    const targets = document.querySelectorAll("[data-hiring-notice]");
+    if (!targets.length) return;
+    targets.forEach((target, index) => {
+      target.innerHTML = uwp.render("notice", {
+        notice: {
+          eyebrow: "Positions",
+          title: "Looking for motivated faculty, postdocs and PhD students.",
+          /* Unique per page even if a page ever carries two. */
+          heading_id: index === 0 ? "hiring-notice" : `hiring-notice-${index + 1}`,
+          body: uwp.markup(
+            `<p>Students, write to us: <a href="mailto:${escapeHtml(HIRING_EMAIL)}">`
+            + `${escapeHtml(HIRING_EMAIL)}</a></p>`
+          )
+        }
+      });
+    });
   }
 
   function renderFeaturedMembers() {
@@ -335,6 +375,7 @@
         role: [person.designation, person.affiliation].filter(Boolean).join(" · ")
       },
       profile: { panel: true },
+      /* No href: this IS the person's page. */
       person_portrait: portrait(person, "large"),
       profile_sections: uwp.join(sections),
       profile_sidebar: uwp.join(sidebar)
@@ -347,31 +388,59 @@
    * links are the entire reason a person with no selected publications
    * appears at all, so routing this through the package would either drop
    * them or move them below the citations. Reported rather than forced. */
+  /* Two blocks, not one list.
+   *
+   * Every member used to get a section of their own, and the three with no
+   * selected publications on file got one too: a heading, a name, a row of
+   * links, and an empty right-hand column where the numbered list should have
+   * been. Three holes at the foot of the page, each looking like a render that
+   * had failed rather than a record that is thin. Worse, the filter asked for
+   * a *scholarly* profile, so the one member whose only link is a personal
+   * website vanished from the page altogether — seven members, six sections,
+   * and no way to tell that from reading it.
+   *
+   * So: the people with selected publications keep a section each, and
+   * everyone else is named once at the end, in the column the publications
+   * would have occupied, as person-cards — the same treatment the contact page
+   * gives a person whose useful content is a line of links. Nobody is dropped
+   * and no heading promises a list that is not under it. */
   function renderPublications() {
     const target = document.getElementById("publications-list");
     if (!target) return;
-    const scholarlyProfiles = ["scholar", "scopus", "orcid", "research", "publication"];
-    target.innerHTML = group.people
-      .filter((person) =>
-        (person.publications || []).length
-        || scholarlyProfiles.some((key) => person.links?.[key]))
-      .map((person) => {
-        const hasSelectedPublications = (person.publications || []).length > 0;
-        return `<section class="publication-group">
+    const published = group.people.filter((person) => (person.publications || []).length);
+    const unpublished = group.people.filter((person) =>
+      !(person.publications || []).length && profileLinkItems(person).length);
+
+    const sections = published.map((person) => `<section class="publication-group">
         <div class="publication-person">
-          <p class="eyebrow">${escapeHtml(
-            hasSelectedPublications
-              ? (person.publicationHeading || "Selected publications")
-              : "Research profiles",
-          )}</p>
+          <p class="eyebrow">${escapeHtml(person.publicationHeading || "Selected publications")}</p>
           <h2><a href="${profileUrl(person)}">${escapeHtml(peopleOrder.displayName(person))}</a></h2>
           ${profileLinkRow(person)}
         </div>
-        ${hasSelectedPublications
-          ? `<ol class="publication-list numbered">${(person.publications || []).map(publicationItem).join("")}</ol>`
-          : ""}
-      </section>`;
-      }).join("");
+        <ol class="publication-list numbered">${(person.publications || []).map(publicationItem).join("")}</ol>
+      </section>`);
+
+    if (unpublished.length) {
+      sections.push(`<section class="publication-group">
+        <div class="publication-person">
+          <p class="eyebrow">Research profiles</p>
+          <h2>${unpublished.length === 1 ? "One further member" : "Further members"}</h2>
+          <p class="publication-note">No publications are selected here; these are their profiles.</p>
+        </div>
+        <div class="people-list">${uwp.join(unpublished.map((person) => uwp.render("person-card", {
+          person: {
+            display_name: peopleOrder.displayName(person),
+            url: profileUrl(person),
+            role: [person.groupRole, person.designation].filter(Boolean).join(" · "),
+            summary: profileLinkRow(person)
+          },
+          person_portrait: uwp.render("portrait", {
+            portrait: { initials: initials(peopleOrder.displayName(person)) }
+          })
+        })))}</div>
+      </section>`);
+    }
+    target.innerHTML = sections.join("");
   }
 
   function renderContacts() {
@@ -404,6 +473,7 @@
       node.textContent = new Date().getFullYear();
     });
     renderResearch();
+    renderHiringNotice();
     renderFeaturedMembers();
     renderPeople();
     renderMember();

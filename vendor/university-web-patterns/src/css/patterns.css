@@ -82,10 +82,22 @@
 }
 
 /* Content measure. `.uwp-wrap` is the canonical name; `.uwp-shell` is an alias
-   so markup promoted from the donor keeps working unchanged. */
+   so markup promoted from the donor keeps working unchanged.
+
+   The gutter is `--uwp-shell-gutter`, not a literal, for the same reason
+   `.uwp-profile` takes `--uwp-profile-width`: a client re-declares the measure
+   through --uwp-content-width and then finds the gutter beside it is a number
+   the token set cannot reach. The only way out was to restate the whole width
+   at equal specificity in a sheet that loads later — which one client did in
+   four files, for a 48px gutter falling to 32px on a phone, and had to restate
+   both tiers because a later sheet's single rule would otherwise carry the
+   wide value down to the narrow one. Two names because there are two tiers,
+   and both default to what the rules said before, so nothing moves unless
+   asked. */
 .uwp-wrap,
 .uwp-shell {
-  width: min(calc(100% - 2rem), var(--uwp-content-width));
+  width: min(calc(100% - var(--uwp-shell-gutter, 2rem)),
+    var(--uwp-content-width));
   margin-inline: auto;
 }
 
@@ -153,19 +165,77 @@
   min-height: var(--uwp-header-height);
 }
 
-/* Right-hand cluster: nav, search, theme switch. A donor variant kept the theme
-   switch inside the nav instead; both arrangements render correctly. */
+/* The navigation is the masthead's own child, not the actions cluster's — see
+   the note in masthead.html. On one line it is pushed to the right by an auto
+   start margin rather than by `space-between`, which with three children would
+   strand it in the middle. */
+.uwp-masthead__inner > .uwp-nav {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-inline-start: auto;
+}
+
+/* Right-hand cluster: disclosure button, search field, theme switch. A donor
+   variant kept the theme switch inside the nav instead; both render
+   correctly. */
 .uwp-masthead__actions {
   display: flex;
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: flex-end;
   gap: var(--uwp-space-2);
 }
 
+/* ---------------------------------------------------------------------------
+   Two-row masthead — `.uwp-masthead--stacked`
+   ---------------------------------------------------------------------------
+   Row one is the brand and the controls; row two is the whole navigation,
+   across the full measure. The arithmetic that forces it: a lockup wants
+   250–330px, a control cluster with a search field wants another 250–300px,
+   and eight top-level entries at a readable size want 700px or more. On one
+   line that is 1300px of demand against a shell that is typically capped near
+   1200px, and the flexible track — the brand — is what pays, silently, until
+   the institution's name wraps or clips.
+
+   The rows are placed rather than flowed, so an added navigation entry widens
+   row two and moves nothing above it. Row heights are left to the content;
+   a client that needs a fixed band declares them and keeps the sum equal to
+   `--uwp-header-height`, which bounds the mega panel and must stay honest.
+
+   No `display: contents` anywhere. The three children are already siblings,
+   which is the whole reason 0.21.0 moved the navigation out of the actions
+   cluster; dissolving a wrapper to place its children is a workaround for a
+   template that did not offer the layout, and this one does. */
+.uwp-masthead--stacked .uwp-masthead__inner {
+  display: grid;
+  /* The brand is not placed: it is first in the source and auto-placement puts
+     it in the one free cell, 1 / 1. Naming it would mean naming the client's
+     own brand element, which the component does not know. */
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: var(--uwp-space-3);
+  row-gap: 0;
+}
+
+.uwp-masthead--stacked .uwp-masthead__actions {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.uwp-masthead--stacked .uwp-masthead__inner > .uwp-nav {
+  grid-area: 2 / 1 / 3 / -1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-inline-start: 0;
+  /* Air, which is the point of the second row. A row that only moved the
+     entries down without spacing them is the same dense strip one line
+     lower. The floor is what keeps a ninth and tenth entry on one line. */
+  gap: clamp(var(--uwp-space-2), 2.4vw, var(--uwp-space-4));
+}
+
 /* Plain footer wrapper, for a site that does not use the grouped column grid. */
 .uwp-footer__inner {
-  width: min(calc(100% - 2rem), var(--uwp-content-width));
+  width: min(calc(100% - var(--uwp-shell-gutter, 2rem)),
+    var(--uwp-content-width));
   margin-inline: auto;
   padding-block: var(--uwp-space-4);
 }
@@ -599,22 +669,52 @@ html:not(.uwp-js) .uwp-nav-mega {
   border-radius: 0;
 }
 
-/* Groups flow into 1–3 columns by content: grid, because a heading must stay
-   atop its own links — CSS columns alone would let a group break across
-   columns mid-list.
+/* Groups flow into columns by content: grid, because a heading must stay atop
+   its own links — CSS columns alone would let a group break across columns
+   mid-list.
 
    The max-width is the whole size story and does two jobs at once. It is the
    definite max size `auto-fit` counts its repetitions against, which fixes the
-   ceiling at three 13rem tracks and their two 1.5rem gaps; and because
-   `auto-fit` collapses the tracks no group landed in, along with their gaps,
-   a panel with one group still measures one group wide. Three because past
-   three columns a panel stops being one glance, and an entry that needs a
-   fourth wants splitting rather than widening. */
+   ceiling; and because `auto-fit` collapses the tracks no group landed in,
+   along with their gaps, a panel with one group still measures one group wide.
+
+   The track FLOOR is 11rem and not the 13rem it was, for the same measured
+   reason: at four tracks 13rem could not fit a 1024px laptop's room, and the
+   labels a university puts in this panel — `Construction Engineering &
+   Management` — wrap at either measure, so the wider track bought line breaks
+   rather than fewer of them. Four narrow columns measured 458px tall against
+   three wide ones at 695px.
+
+   The ceiling was three tracks until 0.21.0, and three was too few. Measured
+   on a real academics panel — twenty-seven links in four groups — three
+   tracks gave nine rows at the 44px floor plus four headings: a panel 706px
+   wide and 698px TALL, in a 900px viewport. It read, fairly, as a curtain
+   dropped over the page. The panel was using barely half the width its own
+   viewport guard allowed while spending nearly all the height, which is the
+   wrong way round for a thing a reader is meant to take in at a glance.
+   Four tracks halves the row count for the same links.
+
+   Four rather than five, and this is the trade rather than an oversight: a
+   fifth track puts a wide panel's right edge past most entries' room, so
+   navigation.js flips it at the viewport edge and it hangs across the bar —
+   the full-bleed curtain this component's `width: max-content` exists to
+   avoid. Four keeps the panel narrower than the shell on a 1280px screen.
+   The height, not the width, was the fault.
+
+   The second term is why the ceiling is not simply four tracks. A panel hangs
+   from its own entry, which is some way in from the left edge, so the room it
+   actually has is the viewport minus that offset — and four tracks measured
+   938px against the 870px a 1024px laptop had. The flip at the right edge does
+   not rescue a panel that wide; it moves the same overflow to the left, where
+   the masthead's `overflow-x: clip` cuts it off. So the ceiling yields with
+   the viewport and the panel drops to three tracks near 1100px, which is one
+   fewer column rather than a panel with a piece missing. navigation.js is
+   hardened for the same case from the other side: see `place`. */
 .uwp-nav-mega__body {
   display: grid;
   align-items: start;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  max-width: 42rem;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  max-width: min(60.5rem, calc(100vw - 12rem));
   gap: var(--uwp-space-2) var(--uwp-space-3);
 }
 
@@ -634,7 +734,7 @@ html:not(.uwp-js) .uwp-nav-mega {
    cannot do, just as columns cannot do the grid's. The measure matches the
    grid's own track floor, so a group given two tracks above fills both. */
 .uwp-nav-mega__links {
-  columns: 13rem;
+  columns: 11rem;
   column-gap: var(--uwp-space-3);
 }
 
@@ -680,6 +780,117 @@ html:not(.uwp-js) .uwp-nav-mega {
   border-top: 1px solid var(--uwp-rule);
   color: var(--uwp-link);
   font-weight: 700;
+}
+
+/* A panel row is not a bar row.
+
+   Every client sizes its top-bar links the same way — `.site-nav a { height:
+   112px }`, one class and a bare element — and that selector does not stop at
+   the bar. The three panels hang off it in the DOM, so a drop-down row, a
+   fly-out row and a mega-panel row each took the full height of the bar: one
+   client's academics panel came to 1,547px of content in a 785px panel and
+   scrolled, for twenty-seven links that fit. Nothing in the package declared
+   a height, so there was nothing for the client's rule to lose to.
+
+   The package cannot stop a client styling its own class, and should not try.
+   What it can do is decline to inherit the bar's geometry, at a specificity a
+   one-class bar rule cannot reach whatever the load order: these are two
+   classes and an element, against the (0,1,1) that every such rule is. The
+   rows keep their own 44px floor from the rules above; only the fixed height
+   is refused. `.uwp-nav` is always the ancestor — masthead.html puts all
+   three panels inside it — so this holds for every navigation pattern,
+   including any added later. */
+.uwp-nav .uwp-nav-menu a,
+.uwp-nav .uwp-nav-flyout a,
+.uwp-nav .uwp-nav-mega a {
+  height: auto;
+}
+
+/* ---------------------------------------------------------------------------
+   Search field — a pill in the masthead: one input and one submit button.
+   ---------------------------------------------------------------------------
+   Painted in `currentColor` rather than in the palette tokens, and that is the
+   whole of why it needs no client override. A masthead is a solid
+   institutional band on one site and light paper on the next; a pill declared
+   in --uwp-surface and --uwp-ink is legible on one of those and invisible on
+   the other, whereas one mixed from the ink the band already sets is right on
+   both, in either theme, with nothing to keep in step.
+
+   It is a control and is sized as one: the 44px target applies to the button
+   and to the field, and the input's type is at the 16px reading floor, which
+   also stops iOS zooming the page when the field takes focus. */
+.uwp-search-field {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  min-width: 0;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 32%, transparent);
+  border-radius: 999px;
+}
+
+.uwp-search-field:focus-within {
+  background: color-mix(in srgb, currentColor 16%, transparent);
+  border-color: currentColor;
+}
+
+.uwp-search-field__input {
+  flex: 1 1 auto;
+  /* Not a fixed width: the field is the one thing in the masthead that can
+     usefully take whatever room is left, and the floor is the width at which
+     a typed query is still readable. */
+  width: clamp(7rem, 15vw, 12rem);
+  min-width: 0;
+  height: 44px;
+  padding: 0 .25rem 0 1rem;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: inherit;
+  font-family: var(--uwp-sans);
+  font-size: 1rem;
+}
+
+.uwp-search-field__input::placeholder {
+  color: color-mix(in srgb, currentColor 62%, transparent);
+  opacity: 1;
+}
+
+/* The wrapper draws the focus state for the whole pill, so a ring on the input
+   as well would be a rectangle inside a capsule. The button keeps its own,
+   because it is separately reachable by Tab. */
+.uwp-search-field__input:focus-visible {
+  outline: none;
+}
+
+.uwp-search-field__submit {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+.uwp-search-field__submit:hover {
+  color: inherit;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+}
+
+.uwp-search-field__submit:focus-visible {
+  outline: 2px solid var(--uwp-focus);
+  outline-offset: 2px;
+}
+
+.uwp-search-field__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
 }
 
 /* ---------------------------------------------------------------------------
@@ -764,7 +975,10 @@ html:not(.uwp-js) .uwp-nav-mega {
    Breadcrumbs
    --------------------------------------------------------------------------- */
 .uwp-breadcrumbs {
-  width: min(calc(100% - 2rem), var(--uwp-content-width));
+  /* The trail carries the measure itself rather than wrapping a `.uwp-shell`,
+     so it takes the same gutter token or it lines up with nothing. */
+  width: min(calc(100% - var(--uwp-shell-gutter, 2rem)),
+    var(--uwp-content-width));
   margin: 0 auto;
   color: var(--uwp-muted);
   border-bottom: 1px solid var(--uwp-rule);
@@ -775,7 +989,7 @@ html:not(.uwp-js) .uwp-nav-mega {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: .3rem .55rem;
+  gap: .3rem 0;
   min-height: 44px;
   margin: 0;
   padding: .4rem 0;
@@ -797,8 +1011,16 @@ html:not(.uwp-js) .uwp-nav-mega {
   line-height: 1.35;
 }
 
+/* The separator carries its own space on both sides, and the list's column gap
+   is zero. It used to be the other way round — a left margin here and a
+   .55rem column gap on the <ol> — which read correctly only while that gap
+   was in force. Below the breakpoint the gap is set to 0 so a wrapped
+   breadcrumb does not open a hole at the start of a line, and the trail came
+   out as "Research /Research groups /Quantum group": space before every
+   slash, none after it. Spacing that belongs to the mark stays with the
+   mark. */
 .uwp-breadcrumbs li:not(:last-child)::after {
-  margin-left: .55rem;
+  margin-inline: .55rem;
   color: var(--uwp-rule-strong);
   content: "/";
 }
@@ -958,16 +1180,32 @@ html:not(.uwp-js) .uwp-nav-mega {
   color: inherit;
 }
 
-/* Images inside these blocks fill their container by default. The :not()
-   matters: a portrait declares its own fixed box in media.css, and a bare
-   `.uwp-card img` (0,1,1) outranks `.uwp-portrait` (0,1,0) on specificity
-   regardless of load order — which rendered every photographed person at full
-   card width, while a person with no photograph looked correct because the
-   lettered tile is a div. Any element that sets its own box belongs here. */
-.uwp-hero img:not(.uwp-portrait),
-.uwp-card img:not(.uwp-portrait),
-.uwp-profile img:not(.uwp-portrait),
-.uwp-gallery img:not(.uwp-portrait) {
+/* Images inside these blocks fill their container by default — but only the
+   client's own, never the package's.
+
+   The :not() is the load-bearing part, and it is deliberately a statement
+   about the package rather than a list of exceptions. A bare `.uwp-card img`
+   is (0,1,1) and outranks any component class at (0,1,0) whatever the load
+   order, so every component that renders a photograph or a mark inside one of
+   these four containers loses its own dimensions to this rule. It has now
+   happened three times: portraits inside cards rendered every photographed
+   person at full card width (a person with no photograph looked correct,
+   because the lettered tile is a div); and `.uwp-profile-link-icons__mark`
+   drew each 14px service mark as a 44x55 cropped photograph on the first page
+   that ever rendered the component, because a mark supplied as a file is an
+   <img>. Naming `.uwp-portrait` here fixed the first and left the second, and
+   would have left the next one too.
+
+   So the exclusion is the general rule the first two were instances of: an
+   element carrying a package class states its own box, and this rule declines
+   to claim it. `[class*="uwp-"]` is (0,1,0) inside `:not()`, so the
+   specificity is unchanged — what changes is that the rule no longer matches
+   package markup at all, and no future component has to be added to a list.
+   A client's own `<img class="campus-map">` still fills its container. */
+.uwp-hero img:not([class*="uwp-"]),
+.uwp-card img:not([class*="uwp-"]),
+.uwp-profile img:not([class*="uwp-"]),
+.uwp-gallery img:not([class*="uwp-"]) {
   display: block;
   width: 100%;
   height: auto;
@@ -2313,13 +2551,19 @@ html:not(.uwp-js) .uwp-nav-mega {
   padding-block: clamp(2.5rem, 7vw, 4.5rem);
 }
 
-/* A group whose list is long enough to set the whole footer's height takes two
-   tracks and balances its links across them. The case this exists for is the
-   statutory column — grievance redressal, the ombudsman, the anti-ragging
-   committee, mandatory disclosure — which a university may not shorten by
-   dropping links, so the only place to give is the layout. Seven is the
-   threshold: six links beside three-link neighbours is a footer, ten is a
-   column with an empty footer beside it.
+/* A group whose list is long enough to set the whole footer's height spreads
+   across extra tracks and balances its links between them. The case this
+   exists for is the statutory column — grievance redressal, the ombudsman,
+   the anti-ragging committee, mandatory disclosure — which a university may
+   not shorten by dropping links, so the only place to give is the layout.
+   Seven is the threshold: six links beside three-link neighbours is a footer,
+   ten is a column with an empty footer beside it.
+
+   Two tiers, because two columns is not enough past nine links: at ten the
+   group is still 220px against 129px for its neighbours, and a block that
+   tall on one side reads as a list somebody forgot to lay out. Ten or more
+   takes three tracks and three columns, which brings it to four rows and
+   level with the rest of the row.
 
    CSS columns rather than a nested grid, because only they balance a flat
    list top-to-bottom-then-across without being told the row count; the links
@@ -2334,6 +2578,14 @@ html:not(.uwp-js) .uwp-nav-mega {
   display: block;
   columns: 2;
   column-gap: var(--uwp-space-6);
+}
+
+.uwp-footer__group:has(li:nth-child(10)) {
+  grid-column: span 3;
+}
+
+.uwp-footer__group:has(li:nth-child(10)) ul {
+  columns: 3;
 }
 
 .uwp-footer__group:has(li:nth-child(7)) li {
@@ -2919,6 +3171,142 @@ html:not(.uwp-js) .uwp-nav-mega {
 }
 
 /* ---------------------------------------------------------------------------
+   Course schedule — the week-by-week table a taught course keeps publishing.
+   Two to four columns, decided by which headings the data carries: a course
+   in week one has a date and a topic, and gains the reading and the notes
+   columns as it acquires them.
+
+   Wide when it is full, so it takes the fee table's scroll region rather
+   than restacking — display:block on the cells would drop the row and column
+   association, and that association is most of what the component is for.
+   The minimums are what make it overflow, which is what makes it scroll; a
+   two-column schedule stays inside them and never does.
+   --------------------------------------------------------------------------- */
+.uwp-schedule {
+  display: grid;
+  gap: var(--uwp-space-3);
+}
+
+.uwp-schedule__scroll {
+  overflow-x: auto;
+  /* a scroll container clips the focus ring of anything inside it unless it
+     is given somewhere to sit */
+  padding: 3px;
+  margin: -3px;
+}
+
+.uwp-schedule__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: max(1rem, 16px);
+}
+
+.uwp-schedule__table caption {
+  margin-bottom: var(--uwp-space-2);
+  color: var(--uwp-heading);
+  font-family: var(--uwp-serif);
+  font-size: max(1.125rem, 18px);
+  line-height: 1.3;
+  text-align: start;
+}
+
+.uwp-schedule__table caption .uwp-meta {
+  display: block;
+  margin-top: .35rem;
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  font-weight: 400;
+}
+
+.uwp-schedule__table thead th {
+  padding: .5rem var(--uwp-space-2) .5rem 0;
+  border-bottom: 2px solid var(--uwp-rule-strong);
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.uwp-schedule__table tbody th,
+.uwp-schedule__table tbody td {
+  padding: .75rem var(--uwp-space-2) .75rem 0;
+  border-bottom: 1px solid var(--uwp-rule);
+  text-align: start;
+  vertical-align: baseline;
+}
+
+.uwp-schedule__table tbody th {
+  min-width: 7rem;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-weight: 700;
+}
+
+.uwp-schedule__table tbody th time {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* The topic is the widest thing in the row and the only prose in it, so it
+   gets the width and everything else is kept short. */
+.uwp-schedule__table tbody td {
+  min-width: 14rem;
+  color: var(--uwp-copy);
+}
+
+.uwp-schedule__reading,
+.uwp-schedule__materials {
+  min-width: 8rem;
+}
+
+/* The lecture number is how a course refers to a meeting out loud, so it sits
+   above the date rather than beside it, where it would be read as part of
+   the date itself. */
+.uwp-schedule__number {
+  display: block;
+  color: var(--uwp-muted);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.uwp-schedule__table .uwp-meta {
+  display: block;
+  margin-top: .2rem;
+  color: var(--uwp-muted);
+  font-weight: 400;
+}
+
+/* Two files in one cell stack, because they are two destinations and a row of
+   links separated by nothing is a row a reader has to parse. Each row of the
+   stack keeps the 44px target the rest of this package holds to. */
+.uwp-schedule__materials a {
+  display: block;
+  min-height: 1.5rem;
+  padding-block: .35rem;
+}
+
+/* A week with no class keeps its place in the table, because a reader
+   counting weeks forward needs the gap to be visible rather than missing.
+   The row also says what it is in words: the tone is not the statement. */
+.uwp-schedule__row--no-meeting th,
+.uwp-schedule__row--no-meeting td {
+  color: var(--uwp-muted);
+}
+
+@media print {
+  /* nothing scrolls on paper, and a clipped schedule is a schedule with its
+     notes column missing */
+  .uwp-schedule__scroll {
+    overflow-x: visible;
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Responsive reflow
    --------------------------------------------------------------------------- */
 
@@ -2953,7 +3341,8 @@ html:not(.uwp-js) .uwp-nav-mega {
   .uwp-wrap,
   .uwp-shell,
   .uwp-breadcrumbs {
-    width: min(calc(100% - 1.875rem), var(--uwp-content-width));
+    width: min(calc(100% - var(--uwp-shell-gutter-narrow, 1.875rem)),
+      var(--uwp-content-width));
   }
 
   .uwp-institution-bar__inner {
@@ -2976,21 +3365,75 @@ html:not(.uwp-js) .uwp-nav-mega {
     width: 8.875rem;
   }
 
-  .uwp-masthead__inner {
+  /* Both layouts collapse to this one: `--stacked` is a wide-screen answer to
+     a wide-screen problem, and below the breakpoint the disclosure panel is
+     the layout whichever way the bar was drawn above it. Restated rather than
+     inherited, because the modifier's grid would otherwise survive here. */
+  .uwp-masthead__inner,
+  .uwp-masthead--stacked .uwp-masthead__inner {
     position: relative;
-    align-items: flex-start;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: .5rem;
     min-height: var(--uwp-header-height);
-    padding-top: .65rem;
+    padding-block: .65rem;
   }
 
+  /* Source order is brand, navigation, actions — the order the two-row layout
+     above wants. Below the breakpoint the controls belong next to the brand
+     and the navigation panel below both, so the two swap here.
+
+     This stayed a row rather than becoming a column, which is what the rule
+     said for three versions while doing the opposite: a column with
+     `width: 100%` on the actions put the controls on a line of their own
+     under the brand, left-aligned. On the university masthead that went
+     unnoticed, because a client sheet was already overriding it to sit the
+     search field beside the lockup. On a group microsite, whose whole action
+     cluster is one disclosure button, it rendered as a stray bordered square
+     dropped below the title — the visible symptom that sent this rule back
+     to what its own comment had always claimed.
+
+     `margin-inline-start: auto` and not `space-between`: the navigation is a
+     third child of this box and would otherwise be strung out between the
+     other two before it wraps. */
   .uwp-masthead__actions {
-    width: 100%;
+    order: 1;
+    flex: 0 0 auto;
+    width: auto;
     min-width: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-end;
+    margin-inline-start: auto;
+  }
+
+  /* The brand is `flex: 0 0 auto` above the breakpoint, where there is room
+     for its intrinsic width. On a phone there is not: a long institution or
+     group name measures wider than the viewport less a 44px control, so the
+     controls wrapped to a line of their own and the row treatment above did
+     nothing. Let the lockup shrink and wrap its own text instead — two lines
+     of title beside one button, rather than one line of each.
+
+     Addressed as the first child rather than by class: a client's brand may be
+     `.uwp-brand`, a bare anchor, or its own lockup wrapper, and all three are
+     first in the template's source order.
+
+     The basis is 0 and not `auto` because flex wraps before it shrinks: with
+     an `auto` basis the lockup still asks for its max-content width, the line
+     overflows, and the controls move to the next line exactly as before. A
+     zero basis makes it ask for nothing and take what is left. */
+  .uwp-masthead__inner > :first-child {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  /* Full basis, so the panel takes the second line whole however wide the
+     lockup and the controls above it turn out to be. */
+  .uwp-masthead__inner > .uwp-nav {
+    order: 2;
+    flex-basis: 100%;
+    margin-inline-start: 0;
   }
 
   /* Without scripting the nav has no disclosure button, so it degrades to the
@@ -3329,12 +3772,18 @@ html:not(.uwp-js) .uwp-nav-mega {
   list-style: none;
 }
 
+/* `color` is declared rather than left to inherit so that a client colouring
+   one service — `.uwp-profile-link-icons__link--orcid { color: … }` — has a
+   property on this element to override, and so a `mark` glyph drawn with
+   currentColor takes that colour. The default is the page's ink, which is
+   what a row with no per-service colour has always been. */
 .uwp-profile-link-icons__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   min-height: 44px;
+  color: inherit;
   opacity: .78;
   text-decoration: none;
   transition: opacity 140ms ease;
@@ -3352,7 +3801,12 @@ html:not(.uwp-js) .uwp-nav-mega {
 
 /* A mark is a third party's artwork at whatever weight they drew it. Fixing
    the box and letting it letterbox keeps a heavy mark from towering over a
-   light one; a client nudges a single service through the --<slug> modifier. */
+   light one; a client nudges a single service through the --<slug> modifier.
+   One rule for both forms the template can render — an <img> for a file the
+   client must not alter, an inline <svg> for a monochrome glyph — because
+   they sit in the same row and must arrive at the same optical size.
+   `object-fit` applies to the <img> and is inert on the <svg>, which is
+   already told its viewBox. */
 .uwp-profile-link-icons__mark {
   display: block;
   width: 14px;

@@ -1,0 +1,63 @@
+{
+  "note": "The external scholarly services a person's profile links out to, and the two facts about each one that are the SERVICE's rather than this university's: the colour it is recognised by, and the artwork for its mark if we hold any. These are per-service values and deliberately not in group-assets/site.css's palette — that palette is MIT-WPU's, and a site that never links to ORCID should not carry ORCID's green in its theme. tools/build_people_profiles.mjs reads this file and generates people/service-brands.css from it, so the colours are stated once here and nowhere else.\n\nA brand's colour is a fact about the brand, and using it is not reproducing the brand's logo — which is why a service can appear here with a colour and no mark, and why a text link in the service's own colour is the honest answer for a service whose artwork cannot be obtained. A mark is only ever the artwork the service itself publishes, byte-preserved and recorded in brand/README.md; nothing here is drawn, traced or approximated by hand, because a reader who does not recognise a shape cannot tell an approximation from the real thing and will not trust either.\n\n`brand` is the service's own colour as it publishes or declares it. `ink` is what is actually painted, per page ground, because a colour chosen for a white page is not always legible on this site's dark one: each value is the brand colour moved along its own lightness — same hue, same saturation — until it clears 4.5:1 on that ground, and where the brand colour already clears it the value is the brand colour unchanged. `mark` names artwork under demo-assets/brand/, with `form` saying how it may be drawn: `image` for a fixed multi-colour icon a service forbids altering, which is rendered as an <img> so nothing on the page can reach inside it; `glyph` for a monochrome shape, which is inlined as an <svg> and drawn in the link's colour.",
+
+  "services": {
+    "orcid": {
+      "label": "ORCID",
+      "brand": "#A6CE39",
+      "ink": null,
+      "mark": {
+        "form": "image",
+        "file": "brand/orcid-id-icon.svg",
+        "sha256": "195be086656233fc1a0089086d9190d28dc6abce39c2290612d1893233e1f166"
+      },
+      "colour_source": "The declared fill of the outer disc in ORCID's own iD icon vector, https://orcid.org/assets/vectors/orcid.logo.icon.svg, retrieved 26 July 2026. Read out of the artwork rather than sampled from a rendering.",
+      "note": "ORCID is the one service in this list whose mark can be had cleanly: it publishes the iD icon expressly so that an iD may be displayed with it, and its brand guidelines say the icon 'must be used as provided, and must not be changed or altered in any way'. So it is the artwork verbatim, at its own two colours, with no tint and no dark-theme inversion — hence `ink` is null and the dark-theme filter in people/profile.css exempts it by name. ORCID publishes the icon at 16, 24, 32, 64 and 128 px and calls 24 optimal; the row draws it at 16, which is their smallest published size, so it is never asked to work below one. The white iD inside the green disc is what carries its legibility, which matters because the green alone is 1.82:1 on white and could not carry text."
+    },
+
+    "linkedin": {
+      "label": "LinkedIn",
+      "brand": "#0A66C2",
+      "ink": { "light": "#0A66C2", "dark": "#0F81F3" },
+      "mark": { "form": "glyph", "file": "social-marks.json#linkedin" },
+      "colour_source": "LinkedIn's published brand colour, 'LinkedIn Blue' #0A66C2, from its brand guidelines (brand.linkedin.com). The favicon LinkedIn still serves is the pre-2019 #0073B2 and is NOT used: published guidance beats a stale asset.",
+      "note": "The glyph is the monochrome 'in' this repository already holds in social-marks.json for the footer, so there is one copy for both rows. It arrives as markup rather than as a file precisely so it can take this colour; #0A66C2 is 5.69:1 on the light page and 3.09:1 on the dark one, which clears the 3:1 a graphic needs but is dim beside a name, so the dark page gets the same blue lifted to 4.57:1."
+    },
+
+    "scholar": {
+      "label": "Google Scholar",
+      "brand": "#4285F4",
+      "ink": { "light": "#206FF2", "dark": "#4285F4" },
+      "mark": null,
+      "colour_source": "Google Blue #4285F4, Google's published brand blue. Corroborated against the service's own artwork: the dominant opaque pixel of https://scholar.google.com/favicon.ico (48x48, sha256 8dac4207...) is #4185F4, one step off the published value.",
+      "note": "NO MARK, and this is a decision rather than an omission. Google Scholar is a Google trademark; Google publishes no icon for third parties to download and its trademark list sends you to guidelines before any use. Drawing the mortarboard ourselves is exactly the thing the two mark components both forbid, so Scholar stays a text link — in its own blue, which needs no artwork and is what makes it findable in the list. #4285F4 is 3.56:1 on white, short of the 4.5:1 text needs, so the light page darkens it along its own lightness to #206FF2 (4.55:1); on the dark page it is 4.94:1 unchanged."
+    },
+
+    "scopus": {
+      "label": "Scopus",
+      "brand": "#FF551D",
+      "ink": { "light": "#DC3700", "dark": "#FF551D" },
+      "mark": null,
+      "colour_source": "The field colour of Elsevier's own Scopus product label, Scopus_Product_Label_no_TM_graphite.png (sha256 42c221fb9776...), served from Elsevier's CDN and linked from Elsevier's Scopus librarian toolkit at elsevier.com/librarian/promote-library-resources/toolkit-scopus, retrieved 26 July 2026. It is 83,250 of that image's pixels, so it is the label's colour and not a sampled edge.",
+      "note": "No mark. scopus.com refuses our requests (HTTP 403 from its WAF) and Elsevier's brand portal is a JavaScript application we cannot read, so the wordmark could not be obtained from the service itself; the product label above was reachable because Elsevier links it from a page written for libraries. A colour can be taken from that image honestly; a logo could not be, because what is published there is a wordmark for print, not an icon for a 16px row. #FF551D is 3.20:1 on white, so the light page darkens it to #DC3700 (4.58:1); on the dark page it is 5.50:1 unchanged."
+    },
+
+    "dblp": {
+      "label": "DBLP",
+      "brand": "#2581C4",
+      "ink": { "light": "#237BBB", "dark": "#2787CD" },
+      "mark": null,
+      "colour_source": "The dominant blue of dblp's own logo, https://dblp.org/img/logo.320x120.png (sha256 b2257bb7...), retrieved 26 July 2026. dblp publishes no brand guidelines.",
+      "note": "No mark, and a caveat worth recording: dblp's wordmark is GREY, and the colour is in a three-colour diamond emblem — blue, yellow and green — so dblp does not really have one colour a reader knows it by. #2581C4 is the largest share of that emblem and is close to the #1889C4 dblp's own stylesheet uses for links, which is the best available evidence. No person in academics/data/people.json carries a dblp link today; the entry exists because PublicProfile.dblp_url does, so a faculty member who enters one gets the same treatment as everybody else."
+    }
+  },
+
+  "not_coloured": {
+    "note": "Services and links deliberately left in the page's own ink, so that the coloured ones stay meaningful.",
+    "profile": "The person's page on mitwpu.edu.in. It is this university's own link, not a third party's, and the site's link colour is already its brand colour.",
+    "research": "Covers ResearchGate and INFLIBNET Vidwan under one key across 25 records, so there is no single service and no single colour. Splitting the key is the fix, not inventing a colour for the pair.",
+    "website": "A faculty member's own site. It has no brand and no mark by definition — see the note in tools/build_people_profiles.mjs about why it is placed first in the sidebar rather than given a glyph.",
+    "cv": "A file, not a service.",
+    "footer": "The six institutional accounts in institutional-footer.json keep currentColor and are NOT coloured from this file. The footer's ground is #0d2939 in the light theme and #071722 in the dark one — dark in both — and on it X and Threads, whose mark is black, measure 1.39:1 and 1.15:1; Instagram publishes a gradient rather than a flat colour. Colouring the three that can be coloured and leaving three in ink would read as a fault rather than as a decision, and a uniform row of six is what the footer's other links already do."
+  }
+}

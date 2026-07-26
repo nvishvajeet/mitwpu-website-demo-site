@@ -690,11 +690,30 @@ h3 {
    strip in academics and the package's own portrait are all 4/5 — and a square
    crop of a standing head-and-shoulders takes the shoulders off. Bigger, too:
    126px of face in a directory row was small enough that the photograph was
-   doing no work. */
+   doing no work.
+
+   Only Photonics still reaches these two rules. Quantum, Astrophysics and
+   Bioinformatics render the package's portrait component instead, which now
+   carries the same shape, the same focal point and the same tightening — the
+   values below are the package's, restated because this site's renderer emits
+   its own markup and cannot read them. When Photonics migrates, both rules go
+   and nothing about the page changes, which is the test that they match. The
+   width is the package's `--md`, 126px, for the same reason.
+
+   It says 126 and not the 144 it used to because 144 was never what rendered.
+   The grid track above is 126px and `img { max-width: 100% }` at the top of
+   this file clamped the picture to it, while the hand-written `height: 180px`
+   was not clamped by anything — so the box the comment described as 4/5 was
+   126x180, which is 0.7, and had been since the day the comment was written.
+   That is the argument for deriving a height from a declared ratio rather than
+   writing the second number down: a ratio written as two lengths is only a
+   ratio until something moves one of them. */
 .member-portrait {
-  width: 144px;
-  height: 180px;
+  width: 126px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: 50% 28%;
+  object-view-box: inset(0 0 9% 0);
   background: var(--blue-pale);
 }
 
@@ -721,9 +740,13 @@ h3 {
   text-transform: uppercase;
 }
 
-.member-flair::after {
+/* The separator belongs to the thing it separates from. It used to hang off
+   the flair, which every card has, so a member with no distinct group role —
+   which is all three of Photonics' faculty — got "FACULTY ·" and then nothing.
+   Moved onto the role, it can only appear when there is a role after it. */
+.person-role::before {
   content: "·";
-  margin-left: 12px;
+  margin-right: 12px;
   color: var(--line-dark);
 }
 
@@ -824,11 +847,24 @@ h3 {
   margin-bottom: 18px;
 }
 
+/* The standing notice sits in a section of its own on a home page, where the
+   section's padding is the spacing. On a listing page it shares a section with
+   the list, and needs its own room before whatever follows it. */
+[data-hiring-notice]:not(:only-child) {
+  margin-bottom: 38px;
+}
+
 .people-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 38px;
+}
+
+/* `display: flex` beats the user-agent sheet's `[hidden] { display: none }`,
+   so a renderer that hides this row still left 38px of margin behind it. */
+.people-filters[hidden] {
+  display: none;
 }
 
 .people-filter {
@@ -869,6 +905,27 @@ h3 {
 .directory-section {
   padding-block: 52px;
   border-bottom: 1px solid var(--line);
+}
+
+/* The last card in a section already draws the closing rule, so the section's
+   own one lands 52px below it and the directory ends on two hairlines with a
+   band of nothing between them. Visible on any group with a single category —
+   Photonics has one, Faculty — where there is no second section for the rule
+   to be dividing from. */
+.directory-section:last-child {
+  border-bottom: 0;
+}
+
+/* A section with no heading of its own has nothing to sit between the
+   directory's opening rule and the grid's, so the two land 52px apart with
+   nothing in the gap. Drop the section's top padding and let the directory's
+   rule be the one the cards start under. */
+.directory-section--bare {
+  padding-top: 0;
+}
+
+.directory-section--bare .people-grid {
+  border-top: 0;
 }
 
 .directory-heading {
@@ -913,10 +970,19 @@ h3 {
   letter-spacing: 0.1em;
 }
 
+/* Two columns, two rows: the title holds column one, the summary and the topic
+   list stack in column two. The row gap used to be 20px and the topic list
+   added 20px of margin and 18px of padding above its own rule on top of that,
+   so 58px of nothing opened between a one-line summary and the topics it
+   introduces — and because the block's height is set by the taller column,
+   that gap was also what pushed the empty space under the heading to about
+   200px. The gap between the two rows is the list's own rule spacing now, and
+   nothing else. */
 .research-copy {
   display: grid;
   grid-template-columns: minmax(220px, 0.7fr) minmax(260px, 1.3fr);
-  gap: 20px 55px;
+  gap: 0 55px;
+  align-items: start;
 }
 
 .research-copy h2 {
@@ -925,12 +991,26 @@ h3 {
 }
 
 .research-copy > p {
+  margin-bottom: 0;
   color: var(--muted);
   font-size: 1rem;
 }
 
+/* The summary and its topics are one thing, so they are one cell.
+   They used to be two siblings in the same two-column grid — the summary in
+   row one beside the title, the list in row two under it — which meant row
+   one was as tall as the *title*. Every title here runs to two lines, so a
+   one-line summary sat in a 70px row and the list began 60px below it: a
+   sentence and the list it introduces, reading as two unrelated blocks. The
+   wrapper puts them in one cell where the only space between them is the
+   list's own rule spacing. */
+.research-detail {
+  min-width: 0;
+}
+
 .topic-list-wide {
-  grid-column: 2;
+  margin-top: 18px;
+  padding-top: 16px;
 }
 
 .profile-hero {
@@ -949,7 +1029,6 @@ h3 {
 
 .member-portrait-large {
   width: 230px;
-  height: 286px;
 }
 
 .profile-intro h1 {
@@ -1032,6 +1111,14 @@ h3 {
 .publication-person h2 {
   margin-bottom: 9px;
   font-size: 1.45rem;
+}
+
+/* One line under the closing group's heading, saying why there is no numbered
+   list beside it. */
+.publication-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .publication-person h2 a {
@@ -1258,7 +1345,6 @@ h3 {
 
   .member-portrait-large {
     width: 190px;
-    height: 238px;
   }
 
   .publication-group {
@@ -1378,9 +1464,10 @@ h3 {
     gap: 18px;
   }
 
+  /* 84px, the package's `--md` below 56rem, and the width of the grid track
+     above — which is what clamped the 88px that used to be here anyway. */
   .member-portrait {
-    width: 88px;
-    height: 110px;
+    width: 84px;
   }
 
   .tag-row {
@@ -1393,8 +1480,9 @@ h3 {
     gap: 8px;
   }
 
-  .directory-heading .eyebrow,
-  .topic-list-wide {
+  /* The topic list used to need a column reset here; it is no longer a grid
+     item, so only the directory eyebrow is left wanting one. */
+  .directory-heading .eyebrow {
     grid-column: 1;
   }
 
@@ -1409,7 +1497,6 @@ h3 {
 
   .member-portrait-large {
     width: 170px;
-    height: 212px;
   }
 
   .footer-grid {

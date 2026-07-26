@@ -26,7 +26,7 @@
       "label": "Academics",
       "local": "academics/",
       "current": ["/academics"],
-      "note": "The one `mega`. Fourteen schools plus study, services and student routes are many and parallel, which is the shape that component exists for: a masthead-wide grid of labelled groups shown at once, rather than fourteen rows a visitor has to scroll or a second hover to reach.",
+      "note": "The one `mega`. Fourteen schools plus study and academic services are many and parallel, which is the shape that component exists for: a grid of labelled groups shown at once, rather than fourteen rows a visitor has to scroll or a second hover to reach. It carried a fourth group, `For students`, until 2026-07-26; it was written before `Students` became a top-level entry on the same day, and once it was, the group was four links to destinations that already have their own place in the bar — the same duplication this file exists to stop, one level down. Dropping it also took 220px off a panel that had grown to 698px tall, which is the height a reader called a curtain.",
       "menu": {
         "kind": "mega",
         "overview": { "label": "Academics home", "local": "academics/" },
@@ -70,16 +70,6 @@
               { "label": "Exam timetable", "local": "academics/exam-timetable/" },
               { "label": "Ordinances and regulations", "local": "academics/ordinances/" },
               { "label": "Academic notices", "local": "academic-notices/" }
-            ]
-          },
-          {
-            "heading": "For students",
-            "local": "students/",
-            "links": [
-              { "label": "Student resources", "local": "students/" },
-              { "label": "Scholarships", "local": "scholarships/" },
-              { "label": "Knowledge Resource Centre", "local": "life-wpu/library/" },
-              { "label": "Results", "local": "academics/results/" }
             ]
           }
         ]
@@ -166,8 +156,8 @@
       "page": "campus",
       "label": "Campus",
       "local": "life-at-mit-wpu/",
-      "current": ["/life-at-mit-wpu"],
-      "note": "The route says `life-at-mit-wpu` and the label says Campus. Both are right and they are not the same decision: the route is the one the capture publishes and is not this repository's to rename, and the label is what fits a masthead beside seven one-word siblings.",
+      "current": ["/life-at-mit-wpu", "/campus-life"],
+      "note": "The route says `life-at-mit-wpu` and the label says Campus. Both are right and they are not the same decision: the route is the one the capture publishes and is not this repository's to rename, and the label is what fits a masthead beside seven one-word siblings. What this menu did not carry until 2026-07-26 is `/campus-life/` — the 128 pages tools/build_platform_pages.py renders out of the application: 40 clubs, 51 galleries, the sports bodies, the hostels, the library, the student council. A crawl of our own artifact found that the ONLY files linking to `/campus-life/` were the 128 `/campus-life/` files themselves, and that the generated sitemap carried none, so no reader could reach any of them without typing the URL. One entry point closes it — the section index links every one of the other 127, verified by following them — and it is a branch here rather than this entry's destination because `/life-at-mit-wpu/` is a curated landing that groups campus life by what a reader wants and `/campus-life/` is the directory of it, which is the relation Academics already has between its overview and its list of schools. `/campus-life` joins `current` so the section knows which masthead entry it sits under.",
       "menu": {
         "kind": "cascade",
         "items": [
@@ -181,6 +171,14 @@
               { "label": "Medical facilities", "local": "life-wpu/medical-facilities/" }
             ]
           },
+          {
+            "label": "Clubs, teams and galleries",
+            "local": "campus-life/",
+            "links": [
+              { "label": "Campus and student life directory", "local": "campus-life/" },
+              { "label": "Photo and video galleries", "local": "campus-life/galleries/" }
+            ]
+          },
           { "label": "Student welfare", "local": "life-wpu/student-affairs/" },
           { "label": "Student council", "local": "life-wpu/student-council/" }
         ]
@@ -191,19 +189,21 @@
       "label": "Students",
       "local": "students/",
       "current": ["/students"],
-      "note": "The one by-need entry among seven by-structure ones. The other seven answer \"what is this university\"; a student arrives knowing that and needing to do something — find a course structure, an ordinance, an exam date — and until this entry existed had no global route to any of it. It carries no menu on purpose: `/students/` is already an index of 166 links, and a masthead menu over the same set would be a second index of it, which is the duplication docs/PROGRAMME_AND_STUDENT_ROUTE_OWNERSHIP.md §1 exists to refuse."
-    },
-    {
-      "page": "search",
-      "label": "Search",
-      "local": "search/",
-      "current": ["/search"],
-      "note": "A destination with nothing under it, so it opens nothing."
+      "note": "The one by-need entry among six by-structure ones. The others answer \"what is this university\"; a student arrives knowing that and needing to do something — find a course structure, an ordinance, an exam date — and until this entry existed had no global route to any of it. It carries no menu on purpose: `/students/` is already an index of 166 links, and a masthead menu over the same set would be a second index of it, which is the duplication docs/PROGRAMME_AND_STUDENT_ROUTE_OWNERSHIP.md §1 exists to refuse."
     }
   ],
 
+  "search": {
+    "note": "The masthead's own search field, declared here because it is part of the masthead and because it is what the eighth navigation entry used to be. `Search` was a top-level entry until 2026-07-26 and is not one now: with a box in the bar, a link labelled Search is a second control for the same job sitting two hundred pixels from the first, and the box submitted empty goes to /search/ anyway — so the destination is still one control away and nothing was lost. It is a real GET form: `field` is the query parameter the results page already reads off its own query string, so /search/?q=… works with or without scripting, and without scripting a reader lands on the results page rather than on a control that did nothing. The page itself needs JavaScript to search — the index is a 3.2MB file the browser filters — and says so in a <noscript> beside the box, which is the honest end of a static site's no-JS promise.",
+    "action": "/search/",
+    "field": "q",
+    "label": "Search this website",
+    "placeholder": "Search the site",
+    "submit": "Search"
+  },
+
   "masthead_discriminator": {
-    "note": "The labels tools/build_public_demo.py:install_global_masthead matches on to tell an institutional navigation apart from a page family's own one. It is a hand-picked SUBSET of the entries above rather than all of them, and deliberately so: some template families (the intranet and events landings) carry the full institutional nav but let the logo stand in for About, and requiring every label would skip exactly the pages that most need the canonical masthead. These four are the interior labels no research-group or portal nav carries. It is data here rather than a literal there so renaming an entry cannot leave the discriminator naming a label that no longer exists; both shells assert on load that it is a subset of the declared labels.",
-    "labels": ["Research", "Academics", "People", "Search"]
+    "note": "The labels tools/build_public_demo.py:install_global_masthead matches on to tell an institutional navigation apart from a page family's own one. It is a hand-picked SUBSET of the entries above rather than all of them, and deliberately so: some template families (the intranet and events landings) carry the full institutional nav but let the logo stand in for About, and requiring every label would skip exactly the pages that most need the canonical masthead. These four are the interior labels no research-group or portal nav carries. `Search` was one of them until 2026-07-26 and could not stay once the entry became a box; `Admissions` replaced it, and it is the safer of the two — a research group has people, research and publications, and none has an admissions page. It is data here rather than a literal there so renaming an entry cannot leave the discriminator naming a label that no longer exists; both shells assert on load that it is a subset of the declared labels.",
+    "labels": ["Research", "Academics", "People", "Admissions"]
   }
 }

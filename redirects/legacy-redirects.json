@@ -3,6 +3,10 @@
   "status_code": 301,
   "rules": [
     {
+      "source": "/careers/",
+      "target": "/career/"
+    },
+    {
       "source": "/events/devconfin-2026advancing-open-innovation-through-collaboration/",
       "target": "/events/devconfin-2026-advancing-open-innovation-through-collaboration/"
     },
@@ -2467,6 +2471,10 @@
       "target": "/rtep-advisory-committee/"
     },
     {
+      "source": "/schools/faculty-of-business-and-leadership/",
+      "target": "/academics/faculty-of-business-and-leadership/"
+    },
+    {
       "source": "/schools/faculty-of-business-and-leadership/school-of-business/",
       "target": "/academics/business/"
     },
@@ -2475,7 +2483,55 @@
       "target": "/academics/business/business/"
     },
     {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/about/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/dean/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/dean/dr-deependra-sharma-168/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/faculty/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/happenings/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/programmes/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-business/testimonials/",
+      "target": "/academics/business/business/"
+    },
+    {
       "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/about/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/dean/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/dean/dr-deependra-sharma-77/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/faculty/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-business/department-of-hospitality-management/programmes/",
       "target": "/academics/business/hospitality-management/"
     },
     {
@@ -2487,7 +2543,55 @@
       "target": "/academics/economics-and-commerce/commerce/"
     },
     {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/about/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/dean/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/dean/dr-anjali-sane-78/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/faculty/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/programmes/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-commerce/testimonials/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
       "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/about/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/dean/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/dean/dr-anjali-sane-79/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/faculty/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/programmes/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-economics-and-commerce/department-of-economics/testimonials/",
       "target": "/academics/economics-and-commerce/economics/"
     },
     {
@@ -2495,11 +2599,79 @@
       "target": "/academics/government/"
     },
     {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/about/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/dean/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/dean/dr-rahul-v-karad-82/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/faculty/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/programmes/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-government/testimonials/",
+      "target": "/academics/government/"
+    },
+    {
       "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/",
       "target": "/academics/leadership/"
     },
     {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/about/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/dean/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/dean/prof-dr-urvashi-makkar-80/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/faculty/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/programmes/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-business-and-leadership/school-of-leadership/testimonials/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/",
+      "target": "/academics/faculty-of-design-humanities-and-liberal-arts/"
+    },
+    {
       "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/",
+      "target": "/academics/consciousness/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/about/",
+      "target": "/academics/consciousness/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/faculty/",
+      "target": "/academics/consciousness/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/programmes/",
+      "target": "/academics/consciousness/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-consciousness/testimonials/",
       "target": "/academics/consciousness/"
     },
     {
@@ -2511,11 +2683,91 @@
       "target": "/academics/design/design/"
     },
     {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/about/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/dean/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/dean/dr-suman-devadula-91/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/faculty/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/happenings/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/programmes/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-design/testimonials/",
+      "target": "/academics/design/design/"
+    },
+    {
       "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/",
       "target": "/academics/design/visual-arts/"
     },
     {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/about/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/dean/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/dean/dr-suman-devadula-92/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/faculty/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/happenings/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/programmes/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-design/department-of-visual-arts/testimonials/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
       "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/about/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/dean/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/dean/dr-santosh-aghav-192/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/faculty/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/programmes/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-law/testimonials/",
       "target": "/academics/law/"
     },
     {
@@ -2527,7 +2779,51 @@
       "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
     },
     {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/about/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/dean/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/dean/abhijit-panse-179/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/faculty/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/happenings/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/programmes/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
       "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/about/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/faculty/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/happenings/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/programmes/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-education/testimonials/",
       "target": "/academics/liberal-arts-humanities/education/"
     },
     {
@@ -2535,7 +2831,47 @@
       "target": "/academics/liberal-arts-humanities/liberal-arts/"
     },
     {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/about/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/dean/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/dean/dr-abhijit-nair-222/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/faculty/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/programmes/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-liberal-arts/testimonials/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
       "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/",
+      "target": "/academics/liberal-arts-humanities/media-and-communication/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/about/",
+      "target": "/academics/liberal-arts-humanities/media-and-communication/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/faculty/",
+      "target": "/academics/liberal-arts-humanities/media-and-communication/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/programmes/",
+      "target": "/academics/liberal-arts-humanities/media-and-communication/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-media-and-communication/testimonials/",
       "target": "/academics/liberal-arts-humanities/media-and-communication/"
     },
     {
@@ -2543,15 +2879,71 @@
       "target": "/academics/liberal-arts-humanities/peace-studies/"
     },
     {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-peace-studies/faculty/",
+      "target": "/academics/liberal-arts-humanities/peace-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-peace-studies/programmes/",
+      "target": "/academics/liberal-arts-humanities/peace-studies/"
+    },
+    {
       "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-photography/",
       "target": "/academics/liberal-arts-humanities/photography/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-photography/about/",
+      "target": "/academics/liberal-arts-humanities/photography/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-photography/faculty/",
+      "target": "/academics/liberal-arts-humanities/photography/"
+    },
+    {
+      "source": "/schools/faculty-of-design-humanities-and-liberal-arts/school-of-liberal-arts-humanities/department-of-photography/programmes/",
+      "target": "/academics/liberal-arts-humanities/photography/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/",
+      "target": "/academics/faculty-of-engineering-and-technology/"
     },
     {
       "source": "/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/",
       "target": "/academics/architecture/"
     },
     {
+      "source": "/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/about/",
+      "target": "/academics/architecture/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/faculty/",
+      "target": "/academics/architecture/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/hafeez-contractor-school-of-architecture/programmes/",
+      "target": "/academics/architecture/"
+    },
+    {
       "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/about/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/dean/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/dean/dr-makarand-hastak-211/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/happenings/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/prof-makarand-hastak-school-of-construction-engineering-and-management/programmes/",
       "target": "/academics/construction-engineering-management/"
     },
     {
@@ -2563,7 +2955,47 @@
       "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
     },
     {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/about/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/faculty/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/happenings/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/labs-and-coes/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/programmes/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/testimonials/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
       "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/",
+      "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/about/",
+      "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/faculty/",
+      "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/programmes/",
+      "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/testimonials/",
       "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
     },
     {
@@ -2575,7 +3007,35 @@
       "target": "/academics/engineering-and-technology/bioengineering/"
     },
     {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-bioengineering/about/",
+      "target": "/academics/engineering-and-technology/bioengineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-bioengineering/happenings/",
+      "target": "/academics/engineering-and-technology/bioengineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-bioengineering/programmes/",
+      "target": "/academics/engineering-and-technology/bioengineering/"
+    },
+    {
       "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-chemical-engineering/",
+      "target": "/academics/engineering-and-technology/chemical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-chemical-engineering/about/",
+      "target": "/academics/engineering-and-technology/chemical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-chemical-engineering/dean/",
+      "target": "/academics/engineering-and-technology/chemical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-chemical-engineering/dean/dr-siddharth-chakarbarti-72/",
+      "target": "/academics/engineering-and-technology/chemical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-chemical-engineering/programmes/",
       "target": "/academics/engineering-and-technology/chemical-engineering/"
     },
     {
@@ -2583,7 +3043,51 @@
       "target": "/academics/engineering-and-technology/civil-engineering/"
     },
     {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/about/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/dean/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/dean/dr-siddharth-chakarbarti-99/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/happenings/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/programmes/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-civil-engineering/testimonials/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
       "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/about/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/dean/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/dean/dr-siddharth-chakarbarti-74/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/labs-and-coes/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/programmes/",
       "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
     },
     {
@@ -2591,7 +3095,51 @@
       "target": "/academics/engineering-and-technology/material-science-engineering/"
     },
     {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/about/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/dean/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/dean/dr-siddharth-chakarbarti-73/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/faculty/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-material-science-engineering/programmes/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
       "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/about/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/dean/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/dean/dr-siddharth-chakarbarti-71/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/happenings/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/programmes/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-mechanical-engineering/testimonials/",
       "target": "/academics/engineering-and-technology/mechanical-engineering/"
     },
     {
@@ -2599,8 +3147,64 @@
       "target": "/academics/engineering-and-technology/petroleum-engineering/"
     },
     {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/about/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/dean/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/dean/dr-siddharth-chakarbarti-75/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/happenings/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/labs-and-coes/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-petroleum-engineering/programmes/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
       "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/",
       "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/about/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/dean/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/dean/dr-siddharth-chakarbarti-76/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/faculty/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/happenings/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/department-of-polytechnic-skill-development/programmes/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/schools/faculty-of-engineering-and-technology/school-of-engineering-and-technology/newsletter/",
+      "target": "/academics/engineering-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/",
+      "target": "/academics/faculty-of-science-and-health-science/"
     },
     {
       "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/",
@@ -2611,7 +3215,47 @@
       "target": "/academics/health-science-technologies/clinical-sciences/"
     },
     {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/about/",
+      "target": "/academics/health-science-technologies/clinical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/dean/",
+      "target": "/academics/health-science-technologies/clinical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/dean/dr-ashwin-bhanudas-kuchekar-208/",
+      "target": "/academics/health-science-technologies/clinical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-clinical-sciences/programmes/",
+      "target": "/academics/health-science-technologies/clinical-sciences/"
+    },
+    {
       "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/about/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/dean/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/dean/dr-ashwin-bhanudas-kuchekar-205/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/mandatory-disclosures/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/programmes/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-pharmaceutical-sciences/testimonials/",
       "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
     },
     {
@@ -2619,7 +3263,55 @@
       "target": "/academics/health-science-technologies/public-health/"
     },
     {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/about/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/dean/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/dean/dr-ashwin-bhanudas-kuchekar-206/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/faculty/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/happenings/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/programmes/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-public-health/testimonials/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
       "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/about/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/dean/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/dean/prof-milind-patre-85/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/programmes/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-health-science-technologies/department-of-yogic-science/testimonials/",
       "target": "/academics/health-science-technologies/yogic-science/"
     },
     {
@@ -2631,7 +3323,55 @@
       "target": "/academics/science/biosciences-and-technology/"
     },
     {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/about/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/dean/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/dean/prof-dr-anup-kale-88/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/faculty/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/programmes/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-biosciences-and-technology/testimonials/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
       "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/about/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/dean/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/dean/prof-dr-anup-kale-90/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/faculty/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/programmes/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-chemistry/testimonials/",
       "target": "/academics/science/chemistry/"
     },
     {
@@ -2639,11 +3379,75 @@
       "target": "/academics/science/environmental-studies/"
     },
     {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-environmental-studies/about/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-environmental-studies/dean/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-environmental-studies/dean/prof-dr-anup-kale-103/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-environmental-studies/faculty/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-environmental-studies/programmes/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
       "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/",
       "target": "/academics/science/mathematics-and-statistics/"
     },
     {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/about/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/dean/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/dean/prof-dr-anup-kale-87/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/faculty/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/programmes/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-mathematics-and-statistics/testimonials/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
       "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/",
+      "target": "/academics/science/physics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/about/",
+      "target": "/academics/science/physics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/dean/",
+      "target": "/academics/science/physics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/dean/prof-dr-anup-kale-89/",
+      "target": "/academics/science/physics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/faculty/",
+      "target": "/academics/science/physics/"
+    },
+    {
+      "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/programmes/",
       "target": "/academics/science/physics/"
     },
     {

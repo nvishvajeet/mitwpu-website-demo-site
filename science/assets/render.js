@@ -51,7 +51,28 @@
       .join("");
   }
 
+  /* The face is a click target for the same page the name links to, and the
+   * lettered tile for a person with no photograph is one too — it stands in
+   * for their picture, so it stands in for their link.
+   *
+   * tabindex="-1" with aria-hidden="true": the <h2> beside it is already a
+   * named link to this page, and a second focusable copy would double every
+   * tab stop and every announcement in a fourteen-person department list. */
   function facultyPortrait(person) {
+    const face = facultyFace(person);
+    const href = profileHref(person);
+    return href
+      ? `<a class="faculty-photo-link" href="${escapeHtml(href)}" tabindex="-1" aria-hidden="true">${face}</a>`
+      : face;
+  }
+
+  /* One expression for the person's page, used by the portrait above and by
+   * the name in facultyCard, so the two cannot drift apart. */
+  function profileHref(person) {
+    return person.id ? `../../people/${encodeURIComponent(person.id)}/` : "";
+  }
+
+  function facultyFace(person) {
     const name = peopleOrder.displayName(person);
     if (!person.photoPath) {
       return `<div class="faculty-initials" aria-hidden="true">${escapeHtml(initials(name))}</div>`;
@@ -186,7 +207,7 @@
     return `<article class="faculty-card" id="${escapeHtml(person.id)}" data-name="${escapeHtml(`${name} ${person.name}`.toLowerCase())}">
       ${facultyPortrait(person)}
       <div class="faculty-card-main">
-        <h2><a class="faculty-profile-link" href="../../people/${encodeURIComponent(person.id)}/">${escapeHtml(name)}</a></h2>
+        <h2>${profileHref(person) ? `<a class="faculty-profile-link" href="${escapeHtml(profileHref(person))}">${escapeHtml(name)}</a>` : escapeHtml(name)}</h2>
         <p class="faculty-designation">${escapeHtml(person.designation)}</p>
         ${summary ? `<p class="faculty-research">${escapeHtml(summary)}</p>` : ""}
         <div class="faculty-links">${links}${person.email ? `<a href="mailto:${escapeHtml(person.email)}">Email</a>` : ""}</div>

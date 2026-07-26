@@ -116,10 +116,21 @@
     const panel = owner.querySelector(`:scope > ${selector}`);
     if (!panel) return;
     panel.classList.remove(edgeClass);
-    const overflowsRight =
-      panel.getBoundingClientRect().right >
-      document.documentElement.clientWidth - EDGE_GAP;
-    panel.classList.toggle(edgeClass, overflowsRight);
+    const viewport = document.documentElement.clientWidth;
+    const spill = panel.getBoundingClientRect().right - (viewport - EDGE_GAP);
+    if (spill <= 0) return;
+
+    // The flip is only an improvement while the panel fits on the other side.
+    // A panel wider than the room either way — a four-column mega on a 1024px
+    // laptop — is pushed off the LEFT edge instead, where the masthead's
+    // `overflow-x: clip` cuts it off and a reader sees a panel with its first
+    // column missing rather than its last. Overflowing right is at least
+    // legible from the start of the reading order, so the worse of the two is
+    // measured and rejected rather than assumed not to happen.
+    panel.classList.add(edgeClass);
+    if (EDGE_GAP - panel.getBoundingClientRect().left > spill) {
+      panel.classList.remove(edgeClass);
+    }
   };
 
   const placeFlyout = (branch) =>

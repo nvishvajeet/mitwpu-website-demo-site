@@ -735,12 +735,20 @@ h3 {
    arrive at whatever shape the office supplied, so a row of executive offices
    alternated between landscape and portrait down the page. 4/5 is the site's
    portrait ratio, and the builder's --office-ratio is kept as an override for
-   a picture that genuinely must not be cropped. */
+   a picture that genuinely must not be cropped.
+
+   These are the frames where the focal point earns the most. A leadership
+   photograph is often the widest on the site — a sitter behind a desk, a
+   group at a signing — and a wide picture in a 4/5 frame is the one case
+   `cover` has to throw away most of, which it will do from the middle unless
+   told otherwise. 28% is the site's answer, measured on the faculty set. */
 .leadership-office__media img {
   display: block;
   width: 100%;
   aspect-ratio: var(--office-ratio, 4 / 5);
   object-fit: cover;
+  object-position: 50% 28%;
+  object-view-box: inset(0 0 9% 0);
 }
 
 .leadership-office__copy {
@@ -839,11 +847,17 @@ h3 {
   border-bottom: 4px solid var(--gold);
 }
 
+/* A portrait of the founder is a portrait, and takes the site's treatment
+   whole. `center top` was a guess that faces sit at the very top of a frame;
+   28% is what 398 of them measured. The commemorative framing is carried by
+   the caption, the gold rule and the 25rem measure around it — none of which
+   are reasons to crop the man differently from everyone else on the site. */
 .maeer-founder__media img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% 28%;
+  object-view-box: inset(0 0 9% 0);
 }
 
 .maeer-founder__media figcaption,

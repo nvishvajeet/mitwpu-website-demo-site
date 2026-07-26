@@ -55,11 +55,15 @@
       .join("");
   }
 
+  /* The alt text is empty, as it is in the package's portrait component and on
+   * every other people page on this site. It used to be the person's name,
+   * which is announced by the <h3> beside it, so a screen-reader user heard
+   * every member of this group twice. */
   function portrait(member, modifier = "") {
     const name = peopleOrder.displayName(member);
     const photo = safeUrl(member.photo);
     if (photo) {
-      return `<img class="member-portrait ${modifier}" src="${escapeHtml(photo)}" alt="${escapeHtml(name)}" loading="lazy">`;
+      return `<img class="member-portrait ${modifier}" src="${escapeHtml(photo)}" alt="" loading="lazy">`;
     }
     return `<div class="member-portrait portrait-placeholder ${modifier}" aria-hidden="true"><span>${escapeHtml(initials(name))}</span></div>`;
   }
@@ -96,7 +100,14 @@
       : member.role;
     return `
       <article class="person-card">
-        <a class="portrait-link" href="${href}" aria-label="View ${escapeHtml(name)}'s profile">
+        <!-- Pointer-only, like the package's uwp-portrait-link. This site got
+             the click target right before the others did and paid for it in
+             the announcement: the picture was a focusable link labelled "View
+             X's profile" and the name below it was a second link to the same
+             page, so every member cost two tab stops and two readings of one
+             destination. tabindex="-1" with aria-hidden="true" keeps the
+             click and drops the duplicate. -->
+        <a class="portrait-link" href="${href}" tabindex="-1" aria-hidden="true">
           ${portrait(member)}
         </a>
         <div class="person-card-body">
@@ -115,10 +126,18 @@
     const visibleTypes = activeType === "all"
       ? peopleTypes.filter((type) => orderedMembers.some((member) => member.memberType === type.id))
       : peopleTypes.filter((type) => type.id === activeType);
+    /* One category is not a taxonomy. With only Faculty present the section
+     * heading repeated the page's own <h1> and the toolbar's count, so it is
+     * dropped and the cards start straight away. The zero-padding went with
+     * it: "03 people" was a count wearing an index number's clothes. */
+    const showHeadings = visibleTypes.length > 1;
     target.innerHTML = visibleTypes.map((type) => {
       const people = orderedMembers.filter((member) => member.memberType === type.id);
-      return `<section class="directory-section" data-people-type="${escapeHtml(type.id)}">
-        <div class="directory-heading"><p class="eyebrow">${String(people.length).padStart(2, "0")} ${people.length === 1 ? "person" : "people"}</p><h2>${escapeHtml(type.label)}</h2></div>
+      const heading = showHeadings
+        ? `<div class="directory-heading"><p class="eyebrow">${people.length} ${people.length === 1 ? "person" : "people"}</p><h2>${escapeHtml(type.label)}</h2></div>`
+        : "";
+      return `<section class="directory-section${showHeadings ? "" : " directory-section--bare"}" data-people-type="${escapeHtml(type.id)}">
+        ${heading}
         <div class="people-grid people-grid-full">${people.map(memberCard).join("")}</div>
       </section>`;
     }).join("");
@@ -130,10 +149,16 @@
   function renderPeopleFilters() {
     const target = document.getElementById("people-filters");
     if (!target) return;
-    const filters = [
-      { id: "all", label: "All people" },
-      ...peopleTypes.filter((type) => orderedMembers.some((member) => member.memberType === type.id))
-    ];
+    const presentTypes = peopleTypes.filter((type) =>
+      orderedMembers.some((member) => member.memberType === type.id));
+    /* A filter needs something to filter. With one category present the row
+     * rendered as "All people 3" beside "Faculty 3" — two controls, one set,
+     * and a visitor invited to choose between a thing and itself. */
+    if (presentTypes.length < 2) {
+      target.hidden = true;
+      return;
+    }
+    const filters = [{ id: "all", label: "All people" }, ...presentTypes];
     target.innerHTML = filters.map((filter, index) => {
       const count = filter.id === "all" ? orderedMembers.length : orderedMembers.filter((member) => member.memberType === filter.id).length;
       return `<button class="people-filter${index === 0 ? " is-active" : ""}" type="button" data-filter="${escapeHtml(filter.id)}" aria-pressed="${index === 0 ? "true" : "false"}">${escapeHtml(filter.label)} <span>${count}</span></button>`;
@@ -156,13 +181,18 @@
     target.innerHTML = orderedMembers.slice(0, 3).map(memberCard).join("");
   }
 
+  /* No topic list here, deliberately. The home page card carried the theme's
+   * full topic list as well as its summary, which left the Research page with
+   * nothing of its own to say: same three titles, same three summaries, same
+   * three lists, one click further in. The summary is the home page's share
+   * and the topics are the Research page's, which is also how Quantum has
+   * always split them. */
   function researchThemeCard(theme) {
     return `
       <article class="theme-card">
         <span class="theme-number">${escapeHtml(theme.number)}</span>
         <h3>${escapeHtml(theme.title)}</h3>
         <p>${escapeHtml(theme.summary)}</p>
-        ${list(theme.topics, "topic-list")}
       </article>`;
   }
 
@@ -180,8 +210,10 @@
         <div class="research-index">${escapeHtml(theme.number)}</div>
         <div class="research-copy">
           <h2>${escapeHtml(theme.title)}</h2>
-          <p>${escapeHtml(theme.summary)}</p>
-          ${list(theme.topics, "topic-list topic-list-wide")}
+          <div class="research-detail">
+            <p>${escapeHtml(theme.summary)}</p>
+            ${list(theme.topics, "topic-list topic-list-wide")}
+          </div>
         </div>
       </article>`).join("");
   }

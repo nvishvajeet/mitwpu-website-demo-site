@@ -245,11 +245,25 @@ button:hover {
   outline-offset: -4px;
 }
 
-/* Faces sit high in a portrait crop, so the box is anchored above centre;
-   `object-fit: cover` alone takes the top off heads. The package has no
-   control for this and no opinion on it. */
+/* The package now carries the focal point, the 4/5 shape and the tightening,
+   so what used to be here — `object-position: center 18%`, written on the
+   correct instinct that faces sit high — is gone. Two things were wrong with
+   it. It was a client-local answer to a question every surface on this site
+   asks, so the department pages and the group microsites each had their own,
+   or none. And on this particular photograph set it did nothing at all: the
+   campus portraits are square, a square source in a 4/5 frame is cropped at
+   the sides and not at the top or bottom, and `object-position`'s vertical
+   half has no crop to move. It read as a fix and was a no-op.
+
+   What actually moves the face closer is `--uwp-portrait-view`, which crops
+   the picture before `cover` sees it. media.css explains the 12%.
+
+   The box itself is bigger than the package's 72px default, which is the rest
+   of "zoom in a bit": at 72x90 the face was about 27px of a 158px row and the
+   photograph was decoration. 96x120 still clears the row height the listing
+   already reserves, so six hundred rows keep their rhythm. */
 .people-grid .uwp-portrait {
-  object-position: center 18%;
+  --uwp-portrait-width: 96px;
   background: var(--blue-pale);
 }
 
@@ -369,11 +383,12 @@ button:hover {
     padding: 20px 16px;
   }
 
-  /* The portrait box is sized by two custom properties, so a client changes
-     the size by moving them rather than by re-declaring width and height. */
+  /* The portrait box is sized by one custom property now, and shaped by
+     another, so a phone gets a narrower face rather than a differently
+     proportioned one. Setting the height here as well is what used to make
+     that distinction impossible to see. */
   .people-grid .uwp-portrait {
-    --uwp-portrait-width: 62px;
-    --uwp-portrait-height: 78px;
+    --uwp-portrait-width: 72px;
   }
 
   .pagination {

@@ -34,25 +34,17 @@
   --uwp-masthead-accent: var(--blue);
 }
 
-/* Package defect, worked around here rather than in the vendor tree.
+/* The portrait-inside-a-card specificity defect is fixed upstream, so the
+ * work-around that used to sit here is gone. patterns.css now scopes its
+ * card and profile image rule with `:not(.uwp-portrait)`, which is the fix
+ * this comment asked for.
  *
- * patterns.css:747 sets `.uwp-card img, .uwp-profile img { width: 100%;
- * height: auto }`. media.css:129 sets `.uwp-portrait { width: 72px; height:
- * 90px }`. person-card puts an img.uwp-portrait directly inside .uwp-card and
- * profile puts one inside .uwp-profile, so the first selector — one class and
- * one element — outranks the second on specificity no matter which sheet is
- * loaded last, and every photographed person renders at full card width. The
- * lettered tile is a <div>, so it is unaffected, which is why a directory of
- * people without photographs looks correct and one with photographs does not.
- *
- * Fix belongs upstream (scope the card rule, or raise the portrait's). Until
- * then this restores the size the package's own tokens declare.
+ * Removing it was not optional. It restated `height: var(--uwp-portrait-height,
+ * 90px)`, and in 0.22.0 the size modifiers no longer set that property —
+ * height is derived from the 4/5 ratio. A stale work-around that pins a
+ * height defeats the shape it is meant to be helping, so this site would have
+ * rendered 126x90 faces while the same people were 126x158 everywhere else.
  */
-.uwp-card img.uwp-portrait,
-.uwp-profile img.uwp-portrait {
-  width: var(--uwp-portrait-width, 72px);
-  height: var(--uwp-portrait-height, 90px);
-}
 
 /* Transitional: rules that fire twice while both class names are present.
  *

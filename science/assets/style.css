@@ -404,32 +404,52 @@ body {
 
 .faculty-card {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-columns: 72px minmax(0, 1fr);
   gap: 20px;
   padding: 32px 0 36px;
   border-bottom: 1px solid var(--line);
 }
 
-.faculty-initials {
-  display: grid;
-  width: 46px;
-  height: 46px;
-  place-items: center;
-  color: var(--blue-dark);
+/* The click target around a face. No size of its own — the tile or the
+   photograph inside carries that — and it is the grid item now, so it must
+   not stretch. */
+.faculty-photo-link {
+  display: block;
+  align-self: start;
+  line-height: 0;
+}
+
+/* The lettered tile was a 46px circle beside a 48x60 photograph, so this
+   listing alternated between round and rectangular down the column depending
+   on who had sent a picture in. The circle was not a considered exception —
+   it is what an initials badge looks like when nobody asks what it sits next
+   to. It occupies the photograph's box now, which is the whole reason the
+   package keeps both in one component.
+   The one round thing left on this site is a control, not a face. */
+.faculty-initials,
+.faculty-photo {
+  width: 72px;
+  aspect-ratio: 4 / 5;
   background: var(--blue-pale);
   border: 1px solid var(--line);
-  border-radius: 50%;
-  font: 700 0.72rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.faculty-initials {
+  display: grid;
+  place-items: center;
+  color: var(--blue-dark);
+  font: 700 0.82rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   letter-spacing: 0.04em;
 }
 
+/* `center top` pinned the crop to the very top of the picture, which is right
+   only if every photographer framed identically. The site's focal point is
+   28% — the measured median face centre — and it is stated the same way here
+   as everywhere else. */
 .faculty-photo {
-  width: 48px;
-  height: 60px;
   object-fit: cover;
-  object-position: center top;
-  background: var(--blue-pale);
-  border: 1px solid var(--line);
+  object-position: 50% 28%;
+  object-view-box: inset(0 0 9% 0);
 }
 
 .faculty-card h2 {
@@ -836,18 +856,14 @@ summary:focus-visible {
   }
 
   .faculty-card {
-    grid-template-columns: 40px minmax(0, 1fr);
+    grid-template-columns: 56px minmax(0, 1fr);
     gap: 14px;
   }
 
-  .faculty-initials {
-    width: 40px;
-    height: 40px;
-  }
-
+  /* One rule, one width, because the tile and the photograph are one box. */
+  .faculty-initials,
   .faculty-photo {
-    width: 40px;
-    height: 50px;
+    width: 56px;
   }
 
   .academic-group {

@@ -112,18 +112,22 @@
   border-bottom-color: transparent;
 }
 
-/* site.css sizes a navigation link to the full height of the bar — `height:
-   112px`, so the top-level entries fill it — and that selector is `.site-nav
-   a`, which every link inside every panel hanging off the bar also matches.
-   A drop-down row, a fly-out row and a mega-panel row were each 112px tall
-   instead of the package's 44px: the academics panel came to 1547px of
-   content in a 785px panel and scrolled, for twenty-seven links that fit.
-   The bar's own links keep the height; the panels' links take theirs back.
-   Deleted with the rest of this block when the legacy class goes. */
-.uwp-nav.site-nav .uwp-nav-menu a,
-.uwp-nav.site-nav .uwp-nav-flyout a {
-  height: auto;
-}
+/* The panel-row height that used to be corrected here is gone, and the
+   correction went upstream rather than being deleted as wrong.
+ *
+ * site.css sizes a navigation link to the full height of the bar — `height:
+ * 112px`, so the top-level entries fill it — and that selector is `.site-nav
+ * a`, which every link inside every panel hanging off the bar also matched.
+ * A drop-down row, a fly-out row and a mega-panel row were each 112px tall
+ * instead of the package's 44px: the academics panel came to 1547px of
+ * content in a 785px panel and scrolled, for twenty-seven links that fit.
+ *
+ * That was never this site's problem to hold. Every client sizes its bar
+ * links this way, and the package declared no height for the client's rule to
+ * lose to. Package 0.22.0 has the panels refuse the bar's geometry at two
+ * classes, which no one-class bar rule can reach whatever the load order, so
+ * the next site to put a legacy nav class beside `.uwp-nav` never sees it.
+ */
 
 /* site.css reflows the legacy masthead on a narrow screen by wrapping the
    header row and turning the navigation into a full-width scroller on a third

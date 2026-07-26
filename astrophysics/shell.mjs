@@ -127,6 +127,11 @@ const TEMPLATE_IDS = [
   "profile-section",
   "profile-detail-list",
   "profile-links",
+  /* Rendered by the shared ../quantum/render.js, which carries the group
+   * hiring notice. Not used on this site's pages today — no page here has the
+   * container — but the bundle has to be able to render everything the shared
+   * renderer can reach. */
+  "notice",
 ];
 
 /* The browser half of this site is a file in another directory, so the bundle

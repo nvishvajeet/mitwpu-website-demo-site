@@ -320,9 +320,21 @@
       portrait: {
         src: person.photoPath || "",
         initials: initials(person.displayName),
+        /* The same expression the name below is given, not a second one that
+         * happens to agree today. Every person in this directory has a page,
+         * so every face here is clickable; the component renders the picture
+         * unwrapped where a person has none. */
+        href: profilePath(person),
       },
       portrait_loading: uwp.markup(' loading="lazy"'),
     });
+  }
+
+  /* Where this person's own page is. One function because two callers need
+   * the same answer and a face that goes somewhere the name does not is worse
+   * than a face that goes nowhere. */
+  function profilePath(person) {
+    return person.profilePath || `./${encodeURIComponent(person.id)}/`;
   }
 
   /* The unit line. Directory cards are signposts, not miniature profiles:
@@ -352,7 +364,7 @@
            * listing used to have them the other way round. */
           role: person.designation || "Faculty",
           unit: unitLabel(person),
-          url: person.profilePath || `./${encodeURIComponent(person.id)}/`,
+          url: profilePath(person),
           summary: "",
         },
         person_portrait: personPortrait(person),
@@ -365,7 +377,13 @@
 
     /* A portrait whose file has gone missing falls back to the same lettered
      * tile the component renders for a person who has no photograph, so the
-     * row keeps its geometry rather than collapsing. */
+     * row keeps its geometry rather than collapsing.
+     *
+     * The replacement carries no href on purpose. The <img> now sits inside
+     * the link, so the tile replacing it inherits that link and stays
+     * clickable; rendering it with an href of its own would nest a second
+     * anchor inside the first, which the parser silently unnests into two
+     * siblings — one of them wrapping nothing. */
     const photo = card.querySelector("img.uwp-portrait");
     if (photo) {
       photo.addEventListener(

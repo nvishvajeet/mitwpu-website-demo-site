@@ -59,29 +59,16 @@
   box-shadow: none !important;
 }
 
-/* `minmax(max-content, 1fr)` on the navigation column, not `minmax(0, 1fr)`,
- * is the structural half of the fix and the half that does not depend on a
- * breakpoint being right.
+/* The measure and the two columns. Everything about which ROW a thing sits on
+ * is in the two-row band below; this rule only sizes the band itself.
  *
- * A `minmax(0, 1fr)` column may be sized below its own contents. The nav is a
- * nowrap flex row of nowrap links justified to `flex-end`, so when the column
- * is under-sized the links do not shrink, wrap or scroll — they overflow the
- * column's LEFT edge and paint over the lockup beside it. That is the whole
- * mechanism of the collision this fixes: at 1024px the eight entries needed
- * 755px, the column offered 600px, and `About`/`Academics` landed on top of
- * `MIT World Peace University`.
- *
- * With `max-content` as the floor the column never gives up room it needs, so
- * the two columns can no longer occupy the same pixels. What yields instead is
- * the lockup — capped at 300px, floored at 0 — and a lockup that has grown
- * narrow is a thing a person can see. A ninth entry therefore costs the lockup
- * width, visibly, rather than costing the university its name, silently.
- *
- * `minmax(0, 300px)` rather than a flat `300px` for the same reason: a fixed
- * track cannot yield, and a track that cannot yield is a track that overflows. */
+ * `minmax(0, 1fr) auto`: the brand takes what is left after the controls, and
+ * may be sized below its own contents — which is now safe, because the
+ * navigation no longer shares this line and so cannot overflow across it.
+ * The lockup wraps rather than clips when squeezed; see the wordmark rule. */
 [data-global-masthead] > .global-masthead__inner {
   display: grid !important;
-  grid-template-columns: minmax(0, 300px) minmax(max-content, 1fr) !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
   align-items: center !important;
   gap: 24px !important;
   width: calc(100% - 100px) !important;
@@ -92,14 +79,16 @@
   padding: 0 !important;
 }
 
-/* The right-hand cluster the package puts the nav, the hamburger and the theme
- * switch in. It is the grid's second column. */
+/* The right-hand cluster: the hamburger, the search field and the theme
+ * switch. It is the grid's second column. The navigation is NOT in it — it
+ * was until package 0.21.0, and moving it out is what let the two-row bar
+ * below be a placed grid rather than a dissolved wrapper. */
 [data-global-masthead] .uwp-masthead__actions {
   align-items: center !important;
   justify-content: flex-end !important;
-  gap: 16px !important;
+  gap: 14px !important;
   min-width: 0 !important;
-  min-height: var(--mitwpu-masthead-content-height) !important;
+  min-height: 44px !important;
 }
 
 /* ---- Institutional lockup: emblem beside a two-line wordmark ------------- */
@@ -271,14 +260,116 @@
   box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
 }
 
+/* Group headings, in the institution's navy rather than in grey.
+ *
+ * These are the only structure the mega panel has. Twenty-seven destinations
+ * in four groups, with the headings set two steps lighter than the links they
+ * head, read as one field of similar text — the grouping is there in the
+ * markup and does no work for the eye, which is the whole reason the panel is
+ * grouped. Navy is the colour this bar is already made of, so it separates the
+ * headings from the links without introducing a hue, and it is 11.1:1 on the
+ * panel where the grey it replaces was 5.5:1. Nothing else about them changes:
+ * still 14px, still uppercase, still not links unless the client made them
+ * links. --uwp-brand is the token because it is the same navy the bar sets. */
 [data-global-masthead] .uwp-nav-mega .uwp-nav-mega__heading {
-  color: #5a6b7c !important;
+  color: var(--uwp-brand) !important;
 }
 
 [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:hover,
 [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:focus-visible {
   color: #0d2438 !important;
   background: #eef3f7 !important;
+}
+
+/* ---- The panels in the dark theme --------------------------------------- *
+ * The bar itself is navy in both themes on purpose: it is the institution's
+ * band and not a surface being inverted. The panels hanging off it are a
+ * different thing, and until now they were not a theme at all — the paints
+ * above are literal hexes, so a reader on the dark theme opened Academics and
+ * got a 1,400 x 700 sheet of pure white dropped over a #111a21 page. Every
+ * value below is one of the palette's own dark tokens; no new colour is
+ * introduced, and the light theme above is untouched.
+ *
+ * The ground is --uwp-pale rather than --uwp-surface: --uwp-surface is 1.05:1
+ * against the dark page and the panel would have no edge at all, where the
+ * pale token reaches 1.24:1 and the panel's own 3px gold rule and border do
+ * the rest. Measured on the ground below: body links 11.96:1, group headings
+ * 7.27:1, both far past the 4.5:1 they need.
+ *
+ * The selector pair is the one the public surface's own stylesheet uses: the
+ * attribute for a reader who has chosen a theme, the media query for one who
+ * has not, and `:not([data-theme="light"])` so a light choice against a dark
+ * system still wins.
+ *
+ * BOTH are bounded to `(min-width: 56.01rem)`, and that bound is load-bearing
+ * rather than tidy. Below it the panels are not panels: the band at line 505
+ * dissolves them into the navy accordion, transparent and borderless, and it
+ * does that with two-selector rules. These are three-selector rules, so
+ * unbounded they would win inside that band and drop a pale card into the
+ * middle of a navy drawer. The comment above line 505 already warns that the
+ * two bands are coupled; this is that warning being obeyed. */
+@media (min-width: 56.01rem) {
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout {
+    color: var(--uwp-ink) !important;
+    background: var(--uwp-pale) !important;
+    border-color: color-mix(in srgb, var(--uwp-ink) 22%, transparent) !important;
+  }
+
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu {
+    border-top-color: var(--mitwpu-masthead-gold) !important;
+  }
+
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a {
+    color: var(--uwp-ink) !important;
+  }
+
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a:hover,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a:focus-visible,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:hover,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:focus-visible,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:hover,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:focus-visible {
+    color: var(--uwp-ink) !important;
+    background: color-mix(in srgb, var(--uwp-ink) 12%, transparent) !important;
+  }
+
+  /* The panel's own ground is dark here, so the headings take the light blue
+     the dark palette already uses for a link. 7.27:1 on that ground. */
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega .uwp-nav-mega__heading {
+    color: var(--uwp-link) !important;
+  }
+}
+
+@media (min-width: 56.01rem) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu,
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout {
+    color: var(--uwp-ink) !important;
+    background: var(--uwp-pale) !important;
+    border-color: color-mix(in srgb, var(--uwp-ink) 22%, transparent) !important;
+  }
+
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu {
+    border-top-color: var(--mitwpu-masthead-gold) !important;
+  }
+
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a,
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout a {
+    color: var(--uwp-ink) !important;
+  }
+
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a:hover,
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a:focus-visible,
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout a:hover,
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout a:focus-visible {
+    color: var(--uwp-ink) !important;
+    background: color-mix(in srgb, var(--uwp-ink) 12%, transparent) !important;
+  }
+
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-mega .uwp-nav-mega__heading {
+    color: var(--uwp-link) !important;
+  }
 }
 
 /* ---- Theme switch and hamburger ------------------------------------------ *
@@ -334,23 +425,72 @@
   cursor: pointer !important;
 }
 
+/* ---- Search field -------------------------------------------------------- *
+ * The package draws the pill from `currentColor`, so on this navy bar it needs
+ * no palette override at all — only the two things the release fixes: how wide
+ * the input is allowed to be in a band whose measure is capped at 1180px, and
+ * that its type matches the navigation's sans rather than the page's serif.
+ *
+ * The 16px input size is not a preference: below it, iOS zooms the whole page
+ * when the field takes focus, and a masthead that magnifies itself on a phone
+ * is worse than one with no search in it. */
+[data-global-masthead] .uwp-search-field {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+}
+
+/* No height here on purpose. demo-assets/readability.css floors every button,
+ * input, select and textarea on this site at 44px, which is the control target
+ * and is not something a masthead gets to opt out of; a `height` declared here
+ * would be a rule that looks like it works and does not. The pill is therefore
+ * 46px — 44 plus its own border — in a 64px row. */
+[data-global-masthead] .uwp-search-field__input {
+  width: clamp(9rem, 16vw, 14rem) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 16px !important;
+}
+
 /* ---- Hidden source shells ------------------------------------------------ *
  * The source templates remain available for provenance, but never render a
  * second institutional bar after the canonical release masthead is installed.
+ * Which wrappers those are is decided by the builder, which knows — it is the
+ * run of institutional wrappers up to and including the one holding the
+ * navigation it matched — and marked on each of them by name.
+ *
+ * BY NAME, and no longer by position. This rule used to hide every
+ * `.site-header` and `.institution-bar` that followed the canonical bar, and
+ * that was right while a page's only other masthead was a stale copy of the
+ * institution's own. It stopped being right when the four research microsites
+ * began rendering their masthead from the package: /quantum/'s own six links —
+ * Home, Research, People, Publications, Education, Contact — sit in a
+ * `.uwp-masthead site-header` that comes after the institutional bar, and this
+ * rule swallowed it. The group's navigation was in the markup and 0 x 0 on the
+ * screen. A microsite is a site within a site; its navigation is not a
+ * duplicate of anything and is not this rule's business.
  */
 [data-legacy-masthead] {
   display: none !important;
 }
 
-/* Profile and directory families sometimes carried another direct-child
- * header after the first legacy strip. Once the canonical bar is present,
- * those old wrappers must not render or participate in page geometry.
- */
-body > [data-global-masthead] ~ :is(
-  [data-legacy-masthead],
-  .site-header,
-  .institution-bar
-) {
+/* ---- A page family's own bar, below the university's --------------------- *
+ * What survives the rule above: the masthead a microsite renders for itself.
+ * It keeps its own brand and its own links and becomes a second band under the
+ * institutional one, which is what it is — the university bar says where you
+ * are in the university, this says where you are in the group.
+ *
+ * Two things it must give up. It may not be sticky: the bar above it already
+ * is, at z-index 1000, and two stickies at `top: 0` stack on each other. And
+ * it may not carry a second theme switch — the page has one, in the bar above,
+ * and a second control for the same setting is a control a reader has to test
+ * to understand. Its own navigation, which is the reason it is still here,
+ * stays untouched. */
+body > [data-global-masthead] ~ .uwp-masthead {
+  position: static !important;
+  z-index: auto !important;
+}
+
+body > [data-global-masthead] ~ .uwp-masthead .uwp-theme-toggle,
+body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
   display: none !important;
 }
 
@@ -395,6 +535,34 @@ body > [data-global-masthead] ~ :is(
 
   [data-global-masthead] .masthead-wordmark__founder {
     font-size: 9.5px !important;
+  }
+
+  /* The search field narrows to its button. This bar keeps everything on one
+   * line here — lockup, search, hamburger, switch — and at 390px that line is
+   * 358px wide, of which the lockup wants 220. There is no room for an input
+   * and there is room for a 40px target, so the input goes and the button
+   * stays: it still submits, and an empty query is the results page itself, so
+   * the magnifier is a working route to search rather than a decoration.
+   *
+   * The alternative was to put the field at the top of the disclosure panel,
+   * and that is the thing this whole task exists to undo — a search you have
+   * to open a menu to find is the link labelled "Search" again, wearing a
+   * different hat. */
+  [data-global-masthead] .uwp-search-field__input {
+    display: none !important;
+  }
+
+  [data-global-masthead] .uwp-search-field {
+    flex: 0 0 auto !important;
+  }
+
+  /* Every pixel here is a pixel of the university's name. Three controls at
+   * 44px and two gaps is 150px of a 358px line at 390px, and what is left is
+   * the lockup — so the gap is 10px rather than the 14px the wide bar can
+   * afford, which is the difference between the wordmark setting on two lines
+   * and on three. */
+  [data-global-masthead] .uwp-masthead__actions {
+    gap: 10px !important;
   }
 
   :root.uwp-js [data-global-masthead] [data-global-nav] {
@@ -493,75 +661,61 @@ body > [data-global-masthead] ~ :is(
   }
 }
 
-/* ---- Mid widths: the lockup and the navigation stop sharing a line -------- *
- * The band between the two tiers this file already had, and the fix for the
- * collision that lived in it. From 1280px down to 897px the bar drew a
- * single row it could not fill: the eight entries need 755px, the switch 44px
- * and the gaps 40px, and the lockup 291px — 1130px of demand against a content
- * measure that is `viewport - 100px` here and so is only 924px at a 1024px
- * laptop. The navigation took the room it needed and painted the difference —
- * up to 306px of it — across `MIT World Peace University`.
+/* ---- Two rows, at every width the bar is not a hamburger ----------------- *
+ * The lockup and the controls on the first row; the whole navigation across
+ * the measure on the second. This started life as a band between 897px and
+ * 1279px, because that is where a one-row bar visibly collided; it is now the
+ * layout at every width above the collapse point, and the reason is that the
+ * one-row bar was never sound — it was merely not yet overlapping.
  *
- * Three ways out were measured, and only this one survives the arithmetic:
+ * The arithmetic, measured rather than estimated. At 1440px the bar's measure
+ * is capped at 1180px and it does not grow past that at any viewport. The
+ * eight entries needed 755px, the switch 44px, the gaps 40px and the lockup
+ * 320px: 1159px of demand against 1180px, so twenty-one pixels of slack at
+ * the widest the bar will ever be. That is not a layout, it is a coincidence
+ * — and today's two additions, `Students` and this search field, each cost
+ * more than the whole of it. A ninth entry ate the lockup; a search box of any
+ * useful width could not be fitted at all.
  *
- *   Shrink the navigation's type and gap. At 0.84rem/16px it has a little
- *   room, but the band needs the eight entries to fit 413px at its narrow end.
- *   That is a 45% cut — roughly 8px type on a navy bar. It does not reach, and
- *   what it buys is a wall a few dozen pixels further down.
+ * Two rows is what serious institutional mastheads do, and for the same
+ * structural reason rather than as a matter of taste: a lockup and a broad
+ * navigation are two different jobs competing for one line, and past about
+ * seven entries the line loses. Split, an added entry costs the navigation row
+ * width it has — 907px of demand against 1180px at 1440 — and nothing above it
+ * moves. The lockup gets the left of its own row instead of a track it was
+ * being squeezed out of.
  *
- *   Shrink the lockup. Same arithmetic in the other direction: at 1024px the
- *   navigation alone wants more than the whole measure, so the lockup would
- *   have to reach zero. `minmax(0, 300px)` above already lets it yield that
- *   far, and the probe shows why it is not a fix on its own — an 85px lockup.
+ * WHAT DOES NOT CHANGE, and is the point of doing it this way:
  *
- *   Collapse to the hamburger earlier. It works, but only by moving the 56rem
- *   value navigation.js keys `desktop` off and patterns.css keys the whole
- *   accordion off, to about 78rem. That is the coupled edit, and a bar whose
- *   script and stylesheet disagree about which mode it is in has broken
- *   submenus, which is worse than the collision.
+ *   The height. 64 + 48 = 112px of content under a 3px rule, which is the
+ *   115px the bar has always been. So this is a reflow and not a resize:
+ *   nothing below the masthead shifts, and `--uwp-header-height` — which
+ *   bounds the mega panel's max-height — stays true.
  *
- * So the row splits instead, which is what the legacy bar in demo-assets/
- * site.css has always done below 58.75rem and what this one never learned:
- * lockup and switch on the first row, the eight entries across the full
- * measure on the second. 755px against 797px at the band's narrow end, and
- * every destination stays visible and clickable on a 1024px laptop, which a
- * hamburger from 1280px down would have cost.
+ *   The collapse point. 56.01rem is where navigation.js keys `desktop` and
+ *   where patterns.css turns the panels into an accordion. The two are
+ *   coupled and moving either breaks the submenus, so this band is bounded
+ *   below by that value and never moves it.
  *
- * The two rows are 66px and 46px — 112px, the content height the bar already
- * had. So the band is a reflow and not a resize: the masthead is 115px tall at
- * every width, nothing below it shifts, and `--uwp-header-height` (which bounds
- * the mega panel) stays true.
+ * The placement itself is the package's `.uwp-masthead--stacked`, not this
+ * file's. It used to be here, and it needed `display: contents` on the actions
+ * wrapper to promote the navigation and the switch into the grid at all —
+ * a workaround for the navigation being a child of the actions cluster.
+ * Package 0.21.0 makes the three siblings, so they are simply placed. What is
+ * left here is what the package cannot know: that the rows are 64px and 48px,
+ * and that the hairline between them is gold-white on navy.
  *
- * The bounds are the two tiers already in this file, not new numbers. 56.01rem
- * is where the package takes over with the accordion — restated here as a lower
- * bound, never moved. 80rem is where the bar stops being over-subscribed and
- * the one-row layout has 45px of slack; the one-row layout is in fact sound
- * from 1239px, so the sub-pixel gap between 79.99rem and 80rem falls inside
- * the range it is proven at.
- *
- * `flex-wrap` on the navigation row is what a ninth and tenth entry cost: a
- * second line of links and a taller bar, which is loud, rather than an
- * overlap, which is not. */
-@media (min-width: 56.01rem) and (max-width: 79.99rem) {
+ * `flex-wrap` on the navigation row, from the package, is what a tenth and
+ * eleventh entry cost: a second line of links and a taller bar, which is loud,
+ * rather than an overlap, which is not. */
+@media (min-width: 56.01rem) {
   [data-global-masthead] > .global-masthead__inner {
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    grid-template-rows: 66px minmax(46px, auto) !important;
-    align-items: center !important;
-    column-gap: 16px !important;
+    grid-template-rows: 64px minmax(48px, auto) !important;
+    column-gap: 24px !important;
     row-gap: 0 !important;
   }
 
-  /* `order` and `grid-area` only reach real boxes, and the nav and the switch
-   * are grandchildren of the grid, not children of it. Dissolving the actions
-   * wrapper promotes them into the grid so they can be placed on two different
-   * rows at all. The same move, for the same reason, as `.header-actions`
-   * in demo-assets/site.css?v=20260725-global-nav-8-cascade. */
-  [data-global-masthead] .uwp-masthead__actions {
-    display: contents !important;
-  }
-
   [data-global-masthead] .masthead-brands {
-    grid-area: 1 / 1 / 2 / 2 !important;
     height: 100% !important;
   }
 
@@ -575,76 +729,60 @@ body > [data-global-masthead] ~ :is(
     height: 100% !important;
   }
 
-  [data-global-masthead] .uwp-theme-toggle {
-    grid-area: 1 / 2 / 2 / 3 !important;
-    justify-self: end !important;
-  }
-
   /* The hairline between the two rows is an inset shadow rather than a
-   * `border-top`. A border is 1px of layout: the row's 46px links plus a 1px
-   * border is a 47px row and a 116px masthead, so the bar would have grown by
-   * a pixel on every crossing of this tier. A shadow draws the same line and
-   * occupies nothing, which is what keeps 66 + 46 = the 112px content height
-   * the bar already had. */
+   * `border-top`. A border is 1px of layout: the row's 48px links plus a 1px
+   * border is a 49px row and a 116px masthead, so the bar would have grown by
+   * a pixel. A shadow draws the same line and occupies nothing, which is what
+   * keeps 64 + 48 = the 112px content height the bar already had.
+   *
+   * The gap is the package's clamp and is deliberately not restated: it is
+   * what turns a second row into a navigation band rather than the same dense
+   * strip one line lower. */
   [data-global-masthead] [data-global-nav] {
     box-sizing: border-box !important;
-    grid-area: 2 / 1 / 3 / -1 !important;
     flex-wrap: wrap !important;
     align-items: stretch !important;
     align-content: flex-start !important;
     justify-content: flex-start !important;
+    gap: clamp(1rem, 2.4vw, 2rem) !important;
     height: auto !important;
-    min-height: 46px !important;
+    min-height: 48px !important;
     border: 0 !important;
     box-shadow: inset 0 1px 0 rgb(255 255 255 / 16%) !important;
   }
 
   [data-global-masthead] [data-global-nav] > .uwp-nav-item {
-    height: 46px !important;
+    height: 48px !important;
   }
 
   [data-global-masthead] [data-global-nav] > a,
   [data-global-masthead] [data-global-nav] > .uwp-nav-item > .uwp-nav-item__link {
-    height: 46px !important;
+    height: 48px !important;
     padding: 0 !important;
   }
 }
 
 /* ---- Lockup at full width ------------------------------------------------ *
- * The lockup above is sized for the width at which this bar is most cramped,
- * and it is noticeably small in a 115px band. Where the bar has room it gets
- * it: a 60px emblem and a 19px name, which is as far as this artwork repays.
- * Past that the founder line and the ® stop gaining legibility and the lockup
- * only takes width from the navigation — the dome's ribbing and the ® are the
- * limit, not the cap height.
+ * The lockup elsewhere is sized for the narrow bar, and it is noticeably small
+ * in a 115px band that now gives it the left of a row to itself. Where the bar
+ * has room it gets it: a 54px emblem and a 19px name, which is as far as this
+ * artwork repays — past that the founder line and the ® stop gaining
+ * legibility. 54 and not 60: the first row is 64px tall, and an emblem three
+ * pixels from each edge of its own row reads as a thing that did not fit.
  *
- * 80rem, not a smaller figure, because that is where the bar stops being
- * over-subscribed. Its content measure tops out at 1180px, reached at a 1280px
- * viewport; the eight navigation entries need 755px, the switch 44px and the
- * gaps 40px, which leaves 45px of slack over the 320px lockup this tier draws.
- * Below 1280px there is none, which is what the mid-width band above exists to
- * handle.
- *
- * The brand track is `minmax(0, max-content)`: `max-content` so it takes
- * exactly what the larger lockup needs rather than a stated width somebody has
- * to keep in step with it by hand, and the `minmax(0, …)` so it can still
- * yield. 45px of slack is one navigation entry's worth of nothing — a ninth
- * entry spends it and 50px more — and a track that cannot yield does not
- * report that; it lets the navigation overflow across the lockup instead. With
- * the floor at 0 a ninth entry narrows the lockup here, visibly, exactly as it
- * does in the band below. */
+ * This tier no longer sets `grid-template-columns`. It used to, because the
+ * one-row layout below 80rem and the one-row layout above it wanted different
+ * tracks; there is one layout now, and the tracks are declared once with it.
+ * Nothing here takes width from the navigation any more — they are on
+ * different rows — so the lockup can simply be as large as it should be. */
 @media (min-width: 80rem) {
-  [data-global-masthead] > .global-masthead__inner {
-    grid-template-columns: minmax(0, max-content) minmax(max-content, 1fr) !important;
-  }
-
   [data-global-masthead] .masthead-brands {
     width: auto !important;
   }
 
   [data-global-masthead] .masthead-emblem {
-    width: 60px !important;
-    height: 60px !important;
+    width: 54px !important;
+    height: 54px !important;
     border-radius: 11px !important;
   }
 
@@ -667,9 +805,82 @@ body > [data-global-masthead] ~ :is(
   }
 }
 
+/* ---- Phones: the wordmark, on two lines ---------------------------------- *
+ * Not a layout tier — nothing moves here — only the lockup's type. At 390px
+ * the line is 358px and three 44px controls take 150 of it, so the wordmark
+ * has about 125px to set `MIT World Peace University` in. At 15px that is
+ * three lines and one of them is the single word `Peace`; at 14px it is two,
+ * which is what a name should look like when it has to wrap. 27rem, because
+ * that is the width below which the two-line setting stops fitting rather than
+ * a device somebody had to hand.
+ *
+ * 14px and not a pixel under, which is the metadata floor
+ * demo-assets/readability.css sets and test_readability_contract watches this
+ * file for. The founder line above it is smaller and was already, because it
+ * is a lockup's kicker rather than anything a reader reads; the name is the
+ * institution's own and stays at the floor. */
+@media (max-width: 27rem) {
+  [data-global-masthead] .masthead-wordmark__name {
+    font-size: 14px !important;
+  }
+
+  [data-global-masthead] .masthead-wordmark__founder {
+    font-size: 9px !important;
+    letter-spacing: .03em !important;
+  }
+
+  [data-global-masthead] .masthead-emblem {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  [data-global-masthead] :is(
+    .global-masthead__brand,
+    .institutional-lockup,
+    .institution-home,
+    .wordmark,
+    .brand
+  ) {
+    gap: 10px !important;
+  }
+}
+
 @media print {
   [data-global-nav],
   [data-global-masthead] .uwp-theme-toggle {
     display: none !important;
+  }
+}
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout {
+    color: var(--uwp-ink) !important;
+        background: var(--uwp-pale) !important;
+        border-color: color-mix(in srgb, var(--uwp-ink) 22%, transparent) !important;
+  }
+
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu {
+    border-top-color: var(--mitwpu-masthead-gold) !important;
+  }
+
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu a,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a {
+    color: var(--uwp-ink) !important;
+  }
+
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu a:hover,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a:focus-visible,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:hover,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:focus-visible,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:hover,
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:focus-visible {
+    color: var(--uwp-ink) !important;
+        background: color-mix(in srgb, var(--uwp-ink) 12%, transparent) !important;
+  }
+
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-mega .uwp-nav-mega__heading {
+    color: var(--uwp-link) !important;
   }
 }

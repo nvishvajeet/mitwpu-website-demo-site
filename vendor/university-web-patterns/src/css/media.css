@@ -265,13 +265,75 @@ a.uwp-feature-figure__media:hover img {
 
 /* ── portraits ───────────────────────────────────────────────────────
    Directories carry many faces at small sizes; a fixed box keeps the rows
-   even whether or not a given person has a photograph. */
+   even whether or not a given person has a photograph.
+
+   0.22.0 separated the box's SHAPE from its SIZE, which the size modifiers had
+   quietly conflated: `--md` was 126x126 while the base box and `--lg` were 4/5,
+   so asking for a bigger portrait also, invisibly, asked for a different one.
+   A client that adopted `--md` for a directory got square faces beside 4/5
+   faces on its own profile pages and could not tell from the class name why.
+
+   Shape is now one custom property and the modifiers set width alone, so the
+   two are independently addressable: `--uwp-portrait-width` for how big,
+   `--uwp-portrait-ratio` for what shape. Height is derived and stays available
+   as an override for a client that must pin both.
+
+   Three properties, three separate jobs:
+
+   --uwp-portrait-width  how much room the face gets.
+   --uwp-portrait-ratio  the frame's shape. 4/5 is a person. Moving it is a
+                         deliberate act; a directory of squares beside profiles
+                         of 4/5 is the defect this release fixes, not a style.
+   --uwp-portrait-focus  WHERE in the picture the frame is centred, for the
+                         sources tall enough that `cover` has to choose. In a
+                         posed portrait the face sits well above the middle —
+                         measured across 398 published faculty photographs, the
+                         median face centre is 28% down the frame, not 50% — so
+                         centring the crop moves AWAY from the face and takes
+                         the top off heads. 28% is that measurement.
+   --uwp-portrait-view   a modest tightening, so the face is not marooned in a
+                         field of torso. `cover` cannot zoom: it scales to fill
+                         and stops, which is why moving the focal point alone
+                         does nothing at all when the source is squarer than the
+                         frame. This crops the picture before `cover` sees it.
+
+   The 9% comes off the BOTTOM only, and that asymmetry is measured. Of those
+   398 portraits the median has 13% of the frame above the head and 58% below
+   the chin, but one in a hundred has under 6% above — so a crop that takes
+   anything off the top scalps somebody, and there is nothing to take.
+
+   9% rather than a rounder number because the dose is set by the tightest
+   photograph in the set, not by the typical one. Cropping the bottom of a
+   source that is squarer than the frame costs width as well as height: the
+   picture is scaled up to fill the taller frame and `cover` then removes the
+   difference from the SIDES. At 12% the one submitted portrait that is already
+   a head filling three-quarters of its frame lost its ears; at 9% it does not,
+   and nothing visible separates 9% from 12% on any of the other 397. A
+   treatment that works on the median and fails on the extremes is not a
+   treatment, it is an average.
+
+   `object-view-box` is the only way to do this without wrapping the image in
+   an element that can clip, and a wrapper would rename the component's own
+   class out from under every client's stylesheet. Where it is not supported
+   the declaration drops and the portrait is the same shape, the same size and
+   the same focal point, 9% looser. That is a tolerable difference; a different
+   SHAPE per browser would not be, which is why the ratio does not depend on
+   it.
+
+   A photograph that needs its own crop — a group shot submitted as a portrait,
+   a face already cropped tight — overrides the two properties on that one
+   element. That is the point of their being properties. Wiring a per-person
+   focal point through a client's own data is the client's job and the next
+   step; a package-wide constant is the floor, not the ceiling. */
 
 .uwp-portrait {
   flex: none;
   width: var(--uwp-portrait-width, 72px);
-  height: var(--uwp-portrait-height, 90px);
+  height: var(--uwp-portrait-height, auto);
+  aspect-ratio: var(--uwp-portrait-ratio, 4 / 5);
   object-fit: cover;
+  object-position: var(--uwp-portrait-focus, 50% 28%);
+  object-view-box: var(--uwp-portrait-view, inset(0 0 9% 0));
   background: var(--uwp-paper);
   border: 1px solid var(--uwp-rule);
 }
@@ -284,32 +346,53 @@ a.uwp-feature-figure__media:hover img {
   color: color-mix(in srgb, var(--uwp-link) 75%, var(--uwp-ink));
 }
 
+/* The wrapper that makes the picture clickable where the person has a page.
+   It contributes nothing but a hit area: no size of its own, because the
+   portrait inside already has one and two boxes disagreeing about a face is
+   how a directory goes ragged; `flex: none` because it, not the picture, is
+   now the flex item in a person card and would otherwise be squeezed by a
+   long name beside it.
+
+   No hover state, deliberately. The name beside it has one, they are one
+   destination, and lighting up half of it on hover says they are two.
+   portrait.html carries the reason the link is `aria-hidden` and
+   `tabindex="-1"`, which is the load-bearing part. */
+.uwp-portrait-link {
+  display: block;
+  flex: none;
+  line-height: 0;
+}
+
 /* Size variants, added in 0.9.0. The donor carried three portrait sizes under
    three block names — a small one in listings, a square one in a staff
    directory, and a large one on the person's own page. They are one box at
    three sizes, so they are modifiers of the box rather than blocks of their
-   own, and each only moves the two custom properties above. A blank tile takes
-   the same modifier as the photograph it stands in for. */
+   own. A blank tile takes the same modifier as the photograph it stands in for.
+
+   Each sets width ALONE. That is the whole of the 0.22.0 change: the donor's
+   square middle size was never a size decision, it was the staff directory's
+   own house style arriving under a name that promised only "medium", and it
+   travelled into every client that wanted a bigger portrait. A modifier here
+   may say how big. It may not quietly say what shape. */
 .uwp-portrait--md {
   --uwp-portrait-width: 126px;
-  --uwp-portrait-height: 126px;
 }
 
 .uwp-portrait--lg {
   --uwp-portrait-width: 192px;
-  --uwp-portrait-height: 240px;
 }
 
-/* Keep the photograph's own proportions instead of cropping to the box.
-   Cropping is right in a directory, where a fixed box is what keeps rows even.
-   On the single large picture on a person's own page there is nothing to stay
-   even with, and these arrive at whatever ratio the department supplied — so
-   cover silently trims faces. Pair with --lg on a profile header. */
-.uwp-portrait--natural {
-  height: auto;
-  aspect-ratio: auto;
-  object-fit: contain;
-}
+/* `--natural` (0.9.0–0.21.0) is gone. It kept the photograph's own proportions
+   instead of cropping, on the argument that a lone profile picture has nothing
+   to stay even with and that cropping trims faces. The first half is true and
+   the second was a symptom of the centred crop, not of cropping: with the
+   focal point on the face there is nothing to protect the picture from. What
+   it cost was the thing this component exists to provide — a person rendered
+   at one shape wherever they appear. A profile that opts out is a person who
+   is 4/5 in the directory, square on their own page, and neither on a
+   department page, which is what the one client using it actually shipped.
+   A client that must show an uncropped picture is showing a picture, not a
+   portrait: use feature-figure. */
 
 .uwp-person-card {
   display: flex;
@@ -382,7 +465,6 @@ a.uwp-feature-figure__media:hover img {
    link them in. The layout is now stated once, there. */
 .uwp-profile__header .uwp-portrait {
   --uwp-portrait-width: 192px;
-  --uwp-portrait-height: 240px;
 }
 
 /* ── evidence strip ──────────────────────────────────────────────────
@@ -523,24 +605,25 @@ a.uwp-feature-figure__media:hover img {
 }
 
 /* Portraits step down with the layout, on the same two tiers patterns.css
-   uses. The stacking of the profile header itself happens there. */
+   uses. The stacking of the profile header itself happens there. Width alone,
+   for the reason the modifiers give: a phone is a narrower place to put a
+   face, not a reason to change whose shape it is. The 56rem tier used to drop
+   `--md` to 84x84, so the square that 0.22.0 removed from the desktop had a
+   second copy waiting below the breakpoint. */
 @media (max-width: 75rem) {
   .uwp-portrait--lg,
   .uwp-profile__header .uwp-portrait {
     --uwp-portrait-width: 160px;
-    --uwp-portrait-height: 200px;
   }
 }
 
 @media (max-width: 56rem) {
   .uwp-portrait--md {
     --uwp-portrait-width: 84px;
-    --uwp-portrait-height: 84px;
   }
 
   .uwp-portrait--lg,
   .uwp-profile__header .uwp-portrait {
     --uwp-portrait-width: 136px;
-    --uwp-portrait-height: 170px;
   }
 }

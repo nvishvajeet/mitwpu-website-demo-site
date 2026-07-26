@@ -230,6 +230,31 @@ mark {
   background: color-mix(in srgb, var(--gold) 38%, transparent);
 }
 
+/* Shown only with scripting off, where the box below cannot answer. It is a
+   panel rather than a sentence because it is doing the job the box does: the
+   list in it is the way to everything the index holds. */
+.search-noscript {
+  margin: 24px 0 0;
+  padding: 22px 26px;
+  background: var(--subtle);
+  border-left: 4px solid var(--gold);
+  border-radius: 3px;
+}
+
+.search-noscript h2 {
+  margin: 0 0 .5rem;
+  font-size: 1.25rem;
+}
+
+.search-noscript ul {
+  margin: .35rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.search-noscript li {
+  margin-bottom: .4rem;
+}
+
 .search-empty {
   padding: 50px 30px;
   text-align: center;

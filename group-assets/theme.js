@@ -60,7 +60,6 @@
       ["People", "/people/"],
       ["Campus", "/life-at-mit-wpu/"],
       ["Students", "/students/"],
-      ["Search", "/search/"],
     ];
     /* /uwp:nav */
     const path = window.location.pathname.replace(/\/+$/, "/");

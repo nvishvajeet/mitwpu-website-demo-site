@@ -76,25 +76,30 @@
   }
 }
 
-/* The published photograph keeps the proportions it was taken at.
+/* The published photograph is cropped to the site's portrait frame, like every
+ * other face on the site. It used to keep the proportions it was taken at.
  *
- * `.uwp-portrait` is a fixed box with `object-fit: cover`, which is right for
- * a directory row — a page of faces at one size stays even only if every one
- * of them is the same box. It is wrong for the one large picture at the head
- * of a person's own page: MIT-WPU's faculty photographs arrive at whatever
- * ratio the department supplied, and cropping them to 4/5 takes the top off
- * heads. There is nothing else in that row to stay even with.
+ * The argument for that was reasonable and turned out to be wrong. It ran:
+ * `object-fit: cover` is right for a directory row, where a page of faces
+ * stays even only if every box is the same, but there is nothing for a lone
+ * profile picture to stay even WITH, and MIT-WPU's photographs arrive at
+ * whatever ratio the department supplied, so cropping takes the top off heads.
  *
- * The lettered tile is deliberately left at the package's box: it has no
- * proportions of its own to preserve, and it is the size the layout reserves.
+ * The thing it was staying even with is the same person on the six other
+ * surfaces that show them. This site rendered one face three shapes: 4/5 in
+ * the directory, square here, square again on the group microsites. A reader
+ * moving between them sees three photographs, and the one on the person's own
+ * page — the biggest, the one that should carry the most — was the loosest
+ * crop of the three, showing the whole square with the head in the top third.
+ * "Zoom in a bit" was that.
+ *
+ * And the top of the head was never at risk from cropping; it was at risk from
+ * cropping CENTRED, which is the package's old default and is no longer it.
+ * The frame is now aimed at the face, so `cover` has an opinion worth having.
+ *
+ * The lettered tile needed no exception before and needs none now: it is the
+ * same box, which is the point of the component.
  */
-.uwp-profile__header .uwp-portrait:not(.uwp-portrait--blank) {
-  width: 100%;
-  height: auto;
-  max-height: 330px;
-  aspect-ratio: auto;
-  object-fit: contain;
-}
 
 /* The way back to the listing, as a resting pill.
  *
@@ -121,3 +126,56 @@
 /* The focus ring these two links used to declare for themselves is gone:
    readability.css draws one globally, from --uwp-focus, which uwp-bridge.css
    maps to this site's --focus. Same ring, one rule, every element. */
+
+/* The service marks beside the person's name: their size, which the package
+   loses to itself.
+
+   patterns.css sizes the mark at 14px through `.uwp-profile-link-icons__mark`,
+   which is one class. It also carries a picture rule for the record's body —
+   `.uwp-profile img:not(.uwp-portrait) { width: 100%; height: auto;
+   object-fit: cover }` — which is two classes and a type, and matches this
+   <img> as well. The heavier selector wins, so the first page ever to render
+   this component inside `profile` drew a 14px mark as a 44 × 55 photograph,
+   cropped to fill its own link.
+
+   That is the package's bug and not this site's, and it is reported there. It
+   cannot be fixed by editing the vendored copy — `adopt_patterns.py --check`
+   is a gate in `./check`, and forking the file to fix it would fail the build
+   for everyone. So the mark's own size is restated here, at three classes, in
+   the sheet that loads last. Remove this when the package's picture rule stops
+   claiming an element that carries its own dimensions.
+
+   The size is 16px rather than the package's 14. ORCID publishes its iD icon
+   at 16, 24, 32, 64 and 128 and calls 24 optimal; 16 is the smallest it draws,
+   so the row never asks that artwork to work below a size its owner supports.
+   The rest of the row matches it, because marks side by side must arrive at
+   one optical size or the smallest of them reads as a mistake. */
+.uwp-profile .uwp-profile-link-icons .uwp-profile-link-icons__mark {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* The dark theme's correction for these marks used to live here, and does not
+ * any more. It was `filter: invert(1)` on every mark, and it was the right
+ * answer to a problem that no longer exists, so the removal is worth a note
+ * rather than a silent deletion.
+ *
+ * Every mark used to be a monochrome glyph delivered as an <img>. An image is
+ * a separate document and inherits nothing from this page, so its
+ * `currentColor` resolved to black — right on paper, invisible on the dark
+ * theme's ground — and inverting it was exact rather than approximate, because
+ * pure black on transparent inverts to pure white on transparent.
+ *
+ * Both halves of that changed together. A monochrome glyph is now inlined as
+ * an <svg>, so it takes this page's `color` directly and the service's own
+ * colour with it; and the one mark that is still a file, ORCID's, is a file
+ * precisely BECAUSE it carries its own two colours and its owner requires it
+ * be used exactly as published. Inverting that would turn ORCID green into
+ * magenta on the dark theme, which is the recolouring their brand guidelines
+ * forbid — so the rule that was once the careful answer became the thing to
+ * avoid, and there is nothing left for it to correct.
+ *
+ * The colours themselves are in people/service-brands.css, generated from
+ * demo-assets/service-brands.json, which records each value's source and what
+ * it measures against each of this site's two grounds. */

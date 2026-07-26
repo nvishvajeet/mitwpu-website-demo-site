@@ -36,30 +36,59 @@
   "copyright": {
     "holder": "MIT World Peace University"
   },
+  "note": "What belongs in a footer, decided 2026-07-26 against the routes that exist rather than against the routes that were here. A footer's job is the destinations a reader needs and cannot navigate to — the ones that are nobody's obvious parent. It is not a second copy of the top navigation, which is how the site this one is modelled on ended up with the footer we captured. The three navigation columns were three links each and two of the twelve links were leaving for that reason: `Search`, because there is a search box in the masthead now and a footer link to the same page is a third route to it; and `People`, because it is a top-level entry in the bar. Four groups of four now, and each addition earns its place: /administration/ and /forms/ were built the same day and answer the two commonest errands a university website is asked — reach a human, and get a thing done; /contact-us/ was the most conspicuous absence, a university footer with no contact link; /accessibility/ existed and nothing in the site linked to it, which is a defect rather than an omission, since a footer is exactly where a reader looks for it; /career/ is here because a careers link is one of the few things a NON-student comes to a university footer for, and a navigation built around study and research gives it nowhere else to live. Deliberately not here: /campus-life/ and /students/, which are top-level entries, and /intranet/help/, which is reachable from /intranet/. A footer earns its usefulness by being short.",
+
   "groups": [
     {
-      "label": "University",
+      "label": "Reach us",
+      "hide_heading": true,
       "links": [
         {
-          "label": "About",
+          "label": "Offices and contacts",
+          "local": "administration/"
+        },
+        {
+          "label": "Forms and requests",
+          "local": "forms/"
+        },
+        {
+          "label": "Contact the university",
+          "local": "contact-us/"
+        },
+        {
+          "label": "Intranet",
+          "local": "intranet/"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "hide_heading": true,
+      "links": [
+        {
+          "label": "About MIT-WPU",
           "local": "about/"
         },
         {
-          "label": "Mission & Values",
+          "label": "Mission and values",
           "local": "about-us/about-mit/"
         },
         {
           "label": "MAEER",
           "local": "about/maeer/"
+        },
+        {
+          "label": "Work with us",
+          "local": "career/"
         }
-      ],
-      "hide_heading": true
+      ]
     },
     {
-      "label": "Information",
+      "label": "Legal and compliance",
+      "hide_heading": true,
       "links": [
         {
-          "label": "Privacy & compliance",
+          "label": "Privacy and compliance",
           "local": "privacy-policy/"
         },
         {
@@ -67,27 +96,12 @@
           "local": "copyright-statement/"
         },
         {
+          "label": "Accessibility",
+          "local": "accessibility/"
+        },
+        {
           "label": "Sitemap",
           "local": "sitemap/"
-        }
-      ],
-      "hide_heading": true
-    },
-    {
-      "label": "Quick links",
-      "hide_heading": true,
-      "links": [
-        {
-          "label": "People",
-          "local": "people/"
-        },
-        {
-          "label": "Search",
-          "local": "search/"
-        },
-        {
-          "label": "Intranet",
-          "local": "intranet/"
         }
       ]
     },

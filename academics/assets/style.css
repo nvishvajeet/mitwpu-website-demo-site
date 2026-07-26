@@ -530,9 +530,12 @@ body {
   border-left: 1px solid var(--line);
 }
 
+/* The portrait track grew with the portrait, keeping the 18px gutter it always
+   had. A department listing and the university people directory are the same
+   listing seen twice, so they carry the same 96px face. */
 .person-card {
   display: grid;
-  grid-template-columns: 94px minmax(0, 1fr);
+  grid-template-columns: 114px minmax(0, 1fr);
   min-height: 215px;
   padding: 26px;
   border-right: 1px solid var(--line);
@@ -544,12 +547,26 @@ body {
   outline-offset: -4px;
 }
 
+/* The click target around a face, where that person has a page. It carries no
+   size: the picture inside has one, and two boxes disagreeing about a face is
+   how a grid goes ragged. Same rule, same reasoning, as the package's
+   .uwp-portrait-link. */
+.person-photo-link {
+  display: block;
+  line-height: 0;
+}
+
+/* 76x92 was 4/5 by intention and 0.826 by arithmetic, which is the kind of
+   near-miss that survives because nobody puts the two numbers beside each
+   other. The frame ratio is declared rather than implied now, and the focal
+   point and the tightening are the site's, not this file's. */
 .person-photo,
 .person-placeholder {
-  width: 76px;
-  height: 92px;
+  width: 96px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: 50% 28%;
+  object-view-box: inset(0 0 9% 0);
   background: var(--blue-pale);
   border: 1px solid var(--line);
 }
@@ -832,11 +849,12 @@ body {
   gap: 20px;
 }
 
+/* 96x116 was another near-4/5 (0.828). Declared, it is 96x120. */
 .school-dean__portrait {
   position: relative;
   display: grid;
   width: 96px;
-  height: 116px;
+  aspect-ratio: 4 / 5;
   place-items: center;
   overflow: hidden;
   color: var(--blue);
@@ -851,7 +869,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: 50% 28%;
+  object-view-box: inset(0 0 9% 0);
 }
 
 .school-dean h3,
@@ -1134,14 +1153,16 @@ body {
 
 @media (max-width: 520px) {
   .person-card {
-    grid-template-columns: 76px minmax(0, 1fr);
+    grid-template-columns: 90px minmax(0, 1fr);
     padding: 20px 16px;
   }
 
+  /* Width only: the phone gets a narrower face, not a different one. The
+     height that used to sit here was the ratio restated by hand, and the
+     place a ratio drifts is a second copy of it. */
   .person-photo,
   .person-placeholder {
-    width: 62px;
-    height: 78px;
+    width: 72px;
   }
   .shell {
     width: min(calc(100% - 30px), var(--shell));
