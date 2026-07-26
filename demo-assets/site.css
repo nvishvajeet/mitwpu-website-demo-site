@@ -29,7 +29,7 @@
 }
 
 /* Bridge to university-web-patterns 0.7.0.
-   The package's media, portrait, evidence and hero-task patterns read --uwp-*
+   The package's media and portrait patterns read --uwp-*
    tokens. This site keeps its own palette; the names are mapped here rather
    than loading a second set of tokens. */
 :root {
@@ -42,8 +42,6 @@
   --uwp-space-2: 1rem;
   --uwp-space-3: 1.5rem;
 }
-
-.evidence-section { padding: clamp(1rem, 3vw, 1.6rem) 0 0; }
 
 :root[data-theme="dark"] {
   --paper: #111a21;
@@ -338,13 +336,21 @@ h3 {
 .hero-inner {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.75fr);
-  /* Fill the viewport below the sticky masthead so the landing reads as one
-     full page — the next section sits cleanly below the fold, no mid-screen
-     break. */
-  min-height: calc(100svh - var(--mitwpu-masthead-height, 116px));
+  /* This used to be `calc(100svh - masthead)`, which made the hero fill the
+     viewport BY CONSTRUCTION whatever was in it. At 1280x900 that produced a
+     785px band holding a headline and one paragraph — 414px of copy floating
+     in a 676px row, with 262px of nothing beside the photograph. A
+     full-viewport hero earns its keep when there is something in it; this one
+     was mostly air, and it got emptier when the four-fact strip beneath it was
+     removed.
+
+     Capped instead: still the tallest band on the page and still a landing
+     image rather than a header photo, but the height now follows the content
+     and the picture rather than following the window. */
+  min-height: min(72svh, 640px);
   align-items: center;
   gap: clamp(42px, 6vw, 82px);
-  padding-block: clamp(48px, 6vh, 78px);
+  padding-block: clamp(44px, 5vh, 62px);
 }
 
 .hero-copy {
@@ -524,10 +530,12 @@ h3 {
 
 .activity-image {
   display: block;
-  /* The feed uses editorial banners, not portrait thumbnails. Keeping their
-     native landscape proportion prevents the former 4:3 frame from turning
-     each banner into an over-cropped close-up. */
-  aspect-ratio: 12 / 5;
+  /* The feed uses editorial banners, not portrait thumbnails, so the frame is
+     landscape — but 12/5 was the banners' own 2.4:1, which in a card the width
+     of a column is a strip too short to read as a photograph. 16/9 keeps the
+     landscape shape and gives the picture height; cover crops the ends, which
+     an editorial banner survives better than a portrait would. */
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--blue-pale);
 }
@@ -761,8 +769,14 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     padding-block: 68px;
   }
 
+  /* Once the hero stacks, the visual can no longer take its height from the
+     copy beside it and needs a ratio of its own. It must NOT be the source
+     image's own 1557/599 — that is 2.6:1, which at this width is a 300px
+     letterbox strip and at phone width a sliver. The frame gets taller as the
+     viewport narrows; object-fit: cover crops the panorama's sides, which
+     costs less than showing the whole sweep at no height at all. */
   .hero-visual {
-    aspect-ratio: 1557 / 599;
+    aspect-ratio: 16 / 9;
     grid-template-rows: 1fr;
   }
 
@@ -816,8 +830,11 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     width: 100%;
   }
 
+  /* Taller again on a phone: 16/9 across 375px is 211px of image under a
+     masthead, which reads as a band rather than a photograph. 3/2 gives it
+     enough height to be a picture of somewhere. */
   .hero-visual {
-    aspect-ratio: 1557 / 599;
+    aspect-ratio: 3 / 2;
     grid-template-rows: 1fr;
   }
 

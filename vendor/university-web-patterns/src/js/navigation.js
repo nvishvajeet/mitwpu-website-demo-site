@@ -1,3 +1,24 @@
+/* Masthead navigation: mobile disclosure, dropdowns, cascading fly-outs and
+   the mega panel. Everything here is enhancement — the nav is a real list of
+   links and works with this file absent.
+
+   Two contracts a maintainer needs before touching anything below.
+
+   1. This script sets the `.uwp-js` flag that patterns.css keys the entire
+      collapsed-navigation design off (search patterns.css for `.uwp-js`).
+      Without the flag the nav degrades to a plain horizontal scroller, which
+      is the correct no-JS fallback. Consequence: a page that loads theme.js
+      but not navigation.js gets NO flag, so its accordion never appears and
+      its toggle button stays hidden — the nav still works, but not the way
+      that page's author expected. If the flag ever needs to exist without
+      this file's behaviour, it moves to its own tiny script; do not add a
+      second setter.
+
+   2. It wires the DOM once, at load, and observes nothing afterwards. Markup
+      rendered into the page later — by src/js/render.js in the browser, or by
+      any client script — is NOT enhanced. A client that renders navigation
+      client-side must insert it before this file runs, or re-run the wiring
+      itself. The same is true of every other enhancement script here. */
 (() => {
   document.documentElement.classList.add("uwp-js");
 

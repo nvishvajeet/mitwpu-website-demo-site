@@ -122,6 +122,134 @@
   object-fit: contain;
 }
 
+/* ── the feature figure ──────────────────────────────────────────────
+   The one image a page is about, wearing the institution's accent block past
+   its bottom-right corner. Promoted in 0.18.0 from four separate hand-written
+   versions of the same idea across two clients — a hero visual, a university
+   section's media figure, a research page's lead image and this package's own
+   `.uwp-hero__media` — which agreed on the geometry (45% × 55%, offset 1.15rem)
+   and disagreed on everything else, including the colour: three of the four
+   softened the accent towards paper, and the one that did not was the one the
+   institution recognised as its own.
+
+   The geometry is kept because four independent authors arrived at it. It is
+   exposed as custom properties so a client can move it in one place rather
+   than in four.
+
+   HOW THE BLOCK IS PAINTED, and why not the obvious way. Every donor wrote it
+   as a pseudo-element hung outside the figure at `z-index: -1`, so it falls
+   behind the figure's own background and only the overhang shows. That is a
+   contract with the figure's surroundings, and the surroundings are exactly
+   what a shared package does not control. It fails, silently and completely,
+   when (1) any ancestor clips its overflow, (2) the figure becomes a stacking
+   context — a z-index, opacity < 1, a transform, a filter, `isolation`,
+   `contain` — or (3) any ancestor has a background, because a negative z-index
+   paints into the nearest ancestor stacking context BELOW every ordinary
+   descendant background in it. The third is not hypothetical: it is what
+   happens the first time somebody drops the figure into a tinted band, and it
+   is not in any donor's comments because none of them had done it yet.
+
+   So the block is painted inside the frame instead. The frame carries the
+   offset as bottom and right padding; the block is anchored to the frame's
+   padding box; the picture occupies the content box. The block therefore sits
+   past the PICTURE's corner while staying inside the FRAME's border box, and
+   the fragile contract is gone: an ancestor that clips would clip the picture
+   too, and `isolation: isolate` on the frame resolves the two z-indexes below
+   against each other and nothing else. This is why the frame is a wrapper and
+   not the <figure> — the block anchors to the bottom of the picture rather
+   than to the bottom of the caption. */
+
+.uwp-feature-figure {
+  /* The offset, stated once. It is both the padding that makes room for the
+     block and the distance the block overhangs by, so the two cannot drift. */
+  --uwp-figure-corner-offset: 1.15rem;
+  margin: 0 0 var(--uwp-space-3);
+}
+
+.uwp-feature-figure__frame {
+  position: relative;
+  /* Contains the two z-indexes below. Safe here, and forbidden in the donors'
+     form, which is the whole difference between the two. */
+  isolation: isolate;
+  padding:
+    0 var(--uwp-figure-corner-offset) var(--uwp-figure-corner-offset) 0;
+}
+
+.uwp-feature-figure__frame::before {
+  position: absolute;
+  z-index: 0;
+  width: var(--uwp-figure-corner-width, 45%);
+  height: var(--uwp-figure-corner-height, 55%);
+  inset: auto 0 0 auto;
+  content: "";
+  background: var(--uwp-figure-corner, var(--uwp-accent));
+}
+
+.uwp-feature-figure__media {
+  position: relative;
+  z-index: 1;
+  display: block;
+  /* The picture's own clip. It clips the image to the frame and cannot clip
+     the block, which is its sibling rather than its child — the arrangement
+     that makes the whole treatment safe to put anywhere. */
+  overflow: hidden;
+  background: var(--uwp-paper);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-feature-figure__media img,
+.uwp-feature-figure__media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Squarer than a photographer's panorama on purpose. A lead picture at
+     2.4 : 1 is a 300px letterbox strip at desktop width and a sliver on a
+     phone; 4 / 3 is a picture of somewhere. The caller overrides per figure
+     through the inline --uwp-figure-ratio the template writes. */
+  aspect-ratio: var(--uwp-figure-ratio, 4 / 3);
+  object-fit: cover;
+}
+
+/* A linked feature picture answers the pointer, at the same rate and by the
+   same amount as a card's picture does, so the two do not read as different
+   kinds of link. */
+a.uwp-feature-figure__media img {
+  transition: transform 350ms ease;
+}
+
+a.uwp-feature-figure__media:hover img {
+  transform: scale(1.035);
+}
+
+/* Two states that turn the block off, and both also drop the gutter it needed
+   — a suppressed block that leaves its own empty margin behind is the bug this
+   pair exists to avoid.
+
+   `plain` is the caller saying this picture should not wear the mark: a
+   diagram, a logo, a scanned document, a person's face. The block is an
+   editorial claim about a photograph of a place or an occasion; on a portrait
+   it reads as decoration applied to a person.
+
+   `contain` letterboxes rather than crops, for an image whose whole extent
+   matters. It suppresses the block on its own rather than by the caller's
+   instruction, because a contained image does not reach the frame's edges and
+   a block offset past the FRAME's corner would then float away from the
+   picture with a visible gap in between — which looks like a mistake, and is
+   one. */
+.uwp-feature-figure--plain .uwp-feature-figure__frame,
+.uwp-feature-figure--contain .uwp-feature-figure__frame {
+  padding: 0;
+}
+
+.uwp-feature-figure--plain .uwp-feature-figure__frame::before,
+.uwp-feature-figure--contain .uwp-feature-figure__frame::before {
+  content: none;
+}
+
+.uwp-feature-figure--contain .uwp-feature-figure__media img {
+  object-fit: contain;
+}
+
 /* ── portraits ───────────────────────────────────────────────────────
    Directories carry many faces at small sizes; a fixed box keeps the rows
    even whether or not a given person has a photograph. */
@@ -345,6 +473,25 @@
   color: var(--uwp-ink);
   background: var(--uwp-paper);
   border: 1px solid var(--uwp-rule);
+}
+
+/* Grouped choices. The grouping is <optgroup> and the browser draws it; this
+   only asks for the label to inherit the control's face and size rather than
+   the italic several browsers default to, and for the options inside it to
+   stay upright. Every declaration here is one a browser that styles its own
+   select internals is free to ignore, which is why the grouping is legible
+   without any of them. */
+.uwp-hero-task optgroup {
+  font: inherit;
+  font-weight: 650;
+  font-style: normal;
+  color: var(--uwp-ink);
+}
+
+.uwp-hero-task option {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--uwp-ink);
 }
 
 .uwp-hero-task__note {

@@ -1,3 +1,34 @@
+/* Readability floors and the base typographic layer.
+ *
+ * These are the accessibility guarantees WORKFLOW.md states as hard
+ * boundaries, expressed once: reading text on a 16px floor, metadata on a
+ * 14px floor, controls with a 44px target, a visible focus ring, and
+ * reduced-motion honoured. They are floors, not defaults — a client may set a
+ * larger value and may not set a smaller one.
+ *
+ * TWO THINGS HERE ARE EASY TO UNDO BY ACCIDENT.
+ *
+ * `:where()` is load-bearing, not stylistic. It gives every selector inside
+ * it a specificity of ZERO, so a client's own `p { … }` or `.uwp-meta { … }`
+ * beats these rules with no !important and no specificity arms race. Rewrite
+ * `:where(p, li, …)` as `p, li, …` and this file stops being a floor a client
+ * can build on and becomes a set of rules a client has to fight. If you need
+ * a rule here that a client must NOT override, that is a signal it belongs in
+ * patterns.css beside the component it protects, not a signal to drop the
+ * :where().
+ *
+ * `max(1rem, 16px)` rather than a bare `16px` keeps the browser's own
+ * text-size preference working: a visitor who has raised their default gets
+ * the larger value, and nobody gets less than 16px. Same shape for the 14px
+ * metadata floor. A bare pixel value would silently cap a visitor who needs
+ * larger text, which is the opposite of the intent.
+ *
+ * CASCADE POSITION: this sheet must load after tokens.css (it reads them) and
+ * BEFORE patterns.css and media.css, whose component rules are meant to sit
+ * on top of these bases. The load order is declared in components.json rather
+ * than left to whichever component a page happens to use first.
+ */
+
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -12,6 +43,10 @@ body {
   line-height: 1.6;
 }
 
+/* Institutional content carries unbreakable strings that ordinary prose does
+   not: department acronyms, grant references, DOIs, equipment model numbers.
+   Without this they force a horizontal scrollbar on a narrow viewport, which
+   is a reflow failure rather than a cosmetic one. */
 :where(p, li, dd, dt, address, blockquote, td, th) {
   overflow-wrap: anywhere;
 }
@@ -39,6 +74,10 @@ body {
   font-size: max(1rem, 16px);
 }
 
+/* Deliberately NOT wrapped in :where(). The focus ring is the one rule in
+   this file a client must not accidentally out-specify: a keyboard visitor
+   has nothing else telling them where they are. Overriding it is a decision
+   that should require writing a selector that clearly means to. */
 :focus-visible {
   outline: 3px solid var(--uwp-focus);
   outline-offset: 3px;

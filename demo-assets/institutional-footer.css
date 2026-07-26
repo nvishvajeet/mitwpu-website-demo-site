@@ -1,3 +1,22 @@
+/* What is left of the hand-written institutional footer.
+
+   The markup is gone: every page renders the package's footer component now,
+   stamped by tools/apply_institutional_footer.mjs on the eight hand-authored
+   pages and by a builder everywhere else. What that component still carries is
+   the legacy `institutional-footer` class token — see uwp_shell's decoration
+   list — and these four rules are the ones that hang off it.
+
+   Everything else in this file styled elements that no longer exist:
+   __inner, __lead, __groups, __group and __legal, plus the two media queries
+   that reflowed them. The package's own grid does that work now, and it reads
+   `hide_heading` out of demo-assets/institutional-footer.json, which is the
+   thing this stylesheet's markup could never do.
+
+   The background is also declared as `--uwp-footer-bg` in the three
+   uwp-bridge.css sheets, and every one of the 619 pages that loads this file
+   loads a bridge too. The declaration stays here because this file is what
+   sets the 4px blue rule the bridge's comment defers to, and the two are one
+   treatment. */
 .institutional-footer {
   color: #e9f0f4;
   background: #0d2939;
@@ -8,50 +27,6 @@
   color: #e7eef2;
   background: #071722;
   border-top-color: #5d96bd;
-}
-
-.institutional-footer .institutional-footer__inner {
-  padding-block: clamp(2.25rem, 5vw, 4.5rem) 1.4rem;
-}
-
-.institutional-footer__lead {
-  display: grid;
-  grid-template-columns: minmax(15rem, 1.15fr) minmax(12rem, 0.85fr);
-  gap: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(233, 240, 244, 0.22);
-}
-
-.institutional-footer__lead strong {
-  display: block;
-  max-width: 24ch;
-  color: #fff;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.35rem, 2.5vw, 2rem);
-  line-height: 1.15;
-}
-
-.institutional-footer__groups {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1.4rem, 3vw, 3rem);
-  padding-block: 2rem;
-}
-
-.institutional-footer__group h2 {
-  margin: 0 0 0.75rem;
-  color: #fff;
-  font-family: inherit;
-  font-size: 0.78rem;
-  font-weight: 750;
-  letter-spacing: 0.08em;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
-
-.institutional-footer__group nav {
-  display: grid;
-  gap: 0.48rem;
 }
 
 .institutional-footer a {
@@ -66,37 +41,6 @@
   text-decoration-color: #6ca4c8;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.24em;
-}
-
-.institutional-footer__legal {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding-top: 1.15rem;
-  border-top: 1px solid rgba(233, 240, 244, 0.22);
-  color: #a9c0cc;
-  font-size: 0.78rem;
-}
-
-@media (max-width: 58rem) {
-  .institutional-footer__groups {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 38rem) {
-  .institutional-footer__lead {
-    grid-template-columns: 1fr;
-  }
-
-  .institutional-footer__groups {
-    grid-template-columns: 1fr;
-  }
-
-  .institutional-footer__legal {
-    display: grid;
-  }
 }
 
 /* Generated device-theme fallback. */

@@ -22,10 +22,26 @@
  * genuinely disagreed, the choice is recorded in the comment beside the rule.
  */
 
+/* The two rules in this file that reach outside the package's own class
+   namespace. Both are deliberate; neither is a habit copied from a reset. */
+
+/* Every width and padding below is written assuming border-box. A client
+   whose own reset sets content-box on some subtree gets cards that overflow
+   their grid track, which reads as a grid bug rather than a box-model one.
+   Declared here rather than assumed, so the package is correct on a page that
+   ships no reset at all. */
 * {
   box-sizing: border-box;
 }
 
+/* !important, and it has to be. directory-filter.js hides non-matching rows
+   by setting the `hidden` property, and the elements it hides are pattern
+   components whose own rules set `display: flex` or `display: grid`. Those
+   class rules out-specify a bare [hidden] attribute selector, so without
+   !important a filtered directory would hide nothing and the visible count
+   would disagree with the visible rows. This is the one place in the package
+   where !important is the correct tool: it is arbitrating between a state
+   attribute and a layout rule, not winning a specificity argument. */
 [hidden] {
   display: none !important;
 }
@@ -797,16 +813,29 @@
   border: 1px solid var(--uwp-rule);
 }
 
-/* offset accent block behind the lower-right corner of the media */
-.uwp-hero__media::before {
-  position: absolute;
-  z-index: -1;
-  inset: auto -1.15rem -1.15rem auto;
-  width: 45%;
-  height: 55%;
-  background: color-mix(in srgb, var(--uwp-accent) 45%, var(--uwp-paper));
-  content: "";
-}
+/* The offset accent block that used to hang off this figure's lower-right
+   corner was removed in 0.18.0 and is now feature-figure, in media.css.
+   Two reasons, and the second is why it could not simply be recoloured here.
+
+   It was the wrong colour. It softened the accent 45% towards paper, which
+   reads as a printing error rather than as the institution's own colour —
+   every client that had built this independently had made the same softening,
+   and the one that had not was the one whose visitors recognised the mark.
+
+   And it was painted at `z-index: -1`, which is a contract with this figure's
+   surroundings that a shared package cannot keep. It fails silently whenever
+   an ancestor clips its overflow, whenever this figure becomes a stacking
+   context, and whenever any ANCESTOR has a background — the last of which is
+   just "somebody put the hero in a tinted band". feature-figure paints the
+   same block inside its own frame instead, where none of the three can reach
+   it. See the long note in media.css.
+
+   To restore the corner on a hero, fill hero's media slot with feature-figure
+   rather than with hand-written `<figure class="uwp-hero__media">`. That is
+   the trade this removal makes: the corner is no longer free with the class,
+   and in exchange it no longer disappears depending on where the class is
+   used. Everything else about this figure — the frame, the ratio, the caption
+   — is unchanged. */
 
 .uwp-hero__media img,
 .uwp-hero__media video {
@@ -821,7 +850,8 @@
    rule. It lives here rather than in media.css because every client gets this
    file, while media.css is optional and only sizes the picture box itself. */
 .uwp-hero__media figcaption,
-.uwp-lead-media__caption {
+.uwp-lead-media__caption,
+.uwp-feature-figure__caption {
   padding: .75rem .9rem;
   color: var(--uwp-muted);
   font-family: var(--uwp-sans);
@@ -840,7 +870,20 @@
   border-top: 1px solid var(--uwp-rule);
 }
 
-.uwp-lead-media__caption a {
+/* A feature figure's caption sits below the frame's gutter rather than against
+   the picture, so it takes neither the fill nor the separator: a rule drawn a
+   gutter's width beneath the photograph reads as belonging to whatever comes
+   after it. The left padding is dropped for the same reason a caption under a
+   plate is set flush — it should line up with the picture's edge, not be
+   indented from it. */
+.uwp-feature-figure__caption {
+  margin: 0;
+  padding-left: 0;
+  max-width: 46rem;
+}
+
+.uwp-lead-media__caption a,
+.uwp-feature-figure__caption a {
   color: inherit;
 }
 
@@ -2248,6 +2291,451 @@
 }
 
 /* ---------------------------------------------------------------------------
+   Testimonial — one quotation and the person who said it. The framed card is
+   the default, because the common surface is several of them in a grid; the
+   pull modifier drops the frame for the single quotation set beside a page's
+   own argument.
+
+   The frame is `.uwp-card`'s with the top rule in the accent rather than the
+   brand: a card of facts and a card of somebody's voice should not open with
+   the same line.
+
+   The length of the material decided the type. Surveyed quotations ran to two
+   hundred and fifty words and half the long ones broke into three or more
+   paragraphs, so the quote is set in the serif a shade above the reading
+   floor and NOT in italic — italic over a paragraph of that length is a
+   readability cost paid for a decoration. The rows are `1fr auto` so that in
+   a grid of cards stretched to a common height the attributions still line up
+   along the bottom, which is the only thing that survives a thirteen-fold
+   spread in body length.
+   --------------------------------------------------------------------------- */
+.uwp-testimonial {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: var(--uwp-space-3);
+  /* a <figure> carries a UA margin that would fight every grid it sits in */
+  margin: 0;
+  padding: var(--uwp-space-3);
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+  border-top: 4px solid var(--uwp-accent);
+}
+
+.uwp-testimonial__quote {
+  /* the UA indents a blockquote by 40px, which is a margin this design owns */
+  margin: 0;
+  color: var(--uwp-copy);
+  font-family: var(--uwp-serif);
+  font-size: max(1.0625rem, 17px);
+  line-height: 1.62;
+}
+
+.uwp-testimonial__quote p {
+  max-width: var(--uwp-reading-width);
+  margin-block: 0 var(--uwp-space-2);
+}
+
+.uwp-testimonial__quote p:last-child {
+  margin-bottom: 0;
+}
+
+/* The opening mark is decoration, so it is here and not in the markup: it can
+   then never be selected, copied into a quotation of the quotation, or heard.
+   `/ ""` gives the generated content an empty alternative text; an engine that
+   does not know that syntax discards the whole declaration and shows no mark,
+   which is the right way to fail — a mark nobody sees costs less than one a
+   screen-reader user is made to hear. It is also why the quote field carries
+   the words without the punctuation around them: a source string that already
+   holds its own marks would otherwise show two sets. */
+.uwp-testimonial__quote::before {
+  display: block;
+  margin-bottom: -.65rem;
+  color: var(--uwp-accent);
+  font-family: var(--uwp-serif);
+  font-size: 2.6rem;
+  line-height: 1;
+  content: "\201C" / "";
+}
+
+/* Portrait beside attribution. `flex` rather than a grid with a portrait
+   track: where no portrait is passed the gap does not apply to a row of one,
+   so the attribution simply sits at the start instead of leaving a hole where
+   the face would have been. */
+.uwp-testimonial__source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--uwp-space-2);
+  align-items: center;
+}
+
+.uwp-testimonial__attribution {
+  min-width: 0;
+}
+
+/* The name is read rather than scanned, so it is held at the 16px reading
+   floor; the lines under it stay at the 14px metadata floor readability.css
+   already gives everything inside a <figcaption>. It is not a heading: the
+   level would have to move with the surface. */
+.uwp-testimonial__name {
+  margin: 0;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(1rem, 16px);
+  font-weight: 700;
+}
+
+/* The only thing in the component that can be hit, so it takes the 44px
+   target. Most subjects have no page and render as plain text, where there is
+   no target to size and this rule does not apply. */
+.uwp-testimonial__name a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.uwp-testimonial__meta {
+  margin: .15rem 0 0;
+  color: var(--uwp-muted);
+}
+
+/* The pull-quote form: one quotation beside the page's argument rather than
+   one cell among several. The frame goes — a bordered box in the margin reads
+   as a second column — and the quote takes a size up, since it is now set
+   against the prose beside it rather than against its neighbours. */
+.uwp-testimonial--pull {
+  padding: 0;
+  padding-inline-start: var(--uwp-space-3);
+  background: none;
+  border: 0;
+  border-inline-start: 4px solid var(--uwp-accent);
+}
+
+.uwp-testimonial--pull .uwp-testimonial__quote {
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+}
+
+/* ---------------------------------------------------------------------------
+   Event edition — the identity band a time-bound micro-site repeats on every
+   page. It sits between the institution bar and the page's own hero, so it is
+   deliberately quieter than either: a tinted band with a rule under it, no
+   heading, no landmark.
+
+   The concluded state is the reason the component exists, so it is not a
+   subtle tint. It reverses the band onto the muted surface and draws the
+   accent down its leading edge, and the sentence inside it is set in bold at
+   the reading floor. None of that is load-bearing on its own — the words
+   "This event has already taken place." are in the markup and are read out
+   whether or not any of this stylesheet arrives.
+   --------------------------------------------------------------------------- */
+.uwp-edition {
+  background: var(--uwp-pale);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-edition__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--uwp-space-3);
+  padding-block: var(--uwp-space-2);
+}
+
+.uwp-edition__identity {
+  min-width: 0;
+}
+
+.uwp-edition .uwp-eyebrow {
+  margin-bottom: .25rem;
+}
+
+.uwp-edition__name {
+  margin: 0;
+  color: var(--uwp-heading);
+  font-size: max(1rem, 16px);
+  line-height: 1.35;
+}
+
+.uwp-edition__name a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+
+.uwp-edition__name a:hover,
+.uwp-edition__name a:focus-visible {
+  color: var(--uwp-link-strong);
+}
+
+.uwp-edition__acronym {
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 700;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+
+.uwp-edition__when {
+  margin: .25rem 0 0;
+  color: var(--uwp-copy);
+  font-size: max(.875rem, 14px);
+}
+
+/* The separators are drawn rather than typed, so a screen reader is not made
+   to hear a middot between the date, the place and the mode. */
+.uwp-edition__place::before,
+.uwp-edition__mode::before {
+  content: "\00b7";
+  padding-inline-end: .4em;
+  color: var(--uwp-rule-strong);
+}
+
+.uwp-edition__status {
+  max-width: 60ch;
+  margin: .35rem 0 0;
+  color: var(--uwp-copy);
+  font-size: max(1rem, 16px);
+}
+
+.uwp-edition--concluded {
+  background: var(--uwp-surface);
+  border-bottom-color: var(--uwp-rule-strong);
+}
+
+.uwp-edition--concluded .uwp-edition__inner {
+  border-inline-start: 4px solid var(--uwp-accent);
+  padding-inline-start: var(--uwp-space-2);
+}
+
+.uwp-edition--concluded .uwp-edition__status strong {
+  color: var(--uwp-heading);
+}
+
+/* ---------------------------------------------------------------------------
+   Deadline schedule — a two-column table of what is due and when. Short cells
+   in both columns, so it reflows by wrapping and needs no scroll container.
+
+   Three states are drawn here and every one of them is also a word in the
+   markup: a revised date is struck AND labelled "Revised from"; a row whose
+   date has gone is muted AND carries the word "Passed"; a schedule that has
+   wholly expired is toned back AND says so in its caption, which is the
+   table's accessible name.
+   --------------------------------------------------------------------------- */
+.uwp-deadlines {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: max(1rem, 16px);
+}
+
+.uwp-deadlines caption {
+  margin-bottom: var(--uwp-space-2);
+  color: var(--uwp-heading);
+  font-family: var(--uwp-serif);
+  font-size: max(1.125rem, 18px);
+  line-height: 1.3;
+  text-align: start;
+}
+
+.uwp-deadlines caption .uwp-meta,
+.uwp-deadlines__expired {
+  display: block;
+  margin-top: .35rem;
+  font-family: var(--uwp-sans);
+}
+
+.uwp-deadlines caption .uwp-meta {
+  color: var(--uwp-muted);
+  font-weight: 400;
+}
+
+.uwp-deadlines__expired {
+  color: var(--uwp-heading);
+  font-size: max(1rem, 16px);
+}
+
+.uwp-deadlines thead th {
+  padding: .5rem var(--uwp-space-2) .5rem 0;
+  border-bottom: 2px solid var(--uwp-rule-strong);
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.uwp-deadlines tbody th,
+.uwp-deadlines tbody td {
+  padding: .75rem var(--uwp-space-2) .75rem 0;
+  border-bottom: 1px solid var(--uwp-rule);
+  text-align: start;
+  vertical-align: baseline;
+}
+
+.uwp-deadlines tbody th {
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-weight: 700;
+}
+
+.uwp-deadlines tbody td {
+  color: var(--uwp-copy);
+  white-space: normal;
+}
+
+.uwp-deadlines tbody td time {
+  font-variant-numeric: tabular-nums;
+}
+
+.uwp-deadlines__revised {
+  color: var(--uwp-muted);
+  /* the strike is the meaning here, so it is stated rather than inherited */
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.uwp-deadlines__revised + time {
+  padding-inline-start: .4em;
+}
+
+.uwp-deadlines__passed {
+  display: block;
+  margin-top: .15rem;
+  color: var(--uwp-muted);
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.uwp-deadlines__row--passed th,
+.uwp-deadlines__row--passed td,
+.uwp-deadlines--concluded tbody th,
+.uwp-deadlines--concluded tbody td {
+  color: var(--uwp-muted);
+}
+
+/* A schedule that has wholly expired says so once, in its caption. A client's
+   build sets `passed` on every row as well — it is the same date arithmetic
+   that set `concluded` — so the per-row word is dropped here rather than
+   being one more thing a client has to remember NOT to set. `display: none`
+   takes it out of the accessibility tree too, so it is not announced six
+   times either. */
+.uwp-deadlines--concluded .uwp-deadlines__passed {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Fee table — a schedule of charges by payer and band. Genuinely wide: five
+   columns of currency is past the point where a table can be folded without
+   losing the comparison that is the whole reason it is a table. So it keeps
+   its shape and scrolls inside its own region, which is focusable so a
+   keyboard user can reach the columns past the fold at all.
+   --------------------------------------------------------------------------- */
+.uwp-fees {
+  display: grid;
+  gap: var(--uwp-space-3);
+}
+
+.uwp-fees__scroll {
+  overflow-x: auto;
+  /* a scroll container clips the focus ring of anything inside it unless it
+     is given somewhere to sit */
+  padding: 3px;
+  margin: -3px;
+}
+
+.uwp-fees__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: max(1rem, 16px);
+}
+
+.uwp-fees__table caption {
+  margin-bottom: var(--uwp-space-2);
+  color: var(--uwp-heading);
+  font-family: var(--uwp-serif);
+  font-size: max(1.125rem, 18px);
+  line-height: 1.3;
+  text-align: start;
+}
+
+/* The line naming what the rates belong to sits outside the scroll container,
+   under the table. Inside it, it would be a sentence a phone has to be
+   dragged sideways to finish. */
+.uwp-fees__scope {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+  color: var(--uwp-muted);
+  font-size: max(.875rem, 14px);
+}
+
+/* The minimums are what make a wide schedule overflow its container, which is
+   what makes the container scroll. Without them the table shrinks to the
+   viewport instead, and the overflow-wrap this package sets on table cells —
+   there so one long word cannot burst a layout — breaks every heading down
+   the page a letter at a time. A schedule with one rate column adds up to
+   well under any viewport and never scrolls. */
+.uwp-fees__table thead th,
+.uwp-fees__table tbody th {
+  min-width: 11rem;
+}
+
+.uwp-fees__table tbody td {
+  min-width: 7rem;
+  overflow-wrap: normal;
+}
+
+.uwp-fees__table thead th {
+  padding: .6rem var(--uwp-space-2);
+  background: var(--uwp-pale);
+  border: 1px solid var(--uwp-rule);
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  text-align: start;
+  vertical-align: bottom;
+}
+
+.uwp-fees__table tbody th,
+.uwp-fees__table tbody td {
+  padding: .7rem var(--uwp-space-2);
+  border: 1px solid var(--uwp-rule);
+  text-align: start;
+  vertical-align: baseline;
+}
+
+.uwp-fees__table tbody th {
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-weight: 700;
+}
+
+.uwp-fees__table tbody td {
+  color: var(--uwp-copy);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.uwp-fees__table .uwp-meta {
+  display: block;
+  margin-top: .2rem;
+  color: var(--uwp-muted);
+  font-weight: 400;
+  white-space: normal;
+}
+
+@media print {
+  /* nothing scrolls on paper, and a clipped fee table is a fee table with
+     columns missing */
+  .uwp-fees__scroll {
+    overflow-x: visible;
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Responsive reflow
    --------------------------------------------------------------------------- */
 
@@ -2562,6 +3050,27 @@
   .uwp-footer__identity {
     grid-column: auto;
   }
+
+  /* The edition band's action drops under the identity rather than being
+     squeezed beside it; the band is the one thing on the page a reader of a
+     narrow screen should be able to take in at a glance. */
+  .uwp-edition__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--uwp-space-2);
+  }
+
+  /* The deadline table keeps its two columns here. Restacking it would mean
+     setting display:block on the cells, and that drops the table semantics in
+     every engine — the <th scope> relationships this component exists to get
+     right would survive on paper and nowhere else. Two columns of short text
+     wrap; the date column is held to the width its content needs so the label
+     takes the slack. */
+  .uwp-deadlines thead th,
+  .uwp-deadlines tbody th,
+  .uwp-deadlines tbody td {
+    padding-inline-end: var(--uwp-space-1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2606,6 +3115,59 @@
   .uwp-faq__question::after {
     display: none;
   }
+}
+
+/* ---------------------------------------------------------------------------
+   Profile link icons — a row of service marks beside a person's information.
+   Sized from a working academic profile: a 20px target holding a 14px mark,
+   which is small enough to read as metadata and large enough to recognise.
+   The 44px control floor is met by padding rather than by growing the mark,
+   because a row of six 44px squares reads as navigation rather than as a
+   footnote to a name.
+   --------------------------------------------------------------------------- */
+.uwp-profile-link-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  align-items: center;
+  margin: var(--uwp-space-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uwp-profile-link-icons__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  min-height: 44px;
+  opacity: .78;
+  text-decoration: none;
+  transition: opacity 140ms ease;
+}
+
+.uwp-profile-link-icons__link:hover,
+.uwp-profile-link-icons__link:focus-visible {
+  opacity: 1;
+}
+
+.uwp-profile-link-icons__link:focus-visible {
+  outline: 2px solid var(--uwp-focus);
+  outline-offset: 2px;
+}
+
+/* A mark is a third party's artwork at whatever weight they drew it. Fixing
+   the box and letting it letterbox keeps a heavy mark from towering over a
+   light one; a client nudges a single service through the --<slug> modifier. */
+.uwp-profile-link-icons__mark {
+  display: block;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uwp-profile-link-icons__link { transition: none; }
 }
 
 /* Generated device-theme fallback. */

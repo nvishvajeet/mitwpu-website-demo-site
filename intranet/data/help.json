@@ -1,0 +1,1383 @@
+{
+  "schema": "mitwpu.intranet-help.v1",
+  "page": {
+    "title": "Report a problem, request a service",
+    "eyebrow": "University services",
+    "lede": "What to do when something is broken, something is missing, or something has gone wrong — and who owns the answer.",
+    "description": "How members of MIT-WPU find an answer, report a fault or request a service, with the published route for each and an honest list of the routes the university has not published.",
+    "notice": {
+      "eyebrow": "Before you start",
+      "title": "Look for the answer here first",
+      "paragraphs": [
+        "Most of what people ring somebody about is written down. Read the answer below before you raise anything with anyone: the best request is the one nobody needed to make, and the teams here are small.",
+        "If you do need to ask, there is no single service desk. The university does not publish one number for everything, so each service is reached separately and the routes below are the ones it publishes itself.",
+        "Where it has published nothing, this page says so. It does not guess. Those gaps are collected at the foot of the page.",
+        "This page takes no requests itself. It has no form on it and will not have one: it names the system that handles a thing and sends you there."
+      ]
+    },
+    "introduction": [
+      "Look for the thing that has gone wrong, not for the department that owns it. The owner is named inside the answer, because you should not have to know the organisation chart to report a broken air conditioner.",
+      "Every telephone number, email address, room and opening time below is one the university publishes, shown with the page it came from. Nothing has been filled in from memory, from another university, or from what seemed likely.",
+      "These answers say what a service is and who runs it. Step-by-step instructions — how to configure a client, what a particular failure looks like — belong on the pages behind each service, and are a different kind of writing from this one."
+    ],
+    "provenance": [
+      "Each contact on this page was read from one of these published pages on the day the site was captured. They are the university's own pages, not this one: when one of them changes, this page is wrong until it is rebuilt.",
+      "The build refuses to finish if a fact on this page cites a page that is not in the capture, which is what stops an invented telephone number reaching a reader."
+    ],
+    "gapsIntroduction": [
+      "These are the facts a person has to supply before this page is worth publishing. The list is computed on every build from the records behind the page, so filling a value in removes it from the list with nothing else to remember.",
+      "Anyone doing that work can print the same list without reading the page, by running the page's builder with --gaps.",
+      "Until then a missing value is shown as missing wherever it appears. That is deliberate. A plausible wrong extension number sends somebody with a broken laptop to a stranger's desk, and a plausible wrong software entitlement has somebody install unlicensed software on the university's word. Both are worse than an admitted gap."
+    ],
+    "unownedIntroduction": [
+      "The university describes each of these services but names nobody who runs them. Somebody has to decide who owns each one before this page can route anybody to it."
+    ]
+  },
+  "teams": [
+    {
+      "id": "computing-resources-centre",
+      "name": "Computing Resources Centre",
+      "short": "Computing Resources Centre",
+      "proposed": true,
+      "proposedNote": "No unit of this name appears anywhere the university publishes, and no IT office appears in its directory of administrative offices. The name is a proposal, and it follows the Indian convention — IIT Bombay and IIT Kanpur have a Computer Centre, IIT Delhi a Computer Services Centre — so that a colleague arriving from another institution recognises it rather than has to learn it. \"Centre\" matches the university's own usage: it writes Knowledge Resource Centre, Centre for Holistic Well-Being and Centres of Excellence.",
+      "summary": "The university's computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {},
+      "contactSources": {},
+      "sources": [
+        "/about-us/administrative-offices"
+      ]
+    },
+    {
+      "id": "infra-facilities",
+      "name": "Office of Infra & Facilities",
+      "short": "Infra & Facilities",
+      "summary": "The office named for campus infrastructure and facilities in the university's own directory of administrative offices.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "email": "yogesh.duse@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "email": "/about-us/administrative-offices"
+      },
+      "sources": [
+        "/about-us/administrative-offices"
+      ]
+    },
+    {
+      "id": "examinations",
+      "name": "Examination Helpdesk",
+      "short": "Examinations",
+      "summary": "The Department of Examinations' public helpdesk. It is the only support service on the university's website that publishes a telephone number, an email address, a room and its opening hours together.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "telephone": "8669990193",
+        "email": "exam.helpdesk@mitwpu.edu.in",
+        "location": "7th Floor, Department of Examinations, Saraswati Building, MIT-WPU Kothrud, Pune 411038",
+        "hours": "Monday to Saturday, 10:30 to 17:00; Saturday 11:00 to 13:00",
+        "requestUrl": "https://forms.gle/EbsrT87114AD14HY9"
+      },
+      "contactSources": {
+        "telephone": "/academics/examination-contact-us",
+        "email": "/academics/examination-contact-us",
+        "location": "/academics/examination-contact-us",
+        "hours": "/academics/examination-contact-us",
+        "requestUrl": "/academics/faq"
+      },
+      "sources": [
+        "/academics/examination-contact-us",
+        "/academics/faq"
+      ]
+    },
+    {
+      "id": "exam-verification",
+      "name": "Examination verification desk",
+      "short": "Examinations",
+      "summary": "The desk that answers other universities, employers and agencies checking a document the university issued.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "telephone": "7720061618",
+        "email": "verification.exam@mitwpu.edu.in",
+        "location": "7th Floor, Department of Examinations, Saraswati Building, MIT-WPU Kothrud, Pune 411038",
+        "hours": "Monday to Saturday, 11:00 to 17:00; Saturday 11:00 to 13:00",
+        "requestUrl": "https://mitwpu.directverify.in/student/#/app/request"
+      },
+      "contactSources": {
+        "telephone": "/academics/examination-contact-us",
+        "email": "/academics/examination-contact-us",
+        "location": "/academics/examination-contact-us",
+        "hours": "/academics/examination-contact-us",
+        "requestUrl": "/academics/document-verification"
+      },
+      "sources": [
+        "/academics/examination-contact-us",
+        "/academics/document-verification"
+      ]
+    },
+    {
+      "id": "hostel",
+      "name": "Hostel administration",
+      "short": "Hostels",
+      "summary": "The team that runs the residences at Ambegaon, Bavdhan, Karvenagar and Kothrud, their mess, their laundry and the shuttle between them and the campus.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "telephone": "020-48552855",
+        "email": "hostel.admin@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "telephone": "/life-wpu/hostel-facilities",
+        "email": "/life-wpu/hostel-facilities"
+      },
+      "sources": [
+        "/life-wpu/hostel-facilities"
+      ]
+    },
+    {
+      "id": "counselling",
+      "name": "Aakriti: Centre for Holistic Well-Being",
+      "short": "Counselling",
+      "summary": "The university's counselling service. It is the best-published support service on the site: it gives a number, an email address, a room you can walk to and a way to book an appointment.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "telephone": "+91 9049689898",
+        "email": "aakriti-wellness@mitwpu.edu.in",
+        "location": "Ground floor, next to the Student Affairs office, Maitreyi Building, MIT-WPU Kothrud",
+        "requestUrl": "https://forms.gle/5eRM868ac4CRgZYR9"
+      },
+      "contactSources": {
+        "telephone": "/aakriti-centre-for-holistic-well-being",
+        "email": "/aakriti-centre-for-holistic-well-being",
+        "location": "/aakriti-centre-for-holistic-well-being",
+        "requestUrl": "/aakriti-centre-for-holistic-well-being"
+      },
+      "sources": [
+        "/aakriti-centre-for-holistic-well-being"
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Campus medical service",
+      "short": "Medical",
+      "summary": "The university describes a full-time doctor, a 24-hour pharmacy, a three-bed facility, ambulances, ECG and day care. It publishes no way to reach any of them.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {},
+      "contactSources": {},
+      "sources": [
+        "/life-wpu/medical-facilities"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Campus security",
+      "short": "Security",
+      "summary": "The university describes round-the-clock guarding and campus-wide CCTV. It publishes no security desk, no emergency number and no reporting route.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {},
+      "contactSources": {},
+      "sources": [
+        "/life-wpu/other-facilities",
+        "/life-wpu/hostel-facilities"
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Knowledge Resource Centre",
+      "short": "Library",
+      "summary": "The university library, in its own building. It publishes its hours, its borrowing rules and what happens if you lose a book, but no way to ask it anything.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "location": "Agastya building, MIT-WPU Kothrud",
+        "hours": "Monday to Friday 08:00 to 20:00; Saturday 08:00 to 18:30; closed Sundays and university holidays"
+      },
+      "contactSources": {
+        "location": "/life-wpu/library",
+        "hours": "/life-wpu/library"
+      },
+      "sources": [
+        "/life-wpu/library"
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports Department",
+      "short": "Sports",
+      "summary": "Runs the sports facilities and the only self-service booking system the university publishes.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "telephone": "+91 99706 00437",
+        "email": "sportsdepartment@mitwpu.edu.in",
+        "requestUrl": "https://sports.mitwpu.edu.in/login"
+      },
+      "contactSources": {
+        "telephone": "/life-wpu/sports/elite-sportsperson-scholarship",
+        "email": "/life-wpu/sports/elite-sportsperson-scholarship",
+        "requestUrl": "/life-wpu/sports"
+      },
+      "sources": [
+        "/life-wpu/sports"
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Office of Finance & Accounts",
+      "short": "Finance",
+      "summary": "Budgeting, fee accounting and payments. A separate Accounts Helpdesk exists for students, but its contact details are published only inside a QR code image.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "email": "nitinkumar.chandak@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "email": "/about-us/administrative-offices"
+      },
+      "sources": [
+        "/about-us/administrative-offices",
+        "/academics/student-assistance"
+      ]
+    },
+    {
+      "id": "registrar",
+      "name": "Registrar's Office",
+      "short": "Registrar",
+      "summary": "Academic and administrative appointments, policy, and the link between faculty, students and the administrative units.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "email": "registrar@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "email": "/about-us/administrative-offices"
+      },
+      "sources": [
+        "/about-us/administrative-offices"
+      ]
+    },
+    {
+      "id": "human-resources",
+      "name": "Human Resources Office",
+      "short": "Human Resources",
+      "summary": "Recruitment, benefits, professional development, employee relations and payroll enquiries for faculty and staff.",
+      "expect": [
+        "requestUrl",
+        "telephone",
+        "email",
+        "location",
+        "hours"
+      ],
+      "contact": {
+        "email": "director.hr@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "email": "/about-us/administrative-offices"
+      },
+      "sources": [
+        "/about-us/administrative-offices",
+        "/career"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "something-broken",
+      "title": "Something is broken",
+      "summary": "A fault in a room, a building or a piece of equipment.",
+      "items": [
+        {
+          "id": "broken-on-campus",
+          "question": "Something is broken in a teaching room, a laboratory or an office",
+          "team": "infra-facilities",
+          "answer": [
+            "Email the Office of Infra & Facilities. Say which building, which floor and which room, and what is wrong with it.",
+            "This is the only route the university publishes for a fault anywhere on campus. There is no fault-reporting system, no maintenance number and no counter to walk up to."
+          ],
+          "facts": [
+            {
+              "text": "The office is listed as \"Office of Infra & Facilities\" in the university's directory of administrative offices, which gives one email address and no telephone number.",
+              "source": "/about-us/administrative-offices"
+            }
+          ],
+          "links": [
+            {
+              "label": "Administrative offices, with an email for each",
+              "route": "/about-us/administrative-offices"
+            }
+          ]
+        },
+        {
+          "id": "broken-in-hostel",
+          "question": "Something is broken in my hostel room",
+          "team": "hostel",
+          "answer": [
+            "Tell the warden or the student support staff at your hostel straight away, and email the hostel administration if it is not fixed.",
+            "Report it early. The hostel rules say a resident pays for repairs or replacement of what they damage, and a fault left unreported can become one of those."
+          ],
+          "facts": [
+            {
+              "text": "The hostel's own answer to damaged property is that students should immediately inform the warden or student support staff, and that students must bear the cost of repairs or replacement.",
+              "source": "/life-wpu/hostel-facilities"
+            }
+          ],
+          "links": [
+            {
+              "label": "Hostels, mess, laundry and residential rules",
+              "route": "/life-wpu/hostel-facilities"
+            }
+          ]
+        },
+        {
+          "id": "room-not-clean",
+          "question": "A room, a washroom or a corridor has not been cleaned",
+          "answer": [
+            "The university has not published who to tell. Housekeeping is described as a service the residences provide, but no team, address or number is given for it anywhere.",
+            "Until an owner is published, the nearest route is the Office of Infra & Facilities for the campus and the hostel administration for a residence."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "records-and-documents",
+      "title": "Your record, your results and your certificates",
+      "summary": "Transcripts, grade cards, degree certificates and verification.",
+      "items": [
+        {
+          "id": "need-a-document",
+          "question": "I need a transcript, a duplicate grade card or a certificate",
+          "team": "examinations",
+          "answer": [
+            "This is a service request to the Department of Examinations, and it is made on the university's request form rather than by email.",
+            "Allow time and expect a charge. Processing a transcript takes at least five working days, and separate fees are published for the document and for posting it."
+          ],
+          "facts": [
+            {
+              "text": "The examinations FAQ treats a transcript, consolidated grade card, duplicate grade card or equivalent-percentage certificate as a service request, submitted on a published request form.",
+              "source": "/academics/faq"
+            }
+          ],
+          "links": [
+            {
+              "label": "Examination service request form",
+              "href": "https://forms.gle/EbsrT87114AD14HY9",
+              "note": "Google Forms"
+            },
+            {
+              "label": "Student assistance: the university's own index of these requests",
+              "route": "/academics/student-assistance"
+            }
+          ]
+        },
+        {
+          "id": "verify-my-documents",
+          "question": "An employer or another university needs to verify my documents",
+          "team": "exam-verification",
+          "answer": [
+            "Send them to the verification desk, which has its own number, email and hours, separate from the examination helpdesk.",
+            "The university also runs a digital verification service that a third party can use directly."
+          ],
+          "links": [
+            {
+              "label": "Document verification",
+              "route": "/academics/document-verification"
+            }
+          ]
+        },
+        {
+          "id": "name-is-wrong",
+          "question": "My name is wrong on my degree certificate",
+          "team": "examinations",
+          "answer": [
+            "Collect the name-correction request form from the Department of Examinations and hand it in, with your original degree certificate, at your department's programme office.",
+            "This one is done on paper and in person; there is no online route for it."
+          ],
+          "facts": [
+            {
+              "text": "The examinations FAQ gives exactly this two-step process: collect the form from the Department of Examinations, submit it with the original certificate at the programme office of your department.",
+              "source": "/academics/faq"
+            }
+          ]
+        },
+        {
+          "id": "id-card",
+          "question": "I need a university identity card, or mine is lost",
+          "answer": [
+            "Nothing is published. The identity card is required — the library will not admit you without it and treats it as your membership card — but no page says who issues one, where, or what to do when it is lost.",
+            "This is one of the more consequential gaps on this page, because the card is a precondition for a service that is otherwise well documented."
+          ],
+          "facts": [
+            {
+              "text": "The library states that the university identity card is mandatory to visit it and is treated as the membership card.",
+              "source": "/life-wpu/library"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "title": "Money",
+      "summary": "Fees, refunds and loans.",
+      "items": [
+        {
+          "id": "fees-question",
+          "question": "I have a question about my fees",
+          "team": "finance",
+          "answer": [
+            "There is an Accounts Helpdesk, but you cannot reach it from a computer: on the university's student assistance page it is published as a QR code image, with no telephone number or email address in the text beside it.",
+            "The published route that can actually be read is the Office of Finance & Accounts. A screen reader gets nothing at all from those QR codes, so this is an accessibility failure as much as a routing one."
+          ],
+          "facts": [
+            {
+              "text": "The student assistance page lists General Queries, Accounts Helpdesk and an Examination Digital Desk as its entry points, and carries no telephone number or email address in its text.",
+              "source": "/academics/student-assistance"
+            }
+          ]
+        },
+        {
+          "id": "exam-fee-refund",
+          "question": "I am owed a refund of an examination fee",
+          "team": "examinations",
+          "answer": [
+            "Apply to the examination helpdesk by email with your bank details and a screenshot of a cancelled cheque."
+          ],
+          "facts": [
+            {
+              "text": "The examinations FAQ gives this instruction, naming the helpdesk address and the documents to send.",
+              "source": "/academics/faq"
+            }
+          ]
+        },
+        {
+          "id": "student-loan",
+          "question": "I need an education loan",
+          "answer": [
+            "The university publishes named contacts at several banks for education loans. They are bank staff, not university staff, and the university publishes no fees or student-accounts contact of its own to go beside them."
+          ],
+          "links": [
+            {
+              "label": "Education loans and bank contacts",
+              "route": "/student-loans"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "living-here",
+      "title": "Living on campus",
+      "summary": "Rooms, meals, laundry, the shuttle and parking.",
+      "items": [
+        {
+          "id": "hostel-question",
+          "question": "I have a question about my room, the mess, laundry or the shuttle",
+          "team": "hostel",
+          "answer": [
+            "The hostel administration answers all of these on one address and one number, and cancellations and refunds must go through that email address rather than any other route.",
+            "The residences are off the main campus and a shuttle runs between them, so a hostel question and a transport question are usually the same question."
+          ],
+          "facts": [
+            {
+              "text": "Bus shuttle services are provided from the hostel to the campus; this is the only transport service the university's site describes anywhere.",
+              "source": "/life-wpu/hostel-facilities"
+            },
+            {
+              "text": "Cancellation and refund requests must be submitted only through the official hostel email address, with a refund timeline of 45 to 60 working days.",
+              "source": "/life-wpu/hostel-facilities"
+            }
+          ],
+          "links": [
+            {
+              "label": "Hostel facilities, amenities and rules",
+              "route": "/life-wpu/hostel-facilities"
+            }
+          ]
+        },
+        {
+          "id": "campus-transport",
+          "question": "How do I get to campus, and where do I park?",
+          "answer": [
+            "Beyond the hostel shuttle, nothing is published. There is no transport office, no route map, no timetable and no campus parking authority. The only parking the university describes is two-wheeler parking at the hostels, on a first-come basis."
+          ],
+          "facts": [
+            {
+              "text": "Two-wheeler parking at the hostels is available on a first come, first served basis, subject to availability.",
+              "source": "/life-wpu/hostel-facilities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-and-safety",
+      "title": "Health, safety and wellbeing",
+      "summary": "A doctor, a counsellor, and an emergency.",
+      "items": [
+        {
+          "id": "see-a-doctor",
+          "question": "I need to see a doctor, or there is a medical emergency",
+          "team": "medical",
+          "answer": [
+            "The university describes a medical service on campus but publishes no way to reach it: no number, no room, no hours.",
+            "In an emergency, use the public emergency services. This page will not pretend to a number it does not have — and of every gap listed here, this is the one that most needs closing."
+          ],
+          "facts": [
+            {
+              "text": "The medical facilities page lists a full-time doctor, a 24-hour pharmacy, a three-bed facility, ambulances, laboratory services, OPD consultation, dressings, ECG and day care, and gives no contact of any kind.",
+              "source": "/life-wpu/medical-facilities"
+            }
+          ],
+          "links": [
+            {
+              "label": "Medical facilities",
+              "route": "/life-wpu/medical-facilities"
+            }
+          ]
+        },
+        {
+          "id": "talk-to-someone",
+          "question": "I want to talk to a counsellor",
+          "team": "counselling",
+          "answer": [
+            "Aakriti takes appointments through a booking form, and also publishes a number, an email address and a room you can walk to.",
+            "It publishes out-of-hours national helplines as well, for the times the centre is closed."
+          ],
+          "facts": [
+            {
+              "text": "The centre publishes national crisis helplines alongside its own contact details, including Tele Manas on 14416.",
+              "source": "/aakriti-centre-for-holistic-well-being"
+            }
+          ],
+          "links": [
+            {
+              "label": "Aakriti: Centre for Holistic Well-Being",
+              "route": "/aakriti-centre-for-holistic-well-being"
+            }
+          ]
+        },
+        {
+          "id": "security-problem",
+          "question": "There is a security problem, or I have lost something",
+          "team": "security",
+          "answer": [
+            "Nothing is published. The university describes guards on duty around the clock and CCTV across the campus, but names no security desk, no emergency number and no way to report anything to them. There is no lost property route either.",
+            "On a campus of this size an unpublished emergency number is not a documentation gap; it is a safety one."
+          ],
+          "facts": [
+            {
+              "text": "The campus amenities page describes 24/7 security through campus-wide CCTV surveillance, with no contact.",
+              "source": "/life-wpu/other-facilities"
+            },
+            {
+              "text": "The hostels describe vigilant 24x7 security guards and CCTV surveillance of the premises, also with no contact.",
+              "source": "/life-wpu/hostel-facilities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rooms-and-resources",
+      "title": "Books, rooms and equipment",
+      "summary": "Borrowing, booking and the things you have to reserve.",
+      "items": [
+        {
+          "id": "library-question",
+          "question": "I want to borrow a book, or I have lost one",
+          "team": "library",
+          "answer": [
+            "Go in with your identity card, which is also your membership card. Five books for fifteen days is the standing entitlement, and a renewal means bringing the book back in person.",
+            "A lost book is to be reported to the Librarian immediately, and either replaced or paid for at the current price. The library publishes no email address and no telephone number, so reporting it means going there."
+          ],
+          "facts": [
+            {
+              "text": "Students may borrow five books for fifteen days; for renewals the books must be physically present at the centre; a loss must be reported to the Librarian immediately and the book replaced or paid for at current market price.",
+              "source": "/life-wpu/library"
+            }
+          ],
+          "links": [
+            {
+              "label": "Knowledge Resource Centre",
+              "route": "/life-wpu/library"
+            }
+          ]
+        },
+        {
+          "id": "book-sports",
+          "question": "I want to book a sports facility",
+          "team": "sports",
+          "answer": [
+            "Book it yourself in the sports booking system. It is the only self-service booking the university publishes, and it needs an institutional sign-in."
+          ],
+          "links": [
+            {
+              "label": "Sports at MIT-WPU",
+              "route": "/life-wpu/sports"
+            }
+          ]
+        },
+        {
+          "id": "book-a-room",
+          "question": "I want to book a classroom, a hall or an auditorium",
+          "answer": [
+            "Nothing is published. The university describes hundreds of teaching rooms and several auditoriums, and names no way to reserve any of them and nobody who grants permission for an event in one.",
+            "For a request today, the Office of Infra & Facilities is the nearest published owner of campus space."
+          ],
+          "facts": [
+            {
+              "text": "The academic facilities page describes 350-plus classrooms with smartboards and projectors, and multiple auditoriums with audio-visual and multimedia facilities, with no booking route.",
+              "source": "/life-wpu/academic-facilities"
+            }
+          ],
+          "links": [
+            {
+              "label": "Academic facilities",
+              "route": "/life-wpu/academic-facilities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-and-employment",
+      "title": "If you work here",
+      "summary": "Pay, leave, appointments and buying things.",
+      "items": [
+        {
+          "id": "hr-question",
+          "question": "I have a question about my pay, my leave or my appointment",
+          "team": "human-resources",
+          "answer": [
+            "The Human Resources Office covers recruitment, benefits, professional development, employee relations and payroll enquiries, and publishes one email address.",
+            "The university says it runs an HR management system for payroll, attendance, performance and records. It does not say where that system is, so an employee cannot reach it from anything the university publishes."
+          ],
+          "facts": [
+            {
+              "text": "The careers page describes a technology-driven HRMS covering payroll, attendance tracking, performance evaluation and digital record-keeping, and gives no address for it.",
+              "source": "/career"
+            }
+          ],
+          "links": [
+            {
+              "label": "Administrative offices",
+              "route": "/about-us/administrative-offices"
+            }
+          ]
+        },
+        {
+          "id": "buying-something",
+          "question": "I need to buy equipment for my department, including computers",
+          "answer": [
+            "Nothing is published. A Purchase Committee and a Scrap Disposal Committee exist and their membership is published, but there is no purchase office, no requisition process and no stores contact anywhere on the university's site.",
+            "Buying computing equipment is worth separating from the rest, because it is where a department most often buys something the university already licenses centrally, or buys a machine that then cannot be supported. Neither the standard specification nor the approved supplier is published here."
+          ],
+          "links": [
+            {
+              "label": "Student information, where those committees are listed",
+              "route": "/student-information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "something-serious",
+      "title": "If something has gone seriously wrong",
+      "summary": "Complaints, harassment, ragging and discrimination are not service requests, and they have their own statutory routes.",
+      "items": [
+        {
+          "id": "raise-a-grievance",
+          "question": "I need to make a formal complaint",
+          "answer": [
+            "Do not use anything on this page. The university has statutory committees for grievances, ragging, harassment and discrimination, each with its own address and its own procedure, and each is the correct and protected route for what it covers.",
+            "They are listed in the footer of every page on this site and are not restated here: a second, differently worded route to a statutory committee is worse than one."
+          ],
+          "links": [
+            {
+              "label": "Students' Grievance Redressal Committee",
+              "route": "/academics/student-grievance"
+            },
+            {
+              "label": "Anti-Ragging Committee",
+              "route": "/student-affairs/anti-ragging-committee"
+            },
+            {
+              "label": "Internal Complaints Committee",
+              "route": "/student-affairs/internal-complaints-committee"
+            },
+            {
+              "label": "SC/ST and Equal Opportunity Cell",
+              "route": "/sc-st-committee"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crc": {
+    "id": "computing-resources-centre",
+    "teamId": "computing-resources-centre",
+    "title": "Ask the Computing Resources Centre",
+    "paragraphs": [
+      "The questions below are the ones a computing service is asked, in the words people actually use. Read them before writing to anyone; several have an answer already, and the ones that do not are marked plainly rather than filled in with something plausible.",
+      "An unanswered question here is not an oversight. It is a decision the university has still to take and publish, and it is on the work list at the foot of this page so that somebody can take it."
+    ],
+    "topics": [
+      {
+        "id": "crc-accounts",
+        "title": "Joining, leaving and your accounts",
+        "summary": "What you are given on the day you arrive, and what happens to it on the day you go.",
+        "items": [
+          {
+            "id": "crc-joining",
+            "question": "I have just joined. What accounts do I get, and when do they start working?",
+            "team": "computing-resources-centre",
+            "unanswered": "Nobody has published what a new student or a new member of staff is given, on what day it becomes usable, or what to do if it has not by the time teaching starts. This is one of the two most-asked questions in any institution and one of the least often written down."
+          },
+          {
+            "id": "crc-password",
+            "question": "I have forgotten my password, or my account is locked",
+            "team": "computing-resources-centre",
+            "unanswered": "No reset route, no self-service page and no identity check is published. Somebody has to decide how a person proves who they are before an account is unlocked, and where that happens."
+          },
+          {
+            "id": "crc-leaving",
+            "question": "I am leaving. What happens to my account, my email and my files?",
+            "team": "computing-resources-centre",
+            "unanswered": "Nothing is published about how long an account survives, whether mail can be forwarded, what becomes of files held in university systems, or how much notice anyone gets. It is the question nobody asks until the day it is too late to ask it, and it has real consequences for research data.",
+            "facts": [
+              {
+                "text": "The university's offboarding is not described anywhere in what it publishes; its administrative offices index names Human Resources for employee matters and nobody for computing.",
+                "source": "/about-us/administrative-offices"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "crc-email",
+        "title": "Email",
+        "summary": "The address you are given and how long you keep it.",
+        "items": [
+          {
+            "id": "email-account",
+            "question": "What is my university email address, and where do I read it?",
+            "team": "computing-resources-centre",
+            "unanswered": "No page says that accounts are issued, in what form the address is made, which mail service holds it, or how to sign in to it. The university's own pages refer to a student's official email address as though everyone already has one.",
+            "facts": [
+              {
+                "text": "Several pages instruct students to use their official email id — for the student council and for examination correspondence — without anywhere saying how one is obtained.",
+                "source": "/academics/faq"
+              }
+            ]
+          },
+          {
+            "id": "crc-email-after-leaving",
+            "question": "Can I keep my university email address after I graduate?",
+            "team": "computing-resources-centre",
+            "unanswered": "Not published. Alumni are offered library membership on payment and an alumni portal, so the university has taken a position on some post-graduation services and not on this one.",
+            "facts": [
+              {
+                "text": "Library membership is offered to alumni on a payment basis, which shows the question of continuing services after graduation has been considered elsewhere.",
+                "source": "/life-wpu/library"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "crc-network",
+        "title": "Getting online, on campus and off",
+        "summary": "Wireless here, wireless elsewhere, and reaching university systems from home.",
+        "items": [
+          {
+            "id": "cannot-connect",
+            "question": "I cannot get on to the wireless network",
+            "team": "computing-resources-centre",
+            "unanswered": "No network name, no joining instructions, no registration step and nobody to ask. What is published is only that the network exists and is meant to be always on.",
+            "facts": [
+              {
+                "text": "The campus amenities page says the university offers 24/7 WiFi facilities, and gives no further detail.",
+                "source": "/life-wpu/other-facilities"
+              },
+              {
+                "text": "Hostel rooms are listed as having 24x7 Wi-Fi access.",
+                "source": "/life-wpu/hostel-facilities"
+              },
+              {
+                "text": "The library provides PCs, LAN switches and Wi-Fi for personal laptops under a bring-your-own-device arrangement, which is the only place on the site where connecting a personal machine is described at all.",
+                "source": "/life-wpu/library"
+              }
+            ]
+          },
+          {
+            "id": "crc-eduroam",
+            "question": "I am visiting another university. Can I use their wireless with my MIT-WPU sign-in?",
+            "team": "computing-resources-centre",
+            "unanswered": "Eduroam is not mentioned anywhere the university publishes, so whether it is a member is unknown. It is worth answering in one line either way: a researcher who travels finds out at the worst moment."
+          },
+          {
+            "id": "crc-guest-wifi",
+            "question": "A visitor is coming to see me. How do they get online?",
+            "team": "computing-resources-centre",
+            "unanswered": "No guest access, sponsor process or visitor account is described. Anyone hosting an external examiner, a speaker or a conference has nothing to tell them."
+          },
+          {
+            "id": "remote-access",
+            "question": "I am at home and I cannot reach the library's journals and databases",
+            "team": "library",
+            "answer": [
+              "You are not meant to be able to. The library's electronic resources are licensed by network address and the university states that they work within its premises, so a subscription that opens on campus will refuse you at home.",
+              "There is no published remote access of any kind: no VPN, no proxy, no off-campus sign-in. Whether one exists is one of the questions at the foot of this page.",
+              "Before you write to anyone: the library also lists freely available national collections, which do work from anywhere."
+            ],
+            "facts": [
+              {
+                "text": "The Knowledge Resource Centre states that its online IP-based e-resources allow access anywhere on campus, and that its subscribed databases are accessible within the university premises.",
+                "source": "/life-wpu/library"
+              }
+            ],
+            "links": [
+              {
+                "label": "Knowledge Resource Centre, including the free national collections",
+                "route": "/life-wpu/library"
+              }
+            ]
+          },
+          {
+            "id": "crc-remote-desktop",
+            "question": "Can I reach my office machine, or a departmental server, from home?",
+            "team": "computing-resources-centre",
+            "unanswered": "No remote-working provision of any kind is published. For a university that examines its students remotely, that is a conspicuous asymmetry: the students work off campus by design and the staff have nothing written down."
+          }
+        ]
+      },
+      {
+        "id": "crc-software",
+        "title": "Software, printing and where your work lives",
+        "summary": "What you may install, what you may print, and what happens to the file you were working on.",
+        "items": [
+          {
+            "id": "crc-software-entitlement",
+            "question": "Is MATLAB — or Office, or Windows — free to me?",
+            "team": "computing-resources-centre",
+            "unanswered": "No entitlement of any kind is published. Do not buy on the strength of a colleague's recollection and do not install on the strength of an assumption; the table further down this page is where the answer will go once somebody has it.",
+            "links": [
+              {
+                "label": "The software entitlement table, and what is still missing from it",
+                "href": "#software",
+                "note": "on this page"
+              }
+            ]
+          },
+          {
+            "id": "crc-lab-software",
+            "question": "I need a package installed on the machines in a teaching laboratory",
+            "team": "computing-resources-centre",
+            "unanswered": "No route, no lead time and no approval step is published. Laboratories evidently do carry licensed software, so somebody is arranging it; nothing says who or how far in advance of a semester to ask.",
+            "facts": [
+              {
+                "text": "One centre's industrial workstations are described as loaded with named CAD and CAE packages, so laboratory software is procured and installed by somebody.",
+                "source": "/centre-of-excellence-technology-and-visualization-centre-1"
+              }
+            ]
+          },
+          {
+            "id": "crc-plagiarism-tool",
+            "question": "What will my assignment or thesis be checked against?",
+            "team": "computing-resources-centre",
+            "unanswered": "No similarity-checking tool is named anywhere, so neither a student nor a supervisor can tell what a submission is compared with, what score matters, or whether a draft may be checked before it is submitted. The university states its expectations about plagiarism repeatedly and names no instrument for them."
+          },
+          {
+            "id": "printing",
+            "question": "I need to print, copy or scan something",
+            "team": "library",
+            "answer": [
+              "The library runs a reprography service and charges for it. Nothing else is published: no student printing, no print quota, no departmental printers, and no way to send a document to one.",
+              "Printing is among the highest-volume questions any university computing service gets, so its absence here is a gap rather than a sign that nothing exists."
+            ],
+            "facts": [
+              {
+                "text": "The Knowledge Resource Centre lists a reprography facility available on a payment basis.",
+                "source": "/life-wpu/library"
+              }
+            ]
+          },
+          {
+            "id": "crc-storage",
+            "question": "Where should I keep my work, and is any of it backed up?",
+            "team": "computing-resources-centre",
+            "unanswered": "No storage service, quota, shared drive or backup is described. A research group with data on a laboratory machine has nothing published telling it whether that data survives the machine."
+          },
+          {
+            "id": "crc-recover-file",
+            "question": "I have deleted something important. Can it be recovered?",
+            "team": "computing-resources-centre",
+            "unanswered": "Not published, and it cannot be answered until the previous question is. There is no stated retention period and no restore request route."
+          }
+        ]
+      },
+      {
+        "id": "crc-devices",
+        "title": "Your own laptop, and the rooms you teach in",
+        "summary": "The machine you are required to own, and the equipment you are not.",
+        "items": [
+          {
+            "id": "student-laptop",
+            "question": "What device do I need, and what happens if it fails in an examination?",
+            "team": "examinations",
+            "answer": [
+              "You sit examinations on your own device, so this is not an optional purchase. The university publishes what the device has to do rather than what to buy: a working camera and microphone, a supported operating system, a charge that outlasts the paper, a data connection as a fallback, and a power bank.",
+              "It says wireless is provided for digital examinations, and that queries during one go to the technical support centre or the online proctor.",
+              "No minimum specification, no recommended model, no loan scheme and no hardship provision is published. A student who cannot afford a suitable device has nowhere on this site to turn."
+            ],
+            "facts": [
+              {
+                "text": "Examinations are conducted digitally under a Bring Your Own Device policy; the device must be compatible in camera, microphone, operating system and other specifications informed from time to time, fully charged, with charging life beyond the maximum examination duration, a data pack in case of emergency and a power backup device.",
+                "source": "/academics/faq"
+              },
+              {
+                "text": "The university states that it provides Wi-Fi connectivity for digital examinations and that the student may avail the network facilities of the university.",
+                "source": "/academics/faq"
+              }
+            ],
+            "links": [
+              {
+                "label": "How examinations are taken",
+                "route": "/academics/mode-of-exams"
+              }
+            ]
+          },
+          {
+            "id": "digital-examination",
+            "question": "Something has gone wrong during a digital examination",
+            "team": "examinations",
+            "answer": [
+              "Ring the examination helpdesk. It is the one support service on the university's site that publishes a telephone number, an email address, a room and its opening hours together, and the university's own instruction is that login problems during an examination go to those numbers and nowhere else.",
+              "A device that will not start, a camera that will not work or a connection that drops during a paper is an examination problem before it is a computing one."
+            ],
+            "facts": [
+              {
+                "text": "Question papers are issued to the student's own device in a proctored environment and no hard copy is printed, so a failed device is a failed examination rather than an inconvenience.",
+                "source": "/academics/mode-of-exams"
+              }
+            ]
+          },
+          {
+            "id": "crc-laptop-repair",
+            "question": "My laptop is broken. Can the university repair it or lend me one?",
+            "team": "computing-resources-centre",
+            "unanswered": "No repair service, loan pool or hardship scheme is published. Given that every examination is taken on a personally owned machine, whether one exists is a question with consequences for a student's degree rather than only for their convenience."
+          },
+          {
+            "id": "crc-projector",
+            "question": "The projector in my teaching room will not work and my class has started",
+            "team": "computing-resources-centre",
+            "unanswered": "No number to ring and nobody named, for 350-plus rooms fitted with smartboards and projectors. This is the shortest-fuse request on the whole page: an answer that takes a day is no answer at all.",
+            "facts": [
+              {
+                "text": "The university describes more than 350 hi-tech classrooms equipped with smartboards and LCD projectors, and multiple auditoriums with audio-visual facilities.",
+                "source": "/life-wpu/academic-facilities"
+              }
+            ]
+          },
+          {
+            "id": "teaching-technology",
+            "question": "I teach here and I need the learning management system",
+            "team": "computing-resources-centre",
+            "unanswered": "A learning management system is referred to once, in passing, in the biography of a member of the university's leadership. It is never named, never located, and there is no route to support for it.",
+            "facts": [
+              {
+                "text": "The only reference to a learning management system anywhere on the university's site is a leadership biography noting a role in implementing the university ERP and learning management systems.",
+                "source": "/leadership/mr-ganesh-b-pokale-5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "crc-security",
+        "title": "Security, and buying computing equipment",
+        "summary": "Suspicious messages, blocked access, and what to buy.",
+        "items": [
+          {
+            "id": "crc-phishing",
+            "question": "I have had a message asking for my password. Is it genuine?",
+            "team": "computing-resources-centre",
+            "unanswered": "No statement of what the university will and will not ask you for, and no address to forward a suspicious message to. That single sentence — \"we will never ask you for your password\" — is the cheapest security control an institution owns, and it is not written down here.",
+            "facts": [
+              {
+                "text": "A handbook titled \"Basics of Cyber Hygiene\" is published in the university's student information index, which is the only security guidance on the site.",
+                "source": "/student-information"
+              }
+            ],
+            "links": [
+              {
+                "label": "Student information, where the cyber hygiene handbook is published",
+                "route": "/student-information"
+              }
+            ]
+          },
+          {
+            "id": "account-compromised",
+            "question": "I think my account has been compromised",
+            "team": "computing-resources-centre",
+            "unanswered": "No incident reporting route, no out-of-hours contact and no procedure. Somebody has to decide who is told, how quickly, and what they do first."
+          },
+          {
+            "id": "crc-blocked-database",
+            "question": "My access to a journal database has stopped working",
+            "team": "library",
+            "answer": [
+              "It may have been blocked deliberately. The library prohibits systematic downloading from its subscribed databases, and states that breaking that rule leads to penal action and a block on the entire community of users — so one person's script takes the journals away from everybody.",
+              "If you are off campus, it is more likely the previous question: the subscriptions are licensed by network address and simply do not work from home."
+            ],
+            "facts": [
+              {
+                "text": "The Knowledge Resource Centre states that systematic downloading is strictly prohibited and will result in penal action and a block on the entire community of users.",
+                "source": "/life-wpu/library"
+              }
+            ]
+          },
+          {
+            "id": "crc-buy-computer",
+            "question": "I want to buy a computer for my department. What should I buy, and from whom?",
+            "team": "computing-resources-centre",
+            "unanswered": "No standard specification, no approved supplier and no purchase route is published. A Purchase Committee exists and its membership is published; the process it runs is not.",
+            "links": [
+              {
+                "label": "Student information, where the Purchase Committee is listed",
+                "route": "/student-information"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "software": {
+    "id": "software",
+    "title": "Software: what you may install, and how to get it",
+    "paragraphs": [
+      "Three questions account for almost all of this: is it free to me, do I have to buy it, and where do I get it. They are set out below by entitlement rather than as a catalogue, because a list of products that exist somewhere in the university answers none of the three.",
+      "The university publishes no software entitlement at all. Every value in the table is therefore a gap awaiting an answer from a person, and none of them should be guessed: telling somebody they may install a product the university does not license puts both them and the university in the wrong.",
+      "Ask the Computing Resources Centre through the same route as anything else on this page, once that route exists. Whatever is decided, no licence key, serial or activation code will appear on this page or on any page of this site — a page behind a sign-in is still a web page, and gets bookmarked, screenshotted and pasted into wikis."
+    ],
+    "caption": "Software entitlements at MIT-WPU. No entitlement in this table has been published by the university; every cell reading \"Not yet published\" is work for a person, not a statement that the software is unavailable.",
+    "categoryHeading": "Software",
+    "columns": [
+      {
+        "key": "eligibility",
+        "label": "Who may use it",
+        "note": "student, staff, researcher, or a named school"
+      },
+      {
+        "key": "cost",
+        "label": "What it costs you",
+        "note": "covered centrally, department-funded, or bought at an education price"
+      },
+      {
+        "key": "obtain",
+        "label": "How to get it",
+        "note": "the actual route, not the owner"
+      },
+      {
+        "key": "offboarding",
+        "label": "When you leave",
+        "note": "what happens to the licence and the files"
+      }
+    ],
+    "validFor": "Products people ask about here, either because the operator named them or because the university's own pages show them in use.",
+    "notes": [
+      "\"Not yet published\" means the university has not stated it, not that the answer is no. Until it does, buy nothing on the strength of this table and install nothing on the strength of a colleague's recollection.",
+      "The last column is the one institutions forget and then get audited on. A licence that follows a person who has left, or a machine that keeps a departmental key after it is sold, is how a compliant institution stops being one."
+    ],
+    "products": [
+      {
+        "name": "Windows",
+        "cells": {},
+        "evidence": "Named by the operator. The university's site mentions Windows only in one member of staff's biography, never as something issued.",
+        "sources": [
+          "/faculty/nikhil-v-soniminde"
+        ]
+      },
+      {
+        "name": "Microsoft 365 and Office",
+        "cells": {},
+        "evidence": "Named by the operator. No education agreement, tenancy or download route is published anywhere.",
+        "sources": []
+      },
+      {
+        "name": "MATLAB",
+        "cells": {},
+        "evidence": "Named by the operator, and taught in several programmes — but taught is not licensed.",
+        "sources": [
+          "/programme/btech-chemical-engineering",
+          "/programme/btech-renewable-energy"
+        ]
+      },
+      {
+        "name": "ANSYS",
+        "cells": {},
+        "evidence": "In use in engineering teaching and on a centre's workstations.",
+        "sources": [
+          "/programme/btech-chemical-engineering",
+          "/centre-of-excellence-technology-and-visualization-centre-1"
+        ]
+      },
+      {
+        "name": "SolidWorks",
+        "cells": {},
+        "evidence": "In use in engineering teaching and by a student racing team.",
+        "sources": [
+          "/programme/btech-chemical-engineering",
+          "/baja-sae"
+        ]
+      },
+      {
+        "name": "AutoCAD and Revit",
+        "cells": {},
+        "evidence": "In use in civil engineering and design teaching.",
+        "sources": [
+          "/programme/btech-civil-engineering",
+          "/programme/bfa-applied-arts"
+        ]
+      },
+      {
+        "name": "CATIA",
+        "cells": {},
+        "evidence": "Listed among the CAD software on a centre of excellence's industrial workstations.",
+        "sources": [
+          "/centre-of-excellence-technology-and-visualization-centre-1"
+        ]
+      },
+      {
+        "name": "Adobe Creative Cloud",
+        "cells": {},
+        "evidence": "Photoshop and Lightroom are taught in photography; the design programmes use the wider suite.",
+        "sources": [
+          "/programme/ba-photography",
+          "/programme/bfa-applied-arts"
+        ]
+      },
+      {
+        "name": "SPSS and statistical software",
+        "cells": {},
+        "evidence": "SPSS, R, Tableau and Power BI appear in statistics and analytics teaching.",
+        "sources": [
+          "/programme/bsc-applied-statistics-and-data-analytics",
+          "/pg-diploma-programmes"
+        ]
+      },
+      {
+        "name": "Antivirus and endpoint protection",
+        "cells": {},
+        "evidence": "Nothing at all is published. On a campus where every examination is taken on a personally owned machine, whether the university protects those machines is not a minor question.",
+        "sources": []
+      },
+      {
+        "name": "Similarity and plagiarism checking",
+        "cells": {},
+        "evidence": "The university states its expectations about plagiarism repeatedly and names no tool for checking it, so neither a student nor a supervisor can tell what a submission will be checked against.",
+        "sources": [
+          "/research/ipr"
+        ]
+      }
+    ],
+    "evidenceTitle": "Where each of those products appears today",
+    "evidenceIntroduction": [
+      "None of the pages below says the university licenses anything. Each shows a product being taught, or installed in one named laboratory, which is why the table above is empty: a product in a syllabus is not an entitlement, and reading one as the other is exactly the mistake this section exists to prevent."
+    ]
+  },
+  "unowned": [
+    {
+      "name": "Computing, the network and accounts",
+      "note": "no IT office appears in the university's directory of administrative offices",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "Housekeeping and cleaning",
+      "note": "described as a hostel service; no owner, address or number anywhere",
+      "source": "/life-wpu/hostel-facilities"
+    },
+    {
+      "name": "Building maintenance and repairs",
+      "note": "no fault-reporting route of any kind is published for the campus",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "Campus security desk and emergency number",
+      "note": "guards and CCTV are described; no number is published",
+      "source": "/life-wpu/other-facilities"
+    },
+    {
+      "name": "Medical centre, pharmacy and ambulance",
+      "note": "all four services are described; none is contactable",
+      "source": "/life-wpu/medical-facilities"
+    },
+    {
+      "name": "Library service desk",
+      "note": "borrowing, fines and lost-book rules are published; the desk is not",
+      "source": "/life-wpu/library"
+    },
+    {
+      "name": "Printing and reprography beyond the library",
+      "note": "one paid library service; no student printing or quota",
+      "source": "/life-wpu/library"
+    },
+    {
+      "name": "Transport and parking",
+      "note": "a hostel shuttle is described; no office, routes or timetable",
+      "source": "/life-wpu/hostel-facilities"
+    },
+    {
+      "name": "Canteen, cafeteria and campus food",
+      "note": "described in passing; no operator, hours or contact",
+      "source": "/life-wpu/hostel-facilities"
+    },
+    {
+      "name": "Room, hall and auditorium booking",
+      "note": "the rooms are counted; the booking route is not published",
+      "source": "/life-wpu/academic-facilities"
+    },
+    {
+      "name": "Identity card issue and replacement",
+      "note": "the card is required to use the library; nothing says how to get one",
+      "source": "/life-wpu/library"
+    },
+    {
+      "name": "Purchase, stores and requisitions",
+      "note": "a Purchase Committee is published; no purchase office or process",
+      "source": "/student-information"
+    },
+    {
+      "name": "Accounts Helpdesk",
+      "note": "published only as a QR code image, so it cannot be read on a screen",
+      "source": "/academics/student-assistance"
+    },
+    {
+      "name": "Learning technology and classroom audio-visual support",
+      "note": "350-plus smart classrooms; nobody named to support them",
+      "source": "/life-wpu/academic-facilities"
+    },
+    {
+      "name": "Lost property",
+      "note": "nothing at all is published",
+      "source": "/life-wpu/other-facilities"
+    }
+  ],
+  "directories": [
+    {
+      "label": "Administrative offices",
+      "route": "/about-us/administrative-offices",
+      "note": "twelve offices, one email each"
+    },
+    {
+      "label": "Examination contacts and hours",
+      "route": "/academics/examination-contact-us",
+      "note": "the fullest contact block on the site"
+    },
+    {
+      "label": "Student assistance",
+      "route": "/academics/student-assistance",
+      "note": "the university's own list of requests"
+    },
+    {
+      "label": "Examinations: frequently asked questions",
+      "route": "/academics/faq",
+      "note": "the densest process page"
+    },
+    {
+      "label": "Hostels and residential life",
+      "route": "/life-wpu/hostel-facilities"
+    },
+    {
+      "label": "Knowledge Resource Centre",
+      "route": "/life-wpu/library"
+    },
+    {
+      "label": "Medical facilities",
+      "route": "/life-wpu/medical-facilities"
+    },
+    {
+      "label": "Campus amenities",
+      "route": "/life-wpu/other-facilities"
+    },
+    {
+      "label": "Student information and university committees",
+      "route": "/student-information"
+    },
+    {
+      "label": "Contact the university",
+      "route": "/contact-us",
+      "note": "switchboard and address"
+    }
+  ]
+}

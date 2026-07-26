@@ -1,8 +1,11 @@
 {
   "identity": {
-    "name": "MAEER’s MIT World Peace University"
+    "name": "MAEER’s MIT World Peace University"
   },
   "social": [],
+  "copyright": {
+    "holder": "MIT World Peace University"
+  },
   "groups": [
     {
       "label": "University",
@@ -55,6 +58,48 @@
         {
           "label": "Intranet",
           "local": "intranet/"
+        }
+      ]
+    },
+    {
+      "label": "Grievance redressal",
+      "hide_heading": false,
+      "links": [
+        {
+          "label": "Ragging prevention programme",
+          "local": "about-us/national-ragging-prevention-programme/"
+        },
+        {
+          "label": "Anti-Ragging Committee",
+          "local": "student-affairs/anti-ragging-committee/"
+        },
+        {
+          "label": "Students’ Grievance Redressal Committee",
+          "local": "academics/student-grievance/"
+        },
+        {
+          "label": "Internal Complaints Committee",
+          "local": "student-affairs/internal-complaints-committee/"
+        },
+        {
+          "label": "SC/ST and Equal Opportunity Cell",
+          "local": "sc-st-committee/"
+        },
+        {
+          "label": "Women’s Studies and Development Centre",
+          "local": "centre-for-womens-studies-and-development/"
+        },
+        {
+          "label": "Statutory committees (PDF)",
+          "local": "media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf"
+        },
+        {
+          "label": "Mandatory disclosures",
+          "local": "mandatory-disclosures/"
+        },
+        {
+          "label": "Capitation-fee disclaimer (PDF)",
+          "local": "media/mitwpu-public/documents/6e/6ebc55d88a0eb17f-Disclaimer.pdf"
         }
       ]
     }

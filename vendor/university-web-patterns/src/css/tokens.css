@@ -1,13 +1,67 @@
 /* Design tokens.
  *
+ * A token is a named ROLE, not a colour. `--uwp-link` is "the colour of
+ * interactive foreground text", and it happens to be a blue. That distinction
+ * is the whole contract: a client re-declares the value and every rule that
+ * asked for the role follows, because no rule in patterns.css or media.css
+ * ever hard-codes a palette value. This file is therefore the entire
+ * supported surface for making the package look like one institution rather
+ * than another.
+ *
+ * A client overrides by re-declaring these custom properties in its OWN
+ * stylesheet, loaded after this one. It must not fork this file: a fork is an
+ * unversioned copy that the next release cannot reach, and adoption replaces
+ * the vendored tree wholesale, so a fork here is also destroyed the next time
+ * anyone adopts. See docs/ARCHITECTURE.md §1 and §6.
+ *
+ *
+ * Which tokens are safe to re-declare, and which are load-bearing
+ * ---------------------------------------------------------------
+ * SAFE, and expected: every colour in the palette groups below, both fonts,
+ * and the measure and spacing scale. That is what they are for.
+ *
+ * LOAD-BEARING, meaning the token carries a rule about how it may be spent,
+ * and re-declaring it without honouring that rule breaks contrast rather than
+ * changing appearance:
+ *
+ *   --uwp-brand / --uwp-brand-contrast are a PAIR. brand is a solid
+ *   background; brand-contrast is the text that sits on it. Neither is a
+ *   foreground on paper. Four rules once spent --uwp-brand as a foreground
+ *   colour on a light surface, and a client whose brand was an institutional
+ *   navy got text at roughly 2:1 against a pale card — while the same token,
+ *   doing its actual job as a masthead background, looked entirely correct.
+ *   Nothing in the palette was wrong; one token was being asked to be two
+ *   things. Interactive foreground is --uwp-link, which carries a legible
+ *   value in both themes. If you set --uwp-brand to something light, check
+ *   --uwp-brand-contrast in the same edit.
+ *
+ *   --uwp-focus must stay visible against every surface. It is the focus
+ *   ring; a keyboard user has nothing else.
+ *
+ *   --uwp-masthead-* are indirection, not palette. See the note at that
+ *   group.
+ *
+ *   --uwp-institution-bar-height, --uwp-header-height and
+ *   --uwp-page-hero-height are read by layout rules that offset content
+ *   beneath fixed chrome. Change them to match your own chrome, but change
+ *   them here rather than overriding the offsets downstream.
+ *
+ *
  * Two theme mechanisms are supported and must both keep working:
  *   - `prefers-color-scheme`, for a client that ships no toggle;
  *   - an explicit `data-theme` attribute on the root element, set by
  *     theme.js, for a client that ships the theme-toggle component.
  * `data-theme` always wins, in both directions.
  *
- * A client overrides the palette by re-declaring these custom properties in
- * its own stylesheet. It must not fork this file.
+ * THE DUPLICATION BELOW IS DELIBERATE AND MUST BE MAINTAINED IN LOCKSTEP.
+ * The dark values appear twice — once under :root[data-theme="dark"] and once
+ * inside the prefers-color-scheme block — because CSS has no way to say "this
+ * selector OR that media query" without repeating the declarations. Add a
+ * token to one and not the other and the package has two different dark
+ * themes: one for clients that ship the toggle and one for clients that do
+ * not, differing only in the token you forgot. That failure is invisible to
+ * whoever made it, because they will be testing the mechanism their own site
+ * uses.
  */
 
 :root {
@@ -37,12 +91,47 @@
   --uwp-accent: #f3be34;
   --uwp-footer-bg: #274257;
 
-  /* Masthead, indirected so a client can run a light header without moving
-   * --uwp-brand (which the institution bar also uses). Default is the solid
-   * institutional header; for a paper header re-declare all three:
+  /* The accent block a feature-figure offsets past its picture's bottom-right
+   * corner. Indirection for the same reason the masthead group below is: the
+   * corner and the rule under the masthead are the SAME mark of the same
+   * institution, and a client that wants them to match — which is the default,
+   * and why this points at --uwp-accent rather than carrying a value — should
+   * get that by setting one token. But the two are spent differently: the
+   * masthead rule is 3px of it, the corner is a solid block several hundred
+   * pixels across. A client whose accent is legible as a hairline and shouting
+   * as a slab needs to move one without moving the other, and without this it
+   * would have to move --uwp-accent and change its masthead as a side effect.
+   *
+   * It is deliberately NOT a pale tint of the accent. Two clients independently
+   * built this corner and both softened it towards paper, at which point it
+   * reads as a printing error rather than as the institution's colour. Set it
+   * to the colour the navigation carries.
+   *
+   * Not repeated in the dark blocks below: it resolves through --uwp-accent,
+   * which is, so it follows the theme on its own. */
+  --uwp-figure-corner: var(--uwp-accent);
+
+  /* Masthead. These four exist ONLY to be indirection, and that is why they
+   * look redundant — three of them just point at other tokens.
+   *
+   * The masthead could have read --uwp-brand directly. It does not, because
+   * clients genuinely differ here in a way that is not cosmetic: some carry a
+   * solid institutional header, others a light paper header sitting beneath a
+   * coloured institution bar. --uwp-brand is also spent by the institution
+   * bar, so without this indirection a client wanting a paper header would
+   * have to move --uwp-brand — and change its institution bar as a side
+   * effect. When the shell was promoted into this package, adopting the
+   * release WOULD have silently changed the donor site's header colour for
+   * exactly that reason. The indirection is what made the promotion safe.
+   *
+   * So: to restyle the header, re-declare these and leave --uwp-brand alone.
+   * For a paper header re-declare all three:
    *   --uwp-masthead-bg: var(--uwp-paper);
    *   --uwp-masthead-ink: var(--uwp-heading);
    *   --uwp-masthead-rule: 1px solid var(--uwp-rule);
+   * All three together — bg without ink is how a header ends up white on
+   * white. Note these are NOT repeated in the dark blocks below: they resolve
+   * through the tokens they point at, so they follow the theme on their own.
    */
   --uwp-masthead-bg: var(--uwp-brand);
   --uwp-masthead-ink: var(--uwp-brand-contrast);
@@ -77,7 +166,10 @@
   color-scheme: light;
 }
 
-/* Explicit toggle. Authoritative over the media query below. */
+/* Explicit toggle. Authoritative over the media query below, and it wins by
+   being a plain selector that the media query deliberately excludes — not by
+   source order, which would only settle one of the two directions. Keep this
+   list and the one in the media query identical. */
 :root[data-theme="dark"] {
   --uwp-ink: #e5edf4;
   --uwp-heading: #d6e2ec;
@@ -108,7 +200,11 @@
   color-scheme: dark;
 }
 
-/* System preference, for a client with no toggle. Yields to data-theme. */
+/* System preference, for a client with no toggle. The :not([data-theme="light"])
+   is what makes data-theme authoritative in BOTH directions: without it, a
+   visitor whose system is dark could not choose light, because the media
+   query would keep reapplying the dark values. Same declarations as the block
+   above, deliberately duplicated — see the header. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --uwp-ink: #e5edf4;
@@ -140,10 +236,121 @@
     color-scheme: dark;
   }
 }
-</content>
 
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) and once
+ * inside the prefers-color-scheme block — because CSS has no way to say "this
+ * selector OR that media query" without repeating the declarations. Add a
+ * token to one and not the other and the package has two different dark
+ * themes: one for clients that ship the toggle and one for clients that do
+ * not, differing only in the token you forgot. That failure is invisible to
+ * whoever made it, because they will be testing the mechanism their own site
+ * uses.
+ */
+
+:root {
+    /* text */
+      --uwp-ink: #1f2d3a;
+      --uwp-heading: #274257;
+      --uwp-title: #33566f;
+      --uwp-copy: #3f5362;
+      --uwp-muted: #5e6c78;
+      --uwp-nav-ink: #343b4c;
+    
+      /* surfaces */
+      --uwp-paper: #ffffff;
+      --uwp-surface: #f8fafb;
+      --uwp-topbar: #f3f7fa;
+    
+      /* interactive */
+      --uwp-link: #2d6786;
+      --uwp-link-strong: #204e67;
+      --uwp-solid: #2d6786;
+      --uwp-solid-hover: #204e67;
+      --uwp-pale: #edf3f6;
+    
+      /* institutional identity */
+      --uwp-brand: #1e3a6e;
+      --uwp-brand-contrast: #ffffff;
+      --uwp-accent: #f3be34;
+      --uwp-footer-bg: #274257;
+    
+      /* The accent block a feature-figure offsets past its picture's bottom-right
+       * corner. Indirection for the same reason the masthead group below is: the
+       * corner and the rule under the masthead are the SAME mark of the same
+       * institution, and a client that wants them to match — which is the default,
+       * and why this points at --uwp-accent rather than carrying a value — should
+       * get that by setting one token. But the two are spent differently: the
+       * masthead rule is 3px of it, the corner is a solid block several hundred
+       * pixels across. A client whose accent is legible as a hairline and shouting
+       * as a slab needs to move one without moving the other, and without this it
+       * would have to move --uwp-accent and change its masthead as a side effect.
+       *
+       * It is deliberately NOT a pale tint of the accent. Two clients independently
+       * built this corner and both softened it towards paper, at which point it
+       * reads as a printing error rather than as the institution's colour. Set it
+       * to the colour the navigation carries.
+       *
+       * Not repeated in the dark blocks below: it resolves through --uwp-accent,
+       * which is, so it follows the theme on its own. */
+      --uwp-figure-corner: var(--uwp-accent);
+    
+      /* Masthead. These four exist ONLY to be indirection, and that is why they
+       * look redundant — three of them just point at other tokens.
+       *
+       * The masthead could have read --uwp-brand directly. It does not, because
+       * clients genuinely differ here in a way that is not cosmetic: some carry a
+       * solid institutional header, others a light paper header sitting beneath a
+       * coloured institution bar. --uwp-brand is also spent by the institution
+       * bar, so without this indirection a client wanting a paper header would
+       * have to move --uwp-brand — and change its institution bar as a side
+       * effect. When the shell was promoted into this package, adopting the
+       * release WOULD have silently changed the donor site's header colour for
+       * exactly that reason. The indirection is what made the promotion safe.
+       *
+       * So: to restyle the header, re-declare these and leave --uwp-brand alone.
+       * For a paper header re-declare all three:
+       *   --uwp-masthead-bg: var(--uwp-paper);
+       *   --uwp-masthead-ink: var(--uwp-heading);
+       *   --uwp-masthead-rule: 1px solid var(--uwp-rule);
+       * All three together — bg without ink is how a header ends up white on
+       * white. Note these are NOT repeated in the dark blocks below: they resolve
+       * through the tokens they point at, so they follow the theme on their own.
+       */
+      --uwp-masthead-bg: var(--uwp-brand);
+      --uwp-masthead-ink: var(--uwp-brand-contrast);
+      --uwp-masthead-rule: 3px solid var(--uwp-accent);
+      --uwp-masthead-accent: var(--uwp-accent);
+    
+      /* lines and focus */
+      --uwp-rule: #d7dfe5;
+      --uwp-rule-strong: #b7c3cc;
+      --uwp-focus: #9dc4de;
+      --uwp-switch-knob: #ffffff;
+    
+      /* type */
+      --uwp-serif: Georgia, "Times New Roman", serif;
+      --uwp-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    
+      /* measure */
+      --uwp-content-width: 1180px;
+      --uwp-reading-width: 72ch;
+      --uwp-institution-bar-height: 112px;
+      --uwp-header-height: 80px;
+      --uwp-page-hero-height: 272px;
+    
+      /* space */
+      --uwp-space-1: .5rem;
+      --uwp-space-2: 1rem;
+      --uwp-space-3: 1.5rem;
+      --uwp-space-4: 2rem;
+      --uwp-space-6: 3rem;
+    
+      color-scheme: light;
+  }
+
   :root:not([data-theme]) {
     --uwp-ink: #e5edf4;
       --uwp-heading: #d6e2ec;

@@ -66,6 +66,25 @@ import path from "node:path";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 
+/* The copyright line, composed from the one file that decides it.
+ *
+ * tools/uwp_shell.mjs is deliberately not imported here: it registers the
+ * package's whole component set on the shared `uwp` global at import time and
+ * this file registers its own bundle from ./patterns.templates.js. This is one
+ * data field, not a second copy of the shell — and the year is optional,
+ * because the footer file currently carries none.
+ */
+function copyrightNotice(holder) {
+  const { copyright } = JSON.parse(
+    readFileSync(
+      path.join(HERE, "..", "demo-assets", "institutional-footer.json"),
+      "utf8",
+    ),
+  );
+  return ["©", copyright.year, holder].filter(Boolean).join(" ");
+}
+
+
 const uwp = globalThis.uwp;
 uwp.registerComponents(
   JSON.parse(
@@ -256,11 +275,16 @@ const footer = {
       links: [{ label: "MIT-WPU", href: "../" }],
     },
   ],
-  /* Pinned at generation time. The hand-written footer filled this from
-   * `new Date().getFullYear()` in the browser, which meant the year on the
-   * page and the year in the repository could disagree — and that the
-   * copyright line was blank with JavaScript off. */
-  note: `© ${new Date().getFullYear()} MIT-WPU`,
+  /* Read from demo-assets/institutional-footer.json, not from any clock. The
+   * hand-written footer filled this from `new Date().getFullYear()` in the
+   * browser — so the line was also blank with JavaScript off — and this
+   * generator then did the same from the build machine's, which meant the year
+   * on the page and the year in the repository could disagree. When the year
+   * was dropped from the footer file, the page had to be hand-edited to
+   * follow, which is what put this generator and its own output out of step.
+   * The file is the one place it is decided now, for the microsites as for the
+   * institution. */
+  note: copyrightNotice("MIT-WPU"),
 };
 
 /* Ancestors are the same on every page; only the last crumb changes. */

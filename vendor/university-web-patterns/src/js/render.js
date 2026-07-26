@@ -109,19 +109,69 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
 
+  /* ----------------------------------------------------------------------
+   * CHANGING THIS FILE OBLIGES YOU TO CHANGE tools/render.py
+   * ----------------------------------------------------------------------
+   * This is not "the JavaScript version" of the renderer, with the freedom
+   * that implies. It is the same renderer, and a site may render the same
+   * component through either one. The loud failure of a divergence is a page
+   * that differs depending on where it was built. The quiet failure is one
+   * renderer escaping a value the other passes through, which is a
+   * cross-site scripting hole on whichever route nobody is looking at.
+   *
+   * Behaviours that must move together, in both files:
+   *   the truthiness rule (isTruthy / is_truthy)
+   *   the escape set and its exact entities (escapeText / escape)
+   *   the absence rule (falsy renders empty, never an error)
+   *   comment stripping, and standalone-block line folding — whitespace counts
+   *   path resolution and the scope chain (resolve / _resolve)
+   *   the version stamp (stampVersion / Renderer._stamp)
+   *
+   * Prove it, never assume it:
+   *   python3 tools/render.py --parity-fixture | node src/js/render.js --parity
+   *
+   * That command is not decoration. The generator that hands templates to
+   * this file once carried the release version in a comment and never set
+   * it, so browser-rendered components would have shipped unstamped while
+   * build-time ones stamped. It was found by running the check end to end,
+   * not by reading the file — the comment said the right thing.
+   *
+   * docs/ARCHITECTURE.md §3 is the long form of why this pair exists.
+   * ------------------------------------------------------------------- */
+
+  /* The grammar is closed at three blocks. docs/ARCHITECTURE.md §4 says what
+     the ceiling is holding back; read it before deciding it is the problem.
+     Adding one here without adding it in render.py breaks parity by
+     construction. */
   var BLOCK_KINDS = ["if", "unless", "each"];
 
+  /* [\s\S] rather than . because JavaScript has no DOTALL flag and a token
+     may span lines. All four patterns mirror render.py's; keep them so. */
   var TOKEN = /\{\{([\s\S]*?)\}\}/g;
   var DOTTED_PATH = /^[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*$/;
   var OPEN_TOKEN = /^#([A-Za-z]+)(?:\s+([\s\S]*))?$/;
   var CLOSE_TOKEN = /^\/([A-Za-z]+)\s*$/;
 
+  /* Two comment passes, standalone first, so a comment owning its line takes
+     the newline with it and the rendered markup does not grow a blank line
+     per stripped documentation block. Inline-first would consume the comment
+     and strand its indentation. Same reasoning for a block token alone on a
+     line. Both renderers fold identically because whitespace is part of the
+     byte-for-byte contract. */
   var STANDALONE_COMMENT = /^[ \t]*<!--[\s\S]*?-->[ \t]*\r?\n/gm;
   var INLINE_COMMENT = /<!--[\s\S]*?-->/g;
   var STANDALONE_BLOCK = /^[ \t]*(\{\{[ \t]*[#/][^{}]*?\}\})[ \t]*\r?\n/gm;
 
-  // Names never followed through a path. The leading-underscore rule matches
-  // the Python side; the rest are JavaScript's own ways out of an object.
+  /* Names never followed through a path. The leading-underscore rule matches
+     the Python side; the rest are JavaScript's own ways out of an object,
+     which Python has no equivalent of and therefore does not list.
+     Known asymmetry: JavaScript's `in` walks the prototype chain, so a path
+     segment naming an inherited Object.prototype member (toString, valueOf,
+     hasOwnProperty …) resolves to a native function here and to nothing in
+     render.py. No template uses such a segment — paths are literals in the
+     template, never data — so nothing renders differently today, but do not
+     introduce one, and prefer extending this list to discovering it in a
+     parity failure. */
   var BLOCKED_SEGMENTS = { __proto__: true, constructor: true, prototype: true };
 
   var MISSING = { uwpMissing: true };
@@ -177,6 +227,13 @@
     return String(value.__html__());
   }
 
+  /* "Is this a bag of things, whose emptiness decides a condition?"
+     Date and RegExp are excluded because they are objects with no members,
+     so Object.keys() would report them empty and a #if on a date would be
+     false. That is the JavaScript-only trap in the truthiness rule: Python
+     has no such objects reaching this branch, so the two renderers agree
+     only because of these two exclusions. Anything else object-like whose
+     emptiness is not the question belongs on this list too. */
   function isPlainCollection(value) {
     return (
       value !== null &&
@@ -223,6 +280,16 @@
     return true;
   }
 
+  /* The exact output of Python's html.escape(value, quote=True): five
+     entities, and `'` as the numeric &#x27; rather than the named &apos;.
+     Both of those are parity requirements, not preferences — a named entity
+     here would differ from render.py on every apostrophe in every name.
+
+     The ampersand MUST be replaced first. Replace `<` first and the `&` pass
+     then rewrites the `&` of the `&lt;` it just produced, yielding
+     `&amp;lt;` and putting the literal text "&lt;" on the page. It is the
+     classic double-escape and it is invisible in a diff of this function;
+     it shows up as visible entity text in a heading. */
   function escapeText(text) {
     return String(text)
       .replace(/&/g, "&amp;")
@@ -308,6 +375,13 @@
     var position = 0;
     var match;
 
+    /* TOKEN is a /g regex held at module scope, so it carries lastIndex
+       between calls. Without this reset, a compile that threw part-way
+       through one template would leave the cursor mid-string and the NEXT
+       template would be parsed from the middle — losing its opening markup
+       silently. Reset here rather than making TOKEN local: it is shared with
+       render.py's compiled pattern by intent, and a per-call regex would
+       drift from it. */
     TOKEN.lastIndex = 0;
     while ((match = TOKEN.exec(source)) !== null) {
       if (match.index > position) {
@@ -624,6 +698,7 @@
     this.templates = {};
     this.components = {};
     this.order = [];
+    this.stylesheetOrder = [];
     this.compiled = {};
     this.version = settings.version ? String(settings.version) : "";
     if (settings.templates) {
@@ -634,7 +709,15 @@
     }
   }
 
-  /* Register template sources: {componentId: templateText}. */
+  /* Register template sources: {componentId: templateText}.
+     This is the only way a template gets in. There is no fetch() in this
+     file and there must never be one: a renderer that loaded templates over
+     the network would put the network back in the render path and let a
+     site's appearance change with no commit in that site — see
+     PROPAGATION_MODEL.md §2 and docs/ARCHITECTURE.md §6.
+     The delete is not tidiness: `compiled` caches a parsed tree per id, and
+     re-registering an id without dropping it would keep rendering the
+     previous template while claiming to hold the new one. */
   Renderer.prototype.register = function (templates) {
     var ids = Object.keys(templates || {});
     for (var index = 0; index < ids.length; index += 1) {
@@ -649,6 +732,9 @@
     var list = (document && document.components) || [];
     if (document && document.version) {
       this.version = String(document.version);
+    }
+    if (document && document.stylesheet_order) {
+      this.stylesheetOrder = document.stylesheet_order.slice();
     }
     for (var index = 0; index < list.length; index += 1) {
       var component = list[index];
@@ -737,7 +823,16 @@
     return (this.component(componentId).schemas || []).slice();
   };
 
-  /* The union of several components' assets, deduplicated, order preserved. */
+  /* The union of several components' assets for one page's <head>,
+   * deduplicated. Scripts keep first-use order. Stylesheets are put back into
+   * the cascade order declared once at the top of components.json, because
+   * first-use order is the wrong answer for them: a page opens with skip-link,
+   * which needs tokens and patterns and not readability, so first use puts
+   * patterns.css before readability.css on every page that has a skip link.
+   * No component can fix that on its own — none of them lists all four sheets.
+   * The build-time renderer does exactly this; see the note in
+   * tools/render.py. A sheet the order does not name keeps first-use order
+   * after the ones it does. */
   Renderer.prototype.pageAssets = function (componentIds) {
     var seen = [];
     for (var index = 0; index < componentIds.length; index += 1) {
@@ -748,7 +843,23 @@
         }
       }
     }
-    return splitAssets(seen);
+    var grouped = splitAssets(seen);
+    var declared = this.stylesheetOrder;
+    var rank = function (sheet) {
+      var at = declared.indexOf(sheet);
+      return at === -1 ? declared.length : at;
+    };
+    grouped.css = grouped.css
+      .map(function (sheet, at) {
+        return { sheet: sheet, at: at };
+      })
+      .sort(function (left, right) {
+        return rank(left.sheet) - rank(right.sheet) || left.at - right.at;
+      })
+      .map(function (entry) {
+        return entry.sheet;
+      });
+    return grouped;
   };
 
   var shared = new Renderer();
@@ -968,6 +1079,25 @@
     var assets = shared.componentAssets("probe");
     check("componentAssets splits by kind", assets.css.length === 1 && assets.js.length === 1);
     check("pageAssets deduplicates", shared.pageAssets(["probe", "probe"]).css.length === 1);
+
+    /* A page whose first component needs the later sheet and not the earlier
+     * one: first-use order would load them backwards, and the declared
+     * cascade order is what puts them right. Must match the same check in
+     * tools/render.py. */
+    var ordering = new Renderer();
+    ordering.registerComponents({
+      stylesheet_order: ["src/css/first.css", "src/css/second.css"],
+      components: [
+        { id: "late", assets: ["src/css/second.css"] },
+        { id: "early", assets: ["src/css/first.css", "src/css/second.css", "src/css/loose.css"] }
+      ]
+    });
+    var ordered = ordering.pageAssets(["late", "early"]).css;
+    check(
+      "pageAssets puts stylesheets back into the declared cascade order",
+      ordered.join(",") === "src/css/first.css,src/css/second.css,src/css/loose.css",
+      ordered.join(",")
+    );
     count += 1;
     try {
       shared.render("absent-component", {});
