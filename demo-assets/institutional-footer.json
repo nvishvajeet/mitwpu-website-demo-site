@@ -2,7 +2,37 @@
   "identity": {
     "name": "MAEER’s MIT World Peace University"
   },
-  "social": [],
+  "social": [
+    {
+      "label": "Facebook",
+      "official": "https://www.facebook.com/MIT-WPUOfficial/",
+      "mark": "facebook"
+    },
+    {
+      "label": "X (formerly Twitter)",
+      "official": "https://twitter.com/mitwpuofficial",
+      "mark": "x"
+    },
+    {
+      "label": "YouTube",
+      "official": "https://www.youtube.com/c/MITWorldPeaceUniversity",
+      "mark": "youtube"
+    },
+    {
+      "label": "LinkedIn",
+      "official": "https://www.linkedin.com/school/mitwpuofficial/",
+      "mark": "linkedin"
+    },
+    {
+      "label": "Instagram",
+      "official": "https://www.instagram.com/mitwpuofficial/",
+      "mark": "instagram"
+    },
+    {
+      "label": "Threads",
+      "official": "https://www.threads.net/@mitwpuofficial"
+    }
+  ],
   "copyright": {
     "holder": "MIT World Peace University"
   },
@@ -80,6 +110,10 @@
         {
           "label": "Internal Complaints Committee",
           "local": "student-affairs/internal-complaints-committee/"
+        },
+        {
+          "label": "University Discipline Committee",
+          "local": "student-affairs/discipline-committee/"
         },
         {
           "label": "SC/ST and Equal Opportunity Cell",

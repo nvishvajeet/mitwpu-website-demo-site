@@ -15,11 +15,6 @@
   --blue-pale: #edf3f6;
   --accent-line: #6f9bb3;
   --gold: #f3be34;
-  /* Pale gold, for decoration that sits behind something rather than on it.
-     Same value as the university sections use, so the corner block under the
-     hero photograph is one colour across the site rather than two that nearly
-     match. Never put text on this: it is a backdrop, not a surface. */
-  --gold-soft: #f3e2ae;
   --line: #d8e0e5;
   --line-strong: #b8c5cd;
   --focus: #185f86;
@@ -60,10 +55,6 @@
   --blue-pale: #1d2d38;
   --accent-line: #6fa6c4;
   --gold: #d8ad3c;
-  /* Dark theme wants the corner darker than the page, not lighter: a pale
-     block behind a photograph glows on a dark background and pulls the eye
-     away from the image it is meant to frame. */
-  --gold-soft: #55451e;
   --line: #2a3b48;
   --line-strong: #3d5262;
   --focus: #9fd5f2;
@@ -412,39 +403,62 @@ h3 {
   border-color: var(--solid-blue);
 }
 
+/* Fill the hero row rather than floating a small letterboxed panel in it: the
+   campus photograph is the landing image, so it should be as tall as the copy
+   beside it and crop into the campus rather than shrink away. The stretching
+   now starts one level up, at the grid item, and is passed down through the
+   component's frame — the photograph is no longer the hero's direct child. */
 .hero-visual {
-  position: relative;
-  /* Fill the hero row rather than floating a small letterboxed panel in it:
-     the campus photograph is the landing image, so it should be as tall as
-     the copy beside it and crop into the campus rather than shrink away. */
-  align-self: stretch;
   display: grid;
   width: 100%;
   min-width: 0;
-  min-height: min(58vh, 520px);
+  min-height: min(56vh, 500px);
   grid-template-rows: 1fr;
-  background: var(--paper);
-  border: 1px solid var(--line);
 }
 
-/* The gold corner behind the hero photograph, matching the university
-   sections. It is offset past the bottom-right corner and painted at
-   z-index -1, so it falls behind this element's own background and only
-   the part that overhangs is visible — a block peeking out from under the
-   image rather than a border drawn on it.
-   Two things this depends on, both easy to break: .hero-visual must not
-   clip its overflow (that is why there is no overflow: hidden above — each
-   slide clips its own image instead), and .hero-visual must not have a
-   z-index, or it becomes a stacking context and the block disappears
-   behind the photograph entirely. */
-.hero-visual::after {
-  position: absolute;
-  z-index: -1;
-  width: 45%;
-  height: 55%;
-  inset: auto -1.15rem -1.15rem auto;
-  content: "";
-  background: var(--gold-soft);
+/* The gold corner is no longer written here. It is
+   `uwp-feature-figure`, from the shared package (media.css), and the
+   markup wraps this carousel in the component's frame:
+
+     .uwp-feature-figure > .uwp-feature-figure__frame > .hero-visual.uwp-feature-figure__media
+
+   Three things changed by moving it there, and all three were bugs.
+
+   It is now the NAVIGATION's gold — `--gold`, the same value as the 3px
+   rule under the masthead — rather than `--gold-soft`, a pale tint of it.
+   The block is the institution's mark; softened towards paper it read as
+   a printing error.
+
+   It is now painted inside the frame's own padding rather than hung
+   outside this element at `z-index: -1`. The old form carried a contract
+   with its surroundings — this element must not clip its overflow, and
+   must not acquire a z-index — and had a third condition nobody had
+   written down: no ANCESTOR may have a background either, because a
+   negative z-index paints below every ordinary descendant background in
+   the nearest ancestor stacking context. `.hero` has a background. The
+   block survived only because `.hero-visual` came later in the tree than
+   the section's own background painting; one wrapper with a tint would
+   have deleted it silently.
+
+   And it is one implementation instead of four. university.css had the
+   same rule under a different selector; so did the package's own
+   `.uwp-hero__media`. See media.css in the vendored package for the
+   whole account. */
+.hero-feature {
+  /* The component's default bottom margin is for a figure in a column of
+     prose. Here it IS the hero's grid cell, so it carries none, and the
+     stretch that used to sit on .hero-visual sits here — the photograph is
+     now two levels down and cannot see the hero's grid. */
+  display: grid;
+  align-self: stretch;
+  margin: 0;
+  min-width: 0;
+}
+
+.hero-feature .uwp-feature-figure__frame {
+  display: grid;
+  grid-template-rows: 1fr;
+  min-width: 0;
 }
 
 .hero-media {
@@ -489,53 +503,73 @@ h3 {
   object-position: center 42%;
 }
 
+/* Band rhythm.
+ *
+ * Every band on this page used to open and close on the same 76px, so
+ * consecutive sections were separated by an identical 152px and all three
+ * content bands were the same white. Whitespace was not the problem —
+ * UNDIFFERENTIATED whitespace was: nothing in the spacing said where one
+ * subject ended and the next began, so a generous gap read as generous once
+ * and as empty three times running.
+ *
+ * The rhythm now has two intervals and an alternation:
+ *   - between subjects, 80px above a band and 72px below it, and the tint
+ *     alternates — hero tinted, Latest on paper, the directory tinted again.
+ *     The change of ground does the work the gap was failing to do, at no
+ *     cost in height.
+ *   - within a band, the section heading's own 46px, and 44px between rows of
+ *     cards. Smaller than the band gap, and now visibly so.
+ *
+ * The directory keeps a little more room beneath it because the footer is the
+ * next thing and it is dark: a band butting straight onto that edge reads as
+ * cramped in a way it does not against paper. */
 .activity {
-  padding-block: 76px;
+  padding-block: 80px 72px;
   background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
 
+/* Latest was a four-across horizontal rail that advanced itself every six
+   seconds. Ten items, one of which a reader ever saw without discovering a
+   gesture the page does not advertise, in cards 277px wide holding a 156px
+   image — the smallest picture on a page whose complaint was that its
+   pictures were small.
+
+   It is a grid. Nothing was removed and nothing was resized down: the same
+   ten items, at three across instead of four, are half again as wide, their
+   pictures two-thirds taller, and all ten are on the page at once. That is
+   what "make the latest section bigger" turned out to mean — the section was
+   not small, it was nine-tenths hidden.
+
+   `minmax(min(100%, 300px), 1fr)` rather than a fixed count: three columns at
+   the shell's width, two on a tablet, one on a phone, with no breakpoint to
+   maintain. The `min(100%, …)` guard is what stops a 300px minimum from
+   overflowing a narrower viewport. */
 .activity-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   align-items: stretch;
-  gap: 24px;
+  gap: 44px 28px;
 }
 
 .activity-card {
   display: grid;
-  flex: 0 0 calc((100% - 72px) / 4);
   grid-template-rows: auto 1fr;
   min-width: 0;
   border-bottom: 1px solid var(--line-strong);
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-}
-
-.activity-viewport {
-  overflow-x: auto;
-  overflow-y: hidden;
-  overscroll-behavior-x: contain;
-  overscroll-behavior-inline: contain;
-  overscroll-behavior-y: auto;
-  scroll-behavior: smooth;
-  scroll-padding-inline: 1px;
-  scroll-snap-type: x proximity;
-  scrollbar-color: var(--line-strong) transparent;
-  scrollbar-width: thin;
-  /* The rail advances itself and supports keyboard arrows. Touch gestures
-     remain vertical so the component never traps normal page scrolling. */
-  touch-action: pan-y pinch-zoom;
-  -webkit-overflow-scrolling: touch;
 }
 
 .activity-image {
   display: block;
   /* The feed uses editorial banners, not portrait thumbnails, so the frame is
-     landscape — but 12/5 was the banners' own 2.4:1, which in a card the width
-     of a column is a strip too short to read as a photograph. 16/9 keeps the
-     landscape shape and gives the picture height; cover crops the ends, which
-     an editorial banner survives better than a portrait would. */
-  aspect-ratio: 16 / 9;
+     landscape — but the banners' own 12/5 (2.4:1) in a card the width of a
+     column is a strip too short to read as a photograph, and 16/9 was only
+     half the correction: at four across it still gave 156px of picture.
+     3/2 is the card ratio this site now uses everywhere a photograph leads a
+     card, and at three across it is 377x251 — a picture rather than a band.
+     Cover crops the banners' ends, which an editorial banner survives better
+     than a portrait would. */
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   background: var(--blue-pale);
 }
@@ -627,7 +661,9 @@ h3 {
 }
 
 .directory {
-  padding-block: 76px 92px;
+  padding-block: 80px 88px;
+  background: var(--subtle);
+  border-bottom: 1px solid var(--line);
 }
 
 .directory .section-heading {
@@ -772,11 +808,17 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   /* Once the hero stacks, the visual can no longer take its height from the
      copy beside it and needs a ratio of its own. It must NOT be the source
      image's own 1557/599 — that is 2.6:1, which at this width is a 300px
-     letterbox strip and at phone width a sliver. The frame gets taller as the
-     viewport narrows; object-fit: cover crops the panorama's sides, which
-     costs less than showing the whole sweep at no height at all. */
+     letterbox strip and at phone width a sliver. object-fit: cover crops the
+     panorama's sides, which costs less than showing the whole sweep at no
+     height at all.
+
+     `min-height: 0` is what lets the ratio govern at all. The desktop rule
+     above sets a 500px floor so the picture matches the copy column's height;
+     left in place here it beat the ratio outright and, at 390px, produced a
+     340x473 frame — a campus panorama cropped to PORTRAIT on a phone. */
   .hero-visual {
-    aspect-ratio: 16 / 9;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
     grid-template-rows: 1fr;
   }
 
@@ -830,11 +872,12 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     width: 100%;
   }
 
-  /* Taller again on a phone: 16/9 across 375px is 211px of image under a
-     masthead, which reads as a band rather than a photograph. 3/2 gives it
-     enough height to be a picture of somewhere. */
+  /* Same 4/3 as everywhere else the picture is not sharing a row with copy.
+     On a 390px phone that is 340x255 — a picture of somewhere, rather than
+     the 211px band a 16/9 frame gives at this width. */
   .hero-visual {
-    aspect-ratio: 3 / 2;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
     grid-template-rows: 1fr;
   }
 
@@ -927,10 +970,6 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
       --blue-pale: #1d2d38;
       --accent-line: #6fa6c4;
       --gold: #d8ad3c;
-      /* Dark theme wants the corner darker than the page, not lighter: a pale
-         block behind a photograph glows on a dark background and pulls the eye
-         away from the image it is meant to frame. */
-      --gold-soft: #55451e;
       --line: #2a3b48;
       --line-strong: #3d5262;
       --focus: #9fd5f2;

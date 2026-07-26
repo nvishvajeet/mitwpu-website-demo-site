@@ -112,6 +112,19 @@
   border-bottom-color: transparent;
 }
 
+/* site.css sizes a navigation link to the full height of the bar — `height:
+   112px`, so the top-level entries fill it — and that selector is `.site-nav
+   a`, which every link inside every panel hanging off the bar also matches.
+   A drop-down row, a fly-out row and a mega-panel row were each 112px tall
+   instead of the package's 44px: the academics panel came to 1547px of
+   content in a 785px panel and scrolled, for twenty-seven links that fit.
+   The bar's own links keep the height; the panels' links take theirs back.
+   Deleted with the rest of this block when the legacy class goes. */
+.uwp-nav.site-nav .uwp-nav-menu a,
+.uwp-nav.site-nav .uwp-nav-flyout a {
+  height: auto;
+}
+
 /* site.css reflows the legacy masthead on a narrow screen by wrapping the
    header row and turning the navigation into a full-width scroller on a third
    line. The package masthead has its own answer to the same problem — a
@@ -140,37 +153,6 @@
    above the package's single-class rule whichever sheet loads last. */
 .uwp-footer.institutional-footer {
   border-top: 4px solid #2f6f9f;
-}
-
-/* The package's footer grid names an identity block and exactly three link
-   columns; this site's footer has four, the fourth being the statutory one.
-   A fourth group wrapped under the identity block and left three-quarters of a
-   second row empty. The count is stated rather than counted because
-   `repeat(auto-fit, …)` may not follow a track with a flexible maximum, which
-   the identity column has.
-
-   The two narrower tiers are restated because this sheet loads after
-   patterns.css: at equal specificity the later sheet wins whether or not the
-   rule it overrides sits inside a media query, so overriding only the widest
-   tier would carry that tier down to the phone.
-
-   This belongs in university-web-patterns. footer.html documents an arbitrary
-   number of groups and patterns.css supports three; a client re-declaring a
-   grid is the client doing the package's arithmetic. */
-.uwp-footer__grid {
-  grid-template-columns: minmax(13rem, 1.4fr) repeat(4, minmax(8rem, 1fr));
-}
-
-@media (max-width: 75rem) {
-  .uwp-footer__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 56rem) {
-  .uwp-footer__grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Generated device-theme fallback. */

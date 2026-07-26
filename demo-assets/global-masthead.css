@@ -40,26 +40,53 @@
   --uwp-content-width: var(--mitwpu-masthead-width);
 }
 
+/* `min-height` rather than `height`, on both boxes. The bar is still 115px at
+ * every width it is asked to draw today — nothing below sets a taller row — but
+ * a bar that is exactly 115px cannot report that it has run out of room. It
+ * overflows instead, and overflow in a `justify-content: flex-end` row travels
+ * LEFT, straight across the lockup. A floor grows the band instead, which is
+ * the whole difference between a navigation that outgrows the bar visibly and
+ * one that paints on the university's name. */
 [data-global-masthead] {
   position: sticky !important;
   inset-block-start: 0 !important;
   z-index: 1000 !important;
   width: 100% !important;
-  height: var(--mitwpu-masthead-height) !important;
+  height: auto !important;
   min-height: var(--mitwpu-masthead-height) !important;
   margin: 0 !important;
   padding: 0 !important;
   box-shadow: none !important;
 }
 
+/* `minmax(max-content, 1fr)` on the navigation column, not `minmax(0, 1fr)`,
+ * is the structural half of the fix and the half that does not depend on a
+ * breakpoint being right.
+ *
+ * A `minmax(0, 1fr)` column may be sized below its own contents. The nav is a
+ * nowrap flex row of nowrap links justified to `flex-end`, so when the column
+ * is under-sized the links do not shrink, wrap or scroll — they overflow the
+ * column's LEFT edge and paint over the lockup beside it. That is the whole
+ * mechanism of the collision this fixes: at 1024px the eight entries needed
+ * 755px, the column offered 600px, and `About`/`Academics` landed on top of
+ * `MIT World Peace University`.
+ *
+ * With `max-content` as the floor the column never gives up room it needs, so
+ * the two columns can no longer occupy the same pixels. What yields instead is
+ * the lockup — capped at 300px, floored at 0 — and a lockup that has grown
+ * narrow is a thing a person can see. A ninth entry therefore costs the lockup
+ * width, visibly, rather than costing the university its name, silently.
+ *
+ * `minmax(0, 300px)` rather than a flat `300px` for the same reason: a fixed
+ * track cannot yield, and a track that cannot yield is a track that overflows. */
 [data-global-masthead] > .global-masthead__inner {
   display: grid !important;
-  grid-template-columns: 300px minmax(0, 1fr) !important;
+  grid-template-columns: minmax(0, 300px) minmax(max-content, 1fr) !important;
   align-items: center !important;
   gap: 24px !important;
   width: calc(100% - 100px) !important;
   max-width: var(--mitwpu-masthead-width) !important;
-  height: var(--mitwpu-masthead-content-height) !important;
+  height: auto !important;
   min-height: var(--mitwpu-masthead-content-height) !important;
   margin: 0 auto !important;
   padding: 0 !important;
@@ -72,14 +99,19 @@
   justify-content: flex-end !important;
   gap: 16px !important;
   min-width: 0 !important;
-  height: var(--mitwpu-masthead-content-height) !important;
+  min-height: var(--mitwpu-masthead-content-height) !important;
 }
 
 /* ---- Institutional lockup: emblem beside a two-line wordmark ------------- */
+/* `width: auto`, not `300px`. The 300px is now the grid track's cap rather than
+ * this box's fixed size, so the lockup fills the track it is given and shrinks
+ * with it. A fixed 300px here would overflow the track the moment the track
+ * yielded, which is the failure the track was widened to avoid. */
 [data-global-masthead] .masthead-brands {
   display: flex !important;
   align-items: center !important;
-  width: 300px !important;
+  width: auto !important;
+  min-width: 0 !important;
   height: var(--mitwpu-masthead-content-height) !important;
   margin: 0 !important;
 }
@@ -138,13 +170,21 @@
   text-transform: uppercase !important;
 }
 
+/* `white-space: normal`, not `nowrap`, and it costs nothing at any width the
+ * bar draws today. The brand track is sized `max-content` where it is allowed
+ * to be generous and capped at 300px where it is not, and `max-content` of a
+ * wrappable line is its unwrapped width — so with room the name stays on one
+ * line exactly as before. The difference only shows when the track is squeezed
+ * past the name: `nowrap` clips it mid-word ("MIT World Peace Universi"), and
+ * this wraps it onto a second line instead. Both are visible; only one is
+ * still the university's name. */
 [data-global-masthead] .masthead-wordmark__name {
   color: #ffffff !important;
   font-family: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif !important;
   font-size: 18px !important;
   font-weight: 700 !important;
   letter-spacing: .004em !important;
-  white-space: nowrap !important;
+  white-space: normal !important;
 }
 
 /* ---- Global navigation --------------------------------------------------- *
@@ -315,9 +355,16 @@ body > [data-global-masthead] ~ :is(
 }
 
 /* ---- Narrow viewports ---------------------------------------------------- *
- * One breakpoint, the package's (56rem), rather than the three this file used
- * to carry. Above it the seven links fit; below it the package swaps its own
- * scroller for the hamburger accordion.
+ * The package's own breakpoint (56rem), rather than the three this file used
+ * to carry. Below it the package swaps its own scroller for the hamburger
+ * accordion. It is COUPLED: navigation.js keys its `desktop` matchMedia off
+ * `(min-width: 56.01rem)`, and every rule that turns the drop-down panels into
+ * an accordion sits inside patterns.css's `(max-width: 56rem)`. Move one of
+ * those two and the bar has a script that thinks it is a desktop bar and a
+ * stylesheet that has already collapsed it, or the reverse; the submenus break
+ * either way. So this value is not moved. The band above it is a new tier
+ * between two existing ones — see "Mid widths" below — precisely so that the
+ * collision could be fixed without touching it.
  *
  * The one thing that cannot be left to the package: it collapses the panel
  * in-flow inside the masthead, which grows the header. This band is a fixed
@@ -443,6 +490,180 @@ body > [data-global-masthead] ~ :is(
   [data-global-masthead] .uwp-theme-toggle {
     align-self: flex-start !important;
     margin: 8px 0 0 20px !important;
+  }
+}
+
+/* ---- Mid widths: the lockup and the navigation stop sharing a line -------- *
+ * The band between the two tiers this file already had, and the fix for the
+ * collision that lived in it. From 1280px down to 897px the bar drew a
+ * single row it could not fill: the eight entries need 755px, the switch 44px
+ * and the gaps 40px, and the lockup 291px — 1130px of demand against a content
+ * measure that is `viewport - 100px` here and so is only 924px at a 1024px
+ * laptop. The navigation took the room it needed and painted the difference —
+ * up to 306px of it — across `MIT World Peace University`.
+ *
+ * Three ways out were measured, and only this one survives the arithmetic:
+ *
+ *   Shrink the navigation's type and gap. At 0.84rem/16px it has a little
+ *   room, but the band needs the eight entries to fit 413px at its narrow end.
+ *   That is a 45% cut — roughly 8px type on a navy bar. It does not reach, and
+ *   what it buys is a wall a few dozen pixels further down.
+ *
+ *   Shrink the lockup. Same arithmetic in the other direction: at 1024px the
+ *   navigation alone wants more than the whole measure, so the lockup would
+ *   have to reach zero. `minmax(0, 300px)` above already lets it yield that
+ *   far, and the probe shows why it is not a fix on its own — an 85px lockup.
+ *
+ *   Collapse to the hamburger earlier. It works, but only by moving the 56rem
+ *   value navigation.js keys `desktop` off and patterns.css keys the whole
+ *   accordion off, to about 78rem. That is the coupled edit, and a bar whose
+ *   script and stylesheet disagree about which mode it is in has broken
+ *   submenus, which is worse than the collision.
+ *
+ * So the row splits instead, which is what the legacy bar in demo-assets/
+ * site.css has always done below 58.75rem and what this one never learned:
+ * lockup and switch on the first row, the eight entries across the full
+ * measure on the second. 755px against 797px at the band's narrow end, and
+ * every destination stays visible and clickable on a 1024px laptop, which a
+ * hamburger from 1280px down would have cost.
+ *
+ * The two rows are 66px and 46px — 112px, the content height the bar already
+ * had. So the band is a reflow and not a resize: the masthead is 115px tall at
+ * every width, nothing below it shifts, and `--uwp-header-height` (which bounds
+ * the mega panel) stays true.
+ *
+ * The bounds are the two tiers already in this file, not new numbers. 56.01rem
+ * is where the package takes over with the accordion — restated here as a lower
+ * bound, never moved. 80rem is where the bar stops being over-subscribed and
+ * the one-row layout has 45px of slack; the one-row layout is in fact sound
+ * from 1239px, so the sub-pixel gap between 79.99rem and 80rem falls inside
+ * the range it is proven at.
+ *
+ * `flex-wrap` on the navigation row is what a ninth and tenth entry cost: a
+ * second line of links and a taller bar, which is loud, rather than an
+ * overlap, which is not. */
+@media (min-width: 56.01rem) and (max-width: 79.99rem) {
+  [data-global-masthead] > .global-masthead__inner {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-rows: 66px minmax(46px, auto) !important;
+    align-items: center !important;
+    column-gap: 16px !important;
+    row-gap: 0 !important;
+  }
+
+  /* `order` and `grid-area` only reach real boxes, and the nav and the switch
+   * are grandchildren of the grid, not children of it. Dissolving the actions
+   * wrapper promotes them into the grid so they can be placed on two different
+   * rows at all. The same move, for the same reason, as `.header-actions`
+   * in demo-assets/site.css?v=20260725-global-nav-8-cascade. */
+  [data-global-masthead] .uwp-masthead__actions {
+    display: contents !important;
+  }
+
+  [data-global-masthead] .masthead-brands {
+    grid-area: 1 / 1 / 2 / 2 !important;
+    height: 100% !important;
+  }
+
+  [data-global-masthead] :is(
+    .global-masthead__brand,
+    .institutional-lockup,
+    .institution-home,
+    .wordmark,
+    .brand
+  ) {
+    height: 100% !important;
+  }
+
+  [data-global-masthead] .uwp-theme-toggle {
+    grid-area: 1 / 2 / 2 / 3 !important;
+    justify-self: end !important;
+  }
+
+  /* The hairline between the two rows is an inset shadow rather than a
+   * `border-top`. A border is 1px of layout: the row's 46px links plus a 1px
+   * border is a 47px row and a 116px masthead, so the bar would have grown by
+   * a pixel on every crossing of this tier. A shadow draws the same line and
+   * occupies nothing, which is what keeps 66 + 46 = the 112px content height
+   * the bar already had. */
+  [data-global-masthead] [data-global-nav] {
+    box-sizing: border-box !important;
+    grid-area: 2 / 1 / 3 / -1 !important;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+    align-content: flex-start !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+    min-height: 46px !important;
+    border: 0 !important;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 16%) !important;
+  }
+
+  [data-global-masthead] [data-global-nav] > .uwp-nav-item {
+    height: 46px !important;
+  }
+
+  [data-global-masthead] [data-global-nav] > a,
+  [data-global-masthead] [data-global-nav] > .uwp-nav-item > .uwp-nav-item__link {
+    height: 46px !important;
+    padding: 0 !important;
+  }
+}
+
+/* ---- Lockup at full width ------------------------------------------------ *
+ * The lockup above is sized for the width at which this bar is most cramped,
+ * and it is noticeably small in a 115px band. Where the bar has room it gets
+ * it: a 60px emblem and a 19px name, which is as far as this artwork repays.
+ * Past that the founder line and the ® stop gaining legibility and the lockup
+ * only takes width from the navigation — the dome's ribbing and the ® are the
+ * limit, not the cap height.
+ *
+ * 80rem, not a smaller figure, because that is where the bar stops being
+ * over-subscribed. Its content measure tops out at 1180px, reached at a 1280px
+ * viewport; the eight navigation entries need 755px, the switch 44px and the
+ * gaps 40px, which leaves 45px of slack over the 320px lockup this tier draws.
+ * Below 1280px there is none, which is what the mid-width band above exists to
+ * handle.
+ *
+ * The brand track is `minmax(0, max-content)`: `max-content` so it takes
+ * exactly what the larger lockup needs rather than a stated width somebody has
+ * to keep in step with it by hand, and the `minmax(0, …)` so it can still
+ * yield. 45px of slack is one navigation entry's worth of nothing — a ninth
+ * entry spends it and 50px more — and a track that cannot yield does not
+ * report that; it lets the navigation overflow across the lockup instead. With
+ * the floor at 0 a ninth entry narrows the lockup here, visibly, exactly as it
+ * does in the band below. */
+@media (min-width: 80rem) {
+  [data-global-masthead] > .global-masthead__inner {
+    grid-template-columns: minmax(0, max-content) minmax(max-content, 1fr) !important;
+  }
+
+  [data-global-masthead] .masthead-brands {
+    width: auto !important;
+  }
+
+  [data-global-masthead] .masthead-emblem {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 11px !important;
+  }
+
+  [data-global-masthead] :is(
+    .global-masthead__brand,
+    .institutional-lockup,
+    .institution-home,
+    .wordmark,
+    .brand
+  ) {
+    gap: 15px !important;
+  }
+
+  [data-global-masthead] .masthead-wordmark__name {
+    font-size: 19px !important;
+  }
+
+  [data-global-masthead] .masthead-wordmark__founder {
+    font-size: 11px !important;
   }
 }
 

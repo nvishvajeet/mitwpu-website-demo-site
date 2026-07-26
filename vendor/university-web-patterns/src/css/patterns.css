@@ -386,6 +386,15 @@
   display: flex;
 }
 
+/* Escape (navigation.js) clears `.is-open` and returns focus to the entry's
+   own link — which is inside the entry, so `:focus-within` above went on
+   revealing the panel and Escape looked like it did nothing. This is the
+   dismissal, and it outranks the reveal until the entry is opened again or
+   focus leaves it; navigation.js clears the class on both. */
+.uwp-js .uwp-nav-item.is-dismissed > .uwp-nav-menu {
+  display: none;
+}
+
 .uwp-nav-item:hover .uwp-nav-item__disclosure span,
 .uwp-nav-item:focus-within .uwp-nav-item__disclosure span,
 .uwp-nav-item.is-open .uwp-nav-item__disclosure span {
@@ -515,55 +524,117 @@
 
 /* Mega panel. A `.uwp-nav-item--mega` opens a `.uwp-nav-mega` (also a
    `.uwp-nav-menu`, so every reveal, accordion and no-JS rule above applies
-   unchanged) that spans the masthead and shows all of an entry's destinations
-   at once as a grid of labelled groups. The item goes `position: static` so
-   the panel's containing block becomes the sticky masthead itself — that is
-   what lets `left: 0; right: 0` mean the full masthead width instead of the
-   width of one nav entry, with no measuring script. Requires the panel to sit
-   inside masthead.html; the masthead's `overflow-x: clip` does not clip it
-   because the panel never exceeds the masthead horizontally and `clip` on one
-   axis leaves the other visible. Data-free: the client supplies items per
-   navigation-mega.schema.json. */
+   unchanged) that shows all of an entry's destinations at once as a grid of
+   labelled groups.
+
+   The panel is sized by its content, not by the masthead. It hangs from the
+   left edge of the entry that opened it — hence `position: relative` on the
+   item, where an earlier revision used `static` to make `left: 0; right: 0`
+   mean the whole bar — and grows only as wide as its groups need, up to a
+   cap. An entry with one short group gets a panel the width of that group; a
+   fourteen-school academics entry gets the full three columns and stops. A
+   panel that spans the whole bar to carry four links reads as a curtain
+   dropped over the page rather than as a menu belonging to a word in it, and
+   the university mastheads worth copying all size theirs to their contents.
+
+   Near the right edge navigation.js measures the panel and adds `--left`,
+   exactly as it already does for a cascade fly-out. Without scripting nothing
+   can measure, so the no-JS rule below restores the masthead-wide panel: it
+   is wider than it needs to be, but it cannot run off an edge, which is the
+   property that matters when nothing can correct it. Requires the panel to
+   sit inside masthead.html either way; the masthead's `overflow-x: clip`
+   leaves the vertical axis visible, so the panel still hangs below the bar.
+   Data-free: the client supplies items per navigation-mega.schema.json. */
 .uwp-nav-item--mega {
-  position: static;
+  position: relative;
 }
 
 .uwp-nav-mega {
-  right: 0;
+  right: auto;
   left: 0;
+  /* Content-sized: `max-content` is what makes a two-group panel narrow. The
+     column cap that bounds it lives on the body below, not here — an
+     automatic repetition needs a definite max size on the grid's own box to
+     count against, and the panel's is the content-sized one it is trying to
+     derive. This max-width is only the viewport guard. */
+  width: max-content;
   min-width: 0;
+  max-width: calc(100vw - 2 * var(--uwp-space-2));
   /* Never taller than the viewport below the sticky masthead: a campus-life
      panel of forty destinations scrolls inside itself instead of running off
      screen. */
   max-height: calc(100vh - var(--uwp-header-height));
   max-height: calc(100dvh - var(--uwp-header-height));
-  /* The side padding centres the content on the shell measure while the
-     surface itself runs full-bleed, without an extra wrapper element. */
-  padding: var(--uwp-space-2)
-    max(var(--uwp-space-2), calc((100% - var(--uwp-content-width)) / 2))
-    var(--uwp-space-2);
+  padding: var(--uwp-space-2);
   overflow-y: auto;
   overscroll-behavior-y: contain;
+}
+
+/* Edge variant: near the right viewport edge navigation.js flips the panel to
+   hang from the entry's right edge instead, as for `.uwp-nav-flyout--left`. */
+.uwp-nav-mega--left {
+  right: 0;
+  left: auto;
+}
+
+/* No scripting means no measuring pass, so the panel cannot be flipped at the
+   edge. Fall back to the full-bleed panel, whose containing block is the
+   masthead: too wide for its contents, but incapable of overflowing whichever
+   entry opens it. */
+html:not(.uwp-js) .uwp-nav-item--mega {
+  position: static;
+}
+
+html:not(.uwp-js) .uwp-nav-mega {
+  right: 0;
+  left: 0;
+  width: auto;
+  max-width: none;
+  /* The side padding centres the content on the shell measure while the
+     surface itself runs full-bleed, without an extra wrapper element. */
+  padding-inline: max(var(--uwp-space-2),
+    calc((100% - var(--uwp-content-width)) / 2));
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
 
-/* Groups flow into 1–4 columns by viewport: grid, because a heading must stay
+/* Groups flow into 1–3 columns by content: grid, because a heading must stay
    atop its own links — CSS columns alone would let a group break across
-   columns mid-list. */
+   columns mid-list.
+
+   The max-width is the whole size story and does two jobs at once. It is the
+   definite max size `auto-fit` counts its repetitions against, which fixes the
+   ceiling at three 13rem tracks and their two 1.5rem gaps; and because
+   `auto-fit` collapses the tracks no group landed in, along with their gaps,
+   a panel with one group still measures one group wide. Three because past
+   three columns a panel stops being one glance, and an entry that needs a
+   fourth wants splitting rather than widening. */
 .uwp-nav-mega__body {
   display: grid;
   align-items: start;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  max-width: 42rem;
   gap: var(--uwp-space-2) var(--uwp-space-3);
+}
+
+/* A group long enough to set the panel's height on its own — every school in
+   a university, every centre under research — takes two of the panel's
+   columns and balances its links across them, so the panel grows sideways
+   into space it already has rather than downward past the fold. Nine is the
+   threshold because eight is the count at which nav-mega.html says a single
+   column stops being scannable. Progressive: where :has() is unsupported the
+   group stays one column, which is the layout without this rule. */
+.uwp-nav-mega__group:has(.uwp-nav-mega__links a:nth-child(9)) {
+  grid-column: span 2;
 }
 
 /* Within one group, CSS columns balance a long flat list (a single unheaded
    group of a dozen centres) into side-by-side columns — the one job grid
-   cannot do, just as columns cannot do the grid's. */
+   cannot do, just as columns cannot do the grid's. The measure matches the
+   grid's own track floor, so a group given two tracks above fills both. */
 .uwp-nav-mega__links {
-  columns: 14rem;
+  columns: 13rem;
   column-gap: var(--uwp-space-3);
 }
 
@@ -2228,11 +2299,46 @@
   color: var(--uwp-brand-contrast);
 }
 
+/* The identity block, then a track per group. footer.html documents any number
+   of groups, so the count is not written here: `auto-fit` takes it from the
+   markup and collapses the tracks nobody filled. That is why the identity
+   column is `minmax(15rem, 22rem)` and not the `1.4fr` it once was — an
+   automatic repetition may not sit beside a flexible track, and every client
+   that has since grown a fourth or fifth group has had to re-declare this
+   whole grid in its own sheet to get one. */
 .uwp-footer__grid {
   display: grid;
-  grid-template-columns: minmax(15rem, 1.4fr) repeat(3, minmax(9rem, 1fr));
+  grid-template-columns: minmax(15rem, 22rem) repeat(auto-fit, minmax(9rem, 1fr));
   gap: var(--uwp-space-4) var(--uwp-space-6);
   padding-block: clamp(2.5rem, 7vw, 4.5rem);
+}
+
+/* A group whose list is long enough to set the whole footer's height takes two
+   tracks and balances its links across them. The case this exists for is the
+   statutory column — grievance redressal, the ombudsman, the anti-ragging
+   committee, mandatory disclosure — which a university may not shorten by
+   dropping links, so the only place to give is the layout. Seven is the
+   threshold: six links beside three-link neighbours is a footer, ten is a
+   column with an empty footer beside it.
+
+   CSS columns rather than a nested grid, because only they balance a flat
+   list top-to-bottom-then-across without being told the row count; the links
+   keep their own rhythm through the margin below. Progressive: where :has()
+   is unsupported the group stays one track, which is the layout without this
+   rule. */
+.uwp-footer__group:has(li:nth-child(7)) {
+  grid-column: span 2;
+}
+
+.uwp-footer__group:has(li:nth-child(7)) ul {
+  display: block;
+  columns: 2;
+  column-gap: var(--uwp-space-6);
+}
+
+.uwp-footer__group:has(li:nth-child(7)) li {
+  margin-bottom: .48rem;
+  break-inside: avoid;
 }
 
 .uwp-footer__identity strong {
@@ -2288,6 +2394,83 @@
 
 .uwp-footer__note p {
   margin: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Social links — an institution's accounts on external services, as a row of
+   marks. Written here rather than beside profile-link-icons because its one
+   home is the footer's identity block, and it inherits that block's ink.
+
+   The marks are not dimmed at rest. profile-link-icons sits at 78% opacity
+   because it sits on the page's paper beside a person's name and should not
+   compete with it; this row sits on the footer's dark ground, where the same
+   treatment reads as five faint shapes rather than as restraint. They take
+   the footer's own ink at full strength and go to the brand contrast on
+   hover, which is the move every other footer link already makes.
+
+   `currentColor` on the glyph is the reason this component wants inline SVG
+   and not an <img>: the footer's ink is one colour in the light theme and
+   another in the dark one, and a mark that arrived as a file would need two
+   of itself, or would go invisible in one of them.
+   --------------------------------------------------------------------------- */
+.uwp-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .1rem;
+  align-items: center;
+  margin: var(--uwp-space-2) 0 0;
+  margin-inline-start: -.55rem;   /* the pad below, pulled off the left edge
+                                     so the first mark lines up with the name
+                                     above it rather than with its own box */
+  padding: 0;
+  list-style: none;
+}
+
+.uwp-social-links__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding-inline: .55rem;
+  border-radius: 4px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+
+.uwp-social-links__link:hover,
+.uwp-social-links__link:focus-visible {
+  color: var(--uwp-brand-contrast);
+  background: color-mix(in srgb, var(--uwp-brand-contrast) 12%, transparent);
+}
+
+.uwp-social-links__link:focus-visible {
+  outline: 2px solid var(--uwp-focus);
+  outline-offset: 2px;
+}
+
+.uwp-social-links__mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* A service whose mark the client could not obtain. It reads as the word it
+   is, at the size of the footer's other links, and keeps the same target. */
+.uwp-social-links__link--named {
+  font-family: var(--uwp-sans);
+  font-size: .95rem;
+}
+
+.uwp-social-links__link--named:hover,
+.uwp-social-links__link--named:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: .24em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uwp-social-links__link { transition: none; }
 }
 
 /* ---------------------------------------------------------------------------
@@ -2923,6 +3106,8 @@
      column; group links sit a step deeper than their heading, matching the
      cascade's indent scale. */
   .uwp-js .uwp-masthead .uwp-nav-mega {
+    width: auto;
+    max-width: none;
     max-height: none;
     padding: 0;
     overflow: visible;
@@ -3048,6 +3233,15 @@
   }
 
   .uwp-footer__identity {
+    grid-column: auto;
+  }
+
+  /* One track, so the long group's two-track span would open an implicit
+     second one beside it and hand it half the band — the group would come
+     out narrower here than the three-link groups above it. Its list keeps the
+     two columns: on a phone that is a statutory column five rows deep instead
+     of ten, and these are short labels that take the narrower measure. */
+  .uwp-footer__group:has(li:nth-child(7)) {
     grid-column: auto;
   }
 

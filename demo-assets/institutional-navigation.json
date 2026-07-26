@@ -1,0 +1,209 @@
+{
+  "note": "The site's top-level navigation, declared once. This is demo-assets/institutional-footer.json's sibling and keeps its conventions, for the same reason: the footer used to be written out by hand in each emitter, the data moved, and the hand-written copies did not. The masthead had the same fault one level up. These eight entries were declared independently in the two build shells, the release builder, the university-layer builder, three browser scripts, six hand-authored pages and three test files; adding `Students` on 2026-07-26 meant editing all of them, and four were caught only because a test failed. Fields, per entry. `page` is the id an emitter passes as `current` to mark the entry a page belongs under — stable, and not derived from the label, because a label can be renamed without any page moving. `label` is what a reader sees, and the ORDER of this array is the order in the masthead; it is deliberate, and the tests assert order rather than membership. `local` is the route, root-relative and without its leading slash, from which both forms an emitter needs derive: `/about/` for a page whose published depth is not its source depth, and `${prefix}about/` for a family that renders relative hrefs — see the long note on `local` in tools/uwp_shell.mjs for what a stored prefix costs. `current` names route prefixes that make this the current entry beyond its own route: `/programme` belongs to Admissions and `/faculty` to People, and a reader on either should be told where they are. `menu` is optional — `kind: mega` is the masthead-wide grid of labelled groups, `kind: cascade` is a column with fly-out branches, and an entry with neither is a plain link. A cascade item is a leaf when it carries no `links` and a branch when it does; the package's component decides from the data, so both forms live in one list. Everything that renders this list is named in tools/apply_institutional_navigation.mjs, and `./check` runs that tool's --check mode, which fails when any copy disagrees with this file.",
+
+  "entries": [
+    {
+      "page": "about",
+      "label": "About",
+      "local": "about/",
+      "current": ["/about"],
+      "menu": {
+        "kind": "cascade",
+        "items": [
+          { "label": "Founder President", "local": "about-us/founder/" },
+          { "label": "Executive President", "local": "about-us/executive-president/" },
+          { "label": "Executive Director", "local": "about-us/executive-director/" },
+          { "label": "Leadership and governance", "local": "about-us/leadership-and-governance/" },
+          { "label": "History and legacy", "local": "about-us/history-legacy/" },
+          { "label": "World Peace Dome", "local": "about-us/world-peace-dome/" },
+          { "label": "Rankings and accreditation", "local": "about-us/ranking-accreditation/" },
+          { "label": "Social initiatives", "local": "about-us/social-initiatives/" }
+        ]
+      }
+    },
+    {
+      "page": "academics",
+      "label": "Academics",
+      "local": "academics/",
+      "current": ["/academics"],
+      "note": "The one `mega`. Fourteen schools plus study, services and student routes are many and parallel, which is the shape that component exists for: a masthead-wide grid of labelled groups shown at once, rather than fourteen rows a visitor has to scroll or a second hover to reach.",
+      "menu": {
+        "kind": "mega",
+        "overview": { "label": "Academics home", "local": "academics/" },
+        "groups": [
+          {
+            "heading": "Schools",
+            "local": "academics/",
+            "links": [
+              { "label": "Engineering & Technology", "local": "academics/engineering-and-technology/" },
+              { "label": "Computer Science & Engineering", "local": "academics/computer-engineering-and-technology/" },
+              { "label": "Science & Environmental Studies", "local": "academics/science/" },
+              { "label": "Health Sciences & Technology", "local": "academics/health-science-technologies/" },
+              { "label": "Design", "local": "academics/design/" },
+              { "label": "Architecture", "local": "academics/architecture/" },
+              { "label": "Construction Engineering & Management", "local": "academics/construction-engineering-management/" },
+              { "label": "Business", "local": "academics/business/" },
+              { "label": "Economics & Commerce", "local": "academics/economics-and-commerce/" },
+              { "label": "Leadership", "local": "academics/leadership/" },
+              { "label": "Government", "local": "academics/government/" },
+              { "label": "Law", "local": "academics/law/" },
+              { "label": "Liberal Arts & Consciousness", "local": "academics/liberal-arts-humanities/" },
+              { "label": "All schools and departments", "local": "academics/" }
+            ]
+          },
+          {
+            "heading": "Study",
+            "local": "programmes/",
+            "links": [
+              { "label": "Undergraduate", "local": "programmes/undergraduate/" },
+              { "label": "Postgraduate", "local": "programmes/postgraduate/" },
+              { "label": "PhD and doctoral", "local": "programmes/phd/" },
+              { "label": "Certificates and diplomas", "local": "programmes/diploma/" },
+              { "label": "Programme finder", "local": "programmes/" }
+            ]
+          },
+          {
+            "heading": "Academic services",
+            "local": "academics/",
+            "links": [
+              { "label": "Academic calendar", "local": "academics/academic-calender/" },
+              { "label": "Exam timetable", "local": "academics/exam-timetable/" },
+              { "label": "Ordinances and regulations", "local": "academics/ordinances/" },
+              { "label": "Academic notices", "local": "academic-notices/" }
+            ]
+          },
+          {
+            "heading": "For students",
+            "local": "students/",
+            "links": [
+              { "label": "Student resources", "local": "students/" },
+              { "label": "Scholarships", "local": "scholarships/" },
+              { "label": "Knowledge Resource Centre", "local": "life-wpu/library/" },
+              { "label": "Results", "local": "academics/results/" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": "admissions",
+      "label": "Admissions",
+      "local": "admissions/",
+      "current": ["/admissions", "/programme"],
+      "menu": {
+        "kind": "cascade",
+        "items": [
+          { "label": "Admissions overview", "local": "admissions/" },
+          { "label": "Programmes", "local": "programmes/" },
+          { "label": "Application process", "local": "application-process/" },
+          { "label": "MIT-WPU CET 2026", "local": "mit-wpu-cet-2026/" },
+          { "label": "Scholarships", "local": "scholarships/" },
+          { "label": "Placements", "local": "placements/" }
+        ]
+      }
+    },
+    {
+      "page": "research",
+      "label": "Research",
+      "local": "research/",
+      "current": ["/research"],
+      "menu": {
+        "kind": "cascade",
+        "items": [
+          { "label": "Research overview", "local": "research/" },
+          {
+            "label": "Research areas",
+            "local": "research/research-areas/",
+            "links": [
+              { "label": "Academic research", "local": "research/academic-research/" },
+              { "label": "Sponsored research", "local": "research/sponsored-research/" },
+              { "label": "Centres of excellence", "local": "research/centres-of-excellence/" },
+              { "label": "Research papers", "local": "research/research-papers/" },
+              { "label": "IPR and patents", "local": "research/ipr/" },
+              { "label": "All research areas", "local": "research/research-areas/" }
+            ]
+          },
+          {
+            "label": "Research groups",
+            "local": "groups/",
+            "links": [
+              { "label": "Quantum Science & Technology", "local": "quantum/" },
+              { "label": "Photonics Research Group", "local": "photonics/" },
+              { "label": "Bioinformatics Group", "local": "bioinformatics/" },
+              { "label": "Astrophysics Research Group", "local": "astrophysics/" },
+              { "label": "All research groups", "local": "groups/" }
+            ]
+          },
+          { "label": "Central Research Facility", "local": "facilities/" },
+          { "label": "Research news", "local": "research/research-news/" }
+        ]
+      }
+    },
+    {
+      "page": "people",
+      "label": "People",
+      "local": "people/",
+      "current": ["/people", "/faculty", "/leadership"],
+      "menu": {
+        "kind": "cascade",
+        "items": [
+          { "label": "People directory", "local": "people/" },
+          {
+            "label": "Faculty",
+            "local": "faculty/",
+            "links": [
+              { "label": "Faculty and staff", "local": "faculty-staff/" },
+              { "label": "Faculty articles", "local": "faculty-articles/" },
+              { "label": "Awardee profiles", "local": "awardee-profiles/" }
+            ]
+          },
+          { "label": "Leadership", "local": "leadership/" },
+          { "label": "Alumni", "local": "alumni/" }
+        ]
+      }
+    },
+    {
+      "page": "campus",
+      "label": "Campus",
+      "local": "life-at-mit-wpu/",
+      "current": ["/life-at-mit-wpu"],
+      "note": "The route says `life-at-mit-wpu` and the label says Campus. Both are right and they are not the same decision: the route is the one the capture publishes and is not this repository's to rename, and the label is what fits a masthead beside seven one-word siblings.",
+      "menu": {
+        "kind": "cascade",
+        "items": [
+          {
+            "label": "Campus life",
+            "local": "life-at-mit-wpu/",
+            "links": [
+              { "label": "Knowledge Resource Centre", "local": "life-wpu/library/" },
+              { "label": "Hostel facilities", "local": "life-wpu/hostel-facilities/" },
+              { "label": "Sports", "local": "life-wpu/sports/" },
+              { "label": "Medical facilities", "local": "life-wpu/medical-facilities/" }
+            ]
+          },
+          { "label": "Student welfare", "local": "life-wpu/student-affairs/" },
+          { "label": "Student council", "local": "life-wpu/student-council/" }
+        ]
+      }
+    },
+    {
+      "page": "students",
+      "label": "Students",
+      "local": "students/",
+      "current": ["/students"],
+      "note": "The one by-need entry among seven by-structure ones. The other seven answer \"what is this university\"; a student arrives knowing that and needing to do something — find a course structure, an ordinance, an exam date — and until this entry existed had no global route to any of it. It carries no menu on purpose: `/students/` is already an index of 166 links, and a masthead menu over the same set would be a second index of it, which is the duplication docs/PROGRAMME_AND_STUDENT_ROUTE_OWNERSHIP.md §1 exists to refuse."
+    },
+    {
+      "page": "search",
+      "label": "Search",
+      "local": "search/",
+      "current": ["/search"],
+      "note": "A destination with nothing under it, so it opens nothing."
+    }
+  ],
+
+  "masthead_discriminator": {
+    "note": "The labels tools/build_public_demo.py:install_global_masthead matches on to tell an institutional navigation apart from a page family's own one. It is a hand-picked SUBSET of the entries above rather than all of them, and deliberately so: some template families (the intranet and events landings) carry the full institutional nav but let the logo stand in for About, and requiring every label would skip exactly the pages that most need the canonical masthead. These four are the interior labels no research-group or portal nav carries. It is data here rather than a literal there so renaming an entry cannot leave the discriminator naming a label that no longer exists; both shells assert on load that it is a subset of the declared labels.",
+    "labels": ["Research", "Academics", "People", "Search"]
+  }
+}

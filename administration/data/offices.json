@@ -1,0 +1,728 @@
+{
+  "schema": "mitwpu.administration-directory.v1",
+  "page": {
+    "title": "University offices and how to reach them",
+    "eyebrow": "Administration",
+    "lede": "The offices of MIT-WPU, what each one is for, and the published route to it — with the offices the university has published no route to named rather than left out.",
+    "description": "A directory of MIT-WPU's administrative offices keyed by office rather than by person: what each office does, how to reach it, who currently holds the post, and every contact the university has not published.",
+    "introduction": [
+      "This directory is keyed by office, not by person. \"Director of Admissions\" is a post that has existed for decades; whoever holds it today will not hold it forever. A list of names has to be edited every time somebody moves and is wrong from the moment they do, which is how contact information rots. Here the office is the record and the post-holder is one of its attributes, so a person leaving costs this page a name and not a route.",
+      "It lists an office when a student, a parent, an applicant, a journalist or a supplier could need to reach it, and it lists the university's named senior posts. It does not list the several hundred people who work inside those offices: an individual appears only where the university publishes no shared route to their office and that person is therefore the only way in. A directory nobody can read down is a directory nobody uses.",
+      "Academic staff are not here. Six hundred and eight of them have profiles in the people directory, and a Dean who also holds an office appears in both places once each — the office record says how to reach the office, the profile says who the person is. Neither repeats the other."
+    ],
+    "urgentIntroduction": [
+      "The university's public website publishes no route to campus security and no route to the campus medical service. Both numbers below were found in the source of its contact page, where they had been commented out and were never shown to a reader.",
+      "They are the two most important rows on this page and they are the two least certain. Read the note beneath them before relying on either."
+    ],
+    "provenanceIntroduction": [
+      "Every value on this page came from a page MIT-WPU published or from the source of one, on the day this site was captured. Nothing has been filled in from memory, from another university, or from what seemed likely. The build refuses to finish if a value on this page is not present, character for character, in the source it cites.",
+      "Values are shown exactly as their source writes them. Two telephone numbers for the hostel office appear on one published page in two different formats; both are here, unreconciled. Choosing between them would be guessing which one somebody answers."
+    ],
+    "gapsIntroduction": [
+      "These are the facts a person has to supply before this directory is worth publishing. The list is computed on every build from the office records behind the page, so filling a value in removes it from the list with nothing else to remember.",
+      "Anyone doing that work can print the same list without reading the page, by running the page's builder with --gaps.",
+      "Until then a missing value is shown as missing wherever it appears. An office with no published telephone number says it has none; it does not quietly show one fewer line than its neighbour. An emergency contact that is absent is invisible, and an emergency contact that is stated to be missing is a demand."
+    ],
+    "statusNote": {
+      "eyebrow": "Read this before using the numbers",
+      "title": "Some of these numbers were never published by the university",
+      "paragraphs": [
+        "MIT-WPU's contact page carries a table of eleven departmental telephone numbers inside an HTML comment. The table does not render and no visitor to the live site has ever seen it. Whether it was withdrawn deliberately or commented out by accident is not known.",
+        "Those numbers are published here on the university operator's instruction, because the alternative — a university website with no route to campus security and none to its medical service — is worse. They are marked throughout as present in the captured source but not published, which is a different claim from \"the university publishes this\". If one of them turns out to be stale, that marking is what lets somebody work out why.",
+        "This is a demonstration site. Every page carries a banner saying so and asks search engines not to index it, and that is what makes publishing an unpublished internal number acceptable here. If this site's status ever changes, these rows are the first thing to re-check — before anything else on the page."
+      ]
+    },
+    "relatedIntroduction": [
+      "Two other places on this site cover overlapping ground and are not repeated here."
+    ],
+    "related": [
+      {
+        "label": "Report a problem, request a service",
+        "href": "/intranet/help/",
+        "note": "The same material arranged by what has gone wrong rather than by which office owns it. Read that page when you have a symptom and this one when you know the office."
+      },
+      {
+        "label": "People directory",
+        "href": "/people/",
+        "note": "Six hundred and eight academic and research staff profiles. Post-holders below link into it where a profile exists."
+      },
+      {
+        "label": "Administrative Offices (as the university publishes it)",
+        "href": "/about-us/administrative-offices/",
+        "note": "The captured page this directory is built from: twelve offices, one email address each, no telephone numbers."
+      },
+      {
+        "label": "Contact (as the university publishes it)",
+        "href": "/contact-us/",
+        "note": "The captured contact page: a campus address, two admissions numbers and a WhatsApp line."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "urgent",
+      "title": "If it is urgent",
+      "eyebrow": "Emergency",
+      "summary": "Campus security and the campus medical service. Neither has a published contact anywhere else on this site."
+    },
+    {
+      "id": "complaints",
+      "title": "Complaints, welfare and statutory committees",
+      "summary": "The committees a student or member of staff can write to directly. Each publishes a committee mailbox rather than a person, which is the shape the rest of this directory is working towards."
+    },
+    {
+      "id": "services",
+      "title": "Offices students, applicants and families reach directly",
+      "summary": "Admissions, examinations, fees, hostel and the day-to-day services of the university."
+    },
+    {
+      "id": "university",
+      "title": "University offices",
+      "summary": "The senior posts and the university-wide offices. Reach these when no office above owns the question."
+    }
+  ],
+  "offices": [
+    {
+      "id": "campus-security",
+      "section": "urgent",
+      "office": "Campus Security",
+      "purpose": "The university's security supervisor, for anything happening on campus now.",
+      "href": "/contact-us/",
+      "contact": {
+        "telephone": {
+          "value": "9322615464",
+          "label": "MIT-WPU Security Supervisor",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      },
+      "post": "MIT-WPU Security Supervisor",
+      "incumbent": null,
+      "incumbentNote": "The source names the post and not the person, which for this office is the right way round.",
+      "sources": ["/contact-us"],
+      "notes": [
+        "No security office appears in the university's own directory of administrative offices, and no security contact appears on any of the roughly 1,200 routes captured from the public site."
+      ]
+    },
+    {
+      "id": "campus-medical",
+      "section": "urgent",
+      "office": "Campus Medical Service",
+      "purpose": "Vishwaraj Clinic on the MIT-WPU campus: a full-time doctor, a three-bed facility, a 24-hour pharmacy and ambulances.",
+      "href": "/life-wpu/medical-facilities/",
+      "contact": {
+        "telephone": {
+          "value": "7276056060",
+          "label": "Vishwaraj Clinic, MIT-WPU Campus",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      },
+      "post": null,
+      "incumbent": null,
+      "sources": ["/life-wpu/medical-facilities", "/contact-us"],
+      "facts": [
+        {
+          "text": "MIT-WPU has a full-time doctor, 24/7 pharmacy, a facility with three beds, ambulances, and a group affiliated world-class hospital.",
+          "source": "/life-wpu/medical-facilities"
+        }
+      ],
+      "notes": [
+        "The published medical facilities page describes a 24-hour ambulance service and gives no number to call for it."
+      ]
+    },
+    {
+      "id": "anti-ragging",
+      "section": "complaints",
+      "office": "Anti-Ragging Committee and Squad",
+      "purpose": "Ragging complaints from students and staff. Ragging is a criminal offence under the UGC regulations.",
+      "href": "/student-affairs/anti-ragging-committee/",
+      "contact": {
+        "email": {
+          "value": "argc@mitwpu.edu.in",
+          "source": "/student-affairs/anti-ragging-committee",
+          "status": "published"
+        }
+      },
+      "post": null,
+      "incumbent": null,
+      "sources": [
+        "/student-affairs/anti-ragging-committee",
+        "/about-us/national-ragging-prevention-programme"
+      ],
+      "notes": [
+        "The national ragging prevention page carries the heading \"Contact Details of the Nodal Officers of Anti-Ragging Committee and Squad\" and then gives no contact details for any nodal officer."
+      ]
+    },
+    {
+      "id": "internal-complaints",
+      "section": "complaints",
+      "office": "Internal Complaints Committee",
+      "purpose": "Complaints of sexual harassment from students and employees.",
+      "href": "/student-affairs/internal-complaints-committee/",
+      "contact": {
+        "email": {
+          "value": "icc@mitwpu.edu.in",
+          "source": "/student-affairs/internal-complaints-committee",
+          "status": "published"
+        }
+      },
+      "post": "Chairperson",
+      "incumbent": null,
+      "incumbentNote": "The captured page names a Chairperson without naming who holds the post.",
+      "sources": ["/student-affairs/internal-complaints-committee"]
+    },
+    {
+      "id": "student-grievance",
+      "section": "complaints",
+      "office": "Students' Grievance Redressal Committee",
+      "purpose": "Student grievances under the UGC (Redressal of Grievances of Students) Regulations, 2023, and the route on to the Ombudsperson.",
+      "href": "/academics/student-grievance/",
+      "contact": {
+        "email": {
+          "value": "grc@mitwpu.edu.in",
+          "source": "/academics/student-grievance",
+          "status": "published"
+        }
+      },
+      "post": "Chairperson",
+      "incumbent": null,
+      "sources": ["/academics/student-grievance"],
+      "notes": [
+        "A grievance unresolved by the committee is referred to the Ombudsperson. The university publishes no contact for the Ombudsperson."
+      ]
+    },
+    {
+      "id": "sc-st-cell",
+      "section": "complaints",
+      "office": "SC/ST and Equal Opportunity Cell",
+      "purpose": "Complaints and suggestions from students under the Scheduled Caste and Scheduled Tribe provisions.",
+      "href": "/sc-st-committee/",
+      "contact": {
+        "email": {
+          "value": "scstc@mitwpu.edu.in",
+          "source": "/sc-st-committee",
+          "status": "published"
+        }
+      },
+      "post": "Member Secretary",
+      "incumbent": null,
+      "sources": ["/sc-st-committee"]
+    },
+    {
+      "id": "admissions",
+      "section": "services",
+      "office": "Admissions Office",
+      "purpose": "Applications, entrance examinations, admission counselling and document verification for every programme.",
+      "href": "/admissions-contact-us/",
+      "contact": {
+        "email": {
+          "value": "admissions@mitwpu.edu.in",
+          "source": "/admissions-contact-us",
+          "status": "published"
+        },
+        "telephone": {
+          "value": "+91 20 –7117 7104",
+          "label": "Programme enquiries",
+          "source": "/contact-us",
+          "status": "published"
+        },
+        "location": {
+          "value": "MIT-WPU, Kothrud Campus",
+          "source": "/admissions-contact-us",
+          "status": "published"
+        },
+        "hours": {
+          "value": "Monday - Saturday : 10:00 AM – 6:00 PM",
+          "source": "/admissions-contact-us",
+          "status": "published"
+        }
+      },
+      "extra": [
+        {
+          "label": "Programme enquiries (second line)",
+          "value": "+91 20–7117 7105",
+          "kind": "tel",
+          "source": "/contact-us",
+          "status": "published"
+        },
+        {
+          "label": "WhatsApp, messages only",
+          "value": "+91 9112228860",
+          "kind": "tel",
+          "source": "/contact-us",
+          "status": "published"
+        },
+        {
+          "label": "Director of Admissions",
+          "value": "director.admissions@mitwpu.edu.in",
+          "kind": "email",
+          "source": "/about-us/administrative-offices",
+          "status": "published"
+        }
+      ],
+      "post": "Director - Admissions",
+      "incumbent": "Dr. Prakash Mainkar",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/prakash-mohan-mainkar/",
+      "sources": ["/admissions-contact-us", "/contact-us", "/about-us/administrative-offices"],
+      "notes": [
+        "The unpublished table names an \"Admission Help Desk\" against the same two numbers the university publishes here, so nothing is added by repeating it.",
+        "The contact page also lists four named counsellors for international-category admissions with their mobile numbers. They are not listed here: the office publishes a shared address, and a directory of individual desks inside an office that has one is a directory that goes stale."
+      ]
+    },
+    {
+      "id": "international-admissions",
+      "section": "services",
+      "office": "International Admissions",
+      "purpose": "Applications in the international category.",
+      "href": "/contact-us/",
+      "contact": {
+        "email": {
+          "value": "international.admissions@mitwpu.edu.in",
+          "source": "snapshot:original/contact.html",
+          "status": "published"
+        }
+      },
+      "post": null,
+      "incumbent": null,
+      "sources": ["/contact-us"],
+      "notes": [
+        "Four counsellors and their mobile numbers are published beside this address on the university's contact page."
+      ]
+    },
+    {
+      "id": "examination",
+      "section": "services",
+      "office": "Examination Department",
+      "purpose": "Conduct of examinations, results, transcripts and document verification.",
+      "href": "/academics/examination-contact-us/",
+      "contact": {
+        "email": {
+          "value": "exam.helpdesk@mitwpu.edu.in",
+          "source": "/academics/examination-contact-us",
+          "status": "published"
+        },
+        "telephone": {
+          "value": "8669990193",
+          "label": "Examination helpdesk",
+          "source": "/academics/examination-contact-us",
+          "status": "published"
+        }
+      },
+      "extra": [
+        {
+          "label": "Document verification",
+          "value": "verification.exam@mitwpu.edu.in",
+          "kind": "email",
+          "source": "/academics/examination-contact-us",
+          "status": "published"
+        },
+        {
+          "label": "Document verification",
+          "value": "7720061618",
+          "kind": "tel",
+          "source": "/academics/examination-contact-us",
+          "status": "published"
+        },
+        {
+          "label": "Controller of Examinations",
+          "value": "coe@mitwpu.edu.in",
+          "kind": "email",
+          "source": "snapshot:original/contact.html",
+          "status": "published"
+        }
+      ],
+      "post": "Controller of Examinations",
+      "incumbent": "Dr. Veera Talukdar",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": null,
+      "sources": ["/academics/examination-contact-us", "/about-us/administrative-offices"],
+      "notes": [
+        "The unpublished table names an individual against the examination helpdesk number the university already publishes, so this office needs nobody named."
+      ]
+    },
+    {
+      "id": "fee-enquiry",
+      "section": "services",
+      "office": "Fee Enquiry",
+      "purpose": "Questions about programme fees, one desk per faculty.",
+      "href": "/contact-us/",
+      "contact": {},
+      "extra": [
+        {
+          "label": "Faculty of Engineering and Technology — Ms. Manisha Phale",
+          "value": "9145002074",
+          "kind": "tel",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        },
+        {
+          "label": "Faculty of Business and Leadership — Ms. Pooja Pharande",
+          "value": "9130001177",
+          "kind": "tel",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        },
+        {
+          "label": "Faculty of Science & Health Science — Mr. Rajendra Mane",
+          "value": "9145001196",
+          "kind": "tel",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        },
+        {
+          "label": "Faculty of Arts, Design and Humanities — Mr. Santosh Parkhi",
+          "value": "9145002077",
+          "kind": "tel",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      ],
+      "post": null,
+      "incumbent": null,
+      "sources": ["/contact-us"],
+      "notes": [
+        "Four people are named here and nowhere else in this directory, because the university publishes no shared fee-enquiry address or number and these desks are the only route to it. An office mailbox would replace all four rows and would not need editing when somebody moves."
+      ]
+    },
+    {
+      "id": "hostel",
+      "section": "services",
+      "office": "Hostel Office",
+      "purpose": "Hostel applications, allocation, cancellations and refunds.",
+      "href": "/life-wpu/hostel-facilities/",
+      "contact": {
+        "email": {
+          "value": "hostel.admin@mitwpu.edu.in",
+          "source": "/life-wpu/hostel-facilities",
+          "status": "published"
+        },
+        "telephone": {
+          "value": "+91-8605003970",
+          "source": "/life-wpu/hostel-facilities",
+          "status": "published"
+        }
+      },
+      "extra": [
+        {
+          "label": "Second published number, on the same page",
+          "value": "020-48552855",
+          "kind": "tel",
+          "source": "/life-wpu/hostel-facilities",
+          "status": "published"
+        },
+        {
+          "label": "Chief Warden — Lieutenant Prabhakaran KK",
+          "value": "7200449715",
+          "kind": "tel",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      ],
+      "post": "Chief Warden",
+      "incumbent": "Lieutenant Prabhakaran KK",
+      "incumbentSource": "snapshot:original/contact.html",
+      "profile": null,
+      "sources": ["/life-wpu/hostel-facilities", "/contact-us"],
+      "notes": [
+        "The hostel page gives two different telephone numbers in answer to two questions about contacting the same office. Both are shown; neither has been chosen over the other."
+      ]
+    },
+    {
+      "id": "student-services-wing",
+      "section": "services",
+      "office": "Student Services Wing",
+      "purpose": "Day-to-day student services.",
+      "href": "/contact-us/",
+      "contact": {
+        "telephone": {
+          "value": "7888080132",
+          "label": "Mr. Dnyaneshwar Nagargoje",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      },
+      "post": null,
+      "incumbent": null,
+      "sources": ["/contact-us"],
+      "notes": [
+        "Whether this is the same office as the Office of Student Affairs, part of it, or something separate is not established by anything the university publishes. The two are kept apart here rather than merged on a guess."
+      ]
+    },
+    {
+      "id": "information-technology",
+      "section": "services",
+      "office": "Information Technology",
+      "purpose": "University computing and network support.",
+      "href": "/intranet/help/",
+      "contact": {
+        "telephone": {
+          "value": "7447454568",
+          "label": "Ms. Dhanashree Kature",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      },
+      "post": null,
+      "incumbent": null,
+      "sources": ["/contact-us"],
+      "notes": [
+        "No IT office appears in the university's own directory of administrative offices, and no unit of this kind is named anywhere on its public site. This number is the only evidence that one exists.",
+        "The intranet help page proposes a named Computing Resources Centre for exactly this reason and enumerates what such a unit would have to publish."
+      ]
+    },
+    {
+      "id": "student-affairs",
+      "section": "services",
+      "office": "Office of Student Affairs",
+      "purpose": "The student council and its elections, and every academic, cultural and professional student club.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "hitesh.joshi@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "post": "Dean - Student Affairs",
+      "incumbent": "Dr. Hitesh Joshi",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/dr-hitesh-joshi-165/",
+      "sources": ["/about-us/administrative-offices"]
+    },
+    {
+      "id": "infra-facilities",
+      "section": "services",
+      "office": "Office of Infra & Facilities",
+      "purpose": "Buildings, grounds and campus maintenance. The only estates contact anywhere on the university's public site.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {},
+      "post": "Civil Engineer",
+      "incumbent": null,
+      "incumbentNote": "The captured page names a post-holder whom the university operator has since corrected as no longer current. The office is real and its published contact is now out of date, which is exactly the state a directory keyed by people cannot represent.",
+      "sources": ["/about-us/administrative-offices"],
+      "notes": [
+        "Nothing about this office is currently publishable: the only address the university published for it belonged to the person who has left. Everything below is a gap, and this is the office a student with a broken window has to reach."
+      ]
+    },
+    {
+      "id": "vice-chancellor",
+      "section": "university",
+      "office": "Vice-Chancellor's Office",
+      "purpose": "Academic and institutional leadership for the university.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "vc.office@mitwpu.edu.in",
+          "source": "operator",
+          "status": "operator",
+          "basis": "Current office alias supplied by the university operator; the role mailbox is published in the Association of Indian Universities member directory. The same address is used by tools/build_public_surface_site.py for the same reason."
+        }
+      },
+      "post": "Vice Chancellor",
+      "incumbent": "Dr. R. M. Chitnis",
+      "incumbentSource": "/about-us/leadership-and-governance/leadership",
+      "profile": "/people/dr-r-m-chitnis-2/",
+      "sources": ["/about-us/leadership-and-governance/leadership"]
+    },
+    {
+      "id": "chief-academic-officer",
+      "section": "university",
+      "office": "Chief Academic Officer's Office",
+      "purpose": "University-wide academic planning and governance.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "prasad.khandekar@mitwpu.edu.in",
+          "source": "operator",
+          "status": "operator",
+          "personal": true,
+          "basis": "Published on the MIT-WPU research portal and carried by tools/build_public_surface_site.py; absent from the captured administrative offices page."
+        }
+      },
+      "post": "Chief Academic Officer",
+      "incumbent": "Dr. Prasad D. Khandekar",
+      "incumbentSource": "/about-us/leadership-and-governance/leadership",
+      "profile": "/people/dr-prasad-d-khandekar-190/",
+      "sources": ["/about-us/leadership-and-governance/leadership"]
+    },
+    {
+      "id": "registrar",
+      "section": "university",
+      "office": "Registrar's Office",
+      "purpose": "Academic and administrative appointments, policy implementation, and the link between faculty, students and the administrative units.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "registrar@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published"
+        }
+      },
+      "post": "Registrar",
+      "incumbent": "Mr. Ganesh Balbhimrao Pokale",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/mr-ganesh-b-pokale-5/",
+      "sources": ["/about-us/administrative-offices", "/contact-us"],
+      "notes": [
+        "The contact page names an Associate Registrar, a Deputy Registrar and three Assistant Registrars for Student Affairs with their own addresses. None is listed here: they are desks inside an office that publishes a shared address, and all five route to admissions@mitwpu.edu.in or to this one."
+      ]
+    },
+    {
+      "id": "human-resources",
+      "section": "university",
+      "office": "Human Resources Office",
+      "purpose": "Recruitment, payroll, benefits, professional development and employee relations. The office a job applicant writes to.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "director.hr@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published"
+        }
+      },
+      "post": "Director – Human Resources",
+      "incumbent": "Dr. Nitin Khedkar",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/dr-nitin-khedkar-200/",
+      "sources": ["/about-us/administrative-offices"]
+    },
+    {
+      "id": "finance",
+      "section": "university",
+      "office": "Finance & Accounting Office",
+      "purpose": "Budgeting, fund allocation and financial reporting.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "nitinkumar.chandak@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "post": "Deputy CAFO - Finance & Accounts",
+      "incumbent": "Mr. Nitinkumar Chandak",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": null,
+      "sources": ["/about-us/administrative-offices", "/contact-us"]
+    },
+    {
+      "id": "ciap",
+      "section": "university",
+      "office": "Centre for Industry and Academia Partnerships (CIAP)",
+      "purpose": "Industry partnerships, career services, internships, placements and alumni engagement. The office a recruiter writes to.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "manas.mohanty@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "extra": [
+        {
+          "label": "Placements office mailbox",
+          "value": "centralplacements@mitwpu.edu.in",
+          "kind": "email",
+          "source": "snapshot:original/contact.html",
+          "status": "source-comment"
+        }
+      ],
+      "post": "Director - CIAP (Head – Placements)",
+      "incumbent": "Mr. Manas Mohanty",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": null,
+      "sources": ["/about-us/administrative-offices", "/contact-us"],
+      "notes": [
+        "The address this office publishes is one person's. A shared placements mailbox exists and sits in the contact page's source inside a commented-out block: the better of the two addresses is the one the university chose not to show."
+      ]
+    },
+    {
+      "id": "international-collaboration",
+      "section": "university",
+      "office": "International Collaboration Department (ICD)",
+      "purpose": "Institutional partnerships abroad, student and faculty exchange, and the experience of international students on campus.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "pradnesh.desai@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "post": "Director - International",
+      "incumbent": "Mr. Pradnesh Desai",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/mr-pradnesh-desai-209/",
+      "sources": ["/about-us/administrative-offices"],
+      "notes": [
+        "This site's public-surface build shows a role mailbox for this office. It is not published on any captured page, so the address the university actually published is the one shown here."
+      ]
+    },
+    {
+      "id": "branding-communications",
+      "section": "university",
+      "office": "Branding & Communications",
+      "purpose": "The university's identity, marketing materials and public messaging.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "director.marketing@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published"
+        }
+      },
+      "post": "Director - Branding & Communications",
+      "incumbent": "Mr. Haranath Ghosh",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/mr-haranath-ghosh-193/",
+      "sources": ["/about-us/administrative-offices"]
+    },
+    {
+      "id": "public-relations",
+      "section": "university",
+      "office": "Public Relations Office",
+      "purpose": "Media relations, crisis communication and event promotion. The office a journalist writes to.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "padmanabh.deshmukh@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "post": "Joint Director-Communication (PR & Media)",
+      "incumbent": "Dr. Padmanabh Deshmukh",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": null,
+      "sources": ["/about-us/administrative-offices"],
+      "notes": [
+        "The university runs two communications offices — this one and Branding & Communications — and publishes no line between them."
+      ]
+    }
+  ],
+  "expected": [
+    "The offices below are ones a university of this size normally has and which nothing in the capture mentions at all. They are not gaps in this page: they are questions for whoever knows the institution.",
+    "Each was looked for across roughly 1,200 captured routes and found nowhere."
+  ],
+  "missingOffices": [
+    { "name": "Library / Knowledge Resource Centre", "note": "The university writes \"Knowledge Resource Centre\" in its own prose. No office, no contact, no opening hours." },
+    { "name": "Accessibility and disability support", "note": "No office, no coordinator, no statement of provision." },
+    { "name": "Counselling and mental-health service", "note": "The medical facilities page covers physical health only." },
+    { "name": "Ombudsperson", "note": "Named in the grievance procedure as the escalation from the grievance committee. No contact published." },
+    { "name": "Transport", "note": "No office for campus or shuttle transport." },
+    { "name": "Alumni relations", "note": "Named as one of CIAP's functions, with no separate route." },
+    { "name": "Research office / grants and sponsored projects", "note": "No administrative office for research funding, ethics or contracts." },
+    { "name": "Scholarships and financial aid", "note": "Scholarships are published as a scheme with no office behind them." },
+    { "name": "Lost property and campus reception", "note": "No front-desk or reception contact of any kind." },
+    { "name": "Data protection / information officer", "note": "No named contact for a privacy or right-to-information request." },
+    { "name": "Procurement and vendor relations", "note": "No route for a supplier." },
+    { "name": "Sports and physical education", "note": "Facilities are described; no office runs them." }
+  ]
+}

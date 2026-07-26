@@ -4,7 +4,8 @@
    stamped by tools/apply_institutional_footer.mjs on the eight hand-authored
    pages and by a builder everywhere else. What that component still carries is
    the legacy `institutional-footer` class token — see uwp_shell's decoration
-   list — and these four rules are the ones that hang off it.
+   list — and these rules are the ones that hang off it: the four that survived,
+   plus two more at the end undoing one of them for the social row's marks.
 
    Everything else in this file styled elements that no longer exist:
    __inner, __lead, __groups, __group and __legal, plus the two media queries
@@ -41,6 +42,22 @@
   text-decoration-color: #6ca4c8;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.24em;
+}
+
+/* The rule above is right for a link that is a word and wrong for one that is
+   a mark: it draws a short line under the glyph. The social row's links are
+   marks, and the package already signals their hover with ink and a wash, so
+   they opt out — by class rather than by ancestor, because the same row's
+   Threads link IS a word and keeps its underline. Measured: without this the
+   five glyph links computed text-decoration-line: underline on hover on the
+   619 pages that load this file, and on none of the others. */
+.institutional-footer a.uwp-social-links__link {
+  text-decoration: none;
+}
+
+.institutional-footer a.uwp-social-links__link--named:hover,
+.institutional-footer a.uwp-social-links__link--named:focus-visible {
+  text-decoration: underline;
 }
 
 /* Generated device-theme fallback. */

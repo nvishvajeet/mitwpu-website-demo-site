@@ -34,6 +34,7 @@
   // panel — hover, click, arrow keys — not only its own clicks.
   const setOpen = (owner, open) => {
     owner.classList.toggle("is-open", open);
+    if (open) owner.classList.remove("is-dismissed");
     owner
       .querySelector(":scope > [data-uwp-nav-disclosure]")
       ?.setAttribute("aria-expanded", String(open));
@@ -94,22 +95,47 @@
       const open = !owner.classList.contains("is-open");
       if (open && desktop.matches) closeSiblings(owner);
       setOpen(owner, open);
+      // `placeMega` and `placeFlyout` are declared below; a click cannot run
+      // before this file has finished evaluating, so neither is in its
+      // temporal dead zone here.
+      if (open) {
+        if (owner.classList.contains("uwp-nav-branch")) placeFlyout(owner);
+        else placeMega(owner);
+      }
     });
   }
 
-  // Edge-aware fly-out direction. Default placement is to the right of the row;
-  // if that overflows the viewport, flip the panel to the left. Measured while
-  // the panel is revealed but within the same synchronous task, before paint,
-  // so there is no flash. The mega panel needs none of this: it is pinned to
-  // both masthead edges by CSS alone.
-  const placeFlyout = (branch) => {
-    const flyout = branch.querySelector(":scope > .uwp-nav-flyout");
-    if (!flyout) return;
-    flyout.classList.remove("uwp-nav-flyout--left");
+  // Edge-aware panel direction. Both the cascade fly-out and the mega panel
+  // hang from one edge of the thing that opened them and can overflow the
+  // viewport near the right edge; both answer by flipping to the opposite
+  // edge. Measured while the panel is revealed but within the same synchronous
+  // task, before paint, so there is no flash. Without this script the mega
+  // panel falls back to the masthead-wide layout, which cannot overflow —
+  // see the `html:not(.uwp-js)` rules in patterns.css.
+  const place = (owner, selector, edgeClass) => {
+    const panel = owner.querySelector(`:scope > ${selector}`);
+    if (!panel) return;
+    panel.classList.remove(edgeClass);
     const overflowsRight =
-      flyout.getBoundingClientRect().right >
+      panel.getBoundingClientRect().right >
       document.documentElement.clientWidth - EDGE_GAP;
-    flyout.classList.toggle("uwp-nav-flyout--left", overflowsRight);
+    panel.classList.toggle(edgeClass, overflowsRight);
+  };
+
+  const placeFlyout = (branch) =>
+    place(branch, ".uwp-nav-flyout", "uwp-nav-flyout--left");
+
+  // Desktop only: the mobile accordion lays the panel out in flow, where the
+  // edge classes mean nothing and a stale one would survive the resize.
+  const placeMega = (item) => {
+    if (!item.classList.contains("uwp-nav-item--mega")) return;
+    const panel = item.querySelector(":scope > .uwp-nav-mega");
+    if (!panel) return;
+    if (!desktop.matches) {
+      panel.classList.remove("uwp-nav-mega--left");
+      return;
+    }
+    place(item, ".uwp-nav-mega", "uwp-nav-mega--left");
   };
 
   // Hover-intent for both levels. Open on pointer enter; close after a short
@@ -135,6 +161,7 @@
       }
       setOpen(element, true);
       if (isBranch) placeFlyout(element);
+      else placeMega(element);
     };
 
     const scheduleClose = () => {
@@ -153,19 +180,24 @@
     // from closing-then-reopening on browsers that do not focus buttons on
     // click, and skips the case hover-intent already owns.
     element.addEventListener("focusout", (event) => {
-      if (!desktop.matches) return;
       if (event.relatedTarget && element.contains(event.relatedTarget)) return;
+      // Focus has genuinely left the entry, so an Escape that dismissed it has
+      // nothing left to suppress; forget it before the guards below, which are
+      // about closing rather than about the dismissal.
+      element.classList.remove("is-dismissed");
+      if (!desktop.matches) return;
       if (element.matches(":hover")) return;
       setOpen(element, false);
     });
 
-    // Keyboard focus reveals the panel through CSS :focus-within; still measure
-    // the fly-out so a focused branch flips at the edge too.
-    if (isBranch) {
-      element.addEventListener("focusin", () => {
-        if (desktop.matches) placeFlyout(element);
-      });
-    }
+    // Keyboard focus reveals the panel through CSS :focus-within, which no
+    // handler above sees; measure on focus too so a panel reached by Tab or
+    // the arrow keys flips at the edge exactly as a hovered one does.
+    element.addEventListener("focusin", () => {
+      if (!desktop.matches) return;
+      if (isBranch) placeFlyout(element);
+      else placeMega(element);
+    });
   };
 
   for (const item of document.querySelectorAll(".uwp-nav-item")) {
@@ -231,7 +263,15 @@
   });
 
   // Escape closes any open dropdown/fly-out and returns focus to the top-level
-  // item link, so :focus-within releases and the panel fully collapses.
+  // item link, which is where a reader who has just dismissed a panel expects
+  // to be — not thrown back to the top of the document.
+  //
+  // Clearing `is-open` is not enough to collapse it. Under `.uwp-js` the panel
+  // is revealed by `.is-open` OR `:focus-within` on the entry, and the link
+  // focus lands inside the entry, so `:focus-within` holds the panel open with
+  // `is-open` already gone — Escape appeared to do nothing. `is-dismissed`
+  // outranks the reveal (see patterns.css) and lasts until the entry is opened
+  // again or focus leaves it, both of which clear the class above.
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
     const item = document.activeElement?.closest(".uwp-nav-item");
@@ -244,6 +284,7 @@
       const link =
         item.querySelector(":scope > .uwp-nav-item__link") ||
         item.querySelector(":scope > a");
+      item.classList.add("is-dismissed");
       link?.focus();
     }
   });

@@ -108,37 +108,6 @@
   background: var(--blue-dark);
 }
 
-/* The package's footer grid names an identity block and exactly three link
-   columns; this site's footer has four, the fourth being the statutory one.
-   A fourth group wrapped under the identity block and left three-quarters of a
-   second row empty. The count is stated rather than counted because
-   `repeat(auto-fit, …)` may not follow a track with a flexible maximum, which
-   the identity column has.
-
-   The two narrower tiers are restated because this sheet loads after
-   patterns.css: at equal specificity the later sheet wins whether or not the
-   rule it overrides sits inside a media query, so overriding only the widest
-   tier would carry that tier down to the phone.
-
-   This belongs in university-web-patterns. footer.html documents an arbitrary
-   number of groups and patterns.css supports three; a client re-declaring a
-   grid is the client doing the package's arithmetic. */
-.uwp-footer__grid {
-  grid-template-columns: minmax(13rem, 1.4fr) repeat(4, minmax(8rem, 1fr));
-}
-
-@media (max-width: 75rem) {
-  .uwp-footer__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 56rem) {
-  .uwp-footer__grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme])`, so a token mapped once here follows both.

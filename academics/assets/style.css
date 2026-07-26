@@ -212,11 +212,29 @@ body {
   align-items: center;
 }
 
+/* This unit's one signature photograph, so it wears the accent corner from the
+   shared package (uwp-feature-figure, in media.css). Nothing else on these
+   pages carries it: a directory card's picture and a person's face are each
+   one of several equals, and a corner repeated down a grid spends the claim
+   instead of making it.
+
+   The figure is now a gutter wider and taller than the picture — the room the
+   block needs — so everything that describes the PICTURE moves to the box
+   inside it. A ratio left on the figure would size the gutter too; a border
+   left on it would be drawn round the gutter. */
 .academic-hero__media {
   align-self: center;
-  aspect-ratio: 16 / 10;
   min-width: 0;
   margin: 0;
+}
+
+.academic-hero__box {
+  /* The lead ratio. Every page's one signature photograph is 4/3 across this
+     site — squarer and taller than the 16/10 a photographer hands over,
+     because a wide lead is a letterbox strip at desktop width and a sliver on
+     a phone. The site's three ratios are 4/3 lead, 3/2 card, 4/5 portrait;
+     video keeps its own 16/9 and a lettered tile stays square. */
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--subtle);
   border-left: 3px solid var(--blue);
@@ -257,8 +275,10 @@ body {
   gap: 12px;
 }
 
+/* The supporting picture beside a lead is a second lead, not a card: it
+   stands alone rather than in a grid, so it takes the lead ratio. */
 .academic-media__supporting {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--subtle);
 }
@@ -368,6 +388,34 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* A unit with more than one video: its own film, and the dean's message. */
+.landing-video-list {
+  display: grid;
+  gap: 2rem;
+  width: min(100%, 960px);
+}
+
+.landing-video-item {
+  margin: 0;
+}
+
+.landing-video-item figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+@media (min-width: 60rem) {
+  .landing-video-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .landing-video-item .landing-video {
+    width: 100%;
+  }
 }
 
 .section-link-grid,
@@ -688,9 +736,12 @@ body {
   border-left: 0;
 }
 
+/* Card ratio: 3/2. 16/9 in a three-column grid gave 236px of picture under a
+   400px card — landscape enough to read as a band rather than a photograph.
+   3/2 is the site's card ratio everywhere a photograph leads a card. */
 .directory-card__media {
   display: block;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   margin-bottom: 20px;
   overflow: hidden;
   background: var(--subtle);
@@ -991,8 +1042,10 @@ body {
     padding-block: 38px;
   }
 
-  .academic-hero__media {
-    aspect-ratio: 16 / 9;
+  .academic-hero__box {
+    /* Taller as the layout stacks: the picture is now full width above the
+       copy, and 16/9 across 780px was a 439px band. */
+    aspect-ratio: 4 / 3;
     border-left: 0;
     border-top: 3px solid var(--blue);
   }
@@ -1009,7 +1062,7 @@ body {
 
   .academic-media__supporting {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
   }
 
   .section-link-grid,

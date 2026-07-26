@@ -166,11 +166,35 @@
   font-size: clamp(1.15rem, 2.4vw, 1.55rem);
 }
 
+/* An event's own photograph is the one image that edition's page is about, so
+   it wears the accent corner from the shared package (uwp-feature-figure, in
+   media.css). The gallery further down the page does not: those are a set of
+   equals, and the mark is a claim about one picture. */
 .event-hero-media {
   margin: 42px 0 0;
+  /* Capped, because "squarer" and "bigger" pull against each other once a
+     picture spans the whole shell: 4/3 across 1162px is 871px of photograph,
+     a screenful before the reader reaches a word about the event. The shape is
+     right and the WIDTH was the problem, which is the distinction worth
+     keeping — a ratio says what the picture should look like, not how much of
+     the page it should take. */
+  width: min(100%, 780px);
+}
+
+.event-hero-media__box {
+  /* The lead ratio, 4/3. Event banners arrive at whatever shape the organisers
+     exported, and shown at their own proportions they ranged from a square
+     poster to a 3:1 strip down one page after another. The site's three ratios
+     are 4/3 lead, 3/2 card, 4/5 portrait. */
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--surface);
+}
+
+.event-hero-media__box img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .event-media-link {

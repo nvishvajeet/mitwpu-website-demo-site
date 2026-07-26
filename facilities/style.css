@@ -17,6 +17,7 @@
 @import url("../vendor/university-web-patterns/src/css/tokens.css");
 @import url("../vendor/university-web-patterns/src/css/readability.css");
 @import url("../vendor/university-web-patterns/src/css/patterns.css");
+@import url("../vendor/university-web-patterns/src/css/media.css");
 
 /* Token overrides: this site runs a paper masthead under a navy institution
  * bar; the package's default is a solid institutional header. Everything else
@@ -331,18 +332,45 @@
 }
 
 /* ---- CRF facility photos, metrics band, and brochure (added 2026-07-24) ---- */
+
+/* The facility's own building is the one image this page is about, so it wears
+   the accent corner from the shared package (uwp-feature-figure, media.css).
+   The gallery below it does not: those are eight equals, and the mark is a
+   claim about one picture rather than a decoration applied to every picture. */
+/* Widen the hero's second column when it holds the photograph rather than a
+   block of text. The shared `.hero-grid` gives that column `minmax(250px,
+   0.6fr)` — 327px at the shell's width — which is right for the aside of
+   linked facts it was written for and wrong for a picture: at 4/3 it made the
+   facility's own building a 309x231 thumbnail. The ratio was never the
+   constraint here; the grid column was. Scoped by `:has()` so only the pages
+   that actually put a figure there are affected, and the ones with a text
+   aside keep the proportions they were designed with. */
+.hero-grid:has(.hero-figure) {
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: 64px;
+}
+
 .hero-figure {
   margin: 0;
   align-self: center;
 }
 
+.hero-figure__box {
+  /* The lead ratio, 4/3. The file is 1000x640 (1.56:1) and used to be shown at
+     its own proportions, which beside a column of copy was a wide, short
+     panel. The site's three ratios are 4/3 lead, 3/2 card, 4/5 portrait. */
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--subtle, #eef2f5);
+}
+
 .hero-figure img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   min-height: 0;
-  border-radius: 4px;
-  background: var(--subtle, #eef2f5);
+  object-fit: cover;
 }
 
 .hero-figure figcaption {
@@ -443,36 +471,5 @@
   .facility-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
-  }
-}
-
-/* The package's footer grid names an identity block and exactly three link
-   columns; this site's footer has four, the fourth being the statutory one.
-   A fourth group wrapped under the identity block and left three-quarters of a
-   second row empty. The count is stated rather than counted because
-   `repeat(auto-fit, …)` may not follow a track with a flexible maximum, which
-   the identity column has.
-
-   The two narrower tiers are restated because this sheet loads after
-   patterns.css: at equal specificity the later sheet wins whether or not the
-   rule it overrides sits inside a media query, so overriding only the widest
-   tier would carry that tier down to the phone.
-
-   This belongs in university-web-patterns. footer.html documents an arbitrary
-   number of groups and patterns.css supports three; a client re-declaring a
-   grid is the client doing the package's arithmetic. */
-.uwp-footer__grid {
-  grid-template-columns: minmax(13rem, 1.4fr) repeat(4, minmax(8rem, 1fr));
-}
-
-@media (max-width: 75rem) {
-  .uwp-footer__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 56rem) {
-  .uwp-footer__grid {
-    grid-template-columns: 1fr;
   }
 }

@@ -160,8 +160,16 @@
    than to the bottom of the caption. */
 
 .uwp-feature-figure {
-  /* The offset, stated once. It is both the padding that makes room for the
-     block and the distance the block overhangs by, so the two cannot drift. */
+  /* The offset, in one place. It is both the padding that makes room for the
+     block and the distance the block overhangs by, so the two cannot drift.
+     Every rule that reads it repeats the same fallback rather than relying on
+     this declaration, because a client whose lead picture is a carousel or a
+     video player wraps its own element in `__frame` and never renders the
+     outer <figure> at all. Without the fallback that frame's `padding`
+     shorthand would be invalid at computed-value time, resolve to 0, and the
+     block would sit entirely under the picture — present, correct, invisible,
+     which is this component's one interesting failure mode and not one to
+     leave a booby trap for. */
   --uwp-figure-corner-offset: 1.15rem;
   margin: 0 0 var(--uwp-space-3);
 }
@@ -172,7 +180,10 @@
      form, which is the whole difference between the two. */
   isolation: isolate;
   padding:
-    0 var(--uwp-figure-corner-offset) var(--uwp-figure-corner-offset) 0;
+    0
+    var(--uwp-figure-corner-offset, 1.15rem)
+    var(--uwp-figure-corner-offset, 1.15rem)
+    0;
 }
 
 .uwp-feature-figure__frame::before {
@@ -237,12 +248,14 @@ a.uwp-feature-figure__media:hover img {
    picture with a visible gap in between — which looks like a mistake, and is
    one. */
 .uwp-feature-figure--plain .uwp-feature-figure__frame,
-.uwp-feature-figure--contain .uwp-feature-figure__frame {
+.uwp-feature-figure--contain .uwp-feature-figure__frame,
+.uwp-feature-figure__frame--plain {
   padding: 0;
 }
 
 .uwp-feature-figure--plain .uwp-feature-figure__frame::before,
-.uwp-feature-figure--contain .uwp-feature-figure__frame::before {
+.uwp-feature-figure--contain .uwp-feature-figure__frame::before,
+.uwp-feature-figure__frame--plain::before {
   content: none;
 }
 

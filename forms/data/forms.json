@@ -1,0 +1,1913 @@
+{
+  "schema": "mitwpu.forms-central.v1",
+  "page": {
+    "eyebrow": "Forms Central",
+    "title": "Every form, and where to get it",
+    "lede": "One index of every form and letter MIT-WPU issues, for students and staff alike: what it is, who may ask, where the form actually lives, where it goes, what it costs and how long it takes.",
+    "description": "Forms Central for MIT-WPU: bonafide and course-completion certificates, transcripts, duplicate grade cards, degree and convocation, revaluation, hostel admission, no-dues, and the faculty research and intellectual-property forms — each with where the form is, what it costs and how long it takes, and every unpublished answer named rather than left out.",
+    "introduction": [
+      "You arrive here with an errand rather than a department: a company wants a bonafide letter by Friday, an application wants a sealed transcript, a grade card has been lost, a patent needs disclosing. Each row below is one errand. Open it and it answers the six questions that decide whether you get the document — what it is, who may ask for it, where the form comes from, where you submit it, what it costs, and how long it takes — or it names which of those the university has not published.",
+      "It is not a list of documents to read. The ordinances, handbooks, timetables and policies live in the student index and are linked from here, never restated. This page is only about asking for something and getting it.",
+      "Two of the six answers are checked character for character against the captured page before this page will build: what it costs, and how long it takes. A wrong turnaround time is not a typo — it is somebody standing at a counter on the day their offer expires."
+    ],
+    "notice": {
+      "eyebrow": "Before you look for a form",
+      "title": "This site hosts no forms, and never will",
+      "paragraphs": [
+        "Nothing here collects a name, a registration number, a document or a payment. It is an index: it says what each form is and links out to wherever the university actually keeps it, the same split the fee tables and the admissions pages use.",
+        "That is a constraint on this demonstration rather than a comment on the university's arrangements. A service request carries a student's name, their registration number and often a scanned certificate, and a demonstration site has nowhere lawful to put any of it."
+      ]
+    },
+    "findabilityIntroduction": [
+      "The single most useful thing this page does is say where a form physically is, because most of MIT-WPU's forms are not where anybody would look for them. Twenty-seven of them are printed as annexures inside six documents named for something else — a research manual, a hostel manual, two examination ordinances, an admission policy, a club handbook. Not one of the six filenames contains the word “form”, so nothing a student could search for would find them.",
+      "The invention disclosure form is page 68 of a research manual. The hostel admission form is page 29 of a hostel manual. The complaint format for an examination is page 61 of the 2020 examination ordinances. Each is a real, complete, printable form, and each is currently reachable only by downloading a long PDF and scrolling to the back of it.",
+      "So a form is in one of four states, and telling a reader which one is most of the value here: it is an annexure inside a longer document, it is a request to an online system, it is something you do at a counter, or the university has not published it at all. Those are very different answers and a page that blurs them sends somebody hunting for a file that was never going to exist."
+    ],
+    "audienceIntroduction": [
+      "Every form below carries who it is for. That is an attribute of the form rather than a place to put it, and deliberately so: a bonafide certificate is identical for an undergraduate, a master's student and a doctoral candidate, and a page sectioned by audience would print it three times. Three copies of one procedure is how a policy ends up saying different things in different places, which is the failure this site is built to avoid.",
+      "So the page is sectioned by errand — certificates, records, degree, examinations, research, money and welfare — and audience is a line inside each form. Where a set of forms genuinely belongs to one audience and has no equivalent elsewhere, the doctoral and the faculty research forms among them, the errand and the audience turn out to be the same thing and the section says so."
+    ],
+    "provenance": [
+      "Every fact names the captured MIT-WPU route it came from, and the build fails if a cited route is missing from the capture or lacks complete crawl provenance. Where a form is an annexure, the build additionally checks that the carrier document really is linked from the route this page cites for it.",
+      "One page carries most of this. The examinations FAQ answers a hundred and forty-six questions, and roughly half of what follows is extracted from it — worth saying plainly, because it means one page going stale takes most of these answers with it."
+    ],
+    "gapsIntroduction": [
+      "Computed on every build from the same records the page renders, never stored. Typing a value into forms/data/forms.json closes its gap the moment the page is rebuilt, with nothing else to remember and no second list to keep in step.",
+      "Run node tools/build_forms_central.mjs --gaps for the same list in a terminal, grouped by the unanswered question rather than by the form, because that is how the work gets done: somebody asks the Department of Examinations for every missing turnaround at once, not one certificate at a time."
+    ],
+    "unpublishedIntroduction": [
+      "These are forms a university of this kind issues and which nothing across roughly 1,200 captured routes describes. They are not omissions from this page — they are the questions to put to the registrar.",
+      "Each is rendered rather than dropped for the reason every placeholder on this site is rendered: a section that quietly disappears because no captured page mentioned it teaches a reader that the form does not exist, and somebody who concludes their university issues no migration certificate stops asking for one."
+    ]
+  },
+
+  "audiences": [
+    { "id": "students", "label": "All students" },
+    { "id": "undergraduate", "label": "Undergraduate" },
+    { "id": "postgraduate", "label": "Postgraduate" },
+    { "id": "doctoral", "label": "Doctoral" },
+    { "id": "graduating", "label": "Graduating students and alumni" },
+    { "id": "applicants", "label": "Applicants" },
+    { "id": "international", "label": "International students" },
+    { "id": "hostel", "label": "Hostel residents" },
+    { "id": "staff", "label": "Faculty and staff" }
+  ],
+
+  "documents": [
+    {
+      "id": "research-manual",
+      "title": "Research Manual 2023-24",
+      "url": "https://mitwpu.edu.in/assets/frontend/pdfs/RESEARCH-MANUAL-2023-24-1.pdf",
+      "local": "/media/mitwpu-public/documents/60/60c33ce26b1b2a07-RESEARCH-MANUAL-2023-24-1.pdf",
+      "pages": 81,
+      "route": "/research/ipr",
+      "linkText": "Research Policy",
+      "note": "The IPR Cell page calls this the research policy and describes it as setting out the ownership, rights, responsibilities and procedures for intellectual property. Eleven complete forms are printed at the back of it and in its incentives chapter."
+    },
+    {
+      "id": "hostel-manual",
+      "title": "Hostel Manual 2026-27",
+      "url": "https://mitwpu.edu.in/uploads/images/Hostel-Manual-2026-27-V6.pdf",
+      "local": "/media/mitwpu-public/documents/22/228dae7ced69f095-Hostel-Manual-2026-27-V6.pdf",
+      "pages": 34,
+      "route": "/life-wpu/hostel-facilities",
+      "linkText": "Hostel Manual 2026-27",
+      "note": "Carries the hostel admission form and both UGC anti-ragging undertakings in its last six pages. The hostel page's own “Apply Now for Hostel” control points back at the hostel page; the actual form is in here."
+    },
+    {
+      "id": "exam-ordinance-2020",
+      "title": "Examination Ordinances 2020",
+      "url": "https://mitwpu.edu.in/assets/frontend/pdfs/Examination_Ordinances_2020.pdf",
+      "local": "/media/mitwpu-public/documents/f0/f0d1aa2fd8b92251-Examination_Ordinances_2020.pdf",
+      "pages": 63,
+      "route": "/academics/ordinances",
+      "linkText": "Examination Ordinances 2020",
+      "note": "Its table of contents lists three annexures, two of which are forms."
+    },
+    {
+      "id": "exam-ordinance-2017",
+      "title": "Examination Ordinances 2017",
+      "url": "https://mitwpu.edu.in/uploads/images/Examination-Ordinances-2017.pdf",
+      "local": "/media/mitwpu-public/documents/b3/b3ea0184b5428185-Examination-Ordinances-2017.pdf",
+      "pages": 43,
+      "route": "/academics/ordinances",
+      "linkText": "Examination Ordinances 2017",
+      "note": "Still the governing ordinance for backlog examinations of students admitted before 2022-23, so its form is still live."
+    },
+    {
+      "id": "admission-policy",
+      "title": "Admission Policy 2026-27",
+      "url": "https://mitwpu.edu.in/uploads/images/Admission-Policy-for-AY-2026-27.pdf",
+      "local": "/media/mitwpu-public/documents/02/0265cd07309c9a62-Admission-Policy-for-AY-2026-27.pdf",
+      "pages": 101,
+      "route": "/student-information",
+      "linkText": "Admission Policy 2026-27",
+      "note": "Nine numbered proformas fill its last nine pages — the certificate formats a defence, disability, migrant or sponsored candidate has to produce. They are the most buried forms on the whole site."
+    },
+    {
+      "id": "club-handbook",
+      "title": "Students' Club Handbook 2024-25",
+      "url": "https://mitwpu.edu.in/uploads/images/Students-Club-Handbook-2024-25.pdf",
+      "local": "/media/mitwpu-public/documents/c2/c268af3991e96892-Students-Club-Handbook-2024-25.pdf",
+      "pages": 34,
+      "route": "/life-wpu/clubs",
+      "linkText": "Students' Club Handbook",
+      "note": "Names the club activity approval form as step three of running any club event."
+    }
+  ],
+
+  "channels": [
+    {
+      "id": "exam-service-request-form",
+      "name": "The Department of Examinations service-request form",
+      "kind": "system",
+      "summary": "One online form covers most documents the Department of Examinations issues. The document you want is chosen inside it.",
+      "href": "https://forms.gle/EbsrT87114AD14HY9",
+      "source": "/academics/faq",
+      "note": "Named in the FAQ's answers for the transcript, the consolidated grade card, the duplicate grade card, the equivalent-percentage certificate, the conversion certificate and the bonafide."
+    },
+    {
+      "id": "exam-helpdesk",
+      "name": "The examination helpdesk mailbox",
+      "kind": "system",
+      "summary": "Requests with no form of their own go here as an email: backlog-summary certificates, refunds, authority letters and the MITSOB documents.",
+      "href": "mailto:exam.helpdesk@mitwpu.edu.in",
+      "source": "/academics/examination-contact-us",
+      "note": "The Department of Examinations publishes this address and a helpdesk telephone number; the administration directory carries both."
+    },
+    {
+      "id": "erp",
+      "name": "The student ERP",
+      "kind": "system",
+      "summary": "Examination forms, revaluation applications and their fees are filed inside the university's own student system, not on a web page.",
+      "source": "/academics/faq",
+      "note": "The FAQ describes the ERP's student module in detail but the capture publishes no sign-in address for it, so this page cannot link to it."
+    },
+    {
+      "id": "document-verification-form",
+      "name": "The document-verification form",
+      "kind": "system",
+      "summary": "How an employer or another university asks MIT-WPU to confirm a document is genuine.",
+      "href": "https://forms.gle/DiSZ4jZyB2vfBUB79",
+      "source": "/academics/document-verification",
+      "note": "Published on the Department of Examinations' document-verification page as “Link for verification”."
+    },
+    {
+      "id": "directverify",
+      "name": "The digital document service",
+      "kind": "system",
+      "summary": "A third-party service the university publishes for WES and overseas credential verification.",
+      "href": "https://mitwpu.directverify.in/student/#/app/request",
+      "source": "/academics/document-verification",
+      "note": "Published on both the document-verification page and the student information index."
+    },
+    {
+      "id": "digilocker",
+      "name": "DigiLocker",
+      "kind": "system",
+      "summary": "The government document wallet holding the digital degree certificate and, from 2022-23, semester grade cards.",
+      "source": "/academics/faq",
+      "note": "The FAQ names DigiLocker as the source of the digital degree but publishes no link, so this page names the service and invents no address for it."
+    },
+    {
+      "id": "grievance-form",
+      "name": "The online student grievance form",
+      "kind": "system",
+      "summary": "The Students' Grievance Redressal Committee's own intake, separate from the examinations helpdesk.",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeT1_1hwZxzruBy5VScX8ofi1zmOB7PazriurV1UGKprpADWQ/viewform",
+      "source": "/academics/student-grievance",
+      "note": "Published on the students' welfare page alongside the UGC's own e-Samadhan portal."
+    },
+    {
+      "id": "counselling-form",
+      "name": "The counselling appointment form",
+      "kind": "system",
+      "summary": "Booking a session with Aakriti, the university's centre for holistic well-being.",
+      "href": "https://forms.gle/5eRM868ac4CRgZYR9",
+      "source": "/aakriti-centre-for-holistic-well-being",
+      "note": "Published on the centre's own page as “Book Appointment”."
+    },
+    {
+      "id": "programme-office",
+      "name": "Your programme office",
+      "kind": "counter",
+      "summary": "The department's own office. It issues and collects grade cards, receives examination forms and starts every record correction.",
+      "source": "/academics/faq",
+      "note": "The FAQ routes a dozen requests through “the Program Office of your Department”. No captured page says where those offices are or how to reach one."
+    },
+    {
+      "id": "examinations-counter",
+      "name": "The Department of Examinations counter",
+      "kind": "counter",
+      "summary": "Seventh floor, Saraswati Building, Kothrud. Where finished documents are collected and paper forms are handed in.",
+      "href": "/academics/examination-contact-us",
+      "source": "/academics/examination-contact-us",
+      "note": "The only student-facing counter with a published address, opening hours and telephone number."
+    },
+    {
+      "id": "ipr-cell",
+      "name": "The IPR Cell",
+      "kind": "counter",
+      "summary": "Receives invention disclosures, copyright applications and facilitation requests, and guides drafting and filing.",
+      "href": "/research/ipr",
+      "source": "/research/ipr",
+      "note": "The cell publishes its objectives and services and neither an address, a mailbox nor a named coordinator's contact."
+    }
+  ],
+
+  "topics": [
+    {
+      "id": "certificates",
+      "title": "Certificates and letters",
+      "summary": "The documents somebody else has asked you for — an employer, a bank, a landlord, another university.",
+      "requests": [
+        {
+          "id": "bonafide-certificate",
+          "title": "Bonafide or course-completion certificate",
+          "aka": "The letter a company or a landlord asks for to confirm you are a student here.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "The FAQ treats the course-completion certificate and the bonafide as one request, answered together and made to the Department of Examinations.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "There is no document to download. The request is made inside the Department of Examinations' service-request form, choosing “Certificates”.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The form goes to the Department of Examinations; the finished certificate is collected from its counter once the completion message arrives.",
+            "source": "/academics/faq"
+          },
+          "cost": null,
+          "turnaround": {
+            "text": "At least five working days from the date of application, after which you are notified by email or WhatsApp.",
+            "verbatim": "Processing requires at least 5 working days from date of application.",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "A hard copy is issued as a matter of course; a soft copy is sent only on a further email request to the examination helpdesk.",
+            "This is the request most students come to a page like this for, and the university publishes no charge and no eligibility rule for it."
+          ],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose “Certificates”" },
+            { "label": "Where the answers come from", "route": "/academics/faq", "note": "Examinations FAQ" }
+          ]
+        },
+        {
+          "id": "backlog-summary-certificate",
+          "title": "Backlog summary certificate",
+          "aka": "The no-backlog or attempts letter overseas applications ask for.",
+          "audience": ["students", "graduating"],
+          "office": "examination",
+          "channel": "exam-helpdesk",
+          "what": {
+            "text": "A certificate stating, per course, the number of attempts taken and the month and year each was cleared.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "No form of any kind. The request is an email to the examination helpdesk giving the trimester number, course, course code, number of attempts and the month and year of clearing each course.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The examination helpdesk mailbox.",
+            "source": "/academics/examination-contact-us"
+          },
+          "cost": null,
+          "turnaround": {
+            "text": "Issued within five working days of the application, after the details are verified.",
+            "verbatim": "within 5 working days from date of application",
+            "source": "/academics/faq"
+          },
+          "notes": [],
+          "links": [
+            { "label": "The examination helpdesk", "route": "/academics/examination-contact-us", "note": "Address, hours and telephone" }
+          ]
+        },
+        {
+          "id": "equivalent-percentage-certificate",
+          "title": "Equivalent percentage certificate",
+          "aka": "The CGPA-to-percentage conversion many employers and foreign universities require.",
+          "audience": ["students", "graduating"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "A certificate converting the grade-point average on your grade cards into a percentage.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "No downloadable document. The request is made inside the service-request form, choosing “Equivalent Percentage Certificate”.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations, whose counter issues the hard copy.",
+            "source": "/academics/faq"
+          },
+          "cost": null,
+          "turnaround": {
+            "text": "A minimum of five working days from the date of application.",
+            "verbatim": "Processing requires minimum 5 working days from date of application.",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "The conversion rule itself is in Examination Ordinance 2022, which the student index links; it is not restated here."
+          ],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose “Equivalent Percentage Certificate”" }
+          ]
+        },
+        {
+          "id": "trimester-semester-conversion",
+          "title": "Trimester to semester conversion certificate",
+          "aka": "For students taught under the trimester pattern whose next institution counts semesters.",
+          "audience": ["students", "graduating"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "A certificate restating a trimester-pattern result in semester terms.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "Made inside the service-request form under “Trimester to Semester Conversion Certificate”, attaching a scan of the final trimester grade card and the payment receipt.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations, which holds the finished certificate for collection.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Two hundred and fifty rupees for one certificate, paid online before applying.",
+            "verbatim": "The processing charges for one trimester to semester conversion certificate are Rs.250/-",
+            "source": "/academics/faq"
+          },
+          "turnaround": {
+            "text": "At least five working days from an application carrying all the required documents.",
+            "verbatim": "atleast 5 working days from date of application",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "The payment screenshot must show the amount, the date, the transaction identifier and the university account number, or the application is incomplete."
+          ],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose the conversion certificate" }
+          ]
+        },
+        {
+          "id": "provisional-degree-certificate",
+          "title": "Provisional degree certificate",
+          "aka": "The interim proof of your degree, before convocation.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "programme-office",
+          "what": {
+            "text": "Issued automatically on completing the course — there is nothing to apply for. It arrives with the final trimester grade card.",
+            "source": "/academics/faq"
+          },
+          "who": {
+            "text": "Students who have successfully completed their course.",
+            "source": "/academics/faq"
+          },
+          "form": {
+            "text": "None. The FAQ is explicit that no separate application exists.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "Nothing to submit. It is collected from the programme office of your department.",
+            "source": "/academics/faq"
+          },
+          "cost": null,
+          "turnaround": {
+            "text": "Available from the programme office fifteen days after the final trimester result is declared.",
+            "verbatim": "Provisional Degree Certificate will be given from the Program Office after 15 days from date of declaration of your final trimester result.",
+            "source": "/academics/faq"
+          },
+          "notes": [],
+          "links": []
+        },
+        {
+          "id": "medium-of-instruction-certificate",
+          "title": "Medium of instruction certificate",
+          "aka": "Confirmation that your degree was taught in English, which many visa and admission processes accept in place of a language test.",
+          "audience": ["graduating"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "Nothing across the captured routes mentions this certificate. It is a standard issue at Indian universities — IIT Madras publishes it as a downloadable document — and its absence here is a question for the registrar rather than evidence that MIT-WPU does not issue one."
+          ],
+          "links": []
+        },
+        {
+          "id": "rank-certificate",
+          "title": "Rank certificate",
+          "aka": "Your position in the cohort, stated officially.",
+          "audience": ["graduating"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "No captured page mentions a rank certificate. The consolidated grade card carries a revised grade-point average but states no rank."
+          ],
+          "links": []
+        },
+        {
+          "id": "migration-certificate",
+          "title": "Migration certificate",
+          "aka": "Required by the next university when you move between institutions.",
+          "audience": ["graduating"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "A migration certificate appears once in the capture, on the international admissions page, and there as a document the applicant must bring — not one MIT-WPU issues. Nothing describes obtaining one from this university."
+          ],
+          "links": []
+        },
+        {
+          "id": "transfer-certificate",
+          "title": "Transfer certificate",
+          "aka": "The leaving certificate a school or another university asks for.",
+          "audience": ["students"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": ["The phrase does not occur anywhere in the captured surface."],
+          "links": []
+        },
+        {
+          "id": "character-certificate",
+          "title": "Character or conduct certificate",
+          "aka": "Confirmation of good standing, asked for by employers and by some visa processes.",
+          "audience": ["students", "graduating"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "Not mentioned on any captured route. The university publishes a student code of conduct and a discipline committee, but no route to a certificate of conduct."
+          ],
+          "links": []
+        },
+        {
+          "id": "internship-noc",
+          "title": "Internship letter or no-objection certificate",
+          "aka": "The letter an employer or a host institution wants before an internship or an external project.",
+          "audience": ["students"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "No captured page describes obtaining either. The only occurrence of “NOC” in the capture is a job title in a programme's career list, and the only internship the examinations pages describe is the social internship imposed as a penalty for examination malpractice."
+          ],
+          "links": []
+        },
+        {
+          "id": "bank-loan-certificate",
+          "title": "Fee structure or bank loan certificate",
+          "aka": "The letter a bank asks the university for before releasing an education loan.",
+          "audience": ["students", "applicants"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The student loans page sets out at length what each bank requires of the student and lists the branch contacts, and says nothing about what the student must obtain from MIT-WPU or from whom. A confirmed admission letter stating the fee structure is on the banks' own document lists; no university route to one is published."
+          ],
+          "links": [
+            { "label": "What the banks ask for", "route": "/student-loans", "note": "Student loans" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "title": "Grade cards, transcripts and academic records",
+      "summary": "Replacing, consolidating, correcting or sending on the record of what you studied.",
+      "requests": [
+        {
+          "id": "official-transcript",
+          "title": "Official transcript",
+          "aka": "The sealed, signed record of every trimester, for applications abroad.",
+          "audience": ["students", "graduating"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "An authenticated document holding the updated results of every trimester declared to the date of application, signed by the Controller of Examinations.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "No downloadable form. The application is made inside the service-request form under “Official Transcript”, attaching the payment receipt.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations. The hard copy is collected from its counter within fifteen days, on producing identity proof and the completion message.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Two hundred rupees per copy, plus a hundred rupees per copy if it is to be posted within India.",
+            "verbatim": "The processing charges for transcript are Rs.200/- for one copy of transcript.",
+            "source": "/academics/faq"
+          },
+          "turnaround": {
+            "text": "A minimum of five working days from an application carrying all the required documents.",
+            "verbatim": "Processing of transcript takes minimum 5 working days from date of application with all required documents.",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "Transcripts are issued sealed, one per envelope, so the recipient can see the document has not been opened.",
+            "MITSOB transcripts are a separate procedure with batch-dependent charges, made by email to the examination helpdesk rather than through the form."
+          ],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose “Official Transcript”" }
+          ]
+        },
+        {
+          "id": "transcript-to-wes",
+          "title": "Transcript sent directly to WES or another university",
+          "aka": "When the receiving body will not accept a document that passed through your hands.",
+          "audience": ["graduating", "international"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "The university sends the transcript itself — by post in a sealed envelope, or by email from an official university address.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "A second, separate online form for the soft-copy route, plus the WES Academic Record Request form with Part A completed by you, emailed to the examination helpdesk.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The soft-copy form for electronic despatch; the examination helpdesk mailbox for the Academic Record Request form and the WES reference number.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Postage of one thousand six hundred rupees per copy to Canada and one thousand nine hundred to the United States, on top of the transcript's own processing charge.",
+            "verbatim": "The postal charges to Canada Rs.1600/- and USA 1900/-",
+            "source": "/academics/faq"
+          },
+          "turnaround": null,
+          "notes": [
+            "The Academic Record Request form is WES's document, not the university's, and the capture publishes no copy of it."
+          ],
+          "links": [
+            { "label": "The soft-copy despatch form", "href": "https://forms.gle/MBzfrqAMuZarej3k7", "note": "For electronic sending only" },
+            { "label": "The digital document service", "href": "https://mitwpu.directverify.in/student/#/app/request", "note": "The university's published verification service" }
+          ]
+        },
+        {
+          "id": "duplicate-grade-card",
+          "title": "Duplicate grade card",
+          "aka": "When a grade card is lost. A grade card is issued once and once only.",
+          "audience": ["students", "graduating"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "A replacement for a lost grade card. Once issued, the original is marked lost in the university's records and must not be used again even if it turns up.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "Made inside the service-request form under “Duplicate Grade Card”, attaching a police first information report, an affidavit on hundred-rupee stamp paper, and the payment receipt.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations, which holds it for collection once the completion message is sent.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Five hundred rupees, plus a hundred rupees for each trimester grade card.",
+            "verbatim": "Fee of Rs.500/- + Rs. 100/- per trimester grade card.",
+            "source": "/academics/faq"
+          },
+          "turnaround": null,
+          "notes": [
+            "A torn grade card is a different request: the original is surrendered at the Department of Examinations and the charge paid there.",
+            "MITSOB duplicate grade cards carry batch-dependent charges and are requested by email rather than through the form."
+          ],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose “Duplicate Grade Card”" }
+          ]
+        },
+        {
+          "id": "consolidated-grade-card",
+          "title": "Consolidated grade card",
+          "aka": "One trimester's result including cleared backlogs, with the revised averages.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "The consolidated result of a single trimester, regular and cleared backlog together, showing the revised grade-point and cumulative averages. A transcript, by contrast, covers every trimester.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "Made inside the service-request form under “Consolidated Grade Card”, attaching only the payment receipt.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations. Only a hard copy is issued — no scan is sent.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Two hundred rupees for one consolidated grade card, with a further hundred rupees if it is to be posted within India.",
+            "verbatim": "Processing fee for one consolidated grade card is Rs.200/-.",
+            "source": "/academics/faq"
+          },
+          "turnaround": {
+            "text": "A minimum of five working days from the date of application; you are told by email or WhatsApp when it is ready.",
+            "verbatim": "Processing requires minimum 5 working days from date of application.",
+            "source": "/academics/faq"
+          },
+          "notes": [],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose “Consolidated Grade Card”" }
+          ]
+        },
+        {
+          "id": "annual-grade-card",
+          "title": "Annual grade card on demand",
+          "aka": "The year's courses on one card, rather than a card per semester.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": null,
+          "what": {
+            "text": "Listed by the Department of Examinations' digital desk as one of its student services, alongside name correction on the degree certificate and sending documents to other universities.",
+            "source": "/academics/student-assistance"
+          },
+          "who": {
+            "text": "From 2022-23 the annual grade card is issued to students admitted to first year in that year onwards; earlier cohorts see semester results in the ERP only.",
+            "source": "/academics/faq"
+          },
+          "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The digital desk page lists this service as a heading with a QR code beside it. The code is an image, so the capture holds the label and not the destination — which is why four of the six answers here are blank rather than guessed."
+          ],
+          "links": [
+            { "label": "The examinations digital desk", "route": "/academics/student-assistance", "note": "Student assistance" }
+          ]
+        },
+        {
+          "id": "grade-card-name-correction",
+          "title": "Name correction on a grade card",
+          "aka": "Your name, or a parent's name, printed wrongly.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "programme-office",
+          "what": {
+            "text": "The correction is made in the ERP first, at the programme office; corrected grade cards are then reissued.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "A Name Correction Request Form, collected in person from the Department of Examinations. The university publishes no copy of it to download.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The completed form and the original grade cards go to the programme office of your department; the corrected cards are collected from the Department of Examinations.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "A hundred rupees per grade card, paid at the accounts section, with the receipt shown on collection.",
+            "verbatim": "Rs.100/- per grade card",
+            "source": "/academics/faq"
+          },
+          "turnaround": {
+            "text": "At least five working days after the form reaches the Department of Examinations and the correction appears in the ERP.",
+            "verbatim": "It requires at least 5 working days, thereafter.",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "A difference between grade cards showing a parent's full name and others showing only a first name is a change of format, not an error, and all such cards remain valid."
+          ],
+          "links": []
+        },
+        {
+          "id": "grade-card-attestation",
+          "title": "Attestation of grade cards",
+          "aka": "Getting photocopies stamped as true copies.",
+          "audience": ["students", "graduating"],
+          "office": "examination",
+          "channel": "examinations-counter",
+          "what": {
+            "text": "Photocopies attested against the originals.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "No form. You bring photocopies of the grade cards together with the originals for verification.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations counter.",
+            "source": "/academics/examination-contact-us"
+          },
+          "cost": null,
+          "turnaround": {
+            "text": "Two working days.",
+            "verbatim": "You will get the grade cards attested in 2 working days",
+            "source": "/academics/faq"
+          },
+          "notes": [],
+          "links": []
+        },
+        {
+          "id": "academic-documents-by-post",
+          "title": "Academic documents sent by post",
+          "aka": "Having what you are owed couriered rather than collecting it.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "The university despatches academic documents to a postal address given on a form of its own, separate from the main service-request form.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "A dedicated online form for the despatch details.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations, which arranges the despatch.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Five hundred rupees within India and one thousand eight hundred for an international courier, paid online.",
+            "verbatim": "Charges are Rs. 500/- within India and Rs. 1800/- for International courier.",
+            "source": "/academics/faq"
+          },
+          "turnaround": null,
+          "notes": [],
+          "links": [
+            { "label": "The despatch form", "href": "https://forms.gle/PdY3oENAho9so2kK6", "note": "Postal address details" }
+          ]
+        },
+        {
+          "id": "document-verification",
+          "title": "Verification of your documents by an employer or university",
+          "aka": "When somebody else needs MIT-WPU to confirm a document is genuine.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "document-verification-form",
+          "what": {
+            "text": "The Department of Examinations runs a verification desk with its own mailbox and telephone number, distinct from the examination helpdesk.",
+            "source": "/academics/examination-contact-us"
+          },
+          "who": null,
+          "form": {
+            "text": "A verification form published on the document-verification page, and a separate digital document service for WES and overseas credential checks.",
+            "source": "/academics/document-verification"
+          },
+          "submit": {
+            "text": "The verification desk of the Department of Examinations.",
+            "source": "/academics/examination-contact-us"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "The verification desk keeps different hours from the examination helpdesk; the administration directory carries both."
+          ],
+          "links": [
+            { "label": "The verification form", "href": "https://forms.gle/DiSZ4jZyB2vfBUB79", "note": "Published as “Link for verification”" },
+            { "label": "The digital document service", "href": "https://mitwpu.directverify.in/student/#/app/request", "note": "WES and overseas verification" },
+            { "label": "The verification desk", "route": "/academics/document-verification", "note": "Document verification" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "degree",
+      "title": "Degree and convocation",
+      "summary": "Registering for convocation, receiving the degree, and replacing or correcting it afterwards.",
+      "requests": [
+        {
+          "id": "convocation-registration",
+          "title": "Convocation registration",
+          "aka": "Compulsory, whether or not you intend to attend.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": null,
+          "what": {
+            "text": "Registration is compulsory: it is what tells the Department of Examinations you exist for that convocation. Charges differ according to whether the degree is received in person on the day, collected afterwards, or posted.",
+            "source": "/academics/faq"
+          },
+          "who": {
+            "text": "Students who have completed the course. Anyone who clears a backlog after the cut-off becomes eligible for the next convocation, held in October of the following academic year.",
+            "source": "/academics/faq"
+          },
+          "form": {
+            "text": "An online form whose link is emailed to your official university address about two months beforehand, and also published under the convocation tab of the examinations pages. The capture holds no copy of the link, because it changes with each convocation.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The link itself. The postal address given at registration is where the degree is sent.",
+            "source": "/academics/faq"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "The convocation fee is not refundable if you register and then do not attend; the degree is posted to the address you gave instead."
+          ],
+          "links": []
+        },
+        {
+          "id": "degree-collection",
+          "title": "Collecting your degree certificate",
+          "aka": "In person, or by somebody acting for you.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "examinations-counter",
+          "what": {
+            "text": "Degrees not received at convocation are collected from the Department of Examinations.",
+            "source": "/academics/faq"
+          },
+          "who": {
+            "text": "You, or a family member carrying an authority letter sent to the Department of Examinations two days in advance with proof of their identity attached.",
+            "source": "/academics/faq"
+          },
+          "form": {
+            "text": "No form; an authority letter by email if somebody else is collecting.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations counter.",
+            "source": "/academics/examination-contact-us"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "A degree held back for outstanding matters is released only after the student section records a no-dues clearance."
+          ],
+          "links": []
+        },
+        {
+          "id": "duplicate-degree",
+          "title": "Duplicate degree certificate",
+          "aka": "When the original degree is lost.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "exam-service-request-form",
+          "what": {
+            "text": "A replacement degree certificate, on the same terms as a duplicate grade card: the original is recorded as lost and must not be used again.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "The same service-request form, with a police first information report, an affidavit on hundred-rupee stamp paper and the payment receipt. All three are mandatory.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Two thousand rupees, paid online.",
+            "verbatim": "Fee of Rs.2000/- for Duplicate copy of your Degree.",
+            "source": "/academics/faq"
+          },
+          "turnaround": null,
+          "notes": [],
+          "links": [
+            { "label": "The service-request form", "href": "https://forms.gle/EbsrT87114AD14HY9", "note": "Choose the duplicate degree" }
+          ]
+        },
+        {
+          "id": "degree-name-correction",
+          "title": "Name correction on a degree certificate",
+          "aka": "A misprinted name on the degree itself.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "programme-office",
+          "what": {
+            "text": "The same route as a grade card correction: the record is corrected first, then the certificate is reissued.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "The Name Correction Request Form, collected from the Department of Examinations. It is not published for download.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The form and the original degree certificate go to the programme office of your department.",
+            "source": "/academics/faq"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [],
+          "links": [
+            { "label": "The examinations digital desk", "route": "/academics/student-assistance", "note": "Lists this as a named service" }
+          ]
+        },
+        {
+          "id": "digital-degree",
+          "title": "Digital degree certificate",
+          "aka": "The blockchain-verified copy, and printing it.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": "digilocker",
+          "what": {
+            "text": "The digital degree is held in DigiLocker and can be verified electronically. From 2022-23 semester grade cards are being added there too.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "Nothing to apply for. It is retrieved from DigiLocker by the graduate.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "Nothing to submit. A colour print of the digital degree can be attested and signed by the Controller of Examinations where an official hard copy is needed.",
+            "source": "/academics/faq"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "The FAQ says the retrieval procedure is under the convocation tab of the examinations pages. That tab is not in the capture, so this page names the service and does not describe steps it cannot see."
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "examinations",
+      "title": "Examinations",
+      "summary": "Registering to sit, sitting again, challenging a result — and the two forms buried in the ordinances.",
+      "requests": [
+        {
+          "id": "examination-form",
+          "title": "Examination form",
+          "aka": "Compulsory before every term-end examination. Miss the window and you cannot sit.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "erp",
+          "what": {
+            "text": "Filing the examination form is one of the three eligibility conditions for a term-end examination, alongside seventy-five per cent attendance and forty per cent in the formative assessments.",
+            "source": "/academics/faq"
+          },
+          "who": {
+            "text": "Every student sitting a term-end examination, and every student with an internal backlog. Outstanding fees must be cleared first.",
+            "source": "/academics/faq"
+          },
+          "form": {
+            "text": "Filed in the ERP: choose the examination and course year, submit the application, then print it.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The printout goes to the programme office with the full examination fee. Keep the receipt.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Five hundred rupees for regular examinations; for backlogs, three hundred per summative course and a hundred per formative course. Regular and backlog fees are paid together.",
+            "verbatim": "For regular exams (summative) exam fees is Rs.500/- and for backlog exams (summative – Rs.300/- per course and formative – Rs. 100/- per course)",
+            "source": "/academics/faq"
+          },
+          "turnaround": null,
+          "notes": [
+            "There is no late filing under any circumstances. The FAQ states it twice.",
+            "After submitting, download the PDF of the application: it shows which courses you are entered for and whether each is internal, external or both."
+          ],
+          "links": [
+            { "label": "Examination timetables", "route": "/academics/exam-timetable", "note": "When the papers are" }
+          ]
+        },
+        {
+          "id": "backlog-registration",
+          "title": "Backlog examination registration",
+          "aka": "Sitting a paper again.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "erp",
+          "what": {
+            "text": "Backlog examinations are entered through the same examination form as regular papers; the FAQ is explicit that an internal backlog also requires one.",
+            "source": "/academics/faq"
+          },
+          "who": {
+            "text": "Students carrying a backlog. Those admitted before 2022-23 sit their backlog papers under the examination scheme of the ordinance in force when they were admitted.",
+            "source": "/academics/faq"
+          },
+          "form": {
+            "text": "The same ERP examination form. No separate registration exists.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The programme office, with the regular and backlog fees paid together.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Three hundred rupees per summative course and a hundred per formative course.",
+            "verbatim": "Rs.300/- per course and formative – Rs. 100/- per course",
+            "source": "/academics/faq"
+          },
+          "turnaround": null,
+          "notes": [
+            "Backlog examinations are conducted off campus in digital mode, where regular ones are on campus."
+          ],
+          "links": []
+        },
+        {
+          "id": "makeup-examination",
+          "title": "Make-up examination",
+          "aka": "One additional attempt, for final-year students only.",
+          "audience": ["graduating"],
+          "office": "examination",
+          "channel": null,
+          "what": {
+            "text": "An additional summative examination, offered only to students in their final passing-out semester and for a maximum of two courses. It counts as a backlog examination and is normally held off campus in digital mode.",
+            "source": "/academics/faq"
+          },
+          "who": {
+            "text": "Final-year students, for no more than two courses.",
+            "source": "/academics/faq"
+          },
+          "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The FAQ defines the make-up examination twice and describes applying for it nowhere."
+          ],
+          "links": []
+        },
+        {
+          "id": "revaluation",
+          "title": "Revaluation of an answer book",
+          "aka": "Re-evaluation, when you think the marks are wrong.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "erp",
+          "what": {
+            "text": "Applied for through the ERP. A course you were absent for, or whose result the programme office is withholding, does not appear in the revaluation list at all.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "In the ERP's student module: University Examination, then the application form. Print the completed application and the payment.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The printed application and payment go to the student section.",
+            "source": "/academics/faq"
+          },
+          "cost": {
+            "text": "Paid online in the ERP. The amount itself is not published anywhere.",
+            "verbatim": "Fees to be paid online in ERP.",
+            "source": "/academics/faq"
+          },
+          "turnaround": {
+            "text": "Results are declared twelve days after the application.",
+            "verbatim": "Revaluation result will be declared after 12 Days from application of revaluation.",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "Answer books are evaluated on screen under the Central Assessment Programme and the digital record is kept in the examination management system.",
+            "A revaluation payment showing as outstanding usually means it was set against another unpaid fee; the programme office resolves that, not the examinations department."
+          ],
+          "links": [
+            { "label": "How answer books are assessed", "route": "/academics/evaluation-criteria", "note": "Evaluation criteria" }
+          ]
+        },
+        {
+          "id": "answer-book-photocopy",
+          "title": "Photocopy of an answer booklet",
+          "aka": "Seeing what you actually wrote, before deciding on revaluation.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "examinations-counter",
+          "what": {
+            "text": "A photocopy of your own answer booklet, released alongside the revaluation window.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "A student assistance form, completed at the Department of Examinations after paying the fee there.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Department of Examinations.",
+            "source": "/academics/examination-contact-us"
+          },
+          "cost": null,
+          "turnaround": {
+            "text": "Two days, once the revaluation dates are declared.",
+            "verbatim": "Photocopy will be made available within two days when revaluation dates are declared.",
+            "source": "/academics/faq"
+          },
+          "notes": [
+            "The student assistance form is named here and nowhere else in the capture, and no copy of it is published."
+          ],
+          "links": []
+        },
+        {
+          "id": "exam-complaint-format",
+          "title": "Examination complaint",
+          "aka": "The prescribed complaint format — Annexure II of the 2020 ordinances.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": null,
+          "annexure": {
+            "document": "exam-ordinance-2020",
+            "name": "Annexure II - Format of Complaint",
+            "page": 61,
+            "heading": "Annexure II - Format of Complaint"
+          },
+          "what": {
+            "text": "A prescribed complaint format printed as the second annexure to the Examination Ordinances 2020.",
+            "source": "/academics/ordinances"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 61 of the Examination Ordinances 2020, a sixty-three-page PDF linked from the ordinances page. It is not published as a form anywhere.",
+            "source": "/academics/ordinances"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The examination grievance answer in the FAQ describes three ways to complain and mentions none of them is this format, which is the kind of disagreement a forms index exists to surface."
+          ],
+          "links": [
+            { "label": "Academic ordinances", "route": "/academics/ordinances", "note": "Where the document is linked" }
+          ]
+        },
+        {
+          "id": "unfair-means-undertaking",
+          "title": "Unfair means undertaking",
+          "aka": "The form a student signs when caught with prohibited material in an examination hall.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": null,
+          "annexure": {
+            "document": "exam-ordinance-2020",
+            "name": "Annexure I - Form of Unfair Means by student",
+            "page": 57,
+            "heading": "Annexure I - Form of Unfair Means by student"
+          },
+          "what": {
+            "text": "The prescribed form on which a supervisor records an unfair-means case and takes the student's signature and statement.",
+            "source": "/academics/ordinances"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 57 of the Examination Ordinances 2020, a sixty-three-page PDF linked from the ordinances page.",
+            "source": "/academics/ordinances"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "A student signing this form in an examination hall has almost certainly never seen it. Publishing it is not a courtesy — the ordinances make the signature part of a disciplinary process that can end in rustication."
+          ],
+          "links": [
+            { "label": "Academic ordinances", "route": "/academics/ordinances", "note": "Both ordinances are linked here" }
+          ]
+        },
+        {
+          "id": "unfair-means-undertaking-2017",
+          "title": "Undertaking on an unfair means case, 2017 ordinance",
+          "aka": "The candidate's own undertaking — a separate form, in the older ordinance that still governs some backlogs.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": null,
+          "annexure": {
+            "document": "exam-ordinance-2017",
+            "name": "Form of Undertaking",
+            "page": 37,
+            "heading": "FORM OF UNDERTAKING"
+          },
+          "what": {
+            "text": "The undertaking a candidate signs accepting that the competent authority's decision in their case will be binding.",
+            "source": "/academics/ordinances"
+          },
+          "who": {
+            "text": "Students admitted before 2022-23, whose backlog examinations remain governed by the examination scheme of the 2017 and 2020 ordinances.",
+            "source": "/academics/faq"
+          },
+          "form": {
+            "text": "Page 37 of the Examination Ordinances 2017, a forty-three-page PDF linked from the ordinances page.",
+            "source": "/academics/ordinances"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "Two ordinances are simultaneously live for different cohorts and each carries its own version of this form. A student cannot tell from the ordinances page which one applies to them; the FAQ says, in a different answer, on a different page."
+          ],
+          "links": [
+            { "label": "Academic ordinances", "route": "/academics/ordinances", "note": "Both ordinances are linked here" }
+          ]
+        },
+        {
+          "id": "exam-fee-refund",
+          "title": "Refund of an examination or document fee",
+          "aka": "When you have paid twice, or paid too much.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": "exam-helpdesk",
+          "what": {
+            "text": "Duplicate and excess payments for examination fees and for transcripts are refunded on application, after verification.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "No form. An email to the examination helpdesk with the bank details for the refund — name, bank, branch, account number and IFSC code — the transaction details, and a screenshot of a cancelled cheque.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The examination helpdesk mailbox.",
+            "source": "/academics/examination-contact-us"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "This is the one request on this page that asks a student to send bank details by email. It is recorded because the university publishes it; the demonstration takes no view on whether it should."
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "doctoral",
+      "title": "Doctoral candidates",
+      "summary": "The requests that have no undergraduate equivalent. This section exists because the errand and the audience are the same thing here — everything else on the page is audience-tagged rather than sectioned.",
+      "requests": [
+        {
+          "id": "phd-coursework-exemption",
+          "title": "Exemption from doctoral coursework",
+          "aka": "Where prior work covers the taught component.",
+          "audience": ["doctoral"],
+          "office": null,
+          "channel": null,
+          "what": {
+            "text": "Exemption from doctoral coursework is available, granted by approval of the research committee.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The FAQ confirms the exemption exists in eleven words and describes applying for it in none."
+          ],
+          "links": []
+        },
+        {
+          "id": "phd-re-registration",
+          "title": "Re-registration for an extension",
+          "aka": "Two more years, where the thesis is not finished in time.",
+          "audience": ["doctoral"],
+          "office": null,
+          "channel": null,
+          "what": {
+            "text": "A maximum of two additional years may be granted through re-registration, provided the total period for completing the doctorate does not exceed eight years from admission.",
+            "source": "/programme/phd-in-economics"
+          },
+          "who": null,
+          "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "This rule is repeated on twenty-two doctoral programme pages in identical words, and on none of them is there a route to the extension it describes."
+          ],
+          "links": []
+        },
+        {
+          "id": "phd-synopsis-submission",
+          "title": "Synopsis submission",
+          "aka": "The pre-submission seminar and its paperwork.",
+          "audience": ["doctoral"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "Not described on any captured route, though every doctoral programme page describes the coursework and the eight-year limit around it."
+          ],
+          "links": []
+        },
+        {
+          "id": "phd-thesis-submission",
+          "title": "Thesis submission",
+          "aka": "Submitting, and the plagiarism and examiner formalities around it.",
+          "audience": ["doctoral"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The single most consequential form a doctoral candidate ever files, and nothing in the capture describes it, prices it or says who receives it."
+          ],
+          "links": []
+        },
+        {
+          "id": "phd-supervisor-change",
+          "title": "Change of supervisor",
+          "aka": "When a supervisor leaves, or the work moves.",
+          "audience": ["doctoral"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "No captured page mentions it."
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research, intellectual property and staff claims",
+      "summary": "Eleven complete forms, every one of them printed inside a single research manual and none published as a form. Mostly faculty and staff; the invention disclosure forms are open to students too.",
+      "requests": [
+        {
+          "id": "invention-disclosure",
+          "title": "Invention disclosure form",
+          "aka": "The first step in filing a patent through the university.",
+          "audience": ["staff", "students"],
+          "office": null,
+          "channel": "ipr-cell",
+          "annexure": {
+            "document": "research-manual",
+            "name": "Invention Disclosure Form",
+            "code": "MIT-WPU/IPR-02",
+            "page": 68,
+            "heading": "INVENTION DISCLOSURE FORM"
+          },
+          "what": {
+            "text": "The manual requires an inventor to submit their proposal as an Invention Disclosure Form, and devotes a chapter to what needs particular attention while filling one in.",
+            "source": "/research/ipr"
+          },
+          "who": {
+            "text": "The IPR Cell's stated remit covers students, researchers and faculty alike.",
+            "source": "/research/ipr"
+          },
+          "form": {
+            "text": "Page 68 of the Research Manual, coded MIT-WPU/IPR-02. A separate design version, MIT-WPU/IPR-01, is on page 67.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The manual's own contents page calls IPR-02 the “Invention Disclosure Form” and the page itself is headed “Invention Disclosure Form-Design”, the same heading as IPR-01. One of the two is wrong, and a form index is where somebody would notice."
+          ],
+          "links": [
+            { "label": "The IPR Cell", "route": "/research/ipr", "note": "Where the manual is linked" }
+          ]
+        },
+        {
+          "id": "copyright-registration",
+          "title": "Application for copyright registration",
+          "aka": "Registering a copyright through the university.",
+          "audience": ["staff", "students"],
+          "office": null,
+          "channel": "ipr-cell",
+          "annexure": {
+            "document": "research-manual",
+            "name": "Application for Copyright Registration",
+            "code": "MIT-WPU/IPR-03",
+            "page": 71,
+            "heading": "APPLICATION FOR COPYRIGHT REGISTRATION"
+          },
+          "what": {
+            "text": "The manual requires all patent and copyright applications to be made on the prescribed proformas.",
+            "source": "/research/ipr"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 71 of the Research Manual, coded MIT-WPU/IPR-03.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [],
+          "links": [
+            { "label": "Copyrights", "route": "/research/ipr/copyright", "note": "The IPR Cell's copyright page" }
+          ]
+        },
+        {
+          "id": "ip-facilitation-request",
+          "title": "IP facilitation request",
+          "aka": "Asking the cell for help with drafting, filing or transfer.",
+          "audience": ["staff", "students"],
+          "office": null,
+          "channel": "ipr-cell",
+          "annexure": {
+            "document": "research-manual",
+            "name": "IP Facilitation Request",
+            "code": "MIT-WPU/IPR-04",
+            "page": 74,
+            "heading": "IP FACILITATION REQUEST"
+          },
+          "what": {
+            "text": "The IPR Cell offers assistance in patent drafting, filing and prosecution, and guidance through IP policy and regulatory frameworks.",
+            "source": "/research/ipr"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 74 of the Research Manual, coded MIT-WPU/IPR-04. An Agreement on Designs, MIT-WPU/IPR-05, follows on page 75.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [],
+          "links": []
+        },
+        {
+          "id": "publication-incentive-claim",
+          "title": "Claim for a publication incentive",
+          "aka": "The incentive for a paper or book chapter in a ranked journal.",
+          "audience": ["staff"],
+          "office": null,
+          "channel": null,
+          "annexure": {
+            "document": "research-manual",
+            "name": "Application Form to claim incentive for Publications (Non-Open Access)/Book Chapters in Q1-Q4/ABDC Journals",
+            "page": 18,
+            "heading": "Application Form to claim incentive for Publications"
+          },
+          "what": {
+            "text": "The research manual sets out an incentive scheme for publications and prints the claim form inside its incentives chapter.",
+            "source": "/research/ipr"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 18 of the Research Manual.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [],
+          "links": []
+        },
+        {
+          "id": "open-access-fee-claim",
+          "title": "Claim for an open access publication fee",
+          "aka": "Reimbursement of an article processing charge.",
+          "audience": ["staff"],
+          "office": null,
+          "channel": null,
+          "annexure": {
+            "document": "research-manual",
+            "name": "Application Form to claim Open Access Fee for Publication in Q1/Q2/A*/A Journals",
+            "page": 19,
+            "heading": "Application Form to claim Open Access Fee for Publication in Q1/Q2/A*/A Journals"
+          },
+          "what": {
+            "text": "A separate claim from the publication incentive, for the fee an open-access journal charges the author.",
+            "source": "/research/ipr"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 19 of the Research Manual.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [],
+          "links": []
+        },
+        {
+          "id": "conference-expenses-claim",
+          "title": "Claim for conference or workshop expenses",
+          "aka": "Travel and registration for a conference, seminar or workshop.",
+          "audience": ["staff"],
+          "office": null,
+          "channel": null,
+          "annexure": {
+            "document": "research-manual",
+            "name": "Application Form to claim expenses for participating in a Conference/Seminar/Workshop",
+            "page": 20,
+            "heading": "Application Form to claim expenses for participating in a Conference/Seminar/Workshop"
+          },
+          "what": {
+            "text": "The careers page names travel grants for national and international conferences among the university's research and academic incentives; the claim form for them is in the research manual.",
+            "source": "/career"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 20 of the Research Manual.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [],
+          "links": []
+        },
+        {
+          "id": "consultancy-project-approval",
+          "title": "Approval of a consultancy project",
+          "aka": "Taking on paid outside work through the university.",
+          "audience": ["staff"],
+          "office": null,
+          "channel": null,
+          "annexure": {
+            "document": "research-manual",
+            "name": "Note Sheet for Approval of Consultancy Projects",
+            "page": 33,
+            "heading": "Note Sheet for Approval of Consultancy Projects"
+          },
+          "what": {
+            "text": "The manual carries a consultancy chapter with an earnings distribution model, and prints three of its instruments in sequence: the approval note sheet, a proforma invoice for consultancy services, and an earnings distribution proposal.",
+            "source": "/research/ipr"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 33 of the Research Manual; the proforma invoice follows on page 34 and the earnings distribution proposal on page 36.",
+            "source": "/research/ipr"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The university publishes six years of consultancy earnings by year and not one word about how a member of staff starts one."
+          ],
+          "links": [
+            { "label": "Sponsored research", "route": "/research/sponsored-research", "note": "Where the manual is also linked" }
+          ]
+        },
+        {
+          "id": "staff-no-dues",
+          "title": "Staff no-dues certificate",
+          "aka": "The clearance a member of staff needs on leaving.",
+          "audience": ["staff"],
+          "office": "human-resources",
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "Nothing in the capture describes a staff no-dues process. It is listed here rather than on a page of its own because it is the same instrument as the student no-dues clearance, and two pages would either duplicate it or split it arbitrarily."
+          ],
+          "links": []
+        },
+        {
+          "id": "staff-leave",
+          "title": "Staff leave application",
+          "aka": "Casual, earned, sabbatical and study leave.",
+          "audience": ["staff"],
+          "office": "human-resources",
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The careers page describes the university's benefits at length and its leave arrangements not at all."
+          ],
+          "links": []
+        },
+        {
+          "id": "employee-grievance",
+          "title": "Employee grievance",
+          "aka": "The staff equivalent of the students' grievance committee.",
+          "audience": ["staff"],
+          "office": null,
+          "channel": null,
+          "what": {
+            "text": "An Employee Grievance Redressal Committee exists and its constitution is published as a document on the student information index.",
+            "source": "/student-information"
+          },
+          "who": null,
+          "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The committee's membership is published; its procedure, its mailbox and the form are not. The students' committee publishes all three, which is the comparison worth putting to the registrar."
+          ],
+          "links": [
+            { "label": "Student information", "route": "/student-information", "note": "Where the committee is listed" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "money-and-living",
+      "title": "Fees, clearance and living on campus",
+      "summary": "Money owed and owing, hostel places, and the clearances that unlock everything else.",
+      "requests": [
+        {
+          "id": "no-dues-clearance",
+          "title": "No-dues clearance",
+          "aka": "The clearance that stands between a graduate and their degree.",
+          "audience": ["students", "graduating"],
+          "office": null,
+          "channel": null,
+          "what": {
+            "text": "A no-dues remark from the student section, required before a withheld degree certificate is released.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": null,
+          "submit": {
+            "text": "The student section. No captured page says where the student section is, what it is called elsewhere on the site, or how to reach it.",
+            "source": "/academics/faq"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "This is the sharpest gap on the page. A no-dues clearance is on the critical path of every graduation, it is named twice in the capture — once for degrees and once in the hostel context — and neither mention says how anybody obtains one.",
+            "The administration directory names no student section either, which suggests the office exists and the university has never published a route to it."
+          ],
+          "links": []
+        },
+        {
+          "id": "hostel-admission",
+          "title": "Hostel admission",
+          "aka": "A room, the undertakings that come with it, and what it costs to hold one.",
+          "audience": ["hostel", "students"],
+          "office": "hostel",
+          "channel": null,
+          "annexure": {
+            "document": "hostel-manual",
+            "name": "Hostel Admission form",
+            "page": 29,
+            "heading": "HOSTEL ADMISSION"
+          },
+          "what": {
+            "text": "Single, double and triple occupancy rooms in separate boys' and girls' hostels, with the fee varying by room type and by whether it is air conditioned.",
+            "source": "/life-wpu/hostel-facilities"
+          },
+          "who": null,
+          "form": {
+            "text": "Page 29 of the Hostel Manual, followed by the parent's undertaking on page 30 and the student's UGC anti-ragging undertaking on page 31. The hostel page's own “Apply Now for Hostel” control points back at the hostel page; this is where the form actually is.",
+            "source": "/life-wpu/hostel-facilities"
+          },
+          "submit": {
+            "text": "Payment is made online through a link the hostel administration supplies directly; a room is confirmed only when the first instalment is paid in full.",
+            "source": "/life-wpu/hostel-facilities"
+          },
+          "cost": {
+            "text": "A refundable security deposit of twenty-five thousand rupees with the first instalment, plus room fees that vary by room type.",
+            "verbatim": "refundable security deposit of ₹ 25,000",
+            "source": "/life-wpu/hostel-facilities"
+          },
+          "turnaround": null,
+          "notes": [
+            "Both undertakings are required by the UGC's 2009 anti-ragging regulations and must be signed at the time of admission, so a family arriving without them has not finished the process."
+          ],
+          "links": [
+            { "label": "Hostel facilities", "route": "/life-wpu/hostel-facilities", "note": "Rooms, rules and the manual" }
+          ]
+        },
+        {
+          "id": "hostel-vacating",
+          "title": "Vacating a hostel room",
+          "aka": "Leaving, and getting the deposit back.",
+          "audience": ["hostel"],
+          "office": "hostel",
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The hostel page and manual describe a refundable deposit of twenty-five thousand rupees and say nothing about how or when it is refunded, or what a departing resident must do. The other half of a deposit is a refund procedure, and it is not published."
+          ],
+          "links": []
+        },
+        {
+          "id": "tuition-fee-refund",
+          "title": "Tuition fee refund on withdrawal",
+          "aka": "Leaving the programme, and what comes back.",
+          "audience": ["students"],
+          "office": "fee-enquiry",
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "No captured page states a fee refund policy for a student who withdraws. The only refund rule in the ordinances is punitive — a student rusticated for examination malpractice has no claim on fees — and the only refunds described anywhere are of overpaid examination and transcript charges. A fees payment policy is Annexure 4 of the admission policy; whether it covers withdrawal is not visible from the captured surface."
+          ],
+          "links": []
+        },
+        {
+          "id": "scholarship-application",
+          "title": "Scholarship application",
+          "aka": "Merit, sports and the School of Government scholarship.",
+          "audience": ["students", "applicants"],
+          "office": "admissions",
+          "channel": null,
+          "what": {
+            "text": "Merit scholarships at full, half and quarter fee waivers, sports scholarships graded by medal and level, and a scholarship for wards of serving public servants at the School of Government.",
+            "source": "/scholarships"
+          },
+          "who": {
+            "text": "Awarded on entrance and internal test performance, or on sporting achievement; continuing them requires a cumulative average of eight or above with no backlogs, eighty per cent attendance and no disciplinary finding.",
+            "source": "/scholarships"
+          },
+          "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The scholarships page describes eligibility in detail across four categories and never says how to apply. The admission policy annexure is the only procedural document, and it is an admissions document rather than an application route.",
+            "This is the second-sharpest gap on the page: a large amount of money, conditions published precisely, and the act of applying described nowhere."
+          ],
+          "links": [
+            { "label": "Scholarships and financial aid", "route": "/scholarships", "note": "Categories and conditions" }
+          ]
+        },
+        {
+          "id": "admission-quota-proformas",
+          "title": "Defence, disability, migrant and sponsorship certificates",
+          "aka": "The nine numbered proformas an applicant in a reserved category must produce.",
+          "audience": ["applicants"],
+          "office": "admissions",
+          "channel": null,
+          "annexure": {
+            "document": "admission-policy",
+            "name": "Proforma–I to Proforma–IX",
+            "page": 89,
+            "heading": "Proforma–I (For Def-1, Def -2, and Def -3 candidates)"
+          },
+          "what": {
+            "text": "Nine prescribed certificate formats: three defence service certificates, one for wards of paramilitary personnel, one for candidates with a disability, two for Jammu and Kashmir postings and migrants, one for refugees staying with relatives, and a sponsorship certificate to be signed by an employer.",
+            "source": "/student-information"
+          },
+          "who": {
+            "text": "Applicants claiming a reserved category. The admission policy names which proforma each category must produce.",
+            "source": "/student-information"
+          },
+          "form": {
+            "text": "Pages 89 to 97 of the Admission Policy 2026-27, a hundred-and-one-page PDF. These are the most deeply buried forms on the whole site.",
+            "source": "/student-information"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "An applicant with a disability, or the family of a serving soldier, currently has to download a hundred-page admission policy and scroll to page ninety-three to find the certificate format they are required to submit."
+          ],
+          "links": [
+            { "label": "Student information", "route": "/student-information", "note": "Where the admission policy is linked" }
+          ]
+        },
+        {
+          "id": "identity-card-replacement",
+          "title": "Replacing a lost identity card",
+          "aka": "Getting back into the buildings.",
+          "audience": ["students", "staff"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "Nothing in the capture describes a student or staff identity card at all — not obtaining one, not replacing one, not what it costs. The only occurrence of the phrase is on a conference registration page."
+          ],
+          "links": []
+        },
+        {
+          "id": "leave-application",
+          "title": "Student leave of absence",
+          "aka": "Medical leave, and the attendance that depends on it.",
+          "audience": ["students"],
+          "office": null,
+          "channel": null,
+          "what": null, "who": null, "form": null, "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "No leave application procedure is published. This matters more than it looks: examination eligibility turns on seventy-five per cent attendance “considering all the concessions given for sports, sick leave etc.”, so a concession the university counts is one it has never told students how to claim."
+          ],
+          "links": []
+        },
+        {
+          "id": "club-activity-approval",
+          "title": "Student club activity approval",
+          "aka": "Getting an event signed off before it runs.",
+          "audience": ["students"],
+          "office": "student-affairs",
+          "channel": null,
+          "annexure": {
+            "document": "club-handbook",
+            "name": "Student Club Activity Approval Form",
+            "page": 16,
+            "heading": "Submission of Student Club Activity Approval Form"
+          },
+          "what": {
+            "text": "Step three of running any student club activity: fill in the approval form and have it signed by the faculty adviser or person in charge.",
+            "source": "/life-wpu/clubs"
+          },
+          "who": {
+            "text": "The thirty-odd student clubs the university lists.",
+            "source": "/life-wpu/clubs"
+          },
+          "form": {
+            "text": "Page 16 of the Students' Club Handbook 2024-25.",
+            "source": "/life-wpu/clubs"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [],
+          "links": [
+            { "label": "Student clubs", "route": "/life-wpu/clubs", "note": "Where the handbook is linked" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "welfare",
+      "title": "Complaints, appeals and welfare",
+      "summary": "Where a student or a member of staff takes something that has gone wrong.",
+      "requests": [
+        {
+          "id": "examination-grievance",
+          "title": "Examination grievance",
+          "aka": "Unfair marking, an unfair examination environment, a complaint that keeps going unanswered.",
+          "audience": ["students"],
+          "office": "examination",
+          "channel": null,
+          "what": {
+            "text": "The Department of Examinations runs its own grievance mechanism, covering unfair treatment of assessment performance, recurring unaddressed complaints, defamation, an unfair examination environment, discrimination, and departures from published university process.",
+            "source": "/academics/faq"
+          },
+          "who": null,
+          "form": {
+            "text": "Three routes, any of which is accepted: a student assistant form reached by a QR code on the examinations pages, an email to the examination helpdesk, or a handwritten application delivered in person.",
+            "source": "/academics/faq"
+          },
+          "submit": {
+            "text": "The Controller of Examinations' office, in person, within two working days of the incident.",
+            "source": "/academics/faq"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "The two-working-day limit is the tightest deadline anywhere on this page and it is stated once, deep inside a hundred-and-forty-six-question FAQ."
+          ],
+          "links": []
+        },
+        {
+          "id": "student-grievance",
+          "title": "Grievance to the university committee",
+          "aka": "The statutory route, under the UGC's 2023 regulations.",
+          "audience": ["students"],
+          "office": "student-grievance",
+          "channel": "grievance-form",
+          "what": {
+            "text": "The Students' Grievance Redressal Committee, constituted under the University Grants Commission's 2023 regulations, with an appeal to an Ombudsperson where it does not resolve a complaint in time.",
+            "source": "/academics/student-grievance"
+          },
+          "who": {
+            "text": "Any student of MIT-WPU. A student may appear in person at the hearing or send a representative.",
+            "source": "/academics/student-grievance"
+          },
+          "form": {
+            "text": "An online student grievance form, or a hard-copy letter to the committee's chairperson.",
+            "source": "/academics/student-grievance"
+          },
+          "submit": {
+            "text": "The committee, which refers the complaint back to the institution with its comments within fifteen days of receipt and then fixes a hearing date.",
+            "source": "/academics/student-grievance"
+          },
+          "cost": null, "turnaround": null,
+          "notes": [
+            "Unresolved grievances go to the Ombudsperson, whose order the institution is required to comply with. The UGC's own e-Samadhan portal is published alongside as an external route."
+          ],
+          "links": [
+            { "label": "The online grievance form", "href": "https://docs.google.com/forms/d/e/1FAIpQLSeT1_1hwZxzruBy5VScX8ofi1zmOB7PazriurV1UGKprpADWQ/viewform", "note": "The committee's own intake" },
+            { "label": "The UGC e-Samadhan portal", "href": "https://samadhaan.ugc.ac.in/", "note": "The regulator's route" },
+            { "label": "Students' welfare", "route": "/academics/student-grievance", "note": "Committee and procedure" }
+          ]
+        },
+        {
+          "id": "counselling-appointment",
+          "title": "Counselling appointment",
+          "aka": "Aakriti, the university's centre for holistic well-being.",
+          "audience": ["students", "staff"],
+          "office": null,
+          "channel": "counselling-form",
+          "what": {
+            "text": "Individual, group and crisis counselling for students, staff and faculty, run by named counsellors whose qualifications and approaches the centre publishes.",
+            "source": "/aakriti-centre-for-holistic-well-being"
+          },
+          "who": {
+            "text": "Students, faculty and non-teaching staff.",
+            "source": "/aakriti-centre-for-holistic-well-being"
+          },
+          "form": {
+            "text": "An appointment booking form published on the centre's own page.",
+            "source": "/aakriti-centre-for-holistic-well-being"
+          },
+          "submit": null, "cost": null, "turnaround": null,
+          "notes": [
+            "The centre states that it holds strict confidentiality. It publishes no telephone number, no email address and no location, so the booking form is the only route to it."
+          ],
+          "links": [
+            { "label": "Book an appointment", "href": "https://forms.gle/5eRM868ac4CRgZYR9", "note": "The centre's booking form" },
+            { "label": "Aakriti: Centre for Holistic Well-Being", "route": "/aakriti-centre-for-holistic-well-being", "note": "The centre and its counsellors" }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "charges": {
+    "id": "what-they-cost",
+    "title": "What each form costs",
+    "caption": "Published charges for student service requests, MIT-WPU",
+    "categoryHeading": "Form",
+    "paragraphs": [
+      "Every figure below occurs character for character on the captured page it cites; the build refuses to finish if one does not. Nothing is rounded, converted or tidied on the way in.",
+      "A blank is not zero. Where the university publishes no charge for a form, the cell says so, because a reader who sees an empty cell concludes the document is free and arrives without the money."
+    ],
+    "columns": [
+      { "key": "processing", "label": "Processing", "note": "The university's own charge" },
+      { "key": "postageIndia", "label": "Postage in India", "note": "Where despatch is offered" },
+      { "key": "postageAbroad", "label": "Postage abroad", "note": "Per copy" }
+    ],
+    "rows": [
+      { "request": "official-transcript", "cells": { "processing": "Rs.200/- per copy", "postageIndia": "Rs.100/- per copy", "postageAbroad": "Canada Rs.1600/-, USA Rs.1900/-" }, "source": "/academics/faq" },
+      { "request": "consolidated-grade-card", "cells": { "processing": "Rs.200/-", "postageIndia": "Rs.100/-" }, "source": "/academics/faq" },
+      { "request": "duplicate-grade-card", "cells": { "processing": "Rs.500/- plus Rs.100/- per trimester card" }, "source": "/academics/faq" },
+      { "request": "duplicate-degree", "cells": { "processing": "Rs.2000/-" }, "source": "/academics/faq" },
+      { "request": "trimester-semester-conversion", "cells": { "processing": "Rs.250/-" }, "source": "/academics/faq" },
+      { "request": "grade-card-name-correction", "cells": { "processing": "Rs.100/- per grade card" }, "source": "/academics/faq" },
+      { "request": "examination-form", "cells": { "processing": "Rs.500/- regular; Rs.300/- per backlog course" }, "source": "/academics/faq" },
+      { "request": "academic-documents-by-post", "cells": { "postageIndia": "Rs.500/-", "postageAbroad": "Rs.1800/-" }, "source": "/academics/faq" },
+      { "request": "hostel-admission", "cells": { "processing": "Refundable deposit of Rs.25,000/-" }, "source": "/life-wpu/hostel-facilities" },
+      { "request": "bonafide-certificate", "cells": {}, "source": "/academics/faq" },
+      { "request": "equivalent-percentage-certificate", "cells": {}, "source": "/academics/faq" },
+      { "request": "backlog-summary-certificate", "cells": {}, "source": "/academics/faq" },
+      { "request": "revaluation", "cells": {}, "source": "/academics/faq" },
+      { "request": "grade-card-attestation", "cells": {}, "source": "/academics/faq" }
+    ],
+    "validFor": "Charges as published on the captured MIT-WPU pages of 23 and 24 July 2026. This is a demonstration; confirm every figure with the Department of Examinations before paying.",
+    "notes": [
+      "Payment is online in every case where the university names a method. A payment screenshot has to show the amount, the date, the transaction identifier and the university's account number, and an application that omits any of the four is not processed.",
+      "Revaluation is the exception: its fee is paid inside the ERP and its amount is published nowhere at all."
+    ]
+  },
+
+  "directories": [
+    { "label": "Examinations FAQ", "route": "/academics/faq", "note": "146 questions; most of this page" },
+    { "label": "Examination contacts", "route": "/academics/examination-contact-us", "note": "Helpdesk and verification desk" },
+    { "label": "Student assistance", "route": "/academics/student-assistance", "note": "The examinations digital desk" },
+    { "label": "Document verification", "route": "/academics/document-verification", "note": "Employer and WES checks" },
+    { "label": "Academic ordinances", "route": "/academics/ordinances", "note": "Carries three form annexures" },
+    { "label": "The IPR Cell", "route": "/research/ipr", "note": "Carries eleven form annexures" },
+    { "label": "Students' welfare", "route": "/academics/student-grievance", "note": "Grievance committee and procedure" },
+    { "label": "Hostel facilities", "route": "/life-wpu/hostel-facilities", "note": "Carries three form annexures" },
+    { "label": "Student clubs", "route": "/life-wpu/clubs", "note": "Carries one form annexure" },
+    { "label": "Student information", "route": "/student-information", "note": "Carries the nine admission proformas" },
+    { "label": "Scholarships", "route": "/scholarships", "note": "Categories and conditions" },
+    { "label": "Student loans", "route": "/student-loans", "note": "What the banks require" }
+  ],
+
+  "related": [
+    { "label": "Student resources", "href": "/students/", "note": "Ordinances, handbooks, timetables and policies" },
+    { "label": "University offices", "href": "/administration/", "note": "Who runs each of these, and how to reach them" }
+  ],
+
+  "expect": ["what", "who", "form", "submit", "cost", "turnaround"]
+}

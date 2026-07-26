@@ -417,28 +417,64 @@ h3 {
   font-size: clamp(1.02rem, 1.7vw, 1.22rem);
 }
 
+/* The gold corner that used to be written here as `.hero-media::before` is
+   now `uwp-feature-figure`, from the shared package (media.css). The builder
+   wraps this figure in the component's frame:
+
+     figure.uwp-feature-figure.hero-media
+       > .uwp-feature-figure__frame
+         > .hero-media__box.uwp-feature-figure__media
+
+   Three things changed with the move, and each was a defect.
+
+   The colour is the NAVIGATION's gold — `--gold`, the value of the 3px rule
+   under the masthead — instead of `--gold-soft`, a pale tint of it. The block
+   is the institution's mark; softened towards paper it read as a misprint.
+
+   The painting no longer depends on this figure's surroundings. The old form
+   hung the block outside at `z-index: -1`, which required that no ancestor
+   clip its overflow and that this element never become a stacking context —
+   and, unwritten anywhere, that no ANCESTOR carry a background, since a
+   negative z-index paints beneath every ordinary descendant background in the
+   nearest ancestor stacking context. Any tinted band would have deleted it.
+
+   And there is one implementation instead of four: demo-assets/site.css?v=20260725-global-nav-8-cascade had
+   the identical rule under a different selector, and so did the package's own
+   `.uwp-hero__media`.
+
+   What stays here is only what is this family's own: the frame's fill, and the
+   ratio of the picture inside it. */
 .hero-media {
-  position: relative;
   margin: 0;
+}
+
+/* The fill and the rule sit on the picture's own box rather than on the figure,
+   because the figure is now a gutter wider and taller than the picture — the
+   room the accent block needs — and a border drawn round the figure would draw
+   it round the gutter too. */
+.hero-media__box {
   background: var(--surface-strong);
   border: 1px solid var(--line);
 }
 
-.hero-media::before {
-  position: absolute;
-  z-index: -1;
-  width: 45%;
-  height: 55%;
-  inset: auto -1.15rem -1.15rem auto;
-  content: "";
-  background: var(--gold-soft);
+/* The lead ratio, 4/3, replacing `var(--media-ratio)` — which the builder set
+   from each file's INTRINSIC size, so a 1557x599 campus panorama produced a
+   2.6:1 lead: a 300px strip at desktop width and a sliver on a phone. The
+   frame now states the shape it wants and `cover` crops into the picture,
+   which costs less than showing the whole sweep at no height at all. A video
+   still keeps its own ratio, below — a cropped video is a different claim from
+   a cropped photograph. The site's three ratios are 4/3 lead, 3/2 card, 4/5
+   portrait. */
+.hero-media img {
+  width: 100%;
+  aspect-ratio: var(--media-ratio, 4 / 3);
+  object-fit: cover;
 }
 
-.hero-media img,
 .hero-media video {
   width: 100%;
   aspect-ratio: var(--media-ratio);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero-media figcaption {
@@ -480,9 +516,10 @@ h3 {
   transition: transform 180ms ease;
 }
 
-.curated-media__card img[data-media-role="banner"] {
-  aspect-ratio: 12 / 5;
-}
+/* Removed: a `banner` role used to widen this tile to 12/5 (2.4:1), which in
+   a four-column grid was 74px of picture. An editorial banner survives a 3/2
+   crop; it does not survive being 74px tall. The role attribute is left on the
+   markup because it records what the file is; it no longer changes the box. */
 
 /* The scrim that makes the caption legible over a photograph. The card itself
  * is the <a>, so without `pointer-events: none` this gradient sits on top of
@@ -694,10 +731,15 @@ h3 {
   border: 1px solid var(--line);
 }
 
+/* Portrait ratio, 4/5, replacing the sitter's own intrinsic ratio: these
+   arrive at whatever shape the office supplied, so a row of executive offices
+   alternated between landscape and portrait down the page. 4/5 is the site's
+   portrait ratio, and the builder's --office-ratio is kept as an override for
+   a picture that genuinely must not be cropped. */
 .leadership-office__media img {
   display: block;
   width: 100%;
-  aspect-ratio: var(--office-ratio);
+  aspect-ratio: var(--office-ratio, 4 / 5);
   object-fit: cover;
 }
 
@@ -1021,9 +1063,11 @@ h3 {
   border: 1px solid var(--line);
 }
 
+/* 500/280 was one archive scan's own proportions promoted to a rule. It is a
+   picture in a row of pictures, so it takes the card ratio. */
 .legacy-timeline__media img {
   width: 100%;
-  aspect-ratio: 500 / 280;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
@@ -1191,22 +1235,11 @@ h3 {
   border-top: 3px solid var(--gold);
 }
 
-.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.9rem;
-  margin-top: 1.25rem;
-}
-
-.footer-social a {
-  color: #dbe6ec;
-  font-size: 0.82rem;
-}
-
-.footer-social a:hover,
-.footer-social a:focus-visible {
-  color: #fff;
-}
+/* `.footer-social` was here, and is gone with the markup it styled: this
+   family's builder held its own social row, and the row is the package's
+   social-links component now, rendered by the shell for every page family
+   rather than by this one builder for twelve pages. Nothing in the repository
+   emits the class. */
 
 .layer-index {
   padding-block: clamp(3.5rem, 8vw, 7rem);

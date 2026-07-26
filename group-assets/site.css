@@ -685,9 +685,15 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+/* Portrait ratio, 4/5. This box was square, which is the one ratio nothing
+   else on the site uses for a face — the large portrait below it, the school
+   strip in academics and the package's own portrait are all 4/5 — and a square
+   crop of a standing head-and-shoulders takes the shoulders off. Bigger, too:
+   126px of face in a directory row was small enough that the photograph was
+   doing no work. */
 .member-portrait {
-  width: 126px;
-  height: 126px;
+  width: 144px;
+  height: 180px;
   object-fit: cover;
   background: var(--blue-pale);
 }
@@ -1373,8 +1379,8 @@ h3 {
   }
 
   .member-portrait {
-    width: 84px;
-    height: 84px;
+    width: 88px;
+    height: 110px;
   }
 
   .tag-row {

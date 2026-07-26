@@ -2645,6 +2645,10 @@
     {
       "source": "/schools/faculty-of-science-and-health-science/school-of-science/department-of-physics/",
       "target": "/academics/science/physics/"
+    },
+    {
+      "source": "/student-information/",
+      "target": "/students/"
     }
   ]
 }
