@@ -230,7 +230,21 @@
    * summary directly above it, so the space it occupied was already spent
    * telling the reader something they had just read; the names are the thing
    * that space was worth. */
+  /* All or none. A roster showing two of seven members is a worse answer than
+   * no roster: a reader cannot tell whether the other five work on something
+   * else, work on nothing, or were forgotten — and the third reading is the
+   * one they will reach. So the whole feature waits until every member has an
+   * area, which also makes the gap visible to whoever can close it rather than
+   * letting a half-filled page look finished.
+   *
+   * The condition is deliberately "every member is placed" and not "this area
+   * has members": the fault it guards against is a page where some areas carry
+   * names and others do not. */
+  const everyMemberPlaced = orderedPeople.length > 0 && orderedPeople.every(
+    (person) => (person.researchAreas || []).length > 0);
+
   function areaRoster(area) {
+    if (!everyMemberPlaced) return "";
     const members = orderedPeople.filter((person) =>
       (person.researchAreas || []).includes(area.id));
     if (members.length === 0) return "";
