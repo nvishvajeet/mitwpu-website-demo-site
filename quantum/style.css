@@ -75,6 +75,23 @@
   padding-block: 0;
 }
 
+/* The roster under a research area on research.html.
+   The rule and the spacing are .topic-list-wide's, moved onto the wrapper so
+   that the label sits above the rule rather than under it — and kept local,
+   because .topic-list is shared with the astrophysics and bioinformatics
+   sites, which still use it for the thing it was named after. */
+.research-members {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.research-members .topic-list {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: 0;
+}
+
 /* site.css's .footer-grid columns and gap need no neutralising: they lose to
    .uwp-footer__grid on equal specificity because patterns.css is imported
    after site.css. That ordering is the whole reason the two sheets can be on

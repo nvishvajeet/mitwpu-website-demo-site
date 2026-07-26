@@ -219,6 +219,29 @@
     </article>`;
   }
 
+  /* Who works in an area is stored on the person, not on the area — see the
+   * note at the top of data.js — so the roster is derived here rather than
+   * read. An area nobody is placed in renders no roster at all, not an empty
+   * list: most of this group has published no description of their own work,
+   * so an area with no names under it is a real state of the record and has to
+   * look like one rather than like a render that failed.
+   *
+   * This replaced the topic list that used to sit here. It restated the
+   * summary directly above it, so the space it occupied was already spent
+   * telling the reader something they had just read; the names are the thing
+   * that space was worth. */
+  function areaRoster(area) {
+    const members = orderedPeople.filter((person) =>
+      (person.researchAreas || []).includes(area.id));
+    if (members.length === 0) return "";
+    return `<div class="research-members">
+      <p class="eyebrow">In this area</p>
+      <ul class="topic-list">${members.map((person) =>
+        `<li><a href="${escapeHtml(profileUrl(person))}">${escapeHtml(peopleOrder.displayName(person))}</a></li>`
+      ).join("")}</ul>
+    </div>`;
+  }
+
   function renderResearch() {
     const summaryTarget = document.getElementById("research-areas");
     if (summaryTarget) {
@@ -226,14 +249,17 @@
     }
     const listTarget = document.getElementById("research-list");
     if (listTarget) {
+      /* The id is the area's own, so index.html's theme cards and anything
+       * else that wants to point at an area can link to research.html#<id>
+       * and land on it. initialize() already scrolls a hash into view. */
       listTarget.innerHTML = group.researchAreas.map((area) => `
-        <article class="research-block">
+        <article class="research-block" id="${escapeHtml(area.id)}">
           <div class="research-index">${escapeHtml(area.number)}</div>
           <div class="research-copy">
             <h2>${escapeHtml(area.title)}</h2>
             <div class="research-detail">
               <p>${escapeHtml(area.summary)}</p>
-              <ul class="topic-list topic-list-wide">${(area.topics || []).map((topic) => `<li>${escapeHtml(topic)}</li>`).join("")}</ul>
+              ${areaRoster(area)}
             </div>
           </div>
         </article>`).join("");

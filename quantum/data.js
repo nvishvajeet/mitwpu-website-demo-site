@@ -1,26 +1,47 @@
 // Concise, human-editable group content. All profiles remain provisional.
+
+/* Research areas: three things to know before editing them.
+ *
+ * 1. `topics` is gone, and should not come back as it was. Each area's list
+ *    restated that area's own summary in the same words — "Quantum materials,
+ *    semiconductors, thin films, and photonic devices" above a list reading
+ *    "Quantum materials / Semiconductor devices / Photonic devices / Thin
+ *    films". The second telling gave a reader nothing, so it was removed
+ *    rather than reworded. A `topics` list earns its place only when it says
+ *    something the summary does not.
+ *
+ * 2. `sources` is where the summary's wording came from, and it is the only
+ *    licence this file has to describe anybody's work. Two areas have one: a
+ *    group member has published a description of their own research, and the
+ *    summary is a compression of it. The third has no `sources` and keeps the
+ *    words it already had. That is not an oversight to be tidied away — it is
+ *    the record that nobody has yet stood behind a description of that area.
+ *    Do not write a better-sounding summary for it; get one from the people
+ *    who work in it, and cite them here.
+ *
+ * 3. Membership is not stored here. A person's areas live on the person, in
+ *    `people[].researchAreas` below. One member, one place to edit, whether
+ *    they join, move or leave; the research page derives each area's roster by
+ *    filtering people on the area id. Storing it on both sides would let the
+ *    two disagree, and there is no third place that could say which was right.
+ */
 window.QUANTUM_GROUP = {
   "researchAreas": [
     {
       "number": "01",
       "title": "Quantum Information, Algorithms & Systems",
-      "summary": "Quantum algorithms, information, complexity, and computing systems.",
-      "topics": [
-        "Quantum information",
-        "Quantum algorithms",
-        "Computing systems"
+      "summary": "Theory of computation, and the quantum information and computation questions inside it — algorithms, and the limits on them.",
+      "sources": [
+        "https://vishvajeetn.org/"
       ],
       "id": "research-quantum-information-algorithms-systems"
     },
     {
       "number": "02",
       "title": "Quantum Optics & Photonics",
-      "summary": "Structured and non-classical light, entanglement, and photon sources.",
-      "topics": [
-        "Quantum optics",
-        "Entangled photons",
-        "Structured light",
-        "Nanophotonics"
+      "summary": "Experimental optics: light–matter interaction using structured optical beams, single-photon and entangled-photon sources, and nanoplasmonic devices that show quantum behaviour.",
+      "sources": [
+        "https://mitwpu.edu.in/faculty/apurv-chaitanya-nellikka"
       ],
       "id": "research-quantum-optics-photonics"
     },
@@ -28,12 +49,6 @@ window.QUANTUM_GROUP = {
       "number": "03",
       "title": "Quantum Materials & Devices",
       "summary": "Quantum materials, semiconductors, thin films, and photonic devices.",
-      "topics": [
-        "Quantum materials",
-        "Semiconductor devices",
-        "Photonic devices",
-        "Thin films"
-      ],
       "id": "research-quantum-materials-devices"
     }
   ],
@@ -57,14 +72,28 @@ window.QUANTUM_GROUP = {
         "Randomness and computation",
         "Algorithms and complexity"
       ],
+      /* This list used to open with "Ph.D. in Chemistry, Indian Institute of
+       * Science, Bangalore" — Dev Kumar Thapa's doctorate, duplicated onto
+       * this record, and contradicted three lines above by the bio on the same
+       * page. His own site says "I received my PhD from Rutgers University"
+       * and "I completed my Bachelor's and Master's degrees at IIT Madras";
+       * his ORCID record says the same. Both entries below are his. */
       "qualifications": [
-        "Ph.D. in Chemistry, Indian Institute of Science, Bangalore",
-        "Ph.D., Rutgers University"
+        "Ph.D., Rutgers University",
+        "Bachelor's and Master's degrees, IIT Madras"
       ],
+      "qualificationsSource": "https://vishvajeetn.org/",
       "highlights": [
         "Postdoctoral research at CNRS / LaBRI",
         "Visiting graduate research at the Institute for Advanced Study"
       ],
+      /* Placed from his own site: he describes himself as a postdoctoral
+       * researcher in the Quantum Information and Computation group at LaBRI
+       * whose interests "lie in Theory of Computation". */
+      "researchAreas": [
+        "research-quantum-information-algorithms-systems"
+      ],
+      "researchAreasSource": "https://vishvajeetn.org/",
       "publicationHeading": "Selected publications",
       "publications": [
         {
@@ -117,6 +146,14 @@ window.QUANTUM_GROUP = {
         "Research experience in Mexico, Germany, Canada, and Spain",
         "Teaching and mentorship in optics and quantum physics"
       ],
+      /* Placed from his own university profile, which gives his research area
+       * as "Nonlinear optics, nanophotonics" and describes work on structured
+       * optical beams, single-photon sources, entangled photons and
+       * nanoplasmonic devices. Area 02's summary is a compression of it. */
+      "researchAreas": [
+        "research-quantum-optics-photonics"
+      ],
+      "researchAreasSource": "https://mitwpu.edu.in/faculty/apurv-chaitanya-nellikka",
       "publicationHeading": "Selected publications",
       "publications": [
         {
