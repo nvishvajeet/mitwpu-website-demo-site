@@ -29,7 +29,7 @@ window.QUANTUM_GROUP = {
   "researchAreas": [
     {
       "number": "01",
-      "title": "Quantum Information, Algorithms & Systems",
+      "title": "Quantum Information and Computation",
       "summary": "Theory of computation, and the quantum information and computation questions inside it — algorithms, and the limits on them.",
       "sources": [
         "https://vishvajeetn.org/"
