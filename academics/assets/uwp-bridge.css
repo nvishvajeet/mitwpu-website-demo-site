@@ -1,0 +1,150 @@
+/* Bridge between this page family's design system and university-web-patterns.
+ *
+ * Loaded by the pages tools/build_all_departments_site.mjs writes, after the
+ * package's patterns.css and after style.css (which imports
+ * group-assets/site.css?v=20260725-global-nav-8-cascade). It does three things and nothing else:
+ *
+ *   1. expresses this family's palette, measure and type as `--uwp-*` token
+ *      overrides, which is how the package asks to be re-skinned — a client
+ *      re-declares the custom properties and must not fork tokens.css;
+ *   2. aligns the package's content measure with `.shell`, which is the one
+ *      thing the token set does not carry;
+ *   3. holds the transitional rules that fire only because a shell element
+ *      carries both the package class and the legacy one. Every rule in that
+ *      last section goes when its legacy token leaves the decorations in
+ *      tools/build_all_departments_site.mjs.
+ *
+ * Every token is mapped, not just the ones a rule here happens to need. With
+ * only some bridged, tokens.css's `@media (prefers-color-scheme: dark)`
+ * fallback could put the package's components into their dark palette on a
+ * page group-assets/site.css?v=20260725-global-nav-8-cascade was still rendering light, because
+ * group-assets/theme.js?v=20260725-global-nav-8-cascade expresses "light" by removing `data-theme` rather than
+ * by setting it. Declaring every token from a site variable means the package
+ * follows this family's theme and only its theme.
+ */
+
+:root {
+  /* text */
+  --uwp-ink: var(--ink);
+  --uwp-heading: var(--heading);
+  --uwp-title: var(--title);
+  --uwp-copy: var(--copy);
+  --uwp-muted: var(--muted);
+  --uwp-nav-ink: var(--nav);
+
+  /* surfaces */
+  --uwp-paper: var(--paper);
+  --uwp-surface: var(--subtle);
+  --uwp-topbar: var(--topbar);
+
+  /* interactive */
+  --uwp-link: var(--blue);
+  --uwp-link-strong: var(--blue-dark);
+  --uwp-solid: var(--solid-blue);
+  --uwp-solid-hover: var(--solid-blue-hover);
+  --uwp-pale: var(--blue-pale);
+
+  /* institutional identity */
+  --uwp-brand: var(--institution);
+  --uwp-brand-contrast: #ffffff;
+  --uwp-accent: var(--gold);
+  --uwp-footer-bg: var(--footer);
+
+  /* The academic masthead is the institutional navy with a gold rule under
+     it, which is the package's default shape, so only the colours move. */
+  --uwp-masthead-bg: var(--institution);
+  --uwp-masthead-ink: #ffffff;
+  --uwp-masthead-rule: 3px solid var(--gold);
+  --uwp-masthead-accent: var(--gold);
+
+  /* lines and focus */
+  --uwp-rule: var(--line);
+  --uwp-rule-strong: var(--line-dark);
+  --uwp-focus: var(--focus);
+  --uwp-switch-knob: var(--switch-knob);
+
+  /* type */
+  --uwp-serif: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+  --uwp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* measure. The academic masthead is 112px, not the package's 80px. */
+  --uwp-content-width: var(--shell);
+  --uwp-header-height: var(--academic-masthead-height);
+}
+
+/* The package's shell is 32px of gutter, this family's is 44px falling to 30px
+   on a narrow viewport. Shell elements carry both classes, so without this the
+   masthead and footer would sit 6px outside the content between them.
+   `.uwp-breadcrumbs` is here because it carries the measure itself rather than
+   wrapping a `.uwp-shell`. This is why the bridge loads after patterns.css:
+   the rules it replaces are of equal specificity. */
+.uwp-wrap,
+.uwp-shell,
+.uwp-breadcrumbs {
+  width: min(calc(100% - 44px), var(--shell));
+}
+
+@media (max-width: 58.75rem) {
+  .uwp-wrap,
+  .uwp-shell,
+  .uwp-breadcrumbs {
+    width: min(calc(100% - 30px), var(--shell));
+  }
+}
+
+/* -- transitional ---------------------------------------------------------
+ *
+ * Rules that exist only because a shell element carries the legacy class
+ * alongside the package one. They are deletions waiting for the legacy token
+ * to be dropped from the decorations in tools/build_all_departments_site.mjs.
+ */
+
+/* The masthead's stacking order. group-assets/site.css?v=20260725-global-nav-8-cascade puts the institutional
+   band at 70 and the release layer installs its own masthead at that height;
+   the package's own 60 would drop this one behind it. */
+.uwp-masthead.academic-header {
+  z-index: 70;
+}
+
+/* style.css spaces the right-hand cluster at 24px and the package at 16px;
+   both rules are one class, so without this the package's would simply win on
+   load order. */
+.uwp-masthead__actions.institutional-actions {
+  gap: 24px;
+}
+
+/* group-assets/site.css?v=20260725-global-nav-8-cascade draws the navigation's current and hover state as a
+   2px bottom border on the link; the package draws it as an ::after bar. Both
+   elements are the same link, so without this both would show. */
+.uwp-nav.site-nav a,
+.uwp-nav.site-nav a:hover,
+.uwp-nav.site-nav a[aria-current="page"] {
+  border-bottom-color: transparent;
+}
+
+/* The context band pads itself; the trail inside it must not draw a second
+   rule under the one the band already has. */
+.academic-context .uwp-breadcrumbs {
+  border-bottom: 0;
+}
+
+.academic-context .uwp-breadcrumbs ol {
+  min-height: var(--academic-context-height);
+}
+
+/* `.academic-footer` sets its own 40px band padding and the package's grid
+   sets padding of its own inside it, which would add up to a footer twice as
+   tall as either sheet intends. The package's grid keeps its padding, because
+   that is the one that scales with the viewport. */
+.uwp-footer.academic-footer {
+  padding-block: 0;
+}
+
+/* The package's footer grid is four columns, sized for an identity block and
+   three link groups. This footer has one group, so those columns would leave
+   half the band empty; two columns put the links back at the far end, which is
+   where this family has always shown them. */
+.uwp-footer.academic-footer .uwp-footer__grid {
+  grid-template-columns: minmax(15rem, 1fr) auto;
+  align-items: center;
+}

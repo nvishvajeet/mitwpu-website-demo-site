@@ -1,6 +1,21 @@
 /*
  * One institutional masthead for every MIT-WPU Pune template.
  *
+ * The bar itself is rendered from university-web-patterns
+ * (tools/build_public_demo.py:canonical_masthead), so the package's own
+ * patterns.css supplies the navigation: the drop-down panels, the level-2
+ * fly-outs, the fourteen-school mega panel, the mobile accordion, the
+ * hover-intent and the no-JS fallbacks. This sheet no longer restates any of
+ * that. What is left is what the package cannot know — that this bar is navy
+ * with a gold rule, that it is a fixed 115px tall, and that its brand is an
+ * emblem beside a two-line founder wordmark.
+ *
+ * Most of it is expressed as `--uwp-*` overrides scoped to the bar, so the
+ * package's rules compute the institutional result rather than being fought
+ * with a parallel set of `!important` declarations. Where a declaration does
+ * override, it is because the release fixes a dimension the package leaves
+ * fluid.
+ *
  * Page families keep their own content styling. The public release builder
  * marks only the real university masthead and its global navigation, so this
  * file cannot restyle research-group or WPU Goa navigation.
@@ -13,6 +28,18 @@
   --mitwpu-masthead-width: 1180px;
 }
 
+/* The palette and the two measurements the package reads out of its tokens.
+ * Setting them here rather than at :root keeps the override on the release bar
+ * and off every other package surface on the page. */
+[data-global-masthead] {
+  --uwp-masthead-bg: var(--mitwpu-masthead-navy);
+  --uwp-masthead-ink: #ffffff;
+  --uwp-masthead-rule: 3px solid var(--mitwpu-masthead-gold);
+  --uwp-masthead-accent: var(--mitwpu-masthead-gold);
+  --uwp-header-height: var(--mitwpu-masthead-height);
+  --uwp-content-width: var(--mitwpu-masthead-width);
+}
+
 [data-global-masthead] {
   position: sticky !important;
   inset-block-start: 0 !important;
@@ -22,10 +49,6 @@
   min-height: var(--mitwpu-masthead-height) !important;
   margin: 0 !important;
   padding: 0 !important;
-  color: #fff !important;
-  background: var(--mitwpu-masthead-navy) !important;
-  border: 0 !important;
-  border-bottom: 3px solid var(--mitwpu-masthead-gold) !important;
   box-shadow: none !important;
 }
 
@@ -42,6 +65,17 @@
   padding: 0 !important;
 }
 
+/* The right-hand cluster the package puts the nav, the hamburger and the theme
+ * switch in. It is the grid's second column. */
+[data-global-masthead] .uwp-masthead__actions {
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 16px !important;
+  min-width: 0 !important;
+  height: var(--mitwpu-masthead-content-height) !important;
+}
+
+/* ---- Institutional lockup: emblem beside a two-line wordmark ------------- */
 [data-global-masthead] .masthead-brands {
   display: flex !important;
   align-items: center !important;
@@ -113,30 +147,17 @@
   white-space: nowrap !important;
 }
 
-/* Legacy templates still inject the full lock-up image; give only the image a
- * compact white chip so it stays legible without a full-width white slab. */
-[data-global-masthead] .institutional-lockup__logo {
-  display: block !important;
-  width: auto !important;
-  max-width: 250px !important;
-  height: auto !important;
-  max-height: 60px !important;
-  margin: 0 !important;
-  padding: 5px 8px !important;
-  background: #fff !important;
-  border-radius: 4px !important;
-  object-fit: contain !important;
-  object-position: left center !important;
-}
-
-[data-global-nav] {
-  display: flex !important;
+/* ---- Global navigation --------------------------------------------------- *
+ * Position, reveal, cascade and mega geometry all come from patterns.css. Only
+ * the bar's own type scale and the full-height hit target are set here: the
+ * package sizes a nav link for a 80px header and this band is 115px. The
+ * accent underline is the package's `.uwp-nav a::after`, drawn in
+ * --uwp-masthead-accent; the release used to draw a second one as an inset
+ * box-shadow, which is the doubled underline this migration removes. */
+[data-global-masthead] [data-global-nav] {
   flex: 1 1 auto !important;
-  flex-flow: row nowrap !important;
-  align-items: center !important;
   justify-content: flex-end !important;
   gap: 16px !important;
-  width: 100% !important;
   min-width: 0 !important;
   height: var(--mitwpu-masthead-content-height) !important;
   margin: 0 !important;
@@ -146,48 +167,95 @@
   border: 0 !important;
 }
 
-[data-global-nav] a {
-  display: flex !important;
-  flex: 0 0 auto !important;
-  align-items: center !important;
-  position: relative !important;
+[data-global-masthead] [data-global-nav] > .uwp-nav-item {
   height: var(--mitwpu-masthead-content-height) !important;
-  margin: 0 !important;
+}
+
+[data-global-masthead] [data-global-nav] > a,
+[data-global-masthead] [data-global-nav] > .uwp-nav-item > .uwp-nav-item__link {
+  height: var(--mitwpu-masthead-content-height) !important;
   padding: 3px 0 0 !important;
   color: rgba(255, 255, 255, .9) !important;
-  font-family: inherit !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   font-size: 15px !important;
   font-weight: 650 !important;
-  line-height: 1 !important;
   letter-spacing: .01em !important;
-  white-space: nowrap !important;
-  text-decoration: none !important;
-  background: transparent !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: inset 0 -3px 0 transparent !important;
-  transition:
-    color 140ms ease,
-    box-shadow 140ms ease,
-    background-color 140ms ease !important;
 }
 
-[data-global-nav] > a:hover,
-[data-global-nav] > a:focus-visible,
-[data-global-nav] > a[aria-current="page"],
-[data-global-masthead] .nav-item__top:hover,
-[data-global-masthead] .nav-item__top:focus-visible,
-[data-global-masthead] .nav-item__top[aria-current="page"],
-[data-global-masthead] .nav-item--menu:hover > .nav-item__top,
-[data-global-masthead] .nav-item--menu:focus-within > .nav-item__top,
-[data-global-masthead] .nav-item--menu.is-open > .nav-item__top {
+[data-global-masthead] [data-global-nav] > a:hover,
+[data-global-masthead] [data-global-nav] > a:focus-visible,
+[data-global-masthead] [data-global-nav] > a[aria-current="page"],
+[data-global-masthead] .uwp-nav-item:hover > .uwp-nav-item__link,
+[data-global-masthead] .uwp-nav-item:focus-within > .uwp-nav-item__link,
+[data-global-masthead] .uwp-nav-item.is-open > .uwp-nav-item__link,
+[data-global-masthead] .uwp-nav-item__link[aria-current="page"] {
   color: #f0c75e !important;
-  text-decoration: none !important;
-  box-shadow: inset 0 -3px 0 var(--mitwpu-masthead-gold) !important;
 }
 
-[data-global-masthead] .theme-toggle {
+[data-global-masthead] .uwp-nav-item__disclosure {
+  color: rgba(255, 255, 255, .82) !important;
+}
+
+/* ---- Drop-down, fly-out and mega panels ---------------------------------- *
+ * White panels under a gold rule. The package positions and reveals them; this
+ * only paints them, because the panels hang off a navy bar and inherit its ink
+ * otherwise. */
+[data-global-masthead] .uwp-nav-menu {
+  color: #16324f !important;
+  background: #ffffff !important;
+  border: 1px solid #d3dbe3 !important;
+  border-top: 3px solid var(--mitwpu-masthead-gold) !important;
+  box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
+}
+
+[data-global-masthead] .uwp-nav-menu a,
+[data-global-masthead] .uwp-nav-flyout a {
+  color: #16324f !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 550 !important;
+}
+
+[data-global-masthead] .uwp-nav-menu a:hover,
+[data-global-masthead] .uwp-nav-menu a:focus-visible,
+[data-global-masthead] .uwp-nav-flyout a:hover,
+[data-global-masthead] .uwp-nav-flyout a:focus-visible {
+  color: #0d2438 !important;
+  background: #eef3f7 !important;
+}
+
+[data-global-masthead] .uwp-nav-flyout {
+  color: #16324f !important;
+  background: #ffffff !important;
+  border: 1px solid #d3dbe3 !important;
+  box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
+}
+
+[data-global-masthead] .uwp-nav-mega .uwp-nav-mega__heading {
+  color: #5a6b7c !important;
+}
+
+[data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:hover,
+[data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:focus-visible {
+  color: #0d2438 !important;
+  background: #eef3f7 !important;
+}
+
+/* ---- Theme switch and hamburger ------------------------------------------ *
+ * Both are the package's components now, and the switch keeps the one thing
+ * the package's own geometry would cost it: a 44px control target. The package
+ * paints a 25px track directly on the button; this release has always drawn
+ * that track as a `::before` inside a 44px button so the target meets the
+ * floor while the switch still reads as a 25px switch. Painting both would
+ * show two tracks and two knobs on one control, so the button's own background
+ * and border go transparent and the `::before` is the only track.
+ *
+ * The two `top` nudges below look like dead geometry and are not: they put the
+ * package's icons and knob — which are positioned for a track that starts at
+ * the top of the button — back onto a track that starts 9.5px down. They used
+ * to name the pre-package classes, and are the same two values against the
+ * package's. */
+[data-global-masthead] .uwp-theme-toggle {
   position: relative !important;
   flex: 0 0 44px !important;
   width: 44px !important;
@@ -201,35 +269,24 @@
   border-radius: 0 !important;
 }
 
-[data-global-masthead] .theme-toggle::before {
+[data-global-masthead] .uwp-theme-toggle::before {
   position: absolute !important;
   inset: 9.5px 0 !important;
   content: "" !important;
-  background: var(--toggle-track, #edf3f7) !important;
-  border: 1px solid var(--line-strong, #aebdca) !important;
+  background: var(--uwp-toggle-track, #edf3f7) !important;
+  border: 1px solid var(--uwp-rule-strong, #aebdca) !important;
   border-radius: 999px !important;
 }
 
-[data-global-masthead] .theme-toggle .theme-icon {
+[data-global-masthead] .uwp-theme-icon {
   top: 17.5px !important;
 }
 
-[data-global-masthead] .theme-toggle .switch-thumb {
+[data-global-masthead] .uwp-switch-thumb {
   top: 13px !important;
 }
 
-/* Hamburger toggle — hidden on desktop, revealed at the mobile breakpoint
- * below. It reveals the full nav so no link is stranded off-screen on phones. */
 [data-global-masthead] .masthead-nav-toggle {
-  display: none !important;
-  position: relative !important;
-  flex: 0 0 44px !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 44px !important;
-  height: 44px !important;
-  margin: 0 !important;
-  padding: 0 !important;
   color: #fff !important;
   background: transparent !important;
   border: 0 !important;
@@ -237,155 +294,8 @@
   cursor: pointer !important;
 }
 
-[data-global-masthead] .masthead-nav-toggle__bars,
-[data-global-masthead] .masthead-nav-toggle__bars::before,
-[data-global-masthead] .masthead-nav-toggle__bars::after {
-  position: absolute !important;
-  left: 11px !important;
-  width: 22px !important;
-  height: 2.5px !important;
-  background: #fff !important;
-  border-radius: 2px !important;
-  content: "" !important;
-  transition: transform 180ms ease, opacity 120ms ease !important;
-}
-
-[data-global-masthead] .masthead-nav-toggle__bars {
-  top: 21px !important;
-}
-
-[data-global-masthead] .masthead-nav-toggle__bars::before {
-  top: -7px !important;
-}
-
-[data-global-masthead] .masthead-nav-toggle__bars::after {
-  top: 7px !important;
-}
-
-/* Animate to an X when the menu is open. */
-[data-global-masthead] .masthead-nav-toggle[aria-expanded="true"]
-  .masthead-nav-toggle__bars {
-  background: transparent !important;
-}
-
-[data-global-masthead] .masthead-nav-toggle[aria-expanded="true"]
-  .masthead-nav-toggle__bars::before {
-  top: 0 !important;
-  transform: rotate(45deg) !important;
-}
-
-[data-global-masthead] .masthead-nav-toggle[aria-expanded="true"]
-  .masthead-nav-toggle__bars::after {
-  top: 0 !important;
-  transform: rotate(-45deg) !important;
-}
-
-/* ---- Dropdown mega-menu: hover/focus panel on desktop ---- */
-[data-global-masthead] .nav-item {
-  position: relative !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  height: var(--mitwpu-masthead-content-height) !important;
-}
-
-[data-global-masthead] .nav-item__disclosure {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 16px !important;
-  height: 100% !important;
-  margin: 0 0 0 2px !important;
-  padding: 0 !important;
-  background: transparent !important;
-  border: 0 !important;
-  cursor: pointer !important;
-}
-
-[data-global-masthead] .nav-item__disclosure > span {
-  display: block !important;
-  width: 6px !important;
-  height: 6px !important;
-  margin-top: -3px !important;
-  border-right: 2px solid rgba(255, 255, 255, .82) !important;
-  border-bottom: 2px solid rgba(255, 255, 255, .82) !important;
-  transform: rotate(45deg) !important;
-  transition: transform 160ms ease, margin-top 160ms ease !important;
-}
-
-[data-global-masthead] .nav-item__disclosure:hover > span,
-[data-global-masthead] .nav-item__disclosure:focus-visible > span,
-[data-global-masthead] .nav-item--menu:hover .nav-item__disclosure > span,
-[data-global-masthead] .nav-item--menu:focus-within .nav-item__disclosure > span,
-[data-global-masthead] .nav-item--menu.is-open .nav-item__disclosure > span {
-  border-color: var(--mitwpu-masthead-gold) !important;
-}
-
-[data-global-masthead] .nav-menu {
-  position: absolute !important;
-  inset-block-start: 100% !important;
-  inset-inline-start: 0 !important;
-  z-index: 1001 !important;
-  display: none !important;
-  flex-direction: column !important;
-  min-width: 252px !important;
-  margin: 0 !important;
-  padding: 7px 0 !important;
-  background: #ffffff !important;
-  border: 1px solid #d3dbe3 !important;
-  border-top: 3px solid var(--mitwpu-masthead-gold) !important;
-  border-radius: 0 0 4px 4px !important;
-  box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
-}
-
-/* Desktop dropdowns open via JS hover-intent (.is-open) or keyboard focus —
-   NOT raw :hover — so a diagonal move into the wider panel can't drop :hover
-   and slam the menu shut. .is-open is the single source of truth. */
-[data-global-masthead] .nav-item--menu:focus-within .nav-menu,
-[data-global-masthead] .nav-item--menu.is-open .nav-menu {
-  display: flex !important;
-}
-
-/* Hover bridge: while the panel is open, a transparent strip spans its full
-   width up to the bar, so moving the pointer from the trigger down into the
-   panel (even diagonally toward a far sub-link) never crosses a dead gap that
-   would drop :hover and close the menu. Desktop-hover only; no mobile effect. */
-[data-global-masthead] .nav-item--menu:hover > .nav-menu::before,
-[data-global-masthead] .nav-item--menu:focus-within > .nav-menu::before {
-  content: "" !important;
-  position: absolute !important;
-  inset-block-end: 100% !important;
-  inset-inline: 0 !important;
-  block-size: 18px !important;
-}
-
-[data-global-masthead] .nav-item--menu:hover .nav-item__disclosure > span,
-[data-global-masthead] .nav-item--menu:focus-within .nav-item__disclosure > span,
-[data-global-masthead] .nav-item--menu.is-open .nav-item__disclosure > span {
-  margin-top: 2px !important;
-  transform: rotate(225deg) !important;
-}
-
-[data-global-masthead] [data-global-nav] .nav-menu a {
-  display: block !important;
-  height: auto !important;
-  min-height: 0 !important;
-  padding: 9px 20px !important;
-  color: #16324f !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 550 !important;
-  line-height: 1.3 !important;
-  white-space: nowrap !important;
-  box-shadow: none !important;
-}
-
-[data-global-masthead] [data-global-nav] .nav-menu a:hover,
-[data-global-masthead] [data-global-nav] .nav-menu a:focus-visible {
-  color: #0d2438 !important;
-  background: #eef3f7 !important;
-}
-
-/* The source templates remain available for provenance, but never render a
+/* ---- Hidden source shells ------------------------------------------------ *
+ * The source templates remain available for provenance, but never render a
  * second institutional bar after the canonical release masthead is installed.
  */
 [data-legacy-masthead] {
@@ -404,60 +314,22 @@ body > [data-global-masthead] ~ :is(
   display: none !important;
 }
 
-@media (max-width: 1050px) {
+/* ---- Narrow viewports ---------------------------------------------------- *
+ * One breakpoint, the package's (56rem), rather than the three this file used
+ * to carry. Above it the seven links fit; below it the package swaps its own
+ * scroller for the hamburger accordion.
+ *
+ * The one thing that cannot be left to the package: it collapses the panel
+ * in-flow inside the masthead, which grows the header. This band is a fixed
+ * height, so the panel is lifted out and dropped below the bar instead — the
+ * same absolute panel this release has always shown, opened by navigation.js's
+ * `.is-open` rather than by the release's own script.
+ */
+@media (max-width: 56rem) {
   [data-global-masthead] > .global-masthead__inner {
-    grid-template-columns: auto minmax(0, 1fr) !important;
-    gap: 18px !important;
-    width: calc(100% - 48px) !important;
-  }
-
-  [data-global-masthead] :is(
-    .global-masthead__brand,
-    .institutional-lockup,
-    .institution-home,
-    .wordmark,
-    .brand
-  ) {
-    width: auto !important;
-  }
-
-  [data-global-masthead] .masthead-brands {
-    width: auto !important;
-  }
-
-  [data-global-masthead] .institutional-lockup__logo {
-    width: auto !important;
-    max-width: 200px !important;
-  }
-
-  [data-global-nav] {
-    justify-content: flex-start !important;
-    overflow-x: auto !important;
-    overscroll-behavior-inline: contain !important;
-    scrollbar-width: none !important;
-  }
-
-  [data-global-nav]::-webkit-scrollbar {
-    display: none !important;
-  }
-}
-
-@media (max-width: 640px) {
-  [data-global-masthead] > .global-masthead__inner {
-    grid-template-columns: 150px minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
     gap: 14px !important;
     width: calc(100% - 32px) !important;
-  }
-
-  [data-global-masthead] :is(
-    .global-masthead__brand,
-    .institutional-lockup,
-    .institution-home,
-    .wordmark,
-    .brand
-  ) {
-    width: auto !important;
-    gap: 10px !important;
   }
 
   [data-global-masthead] .masthead-brands {
@@ -478,40 +350,11 @@ body > [data-global-masthead] ~ :is(
     font-size: 9.5px !important;
   }
 
-  [data-global-masthead] .institutional-lockup__logo {
-    width: auto !important;
-    max-width: 150px !important;
-    max-height: 54px !important;
-  }
-
-  [data-global-nav] {
-    gap: 14px !important;
-  }
-
-  [data-global-nav] a {
-    font-size: .9375rem !important;
-  }
-}
-
-/* Phones and small tablets: collapse the nav behind a hamburger so every
- * global link is reachable, and drop the horizontal-scroll strip that made
- * page scrolling feel unreliable. */
-@media (max-width: 767px) {
-  [data-global-masthead] > .global-masthead__inner {
-    grid-template-columns: 1fr auto !important;
-    gap: 10px !important;
-  }
-
-  [data-global-masthead] .masthead-nav-toggle {
-    display: inline-flex !important;
-  }
-
-  [data-global-nav] {
+  :root.uwp-js [data-global-masthead] [data-global-nav] {
     position: absolute !important;
     inset-inline: 0 !important;
     top: var(--mitwpu-masthead-height) !important;
     z-index: 1000 !important;
-    display: none !important;
     flex-flow: column nowrap !important;
     align-items: stretch !important;
     justify-content: flex-start !important;
@@ -528,125 +371,84 @@ body > [data-global-masthead] ~ :is(
     box-shadow: 0 18px 40px rgb(0 0 0 / 35%) !important;
   }
 
-  [data-global-nav].is-open {
-    display: flex !important;
+  /* Lifted out only under `.uwp-js`, the class navigation.js stamps on <html>
+   * at parse time: with no script there is no hamburger to open the panel, so
+   * the package's no-JS horizontal scroller has to stay in the bar.
+   * `display: none` / `.is-open { display: flex }` is the package's too — this
+   * rule deliberately does not set `display`. */
+  [data-global-masthead] [data-global-nav] > .uwp-nav-item {
+    height: auto !important;
   }
 
-  [data-global-nav] a {
+  [data-global-masthead] [data-global-nav] > a,
+  [data-global-masthead] [data-global-nav] .uwp-nav-item__link {
     height: auto !important;
     padding: 15px 24px !important;
+    color: rgba(255, 255, 255, .92) !important;
     font-size: 1.0625rem !important;
     border-bottom: 1px solid rgb(255 255 255 / 12%) !important;
   }
 
-  [data-global-nav] a[aria-current="page"] {
+  [data-global-masthead] [data-global-nav] a[aria-current="page"] {
     background: rgb(255 255 255 / 8%) !important;
   }
 
-  /* Dropdowns collapse into an accordion inside the hamburger panel. */
-  [data-global-masthead] .nav-item,
-  [data-global-masthead] .nav-item--menu {
-    position: relative !important;
-    display: block !important;
-    height: auto !important;
-  }
-
-  [data-global-nav] .nav-item__top {
-    padding-right: 64px !important;
-  }
-
-  [data-global-masthead] .nav-item__disclosure {
-    position: absolute !important;
-    inset-block-start: 0 !important;
-    inset-inline-end: 0 !important;
-    width: 60px !important;
-    height: 54px !important;
-    margin: 0 !important;
-    border-inline-start: 1px solid rgb(255 255 255 / 12%) !important;
-  }
-
-  [data-global-masthead] .nav-item__disclosure > span {
-    border-color: rgba(255, 255, 255, .85) !important;
-  }
-
-  [data-global-masthead] .nav-menu {
-    position: static !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  /* The panels go transparent inside the navy accordion rather than staying
+   * white cards, and every level is indented by depth. */
+  [data-global-masthead] .uwp-nav-menu,
+  [data-global-masthead] .uwp-nav-flyout {
+    color: inherit !important;
     background: rgb(0 0 0 / 16%) !important;
     border: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
   }
 
-  [data-global-masthead] .nav-item--menu:hover .nav-menu,
-  [data-global-masthead] .nav-item--menu:focus-within .nav-menu {
-    display: none !important;
+  [data-global-masthead] .uwp-nav-flyout {
+    background: rgb(0 0 0 / 18%) !important;
   }
 
-  [data-global-masthead] .nav-item--menu.is-open .nav-menu {
-    display: flex !important;
-  }
-
-  [data-global-masthead] .nav-item--menu.is-open .nav-item__disclosure > span {
-    margin-top: 2px !important;
-    transform: rotate(225deg) !important;
-  }
-
-  [data-global-masthead] [data-global-nav] .nav-menu a {
+  [data-global-masthead] .uwp-nav-menu a {
     padding: 12px 24px 12px 42px !important;
     color: rgba(255, 255, 255, .84) !important;
     background: transparent !important;
-    font-size: 0.98rem !important;
+    font-size: .98rem !important;
     font-weight: 500 !important;
     border-bottom: 1px solid rgb(255 255 255 / 8%) !important;
   }
 
-  [data-global-masthead] [data-global-nav] .nav-menu a:hover,
-  [data-global-masthead] [data-global-nav] .nav-menu a:focus-visible {
+  [data-global-masthead] .uwp-nav-flyout a {
+    padding: 11px 24px 11px 60px !important;
+    color: rgba(255, 255, 255, .74) !important;
+    font-size: .92rem !important;
+  }
+
+  [data-global-masthead] .uwp-nav-menu a:hover,
+  [data-global-masthead] .uwp-nav-menu a:focus-visible,
+  [data-global-masthead] .uwp-nav-flyout a:hover,
+  [data-global-masthead] .uwp-nav-flyout a:focus-visible {
     color: #fff !important;
     background: rgb(255 255 255 / 8%) !important;
   }
 
-  [data-global-masthead] .theme-toggle {
+  [data-global-masthead] .uwp-nav-mega .uwp-nav-mega__heading {
+    color: rgba(255, 255, 255, .72) !important;
+  }
+
+  [data-global-masthead] .uwp-nav-item__disclosure,
+  [data-global-masthead] .uwp-nav-branch__disclosure {
+    border-inline-start: 1px solid rgb(255 255 255 / 12%) !important;
+  }
+
+  [data-global-masthead] .uwp-theme-toggle {
     align-self: flex-start !important;
     margin: 8px 0 0 20px !important;
   }
 }
 
-.global-footer-contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .45rem 1rem;
-  align-items: baseline;
-  margin: 1.5rem 0 0;
-  padding: 1rem 0 0;
-  color: inherit;
-  border-top: 1px solid rgb(255 255 255 / 18%);
-  font-style: normal;
-  font-size: .9rem;
-  line-height: 1.55;
-}
-
-.global-footer-contact span {
-  max-width: 48rem;
-}
-
-.global-footer-contact a {
-  color: inherit;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.global-footer-contact a:hover,
-.global-footer-contact a:focus-visible {
-  color: #fff;
-}
-
 @media print {
   [data-global-nav],
-  [data-global-masthead] .theme-toggle {
+  [data-global-masthead] .uwp-theme-toggle {
     display: none !important;
   }
 }

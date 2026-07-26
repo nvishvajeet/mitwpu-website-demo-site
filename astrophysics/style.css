@@ -1,1 +1,96 @@
-@import url("../group-assets/site.css?v=20260725-global-nav-6");
+/* Astrophysics microsite stylesheet.
+ *
+ * The page shell is rendered from university-web-patterns (see shell.mjs), so
+ * the package's own stylesheets have to be on the page. They are loaded after
+ * group-assets/site.css?v=20260725-global-nav-8-cascade deliberately: the shell elements carry both the
+ * package class and the legacy one during the transition, and on equal
+ * specificity the later sheet wins, so the package's rules are the ones that
+ * take effect on the shell while site.css keeps styling everything inside
+ * <main> that has not moved yet.
+ *
+ * The four package sheets are not a guess: components.json records the assets
+ * every component needs, and `uwp.pageAssets(ids)` returns their union.
+ * astrophysics/shell.mjs computes it from the registry and fails the build if
+ * this list drifts from it. media.css is on the list because this site's people
+ * and contact pages render the package's person-card and portrait through
+ * ../quantum/render.js, and those two are styled there rather than in
+ * patterns.css. Keep them in the registry's dependency order: readability.css
+ * sets the base element styles patterns.css then builds on.
+ */
+@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../vendor/university-web-patterns/src/css/tokens.css");
+@import url("../vendor/university-web-patterns/src/css/readability.css");
+@import url("../vendor/university-web-patterns/src/css/patterns.css");
+@import url("../vendor/university-web-patterns/src/css/media.css");
+
+/* Token overrides.
+ *
+ * There is exactly one: this site runs a paper masthead under a navy
+ * institution bar, and the package's default is a solid institutional header.
+ * Everything else the package needs — the whole palette, the dark theme, the
+ * 1180px measure, the 112px bar and 80px header — already matches
+ * group-assets/site.css?v=20260725-global-nav-8-cascade value for value, so it is not restated here.
+ */
+:root {
+  --uwp-masthead-bg: var(--paper);
+  --uwp-masthead-ink: var(--heading);
+  --uwp-masthead-rule: 1px solid var(--line);
+  --uwp-masthead-accent: var(--blue);
+}
+
+/* Package defect, worked around here rather than in the vendor tree.
+ *
+ * patterns.css sets `.uwp-card img, .uwp-profile img { width: 100%; height:
+ * auto }`. media.css sets `.uwp-portrait { width: 72px; height: 90px }`.
+ * person-card puts an img.uwp-portrait directly inside .uwp-card, so the first
+ * selector — one class and one element — outranks the second on specificity no
+ * matter which sheet is loaded last, and every photographed person renders at
+ * full card width. The lettered tile is a <div>, so it is unaffected, which is
+ * why a directory of people without photographs looks correct and one with
+ * photographs does not. Both people in this group have a photograph.
+ *
+ * Fix belongs upstream (scope the card rule, or raise the portrait's). Until
+ * then this restores the size the package's own tokens declare. Same
+ * work-around as quantum/style.css; it goes when the package is fixed.
+ */
+.uwp-card img.uwp-portrait,
+.uwp-profile img.uwp-portrait {
+  width: var(--uwp-portrait-width, 72px);
+  height: var(--uwp-portrait-height, 90px);
+}
+
+/* Transitional: rules that fire twice while both class names are present.
+ *
+ * These exist only because the shell carries the legacy class alongside the
+ * package one. They go when the legacy token is dropped from shell.mjs's
+ * LEGACY_DECORATIONS and the shell rules leave group-assets/site.css?v=20260725-global-nav-8-cascade. Both
+ * hazards recorded from the Quantum migration recurred here unchanged.
+ */
+
+/* site.css pins .institution-bar to the top; so is .uwp-masthead, and two
+   bands both pinned to top: 0 overlap. The package's position on this is that
+   the bar scrolls away and the masthead stays. */
+.uwp-institution-bar.institution-bar {
+  position: static;
+}
+
+/* site.css draws the current/hover state as a 2px bottom border on the link;
+   the package draws it as an ::after bar. Both would show. */
+.uwp-nav.site-nav a,
+.uwp-nav.site-nav a:hover,
+.uwp-nav.site-nav a[aria-current="page"] {
+  border-bottom-color: transparent;
+}
+
+/* site.css puts 48px of padding on .site-footer; the package puts a clamped
+   40–72px on the grid inside .uwp-footer. Carrying both classes applies both,
+   and the footer grows by up to 96px. The package's spacing is the one that
+   belongs to the markup. */
+.uwp-footer.site-footer {
+  padding-block: 0;
+}
+
+/* site.css's .footer-grid columns and gap need no neutralising: they lose to
+   .uwp-footer__grid on equal specificity because patterns.css is imported
+   after site.css. That ordering is the whole reason the two sheets can be on
+   the page at once. */

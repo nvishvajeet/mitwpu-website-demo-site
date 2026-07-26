@@ -1,4 +1,4 @@
-@import url("../group-assets/site.css?v=20260725-global-nav-6");
+@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
 
 :root {
   --shell: 1080px;
@@ -6,17 +6,6 @@
 
 body {
   font-size: 18px;
-}
-
-.institution-name {
-  color: #fff;
-  text-decoration: none;
-}
-
-.institution-name:hover {
-  color: #fff;
-  opacity: 0.82;
-  text-decoration: none;
 }
 
 .search-hero {

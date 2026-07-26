@@ -41,10 +41,6 @@
     }
   }
 
-  function localHref(id, file = "index.html") {
-    return page === "school" ? `${id}/${file}` : `../${id}/${file}`;
-  }
-
   function initials(name) {
     return String(name)
       .replace(/[.]/g, "")
@@ -78,94 +74,14 @@
     return `<a${className ? ` class="${className}"` : ""} href="${escapeHtml(href)}"${opensNewTab ? ' target="_blank" rel="noopener noreferrer"' : ""}>${escapeHtml(label)}${opensNewTab ? ' <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span>' : ""}</a>`;
   }
 
-  function renderHeader() {
-    const target = document.getElementById("site-header");
-    if (!target) return;
-    // The release builder places the shared university masthead inside this
-    // wrapper. Preserve it while refreshing the school-specific navigation.
-    const globalMasthead = target.querySelector("[data-global-masthead]");
-    const schoolHref = page === "school" ? "index.html" : "../index.html";
-    const demoHomeHref = page === "school" ? "../" : "../../";
-    const brand = page === "school"
-      ? `<a class="brand" href="index.html"><strong>School of Science &amp; Environmental Studies</strong><small>MIT World Peace University</small></a>`
-      : `<a class="brand" href="index.html"><strong>${escapeHtml(department.name)}</strong><small>School of Science &amp; Environmental Studies</small></a>`;
-    const navItems = department ? [
-      ["home", "Home", "index.html"],
-      ...(department.researchThemes.length ? [["research", "Research", "research.html"]] : []),
-      ...(faculty.length ? [["people", "People", "people.html"]] : []),
-      ...(department.programmes.length ? [["academics", "Academics", "academics.html"]] : []),
-      ...((department.events || []).length || (department.eventSeries || []).length ? [["events", "Events", "events.html"]] : []),
-      ...(department.facilities.length ? [["facilities", "Facilities", "facilities.html"]] : [])
-    ] : [];
-    target.innerHTML = `
-      <div class="institution-bar">
-        <div class="shell institution-inner">
-          <a class="institution-name" href="${demoHomeHref}">MIT World Peace University · Pune, India</a>
-          <nav class="institution-links" aria-label="Institutional links">
-            <a href="https://mitwpu.edu.in/" target="_blank" rel="noopener noreferrer">University ↗</a>
-            <a href="https://research.mitwpu.edu.in/" target="_blank" rel="noopener noreferrer">Research portal ↗</a>
-          </nav>
-        </div>
-      </div>
-      <header class="site-header">
-        <div class="shell header-inner">
-          ${brand}
-          ${department ? `
-            <nav class="site-nav" aria-label="Department navigation">
-              ${navItems.map(([id, label, href]) => `<a data-nav="${id}" href="${href}"${page === id ? ' aria-current="page"' : ""}>${label}</a>`).join("")}
-              <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button>
-            </nav>` : `
-            <div class="school-header-actions">
-              <a class="text-link" href="#departments">Departments ↓</a>
-              <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><span class="theme-icon theme-icon-light" aria-hidden="true"></span><span class="theme-icon theme-icon-dark" aria-hidden="true"></span><span class="switch-thumb" aria-hidden="true"></span></button>
-            </div>`}
-        </div>
-      </header>
-      <nav class="department-context" aria-label="Breadcrumb">
-        <div class="shell context-inner">
-          <a href="/academics/">Academics</a>
-          <span class="context-separator" aria-hidden="true">/</span>
-          ${department ? `
-            <a class="context-school" href="${schoolHref}">School of Science</a>
-            <span class="context-separator" aria-hidden="true">/</span>
-            <span class="context-current" aria-current="page">${escapeHtml(department.shortName)}</span>
-            <details>
-              <summary>Other departments</summary>
-              <div class="department-menu">${departmentOrder.filter((id) => id !== departmentId).map((id) => `<a href="${localHref(id)}">${escapeHtml(departments[id].shortName)}</a>`).join("")}</div>
-            </details>` : `
-            <span class="context-current" aria-current="page">School of Science &amp; Environmental Studies</span>`}
-        </div>
-      </nav>`;
-    if (globalMasthead && typeof target.prepend === "function") {
-      target.prepend(globalMasthead);
-    }
-  }
-
-  function renderFooter() {
-    const target = document.getElementById("site-footer");
-    if (!target) return;
-    const prefix = page === "school" ? "" : "../";
-    const demoHomeHref = page === "school" ? "../" : "../../";
-    target.innerHTML = `
-      <footer class="site-footer">
-        <div class="shell science-footer-grid">
-          <div>
-            <strong>${department ? escapeHtml(department.name) : "School of Science & Environmental Studies"}</strong>
-            <p>MIT World Peace University · Pune, India</p>
-          </div>
-          <nav class="footer-departments" aria-label="Science departments">
-            ${departmentOrder.map((id) => `<a href="${prefix}${id}/">${escapeHtml(departments[id].shortName)}</a>`).join("")}
-          </nav>
-          <div class="footer-meta">
-            <a href="${demoHomeHref}">MIT-WPU</a>
-            <a href="https://research.mitwpu.edu.in/">Research portal</a>
-            <span>© <span data-current-year></span> MIT-WPU</span>
-          </div>
-        </div>
-      </footer>`;
-    const year = target.querySelector("[data-current-year]");
-    if (year) year.textContent = new Date().getFullYear();
-  }
+  // The page shell — skip link, institution bar, masthead, breadcrumb
+  // context, footer — is rendered at build time by
+  // tools/build_science_site.mjs from university-web-patterns. It is not
+  // rendered (or re-rendered) here: the provenance audit and the release
+  // builder's global-masthead installer both read the static source, and the
+  // shell must survive JavaScript being off. Because this file no longer
+  // wipes the header, the release-time university masthead needs no special
+  // preservation either.
 
   function sectionHeading(eyebrow, title, action = "") {
     return `<div class="section-heading"><div>${eyebrow ? `<p class="eyebrow">${escapeHtml(eyebrow)}</p>` : ""}<h2>${escapeHtml(title)}</h2></div>${action}</div>`;
@@ -378,8 +294,6 @@
   }
 
   function initialise() {
-    renderHeader();
-    renderFooter();
     if (page === "school") renderSchool();
     else if (!department) {
       document.getElementById("page-content").innerHTML = `<section class="section"><div class="shell"><h1>Department not found</h1></div></section>`;

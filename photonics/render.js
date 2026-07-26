@@ -278,13 +278,21 @@
   }
 
   function initializePage() {
-    const activePage = document.body.dataset.page;
-    const activeLink = document.querySelector(`[data-nav="${activePage}"]`);
-    if (activeLink) activeLink.setAttribute("aria-current", "page");
-    document.querySelectorAll("[data-current-year]").forEach((node) => {
-      node.textContent = new Date().getFullYear();
-    });
-
+    /* The shell is no longer this file's. photonics/shell.mjs writes the skip
+     * link, institution bar, masthead, breadcrumbs and footer into the HTML at
+     * build time from university-web-patterns, so two things that used to live
+     * here have gone:
+     *
+     *   - marking the current nav link. The generator passes aria-current
+     *     through nav-item's own slot, so it is in the file rather than
+     *     applied on load — which is what a visitor with JavaScript off, and
+     *     the provenance audit, both need. `data-nav` is gone with it.
+     *   - filling `[data-current-year]`. The footer note is pinned at
+     *     generation time; the copyright line used to be blank without
+     *     JavaScript.
+     *
+     * Everything below is genuinely browser-side: it depends on data this
+     * site chose not to ship as pre-rendered HTML. */
     renderHomeResearch();
     renderFeaturedMembers();
     renderPeopleFilters();

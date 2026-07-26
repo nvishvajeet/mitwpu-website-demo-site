@@ -1,0 +1,150 @@
+/* Bridge between this site's design system and university-web-patterns.
+ *
+ * Loaded by pages whose shell is rendered from the package (see
+ * tools/uwp_shell.mjs), between `site.css` and the package's `patterns.css`.
+ * It does three things and nothing else:
+ *
+ *   1. expresses this site's palette, measure and type as `--uwp-*` token
+ *      overrides, which is how the package asks to be re-skinned — a client
+ *      re-declares the custom properties and must not fork tokens.css;
+ *   2. aligns the package's content measure with `.shell`, which is the one
+ *      thing the token set does not carry;
+ *   3. holds the transitional rules that fire only because a shell element
+ *      carries both the package class and the legacy one. Every rule in that
+ *      last section goes when its legacy token leaves LEGACY_DECORATIONS.
+ *
+ * `site.css` already maps eight of these tokens for the package's media and
+ * hero-task patterns. This file supersedes that partial map on the pages that
+ * load it, and mapping the whole set here also closes a theme hazard: with
+ * only some tokens bridged, tokens.css's `@media (prefers-color-scheme: dark)`
+ * fallback could put the package's components into their dark palette on a
+ * page the site was still rendering light, because demo-assets/theme.js?v=20260725-global-nav-8-cascade
+ * expresses "light" by removing `data-theme` rather than by setting it.
+ * Declaring every token from a site variable means the package follows the
+ * site's theme and only the site's theme.
+ */
+
+:root {
+  /* text */
+  --uwp-ink: var(--ink);
+  --uwp-heading: var(--heading);
+  --uwp-title: var(--heading);
+  --uwp-copy: var(--copy);
+  --uwp-muted: var(--muted);
+  --uwp-nav-ink: var(--ink);
+
+  /* surfaces. site.css maps these two the other way round for the landing
+     page's media patterns; the package's own meaning is used here — paper is
+     the page, surface is the raised block on it. */
+  --uwp-paper: var(--paper);
+  --uwp-surface: var(--subtle);
+  --uwp-topbar: var(--subtle);
+
+  /* interactive */
+  --uwp-link: var(--blue);
+  --uwp-link-strong: var(--blue-dark);
+  --uwp-solid: var(--solid-blue);
+  --uwp-solid-hover: var(--solid-blue-hover);
+  --uwp-pale: var(--blue-pale);
+
+  /* institutional identity */
+  --uwp-brand: var(--institution);
+  --uwp-brand-contrast: #ffffff;
+  --uwp-accent: var(--gold);
+
+  /* The institutional footer's own navy, which predates the package and has
+     no site variable of its own. Kept in step with institutional-footer.css,
+     whose dark rule outranks the package's on specificity. */
+  --uwp-footer-bg: #0d2939;
+
+  /* lines and focus */
+  --uwp-rule: var(--line);
+  --uwp-rule-strong: var(--line-strong);
+  --uwp-focus: var(--focus);
+  --uwp-switch-knob: var(--switch-knob);
+
+  /* type */
+  --uwp-serif: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+  --uwp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* measure. The masthead is 112px on this site, not the package's 80px. */
+  --uwp-content-width: var(--shell);
+  --uwp-header-height: 112px;
+}
+
+:root[data-theme="dark"] {
+  --uwp-footer-bg: #071722;
+}
+
+/* The package's shell is 32px of gutter, this site's is 48px falling to 32px
+   on a phone. Shell elements carry both classes, so without this the masthead
+   and footer would sit 8px inside the content they sit above and below.
+   `.uwp-breadcrumbs` is here because it carries the measure itself rather than
+   wrapping a `.uwp-shell`. This is why the bridge loads after patterns.css:
+   the rules it replaces are of equal specificity. */
+.uwp-wrap,
+.uwp-shell,
+.uwp-breadcrumbs {
+  width: min(calc(100% - 48px), var(--shell));
+}
+
+@media (max-width: 680px) {
+  .uwp-wrap,
+  .uwp-shell,
+  .uwp-breadcrumbs {
+    width: min(calc(100% - 32px), var(--shell));
+  }
+}
+
+/* -- transitional ---------------------------------------------------------
+ *
+ * Rules that exist only because the shell carries the legacy class alongside
+ * the package one. They are deletions waiting for the legacy token to be
+ * dropped from LEGACY_DECORATIONS in tools/uwp_shell.mjs.
+ */
+
+/* site.css draws the navigation's current and hover state as a 2px bottom
+   border on the link; the package draws it as an ::after bar. Both would
+   show. */
+.uwp-nav.site-nav a,
+.uwp-nav.site-nav a:hover,
+.uwp-nav.site-nav a[aria-current="page"] {
+  border-bottom-color: transparent;
+}
+
+/* site.css reflows the legacy masthead on a narrow screen by wrapping the
+   header row and turning the navigation into a full-width scroller on a third
+   line. The package masthead has its own answer to the same problem — a
+   disclosure button and a panel — and running both leaves the header two rows
+   tall with the theme switch pushed off the side of the bar, where
+   `overflow-x: clip` on the masthead makes it unreachable. The package's
+   reflow is the one that stays. */
+@media (max-width: 58.75rem) {
+  .uwp-masthead__inner.header-inner {
+    height: auto;
+  }
+
+  .uwp-nav.site-nav {
+    order: 0;
+    border-top: 0;
+  }
+
+  .uwp-nav.site-nav a {
+    height: auto;
+  }
+}
+
+/* institutional-footer.css sets a 4px blue rule above the footer and the
+   package sets a 3px accent one. The blue is the rule every other page family
+   on this site shows, so it is the one that stays; the extra class raises this
+   above the package's single-class rule whichever sheet loads last. */
+.uwp-footer.institutional-footer {
+  border-top: 4px solid #2f6f9f;
+}
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --uwp-footer-bg: #071722;
+  }
+}

@@ -1,3 +1,10 @@
+/* Zoomable images.
+ *
+ * The zoom link wraps an <img> that is already laid out — inside a figure, a
+ * grid cell, a card. `display: contents` removes the anchor's own box so that
+ * wrapping the image changes nothing about where it sits. That is the only
+ * reason it is here, and it has one consequence that the next two rules exist
+ * to answer. */
 .image-zoom-link {
   display: contents;
 }
@@ -6,35 +13,23 @@
   cursor: zoom-in;
 }
 
+/* An element with `display: contents` generates no box, and an element with no
+ * box cannot paint an outline. So the focus ring is drawn on the child image
+ * instead of on the link that actually has focus. These two rules are one
+ * mechanism: move the outline back onto `.image-zoom-link` — which is the
+ * obvious tidy-up — and every zoomable image on the site becomes a keyboard
+ * focus stop with no visible indicator. */
 .image-zoom-link:focus-visible > img {
   outline: 3px solid currentColor;
   outline-offset: 4px;
 }
 
-.pswp__caption {
-  position: absolute;
-  right: 4.5rem;
-  bottom: 1.1rem;
-  left: 4.5rem;
-  z-index: 10;
-  margin: 0 auto;
-  max-width: 72ch;
-  padding: 0.5rem 0.75rem;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgb(0 0 0 / 70%);
-  pointer-events: none;
-}
-
-@media (max-width: 40rem) {
-  .pswp__caption {
-    right: 1rem;
-    bottom: 0.75rem;
-    left: 1rem;
-    font-size: 0.875rem;
-  }
-}
-
+/* --pswp-transition-duration belongs to PhotoSwipe, not to this site; it is
+ * read by group-assets/vendor/photoswipe/photoswipe.css and written by the
+ * library at runtime. It looks like an unused custom property declared against
+ * a class we do not own, and is not: setting it here is the only way the
+ * lightbox honours a reduced-motion preference, because the animation is the
+ * library's and there is nothing of ours to disable. */
 @media (prefers-reduced-motion: reduce) {
   .pswp {
     --pswp-transition-duration: 0ms;

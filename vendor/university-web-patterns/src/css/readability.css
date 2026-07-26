@@ -1,0 +1,51 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--uwp-ink);
+  background: var(--uwp-paper);
+  font-family: var(--uwp-sans);
+  font-size: max(1rem, 16px);
+  line-height: 1.6;
+}
+
+:where(p, li, dd, dt, address, blockquote, td, th) {
+  overflow-wrap: anywhere;
+}
+
+:where(small, figcaption, label, .uwp-meta, .uwp-eyebrow) {
+  font-size: max(.875rem, 14px);
+  line-height: 1.45;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--uwp-serif);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+:where(.uwp-prose, .uwp-article) p {
+  max-width: var(--uwp-reading-width);
+  line-height: 1.72;
+}
+
+:where(button, input, select, textarea, [role="button"]) {
+  min-height: 44px;
+  font: inherit;
+  font-size: max(1rem, 16px);
+}
+
+:focus-visible {
+  outline: 3px solid var(--uwp-focus);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}

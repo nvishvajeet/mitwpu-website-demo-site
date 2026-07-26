@@ -37,165 +37,110 @@
   color-scheme: dark;
 }
 
+/* The palette handed to the package, as the token overrides tokens.css asks
+   for rather than a forked stylesheet. Every value is an alias, so the two
+   theme blocks above stay the single place this site's colours are declared.
+
+   All four selectors carry the same declarations because tokens.css re-states
+   its own values under `:root[data-theme="dark"]`, `:root[data-theme="light"]`
+   and, inside a preference query, `:root:not([data-theme="light"])`. A plain
+   `:root` here would be less specific than any of those and would lose the
+   aliasing in exactly the states a visitor is most likely to be in. */
+:root,
+:root[data-theme="dark"],
+:root[data-theme="light"],
+:root:not([data-theme="light"]) {
+  --uwp-ink: var(--ink);
+  --uwp-heading: var(--heading);
+  --uwp-title: var(--heading);
+  --uwp-copy: var(--copy);
+  --uwp-muted: var(--muted);
+  --uwp-nav-ink: var(--ink);
+
+  --uwp-paper: var(--paper);
+  --uwp-surface: var(--surface);
+  --uwp-topbar: var(--surface);
+
+  --uwp-link: var(--brand);
+  --uwp-link-strong: var(--brand-dark);
+  --uwp-solid: var(--brand-dark);
+  --uwp-solid-hover: var(--brand);
+  --uwp-pale: var(--surface);
+
+  --uwp-brand: var(--topbar);
+  --uwp-brand-contrast: #ffffff;
+  --uwp-accent: var(--accent);
+  --uwp-footer-bg: var(--footer);
+
+  --uwp-rule: var(--line);
+  --uwp-rule-strong: var(--line-strong);
+  --uwp-focus: var(--focus);
+  --uwp-switch-knob: var(--switch-knob);
+
+  --uwp-serif: Georgia, "Times New Roman", serif;
+  /* The package's default sans opens with Inter, which this site never loads;
+     its second choice is this stack, so name it directly. */
+  --uwp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* .uwp-shell is the measure the masthead, hero and footer are laid out on.
+     Aliasing it to --max is what keeps them flush with .page-shell below. */
+  --uwp-content-width: var(--max);
+  --uwp-header-height: 112px;
+}
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 
+/* readability.css already sets the margin, the colours and the line height.
+   What is left is this site's own type: Charter at 18px, over the package's
+   16px sans floor. */
 body {
-  margin: 0;
-  color: var(--ink);
-  background: var(--paper);
   font-family: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
   font-size: 18px;
-  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
+/* The package styles its own links; a bare <a> in extracted page copy is this
+   site's to colour. The focus ring is readability.css's, on :focus-visible for
+   every element rather than for two of them. */
 a { color: var(--brand); text-decoration: none; transition: color 150ms ease; }
 a:hover { color: var(--brand-dark); }
-a:focus-visible, button:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 4px;
-}
 
-.skip-link {
-  position: fixed;
-  inset: .75rem auto auto .75rem;
-  z-index: 10;
-  transform: translateY(-220%);
-  padding: .65rem .9rem;
-  color: #fff;
-  background: var(--brand-dark);
-}
-.skip-link:focus { transform: none; }
-
-.status-bar {
-  display: none;
-  color: #edf3f7;
-  background: var(--topbar);
-  border-bottom: 3px solid var(--accent);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: .74rem;
-}
-
-.status-bar__inner {
-  display: flex;
-  width: min(calc(100% - 2rem), var(--max));
-  min-height: 40px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-inline: auto;
-}
-
-.status-bar p { margin: 0; }
-.status-bar a { color: #fff; }
-
-.site-header {
-  position: sticky;
-  z-index: 70;
-  top: 0;
-  overflow-x: clip;
-  color: #ffffff;
-  background: var(--topbar);
-  border-bottom: 3px solid var(--accent);
-}
-
-.site-header__inner,
-.page-shell,
-.site-footer__inner {
+.page-shell {
   width: min(calc(100% - 2rem), var(--max));
   margin-inline: auto;
+  padding-block: 0 clamp(3.5rem, 8vw, 7rem);
 }
 
-.site-header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  min-height: 112px;
+/* Both of these components lay themselves out on their own copy of the
+   measure, which is right when they are bands across the page and wrong
+   inside <main>, which is already measured. Left alone they inset a second
+   1rem and stand narrower than the content grid under them. */
+.breadcrumbs,
+.hero .uwp-hero__grid {
+  width: 100%;
 }
-
-.wordmark {
-  color: #ffffff;
-  font-size: clamp(1.2rem, 3vw, 1.45rem);
-  font-weight: 650;
-  text-decoration: none;
-}
-.wordmark:hover { color: #ffffff; }
-
-.institutional-lockup {
-  display: grid;
-  flex: 0 0 auto;
-  justify-items: start;
-  color: #ffffff;
-  line-height: 1;
-  text-decoration: none;
-}
-.institutional-lockup:hover { color: #ffffff; }
-.institutional-lockup__logo {
-  display: block;
-  width: clamp(178px, 18vw, 225px);
-  height: auto;
-  padding: 3px 5px;
-  background: #ffffff;
-  border-radius: 2px;
-}
-
-.header-actions { display: flex; align-items: center; gap: 1.4rem; }
-.primary-nav { display: flex; flex-wrap: wrap; gap: .35rem 1.35rem; }
-.primary-nav a {
-  color: #ffffff;
-  border-bottom: 2px solid transparent;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: .83rem;
-  font-weight: 650;
-}
-.primary-nav a:hover {
-  color: #ffffff;
-  border-bottom-color: var(--accent);
-}
-
-.page-shell { padding-block: 0 clamp(3.5rem, 8vw, 7rem); }
-
-.breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .3rem .55rem;
-  min-height: 44px;
-  align-items: center;
-  margin: 0;
-  color: var(--muted);
-  border-bottom: 1px solid var(--line);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: .88rem;
-}
-.breadcrumbs a { color: inherit; }
-.breadcrumbs [aria-current="page"] { color: var(--heading); font-weight: 650; }
 
 .hero {
   display: grid;
-  gap: 1rem;
   max-width: 64rem;
   min-height: 390px;
   align-content: center;
-  padding-block: clamp(3rem, 7vw, 6rem);
 }
 
-.eyebrow {
+/* At the specificity `.uwp-hero h1` uses, so this family keeps its own
+   display scale rather than the package's — every page-family rule below
+   overrides one or the other and they have to be overriding the same thing. */
+.hero h1 {
+  max-width: 22ch;
   margin: 0;
-  color: var(--brand);
-  font-size: .78rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  font-size: clamp(2.3rem, 7vw, 5.2rem);
 }
 
 h1, h2, h3, h4 {
   color: var(--heading);
-  font-family: Georgia, "Times New Roman", serif;
   line-height: 1.16;
-  text-wrap: balance;
 }
 h1 { max-width: 22ch; margin: 0; font-size: clamp(2.3rem, 7vw, 5.2rem); }
 h2 { margin: 2.8rem 0 .8rem; font-size: clamp(1.65rem, 4vw, 2.55rem); }
@@ -216,27 +161,18 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   max-width: 64ch;
   font-size: clamp(1.02rem, 1.7vw, 1.18rem);
 }
+/* The reading-time line, which the hero has no slot for: it is neither a call
+   to action nor media, and the summary of a <details> is the only other place
+   the component would take a second line. It sits under the hero instead of
+   inside it. */
 .article-meta {
   display: flex;
   flex-wrap: wrap;
   gap: .45rem 1rem;
-  margin: .25rem 0 0;
+  margin: 1rem 0 0;
   color: var(--muted);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--uwp-sans);
   font-size: .78rem;
-}
-
-.lede {
-  max-width: 70ch;
-  margin: 0;
-  color: var(--copy);
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-}
-
-.source-note {
-  margin: 0;
-  color: var(--muted);
-  font-size: .86rem;
 }
 
 .content-grid {
@@ -938,18 +874,17 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   overflow-wrap: anywhere;
 }
 
+/* .uwp-card gives the panel its surface, its frame and its padding, and
+   --sticky the behaviour. What is this site's is the accent rule along the top
+   — the package's plain variant draws a hairline there — and the extra
+   travel before it pins. */
 .related {
-  position: sticky;
   top: 1.5rem;
-  padding: 1.25rem;
-  background: var(--surface);
   border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--line);
   overflow-wrap: anywhere;
 }
 .related h2 { margin: 0 0 1rem; font-size: 1.35rem; }
-.related ul { display: grid; gap: .7rem; margin: 0; padding-left: 1.1rem; }
-.related small { display: block; color: var(--muted); }
 
 .empty {
   padding: 1rem;
@@ -958,38 +893,25 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   background: var(--surface);
 }
 
-.site-footer {
-  margin-top: 4rem;
-  color: #d8e1e8;
-  background: var(--footer);
-  border-top: 3px solid var(--accent);
-}
-.site-footer__inner { padding-block: 2rem; }
-.site-footer p { max-width: 70ch; margin: .25rem 0; }
-.site-footer a { color: #fff; }
-
-.theme-toggle {
-  --toggle-track: var(--surface);
-  position: relative;
-  width: 44px;
-  height: 25px;
-  flex: 0 0 auto;
-  padding: 0;
-  background: var(--toggle-track);
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  cursor: pointer;
-}
-.theme-toggle:hover { border-color: var(--brand); }
-.theme-icon, .switch-thumb {
+/* The release layer installs its own masthead and its own switch inside it.
+   That switch carries the pre-package class names, and its geometry has always
+   come from whichever stylesheet the page family loads —
+   demo-assets/global-masthead.css only nudges two `top` values and assumes the
+   rest exists. Scoped to that masthead so it cannot reach the switch rendered
+   here, which is patterns.css's and carries `.theme-toggle` only as the hook
+   theme.js binds. Without this the released page keeps its track and loses its
+   icons and its knob, and no test sees it. */
+[data-global-masthead] .theme-toggle { --toggle-track: var(--surface); }
+[data-global-masthead] .theme-icon,
+[data-global-masthead] .switch-thumb {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
 }
-.theme-icon { top: 8px; width: 7px; height: 7px; }
-.theme-icon-light { left: 7px; background: #e0b451; }
-.theme-icon-dark { right: 7px; background: #7aa0c2; }
-.theme-icon-dark::after {
+[data-global-masthead] .theme-icon { width: 7px; height: 7px; }
+[data-global-masthead] .theme-icon-light { left: 7px; background: #e0b451; }
+[data-global-masthead] .theme-icon-dark { right: 7px; background: #7aa0c2; }
+[data-global-masthead] .theme-icon-dark::after {
   position: absolute;
   top: 0;
   left: 3px;
@@ -999,9 +921,8 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   background: var(--toggle-track);
   border-radius: 50%;
 }
-.switch-thumb {
+[data-global-masthead] .switch-thumb {
   z-index: 2;
-  top: 3px;
   left: 3px;
   width: 17px;
   height: 17px;
@@ -1010,27 +931,11 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   box-shadow: 0 1px 3px rgb(19 42 56 / .17);
   transition: transform 160ms ease;
 }
-:root[data-theme="dark"] .switch-thumb { transform: translateX(19px); }
+:root[data-theme="dark"] [data-global-masthead] .switch-thumb {
+  transform: translateX(19px);
+}
 
 @media (max-width: 54rem) {
-  .status-bar__inner { align-items: flex-start; flex-direction: column; padding-block: .65rem; }
-  .site-header__inner {
-    height: 112px;
-    min-height: 112px;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 4px;
-    padding-block: 8px;
-  }
-  .header-actions { width: 100%; min-width: 0; align-items: flex-start; }
-  .primary-nav {
-    min-width: 0;
-    flex: 1 1 auto;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: thin;
-  }
-  .primary-nav a { flex: 0 0 auto; white-space: nowrap; }
   .content-grid { grid-template-columns: 1fr; }
   .programme-tools { grid-template-columns: 1fr; }
   .programme-selection { align-items: flex-start; flex-direction: column; }
@@ -1042,7 +947,6 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   .related { position: static; }
   .hero { min-height: 330px; }
   .editorial-page .hero { min-height: 0; }
-  .institutional-lockup__logo { width: 142px; }
 }
 
 @media print {
@@ -1082,7 +986,53 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
       color-scheme: dark;
   }
 
-  :root:not([data-theme]) .switch-thumb {
+  :root:not([data-theme])`, `:root[data-theme="light"]`
+   and, inside a preference query, `:root:not([data-theme="light"])`. A plain
+   `:root` here would be less specific than any of those and would lose the
+   aliasing in exactly the states a visitor is most likely to be in. */
+:root,
+:root[data-theme="dark"],
+:root[data-theme="light"],
+:root:not([data-theme="light"]) {
+    --uwp-ink: var(--ink);
+      --uwp-heading: var(--heading);
+      --uwp-title: var(--heading);
+      --uwp-copy: var(--copy);
+      --uwp-muted: var(--muted);
+      --uwp-nav-ink: var(--ink);
+    
+      --uwp-paper: var(--paper);
+      --uwp-surface: var(--surface);
+      --uwp-topbar: var(--surface);
+    
+      --uwp-link: var(--brand);
+      --uwp-link-strong: var(--brand-dark);
+      --uwp-solid: var(--brand-dark);
+      --uwp-solid-hover: var(--brand);
+      --uwp-pale: var(--surface);
+    
+      --uwp-brand: var(--topbar);
+      --uwp-brand-contrast: #ffffff;
+      --uwp-accent: var(--accent);
+      --uwp-footer-bg: var(--footer);
+    
+      --uwp-rule: var(--line);
+      --uwp-rule-strong: var(--line-strong);
+      --uwp-focus: var(--focus);
+      --uwp-switch-knob: var(--switch-knob);
+    
+      --uwp-serif: Georgia, "Times New Roman", serif;
+      /* The package's default sans opens with Inter, which this site never loads;
+         its second choice is this stack, so name it directly. */
+      --uwp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    
+      /* .uwp-shell is the measure the masthead, hero and footer are laid out on.
+         Aliasing it to --max is what keeps them flush with .page-shell below. */
+      --uwp-content-width: var(--max);
+      --uwp-header-height: 112px;
+  }
+
+  :root:not([data-theme]) [data-global-masthead] .switch-thumb {
     transform: translateX(19px);
   }
 }

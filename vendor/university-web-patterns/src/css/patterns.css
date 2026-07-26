@@ -1,0 +1,2616 @@
+/* Shared structural patterns.
+ *
+ * Colour, type and measure come from tokens.css — this file never hard-codes a
+ * palette value. Where a donor rule used a one-off tint with no matching token,
+ * it is expressed as a `color-mix()` of the nearest token so a client that
+ * re-declares the token still gets a coherent result.
+ *
+ * The shell layer (skip link, institution bar, masthead, brand, nav, theme
+ * switch, breadcrumbs, hero, buttons, sections, footer) was promoted in 0.8.0
+ * from a donor site. The people layer (profile page, directory shell,
+ * publication grouping, timeline) followed in 0.9.0 from the same donor. The
+ * donor shipped several slightly divergent copies of both; this file carries
+ * the superset, and anything a client does not supply simply renders as an
+ * empty slot.
+ *
+ * The long tail (leadership, documents, search, the not-found page and a set
+ * of small generics) followed in 0.10.0, and was the first promotion drawn
+ * from TWO clients rather than one. Several patterns existed in both under
+ * different names — a three-column card grid, a stacked person card, a ruled
+ * link stack, a standalone forward link, a labelled query box. The package
+ * takes one form of each and both clients converge on it; where the two
+ * genuinely disagreed, the choice is recorded in the comment beside the rule.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Screen-reader-only text that stays in the accessibility tree. */
+.uwp-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Skip link. Off-screen until focused, then pinned to the top-left corner
+   above every sticky band. Sized to the 44px control target. */
+.uwp-skip-link {
+  position: fixed;
+  inset: .75rem auto auto .75rem;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .65rem .9rem;
+  color: var(--uwp-brand-contrast);
+  background: var(--uwp-solid);
+  text-decoration: none;
+  transform: translateY(-180%);
+}
+
+.uwp-skip-link:focus,
+.uwp-skip-link:focus-visible {
+  transform: none;
+}
+
+/* Content measure. `.uwp-wrap` is the canonical name; `.uwp-shell` is an alias
+   so markup promoted from the donor keeps working unchanged. */
+.uwp-wrap,
+.uwp-shell {
+  width: min(calc(100% - 2rem), var(--uwp-content-width));
+  margin-inline: auto;
+}
+
+/* ---------------------------------------------------------------------------
+   Institution bar — an optional band above the masthead naming the statutory or
+   parent body. Deliberately NOT sticky: the masthead below it is, and two
+   sticky bands both pinned to `top: 0` would overlap.
+   --------------------------------------------------------------------------- */
+.uwp-institution-bar {
+  color: var(--uwp-brand-contrast);
+  background: var(--uwp-brand);
+  border-bottom: 3px solid var(--uwp-accent);
+  font-family: var(--uwp-sans);
+  font-size: .875rem;
+  letter-spacing: .02em;
+}
+
+.uwp-institution-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--uwp-space-3);
+  min-height: var(--uwp-institution-bar-height);
+}
+
+.uwp-institution-bar__home {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  width: clamp(11rem, 18vw, 14rem);
+  min-height: 44px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.uwp-institution-bar__home:hover,
+.uwp-institution-bar__home:focus-visible {
+  color: inherit;
+  opacity: .82;
+}
+
+/* ---------------------------------------------------------------------------
+   Masthead
+   --------------------------------------------------------------------------- */
+/* The masthead is indirected through its own three tokens rather than reading
+ * --uwp-brand directly. Clients legitimately differ here: some carry a solid
+ * institutional bar, others a light paper header over a coloured bar above it.
+ * A client re-declares these three to switch, without redefining --uwp-brand,
+ * which is also the institution bar's background and must not move with it. */
+.uwp-masthead {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  overflow-x: clip;
+  color: var(--uwp-masthead-ink);
+  background: var(--uwp-masthead-bg);
+  border-bottom: var(--uwp-masthead-rule);
+}
+
+.uwp-masthead__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--uwp-space-3);
+  min-height: var(--uwp-header-height);
+}
+
+/* Right-hand cluster: nav, search, theme switch. A donor variant kept the theme
+   switch inside the nav instead; both arrangements render correctly. */
+.uwp-masthead__actions {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--uwp-space-2);
+}
+
+/* Plain footer wrapper, for a site that does not use the grouped column grid. */
+.uwp-footer__inner {
+  width: min(calc(100% - 2rem), var(--uwp-content-width));
+  margin-inline: auto;
+  padding-block: var(--uwp-space-4);
+}
+
+/* ---------------------------------------------------------------------------
+   Brand — one slot, three treatments. A site picks one by the data it passes.
+   --------------------------------------------------------------------------- */
+.uwp-brand,
+.uwp-masthead__inner > a:not([class]) {
+  display: grid;
+  flex: 0 0 auto;
+  justify-items: start;
+  min-width: 0;
+  color: inherit;
+  font-family: var(--uwp-serif);
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.uwp-brand:hover,
+.uwp-brand:focus-visible {
+  color: inherit;
+}
+
+/* 1. stacked — <strong> name over <small> parent body */
+.uwp-brand strong {
+  display: block;
+  font-size: clamp(1.08rem, 2.4vw, 1.38rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.uwp-brand small {
+  display: block;
+  margin-top: .25rem;
+  color: color-mix(in srgb, var(--uwp-masthead-ink) 82%,
+    var(--uwp-masthead-bg));
+  font-family: var(--uwp-sans);
+  /* raised from the donor's .68rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+/* 2. wordmark — a single line of type, no sub-line */
+.uwp-brand--wordmark {
+  font-size: clamp(1.2rem, 3vw, 1.45rem);
+  font-weight: 650;
+  line-height: 1.1;
+}
+
+/* 3. lockup — an image mark. The donor sat the mark on a light plate so a
+   dark-on-transparent logo stays legible against the masthead. */
+.uwp-brand--lockup {
+  line-height: 1;
+}
+
+.uwp-brand__logo {
+  display: block;
+  width: clamp(11rem, 18vw, 14rem);
+  height: auto;
+  padding: 3px 5px;
+  background: var(--uwp-paper);
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Primary navigation
+   --------------------------------------------------------------------------- */
+.uwp-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(.75rem, 1.6vw, var(--uwp-space-3));
+  font-family: var(--uwp-sans);
+}
+
+.uwp-nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  font-size: .82rem;
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* The accent underline is drawn as a pseudo-element rather than the donor's
+   `border-bottom`, because the fly-out panels below switch it off per row. */
+.uwp-nav a::after {
+  position: absolute;
+  right: 0;
+  bottom: .3rem;
+  left: 0;
+  height: 2px;
+  background: var(--uwp-masthead-accent);
+  content: "";
+  opacity: 0;
+  transform: scaleX(.35);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.uwp-nav a:hover::after,
+.uwp-nav a:focus-visible::after,
+.uwp-nav a[aria-current="page"]::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Scoped to the institution bar the nav reads one step quieter. */
+.uwp-institution-bar .uwp-nav a {
+  font-weight: 600;
+}
+
+.uwp-nav-toggle {
+  display: none;
+  width: 44px;
+  padding: .6rem;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: .25rem;
+}
+
+.uwp-nav-toggle span,
+.uwp-nav-toggle span::before,
+.uwp-nav-toggle span::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  content: "";
+}
+
+.uwp-nav-toggle span {
+  position: relative;
+}
+
+.uwp-nav-toggle span::before {
+  position: absolute;
+  top: -.45rem;
+}
+
+.uwp-nav-toggle span::after {
+  position: absolute;
+  top: .45rem;
+}
+
+/* Dropdown mega-menu. A top-level nav entry may be a `.uwp-nav-item` carrying a
+   `.uwp-nav-menu` of sub-links, revealed on hover/focus (precise pointers) or
+   via its disclosure button (touch + keyboard). Data-free: the client supplies
+   items per navigation.schema.json. */
+.uwp-nav-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.uwp-nav-item__disclosure {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  min-height: 44px;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.uwp-nav-item__disclosure span {
+  display: block;
+  width: .4rem;
+  height: .4rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-1px) rotate(45deg);
+  transition: transform 150ms ease;
+  content: "";
+}
+
+.uwp-nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  display: none;
+  flex-direction: column;
+  min-width: 15rem;
+  padding: .4rem 0;
+  background: var(--uwp-surface);
+  border: 1px solid color-mix(in srgb, var(--uwp-ink) 16%, transparent);
+  border-top: 3px solid var(--uwp-accent);
+  border-radius: 0 0 .25rem .25rem;
+  box-shadow: 0 1.25rem 2.75rem rgb(0 0 0 / 22%);
+}
+
+.uwp-nav-item:hover > .uwp-nav-menu,
+.uwp-nav-item:focus-within > .uwp-nav-menu,
+.uwp-nav-item.is-open > .uwp-nav-menu {
+  display: flex;
+}
+
+/* With scripting, hover-intent (navigation.js) drives `.is-open`, so the raw
+   `:hover` opener is dropped: `.is-open` + `:focus-within` become the single
+   source of truth. That lets the hover-intent close-delay hold the panel open
+   while the pointer travels toward a nested fly-out, instead of snapping shut
+   the instant `:hover` is lost. The base `:hover` rule above stays as the
+   no-JS fallback. */
+.uwp-js .uwp-nav-item:hover > .uwp-nav-menu {
+  display: none;
+}
+
+.uwp-js .uwp-nav-item:focus-within > .uwp-nav-menu,
+.uwp-js .uwp-nav-item.is-open > .uwp-nav-menu {
+  display: flex;
+}
+
+.uwp-nav-item:hover .uwp-nav-item__disclosure span,
+.uwp-nav-item:focus-within .uwp-nav-item__disclosure span,
+.uwp-nav-item.is-open .uwp-nav-item__disclosure span {
+  transform: translateY(1px) rotate(225deg);
+}
+
+.uwp-nav-menu a {
+  min-height: 0;
+  padding: .55rem 1.15rem;
+  color: var(--uwp-ink);
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+/* the underline-accent belongs to the top bar, not the panel rows */
+.uwp-nav-menu a::after {
+  content: none;
+}
+
+.uwp-nav-menu a:hover,
+.uwp-nav-menu a:focus-visible {
+  background: color-mix(in srgb, var(--uwp-ink) 7%, transparent);
+}
+
+/* Level-2 cascade fly-out. A row inside a `.uwp-nav-menu` may itself be a
+   `.uwp-nav-branch` carrying a `.uwp-nav-flyout` of sub-links, revealed in a
+   panel beside the row (two levels only, never deeper). With scripting the
+   reveal is driven solely by `.is-open` (hover-intent, navigation.js) plus
+   `:focus-within`, so travelling diagonally from the row to the panel never
+   snaps it shut; the base `:hover` opener is only the no-JS fallback. Row links
+   and fly-out links inherit their type from `.uwp-nav-menu a`. Data-free: the
+   client supplies rows per navigation-cascade.schema.json. */
+.uwp-nav-branch {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.uwp-nav-branch__link {
+  flex: 1 1 auto;
+}
+
+.uwp-nav-branch__disclosure {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  min-height: 44px;
+  padding: 0;
+  color: var(--uwp-muted);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.uwp-nav-branch__disclosure span {
+  display: block;
+  width: .4rem;
+  height: .4rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 150ms ease;
+  content: "";
+}
+
+.uwp-nav-branch.is-open > .uwp-nav-branch__disclosure span,
+.uwp-nav-branch:focus-within > .uwp-nav-branch__disclosure span {
+  transform: rotate(135deg);
+}
+
+.uwp-nav-branch:hover > .uwp-nav-branch__link,
+.uwp-nav-branch:focus-within > .uwp-nav-branch__link,
+.uwp-nav-branch.is-open > .uwp-nav-branch__link {
+  background: color-mix(in srgb, var(--uwp-ink) 7%, transparent);
+}
+
+.uwp-nav-flyout {
+  position: absolute;
+  top: -.7rem;
+  left: 100%;
+  z-index: 60;
+  display: none;
+  flex-direction: column;
+  min-width: 16rem;
+  padding: .4rem 0;
+  background: var(--uwp-surface);
+  border: 1px solid color-mix(in srgb, var(--uwp-ink) 16%, transparent);
+  border-top: 3px solid var(--uwp-accent);
+  border-radius: 0 .25rem .25rem .25rem;
+  box-shadow: 0 1.25rem 2.75rem rgb(0 0 0 / 22%);
+}
+
+/* Edge variant: near the right viewport edge navigation.js measures the panel
+   and flips it to open to the left of the row instead. */
+.uwp-nav-flyout--left {
+  right: 100%;
+  left: auto;
+  border-radius: .25rem 0 .25rem .25rem;
+}
+
+.uwp-nav-branch:hover > .uwp-nav-flyout,
+.uwp-nav-branch:focus-within > .uwp-nav-flyout,
+.uwp-nav-branch.is-open > .uwp-nav-flyout {
+  display: flex;
+}
+
+.uwp-js .uwp-nav-branch:hover > .uwp-nav-flyout {
+  display: none;
+}
+
+.uwp-js .uwp-nav-branch:focus-within > .uwp-nav-flyout,
+.uwp-js .uwp-nav-branch.is-open > .uwp-nav-flyout {
+  display: flex;
+}
+
+.uwp-nav-flyout .uwp-nav-flyout__all {
+  margin-top: .3rem;
+  border-top: 1px solid var(--uwp-rule);
+  /* --uwp-link, not --uwp-brand: brand is a solid background paired with
+     --uwp-brand-contrast, and a client that sets it to an institutional navy
+     gets near-invisible text here in dark mode. */
+  color: var(--uwp-link);
+  font-weight: 700;
+}
+
+/* Mega panel. A `.uwp-nav-item--mega` opens a `.uwp-nav-mega` (also a
+   `.uwp-nav-menu`, so every reveal, accordion and no-JS rule above applies
+   unchanged) that spans the masthead and shows all of an entry's destinations
+   at once as a grid of labelled groups. The item goes `position: static` so
+   the panel's containing block becomes the sticky masthead itself — that is
+   what lets `left: 0; right: 0` mean the full masthead width instead of the
+   width of one nav entry, with no measuring script. Requires the panel to sit
+   inside masthead.html; the masthead's `overflow-x: clip` does not clip it
+   because the panel never exceeds the masthead horizontally and `clip` on one
+   axis leaves the other visible. Data-free: the client supplies items per
+   navigation-mega.schema.json. */
+.uwp-nav-item--mega {
+  position: static;
+}
+
+.uwp-nav-mega {
+  right: 0;
+  left: 0;
+  min-width: 0;
+  /* Never taller than the viewport below the sticky masthead: a campus-life
+     panel of forty destinations scrolls inside itself instead of running off
+     screen. */
+  max-height: calc(100vh - var(--uwp-header-height));
+  max-height: calc(100dvh - var(--uwp-header-height));
+  /* The side padding centres the content on the shell measure while the
+     surface itself runs full-bleed, without an extra wrapper element. */
+  padding: var(--uwp-space-2)
+    max(var(--uwp-space-2), calc((100% - var(--uwp-content-width)) / 2))
+    var(--uwp-space-2);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+/* Groups flow into 1–4 columns by viewport: grid, because a heading must stay
+   atop its own links — CSS columns alone would let a group break across
+   columns mid-list. */
+.uwp-nav-mega__body {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--uwp-space-2) var(--uwp-space-3);
+}
+
+/* Within one group, CSS columns balance a long flat list (a single unheaded
+   group of a dozen centres) into side-by-side columns — the one job grid
+   cannot do, just as columns cannot do the grid's. */
+.uwp-nav-mega__links {
+  columns: 14rem;
+  column-gap: var(--uwp-space-3);
+}
+
+/* Panel rows meet the 44px control floor — the wide panel has the room the
+   slim drop-down above does not — and wrap: a named school's label can pass
+   sixty characters, which the drop-down's nowrap would push off screen. */
+.uwp-nav-mega__links a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .35rem .6rem;
+  white-space: normal;
+  break-inside: avoid;
+  border-radius: .25rem;
+}
+
+/* Group headings are metadata, floored at 14px. The plain-text and the
+   linked form share one look; only the link adds the 44px target and the
+   row hover. */
+.uwp-nav-mega .uwp-nav-mega__heading {
+  display: flex;
+  align-items: center;
+  min-height: 0;
+  margin: 0 0 .2rem;
+  padding: .3rem .6rem;
+  color: var(--uwp-muted);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.uwp-nav-mega a.uwp-nav-mega__heading {
+  min-height: 44px;
+  border-radius: .25rem;
+}
+
+/* See the note on .uwp-nav-flyout__all for why --uwp-link, not --uwp-brand. */
+.uwp-nav-mega__all {
+  margin-top: var(--uwp-space-2);
+  padding-inline: .6rem;
+  border-top: 1px solid var(--uwp-rule);
+  color: var(--uwp-link);
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------------------------
+   Theme switch — a 44px track carrying two state icons and a sliding thumb.
+   The palette itself lives in tokens.css; only the thumb travel is
+   theme-conditional here.
+   --------------------------------------------------------------------------- */
+.uwp-theme-toggle {
+  --uwp-toggle-track: var(--uwp-pale);
+  position: relative;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 25px;
+  padding: 0;
+  background: var(--uwp-toggle-track);
+  border: 1px solid var(--uwp-rule-strong);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.uwp-theme-toggle:hover,
+.uwp-theme-toggle:focus-visible {
+  border-color: var(--uwp-link);
+}
+
+.uwp-theme-toggle:focus-visible {
+  outline: 2px solid var(--uwp-focus);
+  outline-offset: 3px;
+}
+
+.uwp-theme-icon,
+.uwp-switch-thumb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.uwp-theme-icon {
+  top: 8px;
+  width: 7px;
+  height: 7px;
+}
+
+.uwp-theme-icon--light {
+  left: 7px;
+  background: var(--uwp-accent);
+}
+
+.uwp-theme-icon--dark {
+  right: 7px;
+  background: color-mix(in srgb, var(--uwp-link) 70%, var(--uwp-paper));
+}
+
+/* crescent: a track-coloured disc bitten out of the dark icon */
+.uwp-theme-icon--dark::after {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  background: var(--uwp-toggle-track);
+  border-radius: 50%;
+  content: "";
+}
+
+.uwp-switch-thumb {
+  top: 2px;
+  left: 2px;
+  z-index: 2;
+  width: 19px;
+  height: 19px;
+  background: var(--uwp-switch-knob);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 24%);
+  transition: transform 180ms ease;
+}
+
+:root[data-theme="dark"] .uwp-switch-thumb {
+  transform: translateX(19px);
+}
+
+/* ---------------------------------------------------------------------------
+   Breadcrumbs
+   --------------------------------------------------------------------------- */
+.uwp-breadcrumbs {
+  width: min(calc(100% - 2rem), var(--uwp-content-width));
+  margin: 0 auto;
+  color: var(--uwp-muted);
+  border-bottom: 1px solid var(--uwp-rule);
+  font-family: var(--uwp-sans);
+}
+
+.uwp-breadcrumbs ol {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .3rem .55rem;
+  min-height: 44px;
+  margin: 0;
+  padding: .4rem 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-inline: contain;
+  list-style: none;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.uwp-breadcrumbs li {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-width: 0;
+  /* raised from the donor's .72rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  line-height: 1.35;
+}
+
+.uwp-breadcrumbs li:not(:last-child)::after {
+  margin-left: .55rem;
+  color: var(--uwp-rule-strong);
+  content: "/";
+}
+
+.uwp-breadcrumbs a {
+  color: inherit;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.uwp-breadcrumbs a:hover {
+  color: var(--uwp-link);
+}
+
+.uwp-breadcrumbs a:focus-visible {
+  outline: 2px solid var(--uwp-focus);
+  outline-offset: 3px;
+}
+
+.uwp-breadcrumbs [aria-current="page"] {
+  color: var(--uwp-heading);
+  font-weight: 650;
+}
+
+/* ---------------------------------------------------------------------------
+   Hero
+   --------------------------------------------------------------------------- */
+.uwp-hero {
+  padding-block: clamp(2.5rem, 7vw, 6rem);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(16rem, .9fr);
+  gap: clamp(var(--uwp-space-4), 6vw, 5rem);
+  align-items: center;
+}
+
+/* A hero with no picture. One client shipped this as a state class on the hero
+   itself; here it is a modifier of the grid, because the grid is the only
+   thing that changes — the copy column simply takes the whole measure. */
+.uwp-hero__grid--single {
+  grid-template-columns: minmax(0, 55rem);
+}
+
+.uwp-hero__copy {
+  position: relative;
+  max-width: 48rem;
+}
+
+.uwp-hero__copy > :first-child {
+  margin-top: 0;
+}
+
+/* accent rule above the eyebrow */
+.uwp-hero__copy::before {
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-bottom: var(--uwp-space-3);
+  background: var(--uwp-accent);
+  content: "";
+}
+
+.uwp-hero h1 {
+  max-width: 20ch;
+  margin-block: .25em;
+  font-size: clamp(2.25rem, 1.5rem + 3vw, 5rem);
+}
+
+.uwp-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--uwp-space-1) var(--uwp-space-3);
+  margin-top: var(--uwp-space-4);
+}
+
+.uwp-hero__media {
+  position: relative;
+  margin: 0;
+  background: color-mix(in srgb, var(--uwp-rule) 40%, var(--uwp-surface));
+  border: 1px solid var(--uwp-rule);
+}
+
+/* offset accent block behind the lower-right corner of the media */
+.uwp-hero__media::before {
+  position: absolute;
+  z-index: -1;
+  inset: auto -1.15rem -1.15rem auto;
+  width: 45%;
+  height: 55%;
+  background: color-mix(in srgb, var(--uwp-accent) 45%, var(--uwp-paper));
+  content: "";
+}
+
+.uwp-hero__media img,
+.uwp-hero__media video {
+  width: 100%;
+  aspect-ratio: var(--uwp-media-ratio, 4 / 3);
+  object-fit: cover;
+}
+
+/* Picture captions. Both donors carry one, under different names and in
+   different blocks — the hero's `<figcaption>` in one, a `media-caption` class
+   under a lead picture in the other. They are one line of type, so they are one
+   rule. It lives here rather than in media.css because every client gets this
+   file, while media.css is optional and only sizes the picture box itself. */
+.uwp-hero__media figcaption,
+.uwp-lead-media__caption {
+  padding: .75rem .9rem;
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  /* raised from the donors' .76–.78rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  line-height: 1.45;
+}
+
+/* The two donors disagreed on the separator: the hero picture sits in a filled
+   frame and needs none, the lead picture is unfilled and the caption would read
+   as body copy without one. Both are kept, scoped to the block that needs them,
+   rather than forcing one appearance on both. */
+.uwp-lead-media__caption {
+  margin: 0;
+  background: var(--uwp-surface);
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-lead-media__caption a {
+  color: inherit;
+}
+
+/* Images inside these blocks fill their container by default. The :not()
+   matters: a portrait declares its own fixed box in media.css, and a bare
+   `.uwp-card img` (0,1,1) outranks `.uwp-portrait` (0,1,0) on specificity
+   regardless of load order — which rendered every photographed person at full
+   card width, while a person with no photograph looked correct because the
+   lettered tile is a div. Any element that sets its own box belongs here. */
+.uwp-hero img:not(.uwp-portrait),
+.uwp-card img:not(.uwp-portrait),
+.uwp-profile img:not(.uwp-portrait),
+.uwp-gallery img:not(.uwp-portrait) {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------------------------------
+   Editorial primitives
+   --------------------------------------------------------------------------- */
+.uwp-eyebrow {
+  margin: 0 0 .75rem;
+  color: var(--uwp-link);
+  font-family: var(--uwp-sans);
+  /* raised from the donor's .68–.78rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.uwp-lede {
+  max-width: 58ch;
+  margin: 0;
+  color: var(--uwp-copy);
+  font-size: clamp(1.02rem, 1.7vw, 1.22rem);
+}
+
+/* A standalone forward link — "all news", "browse the archive", the last line
+   of a card. Both clients had one: a two-cell form carrying a trailing accent
+   glyph, and a plain bold link with no glyph. The two-cell form wins, because
+   the glyph is the affordance that distinguishes this from body-copy links; a
+   client that supplies no second cell gets the plain form back, since the
+   second column simply has nothing in it. */
+.uwp-text-link {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: .8rem;
+  align-items: center;
+  /* a lone link at the foot of a section is a tap target of its own, so it
+     takes the 44px control target rather than its text height */
+  min-height: 44px;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  /* raised from the donors' .8–.9rem to clear the 14px metadata floor */
+  font-size: .9rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.uwp-text-link:hover,
+.uwp-text-link:focus-visible {
+  color: var(--uwp-link);
+}
+
+/* The glyph cell. The donor set it in the accent, a light gold that fails
+   contrast as small type, so it is mixed toward the ink as the directory's
+   trailing counts already are. */
+.uwp-text-link span:last-child {
+  color: color-mix(in srgb, var(--uwp-accent) 45%, var(--uwp-ink));
+}
+
+/* A ruled stack of links. One client used it for the tail of a card, the other
+   for a list of routes into a section; they are the same list, and the only
+   difference was which edge carried the rule. Rows carry their own bottom
+   rule, the block carries the top one, and `margin-top: auto` pins the stack to
+   the foot of a flex card — a no-op anywhere else. */
+.uwp-link-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  border-top: 1px solid var(--uwp-rule);
+  list-style: none;
+}
+
+.uwp-link-list > li {
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-link-list a {
+  display: flex;
+  gap: var(--uwp-space-2);
+  align-items: center;
+  justify-content: space-between;
+  /* the donors' rows were 30–34px; raised to the 44px control target */
+  min-height: 44px;
+  padding-block: .7rem;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: .9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.uwp-link-list a:hover,
+.uwp-link-list a:focus-visible {
+  color: var(--uwp-link);
+}
+
+.uwp-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem var(--uwp-space-3);
+  margin-top: var(--uwp-space-4);
+}
+
+.uwp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* the donor used 42px; raised to the 44px control target */
+  min-height: 44px;
+  padding: .6rem 1rem;
+  color: var(--uwp-link);
+  background: transparent;
+  border: 1px solid var(--uwp-link);
+  font-family: var(--uwp-sans);
+  font-size: .95rem;
+  font-weight: 650;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 140ms ease, background-color 140ms ease,
+    border-color 140ms ease;
+}
+
+.uwp-button:hover,
+.uwp-button:focus-visible {
+  color: var(--uwp-brand-contrast);
+  background: var(--uwp-solid);
+  border-color: var(--uwp-solid);
+}
+
+.uwp-button--primary {
+  color: var(--uwp-brand-contrast);
+  background: var(--uwp-solid);
+}
+
+.uwp-button--primary:hover,
+.uwp-button--primary:focus-visible {
+  background: var(--uwp-solid-hover);
+  border-color: var(--uwp-solid-hover);
+}
+
+.uwp-section {
+  padding-block: clamp(2.75rem, 6vw, 4.75rem);
+}
+
+.uwp-section + .uwp-section {
+  border-top: 1px solid var(--uwp-rule);
+}
+
+/* A section on the quieter surface. Between them the two clients had five
+   separately named bands whose only difference from a plain section was this
+   one declaration — an editorial band, a feature band, an index band, a tinted
+   band and a callout band. They are one modifier. */
+.uwp-section--tint {
+  background: var(--uwp-surface);
+}
+
+.uwp-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--uwp-space-3);
+  margin-block: var(--uwp-space-6) var(--uwp-space-3);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-section-heading h2 {
+  margin-block: .25rem .75rem;
+}
+
+/* Split heading: a narrow label column beside the heading and its standfirst,
+   unruled. Both clients had this shape — one as the header of two different
+   editorial bands, the other as an opening intro grid — and the package
+   already had two more instances of it under their own names
+   (`.uwp-directory__heading`, `.uwp-publications__group`). Those two are
+   registered components with their own contracts and are left alone; new
+   markup takes this modifier. */
+.uwp-section-heading--split {
+  display: grid;
+  grid-template-columns: minmax(11rem, .4fr) minmax(0, 1fr);
+  gap: clamp(var(--uwp-space-3), 5vw, 5rem);
+  align-items: start;
+  margin-block: 0 var(--uwp-space-3);
+  padding-bottom: clamp(var(--uwp-space-4), 5vw, 4.5rem);
+  border-bottom: 0;
+}
+
+.uwp-section-heading--split h2 {
+  max-width: 20ch;
+  margin-block: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Content blocks (unchanged in 0.8.0)
+   --------------------------------------------------------------------------- */
+.uwp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--uwp-space-3);
+}
+
+/* Fixed-track counts. `.uwp-grid` on its own is auto-fit, which is right when
+   the number of cells is unknown; an editor laying out a row of three wants
+   three, and a row that reflows to two then one rather than to whatever fits.
+   Between them the two clients had six names for exactly these two grids — a
+   leaders grid, a card grid, a people grid, a statistics grid, a directory grid
+   and a document list. They are two modifiers, and they fold on the package's
+   own tiers rather than on either client's. */
+.uwp-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.uwp-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Several of those grids were `<ul>`s, which is right: a list of documents is a
+   list. The reset is a modifier rather than part of the block, because a list
+   laid out in columns — a two-column reading list, say — keeps its markers. */
+.uwp-grid--bare {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uwp-card {
+  padding: var(--uwp-space-3);
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+  border-top: 4px solid var(--uwp-brand);
+}
+
+/* Card variants, all four promoted as modifiers rather than as the blocks the
+   donor called them: a compact card in a dense grid, a plain panel with no
+   brand rule, a sidebar panel that follows the reader, and a document entry.
+   The last drops the frame entirely — in the donor it was a bare list item with
+   a bold link and a format line, which is a card's contents without a card's
+   surface, and saying so here is cheaper than a second block. */
+.uwp-card--compact {
+  padding: var(--uwp-space-2);
+}
+
+.uwp-card--plain {
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-card--sticky {
+  position: sticky;
+  top: var(--uwp-space-2);
+}
+
+.uwp-card--document {
+  padding: 0;
+  background: none;
+  border: 0;
+}
+
+.uwp-card--document a {
+  font-weight: 700;
+}
+
+/* the format, size or date line under a document's title */
+.uwp-card--document small {
+  display: block;
+  margin-top: .45rem;
+  color: var(--uwp-muted);
+}
+
+.uwp-card > :first-child {
+  margin-top: 0;
+}
+
+.uwp-card > :last-child {
+  margin-bottom: 0;
+}
+
+.uwp-card a {
+  color: inherit;
+  text-decoration-color: transparent;
+  text-underline-offset: .18em;
+  transition: color 140ms ease, text-decoration-color 140ms ease;
+}
+
+.uwp-card a:hover,
+.uwp-card a:focus-visible {
+  /* Foreground, so --uwp-link. See the note on .uwp-nav-flyout__all. */
+  color: var(--uwp-link);
+  text-decoration-color: currentColor;
+}
+
+.uwp-rail-shell {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  gap: var(--uwp-space-1);
+  align-items: center;
+}
+
+.uwp-rail {
+  display: grid;
+  grid-auto-columns: min(22rem, 84vw);
+  grid-auto-flow: column;
+  gap: var(--uwp-space-3);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.uwp-rail > * {
+  scroll-snap-align: start;
+}
+
+.uwp-rail-button {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--uwp-rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.uwp-directory-controls,
+.uwp-form {
+  display: grid;
+  gap: var(--uwp-space-2);
+  padding: var(--uwp-space-3);
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-directory-controls {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  align-items: end;
+}
+
+.uwp-form__fields {
+  display: grid;
+  gap: var(--uwp-space-2);
+}
+
+.uwp-form :where(input, select, textarea),
+.uwp-directory-controls :where(input, select) {
+  width: 100%;
+  padding: .65rem .75rem;
+  color: var(--uwp-ink);
+  background: var(--uwp-paper);
+  border: 1px solid var(--uwp-rule);
+  border-radius: .2rem;
+}
+
+/* Search. Both clients shipped a labelled query box with a submit beside it —
+   one on a search results page, the other inside a not-found page — and this
+   block already was that form, with a live status line under it, used to filter
+   a listing. It is the same pattern on a different page, so it is a modifier:
+   one query column and its button, unframed, because a search that opens a page
+   is not a panel sitting beside the results it filters. */
+.uwp-directory-controls--search {
+  grid-template-columns: minmax(0, 1fr) auto;
+  max-width: 55rem;
+  padding: 0;
+  background: none;
+  border: 0;
+}
+
+.uwp-directory-controls--search label {
+  grid-column: 1 / -1;
+  font-weight: 700;
+}
+
+/* The status line. One client sized it so the results count could arrive
+   without the listing below jumping; the package's line had no such reserve.
+   The reserve wins, and it applies to the form status line too. */
+.uwp-directory-controls [data-uwp-filter-status],
+.uwp-form__status {
+  min-height: 1.6rem;
+  color: var(--uwp-muted);
+}
+
+.uwp-notice {
+  padding: var(--uwp-space-3);
+  background: color-mix(in srgb, var(--uwp-accent) 10%, var(--uwp-surface));
+  border-inline-start: 4px solid var(--uwp-accent);
+}
+
+/* The callout one client shipped is this block laid out as a band: a heading
+   and a line of copy on one side, the action on the other. It was a layout, not
+   a surface, so it becomes a modifier here instead of a second notice. */
+.uwp-notice--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--uwp-space-3) var(--uwp-space-6);
+}
+
+.uwp-notice--row > :first-child {
+  max-width: 42rem;
+}
+
+.uwp-notice--row h2 {
+  margin-block: 0 .5rem;
+}
+
+.uwp-notice--row p:last-child {
+  margin-bottom: 0;
+  color: var(--uwp-muted);
+}
+
+.uwp-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: var(--uwp-space-2);
+}
+
+.uwp-gallery button {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: zoom-in;
+}
+
+.uwp-lightbox {
+  width: min(94vw, 76rem);
+  max-height: 92vh;
+  padding: var(--uwp-space-3);
+  color: var(--uwp-ink);
+  background: var(--uwp-paper);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-lightbox::backdrop {
+  background: rgb(0 0 0 / 72%);
+}
+
+/* The frame inside the dialog: a previous control, the picture, a next control.
+   A gallery of one still opens in the lightbox, and then the two controls have
+   nothing to do, so the state class drops their tracks rather than hiding
+   buttons that would still take up their columns. */
+.uwp-lightbox__inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: var(--uwp-space-2);
+  align-items: center;
+}
+
+.uwp-lightbox__inner.is-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.uwp-lightbox [data-uwp-lightbox-close] {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 44px;
+  padding: 0;
+  color: inherit;
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------
+   People — the profile page, the directory shell, publication grouping and the
+   timeline. Promoted in 0.9.0 from the same donor as the 0.8.0 shell.
+
+   The donor named one idea several ways across its three stylesheets: the
+   header of a person page is `profile-hero-grid` in one and `profile-intro` in
+   another; the ruled container around a list of people is `people-directory`,
+   `people-list` and `people-grid` in three places. This file carries one
+   vocabulary, built out of the blocks the package already had — `uwp-profile`,
+   `uwp-publications`, `uwp-directory-controls`, and `uwp-person-card` /
+   `uwp-portrait` over in media.css — rather than a second set of names beside
+   them.
+   --------------------------------------------------------------------------- */
+
+/* `.uwp-profile` is the whole record for one person. */
+.uwp-profile {
+  /* --uwp-profile-width, not a literal: this is the one component that is a
+     whole page, and a client that re-declares its measure everywhere else
+     had no way to reach this one. Defaults to the reading-led 62rem the
+     donor used, so nothing moves unless asked. */
+  width: min(calc(100% - 2rem), var(--uwp-profile-width, 62rem));
+  margin-inline: auto;
+}
+
+/* Optional tinted panel behind the header. The donor ran this as a full-bleed
+   band; here it sits inside the measure-constrained wrapper, so it reads as a
+   panel. A client that wants the band puts this element outside `.uwp-profile`
+   instead — nothing in the rule depends on the width. */
+.uwp-profile__hero {
+  background: var(--uwp-surface);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+/* The header is the portrait-beside-identity grid, and it is the same element
+   whether or not the panel above is used. */
+.uwp-profile__header {
+  display: grid;
+  grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr);
+  gap: clamp(var(--uwp-space-3), 5vw, var(--uwp-space-6));
+  align-items: center;
+  margin-block: var(--uwp-space-6);
+}
+
+.uwp-profile__hero > .uwp-profile__header {
+  margin-block: 0;
+  padding-block: clamp(var(--uwp-space-4), 5vw, 3.5rem);
+}
+
+.uwp-profile__header img {
+  aspect-ratio: 4 / 5;
+}
+
+/* The portrait column. The photograph itself is `.uwp-portrait` (media.css),
+   which holds a fixed box so a page with no photograph keeps the same
+   geometry as one with. */
+.uwp-profile__portrait {
+  width: 100%;
+  max-width: 18rem;
+}
+
+.uwp-profile__identity {
+  min-width: 0;
+  max-width: 45rem;
+}
+
+.uwp-profile__identity h1 {
+  margin-block: 0 var(--uwp-space-2);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+/* The donor's two stylesheets disagreed on this one: one set the role in the
+   copy colour, the other in the muted colour. It is a line of reading text
+   directly under a name, so it takes the copy colour. */
+.uwp-profile__designation {
+  margin: 0;
+  color: var(--uwp-copy);
+  font-family: var(--uwp-sans);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+}
+
+.uwp-profile__affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem var(--uwp-space-2);
+  margin-top: var(--uwp-space-2);
+}
+
+/* Every small link row on a profile — affiliations, the link list, the record
+   nav and the context bar — is one target size and one type size. */
+.uwp-profile__affiliations a,
+.uwp-profile__links a,
+.uwp-profile__nav a,
+.uwp-profile__context a {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  /* the donor sat these rows at 30–34px; raised to the 44px control target */
+  min-height: 44px;
+  color: var(--uwp-link);
+  font-family: var(--uwp-sans);
+  /* raised from the donor's .72–.84rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  font-weight: 650;
+}
+
+.uwp-profile__affiliations a:hover,
+.uwp-profile__affiliations a:focus-visible,
+.uwp-profile__links a:hover,
+.uwp-profile__links a:focus-visible,
+.uwp-profile__nav a:hover,
+.uwp-profile__nav a:focus-visible,
+.uwp-profile__context a:hover,
+.uwp-profile__context a:focus-visible {
+  color: var(--uwp-link-strong);
+}
+
+/* Body: the record beside a sidebar of links and short facts. */
+.uwp-profile__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(15rem, .6fr);
+  gap: clamp(var(--uwp-space-4), 6vw, 5rem);
+  padding-block: var(--uwp-space-6);
+}
+
+/* One column, for a record with no sidebar. The donor had two names for this
+   — `profile-body-single` and `profile-layout-simple` — differing only in the
+   measure they capped at; they are one modifier. */
+.uwp-profile__body--single {
+  grid-template-columns: minmax(0, 51rem);
+}
+
+.uwp-profile__body--single .uwp-profile__sidebar,
+.uwp-profile__body--single .uwp-profile__links-section {
+  padding-left: 0;
+  border-left: 0;
+}
+
+/* Long titles, long affiliations and long citations all land in these
+   columns, so none of them may push the grid wider than its track. */
+.uwp-profile__main,
+.uwp-profile__sidebar,
+.uwp-profile__section,
+.uwp-profile__research,
+.uwp-profile__qualifications,
+.uwp-profile__details,
+.uwp-profile__publications,
+.uwp-profile__links-section {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.uwp-profile__main > section + section,
+.uwp-profile__section + .uwp-profile__section {
+  margin-top: var(--uwp-space-4);
+  padding-top: var(--uwp-space-4);
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-profile__section > h2,
+.uwp-profile__research > h2,
+.uwp-profile__qualifications > h2,
+.uwp-profile__details > h2,
+.uwp-profile__publications > h2 {
+  margin-block: 0 var(--uwp-space-2);
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+}
+
+.uwp-profile__bio,
+.uwp-profile__research > p {
+  max-width: var(--uwp-reading-width);
+  color: var(--uwp-copy);
+}
+
+.uwp-profile__detail-list {
+  display: grid;
+  gap: .75rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--uwp-copy);
+}
+
+.uwp-profile__detail-list li {
+  padding-left: .25rem;
+  overflow-wrap: anywhere;
+}
+
+/* A disclosure holding the tail of a long list. The donor shipped two of
+   these, identical apart from the list they sat under. */
+.uwp-profile__more,
+.uwp-publications__more {
+  margin-top: var(--uwp-space-2);
+}
+
+.uwp-profile__more summary,
+.uwp-publications__more summary {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  /* the donor's summary was text-height; raised to the 44px control target */
+  min-height: 44px;
+  color: var(--uwp-link);
+  font-family: var(--uwp-sans);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.uwp-profile__more[open] summary,
+.uwp-publications__more[open] summary {
+  margin-bottom: var(--uwp-space-2);
+}
+
+.uwp-profile__sidebar {
+  padding-left: var(--uwp-space-3);
+  border-left: 1px solid var(--uwp-rule);
+}
+
+.uwp-profile__links-section + .uwp-profile__links-section {
+  margin-top: var(--uwp-space-3);
+  padding-top: var(--uwp-space-3);
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-profile__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Row treatment: the same links laid out horizontally under the identity,
+   each optionally carrying a small icon. */
+.uwp-profile__links--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 var(--uwp-space-3);
+  margin-top: var(--uwp-space-3);
+}
+
+.uwp-profile__links svg {
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Context bar — a quiet band above the record carrying the way back to the
+   listing the reader arrived from, plus any nav for the record itself. The
+   donor hid both of those below its mobile breakpoint; here they wrap
+   instead, because the back link is often the only way out of the page. */
+.uwp-profile__context {
+  background: var(--uwp-surface);
+  border-bottom: 1px solid var(--uwp-rule);
+  font-family: var(--uwp-sans);
+}
+
+.uwp-profile__context-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--uwp-space-2);
+  min-height: 44px;
+}
+
+.uwp-profile__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 var(--uwp-space-3);
+}
+
+/* ---------------------------------------------------------------------------
+   Timeline — a dated list drawn against a rule, one marker per entry. The
+   donor used it for the education section of a profile; nothing in it is
+   education-specific, so it is named for what it is.
+   --------------------------------------------------------------------------- */
+.uwp-timeline {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 var(--uwp-space-3);
+  list-style: none;
+}
+
+.uwp-timeline::before {
+  position: absolute;
+  top: .6rem;
+  bottom: .6rem;
+  left: 5px;
+  width: 1px;
+  background: var(--uwp-rule-strong);
+  content: "";
+}
+
+.uwp-timeline > li {
+  position: relative;
+  padding-bottom: var(--uwp-space-2);
+  color: var(--uwp-copy);
+}
+
+.uwp-timeline > li:last-child {
+  padding-bottom: 0;
+}
+
+.uwp-timeline > li::before {
+  position: absolute;
+  top: .55em;
+  left: calc(1px - var(--uwp-space-3));
+  width: 9px;
+  height: 9px;
+  background: var(--uwp-paper);
+  border: 2px solid var(--uwp-link);
+  border-radius: 50%;
+  content: "";
+}
+
+/* ---------------------------------------------------------------------------
+   Publications — `.uwp-publications` is the flat, numbered section the package
+   already shipped. The grouping below wraps several of those lists, one per
+   person or per year, without changing the list itself.
+   --------------------------------------------------------------------------- */
+.uwp-publications__list {
+  display: grid;
+  gap: .8rem;
+  margin: 0;
+  /* the donor indented a numbered list further than an unnumbered one; this
+     list is always an <ol>, so it takes the numbered measure */
+  padding-left: 1.8rem;
+}
+
+.uwp-publications__list li {
+  padding-left: .35rem;
+  color: var(--uwp-copy);
+  overflow-wrap: anywhere;
+}
+
+.uwp-publications__list a {
+  color: inherit;
+}
+
+.uwp-publications__meta {
+  display: block;
+  margin-top: .2rem;
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  /* raised from the donor's .74rem to clear the 14px metadata floor */
+  font-size: .875rem;
+}
+
+.uwp-publications__groups {
+  border-top: 1px solid var(--uwp-rule-strong);
+}
+
+.uwp-publications__group {
+  display: grid;
+  grid-template-columns: minmax(13rem, .65fr) minmax(0, 1.35fr);
+  gap: var(--uwp-space-3) clamp(var(--uwp-space-4), 6vw, 4.5rem);
+  padding-block: var(--uwp-space-4);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-publications__person {
+  min-width: 0;
+}
+
+.uwp-publications__person h2 {
+  margin-block: 0 .5rem;
+  font-size: clamp(1.25rem, 2.4vw, 1.45rem);
+}
+
+.uwp-publications__person a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.uwp-publications__person a:hover,
+.uwp-publications__person a:focus-visible {
+  color: var(--uwp-link);
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------------------------------
+   FAQ — a run of native disclosures, one per question. The package's other
+   <details> (`.uwp-publications__more`) folds the tail of a single list and is
+   sized like the link it reads as; this one is a stack, so the row spans the
+   set and the rules between rows are the link stack's, which is the closed
+   list a reader can run down without opening anything.
+
+   The section carries no band and no `.uwp-wrap` of its own. A FAQ is as often
+   a section inside a longer page as it is the whole of one, and a component
+   that brought its own band could only be the second.
+   --------------------------------------------------------------------------- */
+.uwp-faq > p {
+  max-width: var(--uwp-reading-width);
+  color: var(--uwp-copy);
+}
+
+.uwp-faq__list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--uwp-rule);
+  list-style: none;
+}
+
+.uwp-faq__item {
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+/* The question. A row across the set rather than a text-height control: it is
+   the only thing to hit, and on a phone a question runs to two or three lines
+   that should all be part of the target. `display: flex` also drops the UA's
+   own disclosure triangle, which the chevron below replaces. */
+.uwp-faq__question {
+  display: flex;
+  gap: var(--uwp-space-2);
+  align-items: center;
+  justify-content: space-between;
+  /* the row opens the answer, so it takes the 44px control target */
+  min-height: 44px;
+  padding-block: .8rem;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  /* a question is read, not scanned: held at the 16px reading floor rather
+     than dropped to the .9rem this package sets its link rows in */
+  font-size: max(1rem, 16px);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Safari keeps its marker through `display: flex` and needs telling twice. */
+.uwp-faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.uwp-faq__question:hover {
+  color: var(--uwp-link);
+}
+
+/* The chevron: two borders on an empty box, so it takes the row's own colour
+   through every theme and needs neither a font nor a file. Focus is left to
+   the outline readability.css puts on :focus-visible — a <summary> is already
+   a control and already keyboard-operable, and this component does not touch
+   either. */
+.uwp-faq__question::after {
+  flex: none;
+  width: .5rem;
+  height: .5rem;
+  margin-inline-end: .25rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-.15rem) rotate(45deg);
+  transition: transform 140ms ease;
+  content: "";
+}
+
+.uwp-faq__item[open] .uwp-faq__question::after {
+  transform: translateY(.1rem) rotate(-135deg);
+}
+
+.uwp-faq__answer {
+  max-width: var(--uwp-reading-width);
+  padding-block: 0 var(--uwp-space-3);
+  color: var(--uwp-copy);
+}
+
+/* The answer is client markup, so its first and last blocks arrive with
+   whatever margins they carry elsewhere; the disclosure supplies the spacing
+   instead, and the row above stays tight to the text it opens. */
+.uwp-faq__answer > :first-child {
+  margin-top: 0;
+}
+
+.uwp-faq__answer > :last-child {
+  margin-bottom: 0;
+}
+
+.uwp-faq__answer ul,
+.uwp-faq__answer ol {
+  display: grid;
+  gap: .5rem;
+  padding-left: 1.4rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Directory — what the package was missing around its filter widget and its
+   person cards: a band, sections with their own headings, a card grid, a link
+   index, and the container that holds the people themselves.
+   --------------------------------------------------------------------------- */
+.uwp-directory {
+  padding-block: clamp(2.75rem, 6vw, 4.75rem);
+  background: var(--uwp-surface);
+  border-block: 1px solid var(--uwp-rule);
+}
+
+.uwp-directory__section {
+  padding-block: clamp(2rem, 4vw, 3.25rem);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-directory__heading {
+  display: grid;
+  grid-template-columns: minmax(13rem, .7fr) minmax(0, 1.3fr);
+  gap: .5rem clamp(var(--uwp-space-4), 6vw, 4.5rem);
+  margin-bottom: var(--uwp-space-3);
+}
+
+.uwp-directory__heading .uwp-eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.uwp-directory__heading h2 {
+  margin-block: 0;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+}
+
+.uwp-directory__heading > p:last-child {
+  margin: 0;
+  color: var(--uwp-muted);
+}
+
+/* Card grid drawn in hairlines: 1px gaps over a ruled background, so adjacent
+   cells share one line instead of each drawing its own. */
+.uwp-directory__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--uwp-rule);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-directory__card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: clamp(var(--uwp-space-3), 3vw, var(--uwp-space-4));
+  background: var(--uwp-paper);
+}
+
+.uwp-directory__card > p {
+  margin: .8rem 0 var(--uwp-space-3);
+  color: var(--uwp-copy);
+}
+
+/* The link stack sits at the foot of the card however long the copy above it
+   runs, so a row of cards keeps its links on one line. */
+.uwp-directory__card > .uwp-directory__link:first-of-type {
+  margin-top: auto;
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-directory__link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--uwp-space-2);
+  align-items: center;
+  /* the donor's row was 42px; raised to the 44px control target */
+  min-height: 44px;
+  padding-block: .7rem;
+  color: var(--uwp-ink);
+  border-bottom: 1px solid var(--uwp-rule);
+  font-family: var(--uwp-sans);
+  font-size: .9rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.uwp-directory__link:hover,
+.uwp-directory__link:focus-visible {
+  color: var(--uwp-link);
+}
+
+/* Trailing cell: a count. The donor set it in the accent, which is a light
+   gold that fails contrast at this size, so it is mixed toward the ink. */
+.uwp-directory__link span:last-child {
+  color: color-mix(in srgb, var(--uwp-accent) 45%, var(--uwp-ink));
+  font-weight: 800;
+}
+
+.uwp-directory__index {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--uwp-space-2);
+}
+
+.uwp-directory__index .uwp-directory__link {
+  width: min(100%, 18rem);
+}
+
+/* The people themselves. The donor had three ruled containers for this with
+   three names; the default here is the stacked, separated list, and the
+   modifier is the card grid. */
+/* Shown when a directory has no entries, or when filtering has excluded them
+   all. It sits in the markup with `hidden` toggled, so a genuinely empty
+   directory says so with no script running. */
+.uwp-directory__empty {
+  padding-block: var(--uwp-space-6);
+  color: var(--uwp-muted);
+  text-align: center;
+}
+
+.uwp-directory__empty p {
+  margin: 0 0 var(--uwp-space-2);
+}
+
+.uwp-directory__people {
+  display: grid;
+  border-top: 1px solid var(--uwp-rule-strong);
+}
+
+.uwp-directory__people > * {
+  padding-block: var(--uwp-space-3);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-directory__people--grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: var(--uwp-space-3);
+  border-top: 0;
+}
+
+.uwp-directory__people--grid > * {
+  padding-block: 0;
+  border-bottom: 0;
+}
+
+/* Filter controls. `.uwp-directory-controls` above is the no-JS form the
+   package already shipped — a labelled query box and facet selects. The donor
+   carried a second widget for the same job on its people pages: a row of
+   toggle pills under a toolbar wrapper. The pills become elements of this
+   block rather than a `people-toolbar` vocabulary beside it, and the wrapper
+   itself was nothing but the gap below the controls, which the block now
+   carries. */
+.uwp-directory-controls {
+  margin-bottom: var(--uwp-space-3);
+}
+
+.uwp-directory-controls__filters {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1 / -1;
+  gap: var(--uwp-space-1);
+}
+
+.uwp-directory-controls__filter {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  /* the donor's pill was 30px tall; raised to the 44px control target */
+  min-height: 44px;
+  padding: .4rem .8rem;
+  color: var(--uwp-muted);
+  background: var(--uwp-paper);
+  border: 1px solid var(--uwp-rule);
+  border-radius: 2px;
+  font-family: var(--uwp-sans);
+  /* raised from the donor's .72rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* The pill ships as a <label> wrapping a real radio, so selection is read from
+   the input. `.is-active` and aria-pressed are kept for a client driving the
+   pills as buttons instead. Where :has() is unsupported the pill simply does
+   not fill and the native radio still shows which is chosen. */
+.uwp-directory-controls__filter:hover,
+.uwp-directory-controls__filter:has(input:checked),
+.uwp-directory-controls__filter.is-active,
+.uwp-directory-controls__filter[aria-pressed="true"] {
+  color: var(--uwp-brand-contrast);
+  background: var(--uwp-solid);
+  border-color: var(--uwp-solid);
+}
+
+/* The focus ring belongs on the pill, not the radio inside it. */
+.uwp-directory-controls__filter:has(input:focus-visible) {
+  outline: 2px solid var(--uwp-focus);
+  outline-offset: 2px;
+}
+
+/* the count riding inside a pill */
+.uwp-directory-controls__filter span {
+  color: var(--uwp-link);
+}
+
+.uwp-directory-controls__filter:hover span,
+.uwp-directory-controls__filter:has(input:checked) span,
+.uwp-directory-controls__filter.is-active span,
+.uwp-directory-controls__filter[aria-pressed="true"] span {
+  color: inherit;
+}
+
+/* ---------------------------------------------------------------------------
+   Leadership — the offices a university publishes at the top of its structure,
+   and the index of the rest. One client had eight blocks here; most of them
+   turned out to be things the package already had. The three bands they sat in
+   are `.uwp-section` and `.uwp-section--tint`; the two headers are
+   `.uwp-section-heading--split`; the grid of cards is `.uwp-grid--3`; the card
+   itself is `.uwp-person-card--stacked` in media.css; the picture beside an
+   office is `.uwp-lead-media`, at a different ratio; the summary paragraph is
+   `.uwp-lede`; the list of names under each group heading is `.uwp-link-list`.
+   What is left, below, is the alternating office row and the index group.
+
+   A client adopting this needs media.css as well as this file: the office row
+   states the picture's ratio but not its frame.
+   --------------------------------------------------------------------------- */
+
+/* The accent rule that opens the run of offices. */
+.uwp-leadership {
+  border-top: 4px solid var(--uwp-accent);
+}
+
+/* One office: a picture beside a name, a role and a summary. Rows alternate
+   which side the picture falls on, which is a modifier rather than an
+   `:nth-child` rule, because a client with three offices and one picture still
+   wants to choose. */
+.uwp-leadership__office {
+  display: grid;
+  grid-template-columns: minmax(17rem, .84fr) minmax(0, 1.16fr);
+  gap: clamp(var(--uwp-space-4), 7vw, 7rem);
+  align-items: center;
+  padding-block: clamp(var(--uwp-space-6), 7vw, 6.5rem);
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-leadership__office--reverse {
+  grid-template-columns: minmax(0, 1.16fr) minmax(17rem, .84fr);
+}
+
+/* A face reads better upright than letterboxed, so the office picture takes a
+   portrait ratio rather than the lead picture's default. */
+.uwp-leadership__office .uwp-lead-media {
+  --uwp-lead-media-ratio: 4 / 5;
+  margin-bottom: 0;
+}
+
+.uwp-leadership__office--reverse .uwp-lead-media {
+  order: 2;
+}
+
+.uwp-leadership__copy {
+  min-width: 0;
+  max-width: 41rem;
+}
+
+.uwp-leadership__copy h2 {
+  margin-block: .75rem 0;
+  font-size: clamp(2.1rem, 4.4vw, 4.25rem);
+}
+
+/* The office held, set under the name. Not the profile page's designation line
+   — that one is reading text directly under a name and takes the copy colour;
+   this one is a label on a feature row and reads as a link-coloured tag. */
+.uwp-leadership__role {
+  margin: .8rem 0 0;
+  color: var(--uwp-link);
+  font-family: var(--uwp-sans);
+  /* the donor's .92rem clears the 14px metadata floor; kept, rounded to the
+     size the rest of this file uses for a small label */
+  font-size: .9375rem;
+  font-weight: 750;
+}
+
+.uwp-leadership__copy .uwp-lede {
+  margin-block: var(--uwp-space-3) var(--uwp-space-3);
+}
+
+/* The index: a group heading and its standfirst beside the list of names. Same
+   geometry as the split section heading above, ruled and repeated. */
+.uwp-leadership__group {
+  display: grid;
+  grid-template-columns: minmax(13rem, .6fr) minmax(0, 1.4fr);
+  gap: clamp(var(--uwp-space-3), 6vw, 6rem);
+  padding-block: clamp(var(--uwp-space-4), 4vw, 3.4rem);
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-leadership__group:last-child {
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-leadership__group h3 {
+  margin-block: 0;
+  font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+}
+
+.uwp-leadership__group p {
+  max-width: 34ch;
+  margin: .75rem 0 0;
+  color: var(--uwp-muted);
+}
+
+/* ---------------------------------------------------------------------------
+   Archive controls — the row at the foot of a paged listing that carries the
+   way to the rest of it. Reserved height, so the listing above does not shift
+   when the last page removes the control.
+   --------------------------------------------------------------------------- */
+.uwp-archive-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.5rem;
+  padding-top: var(--uwp-space-3);
+}
+
+.uwp-archive-controls .uwp-button {
+  min-width: 10rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Not found — a whole page that has nothing on it: a wrong address, or a
+   listing with no entries at all. One client had two of these under two names
+   in two stylesheets, differing only in how tall they reserved; the viewport-
+   relative form wins, since a short page and a tall one both want the copy near
+   the optical centre. The search box is `.uwp-directory-controls--search` and
+   the links are `.uwp-button` / `.uwp-button--primary`, so nothing here styles
+   a control. `.uwp-directory__empty` remains the narrower thing: a line inside
+   a listing whose filters excluded everything.
+   --------------------------------------------------------------------------- */
+.uwp-not-found {
+  display: grid;
+  min-height: min(68vh, 44rem);
+  align-content: center;
+  justify-items: start;
+  padding-block: clamp(var(--uwp-space-4), 10vw, 8rem);
+}
+
+.uwp-not-found h1 {
+  max-width: 22ch;
+  margin-block: .55rem var(--uwp-space-2);
+  font-size: clamp(2.8rem, 8vw, 6rem);
+}
+
+.uwp-not-found .uwp-lede {
+  max-width: 36rem;
+  margin-bottom: var(--uwp-space-4);
+}
+
+.uwp-not-found__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: var(--uwp-space-2);
+}
+
+/* ---------------------------------------------------------------------------
+   Footer — grouped columns, an identity block, and a note bar.
+   --------------------------------------------------------------------------- */
+.uwp-footer {
+  margin-top: var(--uwp-space-6);
+  color: color-mix(in srgb, var(--uwp-brand-contrast) 86%,
+    var(--uwp-footer-bg));
+  background: var(--uwp-footer-bg);
+  border-top: 3px solid var(--uwp-accent);
+}
+
+.uwp-footer a {
+  color: inherit;
+}
+
+.uwp-footer a:hover,
+.uwp-footer a:focus-visible {
+  color: var(--uwp-brand-contrast);
+}
+
+.uwp-footer__grid {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1.4fr) repeat(3, minmax(9rem, 1fr));
+  gap: var(--uwp-space-4) var(--uwp-space-6);
+  padding-block: clamp(2.5rem, 7vw, 4.5rem);
+}
+
+.uwp-footer__identity strong {
+  display: block;
+  color: var(--uwp-brand-contrast);
+  font-family: var(--uwp-serif);
+  font-size: 1.35rem;
+}
+
+.uwp-footer__identity p,
+.uwp-footer__identity address {
+  max-width: 30rem;
+  margin: .65rem 0 0;
+  color: color-mix(in srgb, var(--uwp-brand-contrast) 72%,
+    var(--uwp-footer-bg));
+  font-size: .95rem;
+  font-style: normal;
+}
+
+.uwp-footer__group h2 {
+  margin: 0 0 .9rem;
+  color: var(--uwp-brand-contrast);
+  font-family: var(--uwp-sans);
+  font-size: .875rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.uwp-footer__group ul {
+  display: grid;
+  gap: .48rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uwp-footer__group a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.9rem;
+  font-size: .95rem;
+}
+
+.uwp-footer__note {
+  padding-block: var(--uwp-space-2) var(--uwp-space-3);
+  color: color-mix(in srgb, var(--uwp-brand-contrast) 68%,
+    var(--uwp-footer-bg));
+  border-top: 1px solid color-mix(in srgb, var(--uwp-brand-contrast) 18%,
+    transparent);
+  font-family: var(--uwp-sans);
+  font-size: .875rem;
+}
+
+.uwp-footer__note p {
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Responsive reflow
+   --------------------------------------------------------------------------- */
+
+/* Wide-tablet tier: two-column layouts fold before the shell narrows. */
+@media (max-width: 75rem) {
+  .uwp-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uwp-footer__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .uwp-footer__identity {
+    grid-column: 1 / -1;
+  }
+
+  .uwp-directory__grid,
+  .uwp-grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* A publication group's person column stops earning its width before the
+     body copy does, so it folds a tier earlier than the profile body. */
+  .uwp-publications__group {
+    grid-template-columns: 1fr;
+    gap: var(--uwp-space-2);
+  }
+}
+
+@media (max-width: 56rem) {
+  .uwp-wrap,
+  .uwp-shell,
+  .uwp-breadcrumbs {
+    width: min(calc(100% - 1.875rem), var(--uwp-content-width));
+  }
+
+  .uwp-institution-bar__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .25rem;
+    min-height: var(--uwp-institution-bar-height);
+    padding-block: .625rem;
+  }
+
+  .uwp-institution-bar__home {
+    width: 8.875rem;
+  }
+
+  .uwp-brand small {
+    display: none;
+  }
+
+  .uwp-brand__logo {
+    width: 8.875rem;
+  }
+
+  .uwp-masthead__inner {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    min-height: var(--uwp-header-height);
+    padding-top: .65rem;
+  }
+
+  .uwp-masthead__actions {
+    width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  /* Without scripting the nav has no disclosure button, so it degrades to the
+     donor's horizontal scroller rather than an accordion that cannot open. */
+  .uwp-masthead .uwp-nav {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: var(--uwp-space-2);
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .uwp-masthead .uwp-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .uwp-js .uwp-nav-toggle {
+    display: inline-grid;
+  }
+
+  /* With scripting the scroller is replaced by the disclosure accordion. */
+  .uwp-js .uwp-masthead .uwp-nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow: visible;
+    padding-bottom: var(--uwp-space-2);
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav.is-open {
+    display: flex;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav a {
+    width: 100%;
+  }
+
+  /* Dropdowns collapse into an accordion inside the mobile panel. */
+  .uwp-js .uwp-masthead .uwp-nav-item {
+    display: block;
+    width: 100%;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-menu {
+    position: static;
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-item:hover > .uwp-nav-menu,
+  .uwp-js .uwp-masthead .uwp-nav-item:focus-within > .uwp-nav-menu {
+    display: none;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-item.is-open > .uwp-nav-menu {
+    display: flex;
+  }
+
+  .uwp-masthead .uwp-nav-menu a {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  /* Cascade fly-outs collapse into the accordion: no hover, tap the row's
+     disclosure to expand the sub-links inline as a deeper indent. */
+  .uwp-js .uwp-masthead .uwp-nav-branch {
+    display: block;
+    width: 100%;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-flyout {
+    position: static;
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-branch:hover > .uwp-nav-flyout,
+  .uwp-js .uwp-masthead .uwp-nav-branch:focus-within > .uwp-nav-flyout {
+    display: none;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-branch.is-open > .uwp-nav-flyout {
+    display: flex;
+  }
+
+  .uwp-masthead .uwp-nav-flyout a {
+    width: 100%;
+    padding-left: 2.75rem;
+  }
+
+  /* The mega panel collapses into the same accordion as the other two nav
+     patterns: `.uwp-nav-menu` already goes static above, so only the mega's
+     own grid, columns and panel chrome need undoing here. Groups stack as one
+     column; group links sit a step deeper than their heading, matching the
+     cascade's indent scale. */
+  .uwp-js .uwp-masthead .uwp-nav-mega {
+    max-height: none;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-mega__body {
+    display: block;
+  }
+
+  .uwp-js .uwp-masthead .uwp-nav-mega__links {
+    columns: auto;
+  }
+
+  .uwp-masthead .uwp-nav-mega .uwp-nav-mega__heading {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .uwp-masthead .uwp-nav-mega__links a {
+    width: 100%;
+    padding-left: 2.75rem;
+  }
+
+  .uwp-masthead .uwp-nav-mega__all {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .uwp-breadcrumbs ol {
+    flex-wrap: wrap;
+    gap: .25rem 0;
+    overflow: visible;
+  }
+
+  .uwp-hero {
+    padding-top: 2.8rem;
+  }
+
+  .uwp-hero__grid,
+  .uwp-profile__header,
+  .uwp-profile__body,
+  .uwp-directory__grid,
+  .uwp-directory__heading,
+  .uwp-grid--2,
+  .uwp-grid--3,
+  .uwp-section-heading--split,
+  .uwp-leadership__office,
+  .uwp-leadership__office--reverse,
+  .uwp-leadership__group,
+  .uwp-directory-controls--search {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stacked, the picture goes back above the copy on every row: an alternating
+     order only means anything while there are two columns to alternate. */
+  .uwp-leadership__office--reverse .uwp-lead-media {
+    order: 0;
+  }
+
+  .uwp-directory-controls--search label {
+    grid-column: 1;
+  }
+
+  /* A sidebar panel that has become the tail of the page has nothing left to
+     follow the reader past. */
+  .uwp-card--sticky {
+    position: static;
+  }
+
+  .uwp-notice--row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .uwp-profile__header {
+    align-items: start;
+  }
+
+  .uwp-profile__body {
+    gap: var(--uwp-space-4);
+  }
+
+  /* The sidebar stops being a column and becomes the tail of the record, so
+     its left rule turns into a rule above it. */
+  .uwp-profile__sidebar {
+    padding: var(--uwp-space-3) 0 0;
+    border-top: 1px solid var(--uwp-rule);
+    border-left: 0;
+  }
+
+  .uwp-directory__heading {
+    gap: .5rem;
+  }
+
+  .uwp-directory__heading .uwp-eyebrow {
+    grid-column: 1;
+  }
+
+  .uwp-hero__grid > :last-child {
+    order: -1;
+  }
+
+  .uwp-hero__media::before {
+    inset: auto -.6rem -.6rem auto;
+  }
+
+  .uwp-section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .uwp-rail-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .uwp-rail-button {
+    display: none;
+  }
+
+  .uwp-footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--uwp-space-3);
+  }
+
+  .uwp-footer__identity {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uwp-nav a::after,
+  .uwp-card a,
+  .uwp-button,
+  .uwp-switch-thumb,
+  .uwp-nav-item__disclosure span,
+  .uwp-nav-branch__disclosure span,
+  .uwp-faq__question::after {
+    transition: none;
+  }
+}
+
+@media print {
+  .uwp-skip-link,
+  .uwp-nav,
+  .uwp-nav-toggle,
+  .uwp-theme-toggle,
+  .uwp-archive-controls {
+    display: none;
+  }
+
+  .uwp-masthead,
+  .uwp-card--sticky {
+    position: static;
+  }
+
+  /* A folded answer prints as a question with nothing under it, which is not
+     the document the reader asked to print. `::details-content` is the only
+     way to open a disclosure without script; an engine that does not know the
+     pseudo-element discards the rule and prints the set as it stands on
+     screen, which is the same page it was already going to print. The
+     package's other <details> folds have the same gap and are left alone
+     here: they are a separate decision about how much of a citation list
+     belongs on paper. */
+  .uwp-faq__item::details-content {
+    content-visibility: visible;
+  }
+
+  /* Nothing left to disclose once they are all open. */
+  .uwp-faq__question::after {
+    display: none;
+  }
+}
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .uwp-switch-thumb {
+    transform: translateX(19px);
+  }
+}

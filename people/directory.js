@@ -1,3 +1,27 @@
+/* The public people directory: filtering, sorting and paging.
+ *
+ * The cards themselves are not written here. They are rendered from
+ * university-web-patterns' person-card and portrait — the same two components
+ * the package promoted out of this site in 0.9.0 — through the browser twin
+ * of the renderer, with the templates inlined at build time in
+ * patterns.templates.js. Nothing is fetched at runtime.
+ *
+ * Why the filtering stayed
+ * -----------------------
+ * The package ships directory-filter.js, and this directory does five things
+ * it cannot: it sorts (two orders, by academic rank or by unit); it pages, at
+ * twenty-four a time, with the page in the address bar; it opens on the
+ * sixteen university leaders rather than on six hundred rows; it matches
+ * research interests as free text across two fields, where the package's
+ * facets are exact matches on a data attribute; and it labels each card's
+ * unit differently depending on which unit is being filtered for. Adopting
+ * the package's script would have cost all five. The markup is the package's;
+ * the behaviour is this site's.
+ *
+ * That also rules out directory-controls for the form above, since the
+ * component ships the script as one of its assets and the two filters would
+ * fight over the same rows.
+ */
 (function () {
   "use strict";
 
@@ -277,52 +301,87 @@
       .slice(0, leadershipLandingSize);
   }
 
+  const uwp = window.uwp;
+
+  /** Parse one component's rendered markup back into the element it is. */
+  function elementFrom(markup) {
+    const holder = document.createElement("div");
+    holder.innerHTML = String(markup).trim();
+    return holder.firstElementChild;
+  }
+
+  /* One box for both branches: the published photograph, or the lettered tile
+   * where there is none. Half this directory has a photograph and half does
+   * not, and only one component keeping both in the same box keeps the rows
+   * even — which is the whole reason portrait is one template rather than
+   * two. Faces below the fold load lazily. */
+  function personPortrait(person) {
+    return uwp.render("portrait", {
+      portrait: {
+        src: person.photoPath || "",
+        initials: initials(person.displayName),
+      },
+      portrait_loading: uwp.markup(' loading="lazy"'),
+    });
+  }
+
+  /* The unit line. Directory cards are signposts, not miniature profiles:
+   * where a person belongs to several units and the listing is not already
+   * scoped to one of them, the card says how many rather than naming them
+   * all. Leadership cards drop it — "University leadership" under a name
+   * already labelled University leadership says nothing. */
+  function unitLabel(person) {
+    if (person.directoryRole === "university-leadership") return "";
+    const selected = elements.department.value;
+    const contextualUnit = selected && person.unitNames && person.unitNames[selected]
+      ? person.unitNames[selected]
+      : primaryUnitName(person);
+    const affiliationCount = (person.unitRoutes || []).length;
+    return !selected && affiliationCount > 1
+      ? `${contextualUnit} · +${affiliationCount - 1} ${affiliationCount === 2 ? "affiliation" : "affiliations"}`
+      : contextualUnit;
+  }
+
   function personCard(person) {
-    const card = element("article", "person-card");
-    card.id = person.id;
-    const isLeadership = person.directoryRole === "university-leadership";
-    if (isLeadership) card.classList.add("person-card--leadership");
+    const card = elementFrom(
+      uwp.render("person-card", {
+        person: {
+          display_name: person.displayName,
+          /* The role sits above the name and the unit below it, so the name
+           * stays the heading. The component says not to swap them; this
+           * listing used to have them the other way round. */
+          role: person.designation || "Faculty",
+          unit: unitLabel(person),
+          url: person.profilePath || `./${encodeURIComponent(person.id)}/`,
+          summary: "",
+        },
+        person_portrait: personPortrait(person),
+        /* The attribute slot is meant for a filtered listing's data-* facets;
+         * this listing filters in script, and what it needs on the element is
+         * the id that `#slug` links and the :target outline resolve against. */
+        person_attributes: uwp.markup(` id="${uwp.escapeText(person.id)}"`),
+      }),
+    );
 
-    if (person.photoPath) {
-      const photo = element("img", "person-photo");
-      photo.src = person.photoPath;
-      photo.alt = "";
-      photo.loading = "lazy";
-      photo.decoding = "async";
-      photo.addEventListener("error", () => {
-        const placeholder = element("div", "person-placeholder", initials(person.displayName));
-        placeholder.setAttribute("aria-hidden", "true");
-        photo.replaceWith(placeholder);
-      }, { once: true });
-      card.append(photo);
-    } else {
-      const placeholder = element("div", "person-placeholder", initials(person.displayName));
-      placeholder.setAttribute("aria-hidden", "true");
-      card.append(placeholder);
+    /* A portrait whose file has gone missing falls back to the same lettered
+     * tile the component renders for a person who has no photograph, so the
+     * row keeps its geometry rather than collapsing. */
+    const photo = card.querySelector("img.uwp-portrait");
+    if (photo) {
+      photo.addEventListener(
+        "error",
+        () => {
+          photo.replaceWith(
+            elementFrom(
+              uwp.render("portrait", {
+                portrait: { src: "", initials: initials(person.displayName) },
+              }),
+            ),
+          );
+        },
+        { once: true },
+      );
     }
-
-    const main = element("div", "person-card-main");
-    // Directory cards are signposts, not miniature profiles. Leadership cards
-    // omit the redundant "University leadership" unit and show one role only.
-    if (!isLeadership) {
-      const contextualUnit = elements.department.value &&
-        person.unitNames &&
-        person.unitNames[elements.department.value]
-        ? person.unitNames[elements.department.value]
-        : primaryUnitName(person);
-      const affiliationCount = (person.unitRoutes || []).length;
-      const affiliationLabel = !elements.department.value && affiliationCount > 1
-        ? `${contextualUnit} · +${affiliationCount - 1} ${affiliationCount === 2 ? "affiliation" : "affiliations"}`
-        : contextualUnit;
-      main.append(element("p", "person-department", affiliationLabel));
-    }
-    const heading = element("h2");
-    const profileLink = element("a", "person-profile-link", person.displayName);
-    profileLink.href = person.profilePath || `./${encodeURIComponent(person.id)}/`;
-    heading.append(profileLink);
-    main.append(heading);
-    main.append(element("p", "person-designation", person.designation || "Faculty"));
-    card.append(main);
     return card;
   }
 

@@ -1,34 +1,21 @@
-@import url("../group-assets/site.css?v=20260725-global-nav-6");
+@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
 
 :root {
   --shell: 1180px;
+
+  /* group-assets/site.css?v=20260725-global-nav-8-cascade calls its heavier rule --line-dark; the package's
+     tokens and demo-assets/uwp-bridge.css both know it as --line-strong, and
+     map --uwp-rule-strong from it. Without the alias that token resolves to
+     nothing wherever the package uses it. */
+  --line-strong: var(--line-dark);
 }
 
 body {
   font-size: 18px;
 }
 
-.institution-name {
-  color: #fff;
-  text-decoration: none;
-}
-
-.institution-name:hover {
-  color: #fff;
-  opacity: 0.82;
-  text-decoration: none;
-}
-
 .directory-intro {
   border-bottom: 1px solid var(--line);
-}
-
-.directory-intro-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(250px, 0.45fr);
-  align-items: end;
-  gap: clamp(40px, 7vw, 90px);
-  padding-block: clamp(54px, 8vw, 92px);
 }
 
 .directory-intro h1 {
@@ -42,42 +29,6 @@ body {
   margin-bottom: 0;
   color: var(--copy);
   font-size: clamp(1.08rem, 2vw, 1.32rem);
-}
-
-.directory-intro aside {
-  padding: 25px 28px;
-  color: #eef4f8;
-  background: var(--institution);
-  border-top: 4px solid var(--gold);
-}
-
-.directory-intro aside strong,
-.directory-intro aside span,
-.directory-intro aside small {
-  display: block;
-}
-
-.directory-intro aside strong {
-  color: #fff;
-  font-size: 2.35rem;
-  line-height: 1;
-}
-
-.directory-intro aside span {
-  margin-top: 7px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.directory-intro aside small {
-  margin-top: 18px;
-  color: #cfdae3;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
-  line-height: 1.5;
 }
 
 .directory-section {
@@ -255,6 +206,16 @@ button:hover {
   padding-block: 6px;
 }
 
+/* -- the listing ----------------------------------------------------------
+ *
+ * Each row is university-web-patterns' person-card, holding a portrait: the
+ * card's own flex layout, its body, its <h3> and the portrait box — the fixed
+ * box that keeps a person with a photograph and a person without in the same
+ * geometry — all come from patterns.css and media.css. What is left here is
+ * the ruled three-column frame this directory arranges them in, which the
+ * package's `.uwp-directory__people--grid` (an unruled auto-fit grid) is not,
+ * and two typographic decisions the package leaves to the client.
+ */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -263,76 +224,64 @@ button:hover {
   border-left: 1px solid var(--line);
 }
 
-.person-card {
-  display: grid;
-  grid-template-columns: 94px minmax(0, 1fr);
+/* person-card.html hardcodes `uwp-card` beside `uwp-person-card`, though
+   media.css states the opposite contract — that the card is unframed and a
+   client composes `.uwp-card` around it when it wants the frame. The frame it
+   brings is a tinted panel with a 4px institutional rule on top of every one
+   of six hundred rows, so it is undone here: this listing draws its own cell
+   rules, and the reverse composition the stylesheet describes is not
+   available from the template. */
+.people-grid > .uwp-card.uwp-person-card {
   min-height: 158px;
-  align-items: start;
   padding: 24px;
+  background: none;
+  border: 0;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.person-card:target {
+.people-grid > .uwp-person-card:target {
   outline: 4px solid var(--gold);
   outline-offset: -4px;
 }
 
-.person-photo,
-.person-placeholder {
-  width: 76px;
-  height: 92px;
-  object-fit: cover;
+/* Faces sit high in a portrait crop, so the box is anchored above centre;
+   `object-fit: cover` alone takes the top off heads. The package has no
+   control for this and no opinion on it. */
+.people-grid .uwp-portrait {
   object-position: center 18%;
   background: var(--blue-pale);
-  border: 1px solid var(--line);
 }
 
-.person-placeholder {
-  display: grid;
-  place-items: center;
+/* The two metadata lines. The package fixes their order — role above the
+   name, unit below it, so the name stays the heading — which is the reverse
+   of the way this listing used to read. The eyebrow treatment stays on the
+   line above the name and the quieter one below it, so the card keeps its
+   rhythm while following the component's information order.
+   Neither rule sets a font size. readability.css puts a 14px floor under
+   .uwp-meta on purpose, and the sizes these two lines used to carry — 11px
+   and 13.4px — sat under it. Colour and case are the distinction now. */
+.uwp-person-card__body > .uwp-meta:first-child {
+  margin: 0 0 5px;
   color: var(--blue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-.person-department,
-.person-designation {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-.person-department {
-  margin-bottom: 7px;
-  color: var(--blue);
-  font-size: 0.69rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-.person-card h2 {
-  margin-bottom: 5px;
+.uwp-person-card__body h3 {
+  margin: 0 0 5px;
   overflow-wrap: break-word;
   font-size: clamp(1.05rem, 1.35vw, 1.22rem);
   line-height: 1.22;
   text-wrap: balance;
 }
 
-.person-card-main {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-self: stretch;
-}
-
-.person-designation {
-  margin-bottom: 0;
+.uwp-person-card__body h3 + .uwp-meta {
+  margin: 0;
   color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.45;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .empty-state,
@@ -366,30 +315,6 @@ button:hover {
   cursor: not-allowed;
 }
 
-.site-footer {
-  padding-block: 40px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr auto;
-  gap: 48px;
-}
-
-.footer-grid nav,
-.footer-grid > div:last-child {
-  display: grid;
-  align-content: start;
-  gap: 7px;
-}
-
-.footer-grid a,
-.footer-grid span,
-.footer-grid p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.75rem;
-}
-
 @media (max-width: 980px) {
   .directory-filters {
     grid-template-columns: 1fr 1fr;
@@ -410,20 +335,6 @@ button:hover {
     padding-block: 9px;
   }
 
-  .directory-intro-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .directory-intro-grid {
-    align-items: start;
-    gap: 36px;
-  }
-
-  .directory-intro aside {
-    max-width: 360px;
-  }
-
   .directory-filters {
     grid-template-columns: 1fr;
   }
@@ -432,7 +343,7 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
-  .person-card {
+  .people-grid > .uwp-card.uwp-person-card {
     min-height: 0;
   }
 
@@ -454,15 +365,15 @@ button:hover {
     width: min(calc(100% - 28px), var(--shell));
   }
 
-  .person-card {
-    grid-template-columns: 76px minmax(0, 1fr);
+  .people-grid > .uwp-card.uwp-person-card {
     padding: 20px 16px;
   }
 
-  .person-photo,
-  .person-placeholder {
-    width: 62px;
-    height: 78px;
+  /* The portrait box is sized by two custom properties, so a client changes
+     the size by moving them rather than by re-declaring width and height. */
+  .people-grid .uwp-portrait {
+    --uwp-portrait-width: 62px;
+    --uwp-portrait-height: 78px;
   }
 
   .pagination {

@@ -1,372 +1,123 @@
-@import url("../group-assets/site.css?v=20260725-global-nav-6");
+/* What is left of the people profile stylesheet.
+ *
+ * These pages are rendered from university-web-patterns, which promoted this
+ * site's own profile markup into components in 0.9.0 — profile, portrait,
+ * profile-context, profile-section, profile-detail-list, profile-links,
+ * timeline and publication-list. Their rules now come from the package's
+ * patterns.css and media.css, so the three hundred and fifty lines that used
+ * to be here are gone: the hero grid, the portrait box, the identity block,
+ * the two-column body and its single-column variant, the education timeline,
+ * the publication list, the detail lists and their disclosures, the sidebar,
+ * the link groups, and both responsive blocks.
+ *
+ * `group-assets/site.css?v=20260725-global-nav-8-cascade` is no longer @imported. It is a <link> in the page
+ * head instead, ahead of the package's component sheets, so that this file
+ * can override a package rule of equal specificity — an @import would have
+ * put every rule below it earlier in the cascade than patterns.css.
+ *
+ * Five things remain, each because the package does not carry it and each
+ * annotated with why.
+ */
 
 :root {
   --shell: 1080px;
+
+  /* group-assets/site.css?v=20260725-global-nav-8-cascade names its heavier rule --line-dark; the package's
+     token set and demo-assets/site.css?v=20260725-global-nav-8-cascade both call it --line-strong, which is
+     what demo-assets/uwp-bridge.css maps --uwp-rule-strong from. Without this
+     alias that token resolves to nothing, and the rule the education timeline
+     is drawn against, plus the theme switch's border, disappear. The old
+     stylesheet had the same gap: its `.education-timeline::before` already
+     read `var(--line-strong)` and already drew nothing. */
+  --line-strong: var(--line-dark);
+
+  /* The package sizes the masthead from --uwp-header-height, which
+     uwp-bridge.css sets to this site's 112px institution bar. On these pages
+     that bar is a separate element and the masthead below it is the 80px one,
+     so the token follows the variable site.css already keeps for it. Left
+     alone, min-height would win over site.css's height and the header would
+     stand 32px too tall. */
+  --uwp-header-height: var(--site-header-height);
+
+  /* The masthead is the quiet paper header under the institutional bar, not a
+     second navy band. The package ships the solid treatment by default and
+     tokens.css documents these four as the switch — a client re-declares them
+     rather than restyling `.uwp-masthead`, and must not move --uwp-brand,
+     which is the institution bar's background and has to stay navy. Without
+     this the masthead inherits the bar's colour and the two run together:
+     site.css does set `.site-header { background: var(--paper) }`, but it
+     loads before patterns.css and loses on order. */
+  --uwp-masthead-bg: var(--paper);
+  --uwp-masthead-ink: var(--heading);
+  --uwp-masthead-rule: 1px solid var(--line);
+  --uwp-masthead-accent: var(--blue);
 }
 
-.profile-context {
-  background: var(--subtle);
-  border-bottom: 1px solid var(--line);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+/* Two bands cannot both be pinned to the top of the viewport. site.css makes
+   the institution bar sticky, the package makes the masthead sticky, and both
+   sit at top: 0 — so the masthead would ride up under the bar and the two
+   would overlap by the height of the shorter one. The bar is the one that has
+   always been sticky here, so the masthead scrolls, exactly as before. */
+.uwp-masthead.site-header {
+  position: static;
 }
 
-.profile-context-inner {
-  display: flex;
-  min-height: 48px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+/* The record's measure. `.uwp-profile` caps itself at a hardcoded 62rem
+   rather than at --uwp-content-width, so the token override in uwp-bridge.css
+   does not reach it and the record would sit narrower than every other band
+   on the site. Same expression as .uwp-wrap and .uwp-shell there. */
+.uwp-profile {
+  width: min(calc(100% - 48px), var(--shell));
 }
 
-.context-back,
-.department-context-link {
-  display: inline-flex;
-  min-height: 34px;
-  align-items: center;
-  padding: 3px 11px;
-  color: var(--blue);
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 650;
-  line-height: 1.2;
-  text-decoration: none;
+@media (max-width: 680px) {
+  .uwp-profile {
+    width: min(calc(100% - 32px), var(--shell));
+  }
 }
 
-.context-back {
-  background: var(--paper);
-  border-color: var(--line);
-}
-
-.context-back:hover,
-.context-back:focus-visible {
-  color: var(--blue-dark);
-  background: var(--blue-pale);
-  border-color: var(--line);
-}
-
-.context-back:focus-visible,
-.department-context-link:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
-}
-
-.department-context-link {
-  padding-inline: 0;
-  color: var(--muted);
-  border-radius: 0;
-  font-size: 0.72rem;
-}
-
-.department-context-link:hover {
-  color: var(--blue);
-  text-decoration: none;
-}
-
-.profile-hero {
-  background: var(--subtle);
-  border-bottom: 1px solid var(--line);
-}
-
-.profile-hero-grid {
-  display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  min-height: 390px;
-  align-items: start;
-  gap: clamp(44px, 8vw, 88px);
-  padding-block: 54px;
-}
-
-.profile-portrait {
-  width: 220px;
-}
-
-.profile-photo,
-.profile-placeholder {
-  display: block;
+/* The published photograph keeps the proportions it was taken at.
+ *
+ * `.uwp-portrait` is a fixed box with `object-fit: cover`, which is right for
+ * a directory row — a page of faces at one size stays even only if every one
+ * of them is the same box. It is wrong for the one large picture at the head
+ * of a person's own page: MIT-WPU's faculty photographs arrive at whatever
+ * ratio the department supplied, and cropping them to 4/5 takes the top off
+ * heads. There is nothing else in that row to stay even with.
+ *
+ * The lettered tile is deliberately left at the package's box: it has no
+ * proportions of its own to preserve, and it is the size the layout reserves.
+ */
+.uwp-profile__header .uwp-portrait:not(.uwp-portrait--blank) {
   width: 100%;
-  background: var(--blue-pale);
-  border: 1px solid var(--line);
-}
-
-.profile-photo {
   height: auto;
   max-height: 330px;
+  aspect-ratio: auto;
   object-fit: contain;
 }
 
-.profile-placeholder {
-  display: grid;
-  aspect-ratio: 22 / 27;
-  place-items: center;
-  color: var(--blue);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 2.3rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-.profile-identity {
-  max-width: 720px;
-}
-
-.profile-identity h1 {
-  margin-bottom: 20px;
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-}
-
-.profile-designation {
-  margin-bottom: 0;
-  color: var(--copy);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.18rem);
-}
-
-.profile-affiliations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.8rem;
-  margin-top: 0.8rem;
-}
-
-.profile-affiliations a {
-  color: var(--blue);
-  font-size: 0.84rem;
-  font-weight: 700;
+/* The way back to the listing, as a resting pill.
+ *
+ * profile-context styles both of its links the same: one target size, one
+ * type size, no surface. That is right for the unit link beside it, and not
+ * right for this one — a reader who arrived from a filtered directory has no
+ * other way back to it, and it has to read as a control before it is hovered.
+ * The package offers no modifier for it, so the affordance stays here, hung
+ * off the attribute group-assets/back-link.js already marks the link with. */
+.uwp-profile__context a[data-context-back] {
+  padding: 3px 11px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
   text-decoration: none;
 }
 
-.profile-affiliations a:hover,
-.profile-affiliations a:focus-visible {
-  color: var(--blue-dark);
+.uwp-profile__context a[data-context-back]:hover,
+.uwp-profile__context a[data-context-back]:focus-visible {
+  background: var(--blue-pale);
+  border-color: var(--line);
 }
 
-.profile-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(230px, 0.6fr);
-  gap: clamp(50px, 8vw, 100px);
-  min-height: 310px;
-  padding-block: 68px 82px;
-}
-
-.profile-body-single {
-  grid-template-columns: minmax(0, 760px);
-}
-
-.profile-body-single .profile-sidebar,
-.profile-body-single .profile-links-section {
-  padding-left: 0;
-  border-left: 0;
-}
-
-.profile-research h2,
-.profile-qualifications h2,
-.profile-details h2,
-.profile-publications h2 {
-  margin-bottom: 20px;
-  font-size: clamp(1.9rem, 3vw, 2.45rem);
-}
-
-.profile-research > p:last-child {
-  max-width: 700px;
-  margin-bottom: 0;
-  color: var(--copy);
-  font-size: 1.12rem;
-}
-
-.profile-main-sections > section + section {
-  margin-top: 50px;
-  padding-top: 44px;
-  border-top: 1px solid var(--line);
-}
-
-.profile-main-sections,
-.profile-sidebar,
-.profile-research,
-.profile-qualifications,
-.profile-details,
-.profile-publications,
-.profile-links-section {
-  min-width: 0;
-  overflow-wrap: anywhere;
-}
-
-.education-timeline {
-  position: relative;
-  margin: 0;
-  padding: 0 0 0 28px;
-  list-style: none;
-}
-
-.education-timeline::before {
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 5px;
-  width: 1px;
-  content: "";
-  background: var(--line-strong);
-}
-
-.education-timeline li {
-  position: relative;
-  padding: 0 0 20px;
-  color: var(--copy);
-}
-
-.education-timeline li:last-child {
-  padding-bottom: 0;
-}
-
-.education-timeline li::before {
-  position: absolute;
-  top: 0.55em;
-  left: -27px;
-  width: 9px;
-  height: 9px;
-  content: "";
-  background: var(--paper);
-  border: 2px solid var(--blue);
-  border-radius: 50%;
-}
-
-.profile-publications {
-  border-top: 1px solid var(--line);
-  padding-top: 1.5rem;
-}
-
-.publication-list {
-  display: grid;
-  gap: 0.8rem;
-  margin: 0;
-  padding-left: 1.4rem;
-}
-
-.publication-list li {
-  padding-left: 0.35rem;
-  overflow-wrap: anywhere;
-}
-
-.profile-detail-list {
-  display: grid;
-  gap: 0.75rem;
-  margin: 0;
-  padding-left: 1.2rem;
-  color: var(--copy);
-}
-
-.profile-detail-list li {
-  padding-left: 0.25rem;
-  overflow-wrap: anywhere;
-}
-
-.profile-detail-more {
-  margin-top: 1rem;
-}
-
-.profile-detail-more summary {
-  width: fit-content;
-  color: var(--blue);
-  cursor: pointer;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: 700;
-}
-
-.profile-detail-more[open] summary {
-  margin-bottom: 1rem;
-}
-
-.publication-more {
-  margin-top: 1rem;
-}
-
-.publication-more summary {
-  width: fit-content;
-  color: var(--blue);
-  cursor: pointer;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: 700;
-}
-
-.publication-more[open] summary {
-  margin-bottom: 1rem;
-}
-
-.profile-sidebar {
-  padding-left: 26px;
-  border-left: 1px solid var(--line);
-}
-
-.profile-sidebar .profile-links-section {
-  padding-left: 0;
-  border-left: 0;
-}
-
-.profile-sidebar .profile-links-section + .profile-links-section {
-  margin-top: 28px;
-  padding-top: 28px;
-  border-top: 1px solid var(--line);
-}
-
-.profile-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.profile-links a {
-  display: inline-block;
-  padding-block: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 650;
-}
-
-@media (max-width: 760px) {
-  .profile-nav a {
-    display: none;
-  }
-
-  .profile-context-inner {
-    min-height: 46px;
-  }
-
-  .department-context-link {
-    display: none;
-  }
-
-  .profile-hero-grid {
-    grid-template-columns: 1fr;
-    min-height: 0;
-    gap: 30px;
-    padding-block: 42px 50px;
-  }
-
-  .profile-portrait {
-    width: 150px;
-  }
-
-  .profile-identity h1 {
-    margin-bottom: 15px;
-    font-size: clamp(2.35rem, 12vw, 3.5rem);
-  }
-
-  .profile-body {
-    grid-template-columns: 1fr;
-    min-height: 0;
-    gap: 42px;
-    padding-block: 48px 60px;
-  }
-
-  .profile-sidebar {
-    padding: 28px 0 0;
-    border-top: 1px solid var(--line);
-    border-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-portrait {
-    width: 128px;
-  }
-}
+/* The focus ring these two links used to declare for themselves is gone:
+   readability.css draws one globally, from --uwp-focus, which uwp-bridge.css
+   maps to this site's --focus. Same ring, one rule, every element. */

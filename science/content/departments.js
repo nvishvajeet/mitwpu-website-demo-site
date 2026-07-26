@@ -59,7 +59,7 @@ window.SCIENCE_DEPARTMENTS = {
         dates: "13–14 March 2026",
         year: 2026,
         programme: "Electronics, semiconductors, and photonics",
-        url: "https://mitwpu.edu.in/recent-technologies-and-innovations-in-electronics-and-photonics-second-edition"
+        url: "/rtep-advisory-committee/"
       }
     ],
     eventSeries: [

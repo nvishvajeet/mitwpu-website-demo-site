@@ -1,4 +1,59 @@
-@import url("../group-assets/site.css?v=20260725-global-nav-6");
+/* Central Research Facility stylesheet.
+ *
+ * The page shell is rendered from university-web-patterns (see
+ * tools/build_facility_capabilities.mjs), so the package's own stylesheets
+ * have to be on the page. They are loaded after group-assets/site.css?v=20260725-global-nav-8-cascade
+ * deliberately: the shell elements carry both the package class and the
+ * legacy one during the transition, and on equal specificity the later sheet
+ * wins, so the package's rules take effect on the shell while site.css keeps
+ * styling everything inside <main> that has not moved yet.
+ *
+ * The three package sheets are not a guess: components.json records the
+ * assets every component needs and `uwp.pageAssets(ids)` returns their union.
+ * The builder computes it from the registry and fails the build if this list
+ * drifts from it.
+ */
+@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../vendor/university-web-patterns/src/css/tokens.css");
+@import url("../vendor/university-web-patterns/src/css/readability.css");
+@import url("../vendor/university-web-patterns/src/css/patterns.css");
+
+/* Token overrides: this site runs a paper masthead under a navy institution
+ * bar; the package's default is a solid institutional header. Everything else
+ * the package needs already matches group-assets/site.css?v=20260725-global-nav-8-cascade value for value. */
+:root {
+  --uwp-masthead-bg: var(--paper);
+  --uwp-masthead-ink: var(--heading);
+  --uwp-masthead-rule: 1px solid var(--line);
+  --uwp-masthead-accent: var(--blue);
+}
+
+/* Transitional: rules that fire twice while both class names are present.
+ * They go when the legacy tokens are dropped from LEGACY_DECORATIONS in
+ * tools/build_facility_capabilities.mjs and the shell rules leave
+ * group-assets/site.css?v=20260725-global-nav-8-cascade. */
+
+/* site.css pins .institution-bar to the top; so is .uwp-masthead, and two
+   bands both pinned to top: 0 overlap. The package's position on this is that
+   the bar scrolls away and the masthead stays. */
+.uwp-institution-bar.institution-bar {
+  position: static;
+}
+
+/* site.css draws the current/hover state as a 2px bottom border on the link;
+   the package draws it as an ::after bar. Both would show. */
+.uwp-nav.site-nav a,
+.uwp-nav.site-nav a:hover,
+.uwp-nav.site-nav a[aria-current="page"] {
+  border-bottom-color: transparent;
+}
+
+/* site.css puts 48px of padding on .site-footer; the package puts 72px on the
+   grid inside .uwp-footer. Carrying both classes applies both, and the footer
+   grew by 96px. The package's spacing is the one that belongs to the markup. */
+.uwp-footer.site-footer {
+  padding-block: 0;
+}
 
 .facility-statline {
   display: flex;
@@ -146,12 +201,6 @@
 .facility-person > div > p {
   color: var(--muted);
   font-size: 0.9rem;
-}
-
-.source-note {
-  max-width: 780px;
-  color: var(--muted);
-  font-size: 0.84rem;
 }
 
 .capability-hero-meta {

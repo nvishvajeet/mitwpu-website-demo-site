@@ -31,25 +31,6 @@
   line-height: 1.15;
 }
 
-.institutional-footer__lead address {
-  max-width: 42rem;
-  margin: 0.65rem 0 0;
-  color: #b9ccd7;
-  font-style: normal;
-}
-
-.institutional-footer__contact {
-  align-self: end;
-  justify-self: end;
-  text-align: right;
-}
-
-.institutional-footer__contact a {
-  display: block;
-  width: fit-content;
-  margin: 0.28rem 0 0 auto;
-}
-
 .institutional-footer__groups {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -98,13 +79,6 @@
   font-size: 0.78rem;
 }
 
-.institutional-footer__legal nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.55rem 1rem;
-}
-
 @media (max-width: 58rem) {
   .institutional-footer__groups {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -116,25 +90,12 @@
     grid-template-columns: 1fr;
   }
 
-  .institutional-footer__contact {
-    justify-self: start;
-    text-align: left;
-  }
-
-  .institutional-footer__contact a {
-    margin-inline: 0;
-  }
-
   .institutional-footer__groups {
     grid-template-columns: 1fr;
   }
 
   .institutional-footer__legal {
     display: grid;
-  }
-
-  .institutional-footer__legal nav {
-    justify-content: flex-start;
   }
 }
 

@@ -1,0 +1,176 @@
+/* Design tokens.
+ *
+ * Two theme mechanisms are supported and must both keep working:
+ *   - `prefers-color-scheme`, for a client that ships no toggle;
+ *   - an explicit `data-theme` attribute on the root element, set by
+ *     theme.js, for a client that ships the theme-toggle component.
+ * `data-theme` always wins, in both directions.
+ *
+ * A client overrides the palette by re-declaring these custom properties in
+ * its own stylesheet. It must not fork this file.
+ */
+
+:root {
+  /* text */
+  --uwp-ink: #1f2d3a;
+  --uwp-heading: #274257;
+  --uwp-title: #33566f;
+  --uwp-copy: #3f5362;
+  --uwp-muted: #5e6c78;
+  --uwp-nav-ink: #343b4c;
+
+  /* surfaces */
+  --uwp-paper: #ffffff;
+  --uwp-surface: #f8fafb;
+  --uwp-topbar: #f3f7fa;
+
+  /* interactive */
+  --uwp-link: #2d6786;
+  --uwp-link-strong: #204e67;
+  --uwp-solid: #2d6786;
+  --uwp-solid-hover: #204e67;
+  --uwp-pale: #edf3f6;
+
+  /* institutional identity */
+  --uwp-brand: #1e3a6e;
+  --uwp-brand-contrast: #ffffff;
+  --uwp-accent: #f3be34;
+  --uwp-footer-bg: #274257;
+
+  /* Masthead, indirected so a client can run a light header without moving
+   * --uwp-brand (which the institution bar also uses). Default is the solid
+   * institutional header; for a paper header re-declare all three:
+   *   --uwp-masthead-bg: var(--uwp-paper);
+   *   --uwp-masthead-ink: var(--uwp-heading);
+   *   --uwp-masthead-rule: 1px solid var(--uwp-rule);
+   */
+  --uwp-masthead-bg: var(--uwp-brand);
+  --uwp-masthead-ink: var(--uwp-brand-contrast);
+  --uwp-masthead-rule: 3px solid var(--uwp-accent);
+  --uwp-masthead-accent: var(--uwp-accent);
+
+  /* lines and focus */
+  --uwp-rule: #d7dfe5;
+  --uwp-rule-strong: #b7c3cc;
+  --uwp-focus: #9dc4de;
+  --uwp-switch-knob: #ffffff;
+
+  /* type */
+  --uwp-serif: Georgia, "Times New Roman", serif;
+  --uwp-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  /* measure */
+  --uwp-content-width: 1180px;
+  --uwp-reading-width: 72ch;
+  --uwp-institution-bar-height: 112px;
+  --uwp-header-height: 80px;
+  --uwp-page-hero-height: 272px;
+
+  /* space */
+  --uwp-space-1: .5rem;
+  --uwp-space-2: 1rem;
+  --uwp-space-3: 1.5rem;
+  --uwp-space-4: 2rem;
+  --uwp-space-6: 3rem;
+
+  color-scheme: light;
+}
+
+/* Explicit toggle. Authoritative over the media query below. */
+:root[data-theme="dark"] {
+  --uwp-ink: #e5edf4;
+  --uwp-heading: #d6e2ec;
+  --uwp-title: #c8d9e7;
+  --uwp-copy: #bac7d1;
+  --uwp-muted: #a9b8c4;
+  --uwp-nav-ink: #d4dde5;
+
+  --uwp-paper: #111a21;
+  --uwp-surface: #151f27;
+  --uwp-topbar: #18242e;
+
+  --uwp-link: #8cc1de;
+  --uwp-link-strong: #b5d8eb;
+  --uwp-solid: #2b4b62;
+  --uwp-solid-hover: #35617d;
+  --uwp-pale: #1d2d38;
+
+  --uwp-brand: #152c4f;
+  --uwp-brand-contrast: #ffffff;
+  --uwp-accent: #d8ad3c;
+  --uwp-footer-bg: #0d151b;
+
+  --uwp-rule: #2a3b48;
+  --uwp-rule-strong: #3d5262;
+  --uwp-focus: #8cc1de;
+
+  color-scheme: dark;
+}
+
+/* System preference, for a client with no toggle. Yields to data-theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --uwp-ink: #e5edf4;
+    --uwp-heading: #d6e2ec;
+    --uwp-title: #c8d9e7;
+    --uwp-copy: #bac7d1;
+    --uwp-muted: #a9b8c4;
+    --uwp-nav-ink: #d4dde5;
+
+    --uwp-paper: #111a21;
+    --uwp-surface: #151f27;
+    --uwp-topbar: #18242e;
+
+    --uwp-link: #8cc1de;
+    --uwp-link-strong: #b5d8eb;
+    --uwp-solid: #2b4b62;
+    --uwp-solid-hover: #35617d;
+    --uwp-pale: #1d2d38;
+
+    --uwp-brand: #152c4f;
+    --uwp-brand-contrast: #ffffff;
+    --uwp-accent: #d8ad3c;
+    --uwp-footer-bg: #0d151b;
+
+    --uwp-rule: #2a3b48;
+    --uwp-rule-strong: #3d5262;
+    --uwp-focus: #8cc1de;
+
+    color-scheme: dark;
+  }
+}
+</content>
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --uwp-ink: #e5edf4;
+      --uwp-heading: #d6e2ec;
+      --uwp-title: #c8d9e7;
+      --uwp-copy: #bac7d1;
+      --uwp-muted: #a9b8c4;
+      --uwp-nav-ink: #d4dde5;
+    
+      --uwp-paper: #111a21;
+      --uwp-surface: #151f27;
+      --uwp-topbar: #18242e;
+    
+      --uwp-link: #8cc1de;
+      --uwp-link-strong: #b5d8eb;
+      --uwp-solid: #2b4b62;
+      --uwp-solid-hover: #35617d;
+      --uwp-pale: #1d2d38;
+    
+      --uwp-brand: #152c4f;
+      --uwp-brand-contrast: #ffffff;
+      --uwp-accent: #d8ad3c;
+      --uwp-footer-bg: #0d151b;
+    
+      --uwp-rule: #2a3b48;
+      --uwp-rule-strong: #3d5262;
+      --uwp-focus: #8cc1de;
+    
+      color-scheme: dark;
+  }
+}

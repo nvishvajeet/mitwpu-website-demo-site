@@ -1,0 +1,386 @@
+/* Media patterns: pictures, portraits, evidence strips and task-first heroes.
+
+   Added in 0.7.0 after a client rebuild read as thinner than the site it
+   replaced. The rebuild was better structured and lost on everything a visitor
+   sees first: no pictures on cards, a hero that opened on prose instead of on
+   the task, and no surface for the facts an institution publishes about itself.
+
+   These patterns are layout only. No client supplies media through this
+   package; a client stores its own images and passes their paths in.
+
+   0.9.0 added the portrait size variants and the person-card flair, promoted
+   from the same donor as that release's people layer in patterns.css. This
+   file is optional: a client that adopts a person card or a profile needs it
+   for the picture, and everything structural stays in patterns.css.
+
+   0.10.0 added the stacked person card, the lead-picture states and the display
+   figure, promoted from two clients at once. Where both had the same idea under
+   different names, one form is kept here and the reasoning sits beside it. */
+
+/* ── pictures on cards ───────────────────────────────────────────────
+   A fixed aspect ratio reserves the space before the image arrives, so a
+   grid of cards does not reflow as pictures load. */
+
+.uwp-card--media {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.uwp-card__media {
+  display: block;
+  aspect-ratio: var(--uwp-card-media-ratio, 16 / 9);
+  background: var(--uwp-paper);
+  overflow: hidden;
+}
+
+.uwp-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.uwp-card--media:hover .uwp-card__media img,
+.uwp-person-card--stacked:hover .uwp-card__media img {
+  transform: scale(1.035);
+}
+
+.uwp-card__body {
+  padding: var(--uwp-space-3);
+}
+
+.uwp-card__body > :first-child { margin-top: 0; }
+.uwp-card__body > :last-child { margin-bottom: 0; }
+
+/* A source with no published photograph gets a lettered tile. Filling the gap
+   with stock imagery would put a picture on the page that the institution
+   never published, which is a content claim, not a design choice.
+
+   The second client called this a media placeholder and set a short uppercase
+   word in it rather than a letter. That is the same tile with different
+   contents: the word form is an `.uwp-eyebrow` placed inside, which carries its
+   own size and tracking, so no second rule is needed and none was added. */
+.uwp-card__media--blank {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(120% 120% at 20% 0%,
+      color-mix(in srgb, var(--uwp-brand) 20%, transparent), transparent 70%),
+    var(--uwp-paper);
+}
+
+.uwp-card__media--blank span {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--uwp-link) 70%, var(--uwp-ink));
+  opacity: .75;
+}
+
+.uwp-lead-media {
+  margin: 0 0 var(--uwp-space-3);
+  border: 1px solid var(--uwp-rule);
+  overflow: hidden;
+}
+
+.uwp-lead-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--uwp-lead-media-ratio, 21 / 9);
+  object-fit: cover;
+}
+
+/* Two states for a picture that will not fill a wide frame honestly, both
+   promoted from a client that had discovered them the hard way.
+
+   A portrait photograph cropped to a landscape frame loses the top of a head,
+   so the frame narrows and the picture is contained rather than covered — the
+   whole image, letterboxed, beats a confident crop through someone's face.
+
+   A low-resolution asset — an old scan, a small logo — upscales to mush across
+   a full column, so the frame is capped near the asset's own size and left at
+   the start of the column instead of being stretched to fill it. Neither is a
+   new block: both only move the box the picture sits in. */
+.uwp-lead-media--portrait {
+  width: min(100%, 20rem);
+  justify-self: center;
+}
+
+.uwp-lead-media--portrait img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.uwp-lead-media--small {
+  width: min(100%, 8rem);
+  justify-self: start;
+}
+
+.uwp-lead-media--small img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+/* ── portraits ───────────────────────────────────────────────────────
+   Directories carry many faces at small sizes; a fixed box keeps the rows
+   even whether or not a given person has a photograph. */
+
+.uwp-portrait {
+  flex: none;
+  width: var(--uwp-portrait-width, 72px);
+  height: var(--uwp-portrait-height, 90px);
+  object-fit: cover;
+  background: var(--uwp-paper);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-portrait--blank {
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: color-mix(in srgb, var(--uwp-link) 75%, var(--uwp-ink));
+}
+
+/* Size variants, added in 0.9.0. The donor carried three portrait sizes under
+   three block names — a small one in listings, a square one in a staff
+   directory, and a large one on the person's own page. They are one box at
+   three sizes, so they are modifiers of the box rather than blocks of their
+   own, and each only moves the two custom properties above. A blank tile takes
+   the same modifier as the photograph it stands in for. */
+.uwp-portrait--md {
+  --uwp-portrait-width: 126px;
+  --uwp-portrait-height: 126px;
+}
+
+.uwp-portrait--lg {
+  --uwp-portrait-width: 192px;
+  --uwp-portrait-height: 240px;
+}
+
+/* Keep the photograph's own proportions instead of cropping to the box.
+   Cropping is right in a directory, where a fixed box is what keeps rows even.
+   On the single large picture on a person's own page there is nothing to stay
+   even with, and these arrive at whatever ratio the department supplied — so
+   cover silently trims faces. Pair with --lg on a profile header. */
+.uwp-portrait--natural {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.uwp-person-card {
+  display: flex;
+  gap: var(--uwp-space-2);
+  align-items: flex-start;
+}
+
+/* The body sits centred against the portrait rather than top-aligned, so a
+   one-line entry does not float above a tall picture. */
+.uwp-person-card__body {
+  min-width: 0;
+  align-self: center;
+}
+
+/* Stacked: the picture full width above the copy, rather than a thumbnail
+   beside it. Both clients shipped this — one called it a leader card, the other
+   a person card — and both independently chose a 4/5 crop, which is the one
+   thing they agreed on without discussion, so it is the default here. The
+   picture is `.uwp-card__media`, which already reserves its space and already
+   holds the hover zoom; only the hover trigger had to learn the new modifier.
+
+   The two clients did disagree on the frame: one drew a border and padding
+   around the whole card, the other left it bare on the page. Bare wins, because
+   `.uwp-person-card` has always been unframed and a client that wants the frame
+   composes `.uwp-card` around it — the reverse is not available. */
+.uwp-person-card--stacked {
+  --uwp-card-media-ratio: 4 / 5;
+  display: grid;
+  gap: 0;
+}
+
+.uwp-person-card--stacked .uwp-card__media {
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-person-card--stacked .uwp-person-card__body {
+  align-self: start;
+  padding-top: var(--uwp-space-2);
+}
+
+.uwp-person-card--stacked .uwp-person-card__body > :first-child {
+  margin-top: 0;
+}
+
+/* A short label above the name: a role tag, an honorific, a group. Several may
+   sit on one line, separated by a middot the reader does not have to hear. */
+.uwp-person-card__flair {
+  display: inline;
+  margin: 0 .75rem .4rem 0;
+  color: var(--uwp-link);
+  font-family: var(--uwp-sans);
+  /* raised from the donor's .65rem to clear the 14px metadata floor */
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .065em;
+  text-transform: uppercase;
+}
+
+.uwp-person-card__flair:not(:last-of-type)::after {
+  margin-left: .75rem;
+  color: var(--uwp-rule-strong);
+  content: "\00B7";
+}
+
+/* The header layout itself lives in patterns.css, which every client gets;
+   this file only sizes the picture inside it, and is optional. The two files
+   both defined `.uwp-profile__header` before 0.9.0 — one as a grid, one as a
+   flex row — and which one won depended on the order a client happened to
+   link them in. The layout is now stated once, there. */
+.uwp-profile__header .uwp-portrait {
+  --uwp-portrait-width: 192px;
+  --uwp-portrait-height: 240px;
+}
+
+/* ── evidence strip ──────────────────────────────────────────────────
+   For accreditations, affiliations and other facts an institution publishes
+   about itself. Each entry is expected to carry a source in the client's own
+   data; this is the presentation only. */
+
+.uwp-evidence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--uwp-rule);
+  border: 1px solid var(--uwp-rule);
+  overflow: hidden;
+}
+
+.uwp-evidence li {
+  display: grid;
+  gap: .2rem;
+  padding: var(--uwp-space-2) var(--uwp-space-3);
+  background: var(--uwp-paper);
+}
+
+.uwp-evidence strong { font-size: 1rem; }
+
+.uwp-evidence span {
+  font-size: .875rem;
+  color: var(--uwp-muted);
+}
+
+/* Display figures — the "1,200 students, 40 programmes" row. A client shipped
+   this as its own block, a statistic in a bordered card inside a three-column
+   grid, and the question at promotion was whether that is a second pattern.
+
+   It is not. A statistic and an accreditation are the same thing on the page: a
+   fact the institution publishes, as a value with a label under it, repeated
+   across a row. Only two things differed — how big the value is set, and
+   whether the cells are separated by hairlines or by gaps. The first is this
+   modifier. The second is a grid decision the package already expresses
+   elsewhere: a client that wants genuinely separate cards uses `.uwp-grid--3`
+   with `.uwp-card`, and does not need a statistics vocabulary to do it.
+
+   The value takes the link colour rather than the brand colour the donor used.
+   The brand is an institutional navy that all but disappears against a dark
+   background, and a headline number is the last thing on a page that should be
+   hard to read. */
+.uwp-evidence--display {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+
+.uwp-evidence--display strong {
+  color: var(--uwp-link);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.uwp-evidence--display li {
+  gap: .65rem;
+  padding: var(--uwp-space-3);
+}
+
+/* The label under a display figure is the only text in the cell, so it reads as
+   body copy rather than as metadata and takes the 16px reading floor. */
+.uwp-evidence--display span {
+  font-size: 1rem;
+}
+
+/* ── task-first hero ─────────────────────────────────────────────────
+   The first thing on a home page should be the thing most visitors came to
+   do. The control below is a real form: it submits to a listing page, and
+   scripting only upgrades it to a direct jump. */
+
+.uwp-hero-task {
+  margin-top: var(--uwp-space-3);
+  padding: var(--uwp-space-3);
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-hero-task > label {
+  display: block;
+  font-weight: 650;
+  margin-bottom: .5rem;
+}
+
+.uwp-hero-task__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.uwp-hero-task select {
+  flex: 1 1 16rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: .6rem .7rem;
+  font: inherit;
+  color: var(--uwp-ink);
+  background: var(--uwp-paper);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-hero-task__note {
+  margin: .7rem 0 0;
+  font-size: .875rem;
+  color: var(--uwp-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uwp-card__media img,
+  .uwp-card--media:hover .uwp-card__media img,
+  .uwp-person-card--stacked:hover .uwp-card__media img {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* Portraits step down with the layout, on the same two tiers patterns.css
+   uses. The stacking of the profile header itself happens there. */
+@media (max-width: 75rem) {
+  .uwp-portrait--lg,
+  .uwp-profile__header .uwp-portrait {
+    --uwp-portrait-width: 160px;
+    --uwp-portrait-height: 200px;
+  }
+}
+
+@media (max-width: 56rem) {
+  .uwp-portrait--md {
+    --uwp-portrait-width: 84px;
+    --uwp-portrait-height: 84px;
+  }
+
+  .uwp-portrait--lg,
+  .uwp-profile__header .uwp-portrait {
+    --uwp-portrait-width: 136px;
+    --uwp-portrait-height: 170px;
+  }
+}

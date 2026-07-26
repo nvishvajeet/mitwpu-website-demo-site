@@ -1,11 +1,26 @@
+/* The shell and both heading blocks on these pages are rendered from
+ * university-web-patterns by tools/build_events_site.mjs. The rules below
+ * that name a `.uwp-*` class are this page family's own geometry carried on
+ * a package component; they are not a second copy of the component.
+ */
+
 .site-nav a[aria-current="page"] {
   color: var(--blue);
   border-bottom-color: var(--gold);
 }
 
+/* Both bands pad through .event-hero-grid and .event-detail-hero .shell, so
+   the hero's own padding would be added to that rather than replace it. */
 .event-index-hero,
 .event-detail-hero {
+  padding-block: 0;
   border-bottom: 1px solid var(--line);
+}
+
+/* The headings here run wider than the package's reading column. */
+.event-index-hero .uwp-hero__copy,
+.event-detail-hero .uwp-hero__copy {
+  max-width: none;
 }
 
 .event-hero-grid {
@@ -18,28 +33,27 @@
 .event-hero-grid h1,
 .event-detail-hero h1 {
   max-width: 1000px;
-  margin-bottom: 0;
+  margin: 0;
   font-size: clamp(2.9rem, 6vw, 4.8rem);
-}
-
-.event-hero-grid > p {
-  max-width: 38ch;
-  margin: 0 0 8px;
-  padding-top: 22px;
-  color: var(--copy);
-  border-top: 4px solid var(--gold);
-  font-size: 1.08rem;
 }
 
 .event-list-section {
   padding-block: 82px 110px;
 }
 
+/* section-heading wraps its eyebrow and its <h2> in one element, so the label
+   column this page sets them in is that element's own grid. The listing below
+   carries the rule, so the component's does not run as well. */
 .event-list-heading {
+  margin-block: 0 43px;
+  border-bottom: 0;
+}
+
+.event-list-heading > div {
   display: grid;
+  width: 100%;
   grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
   gap: 48px;
-  margin-bottom: 43px;
 }
 
 .event-list-heading .eyebrow {
@@ -125,39 +139,16 @@
   font-size: 0.92rem;
 }
 
-.event-arrow {
-  align-self: center;
-  padding: 8px;
-  color: var(--blue);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1.35rem;
-  text-decoration: none;
-}
-
-.breadcrumb {
-  display: flex;
-  min-height: 55px;
-  align-items: center;
-  gap: 10px;
-  overflow: hidden;
-  color: var(--muted);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.7rem;
-  white-space: nowrap;
-}
-
-.breadcrumb a {
-  color: var(--copy);
-  text-decoration: none;
-}
-
-.breadcrumb span:last-child {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .event-detail-hero {
   background: var(--subtle);
+}
+
+/* This page's lead picture is the event's own photograph and the first item of
+   its PhotoSwipe gallery: it keeps this page's frame and its full width below
+   the copy, rather than the cropped frame beside it that the hero's media slot
+   would otherwise give it. */
+.event-detail-hero .uwp-hero__grid {
+  display: block;
 }
 
 .event-detail-hero .shell {
@@ -464,14 +455,14 @@
     padding-block: 60px 76px;
   }
 
-  .event-list-heading,
+  .event-list-heading > div,
   .event-row {
     grid-template-columns: 1fr;
     gap: 12px;
   }
 
   .event-list-heading {
-    margin-bottom: 35px;
+    margin-block: 0 35px;
   }
 
   .event-list-heading .eyebrow {
@@ -480,14 +471,6 @@
 
   .event-row {
     padding-block: 28px;
-  }
-
-  .event-arrow {
-    display: none;
-  }
-
-  .breadcrumb {
-    min-height: 48px;
   }
 
   .event-detail-hero .shell {

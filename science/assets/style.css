@@ -1,11 +1,57 @@
-@import url("../../group-assets/site.css?v=20260725-global-nav-6");
+/* School of Science stylesheet.
+ *
+ * The page shell is rendered from university-web-patterns (see
+ * tools/build_science_site.mjs), so the package's own stylesheets have to be
+ * on the page. They are loaded after group-assets/site.css?v=20260725-global-nav-8-cascade deliberately: the
+ * shell elements carry both the package class and the legacy one during the
+ * transition, and on equal specificity the later sheet wins, so the package's
+ * rules take effect on the shell while site.css keeps styling everything
+ * inside <main> that has not moved yet.
+ *
+ * The three package sheets are not a guess: components.json records the
+ * assets every component needs and `uwp.pageAssets(ids)` returns their union.
+ * The builder computes it from the registry and fails the build if this list
+ * drifts from it.
+ */
+@import url("../../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../../vendor/university-web-patterns/src/css/tokens.css");
+@import url("../../vendor/university-web-patterns/src/css/readability.css");
+@import url("../../vendor/university-web-patterns/src/css/patterns.css");
 
-#site-header {
-  /*
-   * The legacy renderer needs a mount point, but a normal wrapper bounds
-   * sticky descendants. Keep the mount point without trapping the masthead.
-   */
-  display: contents;
+/* Token overrides: this site runs a paper masthead under a navy institution
+ * bar; the package's default is a solid institutional header. */
+:root {
+  --uwp-masthead-bg: var(--paper);
+  --uwp-masthead-ink: var(--heading);
+  --uwp-masthead-rule: 1px solid var(--line);
+  --uwp-masthead-accent: var(--blue);
+}
+
+/* Transitional: rules that fire twice while both class names are present.
+ * They go when the legacy tokens are dropped from LEGACY_DECORATIONS in
+ * tools/build_science_site.mjs and the shell rules leave
+ * group-assets/site.css?v=20260725-global-nav-8-cascade. */
+
+/* site.css pins .institution-bar to the top; so is .uwp-masthead, and two
+   bands both pinned to top: 0 overlap. The package's position on this is that
+   the bar scrolls away and the masthead stays. */
+.uwp-institution-bar.institution-bar {
+  position: static;
+}
+
+/* site.css draws the current/hover state as a 2px bottom border on the link;
+   the package draws it as an ::after bar. Both would show. */
+.uwp-nav.site-nav a,
+.uwp-nav.site-nav a:hover,
+.uwp-nav.site-nav a[aria-current="page"] {
+  border-bottom-color: transparent;
+}
+
+/* site.css puts 48px of padding on .site-footer; the package puts 72px on the
+   grid inside .uwp-footer. Carrying both classes applies both, and the footer
+   grew by 96px. The package's spacing is the one that belongs to the markup. */
+.uwp-footer.site-footer {
+  padding-block: 0;
 }
 
 :root {
@@ -23,78 +69,37 @@ body {
   font-size: 18px;
 }
 
-.institution-name {
-  color: #fff;
-  text-decoration: none;
-}
-
-.institution-name:hover {
-  color: #fff;
-  opacity: 0.82;
-  text-decoration: none;
-}
-
-.school-header-actions {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.82rem;
-}
-
-.site-header .school-header-actions .text-link {
-  color: #ffffff;
-}
-
-.site-header .school-header-actions .text-link:hover {
-  color: #ffffff;
-  border-bottom-color: var(--gold);
-}
-
-.department-context {
-  color: var(--muted);
-  background: var(--subtle);
-  border-bottom: 1px solid var(--line);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.76rem;
-}
-
-.context-inner {
-  position: relative;
-  display: flex;
-  min-height: 42px;
-  align-items: center;
-  gap: 10px;
-}
-
-.context-current {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.context-inner a {
-  color: var(--title);
-  text-decoration: none;
-}
-
-.context-inner details {
-  position: relative;
+/* The department switcher rides in the package breadcrumb trail's item slot
+ * as an extra <li> — no package component covers a breadcrumb-embedded
+ * jump menu, so its styling stays local, re-keyed from the retired
+ * .department-context block to the package's class. */
+.uwp-breadcrumbs li.department-switcher {
   margin-left: auto;
 }
 
-.context-inner summary {
+.uwp-breadcrumbs li.department-switcher::after {
+  content: none;
+}
+
+.uwp-breadcrumbs li:has(+ .department-switcher)::after {
+  content: none;
+}
+
+.uwp-breadcrumbs details {
+  position: relative;
+}
+
+.uwp-breadcrumbs summary {
   color: var(--blue);
   cursor: pointer;
   list-style: none;
 }
 
-.context-inner summary::-webkit-details-marker {
+.uwp-breadcrumbs summary::-webkit-details-marker {
   display: none;
 }
 
-.context-inner summary::after {
+.uwp-breadcrumbs summary::after {
   margin-left: 7px;
   content: "⌄";
 }
@@ -290,10 +295,6 @@ body {
   white-space: nowrap;
 }
 
-.compact-callouts {
-  padding-top: 0;
-}
-
 .compact-callout-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -340,34 +341,12 @@ body {
   font-size: 1.8rem;
 }
 
-.research-pathways,
 .academic-note,
-.event-model,
 .central-facility-link {
   display: grid;
   grid-template-columns: minmax(210px, 0.75fr) minmax(0, 1.75fr);
   align-items: start;
   gap: 70px;
-}
-
-.pathway-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 30px;
-}
-
-.pathway-grid article {
-  padding-top: 18px;
-  border-top: 2px solid var(--blue);
-}
-
-.pathway-grid h3 {
-  font-size: 1.12rem;
-}
-
-.pathway-grid p {
-  color: var(--copy);
-  font-size: 0.92rem;
 }
 
 .directory-controls-wrap {
@@ -387,11 +366,6 @@ body {
   gap: 30px;
 }
 
-.directory-note {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 0.86rem;
-}
 
 .faculty-search {
   display: grid;
@@ -555,21 +529,6 @@ body {
   margin-bottom: 0;
 }
 
-.event-empty {
-  padding: 42px;
-  background: var(--subtle);
-  border: 1px solid var(--line);
-}
-
-.event-empty h3 {
-  margin-bottom: 10px;
-}
-
-.event-empty p {
-  margin-bottom: 0;
-  color: var(--copy);
-}
-
 .series-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -597,17 +556,6 @@ body {
 .series-grid h3 {
   margin: 0;
   font-size: 1.02rem;
-}
-
-.event-model ul {
-  columns: 2;
-  margin: 0;
-  padding-left: 20px;
-}
-
-.event-model li {
-  margin-bottom: 9px;
-  padding-left: 5px;
 }
 
 .facility-list {
@@ -741,29 +689,6 @@ body {
   color: var(--copy);
 }
 
-.science-footer-grid {
-  display: grid;
-  grid-template-columns: minmax(240px, 1fr) minmax(0, 1.2fr) auto;
-  gap: 55px;
-}
-
-.footer-departments,
-.footer-meta {
-  display: grid;
-  align-content: start;
-  gap: 6px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.76rem;
-}
-
-.footer-meta {
-  text-align: right;
-}
-
-.site-footer a {
-  color: #dbe8f0;
-}
-
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -784,29 +709,9 @@ summary:focus-visible {
 }
 
 @media (max-width: 960px) {
-  .header-inner {
-    display: block;
-    height: auto;
-    min-height: var(--site-header-height);
-    padding-block: 18px 0;
-  }
-
-  .site-nav {
-    width: 100%;
-    margin-top: 12px;
-    overflow-x: auto;
-    gap: 22px;
-  }
-
-  .site-nav a {
-    padding: 14px 0 15px;
-    white-space: nowrap;
-  }
-
-  .site-nav .theme-toggle {
-    margin-left: auto;
-  }
-
+  /* The masthead's own narrow-screen behaviour (the disclosure toggle) comes
+   * from the package; the legacy stacked-header rules that used to live here
+   * would defeat it, so they are gone. */
   .department-hero-grid,
   .school-hero-grid {
     grid-template-columns: 1fr;
@@ -847,34 +752,16 @@ summary:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .pathway-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .research-pathways,
-  .academic-note,
-  .event-model {
+  .academic-note {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  .science-footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-meta {
-    text-align: left;
-  }
 }
 
 @media (max-width: 700px) {
   .institution-inner {
     min-height: 52px;
-  }
-
-  .institution-name {
-    max-width: 180px;
-    line-height: 1.25;
   }
 
   .institution-links {
@@ -885,13 +772,10 @@ summary:focus-visible {
     display: none;
   }
 
-  .context-separator,
-  .context-school {
+  /* li.context-school outranks patterns.css's `.uwp-breadcrumbs li`, which
+   * would otherwise win on specificity and keep the crumb visible. */
+  .uwp-breadcrumbs li.context-school {
     display: none;
-  }
-
-  .context-inner details {
-    margin-left: auto;
   }
 
   .department-hero-grid,
@@ -981,10 +865,6 @@ summary:focus-visible {
     border-left: 0;
   }
 
-  .event-model ul {
-    columns: 1;
-  }
-
   .central-facility-link {
     grid-template-columns: 1fr;
   }
@@ -1001,10 +881,6 @@ summary:focus-visible {
     border-left: 0;
   }
 
-  .science-footer-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
 }
 
 /* Generated device-theme fallback. */

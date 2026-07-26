@@ -105,12 +105,10 @@
   }
 
   function initialize() {
-    const active = document.body.dataset.page;
-    const activeLink = document.querySelector(`[data-nav="${active}"]`);
-    if (activeLink) activeLink.setAttribute("aria-current", "page");
-    document.querySelectorAll("[data-current-year]").forEach((node) => {
-      node.textContent = new Date().getFullYear();
-    });
+    // The page shell — masthead navigation with its aria-current, and the
+    // footer with its pinned year — is rendered at build time by
+    // tools/build_facility_capabilities.mjs from university-web-patterns,
+    // so this file only fills the data-driven regions inside <main>.
     renderOverview();
     renderInstruments();
     renderPeople();

@@ -292,15 +292,22 @@
 })();
 
 /* ------------------------------------------------------------------ *
- * Global masthead dropdowns — standard hover-intent (added 2026-07-25)
- * Opens a menu when the pointer enters the item, and closes it ~240ms
- * after the pointer has left BOTH the trigger and its panel. The short
- * close-delay is the conventional fix for the "diagonal gap" problem:
- * moving from a narrow trigger into a wider panel (or briefly clipping a
- * sibling) no longer slams the menu shut. Drives the existing `.is-open`
- * class, so the CSS that already reveals `.nav-menu.is-open` does the
- * showing. Desktop pointers only; touch/mobile keep the click accordion.
- * Self-contained + idempotent so it is safe to load once per page.
+ * Global masthead dropdowns — 2-level cascading hover-intent
+ * (extended for fly-outs 2026-07-25).
+ * Level 1: entering a top item opens its single-column dropdown; it
+ * closes ~240ms after the pointer leaves BOTH the trigger and its
+ * panel, so a diagonal move into the wider panel never slams it shut.
+ * Level 2: a `.nav-subitem--menu` row opens a `.nav-flyout` beside it —
+ * to the right, or to the LEFT when it would clip the viewport edge.
+ * The fly-out is a DOM descendant of its row, so moving into it keeps
+ * the pointer inside the row; a close-delay covers the brief transit,
+ * and taking over a sibling fly-out is intent-delayed so a diagonal
+ * sweep toward the open panel is never hijacked by rows passed along
+ * the way. `.is-open` stays the single source of truth (no raw `:hover`
+ * opener that would diagonal-close), matching the CSS reveal rules.
+ * Desktop pointers only; touch/mobile use the click accordion — the ▸
+ * disclosure toggles the nested fly-out in place. Idempotent, so it is
+ * safe to load once per page.
  * ------------------------------------------------------------------ */
 (function () {
   function ready(fn) {
@@ -317,13 +324,73 @@
     );
     if (!items.length) return;
 
-    var timers = new WeakMap();
+    var CLOSE_DELAY = 240;           // level-1 close delay
+    var FLYOUT_CLOSE_DELAY = 300;    // level-2 close delay — covers diagonal transit
+    var FLYOUT_SWITCH_DELAY = 140;   // delay before a sibling fly-out takes over
+    var timers = new WeakMap();      // level-1 close timers
+    var closeTimers = new WeakMap(); // level-2 close timers
+    var openTimers = new WeakMap();  // level-2 switch-intent timers
+
+    function subitemsOf(item) {
+      return Array.prototype.slice.call(
+        item.querySelectorAll(".nav-subitem--menu")
+      );
+    }
+
+    function setSubOpen(sub, open) {
+      sub.classList.toggle("is-open", open);
+      var disc = sub.querySelector(":scope > .nav-subitem__disclosure");
+      if (disc) disc.setAttribute("aria-expanded", String(open));
+    }
+
+    function closeSub(sub) {
+      clearTimeout(openTimers.get(sub));
+      clearTimeout(closeTimers.get(sub));
+      setSubOpen(sub, false);
+    }
+
+    function closeSiblingSubs(item, except) {
+      subitemsOf(item).forEach(function (s) { if (s !== except) closeSub(s); });
+    }
+
+    // Right by default; flip to the LEFT (and point the chevron left) when the
+    // panel would otherwise clip past the viewport's right edge.
+    function placeFlyout(sub) {
+      var fly = sub.querySelector(":scope > .nav-flyout");
+      if (!fly) return;
+      fly.classList.remove("nav-flyout--left");
+      sub.classList.remove("is-flipped");
+      if (!desktop.matches) return;                // mobile fly-outs are static
+      var rect = fly.getBoundingClientRect();
+      if (rect.right > document.documentElement.clientWidth - 6) {
+        fly.classList.add("nav-flyout--left");
+        sub.classList.add("is-flipped");
+      }
+    }
+
+    function openSub(sub) {
+      var item = sub.closest(".nav-item--menu");
+      clearTimeout(openTimers.get(sub));
+      clearTimeout(closeTimers.get(sub));
+      if (item) closeSiblingSubs(item, sub);          // one fly-out per menu
+      setSubOpen(sub, true);
+      placeFlyout(sub);
+    }
+
+    function scheduleCloseSub(sub) {
+      clearTimeout(closeTimers.get(sub));
+      closeTimers.set(
+        sub,
+        setTimeout(function () { setSubOpen(sub, false); }, FLYOUT_CLOSE_DELAY)
+      );
+    }
 
     function closeAll(except) {
       items.forEach(function (it) {
         if (it !== except) {
           clearTimeout(timers.get(it));
           it.classList.remove("is-open");
+          subitemsOf(it).forEach(closeSub);           // reset nested fly-outs too
         }
       });
     }
@@ -331,25 +398,23 @@
     function openItem(item) {
       if (!desktop.matches) return;
       clearTimeout(timers.get(item));
-      closeAll(item);
+      closeAll(item);                                 // one menu open at a time
       item.classList.add("is-open");
     }
 
     items.forEach(function (item) {
-      function open() {
-        openItem(item);
-      }
+      function open() { openItem(item); }
       function scheduleClose() {
         if (!desktop.matches) return;
         clearTimeout(timers.get(item));
-        timers.set(
-          item,
-          setTimeout(function () { item.classList.remove("is-open"); }, 240)
-        );
+        timers.set(item, setTimeout(function () {
+          item.classList.remove("is-open");
+          subitemsOf(item).forEach(closeSub);
+        }, CLOSE_DELAY));
       }
-      // Pointer: mouseleave does not fire while the pointer is over the
-      // panel (it is a DOM descendant), so the menu stays open over it;
-      // the 240ms delay covers the brief off-element transit in between.
+      // Pointer: mouseleave does not fire while the pointer is over the panel
+      // (a DOM descendant), so the menu stays open over it; the delay covers
+      // the brief off-element transit in between.
       item.addEventListener("mouseenter", open);
       item.addEventListener("mouseleave", scheduleClose);
       // Keyboard parity: focus opens, focus leaving the item closes.
@@ -361,12 +426,68 @@
           && !item.matches(":hover")
         ) {
           item.classList.remove("is-open");
+          subitemsOf(item).forEach(closeSub);
+        }
+      });
+
+      // ---- level-2 cascading fly-outs within this menu ----
+      subitemsOf(item).forEach(function (sub) {
+        sub.addEventListener("mouseenter", function () {
+          if (!desktop.matches) return;
+          clearTimeout(closeTimers.get(sub));         // cancel our own close
+          if (sub.classList.contains("is-open")) return;
+          var siblingOpen = subitemsOf(item).some(function (s) {
+            return s !== sub && s.classList.contains("is-open");
+          });
+          if (siblingOpen) {
+            // A fly-out is already open: delay the switch so a diagonal sweep
+            // toward it is not hijacked by rows crossed along the way.
+            clearTimeout(openTimers.get(sub));
+            openTimers.set(
+              sub,
+              setTimeout(function () { openSub(sub); }, FLYOUT_SWITCH_DELAY)
+            );
+          } else {
+            openSub(sub);                             // first open is instant
+          }
+        });
+        sub.addEventListener("mouseleave", function () {
+          if (!desktop.matches) return;
+          clearTimeout(openTimers.get(sub));          // drop a pending switch
+          scheduleCloseSub(sub);
+        });
+        sub.addEventListener("focusin", function () {
+          if (!desktop.matches) return;
+          clearTimeout(closeTimers.get(sub));
+          openSub(sub);
+        });
+        sub.addEventListener("focusout", function (event) {
+          if (
+            desktop.matches
+            && !sub.contains(event.relatedTarget)
+            && !sub.matches(":hover")
+          ) {
+            closeSub(sub);
+          }
+        });
+        // Mobile: the ▸ disclosure toggles the nested fly-out in place without
+        // following the row link. Desktop keeps hover as the single opener.
+        var disc = sub.querySelector(":scope > .nav-subitem__disclosure");
+        if (disc) {
+          disc.addEventListener("click", function (event) {
+            if (desktop.matches) return;
+            event.preventDefault();
+            event.stopPropagation();
+            var willOpen = !sub.classList.contains("is-open");
+            closeSiblingSubs(item, sub);
+            setSubOpen(sub, willOpen);
+          });
         }
       });
     });
 
     // History restoration can resume a document without firing mouseenter.
-    // Reconcile `.is-open` with the pointer after each initial load/BFCache
+    // Reconcile `.is-open` with the pointer after each initial load / BFCache
     // return so a restored menu is neither stale nor inert.
     window.addEventListener("pageshow", function () {
       window.requestAnimationFrame(function () {

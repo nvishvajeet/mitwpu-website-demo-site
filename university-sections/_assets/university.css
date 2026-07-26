@@ -41,9 +41,23 @@
   box-sizing: border-box;
 }
 
+/* `clip`, not `hidden`, and on both html and body.
+ *
+ * Either value stops the sideways scrollbar a wide hero would otherwise
+ * produce, so `hidden` looks equivalent and is not: `overflow: hidden` makes
+ * the element a scroll container, and a scroll container between the viewport
+ * and `.site-header` breaks `position: sticky` on it. The masthead would
+ * simply stop sticking, on every page, with nothing in the header's own rules
+ * to explain why. `clip` suppresses the overflow without creating the
+ * container.
+ *
+ * Both elements carry it because browsers do not agree about which one the
+ * value propagates from. Removing the apparently redundant second copy
+ * reintroduces the scrollbar in some of them. */
 html {
   overflow-x: clip;
   scroll-behavior: smooth;
+  /* Anchor targets land below the sticky masthead rather than under it. */
   scroll-padding-top: 8rem;
   scrollbar-gutter: stable;
 }
@@ -127,6 +141,12 @@ video {
   margin-inline: auto;
 }
 
+/* 20 must stay above `.site-header`'s 15, fourteen lines below. The skip link
+ * is the first tab stop on every page and it is fixed at the top left, exactly
+ * where the sticky navy header sits; lose the ordering and it slides into view
+ * behind the header, so the one affordance a keyboard user reaches first
+ * becomes invisible while still holding focus. Neither number means anything
+ * on its own — only the relation does. */
 .skip-link {
   position: fixed;
   z-index: 20;
@@ -159,17 +179,6 @@ video {
   align-items: center;
 }
 
-.brand {
-  display: grid;
-  color: #ffffff;
-  line-height: 1.25;
-  text-decoration: none;
-}
-
-.brand:hover {
-  color: #ffffff;
-}
-
 .institutional-lockup {
   display: grid;
   justify-items: start;
@@ -190,18 +199,6 @@ video {
   padding: 3px 5px;
   background: #ffffff;
   border-radius: 2px;
-}
-
-.brand strong {
-  font-size: clamp(1.08rem, 2.4vw, 1.38rem);
-}
-
-.brand span {
-  color: #dce7ef;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .header-actions {
@@ -378,9 +375,7 @@ video {
 }
 
 .eyebrow,
-.section-label,
-.card-kicker,
-.source-label {
+.section-label {
   margin: 0;
   color: var(--blue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -489,6 +484,10 @@ h3 {
   aspect-ratio: 12 / 5;
 }
 
+/* The scrim that makes the caption legible over a photograph. The card itself
+ * is the <a>, so without `pointer-events: none` this gradient sits on top of
+ * the link and swallows every click over the bottom 55% of the tile — which is
+ * where the caption, and therefore the cursor, is. */
 .curated-media__card::after {
   position: absolute;
   inset: 45% 0 0;
@@ -499,6 +498,9 @@ h3 {
 
 .curated-media__card span {
   position: absolute;
+  /* Clears the ::after scrim above. Both are positioned, and the pseudo-element
+   * comes first in painting order, so without this the caption is rendered
+   * underneath the very gradient that exists to make it readable. */
   z-index: 1;
   inset: auto 1rem 0.9rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -511,6 +513,15 @@ h3 {
   transform: scale(1.015);
 }
 
+/* The negative offset is required, not a taste. Both `.curated-media__grid`
+ * and this card clip their overflow, so a ring drawn outside the card's box —
+ * which is what any offset of 0 or more does — is clipped away and the card
+ * focuses with no visible indicator at all. Drawing it inside is the only
+ * placement that survives the clip.
+ *
+ * `--gold` rather than the site-wide `--focus` because this ring lands on a
+ * dark photograph under a dark gradient, where the blue focus colour has too
+ * little contrast to be seen. */
 .curated-media__card:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: -3px;
@@ -526,6 +537,10 @@ h3 {
   overflow: hidden;
   background: #fff;
   border: 1px solid var(--line);
+}
+
+.campus-map__figure--stacked {
+  margin-top: 1.5rem;
 }
 
 .campus-map__figure img {
@@ -1170,69 +1185,10 @@ h3 {
   font-weight: 800;
 }
 
-.source-panel {
-  display: grid;
-  grid-template-columns: minmax(12rem, 0.55fr) minmax(0, 1.45fr);
-  gap: 2rem 5rem;
-  padding-block: clamp(3.5rem, 7vw, 6rem);
-}
-
-.source-panel h2 {
-  margin-top: 0.45rem;
-  font-size: clamp(1.55rem, 3vw, 2.35rem);
-}
-
-.source-copy p {
-  margin-top: 0;
-  color: var(--copy);
-}
-
-.source-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin: 1.4rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.source-list a {
-  display: inline-block;
-  padding: 0.35rem 0.6rem;
-  color: var(--muted);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.72rem;
-  overflow-wrap: anywhere;
-}
-
 .site-footer {
   color: #dbe6ec;
   background: var(--footer);
   border-top: 3px solid var(--gold);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: minmax(15rem, 1.4fr) repeat(3, minmax(9rem, 1fr));
-  gap: 2.5rem 4rem;
-  padding-block: clamp(3rem, 7vw, 5.5rem);
-}
-
-.footer-identity strong {
-  display: block;
-  color: #fff;
-  font-size: 1.35rem;
-}
-
-.footer-identity p,
-.footer-identity address {
-  max-width: 30rem;
-  margin: 0.65rem 0 0;
-  color: #b9c9d2;
-  font-style: normal;
-  font-size: 0.88rem;
 }
 
 .footer-social {
@@ -1250,40 +1206,6 @@ h3 {
 .footer-social a:hover,
 .footer-social a:focus-visible {
   color: #fff;
-}
-
-.footer-group h2 {
-  margin: 0 0 0.9rem;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.74rem;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-}
-
-.footer-group ul {
-  display: grid;
-  gap: 0.48rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-group a {
-  color: #dbe6ec;
-  font-size: 0.86rem;
-}
-
-.footer-note {
-  padding-block: 1rem 1.5rem;
-  color: #a9bdc8;
-  border-top: 1px solid rgb(255 255 255 / 18%);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
-}
-
-.footer-note p {
-  margin: 0;
 }
 
 .layer-index {
@@ -1396,13 +1318,6 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .footer-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .footer-identity {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 58.75rem) {
@@ -1454,7 +1369,6 @@ h3 {
   }
 
   .section-heading,
-  .source-panel,
   .maeer-founder__grid,
   .maeer-mission__grid,
   .unesco-focus__grid,
@@ -1474,8 +1388,7 @@ h3 {
   .leaders-grid,
   .maeer-links__grid,
   .curated-media__grid,
-  .layer-children,
-  .footer-grid {
+  .layer-children {
     grid-template-columns: 1fr;
   }
 
@@ -1499,10 +1412,6 @@ h3 {
   .campus-map__figure figcaption {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .footer-identity {
-    grid-column: auto;
   }
 }
 

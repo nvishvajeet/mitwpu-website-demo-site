@@ -1,3 +1,12 @@
+/* Shared stylesheet for the research-group microsites, and — through an
+ * `@import` at the top of each — for academics/assets/style.css and
+ * science/assets/style.css?v=20260725-global-nav-8-cascade as well. A rule changed here changes four
+ * microsites, the academics directory and the School of Science. It is easy to
+ * arrive at this file from one importer and not realise that, so: check the
+ * others before widening anything.
+ *
+ * Two palettes follow. Three values in the dark one are deliberately not the
+ * inversion an editor would expect, and are noted where they occur. */
 :root {
   --ink: #1f2d3a;
   --heading: #274257;
@@ -44,7 +53,13 @@
   --paper: #111a21;
   --subtle: #151f27;
   --topbar: #18242e;
+  /* Darker than the light value, not lighter. The institution bar is dark in
+     both themes, so it is not a surface being inverted; on a dark page a
+     brightened navy would make the bar glow rather than recede. */
   --institution: #152c4f;
+  /* Dimmed rather than brightened, for the same reason in reverse: at full
+     saturation on a dark background the gold vibrates and stops reading as an
+     accent. */
   --gold: #d8ad3c;
   --line: #2a3b48;
   --line-dark: #3d5262;
@@ -54,6 +69,10 @@
   --tag: #aebbc5;
   --footer: #0d151b;
   --focus: #8cc1de;
+  /* Identical to the light value on purpose — it looks like a copy-paste
+     leftover and is not. This is the knob riding the theme switch, and the
+     track underneath it does invert; a knob that inverted with it would
+     disappear into its own track in one of the two themes. */
   --switch-knob: #ffffff;
   color-scheme: dark;
 }
@@ -426,6 +445,12 @@ h3 {
   background: #7aa0c2;
 }
 
+/* The crescent moon, drawn by occlusion: a second disc in the *track's* colour
+ * laid over the first, offset by 3px. It is not decoration — it is the only
+ * thing that makes the dark icon read as a moon rather than a second sun. It
+ * therefore has to be `var(--toggle-track)` exactly, not a literal that happens
+ * to match today: give the track a different background and this disc becomes
+ * a visible blob instead of a cutout. */
 .theme-icon-dark::after {
   position: absolute;
   top: 0;
@@ -593,7 +618,6 @@ h3 {
 }
 
 .text-link,
-.card-link,
 .email-link {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.8rem;
@@ -735,11 +759,6 @@ h3 {
   color: var(--line-dark);
 }
 
-.card-link {
-  display: inline-block;
-  margin-top: 10px;
-}
-
 .callout-section {
   background: var(--topbar);
 }
@@ -865,16 +884,6 @@ h3 {
 .directory-heading > p:last-child {
   color: var(--muted);
   font-size: 0.9rem;
-}
-
-.pending-card {
-  padding: 20px 0;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-}
-
-.pending-card p {
-  margin: 5px 0 0;
 }
 
 .research-list,
@@ -1173,10 +1182,6 @@ h3 {
   font-size: 0.74rem;
 }
 
-.footer-note {
-  white-space: nowrap;
-}
-
 @media (max-width: 900px) {
   .header-inner {
     height: auto;
@@ -1257,10 +1262,6 @@ h3 {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-note {
-    grid-column: 1 / -1;
   }
 }
 
@@ -1409,10 +1410,6 @@ h3 {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-
-  .footer-note {
-    grid-column: auto;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1441,7 +1438,13 @@ h3 {
       --paper: #111a21;
       --subtle: #151f27;
       --topbar: #18242e;
+      /* Darker than the light value, not lighter. The institution bar is dark in
+         both themes, so it is not a surface being inverted; on a dark page a
+         brightened navy would make the bar glow rather than recede. */
       --institution: #152c4f;
+      /* Dimmed rather than brightened, for the same reason in reverse: at full
+         saturation on a dark background the gold vibrates and stops reading as an
+         accent. */
       --gold: #d8ad3c;
       --line: #2a3b48;
       --line-dark: #3d5262;
@@ -1451,6 +1454,10 @@ h3 {
       --tag: #aebbc5;
       --footer: #0d151b;
       --focus: #8cc1de;
+      /* Identical to the light value on purpose — it looks like a copy-paste
+         leftover and is not. This is the knob riding the theme switch, and the
+         track underneath it does invert; a knob that inverted with it would
+         disappear into its own track in one of the two themes. */
       --switch-knob: #ffffff;
       color-scheme: dark;
   }

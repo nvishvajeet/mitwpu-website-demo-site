@@ -15,6 +15,11 @@
   --blue-pale: #edf3f6;
   --accent-line: #6f9bb3;
   --gold: #f3be34;
+  /* Pale gold, for decoration that sits behind something rather than on it.
+     Same value as the university sections use, so the corner block under the
+     hero photograph is one colour across the site rather than two that nearly
+     match. Never put text on this: it is a backdrop, not a surface. */
+  --gold-soft: #f3e2ae;
   --line: #d8e0e5;
   --line-strong: #b8c5cd;
   --focus: #185f86;
@@ -22,6 +27,23 @@
   --shell: 1180px;
   color-scheme: light;
 }
+
+/* Bridge to university-web-patterns 0.7.0.
+   The package's media, portrait, evidence and hero-task patterns read --uwp-*
+   tokens. This site keeps its own palette; the names are mapped here rather
+   than loading a second set of tokens. */
+:root {
+  --uwp-ink: var(--ink);
+  --uwp-muted: var(--muted);
+  --uwp-paper: var(--subtle);
+  --uwp-surface: var(--paper);
+  --uwp-brand: var(--institution);
+  --uwp-rule: var(--rule, #d8e2e8);
+  --uwp-space-2: 1rem;
+  --uwp-space-3: 1.5rem;
+}
+
+.evidence-section { padding: clamp(1rem, 3vw, 1.6rem) 0 0; }
 
 :root[data-theme="dark"] {
   --paper: #111a21;
@@ -40,6 +62,10 @@
   --blue-pale: #1d2d38;
   --accent-line: #6fa6c4;
   --gold: #d8ad3c;
+  /* Dark theme wants the corner darker than the page, not lighter: a pale
+     block behind a photograph glows on a dark background and pulls the eye
+     away from the image it is meant to frame. */
+  --gold-soft: #55451e;
   --line: #2a3b48;
   --line-strong: #3d5262;
   --focus: #9fd5f2;
@@ -143,43 +169,10 @@ h3 {
   transform: translateY(0);
 }
 
-.status-bar {
-  display: none;
-  color: #edf3f7;
-  background: var(--institution);
-  border-bottom: 3px solid var(--gold);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.73rem;
-  letter-spacing: 0.025em;
-  line-height: 1.35;
-}
-
-.status-inner,
 .header-inner,
-.header-actions,
-.footer-inner {
+.header-actions {
   display: flex;
   align-items: center;
-}
-
-.status-inner {
-  min-height: 40px;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.status-inner p {
-  margin: 0;
-}
-
-.status-inner a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.status-inner a:hover {
-  opacity: 0.82;
-  text-decoration: none;
 }
 
 .site-header {
@@ -234,25 +227,10 @@ h3 {
   border-radius: 2px;
 }
 
-.brand strong,
-.brand span {
-  display: block;
-}
-
 .brand strong {
+  display: block;
   font-size: 1.35rem;
   line-height: 1.15;
-}
-
-.brand span {
-  margin-top: 4px;
-  color: #dce7ef;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.065em;
-  line-height: 1.35;
-  text-transform: uppercase;
 }
 
 .header-actions {
@@ -400,13 +378,6 @@ h3 {
   line-height: 1.5;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 11px 20px;
-  margin-top: 32px;
-}
-
 .button {
   display: inline-flex;
   min-height: 46px;
@@ -437,16 +408,37 @@ h3 {
 
 .hero-visual {
   position: relative;
-  align-self: center;
+  /* Fill the hero row rather than floating a small letterboxed panel in it:
+     the campus photograph is the landing image, so it should be as tall as
+     the copy beside it and crop into the campus rather than shrink away. */
+  align-self: stretch;
   display: grid;
   width: 100%;
-  aspect-ratio: 2 / 1;
   min-width: 0;
-  min-height: 0;
+  min-height: min(58vh, 520px);
   grid-template-rows: 1fr;
-  overflow: hidden;
   background: var(--paper);
   border: 1px solid var(--line);
+}
+
+/* The gold corner behind the hero photograph, matching the university
+   sections. It is offset past the bottom-right corner and painted at
+   z-index -1, so it falls behind this element's own background and only
+   the part that overhangs is visible — a block peeking out from under the
+   image rather than a border drawn on it.
+   Two things this depends on, both easy to break: .hero-visual must not
+   clip its overflow (that is why there is no overflow: hidden above — each
+   slide clips its own image instead), and .hero-visual must not have a
+   z-index, or it becomes a stacking context and the block disappears
+   behind the photograph entirely. */
+.hero-visual::after {
+  position: absolute;
+  z-index: -1;
+  width: 45%;
+  height: 55%;
+  inset: auto -1.15rem -1.15rem auto;
+  content: "";
+  background: var(--gold-soft);
 }
 
 .hero-media {
@@ -458,6 +450,16 @@ h3 {
   background: var(--paper);
 }
 
+/* The crossfade is opacity; `visibility` is what keeps a faded-out slide from
+ * still being there. It cannot be interpolated, so it is transitioned over 0s
+ * with a 760ms delay: the outgoing slide stays visible for exactly as long as
+ * the fade lasts, then snaps hidden — out of the accessibility tree and out of
+ * hit-testing. Drop the visibility pair and every inactive slide remains an
+ * invisible, clickable, screen-reader-announced overlay on the hero.
+ *
+ * `transition-delay: 0s` on the active slide is the other half: without it the
+ * incoming slide inherits the 760ms delay and appears only after the fade it
+ * was supposed to be part of. */
 .hero-slide {
   opacity: 0;
   visibility: hidden;
@@ -479,10 +481,6 @@ h3 {
   height: 100%;
   object-fit: cover;
   object-position: center 42%;
-}
-
-.hero-media[data-media-fit="contain"] img {
-  object-fit: contain;
 }
 
 .activity {
@@ -580,6 +578,11 @@ h3 {
   color: var(--blue);
 }
 
+/* `.activity-kind` above is itself a <p>. On a card that has an eyebrow and a
+ * heading but no description, it is also the last child — so without the
+ * `:not()` the uppercase 0.68rem tracked label is repainted as 0.93rem body
+ * copy and the card loses its kind. The exclusion is a guard, not a
+ * refinement. */
 .activity-copy > p:last-child:not(.activity-kind) {
   max-width: 54ch;
   margin-bottom: 0;
@@ -633,22 +636,10 @@ h3 {
   border-bottom: 1px solid var(--line-strong);
 }
 
-.section-heading .section-label {
-  margin-bottom: 10px;
-}
-
 .section-heading h2 {
   margin-bottom: 0;
   font-size: clamp(2.15rem, 4vw, 3.2rem);
   text-wrap: balance;
-}
-
-.section-heading > p {
-  max-width: 43ch;
-  margin: 0;
-  color: var(--copy);
-  font-size: 1rem;
-  line-height: 1.55;
 }
 
 .directory-groups {
@@ -684,31 +675,11 @@ h3 {
   text-decoration: none;
 }
 
-.directory-link strong,
-.directory-link small {
-  display: block;
-}
-
 .directory-link strong {
+  display: block;
   color: var(--heading);
   font-size: 1.13rem;
   line-height: 1.25;
-}
-
-.directory-link small {
-  margin-top: 7px;
-  color: var(--muted);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.45;
-}
-
-.directory-link .arrow {
-  margin-top: 2px;
-  color: var(--blue);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1.2rem;
-  transition: transform 140ms ease;
 }
 
 .directory-link:hover {
@@ -716,10 +687,14 @@ h3 {
   background: linear-gradient(90deg, transparent 0, var(--blue-pale) 9%, var(--blue-pale) 100%);
 }
 
-.directory-link:hover .arrow {
-  transform: translateX(4px);
-}
-
+/* The `html.has-scroll-reveal` prefix is a no-JavaScript guard, not noise.
+ * demo-assets/landing.js stamps that class on <html> before it starts
+ * observing; until then, and forever if the script fails or is blocked, these
+ * rules do not apply and the content is simply visible. Shortening the
+ * selector to `.scroll-reveal` — which reads as an obvious simplification,
+ * since the class is on the element anyway — leaves every revealed section at
+ * `opacity: 0` with nothing left to reveal it. The page goes blank below the
+ * hero and no error is raised. */
 html.has-scroll-reveal .scroll-reveal {
   opacity: 0;
   transform: translateY(10px);
@@ -736,51 +711,6 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   will-change: auto;
 }
 
-.site-footer {
-  color: #c9d5df;
-  background: var(--institution-deep);
-  border-top: 3px solid var(--gold);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.74rem;
-}
-
-.footer-inner {
-  min-height: 116px;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.footer-identity p {
-  margin: 0;
-  color: #ffffff;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-.footer-identity span {
-  display: block;
-  margin-top: 4px;
-  color: #b9c8d4;
-  font-size: 0.69rem;
-  line-height: 1.4;
-}
-
-.footer-inner nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.footer-inner a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-inner a:hover {
-  opacity: 0.82;
-  text-decoration: none;
-}
-
 @media (max-width: 58.75rem) {
   .header-inner {
     height: 112px;
@@ -790,6 +720,12 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     padding-top: 8px;
   }
 
+  /* `order` only applies to flex items, and `.site-nav` and `.theme-toggle`
+   * are grandchildren of the flex container `.header-inner`, not children of
+   * it. Dissolving `.header-actions` promotes them into that flex context so
+   * the `order` values below — and the wrap onto a second row — take effect at
+   * all. Remove this and the narrow-screen masthead silently collapses back to
+   * one row in source order. */
   .header-actions {
     display: contents;
   }
@@ -826,7 +762,7 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   }
 
   .hero-visual {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1557 / 599;
     grid-template-rows: 1fr;
   }
 
@@ -853,14 +789,6 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     width: min(calc(100% - 32px), var(--shell));
   }
 
-  .status-inner {
-    min-height: 35px;
-  }
-
-  .status-inner a {
-    display: none;
-  }
-
   .header-inner {
     height: 112px;
     min-height: 112px;
@@ -869,11 +797,6 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
   .brand strong {
     font-size: 1.08rem;
-  }
-
-  .brand span {
-    max-width: 28ch;
-    font-size: 0.58rem;
   }
 
   .institutional-lockup__logo {
@@ -889,17 +812,12 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     font-size: clamp(2.65rem, 12.5vw, 4rem);
   }
 
-  .hero-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
   .button {
     width: 100%;
   }
 
   .hero-visual {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1557 / 599;
     grid-template-rows: 1fr;
   }
 
@@ -944,17 +862,6 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     min-height: 0;
   }
 
-  .footer-inner {
-    min-height: 130px;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    gap: 13px;
-  }
-
-  .footer-inner nav {
-    gap: 9px 18px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -968,8 +875,7 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
   .activity-image img,
   .hero-slide,
-  .switch-thumb,
-  .directory-link .arrow {
+  .switch-thumb {
     transition: none;
   }
 
@@ -1004,6 +910,10 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
       --blue-pale: #1d2d38;
       --accent-line: #6fa6c4;
       --gold: #d8ad3c;
+      /* Dark theme wants the corner darker than the page, not lighter: a pale
+         block behind a photograph glows on a dark background and pulls the eye
+         away from the image it is meant to frame. */
+      --gold-soft: #55451e;
       --line: #2a3b48;
       --line-strong: #3d5262;
       --focus: #9fd5f2;

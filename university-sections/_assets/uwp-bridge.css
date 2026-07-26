@@ -1,0 +1,167 @@
+/* Bridge between this page family's design system and university-web-patterns.
+ *
+ * Loaded by the pages tools/build_university_layers.mjs writes, after the
+ * package's patterns.css and after university.css. It does three things and
+ * nothing else:
+ *
+ *   1. expresses this family's palette, measure and type as `--uwp-*` token
+ *      overrides, which is how the package asks to be re-skinned — a client
+ *      re-declares the custom properties and must not fork tokens.css;
+ *   2. carries the two masthead measurements the token set cannot infer;
+ *   3. holds the transitional rules that fire only because a shell element
+ *      carries both the package class and the legacy one. Every rule in that
+ *      last section goes when its legacy token leaves the decorations in
+ *      tools/build_university_layers.mjs.
+ *
+ * Every token is mapped, not just the ones a rule here happens to need. With
+ * only some bridged, tokens.css's `@media (prefers-color-scheme: dark)`
+ * fallback could put the package's components into their dark palette on a
+ * page university.css was still rendering light, because _assets/theme.js?v=20260725-global-nav-8-cascade
+ * expresses "light" by removing `data-theme` rather than by setting it.
+ * Declaring every token from a site variable means the package follows this
+ * family's theme and only its theme.
+ *
+ * university.css declares its palette on `:root` and again on
+ * `:root[data-theme="dark"]`, so a token mapped once here follows both.
+ */
+
+:root {
+  /* text */
+  --uwp-ink: var(--ink);
+  --uwp-heading: var(--heading);
+  --uwp-title: var(--heading);
+  --uwp-copy: var(--copy);
+  --uwp-muted: var(--muted);
+  --uwp-nav-ink: var(--ink);
+
+  /* surfaces */
+  --uwp-paper: var(--paper);
+  --uwp-surface: var(--surface);
+  --uwp-topbar: var(--surface);
+
+  /* interactive */
+  --uwp-link: var(--blue);
+  --uwp-link-strong: var(--blue-dark);
+  --uwp-solid: var(--blue);
+  --uwp-solid-hover: var(--blue-dark);
+  --uwp-pale: var(--surface);
+
+  /* institutional identity */
+  --uwp-brand: var(--navy);
+  --uwp-brand-contrast: #ffffff;
+  --uwp-accent: var(--gold);
+  --uwp-footer-bg: var(--footer);
+
+  /* The masthead is this family's navy band with a gold rule under it, which
+     is the package's default shape, so only the three colours move. */
+  --uwp-masthead-bg: var(--navy);
+  --uwp-masthead-ink: #ffffff;
+  --uwp-masthead-rule: 3px solid var(--gold);
+  --uwp-masthead-accent: var(--gold);
+
+  /* lines and focus. university.css has one rule colour, so the package's
+     stronger variant is derived from the same one rather than invented. */
+  --uwp-rule: var(--line);
+  --uwp-rule-strong: var(--line);
+  --uwp-focus: var(--focus);
+  --uwp-switch-knob: var(--blue);
+
+  /* type. The body face is Georgia here, and every sans run — navigation,
+     breadcrumbs, footer headings — is the system stack. */
+  --uwp-serif: Georgia, "Times New Roman", serif;
+  --uwp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* measure. `.shell` and `.uwp-shell` both take a 2rem gutter, so only the
+     maximum differs; the masthead is 112px here, not the package's 80px. */
+  --uwp-content-width: var(--max);
+  --uwp-header-height: 112px;
+}
+
+/* -- transitional ---------------------------------------------------------
+ *
+ * Rules that exist only because a shell element carries the legacy class
+ * alongside the package one. They are deletions waiting for the legacy token
+ * to be dropped from the decorations in tools/build_university_layers.mjs.
+ */
+
+/* university.css draws the navigation's current and hover state as a 2px
+   bottom border on the link; the package draws it as an ::after bar. Both
+   elements are the same link, so without this both would show. */
+.uwp-nav.primary-nav a,
+.uwp-nav.primary-nav a:hover,
+.uwp-nav.primary-nav a[aria-current="page"] {
+  border-bottom-color: transparent;
+}
+
+/* university.css draws the theme switch's knob as an ::after on the button;
+   the package ships it as a `.uwp-switch-thumb` span. Both would show, as two
+   knobs on one track. The package's is the one that stays, because it is the
+   one its own rules move when the theme changes. */
+.uwp-theme-toggle.theme-toggle::after {
+  content: none;
+}
+
+/* The bypass link's fill. Both sheets set one and the package's would win;
+   this family's is a step darker, and the link is only ever seen on focus,
+   where the darker fill is the higher-contrast one. */
+.uwp-skip-link.skip-link {
+  background: var(--blue-dark);
+}
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme])`, so a token mapped once here follows both.
+ */
+
+:root {
+    /* text */
+      --uwp-ink: var(--ink);
+      --uwp-heading: var(--heading);
+      --uwp-title: var(--heading);
+      --uwp-copy: var(--copy);
+      --uwp-muted: var(--muted);
+      --uwp-nav-ink: var(--ink);
+    
+      /* surfaces */
+      --uwp-paper: var(--paper);
+      --uwp-surface: var(--surface);
+      --uwp-topbar: var(--surface);
+    
+      /* interactive */
+      --uwp-link: var(--blue);
+      --uwp-link-strong: var(--blue-dark);
+      --uwp-solid: var(--blue);
+      --uwp-solid-hover: var(--blue-dark);
+      --uwp-pale: var(--surface);
+    
+      /* institutional identity */
+      --uwp-brand: var(--navy);
+      --uwp-brand-contrast: #ffffff;
+      --uwp-accent: var(--gold);
+      --uwp-footer-bg: var(--footer);
+    
+      /* The masthead is this family's navy band with a gold rule under it, which
+         is the package's default shape, so only the three colours move. */
+      --uwp-masthead-bg: var(--navy);
+      --uwp-masthead-ink: #ffffff;
+      --uwp-masthead-rule: 3px solid var(--gold);
+      --uwp-masthead-accent: var(--gold);
+    
+      /* lines and focus. university.css has one rule colour, so the package's
+         stronger variant is derived from the same one rather than invented. */
+      --uwp-rule: var(--line);
+      --uwp-rule-strong: var(--line);
+      --uwp-focus: var(--focus);
+      --uwp-switch-knob: var(--blue);
+    
+      /* type. The body face is Georgia here, and every sans run — navigation,
+         breadcrumbs, footer headings — is the system stack. */
+      --uwp-serif: Georgia, "Times New Roman", serif;
+      --uwp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    
+      /* measure. `.shell` and `.uwp-shell` both take a 2rem gutter, so only the
+         maximum differs; the masthead is 112px here, not the package's 80px. */
+      --uwp-content-width: var(--max);
+      --uwp-header-height: 112px;
+  }
+}

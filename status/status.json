@@ -1,17 +1,17 @@
 {
   "percentage": 100,
   "schema_version": 2,
-  "project": "MIT-WPU Pune + WPU Goa public-web migration",
+  "project": "MIT-WPU Pune public-web migration",
   "lane": "multi-root-crawl-and-indexing",
   "phase": "Validated, checkpointed, and synchronized",
   "updated_at": "25 July 2026, 19:25 CEST",
   "eta": "0 minutes — this crawl and indexing lane is complete",
-  "git_checkpoint": "7a08d75a403d",
-  "git_checkpoint_label": "Latest validated source checkpoint",
+  "git_checkpoint": "4b5b6f662313",
+  "git_checkpoint_label": "Artifact built from git checkpoint",
   "graph_nodes": 8717,
   "graph_pages": 4050,
   "graph_edges": 313918,
-  "missing_documents": 44,
+  "missing_documents": 0,
   "phases": [
     {
       "name": "Migration inventory and template provenance",
@@ -25,41 +25,41 @@
       "weight": 25,
       "percentage": 100,
       "state": "Complete",
-      "detail": "Two-origin graph, sitemap reconciliation, reverse dependencies, robots enforcement, pacing, and 13 crawler tests are implemented."
+      "detail": "Single-origin graph, sitemap reconciliation, reverse dependencies, robots enforcement, pacing, and 13 crawler tests are implemented."
     },
     {
-      "name": "Google indexing and dual-origin release policy",
+      "name": "Google indexing and release policy",
       "weight": 20,
       "percentage": 100,
       "state": "Complete",
-      "detail": "Separate Pune and Goa canonicals, sitemaps, robots files, compatibility redirects, and Search Console runbook pass exact-artifact verification."
+      "detail": "Pune canonicals, sitemap, robots file, compatibility redirects, and the Search Console runbook pass exact-artifact verification."
     },
     {
       "name": "Dependency and source-data reconciliation",
       "weight": 20,
       "percentage": 100,
       "state": "Complete",
-      "detail": "The corrected graph has zero broken dependencies, sitemap omissions, or orphans; 44 absent Goa PDFs are retained as unavailable evidence."
+      "detail": "The corrected graph has zero broken dependencies, sitemap omissions, or orphans."
     },
     {
       "name": "Release gates, checkpoint, and dual push",
       "weight": 15,
       "percentage": 100,
       "state": "Complete",
-      "detail": "Both exact-artifact crawls pass with the same digest and zero changes; the test gate, checkpoint, and dual synchronization are complete."
+      "detail": "The exact-artifact crawl passes with the same digest and zero changes; the test gate, checkpoint, and dual synchronization are complete."
     }
   ],
   "completed": [
     "Exact template ownership is enforced for every release element and redirect alias",
-    "Multi-root BFS graph records Pune and Goa pages, assets, typed dependencies, and cross-campus edges",
+    "BFS graph records pages, assets, and typed dependencies across the release",
     "Five-second minimum delay per live origin, fail-closed robots handling, and fast loopback artifact mode",
-    "Separate mitwpu.edu.in and wpugoa.edu.in canonicals, sitemaps, robots files, and legacy Goa redirects",
+    "mitwpu.edu.in canonicals, sitemap, robots file, and legacy redirects",
     "Google Search Console submission policy and data-free Template Central promotion contract"
   ],
   "in_progress": [],
   "blockers": [
-    "Forty-four linked WPU Goa PDFs are absent from all 608 repository PDFs and require authoritative source files",
     "Institutional AWS identity, S3 or CloudFront target, and approved production hostname are not configured",
     "The private production export is required for source-of-truth reconciliation and final cutover"
-  ]
+  ],
+  "git_checkpoint_at": "2026-07-26T15:25:43+02:00"
 }

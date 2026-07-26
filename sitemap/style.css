@@ -1,24 +1,38 @@
-.sitemap-main {
-  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+/* The shell and this page's heading block are rendered from
+ * university-web-patterns by tools/build_sitemap.mjs. The rules below that
+ * name a `.uwp-*` class are this page's own geometry carried on a package
+ * component; they are not a second copy of the component.
+ */
+
+/* The rule under the page title runs to the measure, not to the viewport, so
+   it sits on the hero's grid rather than on the band around it. */
+.sitemap-hero {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem) 0;
+  border-bottom: 0;
 }
 
-.sitemap-main > header {
-  display: grid;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
+.sitemap-hero .uwp-hero__grid {
   padding-bottom: 2rem;
   border-bottom: 4px solid var(--gold);
 }
 
-.sitemap-main h1 {
-  margin: 0;
+/* The page title is set larger than the package's reading column allows. */
+.sitemap-hero .uwp-hero__copy {
+  max-width: none;
+}
+
+.sitemap-hero h1 {
+  margin: 0 0 0.75rem;
   font-size: clamp(3rem, 7vw, 5rem);
 }
 
-.sitemap-main > header p:last-child {
+.sitemap-hero .uwp-lede {
   max-width: 48rem;
-  margin: 0;
   color: var(--muted);
+}
+
+.sitemap-body {
+  padding-block: 2rem clamp(3.5rem, 8vw, 6.5rem);
 }
 
 .sitemap-search {

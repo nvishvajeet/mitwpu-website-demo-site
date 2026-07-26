@@ -2459,6 +2459,14 @@
       "target": "/people/prof-dr-urvashi-makkar-121/"
     },
     {
+      "source": "/life-wpu/faculty-achievements/",
+      "target": "/about-us/faculty-achievements/"
+    },
+    {
+      "source": "/rtep-committee/",
+      "target": "/rtep-advisory-committee/"
+    },
+    {
       "source": "/schools/faculty-of-business-and-leadership/school-of-business/",
       "target": "/academics/business/"
     },
