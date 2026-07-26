@@ -23,10 +23,14 @@
   max-width: none;
 }
 
+/* Top-anchored, not bottom-anchored. With `align-items: end` the title's
+   distance from the masthead was 350px minus however tall the title itself
+   came out, so an event whose name wrapped to two lines put its heading in a
+   different place from one whose name fitted on a line. */
 .event-hero-grid {
   display: flex;
   min-height: 350px;
-  align-items: end;
+  align-items: start;
   padding-block: 72px 64px;
 }
 
@@ -532,4 +536,17 @@
   .event-media-link img {
     transition: none;
   }
+}
+
+/* The sentence under an index heading that says what the list is and, more
+   to the point, what it is not: a record of events that have taken place
+   rather than a calendar of forthcoming ones. It sits between the heading and
+   the rows, so it is a paragraph rather than part of the heading component —
+   the heading component's own slot is for a "see all" link. */
+.event-list-note {
+  max-width: 46rem;
+  margin: -12px 0 28px;
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.65;
 }

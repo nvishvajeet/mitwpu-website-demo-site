@@ -155,11 +155,17 @@ a:hover { color: var(--brand-dark); }
   width: 100%;
 }
 
+/* The band keeps its 390px minimum; its contents are anchored to the top of
+   it rather than centred in it. Centred, the title's distance from the
+   masthead was 390px minus the height of everything in the hero, so a page
+   with a two-line title and a three-line lede put its heading 50px above one
+   with a short title and no lede. These are the same page family and a reader
+   moving through them should find the title in the same place every time. */
 .hero {
   display: grid;
   max-width: 64rem;
   min-height: 390px;
-  align-content: center;
+  align-content: start;
 }
 
 /* At the specificity `.uwp-hero h1` uses, so this family keeps its own
@@ -968,7 +974,66 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   transform: translateX(19px);
 }
 
+/* The foot of a story or an event: what it belongs to, and the two entries
+   either side of it in that set. The rule is the same one the log's heading
+   states — this steps through an index, not a timeline — so the eyebrow names
+   the set by name and the two controls carry the neighbour's own title. A
+   reader deciding whether to press "next" should not have to press it to find
+   out what is there. */
+.happenings-pager {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.happenings-pager__belongs {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.happenings-pager__belongs a { font-weight: 600; }
+.happenings-pager__belongs .happenings-pager__separator {
+  padding: 0 .4rem;
+  color: var(--line);
+}
+.happenings-pager__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.happenings-pager__link {
+  display: block;
+  padding: .85rem 1rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.happenings-pager__link:hover {
+  color: inherit;
+  border-color: var(--brand);
+}
+.happenings-pager__direction {
+  display: block;
+  margin-bottom: .3rem;
+  color: var(--muted);
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.happenings-pager__title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.happenings-pager__link:hover .happenings-pager__title { color: var(--brand-dark); }
+.happenings-pager__link--next {
+  grid-column: 2;
+  text-align: right;
+}
+
 @media (max-width: 54rem) {
+  .happenings-pager__links { grid-template-columns: 1fr; }
+  .happenings-pager__link--next { grid-column: 1; text-align: left; }
   .content-grid { grid-template-columns: 1fr; }
   .programme-tools { grid-template-columns: 1fr; }
   .programme-selection { align-items: flex-start; flex-direction: column; }

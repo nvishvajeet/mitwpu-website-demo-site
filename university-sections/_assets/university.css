@@ -1473,6 +1473,105 @@ h3 {
   }
 }
 
+/*
+ * The happenings log — the whole record on one page.
+ *
+ * A hundred and ninety-four rows, so the type does the work rather than the
+ * chrome: the group heading and the sentence under it carry the structure,
+ * and the rows themselves are the package's link-list, whose rules are the
+ * only borders on the page. Nothing here is a card, deliberately. A card
+ * promises a picture and a summary, and the capture holds neither for most of
+ * these; two hundred empty cards would be a page about what is missing.
+ */
+.happenings-log {
+  padding-block: clamp(3.8rem, 8vw, 7rem);
+  border-top: 1px solid var(--line);
+}
+
+.happenings-log__note {
+  max-width: 46rem;
+  margin: -1.5rem 0 2.5rem;
+  color: var(--copy);
+}
+
+.happenings-log__contents {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.happenings-log__contents ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: .35rem 1.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.happenings-log__contents li {
+  display: flex;
+  gap: .5rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.happenings-log__count {
+  color: var(--muted);
+  font-size: .82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.happenings-log__band + .happenings-log__band {
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.happenings-log__band > h3 {
+  margin: 0 0 .5rem;
+  color: var(--heading);
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+}
+
+.happenings-log__band > p {
+  max-width: 44rem;
+  margin: 0 0 2.5rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.happenings-log__group + .happenings-log__group {
+  margin-top: 2.75rem;
+}
+
+/* The anchor a "part of" link lands on. Without the offset the group heading
+   sits under the sticky masthead and the reader arrives looking at the third
+   row of a list they have no heading for. */
+.happenings-log__group {
+  scroll-margin-top: 6rem;
+}
+
+.happenings-log__group-heading h4 {
+  display: flex;
+  gap: .6rem;
+  align-items: baseline;
+  margin: 0 0 .6rem;
+  color: var(--heading);
+  font-size: 1.1rem;
+}
+
+.happenings-log__group-heading h4 .happenings-log__count {
+  font-weight: 400;
+}
+
+.happenings-log__group-heading p {
+  max-width: 44rem;
+  margin: 0 0 .75rem;
+  color: var(--muted);
+  font-size: .88rem;
+}
+
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {

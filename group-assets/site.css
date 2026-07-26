@@ -480,11 +480,15 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+/* Top-anchored. The four group homes happen to agree today because they were
+   written to the same length; centred in a 520px band they only agree while
+   that stays true, and the first group to write a two-line lede would move its
+   own title. The padding is the measurement now, not the leftovers. */
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.6fr);
   min-height: 520px;
-  align-items: center;
+  align-items: start;
   gap: 90px;
   padding-block: 84px;
 }
@@ -814,12 +818,17 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+/* Anchored to the top of the band. This used to be a fixed 272px with
+   `align-items: end`, which meant the title's distance from the masthead was
+   whatever was left after its own lede had been laid out — a two-line lede
+   pushed the title up, a one-line lede let it drop. The band keeps its height
+   as a minimum, so nothing about the page's proportions changes; what changes
+   is that the title stops moving. */
 .page-hero-inner {
   display: grid;
   grid-template-columns: minmax(240px, 0.8fr) minmax(300px, 1.2fr);
-  height: var(--page-hero-height);
   min-height: var(--page-hero-height);
-  align-items: end;
+  align-items: start;
   gap: 70px;
   padding-block: 58px;
 }
@@ -1018,11 +1027,14 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+/* Top-anchored, for the same reason as the university profile header: the
+   portrait is a fixed box and the identity beside it is not, so centring
+   makes a person's name sit wherever their own metadata leaves room. */
 .profile-hero-grid {
   display: grid;
   grid-template-columns: 230px minmax(0, 1fr);
   min-height: 410px;
-  align-items: center;
+  align-items: start;
   gap: 58px;
   padding-block: 58px;
 }

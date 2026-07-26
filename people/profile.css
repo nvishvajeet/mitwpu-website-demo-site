@@ -76,6 +76,29 @@
   }
 }
 
+/* The name sits at the top of the header, level with the top of the portrait,
+   rather than centred against it.
+ *
+ * `.uwp-profile__header` is a two-column grid — portrait, then identity — and
+ * the package aligns it `center`. The portrait is a fixed 4/5 box, so it is
+ * almost always the taller column, which means the centring is applied to the
+ * identity block: the name's distance from the masthead is decided by how much
+ * metadata happens to sit under it. A person with a designation, two
+ * affiliations and a row of link marks gets their name 64px higher than a
+ * person with only a designation. Measured across eight profile pages the name
+ * landed at four different heights, and there are 618 of these pages, so it is
+ * the largest family on the site and the one a reader navigates through fastest.
+ *
+ * This belongs in the package — the component owns its own alignment, and every
+ * client that renders a profile has the same problem. It is written here
+ * because the vendored package is pinned at 0.22.0 and adoption is a separate,
+ * deliberate step; when `.uwp-profile__header { align-items: start }` ships,
+ * this rule is a deletion.
+ */
+.uwp-profile__header {
+  align-items: start;
+}
+
 /* The published photograph is cropped to the site's portrait frame, like every
  * other face on the site. It used to keep the proportions it was taken at.
  *

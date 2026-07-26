@@ -258,7 +258,7 @@
   <label class="uwp-visually-hidden" for="q">Search this website</label>
   <input class="uwp-search-field__input" id="q"
     name="q" type="search" autocomplete="off"
-    placeholder="Search the site" value="">
+    placeholder="Search" value="">
   <button class="uwp-search-field__submit" type="submit">
     <svg class="uwp-search-field__icon" viewBox="0 0 20 20" aria-hidden="true"
       focusable="false"><path d="M9 2.5a6.5 6.5 0 0 1 5.15 10.47l3.19 3.19a.9.9 0 1 1-1.27 1.27l-3.19-3.19A6.5 6.5 0 1 1 9 2.5Zm0 1.8a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Z"/></svg>
@@ -324,6 +324,32 @@
           <figure class="hero-media hero-slide" data-hero-slide aria-hidden="true">
             <a class="image-zoom-link" href="/media/mitwpu-public/optimized/other/8d/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="1000" data-pswp-height="671" data-pswp-caption="Domed World Peace Library and the MIT-WPU campus" aria-label="Open larger view: Domed World Peace Library and the MIT-WPU campus"><img src="/media/mitwpu-public/optimized/other/8d/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img.webp" alt="Domed World Peace Library and the MIT-WPU campus" width="1000" height="671" data-media-role="lead" loading="lazy" decoding="async"></a>
           </figure>
+          <!-- Ships `hidden`; demo-assets/landing.js is what reveals it. Every
+               control here needs script to do anything, so without script the
+               honest page is the first photograph and no controls at all —
+               rather than three buttons a reader can press to no effect. -->
+          <div class="hero-controls" data-hero-controls hidden>
+            <div class="hero-controls__buttons">
+              <button class="hero-control" type="button" data-hero-step="-1">
+                <span class="hero-control__glyph" aria-hidden="true">‹</span>
+                <span class="hero-control__name">Previous campus photograph</span>
+              </button>
+              <button class="hero-control hero-control--toggle" type="button" data-hero-toggle aria-pressed="false">
+                <span class="hero-control__glyph hero-control__glyph--pause" aria-hidden="true"></span>
+                <span class="hero-control__glyph hero-control__glyph--play" aria-hidden="true"></span>
+                <span class="hero-control__name" data-hero-toggle-name>Pause the campus photographs</span>
+              </button>
+              <button class="hero-control" type="button" data-hero-step="1">
+                <span class="hero-control__glyph" aria-hidden="true">›</span>
+                <span class="hero-control__name">Next campus photograph</span>
+              </button>
+            </div>
+            <!-- Five segments, one per photograph, drawn rather than spoken:
+                 the reader's position is already announced by the status line
+                 below, and repeating it here would say everything twice. -->
+            <div class="hero-meter" data-hero-meter aria-hidden="true"></div>
+            <p class="hero-control__name" role="status" data-hero-status></p>
+          </div>
         </div>
         </div>
         </div>
@@ -347,7 +373,12 @@
         </div>
 
         <div class="activity-viewport">
-          <div class="activity-grid" data-feed-list>
+          <!-- Nine, not ten. The grid is three columns at the shell measure, so a
+           tenth card sits alone on a fourth row with two empty cells beside it —
+           which reads as a card that failed to load rather than as a feed that
+           ended. Nine fills three rows exactly. The archive link below carries
+           anyone who wants the rest. -->
+        <div class="activity-grid" data-feed-list>
           <article class="activity-card">
             <a class="activity-image" href="researcher/mit-wpu-researchers-make-significant-contribution-to-biodiversity-discovery/">
               <img src="/media/mitwpu-public/optimized/research_facility_event/11/11eb94287555b3bd-11eb94287555b3bd-damselfly_research_banner.webp" alt="Researchers documenting a biodiversity discovery" width="1124" height="447" loading="lazy" decoding="async">
@@ -436,18 +467,80 @@
               <h3><a href="news/dronacharya-sports-complex-inaugurated-at-mit-wpu-pune/">Dronacharya Sports Complex opens at MIT-WPU</a></h3>
             </div>
           </article>
-
-          <article class="activity-card">
-            <a class="activity-image" href="news/mit-wpu-signs-mou-with-waaree-energies-limited-to-advance-renewable-energy-education/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/12/1216b6a857d6e01f-1216b6a857d6e01f-Waaree-moU-banner.webp" alt="MIT-WPU and Waaree Energies representatives" width="1124" height="447" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Industry collaboration</p>
-              <h3><a href="news/mit-wpu-signs-mou-with-waaree-energies-limited-to-advance-renewable-energy-education/">MIT-WPU and Waaree Energies advance renewable-energy education</a></h3>
-            </div>
-          </article>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Events, beside Latest rather than inside it. Latest is news; an event
+         is a different question a reader is asking, and the page said only one
+         of them.
+
+         What it does NOT say is "upcoming", and that is the whole design
+         constraint. Not one of the 123 events in this site's records is
+         forthcoming: the university publishes no date on its news pages at
+         all, and its event pages carry one only inside a sentence — half of
+         them do not, and of those that do, one yields 2011 and another 2005
+         because the sentence is saying when a series began. So "upcoming"
+         cannot be computed, and a pane that implied it would be the same fault
+         as the three conference micro-sites that were still selling tickets
+         for concluded conferences.
+
+         The three below are the only events this site holds a declared,
+         checkable date for — the same `starts_on`/`ends_on` that
+         EVENT_MICROSITES and events/data/events.json declare, which is what
+         the conference pages' own concluded state is computed from rather than
+         hand-set. The lead is not a flag anybody has to remember to unset: it
+         is the one with the latest declared end date, which today is NSRTC
+         2026, and will be whichever run is added next.
+
+         Nothing here repeats a card above: Latest carries stories, this
+         carries the events themselves, and the one event card in Latest —
+         Syntropy 2026 — has no declared date and so is not in this set. -->
+    <section class="home-events" aria-labelledby="events-title" data-image-gallery>
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <h2 id="events-title">Events</h2>
+          </div>
+          <div class="activity-heading-actions">
+            <a class="archive-link" href="events/">All 123 events <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <p class="home-events__state">No forthcoming event has a published date. These are the four the university declares dates for, and all four have taken place.</p>
+
+        <div class="home-events__grid">
+          <article class="home-events__lead">
+            <p class="home-events__kind">Conference · concluded</p>
+            <h3><a href="events/nsrtc-2026/">NSRTC 2026</a></h3>
+            <p class="home-events__when"><time datetime="2026-07-17">17–19 July 2026</time> · MIT World Peace University, Pune</p>
+            <p>The National Scientists Round Table Conference: three days on science, technology and innovation, with the programme, the research tracks, the awards and the scientific organisation all on the record.</p>
+          </article>
+
+          <ul class="home-events__list">
+            <li>
+              <p class="home-events__kind">Conference · concluded</p>
+              <h3><a href="rtep-advisory-committee/">RTEP 2026</a></h3>
+              <p class="home-events__when"><time datetime="2026-03-13">13–14 March 2026</time></p>
+              <p>Recent Technologies &amp; Innovations in Electronics and Photonics, second edition. Its advisory committee is the one page of the micro-site this site publishes.</p>
+            </li>
+            <li>
+              <p class="home-events__kind">Conference · concluded</p>
+              <h3><a href="national-conference-towards-a-self-reliant-and-inclusive-economy-for-viksit-bharat-2047/">NCTSRIE 2026</a></h3>
+              <p class="home-events__when"><time datetime="2026-03-11">11–12 March 2026</time></p>
+              <p>Towards a Self-Reliant and Inclusive Economy for Viksit Bharat 2047.</p>
+            </li>
+            <li>
+              <p class="home-events__kind">Conference · concluded</p>
+              <h3><a href="hswtech/">HSWTech 2025</a></h3>
+              <p class="home-events__when"><time datetime="2025-09-02">2–4 September 2025</time></p>
+              <p>Sustainable Technologies for Humanity and a Smart World.</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="home-events__more"><a class="archive-link" href="happenings/">The whole record: 71 news stories and 123 events <span aria-hidden="true">→</span></a></p>
       </div>
     </section>
 

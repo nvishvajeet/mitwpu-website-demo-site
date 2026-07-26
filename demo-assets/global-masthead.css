@@ -443,9 +443,31 @@
  * input, select and textarea on this site at 44px, which is the control target
  * and is not something a masthead gets to opt out of; a `height` declared here
  * would be a rule that looks like it works and does not. The pill is therefore
- * 46px — 44 plus its own border — in a 64px row. */
+ * 46px — 44 plus its own border — in the row it sits in.
+ *
+ * Width: wide enough to say "Search" and no wider.
+ *
+ * It used to be `clamp(9rem, 16vw, 14rem)` — a field you type a sentence into,
+ * at the top of a site whose navigation answers most questions before search
+ * is reached for. A wide box at the top of a page is a claim that search is
+ * the main way in, and on this site it is not; it is the fallback. So the
+ * control now states what it is and takes the room that takes.
+ *
+ * It stays a real field rather than becoming a link that opens one, for two
+ * reasons. A reader who knows what they want can type here and press Enter
+ * without a second navigation, which is what a small box costs nothing to
+ * keep. And an empty submit is already a working route to /search/ — the
+ * package's own note calls that out as the reason a box may replace a
+ * navigation entry labelled Search — so the magnifier beside it is the
+ * "just go to search" affordance, with no script binding it and nothing to
+ * fail with JavaScript off.
+ *
+ * Deliberately not an expand-on-focus field. Widening it would have to take
+ * the room from the navigation sharing its row, so every reader who clicked
+ * into it would watch the entries beside it reflow. */
 [data-global-masthead] .uwp-search-field__input {
-  width: clamp(9rem, 16vw, 14rem) !important;
+  width: 5.5rem !important;
+  padding-inline: 0.85rem 0.2rem !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   font-size: 16px !important;
 }
@@ -713,6 +735,11 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     grid-template-rows: 64px minmax(48px, auto) !important;
     column-gap: 24px !important;
     row-gap: 0 !important;
+    background-image: linear-gradient(
+      rgb(255 255 255 / 16%), rgb(255 255 255 / 16%)) !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 64px !important;
+    background-size: 100% 1px !important;
   }
 
   [data-global-masthead] .masthead-brands {
@@ -729,16 +756,53 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     height: 100% !important;
   }
 
-  /* The hairline between the two rows is an inset shadow rather than a
-   * `border-top`. A border is 1px of layout: the row's 48px links plus a 1px
-   * border is a 49px row and a 116px masthead, so the bar would have grown by
-   * a pixel. A shadow draws the same line and occupies nothing, which is what
-   * keeps 64 + 48 = the 112px content height the bar already had.
+  /* The two controls sit on the navigation row, at the end of it, rather than
+   * on the brand's row.
+   *
+   * They were on row one because that is where the package's `--stacked`
+   * modifier places the actions cluster, and row one was the only row that
+   * existed before the navigation was given its own. On a bar whose first row
+   * is now the institution's name and nothing else, a search field up there is
+   * a third thing competing with the lockup for the reader's first glance —
+   * and search is not what most people came for on a site whose navigation
+   * answers the common questions. Down here it reads as what it is: the last
+   * item on the list of ways in.
+   *
+   * BOTH controls move, not just the search. Splitting them — search below,
+   * theme switch above — would be worse than either arrangement: a reader
+   * looking for "the controls" would have to check two rows, and the switch
+   * would be the last thing left holding width away from the lockup, which is
+   * the arithmetic the two-row bar exists to end.
+   *
+   * The hamburger is in the same cluster and is display:none above this
+   * breakpoint, so it is unaffected; below it the single-row layout keeps the
+   * cluster beside the brand where the hamburger belongs.
+   *
+   * The navigation is narrowed to the first column so the cluster has the
+   * second. The package places it across both (`2 / 1 / 3 / -1`). */
+  [data-global-masthead] .uwp-masthead__actions {
+    grid-area: 2 / 2 / 3 / 3 !important;
+    align-self: center !important;
+    justify-self: end !important;
+  }
+
+  /* The hairline between the two rows was an inset shadow on the navigation,
+   * because the navigation was the whole of row two. It is not any more — the
+   * controls are the second column — so the line is painted on the grid
+   * itself, where it spans both columns and the gap between them.
+   *
+   * Still not a `border-top`. A border is 1px of layout: the row's 48px links
+   * plus a 1px border is a 49px row and a 116px masthead, so the bar would
+   * have grown by a pixel. A background stripe draws the same line and
+   * occupies nothing, which is what keeps 64 + 48 = the 112px content height
+   * the bar already had, and `--uwp-header-height` — which bounds the mega
+   * panel — honest.
    *
    * The gap is the package's clamp and is deliberately not restated: it is
    * what turns a second row into a navigation band rather than the same dense
    * strip one line lower. */
   [data-global-masthead] [data-global-nav] {
+    grid-area: 2 / 1 / 3 / 2 !important;
     box-sizing: border-box !important;
     flex-wrap: wrap !important;
     align-items: stretch !important;
@@ -748,7 +812,7 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     height: auto !important;
     min-height: 48px !important;
     border: 0 !important;
-    box-shadow: inset 0 1px 0 rgb(255 255 255 / 16%) !important;
+    box-shadow: none !important;
   }
 
   [data-global-masthead] [data-global-nav] > .uwp-nav-item {

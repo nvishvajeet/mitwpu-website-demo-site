@@ -194,11 +194,11 @@
   ],
 
   "search": {
-    "note": "The masthead's own search field, declared here because it is part of the masthead and because it is what the eighth navigation entry used to be. `Search` was a top-level entry until 2026-07-26 and is not one now: with a box in the bar, a link labelled Search is a second control for the same job sitting two hundred pixels from the first, and the box submitted empty goes to /search/ anyway — so the destination is still one control away and nothing was lost. It is a real GET form: `field` is the query parameter the results page already reads off its own query string, so /search/?q=… works with or without scripting, and without scripting a reader lands on the results page rather than on a control that did nothing. The page itself needs JavaScript to search — the index is a 3.2MB file the browser filters — and says so in a <noscript> beside the box, which is the honest end of a static site's no-JS promise.",
+    "note": "The masthead's own search field, declared here because it is part of the masthead and because it is what the eighth navigation entry used to be. `Search` was a top-level entry until 2026-07-26 and is not one now: with a box in the bar, a link labelled Search is a second control for the same job sitting two hundred pixels from the first, and the box submitted empty goes to /search/ anyway — so the destination is still one control away and nothing was lost. It is a real GET form: `field` is the query parameter the results page already reads off its own query string, so /search/?q=… works with or without scripting, and without scripting a reader lands on the results page rather than on a control that did nothing. The page itself needs JavaScript to search — the index is a 3.2MB file the browser filters — and says so in a <noscript> beside the box, which is the honest end of a static site's no-JS promise. The placeholder is the single word `Search` because the field sits at the end of the navigation row and is sized to say what it is and no more; `Search the site` was written for a wide box on the brand's row and no longer fits the one it names.",
     "action": "/search/",
     "field": "q",
     "label": "Search this website",
-    "placeholder": "Search the site",
+    "placeholder": "Search",
     "submit": "Search"
   },
 

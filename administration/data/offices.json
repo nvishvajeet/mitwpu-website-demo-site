@@ -5,23 +5,17 @@
     "eyebrow": "Administration",
     "lede": "The offices of MIT-WPU, what each one is for, and the published route to it — with the offices the university has published no route to named rather than left out.",
     "description": "A directory of MIT-WPU's administrative offices keyed by office rather than by person: what each office does, how to reach it, who currently holds the post, and every contact the university has not published.",
-    "introduction": [
-      "This directory is keyed by office, not by person. \"Director of Admissions\" is a post that has existed for decades; whoever holds it today will not hold it forever. A list of names has to be edited every time somebody moves and is wrong from the moment they do, which is how contact information rots. Here the office is the record and the post-holder is one of its attributes, so a person leaving costs this page a name and not a route.",
-      "It lists an office when a student, a parent, an applicant, a journalist or a supplier could need to reach it, and it lists the university's named senior posts. It does not list the several hundred people who work inside those offices: an individual appears only where the university publishes no shared route to their office and that person is therefore the only way in. A directory nobody can read down is a directory nobody uses.",
-      "Academic staff are not here. Six hundred and eight of them have profiles in the people directory, and a Dean who also holds an office appears in both places once each — the office record says how to reach the office, the profile says who the person is. Neither repeats the other."
-    ],
     "urgentIntroduction": [
       "The university's public website publishes no route to campus security and no route to the campus medical service. Both numbers below were found in the source of its contact page, where they had been commented out and were never shown to a reader.",
       "They are the two most important rows on this page and they are the two least certain. Read the note beneath them before relying on either."
     ],
     "provenanceIntroduction": [
-      "Every value on this page came from a page MIT-WPU published or from the source of one, on the day this site was captured. Nothing has been filled in from memory, from another university, or from what seemed likely. The build refuses to finish if a value on this page is not present, character for character, in the source it cites.",
-      "Values are shown exactly as their source writes them. Two telephone numbers for the hostel office appear on one published page in two different formats; both are here, unreconciled. Choosing between them would be guessing which one somebody answers."
+      "Every value here came from a page MIT-WPU published, or from the source of one, on the day this site was captured. Nothing has been filled in from memory, from another university, or from what seemed likely.",
+      "Values keep their source's own formatting. Two telephone numbers for the hostel office appear on one published page in two different formats; both are here, unreconciled, because choosing between them would be guessing which one somebody answers."
     ],
     "gapsIntroduction": [
-      "These are the facts a person has to supply before this directory is worth publishing. The list is computed on every build from the office records behind the page, so filling a value in removes it from the list with nothing else to remember.",
-      "Anyone doing that work can print the same list without reading the page, by running the page's builder with --gaps.",
-      "Until then a missing value is shown as missing wherever it appears. An office with no published telephone number says it has none; it does not quietly show one fewer line than its neighbour. An emergency contact that is absent is invisible, and an emergency contact that is stated to be missing is a demand."
+      "The facts a person has to supply before this directory is worth publishing.",
+      "Until they are supplied, a missing value is shown as missing wherever it appears. An office with no published telephone number says it has none rather than quietly showing one fewer line than its neighbour."
     ],
     "statusNote": {
       "eyebrow": "Read this before using the numbers",

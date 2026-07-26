@@ -6,9 +6,8 @@
     "lede": "One index of every form and letter MIT-WPU issues, for students and staff alike: what it is, who may ask, where the form actually lives, where it goes, what it costs and how long it takes.",
     "description": "Forms Central for MIT-WPU: bonafide and course-completion certificates, transcripts, duplicate grade cards, degree and convocation, revaluation, hostel admission, no-dues, and the faculty research and intellectual-property forms — each with where the form is, what it costs and how long it takes, and every unpublished answer named rather than left out.",
     "introduction": [
-      "You arrive here with an errand rather than a department: a company wants a bonafide letter by Friday, an application wants a sealed transcript, a grade card has been lost, a patent needs disclosing. Each row below is one errand. Open it and it answers the six questions that decide whether you get the document — what it is, who may ask for it, where the form comes from, where you submit it, what it costs, and how long it takes — or it names which of those the university has not published.",
-      "It is not a list of documents to read. The ordinances, handbooks, timetables and policies live in the student index and are linked from here, never restated. This page is only about asking for something and getting it.",
-      "Two of the six answers are checked character for character against the captured page before this page will build: what it costs, and how long it takes. A wrong turnaround time is not a typo — it is somebody standing at a counter on the day their offer expires."
+      "You arrive with an errand rather than a department. Each row below is one errand, and opening it answers the six questions that decide whether you get the document — what it is, who may ask, where the form comes from, where you submit it, what it costs, how long it takes — or names which of the six the university has not published.",
+      "It is not a list of documents to read. Ordinances, handbooks, timetables and policies are in the student index and linked from here, never restated."
     ],
     "notice": {
       "eyebrow": "Before you look for a form",
@@ -19,25 +18,15 @@
       ]
     },
     "findabilityIntroduction": [
-      "The single most useful thing this page does is say where a form physically is, because most of MIT-WPU's forms are not where anybody would look for them. Twenty-seven of them are printed as annexures inside six documents named for something else — a research manual, a hostel manual, two examination ordinances, an admission policy, a club handbook. Not one of the six filenames contains the word “form”, so nothing a student could search for would find them.",
-      "The invention disclosure form is page 68 of a research manual. The hostel admission form is page 29 of a hostel manual. The complaint format for an examination is page 61 of the 2020 examination ordinances. Each is a real, complete, printable form, and each is currently reachable only by downloading a long PDF and scrolling to the back of it.",
-      "So a form is in one of four states, and telling a reader which one is most of the value here: it is an annexure inside a longer document, it is a request to an online system, it is something you do at a counter, or the university has not published it at all. Those are very different answers and a page that blurs them sends somebody hunting for a file that was never going to exist."
-    ],
-    "audienceIntroduction": [
-      "Every form below carries who it is for. That is an attribute of the form rather than a place to put it, and deliberately so: a bonafide certificate is identical for an undergraduate, a master's student and a doctoral candidate, and a page sectioned by audience would print it three times. Three copies of one procedure is how a policy ends up saying different things in different places, which is the failure this site is built to avoid.",
-      "So the page is sectioned by errand — certificates, records, degree, examinations, research, money and welfare — and audience is a line inside each form. Where a set of forms genuinely belongs to one audience and has no equivalent elsewhere, the doctoral and the faculty research forms among them, the errand and the audience turn out to be the same thing and the section says so."
+      "Most of MIT-WPU's forms are not where anybody would look. Twenty-seven are printed as annexures inside six documents named for something else — a research manual, a hostel manual, two examination ordinances, an admission policy, a club handbook — and not one of the six filenames contains the word “form”.",
+      "The invention disclosure form is page 68 of a research manual. The hostel admission form is page 29 of a hostel manual. The complaint format for an examination is page 61 of the 2020 examination ordinances. Each is real, complete and printable, and each is reachable only by downloading a long PDF and scrolling to the back of it.",
+      "So every form here says which of four states it is in: an annexure inside a longer document, a request to an online system, something you do at a counter, or not published at all."
     ],
     "provenance": [
-      "Every fact names the captured MIT-WPU route it came from, and the build fails if a cited route is missing from the capture or lacks complete crawl provenance. Where a form is an annexure, the build additionally checks that the carrier document really is linked from the route this page cites for it.",
-      "One page carries most of this. The examinations FAQ answers a hundred and forty-six questions, and roughly half of what follows is extracted from it — worth saying plainly, because it means one page going stale takes most of these answers with it."
-    ],
-    "gapsIntroduction": [
-      "Computed on every build from the same records the page renders, never stored. Typing a value into forms/data/forms.json closes its gap the moment the page is rebuilt, with nothing else to remember and no second list to keep in step.",
-      "Run node tools/build_forms_central.mjs --gaps for the same list in a terminal, grouped by the unanswered question rather than by the form, because that is how the work gets done: somebody asks the Department of Examinations for every missing turnaround at once, not one certificate at a time."
+      "One page carries most of this. The examinations FAQ answers a hundred and forty-six questions, and roughly half of what follows is extracted from it — so one page going stale takes most of these answers with it."
     ],
     "unpublishedIntroduction": [
-      "These are forms a university of this kind issues and which nothing across roughly 1,200 captured routes describes. They are not omissions from this page — they are the questions to put to the registrar.",
-      "Each is rendered rather than dropped for the reason every placeholder on this site is rendered: a section that quietly disappears because no captured page mentioned it teaches a reader that the form does not exist, and somebody who concludes their university issues no migration certificate stops asking for one."
+      "Forms a university of this kind issues, and which nothing across roughly 1,200 captured routes describes. They are not omissions from this page. They are the questions to put to the registrar."
     ]
   },
 
@@ -1858,7 +1847,6 @@
     "caption": "Published charges for student service requests, MIT-WPU",
     "categoryHeading": "Form",
     "paragraphs": [
-      "Every figure below occurs character for character on the captured page it cites; the build refuses to finish if one does not. Nothing is rounded, converted or tidied on the way in.",
       "A blank is not zero. Where the university publishes no charge for a form, the cell says so, because a reader who sees an empty cell concludes the document is free and arrives without the money."
     ],
     "columns": [

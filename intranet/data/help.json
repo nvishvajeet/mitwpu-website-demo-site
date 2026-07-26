@@ -10,24 +10,19 @@
       "title": "Look for the answer here first",
       "paragraphs": [
         "Most of what people ring somebody about is written down. Read the answer below before you raise anything with anyone: the best request is the one nobody needed to make, and the teams here are small.",
-        "If you do need to ask, there is no single service desk. The university does not publish one number for everything, so each service is reached separately and the routes below are the ones it publishes itself.",
-        "Where it has published nothing, this page says so. It does not guess. Those gaps are collected at the foot of the page.",
-        "This page takes no requests itself. It has no form on it and will not have one: it names the system that handles a thing and sends you there."
+        "There is no single service desk. The university publishes no one number for everything, so each service is reached separately, and where it has published nothing this page says so rather than guessing."
       ]
     },
     "introduction": [
       "Look for the thing that has gone wrong, not for the department that owns it. The owner is named inside the answer, because you should not have to know the organisation chart to report a broken air conditioner.",
-      "Every telephone number, email address, room and opening time below is one the university publishes, shown with the page it came from. Nothing has been filled in from memory, from another university, or from what seemed likely.",
-      "These answers say what a service is and who runs it. Step-by-step instructions — how to configure a client, what a particular failure looks like — belong on the pages behind each service, and are a different kind of writing from this one."
+      "Each answer says what a service is and who runs it. Step-by-step instructions — how to configure a client, what a particular failure looks like — are on the pages behind each service."
     ],
     "provenance": [
-      "Each contact on this page was read from one of these published pages on the day the site was captured. They are the university's own pages, not this one: when one of them changes, this page is wrong until it is rebuilt.",
-      "The build refuses to finish if a fact on this page cites a page that is not in the capture, which is what stops an invented telephone number reaching a reader."
+      "Each contact here was read from one of these published pages on the day the site was captured. They are the university's pages, not this one: when one of them changes, this page is wrong until it is rebuilt."
     ],
     "gapsIntroduction": [
-      "These are the facts a person has to supply before this page is worth publishing. The list is computed on every build from the records behind the page, so filling a value in removes it from the list with nothing else to remember.",
-      "Anyone doing that work can print the same list without reading the page, by running the page's builder with --gaps.",
-      "Until then a missing value is shown as missing wherever it appears. That is deliberate. A plausible wrong extension number sends somebody with a broken laptop to a stranger's desk, and a plausible wrong software entitlement has somebody install unlicensed software on the university's word. Both are worse than an admitted gap."
+      "The facts a person has to supply before this page is worth publishing.",
+      "Until they are supplied, a missing value is shown as missing. A plausible wrong extension number sends somebody with a broken laptop to a stranger's desk, and a plausible wrong software entitlement has somebody install unlicensed software on the university's word. Both are worse than an admitted gap."
     ],
     "unownedIntroduction": [
       "The university describes each of these services but names nobody who runs them. Somebody has to decide who owns each one before this page can route anybody to it."

@@ -503,6 +503,195 @@ h3 {
   object-position: center 42%;
 }
 
+/* ── hero carousel controls ──────────────────────────────────────────
+ *
+ * Steering for the five campus photographs: previous, pause, next, and a
+ * five-segment meter saying which one you are looking at and how long the
+ * next one is away.
+ *
+ * WHY THE BAR CARRIES ITS OWN BACKGROUND. The one hard problem here is that
+ * these controls sit on a photograph, and the photograph changes every six
+ * seconds. Nothing about the page's palette can be relied on: slide 1 is a
+ * bright sky, slide 4 is a dark aerial. White-on-image fails on the first,
+ * dark-on-image fails on the second, and a control that is legible on three
+ * slides out of five is not legible. So the bar supplies its own local
+ * background — a dark translucent pill — and everything on it is white
+ * against THAT rather than against the picture. The contrast is then a
+ * property of the component and not of whichever photograph is showing.
+ *
+ * For the same reason the bar does NOT flip with the site's dark theme. It is
+ * not sitting on the page's paper; it is sitting on a photograph, which looks
+ * the same in both themes. A theme-aware control here would be reasoning
+ * about the wrong background.
+ *
+ * WHY BOTTOM-LEFT. `uwp-feature-figure` paints the institution's gold block
+ * in the frame's bottom-RIGHT padding, offset past the picture's corner — so
+ * along the picture's bottom-right edge there is a gold strip about 18px
+ * wide. The bar is pinned to the opposite end of the same edge and stays
+ * inside the picture, so the two never overlap and never crowd each other:
+ * the block keeps the corner it was designed for, and the controls take the
+ * corner nothing else uses. The block is the mark for the one image this page
+ * is about and it stays; adding controls did not make it a different picture.
+ */
+.hero-controls {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  background: rgba(12, 22, 30, 0.58);
+  backdrop-filter: blur(6px);
+  inset: auto auto clamp(10px, 2.4%, 20px) clamp(10px, 2.4%, 20px);
+}
+
+.hero-controls[hidden] {
+  display: none;
+}
+
+.hero-controls__buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* 44px, which is the floor for a touch target and also, at this size, what
+   keeps the glyph from looking like a decoration rather than a button. */
+.hero-control {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: #ffffff;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  place-items: center;
+}
+
+.hero-control:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* The site's --focus is a dark blue. On this bar it is invisible, so the ring
+   is white here — the same reasoning as the background above. */
+.hero-control:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -3px;
+}
+
+.hero-control__glyph {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+/* The accessible name, kept out of sight rather than out of the document.
+   Each button's name says what it does AND to what — "Next campus
+   photograph", not "Next" — because a screen-reader user reaching this by
+   tabbing has no picture to infer the object from. */
+.hero-control__name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Two glyphs in one button, one of them hidden: the toggle reports its state
+   by which shape is showing as well as by aria-pressed, so the state survives
+   for a reader who is looking at it rather than hearing it. */
+.hero-control__glyph--pause,
+.hero-control__glyph--play {
+  width: 14px;
+  height: 15px;
+  background: currentcolor;
+}
+
+.hero-control__glyph--pause {
+  clip-path: polygon(0 0, 37% 0, 37% 100%, 0 100%, 0 0, 63% 0, 100% 0, 100% 100%, 63% 100%, 63% 0);
+}
+
+.hero-control__glyph--play {
+  display: none;
+  clip-path: polygon(6% 0, 100% 50%, 6% 100%);
+}
+
+.hero-controls.is-paused .hero-control__glyph--pause {
+  display: none;
+}
+
+.hero-controls.is-paused .hero-control__glyph--play {
+  display: block;
+}
+
+/* ── the meter ───────────────────────────────────────────────────────
+ *
+ * Five segments rather than five dots or an index. Dots say which of five and
+ * nothing else; an index ("3 / 5") reads as text on a photograph and needs a
+ * type size that fights the picture. Segments say which of five AND, because
+ * the current one fills left to right over exactly the interval, how long the
+ * photograph you are looking at has left. That last part is what makes the
+ * pause button legible without pressing it: when the fill stops moving, the
+ * carousel is genuinely stopped, and the reader can see that rather than
+ * having to wait six seconds to infer it.
+ *
+ * The fill is a scaleX transform on an inner span, so it composites and does
+ * not lay anything out sixty times a second.
+ */
+.hero-meter {
+  display: flex;
+  gap: 5px;
+}
+
+.hero-meter__segment {
+  position: relative;
+  width: 22px;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+}
+
+.hero-meter__fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+/* A slide already gone past reads as complete, not as empty: the reader can
+   see three behind and one ahead. */
+.hero-meter__segment.is-seen .hero-meter__fill {
+  transform: scaleX(1);
+}
+
+.hero-meter__segment.is-active .hero-meter__fill {
+  transform: scaleX(1);
+  animation: hero-meter-fill var(--hero-interval, 6000ms) linear forwards;
+}
+
+/* `is-idle`, not `is-paused`: the countdown freezes for any reason the
+   rotation is not advancing — pause, hover, focus, a backgrounded tab — while
+   the glyph above swaps only for the reader's own decision. See the note in
+   landing.js on why the two are separate. */
+.hero-controls.is-idle .hero-meter__segment.is-active .hero-meter__fill {
+  animation-play-state: paused;
+}
+
+@keyframes hero-meter-fill {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
 /* Band rhythm.
  *
  * Every band on this page used to open and close on the same 76px, so
@@ -660,6 +849,111 @@ h3 {
   gap: 22px;
 }
 
+/* Events, paired with Latest rather than a movement of its own: the top gap
+   is the short one and the tint stays on paper, so the two feeds read as one
+   band with a hairline between them and the tinted directory below is the
+   next movement. Two gap sizes, alternating tint — the rhythm the page
+   already had, not a third variety of spacing.
+
+   No pictures, deliberately. These four are conference micro-sites and the
+   capture holds no banner for three of them; a card frame with an empty
+   picture well would say something is missing rather than that nothing is. */
+.home-events {
+  padding-block: 56px 72px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.home-events__state {
+  max-width: 62ch;
+  margin: -26px 0 34px;
+  color: var(--copy);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.home-events__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 34px 56px;
+  align-items: start;
+}
+
+.home-events__lead {
+  padding: 26px 28px 28px;
+  background: var(--subtle);
+  border-top: 3px solid var(--gold);
+}
+
+.home-events__list {
+  display: grid;
+  gap: 22px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.home-events__list > li {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.home-events__list > li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.home-events__kind {
+  margin-bottom: 7px;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+
+.home-events h3 {
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.home-events__lead h3 {
+  font-size: clamp(1.3rem, 2.2vw, 1.72rem);
+}
+
+.home-events__list h3 {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+}
+
+.home-events h3 a {
+  color: var(--heading);
+}
+
+.home-events h3 a:hover {
+  color: var(--blue);
+}
+
+.home-events__when {
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.home-events__lead > p:last-child,
+.home-events__list > li > p:last-child {
+  max-width: 54ch;
+  margin-bottom: 0;
+  color: var(--copy);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.home-events__more {
+  margin: 32px 0 0;
+}
+
 .directory {
   padding-block: 80px 88px;
   background: var(--subtle);
@@ -773,6 +1067,10 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 }
 
 @media (max-width: 58.75rem) {
+  .home-events__grid {
+    grid-template-columns: 1fr;
+  }
+
   .header-inner {
     height: 112px;
     min-height: 112px;
@@ -860,6 +1158,27 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 @media (max-width: 680px) {
   body {
     font-size: 17px;
+  }
+
+  /* The bar is the one element here whose width is fixed rather than fluid:
+     three 44px buttons that must stay 44px, plus a meter that grows with the
+     number of photographs. At the shell's narrowest the picture is 270px and
+     the desktop bar is 296px, so it overflowed — and because the figure's
+     media box clips, it overflowed invisibly, losing the last segment or two
+     off the right-hand edge. The buttons keep their target size; the meter
+     gives up the width instead, which costs it precision it does not need at
+     five segments. */
+  .hero-controls {
+    gap: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-meter {
+    gap: 4px;
+  }
+
+  .hero-meter__segment {
+    width: 12px;
   }
 
   .shell {
@@ -958,6 +1277,15 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
   .hero-slide,
   .switch-thumb {
     transition: none;
+  }
+
+  /* Autoplay is already off here — landing.js starts the hero paused under
+     this preference — so the meter has no countdown to draw. The active
+     segment stands filled and still, which is what it would show at rest
+     anyway. Left animating it would be a six-second loop running forever on
+     a page that has been asked to hold still. */
+  .hero-meter__segment.is-active .hero-meter__fill {
+    animation: none;
   }
 
   .activity-image:hover img {
