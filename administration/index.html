@@ -22,7 +22,8 @@
   <link rel="stylesheet" href="../demo-assets/uwp-bridge.css?v=20260726-1">
   <script src="../vendor/university-web-patterns/src/js/navigation.js" defer></script>
   <script src="../demo-assets/theme.js?v=20260725-global-nav-8-cascade" defer></script>
-  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260726-uwp-masthead-1" data-global-masthead-style>
+  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=20260727-one-row-1" data-global-masthead-style>
+  <script src="/demo-assets/masthead-hover-bridge.js?v=20260727-hover-1" defer data-global-masthead-script></script>
   <link rel="stylesheet" href="/demo-assets/readability.css?v=20260724-1" data-global-readability-style>
   <meta property="og:title" content="University offices and how to reach them · MIT-WPU" data-release-generated="social">
   <meta property="og:description" content="A directory of MIT-WPU&#x27;s administrative offices keyed by office rather than by person: what each office does, how to reach it, who currently holds the post, and every contact the university has not published." data-release-generated="social">
@@ -38,7 +39,7 @@
 <body>
   <a class="uwp-skip-link skip-link" href="#main"
     data-uwp-component="skip-link" data-uwp-version="0.22.0">Skip to main content</a>
-  <header class="uwp-masthead uwp-masthead--stacked global-masthead site-header institution-bar" data-global-masthead data-uwp-component="masthead" data-uwp-version="0.22.0">
+  <header class="uwp-masthead global-masthead site-header institution-bar" data-global-masthead data-uwp-component="masthead" data-uwp-version="0.22.0">
   <div class="uwp-masthead__inner uwp-shell global-masthead__inner institution-inner">
     <div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div>
     <nav class="uwp-nav global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav
@@ -584,17 +585,6 @@
       </a>
     </article>
     <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
-      <h3><a href="../about-us/administrative-offices/">Registrar&#x27;s Office</a></h3>
-      <p>Academic and administrative appointments, policy implementation, and the link between faculty, students and the administrative units. Registrar: Mr. Ganesh Balbhimrao Pokale. No telephone number is published for this office, no room or building is published and no opening hours are published. The contact page names an Associate Registrar, a Deputy Registrar and three Assistant Registrars for Student Affairs with their own addresses. None is listed here: they are desks inside an office that publishes a shared address, and all five route to admissions@mitwpu.edu.in or to this one.</p>
-      <a class="uwp-directory__link" href="mailto:registrar@mitwpu.edu.in">
-        <span>Email</span>
-        <span>registrar@mitwpu.edu.in</span>
-      </a>
-      <a class="uwp-directory__link" href="../people/mr-ganesh-b-pokale-5/">
-        <span>Mr. Ganesh Balbhimrao Pokale — profile</span>
-      </a>
-    </article>
-    <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
       <h3><a href="../about-us/administrative-offices/">Human Resources Office</a></h3>
       <p>Recruitment, payroll, benefits, professional development and employee relations. The office a job applicant writes to. Director – Human Resources: Dr. Nitin Khedkar. No telephone number is published for this office, no room or building is published and no opening hours are published.</p>
       <a class="uwp-directory__link" href="mailto:director.hr@mitwpu.edu.in">
@@ -614,18 +604,6 @@
       </a>
     </article>
     <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
-      <h3><a href="../about-us/administrative-offices/">Centre for Industry and Academia Partnerships (CIAP)</a></h3>
-      <p>Industry partnerships, career services, internships, placements and alumni engagement. The office a recruiter writes to. Director - CIAP (Head – Placements): Mr. Manas Mohanty. No telephone number is published for this office, no room or building is published and no opening hours are published. The address this office publishes is one person&#x27;s. A shared placements mailbox exists and sits in the contact page&#x27;s source inside a commented-out block: the better of the two addresses is the one the university chose not to show.</p>
-      <a class="uwp-directory__link" href="mailto:manas.mohanty@mitwpu.edu.in">
-        <span>Email</span>
-        <span>manas.mohanty@mitwpu.edu.in</span>
-      </a>
-      <a class="uwp-directory__link" href="mailto:centralplacements@mitwpu.edu.in">
-        <span>Placements office mailbox — (in the captured source, never published)</span>
-        <span>centralplacements@mitwpu.edu.in</span>
-      </a>
-    </article>
-    <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
       <h3><a href="../about-us/administrative-offices/">International Collaboration Department (ICD)</a></h3>
       <p>Institutional partnerships abroad, student and faculty exchange, and the experience of international students on campus. Director - International: Mr. Pradnesh Desai. No telephone number is published for this office, no room or building is published and no opening hours are published. This site&#x27;s public-surface build shows a role mailbox for this office. It is not published on any captured page, so the address the university actually published is the one shown here.</p>
       <a class="uwp-directory__link" href="mailto:pradnesh.desai@mitwpu.edu.in">
@@ -634,6 +612,14 @@
       </a>
       <a class="uwp-directory__link" href="../people/mr-pradnesh-desai-209/">
         <span>Mr. Pradnesh Desai — profile</span>
+      </a>
+    </article>
+    <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
+      <h3><a href="../about-us/administrative-offices/">Public Relations Office</a></h3>
+      <p>Media relations, crisis communication and event promotion. The office a journalist writes to. Joint Director-Communication (PR &amp; Media): Dr. Padmanabh Deshmukh. No telephone number is published for this office, no room or building is published and no opening hours are published. The university runs two communications offices — this one and Branding &amp; Communications — and publishes no line between them.</p>
+      <a class="uwp-directory__link" href="mailto:padmanabh.deshmukh@mitwpu.edu.in">
+        <span>Email</span>
+        <span>padmanabh.deshmukh@mitwpu.edu.in</span>
       </a>
     </article>
     <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
@@ -648,11 +634,26 @@
       </a>
     </article>
     <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
-      <h3><a href="../about-us/administrative-offices/">Public Relations Office</a></h3>
-      <p>Media relations, crisis communication and event promotion. The office a journalist writes to. Joint Director-Communication (PR &amp; Media): Dr. Padmanabh Deshmukh. No telephone number is published for this office, no room or building is published and no opening hours are published. The university runs two communications offices — this one and Branding &amp; Communications — and publishes no line between them.</p>
-      <a class="uwp-directory__link" href="mailto:padmanabh.deshmukh@mitwpu.edu.in">
+      <h3><a href="../about-us/administrative-offices/">Centre for Industry and Academia Partnerships (CIAP)</a></h3>
+      <p>Industry partnerships, career services, internships, placements and alumni engagement. The office a recruiter writes to. Director - CIAP (Head – Placements): Mr. Manas Mohanty. No telephone number is published for this office, no room or building is published and no opening hours are published. The address this office publishes is one person&#x27;s. A shared placements mailbox exists and sits in the contact page&#x27;s source inside a commented-out block: the better of the two addresses is the one the university chose not to show.</p>
+      <a class="uwp-directory__link" href="mailto:manas.mohanty@mitwpu.edu.in">
         <span>Email</span>
-        <span>padmanabh.deshmukh@mitwpu.edu.in</span>
+        <span>manas.mohanty@mitwpu.edu.in</span>
+      </a>
+      <a class="uwp-directory__link" href="mailto:centralplacements@mitwpu.edu.in">
+        <span>Placements office mailbox — (in the captured source, never published)</span>
+        <span>centralplacements@mitwpu.edu.in</span>
+      </a>
+    </article>
+    <article class="uwp-directory__card" data-uwp-component="directory-card" data-uwp-version="0.22.0">
+      <h3><a href="../about-us/administrative-offices/">Registrar&#x27;s Office</a></h3>
+      <p>Academic and administrative appointments, policy implementation, and the link between faculty, students and the administrative units. Registrar: Mr. Ganesh Balbhimrao Pokale. No telephone number is published for this office, no room or building is published and no opening hours are published. The contact page names an Associate Registrar, a Deputy Registrar and three Assistant Registrars for Student Affairs with their own addresses. None is listed here: they are desks inside an office that publishes a shared address, and all five route to admissions@mitwpu.edu.in or to this one.</p>
+      <a class="uwp-directory__link" href="mailto:registrar@mitwpu.edu.in">
+        <span>Email</span>
+        <span>registrar@mitwpu.edu.in</span>
+      </a>
+      <a class="uwp-directory__link" href="../people/mr-ganesh-b-pokale-5/">
+        <span>Mr. Ganesh Balbhimrao Pokale — profile</span>
       </a>
     </article>
         </div>
@@ -804,13 +805,6 @@
               <td>Not yet published</td>
             </tr>
             <tr>
-              <th scope="row">Registrar&#x27;s Office<span class="uwp-meta">Registrar</span></th>
-              <td>Not yet published</td>
-              <td>registrar@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
-              <td>Not yet published</td>
-              <td>Not yet published</td>
-            </tr>
-            <tr>
               <th scope="row">Human Resources Office<span class="uwp-meta">Director – Human Resources</span></th>
               <td>Not yet published</td>
               <td>director.hr@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
@@ -825,16 +819,16 @@
               <td>Not yet published</td>
             </tr>
             <tr>
-              <th scope="row">Centre for Industry and Academia Partnerships (CIAP)<span class="uwp-meta">Director - CIAP (Head – Placements)</span></th>
+              <th scope="row">International Collaboration Department (ICD)<span class="uwp-meta">Director - International</span></th>
               <td>Not yet published</td>
-              <td>manas.mohanty@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
+              <td>pradnesh.desai@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
               <td>Not yet published</td>
               <td>Not yet published</td>
             </tr>
             <tr>
-              <th scope="row">International Collaboration Department (ICD)<span class="uwp-meta">Director - International</span></th>
+              <th scope="row">Public Relations Office<span class="uwp-meta">Joint Director-Communication (PR &amp; Media)</span></th>
               <td>Not yet published</td>
-              <td>pradnesh.desai@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
+              <td>padmanabh.deshmukh@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
               <td>Not yet published</td>
               <td>Not yet published</td>
             </tr>
@@ -846,9 +840,16 @@
               <td>Not yet published</td>
             </tr>
             <tr>
-              <th scope="row">Public Relations Office<span class="uwp-meta">Joint Director-Communication (PR &amp; Media)</span></th>
+              <th scope="row">Centre for Industry and Academia Partnerships (CIAP)<span class="uwp-meta">Director - CIAP (Head – Placements)</span></th>
               <td>Not yet published</td>
-              <td>padmanabh.deshmukh@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
+              <td>manas.mohanty@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
+              <td>Not yet published</td>
+              <td>Not yet published</td>
+            </tr>
+            <tr>
+              <th scope="row">Registrar&#x27;s Office<span class="uwp-meta">Registrar</span></th>
+              <td>Not yet published</td>
+              <td>registrar@mitwpu.edu.in<span class="uwp-meta">/about-us/administrative-offices</span></td>
               <td>Not yet published</td>
               <td>Not yet published</td>
             </tr>
@@ -913,7 +914,7 @@
           <p>The facts a person has to supply before this directory is worth publishing.</p>
           <p>Until they are supplied, a missing value is shown as missing wherever it appears. An office with no published telephone number says it has none rather than quietly showing one fewer line than its neighbour.</p>
         </div>
-        <ul class="uwp-grid uwp-grid--2"><li><strong>Opening hours</strong> <span class="uwp-meta">Office contact</span><ul><li>Campus Security</li><li>Campus Medical Service</li><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee</li><li>Students&#39; Grievance Redressal Committee</li><li>SC/ST and Equal Opportunity Cell</li><li>International Admissions</li><li>Examination Department</li><li>Fee Enquiry</li><li>Hostel Office</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Student Affairs</li><li>Office of Infra &amp; Facilities</li><li>Vice-Chancellor&#39;s Office</li><li>Chief Academic Officer&#39;s Office</li><li>Registrar&#39;s Office</li><li>Human Resources Office</li><li>Finance &amp; Accounting Office</li><li>Centre for Industry and Academia Partnerships (CIAP)</li><li>International Collaboration Department (ICD)</li><li>Branding &amp; Communications</li><li>Public Relations Office</li></ul></li><li><strong>Where it is</strong> <span class="uwp-meta">Office contact</span><ul><li>Campus Security</li><li>Campus Medical Service</li><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee</li><li>Students&#39; Grievance Redressal Committee</li><li>SC/ST and Equal Opportunity Cell</li><li>International Admissions</li><li>Examination Department</li><li>Fee Enquiry</li><li>Hostel Office</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Student Affairs</li><li>Office of Infra &amp; Facilities</li><li>Vice-Chancellor&#39;s Office</li><li>Chief Academic Officer&#39;s Office</li><li>Registrar&#39;s Office</li><li>Human Resources Office</li><li>Finance &amp; Accounting Office</li><li>Centre for Industry and Academia Partnerships (CIAP)</li><li>International Collaboration Department (ICD)</li><li>Branding &amp; Communications</li><li>Public Relations Office</li></ul></li><li><strong>Telephone</strong> <span class="uwp-meta">Office contact</span><ul><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee</li><li>Students&#39; Grievance Redressal Committee</li><li>SC/ST and Equal Opportunity Cell</li><li>International Admissions</li><li>Fee Enquiry</li><li>Office of Student Affairs</li><li>Office of Infra &amp; Facilities</li><li>Vice-Chancellor&#39;s Office</li><li>Chief Academic Officer&#39;s Office</li><li>Registrar&#39;s Office</li><li>Human Resources Office</li><li>Finance &amp; Accounting Office</li><li>Centre for Industry and Academia Partnerships (CIAP)</li><li>International Collaboration Department (ICD)</li><li>Branding &amp; Communications</li><li>Public Relations Office</li></ul></li><li><strong>Email</strong> <span class="uwp-meta">Office contact</span><ul><li>Campus Security</li><li>Campus Medical Service</li><li>Fee Enquiry</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Infra &amp; Facilities</li></ul></li><li><strong>Nobody is recorded as holding the post</strong> <span class="uwp-meta">Office record</span><ul><li>Campus Security — MIT-WPU Security Supervisor</li><li>Campus Medical Service</li><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee — Chairperson</li><li>Students&#39; Grievance Redressal Committee — Chairperson</li><li>SC/ST and Equal Opportunity Cell — Member Secretary</li><li>International Admissions</li><li>Fee Enquiry</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Infra &amp; Facilities — Civil Engineer</li></ul></li><li><strong>The post-holder has no profile in the people directory</strong> <span class="uwp-meta">Office record</span><ul><li>Examination Department — Dr. Veera Talukdar</li><li>Hostel Office — Lieutenant Prabhakaran KK</li><li>Finance &amp; Accounting Office — Mr. Nitinkumar Chandak</li><li>Centre for Industry and Academia Partnerships (CIAP) — Mr. Manas Mohanty</li><li>Public Relations Office — Dr. Padmanabh Deshmukh</li></ul></li><li><strong>The published address belongs to a named individual, not the office</strong> <span class="uwp-meta">Office record</span><ul><li>Office of Student Affairs — hitesh.joshi@mitwpu.edu.in</li><li>Chief Academic Officer&#39;s Office — prasad.khandekar@mitwpu.edu.in</li><li>Finance &amp; Accounting Office — nitinkumar.chandak@mitwpu.edu.in</li><li>Centre for Industry and Academia Partnerships (CIAP) — manas.mohanty@mitwpu.edu.in</li><li>International Collaboration Department (ICD) — pradnesh.desai@mitwpu.edu.in</li><li>Public Relations Office — padmanabh.deshmukh@mitwpu.edu.in</li></ul></li><li><strong>Present in the captured source but never published by the university</strong> <span class="uwp-meta">Confidence</span><ul><li>Campus Security — Telephone: 9322615464</li><li>Campus Medical Service — Telephone: 7276056060</li><li>Fee Enquiry — Faculty of Engineering and Technology — Ms. Manisha Phale: 9145002074</li><li>Fee Enquiry — Faculty of Business and Leadership — Ms. Pooja Pharande: 9130001177</li><li>Fee Enquiry — Faculty of Science &amp; Health Science — Mr. Rajendra Mane: 9145001196</li><li>Fee Enquiry — Faculty of Arts, Design and Humanities — Mr. Santosh Parkhi: 9145002077</li><li>Hostel Office — Chief Warden — Lieutenant Prabhakaran KK: 7200449715</li><li>Student Services Wing — Telephone: 7888080132</li><li>Information Technology — Telephone: 7447454568</li><li>Centre for Industry and Academia Partnerships (CIAP) — Placements office mailbox: centralplacements@mitwpu.edu.in</li></ul></li><li><strong>Supplied by the operator rather than found in the capture</strong> <span class="uwp-meta">Confidence</span><ul><li>Vice-Chancellor&#39;s Office — Email: vc.office@mitwpu.edu.in</li><li>Chief Academic Officer&#39;s Office — Email: prasad.khandekar@mitwpu.edu.in</li></ul></li><li><strong>An office this university has no trace of, which one this size normally has</strong> <span class="uwp-meta">Office</span><ul><li>Library / Knowledge Resource Centre</li><li>Accessibility and disability support</li><li>Counselling and mental-health service</li><li>Ombudsperson</li><li>Transport</li><li>Alumni relations</li><li>Research office / grants and sponsored projects</li><li>Scholarships and financial aid</li><li>Lost property and campus reception</li><li>Data protection / information officer</li><li>Procurement and vendor relations</li><li>Sports and physical education</li></ul></li></ul>
+        <ul class="uwp-grid uwp-grid--2"><li><strong>Opening hours</strong> <span class="uwp-meta">Office contact</span><ul><li>Campus Security</li><li>Campus Medical Service</li><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee</li><li>Students&#39; Grievance Redressal Committee</li><li>SC/ST and Equal Opportunity Cell</li><li>International Admissions</li><li>Examination Department</li><li>Fee Enquiry</li><li>Hostel Office</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Student Affairs</li><li>Office of Infra &amp; Facilities</li><li>Vice-Chancellor&#39;s Office</li><li>Chief Academic Officer&#39;s Office</li><li>Human Resources Office</li><li>Finance &amp; Accounting Office</li><li>International Collaboration Department (ICD)</li><li>Public Relations Office</li><li>Branding &amp; Communications</li><li>Centre for Industry and Academia Partnerships (CIAP)</li><li>Registrar&#39;s Office</li></ul></li><li><strong>Where it is</strong> <span class="uwp-meta">Office contact</span><ul><li>Campus Security</li><li>Campus Medical Service</li><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee</li><li>Students&#39; Grievance Redressal Committee</li><li>SC/ST and Equal Opportunity Cell</li><li>International Admissions</li><li>Examination Department</li><li>Fee Enquiry</li><li>Hostel Office</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Student Affairs</li><li>Office of Infra &amp; Facilities</li><li>Vice-Chancellor&#39;s Office</li><li>Chief Academic Officer&#39;s Office</li><li>Human Resources Office</li><li>Finance &amp; Accounting Office</li><li>International Collaboration Department (ICD)</li><li>Public Relations Office</li><li>Branding &amp; Communications</li><li>Centre for Industry and Academia Partnerships (CIAP)</li><li>Registrar&#39;s Office</li></ul></li><li><strong>Telephone</strong> <span class="uwp-meta">Office contact</span><ul><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee</li><li>Students&#39; Grievance Redressal Committee</li><li>SC/ST and Equal Opportunity Cell</li><li>International Admissions</li><li>Fee Enquiry</li><li>Office of Student Affairs</li><li>Office of Infra &amp; Facilities</li><li>Vice-Chancellor&#39;s Office</li><li>Chief Academic Officer&#39;s Office</li><li>Human Resources Office</li><li>Finance &amp; Accounting Office</li><li>International Collaboration Department (ICD)</li><li>Public Relations Office</li><li>Branding &amp; Communications</li><li>Centre for Industry and Academia Partnerships (CIAP)</li><li>Registrar&#39;s Office</li></ul></li><li><strong>Email</strong> <span class="uwp-meta">Office contact</span><ul><li>Campus Security</li><li>Campus Medical Service</li><li>Fee Enquiry</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Infra &amp; Facilities</li></ul></li><li><strong>Nobody is recorded as holding the post</strong> <span class="uwp-meta">Office record</span><ul><li>Campus Security — MIT-WPU Security Supervisor</li><li>Campus Medical Service</li><li>Anti-Ragging Committee and Squad</li><li>Internal Complaints Committee — Chairperson</li><li>Students&#39; Grievance Redressal Committee — Chairperson</li><li>SC/ST and Equal Opportunity Cell — Member Secretary</li><li>International Admissions</li><li>Fee Enquiry</li><li>Student Services Wing</li><li>Information Technology</li><li>Office of Infra &amp; Facilities — Civil Engineer</li></ul></li><li><strong>The post-holder has no profile in the people directory</strong> <span class="uwp-meta">Office record</span><ul><li>Examination Department — Dr. Veera Talukdar</li><li>Hostel Office — Lieutenant Prabhakaran KK</li><li>Finance &amp; Accounting Office — Mr. Nitinkumar Chandak</li><li>Public Relations Office — Dr. Padmanabh Deshmukh</li><li>Centre for Industry and Academia Partnerships (CIAP) — Mr. Manas Mohanty</li></ul></li><li><strong>The published address belongs to a named individual, not the office</strong> <span class="uwp-meta">Office record</span><ul><li>Office of Student Affairs — hitesh.joshi@mitwpu.edu.in</li><li>Chief Academic Officer&#39;s Office — prasad.khandekar@mitwpu.edu.in</li><li>Finance &amp; Accounting Office — nitinkumar.chandak@mitwpu.edu.in</li><li>International Collaboration Department (ICD) — pradnesh.desai@mitwpu.edu.in</li><li>Public Relations Office — padmanabh.deshmukh@mitwpu.edu.in</li><li>Centre for Industry and Academia Partnerships (CIAP) — manas.mohanty@mitwpu.edu.in</li></ul></li><li><strong>Present in the captured source but never published by the university</strong> <span class="uwp-meta">Confidence</span><ul><li>Campus Security — Telephone: 9322615464</li><li>Campus Medical Service — Telephone: 7276056060</li><li>Fee Enquiry — Faculty of Engineering and Technology — Ms. Manisha Phale: 9145002074</li><li>Fee Enquiry — Faculty of Business and Leadership — Ms. Pooja Pharande: 9130001177</li><li>Fee Enquiry — Faculty of Science &amp; Health Science — Mr. Rajendra Mane: 9145001196</li><li>Fee Enquiry — Faculty of Arts, Design and Humanities — Mr. Santosh Parkhi: 9145002077</li><li>Hostel Office — Chief Warden — Lieutenant Prabhakaran KK: 7200449715</li><li>Student Services Wing — Telephone: 7888080132</li><li>Information Technology — Telephone: 7447454568</li><li>Centre for Industry and Academia Partnerships (CIAP) — Placements office mailbox: centralplacements@mitwpu.edu.in</li></ul></li><li><strong>Supplied by the operator rather than found in the capture</strong> <span class="uwp-meta">Confidence</span><ul><li>Vice-Chancellor&#39;s Office — Email: vc.office@mitwpu.edu.in</li><li>Chief Academic Officer&#39;s Office — Email: prasad.khandekar@mitwpu.edu.in</li></ul></li><li><strong>An office this university has no trace of, which one this size normally has</strong> <span class="uwp-meta">Office</span><ul><li>Library / Knowledge Resource Centre</li><li>Accessibility and disability support</li><li>Counselling and mental-health service</li><li>Ombudsperson</li><li>Transport</li><li>Alumni relations</li><li>Research office / grants and sponsored projects</li><li>Scholarships and financial aid</li><li>Lost property and campus reception</li><li>Data protection / information officer</li><li>Procurement and vendor relations</li><li>Sports and physical education</li></ul></li></ul>
       </div>
     </section>
   </main>

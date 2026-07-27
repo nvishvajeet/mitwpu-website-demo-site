@@ -93,7 +93,9 @@
       "post": "MIT-WPU Security Supervisor",
       "incumbent": null,
       "incumbentNote": "The source names the post and not the person, which for this office is the right way round.",
-      "sources": ["/contact-us"],
+      "sources": [
+        "/contact-us"
+      ],
       "notes": [
         "No security office appears in the university's own directory of administrative offices, and no security contact appears on any of the roughly 1,200 routes captured from the public site."
       ]
@@ -114,7 +116,10 @@
       },
       "post": null,
       "incumbent": null,
-      "sources": ["/life-wpu/medical-facilities", "/contact-us"],
+      "sources": [
+        "/life-wpu/medical-facilities",
+        "/contact-us"
+      ],
       "facts": [
         {
           "text": "MIT-WPU has a full-time doctor, 24/7 pharmacy, a facility with three beds, ambulances, and a group affiliated world-class hospital.",
@@ -164,7 +169,9 @@
       "post": "Chairperson",
       "incumbent": null,
       "incumbentNote": "The captured page names a Chairperson without naming who holds the post.",
-      "sources": ["/student-affairs/internal-complaints-committee"]
+      "sources": [
+        "/student-affairs/internal-complaints-committee"
+      ]
     },
     {
       "id": "student-grievance",
@@ -181,7 +188,9 @@
       },
       "post": "Chairperson",
       "incumbent": null,
-      "sources": ["/academics/student-grievance"],
+      "sources": [
+        "/academics/student-grievance"
+      ],
       "notes": [
         "A grievance unresolved by the committee is referred to the Ombudsperson. The university publishes no contact for the Ombudsperson."
       ]
@@ -201,7 +210,9 @@
       },
       "post": "Member Secretary",
       "incumbent": null,
-      "sources": ["/sc-st-committee"]
+      "sources": [
+        "/sc-st-committee"
+      ]
     },
     {
       "id": "admissions",
@@ -259,7 +270,11 @@
       "incumbent": "Dr. Prakash Mainkar",
       "incumbentSource": "/about-us/administrative-offices",
       "profile": "/people/prakash-mohan-mainkar/",
-      "sources": ["/admissions-contact-us", "/contact-us", "/about-us/administrative-offices"],
+      "sources": [
+        "/admissions-contact-us",
+        "/contact-us",
+        "/about-us/administrative-offices"
+      ],
       "notes": [
         "The unpublished table names an \"Admission Help Desk\" against the same two numbers the university publishes here, so nothing is added by repeating it.",
         "The contact page also lists four named counsellors for international-category admissions with their mobile numbers. They are not listed here: the office publishes a shared address, and a directory of individual desks inside an office that has one is a directory that goes stale."
@@ -280,7 +295,9 @@
       },
       "post": null,
       "incumbent": null,
-      "sources": ["/contact-us"],
+      "sources": [
+        "/contact-us"
+      ],
       "notes": [
         "Four counsellors and their mobile numbers are published beside this address on the university's contact page."
       ]
@@ -331,7 +348,10 @@
       "incumbent": "Dr. Veera Talukdar",
       "incumbentSource": "/about-us/administrative-offices",
       "profile": null,
-      "sources": ["/academics/examination-contact-us", "/about-us/administrative-offices"],
+      "sources": [
+        "/academics/examination-contact-us",
+        "/about-us/administrative-offices"
+      ],
       "notes": [
         "The unpublished table names an individual against the examination helpdesk number the university already publishes, so this office needs nobody named."
       ]
@@ -375,7 +395,9 @@
       ],
       "post": null,
       "incumbent": null,
-      "sources": ["/contact-us"],
+      "sources": [
+        "/contact-us"
+      ],
       "notes": [
         "Four people are named here and nowhere else in this directory, because the university publishes no shared fee-enquiry address or number and these desks are the only route to it. An office mailbox would replace all four rows and would not need editing when somebody moves."
       ]
@@ -418,7 +440,10 @@
       "incumbent": "Lieutenant Prabhakaran KK",
       "incumbentSource": "snapshot:original/contact.html",
       "profile": null,
-      "sources": ["/life-wpu/hostel-facilities", "/contact-us"],
+      "sources": [
+        "/life-wpu/hostel-facilities",
+        "/contact-us"
+      ],
       "notes": [
         "The hostel page gives two different telephone numbers in answer to two questions about contacting the same office. Both are shown; neither has been chosen over the other."
       ]
@@ -439,7 +464,9 @@
       },
       "post": null,
       "incumbent": null,
-      "sources": ["/contact-us"],
+      "sources": [
+        "/contact-us"
+      ],
       "notes": [
         "Whether this is the same office as the Office of Student Affairs, part of it, or something separate is not established by anything the university publishes. The two are kept apart here rather than merged on a guess."
       ]
@@ -460,7 +487,9 @@
       },
       "post": null,
       "incumbent": null,
-      "sources": ["/contact-us"],
+      "sources": [
+        "/contact-us"
+      ],
       "notes": [
         "No IT office appears in the university's own directory of administrative offices, and no unit of this kind is named anywhere on its public site. This number is the only evidence that one exists.",
         "The intranet help page proposes a named Computing Resources Centre for exactly this reason and enumerates what such a unit would have to publish."
@@ -484,7 +513,9 @@
       "incumbent": "Dr. Hitesh Joshi",
       "incumbentSource": "/about-us/administrative-offices",
       "profile": "/people/dr-hitesh-joshi-165/",
-      "sources": ["/about-us/administrative-offices"]
+      "sources": [
+        "/about-us/administrative-offices"
+      ]
     },
     {
       "id": "infra-facilities",
@@ -496,7 +527,9 @@
       "post": "Civil Engineer",
       "incumbent": null,
       "incumbentNote": "The captured page names a post-holder whom the university operator has since corrected as no longer current. The office is real and its published contact is now out of date, which is exactly the state a directory keyed by people cannot represent.",
-      "sources": ["/about-us/administrative-offices"],
+      "sources": [
+        "/about-us/administrative-offices"
+      ],
       "notes": [
         "Nothing about this office is currently publishable: the only address the university published for it belonged to the person who has left. Everything below is a gap, and this is the office a student with a broken window has to reach."
       ]
@@ -519,7 +552,9 @@
       "incumbent": "Dr. R. M. Chitnis",
       "incumbentSource": "/about-us/leadership-and-governance/leadership",
       "profile": "/people/dr-r-m-chitnis-2/",
-      "sources": ["/about-us/leadership-and-governance/leadership"]
+      "sources": [
+        "/about-us/leadership-and-governance/leadership"
+      ]
     },
     {
       "id": "chief-academic-officer",
@@ -540,28 +575,8 @@
       "incumbent": "Dr. Prasad D. Khandekar",
       "incumbentSource": "/about-us/leadership-and-governance/leadership",
       "profile": "/people/dr-prasad-d-khandekar-190/",
-      "sources": ["/about-us/leadership-and-governance/leadership"]
-    },
-    {
-      "id": "registrar",
-      "section": "university",
-      "office": "Registrar's Office",
-      "purpose": "Academic and administrative appointments, policy implementation, and the link between faculty, students and the administrative units.",
-      "href": "/about-us/administrative-offices/",
-      "contact": {
-        "email": {
-          "value": "registrar@mitwpu.edu.in",
-          "source": "/about-us/administrative-offices",
-          "status": "published"
-        }
-      },
-      "post": "Registrar",
-      "incumbent": "Mr. Ganesh Balbhimrao Pokale",
-      "incumbentSource": "/about-us/administrative-offices",
-      "profile": "/people/mr-ganesh-b-pokale-5/",
-      "sources": ["/about-us/administrative-offices", "/contact-us"],
-      "notes": [
-        "The contact page names an Associate Registrar, a Deputy Registrar and three Assistant Registrars for Student Affairs with their own addresses. None is listed here: they are desks inside an office that publishes a shared address, and all five route to admissions@mitwpu.edu.in or to this one."
+      "sources": [
+        "/about-us/leadership-and-governance/leadership"
       ]
     },
     {
@@ -581,7 +596,9 @@
       "incumbent": "Dr. Nitin Khedkar",
       "incumbentSource": "/about-us/administrative-offices",
       "profile": "/people/dr-nitin-khedkar-200/",
-      "sources": ["/about-us/administrative-offices"]
+      "sources": [
+        "/about-us/administrative-offices"
+      ]
     },
     {
       "id": "finance",
@@ -601,7 +618,81 @@
       "incumbent": "Mr. Nitinkumar Chandak",
       "incumbentSource": "/about-us/administrative-offices",
       "profile": null,
-      "sources": ["/about-us/administrative-offices", "/contact-us"]
+      "sources": [
+        "/about-us/administrative-offices",
+        "/contact-us"
+      ]
+    },
+    {
+      "id": "international-collaboration",
+      "section": "university",
+      "office": "International Collaboration Department (ICD)",
+      "purpose": "Institutional partnerships abroad, student and faculty exchange, and the experience of international students on campus.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "pradnesh.desai@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "post": "Director - International",
+      "incumbent": "Mr. Pradnesh Desai",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/mr-pradnesh-desai-209/",
+      "sources": [
+        "/about-us/administrative-offices"
+      ],
+      "notes": [
+        "This site's public-surface build shows a role mailbox for this office. It is not published on any captured page, so the address the university actually published is the one shown here."
+      ]
+    },
+    {
+      "id": "public-relations",
+      "section": "university",
+      "office": "Public Relations Office",
+      "purpose": "Media relations, crisis communication and event promotion. The office a journalist writes to.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "padmanabh.deshmukh@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published",
+          "personal": true
+        }
+      },
+      "post": "Joint Director-Communication (PR & Media)",
+      "incumbent": "Dr. Padmanabh Deshmukh",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": null,
+      "sources": [
+        "/about-us/administrative-offices"
+      ],
+      "notes": [
+        "The university runs two communications offices — this one and Branding & Communications — and publishes no line between them."
+      ]
+    },
+    {
+      "id": "branding-communications",
+      "section": "university",
+      "office": "Branding & Communications",
+      "purpose": "The university's identity, marketing materials and public messaging.",
+      "href": "/about-us/administrative-offices/",
+      "contact": {
+        "email": {
+          "value": "director.marketing@mitwpu.edu.in",
+          "source": "/about-us/administrative-offices",
+          "status": "published"
+        }
+      },
+      "post": "Director - Branding & Communications",
+      "incumbent": "Mr. Haranath Ghosh",
+      "incumbentSource": "/about-us/administrative-offices",
+      "profile": "/people/mr-haranath-ghosh-193/",
+      "sources": [
+        "/about-us/administrative-offices"
+      ]
     },
     {
       "id": "ciap",
@@ -630,74 +721,37 @@
       "incumbent": "Mr. Manas Mohanty",
       "incumbentSource": "/about-us/administrative-offices",
       "profile": null,
-      "sources": ["/about-us/administrative-offices", "/contact-us"],
+      "sources": [
+        "/about-us/administrative-offices",
+        "/contact-us"
+      ],
       "notes": [
         "The address this office publishes is one person's. A shared placements mailbox exists and sits in the contact page's source inside a commented-out block: the better of the two addresses is the one the university chose not to show."
       ]
     },
     {
-      "id": "international-collaboration",
+      "id": "registrar",
       "section": "university",
-      "office": "International Collaboration Department (ICD)",
-      "purpose": "Institutional partnerships abroad, student and faculty exchange, and the experience of international students on campus.",
+      "office": "Registrar's Office",
+      "purpose": "Academic and administrative appointments, policy implementation, and the link between faculty, students and the administrative units.",
       "href": "/about-us/administrative-offices/",
       "contact": {
         "email": {
-          "value": "pradnesh.desai@mitwpu.edu.in",
-          "source": "/about-us/administrative-offices",
-          "status": "published",
-          "personal": true
-        }
-      },
-      "post": "Director - International",
-      "incumbent": "Mr. Pradnesh Desai",
-      "incumbentSource": "/about-us/administrative-offices",
-      "profile": "/people/mr-pradnesh-desai-209/",
-      "sources": ["/about-us/administrative-offices"],
-      "notes": [
-        "This site's public-surface build shows a role mailbox for this office. It is not published on any captured page, so the address the university actually published is the one shown here."
-      ]
-    },
-    {
-      "id": "branding-communications",
-      "section": "university",
-      "office": "Branding & Communications",
-      "purpose": "The university's identity, marketing materials and public messaging.",
-      "href": "/about-us/administrative-offices/",
-      "contact": {
-        "email": {
-          "value": "director.marketing@mitwpu.edu.in",
+          "value": "registrar@mitwpu.edu.in",
           "source": "/about-us/administrative-offices",
           "status": "published"
         }
       },
-      "post": "Director - Branding & Communications",
-      "incumbent": "Mr. Haranath Ghosh",
+      "post": "Registrar",
+      "incumbent": "Mr. Ganesh Balbhimrao Pokale",
       "incumbentSource": "/about-us/administrative-offices",
-      "profile": "/people/mr-haranath-ghosh-193/",
-      "sources": ["/about-us/administrative-offices"]
-    },
-    {
-      "id": "public-relations",
-      "section": "university",
-      "office": "Public Relations Office",
-      "purpose": "Media relations, crisis communication and event promotion. The office a journalist writes to.",
-      "href": "/about-us/administrative-offices/",
-      "contact": {
-        "email": {
-          "value": "padmanabh.deshmukh@mitwpu.edu.in",
-          "source": "/about-us/administrative-offices",
-          "status": "published",
-          "personal": true
-        }
-      },
-      "post": "Joint Director-Communication (PR & Media)",
-      "incumbent": "Dr. Padmanabh Deshmukh",
-      "incumbentSource": "/about-us/administrative-offices",
-      "profile": null,
-      "sources": ["/about-us/administrative-offices"],
+      "profile": "/people/mr-ganesh-b-pokale-5/",
+      "sources": [
+        "/about-us/administrative-offices",
+        "/contact-us"
+      ],
       "notes": [
-        "The university runs two communications offices — this one and Branding & Communications — and publishes no line between them."
+        "The contact page names an Associate Registrar, a Deputy Registrar and three Assistant Registrars for Student Affairs with their own addresses. None is listed here: they are desks inside an office that publishes a shared address, and all five route to admissions@mitwpu.edu.in or to this one."
       ]
     }
   ],
@@ -706,17 +760,53 @@
     "Each was looked for across roughly 1,200 captured routes and found nowhere."
   ],
   "missingOffices": [
-    { "name": "Library / Knowledge Resource Centre", "note": "The university writes \"Knowledge Resource Centre\" in its own prose. No office, no contact, no opening hours." },
-    { "name": "Accessibility and disability support", "note": "No office, no coordinator, no statement of provision." },
-    { "name": "Counselling and mental-health service", "note": "The medical facilities page covers physical health only." },
-    { "name": "Ombudsperson", "note": "Named in the grievance procedure as the escalation from the grievance committee. No contact published." },
-    { "name": "Transport", "note": "No office for campus or shuttle transport." },
-    { "name": "Alumni relations", "note": "Named as one of CIAP's functions, with no separate route." },
-    { "name": "Research office / grants and sponsored projects", "note": "No administrative office for research funding, ethics or contracts." },
-    { "name": "Scholarships and financial aid", "note": "Scholarships are published as a scheme with no office behind them." },
-    { "name": "Lost property and campus reception", "note": "No front-desk or reception contact of any kind." },
-    { "name": "Data protection / information officer", "note": "No named contact for a privacy or right-to-information request." },
-    { "name": "Procurement and vendor relations", "note": "No route for a supplier." },
-    { "name": "Sports and physical education", "note": "Facilities are described; no office runs them." }
+    {
+      "name": "Library / Knowledge Resource Centre",
+      "note": "The university writes \"Knowledge Resource Centre\" in its own prose. No office, no contact, no opening hours."
+    },
+    {
+      "name": "Accessibility and disability support",
+      "note": "No office, no coordinator, no statement of provision."
+    },
+    {
+      "name": "Counselling and mental-health service",
+      "note": "The medical facilities page covers physical health only."
+    },
+    {
+      "name": "Ombudsperson",
+      "note": "Named in the grievance procedure as the escalation from the grievance committee. No contact published."
+    },
+    {
+      "name": "Transport",
+      "note": "No office for campus or shuttle transport."
+    },
+    {
+      "name": "Alumni relations",
+      "note": "Named as one of CIAP's functions, with no separate route."
+    },
+    {
+      "name": "Research office / grants and sponsored projects",
+      "note": "No administrative office for research funding, ethics or contracts."
+    },
+    {
+      "name": "Scholarships and financial aid",
+      "note": "Scholarships are published as a scheme with no office behind them."
+    },
+    {
+      "name": "Lost property and campus reception",
+      "note": "No front-desk or reception contact of any kind."
+    },
+    {
+      "name": "Data protection / information officer",
+      "note": "No named contact for a privacy or right-to-information request."
+    },
+    {
+      "name": "Procurement and vendor relations",
+      "note": "No route for a supplier."
+    },
+    {
+      "name": "Sports and physical education",
+      "note": "Facilities are described; no office runs them."
+    }
   ]
 }
