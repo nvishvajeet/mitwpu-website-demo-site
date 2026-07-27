@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="How remote access to a national computing facility works in outline — accounts, keys, connecting, moving data and submitting work — with every hostname, account name and path marked as a placeholder, because MIT-WPU has published no arrangement and this page states none.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://mitwpu.vishwanathgrid.org/intranet/computing/cdac/">
+  <link rel="icon" href="/favicon.svg?v=20260726-dome-1" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico?v=20260726-dome-1" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260726-dome-1">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=20260726-dome-1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260726-dome-1">
+  <title>Remote access to C-DAC · MIT-WPU</title>
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/tokens.css">
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/readability.css">
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/typography.css">
+  <link rel="stylesheet" href="../../../demo-assets/site.css?v=a06d305e9314">
+  <link rel="stylesheet" href="../../../demo-assets/institutional-footer.css?v=ff600599fd01">
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/patterns.css">
+  <link rel="stylesheet" href="../../../demo-assets/uwp-bridge.css?v=e23ad2df1f30">
+  <script src="../../../vendor/university-web-patterns/src/js/navigation.js" defer></script>
+  <script src="../../../demo-assets/theme.js?v=93679b7fd7f6" defer></script>
+  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=05487f20e752" data-global-masthead-style>
+  <link rel="stylesheet" href="/demo-assets/readability.css?v=07173f3cd9ae" data-global-readability-style>
+  <link rel="stylesheet" href="/demo-assets/screen-rhythm.css?v=25cd99c69acc" data-global-screen-rhythm-style>
+  <meta property="og:title" content="Remote access to C-DAC · MIT-WPU" data-release-generated="social">
+  <meta property="og:description" content="How remote access to a national computing facility works in outline — accounts, keys, connecting, moving data and submitting work — with every hostname, account name and path marked as a placeholder, because MIT-WPU has published no arrangement and this page states none." data-release-generated="social">
+  <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <meta property="og:type" content="website" data-release-generated="social">
+  <meta property="og:url" content="https://mitwpu.vishwanathgrid.org/intranet/computing/cdac/" data-release-generated="social">
+  <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
+  <meta name="twitter:title" content="Remote access to C-DAC · MIT-WPU" data-release-generated="social">
+  <meta name="twitter:description" content="How remote access to a national computing facility works in outline — accounts, keys, connecting, moving data and submitting work — with every hostname, account name and path marked as a placeholder, because MIT-WPU has published no arrangement and this page states none." data-release-generated="social">
+  <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.vishwanathgrid.org/intranet/computing/cdac/#webpage","name":"Remote access to C-DAC · MIT-WPU","url":"https://mitwpu.vishwanathgrid.org/intranet/computing/cdac/","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"How remote access to a national computing facility works in outline — accounts, keys, connecting, moving data and submitting work — with every hostname, account name and path marked as a placeholder, because MIT-WPU has published no arrangement and this page states none."}</script>
+</head>
+<body>
+  <a class="uwp-skip-link skip-link" href="#main"
+    data-uwp-component="skip-link" data-uwp-version="0.26.0">Skip to main content</a>
+  <header class="uwp-masthead global-masthead site-header institution-bar" data-global-masthead data-uwp-component="masthead" data-uwp-version="0.26.0">
+  <div class="uwp-masthead__inner uwp-shell global-masthead__inner institution-inner">
+    <div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div>
+    <nav class="uwp-nav global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav
+      data-uwp-nav>
+      <div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/about/">About</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="About submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/about-us/founder/">Founder President</a>
+    <a href="/about-us/executive-president/">Executive President</a>
+    <a href="/about-us/executive-director/">Executive Director</a>
+    <a href="/about-us/leadership-and-governance/">Leadership and governance</a>
+    <a href="/about-us/history-legacy/">History and legacy</a>
+    <a href="/about-us/world-peace-dome/">World Peace Dome</a>
+    <a href="/about-us/ranking-accreditation/">Rankings and accreditation</a>
+    <a href="/about-us/social-initiatives/">Social initiatives</a>
+  </div>
+</div>
+<div class="uwp-nav-item uwp-nav-item--mega" data-uwp-component="nav-mega" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/academics/">Academics</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Academics submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu uwp-nav-mega">
+    <div class="uwp-nav-mega__body">
+      <div class="uwp-nav-mega__group">
+        <a class="uwp-nav-mega__heading" href="/academics/">Schools</a>
+        <div class="uwp-nav-mega__links">
+          <a href="/academics/engineering-and-technology/">Engineering &amp; Technology</a>
+          <a href="/academics/computer-engineering-and-technology/">Computer Science &amp; Engineering</a>
+          <a href="/academics/science/">Science &amp; Environmental Studies</a>
+          <a href="/academics/health-science-technologies/">Health Sciences &amp; Technology</a>
+          <a href="/academics/design/">Design</a>
+          <a href="/academics/architecture/">Architecture</a>
+          <a href="/academics/construction-engineering-management/">Construction Engineering &amp; Management</a>
+          <a href="/academics/business/">Business</a>
+          <a href="/academics/economics-and-commerce/">Economics &amp; Commerce</a>
+          <a href="/academics/leadership/">Leadership</a>
+          <a href="/academics/government/">Government</a>
+          <a href="/academics/law/">Law</a>
+          <a href="/academics/liberal-arts-humanities/">Liberal Arts &amp; Consciousness</a>
+          <a href="/academics/">All schools and departments</a>
+        </div>
+      </div>
+      <div class="uwp-nav-mega__group">
+        <a class="uwp-nav-mega__heading" href="/programmes/">Study</a>
+        <div class="uwp-nav-mega__links">
+          <a href="/programmes/undergraduate/">Undergraduate</a>
+          <a href="/programmes/postgraduate/">Postgraduate</a>
+          <a href="/programmes/phd/">PhD and doctoral</a>
+          <a href="/programmes/diploma/">Certificates and diplomas</a>
+          <a href="/programmes/">Programme finder</a>
+        </div>
+      </div>
+      <div class="uwp-nav-mega__group">
+        <a class="uwp-nav-mega__heading" href="/academics/">Academic services</a>
+        <div class="uwp-nav-mega__links">
+          <a href="/academics/academic-calender/">Academic calendar</a>
+          <a href="/academics/exam-timetable/">Exam timetable</a>
+          <a href="/academics/ordinances/">Ordinances and regulations</a>
+        </div>
+      </div>
+    </div>
+    <a class="uwp-nav-mega__all" href="/academics/">Academics home</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/admissions/">Admissions</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Admissions submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/admissions/">Admissions overview</a>
+    <a href="/programmes/">Programmes</a>
+    <a href="/application-process/">Application process</a>
+    <a href="/mit-wpu-cet-2026/">MIT-WPU CET 2026</a>
+    <a href="/scholarships/">Scholarships</a>
+    <a href="/placements/">Placements</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/research/">Research</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Research submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/research/">Research overview</a>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/research/research-areas/">Research areas</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Research areas submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/research/academic-research/">Academic research</a>
+        <a href="/research/sponsored-research/">Sponsored research</a>
+        <a href="/research/centres-of-excellence/">Centres of excellence</a>
+        <a href="/research/research-papers/">Research papers</a>
+        <a href="/research/ipr/">IPR and patents</a>
+        <a href="/research/research-areas/">All research areas</a>
+      </div>
+    </div>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/groups/">Research groups</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Research groups submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/quantum/">Quantum Science &amp; Technology</a>
+        <a href="/photonics/">Photonics Research Group</a>
+        <a href="/bioinformatics/">Bioinformatics Group</a>
+        <a href="/astrophysics/">Astrophysics Research Group</a>
+        <a href="/groups/">All research groups</a>
+      </div>
+    </div>
+    <a href="/facilities/">Central Research Facility</a>
+    <a href="/research/research-news/">Research news</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/people/">People</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="People submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/people/">People directory</a>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/faculty/">Faculty</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Faculty submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/faculty-staff/">Faculty and staff</a>
+        <a href="/faculty-articles/">Faculty articles</a>
+        <a href="/awardee-profiles/">Awardee profiles</a>
+      </div>
+    </div>
+    <a href="/leadership/">Leadership</a>
+    <a href="/alumni/">Alumni</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/life-at-mit-wpu/">Campus</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Campus submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/life-at-mit-wpu/">Campus life</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Campus life submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/life-wpu/library/">Knowledge Resource Centre</a>
+        <a href="/life-wpu/hostel-facilities/">Hostel facilities</a>
+        <a href="/life-wpu/sports/">Sports</a>
+        <a href="/life-wpu/medical-facilities/">Medical facilities</a>
+      </div>
+    </div>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/campus-life/">Clubs, teams and galleries</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Clubs, teams and galleries submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/campus-life/">Campus and student life directory</a>
+        <a href="/campus-life/galleries/">Photo and video galleries</a>
+      </div>
+    </div>
+    <a href="/life-wpu/student-affairs/">Student welfare</a>
+    <a href="/grievance-redressal/">Grievance redressal</a>
+    <a href="/life-wpu/student-council/">Student council</a>
+  </div>
+</div>
+<a href="/students/"
+  data-uwp-component="nav-item" data-uwp-version="0.26.0">Students</a>
+    </nav>
+    <div class="uwp-masthead__actions">
+      <button class="uwp-nav-toggle masthead-nav-toggle" type="button" data-uwp-nav-toggle
+        aria-expanded="false" aria-controls="global-primary-nav"
+        aria-label="Open menu">
+        <span aria-hidden="true"></span>
+      </button>
+      <form class="uwp-search-field" action="/search/" method="get"
+  role="search" aria-label="Search this website"
+  data-uwp-component="search-field" data-uwp-version="0.26.0">
+  <label class="uwp-visually-hidden" for="q">Search this website</label>
+  <input class="uwp-search-field__input" id="q"
+    name="q" type="search" autocomplete="off"
+    placeholder="Search" value="">
+  <button class="uwp-search-field__submit" type="submit">
+    <svg class="uwp-search-field__icon" viewBox="0 0 20 20" aria-hidden="true"
+      focusable="false"><path d="M9 2.5a6.5 6.5 0 0 1 5.15 10.47l3.19 3.19a.9.9 0 1 1-1.27 1.27l-3.19-3.19A6.5 6.5 0 1 1 9 2.5Zm0 1.8a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Z"/></svg>
+    <span class="uwp-visually-hidden">Search</span>
+  </button>
+</form>
+      <button class="uwp-theme-toggle theme-toggle" type="button" data-theme-toggle data-uwp-theme-toggle
+  data-uwp-component="theme-toggle" data-uwp-version="0.26.0" aria-pressed="false"
+  aria-label="Switch colour theme">
+  <span class="uwp-theme-icon uwp-theme-icon--light" aria-hidden="true"></span>
+  <span class="uwp-theme-icon uwp-theme-icon--dark" aria-hidden="true"></span>
+  <span class="uwp-switch-thumb" aria-hidden="true"></span>
+</button>
+    </div>
+  </div>
+</header><header class="uwp-masthead site-header" data-uwp-component="masthead" data-uwp-version="0.26.0" data-legacy-masthead>
+    <div class="uwp-masthead__inner uwp-shell header-inner">
+      <a class="uwp-brand brand" href="../../../"><strong>MIT World Peace University</strong></a>
+      <nav class="uwp-nav site-nav" id="intranet-computing-cdac-primary-nav" aria-label="Primary"
+        data-uwp-nav>
+        <a href="../../../about/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">About</a>
+          <a href="../../../academics/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Academics</a>
+          <a href="../../../admissions/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Admissions</a>
+          <a href="../../../research/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Research</a>
+          <a href="../../../people/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">People</a>
+          <a href="../../../life-at-mit-wpu/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Campus</a>
+          <a href="../../../students/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Students</a>
+      </nav>
+      <div class="uwp-masthead__actions">
+        <button class="uwp-nav-toggle" type="button" data-uwp-nav-toggle
+          aria-expanded="false" aria-controls="intranet-computing-cdac-primary-nav"
+          aria-label="Open menu">
+          <span aria-hidden="true"></span>
+        </button>
+        <button class="uwp-theme-toggle theme-toggle" type="button" data-theme-toggle data-uwp-theme-toggle
+    data-uwp-component="theme-toggle" data-uwp-version="0.26.0" aria-pressed="false"
+    aria-label="Switch colour theme">
+    <span class="uwp-theme-icon uwp-theme-icon--light" aria-hidden="true"></span>
+    <span class="uwp-theme-icon uwp-theme-icon--dark" aria-hidden="true"></span>
+    <span class="uwp-switch-thumb" aria-hidden="true"></span>
+  </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="uwp-breadcrumbs" aria-label="Breadcrumb"
+      data-uwp-component="breadcrumbs" data-uwp-version="0.26.0">
+      <ol>
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../intranet/">Intranet</a></li>
+        <li><a href="../../../intranet/computing/">Computing Resources Centre</a></li>
+        <li><span aria-current="page">C-DAC</span></li>
+      </ol>
+    </nav>
+    <header class="uwp-hero" data-uwp-component="hero" data-uwp-version="0.26.0">
+      <div class="uwp-hero__grid uwp-shell uwp-hero__grid--single">
+        <div class="uwp-hero__copy">
+          <p class="uwp-eyebrow">Computing Resources Centre</p>
+          <h1>Remote access to C-DAC</h1>
+          <p class="uwp-lede">Research computing beyond what a laboratory machine can do, on systems the university does not own and reaches over the network. The arrangement is being made; the account, the address and the terms are not settled, so what follows is the shape of the work rather than the instructions for it.</p>
+        </div>
+      </div>
+    </header>
+    <aside class="uwp-notice" data-uwp-component="notice" data-uwp-version="0.26.0"
+      aria-labelledby="start-here">
+      <div>
+        <p class="uwp-eyebrow">Read this first</p>
+        <h2 id="start-here">Every instruction on this page is a sample</h2>
+        <p>The university has published no arrangement with C-DAC, and this page describes none. What is here is the shape remote access to a national computing facility takes as such services are generally documented: you are given an account, you register a public key, you connect over SSH, you move your data, and you submit work to a scheduler rather than running it on the machine you logged in to.</p><p>Every hostname, account name, path, queue and project code below is a placeholder written in CAPITALS inside angle brackets. None of them is real, none of them will resolve, and none should be tried. The real values arrive with the account, from whoever issues it — not from this page, and not from a colleague&#39;s recollection.</p><p>When the arrangement is settled this page is replaced by its instructions. Until then, the list at the foot of the page is what has to be decided, and it is the useful part.</p>
+      </div>
+    </aside>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="what-this-is-for">
+      <div class="uwp-wrap">
+        <h2 id="what-this-is-for">When you need a machine you cannot walk up to</h2>
+        <div class="uwp-prose">
+          <p>The threshold is not cleverness, it is arithmetic. Work belongs on a shared facility when it will not fit in the memory of a workstation, when it would take longer than you are prepared to leave a laptop running, or when it is the same calculation a few thousand times over with a different parameter each time. Everything below that threshold is faster on the machine you already have, because there is no queue in front of it.</p>
+          <p>What a facility of this kind gives you is not one large computer. It is a login machine you type on, a much larger set of compute machines you never log in to, a filesystem both can see, and a scheduler that decides when your work runs on the second set. Almost every mistake a first-time user makes comes from not yet believing the second sentence.</p>
+        </div>
+        <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">The login node</dt>
+        <dd class="uwp-definitions__value">
+          Where you land. For editing, moving files and submitting work — never for the work itself. It is shared by everyone logged in at that moment.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">The compute nodes</dt>
+        <dd class="uwp-definitions__value">
+          Where the work actually runs, reached only through the scheduler. You do not choose one and you do not connect to it.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">The scheduler</dt>
+        <dd class="uwp-definitions__value">
+          The queue. You describe what your job needs, it decides when that becomes available, and your job runs unattended when it does.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">The allocation</dt>
+        <dd class="uwp-definitions__value">
+          The budget of machine time a project is granted. Work is charged against it, so a job that asks for eight times what it needs costs eight times as much.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Which facility, and which system</dt>
+        <dd class="uwp-definitions__value">
+          not yet settled
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">How an allocation is applied for</dt>
+        <dd class="uwp-definitions__value">
+          not yet settled
+        </dd>
+      </div>
+    </dl>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="before-you-apply">
+      <div class="uwp-wrap">
+        <h2 id="before-you-apply">What you will need before you apply</h2>
+        <div class="uwp-prose">
+          <p>Three of these are yours to get ready now, and they are the reason this page is worth reading before there is anything to connect to. A key pair takes two minutes and is the thing most often missing when an account is issued.</p>
+        </div>
+        <dl class="uwp-definitions" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">An SSH key pair</dt>
+        <dd class="uwp-definitions__value">
+          Generated on the machine you will connect from. National facilities do not issue passwords for this, and the public half is what you send when you apply.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">A working knowledge of the shell</dt>
+        <dd class="uwp-definitions__value">
+          You will be typing at a prompt with no windows on the far end. The introduction on this portal is enough to start with.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">A project, and somebody answerable for it</dt>
+        <dd class="uwp-definitions__value">
+          Time on a national facility is granted to a piece of research rather than to a person, and normally needs a faculty member&#x27;s name against it.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Data you may lawfully move</dt>
+        <dd class="uwp-definitions__value">
+          Anything with a person in it, anything under a licence that fixes where it may be held, and anything a collaborator gave you under terms — check before it leaves this university, not after.
+        </dd>
+      </div>
+    </dl>
+    <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="../../../intranet/computing/linux/">
+          <span>Linux and SSH: enough to get started</span>
+          <span class="uwp-meta">Including how to make a key pair</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="getting-an-account">
+      <div class="uwp-wrap">
+        <h2 id="getting-an-account">Getting an account</h2>
+        <div class="uwp-prose">
+          <p>In outline, and marked as such throughout. No step below has a route, an address or a form behind it yet.</p>
+        </div>
+        <section class="uwp-procedure" data-uwp-component="procedure" data-uwp-version="0.26.0" aria-labelledby="getting-an-account-account">
+      <h2 id="getting-an-account-account">Apply for an account on a national facility</h2>
+      <p class="uwp-procedure__summary">At the end of this you have a username, a system to connect to, and a project your work is charged against.</p>
+      <p class="uwp-procedure__applies"><span class="uwp-procedure__applies-label">Applies to</span> Nobody yet. This is the shape of the process, not the process.</p>
+      <div class="uwp-procedure__before">
+        <p class="uwp-procedure__before-label">Before you start, you need</p>
+        <ul class="uwp-procedure__before-list">
+          <li>A public key you generated yourself, and a private half you have never sent to anyone.</li>
+          <li>A one-paragraph description of the work and roughly what it will need.</li>
+          <li>The name of the faculty member answerable for the project.</li>
+        </ul>
+      </div>
+      <ol class="uwp-procedure__steps">
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Generate a key pair if you have none</p>
+          <div class="uwp-procedure__step-body">
+            <p>This part is real and you can do it today: the command is the same everywhere and does not depend on any arrangement being settled.</p>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Generate a key pair</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># One key per person. The comment is only a label, so that you can tell your keys apart later.</span><span class="uwp-command__line">ssh-keygen -t ed25519 -C &quot;&lt;YOUR-NAME&gt;-&lt;YEAR&gt;&quot;</span></code></pre>
+      <p class="uwp-command__note">Give it a passphrase. A private key with no passphrase is a password written on a note that also fits in a backup.</p>
+    </div>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Send the public half with the application</p>
+          <div class="uwp-procedure__step-body">
+            <p>The file ending in .pub, and nothing else. The other file is the private half and is never sent to anybody, including the people running the facility.</p>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Read the public half so you can paste it</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">cat ~/.ssh/id_ed25519.pub</span></code></pre>
+      <p class="uwp-command__expect">What you should see</p>
+      <pre class="uwp-command__lines uwp-command__lines--output"><code><span class="uwp-command__line">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI&lt;...&gt;  &lt;YOUR-NAME&gt;-&lt;YEAR&gt;</span></code></pre>
+      <p class="uwp-command__note">One line, beginning ssh-ed25519 or ssh-rsa. If what you are looking at begins with five dashes and the word BEGIN, you have opened the private half; close it.</p>
+    </div>
+          </div>
+          <p class="uwp-procedure__step-note">This site will never publish a key, yours or anyone&#x27;s, and neither should any page you are asked to paste one into.</p>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Wait for the account, and read what arrives</p>
+          <div class="uwp-procedure__step-body">
+            <p>What comes back is a username, the address of a login node, the name of your project, and the facility&#39;s own conditions of use. Those conditions are the ones that bind you; nothing on this page overrides them.</p>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Connect once, immediately</p>
+          <div class="uwp-procedure__step-body">
+            <p>Not because there is anything to do, but because an account that does not work is easiest to fix on the day it was issued and hardest three months later when the person who issued it has moved on.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="connecting">
+      <div class="uwp-wrap">
+        <h2 id="connecting">Connecting</h2>
+        <div class="uwp-prose">
+          <p>One command the first time, and one word afterwards. The second is worth setting up on the first day: an address you type twenty times a week is an address you eventually mistype into somebody else&#x27;s machine.</p>
+        </div>
+        <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Open a session on the login node</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">ssh &lt;YOUR-USERNAME&gt;@&lt;LOGIN-NODE-YOU-WERE-GIVEN&gt;</span></code></pre>
+      <p class="uwp-command__expect">What you should see</p>
+      <pre class="uwp-command__lines uwp-command__lines--output"><code><span class="uwp-command__line">The authenticity of host &#x27;&lt;LOGIN-NODE-YOU-WERE-GIVEN&gt;&#x27; can&#x27;t be established.</span><span class="uwp-command__line">ED25519 key fingerprint is SHA256:&lt;FINGERPRINT-THE-HOST-OFFERS&gt;.</span><span class="uwp-command__line">Are you sure you want to continue connecting (yes/no)?</span></code></pre>
+      <p class="uwp-command__note">Compare that fingerprint against the one the facility published before you answer yes. It is the only moment at which you can tell the real host from something standing in front of it, and it is the moment everybody skips.</p>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Make it one word, in ~/.ssh/config on your own machine</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">Host &lt;SHORT-NAME-YOU-CHOOSE&gt;</span><span class="uwp-command__line">    HostName &lt;LOGIN-NODE-YOU-WERE-GIVEN&gt;</span><span class="uwp-command__line">    User &lt;YOUR-USERNAME&gt;</span><span class="uwp-command__line">    IdentityFile ~/.ssh/id_ed25519</span><span class="uwp-command__comment"># Then, from anywhere:</span><span class="uwp-command__line">ssh &lt;SHORT-NAME-YOU-CHOOSE&gt;</span></code></pre>
+      <p class="uwp-command__note">This file is read by ssh, scp and rsync alike, so the short name works for all three.</p>
+    </div>
+    <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="../../../intranet/computing/linux/">
+          <span>How to generate a key, and what ~/.ssh/config does</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="moving-data">
+      <div class="uwp-wrap">
+        <h2 id="moving-data">Moving data in and out</h2>
+        <div class="uwp-prose">
+          <p>Two tools, and the second one is the one to learn. `scp` copies a file; `rsync` copies what is different, resumes when it is interrupted and can be run again safely — which matters when the thing being moved is two hundred gigabytes over a network somebody else is also using.</p>
+          <p>Before any of it: check what you are allowed to move. A shared national facility is not a place to discover that a dataset had terms on it.</p>
+        </div>
+        <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Copy one file up</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">scp &lt;FILE-ON-YOUR-MACHINE&gt; &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;PATH-ON-THE-FACILITY&gt;</span></code></pre>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Copy a directory up, resumably</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># -a keeps permissions and timestamps, -v says what it is doing, --partial keeps what it managed before the connection dropped.</span><span class="uwp-command__line">rsync -av --partial &lt;DIRECTORY-ON-YOUR-MACHINE&gt;/ &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;PATH-ON-THE-FACILITY&gt;/</span></code></pre>
+      <p class="uwp-command__note">The trailing slash on the source is not decoration: without it rsync copies the directory INTO the target rather than copying its contents.</p>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Bring results back</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># Same command, the arguments the other way round.</span><span class="uwp-command__line">rsync -av --partial &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;RESULTS-PATH&gt;/ &lt;DIRECTORY-ON-YOUR-MACHINE&gt;/</span></code></pre>
+      <p class="uwp-command__note">Bring results back as you go rather than at the end. Scratch filesystems on shared facilities are routinely cleared, and the notice period is not always long.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="running-work">
+      <div class="uwp-wrap">
+        <h2 id="running-work">Running work: the scheduler</h2>
+        <div class="uwp-prose">
+          <p>You do not run your calculation on the machine you logged in to. That machine is shared by everyone currently connected, and a job started on it slows all of them down and is usually killed. You write down what the work needs, hand that to the scheduler, and it runs when the machines are free.</p>
+          <p>Which scheduler this will be is not settled, and the commands differ between them. What does not differ is the four questions every one of them asks, and the answers are yours to work out before you can submit anything at all.</p>
+        </div>
+        <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">How many processors?</dt>
+        <dd class="uwp-definitions__value">
+          Asking for more than your program can use wastes the allocation and makes the wait longer, not shorter.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">For how long?</dt>
+        <dd class="uwp-definitions__value">
+          An honest estimate plus a margin. Too short and the job is killed mid-run; too long and it queues behind everything.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">How much memory?</dt>
+        <dd class="uwp-definitions__value">
+          The commonest cause of a job dying at three in the morning with nothing useful written down.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Which queue, and against which project?</dt>
+        <dd class="uwp-definitions__value">
+          Facilities separate short test runs from long ones, and charge the time to a project rather than to you.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Which scheduler the facility runs</dt>
+        <dd class="uwp-definitions__value">
+          not yet settled
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">What an allocation is worth, and how it is renewed</dt>
+        <dd class="uwp-definitions__value">
+          not yet settled
+        </dd>
+      </div>
+    </dl>
+    <section class="uwp-procedure" data-uwp-component="procedure" data-uwp-version="0.26.0" aria-labelledby="running-work-submit">
+      <h2 id="running-work-submit">Submit a job</h2>
+      <p class="uwp-procedure__summary">The same four moves on every facility, whatever the scheduler is called.</p>
+      <p class="uwp-procedure__applies"><span class="uwp-procedure__applies-label">Applies to</span> Sample only — the directives and commands below are placeholders, and the real ones come with the account.</p>
+      <ol class="uwp-procedure__steps">
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Write a submission script</p>
+          <div class="uwp-procedure__step-body">
+            <p>A shell script with the scheduler&#39;s requests at the top and your work at the bottom. It is a file rather than a command line so that the run is reproducible and so that you can read, six months later, what you actually asked for.</p>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">A submission script, in outline</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">#!/bin/bash</span><span class="uwp-command__comment"># Every line beginning with the scheduler&#x27;s directive marker is a request, not a comment.</span><span class="uwp-command__line">#&lt;SCHEDULER-DIRECTIVE&gt; --job-name=&lt;SHORT-NAME&gt;</span><span class="uwp-command__line">#&lt;SCHEDULER-DIRECTIVE&gt; --nodes=&lt;HOW-MANY-NODES&gt;</span><span class="uwp-command__line">#&lt;SCHEDULER-DIRECTIVE&gt; --time=&lt;HOURS&gt;:&lt;MINUTES&gt;:00</span><span class="uwp-command__line">#&lt;SCHEDULER-DIRECTIVE&gt; --account=&lt;YOUR-PROJECT-CODE&gt;</span><span class="uwp-command__line">#&lt;SCHEDULER-DIRECTIVE&gt; --output=&lt;JOB-NAME&gt;-%j.out</span><span class="uwp-command__comment"># Load what your program needs. Never assume it is there by default.</span><span class="uwp-command__line">module load &lt;SOFTWARE-THE-FACILITY-PROVIDES&gt;</span><span class="uwp-command__comment"># And then the work itself.</span><span class="uwp-command__line">&lt;YOUR-PROGRAM&gt; &lt;YOUR-INPUT&gt;</span></code></pre>
+      <p class="uwp-command__note">Write the output file name with the job number in it. Two runs that overwrite each other&#x27;s output is a morning gone.</p>
+    </div>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Submit it, and note the number</p>
+          <div class="uwp-procedure__step-body">
+            <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Hand the script to the scheduler</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">&lt;SUBMIT-COMMAND&gt; &lt;YOUR-SCRIPT&gt;.sh</span></code></pre>
+      <p class="uwp-command__expect">What you should see</p>
+      <pre class="uwp-command__lines uwp-command__lines--output"><code><span class="uwp-command__line">Submitted batch job &lt;JOB-NUMBER&gt;</span></code></pre>
+      <p class="uwp-command__note">That number is how you refer to the run from now on — to check it, to cancel it, and to ask anybody about it.</p>
+    </div>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Check on it without watching it</p>
+          <div class="uwp-procedure__step-body">
+            <p>A queued job is not a broken one. Waiting is what a shared facility does, and a large request waits longer than a small one — which is an argument for asking for what you need rather than for what you would like.</p>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">See where your work is in the queue</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">&lt;QUEUE-COMMAND&gt; -u &lt;YOUR-USERNAME&gt;</span></code></pre>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Stop a run you no longer want</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># Do this as soon as you know. A job you have stopped caring about is still spending the project&#x27;s allocation.</span><span class="uwp-command__line">&lt;CANCEL-COMMAND&gt; &lt;JOB-NUMBER&gt;</span></code></pre>
+    </div>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Read the output, then bring it home</p>
+          <div class="uwp-procedure__step-body">
+            <p>The output file the scheduler wrote is the first place to look when something went wrong, and it is usually the only place. Copy results back to storage you control rather than leaving them on a scratch filesystem.</p>
+          </div>
+          <p class="uwp-procedure__step-note">Test on a small input first, every time. A twelve-hour job that fails in its last minute because of a path typed wrongly is the standard first experience of a shared facility, and it is entirely avoidable.</p>
+        </li>
+      </ol>
+      <p class="uwp-procedure__after">The run is done when the output file stops growing and the job is no longer in the queue.</p>
+    </section>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="what-not-to-put-there">
+      <div class="uwp-wrap">
+        <h2 id="what-not-to-put-there">What must not go on to a facility the university does not own</h2>
+        <div class="uwp-prose">
+          <p>A shared national system is a third party, and moving data to it is a disclosure whatever the intention. Four categories, and the first one is the one that gets people into real trouble.</p>
+          <p>This page carries no credential of any kind, and neither will its replacement: not a key, not a password, not a project code that acts as one. A page behind a sign-in is still a web page, and it gets bookmarked, screenshotted and pasted into wikis.</p>
+        </div>
+        <dl class="uwp-definitions" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Anything with a person in it</dt>
+        <dd class="uwp-definitions__value">
+          Student records, patient data, survey responses that can be traced back, photographs of identifiable people. Ask before, not after.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Data whose licence fixes where it may be held</dt>
+        <dd class="uwp-definitions__value">
+          Common in collaborations and in purchased datasets, and rarely remembered at the moment of copying.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Software you are not licensed to run there</dt>
+        <dd class="uwp-definitions__value">
+          A licence for a machine in a laboratory here does not travel to a machine somewhere else.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Any secret at all</dt>
+        <dd class="uwp-definitions__value">
+          A key, a token or a password in a script is a secret on a shared filesystem that other people&#x27;s jobs run beside.
+        </dd>
+      </div>
+    </dl>
+    <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="../../../intranet/computing/software/">
+          <span>What you may install, and at whose cost</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="questions">
+      <div class="uwp-wrap">
+        <h2 id="questions">Questions about the arrangement</h2>
+        <div class="uwp-prose">
+          <p>All unanswered, because the arrangement is not settled. Each is a question a researcher will ask on the first day and none of them can be answered from anything the university has published.</p>
+        </div>
+        <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="#cdac-who-answer">
+          <span>Who at MIT-WPU will be able to apply?</span>
+          <span class="uwp-meta">Not yet published</span>
+        </a>
+      </li>
+      <li>
+        <a href="#cdac-what-system-answer">
+          <span>Which system will we have access to, and how big is it?</span>
+          <span class="uwp-meta">Not yet published</span>
+        </a>
+      </li>
+      <li>
+        <a href="#cdac-allocation-answer">
+          <span>How much time do we get, and how is it applied for?</span>
+          <span class="uwp-meta">Not yet published</span>
+        </a>
+      </li>
+      <li>
+        <a href="#cdac-support-answer">
+          <span>Who do I ask when a job will not run?</span>
+          <span class="uwp-meta">Not yet published</span>
+        </a>
+      </li>
+      <li>
+        <a href="#cdac-data-answer">
+          <span>What may I move there, and who decides?</span>
+          <span class="uwp-meta">Not yet published</span>
+        </a>
+      </li>
+      <li>
+        <a href="#cdac-training-answer">
+          <span>Is there any training, here or there?</span>
+          <span class="uwp-meta">Not yet published</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+    <section class="uwp-faq" data-uwp-component="faq" data-uwp-version="0.26.0" aria-labelledby="cdac-questions-title">
+      <h2 id="cdac-questions-title">What has to be settled</h2>
+      <p>Six, in the order a researcher meets them.</p>
+      <ul class="uwp-faq__list" role="list">
+        <li>
+          <details class="uwp-faq__item" id="cdac-who">
+            <summary class="uwp-faq__question">Who at MIT-WPU will be able to apply?</summary>
+            <div class="uwp-faq__answer" id="cdac-who-answer">
+              <p><strong>Not yet published.</strong> Whether it is open to faculty, to research students, to a named set of groups, or granted per project. Nothing is published.</p>
+    <p><strong>Who owns this:</strong> Computing Resources Centre. The university&#39;s computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.</p>
+    <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Request system</dt>
+        <dd class="uwp-definitions__value">
+          no request system is published
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Telephone</dt>
+        <dd class="uwp-definitions__value">
+          telephone number not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Email</dt>
+        <dd class="uwp-definitions__value">
+          email address not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Where they are</dt>
+        <dd class="uwp-definitions__value">
+          office location not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Hours</dt>
+        <dd class="uwp-definitions__value">
+          opening hours not yet published here
+        </dd>
+      </div>
+    </dl>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="uwp-faq__item" id="cdac-what-system">
+            <summary class="uwp-faq__question">Which system will we have access to, and how big is it?</summary>
+            <div class="uwp-faq__answer" id="cdac-what-system-answer">
+              <p><strong>Not yet published.</strong> Unsettled. It matters more than it sounds: the size and the kind of machine decide whether a piece of work is worth moving at all.</p>
+    <p><strong>Who owns this:</strong> Computing Resources Centre. The university&#39;s computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.</p>
+    <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Request system</dt>
+        <dd class="uwp-definitions__value">
+          no request system is published
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Telephone</dt>
+        <dd class="uwp-definitions__value">
+          telephone number not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Email</dt>
+        <dd class="uwp-definitions__value">
+          email address not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Where they are</dt>
+        <dd class="uwp-definitions__value">
+          office location not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Hours</dt>
+        <dd class="uwp-definitions__value">
+          opening hours not yet published here
+        </dd>
+      </div>
+    </dl>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="uwp-faq__item" id="cdac-allocation">
+            <summary class="uwp-faq__question">How much time do we get, and how is it applied for?</summary>
+            <div class="uwp-faq__answer" id="cdac-allocation-answer">
+              <p><strong>Not yet published.</strong> No allocation, no application route, no renewal cycle and no statement of who decides between competing requests.</p>
+    <p><strong>Who owns this:</strong> Computing Resources Centre. The university&#39;s computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.</p>
+    <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Request system</dt>
+        <dd class="uwp-definitions__value">
+          no request system is published
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Telephone</dt>
+        <dd class="uwp-definitions__value">
+          telephone number not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Email</dt>
+        <dd class="uwp-definitions__value">
+          email address not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Where they are</dt>
+        <dd class="uwp-definitions__value">
+          office location not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Hours</dt>
+        <dd class="uwp-definitions__value">
+          opening hours not yet published here
+        </dd>
+      </div>
+    </dl>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="uwp-faq__item" id="cdac-support">
+            <summary class="uwp-faq__question">Who do I ask when a job will not run?</summary>
+            <div class="uwp-faq__answer" id="cdac-support-answer">
+              <p><strong>Not yet published.</strong> Whether support comes from the facility, from the university, or from a named person here. On every shared system this is the question that decides whether the access gets used.</p>
+    <p><strong>Who owns this:</strong> Computing Resources Centre. The university&#39;s computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.</p>
+    <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Request system</dt>
+        <dd class="uwp-definitions__value">
+          no request system is published
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Telephone</dt>
+        <dd class="uwp-definitions__value">
+          telephone number not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Email</dt>
+        <dd class="uwp-definitions__value">
+          email address not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Where they are</dt>
+        <dd class="uwp-definitions__value">
+          office location not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Hours</dt>
+        <dd class="uwp-definitions__value">
+          opening hours not yet published here
+        </dd>
+      </div>
+    </dl>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="uwp-faq__item" id="cdac-data">
+            <summary class="uwp-faq__question">What may I move there, and who decides?</summary>
+            <div class="uwp-faq__answer" id="cdac-data-answer">
+              <p><strong>Not yet published.</strong> No data-classification statement exists at this university, so there is nothing to check a dataset against. This is the gap with the largest downside on the page.</p>
+    <p><strong>Who owns this:</strong> Computing Resources Centre. The university&#39;s computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.</p>
+    <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Request system</dt>
+        <dd class="uwp-definitions__value">
+          no request system is published
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Telephone</dt>
+        <dd class="uwp-definitions__value">
+          telephone number not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Email</dt>
+        <dd class="uwp-definitions__value">
+          email address not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Where they are</dt>
+        <dd class="uwp-definitions__value">
+          office location not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Hours</dt>
+        <dd class="uwp-definitions__value">
+          opening hours not yet published here
+        </dd>
+      </div>
+    </dl>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="uwp-faq__item" id="cdac-training">
+            <summary class="uwp-faq__question">Is there any training, here or there?</summary>
+            <div class="uwp-faq__answer" id="cdac-training-answer">
+              <p><strong>Not yet published.</strong> Nothing is published. The introduction on this portal is what exists in the meantime, and it is deliberately short of a course.</p>
+    <p><strong>Who owns this:</strong> Computing Resources Centre. The university&#39;s computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.</p>
+    <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Request system</dt>
+        <dd class="uwp-definitions__value">
+          no request system is published
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Telephone</dt>
+        <dd class="uwp-definitions__value">
+          telephone number not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Email</dt>
+        <dd class="uwp-definitions__value">
+          email address not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Where they are</dt>
+        <dd class="uwp-definitions__value">
+          office location not yet published here
+        </dd>
+      </div>
+      <div class="uwp-definitions__row uwp-definitions__row--missing">
+        <dt class="uwp-definitions__label">Hours</dt>
+        <dd class="uwp-definitions__value">
+          opening hours not yet published here
+        </dd>
+      </div>
+    </dl>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </section>
+    <section class="uwp-section uwp-section--tint"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="not-yet-published">
+      <div class="uwp-wrap">
+        <h2 id="not-yet-published">What this page cannot yet tell you</h2>
+        <div class="uwp-prose">
+          <p>Eight things nobody can guess, and the reason this page is samples rather than instructions.</p>
+          <p>One of them is worse than the others. Until somebody states what data may leave this university&#x27;s systems, every researcher moving a dataset to a shared national facility is making that decision alone, on the day, with a deadline.</p>
+        </div>
+        <ul class="uwp-grid uwp-grid--2"><li><strong>Service detail: A fact this page cannot state</strong> — Which facility and which system the access is to; Who at MIT-WPU may apply, and how; The allocation: how much, applied for how, renewed when; The login address, and the published host fingerprint to check it against; Which scheduler the system runs, and its submission commands; A data-classification statement saying what may be moved off this university&#39;s systems; Who answers a question when a job will not run; Whether any training is provided, here or by the facility</li><li><strong>Answer: A question nobody has answered yet</strong> — Who at MIT-WPU will be able to apply?; Which system will we have access to, and how big is it?; How much time do we get, and how is it applied for?; Who do I ask when a job will not run?; What may I move there, and who decides?; Is there any training, here or there?</li></ul>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="the-rest-of-the-portal">
+      <div class="uwp-wrap">
+        <h2 id="the-rest-of-the-portal">The rest of the Computing Resources Centre</h2>
+        <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="../../../intranet/computing/">
+          <span>Computing Resources Centre</span>
+          <span class="uwp-meta">The Centre, what it runs, and the questions it is asked</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/vpn/">
+          <span>Reach university systems from off campus</span>
+          <span class="uwp-meta">The VPN</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/linux/">
+          <span>Learn enough Linux and SSH to work on a machine you cannot walk up to</span>
+          <span class="uwp-meta">Introduction</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/software/">
+          <span>Find out whether you may install something, and how to get it</span>
+          <span class="uwp-meta">Software</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/services/">
+          <span>Read the manual for a service the university runs</span>
+          <span class="uwp-meta">Seven manuals, one per registered service</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="uwp-footer institutional-footer" data-uwp-component="footer" data-uwp-version="0.26.0">
+    <div class="uwp-footer__grid uwp-shell">
+      <div class="uwp-footer__identity">
+        <strong>MAEER’s MIT World Peace University</strong>
+  <ul class="uwp-social-links" data-uwp-component="social-links" data-uwp-version="0.26.0">
+    <li>
+      <a class="uwp-social-links__link" href="https://www.facebook.com/MIT-WPUOfficial/"
+        target="_blank" rel="noopener noreferrer" title="Facebook">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        <span class="uwp-visually-hidden">Facebook (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://twitter.com/mitwpuofficial"
+        target="_blank" rel="noopener noreferrer" title="X (formerly Twitter)">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M18.9 2H22l-7.55 8.63L23.3 22h-6.86l-5.37-7.02L4.9 22H1.78l8.08-9.23L1 2h7.03l4.85 6.41L18.9 2zm-1.2 18.06h1.7L7.4 3.85H5.57L17.7 20.06z"/></svg>
+        <span class="uwp-visually-hidden">X (formerly Twitter) (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://www.youtube.com/c/MITWorldPeaceUniversity"
+        target="_blank" rel="noopener noreferrer" title="YouTube">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M23 12s0-3.6-.46-5.32a2.62 2.62 0 0 0-1.84-1.85C18.98 4.36 12 4.36 12 4.36s-6.98 0-8.7.47A2.62 2.62 0 0 0 1.46 6.68C1 8.4 1 12 1 12s0 3.6.46 5.32a2.62 2.62 0 0 0 1.84 1.85c1.72.47 8.7.47 8.7.47s6.98 0 8.7-.47a2.62 2.62 0 0 0 1.84-1.85C23 15.6 23 12 23 12zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+        <span class="uwp-visually-hidden">YouTube (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://www.linkedin.com/school/mitwpuofficial/"
+        target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M6.94 5a2 2 0 1 1-4.001-.001A2 2 0 0 1 6.94 5zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
+        <span class="uwp-visually-hidden">LinkedIn (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://www.instagram.com/mitwpuofficial/"
+        target="_blank" rel="noopener noreferrer" title="Instagram">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.2"/></svg>
+        <span class="uwp-visually-hidden">Instagram (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link uwp-social-links__link--named"
+        href="https://www.threads.net/@mitwpuofficial" target="_blank"
+        rel="noopener noreferrer">Threads<span class="uwp-visually-hidden"> (opens in a new tab)</span></a>
+    </li>
+  </ul>
+      </div>
+      <nav class="uwp-footer__group" aria-label="Reach us">
+        <h2>Reach us</h2>
+        <ul>
+          <li><a href="/contact-us/">Contact the university</a></li>
+          <li><a href="/administration/">Offices and contacts</a></li>
+          <li><a href="/forms/">Forms and requests</a></li>
+          <li><a href="/career/">Careers</a></li>
+          <li><a href="/intranet/">Intranet</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="About MIT-WPU">
+        <h2>About MIT-WPU</h2>
+        <ul>
+          <li><a href="/about-us/about-mit/">Mission and values</a></li>
+          <li><a href="/about/maeer/">MAEER</a></li>
+          <li><a href="/happenings/">News and events</a></li>
+          <li><a href="/international/">International</a></li>
+          <li><a href="/mandatory-disclosures/">Mandatory disclosures</a></li>
+          <li><a href="/media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf">Statutory committees (PDF)</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="Raising a concern">
+        <h2>Raising a concern</h2>
+        <ul>
+          <li><a href="/grievance-redressal/">How to raise a grievance</a></li>
+          <li><a href="/academics/student-grievance/">Students’ Grievance Redressal Committee</a></li>
+          <li><a href="/student-affairs/anti-ragging-committee/">Anti-Ragging Committee</a></li>
+          <li><a href="/student-affairs/internal-complaints-committee/">Internal Complaints Committee</a></li>
+          <li><a href="/sc-st-committee/">SC/ST and Equal Opportunity Cell</a></li>
+          <li><a href="/centre-for-womens-studies-and-development/">Centre for Women’s Studies and Development</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="Legal and policy">
+        <h2>Legal and policy</h2>
+        <ul>
+          <li><a href="/about-us/national-ragging-prevention-programme/">Ragging prevention programme</a></li>
+          <li><a href="/student-affairs/discipline-committee/">Disciplinary Committee</a></li>
+          <li><a href="/media/mitwpu-public/documents/6e/6ebc55d88a0eb17f-Disclaimer.pdf">Capitation-fee disclaimer (PDF)</a></li>
+          <li><a href="/privacy-policy/">Privacy and compliance</a></li>
+          <li><a href="/cookies/">Cookies and storage</a></li>
+          <li><a href="/accessibility/">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="uwp-footer__note uwp-shell">
+      <p>© MIT World Peace University</p>
+    </div>
+  </footer>
+</body>
+</html>

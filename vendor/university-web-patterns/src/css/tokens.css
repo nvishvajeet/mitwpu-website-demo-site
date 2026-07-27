@@ -148,6 +148,13 @@
   --uwp-serif: Georgia, "Times New Roman", serif;
   --uwp-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
+  /* Literal text a reader copies: a command, a path, a configuration line.
+     A monospaced face is not decoration here — it is what makes `l`, `1` and
+     `I` distinguishable in something somebody has to retype, and what makes a
+     run of lines align. `ui-monospace` first so each platform's own coding
+     face is used where it has one. */
+  --uwp-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
 
   /* measure */
   --uwp-content-width: 1180px;
@@ -333,6 +340,13 @@
       --uwp-serif: Georgia, "Times New Roman", serif;
       --uwp-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
         "Segoe UI", sans-serif;
+      /* Literal text a reader copies: a command, a path, a configuration line.
+         A monospaced face is not decoration here — it is what makes `l`, `1` and
+         `I` distinguishable in something somebody has to retype, and what makes a
+         run of lines align. `ui-monospace` first so each platform's own coding
+         face is used where it has one. */
+      --uwp-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
     
       /* measure */
       --uwp-content-width: 1180px;

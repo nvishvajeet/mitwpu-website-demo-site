@@ -4055,6 +4055,346 @@ html:not(.uwp-js) .uwp-nav-mega {
   .uwp-profile-link-icons__link { transition: none; }
 }
 
+/* ---------------------------------------------------------------------------
+   Command block — literal text a reader copies and runs.
+
+   Two decisions here are the component, and both are about a phone. It wraps
+   rather than scrolls, because a command whose end is past the right edge is
+   one the reader cannot read or select; and a wrapped line is set with a
+   hanging indent, so a continuation is visibly a continuation rather than a
+   second command. Every line is a block-level <span>, which is what lets a
+   comment line be set apart without putting markup inside preformatted text,
+   and which every browser turns back into a line break when the block is
+   copied.
+   --------------------------------------------------------------------------- */
+.uwp-command {
+  display: grid;
+  gap: var(--uwp-space-1);
+  margin: var(--uwp-space-3) 0;
+}
+
+.uwp-command__caption {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(.9375rem, 15px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* The sample warning is its own line under the caption rather than a
+   parenthesis inside it. A reader scanning a page of commands for the one
+   they need reads captions and nothing else, and this is the sentence that
+   must survive that scan. */
+.uwp-command__sample {
+  display: block;
+  margin-top: .2rem;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 700;
+}
+
+.uwp-command__lines {
+  overflow: visible;
+  max-width: 100%;
+  margin: 0;
+  padding: var(--uwp-space-2);
+  background: var(--uwp-pale);
+  border: 1px solid var(--uwp-rule);
+  border-inline-start: 3px solid var(--uwp-rule-strong);
+}
+
+.uwp-command--sample > .uwp-command__lines {
+  border-inline-start-color: var(--uwp-accent);
+}
+
+.uwp-command__lines code {
+  display: block;
+  color: var(--uwp-ink);
+  font-family: var(--uwp-mono);
+  /* 15px rather than the 16px reading floor: monospaced faces set larger than
+     proportional ones at the same nominal size, and this is not running prose.
+     It is still above the 14px metadata floor and above what a phone will
+     zoom for. */
+  font-size: max(.9375rem, 15px);
+  line-height: 1.55;
+}
+
+/* The hanging indent. `white-space: pre-wrap` keeps the spacing that is part
+   of the content while letting a long line fold; `overflow-wrap: anywhere`
+   folds a path or a URL that has no space in it at all, which is the case
+   that otherwise bursts the block on a 375px screen. */
+.uwp-command__line,
+.uwp-command__comment {
+  display: block;
+  padding-inline-start: 1.6em;
+  overflow-wrap: anywhere;
+  text-indent: -1.6em;
+  white-space: pre-wrap;
+}
+
+.uwp-command__comment {
+  color: var(--uwp-muted);
+}
+
+.uwp-command__expect {
+  margin: var(--uwp-space-1) 0 0;
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 700;
+}
+
+/* The machine's reply is not the reader's to type, and the difference has to
+   be visible at a glance from across the page rather than only readable in
+   the label above it. */
+.uwp-command__lines--output {
+  background: transparent;
+  border-style: dashed;
+  border-inline-start-width: 1px;
+}
+
+.uwp-command__lines--output code {
+  color: var(--uwp-muted);
+}
+
+.uwp-command__note {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+  color: var(--uwp-muted);
+  font-size: max(.875rem, 14px);
+}
+
+@media print {
+  /* A command block is the part of a page people print, and a background that
+     survives to paper is a page that empties a toner cartridge. */
+  .uwp-command__lines {
+    background: transparent;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Procedure — steps in an order, numbered by the list rather than by hand.
+
+   The number sits in the margin so the step titles align down a left edge a
+   reader can run an eye along; a step's body is indented under its title,
+   which is what makes a command-block inside step 3 legible as belonging to
+   step 3. At the narrowest width the margin closes up and the counter sits on
+   the title's own line, because 1.6rem of indent on a 375px screen is a fifth
+   of the measure spent on a numeral.
+   --------------------------------------------------------------------------- */
+.uwp-procedure {
+  display: grid;
+  gap: var(--uwp-space-2);
+  margin: var(--uwp-space-4) 0;
+}
+
+.uwp-procedure > h2 {
+  margin: 0;
+}
+
+.uwp-procedure__summary {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+}
+
+/* "Applies to" and "Before you start" are the two lines that stop a reader
+   doing the wrong procedure, so they are set above the first step and marked
+   as statements about the procedure rather than as part of it. */
+.uwp-procedure__applies {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+  color: var(--uwp-copy);
+  font-size: max(.9375rem, 15px);
+}
+
+.uwp-procedure__applies-label,
+.uwp-procedure__before-label {
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.uwp-procedure__before {
+  max-width: var(--uwp-reading-width);
+  padding: var(--uwp-space-2);
+  background: var(--uwp-surface);
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-procedure__before-label {
+  display: block;
+  margin: 0 0 var(--uwp-space-1);
+}
+
+.uwp-procedure__before-list {
+  margin: 0;
+  padding-inline-start: 1.2rem;
+}
+
+.uwp-procedure__before-list > li + li {
+  margin-top: .25rem;
+}
+
+/* The counter is the list's own, drawn here rather than left to the browser's
+   marker so it can be given the package's sans face and sat against the top
+   line of a step whose title runs to two lines. */
+.uwp-procedure__steps {
+  counter-reset: uwp-step;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uwp-procedure__step {
+  position: relative;
+  counter-increment: uwp-step;
+  padding-inline-start: 2.75rem;
+  padding-block: var(--uwp-space-2);
+  border-top: 1px solid var(--uwp-rule);
+}
+
+.uwp-procedure__step:last-child {
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-procedure__step::before {
+  position: absolute;
+  inset-inline-start: 0;
+  /* aligned to the cap height of the title beside it rather than to the box */
+  inset-block-start: calc(var(--uwp-space-2) + .05rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  background: var(--uwp-pale);
+  border: 1px solid var(--uwp-rule-strong);
+  border-radius: 50%;
+  color: var(--uwp-heading);
+  content: counter(uwp-step);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.uwp-procedure__step-title {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(1.0625rem, 17px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.uwp-procedure__step-body > :first-child {
+  margin-top: var(--uwp-space-1);
+}
+
+.uwp-procedure__step-body > :last-child {
+  margin-bottom: 0;
+}
+
+.uwp-procedure__step-body p {
+  max-width: var(--uwp-reading-width);
+}
+
+.uwp-procedure__step-note {
+  max-width: var(--uwp-reading-width);
+  margin: var(--uwp-space-1) 0 0;
+  color: var(--uwp-muted);
+  font-size: max(.875rem, 14px);
+}
+
+.uwp-procedure__after {
+  max-width: var(--uwp-reading-width);
+  margin: 0;
+  padding-inline-start: var(--uwp-space-2);
+  border-inline-start: 3px solid var(--uwp-accent);
+  color: var(--uwp-copy);
+}
+
+@media (max-width: 30rem) {
+  /* The numeral moves onto the title's line: at this width the indent costs
+     more measure than the alignment buys. */
+  .uwp-procedure__step {
+    padding-inline-start: 0;
+  }
+
+  .uwp-procedure__step::before {
+    position: static;
+    display: inline-flex;
+    margin-inline-end: .5rem;
+    vertical-align: -.45rem;
+  }
+
+  .uwp-procedure__step-title {
+    display: inline;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Definition list — labelled facts about one thing.
+
+   A <dl> whose pairs are each wrapped in a <div>, which is what makes a row
+   one grid item: without the wrapper a two-column layout will happily put a
+   term in one column and its definition in the other.
+   --------------------------------------------------------------------------- */
+.uwp-definitions {
+  display: grid;
+  gap: 0;
+  margin: var(--uwp-space-2) 0;
+}
+
+.uwp-definitions--columns {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  column-gap: var(--uwp-space-4);
+}
+
+.uwp-definitions__row {
+  padding-block: .55rem;
+  border-bottom: 1px solid var(--uwp-rule);
+}
+
+.uwp-definitions__label {
+  margin: 0;
+  color: var(--uwp-heading);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.uwp-definitions__value {
+  margin: .15rem 0 0;
+  color: var(--uwp-copy);
+  font-size: max(1rem, 16px);
+  overflow-wrap: anywhere;
+}
+
+/* What the site cannot yet say, in the voice the package keeps for metadata —
+   distinguishable from a published fact at a glance, and still read out in
+   full, because the point of keeping the row is that it is read. */
+.uwp-definitions__row--missing .uwp-definitions__value {
+  color: var(--uwp-muted);
+  font-style: italic;
+}
+
+.uwp-definitions__value .uwp-meta {
+  display: block;
+  margin-top: .15rem;
+  color: var(--uwp-muted);
+  font-size: max(.875rem, 14px);
+  font-style: normal;
+}
+
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) .uwp-switch-thumb {

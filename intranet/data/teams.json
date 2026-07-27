@@ -1,0 +1,317 @@
+{
+ "schema": "mitwpu.intranet-teams.v1",
+ "note": "One record per team the intranet's pages route a reader to. It is here rather than inside a page's data file because /intranet/help/ and the Computing Resources Centre portal both route to the library, to Sports and to Human Resources, and two copies of a telephone number is one copy too many: the stale one looks exactly like the current one. A page names the ids it uses; every record's contact values are still checked against the capture by the builder that renders them.",
+ "teams": [
+  {
+   "id": "computing-resources-centre",
+   "name": "Computing Resources Centre",
+   "short": "Computing Resources Centre",
+   "proposed": true,
+   "proposedNote": "No unit of this name appears anywhere the university publishes, and no IT office appears in its directory of administrative offices. The name is a proposal, and it follows the Indian convention — IIT Bombay and IIT Kanpur have a Computer Centre, IIT Delhi a Computer Services Centre — so that a colleague arriving from another institution recognises it rather than has to learn it. \"Centre\" matches the university's own usage: it writes Knowledge Resource Centre, Centre for Holistic Well-Being and Centres of Excellence.",
+   "summary": "The university's computing service: the network, accounts, email, software, printing and the security of all of it. It is not yet named in anything the university publishes, and it has no published contact of any kind.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {},
+   "contactSources": {},
+   "sources": [
+    "/about-us/administrative-offices"
+   ]
+  },
+  {
+   "id": "infra-facilities",
+   "name": "Office of Infra & Facilities",
+   "short": "Infra & Facilities",
+   "summary": "The office named for campus infrastructure and facilities in the university's own directory of administrative offices.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "email": "yogesh.duse@mitwpu.edu.in"
+   },
+   "contactSources": {
+    "email": "/about-us/administrative-offices"
+   },
+   "sources": [
+    "/about-us/administrative-offices"
+   ]
+  },
+  {
+   "id": "examinations",
+   "name": "Examination Helpdesk",
+   "short": "Examinations",
+   "summary": "The Department of Examinations' public helpdesk. It is the only support service on the university's website that publishes a telephone number, an email address, a room and its opening hours together.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "telephone": "8669990193",
+    "email": "exam.helpdesk@mitwpu.edu.in",
+    "location": "7th Floor, Department of Examinations, Saraswati Building, MIT-WPU Kothrud, Pune 411038",
+    "hours": "Monday to Saturday, 10:30 to 17:00; Saturday 11:00 to 13:00",
+    "requestUrl": "https://forms.gle/EbsrT87114AD14HY9"
+   },
+   "contactSources": {
+    "telephone": "/academics/examination-contact-us",
+    "email": "/academics/examination-contact-us",
+    "location": "/academics/examination-contact-us",
+    "hours": "/academics/examination-contact-us",
+    "requestUrl": "/academics/faq"
+   },
+   "sources": [
+    "/academics/examination-contact-us",
+    "/academics/faq"
+   ]
+  },
+  {
+   "id": "exam-verification",
+   "name": "Examination verification desk",
+   "short": "Examinations",
+   "summary": "The desk that answers other universities, employers and agencies checking a document the university issued.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "telephone": "7720061618",
+    "email": "verification.exam@mitwpu.edu.in",
+    "location": "7th Floor, Department of Examinations, Saraswati Building, MIT-WPU Kothrud, Pune 411038",
+    "hours": "Monday to Saturday, 11:00 to 17:00; Saturday 11:00 to 13:00",
+    "requestUrl": "https://mitwpu.directverify.in/student/#/app/request"
+   },
+   "contactSources": {
+    "telephone": "/academics/examination-contact-us",
+    "email": "/academics/examination-contact-us",
+    "location": "/academics/examination-contact-us",
+    "hours": "/academics/examination-contact-us",
+    "requestUrl": "/academics/document-verification"
+   },
+   "sources": [
+    "/academics/examination-contact-us",
+    "/academics/document-verification"
+   ]
+  },
+  {
+   "id": "hostel",
+   "name": "Hostel administration",
+   "short": "Hostels",
+   "summary": "The team that runs the residences at Ambegaon, Bavdhan, Karvenagar and Kothrud, their mess, their laundry and the shuttle between them and the campus.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "telephone": "020-48552855",
+    "email": "hostel.admin@mitwpu.edu.in"
+   },
+   "contactSources": {
+    "telephone": "/life-wpu/hostel-facilities",
+    "email": "/life-wpu/hostel-facilities"
+   },
+   "sources": [
+    "/life-wpu/hostel-facilities"
+   ]
+  },
+  {
+   "id": "counselling",
+   "name": "Aakriti: Centre for Holistic Well-Being",
+   "short": "Counselling",
+   "summary": "The university's counselling service. It is the best-published support service on the site: it gives a number, an email address, a room you can walk to and a way to book an appointment.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "telephone": "+91 9049689898",
+    "email": "aakriti-wellness@mitwpu.edu.in",
+    "location": "Ground floor, next to the Student Affairs office, Maitreyi Building, MIT-WPU Kothrud",
+    "requestUrl": "https://forms.gle/5eRM868ac4CRgZYR9"
+   },
+   "contactSources": {
+    "telephone": "/aakriti-centre-for-holistic-well-being",
+    "email": "/aakriti-centre-for-holistic-well-being",
+    "location": "/aakriti-centre-for-holistic-well-being",
+    "requestUrl": "/aakriti-centre-for-holistic-well-being"
+   },
+   "sources": [
+    "/aakriti-centre-for-holistic-well-being"
+   ]
+  },
+  {
+   "id": "medical",
+   "name": "Campus medical service",
+   "short": "Medical",
+   "summary": "The university describes a full-time doctor, a 24-hour pharmacy, a three-bed facility, ambulances, ECG and day care. It publishes no way to reach any of them.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {},
+   "contactSources": {},
+   "sources": [
+    "/life-wpu/medical-facilities"
+   ]
+  },
+  {
+   "id": "security",
+   "name": "Campus security",
+   "short": "Security",
+   "summary": "The university describes round-the-clock guarding and campus-wide CCTV. It publishes no security desk, no emergency number and no reporting route.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {},
+   "contactSources": {},
+   "sources": [
+    "/life-wpu/other-facilities",
+    "/life-wpu/hostel-facilities"
+   ]
+  },
+  {
+   "id": "library",
+   "name": "Knowledge Resource Centre",
+   "short": "Library",
+   "summary": "The university library, in its own building. It publishes its hours, its borrowing rules and what happens if you lose a book, but no way to ask it anything.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "location": "Agastya building, MIT-WPU Kothrud",
+    "hours": "Monday to Friday 08:00 to 20:00; Saturday 08:00 to 18:30; closed Sundays and university holidays"
+   },
+   "contactSources": {
+    "location": "/life-wpu/library",
+    "hours": "/life-wpu/library"
+   },
+   "sources": [
+    "/life-wpu/library"
+   ]
+  },
+  {
+   "id": "sports",
+   "name": "Sports Department",
+   "short": "Sports",
+   "summary": "Runs the sports facilities and the only self-service booking system the university publishes.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "telephone": "+91 99706 00437",
+    "email": "sportsdepartment@mitwpu.edu.in",
+    "requestUrl": "https://sports.mitwpu.edu.in/login"
+   },
+   "contactSources": {
+    "telephone": "/life-wpu/sports/elite-sportsperson-scholarship",
+    "email": "/life-wpu/sports/elite-sportsperson-scholarship",
+    "requestUrl": "/life-wpu/sports"
+   },
+   "sources": [
+    "/life-wpu/sports"
+   ]
+  },
+  {
+   "id": "finance",
+   "name": "Office of Finance & Accounts",
+   "short": "Finance",
+   "summary": "Budgeting, fee accounting and payments. A separate Accounts Helpdesk exists for students, but its contact details are published only inside a QR code image.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "email": "nitinkumar.chandak@mitwpu.edu.in"
+   },
+   "contactSources": {
+    "email": "/about-us/administrative-offices"
+   },
+   "sources": [
+    "/about-us/administrative-offices",
+    "/academics/student-assistance"
+   ]
+  },
+  {
+   "id": "registrar",
+   "name": "Registrar's Office",
+   "short": "Registrar",
+   "summary": "Academic and administrative appointments, policy, and the link between faculty, students and the administrative units.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "email": "registrar@mitwpu.edu.in"
+   },
+   "contactSources": {
+    "email": "/about-us/administrative-offices"
+   },
+   "sources": [
+    "/about-us/administrative-offices"
+   ]
+  },
+  {
+   "id": "human-resources",
+   "name": "Human Resources Office",
+   "short": "Human Resources",
+   "summary": "Recruitment, benefits, professional development, employee relations and payroll enquiries for faculty and staff.",
+   "expect": [
+    "requestUrl",
+    "telephone",
+    "email",
+    "location",
+    "hours"
+   ],
+   "contact": {
+    "email": "director.hr@mitwpu.edu.in"
+   },
+   "contactSources": {
+    "email": "/about-us/administrative-offices"
+   },
+   "sources": [
+    "/about-us/administrative-offices",
+    "/career"
+   ]
+  }
+ ]
+}

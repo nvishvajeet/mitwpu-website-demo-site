@@ -1,0 +1,2246 @@
+{
+ "schema": "mitwpu.intranet-computing.v1",
+ "teamIds": [
+  "computing-resources-centre",
+  "library",
+  "examinations",
+  "human-resources",
+  "sports"
+ ],
+ "servicesCrumb": "Service manuals",
+ "portal": {
+  "id": "computing",
+  "crumb": "Computing Resources Centre",
+  "short": "The Centre, what it runs, and the questions it is asked",
+  "eyebrow": "University services",
+  "title": "Computing Resources Centre",
+  "lede": "The network, your accounts, your email, the software you may install and the machines your research runs on — and, said plainly, the parts of that the university has not yet decided.",
+  "description": "The Computing Resources Centre's pages: getting on to the network from off campus, remote access to national computing, an introduction to Linux and SSH, software entitlement, and the computing questions the university has not yet answered.",
+  "notice": {
+   "eyebrow": "Before you start",
+   "title": "The Centre is a proposal, and most of these answers are missing",
+   "paragraphs": [
+    "No unit of this name appears anywhere the university publishes, and no computing office appears in its directory of administrative offices. The name is a proposal; the service it describes is real work somebody does, and the pages here are what that work has to publish before anybody can use it.",
+    "So an answer here is one of three things: a fact read off a page the university published, with the address it was read from beside it; a question nobody has answered, kept and marked as such; or a sample, marked as a sample, showing the shape of an instruction the real version will replace. Nothing on these pages is a plausible guess, and that is the only guarantee they offer."
+   ]
+  },
+  "pagesTitle": "What you came here to do",
+  "pagesIntroduction": [
+   "Arranged by the job rather than by who does it, because you should not have to know the organisation chart to get a laptop on to the network."
+  ],
+  "pages": [
+   {
+    "slug": "vpn",
+    "label": "Reach university systems from off campus",
+    "note": "The VPN"
+   },
+   {
+    "slug": "cdac",
+    "label": "Use national computing beyond what a laboratory machine can do",
+    "note": "Remote access to C-DAC · samples only"
+   },
+   {
+    "slug": "linux",
+    "label": "Learn enough Linux and SSH to work on a machine you cannot walk up to",
+    "note": "Introduction"
+   },
+   {
+    "slug": "software",
+    "label": "Find out whether you may install something, and how to get it",
+    "note": "Software"
+   },
+   {
+    "slug": "services",
+    "label": "Read the manual for a service the university runs",
+    "note": "Seven manuals, one per registered service"
+   }
+  ],
+  "sections": [
+   {
+    "id": "what-the-centre-runs",
+    "title": "What the Centre is answerable for",
+    "paragraphs": [
+     "Everything a member of this university touches that is not paper. Six areas, and they are listed here rather than left implied because a service nobody has been made answerable for is a service that is nobody's to fix at four o'clock on a Friday."
+    ],
+    "definitions": {
+     "columns": true,
+     "items": [
+      {
+       "label": "The network",
+       "value": "Wired and wireless on campus, the connection out to the internet, and — when it exists — the route back in from outside it."
+      },
+      {
+       "label": "Accounts and identity",
+       "value": "One sign-in per person: when it starts working, what it opens, and what happens to it when the person leaves."
+      },
+      {
+       "label": "Email",
+       "value": "The address, where it is read, and how long it lasts after graduation or resignation."
+      },
+      {
+       "label": "Software and licensing",
+       "value": "What each kind of member may install, at whose cost, and what happens to the licence when they go."
+      },
+      {
+       "label": "Research computing",
+       "value": "Machines larger than a workstation, whether the university's own or reached remotely at a national facility."
+      },
+      {
+       "label": "Security",
+       "value": "Phishing, compromised accounts, what to do first, and who to tell."
+      }
+     ]
+    }
+   },
+   {
+    "id": "how-to-reach-the-centre",
+    "title": "How to reach the Centre",
+    "paragraphs": [
+     "It cannot be reached. Every field below is what a reader of this page would expect to find, and every one of them is empty, because the university publishes no telephone number, no email address, no room and no request system for computing.",
+     "That is the first thing on the work list at the foot of this page, and it is first because nothing else here can be acted on without it: a page that ends \"ask the Computing Resources Centre\" and cannot say how is a page that has answered nothing."
+    ],
+    "team": "computing-resources-centre"
+   }
+  ],
+  "questionsTitle": "The questions the Centre is asked",
+  "questionsIntroduction": [
+   "In the words people actually use, rather than in the names of the systems involved. Several have an answer already; the ones that do not are marked plainly rather than filled in with something plausible.",
+   "An unanswered question here is not an oversight. It is a decision the university has still to take and publish, and it is on the work list at the foot of this page so that somebody can take it."
+  ],
+  "topics": [
+   {
+    "id": "crc-accounts",
+    "title": "Joining, leaving and your accounts",
+    "summary": "What you are given on the day you arrive, and what happens to it on the day you go.",
+    "items": [
+     {
+      "id": "crc-joining",
+      "question": "I have just joined. What accounts do I get, and when do they start working?",
+      "team": "computing-resources-centre",
+      "unanswered": "Nobody has published what a new student or a new member of staff is given, on what day it becomes usable, or what to do if it has not by the time teaching starts. This is one of the two most-asked questions in any institution and one of the least often written down."
+     },
+     {
+      "id": "crc-password",
+      "question": "I have forgotten my password, or my account is locked",
+      "team": "computing-resources-centre",
+      "unanswered": "No reset route, no self-service page and no identity check is published. Somebody has to decide how a person proves who they are before an account is unlocked, and where that happens."
+     },
+     {
+      "id": "crc-leaving",
+      "question": "I am leaving. What happens to my account, my email and my files?",
+      "team": "computing-resources-centre",
+      "unanswered": "Nothing is published about how long an account survives, whether mail can be forwarded, what becomes of files held in university systems, or how much notice anyone gets. It is the question nobody asks until the day it is too late to ask it, and it has real consequences for research data.",
+      "facts": [
+       {
+        "text": "The university's offboarding is not described anywhere in what it publishes; its administrative offices index names Human Resources for employee matters and nobody for computing.",
+        "source": "/about-us/administrative-offices"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "crc-email",
+    "title": "Email",
+    "summary": "The address you are given and how long you keep it.",
+    "items": [
+     {
+      "id": "email-account",
+      "question": "What is my university email address, and where do I read it?",
+      "team": "computing-resources-centre",
+      "unanswered": "No page says that accounts are issued, in what form the address is made, which mail service holds it, or how to sign in to it. The university's own pages refer to a student's official email address as though everyone already has one.",
+      "facts": [
+       {
+        "text": "Several pages instruct students to use their official email id — for the student council and for examination correspondence — without anywhere saying how one is obtained.",
+        "source": "/academics/faq"
+       }
+      ]
+     },
+     {
+      "id": "crc-email-after-leaving",
+      "question": "Can I keep my university email address after I graduate?",
+      "team": "computing-resources-centre",
+      "unanswered": "Not published. Alumni are offered library membership on payment and an alumni portal, so the university has taken a position on some post-graduation services and not on this one.",
+      "facts": [
+       {
+        "text": "Library membership is offered to alumni on a payment basis, which shows the question of continuing services after graduation has been considered elsewhere.",
+        "source": "/life-wpu/library"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "crc-network",
+    "title": "Getting online, on campus and off",
+    "summary": "Wireless here, wireless elsewhere, and reaching university systems from home.",
+    "items": [
+     {
+      "id": "cannot-connect",
+      "question": "I cannot get on to the wireless network",
+      "team": "computing-resources-centre",
+      "unanswered": "No network name, no joining instructions, no registration step and nobody to ask. What is published is only that the network exists and is meant to be always on.",
+      "facts": [
+       {
+        "text": "The campus amenities page says the university offers 24/7 WiFi facilities, and gives no further detail.",
+        "source": "/life-wpu/other-facilities"
+       },
+       {
+        "text": "Hostel rooms are listed as having 24x7 Wi-Fi access.",
+        "source": "/life-wpu/hostel-facilities"
+       },
+       {
+        "text": "The library provides PCs, LAN switches and Wi-Fi for personal laptops under a bring-your-own-device arrangement, which is the only place on the site where connecting a personal machine is described at all.",
+        "source": "/life-wpu/library"
+       }
+      ]
+     },
+     {
+      "id": "crc-eduroam",
+      "question": "I am visiting another university. Can I use their wireless with my MIT-WPU sign-in?",
+      "team": "computing-resources-centre",
+      "unanswered": "Eduroam is not mentioned anywhere the university publishes, so whether it is a member is unknown. It is worth answering in one line either way: a researcher who travels finds out at the worst moment."
+     },
+     {
+      "id": "crc-guest-wifi",
+      "question": "A visitor is coming to see me. How do they get online?",
+      "team": "computing-resources-centre",
+      "unanswered": "No guest access, sponsor process or visitor account is described. Anyone hosting an external examiner, a speaker or a conference has nothing to tell them."
+     },
+     {
+      "id": "remote-access",
+      "question": "I am at home and I cannot reach the library's journals and databases",
+      "team": "library",
+      "answer": [
+       "You are not meant to be able to. The library's electronic resources are licensed by network address and the university states that they work within its premises, so a subscription that opens on campus will refuse you at home.",
+       "There is no published remote access of any kind: no VPN, no proxy, no off-campus sign-in. Whether one exists is one of the questions at the foot of this page.",
+       "Before you write to anyone: the library also lists freely available national collections, which do work from anywhere."
+      ],
+      "facts": [
+       {
+        "text": "The Knowledge Resource Centre states that its online IP-based e-resources allow access anywhere on campus, and that its subscribed databases are accessible within the university premises.",
+        "source": "/life-wpu/library"
+       }
+      ],
+      "links": [
+       {
+        "label": "Knowledge Resource Centre, including the free national collections",
+        "route": "/life-wpu/library"
+       }
+      ]
+     },
+     {
+      "id": "crc-remote-desktop",
+      "question": "Can I reach my office machine, or a departmental server, from home?",
+      "team": "computing-resources-centre",
+      "unanswered": "No remote-working provision of any kind is published. For a university that examines its students remotely, that is a conspicuous asymmetry: the students work off campus by design and the staff have nothing written down."
+     }
+    ]
+   },
+   {
+    "id": "crc-software",
+    "title": "Software, printing and where your work lives",
+    "summary": "What you may install, what you may print, and what happens to the file you were working on.",
+    "items": [
+     {
+      "id": "crc-software-entitlement",
+      "question": "Is MATLAB — or Office, or Windows — free to me?",
+      "team": "computing-resources-centre",
+      "unanswered": "No entitlement of any kind is published. Do not buy on the strength of a colleague's recollection and do not install on the strength of an assumption; the table further down this page is where the answer will go once somebody has it.",
+      "links": [
+       {
+        "label": "The software entitlement table, and what is still missing from it",
+        "href": "#software",
+        "note": "on this page"
+       }
+      ]
+     },
+     {
+      "id": "crc-lab-software",
+      "question": "I need a package installed on the machines in a teaching laboratory",
+      "team": "computing-resources-centre",
+      "unanswered": "No route, no lead time and no approval step is published. Laboratories evidently do carry licensed software, so somebody is arranging it; nothing says who or how far in advance of a semester to ask.",
+      "facts": [
+       {
+        "text": "One centre's industrial workstations are described as loaded with named CAD and CAE packages, so laboratory software is procured and installed by somebody.",
+        "source": "/centre-of-excellence-technology-and-visualization-centre-1"
+       }
+      ]
+     },
+     {
+      "id": "crc-plagiarism-tool",
+      "question": "What will my assignment or thesis be checked against?",
+      "team": "computing-resources-centre",
+      "unanswered": "No similarity-checking tool is named anywhere, so neither a student nor a supervisor can tell what a submission is compared with, what score matters, or whether a draft may be checked before it is submitted. The university states its expectations about plagiarism repeatedly and names no instrument for them."
+     },
+     {
+      "id": "printing",
+      "question": "I need to print, copy or scan something",
+      "team": "library",
+      "answer": [
+       "The library runs a reprography service and charges for it. Nothing else is published: no student printing, no print quota, no departmental printers, and no way to send a document to one.",
+       "Printing is among the highest-volume questions any university computing service gets, so its absence here is a gap rather than a sign that nothing exists."
+      ],
+      "facts": [
+       {
+        "text": "The Knowledge Resource Centre lists a reprography facility available on a payment basis.",
+        "source": "/life-wpu/library"
+       }
+      ]
+     },
+     {
+      "id": "crc-storage",
+      "question": "Where should I keep my work, and is any of it backed up?",
+      "team": "computing-resources-centre",
+      "unanswered": "No storage service, quota, shared drive or backup is described. A research group with data on a laboratory machine has nothing published telling it whether that data survives the machine."
+     },
+     {
+      "id": "crc-recover-file",
+      "question": "I have deleted something important. Can it be recovered?",
+      "team": "computing-resources-centre",
+      "unanswered": "Not published, and it cannot be answered until the previous question is. There is no stated retention period and no restore request route."
+     }
+    ]
+   },
+   {
+    "id": "crc-devices",
+    "title": "Your own laptop, and the rooms you teach in",
+    "summary": "The machine you are required to own, and the equipment you are not.",
+    "items": [
+     {
+      "id": "student-laptop",
+      "question": "What device do I need, and what happens if it fails in an examination?",
+      "team": "examinations",
+      "answer": [
+       "You sit examinations on your own device, so this is not an optional purchase. The university publishes what the device has to do rather than what to buy: a working camera and microphone, a supported operating system, a charge that outlasts the paper, a data connection as a fallback, and a power bank.",
+       "It says wireless is provided for digital examinations, and that queries during one go to the technical support centre or the online proctor.",
+       "No minimum specification, no recommended model, no loan scheme and no hardship provision is published. A student who cannot afford a suitable device has nowhere on this site to turn."
+      ],
+      "facts": [
+       {
+        "text": "Examinations are conducted digitally under a Bring Your Own Device policy; the device must be compatible in camera, microphone, operating system and other specifications informed from time to time, fully charged, with charging life beyond the maximum examination duration, a data pack in case of emergency and a power backup device.",
+        "source": "/academics/faq"
+       },
+       {
+        "text": "The university states that it provides Wi-Fi connectivity for digital examinations and that the student may avail the network facilities of the university.",
+        "source": "/academics/faq"
+       }
+      ],
+      "links": [
+       {
+        "label": "How examinations are taken",
+        "route": "/academics/mode-of-exams"
+       }
+      ]
+     },
+     {
+      "id": "digital-examination",
+      "question": "Something has gone wrong during a digital examination",
+      "team": "examinations",
+      "answer": [
+       "Ring the examination helpdesk. It is the one support service on the university's site that publishes a telephone number, an email address, a room and its opening hours together, and the university's own instruction is that login problems during an examination go to those numbers and nowhere else.",
+       "A device that will not start, a camera that will not work or a connection that drops during a paper is an examination problem before it is a computing one."
+      ],
+      "facts": [
+       {
+        "text": "Question papers are issued to the student's own device in a proctored environment and no hard copy is printed, so a failed device is a failed examination rather than an inconvenience.",
+        "source": "/academics/mode-of-exams"
+       }
+      ]
+     },
+     {
+      "id": "crc-laptop-repair",
+      "question": "My laptop is broken. Can the university repair it or lend me one?",
+      "team": "computing-resources-centre",
+      "unanswered": "No repair service, loan pool or hardship scheme is published. Given that every examination is taken on a personally owned machine, whether one exists is a question with consequences for a student's degree rather than only for their convenience."
+     },
+     {
+      "id": "crc-projector",
+      "question": "The projector in my teaching room will not work and my class has started",
+      "team": "computing-resources-centre",
+      "unanswered": "No number to ring and nobody named, for 350-plus rooms fitted with smartboards and projectors. This is the shortest-fuse request on the whole page: an answer that takes a day is no answer at all.",
+      "facts": [
+       {
+        "text": "The university describes more than 350 hi-tech classrooms equipped with smartboards and LCD projectors, and multiple auditoriums with audio-visual facilities.",
+        "source": "/life-wpu/academic-facilities"
+       }
+      ]
+     },
+     {
+      "id": "teaching-technology",
+      "question": "I teach here and I need the learning management system",
+      "team": "computing-resources-centre",
+      "unanswered": "A learning management system is referred to once, in passing, in the biography of a member of the university's leadership. It is never named, never located, and there is no route to support for it.",
+      "facts": [
+       {
+        "text": "The only reference to a learning management system anywhere on the university's site is a leadership biography noting a role in implementing the university ERP and learning management systems.",
+        "source": "/leadership/mr-ganesh-b-pokale-5"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "crc-security",
+    "title": "Security, and buying computing equipment",
+    "summary": "Suspicious messages, blocked access, and what to buy.",
+    "items": [
+     {
+      "id": "crc-phishing",
+      "question": "I have had a message asking for my password. Is it genuine?",
+      "team": "computing-resources-centre",
+      "unanswered": "No statement of what the university will and will not ask you for, and no address to forward a suspicious message to. That single sentence — \"we will never ask you for your password\" — is the cheapest security control an institution owns, and it is not written down here.",
+      "facts": [
+       {
+        "text": "A handbook titled \"Basics of Cyber Hygiene\" is published in the university's student information index, which is the only security guidance on the site.",
+        "source": "/student-information"
+       }
+      ],
+      "links": [
+       {
+        "label": "Student information, where the cyber hygiene handbook is published",
+        "route": "/student-information"
+       }
+      ]
+     },
+     {
+      "id": "account-compromised",
+      "question": "I think my account has been compromised",
+      "team": "computing-resources-centre",
+      "unanswered": "No incident reporting route, no out-of-hours contact and no procedure. Somebody has to decide who is told, how quickly, and what they do first."
+     },
+     {
+      "id": "crc-blocked-database",
+      "question": "My access to a journal database has stopped working",
+      "team": "library",
+      "answer": [
+       "It may have been blocked deliberately. The library prohibits systematic downloading from its subscribed databases, and states that breaking that rule leads to penal action and a block on the entire community of users — so one person's script takes the journals away from everybody.",
+       "If you are off campus, it is more likely the previous question: the subscriptions are licensed by network address and simply do not work from home."
+      ],
+      "facts": [
+       {
+        "text": "The Knowledge Resource Centre states that systematic downloading is strictly prohibited and will result in penal action and a block on the entire community of users.",
+        "source": "/life-wpu/library"
+       }
+      ]
+     },
+     {
+      "id": "crc-buy-computer",
+      "question": "I want to buy a computer for my department. What should I buy, and from whom?",
+      "team": "computing-resources-centre",
+      "unanswered": "No standard specification, no approved supplier and no purchase route is published. A Purchase Committee exists and its membership is published; the process it runs is not.",
+      "links": [
+       {
+        "label": "Student information, where the Purchase Committee is listed",
+        "route": "/student-information"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "provenance": [
+   "Each fact here was read from one of these published pages on the day the site was captured. They are the university's pages, not this one: when one of them changes, this page is wrong until it is rebuilt."
+  ],
+  "directories": [
+   {
+    "label": "Administrative offices",
+    "route": "/about-us/administrative-offices",
+    "note": "twelve offices, one email each"
+   },
+   {
+    "label": "Knowledge Resource Centre",
+    "route": "/life-wpu/library"
+   },
+   {
+    "label": "Campus amenities",
+    "route": "/life-wpu/other-facilities"
+   },
+   {
+    "label": "Contact the university",
+    "route": "/contact-us",
+    "note": "switchboard and address"
+   }
+  ],
+  "needs": [
+   {
+    "label": "A published name for the computing service"
+   },
+   {
+    "label": "A request route: a system, an address, or a desk"
+   },
+   {
+    "label": "A named owner for computing, the network and accounts"
+   },
+   {
+    "label": "Service hours, and what happens outside them"
+   },
+   {
+    "label": "A status page, or somewhere an outage is announced"
+   }
+  ],
+  "gapsIntroduction": [
+   "The facts a person has to supply before this portal is worth publishing.",
+   "Until they are supplied, a missing value is shown as missing. A plausible wrong extension number sends somebody with a broken laptop to a stranger's desk, and a plausible wrong software entitlement has somebody install unlicensed software on the university's word. Both are worse than an admitted gap."
+  ],
+  "faculty": {
+   "title": "Faculty attached to the Centre",
+   "paragraphs": [
+    "Distinct from the team answerable for running the services, because they are different things: a team keeps a service working, and a member of faculty is attached to the Centre. One person today.",
+    "Every fact below is read from the record this site already publishes about the person, and their profile is linked rather than restated. No role, title or office is asserted here, because none has been stated: “attached to the Centre” is the whole of the relationship, and a page that promoted it to a directorship would be inventing one."
+   ],
+   "members": [
+    {
+     "id": "vishvajeet-n"
+    }
+   ]
+  }
+ },
+ "pages": [
+  {
+   "slug": "vpn",
+   "crumb": "VPN",
+   "samplesOnly": true,
+   "eyebrow": "Computing Resources Centre",
+   "title": "Reaching university systems from off campus",
+   "lede": "A virtual private network puts the machine in front of you on the university's network, wherever that machine is — so the things that only work on campus work from home. The university is introducing one. It has published nothing about it, and this page says so rather than inventing it.",
+   "description": "What a university VPN is for, who it is for, and the shape of connecting to one — with every value marked as a placeholder, because MIT-WPU has published nothing about the service yet.",
+   "notice": {
+    "eyebrow": "Read this first",
+    "title": "This service is not running yet, and every command below is a sample",
+    "paragraphs": [
+     "There is no published gateway address, no client to install, no account to enable and nobody to ask. What is here is the shape of the thing, so that a reader knows what they will be doing and what they will need when it arrives.",
+     "Every value in every command is a placeholder written in capitals inside angle brackets. None of them will connect to anything, and none should be tried. When the service is announced, this page is replaced by its instructions and the marks come off."
+    ]
+   },
+   "sections": [
+    {
+     "id": "what-a-vpn-does",
+     "title": "What a VPN does, and what it does not",
+     "paragraphs": [
+      "It is a tunnel, not a permission. Your traffic goes to the university first and out from there, so a system that decides who you are by where you are coming from sees you as being on campus. That is the whole of the trick, and everything a VPN is good for follows from it.",
+      "What it is not is a way in for other people, a private network of your own, or anything to do with anonymity. It does not make a laptop safe, it does not encrypt what you do after the traffic leaves the university, and it is not a substitute for having an account on the thing you are trying to reach."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "What it gives you",
+        "value": "An address on the university's network, so services that check the address let you in."
+       },
+       {
+        "label": "What it does not give you",
+        "value": "Access to anything you did not already have an account for. A tunnel is not an authorisation."
+       },
+       {
+        "label": "What it costs",
+        "value": "Speed. Everything you do goes to Pune and back, including the things that did not need to."
+       },
+       {
+        "label": "Who it is likely to be for",
+        "value": "not yet published here",
+        "missing": true
+       },
+       {
+        "label": "Which systems it will reach",
+        "value": "not yet published here",
+        "missing": true
+       },
+       {
+        "label": "Which client software",
+        "value": "not yet published here",
+        "missing": true
+       }
+      ]
+     }
+    },
+    {
+     "id": "why-you-would-want-one",
+     "title": "The things that only work on campus",
+     "paragraphs": [
+      "One of them is published and is the reason this page exists at all: the library's subscriptions are licensed by network address, so a database that opens in the reading room refuses you at home. Everything else on this list is a guess about a university and not a statement about this one — which is exactly what a VPN page has to stop being."
+     ],
+     "facts": [
+      {
+       "text": "The Knowledge Resource Centre states that its online IP-based e-resources allow access anywhere on campus, and that its subscribed databases are accessible within the university premises.",
+       "source": "/life-wpu/library"
+      }
+     ],
+     "links": [
+      {
+       "label": "Knowledge Resource Centre, including the free national collections that work from anywhere",
+       "route": "/life-wpu/library"
+      }
+     ]
+    },
+    {
+     "id": "getting-access",
+     "title": "Getting access",
+     "paragraphs": [
+      "Nothing here is a process the university has published. It is the shape such a process takes, set out so that whoever writes the real one has a list to work against and so that a reader knows what they will be asked for."
+     ],
+     "procedures": [
+      {
+       "id": "request",
+       "title": "Ask for VPN access",
+       "summary": "At the end of this you have an account enabled for the VPN and the details needed to configure a client.",
+       "applies_to": "Nobody yet. There is no route to make this request.",
+       "before": [
+        "A working university sign-in. If yours does not work, that is a different problem and it is on the Centre's own page.",
+        "A reason: which system you need to reach from off campus. Access to a network is normally granted for a purpose rather than in general."
+       ],
+       "steps": [
+        {
+         "title": "Check whether you need it at all",
+         "paragraphs": [
+          "Most things a university publishes are on the open web and do not need a tunnel. It is worth two minutes: a VPN slows everything you do, and a request nobody needed to make is the most expensive kind."
+         ]
+        },
+        {
+         "title": "Make the request through whatever route the Centre publishes",
+         "paragraphs": [
+          "No such route is published. When one is, it belongs here, and it is the second item on this page's work list."
+         ],
+         "note": "Do not send a password, a key, or a photograph of a screen to anybody as part of a request. No legitimate request for network access needs any of them."
+        },
+        {
+         "title": "Receive the details",
+         "paragraphs": [
+          "What arrives is an address to connect to, a name to connect as, and whichever second factor the university decides on. It is not a password sent in a message; a service that emails you a password is a service to raise a ticket about."
+         ]
+        },
+        {
+         "title": "Install the client the university names",
+         "paragraphs": [
+          "Take it from the address the Centre gives you and from nowhere else. VPN clients are among the most impersonated software there is, and the copy at the top of a search result is not the one you want."
+         ],
+         "note": "Which client this will be is not published. Until it is, treat any page claiming to be MIT-WPU's VPN download as a phishing page, because today that is all it could be."
+        }
+       ],
+       "after": "You are on when a system that refused you a minute ago lets you in."
+      }
+     ]
+    },
+    {
+     "id": "connecting",
+     "title": "Connecting, once there is something to connect to",
+     "paragraphs": [
+      "Two shapes, because universities publish two. Either the client is an application with a window, in which case there is nothing to type; or the tunnel is a command, in which case it is one line and can be scripted. Both are shown so that neither is a surprise."
+     ],
+     "commands": [
+      {
+       "caption": "Bring the tunnel up from a terminal",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "The address and the account name both arrive with your access; neither is published.",
+         "text": "sudo <VPN-CLIENT-COMMAND> --server <GATEWAY-YOU-WERE-GIVEN> --user <YOUR-USERNAME>"
+        }
+       ],
+       "output": [
+        "Connected. Your address on the university network is <ADDRESS-ASSIGNED-TO-YOU>."
+       ],
+       "note": "sudo is asking for the password of the machine in front of you, not for a university one. If something asks for your university password at this point, stop."
+      },
+      {
+       "caption": "Check that it worked, before assuming it did",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "What the outside world now thinks your address is.",
+         "text": "curl -s <ADDRESS-ECHO-SERVICE-THE-CENTRE-NAMES>"
+        },
+        {
+         "comment": "Whether the thing you actually wanted is now reachable.",
+         "text": "ping -c 3 <SYSTEM-YOU-ARE-TRYING-TO-REACH>"
+        }
+       ],
+       "note": "A tunnel that is up and a service that is reachable are two different questions, and answering only the first is how an afternoon goes."
+      },
+      {
+       "caption": "Take it down when you have finished",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "Leaving it up sends everything you do through the university, including the things that are nobody's business there.",
+         "text": "sudo <VPN-CLIENT-COMMAND> --disconnect"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "what-you-agree-to",
+     "title": "What you are agreeing to when you connect",
+     "paragraphs": [
+      "A VPN puts a machine the university does not own on to the network it is answerable for, so the terms matter more than they do for wireless in a corridor. None of these terms is published, and all five will have to be.",
+      "Two of them are worth stating now because they are true of every such service and cost somebody their access every year: the account is yours and is not lent, and the machine you connect from is your responsibility while it is on the network."
+     ],
+     "definitions": {
+      "items": [
+       {
+        "label": "Acceptable use, and what breaches it",
+        "value": "not yet published here",
+        "missing": true
+       },
+       {
+        "label": "What is logged, for how long, and who may read it",
+        "value": "not yet published here",
+        "missing": true
+       },
+       {
+        "label": "Whether a personal machine must meet any condition",
+        "value": "not yet published here",
+        "missing": true
+       },
+       {
+        "label": "What happens to access when you leave",
+        "value": "not yet published here",
+        "missing": true
+       },
+       {
+        "label": "Who to tell if you think your account has been used by somebody else",
+        "value": "not yet published here",
+        "missing": true
+       }
+      ]
+     },
+     "links": [
+      {
+       "label": "If you think your account has been compromised",
+       "page": "portal",
+       "note": "The Centre's own questions"
+      }
+     ]
+    }
+   ],
+   "questionsTitle": "Questions about the VPN",
+   "questionsIntroduction": [
+    "Every one of them is unanswered, and each is a decision rather than a detail. They are kept here, in the reader's words, because a well-chosen question is a specification for whoever answers it."
+   ],
+   "topics": [
+    {
+     "id": "vpn-questions",
+     "title": "What has to be decided before this page is worth reading",
+     "summary": "Six decisions, in the order they block each other.",
+     "items": [
+      {
+       "id": "vpn-who",
+       "question": "Who will be allowed to use the VPN?",
+       "team": "computing-resources-centre",
+       "unanswered": "Whether it is for staff only, for research students, for all students, or granted per request. This is the first decision and every other one follows it: a service for four hundred staff and a service for thirty thousand students are not the same service."
+      },
+      {
+       "id": "vpn-what-it-reaches",
+       "question": "What will the VPN let me reach that I cannot reach now?",
+       "team": "computing-resources-centre",
+       "unanswered": "The list of systems that check the network address. The library's subscriptions are the only one the university has published; whether the learning management system, the examination systems, departmental servers or anything else are on it is unknown."
+      },
+      {
+       "id": "vpn-library",
+       "question": "Will it get me into the library's databases from home?",
+       "team": "computing-resources-centre",
+       "unanswered": "It is the obvious use and it is not stated. Some universities solve this with a VPN and some with a proxy that needs no client at all; the two are different work, and a reader cannot tell which is coming.",
+       "facts": [
+        {
+         "text": "The library states that its subscribed databases are accessible within the university premises, which is the constraint a VPN would lift.",
+         "source": "/life-wpu/library"
+        }
+       ]
+      },
+      {
+       "id": "vpn-client",
+       "question": "Which client will I install, and where do I get it?",
+       "team": "computing-resources-centre",
+       "unanswered": "Nothing is named. Until something is, there is no legitimate MIT-WPU VPN download anywhere, and anything claiming to be one is worth reporting rather than installing."
+      },
+      {
+       "id": "vpn-mfa",
+       "question": "Will I need a second factor, and what will it be?",
+       "team": "computing-resources-centre",
+       "unanswered": "A VPN account that needs only a password is a password away from being somebody else's. Whether a second factor is required, and whether it is an application, a message or a token, is not stated."
+      },
+      {
+       "id": "vpn-alternative",
+       "question": "Is there anything I can do today instead?",
+       "team": "library",
+       "answer": [
+        "For the library, yes, partly. It lists freely available national collections that work from anywhere, and those need no tunnel and no sign-in.",
+        "For everything else, no. There is no published remote access of any kind — no VPN, no proxy, no off-campus sign-in — and there is nothing to configure while that remains true."
+       ],
+       "facts": [
+        {
+         "text": "The Knowledge Resource Centre lists free national collections alongside its subscribed databases.",
+         "source": "/life-wpu/library"
+        }
+       ],
+       "links": [
+        {
+         "label": "Knowledge Resource Centre",
+         "route": "/life-wpu/library"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "needs": [
+    {
+     "label": "Who is eligible for VPN access"
+    },
+    {
+     "label": "The route by which access is requested"
+    },
+    {
+     "label": "The gateway address, and the client software to use with it"
+    },
+    {
+     "label": "Whether a second factor is required, and which"
+    },
+    {
+     "label": "Which university systems the VPN is expected to reach"
+    },
+    {
+     "label": "An acceptable-use statement, and what is logged"
+    },
+    {
+     "label": "What happens to VPN access when a person leaves"
+    }
+   ],
+   "gapsIntroduction": [
+    "Seven decisions and one page. None of them can be guessed: a wrong gateway address is a support ticket, a wrong eligibility rule is somebody told they may not have a thing they may, and a wrong client is a person installing software from a stranger."
+   ]
+  },
+  {
+   "slug": "cdac",
+   "crumb": "C-DAC",
+   "samplesOnly": true,
+   "eyebrow": "Computing Resources Centre",
+   "title": "Remote access to C-DAC",
+   "lede": "Research computing beyond what a laboratory machine can do, on systems the university does not own and reaches over the network. The arrangement is being made; the account, the address and the terms are not settled, so what follows is the shape of the work rather than the instructions for it.",
+   "description": "How remote access to a national computing facility works in outline — accounts, keys, connecting, moving data and submitting work — with every hostname, account name and path marked as a placeholder, because MIT-WPU has published no arrangement and this page states none.",
+   "notice": {
+    "eyebrow": "Read this first",
+    "title": "Every instruction on this page is a sample",
+    "paragraphs": [
+     "The university has published no arrangement with C-DAC, and this page describes none. What is here is the shape remote access to a national computing facility takes as such services are generally documented: you are given an account, you register a public key, you connect over SSH, you move your data, and you submit work to a scheduler rather than running it on the machine you logged in to.",
+     "Every hostname, account name, path, queue and project code below is a placeholder written in CAPITALS inside angle brackets. None of them is real, none of them will resolve, and none should be tried. The real values arrive with the account, from whoever issues it — not from this page, and not from a colleague's recollection.",
+     "When the arrangement is settled this page is replaced by its instructions. Until then, the list at the foot of the page is what has to be decided, and it is the useful part."
+    ]
+   },
+   "sections": [
+    {
+     "id": "what-this-is-for",
+     "title": "When you need a machine you cannot walk up to",
+     "paragraphs": [
+      "The threshold is not cleverness, it is arithmetic. Work belongs on a shared facility when it will not fit in the memory of a workstation, when it would take longer than you are prepared to leave a laptop running, or when it is the same calculation a few thousand times over with a different parameter each time. Everything below that threshold is faster on the machine you already have, because there is no queue in front of it.",
+      "What a facility of this kind gives you is not one large computer. It is a login machine you type on, a much larger set of compute machines you never log in to, a filesystem both can see, and a scheduler that decides when your work runs on the second set. Almost every mistake a first-time user makes comes from not yet believing the second sentence."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "The login node",
+        "value": "Where you land. For editing, moving files and submitting work — never for the work itself. It is shared by everyone logged in at that moment."
+       },
+       {
+        "label": "The compute nodes",
+        "value": "Where the work actually runs, reached only through the scheduler. You do not choose one and you do not connect to it."
+       },
+       {
+        "label": "The scheduler",
+        "value": "The queue. You describe what your job needs, it decides when that becomes available, and your job runs unattended when it does."
+       },
+       {
+        "label": "The allocation",
+        "value": "The budget of machine time a project is granted. Work is charged against it, so a job that asks for eight times what it needs costs eight times as much."
+       },
+       {
+        "label": "Which facility, and which system",
+        "value": "not yet settled",
+        "missing": true
+       },
+       {
+        "label": "How an allocation is applied for",
+        "value": "not yet settled",
+        "missing": true
+       }
+      ]
+     }
+    },
+    {
+     "id": "before-you-apply",
+     "title": "What you will need before you apply",
+     "paragraphs": [
+      "Three of these are yours to get ready now, and they are the reason this page is worth reading before there is anything to connect to. A key pair takes two minutes and is the thing most often missing when an account is issued."
+     ],
+     "definitions": {
+      "items": [
+       {
+        "label": "An SSH key pair",
+        "value": "Generated on the machine you will connect from. National facilities do not issue passwords for this, and the public half is what you send when you apply."
+       },
+       {
+        "label": "A working knowledge of the shell",
+        "value": "You will be typing at a prompt with no windows on the far end. The introduction on this portal is enough to start with."
+       },
+       {
+        "label": "A project, and somebody answerable for it",
+        "value": "Time on a national facility is granted to a piece of research rather than to a person, and normally needs a faculty member's name against it."
+       },
+       {
+        "label": "Data you may lawfully move",
+        "value": "Anything with a person in it, anything under a licence that fixes where it may be held, and anything a collaborator gave you under terms — check before it leaves this university, not after."
+       }
+      ]
+     },
+     "links": [
+      {
+       "label": "Linux and SSH: enough to get started",
+       "page": "linux",
+       "note": "Including how to make a key pair"
+      }
+     ]
+    },
+    {
+     "id": "getting-an-account",
+     "title": "Getting an account",
+     "paragraphs": [
+      "In outline, and marked as such throughout. No step below has a route, an address or a form behind it yet."
+     ],
+     "procedures": [
+      {
+       "id": "account",
+       "title": "Apply for an account on a national facility",
+       "summary": "At the end of this you have a username, a system to connect to, and a project your work is charged against.",
+       "applies_to": "Nobody yet. This is the shape of the process, not the process.",
+       "before": [
+        "A public key you generated yourself, and a private half you have never sent to anyone.",
+        "A one-paragraph description of the work and roughly what it will need.",
+        "The name of the faculty member answerable for the project."
+       ],
+       "steps": [
+        {
+         "title": "Generate a key pair if you have none",
+         "paragraphs": [
+          "This part is real and you can do it today: the command is the same everywhere and does not depend on any arrangement being settled."
+         ],
+         "commands": [
+          {
+           "caption": "Generate a key pair",
+           "sample": true,
+           "lines": [
+            {
+             "comment": "One key per person. The comment is only a label, so that you can tell your keys apart later.",
+             "text": "ssh-keygen -t ed25519 -C \"<YOUR-NAME>-<YEAR>\""
+            }
+           ],
+           "note": "Give it a passphrase. A private key with no passphrase is a password written on a note that also fits in a backup."
+          }
+         ]
+        },
+        {
+         "title": "Send the public half with the application",
+         "paragraphs": [
+          "The file ending in .pub, and nothing else. The other file is the private half and is never sent to anybody, including the people running the facility."
+         ],
+         "commands": [
+          {
+           "caption": "Read the public half so you can paste it",
+           "sample": true,
+           "lines": [
+            {
+             "text": "cat ~/.ssh/id_ed25519.pub"
+            }
+           ],
+           "output": [
+            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI<...>  <YOUR-NAME>-<YEAR>"
+           ],
+           "note": "One line, beginning ssh-ed25519 or ssh-rsa. If what you are looking at begins with five dashes and the word BEGIN, you have opened the private half; close it."
+          }
+         ],
+         "note": "This site will never publish a key, yours or anyone's, and neither should any page you are asked to paste one into."
+        },
+        {
+         "title": "Wait for the account, and read what arrives",
+         "paragraphs": [
+          "What comes back is a username, the address of a login node, the name of your project, and the facility's own conditions of use. Those conditions are the ones that bind you; nothing on this page overrides them."
+         ]
+        },
+        {
+         "title": "Connect once, immediately",
+         "paragraphs": [
+          "Not because there is anything to do, but because an account that does not work is easiest to fix on the day it was issued and hardest three months later when the person who issued it has moved on."
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "connecting",
+     "title": "Connecting",
+     "paragraphs": [
+      "One command the first time, and one word afterwards. The second is worth setting up on the first day: an address you type twenty times a week is an address you eventually mistype into somebody else's machine."
+     ],
+     "commands": [
+      {
+       "caption": "Open a session on the login node",
+       "sample": true,
+       "lines": [
+        {
+         "text": "ssh <YOUR-USERNAME>@<LOGIN-NODE-YOU-WERE-GIVEN>"
+        }
+       ],
+       "output": [
+        "The authenticity of host '<LOGIN-NODE-YOU-WERE-GIVEN>' can't be established.",
+        "ED25519 key fingerprint is SHA256:<FINGERPRINT-THE-HOST-OFFERS>.",
+        "Are you sure you want to continue connecting (yes/no)?"
+       ],
+       "note": "Compare that fingerprint against the one the facility published before you answer yes. It is the only moment at which you can tell the real host from something standing in front of it, and it is the moment everybody skips."
+      },
+      {
+       "caption": "Make it one word, in ~/.ssh/config on your own machine",
+       "sample": true,
+       "lines": [
+        {
+         "text": "Host <SHORT-NAME-YOU-CHOOSE>"
+        },
+        {
+         "text": "    HostName <LOGIN-NODE-YOU-WERE-GIVEN>"
+        },
+        {
+         "text": "    User <YOUR-USERNAME>"
+        },
+        {
+         "text": "    IdentityFile ~/.ssh/id_ed25519"
+        },
+        {
+         "comment": "Then, from anywhere:",
+         "text": "ssh <SHORT-NAME-YOU-CHOOSE>"
+        }
+       ],
+       "note": "This file is read by ssh, scp and rsync alike, so the short name works for all three."
+      }
+     ],
+     "links": [
+      {
+       "label": "How to generate a key, and what ~/.ssh/config does",
+       "page": "linux"
+      }
+     ]
+    },
+    {
+     "id": "moving-data",
+     "title": "Moving data in and out",
+     "paragraphs": [
+      "Two tools, and the second one is the one to learn. `scp` copies a file; `rsync` copies what is different, resumes when it is interrupted and can be run again safely — which matters when the thing being moved is two hundred gigabytes over a network somebody else is also using.",
+      "Before any of it: check what you are allowed to move. A shared national facility is not a place to discover that a dataset had terms on it."
+     ],
+     "commands": [
+      {
+       "caption": "Copy one file up",
+       "sample": true,
+       "lines": [
+        {
+         "text": "scp <FILE-ON-YOUR-MACHINE> <SHORT-NAME-YOU-CHOOSE>:<PATH-ON-THE-FACILITY>"
+        }
+       ]
+      },
+      {
+       "caption": "Copy a directory up, resumably",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "-a keeps permissions and timestamps, -v says what it is doing, --partial keeps what it managed before the connection dropped.",
+         "text": "rsync -av --partial <DIRECTORY-ON-YOUR-MACHINE>/ <SHORT-NAME-YOU-CHOOSE>:<PATH-ON-THE-FACILITY>/"
+        }
+       ],
+       "note": "The trailing slash on the source is not decoration: without it rsync copies the directory INTO the target rather than copying its contents."
+      },
+      {
+       "caption": "Bring results back",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "Same command, the arguments the other way round.",
+         "text": "rsync -av --partial <SHORT-NAME-YOU-CHOOSE>:<RESULTS-PATH>/ <DIRECTORY-ON-YOUR-MACHINE>/"
+        }
+       ],
+       "note": "Bring results back as you go rather than at the end. Scratch filesystems on shared facilities are routinely cleared, and the notice period is not always long."
+      }
+     ]
+    },
+    {
+     "id": "running-work",
+     "title": "Running work: the scheduler",
+     "paragraphs": [
+      "You do not run your calculation on the machine you logged in to. That machine is shared by everyone currently connected, and a job started on it slows all of them down and is usually killed. You write down what the work needs, hand that to the scheduler, and it runs when the machines are free.",
+      "Which scheduler this will be is not settled, and the commands differ between them. What does not differ is the four questions every one of them asks, and the answers are yours to work out before you can submit anything at all."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "How many processors?",
+        "value": "Asking for more than your program can use wastes the allocation and makes the wait longer, not shorter."
+       },
+       {
+        "label": "For how long?",
+        "value": "An honest estimate plus a margin. Too short and the job is killed mid-run; too long and it queues behind everything."
+       },
+       {
+        "label": "How much memory?",
+        "value": "The commonest cause of a job dying at three in the morning with nothing useful written down."
+       },
+       {
+        "label": "Which queue, and against which project?",
+        "value": "Facilities separate short test runs from long ones, and charge the time to a project rather than to you."
+       },
+       {
+        "label": "Which scheduler the facility runs",
+        "value": "not yet settled",
+        "missing": true
+       },
+       {
+        "label": "What an allocation is worth, and how it is renewed",
+        "value": "not yet settled",
+        "missing": true
+       }
+      ]
+     },
+     "procedures": [
+      {
+       "id": "submit",
+       "title": "Submit a job",
+       "summary": "The same four moves on every facility, whatever the scheduler is called.",
+       "applies_to": "Sample only — the directives and commands below are placeholders, and the real ones come with the account.",
+       "steps": [
+        {
+         "title": "Write a submission script",
+         "paragraphs": [
+          "A shell script with the scheduler's requests at the top and your work at the bottom. It is a file rather than a command line so that the run is reproducible and so that you can read, six months later, what you actually asked for."
+         ],
+         "commands": [
+          {
+           "caption": "A submission script, in outline",
+           "sample": true,
+           "lines": [
+            {
+             "text": "#!/bin/bash"
+            },
+            {
+             "comment": "Every line beginning with the scheduler's directive marker is a request, not a comment.",
+             "text": "#<SCHEDULER-DIRECTIVE> --job-name=<SHORT-NAME>"
+            },
+            {
+             "text": "#<SCHEDULER-DIRECTIVE> --nodes=<HOW-MANY-NODES>"
+            },
+            {
+             "text": "#<SCHEDULER-DIRECTIVE> --time=<HOURS>:<MINUTES>:00"
+            },
+            {
+             "text": "#<SCHEDULER-DIRECTIVE> --account=<YOUR-PROJECT-CODE>"
+            },
+            {
+             "text": "#<SCHEDULER-DIRECTIVE> --output=<JOB-NAME>-%j.out"
+            },
+            {
+             "comment": "Load what your program needs. Never assume it is there by default.",
+             "text": "module load <SOFTWARE-THE-FACILITY-PROVIDES>"
+            },
+            {
+             "comment": "And then the work itself.",
+             "text": "<YOUR-PROGRAM> <YOUR-INPUT>"
+            }
+           ],
+           "note": "Write the output file name with the job number in it. Two runs that overwrite each other's output is a morning gone."
+          }
+         ]
+        },
+        {
+         "title": "Submit it, and note the number",
+         "commands": [
+          {
+           "caption": "Hand the script to the scheduler",
+           "sample": true,
+           "lines": [
+            {
+             "text": "<SUBMIT-COMMAND> <YOUR-SCRIPT>.sh"
+            }
+           ],
+           "output": [
+            "Submitted batch job <JOB-NUMBER>"
+           ],
+           "note": "That number is how you refer to the run from now on — to check it, to cancel it, and to ask anybody about it."
+          }
+         ]
+        },
+        {
+         "title": "Check on it without watching it",
+         "paragraphs": [
+          "A queued job is not a broken one. Waiting is what a shared facility does, and a large request waits longer than a small one — which is an argument for asking for what you need rather than for what you would like."
+         ],
+         "commands": [
+          {
+           "caption": "See where your work is in the queue",
+           "sample": true,
+           "lines": [
+            {
+             "text": "<QUEUE-COMMAND> -u <YOUR-USERNAME>"
+            }
+           ]
+          },
+          {
+           "caption": "Stop a run you no longer want",
+           "sample": true,
+           "lines": [
+            {
+             "comment": "Do this as soon as you know. A job you have stopped caring about is still spending the project's allocation.",
+             "text": "<CANCEL-COMMAND> <JOB-NUMBER>"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "title": "Read the output, then bring it home",
+         "paragraphs": [
+          "The output file the scheduler wrote is the first place to look when something went wrong, and it is usually the only place. Copy results back to storage you control rather than leaving them on a scratch filesystem."
+         ],
+         "note": "Test on a small input first, every time. A twelve-hour job that fails in its last minute because of a path typed wrongly is the standard first experience of a shared facility, and it is entirely avoidable."
+        }
+       ],
+       "after": "The run is done when the output file stops growing and the job is no longer in the queue."
+      }
+     ]
+    },
+    {
+     "id": "what-not-to-put-there",
+     "title": "What must not go on to a facility the university does not own",
+     "paragraphs": [
+      "A shared national system is a third party, and moving data to it is a disclosure whatever the intention. Four categories, and the first one is the one that gets people into real trouble.",
+      "This page carries no credential of any kind, and neither will its replacement: not a key, not a password, not a project code that acts as one. A page behind a sign-in is still a web page, and it gets bookmarked, screenshotted and pasted into wikis."
+     ],
+     "definitions": {
+      "items": [
+       {
+        "label": "Anything with a person in it",
+        "value": "Student records, patient data, survey responses that can be traced back, photographs of identifiable people. Ask before, not after."
+       },
+       {
+        "label": "Data whose licence fixes where it may be held",
+        "value": "Common in collaborations and in purchased datasets, and rarely remembered at the moment of copying."
+       },
+       {
+        "label": "Software you are not licensed to run there",
+        "value": "A licence for a machine in a laboratory here does not travel to a machine somewhere else."
+       },
+       {
+        "label": "Any secret at all",
+        "value": "A key, a token or a password in a script is a secret on a shared filesystem that other people's jobs run beside."
+       }
+      ]
+     },
+     "links": [
+      {
+       "label": "What you may install, and at whose cost",
+       "page": "software"
+      }
+     ]
+    }
+   ],
+   "questionsTitle": "Questions about the arrangement",
+   "questionsIntroduction": [
+    "All unanswered, because the arrangement is not settled. Each is a question a researcher will ask on the first day and none of them can be answered from anything the university has published."
+   ],
+   "topics": [
+    {
+     "id": "cdac-questions",
+     "title": "What has to be settled",
+     "summary": "Six, in the order a researcher meets them.",
+     "items": [
+      {
+       "id": "cdac-who",
+       "question": "Who at MIT-WPU will be able to apply?",
+       "team": "computing-resources-centre",
+       "unanswered": "Whether it is open to faculty, to research students, to a named set of groups, or granted per project. Nothing is published."
+      },
+      {
+       "id": "cdac-what-system",
+       "question": "Which system will we have access to, and how big is it?",
+       "team": "computing-resources-centre",
+       "unanswered": "Unsettled. It matters more than it sounds: the size and the kind of machine decide whether a piece of work is worth moving at all."
+      },
+      {
+       "id": "cdac-allocation",
+       "question": "How much time do we get, and how is it applied for?",
+       "team": "computing-resources-centre",
+       "unanswered": "No allocation, no application route, no renewal cycle and no statement of who decides between competing requests."
+      },
+      {
+       "id": "cdac-support",
+       "question": "Who do I ask when a job will not run?",
+       "team": "computing-resources-centre",
+       "unanswered": "Whether support comes from the facility, from the university, or from a named person here. On every shared system this is the question that decides whether the access gets used."
+      },
+      {
+       "id": "cdac-data",
+       "question": "What may I move there, and who decides?",
+       "team": "computing-resources-centre",
+       "unanswered": "No data-classification statement exists at this university, so there is nothing to check a dataset against. This is the gap with the largest downside on the page."
+      },
+      {
+       "id": "cdac-training",
+       "question": "Is there any training, here or there?",
+       "team": "computing-resources-centre",
+       "unanswered": "Nothing is published. The introduction on this portal is what exists in the meantime, and it is deliberately short of a course."
+      }
+     ]
+    }
+   ],
+   "needs": [
+    {
+     "label": "Which facility and which system the access is to"
+    },
+    {
+     "label": "Who at MIT-WPU may apply, and how"
+    },
+    {
+     "label": "The allocation: how much, applied for how, renewed when"
+    },
+    {
+     "label": "The login address, and the published host fingerprint to check it against"
+    },
+    {
+     "label": "Which scheduler the system runs, and its submission commands"
+    },
+    {
+     "label": "A data-classification statement saying what may be moved off this university's systems"
+    },
+    {
+     "label": "Who answers a question when a job will not run"
+    },
+    {
+     "label": "Whether any training is provided, here or by the facility"
+    }
+   ],
+   "gapsIntroduction": [
+    "Eight things nobody can guess, and the reason this page is samples rather than instructions.",
+    "One of them is worse than the others. Until somebody states what data may leave this university's systems, every researcher moving a dataset to a shared national facility is making that decision alone, on the day, with a deadline."
+   ]
+  },
+  {
+   "slug": "linux",
+   "crumb": "Linux and SSH",
+   "samplesOnly": false,
+   "eyebrow": "Computing Resources Centre",
+   "title": "Linux and SSH: enough to get started",
+   "lede": "A short working introduction for people whose research is about to need a machine they cannot walk up to. Not a course — the twenty-odd commands that account for most of a first week, in the order you meet them.",
+   "description": "A practical introduction to the Linux shell, files and permissions, SSH keys, the SSH configuration file, copying files with scp and rsync, keeping work alive with tmux, and what a job scheduler is for.",
+   "notice": {
+    "eyebrow": "How to read this page",
+    "title": "The commands here are real; the addresses in them are not",
+    "paragraphs": [
+     "Everything on this page works on any Linux or macOS machine, including the one in front of you, and it is worth trying there first. Where a command needs a host or an account, that part is a placeholder in capitals inside angle brackets and the block is marked as a sample — because this university has no host to name yet.",
+     "Nothing here is specific to MIT-WPU, and that is deliberate: what you learn on your own laptop is what you will type on somebody else's supercomputer."
+    ]
+   },
+   "sections": [
+    {
+     "id": "the-shell",
+     "title": "The shell, and where you are",
+     "paragraphs": [
+      "A shell is a program that waits for you to type the name of another program. That is all it is. The prompt tells you which machine you are on and which directory you are in, and the single most common cause of a confusing afternoon is being wrong about one of those two.",
+      "Six commands account for most of what anyone does. Learn these and the rest can be looked up."
+     ],
+     "commands": [
+      {
+       "caption": "Where am I, and what is here",
+       "lines": [
+        {
+         "comment": "Print working directory: the folder you are in, as a full path.",
+         "text": "pwd"
+        },
+        {
+         "comment": "List what is in it. -l for one per line with detail, -a to include the hidden dot-files.",
+         "text": "ls -la"
+        },
+        {
+         "comment": "Change directory. A bare cd goes home; cd .. goes up one.",
+         "text": "cd <DIRECTORY>"
+        }
+       ]
+      },
+      {
+       "caption": "Making, copying, moving, removing",
+       "lines": [
+        {
+         "text": "mkdir results"
+        },
+        {
+         "comment": "Copy. -r to copy a whole directory.",
+         "text": "cp -r results results-backup"
+        },
+        {
+         "comment": "Move — which is also how you rename.",
+         "text": "mv results-backup old-results"
+        },
+        {
+         "comment": "Remove. There is no undo and there is no wastebasket.",
+         "text": "rm old-results/notes.txt"
+        }
+       ],
+       "note": "rm -rf is the command that ends careers. It deletes a directory and everything under it without asking, and a stray space in the wrong place makes the argument something much larger than you meant. Read the line before pressing return, every time."
+      },
+      {
+       "caption": "When you do not know what a command does",
+       "lines": [
+        {
+         "comment": "The manual is on the machine and does not need a network.",
+         "text": "man ls"
+        },
+        {
+         "comment": "Most modern commands answer this too.",
+         "text": "ssh --help"
+        }
+       ],
+       "note": "Press q to leave the manual. Not knowing that is the reason most people leave it by closing the window."
+      }
+     ]
+    },
+    {
+     "id": "files-and-permissions",
+     "title": "Files, and who may do what to them",
+     "paragraphs": [
+      "Every file carries three permissions — read, write, execute — for three audiences: you, your group, everybody else. `ls -l` shows them as nine characters. This is worth ten minutes now, because SSH refuses to use a private key whose permissions are wrong and the error message does not say so plainly.",
+      "The numbers are the same three permissions written as bits: 4 read, 2 write, 1 execute, added together per audience. So 600 is \"I may read and write it, nobody else may do anything\", and 755 is \"I may do anything, everybody else may read and run it\"."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "600",
+        "value": "Yours alone, read and write. What a private key must be."
+       },
+       {
+        "label": "644",
+        "value": "Yours to edit, everyone else's to read. The default for an ordinary file."
+       },
+       {
+        "label": "700",
+        "value": "Yours alone, including entering it. What ~/.ssh must be."
+       },
+       {
+        "label": "755",
+        "value": "Yours to change, everyone else's to enter or run. The default for a directory or a script."
+       }
+      ]
+     },
+     "commands": [
+      {
+       "caption": "Read the permissions, then set them",
+       "lines": [
+        {
+         "comment": "The first ten characters of each line are the type and the nine permissions.",
+         "text": "ls -l ~/.ssh"
+        },
+        {
+         "comment": "The two that SSH insists on.",
+         "text": "chmod 700 ~/.ssh"
+        },
+        {
+         "text": "chmod 600 ~/.ssh/id_ed25519"
+        },
+        {
+         "comment": "A script you want to be able to run by name.",
+         "text": "chmod 755 <YOUR-SCRIPT>.sh"
+        }
+       ],
+       "note": "\"Permissions 0644 for 'id_ed25519' are too open\" is SSH refusing to use a key anybody on the machine could read. chmod 600 is the whole fix."
+      }
+     ]
+    },
+    {
+     "id": "keys",
+     "title": "SSH keys: what they are and how to make one",
+     "paragraphs": [
+      "A key pair is two files. The public half is not a secret and is what you hand out; the private half is the secret and never leaves the machine it was made on. A remote system that has your public half can check that you hold the private half without ever seeing it, which is why this is better than a password and why no shared facility issues passwords for it.",
+      "One key per person, not one per machine you connect to. If you work from a laptop and a desktop, that is two keys, and both public halves get registered."
+     ],
+     "procedures": [
+      {
+       "id": "make-a-key",
+       "title": "Make a key pair",
+       "summary": "Two minutes, once, on each machine you will connect from.",
+       "applies_to": "macOS and Linux, and Windows 10 or later in PowerShell or WSL.",
+       "steps": [
+        {
+         "title": "Check whether you already have one",
+         "commands": [
+          {
+           "caption": "List the keys on this machine",
+           "lines": [
+            {
+             "text": "ls -l ~/.ssh/id_*.pub"
+            }
+           ],
+           "note": "A file ending in .pub means you have a key. Use it. Making a second one does not add security and does add a thing to keep track of."
+          }
+         ]
+        },
+        {
+         "title": "Generate the pair",
+         "commands": [
+          {
+           "caption": "Generate an ed25519 key pair",
+           "lines": [
+            {
+             "comment": "ed25519 rather than RSA: shorter, faster, and the current default everywhere.",
+             "text": "ssh-keygen -t ed25519 -C \"<YOUR-NAME>-<MACHINE>\""
+            }
+           ],
+           "output": [
+            "Enter file in which to save the key (~/.ssh/id_ed25519):",
+            "Enter passphrase (empty for no passphrase):"
+           ],
+           "note": "Accept the default file name by pressing return. The comment after -C is only a label to help you tell keys apart later."
+          }
+         ],
+         "note": "Give it a passphrase. It is asked for once per session rather than once per connection, and it is the only thing standing between a stolen laptop and everywhere that laptop could reach."
+        },
+        {
+         "title": "Add it to the agent so the passphrase is asked once",
+         "commands": [
+          {
+           "caption": "Hold the unlocked key for this session",
+           "lines": [
+            {
+             "text": "ssh-add ~/.ssh/id_ed25519"
+            },
+            {
+             "comment": "What the agent currently holds.",
+             "text": "ssh-add -l"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "title": "Send the public half — and only the public half",
+         "commands": [
+          {
+           "caption": "Print the public half, to paste into a form or a message",
+           "lines": [
+            {
+             "text": "cat ~/.ssh/id_ed25519.pub"
+            }
+           ],
+           "output": [
+            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI<...>  <YOUR-NAME>-<MACHINE>"
+           ],
+           "note": "One line, beginning ssh-ed25519. If what you are looking at is many lines beginning with five dashes and the word BEGIN, you have opened the private half. Close it and do not send it."
+          }
+         ]
+        }
+       ],
+       "after": "You have a key when cat prints one line beginning ssh-ed25519, and ssh-add -l lists it."
+      }
+     ]
+    },
+    {
+     "id": "connecting",
+     "title": "Connecting, and the fingerprint nobody checks",
+     "paragraphs": [
+      "The first connection to any machine asks you to confirm its fingerprint. That prompt is the only moment at which you can tell the machine you meant from something standing in front of it, and it is the moment everyone clicks through. Compare it with what the service published, once, and the machine is remembered afterwards."
+     ],
+     "commands": [
+      {
+       "caption": "Open a session",
+       "sample": true,
+       "lines": [
+        {
+         "text": "ssh <YOUR-USERNAME>@<HOST-YOU-WERE-GIVEN>"
+        }
+       ],
+       "output": [
+        "The authenticity of host '<HOST-YOU-WERE-GIVEN>' can't be established.",
+        "ED25519 key fingerprint is SHA256:<FINGERPRINT-THE-HOST-OFFERS>.",
+        "Are you sure you want to continue connecting (yes/no/[fingerprint])?"
+       ],
+       "note": "Type exit, or press Ctrl-D, to come back."
+      },
+      {
+       "caption": "When it will not connect, ask it why",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "-v once for a little, -vvv for more than you want.",
+         "text": "ssh -v <YOUR-USERNAME>@<HOST-YOU-WERE-GIVEN>"
+        }
+       ],
+       "note": "The useful lines are the ones naming which key was offered and what the server said about it. \"Permission denied (publickey)\" almost always means the public half was never registered, or the private half is not the one being offered."
+      }
+     ]
+    },
+    {
+     "id": "ssh-config",
+     "title": "Making it one word",
+     "paragraphs": [
+      "`~/.ssh/config` on your own machine turns an address you would otherwise retype into a short name. It is read by ssh, scp and rsync alike, so setting it up once fixes all three, and it is the single highest-value ten minutes on this page."
+     ],
+     "commands": [
+      {
+       "caption": "A host entry in ~/.ssh/config",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "Indentation is conventional rather than required; keep it anyway.",
+         "text": "Host <SHORT-NAME-YOU-CHOOSE>"
+        },
+        {
+         "text": "    HostName <FULL-ADDRESS-YOU-WERE-GIVEN>"
+        },
+        {
+         "text": "    User <YOUR-USERNAME>"
+        },
+        {
+         "text": "    IdentityFile ~/.ssh/id_ed25519"
+        },
+        {
+         "comment": "Keeps a session from being dropped while you think.",
+         "text": "    ServerAliveInterval 60"
+        }
+       ]
+      },
+      {
+       "caption": "And then, from anywhere",
+       "sample": true,
+       "lines": [
+        {
+         "text": "ssh <SHORT-NAME-YOU-CHOOSE>"
+        },
+        {
+         "text": "scp <FILE> <SHORT-NAME-YOU-CHOOSE>:"
+        }
+       ],
+       "note": "The config file itself should be readable only by you: chmod 600 ~/.ssh/config."
+      }
+     ]
+    },
+    {
+     "id": "moving-files",
+     "title": "Moving files between machines",
+     "paragraphs": [
+      "`scp` for one file, `rsync` for everything else. rsync copies only what differs, resumes an interrupted transfer and can be run again safely — which is what you want the moment the thing being copied is larger than a coffee break."
+     ],
+     "commands": [
+      {
+       "caption": "One file, up and then back",
+       "sample": true,
+       "lines": [
+        {
+         "text": "scp <LOCAL-FILE> <SHORT-NAME-YOU-CHOOSE>:<REMOTE-PATH>"
+        },
+        {
+         "text": "scp <SHORT-NAME-YOU-CHOOSE>:<REMOTE-FILE> ."
+        }
+       ],
+       "note": "The lone dot means \"into the directory I am in now\"."
+      },
+      {
+       "caption": "A directory, resumably",
+       "sample": true,
+       "lines": [
+        {
+         "comment": "-a preserves permissions and times, -v narrates, --partial keeps what arrived before a drop.",
+         "text": "rsync -av --partial <LOCAL-DIRECTORY>/ <SHORT-NAME-YOU-CHOOSE>:<REMOTE-DIRECTORY>/"
+        },
+        {
+         "comment": "Show what WOULD be copied and copy nothing. Worth doing first, every time.",
+         "text": "rsync -avn --partial <LOCAL-DIRECTORY>/ <SHORT-NAME-YOU-CHOOSE>:<REMOTE-DIRECTORY>/"
+        }
+       ],
+       "note": "The trailing slash on the source is not decoration. With it, the contents are copied; without it, the directory itself is copied inside the target, which is how people end up with results/results/results."
+      }
+     ]
+    },
+    {
+     "id": "tmux",
+     "title": "Keeping work alive when your connection drops",
+     "paragraphs": [
+      "Close a terminal and everything running in it dies with it, which on a train is a two-hour job lost at ninety minutes. `tmux` puts the session on the far end of the connection rather than in your terminal, so it survives the connection going away and is still there when you come back.",
+      "Three commands is the whole of what most people need."
+     ],
+     "commands": [
+      {
+       "caption": "Start, leave, and come back",
+       "lines": [
+        {
+         "comment": "Start a named session. Name it after the work, not after the day.",
+         "text": "tmux new -s analysis"
+        },
+        {
+         "comment": "Detach: press Ctrl-b, let go, then press d. The session keeps running.",
+         "text": "# Ctrl-b  then  d"
+        },
+        {
+         "comment": "What is still running.",
+         "text": "tmux ls"
+        },
+        {
+         "comment": "Reattach, from the same machine or a different one.",
+         "text": "tmux attach -t analysis"
+        }
+       ],
+       "note": "Ctrl-b is tmux's attention key: every tmux command is Ctrl-b followed by something. Ctrl-b then c makes a new window inside the session, Ctrl-b then n moves to the next one."
+      }
+     ]
+    },
+    {
+     "id": "schedulers",
+     "title": "Why you do not run your work on the machine you logged in to",
+     "paragraphs": [
+      "On a shared research system the machine you land on is a doorway, not a workshop. It is shared with everyone else currently connected, and a calculation started there slows all of them down; most facilities kill such processes automatically, and some suspend the account.",
+      "Instead you describe the work in a small script and hand it to a scheduler, which runs it unattended on machines you never log in to. There are several schedulers and their commands differ, but all of them ask the same four questions, and having the answers is what makes the difference between a first day that works and one that does not."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "How many processors?",
+        "value": "More than your program can actually use makes the wait longer and the bill bigger, not the run faster."
+       },
+       {
+        "label": "For how long?",
+        "value": "Your honest estimate plus a margin. Under-ask and it is killed part-way; over-ask and it queues behind everything else."
+       },
+       {
+        "label": "How much memory?",
+        "value": "The commonest reason a long job dies overnight leaving nothing useful behind."
+       },
+       {
+        "label": "Charged to what?",
+        "value": "Time is granted to a project rather than to a person, so a submission normally names one."
+       }
+      ]
+     },
+     "links": [
+      {
+       "label": "The shape of a submission script, and what to do when a job will not run",
+       "page": "cdac"
+      }
+     ]
+    },
+    {
+     "id": "what-this-does-not-cover",
+     "title": "What this page deliberately does not cover",
+     "tint": true,
+     "paragraphs": [
+      "It is a first week, not a course. Shell scripting beyond a straight run of commands, package and environment management, version control, containers, parallel programming and performance measurement are each larger than everything above put together, and a page that gestured at them would teach nobody anything.",
+      "The university publishes no training in any of it, and no reading list. That is on the work list below rather than filled in here with somebody's favourite links: a recommendation is an institutional statement, and this page does not make those on the university's behalf."
+     ]
+    }
+   ],
+   "needs": [
+    {
+     "label": "Whether the university offers any Linux or HPC training, and to whom"
+    },
+    {
+     "label": "A reading list the Centre is prepared to stand behind"
+    },
+    {
+     "label": "Whether a general-purpose Linux machine exists here for people to practise on"
+    },
+    {
+     "label": "Who answers a question about any of this"
+    }
+   ],
+   "gapsIntroduction": [
+    "This page is the most nearly complete of the five, because almost none of it depends on a decision this university has yet to take. What is missing is the part only an institution can supply: whether anybody teaches this, to whom, and who answers a question about it."
+   ]
+  },
+  {
+   "slug": "software",
+   "crumb": "Software",
+   "samplesOnly": false,
+   "eyebrow": "Computing Resources Centre",
+   "title": "Software: what you may install, and how to get it",
+   "lede": "Three questions account for almost all of this: is it free to me, do I have to buy it, and where do I get it. The university has answered none of them, and this page shows the shape of the answer with every cell marked as missing rather than guessed.",
+   "description": "Software entitlement at MIT-WPU by who may use it, what it costs, how to obtain it and what happens when you leave — with every unpublished cell shown as a gap, and no licence key on the page.",
+   "notice": {
+    "eyebrow": "Before you install anything",
+    "title": "No entitlement in the table below has been published",
+    "paragraphs": [
+     "Every cell reading \"Not yet published\" is work for a person, not a statement that the software is unavailable. Until somebody fills them in, buy nothing on the strength of this table and install nothing on the strength of a colleague's recollection: telling somebody they may install a product the university does not license puts both them and the university in the wrong.",
+     "Whatever is decided, no licence key, serial or activation code will appear on this page or on any page of this site. A page behind a sign-in is still a web page, and it gets bookmarked, screenshotted and pasted into wikis. The build refuses to publish one."
+    ]
+   },
+   "sections": [
+    {
+     "id": "how-to-read-the-table",
+     "title": "How to read the table",
+     "paragraphs": [
+      "It is arranged by entitlement rather than as a catalogue of products, because a list of things that exist somewhere in the university answers none of the three questions. Each row is a product people ask about; each column is one of the four things you need to know before installing it.",
+      "The fourth column is the one institutions forget and are then audited on. A licence that follows a person who has left, or a machine that keeps a departmental key after it is sold, is how a compliant institution stops being one."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "Who may use it",
+        "value": "Student, staff, researcher, or a named school. Entitlement is rarely uniform and pretending it is causes both over-buying and unlicensed installs."
+       },
+       {
+        "label": "What it costs you",
+        "value": "Covered centrally, funded by a department, or bought at an education price. \"Free\" and \"free to you\" are not the same sentence."
+       },
+       {
+        "label": "How to get it",
+        "value": "The actual route — a portal, a request, a person — rather than the name of whoever owns the licence."
+       },
+       {
+        "label": "When you leave",
+        "value": "What happens to the licence, and to the files made with it."
+       }
+      ]
+     }
+    },
+    {
+     "id": "asking",
+     "title": "Asking about something that is not in the table",
+     "paragraphs": [
+      "Through the same route as anything else on these pages, once that route exists. It does not: the Centre has no published request system, telephone, address or room, which is the first item on the portal's own work list.",
+      "What to include when there is somewhere to send it: the product and version, what you need it for, how many people, and whether a grant will pay. Half of a licensing decision is arithmetic, and a request without those four numbers turns into three messages."
+     ],
+     "links": [
+      {
+       "label": "The Computing Resources Centre, and what is known about reaching it",
+       "page": "portal"
+      },
+      {
+       "label": "Software you propose to run on a facility the university does not own",
+       "page": "cdac",
+       "note": "A licence here does not travel there"
+      }
+     ]
+    }
+   ],
+   "table": {
+    "caption": "Software entitlements at MIT-WPU. No entitlement in this table has been published by the university; every cell reading \"Not yet published\" is work for a person, not a statement that the software is unavailable.",
+    "categoryHeading": "Software",
+    "columns": [
+     {
+      "key": "eligibility",
+      "label": "Who may use it",
+      "note": "student, staff, researcher, or a named school"
+     },
+     {
+      "key": "cost",
+      "label": "What it costs you",
+      "note": "covered centrally, department-funded, or bought at an education price"
+     },
+     {
+      "key": "obtain",
+      "label": "How to get it",
+      "note": "the actual route, not the owner"
+     },
+     {
+      "key": "offboarding",
+      "label": "When you leave",
+      "note": "what happens to the licence and the files"
+     }
+    ],
+    "products": [
+     {
+      "name": "Windows",
+      "cells": {},
+      "evidence": "Named by the operator. The university's site mentions Windows only in one member of staff's biography, never as something issued.",
+      "sources": [
+       "/faculty/nikhil-v-soniminde"
+      ]
+     },
+     {
+      "name": "Microsoft 365 and Office",
+      "cells": {},
+      "evidence": "Named by the operator. No education agreement, tenancy or download route is published anywhere.",
+      "sources": []
+     },
+     {
+      "name": "MATLAB",
+      "cells": {},
+      "evidence": "Named by the operator, and taught in several programmes — but taught is not licensed.",
+      "sources": [
+       "/programme/btech-chemical-engineering",
+       "/programme/btech-renewable-energy"
+      ]
+     },
+     {
+      "name": "ANSYS",
+      "cells": {},
+      "evidence": "In use in engineering teaching and on a centre's workstations.",
+      "sources": [
+       "/programme/btech-chemical-engineering",
+       "/centre-of-excellence-technology-and-visualization-centre-1"
+      ]
+     },
+     {
+      "name": "SolidWorks",
+      "cells": {},
+      "evidence": "In use in engineering teaching and by a student racing team.",
+      "sources": [
+       "/programme/btech-chemical-engineering",
+       "/baja-sae"
+      ]
+     },
+     {
+      "name": "AutoCAD and Revit",
+      "cells": {},
+      "evidence": "In use in civil engineering and design teaching.",
+      "sources": [
+       "/programme/btech-civil-engineering",
+       "/programme/bfa-applied-arts"
+      ]
+     },
+     {
+      "name": "CATIA",
+      "cells": {},
+      "evidence": "Listed among the CAD software on a centre of excellence's industrial workstations.",
+      "sources": [
+       "/centre-of-excellence-technology-and-visualization-centre-1"
+      ]
+     },
+     {
+      "name": "Adobe Creative Cloud",
+      "cells": {},
+      "evidence": "Photoshop and Lightroom are taught in photography; the design programmes use the wider suite.",
+      "sources": [
+       "/programme/ba-photography",
+       "/programme/bfa-applied-arts"
+      ]
+     },
+     {
+      "name": "SPSS and statistical software",
+      "cells": {},
+      "evidence": "SPSS, R, Tableau and Power BI appear in statistics and analytics teaching.",
+      "sources": [
+       "/programme/bsc-applied-statistics-and-data-analytics",
+       "/pg-diploma-programmes"
+      ]
+     },
+     {
+      "name": "Antivirus and endpoint protection",
+      "cells": {},
+      "evidence": "Nothing at all is published. On a campus where every examination is taken on a personally owned machine, whether the university protects those machines is not a minor question.",
+      "sources": []
+     },
+     {
+      "name": "Similarity and plagiarism checking",
+      "cells": {},
+      "evidence": "The university states its expectations about plagiarism repeatedly and names no tool for checking it, so neither a student nor a supervisor can tell what a submission will be checked against.",
+      "sources": [
+       "/research/ipr"
+      ]
+     }
+    ],
+    "validFor": "Products people ask about here, either because the operator named them or because the university's own pages show them in use.",
+    "notes": [
+     "\"Not yet published\" means the university has not stated it, not that the answer is no. Until it does, buy nothing on the strength of this table and install nothing on the strength of a colleague's recollection.",
+     "The last column is the one institutions forget and then get audited on. A licence that follows a person who has left, or a machine that keeps a departmental key after it is sold, is how a compliant institution stops being one."
+    ],
+    "evidenceTitle": "Where each of those products appears today",
+    "evidenceIntroduction": [
+     "None of the pages below says the university licenses anything. Each shows a product being taught, or installed in one named laboratory, which is why the table above is empty: a product in a syllabus is not an entitlement, and reading one as the other is exactly the mistake this section exists to prevent."
+    ]
+   },
+   "needs": [
+    {
+     "label": "A statement of who may install what, for each product people ask about"
+    },
+    {
+     "label": "Whether the university holds a site licence for anything at all"
+    },
+    {
+     "label": "The route by which software is requested"
+    },
+    {
+     "label": "What happens to a licence and to the files when a person leaves"
+    },
+    {
+     "label": "Who is answerable for licence compliance"
+    }
+   ],
+   "gapsIntroduction": [
+    "The table above is the work list, one cell at a time. The five below are the decisions that would fill it.",
+    "None of them should be guessed. \"Not yet published\" means the university has not stated it, not that the answer is no, and the difference between those two sentences is somebody's disciplinary hearing."
+   ]
+  },
+  {
+   "slug": "services",
+   "crumb": "Service manuals",
+   "serviceIndex": true,
+   "eyebrow": "Computing Resources Centre",
+   "title": "Manuals for the services the university runs",
+   "lede": "One page per service: what it is for, who may use it, how you get in, what you do with it, what breaks, and who to ask. Where the university has stated none of that, the manual says so and counts it.",
+   "description": "A manual for each service in MIT-WPU's intranet service register — the ERP, the ECHO applications, HROne, Digital ID, Courtside and CampusBook — each answering the same six questions and marking what is unanswered.",
+   "notice": {
+    "eyebrow": "How this list stays right",
+    "title": "The register decides how many manuals there are",
+    "paragraphs": [
+     "Every service below is read from the university's own service register rather than typed into this page, and the build fails if the register holds a service with no manual. So an eighth service cannot be added and quietly go undocumented: it either gets a page or it stops the build.",
+     "The same rule runs the other way — a manual for something the register does not hold is also a build failure. Two records of what the university runs is one record too many, and the register is the one an application also reads."
+    ]
+   },
+   "sections": [
+    {
+     "id": "what-a-manual-answers",
+     "title": "The six questions every one of these answers",
+     "paragraphs": [
+      "The same six, in the same order, on every page — so a reader who has used one manual can use all of them without learning a second layout, and so that what is missing from one is comparable with what is missing from another.",
+      "Most of these services are documented nowhere at all. A manual that is three honest sentences and a list of six unanswered questions is more use than one padded out with what a service of that kind usually does: the padding reads as fact, and the reader acts on it."
+     ],
+     "definitions": {
+      "columns": true,
+      "items": [
+       {
+        "label": "What it is for",
+        "value": "Beyond the one line the register carries."
+       },
+       {
+        "label": "Who may use it",
+        "value": "The register's audiences, and the university's own words where it has any."
+       },
+       {
+        "label": "How you get in",
+        "value": "The address, from the register, and what you sign in with."
+       },
+       {
+        "label": "What you do with it",
+        "value": "The things people actually use it for, rather than a feature list."
+       },
+       {
+        "label": "When it goes wrong",
+        "value": "What commonly fails, and the support route if one is registered."
+       },
+       {
+        "label": "Who to ask",
+        "value": "The team answerable for it, with their contact details or the admission that there are none."
+       }
+      ]
+     }
+    }
+   ],
+   "needs": [
+    {
+     "label": "An owner for each service: somebody answerable when it does not work"
+    },
+    {
+     "label": "A support route for the five services whose register entry has none"
+    },
+    {
+     "label": "Whether these seven are all of them, or only the ones with a sign-in page"
+    }
+   ],
+   "gapsIntroduction": [
+    "What is missing across the whole set rather than from any one manual. Each manual's own six are counted on its own page."
+   ]
+  }
+ ],
+ "manuals": [
+  {
+   "slug": "university-erp",
+   "lede": "The university's academic records system. It is named in the service register and has a sign-in page, and that is very nearly the whole of what is written down about it anywhere.",
+   "owner": "computing-resources-centre",
+   "completenessNote": "Five of the six are unanswered. Everything known about this service is its name, its one-line summary, its address and who the register says it is for — which is to say that the system holding this university's academic records has no documentation at all.",
+   "ownerIntroduction": [
+    "Nobody is named. The register says what the ERP is and where it is, and no page of this university names a person or a team answerable for it."
+   ],
+   "links": [
+    {
+     "label": "What is known about the Computing Resources Centre",
+     "page": "portal"
+    },
+    {
+     "label": "Your record, your results and your certificates",
+     "route": "/academics/examination-contact-us",
+     "note": "The Examination Helpdesk, which does publish contact details"
+    }
+   ]
+  },
+  {
+   "slug": "mit-wpu-echo-android",
+   "lede": "The teaching application on Android: attendance, timetable, assignments and the rest of the daily record a lecturer keeps. The register carries a help document for it, which makes this one of the two best-documented services here.",
+   "owner": "computing-resources-centre",
+   "purpose": [
+    "It is where teaching is recorded as it happens rather than afterwards — attendance taken in the room, an extra lecture logged when it is arranged, an assignment posted from a phone between classes."
+   ],
+   "tasksIntroduction": [
+    "From the register's own description of the application. Each of these is a thing the application does; how each one is done is in the help document linked below and is not restated here."
+   ],
+   "tasks": [
+    {
+     "label": "Attendance",
+     "value": "Taken in the room, against the timetabled session."
+    },
+    {
+     "label": "Extra lectures",
+     "value": "Logged when they are arranged rather than reconstructed later."
+    },
+    {
+     "label": "Timetable",
+     "value": "Your own teaching schedule."
+    },
+    {
+     "label": "Reports",
+     "value": "What the recorded attendance and marks add up to."
+    },
+    {
+     "label": "Assignments",
+     "value": "Set, and collected."
+    },
+    {
+     "label": "Notes and quizzes",
+     "value": "Material for a class, and short assessments."
+    }
+   ],
+   "problemsIntroduction": [
+    "The register carries a help document, which is more than any other service here has. What it does not carry is a route to a person when the document does not answer the question."
+   ],
+   "links": [
+    {
+     "label": "The same application for iPhone and iPad",
+     "page": "services/mit-wpu-echo-ios"
+    },
+    {
+     "label": "What is known about the Computing Resources Centre",
+     "page": "portal"
+    }
+   ]
+  },
+  {
+   "slug": "mit-wpu-echo-ios",
+   "lede": "The same teaching application on iPhone and iPad. One service, two stores: the manual is separate because the way you install it is, and everything after installation is common to both.",
+   "owner": "computing-resources-centre",
+   "purpose": [
+    "The iOS build of the application described in the Android manual. The register lists them separately because the download differs; nothing else is known to."
+   ],
+   "tasksIntroduction": [
+    "As on Android, from the register's own description."
+   ],
+   "tasks": [
+    {
+     "label": "Attendance",
+     "value": "Taken in the room, against the timetabled session."
+    },
+    {
+     "label": "Extra lectures",
+     "value": "Logged when they are arranged."
+    },
+    {
+     "label": "Timetable",
+     "value": "Your own teaching schedule."
+    },
+    {
+     "label": "Reports",
+     "value": "What the recorded attendance and marks add up to."
+    },
+    {
+     "label": "Assignments",
+     "value": "Set, and collected."
+    },
+    {
+     "label": "Notes and quizzes",
+     "value": "Material for a class, and short assessments."
+    }
+   ],
+   "problemsIntroduction": [
+    "The same help document as the Android application. Whether it covers the iOS build's differences is not stated in it."
+   ],
+   "links": [
+    {
+     "label": "The same application for Android",
+     "page": "services/mit-wpu-echo-android"
+    },
+    {
+     "label": "What is known about the Computing Resources Centre",
+     "page": "portal"
+    }
+   ]
+  },
+  {
+   "slug": "hrone",
+   "lede": "Where employment is administered: leave, attendance, payroll and the personal record behind them. The intranet's Human Resources page is the fuller account; this is the manual for the application itself.",
+   "owner": "human-resources",
+   "purpose": [
+    "Everything about being employed here that is a transaction rather than a conversation. Applying for leave, seeing what leave remains, and whatever the university has configured it to hold about pay.",
+    "What it actually shows, and when, is not published — which matters more here than on most of these services, because an employee planning a year around a leave balance needs to know whether the number they are looking at is current."
+   ],
+   "problemsIntroduction": [
+    "There is nothing to point at. The register gives a launch address and an empty support route, so when the sign-in fails or a leave balance is wrong there is no published route to anybody who can look at it."
+   ],
+   "ownerIntroduction": [
+    "The Human Resources Office publishes an email address and nothing else. The system itself is the Centre's; the records in it are the Office's, and which of the two a given problem belongs to is not stated anywhere."
+   ],
+   "links": [
+    {
+     "label": "Pay, leave and your appointment",
+     "site": "intranet/hr/",
+     "note": "The fuller account, including what HROne is and is not the answer to"
+    }
+   ]
+  },
+  {
+   "slug": "digital-id",
+   "lede": "An employee identity card in digital form, and a visiting card with it. A name in the register, an address, and nothing else written down anywhere.",
+   "owner": "human-resources",
+   "completenessNote": "Five of the six are unanswered. This manual exists because the service does, and because a service in the register with no page is an omission nobody notices; what it mostly records is how little is known.",
+   "ownerIntroduction": [
+    "The Human Resources Office holds employee identity, so the record is theirs; whether the application is theirs or the Centre's is not stated."
+   ],
+   "links": [
+    {
+     "label": "Pay, leave and your appointment",
+     "site": "intranet/hr/"
+    }
+   ]
+  },
+  {
+   "slug": "sports-facilities",
+   "lede": "Booking a court, a pitch or a session. The register says it is open to everyone with a university sign-in, which makes it the most widely available service on this list.",
+   "owner": "sports",
+   "purpose": [
+    "Reserving campus sports facilities and whatever recreation the university runs through the same system. It is one of only two services here the register opens to everybody with a sign-in rather than to a named audience."
+   ],
+   "ownerIntroduction": [
+    "The Sports Department, which is one of the few teams on the intranet that publishes a telephone number, an email address and a request route."
+   ],
+   "links": [
+    {
+     "label": "Books, rooms and equipment, including how sports facilities are booked",
+     "site": "intranet/help/"
+    }
+   ]
+  },
+  {
+   "slug": "campusbook",
+   "lede": "Booking a classroom, a laboratory or a hall. Open to everyone with a university sign-in, and the answer to a question the help pages currently cannot answer.",
+   "owner": "computing-resources-centre",
+   "purpose": [
+    "Reserving teaching and event space. It is worth naming plainly because the university's public pages do not: a reader looking for how to book a hall finds no route, and this is it."
+   ],
+   "problemsIntroduction": [
+    "No support route is registered, and no owner is published for room booking anywhere on the university's pages — which is listed on the help page as one of the services nobody has been made answerable for."
+   ],
+   "ownerIntroduction": [
+    "Unsettled. The application is in the computing register; the rooms belong to whoever timetables them, and no page names that office."
+   ],
+   "links": [
+    {
+     "label": "Books, rooms and equipment",
+     "site": "intranet/help/",
+     "note": "Where room booking is currently listed as having no published owner"
+    }
+   ]
+  }
+ ]
+}

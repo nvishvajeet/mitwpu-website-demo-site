@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="A practical introduction to the Linux shell, files and permissions, SSH keys, the SSH configuration file, copying files with scp and rsync, keeping work alive with tmux, and what a job scheduler is for.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://mitwpu.vishwanathgrid.org/intranet/computing/linux/">
+  <link rel="icon" href="/favicon.svg?v=20260726-dome-1" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico?v=20260726-dome-1" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260726-dome-1">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=20260726-dome-1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260726-dome-1">
+  <title>Linux and SSH: enough to get started · MIT-WPU</title>
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/tokens.css">
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/readability.css">
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/typography.css">
+  <link rel="stylesheet" href="../../../demo-assets/site.css?v=a06d305e9314">
+  <link rel="stylesheet" href="../../../demo-assets/institutional-footer.css?v=ff600599fd01">
+  <link rel="stylesheet" href="../../../vendor/university-web-patterns/src/css/patterns.css">
+  <link rel="stylesheet" href="../../../demo-assets/uwp-bridge.css?v=e23ad2df1f30">
+  <script src="../../../vendor/university-web-patterns/src/js/navigation.js" defer></script>
+  <script src="../../../demo-assets/theme.js?v=93679b7fd7f6" defer></script>
+  <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=05487f20e752" data-global-masthead-style>
+  <link rel="stylesheet" href="/demo-assets/readability.css?v=07173f3cd9ae" data-global-readability-style>
+  <link rel="stylesheet" href="/demo-assets/screen-rhythm.css?v=25cd99c69acc" data-global-screen-rhythm-style>
+  <meta property="og:title" content="Linux and SSH: enough to get started · MIT-WPU" data-release-generated="social">
+  <meta property="og:description" content="A practical introduction to the Linux shell, files and permissions, SSH keys, the SSH configuration file, copying files with scp and rsync, keeping work alive with tmux, and what a job scheduler is for." data-release-generated="social">
+  <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <meta property="og:type" content="website" data-release-generated="social">
+  <meta property="og:url" content="https://mitwpu.vishwanathgrid.org/intranet/computing/linux/" data-release-generated="social">
+  <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
+  <meta name="twitter:title" content="Linux and SSH: enough to get started · MIT-WPU" data-release-generated="social">
+  <meta name="twitter:description" content="A practical introduction to the Linux shell, files and permissions, SSH keys, the SSH configuration file, copying files with scp and rsync, keeping work alive with tmux, and what a job scheduler is for." data-release-generated="social">
+  <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
+  <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebPage","@id":"https://mitwpu.vishwanathgrid.org/intranet/computing/linux/#webpage","name":"Linux and SSH: enough to get started · MIT-WPU","url":"https://mitwpu.vishwanathgrid.org/intranet/computing/linux/","isPartOf":{"@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/"},"description":"A practical introduction to the Linux shell, files and permissions, SSH keys, the SSH configuration file, copying files with scp and rsync, keeping work alive with tmux, and what a job scheduler is for."}</script>
+</head>
+<body>
+  <a class="uwp-skip-link skip-link" href="#main"
+    data-uwp-component="skip-link" data-uwp-version="0.26.0">Skip to main content</a>
+  <header class="uwp-masthead global-masthead site-header institution-bar" data-global-masthead data-uwp-component="masthead" data-uwp-version="0.26.0">
+  <div class="uwp-masthead__inner uwp-shell global-masthead__inner institution-inner">
+    <div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div>
+    <nav class="uwp-nav global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav
+      data-uwp-nav>
+      <div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/about/">About</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="About submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/about-us/founder/">Founder President</a>
+    <a href="/about-us/executive-president/">Executive President</a>
+    <a href="/about-us/executive-director/">Executive Director</a>
+    <a href="/about-us/leadership-and-governance/">Leadership and governance</a>
+    <a href="/about-us/history-legacy/">History and legacy</a>
+    <a href="/about-us/world-peace-dome/">World Peace Dome</a>
+    <a href="/about-us/ranking-accreditation/">Rankings and accreditation</a>
+    <a href="/about-us/social-initiatives/">Social initiatives</a>
+  </div>
+</div>
+<div class="uwp-nav-item uwp-nav-item--mega" data-uwp-component="nav-mega" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/academics/">Academics</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Academics submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu uwp-nav-mega">
+    <div class="uwp-nav-mega__body">
+      <div class="uwp-nav-mega__group">
+        <a class="uwp-nav-mega__heading" href="/academics/">Schools</a>
+        <div class="uwp-nav-mega__links">
+          <a href="/academics/engineering-and-technology/">Engineering &amp; Technology</a>
+          <a href="/academics/computer-engineering-and-technology/">Computer Science &amp; Engineering</a>
+          <a href="/academics/science/">Science &amp; Environmental Studies</a>
+          <a href="/academics/health-science-technologies/">Health Sciences &amp; Technology</a>
+          <a href="/academics/design/">Design</a>
+          <a href="/academics/architecture/">Architecture</a>
+          <a href="/academics/construction-engineering-management/">Construction Engineering &amp; Management</a>
+          <a href="/academics/business/">Business</a>
+          <a href="/academics/economics-and-commerce/">Economics &amp; Commerce</a>
+          <a href="/academics/leadership/">Leadership</a>
+          <a href="/academics/government/">Government</a>
+          <a href="/academics/law/">Law</a>
+          <a href="/academics/liberal-arts-humanities/">Liberal Arts &amp; Consciousness</a>
+          <a href="/academics/">All schools and departments</a>
+        </div>
+      </div>
+      <div class="uwp-nav-mega__group">
+        <a class="uwp-nav-mega__heading" href="/programmes/">Study</a>
+        <div class="uwp-nav-mega__links">
+          <a href="/programmes/undergraduate/">Undergraduate</a>
+          <a href="/programmes/postgraduate/">Postgraduate</a>
+          <a href="/programmes/phd/">PhD and doctoral</a>
+          <a href="/programmes/diploma/">Certificates and diplomas</a>
+          <a href="/programmes/">Programme finder</a>
+        </div>
+      </div>
+      <div class="uwp-nav-mega__group">
+        <a class="uwp-nav-mega__heading" href="/academics/">Academic services</a>
+        <div class="uwp-nav-mega__links">
+          <a href="/academics/academic-calender/">Academic calendar</a>
+          <a href="/academics/exam-timetable/">Exam timetable</a>
+          <a href="/academics/ordinances/">Ordinances and regulations</a>
+        </div>
+      </div>
+    </div>
+    <a class="uwp-nav-mega__all" href="/academics/">Academics home</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/admissions/">Admissions</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Admissions submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/admissions/">Admissions overview</a>
+    <a href="/programmes/">Programmes</a>
+    <a href="/application-process/">Application process</a>
+    <a href="/mit-wpu-cet-2026/">MIT-WPU CET 2026</a>
+    <a href="/scholarships/">Scholarships</a>
+    <a href="/placements/">Placements</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/research/">Research</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Research submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/research/">Research overview</a>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/research/research-areas/">Research areas</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Research areas submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/research/academic-research/">Academic research</a>
+        <a href="/research/sponsored-research/">Sponsored research</a>
+        <a href="/research/centres-of-excellence/">Centres of excellence</a>
+        <a href="/research/research-papers/">Research papers</a>
+        <a href="/research/ipr/">IPR and patents</a>
+        <a href="/research/research-areas/">All research areas</a>
+      </div>
+    </div>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/groups/">Research groups</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Research groups submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/quantum/">Quantum Science &amp; Technology</a>
+        <a href="/photonics/">Photonics Research Group</a>
+        <a href="/bioinformatics/">Bioinformatics Group</a>
+        <a href="/astrophysics/">Astrophysics Research Group</a>
+        <a href="/groups/">All research groups</a>
+      </div>
+    </div>
+    <a href="/facilities/">Central Research Facility</a>
+    <a href="/research/research-news/">Research news</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/people/">People</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="People submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <a href="/people/">People directory</a>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/faculty/">Faculty</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Faculty submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/faculty-staff/">Faculty and staff</a>
+        <a href="/faculty-articles/">Faculty articles</a>
+        <a href="/awardee-profiles/">Awardee profiles</a>
+      </div>
+    </div>
+    <a href="/leadership/">Leadership</a>
+    <a href="/alumni/">Alumni</a>
+  </div>
+</div>
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.26.0">
+  <a class="uwp-nav-item__link" href="/life-at-mit-wpu/">Campus</a>
+  <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
+    aria-expanded="false" aria-label="Campus submenu">
+    <span aria-hidden="true"></span>
+  </button>
+  <div class="uwp-nav-menu">
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/life-at-mit-wpu/">Campus life</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Campus life submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/life-wpu/library/">Knowledge Resource Centre</a>
+        <a href="/life-wpu/hostel-facilities/">Hostel facilities</a>
+        <a href="/life-wpu/sports/">Sports</a>
+        <a href="/life-wpu/medical-facilities/">Medical facilities</a>
+      </div>
+    </div>
+    <div class="uwp-nav-branch">
+      <a class="uwp-nav-branch__link" href="/campus-life/">Clubs, teams and galleries</a>
+      <button class="uwp-nav-branch__disclosure" type="button"
+        data-uwp-nav-disclosure aria-expanded="false"
+        aria-label="Clubs, teams and galleries submenu">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="uwp-nav-flyout">
+        <a href="/campus-life/">Campus and student life directory</a>
+        <a href="/campus-life/galleries/">Photo and video galleries</a>
+      </div>
+    </div>
+    <a href="/life-wpu/student-affairs/">Student welfare</a>
+    <a href="/grievance-redressal/">Grievance redressal</a>
+    <a href="/life-wpu/student-council/">Student council</a>
+  </div>
+</div>
+<a href="/students/"
+  data-uwp-component="nav-item" data-uwp-version="0.26.0">Students</a>
+    </nav>
+    <div class="uwp-masthead__actions">
+      <button class="uwp-nav-toggle masthead-nav-toggle" type="button" data-uwp-nav-toggle
+        aria-expanded="false" aria-controls="global-primary-nav"
+        aria-label="Open menu">
+        <span aria-hidden="true"></span>
+      </button>
+      <form class="uwp-search-field" action="/search/" method="get"
+  role="search" aria-label="Search this website"
+  data-uwp-component="search-field" data-uwp-version="0.26.0">
+  <label class="uwp-visually-hidden" for="q">Search this website</label>
+  <input class="uwp-search-field__input" id="q"
+    name="q" type="search" autocomplete="off"
+    placeholder="Search" value="">
+  <button class="uwp-search-field__submit" type="submit">
+    <svg class="uwp-search-field__icon" viewBox="0 0 20 20" aria-hidden="true"
+      focusable="false"><path d="M9 2.5a6.5 6.5 0 0 1 5.15 10.47l3.19 3.19a.9.9 0 1 1-1.27 1.27l-3.19-3.19A6.5 6.5 0 1 1 9 2.5Zm0 1.8a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Z"/></svg>
+    <span class="uwp-visually-hidden">Search</span>
+  </button>
+</form>
+      <button class="uwp-theme-toggle theme-toggle" type="button" data-theme-toggle data-uwp-theme-toggle
+  data-uwp-component="theme-toggle" data-uwp-version="0.26.0" aria-pressed="false"
+  aria-label="Switch colour theme">
+  <span class="uwp-theme-icon uwp-theme-icon--light" aria-hidden="true"></span>
+  <span class="uwp-theme-icon uwp-theme-icon--dark" aria-hidden="true"></span>
+  <span class="uwp-switch-thumb" aria-hidden="true"></span>
+</button>
+    </div>
+  </div>
+</header><header class="uwp-masthead site-header" data-uwp-component="masthead" data-uwp-version="0.26.0" data-legacy-masthead>
+    <div class="uwp-masthead__inner uwp-shell header-inner">
+      <a class="uwp-brand brand" href="../../../"><strong>MIT World Peace University</strong></a>
+      <nav class="uwp-nav site-nav" id="intranet-computing-linux-primary-nav" aria-label="Primary"
+        data-uwp-nav>
+        <a href="../../../about/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">About</a>
+          <a href="../../../academics/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Academics</a>
+          <a href="../../../admissions/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Admissions</a>
+          <a href="../../../research/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Research</a>
+          <a href="../../../people/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">People</a>
+          <a href="../../../life-at-mit-wpu/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Campus</a>
+          <a href="../../../students/"
+    data-uwp-component="nav-item" data-uwp-version="0.26.0">Students</a>
+      </nav>
+      <div class="uwp-masthead__actions">
+        <button class="uwp-nav-toggle" type="button" data-uwp-nav-toggle
+          aria-expanded="false" aria-controls="intranet-computing-linux-primary-nav"
+          aria-label="Open menu">
+          <span aria-hidden="true"></span>
+        </button>
+        <button class="uwp-theme-toggle theme-toggle" type="button" data-theme-toggle data-uwp-theme-toggle
+    data-uwp-component="theme-toggle" data-uwp-version="0.26.0" aria-pressed="false"
+    aria-label="Switch colour theme">
+    <span class="uwp-theme-icon uwp-theme-icon--light" aria-hidden="true"></span>
+    <span class="uwp-theme-icon uwp-theme-icon--dark" aria-hidden="true"></span>
+    <span class="uwp-switch-thumb" aria-hidden="true"></span>
+  </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="uwp-breadcrumbs" aria-label="Breadcrumb"
+      data-uwp-component="breadcrumbs" data-uwp-version="0.26.0">
+      <ol>
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../intranet/">Intranet</a></li>
+        <li><a href="../../../intranet/computing/">Computing Resources Centre</a></li>
+        <li><span aria-current="page">Linux and SSH</span></li>
+      </ol>
+    </nav>
+    <header class="uwp-hero" data-uwp-component="hero" data-uwp-version="0.26.0">
+      <div class="uwp-hero__grid uwp-shell uwp-hero__grid--single">
+        <div class="uwp-hero__copy">
+          <p class="uwp-eyebrow">Computing Resources Centre</p>
+          <h1>Linux and SSH: enough to get started</h1>
+          <p class="uwp-lede">A short working introduction for people whose research is about to need a machine they cannot walk up to. Not a course — the twenty-odd commands that account for most of a first week, in the order you meet them.</p>
+        </div>
+      </div>
+    </header>
+    <aside class="uwp-notice" data-uwp-component="notice" data-uwp-version="0.26.0"
+      aria-labelledby="start-here">
+      <div>
+        <p class="uwp-eyebrow">How to read this page</p>
+        <h2 id="start-here">The commands here are real; the addresses in them are not</h2>
+        <p>Everything on this page works on any Linux or macOS machine, including the one in front of you, and it is worth trying there first. Where a command needs a host or an account, that part is a placeholder in capitals inside angle brackets and the block is marked as a sample — because this university has no host to name yet.</p><p>Nothing here is specific to MIT-WPU, and that is deliberate: what you learn on your own laptop is what you will type on somebody else&#39;s supercomputer.</p>
+      </div>
+    </aside>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="the-shell">
+      <div class="uwp-wrap">
+        <h2 id="the-shell">The shell, and where you are</h2>
+        <div class="uwp-prose">
+          <p>A shell is a program that waits for you to type the name of another program. That is all it is. The prompt tells you which machine you are on and which directory you are in, and the single most common cause of a confusing afternoon is being wrong about one of those two.</p>
+          <p>Six commands account for most of what anyone does. Learn these and the rest can be looked up.</p>
+        </div>
+        <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Where am I, and what is here</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># Print working directory: the folder you are in, as a full path.</span><span class="uwp-command__line">pwd</span><span class="uwp-command__comment"># List what is in it. -l for one per line with detail, -a to include the hidden dot-files.</span><span class="uwp-command__line">ls -la</span><span class="uwp-command__comment"># Change directory. A bare cd goes home; cd .. goes up one.</span><span class="uwp-command__line">cd &lt;DIRECTORY&gt;</span></code></pre>
+    </div>
+    <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Making, copying, moving, removing</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__line">mkdir results</span><span class="uwp-command__comment"># Copy. -r to copy a whole directory.</span><span class="uwp-command__line">cp -r results results-backup</span><span class="uwp-command__comment"># Move — which is also how you rename.</span><span class="uwp-command__line">mv results-backup old-results</span><span class="uwp-command__comment"># Remove. There is no undo and there is no wastebasket.</span><span class="uwp-command__line">rm old-results/notes.txt</span></code></pre>
+      <p class="uwp-command__note">rm -rf is the command that ends careers. It deletes a directory and everything under it without asking, and a stray space in the wrong place makes the argument something much larger than you meant. Read the line before pressing return, every time.</p>
+    </div>
+    <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">When you do not know what a command does</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># The manual is on the machine and does not need a network.</span><span class="uwp-command__line">man ls</span><span class="uwp-command__comment"># Most modern commands answer this too.</span><span class="uwp-command__line">ssh --help</span></code></pre>
+      <p class="uwp-command__note">Press q to leave the manual. Not knowing that is the reason most people leave it by closing the window.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="files-and-permissions">
+      <div class="uwp-wrap">
+        <h2 id="files-and-permissions">Files, and who may do what to them</h2>
+        <div class="uwp-prose">
+          <p>Every file carries three permissions — read, write, execute — for three audiences: you, your group, everybody else. `ls -l` shows them as nine characters. This is worth ten minutes now, because SSH refuses to use a private key whose permissions are wrong and the error message does not say so plainly.</p>
+          <p>The numbers are the same three permissions written as bits: 4 read, 2 write, 1 execute, added together per audience. So 600 is &quot;I may read and write it, nobody else may do anything&quot;, and 755 is &quot;I may do anything, everybody else may read and run it&quot;.</p>
+        </div>
+        <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">600</dt>
+        <dd class="uwp-definitions__value">
+          Yours alone, read and write. What a private key must be.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">644</dt>
+        <dd class="uwp-definitions__value">
+          Yours to edit, everyone else&#x27;s to read. The default for an ordinary file.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">700</dt>
+        <dd class="uwp-definitions__value">
+          Yours alone, including entering it. What ~/.ssh must be.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">755</dt>
+        <dd class="uwp-definitions__value">
+          Yours to change, everyone else&#x27;s to enter or run. The default for a directory or a script.
+        </dd>
+      </div>
+    </dl>
+    <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Read the permissions, then set them</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># The first ten characters of each line are the type and the nine permissions.</span><span class="uwp-command__line">ls -l ~/.ssh</span><span class="uwp-command__comment"># The two that SSH insists on.</span><span class="uwp-command__line">chmod 700 ~/.ssh</span><span class="uwp-command__line">chmod 600 ~/.ssh/id_ed25519</span><span class="uwp-command__comment"># A script you want to be able to run by name.</span><span class="uwp-command__line">chmod 755 &lt;YOUR-SCRIPT&gt;.sh</span></code></pre>
+      <p class="uwp-command__note">&quot;Permissions 0644 for &#x27;id_ed25519&#x27; are too open&quot; is SSH refusing to use a key anybody on the machine could read. chmod 600 is the whole fix.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="keys">
+      <div class="uwp-wrap">
+        <h2 id="keys">SSH keys: what they are and how to make one</h2>
+        <div class="uwp-prose">
+          <p>A key pair is two files. The public half is not a secret and is what you hand out; the private half is the secret and never leaves the machine it was made on. A remote system that has your public half can check that you hold the private half without ever seeing it, which is why this is better than a password and why no shared facility issues passwords for it.</p>
+          <p>One key per person, not one per machine you connect to. If you work from a laptop and a desktop, that is two keys, and both public halves get registered.</p>
+        </div>
+        <section class="uwp-procedure" data-uwp-component="procedure" data-uwp-version="0.26.0" aria-labelledby="keys-make-a-key">
+      <h2 id="keys-make-a-key">Make a key pair</h2>
+      <p class="uwp-procedure__summary">Two minutes, once, on each machine you will connect from.</p>
+      <p class="uwp-procedure__applies"><span class="uwp-procedure__applies-label">Applies to</span> macOS and Linux, and Windows 10 or later in PowerShell or WSL.</p>
+      <ol class="uwp-procedure__steps">
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Check whether you already have one</p>
+          <div class="uwp-procedure__step-body">
+            <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">List the keys on this machine</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__line">ls -l ~/.ssh/id_*.pub</span></code></pre>
+      <p class="uwp-command__note">A file ending in .pub means you have a key. Use it. Making a second one does not add security and does add a thing to keep track of.</p>
+    </div>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Generate the pair</p>
+          <div class="uwp-procedure__step-body">
+            <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Generate an ed25519 key pair</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># ed25519 rather than RSA: shorter, faster, and the current default everywhere.</span><span class="uwp-command__line">ssh-keygen -t ed25519 -C &quot;&lt;YOUR-NAME&gt;-&lt;MACHINE&gt;&quot;</span></code></pre>
+      <p class="uwp-command__expect">What you should see</p>
+      <pre class="uwp-command__lines uwp-command__lines--output"><code><span class="uwp-command__line">Enter file in which to save the key (~/.ssh/id_ed25519):</span><span class="uwp-command__line">Enter passphrase (empty for no passphrase):</span></code></pre>
+      <p class="uwp-command__note">Accept the default file name by pressing return. The comment after -C is only a label to help you tell keys apart later.</p>
+    </div>
+          </div>
+          <p class="uwp-procedure__step-note">Give it a passphrase. It is asked for once per session rather than once per connection, and it is the only thing standing between a stolen laptop and everywhere that laptop could reach.</p>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Add it to the agent so the passphrase is asked once</p>
+          <div class="uwp-procedure__step-body">
+            <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Hold the unlocked key for this session</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__line">ssh-add ~/.ssh/id_ed25519</span><span class="uwp-command__comment"># What the agent currently holds.</span><span class="uwp-command__line">ssh-add -l</span></code></pre>
+    </div>
+          </div>
+        </li>
+        <li class="uwp-procedure__step">
+          <p class="uwp-procedure__step-title">Send the public half — and only the public half</p>
+          <div class="uwp-procedure__step-body">
+            <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Print the public half, to paste into a form or a message</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__line">cat ~/.ssh/id_ed25519.pub</span></code></pre>
+      <p class="uwp-command__expect">What you should see</p>
+      <pre class="uwp-command__lines uwp-command__lines--output"><code><span class="uwp-command__line">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI&lt;...&gt;  &lt;YOUR-NAME&gt;-&lt;MACHINE&gt;</span></code></pre>
+      <p class="uwp-command__note">One line, beginning ssh-ed25519. If what you are looking at is many lines beginning with five dashes and the word BEGIN, you have opened the private half. Close it and do not send it.</p>
+    </div>
+          </div>
+        </li>
+      </ol>
+      <p class="uwp-procedure__after">You have a key when cat prints one line beginning ssh-ed25519, and ssh-add -l lists it.</p>
+    </section>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="connecting">
+      <div class="uwp-wrap">
+        <h2 id="connecting">Connecting, and the fingerprint nobody checks</h2>
+        <div class="uwp-prose">
+          <p>The first connection to any machine asks you to confirm its fingerprint. That prompt is the only moment at which you can tell the machine you meant from something standing in front of it, and it is the moment everyone clicks through. Compare it with what the service published, once, and the machine is remembered afterwards.</p>
+        </div>
+        <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Open a session</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">ssh &lt;YOUR-USERNAME&gt;@&lt;HOST-YOU-WERE-GIVEN&gt;</span></code></pre>
+      <p class="uwp-command__expect">What you should see</p>
+      <pre class="uwp-command__lines uwp-command__lines--output"><code><span class="uwp-command__line">The authenticity of host &#x27;&lt;HOST-YOU-WERE-GIVEN&gt;&#x27; can&#x27;t be established.</span><span class="uwp-command__line">ED25519 key fingerprint is SHA256:&lt;FINGERPRINT-THE-HOST-OFFERS&gt;.</span><span class="uwp-command__line">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></code></pre>
+      <p class="uwp-command__note">Type exit, or press Ctrl-D, to come back.</p>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">When it will not connect, ask it why</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># -v once for a little, -vvv for more than you want.</span><span class="uwp-command__line">ssh -v &lt;YOUR-USERNAME&gt;@&lt;HOST-YOU-WERE-GIVEN&gt;</span></code></pre>
+      <p class="uwp-command__note">The useful lines are the ones naming which key was offered and what the server said about it. &quot;Permission denied (publickey)&quot; almost always means the public half was never registered, or the private half is not the one being offered.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="ssh-config">
+      <div class="uwp-wrap">
+        <h2 id="ssh-config">Making it one word</h2>
+        <div class="uwp-prose">
+          <p>`~/.ssh/config` on your own machine turns an address you would otherwise retype into a short name. It is read by ssh, scp and rsync alike, so setting it up once fixes all three, and it is the single highest-value ten minutes on this page.</p>
+        </div>
+        <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">A host entry in ~/.ssh/config</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># Indentation is conventional rather than required; keep it anyway.</span><span class="uwp-command__line">Host &lt;SHORT-NAME-YOU-CHOOSE&gt;</span><span class="uwp-command__line">    HostName &lt;FULL-ADDRESS-YOU-WERE-GIVEN&gt;</span><span class="uwp-command__line">    User &lt;YOUR-USERNAME&gt;</span><span class="uwp-command__line">    IdentityFile ~/.ssh/id_ed25519</span><span class="uwp-command__comment"># Keeps a session from being dropped while you think.</span><span class="uwp-command__line">    ServerAliveInterval 60</span></code></pre>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">And then, from anywhere</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">ssh &lt;SHORT-NAME-YOU-CHOOSE&gt;</span><span class="uwp-command__line">scp &lt;FILE&gt; &lt;SHORT-NAME-YOU-CHOOSE&gt;:</span></code></pre>
+      <p class="uwp-command__note">The config file itself should be readable only by you: chmod 600 ~/.ssh/config.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="moving-files">
+      <div class="uwp-wrap">
+        <h2 id="moving-files">Moving files between machines</h2>
+        <div class="uwp-prose">
+          <p>`scp` for one file, `rsync` for everything else. rsync copies only what differs, resumes an interrupted transfer and can be run again safely — which is what you want the moment the thing being copied is larger than a coffee break.</p>
+        </div>
+        <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">One file, up and then back</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__line">scp &lt;LOCAL-FILE&gt; &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;REMOTE-PATH&gt;</span><span class="uwp-command__line">scp &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;REMOTE-FILE&gt; .</span></code></pre>
+      <p class="uwp-command__note">The lone dot means &quot;into the directory I am in now&quot;.</p>
+    </div>
+    <div class="uwp-command uwp-command--sample" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">A directory, resumably</span>
+        <strong class="uwp-command__sample">Sample. Everything in &lt;ANGLE BRACKETS&gt; is a placeholder for you to replace, and the values here are not this service's real ones.</strong>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># SAMPLE — placeholder values, not this service's real ones.</span><span class="uwp-command__comment"># -a preserves permissions and times, -v narrates, --partial keeps what arrived before a drop.</span><span class="uwp-command__line">rsync -av --partial &lt;LOCAL-DIRECTORY&gt;/ &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;REMOTE-DIRECTORY&gt;/</span><span class="uwp-command__comment"># Show what WOULD be copied and copy nothing. Worth doing first, every time.</span><span class="uwp-command__line">rsync -avn --partial &lt;LOCAL-DIRECTORY&gt;/ &lt;SHORT-NAME-YOU-CHOOSE&gt;:&lt;REMOTE-DIRECTORY&gt;/</span></code></pre>
+      <p class="uwp-command__note">The trailing slash on the source is not decoration. With it, the contents are copied; without it, the directory itself is copied inside the target, which is how people end up with results/results/results.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="tmux">
+      <div class="uwp-wrap">
+        <h2 id="tmux">Keeping work alive when your connection drops</h2>
+        <div class="uwp-prose">
+          <p>Close a terminal and everything running in it dies with it, which on a train is a two-hour job lost at ninety minutes. `tmux` puts the session on the far end of the connection rather than in your terminal, so it survives the connection going away and is still there when you come back.</p>
+          <p>Three commands is the whole of what most people need.</p>
+        </div>
+        <div class="uwp-command" data-uwp-component="command-block" data-uwp-version="0.26.0">
+      <p class="uwp-command__caption">
+        <span class="uwp-command__what">Start, leave, and come back</span>
+      </p>
+      <pre class="uwp-command__lines"><code><span class="uwp-command__comment"># Start a named session. Name it after the work, not after the day.</span><span class="uwp-command__line">tmux new -s analysis</span><span class="uwp-command__comment"># Detach: press Ctrl-b, let go, then press d. The session keeps running.</span><span class="uwp-command__line"># Ctrl-b  then  d</span><span class="uwp-command__comment"># What is still running.</span><span class="uwp-command__line">tmux ls</span><span class="uwp-command__comment"># Reattach, from the same machine or a different one.</span><span class="uwp-command__line">tmux attach -t analysis</span></code></pre>
+      <p class="uwp-command__note">Ctrl-b is tmux&#x27;s attention key: every tmux command is Ctrl-b followed by something. Ctrl-b then c makes a new window inside the session, Ctrl-b then n moves to the next one.</p>
+    </div>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="schedulers">
+      <div class="uwp-wrap">
+        <h2 id="schedulers">Why you do not run your work on the machine you logged in to</h2>
+        <div class="uwp-prose">
+          <p>On a shared research system the machine you land on is a doorway, not a workshop. It is shared with everyone else currently connected, and a calculation started there slows all of them down; most facilities kill such processes automatically, and some suspend the account.</p>
+          <p>Instead you describe the work in a small script and hand it to a scheduler, which runs it unattended on machines you never log in to. There are several schedulers and their commands differ, but all of them ask the same four questions, and having the answers is what makes the difference between a first day that works and one that does not.</p>
+        </div>
+        <dl class="uwp-definitions uwp-definitions--columns" data-uwp-component="definition-list" data-uwp-version="0.26.0">
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">How many processors?</dt>
+        <dd class="uwp-definitions__value">
+          More than your program can actually use makes the wait longer and the bill bigger, not the run faster.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">For how long?</dt>
+        <dd class="uwp-definitions__value">
+          Your honest estimate plus a margin. Under-ask and it is killed part-way; over-ask and it queues behind everything else.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">How much memory?</dt>
+        <dd class="uwp-definitions__value">
+          The commonest reason a long job dies overnight leaving nothing useful behind.
+        </dd>
+      </div>
+      <div class="uwp-definitions__row">
+        <dt class="uwp-definitions__label">Charged to what?</dt>
+        <dd class="uwp-definitions__value">
+          Time is granted to a project rather than to a person, so a submission normally names one.
+        </dd>
+      </div>
+    </dl>
+    <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="../../../intranet/computing/cdac/">
+          <span>The shape of a submission script, and what to do when a job will not run</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+    <section class="uwp-section uwp-section--tint"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="what-this-does-not-cover">
+      <div class="uwp-wrap">
+        <h2 id="what-this-does-not-cover">What this page deliberately does not cover</h2>
+        <div class="uwp-prose">
+          <p>It is a first week, not a course. Shell scripting beyond a straight run of commands, package and environment management, version control, containers, parallel programming and performance measurement are each larger than everything above put together, and a page that gestured at them would teach nobody anything.</p>
+          <p>The university publishes no training in any of it, and no reading list. That is on the work list below rather than filled in here with somebody&#x27;s favourite links: a recommendation is an institutional statement, and this page does not make those on the university&#x27;s behalf.</p>
+        </div>
+      </div>
+    </section>
+    <section class="uwp-section uwp-section--tint"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="not-yet-published">
+      <div class="uwp-wrap">
+        <h2 id="not-yet-published">What this page cannot yet tell you</h2>
+        <div class="uwp-prose">
+          <p>This page is the most nearly complete of the five, because almost none of it depends on a decision this university has yet to take. What is missing is the part only an institution can supply: whether anybody teaches this, to whom, and who answers a question about it.</p>
+        </div>
+        <ul class="uwp-grid uwp-grid--2"><li><strong>Service detail: A fact this page cannot state</strong> — Whether the university offers any Linux or HPC training, and to whom; A reading list the Centre is prepared to stand behind; Whether a general-purpose Linux machine exists here for people to practise on; Who answers a question about any of this</li></ul>
+      </div>
+    </section>
+    <section class="uwp-section"
+      data-uwp-component="page-section" data-uwp-version="0.26.0" aria-labelledby="the-rest-of-the-portal">
+      <div class="uwp-wrap">
+        <h2 id="the-rest-of-the-portal">The rest of the Computing Resources Centre</h2>
+        <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.26.0">
+      <li>
+        <a href="../../../intranet/computing/">
+          <span>Computing Resources Centre</span>
+          <span class="uwp-meta">The Centre, what it runs, and the questions it is asked</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/vpn/">
+          <span>Reach university systems from off campus</span>
+          <span class="uwp-meta">The VPN</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/cdac/">
+          <span>Use national computing beyond what a laboratory machine can do</span>
+          <span class="uwp-meta">Remote access to C-DAC · samples only</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/software/">
+          <span>Find out whether you may install something, and how to get it</span>
+          <span class="uwp-meta">Software</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../../intranet/computing/services/">
+          <span>Read the manual for a service the university runs</span>
+          <span class="uwp-meta">Seven manuals, one per registered service</span>
+        </a>
+      </li>
+    </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="uwp-footer institutional-footer" data-uwp-component="footer" data-uwp-version="0.26.0">
+    <div class="uwp-footer__grid uwp-shell">
+      <div class="uwp-footer__identity">
+        <strong>MAEER’s MIT World Peace University</strong>
+  <ul class="uwp-social-links" data-uwp-component="social-links" data-uwp-version="0.26.0">
+    <li>
+      <a class="uwp-social-links__link" href="https://www.facebook.com/MIT-WPUOfficial/"
+        target="_blank" rel="noopener noreferrer" title="Facebook">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        <span class="uwp-visually-hidden">Facebook (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://twitter.com/mitwpuofficial"
+        target="_blank" rel="noopener noreferrer" title="X (formerly Twitter)">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M18.9 2H22l-7.55 8.63L23.3 22h-6.86l-5.37-7.02L4.9 22H1.78l8.08-9.23L1 2h7.03l4.85 6.41L18.9 2zm-1.2 18.06h1.7L7.4 3.85H5.57L17.7 20.06z"/></svg>
+        <span class="uwp-visually-hidden">X (formerly Twitter) (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://www.youtube.com/c/MITWorldPeaceUniversity"
+        target="_blank" rel="noopener noreferrer" title="YouTube">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M23 12s0-3.6-.46-5.32a2.62 2.62 0 0 0-1.84-1.85C18.98 4.36 12 4.36 12 4.36s-6.98 0-8.7.47A2.62 2.62 0 0 0 1.46 6.68C1 8.4 1 12 1 12s0 3.6.46 5.32a2.62 2.62 0 0 0 1.84 1.85c1.72.47 8.7.47 8.7.47s6.98 0 8.7-.47a2.62 2.62 0 0 0 1.84-1.85C23 15.6 23 12 23 12zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+        <span class="uwp-visually-hidden">YouTube (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://www.linkedin.com/school/mitwpuofficial/"
+        target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><path d="M6.94 5a2 2 0 1 1-4.001-.001A2 2 0 0 1 6.94 5zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
+        <span class="uwp-visually-hidden">LinkedIn (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link" href="https://www.instagram.com/mitwpuofficial/"
+        target="_blank" rel="noopener noreferrer" title="Instagram">
+        <svg class="uwp-social-links__mark" viewBox="0 0 24 24" width="20"
+          height="20" fill="currentColor" aria-hidden="true"
+          focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.2"/></svg>
+        <span class="uwp-visually-hidden">Instagram (opens in a new tab)</span>
+      </a>
+    </li>
+    <li>
+      <a class="uwp-social-links__link uwp-social-links__link--named"
+        href="https://www.threads.net/@mitwpuofficial" target="_blank"
+        rel="noopener noreferrer">Threads<span class="uwp-visually-hidden"> (opens in a new tab)</span></a>
+    </li>
+  </ul>
+      </div>
+      <nav class="uwp-footer__group" aria-label="Reach us">
+        <h2>Reach us</h2>
+        <ul>
+          <li><a href="/contact-us/">Contact the university</a></li>
+          <li><a href="/administration/">Offices and contacts</a></li>
+          <li><a href="/forms/">Forms and requests</a></li>
+          <li><a href="/career/">Careers</a></li>
+          <li><a href="/intranet/">Intranet</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="About MIT-WPU">
+        <h2>About MIT-WPU</h2>
+        <ul>
+          <li><a href="/about-us/about-mit/">Mission and values</a></li>
+          <li><a href="/about/maeer/">MAEER</a></li>
+          <li><a href="/happenings/">News and events</a></li>
+          <li><a href="/international/">International</a></li>
+          <li><a href="/mandatory-disclosures/">Mandatory disclosures</a></li>
+          <li><a href="/media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf">Statutory committees (PDF)</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="Raising a concern">
+        <h2>Raising a concern</h2>
+        <ul>
+          <li><a href="/grievance-redressal/">How to raise a grievance</a></li>
+          <li><a href="/academics/student-grievance/">Students’ Grievance Redressal Committee</a></li>
+          <li><a href="/student-affairs/anti-ragging-committee/">Anti-Ragging Committee</a></li>
+          <li><a href="/student-affairs/internal-complaints-committee/">Internal Complaints Committee</a></li>
+          <li><a href="/sc-st-committee/">SC/ST and Equal Opportunity Cell</a></li>
+          <li><a href="/centre-for-womens-studies-and-development/">Centre for Women’s Studies and Development</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="Legal and policy">
+        <h2>Legal and policy</h2>
+        <ul>
+          <li><a href="/about-us/national-ragging-prevention-programme/">Ragging prevention programme</a></li>
+          <li><a href="/student-affairs/discipline-committee/">Disciplinary Committee</a></li>
+          <li><a href="/media/mitwpu-public/documents/6e/6ebc55d88a0eb17f-Disclaimer.pdf">Capitation-fee disclaimer (PDF)</a></li>
+          <li><a href="/privacy-policy/">Privacy and compliance</a></li>
+          <li><a href="/cookies/">Cookies and storage</a></li>
+          <li><a href="/accessibility/">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="uwp-footer__note uwp-shell">
+      <p>© MIT World Peace University</p>
+    </div>
+  </footer>
+</body>
+</html>
