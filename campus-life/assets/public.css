@@ -175,7 +175,17 @@ button, input, select, textarea { color: inherit; }
 .skip-link:focus { transform: none; }
 .site-header__inner, .section-nav__inner, .site-footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
 .primary-nav, .section-nav__inner > div { display: flex; align-items: center; gap: 1.25rem; }
-.site-header { background: var(--surface); border-bottom: 1px solid var(--rule); }
+/* The app's own paper header, and ONLY that one. The release swaps this
+   section's header for the institution's navy bar and carries `site-header`
+   on it as a legacy hook (tools/build_public_demo.py:MASTHEAD_DECORATIONS
+   lists why). Unnarrowed, this rule reached that bar too: same specificity as
+   the package's `.uwp-masthead { background: var(--uwp-masthead-bg) }`, later
+   in the cascade, so paper won — and demo-assets/global-masthead.css, which
+   sets only the token and never a background, never got a say. The bar drew
+   white while its links kept the white that sheet gives them for navy, so the
+   whole university navigation was white on white across this section.
+   The note at line 117 above predicted exactly this. */
+.site-header:not([data-global-masthead]) { background: var(--surface); border-bottom: 1px solid var(--rule); }
 .site-header__inner { min-height: 5.5rem; }
 .wordmark { display: flex; align-items: center; gap: .8rem; font-weight: 700; text-decoration: none; }
 .wordmark__mark { display: grid; width: 2.6rem; aspect-ratio: 1; place-items: center; color: white; font-family: var(--serif); font-size: 1.45rem; background: var(--navy); border-bottom: 4px solid var(--gold); }
