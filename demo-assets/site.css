@@ -357,6 +357,136 @@ h3 {
   transform: translateX(19px);
 }
 
+/* ── the screen as the unit of the page ──────────────────────────────
+ *
+ * Asked for by the operator, looking at the landing screen: "the first page
+ * shows one and a half section — make section sizes big enough that you see
+ * integral sections when you land, and then similarly every screen page is
+ * divided into similar sections."
+ *
+ * The measurement was exactly that. At 1280x720 the masthead takes 115px, so
+ * a screen is 605px of page, and the four bands ran 519, 1134, 854 and 364 —
+ * 0.86, 1.87, 1.41 and 0.60 screens. Not one boundary fell near a screen
+ * edge, so landing showed the hero plus an 86px slice of Latest: enough to
+ * see that something is there, not enough to read it, and it makes the page
+ * look like it has been cut off rather than composed.
+ *
+ * TWO PARTS, AND THE SECOND IS THE ONE THAT MATTERS.
+ *
+ * `--screen` gives every band a floor of one screen, so a band shorter than
+ * the window — the hero at 519, the grievance section at 364 — stops leaving
+ * a stripe of the next one showing under it. Content is centred in the extra
+ * space rather than pooling at the bottom.
+ *
+ * Scroll snapping then does the rest, and it is what makes this hold for the
+ * bands that are TALLER than a screen. Latest is 1.87 screens and there is no
+ * honest way to make it 1.00 — it holds six cards. Forcing it to 2.00 would
+ * pad it with 700px of nothing. Instead every band declares its start as a
+ * snap point, so a scroll settles on a section boundary rather than wherever
+ * momentum left it, and `scroll-margin-top` clears the sticky masthead so a
+ * snapped heading is never underneath it.
+ *
+ * `proximity`, NOT `mandatory`. Mandatory refuses to let you rest anywhere
+ * but a snap point, which on a band nearly two screens tall means the middle
+ * of Latest — the part with the cards in it — cannot be looked at without the
+ * page pulling away. Proximity settles the near misses and leaves deliberate
+ * scrolling alone. It is the difference between a page that composes itself
+ * and one that argues with the reader.
+ *
+ * WHY THIS IS OPT-IN. `.is-landing` on the body, not a rule on every page.
+ * A screen-height floor is right for a page of four composed bands and wrong
+ * for the people directory, where 607 cards in a dense grid would be pushed
+ * apart by a rule that exists to stop short sections leaking. Landings get
+ * it; content pages do not.
+ *
+ * The earlier note under .hero-inner still stands and is not being reversed.
+ * A hero given `calc(100svh - masthead)` BY CONSTRUCTION was 785px holding a
+ * headline and a paragraph, and the fix was to let the height follow the
+ * content. This is the opposite direction: the content sets the height and
+ * the screen sets a floor, so the hero gains the 86px that was leaking the
+ * next section and nothing more. On a taller window it gains more, which is
+ * the cost of the request being about screens. */
+.is-landing {
+  --screen: calc(100svh - var(--mitwpu-masthead-height, 115px));
+}
+
+/* On the ROOT, matched through the body's class, because `scroll-snap-type`
+ * is only honoured on the element that actually scrolls — and on this site
+ * that is <html>, not <body>. Declaring it on `.is-landing` computed fine and
+ * did exactly nothing; the sections reported `scroll-snap-align: start` and
+ * the page reported `scroll-snap-type: none`, which is the shape of this bug
+ * every time and the reason to check the container rather than the children.
+ * `:has()` is what lets the opt-in stay a body class while the property lands
+ * where the browser reads it. */
+:root:has(> body.is-landing) {
+  scroll-snap-type: y proximity;
+}
+
+.is-landing > main > section {
+  min-height: var(--screen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+  scroll-margin-top: var(--mitwpu-masthead-height, 115px);
+}
+
+/* Type set for the screen rather than for the column.
+ *
+ * The operator's reference for this is Apple and Tesla, and the thing those
+ * pages do that a university page usually does not is commit: one statement
+ * per screen, set large enough that it is the screen rather than a heading
+ * sitting on top of one. A 51px h2 that was correct when four bands shared a
+ * scroll is undersized once each band IS the scroll — the eye has a whole
+ * window and the heading occupies a fourteenth of it.
+ *
+ * So landing headings scale with the viewport instead of being fixed. The
+ * ceiling matters as much as the floor: this is an institution's page and not
+ * a product launch, and past about 76px an English sentence of six words
+ * starts breaking across lines in ways that read as a poster rather than as a
+ * university. The floor keeps it from collapsing on a short laptop screen.
+ *
+ * Only the landing. Section pages and directories keep the smaller scale,
+ * because a heading that dominates a screen is right when the screen holds
+ * one idea and wrong when it holds ninety links. */
+.is-landing > main > section h2 {
+  font-size: clamp(2.4rem, 4.6vw, 4.2rem);
+  line-height: 1.04;
+}
+
+.is-landing .hero-copy h1 {
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 1.02;
+}
+
+.is-landing .hero-summary {
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+}
+
+/* A phone is not a screen-height composition. The masthead collapses, the
+ * bands become one column, and a floor of 100svh there stretches a two-line
+ * heading over the whole display — the reader scrolls past emptiness to reach
+ * content that was already short. Snapping goes with it: on a touch screen it
+ * fights the fling. */
+@media (max-width: 60rem) {
+  :root:has(> body.is-landing) {
+    scroll-snap-type: none;
+  }
+
+  .is-landing > main > section {
+    min-height: 0;
+    display: block;
+  }
+}
+
+/* A reader who has asked for less movement has asked not to be moved by the
+ * page. Snapping is the page deciding where the scroll ends. */
+@media (prefers-reduced-motion: reduce) {
+  :root:has(> body.is-landing) {
+    scroll-snap-type: none;
+  }
+}
+
 .hero {
   background: var(--subtle);
   border-bottom: 1px solid var(--line);
