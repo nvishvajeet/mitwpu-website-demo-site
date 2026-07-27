@@ -619,12 +619,36 @@
               <a class="directory-link" href="people/">
                 <strong>People</strong>
               </a>
-              <!-- /campus-life/ rather than /life-at-mit-wpu/. The second is
-                   one page; the first is 128 — every club, team, society and
-                   gallery the importer loaded. Campus pointed at the thin one,
-                   which is how a section built from a database ended up with no
-                   inbound link at all. -->
-              <a class="directory-link" href="campus-life/">
+              <!-- Campus means the same page here as it does in the masthead,
+                   and for two nights it did not.
+
+                   90cca1250 pointed this tile at /campus-life/ on the grounds
+                   that /life-at-mit-wpu/ is "one page" and /campus-life/ is
+                   128. The first half of that is wrong: /life-at-mit-wpu/ is a
+                   curated landing with about thirty outbound links, grouped by
+                   what a reader wants — residence and dining, sport, clubs,
+                   wellbeing, safety, the campus map — and two of them go to
+                   /campus-life/ and its galleries. The second half is right
+                   and was the real fault, but it is a fault about reachability
+                   and it was fixed in the masthead the same night, by giving
+                   the Campus cascade a "Clubs, teams and galleries" branch on
+                   all 1,958 pages. Changing this tile was a second fix for a
+                   problem that no longer existed, and it left the site with
+                   two answers to what one word means.
+
+                   The landing is the right one. /campus-life/ is a directory:
+                   forty clubs and fifty-one galleries, alphabetical, opening
+                   on AIChE. That is the correct destination for somebody who
+                   wants the list and the wrong first screen for somebody who
+                   clicked a word meaning "what is it like to be here". It is
+                   the relation Academics already has — the overview, not the
+                   programme finder — and the navigation declaration's own note
+                   made this argument on 2026-07-26; only this file disagreed.
+
+                   The directory is one card down the landing and one branch
+                   into the cascade, and nothing that was reachable before is
+                   less reachable now. -->
+              <a class="directory-link" href="life-at-mit-wpu/">
                 <strong>Campus</strong>
               </a>
               <!-- Third link in the group that is already about the people of

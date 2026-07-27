@@ -2402,8 +2402,9 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "summary": "Dr. Ashwini Vinayak Zadgaonkar is an educationist, researcher, and Assistant Professor at MIT World Peace University, Pune, with over 16 years of teaching experience. She is pursuing her Ph.D. under the prestigious Visvesvaraya PhD Scheme for Electronics and IT at Nagpur University. Her research interests include Natural Language Processing, Knowledge Base Population, and Text Mining. She has an extensive research portfolio with 26 publications in reputed journals and conferences indexed in Web of Science (SCI/ESCI), Scopus, and ICI. Dr. Zadgaonkar is committed to advancing research-driven teaching and contributing to academic excellence through innovation, scholarly work, and student mentorship.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/ashwini-vinayak-zadgaonkar",
-      "scholar": "https://scholar.google.com/citations?view_op=new_profile&hl=en\n0000-0003-2207-6500",
-      "linkedin": "https://www.linkedin.com/in/ashwini-zadgaonkar-29500b168/"
+      "scholar": "https://scholar.google.com/citations?view_op=new_profile&hl=en",
+      "linkedin": "https://www.linkedin.com/in/ashwini-zadgaonkar-29500b168/",
+      "orcid": "https://orcid.org/0000-0003-2207-6500"
     },
     "memberType": ""
   },
@@ -4755,7 +4756,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/jyoti-ganesh-mante-khurpade",
       "scholar": "https://scholar.google.com/citations?hl=en&user=R48tvV8AAAAJ&view_op=list_works&sortby=pubdate",
-      "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57983418300                         https://www.scopus.com/authid/detail.uri?authorId=57217113564",
+      "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57983418300",
       "orcid": "https://orcid.org/0000-0002-0715-1878?lang=en"
     },
     "memberType": ""
@@ -5881,7 +5882,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
       "profile": "https://mitwpu.edu.in/faculty/manish-kumar-sharma",
       "linkedin": "https://www.linkedin.com/in/drmksharma/",
       "scholar": "https://scholar.google.com/citations?hl=en&user=yg_ptQgAAAAJ",
-      "research": "https://www.researchgate.net/profile/Manish-Kumar-\nSharma-8",
+      "research": "https://www.researchgate.net/profile/Manish-Kumar-Sharma-8",
       "orcid": "https://orcid.org/my-orcid?orcid=0000-0003-2897-7553"
     },
     "memberType": ""
@@ -7559,7 +7560,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/pramod-bapu-mali",
       "scholar": "https://scholar.google.com/citations?hl=en&user=B9yTOTQAAAAJ",
-      "orcid": "https://orcid.org/ 0000-0002-8110-2986"
+      "orcid": "https://orcid.org/0000-0002-8110-2986"
     },
     "memberType": ""
   },
@@ -10112,7 +10113,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "summary": "Sanmit Sarkar is an interdisciplinary educator and researcher with over 10+ years of experience teaching English Literature, Linguistics, Business Communication, and Creative Writing at undergraduate and postgraduate levels. His work sits at the intersection of literature, aesthetics, and pedagogy, with a commitment to making literary studies more accessible, impactful, and inclusive.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sanmit-sanjit-sarkar",
-      "scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=2yfIRW4 AAAAJ"
+      "scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=2yfIRW4AAAAJ"
     },
     "memberType": ""
   },
@@ -10343,8 +10344,9 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/seema-idhate",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=59536789400&notSignedIn=true",
-      "scholar": "https://scholar.google.com/citations?user=grm2-gIAAAAJ&hl=en\n0009-0009-1586-1755",
-      "linkedin": "https://www.linkedin.com/in/seema-idhate-ab8145232/"
+      "scholar": "https://scholar.google.com/citations?user=grm2-gIAAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/in/seema-idhate-ab8145232/",
+      "orcid": "https://orcid.org/0009-0009-1586-1755"
     },
     "memberType": ""
   },
@@ -12354,7 +12356,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "summary": "CA Swapnil Gupta focuses on clear, practical, and student-friendly teaching that helps learners understand concepts and apply them confidently. Her approach is exam-oriented yet concept- driven, employing simple explanations, real-world illustrations, and regular interaction to build strong fundamentals. With teaching experience in Law at the CA Foundation level, she breaks down complex legal provisions into easy and relatable examples, motivated to guide students through structured learning, discipline, and professional ethics while contributing to MIT-WPU via effective teaching, academic rigor, and outcome-based education.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swapnil-mahesh-gupta",
-      "linkedin": "https://www.linkedin.com/in/swapnil-gupta-\n230829226?utm_source=shareCutm_campaign=share_viaCutm_content=profileCutm_\nmedium=android_app"
+      "linkedin": "https://www.linkedin.com/in/swapnil-gupta-230829226?utm_source=shareCutm_campaign=share_viaCutm_content=profileCutm_medium=android_app"
     },
     "memberType": ""
   },
@@ -12487,7 +12489,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     },
     "photoPath": "./assets/campus/swati-deepak-bankar.webp",
     "research": "",
-    "summary": "Dr. Swati Bankar is currently serving as the Associate Dean – External Relations and Associate Professor at the School of Business, MIT World Peace University since 2006. XIn her role as Associate Dean, she has developed strong industry linkages and has successfully led numerous collaborative initiatives with industry experts to bridge the gap between academia and industry. With 19 years of extensive experience in the field of Human Resource Management, Dr. Bankar has made significant contributions to both academia and industry. She is a recognized Ph.D. Research Guide, a Board of Studies (BOS) member at universities, and serves as an expert on Research Advisory Committees (RACs) across institutions. As a research guide, she has successfully supervised two Ph.D. scholars. She has published two books and several research papers in reputed Scopus and ABDC-indexed journals. Dr. Bankar also holds four patents to her credit, reflecting her innovation-driven academic approach. Certified by the Department of Science and Technology (DST), Government of India, she is an accredited trainer for Entrepreneurship Development. She has actively trained and mentored students on startup development and has worked closely with Self-Help Groups (SHGs) of women, empowering them through entrepreneurial training. She has taught a range of Human Resource subjects, including HR Analytics, International HRD and Organizational Development (IHRDOD), and Training & Development. Her dedication to teaching was recognized when she received the Best Teacher Award from the International Lions Club. Dr. Bankar has also facilitated global learning experiences, having led a two-week University Winter Program on International Management at the University of Hull, UK, and a one-week international program in Bur Dubai. She is also a Project guide for the students of Teesside University UK. Her research and teaching interests lie in Employee Engagement, Talent Management, Leadership, Coaching and Mentoring, and exploring the link between branding and employee behavior using HR instruments.",
+    "summary": "Dr. Swati Bankar is currently serving as the Associate Dean – External Relations and Associate Professor at the School of Business, MIT World Peace University since 2006. In her role as Associate Dean, she has developed strong industry linkages and has successfully led numerous collaborative initiatives with industry experts to bridge the gap between academia and industry. With 19 years of extensive experience in the field of Human Resource Management, Dr. Bankar has made significant contributions to both academia and industry. She is a recognized Ph.D. Research Guide, a Board of Studies (BOS) member at universities, and serves as an expert on Research Advisory Committees (RACs) across institutions. As a research guide, she has successfully supervised two Ph.D. scholars. She has published two books and several research papers in reputed Scopus and ABDC-indexed journals. Dr. Bankar also holds four patents to her credit, reflecting her innovation-driven academic approach. Certified by the Department of Science and Technology (DST), Government of India, she is an accredited trainer for Entrepreneurship Development. She has actively trained and mentored students on startup development and has worked closely with Self-Help Groups (SHGs) of women, empowering them through entrepreneurial training. She has taught a range of Human Resource subjects, including HR Analytics, International HRD and Organizational Development (IHRDOD), and Training & Development. Her dedication to teaching was recognized when she received the Best Teacher Award from the International Lions Club. Dr. Bankar has also facilitated global learning experiences, having led a two-week University Winter Program on International Management at the University of Hull, UK, and a one-week international program in Bur Dubai. She is also a Project guide for the students of Teesside University UK. Her research and teaching interests lie in Employee Engagement, Talent Management, Leadership, Coaching and Mentoring, and exploring the link between branding and employee behavior using HR instruments.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/swati-deepak-bankar"
     },
@@ -12862,7 +12864,7 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "summary": "Dr. Vaibhav Narendra Deshmukh is a senior academician with a total of 21 years of experience, including 1.5 years in industry and 12 years at MIT. He completed his Ph.D. in Mechanical Engineering from Savitribai Phule Pune University in 2018. He has published ten papers and has one granted and one published Indian patent. Dr. Deshmukh has also guided ten M.Tech. dissertations and is currently guiding three PhD scholars. He is known for his expertise in the field of mechanical engineering and his passion for teaching and research.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/vaibhav-narendra-deshmukh",
-      "scholar": "https://scholar.google.co.in/citations?user= aVj8UBwAAAAJ&hl=en",
+      "scholar": "https://scholar.google.co.in/citations?user=aVj8UBwAAAAJ&hl=en",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57201900013",
       "orcid": "https://orcid.org/0000-0002-4695-6265"
     },
