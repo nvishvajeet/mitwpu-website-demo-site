@@ -23,7 +23,7 @@
     })();
   </script>
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/media.css?v=874fc6c0872d">
-  <link rel="stylesheet" href="demo-assets/site.css?v=580dfd636b95">
+  <link rel="stylesheet" href="demo-assets/site.css?v=6af7373c463d">
   <script src="demo-assets/theme.js?v=93679b7fd7f6" defer></script>
   <script src="demo-assets/landing.js?v=8e9a0aae46d3" defer></script>
   <link rel="stylesheet" href="demo-assets/institutional-footer.css?v=ff600599fd01">
@@ -239,6 +239,7 @@
       </div>
     </div>
     <a href="/life-wpu/student-affairs/">Student welfare</a>
+    <a href="/grievance-redressal/">Grievance redressal</a>
     <a href="/life-wpu/student-council/">Student council</a>
   </div>
 </div>
@@ -304,6 +305,7 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="page-title" data-image-gallery>
+      <div class="band-screen">
       <div class="shell hero-inner">
         <div class="uwp-feature-figure hero-feature">
         <div class="uwp-feature-figure__frame">
@@ -357,91 +359,128 @@
           <p class="hero-summary">Founded in 1983 as the Maharashtra Institute of Technology under MAEER, MIT-WPU brings rigorous academics and serious research together with value-based education and peace.</p>
         </div>
       </div>
+      </div>
     </section>
 
 
+    <!-- Latest, PAGED: six cards as two screens of three rather than one band
+         of two rows.
+         ==================================================================
+         WHY PAGING AND NOT CUTTING. The rule this page now works to is that a
+         band is either one screen or a whole number of them, and every one of
+         those screens is a snap point. A section longer than a screen is not
+         squeezed until it fits and is not left to overflow; it becomes as many
+         screens as it needs.
+
+         The arithmetic is why that rule earns its keep here, because the
+         squeeze was genuinely impossible. At 1280x720 a screen of page is
+         605px. This band pays for its padding and its heading before a card is
+         drawn — 178px even at the tightened figures — leaving 427. One row is
+         390 and fits. TWO rows are 780 plus a 44px gap, which is more than the
+         whole screen, and no card shape rescues them: any honest ratio on a
+         392px column is at least 163px of picture, so two rows of picture
+         cards cannot come under about 512 whatever the copy does. Six pictures
+         on ONE screen would need six narrow columns and 180px-wide cards,
+         which is the small-picture fault this page was rebuilt to fix.
+
+         So the earlier answer was to keep three cards and drop three, and the
+         count had already come down twice before that — ten to nine, nine to
+         six. Paging is strictly better: the same six stories, at the same
+         392x261 the rest of the page uses, and both screens whole. It also
+         settles a contradiction rather than picking a side of it, since two
+         rows and one screen per view were asked for on the same day.
+
+         The count must still be a multiple of three, and now of six: a seventh
+         card would open a third screen holding one card and two empty cells.
+
+         TWO GRIDS AND NOT ONE. Splitting the markup is what makes each screen
+         a box that can be given a height and a snap position. It costs a
+         duplicated container and buys the property the whole page is built on.
+         `data-feed-list` stays on the first, which is the hook a CMS would
+         fill; a CMS supplying seven items would need to know about the split,
+         and the comment above is the notice. -->
     <section class="activity" aria-labelledby="activity-title" data-image-gallery>
-      <div class="shell">
-        <div class="section-heading">
-          <div>
-            <h2 id="activity-title">Latest</h2>
+      <div class="band-screen">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <h2 id="activity-title">Latest</h2>
+            </div>
+            <div class="activity-heading-actions">
+              <a class="archive-link" href="happenings/">All news, events &amp; archive <span aria-hidden="true">→</span></a>
+            </div>
           </div>
-          <div class="activity-heading-actions">
-            <a class="archive-link" href="happenings/">All news, events &amp; archive <span aria-hidden="true">→</span></a>
+
+          <div class="activity-grid" data-feed-list>
+            <article class="activity-card">
+              <a class="activity-image" href="researcher/mit-wpu-researchers-make-significant-contribution-to-biodiversity-discovery/">
+                <img src="/media/mitwpu-public/optimized/research_facility_event/11/11eb94287555b3bd-11eb94287555b3bd-damselfly_research_banner.webp" alt="Researchers documenting a biodiversity discovery" width="1124" height="447" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Research discovery</p>
+                <h3><a href="researcher/mit-wpu-researchers-make-significant-contribution-to-biodiversity-discovery/">A new damselfly species from the Western Ghats</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="researcher/mit-wpu-faculty-member-recognised-among-the-worlds-top-5-scientists/">
+                <img src="/media/mitwpu-public/optimized/research_facility_event/06/0665bca6f20df7f1-0665bca6f20df7f1-top-scientist-desk-new.webp" alt="MIT-WPU research recognition" width="1124" height="450" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Recognition</p>
+                <h3><a href="researcher/mit-wpu-faculty-member-recognised-among-the-worlds-top-5-scientists/">Faculty member recognised among the world’s top 5% scientists</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="news/mit-wpu-pune-students-shine-globally-at-apples-swift-student-challenge-2026/">
+                <img src="/media/mitwpu-public/optimized/research_facility_event/34/34f17fe4600957ca-34f17fe4600957ca-ios-team-banner.webp" alt="MIT-WPU students recognised in the 2026 Apple Swift Student Challenge" width="1124" height="477" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Student achievement</p>
+                <h3><a href="news/mit-wpu-pune-students-shine-globally-at-apples-swift-student-challenge-2026/">MIT-WPU students recognised in Apple’s Swift Student Challenge 2026</a></h3>
+              </div>
+            </article>
           </div>
         </div>
+      </div>
 
-        <div class="activity-viewport">
-          <!-- Six: two full rows of three at the shell measure.
-               The count has come down twice — ten to nine, then nine to six —
-               and the constraint each time is that it must be a multiple of
-               three, or the last card sits alone with empty cells beside it
-               and reads as one that failed to load rather than as a feed that
-               ended. Three rows was still the largest thing on the page, and
-               a home page's news feed is a sample rather than an archive: it
-               exists to show the university is doing things, and two rows say
-               that as well as three while leaving the page a shape a reader
-               can take in at once. The archive link above carries anyone who
-               wants the rest, and it carries all 71 stories. -->
-        <div class="activity-grid" data-feed-list>
-          <article class="activity-card">
-            <a class="activity-image" href="researcher/mit-wpu-researchers-make-significant-contribution-to-biodiversity-discovery/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/11/11eb94287555b3bd-11eb94287555b3bd-damselfly_research_banner.webp" alt="Researchers documenting a biodiversity discovery" width="1124" height="447" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Research discovery</p>
-              <h3><a href="researcher/mit-wpu-researchers-make-significant-contribution-to-biodiversity-discovery/">A new damselfly species from the Western Ghats</a></h3>
-            </div>
-          </article>
+      <!-- Screen two. `aria-label` because it is a second, unheaded page of the
+           same feed: without it a screen reader meets three articles under no
+           heading at all and cannot tell they belong to Latest. It repeats no
+           story from the screen above. -->
+      <div class="band-screen band-screen--continued" aria-label="Latest, continued">
+        <div class="shell">
+          <div class="activity-grid">
+            <article class="activity-card">
+              <a class="activity-image activity-image--contain" href="news/mit-wpus-department-of-computer-engineering--technology-receives-nexus-2026-catalyst-award/">
+                <img src="/media/mitwpu-public/optimized/research_facility_event/3b/3b1487ce0c45836d-3b1487ce0c45836d-NEXUS-Catalyst-Award-banner-2026.webp" alt="NEXUS 2026 Catalyst Award presented to MIT-WPU" width="1080" height="556" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Recognition</p>
+                <h3><a href="news/mit-wpus-department-of-computer-engineering--technology-receives-nexus-2026-catalyst-award/">Computer Engineering &amp; Technology receives the NEXUS 2026 Catalyst Award</a></h3>
+              </div>
+            </article>
 
-          <article class="activity-card">
-            <a class="activity-image" href="researcher/mit-wpu-faculty-member-recognised-among-the-worlds-top-5-scientists/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/06/0665bca6f20df7f1-0665bca6f20df7f1-top-scientist-desk-new.webp" alt="MIT-WPU research recognition" width="1124" height="450" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Recognition</p>
-              <h3><a href="researcher/mit-wpu-faculty-member-recognised-among-the-worlds-top-5-scientists/">Faculty member recognised among the world’s top 5% scientists</a></h3>
-            </div>
-          </article>
+            <article class="activity-card">
+              <a class="activity-image" href="news/mit-wpu-pune-tops-maharashtra-in-ui-greenmetric-rankings-2025/">
+                <img src="/media/mitwpu-public/optimized/research_facility_event/b5/b5ab27283488a94d-b5ab27283488a94d-green-matress-big.webp" alt="Green campus landscape at MIT-WPU" width="1124" height="477" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Sustainability</p>
+                <h3><a href="news/mit-wpu-pune-tops-maharashtra-in-ui-greenmetric-rankings-2025/">MIT-WPU leads Maharashtra in the UI GreenMetric Rankings 2025</a></h3>
+              </div>
+            </article>
 
-          <article class="activity-card">
-            <a class="activity-image" href="news/mit-wpu-pune-students-shine-globally-at-apples-swift-student-challenge-2026/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/34/34f17fe4600957ca-34f17fe4600957ca-ios-team-banner.webp" alt="MIT-WPU students recognised in the 2026 Apple Swift Student Challenge" width="1124" height="477" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Student achievement</p>
-              <h3><a href="news/mit-wpu-pune-students-shine-globally-at-apples-swift-student-challenge-2026/">MIT-WPU students recognised in Apple’s Swift Student Challenge 2026</a></h3>
-            </div>
-          </article>
-          <article class="activity-card">
-            <a class="activity-image activity-image--contain" href="news/mit-wpus-department-of-computer-engineering--technology-receives-nexus-2026-catalyst-award/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/3b/3b1487ce0c45836d-3b1487ce0c45836d-NEXUS-Catalyst-Award-banner-2026.webp" alt="NEXUS 2026 Catalyst Award presented to MIT-WPU" width="1080" height="556" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Recognition</p>
-              <h3><a href="news/mit-wpus-department-of-computer-engineering--technology-receives-nexus-2026-catalyst-award/">Computer Engineering &amp; Technology receives the NEXUS 2026 Catalyst Award</a></h3>
-            </div>
-          </article>
-
-          <article class="activity-card">
-            <a class="activity-image" href="news/mit-wpu-pune-tops-maharashtra-in-ui-greenmetric-rankings-2025/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/b5/b5ab27283488a94d-b5ab27283488a94d-green-matress-big.webp" alt="Green campus landscape at MIT-WPU" width="1124" height="477" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Sustainability</p>
-              <h3><a href="news/mit-wpu-pune-tops-maharashtra-in-ui-greenmetric-rankings-2025/">MIT-WPU leads Maharashtra in the UI GreenMetric Rankings 2025</a></h3>
-            </div>
-          </article>
-
-          <article class="activity-card">
-            <a class="activity-image" href="researcher/mit-wpu-pune-faculty-honoured-by-springer-nature/">
-              <img src="/media/mitwpu-public/optimized/research_facility_event/b5/b5e288a1f3139c2e-b5e288a1f3139c2e-anand-research-banner.webp" alt="MIT-WPU faculty research recognition" width="1124" height="450" loading="lazy" decoding="async">
-            </a>
-            <div class="activity-copy">
-              <p class="activity-kind">Research recognition</p>
-              <h3><a href="researcher/mit-wpu-pune-faculty-honoured-by-springer-nature/">MIT-WPU faculty honoured by Springer Nature</a></h3>
-            </div>
-          </article>
+            <article class="activity-card">
+              <a class="activity-image" href="researcher/mit-wpu-pune-faculty-honoured-by-springer-nature/">
+                <img src="/media/mitwpu-public/optimized/research_facility_event/b5/b5e288a1f3139c2e-b5e288a1f3139c2e-anand-research-banner.webp" alt="MIT-WPU faculty research recognition" width="1124" height="450" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Research recognition</p>
+                <h3><a href="researcher/mit-wpu-pune-faculty-honoured-by-springer-nature/">MIT-WPU faculty honoured by Springer Nature</a></h3>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -473,13 +512,22 @@
          carries the events themselves, and the one event card in Latest —
          Syntropy 2026 — has no declared date and so is not in this set. -->
     <section class="home-events" aria-labelledby="events-title" data-image-gallery>
+      <div class="band-screen">
       <div class="shell">
         <div class="section-heading">
           <div>
             <h2 id="events-title">Events</h2>
           </div>
           <div class="activity-heading-actions">
-            <a class="archive-link" href="events/">All 123 events <span aria-hidden="true">→</span></a>
+            <!-- "All events", not "All 123 events". A number in a label is a
+                 claim with a maintenance cost that is wrong the moment the set
+                 moves, and it buys the reader nothing: somebody clicking
+                 through to all the events has already decided to see the list
+                 and does not need its length first. Same argument that removed
+                 the four-fact strip from this page. Counts that help a reader
+                 CHOOSE — the per-category tallies in forms/, the per-department
+                 tallies in events/ — are information and stay. -->
+            <a class="archive-link" href="events/">All events <span aria-hidden="true">→</span></a>
           </div>
         </div>
 
@@ -493,29 +541,56 @@
             <p>The National Scientists Round Table Conference: three days on science, technology and innovation, with the programme, the research tracks, the awards and the scientific organisation all on the record.</p>
           </article>
 
+          <!-- The lead carries the sentence; the list carries the dates. That
+               split is what the two columns have always meant, and making it
+               literal is what brings this band from 1.42 screens to 1.00: the
+               three descriptions here ran 69, 46 and 23px, and the list is
+               what sets the band's height since it is twice the lead's.
+               Removing them takes the list from 479 to 318. Spacing could not
+               have done it — the most available from gaps, padding and margins
+               together was about 56px against the 113 needed.
+
+               THIS IS THE ONE PLACE ON THE PAGE THAT STILL FITS BY REMOVING
+               SOMETHING, and it is deliberate rather than an oversight. Latest
+               is paged instead of cut, because it was 113px short of TWO
+               screens' worth of content and paging it wastes nothing. Events
+               with its descriptions restored is 714px — 1.18 screens. Paging
+               that would spend 1210px of page on 714px of content and leave
+               nearly 500px of air across two screens, which is the fault the
+               operator raised about margins, arriving by a different road. One
+               screen is the better artifact here and three subtitle sentences
+               is the price.
+
+               What is given up is small and recoverable: each title links to
+               the conference's own page, which is where the subtitle was read
+               from and where it still is. What a reader keeps is which four
+               events the university declares a date for and when each ran. -->
           <ul class="home-events__list">
             <li>
               <p class="home-events__kind">Conference · concluded</p>
               <h3><a href="rtep-advisory-committee/">RTEP 2026</a></h3>
               <p class="home-events__when"><time datetime="2026-03-13">13–14 March 2026</time></p>
-              <p>Recent Technologies &amp; Innovations in Electronics and Photonics, second edition. Its advisory committee is the one page of the micro-site this site publishes.</p>
             </li>
             <li>
               <p class="home-events__kind">Conference · concluded</p>
               <h3><a href="national-conference-towards-a-self-reliant-and-inclusive-economy-for-viksit-bharat-2047/">NCTSRIE 2026</a></h3>
               <p class="home-events__when"><time datetime="2026-03-11">11–12 March 2026</time></p>
-              <p>Towards a Self-Reliant and Inclusive Economy for Viksit Bharat 2047.</p>
             </li>
             <li>
               <p class="home-events__kind">Conference · concluded</p>
               <h3><a href="hswtech/">HSWTech 2025</a></h3>
               <p class="home-events__when"><time datetime="2025-09-02">2–4 September 2025</time></p>
-              <p>Sustainable Technologies for Humanity and a Smart World.</p>
             </li>
           </ul>
         </div>
 
-        <p class="home-events__more"><a class="archive-link" href="happenings/">The whole record: 71 news stories and 123 events <span aria-hidden="true">→</span></a></p>
+        <!-- The second archive link that used to close this band — "The whole
+             record: 71 news stories and 123 events" — is gone. It went to
+             happenings/, which is where the link at the top of Latest already
+             goes, so the page offered the same destination twice within one
+             screen of itself; and it cost 61px of a band that had to lose 113.
+             A redundancy that is also the expensive thing is an easy cut. -->
+      </div>
       </div>
     </section>
 
@@ -538,13 +613,25 @@
          day. Burying it in a footer link row asks that reader to hunt. It has
          its own section for the same reason the fire exit has its own sign.
 
-         WHAT IS ASSERTED HERE. Only what /academics/student-grievance/ says:
-         that the SGRC exists under the 2023 Regulations, and that students
-         may write to grc@mitwpu.edu.in. The committee's members, the
-         Ombudsperson escalation and the procedure are all on that page and
-         are not restated here — a summary that drifts from its source is
-         worse than a link. grc@mitwpu.edu.in is an office address published
-         on the university's own page; no member's personal contact appears.
+         WHAT IS ASSERTED HERE. Only what the university's own pages say: that
+         the SGRC exists under the 2023 Regulations, and that students may
+         write to grc@mitwpu.edu.in. The committees' members, the Ombudsperson
+         escalation and the procedure are on the section this links to and are
+         not restated here — a summary that drifts from its source is worse
+         than a link. grc@mitwpu.edu.in is an office address published on the
+         university's own page; no member's personal contact appears.
+
+         THE LINK GOES TO THE SECTION, NOT TO ONE COMMITTEE. It pointed at
+         /academics/student-grievance/ until 27 July 2026, which is the SGRC's
+         page and one of twelve bodies. A reader arriving with a ragging
+         complaint, a harassment complaint or a caste-discrimination complaint
+         was being handed the general academic-grievance committee and left to
+         work out that theirs was elsewhere — and "elsewhere" was five pages
+         that all published under the identical heading "Students' Welfare".
+         /grievance-redressal/ is the door: it names each body by the problem
+         it handles rather than by its own title, which is the one thing
+         somebody in that position needs and the one thing the site had never
+         said anywhere.
 
          The link beside it is the rest of what the masthead has no room for:
          the careers page a non-student comes here for. Two links,
@@ -557,6 +644,7 @@
          and so is the link. The institution's announcements are in /news/,
          which the footer already reaches. -->
     <section class="redressal" aria-labelledby="redressal-title" data-image-gallery>
+      <div class="band-screen">
       <div class="shell redressal__inner">
         <div class="redressal__main">
           <h2 id="redressal-title">Raising a grievance</h2>
@@ -565,8 +653,8 @@
              Students) Regulations, 2023. Students can write to
              <a href="mailto:grc@mitwpu.edu.in">grc@mitwpu.edu.in</a> with a complaint
              or a suggestion.</p>
-          <a class="redressal__route" href="academics/student-grievance/">
-            The committee, the procedure and the Ombudsperson
+          <a class="redressal__route" href="grievance-redressal/">
+            Every committee, and which one handles what
             <span aria-hidden="true">&#8594;</span>
           </a>
         </div>
@@ -575,6 +663,7 @@
             <strong>Work with us</strong>
           </a>
         </div>
+      </div>
       </div>
     </section>
   </main>
@@ -664,6 +753,7 @@
       <nav class="uwp-footer__group" aria-label="Grievance redressal">
         <h2>Grievance redressal</h2>
         <ul>
+          <li><a href="/grievance-redressal/">How to raise a grievance</a></li>
           <li><a href="/about-us/national-ragging-prevention-programme/">Ragging prevention programme</a></li>
           <li><a href="/student-affairs/anti-ragging-committee/">Anti-Ragging Committee</a></li>
           <li><a href="/academics/student-grievance/">Students’ Grievance Redressal Committee</a></li>

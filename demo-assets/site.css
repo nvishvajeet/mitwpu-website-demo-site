@@ -378,20 +378,63 @@ h3 {
  * a stripe of the next one showing under it. Content is centred in the extra
  * space rather than pooling at the bottom.
  *
- * Scroll snapping then does the rest, and it is what makes this hold for the
- * bands that are TALLER than a screen. Latest is 1.87 screens and there is no
- * honest way to make it 1.00 — it holds six cards. Forcing it to 2.00 would
- * pad it with 700px of nothing. Instead every band declares its start as a
- * snap point, so a scroll settles on a section boundary rather than wherever
- * momentum left it, and `scroll-margin-top` clears the sticky masthead so a
- * snapped heading is never underneath it.
+ * A FLOOR IS NOT ENOUGH ON ITS OWN, because it says nothing about the bands
+ * that are too TALL. The first pass left Latest at 1.88 screens and Events at
+ * 1.42, and a floor cannot shorten those; only their contents can.
  *
- * `proximity`, NOT `mandatory`. Mandatory refuses to let you rest anywhere
- * but a snap point, which on a band nearly two screens tall means the middle
- * of Latest — the part with the cards in it — cannot be looked at without the
- * page pulling away. Proximity settles the near misses and leaves deliberate
- * scrolling alone. It is the difference between a page that composes itself
- * and one that argues with the reader.
+ * THE UNIT IS THE SCREEN AND NOT THE SECTION, WHICH IS THE CORRECTION THAT
+ * MADE THE REST WORK. The first attempt at this squeezed both long bands down
+ * until they fitted one screen each — Latest from six cards to three. The
+ * operator's own framing was better: a section longer than a screen should
+ * become MORE THAN ONE SCREEN, paged, rather than being cut until it fits or
+ * left to overflow. So the rule the page works to is:
+ *
+ *     a band is one screen, or a whole number of screens,
+ *     and every one of those screens is a snap point.
+ *
+ * `.band-screen` is that unit. A section is now a stack of one or more of
+ * them; the section keeps the ground and the boundary rules, and each screen
+ * carries the height, the padding, the centring and the snap position. Latest
+ * is two screens of three cards, which keeps all six stories at the page's own
+ * 392x261 picture size and settles the contradiction between "two rows" and
+ * "one screen" by making them the same thing. Everything else is one screen.
+ *
+ * That is also what makes `mandatory` safe for the right reason. The earlier
+ * version reached it by shrinking things until nothing was too tall; this one
+ * reaches it by making sure there is a snap point wherever a reader could
+ * stop. Nothing is left that cannot be rested on.
+ *
+ * Scroll snapping then does the rest. Every screen declares its start as a
+ * snap point, so a scroll settles on a page boundary rather than wherever
+ * momentum left it, and the scrollport's `scroll-padding-top` clears the
+ * sticky masthead so a snapped heading is never underneath it. See the note on
+ * that rule for why the offset is declared there and only there.
+ *
+ * `mandatory`, and it was `proximity` until the bands fitted. The reason for
+ * proximity was real and is now spent: mandatory refuses to let a reader rest
+ * anywhere but a snap point, so on a band of 1.88 screens the middle of Latest
+ * — the part with the cards in it — could not be looked at without the page
+ * pulling away. With every band exactly one screen there is no middle to rest
+ * in, and mandatory is what turns a scroll into a page turn: start scrolling
+ * and the band you are leaving takes you to the next one whole. That is the
+ * behaviour the operator asked for by name.
+ *
+ * IT IS DONE IN CSS AND MUST STAY IN CSS. The JavaScript version of this — a
+ * wheel listener that preventDefaults and animates to the next section — is
+ * why full-page-scroll sites are hated: it swallows trackpad momentum, breaks
+ * Page Down and the space bar, fights the browser's own find-on-page, and has
+ * to reimplement the accessibility it just took away. `scroll-snap-type` is
+ * the same effect implemented by the compositor, with every input method still
+ * working because none of them were intercepted.
+ *
+ * THE FOOTER IS A SNAP TARGET TOO, and that is not decoration. Under mandatory
+ * the scroller must come to rest on a snap position; with snap points only on
+ * the four bands, the last one sits at the top of the grievance section and
+ * everything below it — the footer, which is the tallest single element on the
+ * page — has no position to rest at, so a scroll into it is dragged back up
+ * and the footer becomes unreachable. Giving the footer `end` alignment puts a
+ * snap position at the bottom of the document. It cost one declaration and it
+ * is the difference between snapping and trapping.
  *
  * WHY THIS IS OPT-IN. `.is-landing` on the body, not a rule on every page.
  * A screen-height floor is right for a page of four composed bands and wrong
@@ -418,17 +461,171 @@ h3 {
  * every time and the reason to check the container rather than the children.
  * `:has()` is what lets the opt-in stay a body class while the property lands
  * where the browser reads it. */
+/* THE OFFSET IS DECLARED ONCE, ON THE SCROLLPORT, AND THAT IS A CORRECTION.
+ *
+ * A `start` snap position lines the element's snap area up with the
+ * scrollport's, and BOTH sides have an inset: the element's `scroll-margin`
+ * and the scrollport's `scroll-padding`. They add. This page was setting
+ * `scroll-margin-top: 115px` on the sections while `html` had carried
+ * `scroll-padding-top: 5.5rem` since long before any of this, so the real
+ * resting offset was 203px — every band came to rest 88px low, showing a
+ * stripe of the band above it and hiding its own last 88px below the fold.
+ *
+ * That is precisely the fault this whole block was written to remove, and
+ * under `proximity` it was easy to miss: a near miss looks like a near miss.
+ * Mandatory made it the resting state of every band on the page, which is the
+ * useful thing about mandatory — it cannot be approximately right.
+ *
+ * So the masthead is cleared on the scrollport and nowhere else. The section
+ * rule below no longer sets `scroll-margin-top` at all, because a second
+ * declaration of the same intention is what produced the bug. It also fixes an
+ * older, quieter version of it: 5.5rem is 88px and the masthead is 115, so
+ * in-page anchor jumps had been landing 27px under it. */
 :root:has(> body.is-landing) {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: var(--mitwpu-masthead-height, 115px);
 }
 
-.is-landing > main > section {
+/* The screen. One per band, or two for Latest — see the rule above. The
+ * section keeps the ground and the boundary rules; this carries everything
+ * about being one page of the document. */
+.is-landing .band-screen {
   min-height: var(--screen);
   display: flex;
   flex-direction: column;
   justify-content: center;
   scroll-snap-align: start;
-  scroll-margin-top: var(--mitwpu-masthead-height, 115px);
+}
+
+/* See "THE FOOTER IS A SNAP TARGET TOO" above. `end`, not `start`: the footer
+ * is taller than a screen on a laptop, so a snap position at its top would be
+ * a fifth band that does not fit, which is the thing this whole block exists
+ * to avoid. Its bottom is the end of the document and always reachable. */
+.is-landing > footer {
+  scroll-snap-align: end;
+}
+
+/* Screen furniture, costed against a 605px screen rather than against a page.
+ *
+ * These bands' padding and heading rules were written when they could spend
+ * what they liked and the page simply grew. On a screen they are the first
+ * claim on it: 80+72 of padding and an 86px heading block with 46 beneath it
+ * took 284 of 605 — 47% of the viewport on air and one word — before the first
+ * card was drawn. The operator's phrase for that was "occupying the top and
+ * bottom margins a lot", and it was the first thing to fix, before any
+ * question of what the band holds.
+ *
+ * The figures below take it to 178. The padding is now the smaller half of
+ * that: 72px across both edges, against 106 for a heading set at 4.6vw, which
+ * is the right way round for a page whose headings were deliberately made
+ * large. Note the padding moved from the SECTION to the screen — on a two-
+ * screen band, padding outside the screens would sit between them and the band
+ * would stop being a whole number of screens.
+ *
+ * Only on the landing, and only the vertical measurements. Section pages and
+ * directories keep the generous original rhythm, because a page that scrolls
+ * normally is not paying for its whitespace out of a fixed 605.
+ *
+ * The heading's rule and the space under it stay proportionate to each other —
+ * 16 above the line, 28 below — so the heading still reads as attached to the
+ * screen it opens rather than floating between two. */
+/* Every band's padding moves inside its screens. Leaving it on the section is
+ * not a near miss — it is 152px of the grievance band sitting OUTSIDE any
+ * screen, which made that band 757px, or 1.25 screens, while its one screen
+ * measured a correct 605. A band is a whole number of screens only if there is
+ * nothing in it that is not in a screen. */
+.is-landing .activity,
+.is-landing .home-events,
+.is-landing .redressal {
+  padding-block: 0;
+}
+
+.is-landing .activity .band-screen {
+  padding-block: 36px;
+}
+
+.is-landing .home-events .band-screen {
+  padding-block: 32px 36px;
+}
+
+.is-landing .redressal .band-screen {
+  padding-block: 40px;
+}
+
+.is-landing > main > section .section-heading {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+}
+
+/* ── boundaries between screens ──────────────────────────────────────
+ *
+ * The instruction was "appropriate horizontal demarcation lines, ONLY IF
+ * NEEDED", and the test applied here is whether the ground already does the
+ * job. This page alternates its background down its length, and where the
+ * colour changes across a boundary the change of ground IS the division — a
+ * hairline there adds nothing and reads as a seam on a page that had already
+ * turned itself over cleanly. Where the ground is continuous, the rule is the
+ * only thing saying a boundary happened.
+ *
+ * Audited, top to bottom:
+ *
+ *   hero (--subtle) → Latest (--paper)      ground changes  → no rule
+ *   Latest 1 → Latest 2 (--paper, same box) ground the same → INNER rule
+ *   Latest (--paper) → Events (--paper)     ground the same → rule, kept
+ *   Events (--paper) → grievance (--subtle) ground changes  → no rule
+ *   grievance (--subtle) → footer (dark)    ground changes  → no rule
+ *
+ * Two of the five carried a `border-bottom: 1px solid var(--line)` that was
+ * doing nothing but drawing a line where the paper had already changed colour;
+ * those are gone. The hero's and the grievance band's borders were exactly
+ * that case.
+ *
+ * THE INNER RULE IS NOT DRAWN LIKE THE OUTER ONE, and that is the point of it.
+ * A continuation is a weaker event than a new section, and drawing them the
+ * same tells a reader they are the same. The between-sections rule is a
+ * full-bleed hairline in --line; this one is inset to the shell's measure, so
+ * it starts and stops where the cards do and reads as belonging INSIDE
+ * something rather than as the edge of it. Set at 55% alpha over the same
+ * token so it is a lighter mark on both grounds rather than a different
+ * colour on either.
+ *
+ * `color-mix` over `var(--line)` rather than a hand-picked pair, because
+ * --line is #d8e0e5 on light and #2a3b48 on dark and a fixed rgba that reads
+ * as a division on paper either vanishes or turns into a hard seam on the dark
+ * ground. Mixing 55% of the token with `transparent` keeps the RELATIONSHIP to
+ * whatever ground is behind it rather than fixing a value that is only correct
+ * in one theme.
+ *
+ * Drawn on a pseudo-element rather than as a border, because it has to be at
+ * the screen's top EDGE and only as wide as the measure. A border-top would be
+ * full-bleed; a border on the shell inside would sit wherever the centred
+ * content happens to fall, which on a screen with 143px of slack is the middle
+ * of nowhere. Absolute positioning takes it out of the flex flow, so it does
+ * not become a column item. */
+.is-landing .band-screen--continued {
+  position: relative;
+}
+
+.is-landing .band-screen--continued::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(100% - 48px, var(--shell));
+  height: 1px;
+  content: "";
+  background: color-mix(in srgb, var(--line) 55%, transparent);
+  transform: translateX(-50%);
+}
+
+/* Where the ground changes, the ground IS the boundary, and the hairline these
+ * three carried was drawing a line along an edge the paper had already turned.
+ * `.activity` keeps its border-bottom: Latest and Events are both on --paper,
+ * so that one edge is the only boundary on the page with nothing else to say
+ * it. See the audit above. */
+.is-landing .hero,
+.is-landing .home-events,
+.is-landing .redressal {
+  border-bottom: 0;
 }
 
 /* Type set for the screen rather than for the column.
@@ -473,9 +670,35 @@ h3 {
     scroll-snap-type: none;
   }
 
-  .is-landing > main > section {
+  .is-landing .band-screen {
     min-height: 0;
     display: block;
+  }
+
+  /* Once there are no screens there is no inner page boundary, and the mark
+     that said "this is the second page of Latest" would be saying it about a
+     break that no longer exists — one column of six cards, scrolled straight
+     through. The cards' own bottom rules already separate them. */
+  .is-landing .band-screen--continued::before {
+    content: none;
+  }
+
+  /* The screens' padding was sized for a fixed 605px budget it is no longer
+     spending. Here it is ordinary band padding again — and it has to be split
+     across the two Latest screens rather than applied to both, or the join
+     between card three and card four opens to 72px while every other gap in
+     the column is 44. The band opens once and closes once; between the two
+     grids there is only the row gap the grid would have used anyway. */
+  .is-landing .activity .band-screen {
+    padding-block: 56px 0;
+  }
+
+  .is-landing .activity .band-screen--continued {
+    padding-block: 44px 56px;
+  }
+
+  .is-landing .home-events .band-screen {
+    padding-block: 48px 56px;
   }
 }
 
@@ -717,17 +940,61 @@ h3 {
  * `prefers-reduced-motion` it does not fade at all — it is simply there,
  * since a reader who has asked for less movement is the reader most likely to
  * want the stop button in plain sight.
+ *
+ * HOW LOUD IT IS, WHICH IS THE PART THAT KEEPS BEING WRONG. It was a 296x56
+ * slab — 45% of the picture's width at 1280, and 6.1% of its area — holding
+ * three chunky glyphs and a five-segment meter in solid white on a 58%-opaque
+ * pill. Appearing only on hover fixed WHEN it was there and not how much of
+ * the photograph it took while it was. It is now 234x32: 21% narrower, 43%
+ * shorter, 36% of the picture's width, 2.8% of its area, and drawn at about
+ * two-thirds contrast until a pointer is actually on a button.
+ *
+ * THE HEIGHT CAME FROM THE PILL AND NOT FROM THE TARGETS, and that distinction
+ * is the whole trick. The buttons are still 44x44 — that is an accessibility
+ * floor, not a style — but they overhang the pill by 6px top and bottom
+ * through a negative block margin, so the visible bar is 32px tall while the
+ * thing a finger has to hit is 44. Nothing is above or below the bar for the
+ * overhang to collide with. The same move is NOT made horizontally: shrinking
+ * the buttons' visible width would either narrow the targets or overlap three
+ * of them into each other, and a contested 10px band between Previous and
+ * Pause is a mis-tap, not a refinement. So the bar's width is what three
+ * untouched 44px targets and a smaller meter add up to, and no less.
+ *
+ * QUIET AT REST, RESOLVING ON APPROACH. Apple and Tesla do not make this
+ * furniture small so much as make it recede: thin marks at partial opacity
+ * that come up to full only when the pointer is on them. The marks here sit at
+ * 0.7 white and go to 1 on hover or focus, the pill itself lifts from 0.85 to
+ * full opacity once the pointer is on the bar rather than merely on the
+ * picture, and the hover disc is drawn at 30px inside the 44px button so it
+ * reads as a mark lighting up rather than as a slab turning on.
+ *
+ * The pill's own alpha went DOWN only a little, 0.58 to 0.46, and that is
+ * deliberate against the paragraph at the top of this comment: the pill is the
+ * only thing guaranteeing contrast over five different photographs. Measured
+ * against the composited pill over the region the bar actually covers on each
+ * of the five, the 0.7-white marks run 4.4:1 to 6.3:1 — comfortably past the
+ * 3:1 WCAG asks of a non-text control, on all five.
+ *
+ * 0.30 was measured too and is NOT rejected by that number: it still runs
+ * 3.7:1 to 6.0:1. It is rejected because a ratio computed against the mean
+ * luminance behind the bar flatters a scrim over foliage, which is what is
+ * behind it on every slide — the eye is separating thin white marks from
+ * high-frequency leaf detail, not from an average, and the thinner scrim
+ * leaves that texture legible through it. 0.46 with the blur raised from 6 to
+ * 10px settles the picture into a ground; 0.30 leaves it a picture. The bar
+ * gets its subtlety from being small and from receding until approached, and
+ * not from letting the photograph through the one surface holding it up.
  */
 .hero-controls {
   position: absolute;
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 6px 14px 6px 6px;
+  gap: 9px;
+  padding: 0 10px 0 2px;
   border-radius: 999px;
-  background: rgba(12, 22, 30, 0.58);
-  backdrop-filter: blur(6px);
+  background: rgba(12, 22, 30, 0.46);
+  backdrop-filter: blur(10px) saturate(115%);
   inset: auto auto clamp(10px, 2.4%, 20px) 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -744,8 +1011,16 @@ h3 {
 .hero-visual:hover .hero-controls,
 .hero-visual:focus-within .hero-controls,
 .hero-controls.is-paused {
-  opacity: 1;
+  opacity: 0.85;
   visibility: visible;
+}
+
+/* The last step of the approach: a pointer on the picture is interest in the
+ * picture, a pointer on the bar is interest in the bar. Only the second one
+ * gets the control at full strength. */
+.hero-controls:hover,
+.hero-controls:focus-within {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -765,34 +1040,63 @@ h3 {
   align-items: center;
 }
 
-/* 44px, which is the floor for a touch target and also, at this size, what
-   keeps the glyph from looking like a decoration rather than a button. */
+/* 44x44 is the floor for a touch target and is not negotiable. The negative
+   block margin is what lets the pill be 32px tall around targets that are 44 —
+   see "THE HEIGHT CAME FROM THE PILL" above. Nothing sits above or below the
+   bar, so the 6px of overhang each way falls on the photograph. */
 .hero-control {
+  position: relative;
   display: grid;
   width: 44px;
   height: 44px;
+  margin-block: -6px;
   padding: 0;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
   background: transparent;
   border: 0;
   border-radius: 999px;
   cursor: pointer;
   place-items: center;
+  transition: color 140ms ease;
 }
 
-.hero-control:hover {
-  background: rgba(255, 255, 255, 0.16);
+/* The hover disc is 30px inside a 44px button rather than the button's own
+   background, which at 44px would be a circle taller than the 32px pill
+   containing it — a control that grows a bubble out of its own bar when
+   touched. Drawn on a pseudo-element so the target keeps its size. */
+.hero-control::before {
+  position: absolute;
+  inset: 7px;
+  content: "";
+  background: rgba(255, 255, 255, 0);
+  border-radius: 999px;
+  transition: background 140ms ease;
+}
+
+.hero-control:hover,
+.hero-control:focus-visible {
+  color: #ffffff;
+}
+
+.hero-control:hover::before {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* The site's --focus is a dark blue. On this bar it is invisible, so the ring
-   is white here — the same reasoning as the background above. */
+   is white here — the same reasoning as the background above. -6px puts it on
+   the 32px disc rather than on the 44px hit box, so a focused button is ringed
+   where it is DRAWN; at the old -3px the ring stood 6px proud of the pill top
+   and bottom and read as a rendering fault. */
 .hero-control:focus-visible {
   outline: 2px solid #ffffff;
-  outline-offset: -3px;
+  outline-offset: -6px;
 }
 
+/* Above the hover disc, which is positioned and would otherwise paint over
+   marks that are not. */
 .hero-control__glyph {
-  font-size: 1.6rem;
+  position: relative;
+  font-size: 1.05rem;
   line-height: 1;
 }
 
@@ -814,8 +1118,8 @@ h3 {
    for a reader who is looking at it rather than hearing it. */
 .hero-control__glyph--pause,
 .hero-control__glyph--play {
-  width: 14px;
-  height: 15px;
+  width: 9px;
+  height: 10px;
   background: currentcolor;
 }
 
@@ -849,18 +1153,42 @@ h3 {
  *
  * The fill is a scaleX transform on an inner span, so it composites and does
  * not lay anything out sixty times a second.
+ *
+ * 13x3 rather than 22x3, and the smallest thing on the bar on purpose. This is
+ * the one part of the control that is never pressed — it reports, it does not
+ * receive — so it is the only part with no target size to respect, and the
+ * only part that could give up width for free. Five of them plus their gaps
+ * came from 130px to 81.
+ *
+ * THE WIDTH SHRANK AND THE HEIGHT DID NOT, and the contrast went UP rather
+ * than down, which is the opposite of what the rest of this control did. Both
+ * are the same argument. At 2px the five segments stopped reading as a rule
+ * divided into five and started reading as a dotted line, and "one of five
+ * along a length" IS the information — it is the reason there are segments
+ * here and not dots. Making it smaller and dimmer at once would have kept the
+ * shape and lost the meaning.
+ *
+ * The numbers, measured against the composited pill over each of the five
+ * photographs at the region the bar actually covers — which is the bottom
+ * tenth of the picture, foliage and ground on all five, and not the sky the
+ * paragraph at the top of this comment worries about: the empty track sits at
+ * 2.3-2.6:1 and the filled one at 5.9-8.9:1. So the track went from 0.34 to
+ * 0.38 and the fill from solid white to 0.9, resolving to solid on hover. That
+ * keeps the fill comfortably above the 3:1 that WCAG asks of a non-text
+ * control while the empty track — which is the affordance and not the reading
+ * — is a shade clearer than it was before it got smaller.
  */
 .hero-meter {
   display: flex;
-  gap: 5px;
+  gap: 4px;
 }
 
 .hero-meter__segment {
   position: relative;
-  width: 22px;
+  width: 13px;
   height: 3px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.38);
   border-radius: 999px;
 }
 
@@ -868,9 +1196,16 @@ h3 {
   display: block;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   transform: scaleX(0);
   transform-origin: left center;
+}
+
+/* Full white once the pointer is on the bar — the meter resolves with the rest
+   of the marks rather than being the one thing that stays dim. */
+.hero-controls:hover .hero-meter__fill,
+.hero-controls:focus-within .hero-meter__fill {
+  background: #ffffff;
 }
 
 /* A slide already gone past reads as complete, not as empty: the reader can
@@ -940,13 +1275,36 @@ h3 {
    what "make the latest section bigger" turned out to mean — the section was
    not small, it was nine-tenths hidden.
 
-   `minmax(min(100%, 300px), 1fr)` rather than a fixed count: three columns at
+   `minmax(min(100%, 280px), 1fr)` rather than a fixed count: three columns at
    the shell's width, two on a tablet, one on a phone, with no breakpoint to
-   maintain. The `min(100%, …)` guard is what stops a 300px minimum from
-   overflowing a narrower viewport. */
+   maintain. The `min(100%, …)` guard is what stops a 280px minimum from
+   overflowing a narrower viewport.
+
+   280 AND NOT 300, WHICH IS A SNAPPING BUG AND NOT A TASTE. Three columns need
+   3 x min + 56 of gaps, so at 300 they need a 956px shell — which the page
+   only has above a 1004px window. The landing's snap opt-out is at 60rem
+   (960px). That left 961–1003px: a window wide enough to be snapped, narrow
+   enough that the three cards fell to two columns and Latest became two rows,
+   roughly 900px of band inside a 605px screen. Under mandatory that band's
+   middle cannot be rested in. At 280 the third column survives down to a 916px
+   shell, which is every width the landing still snaps at. A responsive rule
+   with no breakpoints still has a width at which it changes its mind, and it
+   has to be checked against the widths of every other rule that does.
+
+   auto-FIT AND NOT auto-FILL, WHICH THE 280 MADE LOAD-BEARING. auto-fill lays
+   as many tracks as fit whether or not anything is in them, and the shell is
+   1232 at a 1280 window: floor((1232 + 28) / (280 + 28)) is 4. With six cards
+   that was invisible, because six filled two rows of four's worth of width
+   either way. With three it produced three 287px cards and an empty fourth
+   column — the row silently a quarter narrower, the pictures 191px instead of
+   261, and no error anywhere. auto-fit collapses the tracks nothing occupies,
+   so three cards are always three columns dividing the whole shell. The
+   general rule this is an instance of: auto-fill is right when the item count
+   is open, auto-fit when it is fixed, and this feed's count stopped being open
+   the moment it had to fit a screen. */
 .activity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   align-items: stretch;
   gap: 44px 28px;
 }
@@ -1151,13 +1509,36 @@ h3 {
   font-variant-numeric: tabular-nums;
 }
 
+/* `:not(.home-events__when)` is the same guard `.activity-copy` carries one
+ * band above, and it is here for the same reason and by the same route. This
+ * rule means "the description paragraph"; it identified it as the last one,
+ * which was true only while every item HAD a description. Taking the three
+ * descriptions out of the list to bring this band to one screen made the DATE
+ * the last child, so `(0,2,2)` beat `.home-events__when`'s `(0,1,0)` and the
+ * three dates were silently repainted at 14.88px in --copy while the lead's
+ * date, still followed by its paragraph, stayed 13.6px in --muted. Two columns
+ * of the same information set differently, from a change that removed content
+ * and touched no rule.
+ *
+ * Worth saying plainly because it is the second instance in one file: a
+ * `:last-child` selector standing in for "the description" is a rule about
+ * position pretending to be a rule about kind, and it breaks the day the
+ * content ends differently. Naming what is excluded is the cheap repair; the
+ * durable one would be a class on the paragraph. */
 .home-events__lead > p:last-child,
-.home-events__list > li > p:last-child {
+.home-events__list > li > p:last-child:not(.home-events__when) {
   max-width: 54ch;
   margin-bottom: 0;
   color: var(--copy);
   font-size: 0.93rem;
   line-height: 1.55;
+}
+
+/* And the date, now that it ends the item, needs the closing space the
+   description used to provide — otherwise the rule under it sits tight against
+   the numerals. */
+.home-events__list > li > .home-events__when:last-child {
+  margin-bottom: 2px;
 }
 
 .home-events__more {
@@ -1498,6 +1879,13 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     gap: 24px;
   }
 
+  /* Matches the row gap above, for the same reason as the note on the two
+     Latest screens: the join between the grids has to look like every other
+     join in the column. */
+  .is-landing .activity .band-screen--continued {
+    padding-top: 24px;
+  }
+
   .activity-card {
     flex-basis: calc((100% - 24px) / 2);
   }
@@ -1510,23 +1898,26 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
   /* The bar is the one element here whose width is fixed rather than fluid:
      three 44px buttons that must stay 44px, plus a meter that grows with the
-     number of photographs. At the shell's narrowest the picture is 270px and
-     the desktop bar is 296px, so it overflowed — and because the figure's
-     media box clips, it overflowed invisibly, losing the last segment or two
-     off the right-hand edge. The buttons keep their target size; the meter
+     number of photographs. At the shell's narrowest the picture is 270px, and
+     because the figure's media box clips, anything wider overflows INVISIBLY,
+     losing the last segment or two off the right-hand edge — which is why this
+     override exists at all and why it is worth keeping even now that the
+     desktop bar is 234 rather than 296. 234 fits 270 with 36px to spare, and
+     36px is not enough margin to trust across a shell that also carries the
+     gold block and a scrollbar. The buttons keep their target size; the meter
      gives up the width instead, which costs it precision it does not need at
-     five segments. */
+     five segments. Same trade as before, smaller numbers. */
   .hero-controls {
-    gap: 10px;
-    padding-right: 10px;
+    gap: 7px;
+    padding-right: 7px;
   }
 
   .hero-meter {
-    gap: 4px;
+    gap: 3px;
   }
 
   .hero-meter__segment {
-    width: 12px;
+    width: 9px;
   }
 
   .shell {
@@ -1596,6 +1987,14 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
   .activity-grid {
     gap: 16px;
+  }
+
+  /* Third and last time this has to track the row gap. Once the two Latest
+     screens have collapsed into one column, the join between them is just
+     another gap between two cards and has to measure like one; there are three
+     gap values down the breakpoints and so there are three of these. */
+  .is-landing .activity .band-screen--continued {
+    padding-top: 16px;
   }
 
   .activity-card {

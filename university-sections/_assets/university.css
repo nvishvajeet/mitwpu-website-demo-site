@@ -1247,6 +1247,17 @@ h3 {
   color: var(--blue);
 }
 
+/* A directory link that opens a PDF rather than a page says so, in the link
+   text, where a reader reads it before deciding to click. Lighter and slightly
+   smaller than the label it follows, because it qualifies the destination and
+   is not part of the document's name. */
+.link-format {
+  color: var(--muted);
+  font-size: 0.82em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .directory-link span:last-child {
   color: var(--gold);
   font-weight: 800;

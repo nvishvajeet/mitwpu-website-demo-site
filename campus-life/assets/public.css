@@ -165,11 +165,10 @@ h3, h4 { line-height: 1.3; }
    reported. So: do not set font-size or min-height on a control here unless
    you mean to override the floor, and if you do, restate the floor.
 
-   tools/tests/test_readability_contract.py is the guard, and it is failing
-   today because it still asserts the floors are declared *in this file*, which
-   they were before the package migration. The assertion is stale; the contract
-   is not. Fix it by teaching the test where the floors now live — not by
-   deleting it. */
+   tools/tests/test_readability_contract.py is the guard, and it now asserts
+   the contract rather than a location: that the package sheet carries the
+   floors, that public_base.html loads it, and that no rule in this file sets
+   a control font-size the zero-specificity floor cannot survive. */
 button, input, select, textarea { color: inherit; }
 .wrap { width: min(100% - 2rem, 76rem); margin-inline: auto; }
 .skip-link { position: fixed; z-index: 100; top: .5rem; left: .5rem; padding: .65rem 1rem; color: white; background: #000; transform: translateY(-150%); }
@@ -186,13 +185,9 @@ button, input, select, textarea { color: inherit; }
 .section-nav__inner { min-height: 3.6rem; }
 .section-nav__title { max-width: 25rem; overflow: hidden; font-family: var(--serif); font-weight: 600; text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }
 .section-nav a { font-size: .9rem; text-decoration: none; }
-/* Both bands anchor their contents to the top. Centred in a 17rem band and
-   bottom-aligned inside it, the title's height was decided by how long the
-   title and its lede came out, which is what made these pages disagree with
-   each other about where a heading starts. */
-.page-hero { min-height: 17rem; display: grid; align-items: start; color: #fff; background: linear-gradient(115deg, var(--navy) 0 58%, #173e68 100%); border-bottom: 6px solid var(--gold); }
+.page-hero { min-height: 17rem; display: grid; align-items: center; color: #fff; background: linear-gradient(115deg, var(--navy) 0 58%, #173e68 100%); border-bottom: 6px solid var(--gold); }
 .page-hero--department { min-height: 22rem; }
-.hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(18rem, .8fr); align-items: start; gap: clamp(2rem, 7vw, 7rem); padding-block: 4rem; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(18rem, .8fr); align-items: end; gap: clamp(2rem, 7vw, 7rem); padding-block: 4rem; }
 .hero-grid > p, .hero-grid > div > p:last-child, .hero-grid > div:last-child { margin: 0; max-width: 42rem; font-size: 1.1rem; }
 /* The only content !important in this file, and it is answering the line
    directly above: `.hero-grid > div > p:last-child` is (0,1,2) and matches the

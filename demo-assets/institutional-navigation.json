@@ -180,6 +180,11 @@
             ]
           },
           { "label": "Student welfare", "local": "life-wpu/student-affairs/" },
+          {
+            "label": "Grievance redressal",
+            "local": "grievance-redressal/",
+            "note": "Added 2026-07-27, and the placement was the decision. The university publishes five statutory committees, an anti-ragging squad, a prevention programme and an employee committee across nine routes and eleven PDFs under four different parents, and no entry in this masthead reached any of them. The other candidate was the Academics mega menu, whose `Academic services` group had lost an entry that day and had room. It was the wrong room: that group is calendars, timetables and ordinances — academic scheduling — and a reader wanting to report ragging does not open Academics. This cascade is the one a student already opens; it is where `Student welfare` sits, which is the exact phrase the university's CMS was printing as the h1 of all five committee pages, so the entry lands beside the words a reader was already given. Immediately after `Student welfare` and before `Student council`, because welfare is the nearest neighbour and the council is a different errand. One entry in one menu and not also in Academics: a masthead that lists a destination twice teaches a reader the two are different things."
+          },
           { "label": "Student council", "local": "life-wpu/student-council/" }
         ]
       }

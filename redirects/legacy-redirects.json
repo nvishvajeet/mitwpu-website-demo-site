@@ -3,8 +3,36 @@
   "status_code": 301,
   "rules": [
     {
+      "source": "/AlChE/",
+      "target": "/campus-life/clubs/alche/"
+    },
+    {
+      "source": "/aatman/",
+      "target": "/campus-life/clubs/aatman/"
+    },
+    {
       "source": "/academic-notices/",
       "target": "/academics/"
+    },
+    {
+      "source": "/acm-club/",
+      "target": "/campus-life/clubs/acm-club/"
+    },
+    {
+      "source": "/asme/",
+      "target": "/campus-life/clubs/asme/"
+    },
+    {
+      "source": "/avyanna-club/",
+      "target": "/campus-life/clubs/avyanna-club/"
+    },
+    {
+      "source": "/baja-sae/",
+      "target": "/campus-life/clubs/baja-sae/"
+    },
+    {
+      "source": "/banking-forum/",
+      "target": "/campus-life/clubs/banking-forum/"
     },
     {
       "source": "/campus-life/life-wpu-academic-facilities/",
@@ -135,12 +163,48 @@
       "target": "/life-wpu/student-projects/plasma-based-ozone-o3-generation-and-its-applications/"
     },
     {
+      "source": "/campus-life/student-affairs-anti-ragging-committee/",
+      "target": "/student-affairs/anti-ragging-committee/"
+    },
+    {
+      "source": "/campus-life/student-affairs-discipline-committee/",
+      "target": "/student-affairs/discipline-committee/"
+    },
+    {
+      "source": "/campus-life/student-affairs-internal-complaints-committee/",
+      "target": "/student-affairs/internal-complaints-committee/"
+    },
+    {
       "source": "/campus-life/student-information/",
       "target": "/students/"
     },
     {
       "source": "/careers/",
       "target": "/career/"
+    },
+    {
+      "source": "/cesa/",
+      "target": "/campus-life/clubs/cesa/"
+    },
+    {
+      "source": "/chalchitra/",
+      "target": "/campus-life/clubs/chalchitra/"
+    },
+    {
+      "source": "/chem-e-car/",
+      "target": "/campus-life/clubs/chem-e-car/"
+    },
+    {
+      "source": "/cosmos/",
+      "target": "/campus-life/clubs/cosmos/"
+    },
+    {
+      "source": "/csi/",
+      "target": "/campus-life/clubs/csi/"
+    },
+    {
+      "source": "/e-sports-squad-up/",
+      "target": "/campus-life/clubs/e-sports-squad-up/"
     },
     {
       "source": "/events/devconfin-2026advancing-open-innovation-through-collaboration/",
@@ -2503,8 +2567,32 @@
       "target": "/people/yogita-sachin-ozarde/"
     },
     {
+      "source": "/ferrocement-society-of-india-student-chapter/",
+      "target": "/campus-life/clubs/ferrocement-society-of-india-student-chapter/"
+    },
+    {
+      "source": "/finance-forum/",
+      "target": "/campus-life/clubs/finance-forum/"
+    },
+    {
+      "source": "/finfluencers/",
+      "target": "/campus-life/clubs/finfluencers/"
+    },
+    {
       "source": "/icsscc-submission/",
       "target": "/events/mit-wpu-hosts-icsscc-2026-to-advance-sustainable-smart-computing-and-communication-research/"
+    },
+    {
+      "source": "/indradhanu-club/",
+      "target": "/campus-life/clubs/indradhanu-club/"
+    },
+    {
+      "source": "/init-cloud-club/",
+      "target": "/campus-life/clubs/init-cloud-club/"
+    },
+    {
+      "source": "/innovation-hub-club/",
+      "target": "/campus-life/clubs/innovation-hub-club/"
     },
     {
       "source": "/leadership/dr-abhijit-nair-221/",
@@ -2607,6 +2695,26 @@
       "target": "/about-us/faculty-achievements/"
     },
     {
+      "source": "/melodic/",
+      "target": "/campus-life/clubs/melodic/"
+    },
+    {
+      "source": "/mit-wpu-cultural-club/",
+      "target": "/campus-life/clubs/mit-wpu-cultural-club/"
+    },
+    {
+      "source": "/mit-wpu-sports/",
+      "target": "/campus-life/clubs/mit-wpu-sports/"
+    },
+    {
+      "source": "/national-service-scheme/",
+      "target": "/campus-life/clubs/national-service-scheme/"
+    },
+    {
+      "source": "/ninox-nature/",
+      "target": "/campus-life/clubs/ninox-nature/"
+    },
+    {
       "source": "/notices-and-announcements/",
       "target": "/news/"
     },
@@ -2621,6 +2729,10 @@
     {
       "source": "/notification/nisargvedhmitwpuadventure-club-treks-scheduled-for-september-2025/",
       "target": "/life-wpu/adventure-club/adventure-activities-calendar/"
+    },
+    {
+      "source": "/nummerates-club/",
+      "target": "/campus-life/clubs/nummerates-club/"
     },
     {
       "source": "/programmes/hafeez-contractor-school-of-architecture/",
@@ -3787,8 +3899,32 @@
       "target": "/academics/science/physics/"
     },
     {
+      "source": "/society-of-women-engineers/",
+      "target": "/campus-life/clubs/society-of-women-engineers/"
+    },
+    {
       "source": "/student-information/",
       "target": "/students/"
+    },
+    {
+      "source": "/swasthaera/",
+      "target": "/campus-life/clubs/swasthaera/"
+    },
+    {
+      "source": "/team-dart/",
+      "target": "/campus-life/clubs/team-dart/"
+    },
+    {
+      "source": "/team-prokarters/",
+      "target": "/campus-life/clubs/team-prokarters/"
+    },
+    {
+      "source": "/team-skytroopers/",
+      "target": "/campus-life/clubs/team-skytroopers/"
+    },
+    {
+      "source": "/tedxmit-wpu/",
+      "target": "/campus-life/clubs/tedxmit-wpu/"
     },
     {
       "source": "/testimonials/",
@@ -3803,8 +3939,36 @@
       "target": "/study-in-india/student-testimonials/"
     },
     {
+      "source": "/udaan/",
+      "target": "/campus-life/clubs/udaan/"
+    },
+    {
+      "source": "/umed-social-club/",
+      "target": "/campus-life/clubs/umed-social-club/"
+    },
+    {
+      "source": "/unnati/",
+      "target": "/campus-life/clubs/unnati/"
+    },
+    {
+      "source": "/utkarsh-the-buiness-club/",
+      "target": "/campus-life/clubs/utkarsh-the-buiness-club/"
+    },
+    {
+      "source": "/vegapod-hyperloop/",
+      "target": "/campus-life/clubs/vegapod-hyperloop/"
+    },
+    {
       "source": "/virtual-tour/",
       "target": "/life-at-mit-wpu/"
+    },
+    {
+      "source": "/writers-web/",
+      "target": "/campus-life/clubs/writers-web/"
+    },
+    {
+      "source": "/young-democrates/",
+      "target": "/campus-life/clubs/young-democrates/"
     }
   ]
 }

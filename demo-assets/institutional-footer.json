@@ -37,7 +37,6 @@
     "holder": "MIT World Peace University"
   },
   "note": "What belongs in a footer, decided 2026-07-26 against the routes that exist rather than against the routes that were here. A footer's job is the destinations a reader needs and cannot navigate to — the ones that are nobody's obvious parent. It is not a second copy of the top navigation, which is how the site this one is modelled on ended up with the footer we captured. The three navigation columns were three links each and two of the twelve links were leaving for that reason: `Search`, because there is a search box in the masthead now and a footer link to the same page is a third route to it; and `People`, because it is a top-level entry in the bar. Four groups of four now, and each addition earns its place: /administration/ and /forms/ were built the same day and answer the two commonest errands a university website is asked — reach a human, and get a thing done; /contact-us/ was the most conspicuous absence, a university footer with no contact link; /accessibility/ existed and nothing in the site linked to it, which is a defect rather than an omission, since a footer is exactly where a reader looks for it; /career/ is here because a careers link is one of the few things a NON-student comes to a university footer for, and a navigation built around study and research gives it nowhere else to live. Deliberately not here: /campus-life/ and /students/, which are top-level entries, and /intranet/help/, which is reachable from /intranet/. A footer earns its usefulness by being short.",
-
   "groups": [
     {
       "label": "Reach us",
@@ -108,7 +107,12 @@
     {
       "label": "Grievance redressal",
       "hide_heading": false,
+      "note": "The only group in this footer that is longer than four links, and the only one whose heading shows. Both are deliberate and neither is a preference: every entry below is a regulator's requirement on the university's own website, and tools/tests/test_institutional_footer_links.py asserts eight of them by name so that emptying the group cannot quietly empty the demand. What the group still does NOT have is a parent. Ten links, and a reader who does not already know which committee takes a complaint about ragging as against harassment as against caste has to guess from titles that do not say — in a footer, where nothing explains anything. /grievance-redressal/ was built on 2026-07-27 to be that parent and is now this group's first entry. It names each body by the problem it handles rather than by its own title, which is the one thing a reader in that position needs and the one thing this list cannot do — a footer explains nothing, and a regulator's list is not a wayfinding aid. The statutory routes below it all stay exactly where a regulator expects them; the new entry is a door, not a replacement.",
       "links": [
+        {
+          "label": "How to raise a grievance",
+          "local": "grievance-redressal/"
+        },
         {
           "label": "Ragging prevention programme",
           "local": "about-us/national-ragging-prevention-programme/"
