@@ -28,11 +28,20 @@
   overflow: hidden;
 }
 
+/* `text-decoration: none` because this is a link with no text of its own —
+   it wraps a picture, or the lettered tile that stands in for one. It used to
+   get its decoration from `.uwp-card a`, which set the line's colour to
+   transparent; that rule now excludes package-classed anchors, so this states
+   its own. Without it the blank tile's letter draws a visible underline, and
+   draws it in currentColor on hover, because `text-decoration` propagates
+   from the anchor to the span inside it. */
 .uwp-card__media {
   display: block;
   aspect-ratio: var(--uwp-card-media-ratio, 16 / 9);
   background: var(--uwp-paper);
   overflow: hidden;
+  color: inherit;
+  text-decoration: none;
 }
 
 .uwp-card__media img {
@@ -361,6 +370,11 @@ a.uwp-feature-figure__media:hover img {
   display: block;
   flex: none;
   line-height: 0;
+  /* Same reason as .uwp-card__media: no text of its own, and the blank
+     portrait tile inside it is a lettered <div> that would otherwise be
+     underlined. */
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Size variants, added in 0.9.0. The donor carried three portrait sizes under

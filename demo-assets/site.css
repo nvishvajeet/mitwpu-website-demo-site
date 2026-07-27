@@ -1120,6 +1120,27 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     padding-block: 68px;
   }
 
+  /* Beside the copy, the photograph reads as accompaniment. Stacked above it,
+     it reads as a wall to scroll past before finding out what the page is: at
+     390px the headline "Academics and research." started 476px down, and at
+     320px 424px — better than half a viewport of picture and carousel buttons
+     before the sentence that says what the university is. This is the home
+     page, and it was the only one of 667 pages pairing a figure with prose
+     that stacked this way round.
+
+     `order` and not a markup move. The document says picture-then-copy because
+     that is the desktop reading order, and reordering the source would change
+     the reading order for a screen reader and the tab order for a keyboard at
+     EVERY width — fixing the phone and breaking the desktop. The layout
+     reorders below the breakpoint; the document does not. */
+  .hero-copy {
+    order: 1;
+  }
+
+  .hero-feature {
+    order: 2;
+  }
+
   /* Once the hero stacks, the visual can no longer take its height from the
      copy beside it and needs a ratio of its own. It must NOT be the source
      image's own 1557/599 — that is 2.6:1, which at this width is a 300px

@@ -23,6 +23,17 @@
   document.documentElement.classList.add("uwp-js");
 
   const HOVER_CLOSE_DELAY = 220; // ms; bridges diagonal travel to a fly-out
+  // The other half of that bridge, and it must exist or the first half is
+  // undone. A cascade hangs each row's fly-out off the column's right edge, so
+  // a reader reaching for the fourth link of a panel cuts the corner and
+  // crosses the rows beneath the one they started on. Those rows are 44px
+  // tall and the panel is 240px away, so the crossing is unavoidable geometry
+  // rather than a slip. Closing a sibling synchronously on its `mouseenter`
+  // meant the panel being travelled to was replaced, under the cursor, by the
+  // one belonging to a row merely passed over — spending 220ms of grace on the
+  // way out and none on the way in. Only a row arriving while a SIBLING is
+  // open pays this; the first row entered still opens instantly.
+  const HOVER_OPEN_DELAY = 260; // ms; a corner cut takes 150-250ms
   const EDGE_GAP = 12; // px kept between a fly-out and the viewport edge
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
   const desktop = window.matchMedia("(min-width: 56.01rem)");
@@ -154,10 +165,11 @@
   // Fine pointers on wide viewports only; coarse pointers use the accordion.
   const wireHoverIntent = (element, isBranch) => {
     let closeTimer;
+    let openTimer;
 
-    const open = () => {
-      window.clearTimeout(closeTimer);
-      if (!finePointer.matches || !desktop.matches) return;
+    // The part that actually reveals the panel, once the delay below (if any)
+    // has decided this is a destination rather than a crossing.
+    const reveal = () => {
       if (isBranch) {
         const menu = element.closest(".uwp-nav-menu");
         if (menu) {
@@ -175,7 +187,47 @@
       else placeMega(element);
     };
 
+    // A sibling row of this cascade already showing its fly-out is the only
+    // case that waits, because it is the only case where opening this row
+    // CLOSES something the pointer may be travelling to.
+    const siblingOpen = () => {
+      const menu = element.closest(".uwp-nav-menu");
+      if (!menu) return false;
+      for (const sibling of menu.querySelectorAll(
+        ":scope > .uwp-nav-branch.is-open",
+      )) {
+        if (sibling !== element) return true;
+      }
+      return false;
+    };
+
+    const open = () => {
+      window.clearTimeout(closeTimer);
+      window.clearTimeout(openTimer);
+      if (!finePointer.matches || !desktop.matches) return;
+      if (isBranch && siblingOpen()) {
+        openTimer = window.setTimeout(() => {
+          // Re-checked rather than assumed: the pointer may have left during
+          // the wait, and `mouseleave` cannot be relied on to have fired
+          // before this timer on every browser. The dismissal check is for
+          // an Escape pressed inside the delay — it collapses the entry from
+          // above, and a timer firing afterwards would leave this row's
+          // aria-expanded reading true under a panel nobody can see.
+          if (!element.matches(":hover")) return;
+          if (element.closest(".uwp-nav-item.is-dismissed")) return;
+          reveal();
+        }, HOVER_OPEN_DELAY);
+        return;
+      }
+      reveal();
+    };
+
     const scheduleClose = () => {
+      // A row left before its open delay elapsed was a crossing, not a
+      // destination. Dropping the timer here is what keeps the fly-out the
+      // reader aimed at open: it is never told to close, because the row
+      // being passed over is never told to open.
+      window.clearTimeout(openTimer);
       window.clearTimeout(closeTimer);
       closeTimer = window.setTimeout(() => {
         setOpen(element, false);

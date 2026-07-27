@@ -241,7 +241,7 @@
 }
 
 /* ---------------------------------------------------------------------------
-   Brand — one slot, three treatments. A site picks one by the data it passes.
+   Brand — one slot, four treatments. A site picks one by the data it passes.
    --------------------------------------------------------------------------- */
 .uwp-brand,
 .uwp-masthead__inner > a:not([class]) {
@@ -300,6 +300,82 @@
   padding: 3px 5px;
   background: var(--uwp-paper);
   border-radius: 2px;
+}
+
+/* 4. emblem — a mark beside a two-line wordmark: a smaller line naming the
+   founder, trust or parent body, and the institution's own name under it.
+
+   It is a fourth treatment rather than a variant of the other three because
+   it is the arrangement, not the contents, that differs. Treatment 1 stacks
+   the name over its parent and has no mark; treatment 3 is a mark ALONE,
+   because a supplied lockup usually has the name drawn into the artwork.
+   This is a mark that does not contain the name, set beside live text that
+   does — which is what an institution has when its crest is a crest rather
+   than a logotype, and the supra line is above the name rather than below it
+   because that is the order the sentence reads in.
+
+   `--uwp-brand-emblem-size` and `--uwp-brand-name-measure` are the two
+   numbers worth moving per institution, so they are properties rather than
+   values. The measure is in `em` on purpose: it is a statement about how many
+   WORDS sit on the first line, so it must scale with the type, and a cap
+   rather than a squeeze because a name that breaks a third time reads worse
+   than one that runs long. The emblem is a plain box the client fills with
+   its own background image or an <img>; this package ships no artwork.
+
+   Everything institutional stays out: the mark, the colour of the supra line,
+   the faces, and the exact size and measure. What is here is the geometry
+   four independent authors would otherwise each write. */
+.uwp-brand--emblem {
+  display: flex;
+  gap: var(--uwp-space-2);
+  align-items: center;
+}
+
+.uwp-brand__emblem {
+  display: block;
+  flex: 0 0 auto;
+  width: var(--uwp-brand-emblem-size, 3.5rem);
+  height: var(--uwp-brand-emblem-size, 3.5rem);
+}
+
+.uwp-brand__emblem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* The two lines. `min-width: 0` so a long name wraps inside the flex item
+   rather than pushing the emblem out of the masthead — the failure this
+   arrangement has if it is written without thinking about it. */
+.uwp-brand__wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  line-height: 1.1;
+}
+
+.uwp-brand__wordmark small {
+  margin: 0;
+  color: color-mix(in srgb, var(--uwp-masthead-ink) 82%,
+    var(--uwp-masthead-bg));
+  font-family: var(--uwp-sans);
+  font-size: .8125rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  /* Not uppercased. Treatment 1's sub-line is tracked uppercase because it is
+     a classification — the parent body — and this line is a name. */
+  text-transform: none;
+}
+
+.uwp-brand__wordmark strong {
+  display: block;
+  max-width: var(--uwp-brand-name-measure, 9em);
+  font-size: clamp(1.02rem, 2.2vw, 1.16rem);
+  font-weight: 700;
+  line-height: 1.16;
+  white-space: normal;
 }
 
 /* ---------------------------------------------------------------------------
@@ -1025,19 +1101,38 @@ html:not(.uwp-js) .uwp-nav-mega {
   content: "/";
 }
 
+/* `text-decoration-line` is DECLARED, not left to the browser. The two
+   properties below it tune an underline; they do not decide whether there is
+   one, and until now nothing here did. What drew the line was the UA's own
+   default for `<a href>` — which meant this component's resting appearance
+   was set by the adopting client's stylesheet rather than by this file. A
+   client whose sheet opens with `a { text-decoration: none }` saw no
+   underline; a client that deliberately underlines prose links, and is right
+   to, saw every crumb in the trail ruled. Both were reading the same release,
+   and the second one could only fix it by writing a rule against a component
+   it had adopted whole.
+
+   A component that looks right only when the client remembers to un-underline
+   it has not finished specifying itself. The trail is navigation chrome, not
+   reading copy, so the resting state is none and the underline returns on
+   hover and focus, where it distinguishes the crumb under the pointer from
+   the four beside it. */
 .uwp-breadcrumbs a {
   color: inherit;
+  text-decoration-line: none;
   text-decoration-thickness: .08em;
   text-underline-offset: .18em;
 }
 
 .uwp-breadcrumbs a:hover {
   color: var(--uwp-link);
+  text-decoration-line: underline;
 }
 
 .uwp-breadcrumbs a:focus-visible {
   outline: 2px solid var(--uwp-focus);
   outline-offset: 3px;
+  text-decoration-line: underline;
 }
 
 .uwp-breadcrumbs [aria-current="page"] {
@@ -1485,15 +1580,46 @@ html:not(.uwp-js) .uwp-nav-mega {
   margin-bottom: 0;
 }
 
-.uwp-card a {
+/* The `:not()` is the same statement about the package that `.uwp-card img`
+   makes further up this file, and it is here for the same reason. A bare
+   `.uwp-card a` is (0,1,1) and outranks any component class at (0,1,0)
+   whatever the load order, so every component that renders a LINK inside one
+   of these containers loses its own colour and decoration to this rule.
+
+   Two instances were already in the field. `.uwp-text-link` — the "read more"
+   at the foot of a card, and the place it is most used — came out in the
+   card's ink instead of its heading colour, and wearing this rule's
+   hover underline instead of the `text-decoration: none` it declares for
+   itself. Worse, `.uwp-button--primary` inside a card lost
+   `--uwp-brand-contrast` and drew its label in the card's ink on a solid
+   brand fill, which is a contrast failure rather than a cosmetic one and had
+   been shipping in every release that had both.
+
+   Naming `.uwp-text-link` here would have fixed the first, left the second,
+   and left the next one too. So this is the general rule those two were
+   instances of: an element carrying a package class states its own colour and
+   decoration, and this rule declines to claim it. `[class*="uwp-"]` is
+   (0,1,0) inside `:not()`, so the specificity is unchanged — what changes is
+   that the rule no longer matches package markup at all, and no future
+   component has to be added to a list. A client's own `<a>` in a card still
+   gets the card's link treatment, which is the whole point of the rule.
+
+   `text-decoration-line` is declared for the reason given at
+   `.uwp-breadcrumbs a`: the hover-reveal this rule builds by holding a
+   decoration colour at transparent only works if there is a line to hold
+   transparent, and until now that line was the browser's default. In a client
+   whose sheet opens with `a { text-decoration: none }` there was no line, and
+   the hover revealed nothing at all. */
+.uwp-card a:not([class*="uwp-"]) {
   color: inherit;
+  text-decoration-line: underline;
   text-decoration-color: transparent;
   text-underline-offset: .18em;
   transition: color 140ms ease, text-decoration-color 140ms ease;
 }
 
-.uwp-card a:hover,
-.uwp-card a:focus-visible {
+.uwp-card a:not([class*="uwp-"]):hover,
+.uwp-card a:not([class*="uwp-"]):focus-visible {
   /* Foreground, so --uwp-link. See the note on .uwp-nav-flyout__all. */
   color: var(--uwp-link);
   text-decoration-color: currentColor;
@@ -2528,13 +2654,20 @@ html:not(.uwp-js) .uwp-nav-mega {
   border-top: 3px solid var(--uwp-accent);
 }
 
+/* Declared for the reason set out at `.uwp-breadcrumbs a`, and found in the
+   same client on the same day: a footer group is a list of destinations, and
+   a rule under every one of twenty-two entries reads as a hedge rather than
+   as emphasis. Nothing here ever asked for that underline; the browser
+   supplied it because this file declined to. */
 .uwp-footer a {
   color: inherit;
+  text-decoration-line: none;
 }
 
 .uwp-footer a:hover,
 .uwp-footer a:focus-visible {
   color: var(--uwp-brand-contrast);
+  text-decoration-line: underline;
 }
 
 /* The identity block, then a track per group. footer.html documents any number
@@ -3257,8 +3390,11 @@ html:not(.uwp-js) .uwp-nav-mega {
   color: var(--uwp-copy);
 }
 
-.uwp-schedule__reading,
-.uwp-schedule__materials {
+/* Specific enough to beat the rule above it, which is what decides the topic
+   column's width; a bare class selector loses to `.uwp-schedule__table tbody
+   td` and every column would come out at the topic's minimum. */
+.uwp-schedule__table tbody td.uwp-schedule__reading,
+.uwp-schedule__table tbody td.uwp-schedule__materials {
   min-width: 8rem;
 }
 
@@ -3282,12 +3418,19 @@ html:not(.uwp-js) .uwp-nav-mega {
 }
 
 /* Two files in one cell stack, because they are two destinations and a row of
-   links separated by nothing is a row a reader has to parse. Each row of the
-   stack keeps the 44px target the rest of this package holds to. */
+   links separated by nothing is a row a reader has to parse. The padding is
+   what gives each of them the 44px target this package holds to — a notes
+   link is the most-tapped thing on a course page and it is normally three
+   words in a table cell. The first one pulls its own padding back off the
+   top so the cell still starts on the row's baseline: the target survives,
+   the alignment survives, and neither is bought with the other. */
 .uwp-schedule__materials a {
   display: block;
-  min-height: 1.5rem;
-  padding-block: .35rem;
+  padding-block: .6rem;
+}
+
+.uwp-schedule__materials a:first-child {
+  margin-block-start: -.6rem;
 }
 
 /* A week with no class keeps its place in the table, because a reader

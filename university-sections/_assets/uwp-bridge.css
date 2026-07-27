@@ -108,44 +108,20 @@
   background: var(--blue-dark);
 }
 
-/* -- undeclared decoration ------------------------------------------------
+/* -- undeclared decoration: GONE, and deliberately not replaced -------------
  *
- * The footer's twenty-two links and the breadcrumb trail were drawn underlined
- * on these ten pages and on no others, which is what made it look like a bug
- * in one page rather than a rule nobody had written.
+ * A block here used to declare `text-decoration: none` on `.uwp-footer a` and
+ * `.uwp-breadcrumbs a`, because neither declared `text-decoration-line` and
+ * the browser's default for `<a href>` drew one. Five of this site's six page
+ * families never saw it — their stylesheet opens with `a { text-decoration:
+ * none }` — and university.css does not, deliberately, because an underlined
+ * link in reading copy is the right call.
  *
- * Nothing underlines them. `.uwp-footer a` sets a colour and `.uwp-breadcrumbs
- * a` sets a thickness and an offset, and neither declares
- * `text-decoration-line` at all — so what draws the line is the browser's own
- * default for `<a href>`. Five of this site's six page families never see it
- * because their stylesheet opens with `a { text-decoration: none }`;
- * university.css does not, deliberately, because an underlined link in reading
- * copy is the right call and the two properties it does set are there to
- * tune that underline. The cost is that every package component this family
- * renders inherits a decoration meant for prose.
- *
- * So the resting state is declared here, for the two components that are
- * navigation chrome rather than reading copy. Prose links keep their
- * underline; a footer column and a breadcrumb trail are lists of destinations
- * and read as a hedge when every entry is ruled.
- *
- * THIS BELONGS IN THE PACKAGE, at `.uwp-footer a` and `.uwp-breadcrumbs a`: a
- * component that only looks right when the client remembers to un-underline it
- * has not finished specifying itself, and the next client to keep prose
- * underlines will hit exactly this. It is written here because the vendored
- * package is pinned at 0.22.0 and adopting is a separate, deliberate step.
- * When the package declares it, this block is a deletion. */
-.uwp-footer a,
-.uwp-breadcrumbs a {
-  text-decoration: none;
-}
-
-.uwp-footer a:hover,
-.uwp-footer a:focus-visible,
-.uwp-breadcrumbs a:hover,
-.uwp-breadcrumbs a:focus-visible {
-  text-decoration: underline;
-}
+ * Package 0.23.0 declares it, at `.uwp-footer a` and `.uwp-breadcrumbs a`,
+ * with the underline returning on hover and focus exactly as this block had
+ * it. The workaround was written with that as its stated exit condition and
+ * this is it. Prose links in this family keep their underline; nothing here
+ * needs to say so any more. */
 
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {

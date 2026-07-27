@@ -1,10 +1,27 @@
-/* Readability floors and the base typographic layer.
+/* Readability floors. Nothing else.
  *
  * These are the accessibility guarantees WORKFLOW.md states as hard
  * boundaries, expressed once: reading text on a 16px floor, metadata on a
- * 14px floor, controls with a 44px target, a visible focus ring, and
- * reduced-motion honoured. They are floors, not defaults — a client may set a
- * larger value and may not set a smaller one.
+ * 14px floor, controls with a 44px target, safe reflow, a visible focus ring,
+ * and reduced-motion honoured. They are floors, not defaults — a client may
+ * set a larger value and may not set a smaller one.
+ *
+ * THE BASE TYPE LEFT THIS FILE IN 0.23.0 and is now src/css/typography.css:
+ * the body face and rhythm, the serif headings, the prose measure. They were
+ * here, and having them here meant the floors could not be adopted without
+ * the opinions — a client with its own body face and palette had to take this
+ * package's or fork the file. One did fork it, wholesale, which is a copy no
+ * release can reach.
+ *
+ * So the test for whether a rule belongs in this file is now explicit: it is
+ * a floor if lowering it would hurt somebody, and an opinion if changing it
+ * would merely look different. `overflow-wrap: anywhere` on a heading is a
+ * floor — without it a grant reference forces a horizontal scrollbar.
+ * `text-wrap: balance` on the same heading is an opinion and lives next door.
+ *
+ * Loading readability.css then typography.css reproduces exactly what this
+ * file did before the split. Loading readability.css alone is now a supported
+ * arrangement, and is the point.
  *
  * TWO THINGS HERE ARE EASY TO UNDO BY ACCIDENT.
  *
@@ -24,9 +41,9 @@
  * larger text, which is the opposite of the intent.
  *
  * CASCADE POSITION: this sheet must load after tokens.css (it reads them) and
- * BEFORE patterns.css and media.css, whose component rules are meant to sit
- * on top of these bases. The load order is declared in components.json rather
- * than left to whichever component a page happens to use first.
+ * BEFORE typography.css, patterns.css and media.css, whose rules are meant to
+ * sit on top of these bases. The load order is declared in components.json
+ * rather than left to whichever component a page happens to use first.
  */
 
 html {
@@ -34,13 +51,13 @@ html {
   text-size-adjust: 100%;
 }
 
+/* The margin is a reset, not a preference — a default body margin puts a
+   white gutter outside a full-bleed masthead. The size is the 16px reading
+   floor. The face, the colour and the leading that used to be here are
+   typography.css's. */
 body {
   margin: 0;
-  color: var(--uwp-ink);
-  background: var(--uwp-paper);
-  font-family: var(--uwp-sans);
   font-size: max(1rem, 16px);
-  line-height: 1.6;
 }
 
 /* Institutional content carries unbreakable strings that ordinary prose does
@@ -56,16 +73,12 @@ body {
   line-height: 1.45;
 }
 
+/* The reflow half of the heading rules. The face, the leading and the balance
+   are typography.css's; an institutional heading carrying an unbreakable
+   department acronym must not force a horizontal scrollbar whichever face it
+   is set in. */
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: var(--uwp-serif);
-  line-height: 1.12;
   overflow-wrap: anywhere;
-  text-wrap: balance;
-}
-
-:where(.uwp-prose, .uwp-article) p {
-  max-width: var(--uwp-reading-width);
-  line-height: 1.72;
 }
 
 :where(button, input, select, textarea, [role="button"]) {

@@ -1,0 +1,70 @@
+/* The package's base typography: which face, which rhythm, which colour.
+ *
+ * This file is OPINIONATED and a client may decline it. That is the whole
+ * reason it exists as a file of its own. Everything here is a choice about
+ * how the package's own pages want to read; nothing here is an accessibility
+ * guarantee. The guarantees are in readability.css, and a client can take
+ * that file without taking this one.
+ *
+ * WHY THE SPLIT. These rules used to sit in readability.css beside the
+ * floors, which made the floors unobtainable on their own: a client with its
+ * own body face and its own palette could not adopt the 16px reading floor,
+ * the 14px metadata floor, the 44px control target and the focus ring without
+ * also adopting this package's `--uwp-sans` body, its serif headings and its
+ * ink-on-paper colours. The first client to want the floors and not the type
+ * forked readability.css wholesale rather than adopt it — and a fork is a
+ * copy no release can reach, which is the failure this package exists to
+ * prevent. Two clients would have made it a pattern.
+ *
+ * The two files are not independent, they are ordered. Load readability.css
+ * first, then this: every rule here is a plain selector or a `:where()` at
+ * the same weight as the floor it sits on, so where both files speak to the
+ * same property this one is simply later and wins. Loading this without
+ * readability.css is not a supported arrangement — the floors are the base
+ * these rhythms were measured against.
+ *
+ * CASCADE POSITION: after tokens.css and readability.css, and BEFORE
+ * patterns.css and media.css, whose component rules are meant to sit on top
+ * of these bases. `stylesheet_order` in components.json is the declaration of
+ * record; a client that resolves its stylesheets from the registry gets this
+ * in the right place without being told.
+ *
+ * A client that wants the floors and its own type loads tokens.css and
+ * readability.css, skips this file, and declares its own `body` and heading
+ * rules. Nothing in patterns.css depends on the declarations here — component
+ * rules set their own faces and sizes where they care.
+ */
+
+/* The reading surface. `body` rather than `:where(body)` so this behaves
+   exactly as it did when these four declarations lived in readability.css:
+   a client's own `body { … }` is the same weight and wins on load order,
+   which is what the client stylesheets in the field already assume. */
+body {
+  color: var(--uwp-ink);
+  background: var(--uwp-paper);
+  font-family: var(--uwp-sans);
+  line-height: 1.6;
+}
+
+/* Headings are the package's serif against the sans body — the one contrast
+   that carries most of its institutional character. `1.12` is tight because
+   institutional headings are long and frequently wrap to three lines, where
+   body leading reads as a gap rather than as a heading.
+
+   `text-wrap: balance` is here and not in the floors because it is a
+   preference about how a wrapped heading looks, not a guarantee that it
+   wraps at all — the guarantee is `overflow-wrap: anywhere`, which stays in
+   readability.css beside the other reflow rules. */
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--uwp-serif);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+/* Running prose gets a measure and a looser rhythm than the interface around
+   it. Scoped to the two containers that mean "this is an article", so it
+   never reaches a card's summary or a table cell. */
+:where(.uwp-prose, .uwp-article) p {
+  max-width: var(--uwp-reading-width);
+  line-height: 1.72;
+}

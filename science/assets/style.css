@@ -16,6 +16,7 @@
 @import url("../../group-assets/site.css?v=20260725-global-nav-8-cascade");
 @import url("../../vendor/university-web-patterns/src/css/tokens.css");
 @import url("../../vendor/university-web-patterns/src/css/readability.css");
+@import url("../../vendor/university-web-patterns/src/css/typography.css");
 @import url("../../vendor/university-web-patterns/src/css/patterns.css");
 
 /* Token overrides: this site runs a paper masthead under a navy institution
