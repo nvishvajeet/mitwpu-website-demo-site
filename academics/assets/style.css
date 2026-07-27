@@ -979,7 +979,21 @@ body {
   font-size: 0.8rem;
 }
 
-.academic-footer nav {
+/* A row of inline links, which is what this family's footer used to be. The
+   `:not()` is load-bearing and was added on 2026-07-27: the package's footer
+   renders each column as a <nav>, so this rule was laying a column's heading
+   and its list side by side and squeezing the list to about sixty pixels. It
+   was invisible for as long as three of the four columns hid their heading and
+   the visible one sat alone on its own row — the flex box had one child and
+   nothing to put beside it. The moment every column showed a heading, all 161
+   pages of this family got a footer 1,093px tall with list items stretched to
+   185px each, because a <ul> that is a stretched flex item is taller than its
+   rows and `align-content: stretch` hands the difference to them.
+
+   The rule stays rather than going because nothing here has established that
+   no <nav> in this family's footer still wants it. What it must never again do
+   is reach a package component. */
+.academic-footer nav:not(.uwp-footer__group) {
   display: flex;
   gap: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
