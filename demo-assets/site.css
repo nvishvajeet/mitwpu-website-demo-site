@@ -562,14 +562,31 @@ h3 {
  * the same in both themes. A theme-aware control here would be reasoning
  * about the wrong background.
  *
- * WHY BOTTOM-LEFT. `uwp-feature-figure` paints the institution's gold block
- * in the frame's bottom-RIGHT padding, offset past the picture's corner — so
- * along the picture's bottom-right edge there is a gold strip about 18px
- * wide. The bar is pinned to the opposite end of the same edge and stays
- * inside the picture, so the two never overlap and never crowd each other:
- * the block keeps the corner it was designed for, and the controls take the
- * corner nothing else uses. The block is the mark for the one image this page
- * is about and it stays; adding controls did not make it a different picture.
+ * WHY BOTTOM-CENTRE, AND ONLY ON HOVER. It sat pinned bottom-LEFT and always
+ * visible until 2026-07-27, tucked into the corner because
+ * `uwp-feature-figure` paints the institution's gold block in the frame's
+ * bottom-RIGHT padding and the two must not crowd each other. Centring solves
+ * that better than hiding from it: the gold block is offset past the
+ * picture's right edge, so the middle of the bottom edge is clear of it by
+ * half the picture's width, and a control centred under what it steers reads
+ * as belonging to the picture rather than as something parked in the one
+ * corner nothing else wanted.
+ *
+ * Being permanent was the larger fault. This is a decoration on the first
+ * photograph a reader sees, and it was sitting on the picture at full
+ * strength before anyone had shown the least interest in steering it —
+ * competing with the image on the one screen the image is meant to carry.
+ * Steering appears when a pointer is over the figure and fades when it
+ * leaves, which is how the control stops being furniture.
+ *
+ * IT DOES NOT HIDE FROM A KEYBOARD. `:focus-within` holds it open, so
+ * tabbing to Pause makes it appear and keeps it there; a control reachable
+ * only by hover would be unreachable without a mouse. Nor does it hide when
+ * the reader has paused: `is-paused` pins it, because a stopped carousel with
+ * no visible way to restart it looks broken rather than quiet. And under
+ * `prefers-reduced-motion` it does not fade at all — it is simply there,
+ * since a reader who has asked for less movement is the reader most likely to
+ * want the stop button in plain sight.
  */
 .hero-controls {
   position: absolute;
@@ -581,7 +598,32 @@ h3 {
   border-radius: 999px;
   background: rgba(12, 22, 30, 0.58);
   backdrop-filter: blur(6px);
-  inset: auto auto clamp(10px, 2.4%, 20px) clamp(10px, 2.4%, 20px);
+  inset: auto auto clamp(10px, 2.4%, 20px) 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 160ms ease, visibility 160ms;
+}
+
+/* The carousel is the hover target rather than the bar itself: a bar that
+ * appears only once the pointer is already on it cannot be found, because
+ * finding it requires it to be visible first. `.hero-visual` is the element
+ * that wraps both the five slides and the bar, so it is the picture's own
+ * hit area — the slides are its children and cannot serve, since the bar is
+ * their sibling and not inside any of them. */
+.hero-visual:hover .hero-controls,
+.hero-visual:focus-within .hero-controls,
+.hero-controls.is-paused {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-controls {
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+  }
 }
 
 .hero-controls[hidden] {
@@ -1026,74 +1068,94 @@ h3 {
  * become between-row rules — because at phone width "full-bleed" is what every
  * band already is, so the only thing left distinguishing this one is the
  * ruling. */
-.faculty-band {
-  background: var(--paper);
-  border-top: 1px solid var(--line-strong);
-  border-bottom: 1px solid var(--line-strong);
-}
 
-.faculty-band__label {
-  margin: 0;
-  padding: 26px clamp(24px, 2.6vw, 38px) 0;
-  color: var(--blue);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.35;
-  text-transform: uppercase;
-}
 
-.faculty-band__grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 
-.faculty-band__item {
-  display: grid;
-  min-height: 200px;
-  align-content: start;
-  gap: 12px;
-  padding: 30px clamp(24px, 2.6vw, 38px) 36px;
-  color: var(--ink);
-  border-left: 1px solid var(--line);
-  text-decoration: none;
-}
 
-.faculty-band__item:first-child {
-  border-left: 0;
-}
 
-.faculty-band__item strong {
-  display: block;
-  max-width: 18ch;
-  color: var(--heading);
-  font-size: clamp(1.3rem, 2vw, 1.72rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.18;
-}
 
-.faculty-band__item span {
-  display: block;
-  max-width: 34ch;
-  color: var(--copy);
-  font-size: 0.93rem;
-  line-height: 1.5;
-}
 
-.faculty-band__item:hover {
-  background: var(--subtle);
-}
 
-.faculty-band__item:hover strong {
-  color: var(--blue);
-}
 
 .directory {
   padding-block: 80px 88px;
   background: var(--subtle);
   border-bottom: 1px solid var(--line);
+}
+
+/* ── grievance redressal ─────────────────────────────────────────────
+ *
+ * The last band on the home page, and small on purpose. index.html carries
+ * the argument for why it exists; this is how it is drawn.
+ *
+ * TWO COLUMNS, NOT THREE, AND UNEVEN. The statement is the section — the
+ * committee, the Act it sits under, and the address to write to — so it takes
+ * the wide column and is set at reading size rather than at the small size a
+ * directory row uses. The two links beside it are genuinely secondary and are
+ * drawn as what they are: the same `.directory-link` rows the section
+ * landings use, so nothing new was invented for two links.
+ *
+ * ON --subtle, LIKE THE DIRECTORY IT REPLACED. The page alternates paper and
+ * tint down its length and the last band before the footer is the tinted one;
+ * keeping that means the change of content did not disturb the page's
+ * rhythm. The left rule in the accent is the only ornament, and it is the
+ * same gold as the masthead's — this is the one place on the page where a
+ * reader may be looking for something urgently, and a mark that says "here"
+ * is worth more than a heading alone.
+ *
+ * It does NOT get the full-bleed treatment. A grievance route announced like
+ * a banner would be shouting at a reader who is already unhappy, and the
+ * band that did run full-bleed here was removed for restating the nav. */
+.redressal {
+  padding-block: 72px 80px;
+  background: var(--subtle);
+  border-bottom: 1px solid var(--line);
+}
+
+.redressal__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: clamp(40px, 6vw, 88px);
+  align-items: start;
+}
+
+.redressal__main {
+  padding-left: clamp(20px, 2.4vw, 32px);
+  border-left: 3px solid var(--gold);
+}
+
+.redressal__main h2 {
+  margin: 0 0 14px;
+}
+
+.redressal__main p {
+  max-width: 62ch;
+  margin: 0 0 22px;
+  color: var(--copy);
+}
+
+.redressal__route {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--heading);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.redressal__route:hover,
+.redressal__route:focus-visible {
+  border-bottom-color: currentColor;
+}
+
+.redressal__aside {
+  border-top: 1px solid var(--line-strong);
+}
+
+@media (max-width: 60rem) {
+  .redressal__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
 }
 
 .directory .section-heading {
@@ -1137,29 +1199,18 @@ h3 {
   border-top: 1px solid var(--line-strong);
 }
 
-/* `.directory-group--faculties` and `.link-list--split` were the faculty row
-   inside this directory: one group rather than a fourth column, split two-up
-   because "Faculty of Design Humanities and Liberal Arts" is 44 characters and
-   wraps to three lines at a quarter of the measure. Both selectors are gone
-   because the tier is no longer in the directory — it is `.faculty-band`
-   above, where four columns is the point rather than a problem to work
-   around, and where the labels have the width to sit on two lines. Neither
-   class is used by any other page. */
-
 /* 76px, not the 104px this row carried before.
  *
- * The floor was sized for the faculty labels, which were the longest on the
+ * The floor was sized for the home page's faculty labels, the longest on that
  * page — "Faculty of Design Humanities and Liberal Arts" is 44 characters and
  * ran to two lines, and 104px kept a two-line row and a one-line row the same
- * height so the columns stayed aligned. Those labels have moved to
- * .faculty-band and every link left here is one line: "All schools and
- * departments" is the longest at 27 characters. At 104px each of the seven
- * remaining rows was carrying 40px of nothing under a single line of text,
- * and with the faculties gone the whole band read as mostly empty.
+ * height so the columns stayed aligned. Nothing that long is left: this class
+ * now serves the section landings, where every label is one line. At 104px a
+ * one-line row carried 40px of nothing under it.
  *
- * This is the counterweight to the band above it, and it is the point of the
- * whole spacing pass: air is spent where a page is cramped and taken back
- * where it is not. A blanket increase would have inflated both. */
+ * That is the point of the spacing pass this came out of — air is spent where
+ * a page is cramped and taken back where it is not, rather than a blanket
+ * increase that would have inflated both. */
 .directory-link {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -1309,22 +1360,9 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
      this length in four columns at 940px is three lines each; two columns is
      one or two. The `nth-child(-n+2)` pair keeps the top row without a rule
      above it, since the band's own border-top is already there. */
-  .faculty-band__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
-  .faculty-band__item {
-    min-height: 0;
-    border-top: 1px solid var(--line);
-  }
 
-  .faculty-band__item:nth-child(-n + 2) {
-    border-top: 0;
-  }
 
-  .faculty-band__item:nth-child(odd) {
-    border-left: 0;
-  }
 
   .activity-grid {
     gap: 24px;
@@ -1442,23 +1480,9 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
      already runs to both edges — so the ruling is the only thing left saying
      this is one band of four related things rather than four stacked links,
      and the padding shrinks to the gutter the rest of the page uses. */
-  .faculty-band__grid {
-    grid-template-columns: 1fr;
-  }
 
-  .faculty-band__item {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    padding: 24px 16px 28px;
-  }
 
-  .faculty-band__item:first-child {
-    border-top: 0;
-  }
 
-  .faculty-band__label {
-    padding: 22px 16px 0;
-  }
 
   .directory-link {
     min-height: 0;

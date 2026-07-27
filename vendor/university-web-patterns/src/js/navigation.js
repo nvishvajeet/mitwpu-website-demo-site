@@ -34,6 +34,14 @@
   // way out and none on the way in. Only a row arriving while a SIBLING is
   // open pays this; the first row entered still opens instantly.
   const HOVER_OPEN_DELAY = 260; // ms; a corner cut takes 150-250ms
+  // The top-level bar pays a shorter one. Its geometry is not a corner cut:
+  // entries sit side by side, so a pointer crossing one on the way to another
+  // is inside it for well under 100ms, and 120ms separates a traversal from a
+  // deliberate arrival with room to spare. Spending the cascade's 260ms here
+  // would be felt — the bar is what a reader touches first, and a menu that
+  // takes a quarter of a second to answer reads as slow rather than as
+  // careful. The two numbers are different because the two gestures are.
+  const HOVER_SWITCH_DELAY = 120; // ms; crossing an entry takes under 100ms
   const EDGE_GAP = 12; // px kept between a fly-out and the viewport edge
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
   const desktop = window.matchMedia("(min-width: 56.01rem)");
@@ -187,15 +195,32 @@
       else placeMega(element);
     };
 
-    // A sibling row of this cascade already showing its fly-out is the only
-    // case that waits, because it is the only case where opening this row
-    // CLOSES something the pointer may be travelling to.
+    // An entry arriving while a sibling is already open is the only case that
+    // waits, because it is the only case where opening this one CLOSES
+    // something the pointer may be travelling to.
+    //
+    // This asked both levels of the question from 0.24.0. Before that it
+    // asked only the cascade rows, and the top-level bar — the part every
+    // reader touches first — had no intent at all: `mouseenter` revealed
+    // synchronously, so dragging the pointer from one end of the bar to the
+    // other flashed all six panels in turn, each one dropping a full-width
+    // sheet over the page and tearing it away a frame later. The 220ms close
+    // delay compounded it, holding the outgoing panel on screen while the
+    // next one opened, so mid-traverse two panels overlapped. It read as the
+    // menu being broken, and it was reported as flicker three times.
+    //
+    // The scope differs by level and so does the lookup: a cascade row's
+    // siblings are the rows of its own `.uwp-nav-menu`, a top-level entry's
+    // are the other entries of the bar.
     const siblingOpen = () => {
-      const menu = element.closest(".uwp-nav-menu");
-      if (!menu) return false;
-      for (const sibling of menu.querySelectorAll(
-        ":scope > .uwp-nav-branch.is-open",
-      )) {
+      const scope = isBranch
+        ? element.closest(".uwp-nav-menu")
+        : element.closest(".uwp-nav");
+      if (!scope) return false;
+      const selector = isBranch
+        ? ":scope > .uwp-nav-branch.is-open"
+        : ":scope > .uwp-nav-item.is-open";
+      for (const sibling of scope.querySelectorAll(selector)) {
         if (sibling !== element) return true;
       }
       return false;
@@ -205,7 +230,7 @@
       window.clearTimeout(closeTimer);
       window.clearTimeout(openTimer);
       if (!finePointer.matches || !desktop.matches) return;
-      if (isBranch && siblingOpen()) {
+      if (siblingOpen()) {
         openTimer = window.setTimeout(() => {
           // Re-checked rather than assumed: the pointer may have left during
           // the wait, and `mouseleave` cannot be relied on to have fired
@@ -216,7 +241,7 @@
           if (!element.matches(":hover")) return;
           if (element.closest(".uwp-nav-item.is-dismissed")) return;
           reveal();
-        }, HOVER_OPEN_DELAY);
+        }, isBranch ? HOVER_OPEN_DELAY : HOVER_SWITCH_DELAY);
         return;
       }
       reveal();
