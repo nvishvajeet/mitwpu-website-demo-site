@@ -1,0 +1,503 @@
+{
+  "schema": "mitwpu.intranet-hr.v1",
+  "_comment": [
+    "The employee half of the intranet, on the same terms as help.json: a fact",
+    "cites a captured route or a service in the intranet registry, and a missing",
+    "fact is RENDERED rather than omitted. Read the header of",
+    "tools/build_intranet_hr.mjs before editing.",
+    "",
+    "Most of this page is questions with no answers, and that is the finding, not",
+    "a draft. The university publishes one paragraph about its HR office and one",
+    "email address. It publishes no leave entitlement, no pay date, no service",
+    "rules, no probation term, no appraisal cycle, no provident-fund reference and",
+    "no exit process. Nothing here is filled in from what a university usually",
+    "does; a plausible leave entitlement is worse than none, because an employee",
+    "plans around it."
+  ],
+
+  "page": {
+    "title": "Pay, leave and your appointment",
+    "eyebrow": "University services",
+    "lede": "The employee half of the intranet: what the university publishes about pay, leave, your appointment, appraisal, benefits and grievance — and, in plain sight, what it does not.",
+    "description": "How members of MIT-WPU staff find an answer about pay, leave, their appointment, appraisal, provident fund or a grievance, who owns each answer, and which questions the university has not answered.",
+    "notice": {
+      "eyebrow": "Start here",
+      "title": "This page publishes; HROne transacts",
+      "paragraphs": [
+        "Applying for leave, seeing a payslip and keeping your own record are HROne's job — the university runs it and it needs an institutional sign-in. This page is the map: what each service is, who owns it, and where the university has published nothing.",
+        "Like every page of this site it hosts no form and takes no personal detail. Nothing here is a substitute for your letter of appointment; where the two differ, the letter is the university's word and this page is not."
+      ]
+    },
+    "introduction": [
+      "Questions are grouped by what you are trying to do, not by which office owns it, because an employee arrives with a problem rather than with a department. The owning team is named inside each answer.",
+      "An answer marked Not published is a question the university has not answered anywhere a person can read. It is kept, and it is counted at the foot of this page, because a well-chosen question is a specification for whoever fills it in."
+    ],
+    "provenance": [
+      "Every fact on this page was read off a page the university publishes, and the build fails if a citation names a route the retained capture does not hold. These are the pages the facts came from."
+    ],
+    "systemsTitle": "The systems you sign in to",
+    "systemsIntroduction": [
+      "Read from the intranet service registry, so a service added there appears here and a service this page forgets fails the build. Each needs an institutional sign-in; none of them is reachable from the public site.",
+      "A support route is what you use when the service itself is the problem — when the sign-in fails, or the leave balance is wrong. Where none is published the row says so; that is a real gap and not a formatting choice."
+    ],
+    "unpublishedTitle": "The employment documents the university does not publish",
+    "unpublishedIntroduction": [
+      "Not a wish list. Each of these is a document an employee is entitled to be able to read, which nothing on the university's site links to, and each is the reason one or more questions above is unanswered."
+    ],
+    "gapsIntroduction": [
+      "Computed on every build and never stored, so typing a value into intranet/data/hr.json closes its gap the moment it is saved. Grouped by kind rather than by team, because that is how the work is done: somebody collects every missing telephone number at once.",
+      "The same list is printed by the builder's --gaps option, so it can be read from a terminal rather than only by an eye running down this page."
+    ]
+  },
+
+  "teams": [
+    {
+      "id": "human-resources",
+      "name": "Office of Human Resource and Establishment",
+      "short": "Human Resources",
+      "head": "Dr. Nitin Khedkar, Director – Human Resources",
+      "headSource": "/about-us/administrative-offices",
+      "summary": "The university's HR office: recruitment, benefits administration, professional development, employee relations, and payroll enquiries.",
+      "expect": ["requestUrl", "telephone", "email", "location", "hours"],
+      "contact": {
+        "email": "director.hr@mitwpu.edu.in",
+        "requestUrl": "https://app.hrone.cloud/"
+      },
+      "contactSources": {
+        "email": "/about-us/administrative-offices"
+      },
+      "contactServices": {
+        "requestUrl": "hrone"
+      },
+      "sources": ["/about-us/administrative-offices"]
+    },
+    {
+      "id": "registrar",
+      "name": "Registrar's Office",
+      "short": "Registrar",
+      "head": "Mr. Ganesh Balbhimrao Pokale, Registrar",
+      "headSource": "/about-us/administrative-offices",
+      "summary": "Oversees academic and administrative appointments, drives policy implementation, and is the link between faculty, students and the administrative units.",
+      "expect": ["telephone", "email", "location", "hours"],
+      "contact": {
+        "email": "registrar@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "email": "/about-us/administrative-offices"
+      },
+      "sources": ["/about-us/administrative-offices"]
+    },
+    {
+      "id": "employee-grievance-committee",
+      "name": "Employee Grievance Redressal Committee",
+      "short": "Grievance committee",
+      "summary": "Constituted under Clause 30(2) of the University Statutes to ensure transparency, prevent unfair practice, and give every employee a mechanism for the redressal of grievances.",
+      "expect": ["requestUrl", "telephone", "email", "location", "hours"],
+      "contact": {},
+      "contactSources": {},
+      "sources": ["/student-information"]
+    },
+    {
+      "id": "internal-complaints-committee",
+      "name": "Internal Complaints Committee",
+      "short": "ICC",
+      "summary": "The committee constituted under the POSH Act. It takes complaints from employees as well as students, and it is the one employee-facing route on this page that publishes an address to write to.",
+      "expect": ["email", "telephone", "location", "hours"],
+      "contact": {
+        "email": "icc@mitwpu.edu.in"
+      },
+      "contactSources": {
+        "email": "/student-affairs/internal-complaints-committee"
+      },
+      "sources": ["/student-affairs/internal-complaints-committee"]
+    }
+  ],
+
+  "systems": {
+    "category": "employee-services",
+    "entries": [
+      {
+        "slug": "hrone",
+        "covers": "Leave, attendance, payroll and your own employee record.",
+        "note": "The university's employee system. What it holds, what it shows you and when it is updated are not published anywhere; this page names it and cannot describe it."
+      },
+      {
+        "slug": "digital-id",
+        "covers": "Your employee identity and visiting card.",
+        "note": "Issued per employee. Nothing is published about when a card is issued, how it is replaced, or what to do when it is lost."
+      }
+    ]
+  },
+
+  "topics": [
+    {
+      "id": "pay",
+      "title": "Pay",
+      "summary": "Salary, payslips, and the documents an employer is asked for.",
+      "items": [
+        {
+          "id": "pay-when",
+          "question": "When am I paid, and where is my payslip?",
+          "team": "human-resources",
+          "unanswered": "No pay date, pay cycle or payslip route is published anywhere on the university's site. HROne is the employee system and payroll is one of the things it is described as covering; what it shows, and when, is not published.",
+          "links": [
+            {
+              "label": "HROne",
+              "service": "hrone",
+              "note": "institutional sign-in"
+            }
+          ]
+        },
+        {
+          "id": "pay-wrong",
+          "question": "Something is wrong with my pay",
+          "team": "human-resources",
+          "answer": [
+            "Payroll enquiries are the HR office's, and it is named as covering them. There is one published address for the office and no separate payroll one, so that address is where a pay query goes.",
+            "Nothing is published about how long a correction takes or what evidence to send with it."
+          ],
+          "facts": [
+            {
+              "text": "The Office of Human Resource and Establishment is described as covering recruitment, benefits administration, professional development, employee relations and payroll enquiries.",
+              "source": "/about-us/administrative-offices"
+            }
+          ]
+        },
+        {
+          "id": "pay-documents",
+          "question": "I need a salary certificate, an employment letter or a Form 16",
+          "team": "human-resources",
+          "unanswered": "No route is published for any employment document. A bank, a landlord and a visa office all ask for one of these, and an employee has nothing to point at.",
+          "links": [
+            {
+              "label": "The examinations route, for comparison: the university publishes a request form, a fee and a turnaround for a student's documents",
+              "route": "/academics/student-assistance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leave",
+      "title": "Leave",
+      "summary": "Entitlement, applying, and being away for longer than a day.",
+      "items": [
+        {
+          "id": "leave-entitlement",
+          "question": "How much leave do I have?",
+          "team": "human-resources",
+          "unanswered": "No leave entitlement of any kind is published — not casual, earned, sick, maternity, paternity, study or sabbatical. This is the largest single gap on this page: an employee plans a year around these numbers, and a plausible-looking guess is worse than a blank, so this page will not print one."
+        },
+        {
+          "id": "leave-apply",
+          "question": "How do I apply for leave?",
+          "team": "human-resources",
+          "answer": [
+            "Through HROne, which is the employee system for leave and attendance. It needs an institutional sign-in and is not reachable from the public site.",
+            "Who approves a leave request, how long approval takes and what happens when it is refused are not published."
+          ],
+          "links": [
+            {
+              "label": "HROne",
+              "service": "hrone",
+              "note": "institutional sign-in"
+            }
+          ]
+        },
+        {
+          "id": "leave-long",
+          "question": "I need maternity, paternity, medical or long leave",
+          "team": "human-resources",
+          "unanswered": "Nothing is published: no entitlement, no notice period, no evidence required, no effect on pay, and no route separate from ordinary leave. Statutory maternity benefit applies to the university whether or not it publishes a policy, so the absence here is a publication gap and not an entitlement one."
+        }
+      ]
+    },
+    {
+      "id": "appointment",
+      "title": "Your appointment",
+      "summary": "The terms you are employed on, probation, and confirmation.",
+      "items": [
+        {
+          "id": "appointment-terms",
+          "question": "Where are my conditions of service?",
+          "team": "human-resources",
+          "unanswered": "The university publishes no service rules and no staff handbook. Your letter of appointment is the only statement of your terms that exists, and this page cannot summarise a document it has never seen.",
+          "links": [
+            {
+              "label": "Faculty and staff hub — what the university does publish for employees",
+              "route": "/faculty-staff"
+            }
+          ]
+        },
+        {
+          "id": "appointment-probation",
+          "question": "When does my probation end, and how am I confirmed?",
+          "team": "human-resources",
+          "unanswered": "No probation term, confirmation process or notice period is published."
+        },
+        {
+          "id": "appointment-who",
+          "question": "Who makes an appointment, and who signs it off?",
+          "team": "registrar",
+          "answer": [
+            "Academic and administrative appointments are overseen by the Registrar's Office, which is also where policy implementation sits.",
+            "The steps between a vacancy and a signed letter — who approves a post, who sits on a selection committee, who issues the letter — are not published."
+          ],
+          "facts": [
+            {
+              "text": "The Registrar's Office is described as overseeing academic and administrative appointments, driving policy implementation, and serving as the link between faculty, students and the administrative units.",
+              "source": "/about-us/administrative-offices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appraisal",
+      "title": "Appraisal and promotion",
+      "summary": "How your work is reviewed, and how you move up.",
+      "items": [
+        {
+          "id": "appraisal-cycle",
+          "question": "How am I appraised, and when?",
+          "team": "human-resources",
+          "unanswered": "No appraisal cycle, form, criteria or reviewer is published. HROne is described as covering performance among other things; nothing says what it asks for or when."
+        },
+        {
+          "id": "appraisal-promotion",
+          "question": "How do I apply for promotion?",
+          "team": "human-resources",
+          "unanswered": "No promotion route, eligibility rule, cadre structure or academic-progression scheme is published. For a teaching post this is normally governed by a published scheme, and none is on the university's site."
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "title": "Provident fund, gratuity and benefits",
+      "summary": "The statutory and contractual things that are not salary.",
+      "items": [
+        {
+          "id": "benefits-what",
+          "question": "What benefits do I have?",
+          "team": "human-resources",
+          "unanswered": "Benefits administration is named as one of the HR office's functions and not one benefit is named anywhere. That is the whole of what the university publishes on the subject.",
+          "facts": [
+            {
+              "text": "Benefits administration is listed among the HR office's functions, alongside recruitment, professional development and employee relations.",
+              "source": "/about-us/administrative-offices"
+            }
+          ]
+        },
+        {
+          "id": "benefits-pf",
+          "question": "Where is my provident fund, and what is my UAN?",
+          "team": "human-resources",
+          "unanswered": "No provident-fund reference of any kind is published: no establishment code, no route to your Universal Account Number, and nothing about transferring a fund in from a previous employer."
+        },
+        {
+          "id": "benefits-gratuity",
+          "question": "What about gratuity, and what happens when I retire?",
+          "team": "human-resources",
+          "unanswered": "No gratuity term, superannuation age or retirement process is published."
+        }
+      ]
+    },
+    {
+      "id": "joining-and-leaving",
+      "title": "Joining and leaving",
+      "summary": "The first week, and the last one.",
+      "items": [
+        {
+          "id": "joining-day-one",
+          "question": "I am new. What do I need on my first day?",
+          "team": "human-resources",
+          "unanswered": "No onboarding checklist is published: nothing on which accounts you get, who creates them, what identity documents to bring, or who shows you the campus. The intranet service registry says which services an employee may hold; nothing says how or when they arrive.",
+          "links": [
+            {
+              "label": "Report a problem, request a service — the computing side of the same first week",
+              "href": "../help/"
+            }
+          ]
+        },
+        {
+          "id": "leaving",
+          "question": "I am leaving. What do I have to do?",
+          "team": "human-resources",
+          "unanswered": "No notice period, clearance process, exit interview, final-settlement timetable or account-closure route is published. Leaving is the point at which an employee most needs a written process and there is none."
+        }
+      ]
+    },
+    {
+      "id": "grievance",
+      "title": "Raising a grievance as an employee",
+      "summary": "Where a complaint about your employment goes, and where harassment goes.",
+      "items": [
+        {
+          "id": "grievance-employment",
+          "question": "I have a grievance about my employment",
+          "team": "employee-grievance-committee",
+          "answer": [
+            "The Employee Grievance Redressal Committee is the body for this. It is constituted under Clause 30(2) of the University Statutes, and its published constitution states its purpose plainly: to ensure transparency, to prevent unfair practices, and to provide a mechanism to all employees for the redressal of their grievances.",
+            "The committee's membership is published in that document — it is chaired by the Vice-Chancellor and includes the Director of HR and the Registrar. What is not published is how you reach it: no address, no form, no timetable and no statement of what happens after a grievance is submitted."
+          ],
+          "facts": [
+            {
+              "text": "An Employee Grievance Redressal Committee exists and its constitution, with its membership, is published as a document on the university's own information index.",
+              "source": "/student-information"
+            }
+          ],
+          "links": [
+            {
+              "label": "Employee Grievance Redressal Committee — the published constitution",
+              "href": "/media/mitwpu-public/documents/30/300ca92e332e1065-Employee-grievance-redressal-committee.pdf",
+              "note": "PDF"
+            },
+            {
+              "label": "Grievance redressal — every committee, students' and employees'",
+              "href": "/grievance-redressal/"
+            }
+          ]
+        },
+        {
+          "id": "grievance-harassment",
+          "question": "I want to report harassment or discrimination",
+          "team": "internal-complaints-committee",
+          "answer": [
+            "The Internal Complaints Committee takes complaints from employees as well as students, and it publishes an address to write to — which makes it the only employee-facing complaint route on this page that a person can actually use today.",
+            "Its published membership names a chairperson and members. Nothing is published about what happens after a complaint is sent, or in what time."
+          ],
+          "facts": [
+            {
+              "text": "All employees and students of MIT-WPU may email icc@mitwpu.edu.in with a complaint or a suggestion.",
+              "source": "/student-affairs/internal-complaints-committee"
+            }
+          ],
+          "links": [
+            {
+              "label": "Internal Complaints Committee",
+              "route": "/student-affairs/internal-complaints-committee"
+            },
+            {
+              "label": "Grievance redressal — the committees, and what each one is for",
+              "href": "/grievance-redressal/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recruitment",
+      "title": "Recruiting into your unit",
+      "summary": "For a head of department or a principal investigator with a post to fill.",
+      "items": [
+        {
+          "id": "recruitment-advertise",
+          "question": "My school or department wants to advertise a post",
+          "team": "human-resources",
+          "answer": [
+            "Recruitment is named as one of the HR office's functions, and the university's public careers page is where an open post is advertised — every school, department, institute and facility publishes into the same place.",
+            "How a post is created and approved before it can be advertised — the establishment side of the HR office's own name — is not published."
+          ],
+          "facts": [
+            {
+              "text": "Recruitment is listed first among the HR office's functions.",
+              "source": "/about-us/administrative-offices"
+            }
+          ],
+          "links": [
+            {
+              "label": "Careers — every open post at the university",
+              "route": "/career"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "unpublished": [
+    {
+      "name": "Employee service rules, or a staff handbook",
+      "note": "conditions of service, leave, promotion and benefits in one place; nothing on the university's site links to such a document",
+      "source": "/faculty-staff"
+    },
+    {
+      "name": "An employee code of conduct",
+      "note": "the student code of conduct is published and there is no counterpart for staff; the student one was deliberately not relabelled",
+      "source": "/faculty-staff"
+    },
+    {
+      "name": "A leave policy",
+      "note": "no entitlement, notice period or approval route for any kind of leave",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "A payroll calendar",
+      "note": "no pay date, pay cycle or payslip route",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "An appraisal and promotion scheme",
+      "note": "no cycle, criteria, reviewer or progression route for teaching or professional staff",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "A provident fund and gratuity note",
+      "note": "no establishment reference, no route to a UAN, nothing on transferring a fund in",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "An onboarding checklist",
+      "note": "nothing on which accounts a new employee gets, who creates them, or what to bring on the first day",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "An exit and clearance process",
+      "note": "no notice period, clearance, exit interview or final-settlement timetable",
+      "source": "/about-us/administrative-offices"
+    },
+    {
+      "name": "A route to the Employee Grievance Redressal Committee",
+      "note": "the committee and its membership are published; how an employee submits a grievance to it is not",
+      "source": "/student-information"
+    },
+    {
+      "name": "A recruitment and establishment procedure",
+      "note": "how a post is created, approved and released for advertisement, which is the establishment half of the HR office's own name",
+      "source": "/about-us/administrative-offices"
+    }
+  ],
+
+  "directories": [
+    {
+      "label": "Administrative offices",
+      "route": "/about-us/administrative-offices",
+      "note": "the HR office, the Registrar, and one email each"
+    },
+    {
+      "label": "Leadership and governance",
+      "route": "/about-us/leadership-and-governance/leadership",
+      "note": "who holds each office"
+    },
+    {
+      "label": "Committee papers, including the employee grievance committee",
+      "route": "/student-information",
+      "note": "published constitutions"
+    },
+    {
+      "label": "Internal Complaints Committee",
+      "route": "/student-affairs/internal-complaints-committee",
+      "note": "employees and students"
+    },
+    {
+      "label": "Faculty and staff hub",
+      "route": "/faculty-staff",
+      "note": "the public employee-facing surface"
+    },
+    {
+      "label": "Careers",
+      "route": "/career",
+      "note": "every open post"
+    }
+  ]
+}

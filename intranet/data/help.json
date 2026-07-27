@@ -711,15 +711,14 @@
           "team": "human-resources",
           "answer": [
             "The Human Resources Office covers recruitment, benefits, professional development, employee relations and payroll enquiries, and publishes one email address.",
-            "The university says it runs an HR management system for payroll, attendance, performance and records. It does not say where that system is, so an employee cannot reach it from anything the university publishes."
+            "Pay, leave, appointments, appraisal and the systems you sign in to are on the HR page of this intranet, which also records what the university has not published."
           ],
-          "facts": [
-            {
-              "text": "The careers page describes a technology-driven HRMS covering payroll, attendance tracking, performance evaluation and digital record-keeping, and gives no address for it.",
-              "source": "/career"
-            }
-          ],
+          "facts": [],
           "links": [
+            {
+              "label": "Human Resources",
+              "route": "/intranet/hr"
+            },
             {
               "label": "Administrative offices",
               "route": "/about-us/administrative-offices"

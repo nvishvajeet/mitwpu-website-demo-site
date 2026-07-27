@@ -285,9 +285,85 @@
   text-align: right;
 }
 
+.access-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line-dark);
+  list-style: none;
+  counter-reset: access-step;
+}
+
+.access-steps li {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 8px;
+  padding: 28px 32px 30px 0;
+  border-bottom: 1px solid var(--line);
+  counter-increment: access-step;
+}
+
+.access-steps li + li {
+  padding-left: 32px;
+  border-left: 1px solid var(--line);
+}
+
+.access-steps strong::before {
+  content: "0" counter(access-step) " / ";
+  color: var(--blue);
+}
+
+.access-steps span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.access-client-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.access-client-grid article {
+  min-height: 220px;
+  padding: 30px;
+  background: var(--paper);
+}
+
+.access-client-grid h3 {
+  margin-bottom: 12px;
+}
+
+.access-client-grid p:last-child,
+.access-pilot-note {
+  color: var(--muted);
+}
+
+.access-client-grid code {
+  font-size: 0.9em;
+}
+
 @media (max-width: 760px) {
   .instrument-grid {
     grid-template-columns: 1fr;
+  }
+
+  .access-steps,
+  .access-client-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-steps li,
+  .access-steps li + li {
+    padding: 24px 0;
+    border-left: 0;
+  }
+
+  .access-client-grid article {
+    min-height: 0;
   }
 
   .capability-system-list,

@@ -56,7 +56,7 @@
           "local": "forms/"
         },
         {
-          "label": "Work with us",
+          "label": "Careers",
           "local": "career/"
         },
         {
@@ -134,7 +134,7 @@
     {
       "label": "Legal and policy",
       "hide_heading": false,
-      "note": "The rules the university publishes and the undertakings it gives, as against the previous group's routes to a person. `Ragging prevention programme` is the published zero-tolerance programme and its helpline rather than a committee; the capitation-fee disclaimer is an undertaking about how admission works; the Disciplinary Committee is the conduct body. Then the three the website itself owes a reader. The heading is two words because the column is 172px wide at 1280 and an uppercase heading longer than about seventeen characters wraps to two lines, which drops this column's first link below its neighbours' — `Policies and disclosures` and `Policy and conduct` were both tried and both wrapped.",
+      "note": "The rules the university publishes and the undertakings it gives, as against the previous group's routes to a person. `Ragging prevention programme` is the published zero-tolerance programme and its helpline rather than a committee; the capitation-fee disclaimer is an undertaking about how admission works; the Disciplinary Committee is the conduct body. Then the three the website itself owes a reader. The heading is two words because the column is 172px wide at 1280 and an uppercase heading longer than about seventeen characters wraps to two lines, which drops this column's first link below its neighbours' — `Policies and disclosures` and `Policy and conduct` were both tried and both wrapped.\n\nCookies and storage replaced Copyright here on 27 July 2026, and the swap is the group's six-link ceiling doing its job rather than a judgement that copyright matters less. Twenty-five links wrap: measured, the seventh entry pushed this column onto a second row spanning three tracks, which is the exact defect the four-column rebalance fixed hours earlier. Copyright was the one entry that loses least by going, because every page already carries the notice itself in the line below this grid, and /copyright-statement/ is still reached from /research/ipr/ and the sitemap. A cookie statement has no such second route and is the page a reader looks for in a footer by convention. The real fix is a package grid that lays out five columns; this file cannot do it, and the note above already records that debt.",
       "links": [
         {
           "label": "Ragging prevention programme",
@@ -153,8 +153,8 @@
           "local": "privacy-policy/"
         },
         {
-          "label": "Copyright",
-          "local": "copyright-statement/"
+          "label": "Cookies and storage",
+          "local": "cookies/"
         },
         {
           "label": "Accessibility",
