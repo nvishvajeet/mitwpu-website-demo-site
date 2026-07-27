@@ -45,10 +45,17 @@
   // traversal from an arrival is that the traversal is still MOVING. So the
   // delay is armed on entry and re-armed on every `mousemove` that carries the
   // pointer more than a few pixels: it elapses only where the pointer has come
-  // to rest. Crossing an entry at any speed opens nothing, however slowly;
-  // stopping on one opens it in under a tenth of a second. Together the two
-  // constants say "slower than about 45px/s counts as stopped", which no
-  // deliberate traversal of a masthead is.
+  // to rest. Crossing an entry opens nothing at any ordinary speed; stopping
+  // on one opens it in under a tenth of a second.
+  //
+  // Together the two constants put the boundary at roughly 4px per 90ms. What
+  // that works out to in practice was swept rather than assumed, because the
+  // browser coalesces pointer moves and the arithmetic is only a lower bound:
+  // a sweep of the whole bar opens nothing down to about 110px/s, and starts
+  // opening entries in turn below about 65px/s. The slow end of that is a
+  // reader taking ten seconds to cross a masthead, where each panel then
+  // stands for well over a second — a menu answering, not a flash. Every
+  // traversal quick enough to read as one falls on the closed side.
   //
   // This also retires the old exemption where an entry with no open sibling
   // revealed synchronously. It existed to keep the first hover instant, but it
@@ -63,9 +70,20 @@
 
   // One owner may be a top-level `.uwp-nav-item` (nav-item, nav-cascade or
   // nav-mega — the mega panel differs only in CSS) or a cascade's
-  // `.uwp-nav-branch`. Opening and closing always go through these two, so
-  // the disclosure button's aria-expanded tracks every path that reveals a
-  // panel — hover, click, arrow keys — not only its own clicks.
+  // `.uwp-nav-branch`. Every path that sets `.is-open` goes through here, so
+  // the disclosure button's aria-expanded tracks hover, click and the arrow
+  // keys alike, not only its own clicks.
+  //
+  // It does NOT track the fourth path, and this comment used to claim it
+  // tracked them all. patterns.css also reveals a panel on `:focus-within`,
+  // which sets no class and so never reaches this function: Tab to a top-level
+  // entry and the panel appears on screen while its button still reports
+  // `aria-expanded="false"`. Measured, not inferred — see the keyboard trace in
+  // the 2026-07-27 hover investigation. Left alone here because correcting it
+  // is an accessibility-semantics change that must not ride along with a
+  // pointer-timing fix: the obvious repair, calling setOpen from `focusin`,
+  // breaks click-to-open, since focus reaches the disclosure button before its
+  // own click handler runs and the click then reads `.is-open` as already true.
   const setOpen = (owner, open) => {
     owner.classList.toggle("is-open", open);
     if (open) owner.classList.remove("is-dismissed");
