@@ -2,9 +2,16 @@
   color-scheme: light;
   --ink: #172232;
   --muted: #5a6675;
-  --paper: #fcfbf8;
+  /* Warm ground, one step deeper than the #fcfbf8 these two pages have
+     carried on their own since before the rest of the site agreed with
+     them. #f9f7f1 is now the whole public site's paper — see
+     demo-assets/site.css?v=20260725-global-nav-8-cascade for why that value and not a sibling's #f7f4ed.
+     --surface stays white: here the card is what lifts off the page, and
+     a deeper ground gives it more to lift from, not less. --tint warms to
+     match, or it reads as a cool patch on a warm sheet. */
+  --paper: #f9f7f1;
   --surface: #ffffff;
-  --tint: #f2f5f7;
+  --tint: #f0ece2;
   --navy: #102f55;
   --navy-light: #1d4d7d;
   --photo-accent: #2d6786;

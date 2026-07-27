@@ -18,9 +18,13 @@
   --solid-blue-hover: #204e67;
   --photo-accent: #2d6786;
   --blue-pale: #edf3f6;
-  --paper: #ffffff;
-  --subtle: #f8fafb;
-  --topbar: #f3f7fa;
+  /* Warm ground. Same values and the same reasoning as demo-assets/site.css?v=20260725-global-nav-8-cascade —
+     read the note there; it is not repeated in five files. --muted is already
+     #5e6c78 here, which measures 5.04:1 on the new paper and 4.73:1 on the new
+     tint, so this palette needed no darkening. */
+  --paper: #f9f7f1;
+  --subtle: #f3f0e7;
+  --topbar: #f1ede2;
   --institution: #1e3a6e;
   --gold: #f3be34;
   --line: #d7dfe5;
@@ -32,7 +36,13 @@
   --footer: #274257;
   --focus: #9dc4de;
   --switch-knob: #ffffff;
-  --shell: 1180px;
+  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+     dense grids stop wrapping their labels to a third line and no prose
+     measure changes, because every reading measure on this site is capped
+     independently of the shell. Keep this in step with
+     demo-assets/global-masthead.css --mitwpu-masthead-width, or the bar
+     stops aligning with the page under it. */
+  --shell: 1280px;
   --institution-bar-height: 112px;
   --site-header-height: 80px;
   --page-hero-height: 272px;

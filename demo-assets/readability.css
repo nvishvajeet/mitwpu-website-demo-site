@@ -11,9 +11,38 @@ html {
   text-size-adjust: 100%;
 }
 
-body {
+/* The size and the leading are a FLOOR, and the floor is written at zero
+ * specificity so it can only ever raise a page, never lower one.
+ *
+ * This sheet is loaded last on all 2,822 pages, deliberately, so that the
+ * accessibility guarantees below cannot be out-ordered. But `body { font-size:
+ * max(1rem, 16px) }` at ordinary specificity is not a floor when it is loaded
+ * last — it is a ceiling, because `max(1rem, 16px)` cannot evaluate above 16px
+ * and it beat every page family's own declaration on source order alone.
+ * Eight stylesheets set a body size (demo-assets, group-assets, people,
+ * science, search, university-sections, public-surface all at 18px; academics
+ * at 17px/28px) and every one of them was silently rendering at 16px/1.6.
+ * The site was being served a size smaller than it was drawn at, everywhere,
+ * and nothing said so: the declaration is present in DevTools and simply
+ * struck through in a sheet nobody was looking at.
+ *
+ * `:where()` has zero specificity, so a page family's own `body` rule now
+ * wins, while a page that declares nothing still gets 16px. That is what the
+ * comment above this block always claimed the layer did — "individual page
+ * families retain their visual identity" — and the package's own
+ * readability.css already writes its control floors this way for exactly this
+ * reason. The two copies of the same idea had drifted; this is the client one
+ * catching up.
+ *
+ * font-synthesis and text-rendering stay at ordinary specificity: those are
+ * not floors, they are the release's blanket rendering policy, and no page
+ * family should be quietly opting out of them. */
+:where(body) {
   font-size: max(1rem, 16px);
   line-height: 1.6;
+}
+
+body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -63,7 +92,9 @@ body {
 }
 
 @media (max-width: 42rem) {
-  body {
+  /* Same reasoning as the floor above: zero specificity, so a page family that
+     has chosen its own phone leading keeps it. */
+  :where(body) {
     line-height: 1.62;
   }
 

@@ -2,10 +2,13 @@
   --ink: #172d3d;
   --heading: #173a55;
   --copy: #405765;
-  --muted: #61727d;
-  --paper: #fff;
-  --surface: #f4f7f8;
-  --surface-strong: #e9eff2;
+  /* Warm ground; see demo-assets/site.css?v=20260725-global-nav-8-cascade for the whole argument. --muted
+     darkens one step for the same reason it does there: #61727d measured
+     4.39:1 on the new paper, under AA. */
+  --muted: #5c6a76;
+  --paper: #f9f7f1;
+  --surface: #f3f0e7;
+  --surface-strong: #eae5d7;
   --blue: #1f5d81;
   --blue-dark: #143f5a;
   --navy: #173456;
@@ -14,7 +17,13 @@
   --line: #ccd8de;
   --footer: #102b40;
   --focus: #176d99;
-  --max: 73.75rem;
+  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+     dense grids stop wrapping their labels to a third line and no prose
+     measure changes, because every reading measure on this site is capped
+     independently of the shell. Keep this in step with
+     demo-assets/global-masthead.css --mitwpu-masthead-width, or the bar
+     stops aligning with the page under it. */
+  --max: 80rem;
   color-scheme: light;
 }
 

@@ -26,9 +26,22 @@
   --mitwpu-masthead-gold: #d8a72c;
   --mitwpu-masthead-height: 115px;
   --mitwpu-masthead-content-height: 112px;
-  --mitwpu-masthead-width: 1180px;
+  /* 1280, and it MUST equal the page's `--shell`. The bar is aligned to the
+   * page below it, not sized on its own account, so these two move together
+   * or the crest stops sitting over the first word of the content. See
+   * demo-assets/site.css?v=20260725-global-nav-8-cascade for why the measure widened.
+   *
+   * The bar is the one part of this site that was measurably short of room at
+   * 1180: the arithmetic further down this file works out that the one-row
+   * demand is 1065.5px against a 1180px measure, which is 114.5px of slack,
+   * and it is why the search input is drawn as a magnifier and not a field.
+   * 1280 hands it 100px more. Nothing below is retuned to spend that — the
+   * fallback bands still fire at the same viewports, so they now fire with
+   * more headroom than they need, which is the safe direction to be wrong
+   * in. */
+  --mitwpu-masthead-width: 1280px;
   /* The gutter the PAGE uses, not a gutter of the bar's own. `.shell` below
-   * the masthead is `min(100% - 48px, 1180px)`; this band was
+   * the masthead is `min(100% - 48px, 1280px)`; this band was
    * `calc(100% - 100px)` and so sat 26px inside the page it heads at every
    * width narrow enough for the cap not to bind — measured at 897px: content
    * at x=24 across 849px, masthead at x=50 across 797px. Matching the page
@@ -311,12 +324,26 @@
 }
 
 /* ---- Drop-down, fly-out and mega panels ---------------------------------- *
- * White panels under a gold rule. The package positions and reveals them; this
+ * Pale panels under a gold rule. The package positions and reveals them; this
  * only paints them, because the panels hang off a navy bar and inherit its ink
- * otherwise. */
+ * otherwise.
+ *
+ * #fdfcf9, not #ffffff. These panels used to be the same white as the page
+ * behind them, so the only thing separating a 916px mega panel from the
+ * content it covered was its drop shadow. Now that the page ground is warm
+ * (#f9f7f1 — see demo-assets/site.css?v=20260725-global-nav-8-cascade) a panel needs to be lighter than the
+ * page to read as floating above it, and pure white overshoots: a cold
+ * rectangle punched out of a warm sheet. #fdfcf9 is the same hue as the paper,
+ * two steps lighter, so it lifts on luminance without changing temperature.
+ *
+ * KNOWN, AND NOT FIXED HERE: this value is `!important` and theme-blind, so
+ * the panel is this pale colour in the DARK theme too, where it should be a
+ * dark surface. That bug predates the warm ground and is unchanged by it —
+ * the panel was pure white in dark mode before and is near-white now. It wants
+ * a --uwp-* token rather than a literal, which is a separate change. */
 [data-global-masthead] .uwp-nav-menu {
   color: #16324f !important;
-  background: #ffffff !important;
+  background: #fdfcf9 !important;
   border: 1px solid #d3dbe3 !important;
   border-top: 3px solid var(--mitwpu-masthead-gold) !important;
   box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
@@ -340,7 +367,7 @@
 
 [data-global-masthead] .uwp-nav-flyout {
   color: #16324f !important;
-  background: #ffffff !important;
+  background: #fdfcf9 !important;
   border: 1px solid #d3dbe3 !important;
   box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
 }
@@ -369,7 +396,7 @@
  * same edge the theme switch above it sits on, so it reads as belonging to
  * the navigation block it dropped out of and it cannot leave the shell. The
  * `right` expression is the bar's own gutter arithmetic — half of whatever
- * the 1180px cap leaves over, floored at the 24px the narrow bands use — and
+ * the 1280px cap leaves over, floored at the 24px the narrow bands use — and
  * `max-width` stops a future panel growing past the measure.
  *
  * With this in force `placeMega` measures no spill and adds nothing, which is
@@ -567,7 +594,7 @@
 /* ---- Search field -------------------------------------------------------- *
  * The package draws the pill from `currentColor`, so on this navy bar it needs
  * no palette override at all — only the two things the release fixes: how wide
- * the input is allowed to be in a band whose measure is capped at 1180px, and
+ * the input is allowed to be in a band whose measure is capped at 1280px, and
  * that its type matches the navigation's sans rather than the page's serif.
  *
  * The 16px input size is not a preference: below it, iOS zooms the whole page
@@ -608,9 +635,9 @@
  * AND ON THIS BAR IT IS NOT DRAWN AT ALL — the rule below hides the input at
  * every width and leaves the magnifier, which is the decision the one-row bar
  * turns on, so here is the arithmetic that forced it. The measure never
- * exceeds 1180px. Seven entries at 15px want 687.5px; the crest and the
+ * exceeds 1280px. Seven entries at 15px want 687.5px; the crest and the
  * wordmark want 258px; two column gaps want 32px. That is 977.5px before any
- * control, and 1180 − 977.5 = 202.5px is what the controls may have. The
+ * control, and 1280 − 977.5 = 302.5px is what the controls may have. The
  * theme switch is 44px and is not negotiable — it is a 44px target for a
  * site-wide setting with nowhere else to live. A 46px submit button and its
  * gap bring the cluster to 104px and leave 98px of slack on the widest bar
@@ -846,7 +873,11 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
  * line is the one thing on a university's site that is not allowed to be a
  * compromise. What follows is the collision solved instead of routed around.
  *
- * THE ARITHMETIC. The measure is `min(viewport - 48px, 1180px)`. The demand
+ * THE ARITHMETIC. The measure is `min(viewport - 48px, 1280px)`. The demand
+ * figures below were taken when the cap was 1180px and are unchanged by
+ * widening it: only the top two rows of the table move, and both move in the
+ * direction of more slack. They are kept as measured rather than recomputed
+ * because the bands they justify are unchanged.
  * is the lockup, the seven entries at 15px, the control cluster, and two
  * column gaps. Every number below is measured in the browser, not estimated.
  *
@@ -860,8 +891,8 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
  * where each of those fits:
  *
  *   viewport   measure   demand   slack   band
- *     1440       1180     1065.5   114.5  crest + name
- *     1280       1180     1065.5   114.5  crest + name
+ *     1440       1280     1065.5   214.5  crest + name
+ *     1280       1232     1065.5   166.5  crest + name
  *     1200       1152     1065.5    86.5  crest + name
  *     1136       1088     1065.5    22.5  crest + name  (bottom of the band)
  *     1100       1052      899.5   152.5  crest
@@ -1003,7 +1034,7 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
 /* ---- The lockup where the bar has room for all of it --------------------- *
  * Nothing moves here. The wordmark returns, the gaps open by four pixels, and
  * that is the whole of it: the row is the same row at 1136px and at 1440px,
- * because the measure is capped at 1180px and stops changing at 1228px.
+ * because the measure is capped at 1280px and stops changing at 1328px.
  */
 @media (min-width: 71rem) {
   [data-global-masthead] > .global-masthead__inner {

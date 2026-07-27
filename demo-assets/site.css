@@ -1,12 +1,44 @@
+/* The ground is warm, not white.
+ *
+ * #f9f7f1 rather than #ffffff. A warm ground gives a photograph an edge to sit
+ * against instead of floating on nothing, and takes the glare off a page of
+ * Charter at 18px without touching a single text colour's weight. This site
+ * already believed it in two places — campus-life and the Wagtail directory
+ * have been on #fcfbf8 for months — and the rest of it was still white.
+ *
+ * It is NOT the #f7f4ed a sibling concept uses. That value is pitched for a
+ * coral-and-teal palette and is a visibly yellow paper; against this
+ * institution's navy masthead and cool blue links it reads dun rather than
+ * warm, and it costs enough luminance to push --muted under 4.5:1. #f9f7f1 is
+ * two steps lighter and a little less saturated: warm at a glance beside white,
+ * still unmistakably paper rather than cream.
+ *
+ * --subtle moves with it and keeps the SAME relationship it had. The page
+ * alternates ground between bands — hero tinted, Latest on paper, the
+ * directory tinted again — and that alternation is doing the work of the band
+ * rhythm (see the note above .activity). White-to-#f6f8f9 was a 1.065
+ * luminance step; #f9f7f1-to-#f3f0e7 is 1.064. The rhythm is unchanged; only
+ * the hue moved.
+ *
+ * --muted darkened one step, and this is the part a warm ground makes
+ * mandatory rather than optional. #657682 measured 4.70:1 on white and 4.41:1
+ * on the old tint — already under AA on the tinted bands, which nobody had
+ * caught — and 4.13:1 on the new one. #5c6a76 is 5.19:1 on paper and 4.88:1 on
+ * the tint, so metadata, event dates and card labels clear 4.5:1 on BOTH
+ * grounds for the first time. It is a two-step darkening; side by side you
+ * cannot see it.
+ *
+ * The dark theme below is untouched. It has its own ground and nothing here
+ * reaches it. */
 :root {
-  --paper: #ffffff;
-  --subtle: #f6f8f9;
+  --paper: #f9f7f1;
+  --subtle: #f3f0e7;
   --institution: #1e3a6e;
   --institution-deep: #162d58;
   --ink: #20303b;
   --heading: #274257;
   --copy: #4a5d6b;
-  --muted: #657682;
+  --muted: #5c6a76;
   --blue: #2d6786;
   --blue-dark: #204e67;
   --solid-blue: #2d6786;
@@ -19,7 +51,13 @@
   --line-strong: #b8c5cd;
   --focus: #185f86;
   --switch-knob: #ffffff;
-  --shell: 1180px;
+  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+     dense grids stop wrapping their labels to a third line and no prose
+     measure changes, because every reading measure on this site is capped
+     independently of the shell. Keep this in step with
+     demo-assets/global-masthead.css --mitwpu-masthead-width, or the bar
+     stops aligning with the page under it. */
+  --shell: 1280px;
   color-scheme: light;
 }
 
@@ -954,6 +992,104 @@ h3 {
   margin: 32px 0 0;
 }
 
+/* ── the faculty band ────────────────────────────────────────────────
+ *
+ * The page's one full-bleed element. See the long note in index.html for why
+ * it is the faculties and why there is exactly one of these; this comment is
+ * about how it is drawn.
+ *
+ * NO .shell. Every other band on this page wraps its contents in
+ * `min(100% - 48px, 1180px)`; this one does not, and that omission is the
+ * whole treatment. The four columns divide the WINDOW, so the first one opens
+ * at the left edge and the last closes at the right, and the band is visibly
+ * a different kind of thing from the measure-width sections above and below
+ * it. Add a .shell here and it becomes a fifth ordinary band with unusual
+ * rules.
+ *
+ * The columns' inner padding is what keeps that from reading as an accident.
+ * At 1440 it is 38px, so the first column's text starts at x=38 against the
+ * x=130 of everything else — close enough to the edge to be obviously
+ * deliberate, far enough from it to breathe. Their text does not align with
+ * the page's measure and must not: a full-bleed band that lines up with the
+ * measure is doing neither job.
+ *
+ * The rules are hairlines on three sides and between every column, which is
+ * the second half of the treatment — the band is DIVIDED, not four cards with
+ * gaps. `gap` would leave the ground showing through and turn four columns
+ * into four tiles, which is the shape this page is deliberately not.
+ *
+ * 200px minimum. The band has to be tall enough that the break in rhythm is a
+ * pause and not a stumble; below about 180 it reads as a wide row rather than
+ * a band, and the four names stop carrying.
+ *
+ * Below 60rem it becomes two columns, then one, and the between-column rules
+ * become between-row rules — because at phone width "full-bleed" is what every
+ * band already is, so the only thing left distinguishing this one is the
+ * ruling. */
+.faculty-band {
+  background: var(--paper);
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.faculty-band__label {
+  margin: 0;
+  padding: 26px clamp(24px, 2.6vw, 38px) 0;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.faculty-band__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.faculty-band__item {
+  display: grid;
+  min-height: 200px;
+  align-content: start;
+  gap: 12px;
+  padding: 30px clamp(24px, 2.6vw, 38px) 36px;
+  color: var(--ink);
+  border-left: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.faculty-band__item:first-child {
+  border-left: 0;
+}
+
+.faculty-band__item strong {
+  display: block;
+  max-width: 18ch;
+  color: var(--heading);
+  font-size: clamp(1.3rem, 2vw, 1.72rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+}
+
+.faculty-band__item span {
+  display: block;
+  max-width: 34ch;
+  color: var(--copy);
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.faculty-band__item:hover {
+  background: var(--subtle);
+}
+
+.faculty-band__item:hover strong {
+  color: var(--blue);
+}
+
 .directory {
   padding-block: 80px 88px;
   background: var(--subtle);
@@ -1001,29 +1137,35 @@ h3 {
   border-top: 1px solid var(--line-strong);
 }
 
-/* The faculty row above the three groups. It is one group, not a fourth
-   column: there are four faculties and three columns, and adding it to
-   `.directory-groups` would leave the last one alone on a second row. Two
-   columns rather than four because these are the longest labels on the page —
-   "Faculty of Design Humanities and Liberal Arts" is 44 characters, which at a
-   quarter of the measure wraps to three lines and stops looking like one
-   destination. */
-.directory-group--faculties {
-  margin-bottom: 52px;
-}
+/* `.directory-group--faculties` and `.link-list--split` were the faculty row
+   inside this directory: one group rather than a fourth column, split two-up
+   because "Faculty of Design Humanities and Liberal Arts" is 44 characters and
+   wraps to three lines at a quarter of the measure. Both selectors are gone
+   because the tier is no longer in the directory — it is `.faculty-band`
+   above, where four columns is the point rather than a problem to work
+   around, and where the labels have the width to sit on two lines. Neither
+   class is used by any other page. */
 
-.link-list--split {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 46px;
-}
-
+/* 76px, not the 104px this row carried before.
+ *
+ * The floor was sized for the faculty labels, which were the longest on the
+ * page — "Faculty of Design Humanities and Liberal Arts" is 44 characters and
+ * ran to two lines, and 104px kept a two-line row and a one-line row the same
+ * height so the columns stayed aligned. Those labels have moved to
+ * .faculty-band and every link left here is one line: "All schools and
+ * departments" is the longest at 27 characters. At 104px each of the seven
+ * remaining rows was carrying 40px of nothing under a single line of text,
+ * and with the faculties gone the whole band read as mostly empty.
+ *
+ * This is the counterweight to the band above it, and it is the point of the
+ * whole spacing pass: air is spent where a page is cramped and taken back
+ * where it is not. A blanket increase would have inflated both. */
 .directory-link {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 18px;
   align-items: start;
-  min-height: 104px;
+  min-height: 76px;
   padding: 20px 2px 18px;
   color: var(--ink);
   border-bottom: 1px solid var(--line);
@@ -1163,8 +1305,25 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
     gap: 48px;
   }
 
-  .link-list--split {
-    grid-template-columns: 1fr;
+  /* Two columns, and the vertical rules become horizontal ones. Four names of
+     this length in four columns at 940px is three lines each; two columns is
+     one or two. The `nth-child(-n+2)` pair keeps the top row without a rule
+     above it, since the band's own border-top is already there. */
+  .faculty-band__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .faculty-band__item {
+    min-height: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .faculty-band__item:nth-child(-n + 2) {
+    border-top: 0;
+  }
+
+  .faculty-band__item:nth-child(odd) {
+    border-left: 0;
   }
 
   .activity-grid {
@@ -1277,6 +1436,28 @@ html.has-scroll-reveal .scroll-reveal.is-visible {
 
   .directory-groups {
     gap: 46px;
+  }
+
+  /* One column on a phone. Full-bleed stops meaning anything here — every band
+     already runs to both edges — so the ruling is the only thing left saying
+     this is one band of four related things rather than four stacked links,
+     and the padding shrinks to the gutter the rest of the page uses. */
+  .faculty-band__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-band__item {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 24px 16px 28px;
+  }
+
+  .faculty-band__item:first-child {
+    border-top: 0;
+  }
+
+  .faculty-band__label {
+    padding: 22px 16px 0;
   }
 
   .directory-link {

@@ -544,6 +544,82 @@
       </div>
     </section>
 
+    <!-- The four faculties, as the page's one full-bleed band.
+         ==================================================================
+         WHAT THIS IS. Every other section on this page is the same shape: a
+         1,180px measure with a ruled heading over a grid. Stacked five deep
+         that is a rhythm with nothing in it — each band announces itself the
+         same way, so none of them announces anything. This one runs to both
+         edges of the window, divides into four equal ruled columns, and is
+         the only element on the page that does. The break is the point, and
+         it only works once: a page of full-bleed bands has no rhythm left to
+         break.
+
+         WHY THE FACULTIES AND NOT SOMETHING ELSE. Three things had to be true
+         at once, and only this set is all three.
+
+         It is four. The treatment is four equal columns; a set of three or
+         five is a different component wearing this one's clothes.
+
+         It is durable. The four faculties change when the university
+         reorganises itself, which is the same cadence as its name. Nothing
+         here is a count, a total or a year — the four figures that stood
+         under the hero until yesterday ("Founded 1983 / UNESCO Chair / 14
+         schools / 607 public profiles") were cut because two of them were
+         hand-typed tallies that are wrong the moment either number moves and
+         nothing makes them move with it. That strip is not coming back and
+         this is not it: these are four destinations, not four assertions.
+         The sentence under each names that faculty's schools and is checkable
+         against academics/data/units.json, which is where the faculty landing
+         pages are generated from.
+
+         It was already the thing a reader arrives knowing. Somebody who wants
+         engineering knows that much and not yet which of the four engineering
+         schools, and a list of thirteen schools makes them read all thirteen
+         to find out. This tier led the directory below for that reason and
+         sat inside it looking like every other link list — which is to say
+         the page already agreed this was the most important set on it and
+         gave it no way to show it.
+
+         WHERE IT SITS. Between the two feeds and the directory, as the hinge:
+         Latest and Events are what the university is doing, the directory is
+         where everything lives, and the faculties are how the second is
+         organised. It is on --paper and the tinted directory follows it, so
+         it is lighter than the section it introduces.
+
+         NOT YET A PACKAGE COMPONENT, DELIBERATELY. university-web-patterns has
+         no full-bleed division band; `page-section` is the nearest thing and is
+         the opposite of this one — its whole job is to put the measure INSIDE
+         the band, and this band's job is to break it, so a `--full-bleed`
+         modifier there would be a component contradicting its own reason to
+         exist. `evidence-strip` is a facts grid and using it for a set of
+         destinations would misname it. So this follows the contribution route
+         in WEB_TEMPLATE_POLICY §5: prove it here first, live with it, then
+         promote it to Template Central as its own component with the
+         institution stripped out. Every institution has a top tier of
+         faculties, colleges or divisions, so it is generic and it is owed. -->
+    <section class="faculty-band" aria-labelledby="faculties-title" data-image-gallery>
+      <h2 class="faculty-band__label" id="faculties-title">Faculties</h2>
+      <div class="faculty-band__grid">
+        <a class="faculty-band__item" href="academics/faculty-of-engineering-and-technology/">
+          <strong>Engineering and Technology</strong>
+          <span>Engineering, computer science, construction management and architecture.</span>
+        </a>
+        <a class="faculty-band__item" href="academics/faculty-of-science-and-health-science/">
+          <strong>Science and Health Sciences</strong>
+          <span>Health sciences and technology; science and environmental studies.</span>
+        </a>
+        <a class="faculty-band__item" href="academics/faculty-of-business-and-leadership/">
+          <strong>Business and Leadership</strong>
+          <span>Business, economics and commerce, government and leadership.</span>
+        </a>
+        <a class="faculty-band__item" href="academics/faculty-of-design-humanities-and-liberal-arts/">
+          <strong>Design, Humanities and Liberal Arts</strong>
+          <span>Design, law, liberal arts and consciousness studies.</span>
+        </a>
+      </div>
+    </section>
+
     <section class="directory" aria-labelledby="explore-title" data-image-gallery>
       <div class="shell">
         <div class="section-heading">
@@ -551,34 +627,6 @@
             <h2 id="explore-title">Explore the university</h2>
           </div>
         </div>
-
-        <!-- The four faculties lead, because they are the tier a reader
-             arrives knowing. Somebody who wants engineering knows that much
-             and not yet which of the four engineering schools; a list of
-             thirteen schools makes them read all thirteen to find out. Each
-             name goes to that faculty's landing page, which carries its
-             schools and their departments. Generated pages do the enumerating
-             — academics/ is the full directory and the faculty landings are
-             built from academics/data/units.json — so the only thing written
-             by hand here is the tier itself, which has four members and
-             changes about as often as the university is reorganised. -->
-        <section class="directory-group directory-group--faculties" aria-labelledby="faculties-title">
-          <h3 id="faculties-title">Faculties</h3>
-          <div class="link-list link-list--split">
-            <a class="directory-link" href="academics/faculty-of-engineering-and-technology/">
-              <strong>Faculty of Engineering and Technology</strong>
-            </a>
-            <a class="directory-link" href="academics/faculty-of-science-and-health-science/">
-              <strong>Faculty of Science and Health Sciences</strong>
-            </a>
-            <a class="directory-link" href="academics/faculty-of-business-and-leadership/">
-              <strong>Faculty of Business and Leadership</strong>
-            </a>
-            <a class="directory-link" href="academics/faculty-of-design-humanities-and-liberal-arts/">
-              <strong>Faculty of Design Humanities and Liberal Arts</strong>
-            </a>
-          </div>
-        </section>
 
         <div class="directory-groups">
           <section class="directory-group" aria-labelledby="academic-title">

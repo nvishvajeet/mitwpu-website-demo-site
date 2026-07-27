@@ -19,7 +19,13 @@
 @import url("../../group-assets/site.css?v=20260725-global-nav-8-cascade");
 
 :root {
-  --shell: 1180px;
+  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+     dense grids stop wrapping their labels to a third line and no prose
+     measure changes, because every reading measure on this site is capped
+     independently of the shell. Keep this in step with
+     demo-assets/global-masthead.css --mitwpu-masthead-width, or the bar
+     stops aligning with the page under it. */
+  --shell: 1280px;
   --academic-masthead-height: 112px;
   --academic-unit-nav-height: 64px;
   --academic-context-height: 44px;
