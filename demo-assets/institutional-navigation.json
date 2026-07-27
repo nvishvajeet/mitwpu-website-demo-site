@@ -65,11 +65,11 @@
           {
             "heading": "Academic services",
             "local": "academics/",
+            "note": "Four links until 27 July 2026. The fourth was `Academic notices` -> `academic-notices/`, and that page was a heading, a one-sentence description of ADMISSION notices, and a bulleted echo of its own breadcrumb. No notices. The masthead put it on all 1,957 pages of the site, which made an empty index the most-linked page in this group. The page is gone; `/academic-notices/` redirects to `/academics/`. Nothing replaced it, because nothing on the site publishes notices: `/exam-notices/` and `/notices-and-announcements/` were the same empty shape and went the same way. When a real notices feed exists it belongs here.",
             "links": [
               { "label": "Academic calendar", "local": "academics/academic-calender/" },
               { "label": "Exam timetable", "local": "academics/exam-timetable/" },
-              { "label": "Ordinances and regulations", "local": "academics/ordinances/" },
-              { "label": "Academic notices", "local": "academic-notices/" }
+              { "label": "Ordinances and regulations", "local": "academics/ordinances/" }
             ]
           }
         ]

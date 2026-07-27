@@ -1,7 +1,7 @@
-@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../group-assets/site.css?v=1384d404869c");
 
 :root {
-  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+  /* 1280, not 1180. See demo-assets/site.css for the evidence: at 1280 the
      dense grids stop wrapping their labels to a third line and no prose
      measure changes, because every reading measure on this site is capped
      independently of the shell. Keep this in step with
@@ -9,7 +9,7 @@
      stops aligning with the page under it. */
   --shell: 1280px;
 
-  /* group-assets/site.css?v=20260725-global-nav-8-cascade calls its heavier rule --line-dark; the package's
+  /* group-assets/site.css calls its heavier rule --line-dark; the package's
      tokens and demo-assets/uwp-bridge.css both know it as --line-strong, and
      map --uwp-rule-strong from it. Without the alias that token resolves to
      nothing wherever the package uses it. */

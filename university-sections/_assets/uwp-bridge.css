@@ -16,7 +16,7 @@
  * Every token is mapped, not just the ones a rule here happens to need. With
  * only some bridged, tokens.css's `@media (prefers-color-scheme: dark)`
  * fallback could put the package's components into their dark palette on a
- * page university.css was still rendering light, because _assets/theme.js?v=20260725-global-nav-8-cascade
+ * page university.css was still rendering light, because _assets/theme.js
  * expresses "light" by removing `data-theme` rather than by setting it.
  * Declaring every token from a site variable means the package follows this
  * family's theme and only its theme.

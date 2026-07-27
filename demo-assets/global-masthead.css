@@ -29,7 +29,7 @@
   /* 1280, and it MUST equal the page's `--shell`. The bar is aligned to the
    * page below it, not sized on its own account, so these two move together
    * or the crest stops sitting over the first word of the content. See
-   * demo-assets/site.css?v=20260725-global-nav-8-cascade for why the measure widened.
+   * demo-assets/site.css for why the measure widened.
    *
    * The bar is the one part of this site that was measurably short of room at
    * 1180: the arithmetic further down this file works out that the one-row
@@ -331,7 +331,7 @@
  * #fdfcf9, not #ffffff. These panels used to be the same white as the page
  * behind them, so the only thing separating a 916px mega panel from the
  * content it covered was its drop shadow. Now that the page ground is warm
- * (#f9f7f1 — see demo-assets/site.css?v=20260725-global-nav-8-cascade) a panel needs to be lighter than the
+ * (#f9f7f1 — see demo-assets/site.css) a panel needs to be lighter than the
  * page to read as floating above it, and pure white overshoots: a cold
  * rectangle punched out of a warm sheet. #fdfcf9 is the same hue as the paper,
  * two steps lighter, so it lifts on luminance without changing temperature.

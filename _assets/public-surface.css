@@ -3,8 +3,8 @@
   --heading: #274257;
   --copy: #3f5362;
   --muted: #5e6c78;
-  /* Warm ground; see demo-assets/site.css?v=20260725-global-nav-8-cascade. Keep in step with
-     public-surface/site/_assets/public-surface.css?v=20260725-global-nav-8-cascade, which this generates. */
+  /* Warm ground; see demo-assets/site.css. Keep in step with
+     public-surface/site/_assets/public-surface.css, which this generates. */
   --paper: #f9f7f1;
   --surface: #f3f0e7;
   --topbar: #1e3a6e;

@@ -2,7 +2,7 @@
   --ink: #172d3d;
   --heading: #173a55;
   --copy: #405765;
-  /* Warm ground; see demo-assets/site.css?v=20260725-global-nav-8-cascade for the whole argument. --muted
+  /* Warm ground; see demo-assets/site.css for the whole argument. --muted
      darkens one step for the same reason it does there: #61727d measured
      4.39:1 on the new paper, under AA. */
   --muted: #5c6a76;
@@ -17,7 +17,7 @@
   --line: #ccd8de;
   --footer: #102b40;
   --focus: #176d99;
-  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+  /* 1280, not 1180. See demo-assets/site.css for the evidence: at 1280 the
      dense grids stop wrapping their labels to a third line and no prose
      measure changes, because every reading measure on this site is capped
      independently of the shell. Keep this in step with
@@ -447,7 +447,7 @@ h3 {
    negative z-index paints beneath every ordinary descendant background in the
    nearest ancestor stacking context. Any tinted band would have deleted it.
 
-   And there is one implementation instead of four: demo-assets/site.css?v=20260725-global-nav-8-cascade had
+   And there is one implementation instead of four: demo-assets/site.css had
    the identical rule under a different selector, and so did the package's own
    `.uwp-hero__media`.
 

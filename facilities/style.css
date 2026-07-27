@@ -2,7 +2,7 @@
  *
  * The page shell is rendered from university-web-patterns (see
  * tools/build_facility_capabilities.mjs), so the package's own stylesheets
- * have to be on the page. They are loaded after group-assets/site.css?v=20260725-global-nav-8-cascade
+ * have to be on the page. They are loaded after group-assets/site.css
  * deliberately: the shell elements carry both the package class and the
  * legacy one during the transition, and on equal specificity the later sheet
  * wins, so the package's rules take effect on the shell while site.css keeps
@@ -13,7 +13,7 @@
  * The builder computes it from the registry and fails the build if this list
  * drifts from it.
  */
-@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../group-assets/site.css?v=1384d404869c");
 @import url("../vendor/university-web-patterns/src/css/tokens.css");
 @import url("../vendor/university-web-patterns/src/css/readability.css");
 @import url("../vendor/university-web-patterns/src/css/typography.css");
@@ -22,7 +22,7 @@
 
 /* Token overrides: this site runs a paper masthead under a navy institution
  * bar; the package's default is a solid institutional header. Everything else
- * the package needs already matches group-assets/site.css?v=20260725-global-nav-8-cascade value for value. */
+ * the package needs already matches group-assets/site.css value for value. */
 :root {
   --uwp-masthead-bg: var(--paper);
   --uwp-masthead-ink: var(--heading);
@@ -33,7 +33,7 @@
 /* Transitional: rules that fire twice while both class names are present.
  * They go when the legacy tokens are dropped from LEGACY_DECORATIONS in
  * tools/build_facility_capabilities.mjs and the shell rules leave
- * group-assets/site.css?v=20260725-global-nav-8-cascade. */
+ * group-assets/site.css. */
 
 /* site.css pins .institution-bar to the top; so is .uwp-masthead, and two
    bands both pinned to top: 0 overlap. The package's position on this is that

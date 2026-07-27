@@ -3,6 +3,142 @@
   "status_code": 301,
   "rules": [
     {
+      "source": "/academic-notices/",
+      "target": "/academics/"
+    },
+    {
+      "source": "/campus-life/life-wpu-academic-facilities/",
+      "target": "/life-wpu/academic-facilities/"
+    },
+    {
+      "source": "/campus-life/life-wpu-adventure-club-adventure-activities-calendar/",
+      "target": "/life-wpu/adventure-club/adventure-activities-calendar/"
+    },
+    {
+      "source": "/campus-life/life-wpu-adventure-club-adventure-gallery/",
+      "target": "/life-wpu/adventure-club/adventure-gallery/"
+    },
+    {
+      "source": "/campus-life/life-wpu-adventure-club-executive-council/",
+      "target": "/life-wpu/adventure-club/executive-council/"
+    },
+    {
+      "source": "/campus-life/life-wpu-adventure-club/",
+      "target": "/life-wpu/adventure-club/"
+    },
+    {
+      "source": "/campus-life/life-wpu-eco-friendly-campus/",
+      "target": "/life-wpu/eco-friendly-campus/"
+    },
+    {
+      "source": "/campus-life/life-wpu-event-calendar/",
+      "target": "/life-wpu/event-calendar/"
+    },
+    {
+      "source": "/campus-life/life-wpu-faculty-achievements/",
+      "target": "/about-us/faculty-achievements/"
+    },
+    {
+      "source": "/campus-life/life-wpu-hostel-facilities/",
+      "target": "/life-wpu/hostel-facilities/"
+    },
+    {
+      "source": "/campus-life/life-wpu-library/",
+      "target": "/life-wpu/library/"
+    },
+    {
+      "source": "/campus-life/life-wpu-medical-facilities/",
+      "target": "/life-wpu/medical-facilities/"
+    },
+    {
+      "source": "/campus-life/life-wpu-other-facilities/",
+      "target": "/life-wpu/other-facilities/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-elite-sportsperson-scholarship/",
+      "target": "/life-wpu/sports/elite-sportsperson-scholarship/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-events/",
+      "target": "/life-wpu/sports/events/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-news/",
+      "target": "/life-wpu/sports/news/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-sports-advisory-board/",
+      "target": "/life-wpu/sports/sports-advisory-board/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-sports-committee/",
+      "target": "/life-wpu/sports/sports-committee/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-sports-infrastructure/",
+      "target": "/life-wpu/sports/sports-infrastructure/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports-super-achievers/",
+      "target": "/life-wpu/sports/super-achievers/"
+    },
+    {
+      "source": "/campus-life/life-wpu-sports/",
+      "target": "/life-wpu/sports/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-achievements/",
+      "target": "/life-wpu/student-achievements/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-affairs/",
+      "target": "/life-wpu/student-affairs/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-council-student-council-members/",
+      "target": "/life-wpu/student-council/student-council-members/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-council/",
+      "target": "/life-wpu/student-council/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-comparative-investigation-on-battery-thermal-management-system-for-nano-fluids/",
+      "target": "/life-wpu/student-projects/comparative-investigation-on-battery-thermal-management-system-for-nano-fluids/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-design-and-development-of-hydrokinetic-turbine-for-ocean-energy/",
+      "target": "/life-wpu/student-projects/design-and-development-of-hydrokinetic-turbine-for-ocean-energy/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-design-and-development-of-valve-stem-seal-test-rig/",
+      "target": "/life-wpu/student-projects/design-and-development-of-valve-stem-seal-test-rig/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-development-of-a-rover-for-soil-sampling-fertility-testing/",
+      "target": "/life-wpu/student-projects/development-of-a-rover-for-soil-sampling--fertility-testing/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-high-speed-flame-imaging-of-solid-rocket-propellant-srp-in-a-laser-illuminated-window-bomb/",
+      "target": "/life-wpu/student-projects/high-speed-flame-imaging-of-solid-rocket-propellant-srp-in-a-laser-illuminated-window-bomb/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-investigation-on-varied-porosity-levels-in-scaffolds-to-improve-biocompatibility/",
+      "target": "/life-wpu/student-projects/investigation-on-varied-porosity-levels-in-scaffolds-to-improve-biocompatibility/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-lightweight-brick-products/",
+      "target": "/life-wpu/student-projects/lightweight-brick-products/"
+    },
+    {
+      "source": "/campus-life/life-wpu-student-projects-plasma-based-ozone-o3-generation-and-its-applications/",
+      "target": "/life-wpu/student-projects/plasma-based-ozone-o3-generation-and-its-applications/"
+    },
+    {
+      "source": "/campus-life/student-information/",
+      "target": "/students/"
+    },
+    {
       "source": "/careers/",
       "target": "/career/"
     },
@@ -17,6 +153,10 @@
     {
       "source": "/events/nsrtc-2025-a-grand-confluence-of-science-innovation-and-vision-for-viksit-bharat/",
       "target": "/events/nsrtc-2025/"
+    },
+    {
+      "source": "/exam-notices/",
+      "target": "/academics/"
     },
     {
       "source": "/faculty/aachal-taywade/",
@@ -2467,6 +2607,202 @@
       "target": "/about-us/faculty-achievements/"
     },
     {
+      "source": "/notices-and-announcements/",
+      "target": "/news/"
+    },
+    {
+      "source": "/notification/",
+      "target": "/life-wpu/adventure-club/"
+    },
+    {
+      "source": "/notification/nisargvedhmit-wpuadventure-club-treks-scheduled-for-september-2025/",
+      "target": "/life-wpu/adventure-club/adventure-activities-calendar/"
+    },
+    {
+      "source": "/notification/nisargvedhmitwpuadventure-club-treks-scheduled-for-september-2025/",
+      "target": "/life-wpu/adventure-club/adventure-activities-calendar/"
+    },
+    {
+      "source": "/programmes/hafeez-contractor-school-of-architecture/",
+      "target": "/academics/architecture/"
+    },
+    {
+      "source": "/programmes/prof-makarand-hastak-school-of-construction-engineering-and-management/",
+      "target": "/academics/construction-engineering-management/"
+    },
+    {
+      "source": "/programmes/school-of-business/",
+      "target": "/academics/business/"
+    },
+    {
+      "source": "/programmes/school-of-business/department-of-business/",
+      "target": "/academics/business/business/"
+    },
+    {
+      "source": "/programmes/school-of-business/department-of-hospitality-management/",
+      "target": "/academics/business/hospitality-management/"
+    },
+    {
+      "source": "/programmes/school-of-computer-engineering-and-technology/",
+      "target": "/academics/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/programmes/school-of-computer-engineering-and-technology/department-of-computer-engineering-and-technology/",
+      "target": "/academics/computer-engineering-and-technology/computer-engineering-and-technology/"
+    },
+    {
+      "source": "/programmes/school-of-computer-engineering-and-technology/department-of-computer-science-and-applications/",
+      "target": "/academics/computer-engineering-and-technology/computer-science-and-applications/"
+    },
+    {
+      "source": "/programmes/school-of-consciousness/",
+      "target": "/academics/consciousness/"
+    },
+    {
+      "source": "/programmes/school-of-design/",
+      "target": "/academics/design/"
+    },
+    {
+      "source": "/programmes/school-of-design/department-of-design/",
+      "target": "/academics/design/design/"
+    },
+    {
+      "source": "/programmes/school-of-design/department-of-visual-arts/",
+      "target": "/academics/design/visual-arts/"
+    },
+    {
+      "source": "/programmes/school-of-economics-and-commerce/",
+      "target": "/academics/economics-and-commerce/"
+    },
+    {
+      "source": "/programmes/school-of-economics-and-commerce/department-of-commerce/",
+      "target": "/academics/economics-and-commerce/commerce/"
+    },
+    {
+      "source": "/programmes/school-of-economics-and-commerce/department-of-economics/",
+      "target": "/academics/economics-and-commerce/economics/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/",
+      "target": "/academics/engineering-and-technology/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-bioengineering/",
+      "target": "/academics/engineering-and-technology/bioengineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-chemical-engineering/",
+      "target": "/academics/engineering-and-technology/chemical-engineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-civil-engineering/",
+      "target": "/academics/engineering-and-technology/civil-engineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-electronics-and-electrical-engineering/",
+      "target": "/academics/engineering-and-technology/electronics-and-electrical-engineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-material-science-engineering/",
+      "target": "/academics/engineering-and-technology/material-science-engineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-mechanical-engineering/",
+      "target": "/academics/engineering-and-technology/mechanical-engineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-petroleum-engineering/",
+      "target": "/academics/engineering-and-technology/petroleum-engineering/"
+    },
+    {
+      "source": "/programmes/school-of-engineering-and-technology/department-of-polytechnic-skill-development/",
+      "target": "/academics/engineering-and-technology/polytechnic-skill-development/"
+    },
+    {
+      "source": "/programmes/school-of-government/",
+      "target": "/academics/government/"
+    },
+    {
+      "source": "/programmes/school-of-health-science-technologies/",
+      "target": "/academics/health-science-technologies/"
+    },
+    {
+      "source": "/programmes/school-of-health-science-technologies/department-of-clinical-sciences/",
+      "target": "/academics/health-science-technologies/clinical-sciences/"
+    },
+    {
+      "source": "/programmes/school-of-health-science-technologies/department-of-pharmaceutical-sciences/",
+      "target": "/academics/health-science-technologies/pharmaceutical-sciences/"
+    },
+    {
+      "source": "/programmes/school-of-health-science-technologies/department-of-public-health/",
+      "target": "/academics/health-science-technologies/public-health/"
+    },
+    {
+      "source": "/programmes/school-of-health-science-technologies/department-of-yogic-science/",
+      "target": "/academics/health-science-technologies/yogic-science/"
+    },
+    {
+      "source": "/programmes/school-of-law/",
+      "target": "/academics/law/"
+    },
+    {
+      "source": "/programmes/school-of-leadership/",
+      "target": "/academics/leadership/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/",
+      "target": "/academics/liberal-arts-humanities/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/dadasaheb-phalke-international-film-institute/",
+      "target": "/academics/liberal-arts-humanities/dadasaheb-phalke-international-film-institute/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/department-of-education/",
+      "target": "/academics/liberal-arts-humanities/education/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/department-of-liberal-arts/",
+      "target": "/academics/liberal-arts-humanities/liberal-arts/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/department-of-media-and-communication/",
+      "target": "/academics/liberal-arts-humanities/media-and-communication/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/department-of-peace-studies/",
+      "target": "/academics/liberal-arts-humanities/peace-studies/"
+    },
+    {
+      "source": "/programmes/school-of-liberal-arts-humanities/department-of-photography/",
+      "target": "/academics/liberal-arts-humanities/photography/"
+    },
+    {
+      "source": "/programmes/school-of-science/",
+      "target": "/academics/science/"
+    },
+    {
+      "source": "/programmes/school-of-science/department-of-biosciences-and-technology/",
+      "target": "/academics/science/biosciences-and-technology/"
+    },
+    {
+      "source": "/programmes/school-of-science/department-of-chemistry/",
+      "target": "/academics/science/chemistry/"
+    },
+    {
+      "source": "/programmes/school-of-science/department-of-environmental-studies/",
+      "target": "/academics/science/environmental-studies/"
+    },
+    {
+      "source": "/programmes/school-of-science/department-of-mathematics-and-statistics/",
+      "target": "/academics/science/mathematics-and-statistics/"
+    },
+    {
+      "source": "/programmes/school-of-science/department-of-physics/",
+      "target": "/academics/science/physics/"
+    },
+    {
       "source": "/rtep-committee/",
       "target": "/rtep-advisory-committee/"
     },
@@ -3453,6 +3789,22 @@
     {
       "source": "/student-information/",
       "target": "/students/"
+    },
+    {
+      "source": "/testimonials/",
+      "target": "/study-in-india/student-testimonials/"
+    },
+    {
+      "source": "/testimonials/alumni/",
+      "target": "/study-in-india/student-testimonials/"
+    },
+    {
+      "source": "/testimonials/student/",
+      "target": "/study-in-india/student-testimonials/"
+    },
+    {
+      "source": "/virtual-tour/",
+      "target": "/life-at-mit-wpu/"
     }
   ]
 }

@@ -2,7 +2,7 @@
  *
  * The page shell is rendered from university-web-patterns (see shell.mjs), so
  * the package's own stylesheets have to be on the page. They are loaded after
- * group-assets/site.css?v=20260725-global-nav-8-cascade deliberately: the shell elements carry both the
+ * group-assets/site.css deliberately: the shell elements carry both the
  * package class and the legacy one during the transition, and on equal
  * specificity the later sheet wins, so the package's rules are the ones that
  * take effect on the shell while site.css keeps styling everything inside
@@ -17,7 +17,7 @@
  * the package. Keep them in the registry's dependency order: readability.css
  * sets the base element styles patterns.css then builds on.
  */
-@import url("../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../group-assets/site.css?v=1384d404869c");
 @import url("../vendor/university-web-patterns/src/css/tokens.css");
 @import url("../vendor/university-web-patterns/src/css/readability.css");
 @import url("../vendor/university-web-patterns/src/css/typography.css");
@@ -29,7 +29,7 @@
  * institution bar, and the package's default is a solid institutional header.
  * Everything else the package needs — the whole palette, the dark theme, the
  * 1180px measure, the 112px bar and 80px header — already matches
- * group-assets/site.css?v=20260725-global-nav-8-cascade value for value, so it is not restated here.
+ * group-assets/site.css value for value, so it is not restated here.
  */
 :root {
   --uwp-masthead-bg: var(--paper);
@@ -42,7 +42,7 @@
  *
  * These exist only because the shell carries the legacy class alongside the
  * package one. They go when the legacy token is dropped from shell.mjs's
- * LEGACY_DECORATIONS and the shell rules leave group-assets/site.css?v=20260725-global-nav-8-cascade. Both
+ * LEGACY_DECORATIONS and the shell rules leave group-assets/site.css. Both
  * hazards recorded from the Quantum migration recurred here unchanged.
  */
 

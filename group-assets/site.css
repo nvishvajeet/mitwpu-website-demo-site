@@ -1,6 +1,6 @@
 /* Shared stylesheet for the research-group microsites, and — through an
  * `@import` at the top of each — for academics/assets/style.css and
- * science/assets/style.css?v=20260725-global-nav-8-cascade as well. A rule changed here changes four
+ * science/assets/style.css as well. A rule changed here changes four
  * microsites, the academics directory and the School of Science. It is easy to
  * arrive at this file from one importer and not realise that, so: check the
  * others before widening anything.
@@ -18,7 +18,7 @@
   --solid-blue-hover: #204e67;
   --photo-accent: #2d6786;
   --blue-pale: #edf3f6;
-  /* Warm ground. Same values and the same reasoning as demo-assets/site.css?v=20260725-global-nav-8-cascade —
+  /* Warm ground. Same values and the same reasoning as demo-assets/site.css —
      read the note there; it is not repeated in five files. --muted is already
      #5e6c78 here, which measures 5.04:1 on the new paper and 4.73:1 on the new
      tint, so this palette needed no darkening. */
@@ -36,7 +36,7 @@
   --footer: #274257;
   --focus: #9dc4de;
   --switch-knob: #ffffff;
-  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+  /* 1280, not 1180. See demo-assets/site.css for the evidence: at 1280 the
      dense grids stop wrapping their labels to a third line and no prose
      measure changes, because every reading measure on this site is capped
      independently of the shell. Keep this in step with

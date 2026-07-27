@@ -4,7 +4,7 @@
  * ground, and run the builder.
  *
  * A service's colour is the service's fact, which is why it is here and
- * not in group-assets/site.css?v=20260725-global-nav-8-cascade — that palette is the university's, and a
+ * not in group-assets/site.css — that palette is the university's, and a
  * page that never links to Scopus should not carry Scopus orange. */
 
 /* ORCID — #A6CE39 */

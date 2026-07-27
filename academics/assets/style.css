@@ -1,6 +1,6 @@
 /* Two things here are load-bearing and neither is visible from this line.
  *
- * Position. `@import` resolves at the top of this file, so group-assets/site.css?v=20260725-global-nav-8-cascade
+ * Position. `@import` resolves at the top of this file, so group-assets/site.css
  * lands wherever this file is linked — and academics pages link, in order:
  * the package's tokens.css and readability.css, then this file, then the
  * package's patterns.css, then uwp-bridge.css. That order is the whole
@@ -11,15 +11,15 @@
  * <link>s, and the shell silently flips to the legacy styling.
  *
  * The version token. `?v=20260723f` is bumped by hand and appears in exactly
- * two files — this one and science/assets/style.css?v=20260725-global-nav-8-cascade:16. It is deliberately
+ * two files — this one and science/assets/style.css:16. It is deliberately
  * *not* the same token as the `?v=` on this file's own <link>: bumping the
  * outer one does not bust the cache of the sheet imported inside it, so a
- * change to group-assets/site.css?v=20260725-global-nav-8-cascade needs both tokens moved or returning
+ * change to group-assets/site.css needs both tokens moved or returning
  * visitors keep the old rules. No tool does this for you. */
-@import url("../../group-assets/site.css?v=20260725-global-nav-8-cascade");
+@import url("../../group-assets/site.css?v=1384d404869c");
 
 :root {
-  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+  /* 1280, not 1180. See demo-assets/site.css for the evidence: at 1280 the
      dense grids stop wrapping their labels to a third line and no prose
      measure changes, because every reading measure on this site is capped
      independently of the shell. Keep this in step with

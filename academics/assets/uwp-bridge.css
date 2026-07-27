@@ -2,7 +2,7 @@
  *
  * Loaded by the pages tools/build_all_departments_site.mjs writes, after the
  * package's patterns.css and after style.css (which imports
- * group-assets/site.css?v=20260725-global-nav-8-cascade). It does three things and nothing else:
+ * group-assets/site.css). It does three things and nothing else:
  *
  *   1. expresses this family's palette, measure and type as `--uwp-*` token
  *      overrides, which is how the package asks to be re-skinned — a client
@@ -17,8 +17,8 @@
  * Every token is mapped, not just the ones a rule here happens to need. With
  * only some bridged, tokens.css's `@media (prefers-color-scheme: dark)`
  * fallback could put the package's components into their dark palette on a
- * page group-assets/site.css?v=20260725-global-nav-8-cascade was still rendering light, because
- * group-assets/theme.js?v=20260725-global-nav-8-cascade expresses "light" by removing `data-theme` rather than
+ * page group-assets/site.css was still rendering light, because
+ * group-assets/theme.js expresses "light" by removing `data-theme` rather than
  * by setting it. Declaring every token from a site variable means the package
  * follows this family's theme and only its theme.
  */
@@ -99,7 +99,7 @@
  * to be dropped from the decorations in tools/build_all_departments_site.mjs.
  */
 
-/* The masthead's stacking order. group-assets/site.css?v=20260725-global-nav-8-cascade puts the institutional
+/* The masthead's stacking order. group-assets/site.css puts the institutional
    band at 70 and the release layer installs its own masthead at that height;
    the package's own 60 would drop this one behind it. */
 .uwp-masthead.academic-header {
@@ -113,7 +113,7 @@
   gap: 24px;
 }
 
-/* group-assets/site.css?v=20260725-global-nav-8-cascade draws the navigation's current and hover state as a
+/* group-assets/site.css draws the navigation's current and hover state as a
    2px bottom border on the link; the package draws it as an ::after bar. Both
    elements are the same link, so without this both would show. */
 .uwp-nav.site-nav a,

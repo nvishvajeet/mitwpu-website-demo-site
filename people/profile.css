@@ -10,7 +10,7 @@
  * the publication list, the detail lists and their disclosures, the sidebar,
  * the link groups, and both responsive blocks.
  *
- * `group-assets/site.css?v=20260725-global-nav-8-cascade` is no longer @imported. It is a <link> in the page
+ * `group-assets/site.css` is no longer @imported. It is a <link> in the page
  * head instead, ahead of the package's component sheets, so that this file
  * can override a package rule of equal specificity — an @import would have
  * put every rule below it earlier in the cascade than patterns.css.
@@ -22,8 +22,8 @@
 :root {
   --shell: 1080px;
 
-  /* group-assets/site.css?v=20260725-global-nav-8-cascade names its heavier rule --line-dark; the package's
-     token set and demo-assets/site.css?v=20260725-global-nav-8-cascade both call it --line-strong, which is
+  /* group-assets/site.css names its heavier rule --line-dark; the package's
+     token set and demo-assets/site.css both call it --line-strong, which is
      what demo-assets/uwp-bridge.css maps --uwp-rule-strong from. Without this
      alias that token resolves to nothing, and the rule the education timeline
      is drawn against, plus the theme switch's border, disappear. The old

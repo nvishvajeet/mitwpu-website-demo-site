@@ -51,7 +51,7 @@
   --line-strong: #b8c5cd;
   --focus: #185f86;
   --switch-knob: #ffffff;
-  /* 1280, not 1180. See demo-assets/site.css?v=20260725-global-nav-8-cascade for the evidence: at 1280 the
+  /* 1280, not 1180. See demo-assets/site.css for the evidence: at 1280 the
      dense grids stop wrapping their labels to a third line and no prose
      measure changes, because every reading measure on this site is capped
      independently of the shell. Keep this in step with

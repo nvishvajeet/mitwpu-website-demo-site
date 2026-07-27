@@ -18,7 +18,7 @@
  * load it, and mapping the whole set here also closes a theme hazard: with
  * only some tokens bridged, tokens.css's `@media (prefers-color-scheme: dark)`
  * fallback could put the package's components into their dark palette on a
- * page the site was still rendering light, because demo-assets/theme.js?v=20260725-global-nav-8-cascade
+ * page the site was still rendering light, because demo-assets/theme.js
  * expresses "light" by removing `data-theme` rather than by setting it.
  * Declaring every token from a site variable means the package follows the
  * site's theme and only the site's theme.
