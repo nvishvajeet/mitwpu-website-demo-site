@@ -36,12 +36,17 @@
   "copyright": {
     "holder": "MIT World Peace University"
   },
-  "note": "What belongs in a footer, decided 2026-07-26 against the routes that exist rather than against the routes that were here. A footer's job is the destinations a reader needs and cannot navigate to — the ones that are nobody's obvious parent. It is not a second copy of the top navigation, which is how the site this one is modelled on ended up with the footer we captured. The three navigation columns were three links each and two of the twelve links were leaving for that reason: `Search`, because there is a search box in the masthead now and a footer link to the same page is a third route to it; and `People`, because it is a top-level entry in the bar. Four groups of four now, and each addition earns its place: /administration/ and /forms/ were built the same day and answer the two commonest errands a university website is asked — reach a human, and get a thing done; /contact-us/ was the most conspicuous absence, a university footer with no contact link; /accessibility/ existed and nothing in the site linked to it, which is a defect rather than an omission, since a footer is exactly where a reader looks for it; /career/ is here because a careers link is one of the few things a NON-student comes to a university footer for, and a navigation built around study and research gives it nowhere else to live. Deliberately not here: /campus-life/ and /students/, which are top-level entries, and /intranet/help/, which is reachable from /intranet/. A footer earns its usefulness by being short.",
+  "note": "What belongs in a footer, and in what order, decided against the routes that exist rather than against the routes that were here. A footer's job is the destinations a reader needs and cannot navigate to — the ones that are nobody's obvious parent. It is not a second copy of the top navigation, which is how the site this one is modelled on ended up with the footer we captured; `People` and `Search` left for that reason and `About MIT-WPU` left on 2026-07-27 for the same one, being the first entry in the bar on every page. REBALANCED 2026-07-27, and the fault was proportion rather than content. Three unlabelled columns of four sat beside one labelled column of eleven, which the grid gave three tracks and its own row: the compliance block was the biggest, the only headed and the only left-aligned-under-the-masthead thing in the footer, so a footer whose commonest errands are 'reach a human' and 'get a thing done' announced itself as a register of committees. Nothing was removed to fix it. Four groups of six, every heading visible, ordered left to right by how often somebody wants the thing: reach us, about, raising a concern, legal and policy. The statutory routes are all still here — see the note on `Raising a concern` for the evidence that they had to be — but they are now three of four equal columns' worth of content instead of one block twice the size of its neighbours, and the reader who wants the switchboard finds it in the first column rather than after scanning the longest list. SIX PER GROUP IS A LAYOUT CONSTRAINT AND WORTH WRITING DOWN, because the next person to add a link will hit it. The package's footer grid is `minmax(15rem, 22rem)` for the identity block and `repeat(auto-fit, minmax(9rem, 1fr))` for the columns, which at this site's 1232px measure is four column tracks and no more; and `patterns.css` gives a group of seven or more links two tracks and a group of ten or more three, so a fifth group, or a seventh link in any group, puts part of the footer on a second row with an empty quarter beside it. That is what the eleven-link group was doing. Twenty-four links is the ceiling this layout has, and the footer is at it. A twenty-fifth means either taking one out or a university-web-patterns release that can lay out five columns — the second is the real fix and this repository cannot make it, because no client stylesheet reaches all 2,144 pages that carry this footer: `demo-assets/institutional-footer.css` reaches 621 of them, `uwp-bridge.css` misses the 1,195-page crawl-backed family, and the package's own sheet is the only thing all of them load. Deliberately not here: /campus-life/, /students/ and /people/, which are top-level entries; /intranet/help/, reachable from /intranet/; /search/, which is a box in the masthead. A footer earns its usefulness by being short, and this one is as long as it is because eleven of its links are a regulator's requirement rather than an editor's choice.",
   "groups": [
     {
       "label": "Reach us",
-      "hide_heading": true,
+      "hide_heading": false,
+      "note": "The commonest errands a university website is asked, first because they are commonest: reach a human, and get a thing done. /administration/ and /forms/ answer those two, /contact-us/ was the most conspicuous absence a university footer can have, and /career/ is here because a careers link is one of the few things a NON-student comes to a university footer for and a navigation built around study and research gives it nowhere else to live. `Sitemap` sits here rather than with the legal notices it used to keep company with: it is the answer to \"I cannot find the page I want\", which is this column's question, and it has nothing else in common with a copyright statement.",
       "links": [
+        {
+          "label": "Contact the university",
+          "local": "contact-us/"
+        },
         {
           "label": "Offices and contacts",
           "local": "administration/"
@@ -51,23 +56,24 @@
           "local": "forms/"
         },
         {
-          "label": "Contact the university",
-          "local": "contact-us/"
+          "label": "Work with us",
+          "local": "career/"
         },
         {
           "label": "Intranet",
           "local": "intranet/"
+        },
+        {
+          "label": "Sitemap",
+          "local": "sitemap/"
         }
       ]
     },
     {
-      "label": "About",
-      "hide_heading": true,
+      "label": "About MIT-WPU",
+      "hide_heading": false,
+      "note": "`About MIT-WPU` itself is NOT in this column, and the heading is why: it is the first entry in the masthead on all 2,815 pages, so a link repeating it is furniture — the same rule that took out `People`. What is here instead is what the masthead's About menu does not carry. Two of them were unreachable from either the masthead or the footer until 2026-07-27 and that is the whole reason they are here: /happenings/ is the news, events, achievements and press-release front door, and the ONLY things linking it were the home page and /events/, so a reader three clicks into an academic page had no route to the university's news at all; /international/ is the international admissions, partnerships and study-abroad front door, and the only thing linking it was the body of /admissions/. `Mandatory disclosures` and the statutory committee register are statutory and could sit under `Raising a concern` on that ground, but they are not a route to anybody — they are the facts about itself the university is required to publish, which is what this column is.",
       "links": [
-        {
-          "label": "About MIT-WPU",
-          "local": "about/"
-        },
         {
           "label": "Mission and values",
           "local": "about-us/about-mit/"
@@ -77,15 +83,71 @@
           "local": "about/maeer/"
         },
         {
-          "label": "Work with us",
-          "local": "career/"
+          "label": "News and events",
+          "local": "happenings/"
+        },
+        {
+          "label": "International",
+          "local": "international/"
+        },
+        {
+          "label": "Mandatory disclosures",
+          "local": "mandatory-disclosures/"
+        },
+        {
+          "label": "Statutory committees (PDF)",
+          "local": "media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf"
         }
       ]
     },
     {
-      "label": "Legal and compliance",
-      "hide_heading": true,
+      "label": "Raising a concern",
+      "hide_heading": false,
+      "note": "Six routes to a body that takes a complaint, and the decision behind them was whether they could be replaced by the one link at the top. They cannot, and the evidence is in this repository rather than in a reading of the regulations: /intranet/help/ declines to state grievance procedure IN TERMS, saying \"They are listed in the footer of every page on this site and are not restated here\"; docs/PROGRAMME_AND_STUDENT_ROUTE_OWNERSHIP.md gives five of these routes an Owner of \"statutory footer\", an Index of \"footer on every page\", and the instruction \"Do not re-home\"; tools/tests/test_institutional_footer_links.py names eight of them in STATUTORY_TARGETS so that emptying a group cannot quietly empty the demand; and tools/build_public_demo.py:validate_institutional_footer fails the release if a page lacks them. Nothing anywhere says a parent page discharges the obligation, and the note that opened /grievance-redressal/ on 2026-07-27 called it \"a door, not a replacement\". So the door stays first in the column — it is the only entry that names each body by the problem it handles rather than by its own title, which is what a reader who does not know whether ragging, harassment or caste is the right committee actually needs — and the five committees stay under it. The Disciplinary Committee is NOT here, and that is /grievance-redressal/'s own distinction rather than a tidy-up: it is the body a complaint about a student's conduct reaches, not one a student brings a grievance to.",
       "links": [
+        {
+          "label": "How to raise a grievance",
+          "local": "grievance-redressal/"
+        },
+        {
+          "label": "Students’ Grievance Redressal Committee",
+          "local": "academics/student-grievance/"
+        },
+        {
+          "label": "Anti-Ragging Committee",
+          "local": "student-affairs/anti-ragging-committee/"
+        },
+        {
+          "label": "Internal Complaints Committee",
+          "local": "student-affairs/internal-complaints-committee/"
+        },
+        {
+          "label": "SC/ST and Equal Opportunity Cell",
+          "local": "sc-st-committee/"
+        },
+        {
+          "label": "Centre for Women’s Studies and Development",
+          "local": "centre-for-womens-studies-and-development/"
+        }
+      ]
+    },
+    {
+      "label": "Legal and policy",
+      "hide_heading": false,
+      "note": "The rules the university publishes and the undertakings it gives, as against the previous group's routes to a person. `Ragging prevention programme` is the published zero-tolerance programme and its helpline rather than a committee; the capitation-fee disclaimer is an undertaking about how admission works; the Disciplinary Committee is the conduct body. Then the three the website itself owes a reader. The heading is two words because the column is 172px wide at 1280 and an uppercase heading longer than about seventeen characters wraps to two lines, which drops this column's first link below its neighbours' — `Policies and disclosures` and `Policy and conduct` were both tried and both wrapped.",
+      "links": [
+        {
+          "label": "Ragging prevention programme",
+          "local": "about-us/national-ragging-prevention-programme/"
+        },
+        {
+          "label": "Disciplinary Committee",
+          "local": "student-affairs/discipline-committee/"
+        },
+        {
+          "label": "Capitation-fee disclaimer (PDF)",
+          "local": "media/mitwpu-public/documents/6e/6ebc55d88a0eb17f-Disclaimer.pdf"
+        },
         {
           "label": "Privacy and compliance",
           "local": "privacy-policy/"
@@ -97,61 +159,6 @@
         {
           "label": "Accessibility",
           "local": "accessibility/"
-        },
-        {
-          "label": "Sitemap",
-          "local": "sitemap/"
-        }
-      ]
-    },
-    {
-      "label": "Grievance redressal",
-      "hide_heading": false,
-      "note": "The only group in this footer that is longer than four links, and the only one whose heading shows. Both are deliberate and neither is a preference: every entry below is a regulator's requirement on the university's own website, and tools/tests/test_institutional_footer_links.py asserts eight of them by name so that emptying the group cannot quietly empty the demand. What the group still does NOT have is a parent. Ten links, and a reader who does not already know which committee takes a complaint about ragging as against harassment as against caste has to guess from titles that do not say — in a footer, where nothing explains anything. /grievance-redressal/ was built on 2026-07-27 to be that parent and is now this group's first entry. It names each body by the problem it handles rather than by its own title, which is the one thing a reader in that position needs and the one thing this list cannot do — a footer explains nothing, and a regulator's list is not a wayfinding aid. The statutory routes below it all stay exactly where a regulator expects them; the new entry is a door, not a replacement.",
-      "links": [
-        {
-          "label": "How to raise a grievance",
-          "local": "grievance-redressal/"
-        },
-        {
-          "label": "Ragging prevention programme",
-          "local": "about-us/national-ragging-prevention-programme/"
-        },
-        {
-          "label": "Anti-Ragging Committee",
-          "local": "student-affairs/anti-ragging-committee/"
-        },
-        {
-          "label": "Students’ Grievance Redressal Committee",
-          "local": "academics/student-grievance/"
-        },
-        {
-          "label": "Internal Complaints Committee",
-          "local": "student-affairs/internal-complaints-committee/"
-        },
-        {
-          "label": "University Discipline Committee",
-          "local": "student-affairs/discipline-committee/"
-        },
-        {
-          "label": "SC/ST and Equal Opportunity Cell",
-          "local": "sc-st-committee/"
-        },
-        {
-          "label": "Women’s Studies and Development Centre",
-          "local": "centre-for-womens-studies-and-development/"
-        },
-        {
-          "label": "Statutory committees (PDF)",
-          "local": "media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf"
-        },
-        {
-          "label": "Mandatory disclosures",
-          "local": "mandatory-disclosures/"
-        },
-        {
-          "label": "Capitation-fee disclaimer (PDF)",
-          "local": "media/mitwpu-public/documents/6e/6ebc55d88a0eb17f-Disclaimer.pdf"
         }
       ]
     }

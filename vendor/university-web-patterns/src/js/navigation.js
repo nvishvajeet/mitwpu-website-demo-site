@@ -23,25 +23,40 @@
   document.documentElement.classList.add("uwp-js");
 
   const HOVER_CLOSE_DELAY = 220; // ms; bridges diagonal travel to a fly-out
-  // The other half of that bridge, and it must exist or the first half is
-  // undone. A cascade hangs each row's fly-out off the column's right edge, so
-  // a reader reaching for the fourth link of a panel cuts the corner and
-  // crosses the rows beneath the one they started on. Those rows are 44px
-  // tall and the panel is 240px away, so the crossing is unavoidable geometry
-  // rather than a slip. Closing a sibling synchronously on its `mouseenter`
-  // meant the panel being travelled to was replaced, under the cursor, by the
-  // one belonging to a row merely passed over — spending 220ms of grace on the
-  // way out and none on the way in. Only a row arriving while a SIBLING is
-  // open pays this; the first row entered still opens instantly.
-  const HOVER_OPEN_DELAY = 260; // ms; a corner cut takes 150-250ms
-  // The top-level bar pays a shorter one. Its geometry is not a corner cut:
-  // entries sit side by side, so a pointer crossing one on the way to another
-  // is inside it for well under 100ms, and 120ms separates a traversal from a
-  // deliberate arrival with room to spare. Spending the cascade's 260ms here
-  // would be felt — the bar is what a reader touches first, and a menu that
-  // takes a quarter of a second to answer reads as slow rather than as
-  // careful. The two numbers are different because the two gestures are.
-  const HOVER_SWITCH_DELAY = 120; // ms; crossing an entry takes under 100ms
+
+  // The other half of that bridge. A reader crossing the bar on the way to
+  // somewhere else must not open the entries they cross, and a reader who has
+  // arrived must not be kept waiting. Earlier revisions tried to separate the
+  // two with a fixed delay after `mouseenter` — 260ms on a cascade row, 120ms
+  // on the bar — on the premise that a pointer crossing an entry is inside it
+  // for under 100ms.
+  //
+  // That premise is false, and measuring it is what finally moved this. Drag
+  // the pointer across the six entries of a real masthead in 2 seconds — an
+  // ordinary, unhurried sweep — and each 85px entry holds the pointer for
+  // 400-500ms. Every fixed delay short enough to feel responsive is outlasted
+  // by it, so every entry crossed opened in turn: six full-width sheets
+  // dropped over the page and torn away, which is what was being reported as
+  // flicker. Raising the number cannot fix it, because the reader can always
+  // travel more slowly than any constant; the previous three attempts each
+  // moved the constant and each left the fault untouched.
+  //
+  // Time in the element is the wrong measurement. What distinguishes a
+  // traversal from an arrival is that the traversal is still MOVING. So the
+  // delay is armed on entry and re-armed on every `mousemove` that carries the
+  // pointer more than a few pixels: it elapses only where the pointer has come
+  // to rest. Crossing an entry at any speed opens nothing, however slowly;
+  // stopping on one opens it in under a tenth of a second. Together the two
+  // constants say "slower than about 45px/s counts as stopped", which no
+  // deliberate traversal of a masthead is.
+  //
+  // This also retires the old exemption where an entry with no open sibling
+  // revealed synchronously. It existed to keep the first hover instant, but it
+  // meant the first entry crossed on any sweep — and every entry crossed after
+  // the previous panel's close delay had run out — flashed with no intent test
+  // at all. A settle test is cheap enough not to need the exemption.
+  const HOVER_SETTLE_DELAY = 90; // ms the pointer must rest before a reveal
+  const HOVER_SETTLE_SLOP = 4; // px of travel that still counts as moving
   const EDGE_GAP = 12; // px kept between a fly-out and the viewport edge
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
   const desktop = window.matchMedia("(min-width: 56.01rem)");
@@ -168,15 +183,16 @@
     place(item, ".uwp-nav-mega", "uwp-nav-mega--left");
   };
 
-  // Hover-intent for both levels. Open on pointer enter; close after a short
-  // delay so a brief diagonal exit toward a nested panel does not snap it shut.
-  // Fine pointers on wide viewports only; coarse pointers use the accordion.
+  // Hover-intent for both levels. Open once the pointer has come to rest on an
+  // entry; close after a short delay so a brief diagonal exit toward a nested
+  // panel does not snap it shut. Fine pointers on wide viewports only; coarse
+  // pointers use the accordion.
   const wireHoverIntent = (element, isBranch) => {
     let closeTimer;
     let openTimer;
 
-    // The part that actually reveals the panel, once the delay below (if any)
-    // has decided this is a destination rather than a crossing.
+    // The part that actually reveals the panel, once the settle test below has
+    // decided this is a destination rather than a crossing.
     const reveal = () => {
       if (isBranch) {
         const menu = element.closest(".uwp-nav-menu");
@@ -195,60 +211,55 @@
       else placeMega(element);
     };
 
-    // An entry arriving while a sibling is already open is the only case that
-    // waits, because it is the only case where opening this one CLOSES
-    // something the pointer may be travelling to.
-    //
-    // This asked both levels of the question from 0.24.0. Before that it
-    // asked only the cascade rows, and the top-level bar — the part every
-    // reader touches first — had no intent at all: `mouseenter` revealed
-    // synchronously, so dragging the pointer from one end of the bar to the
-    // other flashed all six panels in turn, each one dropping a full-width
-    // sheet over the page and tearing it away a frame later. The 220ms close
-    // delay compounded it, holding the outgoing panel on screen while the
-    // next one opened, so mid-traverse two panels overlapped. It read as the
-    // menu being broken, and it was reported as flicker three times.
-    //
-    // The scope differs by level and so does the lookup: a cascade row's
-    // siblings are the rows of its own `.uwp-nav-menu`, a top-level entry's
-    // are the other entries of the bar.
-    const siblingOpen = () => {
-      const scope = isBranch
-        ? element.closest(".uwp-nav-menu")
-        : element.closest(".uwp-nav");
-      if (!scope) return false;
-      const selector = isBranch
-        ? ":scope > .uwp-nav-branch.is-open"
-        : ":scope > .uwp-nav-item.is-open";
-      for (const sibling of scope.querySelectorAll(selector)) {
-        if (sibling !== element) return true;
-      }
-      return false;
+    // The settle test. `arm` starts the clock from wherever the pointer is
+    // now; any movement worth the name starts it again, so it can only run out
+    // where the pointer has stopped.
+    let anchorX = 0;
+    let anchorY = 0;
+
+    const arm = (event) => {
+      window.clearTimeout(openTimer);
+      anchorX = event.clientX;
+      anchorY = event.clientY;
+      openTimer = window.setTimeout(() => {
+        // Re-checked rather than assumed: the pointer may have left during the
+        // wait, and `mouseleave` cannot be relied on to have fired before this
+        // timer on every browser. The dismissal check is for an Escape pressed
+        // inside the delay — it collapses the entry from above, and a timer
+        // firing afterwards would leave this row's aria-expanded reading true
+        // under a panel nobody can see.
+        if (!element.matches(":hover")) return;
+        if (element.closest(".uwp-nav-item.is-dismissed")) return;
+        reveal();
+      }, HOVER_SETTLE_DELAY);
     };
 
-    const open = () => {
+    const open = (event) => {
       window.clearTimeout(closeTimer);
       window.clearTimeout(openTimer);
       if (!finePointer.matches || !desktop.matches) return;
-      if (siblingOpen()) {
-        openTimer = window.setTimeout(() => {
-          // Re-checked rather than assumed: the pointer may have left during
-          // the wait, and `mouseleave` cannot be relied on to have fired
-          // before this timer on every browser. The dismissal check is for
-          // an Escape pressed inside the delay — it collapses the entry from
-          // above, and a timer firing afterwards would leave this row's
-          // aria-expanded reading true under a panel nobody can see.
-          if (!element.matches(":hover")) return;
-          if (element.closest(".uwp-nav-item.is-dismissed")) return;
-          reveal();
-        }, isBranch ? HOVER_OPEN_DELAY : HOVER_SWITCH_DELAY);
+      arm(event);
+    };
+
+    // Manhattan distance, not Euclidean: this is a "has it moved" test, not a
+    // measurement, and the cheaper one answers it identically at this scale.
+    const track = (event) => {
+      // Once the panel is up the pointer is free to move inside it — that is
+      // the reader using the menu, not deciding to. Re-arming there would set
+      // a timer that only ever re-reveals what is already revealed.
+      if (element.classList.contains("is-open")) return;
+      if (!finePointer.matches || !desktop.matches) return;
+      if (
+        Math.abs(event.clientX - anchorX) + Math.abs(event.clientY - anchorY) <=
+        HOVER_SETTLE_SLOP
+      ) {
         return;
       }
-      reveal();
+      arm(event);
     };
 
     const scheduleClose = () => {
-      // A row left before its open delay elapsed was a crossing, not a
+      // A row left before its settle delay elapsed was a crossing, not a
       // destination. Dropping the timer here is what keeps the fly-out the
       // reader aimed at open: it is never told to close, because the row
       // being passed over is never told to open.
@@ -261,6 +272,9 @@
 
     element.addEventListener("mouseenter", open);
     element.addEventListener("mouseleave", scheduleClose);
+    // Passive: the settle test only reads the pointer, and a listener on every
+    // entry of the bar must not be able to hold up a scroll.
+    element.addEventListener("mousemove", track, { passive: true });
 
     // A panel opened by click or arrow keys has no mouseleave to close it, so
     // it closes when focus leaves it — it is a menu, not a dialog, and holds

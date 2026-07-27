@@ -1744,10 +1744,58 @@ html:not(.uwp-js) .uwp-nav-mega {
   color: var(--uwp-muted);
 }
 
+/* Two across is the floor, and that is the whole of this rule's argument.
+   `minmax(min(100%, 14rem), 1fr)` — what stood here — resolves to a single
+   column whenever the grid is narrower than two 14rem tracks and a gap, which
+   is every phone: a 50-photograph album became fifty full-width screens, one
+   picture at a time for fifty screens, and read as a column of pictures rather
+   than as an album. A set is only legible as a set when its members are beside
+   each other.
+
+   `min(50% - <half the gap>, 12rem)` is that floor written intrinsically, so
+   this file still carries no media query. Below the width where two 12rem
+   tracks fit, the percentage wins and the tracks are exactly half the grid
+   minus their share of the gap — two columns, at any width, down to a watch.
+   Above it the 12rem wins and `auto-fill` lays as many tracks as fit, which is
+   three across an ordinary reading measure and six across a full-width page.
+   `auto-fill` rather than `auto-fit` because a gallery of five should be five
+   tiles at the tile size, not five tiles stretched across a desktop row.
+
+   12rem and not the 14rem this rule was first written with: 14rem misses three
+   across a 44rem reading column by eight pixels, which is the commonest place
+   a gallery is put and the width at which two enormous tiles look least like a
+   set. A thumbnail is a thumbnail; full size is what the lightbox is for. */
 .uwp-gallery__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(50% - .5rem, 12rem), 1fr));
   gap: var(--uwp-space-2);
+}
+
+/* The tile is a square frame; the photograph inside it is not square and is
+   not made square. `object-fit: cover` fills the frame at the picture's own
+   aspect ratio and crops the overflow, so faces are not stretched — the frame
+   is the grid's, the proportions stay the photograph's. A ragged grid of
+   inherited aspect ratios is what the component had before, and it is why the
+   thumbnails never read as one set.
+
+   Scoped to the grid, not to `.uwp-gallery`: the lightbox lives inside the
+   same section and its picture is shown whole, uncropped, at whatever shape it
+   is. `:not([class*="uwp-"])` for the reason the media rule above gives — an
+   element carrying a package class states its own box. */
+.uwp-gallery__grid img:not([class*="uwp-"]) {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--uwp-surface);
+}
+
+/* The tiles sit at the top of their row rather than stretching to it. A row's
+   height is set by its tallest tile, which is the one whose caption wrapped to
+   two lines; stretched, every other picture in that row would grow to match and
+   the grid would stop being square. */
+.uwp-gallery__grid > * {
+  align-self: start;
 }
 
 .uwp-gallery button {
@@ -1755,6 +1803,52 @@ html:not(.uwp-js) .uwp-nav-mega {
   background: transparent;
   border: 0;
   cursor: zoom-in;
+}
+
+/* An optional line under a tile, for the caption the institution published.
+   It is a separate element rather than the button's text so that a tile with
+   no published caption has no empty line, and so the caption is not read as
+   part of the picture's accessible name — the `alt` is that. */
+.uwp-gallery__caption {
+  display: block;
+  padding-top: var(--uwp-space-1);
+  color: var(--uwp-muted);
+  font-family: var(--uwp-sans);
+  font-size: .875rem;
+  line-height: 1.4;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+/* --marks — the other thing a grid of pictures can be: a wall of logos,
+   crests, partner marks or pictograms.
+
+   It is a modifier and not the default because everything the default does is
+   wrong for a mark. A logo cropped to a square loses its wordmark; a logo
+   scaled to fill a 14rem tile is four times the size it was drawn at; and a
+   logo is not worth opening, so the lightbox that makes the default a gallery
+   makes this one a set of buttons that do nothing. So the tiles are smaller
+   and three across at the floor, the picture is `contain` inside a fixed frame
+   and never cropped, and the client renders the items as plain elements rather
+   than as lightbox buttons.
+
+   No forced light ground. Marks arrive with whatever ground their file was
+   drawn on and a chip under them would double it; a client whose marks are
+   transparent line art sets `--uwp-mark-ground` and gets one. */
+.uwp-gallery--marks .uwp-gallery__grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(33.333% - .667rem, 9rem), 1fr));
+}
+
+.uwp-gallery--marks .uwp-gallery__grid img:not([class*="uwp-"]) {
+  aspect-ratio: 16 / 10;
+  padding: var(--uwp-space-1);
+  object-fit: contain;
+  background: var(--uwp-mark-ground, var(--uwp-surface));
+  border: 1px solid var(--uwp-rule);
+}
+
+.uwp-gallery--marks .uwp-gallery__grid > * {
+  cursor: default;
 }
 
 .uwp-lightbox {

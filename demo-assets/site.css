@@ -449,61 +449,16 @@ h3 {
  * the screen sets a floor, so the hero gains the 86px that was leaking the
  * next section and nothing more. On a taller window it gains more, which is
  * the cost of the request being about screens. */
-.is-landing {
-  --screen: calc(100svh - var(--mitwpu-masthead-height, 115px));
-}
-
-/* On the ROOT, matched through the body's class, because `scroll-snap-type`
- * is only honoured on the element that actually scrolls — and on this site
- * that is <html>, not <body>. Declaring it on `.is-landing` computed fine and
- * did exactly nothing; the sections reported `scroll-snap-align: start` and
- * the page reported `scroll-snap-type: none`, which is the shape of this bug
- * every time and the reason to check the container rather than the children.
- * `:has()` is what lets the opt-in stay a body class while the property lands
- * where the browser reads it. */
-/* THE OFFSET IS DECLARED ONCE, ON THE SCROLLPORT, AND THAT IS A CORRECTION.
+/* The mechanism itself now lives in demo-assets/screen-rhythm.css, which
+ * tools/build_public_demo.py injects into every page of the artifact. It was
+ * here first, and moving it was not tidying: five other page families needed
+ * the same `--screen`, `.band-screen` and snap rules, and this stylesheet is
+ * one family's out of six. The alternative was four copies of a block that has
+ * already had two bugs in it that only measurement found.
  *
- * A `start` snap position lines the element's snap area up with the
- * scrollport's, and BOTH sides have an inset: the element's `scroll-margin`
- * and the scrollport's `scroll-padding`. They add. This page was setting
- * `scroll-margin-top: 115px` on the sections while `html` had carried
- * `scroll-padding-top: 5.5rem` since long before any of this, so the real
- * resting offset was 203px — every band came to rest 88px low, showing a
- * stripe of the band above it and hiding its own last 88px below the fold.
- *
- * That is precisely the fault this whole block was written to remove, and
- * under `proximity` it was easy to miss: a near miss looks like a near miss.
- * Mandatory made it the resting state of every band on the page, which is the
- * useful thing about mandatory — it cannot be approximately right.
- *
- * So the masthead is cleared on the scrollport and nowhere else. The section
- * rule below no longer sets `scroll-margin-top` at all, because a second
- * declaration of the same intention is what produced the bug. It also fixes an
- * older, quieter version of it: 5.5rem is 88px and the masthead is 115, so
- * in-page anchor jumps had been landing 27px under it. */
-:root:has(> body.is-landing) {
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: var(--mitwpu-masthead-height, 115px);
-}
-
-/* The screen. One per band, or two for Latest — see the rule above. The
- * section keeps the ground and the boundary rules; this carries everything
- * about being one page of the document. */
-.is-landing .band-screen {
-  min-height: var(--screen);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  scroll-snap-align: start;
-}
-
-/* See "THE FOOTER IS A SNAP TARGET TOO" above. `end`, not `start`: the footer
- * is taller than a screen on a laptop, so a snap position at its top would be
- * a fifth band that does not fit, which is the thing this whole block exists
- * to avoid. Its bottom is the end of the document and always reachable. */
-.is-landing > footer {
-  scroll-snap-align: end;
-}
+ * What stays below is what is true of THIS page and no other — what each of
+ * its four bands spends on padding, how its headings are set against a 605px
+ * screen, and which of its boundaries the ground already draws. */
 
 /* Screen furniture, costed against a 605px screen rather than against a page.
  *
@@ -541,7 +496,10 @@ h3 {
 }
 
 .is-landing .activity .band-screen {
-  padding-block: 36px;
+  /* 24, not 36. Six cards in one screen is the tightest band on the page and
+     the padding is the cheapest 24px on it — the heading above already
+     separates this band from the last one. */
+  padding-block: 24px;
 }
 
 .is-landing .home-events .band-screen {
@@ -580,42 +538,6 @@ h3 {
  * those are gone. The hero's and the grievance band's borders were exactly
  * that case.
  *
- * THE INNER RULE IS NOT DRAWN LIKE THE OUTER ONE, and that is the point of it.
- * A continuation is a weaker event than a new section, and drawing them the
- * same tells a reader they are the same. The between-sections rule is a
- * full-bleed hairline in --line; this one is inset to the shell's measure, so
- * it starts and stops where the cards do and reads as belonging INSIDE
- * something rather than as the edge of it. Set at 55% alpha over the same
- * token so it is a lighter mark on both grounds rather than a different
- * colour on either.
- *
- * `color-mix` over `var(--line)` rather than a hand-picked pair, because
- * --line is #d8e0e5 on light and #2a3b48 on dark and a fixed rgba that reads
- * as a division on paper either vanishes or turns into a hard seam on the dark
- * ground. Mixing 55% of the token with `transparent` keeps the RELATIONSHIP to
- * whatever ground is behind it rather than fixing a value that is only correct
- * in one theme.
- *
- * Drawn on a pseudo-element rather than as a border, because it has to be at
- * the screen's top EDGE and only as wide as the measure. A border-top would be
- * full-bleed; a border on the shell inside would sit wherever the centred
- * content happens to fall, which on a screen with 143px of slack is the middle
- * of nowhere. Absolute positioning takes it out of the flex flow, so it does
- * not become a column item. */
-.is-landing .band-screen--continued {
-  position: relative;
-}
-
-.is-landing .band-screen--continued::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: min(100% - 48px, var(--shell));
-  height: 1px;
-  content: "";
-  background: color-mix(in srgb, var(--line) 55%, transparent);
-  transform: translateX(-50%);
-}
 
 /* Where the ground changes, the ground IS the boundary, and the hairline these
  * three carried was drawing a line along an edge the paper had already turned.
@@ -666,23 +588,6 @@ h3 {
  * content that was already short. Snapping goes with it: on a touch screen it
  * fights the fling. */
 @media (max-width: 60rem) {
-  :root:has(> body.is-landing) {
-    scroll-snap-type: none;
-  }
-
-  .is-landing .band-screen {
-    min-height: 0;
-    display: block;
-  }
-
-  /* Once there are no screens there is no inner page boundary, and the mark
-     that said "this is the second page of Latest" would be saying it about a
-     break that no longer exists — one column of six cards, scrolled straight
-     through. The cards' own bottom rules already separate them. */
-  .is-landing .band-screen--continued::before {
-    content: none;
-  }
-
   /* The screens' padding was sized for a fixed 605px budget it is no longer
      spending. Here it is ordinary band padding again — and it has to be split
      across the two Latest screens rather than applied to both, or the join
@@ -702,13 +607,6 @@ h3 {
   }
 }
 
-/* A reader who has asked for less movement has asked not to be moved by the
- * page. Snapping is the page deciding where the scroll ends. */
-@media (prefers-reduced-motion: reduce) {
-  :root:has(> body.is-landing) {
-    scroll-snap-type: none;
-  }
-}
 
 .hero {
   background: var(--subtle);
@@ -1258,7 +1156,7 @@ h3 {
  * next thing and it is dark: a band butting straight onto that edge reads as
  * cramped in a way it does not against paper. */
 .activity {
-  padding-block: 80px 72px;
+  padding-block: 56px 52px;
   background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
@@ -1302,18 +1200,66 @@ h3 {
    general rule this is an instance of: auto-fill is right when the item count
    is open, auto-fit when it is fixed, and this feed's count stopped being open
    the moment it had to fit a screen. */
+/* Two columns of three, and the card turned on its side.
+ *
+ * It was three columns of two, spread over two screens, until the operator
+ * said: "all Latest news in one page — right now it is spilled in two. We can
+ * add pages of things but they have to justify the full page treatment." A
+ * second screen carrying three cards because three did not fit is spillover,
+ * not a page, and that is the distinction — a page has to be worth arriving
+ * on.
+ *
+ * Six cards had to come down from 1,139px to under 605, and the honest way is
+ * not a shorter picture. A stacked card at 392px wide needs its picture to
+ * fall to about 90px for six of them to fit, which is a 4.3:1 strip — a
+ * letterbox, not a photograph, and the note under .activity-image already
+ * argues that case against 16/9.
+ *
+ * Turning the card on its side spends the page's width instead of its height,
+ * and this page has width to spend: the shell is 1,232px and a stacked card
+ * was using a third of it for a headline of six words. At two across, a card
+ * is ~602px — picture on the left at the same 3/2 the rest of the site uses,
+ * copy beside it with room to be read. Three rows fit where two rows of the
+ * old card did not, and the picture is 200x133 rather than 392x90.
+ *
+ * If Latest ever carries enough to justify a second screen on its own terms,
+ * it gets one. That is what the band-screen mechanism is for. */
 .activity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  align-items: stretch;
-  gap: 44px 28px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+  align-items: start;
+  gap: 12px 28px;
 }
 
 .activity-card {
   display: grid;
-  grid-template-rows: auto 1fr;
+  /* The picture column is sized so three rows clear a 605px screen at
+     1280x720, which is the tightest common laptop and the case this whole
+     band was rebuilt for. At 3/2 a 180px column is 120px tall; the copy
+     beside it runs to 128, so the copy sets the card height and the picture
+     is never the thing that overflows a screen. */
+  grid-template-columns: clamp(140px, 14vw, 180px) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
   min-width: 0;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--line-strong);
+}
+
+/* The card's copy is what sets its height — the picture beside it is shorter —
+ * so this is where a screen is won or lost. At 1280x720 the h3 ran to two
+ * lines at 22.72/29 with 8px under it and the kind label 8px above; three rows
+ * of that put the band 25px over a screen. Tightening the leading and closing
+ * the gap under the last line, which nothing follows, buys it back without
+ * making the headline smaller — a feed of six headlines is the one thing on
+ * this band a reader is actually here to read. */
+.is-landing .activity-card h3 {
+  margin-bottom: 0;
+  line-height: 1.22;
+}
+
+.is-landing .activity-kind {
+  margin-bottom: 5px;
 }
 
 .activity-image {

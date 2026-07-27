@@ -1592,6 +1592,165 @@ h3 {
   font-size: .88rem;
 }
 
+/* ── screen furniture for the composed landings ──────────────────────
+ *
+ * The mechanism is demo-assets/screen-rhythm.css, which every page of the
+ * artifact loads and only a page carrying `.is-landing` activates. What is
+ * here is the half that cannot be generic: what THIS family's bands spend on
+ * padding, how many columns a paged directory takes, and how its headings are
+ * set once a heading has a whole window to sit in rather than a fourteenth of
+ * one. tools/build_university_layers.mjs decides which five pages opt in, and
+ * the note above SCREEN_RHYTHM there records the three that deliberately do
+ * not.
+ *
+ * EVERY BAND'S PADDING MOVES INSIDE ITS SCREENS. Leaving it on the section is
+ * not a near miss: on a two-screen band the padding would sit between the two
+ * screens and the band would stop being a whole number of them, and on a
+ * one-screen band it is simply added to a height that was already exactly a
+ * screen. Both were measured here — the directory band read 1.13 screens with
+ * its own `padding-block` still in place and 1.00 with it moved. */
+.is-landing .hero-band,
+.is-landing .maeer-mission,
+.is-landing .curated-media,
+.is-landing .campus-map,
+.is-landing .directory {
+  padding-block: 0;
+}
+
+/* Costed against a 605px screen rather than against a page. These bands were
+ * written when they could spend what they liked and the page simply grew; on a
+ * screen the padding is the first claim on it, and `clamp(3.8rem, 8vw, 7rem)`
+ * at both edges was 122px of a 605px budget before anything was drawn. */
+/* 16, not the 32 this started at. The hero's height is set by its picture —
+   a 539px figure against 331px of copy at 1280x720 — so the padding is the
+   only part of the band that can move, and at 32 the band measured 1.04
+   screens: 22px over, showing a stripe of the next band and hiding its own
+   last 22px. There is no cost at a taller viewport, where the screen is a
+   floor and the slack is distributed by the screen's own centring. */
+.is-landing .hero-band .band-screen {
+  padding-block: 16px;
+}
+
+.is-landing .maeer-mission .band-screen,
+.is-landing .curated-media .band-screen {
+  padding-block: 40px;
+}
+
+.is-landing .campus-map .band-screen,
+.is-landing .directory .band-screen {
+  padding-block: 28px;
+}
+
+.is-landing .section-heading {
+  margin-bottom: 20px;
+}
+
+/* The hero's own padding is on the screen now, and its grid keeps the measure.
+   `min-height: 0` lets the two columns shrink inside a flex parent that has
+   already been given the height — without it the grid keeps its content height
+   and pushes the screen past 1.00. */
+.is-landing .hero {
+  min-height: 0;
+  padding-block: 0;
+}
+
+/* A paged directory: one row per screen, and the column count comes from the
+ * builder because it is a property of how many groups there are, not of the
+ * viewport. Four when the whole directory is one row, three when it is paged —
+ * see `directoryScreens` for the measurement behind both. */
+.is-landing .directory-grid[data-columns="4"] {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* The blurb's `min-height: 4.8em` exists to level cards against each other in
+   a grid of ragged rows. On a screen there is exactly one row and the cards
+   already level themselves, so the floor buys nothing and costs 115px of a
+   533px content budget on every card whose blurb is one line. */
+.is-landing .directory-card > p {
+  min-height: 0;
+  margin: 0.65rem 0 1.1rem;
+}
+
+.is-landing .directory-card {
+  padding: clamp(1.1rem, 2.4vw, 1.6rem);
+}
+
+.is-landing .directory-link {
+  padding-block: 0.62rem;
+}
+
+/* The campus map fitted to its screen rather than drawn at its natural height.
+   The plan is 1600x2910 and drew 2270px tall at this measure, which is what
+   made the band six screens; `contain` keeps the whole sheet visible and the
+   aspect ratio true, and the PDF link in the figcaption is where the detail
+   that a fitted map cannot carry has always lived. */
+.is-landing .campus-map__figure--stacked {
+  margin-top: 0;
+}
+
+/* Bounded against the screen and not against the column, which is the whole
+   difference. `width: 100%` on a 1600x2910 plan draws it 2270px tall at this
+   measure and the band came to 4.11 screens; capping the HEIGHT and letting
+   the width follow keeps the sheet whole and the aspect ratio true.
+   The two subtractions are the furniture each screen carries around the
+   picture — a heading and a caption on the first, a caption alone on the
+   second — measured on the artifact at 73 and 67, and 48. */
+.is-landing .campus-map__figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(var(--screen) - 240px);
+  margin-inline: auto;
+}
+
+.is-landing .campus-map__figure--stacked img {
+  max-height: calc(var(--screen) - 130px);
+}
+
+/* Type set for the screen rather than for the column. A heading that was
+ * correct when several bands shared one scroll is undersized once each band IS
+ * the scroll — the eye has a whole window and the heading occupies a
+ * fourteenth of it. The ceiling matters as much as the floor: this is an
+ * institution's page and not a product launch, and past about 60px a heading
+ * of six words starts breaking in ways that read as a poster. */
+.is-landing .hero h1 {
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 1.04;
+}
+
+.is-landing > main > section h2 {
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  line-height: 1.06;
+}
+
+/* The phone opt-out in screen-rhythm.css takes the heights and the snapping
+   away; these give the bands back the ordinary padding they had before the
+   screen budget existed, because a column that scrolls normally is not paying
+   for its whitespace out of a fixed 605. */
+@media (max-width: 60rem) {
+  .is-landing .hero-band .band-screen,
+  .is-landing .maeer-mission .band-screen,
+  .is-landing .curated-media .band-screen,
+  .is-landing .campus-map .band-screen,
+  .is-landing .directory .band-screen {
+    padding-block: clamp(3rem, 7vw, 5rem) 0;
+  }
+
+  .is-landing .directory .band-screen--continued {
+    padding-block: 0;
+  }
+
+  .is-landing .campus-map__figure img,
+  .is-landing .campus-map__figure--stacked img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .is-landing .campus-map__figure--stacked {
+    margin-top: 1.5rem;
+  }
+}
+
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {

@@ -18,10 +18,12 @@
   <link rel="stylesheet" href="../vendor/university-web-patterns/src/css/patterns.css">
   <link rel="stylesheet" href="../_assets/public-surface.css?v=b0e1f5150d95">
   <script src="../vendor/university-web-patterns/src/js/navigation.js" defer></script>
+  <script src="../vendor/university-web-patterns/src/js/gallery.js" defer></script>
   <script src="../_assets/theme.js?v=5fc1f6e16f04" defer></script>
   <title>Institution Innovation Council | MIT-WPU IIC</title>
   <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=05487f20e752" data-global-masthead-style>
   <link rel="stylesheet" href="/demo-assets/readability.css?v=07173f3cd9ae" data-global-readability-style>
+  <link rel="stylesheet" href="/demo-assets/screen-rhythm.css?v=25cd99c69acc" data-global-screen-rhythm-style>
   <meta property="og:title" content="Institution Innovation Council | MIT-WPU IIC" data-release-generated="social">
   <meta property="og:description" content="The Institution’s Innovation Council (IIC) is a flagship initiative of the Ministry of Education (MoE), Government of India, launched in partnership with the All India Council for Technical Education (AICTE) in 2018." data-release-generated="social">
   <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/other/8a/8a95bbcc305d9be4-8a95bbcc305d9be4-MIT-Campus-img.webp" data-release-generated="social">
@@ -35,13 +37,13 @@
 </head>
 <body>
   <a class="uwp-skip-link skip-link" href="#main"
-    data-uwp-component="skip-link" data-uwp-version="0.24.0">Skip to content</a>
-  <header class="uwp-masthead global-masthead site-header institution-bar" data-global-masthead data-uwp-component="masthead" data-uwp-version="0.24.0">
+    data-uwp-component="skip-link" data-uwp-version="0.25.0">Skip to content</a>
+  <header class="uwp-masthead global-masthead site-header institution-bar" data-global-masthead data-uwp-component="masthead" data-uwp-version="0.25.0">
   <div class="uwp-masthead__inner uwp-shell global-masthead__inner institution-inner">
     <div class="masthead-brands"><a class="global-masthead__brand institutional-lockup" href="/" aria-label="Dr. Vishwanath Karad MIT World Peace University home"><span class="masthead-emblem" aria-hidden="true"></span><span class="masthead-wordmark"><span class="masthead-wordmark__founder">Dr. Vishwanath Karad</span><strong class="masthead-wordmark__name">MIT World Peace University</strong></span></a></div>
     <nav class="uwp-nav global-masthead__nav institution-links site-nav" id="global-primary-nav" aria-label="University navigation" data-global-nav
       data-uwp-nav>
-      <div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.24.0">
+      <div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.25.0">
   <a class="uwp-nav-item__link" href="/about/">About</a>
   <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
     aria-expanded="false" aria-label="About submenu">
@@ -58,7 +60,7 @@
     <a href="/about-us/social-initiatives/">Social initiatives</a>
   </div>
 </div>
-<div class="uwp-nav-item uwp-nav-item--mega" data-uwp-component="nav-mega" data-uwp-version="0.24.0">
+<div class="uwp-nav-item uwp-nav-item--mega" data-uwp-component="nav-mega" data-uwp-version="0.25.0">
   <a class="uwp-nav-item__link" href="/academics/">Academics</a>
   <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
     aria-expanded="false" aria-label="Academics submenu">
@@ -107,7 +109,7 @@
     <a class="uwp-nav-mega__all" href="/academics/">Academics home</a>
   </div>
 </div>
-<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.24.0">
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.25.0">
   <a class="uwp-nav-item__link" href="/admissions/">Admissions</a>
   <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
     aria-expanded="false" aria-label="Admissions submenu">
@@ -122,7 +124,7 @@
     <a href="/placements/">Placements</a>
   </div>
 </div>
-<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.24.0">
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.25.0">
   <a class="uwp-nav-item__link" href="/research/">Research</a>
   <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
     aria-expanded="false" aria-label="Research submenu">
@@ -165,7 +167,7 @@
     <a href="/research/research-news/">Research news</a>
   </div>
 </div>
-<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.24.0">
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.25.0">
   <a class="uwp-nav-item__link" href="/people/">People</a>
   <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
     aria-expanded="false" aria-label="People submenu">
@@ -190,7 +192,7 @@
     <a href="/alumni/">Alumni</a>
   </div>
 </div>
-<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.24.0">
+<div class="uwp-nav-item" data-uwp-component="nav-cascade" data-uwp-version="0.25.0">
   <a class="uwp-nav-item__link" href="/life-at-mit-wpu/">Campus</a>
   <button class="uwp-nav-item__disclosure" type="button" data-uwp-nav-disclosure
     aria-expanded="false" aria-label="Campus submenu">
@@ -229,7 +231,7 @@
   </div>
 </div>
 <a href="/students/"
-  data-uwp-component="nav-item" data-uwp-version="0.24.0">Students</a>
+  data-uwp-component="nav-item" data-uwp-version="0.25.0">Students</a>
     </nav>
     <div class="uwp-masthead__actions">
       <button class="uwp-nav-toggle masthead-nav-toggle" type="button" data-uwp-nav-toggle
@@ -239,7 +241,7 @@
       </button>
       <form class="uwp-search-field" action="/search/" method="get"
   role="search" aria-label="Search this website"
-  data-uwp-component="search-field" data-uwp-version="0.24.0">
+  data-uwp-component="search-field" data-uwp-version="0.25.0">
   <label class="uwp-visually-hidden" for="q">Search this website</label>
   <input class="uwp-search-field__input" id="q"
     name="q" type="search" autocomplete="off"
@@ -251,7 +253,7 @@
   </button>
 </form>
       <button class="uwp-theme-toggle theme-toggle" type="button" data-theme-toggle data-uwp-theme-toggle
-  data-uwp-component="theme-toggle" data-uwp-version="0.24.0" aria-pressed="false"
+  data-uwp-component="theme-toggle" data-uwp-version="0.25.0" aria-pressed="false"
   aria-label="Switch colour theme">
   <span class="uwp-theme-icon uwp-theme-icon--light" aria-hidden="true"></span>
   <span class="uwp-theme-icon uwp-theme-icon--dark" aria-hidden="true"></span>
@@ -259,27 +261,27 @@
 </button>
     </div>
   </div>
-</header><header class="uwp-masthead site-header" data-uwp-component="masthead" data-uwp-version="0.24.0" data-legacy-masthead>
+</header><header class="uwp-masthead site-header" data-uwp-component="masthead" data-uwp-version="0.25.0" data-legacy-masthead>
     <div class="uwp-masthead__inner uwp-shell header-inner">
       <a class="uwp-brand uwp-brand--wordmark" href="/">MIT World Peace University</a>
       <nav class="uwp-nav primary-nav" id="public-surface-primary-nav" aria-label="Primary"
         data-uwp-nav>
         <a href="/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">Home</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">Home</a>
           <a href="/about/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">About</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">About</a>
           <a href="/academics/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">Academics</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">Academics</a>
           <a href="/admissions/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">Admissions</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">Admissions</a>
           <a href="/research/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">Research</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">Research</a>
           <a href="/people/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">People</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">People</a>
           <a href="/life-at-mit-wpu/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">Campus</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">Campus</a>
           <a href="/students/"
-    data-uwp-component="nav-item" data-uwp-version="0.24.0">Students</a>
+    data-uwp-component="nav-item" data-uwp-version="0.25.0">Students</a>
       </nav>
       <div class="uwp-masthead__actions">
         <button class="uwp-nav-toggle" type="button" data-uwp-nav-toggle
@@ -288,7 +290,7 @@
           <span aria-hidden="true"></span>
         </button>
         <button class="uwp-theme-toggle theme-toggle" type="button" data-theme-toggle data-uwp-theme-toggle
-    data-uwp-component="theme-toggle" data-uwp-version="0.24.0" aria-pressed="false"
+    data-uwp-component="theme-toggle" data-uwp-version="0.25.0" aria-pressed="false"
     aria-label="Switch colour theme">
     <span class="uwp-theme-icon uwp-theme-icon--light" aria-hidden="true"></span>
     <span class="uwp-theme-icon uwp-theme-icon--dark" aria-hidden="true"></span>
@@ -299,13 +301,13 @@
   </header>
   <main id="main" class="page-shell" tabindex="-1">
     <nav class="uwp-breadcrumbs breadcrumbs" aria-label="Breadcrumb"
-      data-uwp-component="breadcrumbs" data-uwp-version="0.24.0">
+      data-uwp-component="breadcrumbs" data-uwp-version="0.25.0">
       <ol>
         <li><a href="/">MIT-WPU</a></li>
         <li><span aria-current="page">Institution Innovation Council</span></li>
       </ol>
     </nav>
-    <header class="uwp-hero hero" data-uwp-component="hero" data-uwp-version="0.24.0">
+    <header class="uwp-hero hero" data-uwp-component="hero" data-uwp-version="0.25.0">
       <div class="uwp-hero__grid uwp-shell uwp-hero__grid--single">
         <div class="uwp-hero__copy">
           <h1>Institution Innovation Council</h1>
@@ -326,7 +328,6 @@
 <p>NISP</p>
 <p>Events</p>
 <h2>Institution&#x27;s Innovation Council (IIC) - A National Initiative</h2>
-<figure class="media"><img src="/media/mitwpu-public/optimized/other/7d/7d68f9ca12716832-7d68f9ca12716832-IIC-logo-mitwpu.webp" alt="IIC Logo" width="255" height="147" loading="lazy" decoding="async"><figcaption>IIC Logo</figcaption></figure>
 <p>The Institution’s Innovation Council (IIC) is a flagship initiative of the Ministry of Education (MoE), Government of India, launched in partnership with the All India Council for Technical Education (AICTE) in 2018. This program is designed to systematically foster a culture of innovation and entrepreneurship within Higher Education Institutions (HEIs) across the country.</p>
 <h2>Institution&#x27;s Innovation Council (IIC) at MIT World Peace University</h2>
 <p>At MIT World Peace University (MIT-WPU), the Institution’s Innovation Council (IIC) plays a pivotal role in cultivating an ecosystem that encourages creativity, innovation, and entrepreneurial thinking. In alignment with the objectives of the Ministry of Education’s Innovation Cell (MIC), the IIC at MIT-WPU actively supports students in developing their innovative ideas into viable prototypes, research projects, and entrepreneurial ventures.</p>
@@ -339,7 +340,6 @@
 <li>Create a vibrant innovation ecosystem through regular activities, mentoring, support for ideation, prototyping, incubation, and technology transfer.</li>
 <li>Integrate innovation into academics by fostering research, IPR awareness, and real-world application of innovative solutions.</li>
 </ul>
-<figure class="media"><img src="/media/mitwpu-public/optimized/other/a0/a0e3ea0a2bcd5aec-a0e3ea0a2bcd5aec-MOE-innovation-logo-mitwpu.webp" alt="MOE-innovation" width="225" height="147" loading="lazy" decoding="async"><figcaption>MOE-innovation</figcaption></figure>
 <h2>Functions</h2>
 <ul>
 <li>Organizing regular innovation and entrepreneurship-related workshops, hackathons, seminars, and expert talks.</li>
@@ -353,9 +353,6 @@
 <li>Exposure to real-world innovation and startup practices through hands-on learning.</li>
 <li>Mentorship and guidance from experts in industry, academia, and entrepreneurship.</li>
 <li>Opportunity to develop and showcase innovative ideas and get support for prototyping and incubation.</li>
-</ul>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/leadership/86/8620d1e46a5423bd-8620d1e46a5423bd-63e62fd9e4e8c1676029913.webp" alt="Milind Pande" width="473" height="468" loading="lazy" decoding="async"><figcaption>Milind Pande</figcaption></figure>
-<ul>
 <li>Opportunities to participate in prestigious national initiatives such as Smart India Hackathon, Toycathon, YUKTI – National Innovation Repository, and the KAPILA program for IPR awareness and support.</li>
 <li>Development of entrepreneurial mindset and skillsets, preparing students to become job creators rather than job seekers.</li>
 </ul>
@@ -367,7 +364,6 @@
 <p>CONTACT</p>
 <p>Dr. Ganesh M. Kakandikar</p>
 <p>President</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/fe/fea09253a58a4be2-abhishek-madhukar-thote.webp" alt="Murty Chavali" width="473" height="468" loading="lazy" decoding="async"><figcaption>Murty Chavali</figcaption></figure>
 <p>Teaching</p>
 <p>9860641885</p>
 <p>Dr. Vinod Shastri</p>
@@ -377,7 +373,6 @@
 <p>Convener</p>
 <p>9422223338</p>
 <p>Dr. Vikram Shete</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/6d/6d353ec1f05cf406-ankita-agarwal.webp" alt="Ankita Agarwal" width="473" height="468" loading="lazy" decoding="async"><figcaption>Ankita Agarwal</figcaption></figure>
 <p>Startup Activity Coordinator</p>
 <p>9833838177</p>
 <p>Dr. Surbhi Razdan</p>
@@ -385,10 +380,10 @@
 <p>9422293509</p>
 <p>Dr. Vinay Munde</p>
 <p>Innovation Activity Member</p>
+<figure class="media"><img src="/media/mitwpu-public/optimized/other/7d/7d68f9ca12716832-7d68f9ca12716832-IIC-logo-mitwpu.webp" alt="IIC Logo" width="255" height="147" loading="lazy" decoding="async"><figcaption>IIC Logo</figcaption></figure>
 <p>7745023593</p>
 <p>Mr. Sanjeeb Biswal</p>
 <p>Internship Activity Coordinator</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/f7/f777316f2cdc5e55-f777316f2cdc5e55-Arunabh-Pandey.webp" alt="Arunabh Pandey" width="473" height="468" loading="lazy" decoding="async"><figcaption>Arunabh Pandey</figcaption></figure>
 <p>Non-Teaching</p>
 <p>8055739221</p>
 <p>Dr. Kundlik Mali</p>
@@ -399,7 +394,6 @@
 <p>9822243843</p>
 <p>10</p>
 <p>Dr. Aashish Utage</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/a0/a0e4cb8e353ae35e-a0e4cb8e353ae35e-643ceac7225621681713863.webp" alt="Deepali Pankaj Javale" width="473" height="468" loading="lazy" decoding="async"><figcaption>Deepali Pankaj Javale</figcaption></figure>
 <p>NISP Coordinator</p>
 <p>9028876791</p>
 <p>11</p>
@@ -410,7 +404,6 @@
 <p>Dr. Arunabh Pandey</p>
 <p>8400945236</p>
 <p>13</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/ac/ac5022e7c6cbb7a8-abhijeet-shrikrishna-kokare.webp" alt="Hemlata Gangwar" width="473" height="468" loading="lazy" decoding="async"><figcaption>Hemlata Gangwar</figcaption></figure>
 <p>Dr. Kiran Shejale</p>
 <p>9822145673</p>
 <p>14</p>
@@ -421,7 +414,6 @@
 <p>Dr. Vaidehi Deshmukh</p>
 <p>9422060462</p>
 <p>16</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/c7/c79e4d3a8514015a-c79e4d3a8514015a-Shilpa-Budhavale-updated.webp" alt="Shilpa Budhavale" width="473" height="468" loading="lazy" decoding="async"><figcaption>Shilpa Budhavale</figcaption></figure>
 <p>Dr. Ankita Agarwal</p>
 <p>8100364903</p>
 <p>17</p>
@@ -432,7 +424,6 @@
 <p>9766001510</p>
 <p>19</p>
 <p>Dr. Nithya Kutti</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/f3/f36cd946b479c4b4-f36cd946b479c4b4-Surabhi-Razdan.webp" alt="Surbhi Razdan" width="473" height="467" loading="lazy" decoding="async"><figcaption>Surbhi Razdan</figcaption></figure>
 <p>9000143408</p>
 <p>20</p>
 <p>Dr. Aditi Chakrabarti</p>
@@ -443,10 +434,10 @@
 <p>23</p>
 <p>Ms. Seema Patil</p>
 <p>9923417684</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/c4/c43f89431a3f58b1-c43f89431a3f58b1-Vinay-Munde.webp" alt="Vinay Munde" width="473" height="468" loading="lazy" decoding="async"><figcaption>Vinay Munde</figcaption></figure>
 <p>24</p>
 <p>Ms. Priya Kale</p>
 <p>9552524624</p>
+<figure class="media"><img src="/media/mitwpu-public/optimized/other/a0/a0e3ea0a2bcd5aec-a0e3ea0a2bcd5aec-MOE-innovation-logo-mitwpu.webp" alt="MOE-innovation" width="225" height="147" loading="lazy" decoding="async"><figcaption>MOE-innovation</figcaption></figure>
 <p>25</p>
 <p>Ms. Sai Sumant</p>
 <p>9881922571</p>
@@ -454,7 +445,6 @@
 <p>Dr. Chandrakant Bobade</p>
 <p>9921596447</p>
 <p>27</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/faculty_profile/36/36f8399b98deced3-vinita-kale.webp" alt="Vinita Kale" width="473" height="467" loading="lazy" decoding="async"><figcaption>Vinita Kale</figcaption></figure>
 <p>Mr. Sumeet Kulkarni</p>
 <p>Innovation Coordinator</p>
 <p>Student</p>
@@ -464,7 +454,6 @@
 <p>Startup Coordinator</p>
 <p>9711102267</p>
 <p>29</p>
-<figure class="media"><img src="/media/mitwpu-public/optimized/other/5b/5b2c8bec3535e38c-5b2c8bec3535e38c-blue-arrow.svg" alt="Digital Document Service" loading="lazy" decoding="async" width="42" height="22"><figcaption>Digital Document Service</figcaption></figure>
 <p>Rushabh Muchhal</p>
 <p>Internship Coordinator</p>
 <p>8149318478</p>
@@ -475,7 +464,6 @@
 <p>31</p>
 <p>Keshvi Sachdev</p>
 <p>9479484673</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/research_facility_event/9b/9b86df004db074b1-9b86df004db074b1-RIDE-2025-thumb-new.webp" alt="R.I.D.E. 2025: A Journey of Innovation, Design Thinking &amp; Entrepreneurship" width="477" height="418" loading="lazy" decoding="async"><figcaption>R.I.D.E. 2025: A Journey of Innovation, Design Thinking &amp; Entrepreneurship</figcaption></figure>
 <p>32</p>
 <p>Mr. Raghavendra Bhat</p>
 <p>IP Expert</p>
@@ -486,7 +474,6 @@
 <p>Alumni Entrepreneur</p>
 <p>9403311409</p>
 <p>34</p>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/research_facility_event/ef/ef95a22dd897b0c5-ef95a22dd897b0c5-hackthon-thumbnail.webp" alt="HackMIT-WPU 2025 : A Leap Towards Innovation and Entrepreneurship" width="477" height="418" loading="lazy" decoding="async"><figcaption>HackMIT-WPU 2025 : A Leap Towards Innovation and Entrepreneurship</figcaption></figure>
 <p>Mr. Navnath Suryavanshi</p>
 <p>Industry Association Representative</p>
 <p>9881056538</p>
@@ -497,7 +484,6 @@
 <p>Chief Executive Officer, MIT-TBI</p>
 <p>Incubation Centre Representative</p>
 <h2>Innovation Ambassadors MIT-WPU</h2>
-<figure class="media media--compact"><img src="/media/mitwpu-public/optimized/research_facility_event/4f/4fd2d1f67dd54646-4fd2d1f67dd54646-startup_thumbnail.webp" alt="Udyamostav 2025: A Remarkable Celebration of National Startup Day" width="477" height="418" loading="lazy" decoding="async"><figcaption>Udyamostav 2025: A Remarkable Celebration of National Startup Day</figcaption></figure>
 <h2>NISP</h2>
 <p>NISP Committee</p>
 <p>MIT-WPU NISP Policy</p>
@@ -508,11 +494,41 @@
 <p>HackMIT-WPU 2025 : A Leap Towards Innovation and Entrepreneurship</p>
 <p>16 Jan&#x27;2025</p>
 <p>Udyamostav 2025: A Remarkable Celebration of National Startup Day</p>
+<section class="uwp-gallery" data-uwp-component="gallery" data-uwp-version="0.25.0"
+  aria-labelledby="gallery-photo-1">
+  <h2 id="gallery-photo-1">Photographs</h2>
+  <div class="uwp-gallery__grid" data-uwp-gallery>
+    <button type="button" data-uwp-gallery-item data-caption="Milind Pande"><img src="/media/mitwpu-public/optimized/leadership/86/8620d1e46a5423bd-8620d1e46a5423bd-63e62fd9e4e8c1676029913.webp" alt="Milind Pande" width="473" height="468" loading="lazy" decoding="async"><span class="uwp-gallery__caption">Milind Pande</span></button>
+<button type="button" data-uwp-gallery-item data-caption="Murty Chavali"><img src="/media/mitwpu-public/optimized/faculty_profile/fe/fea09253a58a4be2-abhishek-madhukar-thote.webp" alt="Murty Chavali" width="473" height="468" loading="lazy" decoding="async"><span class="uwp-gallery__caption">Murty Chavali</span></button>
+<button type="button" data-uwp-gallery-item><img src="/media/mitwpu-public/optimized/faculty_profile/6d/6d353ec1f05cf406-ankita-agarwal.webp" alt="Ankita Agarwal" width="473" height="468" loading="lazy" decoding="async"></button>
+<button type="button" data-uwp-gallery-item><img src="/media/mitwpu-public/optimized/faculty_profile/f7/f777316f2cdc5e55-f777316f2cdc5e55-Arunabh-Pandey.webp" alt="Arunabh Pandey" width="473" height="468" loading="lazy" decoding="async"></button>
+<button type="button" data-uwp-gallery-item data-caption="Deepali Pankaj Javale"><img src="/media/mitwpu-public/optimized/faculty_profile/a0/a0e4cb8e353ae35e-a0e4cb8e353ae35e-643ceac7225621681713863.webp" alt="Deepali Pankaj Javale" width="473" height="468" loading="lazy" decoding="async"><span class="uwp-gallery__caption">Deepali Pankaj Javale</span></button>
+<button type="button" data-uwp-gallery-item data-caption="Hemlata Gangwar"><img src="/media/mitwpu-public/optimized/faculty_profile/ac/ac5022e7c6cbb7a8-abhijeet-shrikrishna-kokare.webp" alt="Hemlata Gangwar" width="473" height="468" loading="lazy" decoding="async"><span class="uwp-gallery__caption">Hemlata Gangwar</span></button>
+<button type="button" data-uwp-gallery-item data-caption="Shilpa Budhavale"><img src="/media/mitwpu-public/optimized/faculty_profile/c7/c79e4d3a8514015a-c79e4d3a8514015a-Shilpa-Budhavale-updated.webp" alt="Shilpa Budhavale" width="473" height="468" loading="lazy" decoding="async"><span class="uwp-gallery__caption">Shilpa Budhavale</span></button>
+<button type="button" data-uwp-gallery-item data-caption="Surbhi Razdan"><img src="/media/mitwpu-public/optimized/faculty_profile/f3/f36cd946b479c4b4-f36cd946b479c4b4-Surabhi-Razdan.webp" alt="Surbhi Razdan" width="473" height="467" loading="lazy" decoding="async"><span class="uwp-gallery__caption">Surbhi Razdan</span></button>
+<button type="button" data-uwp-gallery-item><img src="/media/mitwpu-public/optimized/faculty_profile/c4/c43f89431a3f58b1-c43f89431a3f58b1-Vinay-Munde.webp" alt="Vinay Munde" width="473" height="468" loading="lazy" decoding="async"></button>
+<button type="button" data-uwp-gallery-item><img src="/media/mitwpu-public/optimized/faculty_profile/36/36f8399b98deced3-vinita-kale.webp" alt="Vinita Kale" width="473" height="467" loading="lazy" decoding="async"></button>
+<a href="/media/mitwpu-public/documents/c7/c7d5e13e024225b2-NISP-Committee-mitwpu.pdf"><img src="/media/mitwpu-public/optimized/other/5b/5b2c8bec3535e38c-5b2c8bec3535e38c-blue-arrow.svg" alt="Digital Document Service" loading="lazy" decoding="async" width="42" height="22"><span class="uwp-gallery__caption">NISP Committee</span></a>
+<a href="/events/ride-2025-a-journey-of-innovation-design-thinking--entrepreneurship/"><img src="/media/mitwpu-public/optimized/research_facility_event/9b/9b86df004db074b1-9b86df004db074b1-RIDE-2025-thumb-new.webp" alt="R.I.D.E. 2025: A Journey of Innovation, Design Thinking &amp; Entrepreneurship" width="477" height="418" loading="lazy" decoding="async"><span class="uwp-gallery__caption">11 Aug&#x27;2025</span></a>
+<a href="/events/hackmit-wpu-2025--a-leap-towards-innovation-and-entrepreneurship/"><img src="/media/mitwpu-public/optimized/research_facility_event/ef/ef95a22dd897b0c5-ef95a22dd897b0c5-hackthon-thumbnail.webp" alt="HackMIT-WPU 2025 : A Leap Towards Innovation and Entrepreneurship" width="477" height="418" loading="lazy" decoding="async"><span class="uwp-gallery__caption">26 Mar&#x27;2025</span></a>
+<a href="/events/udyamostav-2025-a-remarkable-celebration-of-national-startup-day/"><img src="/media/mitwpu-public/optimized/research_facility_event/4f/4fd2d1f67dd54646-4fd2d1f67dd54646-startup_thumbnail.webp" alt="Udyamostav 2025: A Remarkable Celebration of National Startup Day" width="477" height="418" loading="lazy" decoding="async"><span class="uwp-gallery__caption">16 Jan&#x27;2025</span></a>
+  </div>
+  <dialog class="uwp-lightbox" data-uwp-lightbox>
+    <button type="button" data-uwp-lightbox-close
+      aria-label="Close image viewer">×</button>
+    <div class="uwp-lightbox__inner is-single">
+      <figure>
+        <img data-uwp-lightbox-image alt="">
+        <figcaption data-uwp-lightbox-caption></figcaption>
+      </figure>
+    </div>
+  </dialog>
+</section>
       </article>
-      <aside class="uwp-card uwp-card--plain uwp-card--sticky related" data-uwp-component="related" data-uwp-version="0.24.0"
+      <aside class="uwp-card uwp-card--plain uwp-card--sticky related" data-uwp-component="related" data-uwp-version="0.25.0"
         aria-labelledby="related-title">
         <h2 id="related-title">Related public links</h2>
-        <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.24.0">
+        <ul class="uwp-link-list" data-uwp-component="link-list" data-uwp-version="0.25.0">
           <li>
             <a href="/institution-innovation-council/kapila/">
               <span>KAPILA</span>
@@ -550,46 +566,16 @@
               <span class="uwp-meta">Document</span>
             </a>
           </li>
-          <li>
-            <a href="/events/ride-2025-a-journey-of-innovation-design-thinking--entrepreneurship/">
-              <span>R.I.D.E. 2025: A Journey of Innovation, Design Thinking &amp; Entrepreneurship</span>
-            </a>
-          </li>
-          <li>
-            <a href="/events/ride-2025-a-journey-of-innovation-design-thinking--entrepreneurship/">
-              <span>11 Aug&#x27;2025</span>
-            </a>
-          </li>
-          <li>
-            <a href="/events/hackmit-wpu-2025--a-leap-towards-innovation-and-entrepreneurship/">
-              <span>HackMIT-WPU 2025 : A Leap Towards Innovation and Entrepreneurship</span>
-            </a>
-          </li>
-          <li>
-            <a href="/events/hackmit-wpu-2025--a-leap-towards-innovation-and-entrepreneurship/">
-              <span>26 Mar&#x27;2025</span>
-            </a>
-          </li>
-          <li>
-            <a href="/events/udyamostav-2025-a-remarkable-celebration-of-national-startup-day/">
-              <span>Udyamostav 2025: A Remarkable Celebration of National Startup Day</span>
-            </a>
-          </li>
-          <li>
-            <a href="/events/udyamostav-2025-a-remarkable-celebration-of-national-startup-day/">
-              <span>16 Jan&#x27;2025</span>
-            </a>
-          </li>
         </ul>
       </aside>
     </div>
   </main>
-  <footer class="uwp-footer site-footer" data-uwp-component="footer" data-uwp-version="0.24.0">
+  <footer class="uwp-footer site-footer" data-uwp-component="footer" data-uwp-version="0.25.0">
     <div class="uwp-footer__grid uwp-shell">
       <div class="uwp-footer__identity">
         <strong>MIT World Peace University</strong>
         <address>Pune, India</address>
-  <ul class="uwp-social-links" data-uwp-component="social-links" data-uwp-version="0.24.0">
+  <ul class="uwp-social-links" data-uwp-component="social-links" data-uwp-version="0.25.0">
     <li>
       <a class="uwp-social-links__link" href="https://www.facebook.com/MIT-WPUOfficial/"
         target="_blank" rel="noopener noreferrer" title="Facebook">
@@ -643,43 +629,47 @@
   </ul>
       </div>
       <nav class="uwp-footer__group" aria-label="Reach us">
+        <h2>Reach us</h2>
         <ul>
+          <li><a href="/contact-us/">Contact the university</a></li>
           <li><a href="/administration/">Offices and contacts</a></li>
           <li><a href="/forms/">Forms and requests</a></li>
-          <li><a href="/contact-us/">Contact the university</a></li>
-          <li><a href="/intranet/">Intranet</a></li>
-        </ul>
-      </nav>
-      <nav class="uwp-footer__group" aria-label="About">
-        <ul>
-          <li><a href="/about/">About MIT-WPU</a></li>
-          <li><a href="/about-us/about-mit/">Mission and values</a></li>
-          <li><a href="/about/maeer/">MAEER</a></li>
           <li><a href="/career/">Work with us</a></li>
-        </ul>
-      </nav>
-      <nav class="uwp-footer__group" aria-label="Legal and compliance">
-        <ul>
-          <li><a href="/privacy-policy/">Privacy and compliance</a></li>
-          <li><a href="/copyright-statement/">Copyright</a></li>
-          <li><a href="/accessibility/">Accessibility</a></li>
+          <li><a href="/intranet/">Intranet</a></li>
           <li><a href="/sitemap/">Sitemap</a></li>
         </ul>
       </nav>
-      <nav class="uwp-footer__group" aria-label="Grievance redressal">
-        <h2>Grievance redressal</h2>
+      <nav class="uwp-footer__group" aria-label="About MIT-WPU">
+        <h2>About MIT-WPU</h2>
+        <ul>
+          <li><a href="/about-us/about-mit/">Mission and values</a></li>
+          <li><a href="/about/maeer/">MAEER</a></li>
+          <li><a href="/happenings/">News and events</a></li>
+          <li><a href="/international/">International</a></li>
+          <li><a href="/mandatory-disclosures/">Mandatory disclosures</a></li>
+          <li><a href="/media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf">Statutory committees (PDF)</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="Raising a concern">
+        <h2>Raising a concern</h2>
         <ul>
           <li><a href="/grievance-redressal/">How to raise a grievance</a></li>
-          <li><a href="/about-us/national-ragging-prevention-programme/">Ragging prevention programme</a></li>
-          <li><a href="/student-affairs/anti-ragging-committee/">Anti-Ragging Committee</a></li>
           <li><a href="/academics/student-grievance/">Students’ Grievance Redressal Committee</a></li>
+          <li><a href="/student-affairs/anti-ragging-committee/">Anti-Ragging Committee</a></li>
           <li><a href="/student-affairs/internal-complaints-committee/">Internal Complaints Committee</a></li>
-          <li><a href="/student-affairs/discipline-committee/">University Discipline Committee</a></li>
           <li><a href="/sc-st-committee/">SC/ST and Equal Opportunity Cell</a></li>
-          <li><a href="/centre-for-womens-studies-and-development/">Women’s Studies and Development Centre</a></li>
-          <li><a href="/media/mitwpu-public/documents/04/04c96b3b8fe73062-Committees-for-Website.pdf">Statutory committees (PDF)</a></li>
-          <li><a href="/mandatory-disclosures/">Mandatory disclosures</a></li>
+          <li><a href="/centre-for-womens-studies-and-development/">Centre for Women’s Studies and Development</a></li>
+        </ul>
+      </nav>
+      <nav class="uwp-footer__group" aria-label="Legal and policy">
+        <h2>Legal and policy</h2>
+        <ul>
+          <li><a href="/about-us/national-ragging-prevention-programme/">Ragging prevention programme</a></li>
+          <li><a href="/student-affairs/discipline-committee/">Disciplinary Committee</a></li>
           <li><a href="/media/mitwpu-public/documents/6e/6ebc55d88a0eb17f-Disclaimer.pdf">Capitation-fee disclaimer (PDF)</a></li>
+          <li><a href="/privacy-policy/">Privacy and compliance</a></li>
+          <li><a href="/copyright-statement/">Copyright</a></li>
+          <li><a href="/accessibility/">Accessibility</a></li>
         </ul>
       </nav>
     </div>

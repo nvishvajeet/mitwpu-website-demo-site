@@ -1,0 +1,183 @@
+/* ── the screen as the unit of the page ──────────────────────────────
+ *
+ * The mechanism, and only the mechanism. Every measurement that is true of
+ * ONE page — how much padding a particular band spends, how large its heading
+ * is set — belongs to that page's own stylesheet. What is here is the part
+ * that is the same wherever the treatment is used, which is why it is a file
+ * of its own rather than a block inside one family's sheet.
+ *
+ *     a band is one screen, or a whole number of screens,
+ *     and every one of those screens is a snap point.
+ *
+ * `.band-screen` is that unit. A section is a stack of one or more of them;
+ * the section keeps the ground and the boundary rules, and each screen carries
+ * the height, the centring and the snap position. A band that holds more than
+ * a screen of content becomes two screens rather than being cut until it fits
+ * or left to overflow — which is the operator's own framing and the correction
+ * that made the rest of this work.
+ *
+ * WHY IT IS A SEPARATE FILE, AND WHY THIS ONE.
+ *
+ * It began inside demo-assets/site.css, which is one page family's stylesheet
+ * out of six. The landings that most needed the treatment — the eight built by
+ * tools/build_university_layers.mjs — do not load it, and neither do the
+ * research microsites or the public-surface pages. The choices were to copy
+ * the block into four stylesheets, or to put it in one file that every page
+ * gets. Four copies of a mechanism is four things to fix when one of them is
+ * wrong, and this block has already had two subtle bugs in it that took
+ * measurement rather than reading to find.
+ *
+ * So it is injected into every page by tools/build_public_demo.py, beside
+ * global-masthead.css and readability.css, keyed by its own SHA-256 exactly as
+ * those are. Injecting it everywhere costs nothing on a page that does not use
+ * it: the whole block is scoped to `.is-landing`, and a page without that
+ * class matches not one selector here.
+ *
+ * WHY THIS IS OPT-IN. `.is-landing` on the body, not a rule on every page.
+ * A screen-height floor is right for a page of composed bands and wrong for
+ * the people directory, where 607 cards in a dense grid would be pushed apart
+ * by a rule that exists to stop short sections leaking. It is wrong again for
+ * an examination timetable, a 20-screen happenings log, or a leadership essay
+ * — see the exclusions recorded in WORKFLOW.md. Landings get it; content pages
+ * do not.
+ *
+ * WHERE IT SHOULD END UP. This is generic: it names no institution, no route,
+ * no colour and no measurement of this site's. Every client of
+ * university-web-patterns with a composed landing wants exactly it, and all
+ * six page families here reach it only because a builder injects it — which is
+ * the shape WEB_TEMPLATE_POLICY §5 describes as "prove it in the site, then
+ * promote". It is proven now. The promotion to TC, where `patterns.css` is
+ * already loaded by every one of these families and no injection would be
+ * needed at all, is the next step and is recorded as such. */
+
+.is-landing {
+  --screen: calc(100svh - var(--mitwpu-masthead-height, 115px));
+}
+
+/* On the ROOT, matched through the body's class, because `scroll-snap-type`
+ * is only honoured on the element that actually scrolls — and on this site
+ * that is <html>, not <body>. Declaring it on `.is-landing` computed fine and
+ * did exactly nothing; the sections reported `scroll-snap-align: start` and
+ * the page reported `scroll-snap-type: none`, which is the shape of this bug
+ * every time and the reason to check the container rather than the children.
+ * `:has()` is what lets the opt-in stay a body class while the property lands
+ * where the browser reads it. */
+/* THE OFFSET IS DECLARED ONCE, ON THE SCROLLPORT, AND THAT IS A CORRECTION.
+ *
+ * A `start` snap position lines the element's snap area up with the
+ * scrollport's, and BOTH sides have an inset: the element's `scroll-margin`
+ * and the scrollport's `scroll-padding`. They add. An earlier version set
+ * `scroll-margin-top: 115px` on the sections while `html` already carried
+ * `scroll-padding-top: 5.5rem`, so the real resting offset was 203px — every
+ * band came to rest 88px low, showing a stripe of the band above it and hiding
+ * its own last 88px below the fold. That is precisely the fault this file
+ * exists to remove.
+ *
+ * So the masthead is cleared on the scrollport and nowhere else. Nothing here
+ * sets `scroll-margin-top`, because a second declaration of the same intention
+ * is what produced the bug. */
+:root:has(> body.is-landing) {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: var(--mitwpu-masthead-height, 115px);
+}
+
+/* The screen. One per band, or as many as the band needs. */
+.is-landing .band-screen {
+  min-height: var(--screen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+/* `end`, not `start`: the footer is taller than a screen on a laptop, so a
+ * snap position at its top would be one more band that does not fit, which is
+ * the thing this file exists to avoid. Its bottom is the end of the document
+ * and always reachable.
+ *
+ * It is not decoration. Under mandatory the scroller must come to rest on a
+ * snap position; with snap points only on the bands, the last one sits at the
+ * top of the final section and everything below it — the footer, the tallest
+ * single element on these pages — has no position to rest at, so a scroll into
+ * it is dragged back up and the footer becomes unreachable. It cost one
+ * declaration and it is the difference between snapping and trapping. */
+.is-landing > footer {
+  scroll-snap-align: end;
+}
+
+/* ── boundaries between screens ──────────────────────────────────────
+ *
+ * A rule is drawn between two screens ONLY where the ground does not change.
+ * Where the background alternates across a boundary the change of ground IS
+ * the division, and a hairline there adds nothing and reads as a seam on a
+ * page that had already turned itself over cleanly.
+ *
+ * THE INNER RULE IS NOT DRAWN LIKE AN OUTER ONE, and that is the point of it.
+ * A continuation is a weaker event than a new section, and drawing them the
+ * same tells a reader they are the same. A between-sections rule is a
+ * full-bleed hairline in --line; this one is inset to the shell's measure, so
+ * it starts and stops where the content does and reads as belonging INSIDE
+ * something rather than as the edge of it.
+ *
+ * `color-mix` over `var(--line)` rather than a hand-picked pair, because
+ * --line is a light grey on light and a dark slate on dark, and a fixed rgba
+ * that reads as a division on paper either vanishes or turns into a hard seam
+ * on the dark ground. Mixing 55% of the token with `transparent` keeps the
+ * RELATIONSHIP to whatever ground is behind it rather than fixing a value that
+ * is only correct in one theme.
+ *
+ * Drawn on a pseudo-element rather than as a border, because it has to be at
+ * the screen's top EDGE and only as wide as the measure. A border-top would be
+ * full-bleed; a border on the shell inside would sit wherever the centred
+ * content happens to fall, which on a screen with slack in it is the middle of
+ * nowhere. Absolute positioning takes it out of the flex flow, so it does not
+ * become a column item.
+ *
+ * `--shell` is this site's measure token and `--max` is the one the university
+ * layer uses; the fallback chain lets the same rule serve both without either
+ * family redeclaring it. */
+.is-landing .band-screen--continued {
+  position: relative;
+}
+
+.is-landing .band-screen--continued::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(100% - 48px, var(--shell, var(--max, 80rem)));
+  height: 1px;
+  content: "";
+  background: color-mix(in srgb, var(--line) 55%, transparent);
+  transform: translateX(-50%);
+}
+
+/* A phone is not a screen-height composition. The masthead collapses, the
+ * bands become one column, and a floor of 100svh there stretches a two-line
+ * heading over the whole display — the reader scrolls past emptiness to reach
+ * content that was already short. Snapping goes with it: on a touch screen it
+ * fights the fling. */
+@media (max-width: 60rem) {
+  :root:has(> body.is-landing) {
+    scroll-snap-type: none;
+  }
+
+  .is-landing .band-screen {
+    min-height: 0;
+    display: block;
+  }
+
+  /* Once there are no screens there is no inner page boundary, and the mark
+     that said "this is the second page of the band" would be saying it about a
+     break that no longer exists. The content's own rules already separate it. */
+  .is-landing .band-screen--continued::before {
+    content: none;
+  }
+}
+
+/* A reader who has asked for less movement has asked not to be moved by the
+ * page. Snapping is the page deciding where the scroll ends. */
+@media (prefers-reduced-motion: reduce) {
+  :root:has(> body.is-landing) {
+    scroll-snap-type: none;
+  }
+}
