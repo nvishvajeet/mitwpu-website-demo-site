@@ -1,0 +1,207 @@
+{
+  "schema": "mitwpu.people.group-members-current.v1",
+  "retrieved_at": "2026-07-28T10:40:00+02:00",
+  "evidence_policy": "Person facts that the research-group microsites used to hold on their own member records. A microsite record is a membership — an id and what is true of that person in that group — so the facts that are true of the person wherever they appear were moved here, verbatim, on 2026-07-28. Nothing was rewritten and nothing was added: every value in this file was already published on the named microsite. A field is present only when the crawl import in academics/data/people.json does not already carry it; where both had a value the crawl's was kept and the microsite's copy was discarded, because two records for one person is how they drift. Two people have an `origin` of `group-record`: the university's public site does not list them at all, so the group site was and remains the only place these facts have ever been published, and this file is now that place.",
+  "records": [
+    {
+      "person_id": "aavishkar-chittaranjan-katti",
+      "evidence": "photonics/members-data.js",
+      "email": "aavishkar.katti@mitwpu.edu.in",
+      "education": [
+        "Ph.D. in Physics, Banaras Hindu University, Varanasi",
+        "M.Sc. in Physics, University of Delhi"
+      ],
+      "research_interests": [
+        "Theoretical nonlinear optics",
+        "Photorefractive materials",
+        "Optical solitons",
+        "Structured optical beams",
+        "Photonic lattices"
+      ]
+    },
+    {
+      "person_id": "abhijit-bendre",
+      "evidence": "astrophysics/data.js",
+      "research_interests": [
+        "Cosmic magnetic fields",
+        "Nonlinear dynamo theory",
+        "Galactic dynamos",
+        "Interstellar medium",
+        "Cosmic-ray dynamos"
+      ]
+    },
+    {
+      "person_id": "anagha-sudhir-karne",
+      "evidence": "quantum/data.js",
+      "preferred_display_name": "Prof. Anagha Sudhir Karne",
+      "highlights": [
+        "Research experience at CSIR-NCL, Pune",
+        "Faculty coordinator for the Cosmos Astronomy Club",
+        "Work in computational and quantum methods"
+      ],
+      "research_interests": [
+        "Quantum chemistry",
+        "Quantum computing",
+        "Computational physics",
+        "Soft matter physics"
+      ]
+    },
+    {
+      "person_id": "apurv-chaitanya-nellikka",
+      "evidence": "quantum/data.js, photonics/members-data.js",
+      "email": "apurv.nellikka@mitwpu.edu.in",
+      "education": [
+        "Ph.D. in Physics, IIT Gandhinagar (2016)",
+        "Integrated M.Sc. in Physics, Amrita University (2012)"
+      ],
+      "highlights": [
+        "Research experience in Mexico, Germany, Canada, and Spain",
+        "Teaching and mentorship in optics and quantum physics"
+      ],
+      "research_interests": [
+        "Quantum optics",
+        "Structured optical beams",
+        "Entangled photons",
+        "Single-photon sources",
+        "Nanophotonics",
+        "Experimental optics",
+        "Nonlinear optics",
+        "Nanoplasmonic devices",
+        "Exotic light beams"
+      ]
+    },
+    {
+      "person_id": "balaji-madhavrao-patil",
+      "evidence": "quantum/data.js",
+      "origin": "group-record",
+      "name": "Dr. Balaji Madhavrao Patil",
+      "designation": "Professor and Head, Computer Science",
+      "summary": "Balaji Patil works in networks, cybersecurity, cyber forensics, and IoT, and supports institutional coordination for the group.",
+      "photo_path": "media/mitwpu-public/optimized/faculty_profile/ae/ae126388134e6642-ae126388134e6642-Balaji-Madhavrao-Patil.webp",
+      "email": "balaji.patil@mitwpu.edu.in",
+      "highlights": [
+        "Academic leadership at MIT-WPU",
+        "Research supervision in computer engineering",
+        "Institutional coordination"
+      ],
+      "research_interests": [
+        "Computer networks",
+        "Cybersecurity",
+        "Cyber forensics",
+        "Internet of Things"
+      ],
+      "links": {
+        "website": "https://drbmpatil.wordpress.com/"
+      }
+    },
+    {
+      "person_id": "debabrata-saha",
+      "evidence": "quantum/data.js",
+      "email": "debabrata.saha@mitwpu.edu.in",
+      "education": [
+        "Ph.D., RRCAT Indore"
+      ],
+      "highlights": [
+        "Research experience at IITs and in South Korea",
+        "Experimental thin-film and device research"
+      ],
+      "research_interests": [
+        "Semiconductor physics",
+        "Solid-state electronic devices",
+        "Ferroelectric and dielectric thin films",
+        "Photodetectors"
+      ]
+    },
+    {
+      "person_id": "deobrat-singh",
+      "evidence": "astrophysics/data.js",
+      "research_interests": [
+        "Theoretical high-energy physics",
+        "Gravitation",
+        "Branes and emergent gravity",
+        "Fundamental interactions"
+      ]
+    },
+    {
+      "person_id": "dev-kumar-thapa",
+      "evidence": "quantum/data.js",
+      "education": [
+        "Ph.D. in Chemistry, Indian Institute of Science, Bangalore"
+      ],
+      "highlights": [
+        "CSIR-UGC NET and GATE qualified",
+        "Research spanning nanostructures and photonic materials"
+      ],
+      "research_interests": [
+        "Quantum materials",
+        "Photonic devices",
+        "Nanomaterials",
+        "Optical properties"
+      ]
+    },
+    {
+      "person_id": "jagadish-hammu-naik",
+      "evidence": "photonics/members-data.js",
+      "email": "jagadish.naik@mitwpu.edu.in",
+      "education": [
+        "Ph.D. in Physics (Electrolytes), Mangalore University (2018)"
+      ],
+      "research_interests": [
+        "Dielectrics",
+        "Spectroscopy"
+      ]
+    },
+    {
+      "person_id": "kausik-bhattacharyya",
+      "evidence": "bioinformatics/data.js",
+      "research_interests": [
+        "Genomics and bioinformatics",
+        "Microbiomes",
+        "Infectious-disease biology",
+        "Bacterial and viral genomics",
+        "Inter-microbial interactions"
+      ]
+    },
+    {
+      "person_id": "preeti-amit-kale",
+      "evidence": "quantum/data.js",
+      "preferred_display_name": "Dr. Preeti Kale",
+      "research_interests": [
+        "Algorithms",
+        "Artificial intelligence and machine learning",
+        "Sensor networks",
+        "Quantum computing systems"
+      ]
+    },
+    {
+      "person_id": "vishvajeet-n",
+      "evidence": "quantum/data.js",
+      "origin": "group-record",
+      "name": "Dr. Vishvajeet Nagargoje",
+      "preferred_display_name": "Dr. Vishvajeet Nagargoje",
+      "designation": "",
+      "summary": "Vishvajeet Nagargoje is a theoretical computer scientist working at the intersection of algorithms, randomness, and quantum information. He received his Ph.D. from Rutgers University and held a postdoctoral position at the Laboratory for Foundations of Computer Science in Edinburgh. He is faculty at MIT World Peace University, where he leads this group, and is affiliated with LaBRI, Université de Bordeaux.",
+      "photo_path": "quantum/assets/vishvajeet.jpg",
+      "education": [
+        "Ph.D., Rutgers University",
+        "Bachelor's and Master's degrees, IIT Madras"
+      ],
+      "highlights": [
+        "Postdoctoral research at CNRS / LaBRI",
+        "Visiting graduate research at the Institute for Advanced Study"
+      ],
+      "research_interests": [
+        "Theoretical computer science",
+        "Quantum information",
+        "Randomness and computation",
+        "Algorithms and complexity"
+      ],
+      "links": {
+        "website": "https://vishvajeetn.org/",
+        "scholar": "https://scholar.google.com/citations?user=lRdytyQAAAAJ&hl=en",
+        "dblp": "https://dblp.org/pid/290/2005.html",
+        "orcid": "https://orcid.org/0000-0002-1502-9231"
+      }
+    }
+  ]
+}

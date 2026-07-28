@@ -332,32 +332,5 @@ window.QUANTUM_GROUP = {
         "research": "https://vidwan.inflibnet.ac.in/profile/148543"
       }
     },
-    {
-      "id": "balaji-patil",
-      "profileSlug": "balaji-madhavrao-patil",
-      "memberType": "faculty",
-      "name": "Dr. Balaji Madhavrao Patil",
-      "groupOrder": 60,
-      "groupRole": "Administrative Advisor",
-      "designation": "Professor and Head, Computer Science",
-      "affiliation": "MIT World Peace University, Pune",
-      "email": "balaji.patil@mitwpu.edu.in",
-      "photo": "../media/mitwpu-public/optimized/faculty_profile/ae/ae126388134e6642-ae126388134e6642-Balaji-Madhavrao-Patil.webp",
-      "bio": "Balaji Patil works in networks, cybersecurity, cyber forensics, and IoT, and supports institutional coordination for the group.",
-      "interests": [
-        "Computer networks",
-        "Cybersecurity",
-        "Cyber forensics",
-        "Internet of Things"
-      ],
-      "highlights": [
-        "Academic leadership at MIT-WPU",
-        "Research supervision in computer engineering",
-        "Institutional coordination"
-      ],
-      "links": {
-        "website": "https://drbmpatil.wordpress.com/"
-      }
-    }
   ]
 };
