@@ -88,6 +88,29 @@
   width: min(calc(100% - 48px), var(--shell));
 }
 
+/* Give package-rendered section headings the same restrained institutional
+ * register as the hand-authored and academic families. The split heading is
+ * intentionally unruled in the package contract and remains untouched. The
+ * accent overlays the package's existing hairline, adding no layout height. */
+.uwp-section-heading:not(.uwp-section-heading--split) {
+  position: relative;
+}
+
+.uwp-section-heading:not(.uwp-section-heading--split)::after {
+  position: absolute;
+  inset-block-end: -1px;
+  inset-inline-start: 0;
+  width: clamp(5rem, 9vw, 8rem);
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--uwp-accent) 0 42%,
+    var(--uwp-link) 42% 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
 @media (max-width: 680px) {
   .uwp-wrap,
   .uwp-shell,
