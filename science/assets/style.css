@@ -909,6 +909,23 @@ summary:focus-visible {
 
 }
 
+/* The reciprocal of academics/assets/style.css .academic-companion. These five
+   departments are published both here and in the campus academic directory;
+   each side says which it is and links the other, so a reader who lands on one
+   is never stuck wondering whether the other is the same page. */
+.science-directory-note {
+  border-top: 1px solid var(--line);
+  background: var(--subtle);
+}
+
+.science-directory-note p {
+  margin: 0;
+  padding: 18px 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {

@@ -205,6 +205,80 @@
   font-size: 0.9rem;
 }
 
+/* ---- instrument operators (added 2026-07-28) ----------------------------
+ *
+ * Who runs an instrument, on the instrument's own card, and the same four
+ * people again on the people page with the instruments they run. The
+ * spreadsheet answers "who runs this instrument"; a researcher usually
+ * arrives with "who do I ask", which is the same fact read the other way, so
+ * it is published in both directions rather than in the shape it was
+ * supplied in.
+ */
+
+.instrument-card .instrument-operators {
+  margin-top: 11px;
+  color: var(--copy);
+}
+
+.instrument-card .instrument-operators span {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* A name with nothing beside it is the whole record, so the row is the name
+   and the instruments — no role line, no contact column, nothing shaped like
+   a field waiting to be filled. */
+.facility-operator h3 {
+  margin-bottom: 0;
+}
+
+.operator-instruments {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.operator-instruments li + li {
+  margin-top: 6px;
+}
+
+/* Left at the site's link colour rather than tinted down to body copy. Five
+   instrument names in a column with no colour and no underline are five links
+   with no affordance at all, which is the one thing a list of links must not
+   be. */
+.operator-instruments a {
+  font-size: 0.93rem;
+}
+
+.operator-instruments a:hover {
+  text-decoration: underline;
+}
+
+.section-lede {
+  max-width: 640px;
+  margin: -10px 0 26px;
+  color: var(--muted);
+}
+
+/* Where a fact came from, when the answer is a document rather than a page
+   the university published and there is no URL to link. */
+.source-note {
+  max-width: 640px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.capability-system-list + .source-note {
+  margin-top: 26px;
+}
+
 .capability-hero-meta {
   display: flex;
   flex-wrap: wrap;

@@ -1,5 +1,64 @@
 window.MITWPU_CRF = {
   updated: "23 July 2026",
+  /* -- a source that is not a captured page ---------------------------------
+   *
+   * Every other fact on this site was read off a page the university
+   * published, and cites the captured URL it was read from. The operator
+   * assignments below were not: they come from a spreadsheet the university
+   * handed over, which has no URL and no capture date to cite. That is a
+   * different kind of evidence, so it is recorded as one rather than dressed
+   * up as a citation — the same distinction tools/intranet_page.mjs draws
+   * when a contact detail cites a registered service instead of a route.
+   *
+   * `credit` is the line the pages print. It is here, once, because the
+   * capability pages, the instruments page and the people page all print it
+   * and three copies of a provenance statement is how one of them ends up
+   * saying something the other two do not.
+   */
+  suppliedSources: {
+    "crf-instrument-operators-2026-07-27": {
+      title: "Instrument operators, Department of Research & Development",
+      file: "docs/sources/crf-instrument-operators-2026-07-27.xlsx",
+      supplied: "27 July 2026",
+      credit:
+        "Operator assignments are from the instrument operator list of the "
+        + "Department of Research & Development, supplied by the university "
+        + "on 27 July 2026."
+    }
+  },
+  /* -- the operators --------------------------------------------------------
+   *
+   * A name, the honorific the source wrote, and where the name came from.
+   * Nothing else, and the builder enforces "nothing else" rather than
+   * trusting this comment: no email, no telephone, no room, no department,
+   * no title, no qualification, no photograph. The spreadsheet holds none of
+   * them, and this project has already published six invented affiliations
+   * and one false doctorate by filling a plausible-looking blank.
+   *
+   * Order is the order the names first appear in the source.
+   */
+  operators: [
+    {
+      id: "ranjit-kate",
+      name: "Mr. Ranjit Kate",
+      source: "crf-instrument-operators-2026-07-27"
+    },
+    {
+      id: "santosh-patil",
+      name: "Dr. Santosh Patil",
+      source: "crf-instrument-operators-2026-07-27"
+    },
+    {
+      id: "aparna-potdar",
+      name: "Mrs. Aparna Potdar",
+      source: "crf-instrument-operators-2026-07-27"
+    },
+    {
+      id: "vrushali-pagire",
+      name: "Dr. Vrushali Pagire",
+      source: "crf-instrument-operators-2026-07-27"
+    }
+  ],
   capabilities: [
     {
       id: "imaging-microanalysis",
@@ -37,6 +96,21 @@ window.MITWPU_CRF = {
       clusterIds: ["energy"]
     }
   ],
+  /* `suppliedAs` is the equipment name the operator spreadsheet used, written
+   * out beside the name this site uses. The two differ on three of the eight
+   * rows and the difference is not something a builder should guess at: a
+   * fuzzy match between "Raman Spectroscopy" and "Raman Spectrometer" is also
+   * a fuzzy match between two instruments that happen to share a word. So the
+   * mapping is declared here, reviewed once, and checked against the
+   * spreadsheet itself by tools/tests/test_facility_capabilities.py, which
+   * reads the .xlsx rather than a transcription of it.
+   *
+   * One row maps to two records: the source's "UV-Vis,UV DRS,UV-NIR" is a
+   * single line covering both spectrophotometers, so both carry it. Three
+   * records carry no `suppliedAs` — the polarizing microscope, the
+   * nanoindenter and the surface profiler are absent from the spreadsheet,
+   * and an instrument with no operator in the source gets no operator here.
+   */
   clusters: [
     {
       id: "imaging",
@@ -48,7 +122,9 @@ window.MITWPU_CRF = {
           name: "Field-Emission Scanning Electron Microscope with EDS",
           shortName: "FESEM–EDS",
           model: "TESCAN field-emission SEM with EDAX EDS",
-          use: "High-resolution surface imaging and local elemental analysis of materials."
+          use: "High-resolution surface imaging and local elemental analysis of materials.",
+          suppliedAs: "FESEM with EDS",
+          operatorIds: ["ranjit-kate"]
         },
         {
           name: "Polarizing Digital Research Microscope",
@@ -68,13 +144,17 @@ window.MITWPU_CRF = {
           name: "X-Ray Diffractometer",
           shortName: "XRD",
           model: "Malvern Panalytical Empyrean Series III",
-          use: "Phase identification, crystal-structure analysis, and thin-film or powder measurements."
+          use: "Phase identification, crystal-structure analysis, and thin-film or powder measurements.",
+          suppliedAs: "X-Ray Diffractometer",
+          operatorIds: ["santosh-patil", "aparna-potdar"]
         },
         {
           name: "Raman Spectrometer",
           shortName: "Raman",
           model: "JASCO NRS-4500",
-          use: "Non-destructive vibrational and chemical characterisation of materials."
+          use: "Non-destructive vibrational and chemical characterisation of materials.",
+          suppliedAs: "Raman Spectroscopy",
+          operatorIds: ["vrushali-pagire"]
         }
       ]
     },
@@ -88,13 +168,17 @@ window.MITWPU_CRF = {
           name: "Inductively Coupled Plasma Mass Spectrometer",
           shortName: "ICP-MS",
           model: "Shimadzu ICPMS-2040LF",
-          use: "Sensitive multi-element and trace-element analysis of prepared samples."
+          use: "Sensitive multi-element and trace-element analysis of prepared samples.",
+          suppliedAs: "ICPMS",
+          operatorIds: ["santosh-patil"]
         },
         {
           name: "Particle Size & Zeta Potential Analyser",
           shortName: "Zetasizer",
           model: "Malvern Panalytical Zetasizer Advance",
-          use: "Particle-size, molecular-size, and zeta-potential measurements in dispersions."
+          use: "Particle-size, molecular-size, and zeta-potential measurements in dispersions.",
+          suppliedAs: "Particle Size and Zeta Potential",
+          operatorIds: ["aparna-potdar"]
         }
       ]
     },
@@ -128,7 +212,9 @@ window.MITWPU_CRF = {
           name: "Integrated Thin-Film Deposition System",
           shortName: "PVD System",
           model: "E-beam and thermal evaporation with DC/RF sputtering",
-          use: "Research-scale deposition of metallic, dielectric, and functional thin films."
+          use: "Research-scale deposition of metallic, dielectric, and functional thin films.",
+          suppliedAs: "RF-DC Sputtering and Thermal E-Beam System",
+          operatorIds: ["santosh-patil"]
         }
       ]
     },
@@ -142,7 +228,9 @@ window.MITWPU_CRF = {
           name: "Complete Battery Fabrication System",
           shortName: "Battery Fabrication",
           model: "Li-ion and Na-ion cell fabrication facility",
-          use: "Controlled preparation and assembly of research-scale battery cells."
+          use: "Controlled preparation and assembly of research-scale battery cells.",
+          suppliedAs: "Coin Cell Fabrication",
+          operatorIds: ["aparna-potdar", "ranjit-kate"]
         }
       ]
     },
@@ -156,13 +244,17 @@ window.MITWPU_CRF = {
           name: "UV–Visible Spectrophotometry & Diffuse Reflectance",
           shortName: "UV–Vis / DRS",
           model: "Labindia UV3200 and UV3092",
-          use: "UV–visible absorption, transmission, and diffuse-reflectance measurements."
+          use: "UV–visible absorption, transmission, and diffuse-reflectance measurements.",
+          suppliedAs: "UV-Vis,UV DRS,UV-NIR",
+          operatorIds: ["aparna-potdar"]
         },
         {
           name: "UV–Vis–NIR Spectrophotometer",
           shortName: "UV–Vis–NIR",
           model: "Shimadzu UV-3600i Plus",
-          use: "Broadband optical characterisation across ultraviolet, visible, and near-infrared wavelengths."
+          use: "Broadband optical characterisation across ultraviolet, visible, and near-infrared wavelengths.",
+          suppliedAs: "UV-Vis,UV DRS,UV-NIR",
+          operatorIds: ["aparna-potdar"]
         }
       ]
     }

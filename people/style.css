@@ -44,6 +44,13 @@ body {
   font-size: clamp(1.08rem, 2vw, 1.32rem);
 }
 
+/* The lede is one paragraph; a second one — the pointer to the people this
+   directory does not carry — has to read as a second paragraph rather than as
+   a sentence that ran on. */
+.intro-copy + .intro-copy {
+  margin-top: 0.6em;
+}
+
 .directory-section {
   padding-block: clamp(42px, 7vw, 76px);
 }
@@ -237,18 +244,18 @@ button:hover {
   border-left: 1px solid var(--line);
 }
 
-/* person-card.html hardcodes `uwp-card` beside `uwp-person-card`, though
-   media.css states the opposite contract — that the card is unframed and a
-   client composes `.uwp-card` around it when it wants the frame. The frame it
-   brings is a tinted panel with a 4px institutional rule on top of every one
-   of six hundred rows, so it is undone here: this listing draws its own cell
-   rules, and the reverse composition the stylesheet describes is not
-   available from the template. */
-.people-grid > .uwp-card.uwp-person-card {
+/* The cell: this listing's own rules, and nothing undoing the package's.
+
+   It used to carry `background: none; border: 0` and a `.uwp-card` in its
+   selector, because person-card.html emitted `uwp-card` whatever the client
+   wanted — a tinted panel under a 4px institutional rule, on every one of six
+   hundred rows, arriving only to be turned off again. `person.unframed`, in
+   package 0.28.0, is the client's half of the contract media.css always
+   stated, and directory.js now sets it. What is left here is the grid's own
+   cell, which is all this rule was ever trying to say. */
+.people-grid > .uwp-person-card {
   min-height: 158px;
   padding: 24px;
-  background: none;
-  border: 0;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -370,7 +377,7 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
-  .people-grid > .uwp-card.uwp-person-card {
+  .people-grid > .uwp-person-card {
     min-height: 0;
   }
 
@@ -392,7 +399,7 @@ button:hover {
     width: min(calc(100% - 28px), var(--shell));
   }
 
-  .people-grid > .uwp-card.uwp-person-card {
+  .people-grid > .uwp-person-card {
     padding: 20px 16px;
   }
 

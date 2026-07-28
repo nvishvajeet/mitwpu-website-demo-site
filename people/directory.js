@@ -366,6 +366,15 @@
           unit: unitLabel(person),
           url: profilePath(person),
           summary: "",
+          /* This listing is a ruled grid of six hundred cells, and it draws
+           * its own rules. The card's frame — a tinted panel under a 4px
+           * brand rule — was being emitted and then undone in style.css, on
+           * every row, because the template used to write `uwp-card` whatever
+           * the client wanted. Package 0.28.0 made that a decision the client
+           * takes, which is the contract media.css always described: the card
+           * is unframed, and a client that wants the frame composes
+           * `.uwp-card` around it. */
+          unframed: true,
         },
         person_portrait: personPortrait(person),
         /* The attribute slot is meant for a filtered listing's data-* facets;

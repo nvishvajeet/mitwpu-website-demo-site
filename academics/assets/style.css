@@ -191,6 +191,27 @@ body {
   text-overflow: ellipsis;
 }
 
+/* Shown only on the five departments that also have a School of Science site,
+   to tell a reader which of the two pages they are on and how to reach the
+   other. Quiet by design: it is orientation, not a call to action. */
+.academic-companion {
+  background: var(--subtle);
+  border-bottom: 1px solid var(--line);
+}
+
+.academic-companion p {
+  margin: 0;
+  padding: 12px 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.academic-companion a {
+  color: var(--title);
+  font-weight: 600;
+}
+
 .academic-hero {
   border-bottom: 1px solid var(--line);
 }

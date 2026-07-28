@@ -1684,6 +1684,45 @@ html:not(.uwp-js) .uwp-nav-mega {
   text-decoration-color: currentColor;
 }
 
+/* ---------------------------------------------------------------------------
+   Vacancy card — one advertised post. The card, the heading and the link are
+   the shared ones above; what is its own is the meta line's separator and the
+   closing date.
+   --------------------------------------------------------------------------- */
+
+/* Kind and unit on one line, divided by a middot the reader does not have to
+   hear. `:not(:last-of-type)` rather than `:not(:last-child)` because a card
+   with a kind and no unit renders one span, and a separator after the only
+   thing on the line is a line that looks unfinished. Same construction, and
+   the same reasoning, as `.uwp-person-card__flair`. */
+.uwp-vacancy-card__tag:not(:last-of-type)::after {
+  margin: 0 .5rem;
+  color: var(--uwp-rule-strong);
+  content: "\00B7";
+}
+
+/* The closing date, in the metadata voice, held off the facts above it. It is
+   the last thing before the action, which is where a reader who has decided
+   to apply looks. */
+.uwp-vacancy-card__closes {
+  margin: var(--uwp-space-2) 0 0;
+  color: var(--uwp-copy);
+  font-family: var(--uwp-sans);
+  font-size: max(.875rem, 14px);
+}
+
+.uwp-vacancy-card__date {
+  font-weight: 700;
+}
+
+/* A post whose date has gone by. Muted rather than struck through or hidden:
+   the word already changed from "Closes" to "Closed", and this says the same
+   thing a second way for a reader scanning a listing rather than reading it.
+   Colour is never the only carrier — the wording is. */
+.uwp-vacancy-card__closes.is-passed {
+  color: var(--uwp-muted);
+}
+
 .uwp-rail-shell {
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr) 44px;
@@ -1908,6 +1947,33 @@ html:not(.uwp-js) .uwp-nav-mega {
 
 .uwp-gallery--marks .uwp-gallery__grid > * {
   cursor: default;
+}
+
+/* --album — the same photographs, on a page that is nothing but photographs.
+
+   The default tile floor is 12rem because the commonest place a gallery is
+   put is inside an article, where it is a run of illustrations beside prose
+   and a thumbnail should stay a thumbnail. An album page is the other case:
+   the set of pictures IS the page, there is no prose for it to sit beside,
+   and the same floor spends a third of a laptop window on the pictures and
+   the rest of it on nothing — a client counted fifty photographs coming out
+   three across at 221px and seventeen rows deep. At 15rem the same fifty are
+   four across at 254px and thirteen rows.
+
+   One number changes. `min(50% - .5rem, …)` is untouched, which is the whole
+   of the phone's guarantee: below the width where two 15rem tracks fit, the
+   percentage is the smaller term and the grid is exactly two across, at any
+   width, down to a watch. A gallery laid out one picture per screen is a
+   column of pictures and not an album, and that is as true of the album page
+   as of the article.
+
+   A modifier and not a component: the markup, the lightbox, the caption and
+   the script are the gallery's, and the only difference is how much room a
+   tile is worth on this page. The page's own canvas — how wide the column
+   around the grid is — stays the client's, because a measure is a property
+   of a site's layout and not of a set of pictures. */
+.uwp-gallery--album .uwp-gallery__grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(50% - .5rem, 15rem), 1fr));
 }
 
 .uwp-lightbox {
@@ -2827,14 +2893,102 @@ html:not(.uwp-js) .uwp-nav-mega {
    of groups, so the count is not written here: `auto-fit` takes it from the
    markup and collapses the tracks nobody filled. That is why the identity
    column is `minmax(15rem, 22rem)` and not the `1.4fr` it once was — an
-   automatic repetition may not sit beside a flexible track, and every client
-   that has since grown a fourth or fifth group has had to re-declare this
-   whole grid in its own sheet to get one. */
+   automatic repetition may not sit beside a flexible track. */
 .uwp-footer__grid {
   display: grid;
   grid-template-columns: minmax(15rem, 22rem) repeat(auto-fit, minmax(9rem, 1fr));
   gap: var(--uwp-space-4) var(--uwp-space-6);
   padding-block: clamp(2.5rem, 7vw, 4.5rem);
+}
+
+/* Five groups, and a span that cannot ask for a track that is not there.
+
+   The rule above is one row: an identity column at up to 22rem, and whatever
+   9rem tracks fit beside it. At the measures these sites use that is FOUR
+   group tracks and no more — a number nothing states, because it falls out of
+   two lengths and a gap — and a footer that asks for a fifth gets a second
+   row with three quarters of it empty.
+
+   A client cannot fix that from its own sheet in any way that reaches every
+   page: the sheet that would carry the override is loaded by one page family
+   and this footer is on all of them. So it was fixed by not having a fifth
+   group, and by a rule that no group may pass six links. One client cut its
+   copyright link to fit a cookie statement in and wrote the ceiling down as
+   twenty-four links. That is an editorial decision made by a grid, and this
+   is the two rules that take it back.
+
+   Both are the same idea — a row may not be asked for more tracks than it has
+   — applied at the two places the footer asks.
+
+   (1) A group of seven or more links spans two tracks and one of ten or more
+   spans three, which is right when there is room and is where four of the
+   four tracks were already going. Four groups plus a span is five; three
+   groups plus a span of three is five. So the span is capped by the group
+   count: past three groups there is nothing to spread into, and the long list
+   stays in its own track and is simply taller than its neighbours, which is
+   what a long list is. Spanning exists to use room the short groups left
+   over; it was never a way to conjure room that is not there.
+
+   (2) Five groups do not fit beside the identity at any measure these sites
+   use, so the identity takes the row and the groups take the whole width
+   below it, one equal track each: about 197px per column at the package's own
+   1180px, against the 172px each of four was getting beside the identity.
+   Six is the ceiling of this form and the point at which a footer is a
+   sitemap; past six it wraps, as it did before.
+
+   Explicit counts rather than `auto-fit`, because the identity spans the row
+   and an occupied track is never collapsed — `auto-fit` would lay six tracks
+   for five groups and leave the sixth as a gap at the right-hand end.
+
+   Scoped to the tier where the one-row grid is the thing running: below 75rem
+   the footer is already three tracks and below 56rem it is one, and both are
+   answers to this same question at a narrower width. Where :has() is
+   unsupported every rule here drops and the footer is what it was. */
+@media (min-width: 75.0625rem) {
+  /* (1) The span, capped by the group count. Three groups leave one track
+     spare, so a very long group takes two rather than three; four or more
+     leave none, so it takes one and is simply taller than its neighbours,
+     which is what a long list is. The list's own columns follow the tracks it
+     ended up with — a ten-link list set in three columns inside one 190px
+     track is three columns of sixty pixels. Order is load-bearing: both
+     selectors match a footer of four groups, and the second is the one that
+     should win. */
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(3))
+    .uwp-footer__group:has(li:nth-child(10)) {
+    grid-column: span 2;
+  }
+
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(3))
+    .uwp-footer__group:has(li:nth-child(10)) ul {
+    columns: 2;
+  }
+
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(4))
+    .uwp-footer__group:has(li:nth-child(7)) {
+    grid-column: auto;
+  }
+
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(4))
+    .uwp-footer__group:has(li:nth-child(7)) ul {
+    columns: auto;
+  }
+
+  /* (2) Five or six groups take the row, and the identity block takes its
+     own. Explicit counts rather than `auto-fit`, because the identity spans
+     the row and an occupied track is never collapsed: `auto-fit` lays six
+     tracks for five groups and leaves the sixth as a gap at the right-hand
+     end. */
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(5)):not(:has(.uwp-footer__group:nth-of-type(6))) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(6)):not(:has(.uwp-footer__group:nth-of-type(7))) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .uwp-footer__grid:has(.uwp-footer__group:nth-of-type(5)) > .uwp-footer__identity {
+    grid-column: 1 / -1;
+  }
 }
 
 /* A group whose list is long enough to set the whole footer's height spreads
@@ -3354,12 +3508,22 @@ html:not(.uwp-js) .uwp-nav-mega {
    its shape and scrolls inside its own region, which is focusable so a
    keyboard user can reach the columns past the fold at all.
    --------------------------------------------------------------------------- */
-.uwp-fees {
+/* The fee table and the attribute table are one table with one difference,
+   and the difference is at the bottom of this block: a charge is a figure and
+   an attribute is a short piece of prose, so one column does not wrap and the
+   other must. Everything above that — the scroll region, the caption, the
+   header band, the rules, the scope line, the cell notes — is shared, and is
+   written once here rather than twice under two prefixes. Two components
+   because the noun a client's markup carries is the thing being fixed; one
+   set of rules because there is only one table. */
+.uwp-fees,
+.uwp-attributes {
   display: grid;
   gap: var(--uwp-space-3);
 }
 
-.uwp-fees__scroll {
+.uwp-fees__scroll,
+.uwp-attributes__scroll {
   overflow-x: auto;
   /* a scroll container clips the focus ring of anything inside it unless it
      is given somewhere to sit */
@@ -3367,13 +3531,15 @@ html:not(.uwp-js) .uwp-nav-mega {
   margin: -3px;
 }
 
-.uwp-fees__table {
+.uwp-fees__table,
+.uwp-attributes__table {
   width: 100%;
   border-collapse: collapse;
   font-size: max(1rem, 16px);
 }
 
-.uwp-fees__table caption {
+.uwp-fees__table caption,
+.uwp-attributes__table caption {
   margin-bottom: var(--uwp-space-2);
   color: var(--uwp-heading);
   font-family: var(--uwp-serif);
@@ -3385,7 +3551,8 @@ html:not(.uwp-js) .uwp-nav-mega {
 /* The line naming what the rates belong to sits outside the scroll container,
    under the table. Inside it, it would be a sentence a phone has to be
    dragged sideways to finish. */
-.uwp-fees__scope {
+.uwp-fees__scope,
+.uwp-attributes__scope {
   max-width: var(--uwp-reading-width);
   margin: 0;
   color: var(--uwp-muted);
@@ -3399,7 +3566,9 @@ html:not(.uwp-js) .uwp-nav-mega {
    the page a letter at a time. A schedule with one rate column adds up to
    well under any viewport and never scrolls. */
 .uwp-fees__table thead th,
-.uwp-fees__table tbody th {
+.uwp-fees__table tbody th,
+.uwp-attributes__table thead th,
+.uwp-attributes__table tbody th {
   min-width: 11rem;
 }
 
@@ -3408,7 +3577,15 @@ html:not(.uwp-js) .uwp-nav-mega {
   overflow-wrap: normal;
 }
 
-.uwp-fees__table thead th {
+/* An attribute cell is a phrase, not a figure, so it needs more room before
+   it is worth scrolling to: 7rem is four or five characters of money and
+   about two words of anything else. */
+.uwp-attributes__table tbody td {
+  min-width: 10rem;
+}
+
+.uwp-fees__table thead th,
+.uwp-attributes__table thead th {
   padding: .6rem var(--uwp-space-2);
   background: var(--uwp-pale);
   border: 1px solid var(--uwp-rule);
@@ -3421,26 +3598,38 @@ html:not(.uwp-js) .uwp-nav-mega {
 }
 
 .uwp-fees__table tbody th,
-.uwp-fees__table tbody td {
+.uwp-fees__table tbody td,
+.uwp-attributes__table tbody th,
+.uwp-attributes__table tbody td {
   padding: .7rem var(--uwp-space-2);
   border: 1px solid var(--uwp-rule);
   text-align: start;
   vertical-align: baseline;
 }
 
-.uwp-fees__table tbody th {
+.uwp-fees__table tbody th,
+.uwp-attributes__table tbody th {
   color: var(--uwp-heading);
   font-family: var(--uwp-sans);
   font-weight: 700;
 }
 
+/* The one difference. A charge is read down the column and compared, so the
+   figures are tabular and never wrap; an attribute is read across the row and
+   is a phrase, so it wraps like the prose it is and takes no figure spacing
+   it has no figures for. */
 .uwp-fees__table tbody td {
   color: var(--uwp-copy);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
-.uwp-fees__table .uwp-meta {
+.uwp-attributes__table tbody td {
+  color: var(--uwp-copy);
+}
+
+.uwp-fees__table .uwp-meta,
+.uwp-attributes__table .uwp-meta {
   display: block;
   margin-top: .2rem;
   color: var(--uwp-muted);
@@ -3449,9 +3638,10 @@ html:not(.uwp-js) .uwp-nav-mega {
 }
 
 @media print {
-  /* nothing scrolls on paper, and a clipped fee table is a fee table with
-     columns missing */
-  .uwp-fees__scroll {
+  /* nothing scrolls on paper, and a clipped table is a table with columns
+     missing */
+  .uwp-fees__scroll,
+  .uwp-attributes__scroll {
     overflow-x: visible;
   }
 }
@@ -3994,11 +4184,28 @@ html:not(.uwp-js) .uwp-nav-mega {
 
   /* One track, so the long group's two-track span would open an implicit
      second one beside it and hand it half the band — the group would come
-     out narrower here than the three-link groups above it. Its list keeps the
-     two columns: on a phone that is a statutory column five rows deep instead
-     of ten, and these are short labels that take the narrower measure. */
+     out narrower here than the three-link groups above it. */
   .uwp-footer__group:has(li:nth-child(7)) {
     grid-column: auto;
+  }
+
+  /* Below the shell's own breakpoint the group is the whole measure, so the
+     column count above — which was chosen for a track two or three columns
+     of the desktop grid wide — is being applied to a band that is nothing
+     like it. `columns: 3` on a 375px phone is three columns of about 100px
+     with a 48px gutter between them, in which a footer label longer than one
+     short word breaks mid-line. It only stopped happening because no group
+     on the site that found it reached seven links; the rule was still there
+     waiting for the seventh.
+
+     So the count goes and the width decides. `columns: <width> auto` lays as
+     many columns as fit at that width and one where none do: one column on a
+     phone, two on a large phone or a small tablet, three by the time the
+     shell is about to widen anyway. It needs no second breakpoint because it
+     is not measuring the viewport — it is measuring the band the list is
+     actually in, which is the thing that was wrong. */
+  .uwp-footer__group:has(li:nth-child(7)) ul {
+    columns: 12rem auto;
   }
 
   /* The edition band's action drops under the identity rather than being

@@ -5,9 +5,11 @@
     "source_page": "https://mitwpu.edu.in/sustainability",
     "derivative": {
       "role": "lead",
-      "crop": "centred",
-      "width": 1557,
+      "crop": "x=201..1099 of the 1900x599 source",
+      "crop_note": "Not centred. The source is a 3.17:1 panorama and the domed World Peace Library — the building this picture's alt text names — sits at its left, around x=380. The hero frame is 1.23:1 to 1.59:1 depending on viewport height and 4/3 on a phone, so object-fit: cover takes a centred window out of whatever it is given; a centred crop of the full panorama started at x=301 and cut the dome off entirely. This window is centred on the midpoint between the library and the ceremonial gateway, so the landmark survives every frame ratio the page produces.",
+      "width": 898,
       "height": 599,
+      "aspect_ratio": "1.499:1, matching the other four carousel slides",
       "format": "webp",
       "quality": 82
     }

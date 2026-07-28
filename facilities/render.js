@@ -5,8 +5,14 @@
     capabilities: [],
     clusters: [],
     leadership: [],
-    facultyContacts: []
+    facultyContacts: [],
+    operators: [],
+    suppliedSources: {}
   };
+
+  const operatorsById = new Map(
+    (facility.operators || []).map((operator) => [operator.id, operator])
+  );
 
   function escapeHtml(value) {
     return String(value ?? "").replace(/[&<>'"]/g, (character) => ({
@@ -51,12 +57,41 @@
     </article>`;
   }
 
+  /* "A", "A and B" — never a bare comma-joined run for two names. Mirrors
+     nameList() in tools/build_facility_capabilities.mjs, which renders the
+     same card onto the five capability pages at build time. */
+  function nameList(names) {
+    if (names.length < 2) return names.join("");
+    return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+  }
+
+  function operatorNames(instrument) {
+    return (instrument.operatorIds || [])
+      .map((id) => operatorsById.get(id))
+      .filter(Boolean)
+      .map((operator) => operator.name);
+  }
+
+  /* The line the pages print about where the operator names came from. It is
+     stored once, in data.js, because the capability pages, this page and the
+     people page all print it. */
+  function operatorCredit() {
+    const first = (facility.operators || [])[0];
+    const source = first && (facility.suppliedSources || {})[first.source];
+    return source ? source.credit : "";
+  }
+
   function instrumentCard(instrument) {
+    const names = operatorNames(instrument);
+    const operators = names.length
+      ? `<p class="instrument-operators"><span>Operated by</span> ${escapeHtml(nameList(names))}</p>`
+      : "";
     return `<article class="instrument-card">
       <p class="instrument-short-name">${escapeHtml(instrument.shortName)}</p>
       <h3>${escapeHtml(instrument.name)}</h3>
       <p class="instrument-model">${escapeHtml(instrument.model)}</p>
       <p>${escapeHtml(instrument.use)}</p>
+      ${operators}
     </article>`;
   }
 
@@ -85,6 +120,60 @@
         </div>
         <div class="instrument-grid">${cluster.instruments.map(instrumentCard).join("")}</div>
       </section>`).join("");
+    renderOperatorCredit();
+  }
+
+  function renderOperatorCredit() {
+    const credit = operatorCredit();
+    document.querySelectorAll("[data-operator-credit]").forEach((node) => {
+      node.textContent = credit;
+    });
+  }
+
+  /* Every instrument this person runs, in the order the facility lists them,
+     each one linked to the capability page that describes it. "Which
+     instruments does this person run" is the question a researcher arrives
+     with; the spreadsheet answers it the other way round, so it is inverted
+     here rather than published in the shape it was supplied in. */
+  function operatorInstruments(operatorId) {
+    const capabilityOf = new Map();
+    facility.capabilities.forEach((capability) => {
+      (capability.clusterIds || []).forEach((clusterId) => {
+        capabilityOf.set(clusterId, capability.id);
+      });
+    });
+    return facility.clusters.flatMap((cluster) =>
+      cluster.instruments
+        .filter((instrument) => (instrument.operatorIds || []).includes(operatorId))
+        .map((instrument) => ({
+          name: instrument.name,
+          capabilityId: capabilityOf.get(cluster.id) || ""
+        }))
+    );
+  }
+
+  function operatorRow(operator) {
+    const instruments = operatorInstruments(operator.id)
+      .map((instrument) => {
+        const label = escapeHtml(instrument.name);
+        return instrument.capabilityId
+          ? `<li><a href="capabilities/${encodeURIComponent(instrument.capabilityId)}/">${label}</a></li>`
+          : `<li>${label}</li>`;
+      })
+      .join("");
+    return `<article class="facility-person facility-operator">
+      <div>
+        <h3>${escapeHtml(operator.name)}</h3>
+      </div>
+      <ul class="operator-instruments">${instruments}</ul>
+    </article>`;
+  }
+
+  function renderOperators() {
+    const target = document.getElementById("instrument-operators");
+    if (!target) return;
+    target.innerHTML = (facility.operators || []).map(operatorRow).join("");
+    renderOperatorCredit();
   }
 
   function personRow(person) {
@@ -112,6 +201,7 @@
     renderOverview();
     renderInstruments();
     renderPeople();
+    renderOperators();
     if (window.location.hash) {
       const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
       if (target) {
