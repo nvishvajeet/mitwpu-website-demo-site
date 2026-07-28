@@ -294,14 +294,22 @@ body {
 }
 
 /* The supporting picture beside a lead is a second lead, not a card: it
-   stands alone rather than in a grid, so it takes the lead ratio. */
+   stands alone rather than in a grid, so it takes the lead ratio.
+
+   It is now normally a child of `.page-intro--media` rather than of
+   `.academic-media`, so the picture's own rules are written against the
+   picture and not against the section that used to contain it — the section
+   is a fallback that no unit currently reaches. `margin: 0` because it is a
+   <figure> now: it carries the picture in a layout that decides the spacing,
+   and the user-agent's 40px inline margin is not that. */
 .academic-media__supporting {
+  margin: 0;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--subtle);
 }
 
-.academic-media img {
+.academic-media__supporting img {
   display: block;
   width: 100%;
   height: 100%;
@@ -363,6 +371,23 @@ body {
 
 .page-intro {
   display: block;
+}
+
+/* Two columns, and only when there is a second photograph to put in the
+   second one. The prose keeps the wider track because it is the reason the
+   band exists; the picture's 0.92 is enough to read a 4/3 lead at this
+   measure without the paragraph losing its rhythm — at 1280 that is a 600px
+   column of text against a 552px picture, 414px tall, where the same picture
+   across the full measure was 885.
+
+   `align-items: center` rather than `start`: the overview runs one paragraph
+   on some schools and three on others, and a picture pinned to the top of a
+   three-paragraph column leaves a hole under it that reads as a mistake. */
+.page-intro--media {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+  gap: clamp(32px, 4vw, 64px);
+  align-items: center;
 }
 
 .page-intro > p {
@@ -1108,10 +1133,11 @@ body {
     gap: 28px;
   }
 
-  .academic-media__supporting {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-  }
+  /* The supporting picture needed neither of its two narrow-width
+     declarations once it stopped being a lone block in a one-column grid: the
+     4/3 ratio is now on the picture itself rather than on the section around
+     it, and a grid item stretches to its track without being told to. Both
+     were restatements of what the base rule already says. */
 
   .section-link-grid,
   .child-unit-grid,

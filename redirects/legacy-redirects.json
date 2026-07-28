@@ -2583,6 +2583,10 @@
       "target": "/events/mit-wpu-hosts-icsscc-2026-to-advance-sustainable-smart-computing-and-communication-research/"
     },
     {
+      "source": "/image-gallery/hackathon/",
+      "target": "/image-gallery/"
+    },
+    {
       "source": "/indradhanu-club/",
       "target": "/campus-life/clubs/indradhanu-club/"
     },

@@ -74,22 +74,56 @@
   // the disclosure button's aria-expanded tracks hover, click and the arrow
   // keys alike, not only its own clicks.
   //
-  // It does NOT track the fourth path, and this comment used to claim it
-  // tracked them all. patterns.css also reveals a panel on `:focus-within`,
-  // which sets no class and so never reaches this function: Tab to a top-level
-  // entry and the panel appears on screen while its button still reports
-  // `aria-expanded="false"`. Measured, not inferred — see the keyboard trace in
-  // the 2026-07-27 hover investigation. Left alone here because correcting it
-  // is an accessibility-semantics change that must not ride along with a
-  // pointer-timing fix: the obvious repair, calling setOpen from `focusin`,
-  // breaks click-to-open, since focus reaches the disclosure button before its
-  // own click handler runs and the click then reads `.is-open` as already true.
+  // THE FOURTH PATH, and why aria is no longer computed from `.is-open`.
+  //
+  // patterns.css reveals a panel on `:focus-within` as well, which sets no
+  // class and so never reached this function: Tab to a top-level entry and the
+  // panel appeared on screen while its button still reported
+  // `aria-expanded="false"`. A screen-reader user was told every menu was
+  // closed while it was open in front of them. Measured in the 2026-07-27
+  // keyboard traces, not inferred.
+  //
+  // The obvious repair is to call `setOpen` from `focusin`, and it breaks
+  // click-to-open: a mouse click focuses the disclosure button before its own
+  // handler runs, so the handler reads `.is-open` as already true and closes
+  // what the click was meant to open. That is why this sat unfixed.
+  //
+  // The way out is that `.is-open` and "the panel is showing" were never the
+  // same statement, and only the second one is what `aria-expanded` means. So
+  // the class stays exactly what it was — the record of a deliberate open by
+  // hover, click or arrow key — and the attribute is derived from the three
+  // things that actually decide what is on screen:
+  //
+  //     showing = (is-open OR focus-within) AND NOT is-dismissed
+  //
+  // matching the CSS rule for rule. Focus never writes the class, so the click
+  // path is untouched.
+  //
+  // `is-dismissed` is not new; Escape has always used it for precisely this
+  // case — focus inside, panel hidden — because `:focus-within` would
+  // otherwise keep revealing a panel the reader had just dismissed.
+  const isShowing = (owner) =>
+    !owner.classList.contains("is-dismissed") &&
+    (owner.classList.contains("is-open") ||
+      owner.matches(":focus-within"));
+
+  const syncExpanded = (owner) => {
+    owner
+      .querySelector(":scope > [data-uwp-nav-disclosure]")
+      ?.setAttribute("aria-expanded", String(isShowing(owner)));
+  };
+
   const setOpen = (owner, open) => {
     owner.classList.toggle("is-open", open);
     if (open) owner.classList.remove("is-dismissed");
-    owner
-      .querySelector(":scope > [data-uwp-nav-disclosure]")
-      ?.setAttribute("aria-expanded", String(open));
+    // Closing an entry the reader is still inside has to dismiss it, or
+    // `:focus-within` goes on showing the panel and the close does nothing a
+    // reader can see — the same fault Escape's dismissal was added for, on a
+    // path nobody had walked with the keyboard.
+    else if (owner.matches(":focus-within")) {
+      owner.classList.add("is-dismissed");
+    }
+    syncExpanded(owner);
   };
 
   // Top-level panels are exclusive on desktop: a masthead-wide mega panel and
@@ -305,8 +339,13 @@
       // nothing left to suppress; forget it before the guards below, which are
       // about closing rather than about the dismissal.
       element.classList.remove("is-dismissed");
-      if (!desktop.matches) return;
-      if (element.matches(":hover")) return;
+      if (!desktop.matches || element.matches(":hover")) {
+        // Not closing — but focus has left, so `:focus-within` no longer
+        // reveals anything and the attribute may have just become false
+        // without any class changing.
+        syncExpanded(element);
+        return;
+      }
       setOpen(element, false);
     });
 
@@ -314,6 +353,10 @@
     // handler above sees; measure on focus too so a panel reached by Tab or
     // the arrow keys flips at the edge exactly as a hovered one does.
     element.addEventListener("focusin", () => {
+      // Before the desktop guard: the attribute is a statement about what is on
+      // screen, and it is as true at phone width as at desktop. Only the
+      // measuring below is desktop-only.
+      syncExpanded(element);
       if (!desktop.matches) return;
       if (isBranch) placeFlyout(element);
       else placeMega(element);

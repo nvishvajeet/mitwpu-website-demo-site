@@ -407,6 +407,41 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   margin-inline: auto;
 }
 .single-column .content-grid { grid-template-columns: minmax(0, 1fr); }
+
+/* The album pages, and the two indexes over them.
+
+   Every other page on this site is measured for reading, and 50rem is that
+   measure: a line of Charter at 18px, about 75 characters. An album has no
+   line. Its content is a set of photographs and the only thing the reading
+   measure does to it is decide how few will fit across.
+
+   What it decided was three, at 221px, inside an 800px column on a 1280px
+   screen — a third of the window given to a set of pictures and the rest of it
+   to nothing, and /image-gallery/convocation/'s fifty photographs seventeen
+   rows deep because of it. Widening the canvas and raising the tile floor
+   together gives four across at 254px, and the same fifty photographs in
+   thirteen rows.
+
+   The tile floor is the package's own rule with one number changed: 12rem is
+   right for a run of illustrations inside an article, which is what the
+   gallery component is usually asked to be here. `min(50% - .5rem, …)` is
+   untouched, so the phone still gets the two-across floor gallery.html
+   insists on — at 375px the 50% term is the smaller and 15rem never applies.
+
+   This is a client re-declaring a package grid, which is the thing
+   WEB_TEMPLATE_POLICY §5 says to promote rather than repeat. The promotion is
+   a gallery size variant in university-web-patterns — `gallery.marks` already
+   proves the shape — and it is not made here because another agent holds that
+   repository this session. */
+.album-page .hero,
+.album-page .content-grid {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+}
+.album-page .content-grid { grid-template-columns: minmax(0, 1fr); }
+.album-page .uwp-gallery__grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(50% - .5rem, 15rem), 1fr));
+}
 .profile-page .hero { min-height: 300px; }
 .prose--profile,
 .prose--offices {
