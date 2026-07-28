@@ -87,6 +87,29 @@
     return `<img class="faculty-photo" src="${prefix}${escapeHtml(person.photoPath)}" alt=""${dimensions} loading="lazy" decoding="async">`;
   }
 
+  /* A record's `url` is where the fact was read, not where the reader should
+   * be sent. Where this site publishes the same page — every programme, every
+   * event and news item it lists — `contentLink` sends them to it instead, and
+   * `externalLink` then sees a same-origin href and drops the new tab and the
+   * ↗ on its own.
+   *
+   * The map is written by tools/build_science_site.mjs, which can see which
+   * pages the release holds; this file cannot, and renders in both places, so
+   * it is handed the answer rather than the rule. With no map — an unbuilt
+   * page, or a department with nothing published locally — every link stays
+   * exactly as it was. */
+  const localRoutes = window.SCIENCE_LOCAL_ROUTES || {};
+  const rootPrefix = page === "school" ? "../" : "../../";
+
+  function contentLink(url, label, className = "") {
+    const route = typeof url === "string" ? localRoutes[url] : "";
+    return externalLink(
+      typeof route === "string" && route ? `${rootPrefix}${route}/` : url,
+      label,
+      className
+    );
+  }
+
   function externalLink(url, label, className = "") {
     const href = safeUrl(url);
     if (!href) return "";
@@ -131,7 +154,7 @@
     return `<article class="programme-row">
       <p>${escapeHtml(programme.level)}</p>
       <h3>${escapeHtml(programme.name)}</h3>
-      ${externalLink(programme.url, "Programme details", "row-link")}
+      ${contentLink(programme.url, "Programme details", "row-link")}
     </article>`;
   }
 
@@ -142,7 +165,7 @@
         <p class="eyebrow">${escapeHtml(event.type)}${event.programme ? ` · ${escapeHtml(event.programme)}` : ""}</p>
         <h3>${escapeHtml(event.title)}</h3>
       </div>
-      ${externalLink(event.url, "Details", "row-link")}
+      ${contentLink(event.url, "Details", "row-link")}
     </article>`;
   }
 

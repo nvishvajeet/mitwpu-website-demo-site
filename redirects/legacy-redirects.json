@@ -11,6 +11,10 @@
       "target": "/campus-life/clubs/aatman/"
     },
     {
+      "source": "/about/world-peace-dome/",
+      "target": "/about-us/world-peace-dome/"
+    },
+    {
       "source": "/academic-notices/",
       "target": "/academics/"
     },
