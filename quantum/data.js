@@ -1,40 +1,131 @@
 // Concise, human-editable group content. All profiles remain provisional.
-
-/* Research areas: three things to know before editing them.
- *
- * 1. `topics` is gone, and should not come back as it was. Each area's list
- *    restated that area's own summary in the same words — "Quantum materials,
- *    semiconductors, thin films, and photonic devices" above a list reading
- *    "Quantum materials / Semiconductor devices / Photonic devices / Thin
- *    films". The second telling gave a reader nothing, so it was removed
- *    rather than reworded. A `topics` list earns its place only when it says
- *    something the summary does not.
- *
- * 2. `sources` is where the summary's wording came from, and it is the only
- *    licence this file has to describe anybody's work. Two areas have one: a
- *    group member has published a description of their own research, and the
- *    summary is a compression of it. The third has no `sources` and keeps the
- *    words it already had. That is not an oversight to be tidied away — it is
- *    the record that nobody has yet stood behind a description of that area.
- *    Do not write a better-sounding summary for it; get one from the people
- *    who work in it, and cite them here.
- *
- * 3. Membership is not stored here. A person's areas live on the person, in
- *    `people[].researchAreas` below. One member, one place to edit, whether
- *    they join, move or leave; the research page derives each area's roster by
- *    filtering people on the area id. Storing it on both sides would let the
- *    two disagree, and there is no third place that could say which was right.
- */
 window.QUANTUM_GROUP = {
+  "site": {
+    "pages": {
+      "index.html": {
+        "seo": {
+          "title": "Quantum Science & Technology Group · MIT-WPU",
+          "description": ""
+        },
+        "text": [
+          {
+            "selector": "body > #main > section:nth-of-type(1) > div > div > p:nth-of-type(1)",
+            "node": 0,
+            "value": "Research@MIT-WPU"
+          },
+          {
+            "selector": "body > #main > section:nth-of-type(1) > div > div > p:nth-of-type(2)",
+            "node": 0,
+            "value": "We are an inter-disciplinary group comprising of researchers from physics, chemistry, and computer science and mathematics. \n\nOur work spans quantum algorithms and computation, photonics, entangled-photon sources, semiconductor thin films, and nano-structured materials. \n"
+          },
+          {
+            "selector": "body > #main > section:nth-of-type(2) > div > div > aside > div > p:nth-of-type(2)",
+            "node": 0,
+            "value": "Please write to us at "
+          }
+        ],
+        "images": []
+      },
+      "research.html": {
+        "seo": {
+          "title": "Quantum Science & Technology Group · MIT-WPU",
+          "description": "A young Quantum Science & Technology Group at MIT-WPU, Pune. Looking to collaborate and people to join!"
+        },
+        "text": [
+          {
+            "selector": "body > #main > section:nth-of-type(1) > div > p",
+            "node": 0,
+            "value": "A inter-disciplinary research group working in Quantum Science and Technology at MIT-WPU, Pune. \n\nLooking to collaborate and people to join!"
+          }
+        ],
+        "images": []
+      },
+      "people.html": {
+        "seo": {
+          "title": "",
+          "description": ""
+        },
+        "text": [
+          {
+            "selector": "#hiring-notice",
+            "node": 0,
+            "value": "Looking for faculty, postdocs and PhD students."
+          },
+          {
+            "selector": "body > #main > section:nth-of-type(2) > div > div:nth-of-type(1) > aside > div > p:nth-of-type(2)",
+            "node": 0,
+            "value": "Please contact "
+          },
+          {
+            "selector": "body > #people-list > article:nth-of-type(1) > div > p:nth-of-type(1)",
+            "node": 1,
+            "value": "Principal Investigator and Coordinator"
+          },
+          {
+            "selector": "body > #people-list > article:nth-of-type(1) > div > div > span:nth-of-type(2)",
+            "node": 0,
+            "value": "Quantum information and computation"
+          },
+          {
+            "selector": "body > #people-list > article:nth-of-type(1) > div > p:nth-of-type(2)",
+            "node": 0,
+            "value": "Faculty at MIT-WPU, jointly in the Computer Science and Mathematics · also affiliated with CNRS, LaBRI, Université de Bordeaux"
+          }
+        ],
+        "images": []
+      },
+      "publications.html": {
+        "seo": {
+          "title": "",
+          "description": ""
+        },
+        "text": [],
+        "images": []
+      },
+      "course.html": {
+        "seo": {
+          "title": "",
+          "description": ""
+        },
+        "text": [
+          {
+            "selector": "body > #main > section:nth-of-type(1) > div > div > h1",
+            "node": 0,
+            "value": "Undergraduate program and minor in Quantum Technologies"
+          },
+          {
+            "selector": "body > #main > section:nth-of-type(2) > div > article > p",
+            "node": 0,
+            "value": "Interdisciplinary programmes in quantum science, computation, information, optics, materials and devices.\n\nStay tuned!"
+          }
+        ],
+        "images": []
+      },
+      "contact.html": {
+        "seo": {
+          "title": "",
+          "description": ""
+        },
+        "text": [],
+        "images": []
+      }
+    }
+  },
   "researchAreas": [
     {
       "number": "01",
       "title": "Quantum Information and Computation",
-      "summary": "Theory of computation, and the quantum information and computation questions inside it — algorithms, and the limits on them.",
+      "summary": "Theory of computation, with a focus on quantum information and computation problems. Algorithms and limits to quantum computation. ",
       "sources": [
         "https://vishvajeetn.org/"
       ],
-      "id": "research-quantum-information-algorithms-systems"
+      "id": "research-quantum-information-algorithms-systems",
+      "topics": [
+        "computational complexity theory",
+        "analysis of algorithms",
+        "quantum computation",
+        "discrete mathematics"
+      ]
     },
     {
       "number": "02",
@@ -48,7 +139,7 @@ window.QUANTUM_GROUP = {
     {
       "number": "03",
       "title": "Quantum Materials & Devices",
-      "summary": "Quantum materials, semiconductors, thin films, and photonic devices.",
+      "summary": "Quantum materials, semiconductors, thin films, and photonic devices. Superconductivity",
       "id": "research-quantum-materials-devices"
     }
   ],
@@ -62,22 +153,16 @@ window.QUANTUM_GROUP = {
       "groupOrder": 0,
       "groupRole": "Principal Investigator",
       "designation": "",
-      "affiliation": "MIT World Peace University, Pune \u00b7 affiliated with LaBRI, Universit\u00e9 de Bordeaux",
+      "affiliation": "MIT World Peace University, Pune · affiliated with LaBRI, Université de Bordeaux",
       "email": "",
       "photo": "assets/vishvajeet.jpg",
-      "bio": "Vishvajeet Nagargoje is a theoretical computer scientist working at the intersection of algorithms, randomness, and quantum information. He received his Ph.D. from Rutgers University and held a postdoctoral position at the Laboratory for Foundations of Computer Science in Edinburgh. He is faculty at MIT World Peace University, where he leads this group, and is affiliated with LaBRI, Universit\u00e9 de Bordeaux.",
+      "bio": "Vishvajeet Nagargoje is a theoretical computer scientist working at the intersection of algorithms, randomness, and quantum information. He received his Ph.D. from Rutgers University and held a postdoctoral position at the Laboratory for Foundations of Computer Science in Edinburgh. He is faculty at MIT World Peace University, where he leads this group, and is affiliated with LaBRI, Université de Bordeaux.",
       "interests": [
         "Theoretical computer science",
         "Quantum information",
         "Randomness and computation",
         "Algorithms and complexity"
       ],
-      /* This list used to open with "Ph.D. in Chemistry, Indian Institute of
-       * Science, Bangalore" — Dev Kumar Thapa's doctorate, duplicated onto
-       * this record, and contradicted three lines above by the bio on the same
-       * page. His own site says "I received my PhD from Rutgers University"
-       * and "I completed my Bachelor's and Master's degrees at IIT Madras";
-       * his ORCID record says the same. Both entries below are his. */
       "qualifications": [
         "Ph.D., Rutgers University",
         "Bachelor's and Master's degrees, IIT Madras"
@@ -87,9 +172,6 @@ window.QUANTUM_GROUP = {
         "Postdoctoral research at CNRS / LaBRI",
         "Visiting graduate research at the Institute for Advanced Study"
       ],
-      /* Placed from his own site: he describes himself as a postdoctoral
-       * researcher in the Quantum Information and Computation group at LaBRI
-       * whose interests "lie in Theory of Computation". */
       "researchAreas": [
         "research-quantum-information-algorithms-systems"
       ],
@@ -146,10 +228,6 @@ window.QUANTUM_GROUP = {
         "Research experience in Mexico, Germany, Canada, and Spain",
         "Teaching and mentorship in optics and quantum physics"
       ],
-      /* Placed from his own university profile, which gives his research area
-       * as "Nonlinear optics, nanophotonics" and describes work on structured
-       * optical beams, single-photon sources, entangled photons and
-       * nanoplasmonic devices. Area 02's summary is a compression of it. */
       "researchAreas": [
         "research-quantum-optics-photonics"
       ],
@@ -331,6 +409,6 @@ window.QUANTUM_GROUP = {
         "orcid": "https://orcid.org/0000-0002-1571-9208",
         "research": "https://vidwan.inflibnet.ac.in/profile/148543"
       }
-    },
+    }
   ]
 };

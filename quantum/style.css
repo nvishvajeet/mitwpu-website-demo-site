@@ -93,6 +93,18 @@
   border-top: 0;
 }
 
+/* The course title is intentionally descriptive, so this single-column hero
+   uses the full reading measure instead of the split layout used elsewhere. */
+[data-page="education"] .page-hero-inner {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+[data-page="education"] .page-hero h1 {
+  max-width: 30ch;
+  font-size: clamp(2rem, 3.6vw, 2.85rem);
+  text-wrap: balance;
+}
+
 /* site.css's .footer-grid columns and gap need no neutralising: they lose to
    .uwp-footer__grid on equal specificity because patterns.css is imported
    after site.css. That ordering is the whole reason the two sheets can be on
