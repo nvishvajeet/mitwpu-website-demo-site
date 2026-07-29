@@ -85,6 +85,56 @@ window.BIOINFORMATICS_GROUP = {
         "research": "https://vidwan.inflibnet.ac.in/profile/534729",
         "website": "https://www.linkedin.com/in/kausik-bhattacharyya/"
       }
+    },
+    {
+      "id": "sachin-harle",
+      "profileSlug": "sachin-harle",
+      "memberType": "faculty",
+      "name": "Dr. Sachin Harle",
+      "groupRole": "Faculty",
+      "designation": "Assistant Professor",
+      "affiliation": "Department of Biosciences and Technology",
+      "email": "sachin.harle@mitwpu.edu.in",
+      "photo": "../people/assets/campus/sachin-harle.webp",
+      "bio": "Sachin Harle works on next-generation sequencing, metagenomics and microbiome analysis, whole-genome and transcriptome analysis, molecular docking, and molecular dynamics.",
+      "interests": [
+        "Next-generation sequencing",
+        "Metagenomics and microbiome analysis",
+        "Whole-genome and transcriptome analysis",
+        "Molecular docking and dynamics"
+      ],
+      "highlights": [],
+      "publications": [],
+      "links": {
+        "profile": "https://mitwpu.edu.in/faculty/sachin-harle",
+        "scholar": "https://scholar.google.com/citations?user=1CuLqrEAAAAJ&hl=en"
+      }
+    },
+    {
+      "id": "meenakshi-shankar-iyer",
+      "profileSlug": "meenakshi-shankar-iyer",
+      "memberType": "faculty",
+      "name": "Dr. Meenakshi Shankar Iyer",
+      "groupRole": "Faculty",
+      "designation": "Assistant Professor",
+      "affiliation": "Department of Biosciences and Technology",
+      "email": "meenakshi.iyer@mitwpu.edu.in",
+      "photo": "../people/assets/campus/meenakshi-shankar-iyer.webp",
+      "bio": "Meenakshi Shankar Iyer works on genomics, transcriptomics and metagenomics; protein sequence, structural and evolutionary analysis; protein design; and computational vaccinology.",
+      "interests": [
+        "Genomics, transcriptomics and metagenomics",
+        "Protein sequence and structural analysis",
+        "Protein design",
+        "Computational vaccinology"
+      ],
+      "highlights": [],
+      "publications": [],
+      "links": {
+        "profile": "https://mitwpu.edu.in/faculty/meenakshi-shankar-iyer",
+        "orcid": "https://orcid.org/0000-0002-0488-7193",
+        "scholar": "https://scholar.google.com/citations?user=IVkcvqQAAAAJ&hl=en",
+        "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58245455600"
+      }
     }
   ]
 };
