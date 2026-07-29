@@ -60,7 +60,7 @@
       ["Academics", "/academics/"],
       ["Admissions", "/admissions/"],
       ["Research", "/research/"],
-      ["People", "/people/"],
+      ["Administration", "/administration/"],
       ["Campus", "/life-at-mit-wpu/"],
       ["Students", "/students/"],
     ];

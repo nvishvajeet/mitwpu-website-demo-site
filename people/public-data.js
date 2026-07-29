@@ -2548,27 +2548,6 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "memberType": ""
   },
   {
-    "id": "balaji-madhavrao-patil",
-    "name": "Dr. Balaji Madhavrao Patil",
-    "preferredDisplayName": "",
-    "designation": "Professor and Head, Computer Science",
-    "department": "research-groups/quantum",
-    "departmentName": "Quantum Science & Technology Group",
-    "unitRoutes": [
-      "research-groups/quantum"
-    ],
-    "unitNames": {
-      "research-groups/quantum": "Quantum Science & Technology Group"
-    },
-    "photoPath": "../../media/mitwpu-public/optimized/faculty_profile/ae/ae126388134e6642-ae126388134e6642-Balaji-Madhavrao-Patil.webp",
-    "research": "Computer networks; Cybersecurity; Cyber forensics; Internet of Things",
-    "summary": "Balaji Patil works in networks, cybersecurity, cyber forensics, and IoT, and supports institutional coordination for the group.",
-    "links": {
-      "website": "https://drbmpatil.wordpress.com/"
-    },
-    "memberType": ""
-  },
-  {
     "id": "balaso-nivruti-jagdale",
     "name": "Dr. Balaso Nivruti Jagdale",
     "preferredDisplayName": "",
@@ -6102,20 +6081,22 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
     "unitRoutes": [
-      "science/biosciences-and-technology"
+      "science/biosciences-and-technology",
+      "research-groups/bioinformatics"
     ],
     "unitNames": {
-      "science/biosciences-and-technology": "Department of Biosciences and Technology"
+      "science/biosciences-and-technology": "Department of Biosciences and Technology",
+      "research-groups/bioinformatics": "Bioinformatics Group"
     },
     "photoPath": "./assets/campus/meenakshi-shankar-iyer.webp",
     "research": "Genomics, transcriptomics and metagenomics; protein sequence, structural and evolutionary analysis; protein design; and computational vaccinology.",
     "summary": "Dr. Meenakshi Iyer is an Assistant Professor in the Department of Biosciences and Technology. She has done her PhD in Bioinformatics from NCBS-TIFR, Bangalore. She has a joint postdoctoral experience from KAVI-ICR, University of Nairobi, Kenya and NCBS-TIFR. She has also worked as a Project Scientist in NCBS and as a Bioinformatics Consultant for Molecular Solutions Care Health, Bangalore. She has worked on big data analysis, genomics, transcriptomics, bacterial, viral, medicinal plant and cancer sample omics, protein sequence analysis and evolution, protein structural biology, in silico vaccine design and epitope prediction.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/meenakshi-shankar-iyer",
-      "linkedin": "https://www.linkedin.com/in/meenakshi-iyer-a4a38954",
-      "scholar": "https://scholar.google.com/citations?user=IVkcvqQAAAAJ&hl=en",
       "orcid": "https://orcid.org/0000-0002-0488-7193",
+      "scholar": "https://scholar.google.com/citations?user=IVkcvqQAAAAJ&hl=en",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58245455600",
+      "linkedin": "https://www.linkedin.com/in/meenakshi-iyer-a4a38954",
       "research": "https://vidwan.inflibnet.ac.in/profile/659390"
     },
     "memberType": ""
@@ -9446,18 +9427,20 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "department": "science/biosciences-and-technology",
     "departmentName": "Department of Biosciences and Technology",
     "unitRoutes": [
-      "science/biosciences-and-technology"
+      "science/biosciences-and-technology",
+      "research-groups/bioinformatics"
     ],
     "unitNames": {
-      "science/biosciences-and-technology": "Department of Biosciences and Technology"
+      "science/biosciences-and-technology": "Department of Biosciences and Technology",
+      "research-groups/bioinformatics": "Bioinformatics Group"
     },
     "photoPath": "./assets/campus/sachin-harle.webp",
     "research": "Next-generation sequencing, metagenomics and microbiome analysis, whole-genome and transcriptome analysis, molecular docking, and molecular dynamics.",
     "summary": "Dr. Sachin Harle is working as an Assistant Professor in the School of Biosciences and Technology, MIT-WPU, Pune. He did his Masters in Bioinformatics from Bioinformatics Centre, Savitribai Phule Pune University. Doctorate in Biotechnology from Department of Biotechnology, Sant Gadge Baba Amravati University. The Study involved Molecular Docking of plant-based compounds against cancer related targets; Molecular Dynamic Simulation of complexes and Pathway Simulations. He has experience in NGS Sequence analysis in both- industry and academic settings, including, NIPL (Nucleome Informatics Pvt. Ltd.), Hyderabad; ICAR-NIHSAD (National Institute of High Security Animal Diseases), Bhopal; SCMS (Department of Scientific Computing Modeling and Simulations), Savitribai Phule Pune University; BRIC-THSTI (Translational Health Science and Technology Institute), Faridabad. He has worked on Whole Genome Analysis, Whole Transcriptome Analysis, and Metagenome Analysis of data generated using pacbio, nanopore and illumina platforms.",
     "links": {
       "profile": "https://mitwpu.edu.in/faculty/sachin-harle",
-      "linkedin": "https://www.linkedin.com/in/sachin-harle-ph-d-13ab56216/",
       "scholar": "https://scholar.google.com/citations?user=1CuLqrEAAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/in/sachin-harle-ph-d-13ab56216/",
       "research": "https://vidwan.inflibnet.ac.in/profile/296627"
     },
     "memberType": ""
