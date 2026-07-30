@@ -101,6 +101,27 @@ body {
   :where(h1, h2, h3, h4, h5, h6) {
     hyphens: auto;
   }
+
+  /* A breadcrumb is allowed to wrap on a phone, but the shared component's
+     flex item used to declare `flex: 0 0 auto`. The text inside it could wrap;
+     the item itself refused to become narrower, so a long current-page title
+     widened the whole document. This release-wide layer loads last and reaches
+     every page family, including retained public pages that have no client
+     stylesheet of their own. */
+  .uwp-breadcrumbs li {
+    flex: 0 1 auto;
+    max-width: 100%;
+  }
+}
+
+/* These tables are deliberately wider than a phone and scroll inside their
+   own region. The component reserves three pixels for focus rings with a
+   negative margin on every side; that made the scroll region itself three
+   pixels wider than the document. Keep the vertical allowance and return the
+   inline edges to the page. The table still scrolls inside the region. */
+.uwp-fees__scroll,
+.uwp-attributes__scroll {
+  margin-inline: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
