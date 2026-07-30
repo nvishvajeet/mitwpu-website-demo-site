@@ -831,13 +831,7 @@ h3 {
  * leaves, which is how the control stops being furniture.
  *
  * IT DOES NOT HIDE FROM A KEYBOARD. `:focus-within` holds it open, so
- * tabbing to Pause makes it appear and keeps it there; a control reachable
- * only by hover would be unreachable without a mouse. Nor does it hide when
- * the reader has paused: `is-paused` pins it, because a stopped carousel with
- * no visible way to restart it looks broken rather than quiet. And under
- * `prefers-reduced-motion` it does not fade at all — it is simply there,
- * since a reader who has asked for less movement is the reader most likely to
- * want the stop button in plain sight.
+ * tabbing to either step control makes it appear and keeps it there.
  *
  * HOW LOUD IT IS, WHICH IS THE PART THAT KEEPS BEING WRONG. It was a 296x56
  * slab — 45% of the picture's width at 1280, and 6.1% of its area — holding
@@ -907,8 +901,7 @@ h3 {
  * hit area — the slides are its children and cannot serve, since the bar is
  * their sibling and not inside any of them. */
 .hero-visual:hover .hero-controls,
-.hero-visual:focus-within .hero-controls,
-.hero-controls.is-paused {
+.hero-visual:focus-within .hero-controls {
   opacity: 0.85;
   visibility: visible;
 }
@@ -1009,33 +1002,6 @@ h3 {
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-/* Two glyphs in one button, one of them hidden: the toggle reports its state
-   by which shape is showing as well as by aria-pressed, so the state survives
-   for a reader who is looking at it rather than hearing it. */
-.hero-control__glyph--pause,
-.hero-control__glyph--play {
-  width: 9px;
-  height: 10px;
-  background: currentcolor;
-}
-
-.hero-control__glyph--pause {
-  clip-path: polygon(0 0, 37% 0, 37% 100%, 0 100%, 0 0, 63% 0, 100% 0, 100% 100%, 63% 100%, 63% 0);
-}
-
-.hero-control__glyph--play {
-  display: none;
-  clip-path: polygon(6% 0, 100% 50%, 6% 100%);
-}
-
-.hero-controls.is-paused .hero-control__glyph--pause {
-  display: none;
-}
-
-.hero-controls.is-paused .hero-control__glyph--play {
-  display: block;
 }
 
 /* ── the meter ───────────────────────────────────────────────────────

@@ -163,28 +163,9 @@
 
   var HERO_INTERVAL = 6000;
 
-  /* The hero's five campus photographs, and the controls that steer them.
-   *
-   * There are two quite different reasons the rotation can be stopped, and
-   * keeping them apart is the whole design of this function:
-   *
-   *   `stopped`  — the reader pressed pause, or asked the operating system
-   *                for reduced motion. This is a DECISION. Nothing clears it
-   *                except the reader pressing play. Leaving the hero, moving
-   *                the mouse away, switching tabs and coming back: none of
-   *                them restart it. A pause that quietly expires is worse
-   *                than no pause at all, because the reader stops trusting
-   *                the button and has no way to find out they should.
-   *
-   *   `pointerInside` / `focusInside` / `document.hidden`
-   *              — the reader is reading this, or is not here at all. These
-   *                are CIRCUMSTANCES, and they clear themselves: rotation
-   *                resumes when the reader moves away, provided they never
-   *                pressed pause.
-   *
-   * startTimer() refuses on either, so the two compose without a third state:
-   * hovering a paused carousel and leaving again does not start it.
-   */
+  /* The hero rotates unless it is being read, the tab is hidden, or the
+   * operating system requests reduced motion. Previous and next remain
+   * available without adding a permanent pause control over the photograph. */
   function initialiseHeroCarousel(carousel) {
     if (!carousel) return;
     var slides = Array.prototype.slice.call(
@@ -194,8 +175,6 @@
 
     var motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     var controls = carousel.querySelector("[data-hero-controls]");
-    var toggle = carousel.querySelector("[data-hero-toggle]");
-    var toggleName = carousel.querySelector("[data-hero-toggle-name]");
     var status = carousel.querySelector("[data-hero-status]");
     var meter = carousel.querySelector("[data-hero-meter]");
     var segments = [];
@@ -204,10 +183,7 @@
     var focusInside = false;
     var timer = null;
 
-    /* Reduced motion means the carousel opens stopped, not that the reader is
-     * forbidden to start it. The preference says "do not move things at me
-     * unasked"; pressing play is asking. */
-    var stopped = motion.matches;
+    var reducedMotion = motion.matches;
 
     if (meter) {
       slides.forEach(function () {
@@ -250,43 +226,22 @@
 
     function startTimer() {
       stopTimer();
-      if (stopped || pointerInside || focusInside || document.hidden) return;
+      if (reducedMotion || pointerInside || focusInside || document.hidden) return;
       timer = window.setInterval(function () {
         show(activeIndex + 1);
       }, HERO_INTERVAL);
     }
 
-    /* Two classes, because two different things are being reported and they
-     * disagree constantly.
-     *
-     * `is-paused` is the toggle's own state and follows `stopped` alone. It
-     * swaps the pause glyph for a play glyph. Hovering must NOT swap it: the
-     * button would then offer to play a carousel that is going to resume by
-     * itself the moment the pointer leaves, and pressing it would stop the
-     * thing the reader was trying to start.
-     *
-     * `is-idle` is whether the rotation is actually advancing right now, for
-     * any of the four reasons, and it freezes the meter's countdown. That one
-     * SHOULD catch hover — a meter still counting down towards an advance
-     * that has been suspended is telling the reader something untrue.
-     *
-     * The status line is live only while the reader is driving. Announcing
-     * every automatic advance would talk over whatever else is being read,
-     * six seconds at a time, to say something nobody asked for; announcing a
-     * press of previous/next is confirming an action they just took.
-     */
     function syncControls() {
       if (controls) {
-        controls.classList.toggle("is-paused", stopped);
         controls.classList.toggle("is-idle", timer === null);
       }
-      if (toggle) toggle.setAttribute("aria-pressed", stopped ? "true" : "false");
-      if (toggleName) {
-        toggleName.textContent = stopped
-          ? "Play the campus photographs"
-          : "Pause the campus photographs";
+      if (status) {
+        status.setAttribute(
+          "aria-live",
+          pointerInside || focusInside ? "polite" : "off"
+        );
       }
-      if (status) status.setAttribute("aria-live", stopped ? "polite" : "off");
     }
 
     /* The countdown has to be restarted whenever the interval is, or the two
@@ -324,14 +279,6 @@
       }
     );
 
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        stopped = !stopped;
-        if (stopped) stopTimer();
-        run();
-      });
-    }
-
     carousel.addEventListener("pointerenter", function () {
       pointerInside = true;
       stopTimer();
@@ -353,17 +300,15 @@
     });
     document.addEventListener("visibilitychange", run);
 
-    /* Turning the preference ON mid-visit stops the carousel, because the
-     * reader has just asked for stillness. Turning it OFF does not start it:
-     * that would restart a carousel the reader may have paused by hand, and
-     * `stopped` cannot tell the two apart once set. Leaving it stopped costs
-     * one press of play; the other way round breaks the pause. */
-    function respondToMotionPreference() {
-      if (!motion.matches) return;
-      stopped = true;
-      show(0);
-      stopTimer();
-      syncControls();
+    function respondToMotionPreference(event) {
+      reducedMotion = event.matches;
+      if (reducedMotion) {
+        show(0);
+        stopTimer();
+        syncControls();
+        return;
+      }
+      run();
     }
 
     if (motion.addEventListener) {

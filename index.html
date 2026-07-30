@@ -23,9 +23,9 @@
     })();
   </script>
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/media.css?v=874fc6c0872d">
-  <link rel="stylesheet" href="demo-assets/site.css?v=1afb3a5778f8">
+  <link rel="stylesheet" href="demo-assets/site.css?v=d0f478cdaced">
   <script src="demo-assets/theme.js?v=6cc2349369aa" defer></script>
-  <script src="demo-assets/landing.js?v=8e9a0aae46d3" defer></script>
+  <script src="demo-assets/landing.js?v=2a30f8901b1a" defer></script>
   <link rel="stylesheet" href="demo-assets/institutional-footer.css?v=ff600599fd01">
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/tokens.css">
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/patterns.css">
@@ -360,20 +360,13 @@
           <figure class="hero-media hero-slide" data-hero-slide aria-hidden="true">
             <a class="image-zoom-link" href="/media/mitwpu-public/optimized/other/8d/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img.webp" target="_blank" rel="noopener" data-pswp-item data-pswp-width="1000" data-pswp-height="671" data-pswp-caption="Domed World Peace Library and the MIT-WPU campus" aria-label="Open larger view: Domed World Peace Library and the MIT-WPU campus"><img src="/media/mitwpu-public/optimized/other/8d/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img.webp" srcset="/demo-assets/derived/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img-384w.webp 384w, /demo-assets/derived/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img-576w.webp 576w, /demo-assets/derived/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img-768w.webp 768w, /media/mitwpu-public/optimized/other/8d/8d86f40dc3082f79-8d86f40dc3082f79-mitwpu-campus-img.webp 1000w" sizes="(min-width: 59rem) 680px, calc(100vw - 52px)" alt="Domed World Peace Library and the MIT-WPU campus" width="1000" height="671" data-media-role="lead" loading="lazy" decoding="async"></a>
           </figure>
-          <!-- Ships `hidden`; demo-assets/landing.js is what reveals it. Every
-               control here needs script to do anything, so without script the
-               honest page is the first photograph and no controls at all —
-               rather than three buttons a reader can press to no effect. -->
+          <!-- The two step controls ship hidden and are revealed only after
+               the carousel script has initialised. -->
           <div class="hero-controls" data-hero-controls hidden>
             <div class="hero-controls__buttons">
               <button class="hero-control" type="button" data-hero-step="-1">
                 <span class="hero-control__glyph" aria-hidden="true">‹</span>
                 <span class="hero-control__name">Previous campus photograph</span>
-              </button>
-              <button class="hero-control hero-control--toggle" type="button" data-hero-toggle aria-pressed="false">
-                <span class="hero-control__glyph hero-control__glyph--pause" aria-hidden="true"></span>
-                <span class="hero-control__glyph hero-control__glyph--play" aria-hidden="true"></span>
-                <span class="hero-control__name" data-hero-toggle-name>Pause the campus photographs</span>
               </button>
               <button class="hero-control" type="button" data-hero-step="1">
                 <span class="hero-control__glyph" aria-hidden="true">›</span>

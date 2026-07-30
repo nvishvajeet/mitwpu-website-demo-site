@@ -122,6 +122,86 @@
     applyTheme(next);
   }
 
+  function currentMicrositeContent() {
+    const path = window.location.pathname;
+    if (/(?:^|\/)photonics\//.test(path)) {
+      return window.PHOTONICS_SITE?.site || {};
+    }
+    if (/(?:^|\/)quantum\//.test(path)) {
+      return window.QUANTUM_GROUP?.site || {};
+    }
+    if (/(?:^|\/)astrophysics\//.test(path)) {
+      return window.ASTROPHYSICS_GROUP?.site || {};
+    }
+    if (/(?:^|\/)bioinformatics\//.test(path)) {
+      return window.BIOINFORMATICS_GROUP?.site || {};
+    }
+    return {};
+  }
+
+  function currentPageName() {
+    const name = window.location.pathname.split("/").filter(Boolean).pop() || "";
+    return name.endsWith(".html") ? name : "index.html";
+  }
+
+  function applyMicrositeContent() {
+    const page = currentMicrositeContent().pages?.[currentPageName()];
+    if (!page) return;
+    if (page.seo?.title) document.title = page.seo.title;
+    if (page.seo?.description) {
+      let description = document.querySelector('meta[name="description"]');
+      if (!description) {
+        description = document.createElement("meta");
+        description.name = "description";
+        document.head.append(description);
+      }
+      description.content = page.seo.description;
+    }
+    (page.text || []).forEach((item) => {
+      try {
+        const target = document.querySelector(item.selector);
+        const node = target?.childNodes[item.node];
+        if (node?.nodeType === Node.TEXT_NODE && node.nodeValue !== item.value) {
+          node.nodeValue = item.value;
+        }
+      } catch (_error) {
+        // A retired template selector must not stop the rest of the page.
+      }
+    });
+    (page.images || []).forEach((item) => {
+      try {
+        const image = document.querySelector(item.selector);
+        if (!(image instanceof HTMLImageElement)) return;
+        if (image.getAttribute("src") !== item.src) image.setAttribute("src", item.src);
+        if (image.getAttribute("alt") !== item.alt) image.setAttribute("alt", item.alt);
+      } catch (_error) {
+        // Ignore selectors retired by a later shared-template update.
+      }
+    });
+  }
+
+  function watchMicrositeContent() {
+    if (!currentMicrositeContent().pages?.[currentPageName()]) return;
+    applyMicrositeContent();
+    if (new URLSearchParams(window.location.search).has("cms-edit")) {
+      window.addEventListener("load", applyMicrositeContent, { once: true });
+      return;
+    }
+    let queued = false;
+    const observer = new MutationObserver(() => {
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(() => {
+        queued = false;
+        applyMicrositeContent();
+      });
+    });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  }
+
   const initMobileNav = () => {
     const toggle = document.querySelector("[data-nav-toggle]");
     const nav = document.querySelector("[data-global-nav]");
@@ -281,6 +361,7 @@
     });
     initMobileNav();
     initProgrammeDirectories();
+    watchMicrositeContent();
   });
 
   const followDeviceTheme = (event) => {
