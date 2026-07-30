@@ -2548,6 +2548,27 @@ window.MITWPU_PUBLIC_PEOPLE = [
     "memberType": ""
   },
   {
+    "id": "balaji-madhavrao-patil",
+    "name": "Dr. Balaji Madhavrao Patil",
+    "preferredDisplayName": "",
+    "designation": "Professor and Head, Computer Science",
+    "department": "research-groups/quantum",
+    "departmentName": "Quantum Science & Technology Group",
+    "unitRoutes": [
+      "research-groups/quantum"
+    ],
+    "unitNames": {
+      "research-groups/quantum": "Quantum Science & Technology Group"
+    },
+    "photoPath": "../../media/mitwpu-public/optimized/faculty_profile/ae/ae126388134e6642-ae126388134e6642-Balaji-Madhavrao-Patil.webp",
+    "research": "Computer networks; Cybersecurity; Cyber forensics; Internet of Things",
+    "summary": "Balaji Patil works in networks, cybersecurity, cyber forensics, and IoT, and supports institutional coordination for the group.",
+    "links": {
+      "website": "https://drbmpatil.wordpress.com/"
+    },
+    "memberType": ""
+  },
+  {
     "id": "balaso-nivruti-jagdale",
     "name": "Dr. Balaso Nivruti Jagdale",
     "preferredDisplayName": "",
