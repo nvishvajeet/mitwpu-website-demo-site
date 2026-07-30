@@ -198,6 +198,15 @@ h4 { margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
   font-size: clamp(2rem, 4.2vw, 3.45rem);
   line-height: 1.08;
 }
+.navigation-hub-page .hero {
+  min-height: 0;
+  padding-block: clamp(2.7rem, 6vw, 5rem);
+}
+.navigation-hub-page .hero h1 {
+  max-width: 28ch;
+  font-size: clamp(2rem, 4.2vw, 3.45rem);
+  line-height: 1.08;
+}
 .editorial-page .lede {
   max-width: 64ch;
   font-size: clamp(1.02rem, 1.7vw, 1.18rem);
