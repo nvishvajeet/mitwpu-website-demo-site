@@ -4,9 +4,9 @@
   "entries": [
     {
       "page": "about",
-      "label": "About",
+      "label": "About Us",
       "local": "about/",
-      "current": ["/about"],
+      "current": ["/about", "/about-us"],
       "menu": {
         "kind": "cascade",
         "items": [
