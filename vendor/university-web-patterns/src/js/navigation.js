@@ -43,27 +43,43 @@
   //
   // Time in the element is the wrong measurement. What distinguishes a
   // traversal from an arrival is that the traversal is still MOVING. So the
-  // delay is armed on entry and re-armed on every `mousemove` that carries the
-  // pointer more than a few pixels: it elapses only where the pointer has come
-  // to rest. Crossing an entry opens nothing at any ordinary speed; stopping
-  // on one opens it in under a tenth of a second.
+  // reveal is not armed by entering an entry, and it is never left pending
+  // across a fast move over one; it is armed only once a `mousemove` reports
+  // the pointer travelling SLOWLY — below HOVER_REST_SPEED — and any move
+  // faster than that cancels a reveal already waiting. Cross an entry at any
+  // ordinary speed and nothing is ever armed over it; slow to a stop on one
+  // and it opens about a settle delay later.
   //
-  // Together the two constants put the boundary at roughly 4px per 90ms. What
-  // that works out to in practice was swept rather than assumed, because the
-  // browser coalesces pointer moves and the arithmetic is only a lower bound:
-  // a sweep of the whole bar opens nothing down to about 110px/s, and starts
-  // opening entries in turn below about 65px/s. The slow end of that is a
-  // reader taking ten seconds to cross a masthead, where each panel then
-  // stands for well over a second — a menu answering, not a flash. Every
-  // traversal quick enough to read as one falls on the closed side.
+  // Arming on speed rather than on silence is the whole of the 2026-07-31 fix,
+  // and it is worth stating why the silence test it replaces was wrong. That
+  // one armed a timer on the last move and fired it when no further move
+  // arrived for HOVER_SETTLE_DELAY, reading the quiet as "the pointer stopped."
+  // It does not have to mean that. The browser coalesces pointer moves to the
+  // frame, and under any main-thread load — laying out this very mega panel is
+  // enough — the dispatched stream stalls while the pointer travels on.
+  // Measured on a real bar with the timers running true: a SINGLE stall of
+  // ~95ms or more during an ordinary 340px/s sweep fired the timer the last
+  // fast move had armed, and the entry under the pointer flashed open and was
+  // torn away as the sweep continued; a stream held below ~11 moves a second
+  // flashed all six in turn — the "six sheets" again, now from event gaps
+  // rather than dwell. It never showed on a fast machine with a quiet main
+  // thread, which is exactly why three fixes that only moved the delay each
+  // reported success and each left it in place. A gap cannot forge slowness:
+  // the move that bridges a stall is a large distance over a large time, so it
+  // reads as fast and clears, just as the moves before the stall did.
   //
-  // This also retires the old exemption where an entry with no open sibling
-  // revealed synchronously. It existed to keep the first hover instant, but it
-  // meant the first entry crossed on any sweep — and every entry crossed after
-  // the previous panel's close delay had run out — flashed with no intent test
-  // at all. A settle test is cheap enough not to need the exemption.
-  const HOVER_SETTLE_DELAY = 90; // ms the pointer must rest before a reveal
-  const HOVER_SETTLE_SLOP = 4; // px of travel that still counts as moving
+  // HOVER_REST_SPEED is the boundary, and a sweep opens nothing above it. An
+  // unhurried two-second sweep of the whole bar runs about 340px/s, well clear
+  // of the 100px/s line; only a pointer deliberately crawling below that — a
+  // reader taking the better part of ten seconds to cross a masthead — settles
+  // while still travelling, where opening each panel in turn is a menu
+  // answering rather than a flash. The slop below still absorbs the hand-tremor
+  // that would otherwise keep re-anchoring a pointer that has, to a reader,
+  // stopped.
+  const HOVER_SETTLE_DELAY = 90; // ms below rest-speed before a reveal
+  const HOVER_SETTLE_SLOP = 4; // px of drift still counted as at rest
+  const HOVER_REST_SPEED = 0.1; // px/ms; at or above this the pointer travels
+  const HOVER_MIN_INTERVAL = 12; // ms; shorter than this carries no usable speed
   const EDGE_GAP = 12; // px kept between a fly-out and the viewport edge
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
   const desktop = window.matchMedia("(min-width: 56.01rem)");
@@ -263,11 +279,14 @@
       else placeMega(element);
     };
 
-    // The settle test. `arm` starts the clock from wherever the pointer is
-    // now; any movement worth the name starts it again, so it can only run out
-    // where the pointer has stopped.
+    // `anchorX/Y` is where the pointer's current rest began — the slop is
+    // measured from it. `lastX/Y/T` is the previous move, so a speed can be
+    // taken between two real samples rather than inferred from silence.
     let anchorX = 0;
     let anchorY = 0;
+    let lastX = 0;
+    let lastY = 0;
+    let lastT = 0;
 
     const arm = (event) => {
       window.clearTimeout(openTimer);
@@ -287,27 +306,61 @@
     };
 
     const open = (event) => {
+      // Entering arms nothing: a sweep enters every entry it crosses, and it is
+      // the first slow move, not the crossing, that may arm a reveal. Just seed
+      // the speed sample and drop any close still pending from a moment ago.
       window.clearTimeout(closeTimer);
       window.clearTimeout(openTimer);
-      if (!finePointer.matches || !desktop.matches) return;
-      arm(event);
+      openTimer = 0;
+      anchorX = lastX = event.clientX;
+      anchorY = lastY = event.clientY;
+      lastT = event.timeStamp;
     };
 
-    // Manhattan distance, not Euclidean: this is a "has it moved" test, not a
-    // measurement, and the cheaper one answers it identically at this scale.
     const track = (event) => {
       // Once the panel is up the pointer is free to move inside it — that is
       // the reader using the menu, not deciding to. Re-arming there would set
       // a timer that only ever re-reveals what is already revealed.
       if (element.classList.contains("is-open")) return;
       if (!finePointer.matches || !desktop.matches) return;
-      if (
-        Math.abs(event.clientX - anchorX) + Math.abs(event.clientY - anchorY) <=
-        HOVER_SETTLE_SLOP
-      ) {
+      const dt = event.timeStamp - lastT;
+      // A move too close on the heels of the last carries no usable speed, and
+      // reading zero travel over a near-zero interval as a stop is the whole of
+      // the bug the settle test had. Two moves share this: the browser fires
+      // several for one animation frame, and `mouseenter` shares a timestamp
+      // with the very move that crossed into the entry. Neither is a rest.
+      // Leave the reference where it was and let the interval grow — the next
+      // move that clears this floor is measured against where the pointer
+      // actually was, so a stalled stream that resumes far away still reads as
+      // travel, and a pointer genuinely at rest still accumulates its interval.
+      if (dt < HOVER_MIN_INTERVAL) return;
+      // Manhattan distance, not Euclidean: this is a "how fast", not a
+      // measurement, and the cheap form answers it identically at this scale.
+      const dist =
+        Math.abs(event.clientX - lastX) + Math.abs(event.clientY - lastY);
+      lastX = event.clientX;
+      lastY = event.clientY;
+      lastT = event.timeStamp;
+      if (dist / dt >= HOVER_REST_SPEED) {
+        // Moving: nothing may be left armed, or the next stall in the stream —
+        // silence indistinguishable from a stop — would let it fire mid-sweep.
+        // Re-anchor so the clock starts here the moment the pointer does slow.
+        window.clearTimeout(openTimer);
+        openTimer = 0;
+        anchorX = event.clientX;
+        anchorY = event.clientY;
         return;
       }
-      arm(event);
+      // Slow enough to be settling. Start the clock once, from here; let a
+      // drift past the slop restart it, so the reveal lands where the pointer
+      // came to rest and not where it first dipped below speed.
+      if (
+        !openTimer ||
+        Math.abs(event.clientX - anchorX) + Math.abs(event.clientY - anchorY) >
+          HOVER_SETTLE_SLOP
+      ) {
+        arm(event);
+      }
     };
 
     const scheduleClose = () => {
