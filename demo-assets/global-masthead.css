@@ -4,7 +4,7 @@
  * The bar itself is rendered from university-web-patterns
  * (tools/build_public_demo.py:canonical_masthead), so the package's own
  * patterns.css supplies the navigation: the drop-down panels, the level-2
- * fly-outs, the fourteen-school mega panel, the mobile accordion, the
+ * the fourteen-school mega panel, the mobile accordion, the
  * hover-intent and the no-JS fallbacks. This sheet no longer restates any of
  * that. What is left is what the package cannot know — that this bar is navy
  * with a gold rule, that it is a fixed 115px tall, and that its brand is the
@@ -262,7 +262,7 @@
 }
 
 /* ---- Global navigation --------------------------------------------------- *
- * Position, reveal, cascade and mega geometry all come from patterns.css. Only
+ * Position, reveal and mega geometry all come from patterns.css. Only
  * the bar's own type scale and the full-height hit target are set here: the
  * package sizes a nav link for a 80px header and this band is 115px. The
  * accent underline is the package's `.uwp-nav a::after`, drawn in
@@ -323,7 +323,7 @@
   color: rgba(255, 255, 255, .82) !important;
 }
 
-/* ---- Drop-down, fly-out and mega panels ---------------------------------- *
+/* ---- Drop-down and mega panels ------------------------------------------ *
  * Pale panels under a gold rule. The package positions and reveals them; this
  * only paints them, because the panels hang off a navy bar and inherit its ink
  * otherwise.
@@ -349,8 +349,7 @@
   box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
 }
 
-[data-global-masthead] .uwp-nav-menu a,
-[data-global-masthead] .uwp-nav-flyout a {
+[data-global-masthead] .uwp-nav-menu a {
   color: #16324f !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   font-size: 14px !important;
@@ -358,18 +357,9 @@
 }
 
 [data-global-masthead] .uwp-nav-menu a:hover,
-[data-global-masthead] .uwp-nav-menu a:focus-visible,
-[data-global-masthead] .uwp-nav-flyout a:hover,
-[data-global-masthead] .uwp-nav-flyout a:focus-visible {
+[data-global-masthead] .uwp-nav-menu a:focus-visible {
   color: #0d2438 !important;
   background: #eef3f7 !important;
-}
-
-[data-global-masthead] .uwp-nav-flyout {
-  color: #16324f !important;
-  background: #fdfcf9 !important;
-  border: 1px solid #d3dbe3 !important;
-  box-shadow: 0 22px 46px rgb(8 20 34 / 26%) !important;
 }
 
 /* ---- The mega panel hangs from the bar's measure, not from its entry ----- *
@@ -475,8 +465,7 @@
  * middle of a navy drawer. The comment above line 505 already warns that the
  * two bands are coupled; this is that warning being obeyed. */
 @media (min-width: 56.01rem) {
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout {
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu {
     color: var(--uwp-ink) !important;
     background: var(--uwp-pale) !important;
     border-color: color-mix(in srgb, var(--uwp-ink) 22%, transparent) !important;
@@ -486,15 +475,12 @@
     border-top-color: var(--mitwpu-masthead-gold) !important;
   }
 
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a {
+  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a {
     color: var(--uwp-ink) !important;
   }
 
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a:hover,
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a:focus-visible,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:hover,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:focus-visible,
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:hover,
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:focus-visible {
     color: var(--uwp-ink) !important;
@@ -509,8 +495,7 @@
 }
 
 @media (min-width: 56.01rem) and (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu,
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout {
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu {
     color: var(--uwp-ink) !important;
     background: var(--uwp-pale) !important;
     border-color: color-mix(in srgb, var(--uwp-ink) 22%, transparent) !important;
@@ -520,15 +505,12 @@
     border-top-color: var(--mitwpu-masthead-gold) !important;
   }
 
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a,
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout a {
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a {
     color: var(--uwp-ink) !important;
   }
 
   :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a:hover,
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a:focus-visible,
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout a:hover,
-  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-flyout a:focus-visible {
+  :root:not([data-theme="light"]) [data-global-masthead] .uwp-nav-menu a:focus-visible {
     color: var(--uwp-ink) !important;
     background: color-mix(in srgb, var(--uwp-ink) 12%, transparent) !important;
   }
@@ -814,17 +796,12 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
 
   /* The panels go transparent inside the navy accordion rather than staying
    * white cards, and every level is indented by depth. */
-  [data-global-masthead] .uwp-nav-menu,
-  [data-global-masthead] .uwp-nav-flyout {
+  [data-global-masthead] .uwp-nav-menu {
     color: inherit !important;
     background: rgb(0 0 0 / 16%) !important;
     border: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-  }
-
-  [data-global-masthead] .uwp-nav-flyout {
-    background: rgb(0 0 0 / 18%) !important;
   }
 
   [data-global-masthead] .uwp-nav-menu a {
@@ -836,16 +813,8 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     border-bottom: 1px solid rgb(255 255 255 / 8%) !important;
   }
 
-  [data-global-masthead] .uwp-nav-flyout a {
-    padding: 11px 24px 11px 60px !important;
-    color: rgba(255, 255, 255, .74) !important;
-    font-size: .92rem !important;
-  }
-
   [data-global-masthead] .uwp-nav-menu a:hover,
-  [data-global-masthead] .uwp-nav-menu a:focus-visible,
-  [data-global-masthead] .uwp-nav-flyout a:hover,
-  [data-global-masthead] .uwp-nav-flyout a:focus-visible {
+  [data-global-masthead] .uwp-nav-menu a:focus-visible {
     color: #fff !important;
     background: rgb(255 255 255 / 8%) !important;
   }
@@ -854,8 +823,7 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     color: rgba(255, 255, 255, .72) !important;
   }
 
-  [data-global-masthead] .uwp-nav-item__disclosure,
-  [data-global-masthead] .uwp-nav-branch__disclosure {
+  [data-global-masthead] .uwp-nav-item__disclosure {
     border-inline-start: 1px solid rgb(255 255 255 / 12%) !important;
   }
 
@@ -1101,8 +1069,7 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
 
 /* Generated device-theme fallback. */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout {
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu {
     color: var(--uwp-ink) !important;
         background: var(--uwp-pale) !important;
         border-color: color-mix(in srgb, var(--uwp-ink) 22%, transparent) !important;
@@ -1112,15 +1079,12 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     border-top-color: var(--mitwpu-masthead-gold) !important;
   }
 
-  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu a,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a {
+  :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu a {
     color: var(--uwp-ink) !important;
   }
 
   :root:not([data-theme]) [data-global-masthead] .uwp-nav-menu a:hover,
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-menu a:focus-visible,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:hover,
-  :root[data-theme="dark"] [data-global-masthead] .uwp-nav-flyout a:focus-visible,
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:hover,
   :root[data-theme="dark"] [data-global-masthead] .uwp-nav-mega a.uwp-nav-mega__heading:focus-visible {
     color: var(--uwp-ink) !important;

@@ -55,8 +55,8 @@
     const links = [
       ["About Us", "/about/"],
       ["Academics", "/academics/"],
-      ["Admissions", "/admissions/"],
       ["Research", "/research/"],
+      ["Admissions", "/admissions/"],
       ["Administration", "/administration/"],
       ["Campus", "/life-at-mit-wpu/"],
       ["Students", "/students/"],

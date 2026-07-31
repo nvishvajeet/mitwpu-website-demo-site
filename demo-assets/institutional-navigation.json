@@ -1,23 +1,63 @@
 {
-  "note": "The site's top-level navigation, declared once. This is demo-assets/institutional-footer.json's sibling and keeps its conventions, for the same reason: the footer used to be written out by hand in each emitter, the data moved, and the hand-written copies did not. The masthead had the same fault one level up. These seven entries were declared independently in the two build shells, the release builder, the university-layer builder, three browser scripts, six hand-authored pages and three test files; adding `Students` on 2026-07-26 meant editing all of them, and four were caught only because a test failed. SEVEN, and the number is worth stating because prose written on 2026-07-26 says eight all over this repository: the bar carried a `search` entry until 93c49d0df moved searching into the masthead itself, beside the theme switch, and removed it from this array. Anything that still says eight is describing the bar as it was that morning. The count in prose is not a gate — the gates are apply_institutional_navigation.mjs --check and tools/tests/test_institutional_navigation.py, both of which read THIS array and never a written-down number — but a stale count sends the next reader looking for an entry that is not here. Fields, per entry. `page` is the id an emitter passes as `current` to mark the entry a page belongs under — stable, and not derived from the label, because a label can be renamed without any page moving. `label` is what a reader sees, and the ORDER of this array is the order in the masthead; it is deliberate, and the tests assert order rather than membership. `local` is the route, root-relative and without its leading slash, from which both forms an emitter needs derive: `/about/` for a page whose published depth is not its source depth, and `${prefix}about/` for a family that renders relative hrefs — see the long note on `local` in tools/uwp_shell.mjs for what a stored prefix costs. `current` names route prefixes that make this the current entry beyond its own route: `/programme` belongs to Admissions and `/faculty` to Administration, and a reader on either should be told where they are. `menu` is optional — `kind: mega` is the masthead-wide grid of labelled groups, `kind: cascade` is a column with fly-out branches, and an entry with neither is a plain link. A cascade item is a leaf when it carries no `links` and a branch when it does; the package's component decides from the data, so both forms live in one list. Everything that renders this list is named in tools/apply_institutional_navigation.mjs, and `./check` runs that tool's --check mode, which fails when any copy disagrees with this file.",
-
+  "note": "The site's top-level navigation, declared once. This is demo-assets/institutional-footer.json's sibling and keeps its conventions, for the same reason: the footer used to be written out by hand in each emitter, the data moved, and the hand-written copies did not. The masthead had the same fault one level up. These seven entries were declared independently in the two build shells, the release builder, the university-layer builder, three browser scripts, six hand-authored pages and three test files; adding `Students` on 2026-07-26 meant editing all of them, and four were caught only because a test failed. SEVEN, and the number is worth stating because prose written on 2026-07-26 says eight all over this repository: the bar carried a `search` entry until 93c49d0df moved searching into the masthead itself, beside the theme switch, and removed it from this array. Anything that still says eight is describing the bar as it was that morning. The count in prose is not a gate — the gates are apply_institutional_navigation.mjs --check and tools/tests/test_institutional_navigation.py, both of which read THIS array and never a written-down number — but a stale count sends the next reader looking for an entry that is not here. Fields, per entry. `page` is the id an emitter passes as `current` to mark the entry a page belongs under — stable, and not derived from the label, because a label can be renamed without any page moving. `label` is what a reader sees, and the ORDER of this array is the order in the masthead; it is deliberate, and the tests assert order rather than membership. `local` is the route, root-relative and without its leading slash, from which both forms an emitter needs derive: `/about/` for a page whose published depth is not its source depth, and `${prefix}about/` for a family that renders relative hrefs — see the long note on `local` in tools/uwp_shell.mjs for what a stored prefix costs. `current` names route prefixes that make this the current entry beyond its own route: `/programme` belongs to Admissions and `/faculty` to Administration, and a reader on either should be told where they are. `menu` is optional and, when present, is always `kind: mega`: one 2D panel that drops below the bar and shows the whole section at once as labelled groups, reachable in one move. An entry with no `menu` is a plain link. The sideways-cascading fly-out was removed on 2026-07-31 so every entry looks and behaves the same — see the package's src/js/navigation.js. A group carries a list of `links` and an optional `local` (its heading then links to that index); a deep tree is flattened into more groups here, never a nested fly-out. `overview` is an optional emphasised link across the panel foot. Everything that renders this list is named in tools/apply_institutional_navigation.mjs, and `./check` runs that tool's --check mode, which fails when any copy disagrees with this file.",
   "entries": [
     {
       "page": "about",
       "label": "About Us",
       "local": "about/",
-      "current": ["/about", "/about-us"],
+      "current": [
+        "/about",
+        "/about-us"
+      ],
       "menu": {
-        "kind": "cascade",
-        "items": [
-          { "label": "Founder President", "local": "about-us/founder/" },
-          { "label": "Executive President", "local": "about-us/executive-president/" },
-          { "label": "Executive Director", "local": "about-us/executive-director/" },
-          { "label": "Leadership and governance", "local": "about-us/leadership-and-governance/" },
-          { "label": "History and legacy", "local": "about-us/history-legacy/" },
-          { "label": "World Peace Dome", "local": "about-us/world-peace-dome/" },
-          { "label": "Rankings and accreditation", "local": "about-us/ranking-accreditation/" },
-          { "label": "Social initiatives", "local": "about-us/social-initiatives/" }
+        "kind": "mega",
+        "overview": {
+          "label": "About MIT-WPU",
+          "local": "about/"
+        },
+        "groups": [
+          {
+            "heading": "Leadership",
+            "links": [
+              {
+                "label": "Founder President",
+                "local": "about-us/founder/"
+              },
+              {
+                "label": "Executive President",
+                "local": "about-us/executive-president/"
+              },
+              {
+                "label": "Executive Director",
+                "local": "about-us/executive-director/"
+              },
+              {
+                "label": "Leadership and governance",
+                "local": "about-us/leadership-and-governance/"
+              }
+            ]
+          },
+          {
+            "heading": "The university",
+            "links": [
+              {
+                "label": "History and legacy",
+                "local": "about-us/history-legacy/"
+              },
+              {
+                "label": "World Peace Dome",
+                "local": "about-us/world-peace-dome/"
+              },
+              {
+                "label": "Rankings and accreditation",
+                "local": "about-us/ranking-accreditation/"
+              },
+              {
+                "label": "Social initiatives",
+                "local": "about-us/social-initiatives/"
+              }
+            ]
+          }
         ]
       }
     },
@@ -25,41 +65,103 @@
       "page": "academics",
       "label": "Academics",
       "local": "academics/",
-      "current": ["/academics"],
-      "note": "The one `mega`. Fourteen schools plus study and academic services are many and parallel, which is the shape that component exists for: a grid of labelled groups shown at once, rather than fourteen rows a visitor has to scroll or a second hover to reach. It carried a fourth group, `For students`, until 2026-07-26; it was written before `Students` became a top-level entry on the same day, and once it was, the group was four links to destinations that already have their own place in the bar — the same duplication this file exists to stop, one level down. Dropping it also took 220px off a panel that had grown to 698px tall, which is the height a reader called a curtain.",
+      "current": [
+        "/academics"
+      ],
+      "note": "Fourteen schools plus study and academic services are many and parallel, which is the shape that component exists for: a grid of labelled groups shown at once, rather than fourteen rows a visitor has to scroll or a second hover to reach. It carried a fourth group, `For students`, until 2026-07-26; it was written before `Students` became a top-level entry on the same day, and once it was, the group was four links to destinations that already have their own place in the bar — the same duplication this file exists to stop, one level down. Dropping it also took 220px off a panel that had grown to 698px tall, which is the height a reader called a curtain.",
       "menu": {
         "kind": "mega",
-        "overview": { "label": "Academics home", "local": "academics/" },
+        "overview": {
+          "label": "Academics home",
+          "local": "academics/"
+        },
         "groups": [
           {
             "heading": "Schools",
             "local": "academics/",
             "links": [
-              { "label": "Engineering & Technology", "local": "academics/engineering-and-technology/" },
-              { "label": "Computer Science & Engineering", "local": "academics/computer-engineering-and-technology/" },
-              { "label": "Science & Environmental Studies", "local": "academics/science/" },
-              { "label": "Health Sciences & Technology", "local": "academics/health-science-technologies/" },
-              { "label": "Design", "local": "academics/design/" },
-              { "label": "Architecture", "local": "academics/architecture/" },
-              { "label": "Construction Engineering & Management", "local": "academics/construction-engineering-management/" },
-              { "label": "Business", "local": "academics/business/" },
-              { "label": "Economics & Commerce", "local": "academics/economics-and-commerce/" },
-              { "label": "Leadership", "local": "academics/leadership/" },
-              { "label": "Government", "local": "academics/government/" },
-              { "label": "Law", "local": "academics/law/" },
-              { "label": "Liberal Arts & Consciousness", "local": "academics/liberal-arts-humanities/" },
-              { "label": "All schools and departments", "local": "academics/" }
+              {
+                "label": "Engineering & Technology",
+                "local": "academics/engineering-and-technology/"
+              },
+              {
+                "label": "Computer Science & Engineering",
+                "local": "academics/computer-engineering-and-technology/"
+              },
+              {
+                "label": "Science & Environmental Studies",
+                "local": "academics/science/"
+              },
+              {
+                "label": "Health Sciences & Technology",
+                "local": "academics/health-science-technologies/"
+              },
+              {
+                "label": "Design",
+                "local": "academics/design/"
+              },
+              {
+                "label": "Architecture",
+                "local": "academics/architecture/"
+              },
+              {
+                "label": "Construction Engineering & Management",
+                "local": "academics/construction-engineering-management/"
+              },
+              {
+                "label": "Business",
+                "local": "academics/business/"
+              },
+              {
+                "label": "Economics & Commerce",
+                "local": "academics/economics-and-commerce/"
+              },
+              {
+                "label": "Leadership",
+                "local": "academics/leadership/"
+              },
+              {
+                "label": "Government",
+                "local": "academics/government/"
+              },
+              {
+                "label": "Law",
+                "local": "academics/law/"
+              },
+              {
+                "label": "Liberal Arts & Consciousness",
+                "local": "academics/liberal-arts-humanities/"
+              },
+              {
+                "label": "All schools and departments",
+                "local": "academics/"
+              }
             ]
           },
           {
             "heading": "Study",
             "local": "programmes/",
             "links": [
-              { "label": "Undergraduate", "local": "programmes/undergraduate/" },
-              { "label": "Postgraduate", "local": "programmes/postgraduate/" },
-              { "label": "PhD and doctoral", "local": "programmes/phd/" },
-              { "label": "Certificates and diplomas", "local": "programmes/diploma/" },
-              { "label": "Programme finder", "local": "programmes/" }
+              {
+                "label": "Undergraduate",
+                "local": "programmes/undergraduate/"
+              },
+              {
+                "label": "Postgraduate",
+                "local": "programmes/postgraduate/"
+              },
+              {
+                "label": "PhD and doctoral",
+                "local": "programmes/phd/"
+              },
+              {
+                "label": "Certificates and diplomas",
+                "local": "programmes/diploma/"
+              },
+              {
+                "label": "Programme finder",
+                "local": "programmes/"
+              }
             ]
           },
           {
@@ -67,9 +169,104 @@
             "local": "academics/",
             "note": "Four links until 27 July 2026. The fourth was `Academic notices` -> `academic-notices/`, and that page was a heading, a one-sentence description of ADMISSION notices, and a bulleted echo of its own breadcrumb. No notices. The masthead put it on all 1,957 pages of the site, which made an empty index the most-linked page in this group. The page is gone; `/academic-notices/` redirects to `/academics/`. Nothing replaced it, because nothing on the site publishes notices: `/exam-notices/` and `/notices-and-announcements/` were the same empty shape and went the same way. When a real notices feed exists it belongs here.",
             "links": [
-              { "label": "Academic calendar", "local": "academics/academic-calender/" },
-              { "label": "Exam timetable", "local": "academics/exam-timetable/" },
-              { "label": "Ordinances and regulations", "local": "academics/ordinances/" }
+              {
+                "label": "Academic calendar",
+                "local": "academics/academic-calender/"
+              },
+              {
+                "label": "Exam timetable",
+                "local": "academics/exam-timetable/"
+              },
+              {
+                "label": "Ordinances and regulations",
+                "local": "academics/ordinances/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": "research",
+      "label": "Research",
+      "local": "research/",
+      "current": [
+        "/research"
+      ],
+      "menu": {
+        "kind": "mega",
+        "overview": {
+          "label": "Research overview",
+          "local": "research/"
+        },
+        "groups": [
+          {
+            "heading": "Research areas",
+            "local": "research/research-areas/",
+            "links": [
+              {
+                "label": "Academic research",
+                "local": "research/academic-research/"
+              },
+              {
+                "label": "Sponsored research",
+                "local": "research/sponsored-research/"
+              },
+              {
+                "label": "Centres of excellence",
+                "local": "research/centres-of-excellence/"
+              },
+              {
+                "label": "Research papers",
+                "local": "research/research-papers/"
+              },
+              {
+                "label": "IPR and patents",
+                "local": "research/ipr/"
+              },
+              {
+                "label": "All research areas",
+                "local": "research/research-areas/"
+              }
+            ]
+          },
+          {
+            "heading": "Research groups",
+            "local": "groups/",
+            "links": [
+              {
+                "label": "Quantum Science & Technology",
+                "local": "quantum/"
+              },
+              {
+                "label": "Photonics Research Group",
+                "local": "photonics/"
+              },
+              {
+                "label": "Bioinformatics Group",
+                "local": "bioinformatics/"
+              },
+              {
+                "label": "Astrophysics Research Group",
+                "local": "astrophysics/"
+              },
+              {
+                "label": "All research groups",
+                "local": "groups/"
+              }
+            ]
+          },
+          {
+            "heading": "Facilities and news",
+            "links": [
+              {
+                "label": "Central Research Facility",
+                "local": "facilities/"
+              },
+              {
+                "label": "Research news",
+                "local": "research/research-news/"
+              }
             ]
           }
         ]
@@ -79,53 +276,47 @@
       "page": "admissions",
       "label": "Admissions",
       "local": "admissions/",
-      "current": ["/admissions", "/programme"],
+      "current": [
+        "/admissions",
+        "/programme"
+      ],
       "menu": {
-        "kind": "cascade",
-        "items": [
-          { "label": "Admissions overview", "local": "admissions/" },
-          { "label": "Programmes", "local": "programmes/" },
-          { "label": "Application process", "local": "application-process/" },
-          { "label": "MIT-WPU CET 2026", "local": "mit-wpu-cet-2026/" },
-          { "label": "Scholarships", "local": "scholarships/" },
-          { "label": "Placements", "local": "placements/" }
-        ]
-      }
-    },
-    {
-      "page": "research",
-      "label": "Research",
-      "local": "research/",
-      "current": ["/research"],
-      "menu": {
-        "kind": "cascade",
-        "items": [
-          { "label": "Research overview", "local": "research/" },
+        "kind": "mega",
+        "overview": {
+          "label": "Admissions overview",
+          "local": "admissions/"
+        },
+        "groups": [
           {
-            "label": "Research areas",
-            "local": "research/research-areas/",
+            "heading": "How to apply",
             "links": [
-              { "label": "Academic research", "local": "research/academic-research/" },
-              { "label": "Sponsored research", "local": "research/sponsored-research/" },
-              { "label": "Centres of excellence", "local": "research/centres-of-excellence/" },
-              { "label": "Research papers", "local": "research/research-papers/" },
-              { "label": "IPR and patents", "local": "research/ipr/" },
-              { "label": "All research areas", "local": "research/research-areas/" }
+              {
+                "label": "Programmes",
+                "local": "programmes/"
+              },
+              {
+                "label": "Application process",
+                "local": "application-process/"
+              },
+              {
+                "label": "MIT-WPU CET 2026",
+                "local": "mit-wpu-cet-2026/"
+              }
             ]
           },
           {
-            "label": "Research groups",
-            "local": "groups/",
+            "heading": "Scholarships and careers",
             "links": [
-              { "label": "Quantum Science & Technology", "local": "quantum/" },
-              { "label": "Photonics Research Group", "local": "photonics/" },
-              { "label": "Bioinformatics Group", "local": "bioinformatics/" },
-              { "label": "Astrophysics Research Group", "local": "astrophysics/" },
-              { "label": "All research groups", "local": "groups/" }
+              {
+                "label": "Scholarships",
+                "local": "scholarships/"
+              },
+              {
+                "label": "Placements",
+                "local": "placements/"
+              }
             ]
-          },
-          { "label": "Central Research Facility", "local": "facilities/" },
-          { "label": "Research news", "local": "research/research-news/" }
+          }
         ]
       }
     },
@@ -133,28 +324,80 @@
       "page": "people",
       "label": "Administration",
       "local": "administration/",
-      "current": ["/administration", "/people", "/faculty", "/leadership", "/alumni", "/forms", "/contact-us", "/intranet"],
+      "current": [
+        "/administration",
+        "/people",
+        "/faculty",
+        "/leadership",
+        "/alumni",
+        "/forms",
+        "/contact-us",
+        "/intranet"
+      ],
       "note": "This entry keeps the stable page id `people` so every existing builder continues to mark the same family current, but its visible label and destination now describe the wider job it performs. `People` gave a top-level tab to one directory while offices, forms, governance, contacts and staff services were scattered across the footer and section pages. `Administration` replaces that tab without adding another item or giving the subject more visual weight. The existing people and faculty destinations remain the first branch in the menu, so the change reorganises rather than removes them.",
       "menu": {
-        "kind": "cascade",
-        "items": [
-          { "label": "Offices and contacts", "local": "administration/" },
+        "kind": "mega",
+        "overview": {
+          "label": "Offices and contacts",
+          "local": "administration/"
+        },
+        "groups": [
           {
-            "label": "People and leadership",
+            "heading": "People and leadership",
             "local": "people/",
             "links": [
-              { "label": "People directory", "local": "people/" },
-              { "label": "Faculty directory", "local": "faculty/" },
-              { "label": "Faculty and staff", "local": "faculty-staff/" },
-              { "label": "Leadership", "local": "leadership/" },
-              { "label": "Alumni", "local": "alumni/" }
+              {
+                "label": "People directory",
+                "local": "people/"
+              },
+              {
+                "label": "Faculty directory",
+                "local": "faculty/"
+              },
+              {
+                "label": "Faculty and staff",
+                "local": "faculty-staff/"
+              },
+              {
+                "label": "Leadership",
+                "local": "leadership/"
+              },
+              {
+                "label": "Alumni",
+                "local": "alumni/"
+              }
             ]
           },
-          { "label": "Governance and quality", "local": "about-us/leadership-and-governance/" },
-          { "label": "Grievance redressal", "local": "grievance-redressal/" },
-          { "label": "Forms and requests", "local": "forms/" },
-          { "label": "Contact the university", "local": "contact-us/" },
-          { "label": "Staff services", "local": "intranet/" }
+          {
+            "heading": "Services and forms",
+            "links": [
+              {
+                "label": "Forms and requests",
+                "local": "forms/"
+              },
+              {
+                "label": "Staff services",
+                "local": "intranet/"
+              },
+              {
+                "label": "Contact the university",
+                "local": "contact-us/"
+              }
+            ]
+          },
+          {
+            "heading": "Governance",
+            "links": [
+              {
+                "label": "Governance and quality",
+                "local": "about-us/leadership-and-governance/"
+              },
+              {
+                "label": "Grievance redressal",
+                "local": "grievance-redressal/"
+              }
+            ]
+          }
         ]
       }
     },
@@ -162,36 +405,68 @@
       "page": "campus",
       "label": "Campus",
       "local": "life-at-mit-wpu/",
-      "current": ["/life-at-mit-wpu", "/campus-life"],
-      "note": "The route says `life-at-mit-wpu` and the label says Campus. Both are right and they are not the same decision: the route is the one the capture publishes and is not this repository's to rename, and the label is what fits a masthead beside seven one-word siblings. What this menu did not carry until 2026-07-26 is `/campus-life/` — the 128 pages tools/build_platform_pages.py renders out of the application: 40 clubs, 51 galleries, the sports bodies, the hostels, the library, the student council. A crawl of our own artifact found that the ONLY files linking to `/campus-life/` were the 128 `/campus-life/` files themselves, and that the generated sitemap carried none, so no reader could reach any of them without typing the URL. One entry point closes it — the section index links every one of the other 127, verified by following them — and it is a branch here rather than this entry's destination because `/life-at-mit-wpu/` is a curated landing that groups campus life by what a reader wants and `/campus-life/` is the directory of it, which is the relation Academics already has between its overview and its list of schools. `/campus-life` joins `current` so the section knows which masthead entry it sits under. Settled on 2026-07-27, because for two days it was not: the home page's own Campus tile was pointed at `/campus-life/` by 90cca1250, whose message called this route \"a single page\" — it links about thirty destinations, two of them into `/campus-life/` — and the site then gave one word two meanings depending on which Campus a reader clicked. The tile is back on this route. If the argument above is ever overturned, overturn it HERE and let both follow, because the failure was not the choice; it was making the choice twice in two files.",
+      "current": [
+        "/life-at-mit-wpu",
+        "/campus-life"
+      ],
+      "note": "The route says `life-at-mit-wpu` and the label says Campus. Both are right and they are not the same decision: the route is the one the capture publishes and is not this repository's to rename, and the label is what fits a masthead beside seven one-word siblings. What this menu did not carry until 2026-07-26 is `/campus-life/` — the 128 pages tools/build_platform_pages.py renders out of the application: 40 clubs, 51 galleries, the sports bodies, the hostels, the library, the student council. A crawl of our own artifact found that the ONLY files linking to `/campus-life/` were the 128 `/campus-life/` files themselves, and that the generated sitemap carried none, so no reader could reach any of them without typing the URL. One entry point closes it — the section index links every one of the other 127, verified by following them — and it is a group in this entry's menu rather than the entry's own destination because `/life-at-mit-wpu/` is a curated landing that groups campus life by what a reader wants and `/campus-life/` is the directory of it, which is the relation Academics already has between its overview and its list of schools. `/campus-life` joins `current` so the section knows which masthead entry it sits under. Settled on 2026-07-27, because for two days it was not: the home page's own Campus tile was pointed at `/campus-life/` by 90cca1250, whose message called this route \"a single page\" — it links about thirty destinations, two of them into `/campus-life/` — and the site then gave one word two meanings depending on which Campus a reader clicked. The tile is back on this route. If the argument above is ever overturned, overturn it HERE and let both follow, because the failure was not the choice; it was making the choice twice in two files.",
       "menu": {
-        "kind": "cascade",
-        "items": [
+        "kind": "mega",
+        "groups": [
           {
-            "label": "Campus life",
+            "heading": "Campus life",
             "local": "life-at-mit-wpu/",
             "links": [
-              { "label": "Knowledge Resource Centre", "local": "life-wpu/library/" },
-              { "label": "Hostel facilities", "local": "life-wpu/hostel-facilities/" },
-              { "label": "Sports", "local": "life-wpu/sports/" },
-              { "label": "Medical facilities", "local": "life-wpu/medical-facilities/" }
+              {
+                "label": "Knowledge Resource Centre",
+                "local": "life-wpu/library/"
+              },
+              {
+                "label": "Hostel facilities",
+                "local": "life-wpu/hostel-facilities/"
+              },
+              {
+                "label": "Sports",
+                "local": "life-wpu/sports/"
+              },
+              {
+                "label": "Medical facilities",
+                "local": "life-wpu/medical-facilities/"
+              }
             ]
           },
           {
-            "label": "Clubs, teams and galleries",
+            "heading": "Clubs and galleries",
             "local": "campus-life/",
             "links": [
-              { "label": "Campus and student life directory", "local": "campus-life/" },
-              { "label": "Photo and video galleries", "local": "campus-life/galleries/" }
+              {
+                "label": "Campus and student life directory",
+                "local": "campus-life/"
+              },
+              {
+                "label": "Photo and video galleries",
+                "local": "campus-life/galleries/"
+              }
             ]
           },
-          { "label": "Student welfare", "local": "life-wpu/student-affairs/" },
           {
-            "label": "Grievance redressal",
-            "local": "grievance-redressal/",
-            "note": "Added 2026-07-27, and the placement was the decision. The university publishes five statutory committees, an anti-ragging squad, a prevention programme and an employee committee across nine routes and eleven PDFs under four different parents, and no entry in this masthead reached any of them. The other candidate was the Academics mega menu, whose `Academic services` group had lost an entry that day and had room. It was the wrong room: that group is calendars, timetables and ordinances — academic scheduling — and a reader wanting to report ragging does not open Academics. This cascade is the one a student already opens; it is where `Student welfare` sits, which is the exact phrase the university's CMS was printing as the h1 of all five committee pages, so the entry lands beside the words a reader was already given. Immediately after `Student welfare` and before `Student council`, because welfare is the nearest neighbour and the council is a different errand. One entry in one menu and not also in Academics: a masthead that lists a destination twice teaches a reader the two are different things."
-          },
-          { "label": "Student council", "local": "life-wpu/student-council/" }
+            "heading": "Student support",
+            "links": [
+              {
+                "label": "Student welfare",
+                "local": "life-wpu/student-affairs/"
+              },
+              {
+                "label": "Grievance redressal",
+                "local": "grievance-redressal/",
+                "note": "Added 2026-07-27, and the placement was the decision. The university publishes five statutory committees, an anti-ragging squad, a prevention programme and an employee committee across nine routes and eleven PDFs under four different parents, and no entry in this masthead reached any of them. The other candidate was the Academics mega menu, whose `Academic services` group had lost an entry that day and had room. It was the wrong room: that group is calendars, timetables and ordinances — academic scheduling — and a reader wanting to report ragging does not open Academics. This menu is the one a student already opens; it is where `Student welfare` sits, which is the exact phrase the university's CMS was printing as the h1 of all five committee pages, so the entry lands beside the words a reader was already given. Immediately after `Student welfare` and before `Student council`, because welfare is the nearest neighbour and the council is a different errand. One entry in one menu and not also in Academics: a masthead that lists a destination twice teaches a reader the two are different things."
+              },
+              {
+                "label": "Student council",
+                "local": "life-wpu/student-council/"
+              }
+            ]
+          }
         ]
       }
     },
@@ -199,11 +474,12 @@
       "page": "students",
       "label": "Students",
       "local": "students/",
-      "current": ["/students"],
+      "current": [
+        "/students"
+      ],
       "note": "The one by-need entry among six by-structure ones. The others answer \"what is this university\"; a student arrives knowing that and needing to do something — find a course structure, an ordinance, an exam date — and until this entry existed had no global route to any of it. It carries no menu on purpose: `/students/` is already an index of 166 links, and a masthead menu over the same set would be a second index of it, which is the duplication docs/PROGRAMME_AND_STUDENT_ROUTE_OWNERSHIP.md §1 exists to refuse."
     }
   ],
-
   "search": {
     "note": "The masthead's own search field, declared here because it is part of the masthead and because it is what the eighth navigation entry used to be. `Search` was a top-level entry until 2026-07-26 and is not one now: with a box in the bar, a link labelled Search is a second control for the same job sitting two hundred pixels from the first, and the box submitted empty goes to /search/ anyway — so the destination is still one control away and nothing was lost. It is a real GET form: `field` is the query parameter the results page already reads off its own query string, so /search/?q=… works with or without scripting, and without scripting a reader lands on the results page rather than on a control that did nothing. The page itself needs JavaScript to search — the index is a 3.2MB file the browser filters — and says so in a <noscript> beside the box, which is the honest end of a static site's no-JS promise. The placeholder is the single word `Search` because the field sits at the end of the navigation row and is sized to say what it is and no more; `Search the site` was written for a wide box on the brand's row and no longer fits the one it names.",
     "action": "/search/",
@@ -212,12 +488,21 @@
     "placeholder": "Search",
     "submit": "Search"
   },
-
   "masthead_discriminator": {
     "note": "The labels tools/build_public_demo.py:install_global_masthead matches on to tell an institutional navigation apart from a page family's own one. It is a hand-picked SUBSET of the entries above rather than all of them, and deliberately so: some template families (the intranet and events landings) carry the full institutional nav but let the logo stand in for About, and requiring every label would skip exactly the pages that most need the canonical masthead. These four are the interior labels no research-group or portal nav carries. `Search` was one of them until 2026-07-26 and could not stay once the entry became a box; `Admissions` replaced it, and it is the safer of the two — a research group has people, research and publications, and none has an admissions page. `legacy_labels` is the same identifying set before a visible label changed. It is intentionally accepted only while finding an old masthead to replace; the canonical masthead is always rendered from `labels`. Without it, the first release after a rename skips exactly the stale pages the release normalizer exists to repair. Current labels remain data here rather than literals in the builder, and both shells assert on load that they are a subset of the declared entries.",
-    "labels": ["Research", "Academics", "Administration", "Admissions"],
+    "labels": [
+      "Research",
+      "Academics",
+      "Administration",
+      "Admissions"
+    ],
     "legacy_labels": [
-      ["Research", "Academics", "People", "Admissions"]
+      [
+        "Research",
+        "Academics",
+        "People",
+        "Admissions"
+      ]
     ]
   }
 }

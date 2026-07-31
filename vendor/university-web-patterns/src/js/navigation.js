@@ -1,163 +1,152 @@
-/* Masthead navigation: mobile disclosure, dropdowns, cascading fly-outs and
-   the mega panel. Everything here is enhancement — the nav is a real list of
-   links and works with this file absent.
+/* Masthead navigation: the mobile disclosure panel and the desktop mega-menus.
+   Everything here is enhancement — the nav is a real list of links and works
+   with this file absent.
+
+   ONE PATTERN. A top-level entry either is a plain link or opens a single
+   2D mega panel (`.uwp-nav-item` holding a `.uwp-nav-mega`). There is no second
+   kind of dropdown and nothing nested: a panel never opens another panel. That
+   is the whole point of this rewrite — the navigation used to mix a
+   sideways-cascading fly-out with the mega panel, which was neither uniform nor
+   good (diagonal traversal, flicker), and both are gone. Every entry with
+   children now behaves and is built identically.
 
    Two contracts a maintainer needs before touching anything below.
 
    1. This script sets the `.uwp-js` flag that patterns.css keys the entire
       collapsed-navigation design off (search patterns.css for `.uwp-js`).
-      Without the flag the nav degrades to a plain horizontal scroller, which
-      is the correct no-JS fallback. Consequence: a page that loads theme.js
-      but not navigation.js gets NO flag, so its accordion never appears and
-      its toggle button stays hidden — the nav still works, but not the way
-      that page's author expected. If the flag ever needs to exist without
-      this file's behaviour, it moves to its own tiny script; do not add a
-      second setter.
+      Without the flag the nav degrades to a plain horizontal scroller, which is
+      the correct no-JS fallback. A page that loads theme.js but not this file
+      gets NO flag, so its accordion never appears and its toggle button stays
+      hidden — the nav still works, but not the way that page expected. If the
+      flag ever needs to exist without this file's behaviour, it moves to its
+      own tiny script; do not add a second setter.
 
    2. It wires the DOM once, at load, and observes nothing afterwards. Markup
       rendered into the page later — by src/js/render.js in the browser, or by
       any client script — is NOT enhanced. A client that renders navigation
       client-side must insert it before this file runs, or re-run the wiring
-      itself. The same is true of every other enhancement script here. */
+      itself. */
 (() => {
   document.documentElement.classList.add("uwp-js");
 
-  const HOVER_CLOSE_DELAY = 220; // ms; bridges diagonal travel to a fly-out
+  // How the panel opens, and why each number is what it is.
+  //
+  // The panel is a DOM child of its entry, so the entry's `:hover` and its
+  // `mouseleave` both already span the trigger AND the panel. That is the whole
+  // bridge: a pointer travelling from the word in the bar down into the panel
+  // never leaves the entry, so nothing has to reach across a gap the way the
+  // old sibling fly-out did. The close delay below only has to cover a pointer
+  // that clips a corner for a frame.
+  const CLOSE_DELAY = 200; // ms the panel stays after the pointer leaves the entry
+  const SETTLE_DELAY = 90; // ms below rest-speed before a hovered entry opens
 
-  // The other half of that bridge. A reader crossing the bar on the way to
-  // somewhere else must not open the entries they cross, and a reader who has
-  // arrived must not be kept waiting. Earlier revisions tried to separate the
-  // two with a fixed delay after `mouseenter` — 260ms on a cascade row, 120ms
-  // on the bar — on the premise that a pointer crossing an entry is inside it
-  // for under 100ms.
+  // Opening on hover has one hard requirement: a fast horizontal sweep across
+  // the whole bar must open NOTHING. The mistake every earlier version made was
+  // to arm the open on ENTERING an entry and disarm it on leaving, on the
+  // theory that a crossing pointer is inside an entry too briefly to matter.
+  // It is not: an unhurried two-second sweep holds each ~85px entry for
+  // 400–500ms, longer than any delay that still feels responsive, so every
+  // entry crossed opened in turn — a row of sheets thrown down and torn away.
   //
-  // That premise is false, and measuring it is what finally moved this. Drag
-  // the pointer across the six entries of a real masthead in 2 seconds — an
-  // ordinary, unhurried sweep — and each 85px entry holds the pointer for
-  // 400-500ms. Every fixed delay short enough to feel responsive is outlasted
-  // by it, so every entry crossed opened in turn: six full-width sheets
-  // dropped over the page and torn away, which is what was being reported as
-  // flicker. Raising the number cannot fix it, because the reader can always
-  // travel more slowly than any constant; the previous three attempts each
-  // moved the constant and each left the fault untouched.
-  //
-  // Time in the element is the wrong measurement. What distinguishes a
-  // traversal from an arrival is that the traversal is still MOVING. So the
-  // reveal is not armed by entering an entry, and it is never left pending
-  // across a fast move over one; it is armed only once a `mousemove` reports
-  // the pointer travelling SLOWLY — below HOVER_REST_SPEED — and any move
-  // faster than that cancels a reveal already waiting. Cross an entry at any
-  // ordinary speed and nothing is ever armed over it; slow to a stop on one
-  // and it opens about a settle delay later.
-  //
-  // Arming on speed rather than on silence is the whole of the 2026-07-31 fix,
-  // and it is worth stating why the silence test it replaces was wrong. That
-  // one armed a timer on the last move and fired it when no further move
-  // arrived for HOVER_SETTLE_DELAY, reading the quiet as "the pointer stopped."
-  // It does not have to mean that. The browser coalesces pointer moves to the
-  // frame, and under any main-thread load — laying out this very mega panel is
-  // enough — the dispatched stream stalls while the pointer travels on.
-  // Measured on a real bar with the timers running true: a SINGLE stall of
-  // ~95ms or more during an ordinary 340px/s sweep fired the timer the last
-  // fast move had armed, and the entry under the pointer flashed open and was
-  // torn away as the sweep continued; a stream held below ~11 moves a second
-  // flashed all six in turn — the "six sheets" again, now from event gaps
-  // rather than dwell. It never showed on a fast machine with a quiet main
-  // thread, which is exactly why three fixes that only moved the delay each
-  // reported success and each left it in place. A gap cannot forge slowness:
-  // the move that bridges a stall is a large distance over a large time, so it
-  // reads as fast and clears, just as the moves before the stall did.
-  //
-  // HOVER_REST_SPEED is the boundary, and a sweep opens nothing above it. An
-  // unhurried two-second sweep of the whole bar runs about 340px/s, well clear
-  // of the 100px/s line; only a pointer deliberately crawling below that — a
-  // reader taking the better part of ten seconds to cross a masthead — settles
-  // while still travelling, where opening each panel in turn is a menu
-  // answering rather than a flash. The slop below still absorbs the hand-tremor
-  // that would otherwise keep re-anchoring a pointer that has, to a reader,
-  // stopped.
-  const HOVER_SETTLE_DELAY = 90; // ms below rest-speed before a reveal
-  const HOVER_SETTLE_SLOP = 4; // px of drift still counted as at rest
-  const HOVER_REST_SPEED = 0.1; // px/ms; at or above this the pointer travels
-  const HOVER_MIN_INTERVAL = 12; // ms; shorter than this carries no usable speed
-  const EDGE_GAP = 12; // px kept between a fly-out and the viewport edge
+  // What separates a crossing from an arrival is not time in the entry, it is
+  // that the crossing is still MOVING. So nothing is armed by entering; a
+  // reveal is armed only once a `mousemove` measures the pointer travelling
+  // slower than REST_SPEED, and any faster move cancels one already waiting.
+  // Cross at any ordinary speed and nothing is ever armed; come to rest on an
+  // entry and it opens a settle later. A stalled event stream cannot forge a
+  // stop, because the move that resumes it covers a large distance and reads as
+  // fast. REST_SPEED is well under an ordinary sweep (~0.34px/ms) and only a
+  // pointer deliberately crawling — most of ten seconds to cross the bar —
+  // falls under it, where opening each panel in turn is the menu answering.
+  const REST_SPEED = 0.1; // px/ms; at or above this the pointer is travelling
+  const REST_SLOP = 4; // px of drift still counted as at rest
+  const MIN_INTERVAL = 12; // ms; a shorter gap between moves carries no speed
+  const EDGE_GAP = 12; // px kept between the panel and the viewport edge
+
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
   const desktop = window.matchMedia("(min-width: 56.01rem)");
 
-  // One owner may be a top-level `.uwp-nav-item` (nav-item, nav-cascade or
-  // nav-mega — the mega panel differs only in CSS) or a cascade's
-  // `.uwp-nav-branch`. Every path that sets `.is-open` goes through here, so
-  // the disclosure button's aria-expanded tracks hover, click and the arrow
-  // keys alike, not only its own clicks.
-  //
-  // THE FOURTH PATH, and why aria is no longer computed from `.is-open`.
-  //
-  // patterns.css reveals a panel on `:focus-within` as well, which sets no
-  // class and so never reached this function: Tab to a top-level entry and the
-  // panel appeared on screen while its button still reported
-  // `aria-expanded="false"`. A screen-reader user was told every menu was
-  // closed while it was open in front of them. Measured in the 2026-07-27
-  // keyboard traces, not inferred.
-  //
-  // The obvious repair is to call `setOpen` from `focusin`, and it breaks
-  // click-to-open: a mouse click focuses the disclosure button before its own
-  // handler runs, so the handler reads `.is-open` as already true and closes
-  // what the click was meant to open. That is why this sat unfixed.
-  //
-  // The way out is that `.is-open` and "the panel is showing" were never the
-  // same statement, and only the second one is what `aria-expanded` means. So
-  // the class stays exactly what it was — the record of a deliberate open by
-  // hover, click or arrow key — and the attribute is derived from the three
-  // things that actually decide what is on screen:
+  const items = [...document.querySelectorAll(".uwp-nav-item")];
+
+  // aria-expanded is NOT read off `.is-open`, because the panel also shows on
+  // `:focus-within` (a keyboard Tab into it), which sets no class. Deriving the
+  // attribute from what patterns.css actually reveals — rule for rule — is what
+  // stops a screen reader being told a menu is closed while it is open in front
+  // of the reader:
   //
   //     showing = (is-open OR focus-within) AND NOT is-dismissed
   //
-  // matching the CSS rule for rule. Focus never writes the class, so the click
-  // path is untouched.
-  //
-  // `is-dismissed` is not new; Escape has always used it for precisely this
-  // case — focus inside, panel hidden — because `:focus-within` would
-  // otherwise keep revealing a panel the reader had just dismissed.
-  const isShowing = (owner) =>
-    !owner.classList.contains("is-dismissed") &&
-    (owner.classList.contains("is-open") ||
-      owner.matches(":focus-within"));
+  // `.is-open` stays exactly what it was: the record of a deliberate open by
+  // hover, click or arrow key. `.is-dismissed` is Escape's mark — focus is
+  // still inside, so `:focus-within` would otherwise keep the panel revealed
+  // after the reader dismissed it.
+  const isShowing = (item) =>
+    !item.classList.contains("is-dismissed") &&
+    (item.classList.contains("is-open") || item.matches(":focus-within"));
 
-  const syncExpanded = (owner) => {
-    owner
+  const syncExpanded = (item) => {
+    item
       .querySelector(":scope > [data-uwp-nav-disclosure]")
-      ?.setAttribute("aria-expanded", String(isShowing(owner)));
+      ?.setAttribute("aria-expanded", String(isShowing(item)));
   };
 
-  const setOpen = (owner, open) => {
-    owner.classList.toggle("is-open", open);
-    if (open) owner.classList.remove("is-dismissed");
-    // Closing an entry the reader is still inside has to dismiss it, or
-    // `:focus-within` goes on showing the panel and the close does nothing a
-    // reader can see — the same fault Escape's dismissal was added for, on a
-    // path nobody had walked with the keyboard.
-    else if (owner.matches(":focus-within")) {
-      owner.classList.add("is-dismissed");
-    }
-    syncExpanded(owner);
-  };
-
-  // Top-level panels are exclusive on desktop: a masthead-wide mega panel and
-  // a neighbouring drop-down must never stack. The mobile accordion is not
-  // exclusive — several entries may sit expanded in the scrolled panel.
-  const closeSiblings = (owner) => {
-    const nav = owner.closest("[data-uwp-nav]");
-    if (!nav) return;
-    for (const open of nav.querySelectorAll(".uwp-nav-item.is-open")) {
-      if (open !== owner && !open.contains(owner)) setOpen(open, false);
+  // Near the right edge the panel would run off screen; measured while revealed
+  // but within the same synchronous task, before paint, so there is no flash.
+  // Without scripting the panel falls back to the masthead-wide layout, which
+  // cannot overflow — see the `html:not(.uwp-js)` rules in patterns.css.
+  const placePanel = (item) => {
+    const panel = item.querySelector(":scope > .uwp-nav-mega");
+    if (!panel) return;
+    panel.classList.remove("uwp-nav-mega--left");
+    if (!desktop.matches) return; // the accordion lays out in flow
+    const viewport = document.documentElement.clientWidth;
+    const spill = panel.getBoundingClientRect().right - (viewport - EDGE_GAP);
+    if (spill <= 0) return;
+    // The flip only helps while the panel then fits on the left. A panel wider
+    // than the room either way is left hanging off the right, which is legible
+    // from the start of the reading order; pushed off the left the masthead's
+    // `overflow-x: clip` would cut its first column instead.
+    panel.classList.add("uwp-nav-mega--left");
+    if (EDGE_GAP - panel.getBoundingClientRect().left > spill) {
+      panel.classList.remove("uwp-nav-mega--left");
     }
   };
 
-  // Mobile disclosure toggle for the whole primary-navigation panel.
+  const setOpen = (item, open) => {
+    item.classList.toggle("is-open", open);
+    if (open) {
+      item.classList.remove("is-dismissed");
+      placePanel(item);
+    } else if (item.matches(":focus-within")) {
+      // Closing an entry the reader is still inside has to dismiss it, or
+      // `:focus-within` goes on showing the panel and the close does nothing a
+      // reader can see.
+      item.classList.add("is-dismissed");
+    }
+    syncExpanded(item);
+  };
+
+  // One panel at a time on desktop: a masthead-wide panel and a neighbour must
+  // never stack. (The mobile accordion is not exclusive — several entries may
+  // sit expanded in the scrolled panel, so this is desktop-only by being called
+  // only from the desktop paths below.)
+  const closeOthers = (keep) => {
+    for (const item of items) {
+      if (item !== keep && item.classList.contains("is-open")) {
+        setOpen(item, false);
+      }
+    }
+  };
+
+  const openExclusively = (item) => {
+    closeOthers(item);
+    setOpen(item, true);
+  };
+
+  // ---- Mobile: the whole primary-navigation panel -------------------------
   for (const toggle of document.querySelectorAll("[data-uwp-nav-toggle]")) {
-    const controlledId = toggle.getAttribute("aria-controls");
-    const navigation = controlledId
-      ? document.getElementById(controlledId)
+    const navigation = toggle.getAttribute("aria-controls")
+      ? document.getElementById(toggle.getAttribute("aria-controls"))
       : null;
     if (!navigation) continue;
 
@@ -183,264 +172,156 @@
     });
   }
 
-  // Disclosure buttons toggle a panel for touch + keyboard. A button may sit on
-  // a top-level item (level 1) or on a cascade row (level 2); it toggles the
-  // nearest of the two, so the same handler serves both levels and the mobile
-  // accordion.
-  for (const disclosure of document.querySelectorAll(
-    "[data-uwp-nav-disclosure]",
-  )) {
-    const owner = disclosure.closest(".uwp-nav-branch, .uwp-nav-item");
-    if (!owner) continue;
-    disclosure.addEventListener("click", (event) => {
+  // ---- Every entry: disclosure button, hover-intent, keyboard -------------
+  for (const item of items) {
+    const disclosure = item.querySelector(":scope > [data-uwp-nav-disclosure]");
+
+    // Click / touch / Enter-Space on the button: a straight toggle. On desktop
+    // it opens exclusively; in the accordion it opens alongside its siblings.
+    disclosure?.addEventListener("click", (event) => {
       event.preventDefault();
-      const open = !owner.classList.contains("is-open");
-      if (open && desktop.matches) closeSiblings(owner);
-      setOpen(owner, open);
-      // `placeMega` and `placeFlyout` are declared below; a click cannot run
-      // before this file has finished evaluating, so neither is in its
-      // temporal dead zone here.
-      if (open) {
-        if (owner.classList.contains("uwp-nav-branch")) placeFlyout(owner);
-        else placeMega(owner);
-      }
+      const open = !item.classList.contains("is-open");
+      if (open && desktop.matches) openExclusively(item);
+      else setOpen(item, open);
     });
-  }
 
-  // Edge-aware panel direction. Both the cascade fly-out and the mega panel
-  // hang from one edge of the thing that opened them and can overflow the
-  // viewport near the right edge; both answer by flipping to the opposite
-  // edge. Measured while the panel is revealed but within the same synchronous
-  // task, before paint, so there is no flash. Without this script the mega
-  // panel falls back to the masthead-wide layout, which cannot overflow —
-  // see the `html:not(.uwp-js)` rules in patterns.css.
-  const place = (owner, selector, edgeClass) => {
-    const panel = owner.querySelector(`:scope > ${selector}`);
-    if (!panel) return;
-    panel.classList.remove(edgeClass);
-    const viewport = document.documentElement.clientWidth;
-    const spill = panel.getBoundingClientRect().right - (viewport - EDGE_GAP);
-    if (spill <= 0) return;
-
-    // The flip is only an improvement while the panel fits on the other side.
-    // A panel wider than the room either way — a four-column mega on a 1024px
-    // laptop — is pushed off the LEFT edge instead, where the masthead's
-    // `overflow-x: clip` cuts it off and a reader sees a panel with its first
-    // column missing rather than its last. Overflowing right is at least
-    // legible from the start of the reading order, so the worse of the two is
-    // measured and rejected rather than assumed not to happen.
-    panel.classList.add(edgeClass);
-    if (EDGE_GAP - panel.getBoundingClientRect().left > spill) {
-      panel.classList.remove(edgeClass);
-    }
-  };
-
-  const placeFlyout = (branch) =>
-    place(branch, ".uwp-nav-flyout", "uwp-nav-flyout--left");
-
-  // Desktop only: the mobile accordion lays the panel out in flow, where the
-  // edge classes mean nothing and a stale one would survive the resize.
-  const placeMega = (item) => {
-    if (!item.classList.contains("uwp-nav-item--mega")) return;
-    const panel = item.querySelector(":scope > .uwp-nav-mega");
-    if (!panel) return;
-    if (!desktop.matches) {
-      panel.classList.remove("uwp-nav-mega--left");
-      return;
-    }
-    place(item, ".uwp-nav-mega", "uwp-nav-mega--left");
-  };
-
-  // Hover-intent for both levels. Open once the pointer has come to rest on an
-  // entry; close after a short delay so a brief diagonal exit toward a nested
-  // panel does not snap it shut. Fine pointers on wide viewports only; coarse
-  // pointers use the accordion.
-  const wireHoverIntent = (element, isBranch) => {
-    let closeTimer;
-    let openTimer;
-
-    // The part that actually reveals the panel, once the settle test below has
-    // decided this is a destination rather than a crossing.
-    const reveal = () => {
-      if (isBranch) {
-        const menu = element.closest(".uwp-nav-menu");
-        if (menu) {
-          for (const sibling of menu.querySelectorAll(
-            ":scope > .uwp-nav-branch.is-open",
-          )) {
-            if (sibling !== element) setOpen(sibling, false);
-          }
-        }
-      } else {
-        closeSiblings(element);
-      }
-      setOpen(element, true);
-      if (isBranch) placeFlyout(element);
-      else placeMega(element);
-    };
-
-    // `anchorX/Y` is where the pointer's current rest began — the slop is
-    // measured from it. `lastX/Y/T` is the previous move, so a speed can be
-    // taken between two real samples rather than inferred from silence.
+    // Hover-intent. `anchor` is where the current rest began (the slop is
+    // measured from it); `last` is the previous sample, so a speed is taken
+    // between two real points rather than inferred from silence.
+    let openTimer = 0;
+    let closeTimer = 0;
     let anchorX = 0;
     let anchorY = 0;
     let lastX = 0;
     let lastY = 0;
     let lastT = 0;
 
-    const arm = (event) => {
+    const arm = (x, y) => {
       window.clearTimeout(openTimer);
-      anchorX = event.clientX;
-      anchorY = event.clientY;
+      anchorX = x;
+      anchorY = y;
       openTimer = window.setTimeout(() => {
-        // Re-checked rather than assumed: the pointer may have left during the
-        // wait, and `mouseleave` cannot be relied on to have fired before this
-        // timer on every browser. The dismissal check is for an Escape pressed
-        // inside the delay — it collapses the entry from above, and a timer
-        // firing afterwards would leave this row's aria-expanded reading true
-        // under a panel nobody can see.
-        if (!element.matches(":hover")) return;
-        if (element.closest(".uwp-nav-item.is-dismissed")) return;
-        reveal();
-      }, HOVER_SETTLE_DELAY);
+        // Re-checked, not assumed: the pointer may have left during the wait,
+        // and an Escape inside it may have dismissed the entry from above.
+        if (!item.matches(":hover") || item.classList.contains("is-dismissed")) {
+          return;
+        }
+        openExclusively(item);
+      }, SETTLE_DELAY);
     };
 
-    const open = (event) => {
-      // Entering arms nothing: a sweep enters every entry it crosses, and it is
-      // the first slow move, not the crossing, that may arm a reveal. Just seed
-      // the speed sample and drop any close still pending from a moment ago.
+    item.addEventListener("mouseenter", (event) => {
+      // Entering arms nothing — a sweep enters every entry it crosses. Just
+      // drop any pending close and seed the speed sample.
       window.clearTimeout(closeTimer);
       window.clearTimeout(openTimer);
       openTimer = 0;
       anchorX = lastX = event.clientX;
       anchorY = lastY = event.clientY;
       lastT = event.timeStamp;
-    };
+    });
 
-    const track = (event) => {
-      // Once the panel is up the pointer is free to move inside it — that is
-      // the reader using the menu, not deciding to. Re-arming there would set
-      // a timer that only ever re-reveals what is already revealed.
-      if (element.classList.contains("is-open")) return;
-      if (!finePointer.matches || !desktop.matches) return;
-      const dt = event.timeStamp - lastT;
-      // A move too close on the heels of the last carries no usable speed, and
-      // reading zero travel over a near-zero interval as a stop is the whole of
-      // the bug the settle test had. Two moves share this: the browser fires
-      // several for one animation frame, and `mouseenter` shares a timestamp
-      // with the very move that crossed into the entry. Neither is a rest.
-      // Leave the reference where it was and let the interval grow — the next
-      // move that clears this floor is measured against where the pointer
-      // actually was, so a stalled stream that resumes far away still reads as
-      // travel, and a pointer genuinely at rest still accumulates its interval.
-      if (dt < HOVER_MIN_INTERVAL) return;
-      // Manhattan distance, not Euclidean: this is a "how fast", not a
-      // measurement, and the cheap form answers it identically at this scale.
-      const dist =
-        Math.abs(event.clientX - lastX) + Math.abs(event.clientY - lastY);
-      lastX = event.clientX;
-      lastY = event.clientY;
-      lastT = event.timeStamp;
-      if (dist / dt >= HOVER_REST_SPEED) {
-        // Moving: nothing may be left armed, or the next stall in the stream —
-        // silence indistinguishable from a stop — would let it fire mid-sweep.
-        // Re-anchor so the clock starts here the moment the pointer does slow.
-        window.clearTimeout(openTimer);
-        openTimer = 0;
-        anchorX = event.clientX;
-        anchorY = event.clientY;
-        return;
-      }
-      // Slow enough to be settling. Start the clock once, from here; let a
-      // drift past the slop restart it, so the reveal lands where the pointer
-      // came to rest and not where it first dipped below speed.
-      if (
-        !openTimer ||
-        Math.abs(event.clientX - anchorX) + Math.abs(event.clientY - anchorY) >
-          HOVER_SETTLE_SLOP
-      ) {
-        arm(event);
-      }
-    };
+    // Passive: this only reads the pointer, and a listener on every entry of
+    // the bar must never be able to hold up a scroll.
+    item.addEventListener(
+      "mousemove",
+      (event) => {
+        // Once open the pointer is free to roam the panel — that is the reader
+        // using the menu, not deciding to. Re-arming there only re-reveals what
+        // is already revealed.
+        if (item.classList.contains("is-open")) return;
+        if (!finePointer.matches || !desktop.matches) return;
+        const dt = event.timeStamp - lastT;
+        // Too soon after the last sample to carry a speed: the browser fires
+        // several moves per frame, and `mouseenter` shares its timestamp with
+        // the move that crossed in. Leave the reference put and let the interval
+        // grow, so a stalled stream that resumes far away still reads as travel.
+        if (dt < MIN_INTERVAL) return;
+        const dist =
+          Math.abs(event.clientX - lastX) + Math.abs(event.clientY - lastY);
+        lastX = event.clientX;
+        lastY = event.clientY;
+        lastT = event.timeStamp;
+        if (dist / dt >= REST_SPEED) {
+          // Travelling: nothing may be left armed, or the next stall in the
+          // stream would let it fire mid-sweep. Re-anchor so the clock starts
+          // the moment the pointer does slow.
+          window.clearTimeout(openTimer);
+          openTimer = 0;
+          anchorX = event.clientX;
+          anchorY = event.clientY;
+          return;
+        }
+        // Slow enough to be settling. Start the clock once, from here; a drift
+        // past the slop restarts it, so the reveal lands where the pointer came
+        // to rest and not where it first dipped below speed.
+        if (
+          !openTimer ||
+          Math.abs(event.clientX - anchorX) + Math.abs(event.clientY - anchorY) >
+            REST_SLOP
+        ) {
+          arm(event.clientX, event.clientY);
+        }
+      },
+      { passive: true },
+    );
 
-    const scheduleClose = () => {
-      // A row left before its settle delay elapsed was a crossing, not a
-      // destination. Dropping the timer here is what keeps the fly-out the
-      // reader aimed at open: it is never told to close, because the row
-      // being passed over is never told to open.
+    item.addEventListener("mouseleave", () => {
+      // A pending open is dropped, not left to fire from outside the entry. The
+      // close waits out the grace period so a clipped corner does not shut a
+      // panel the reader is heading into; re-entry cancels it (mouseenter).
       window.clearTimeout(openTimer);
+      openTimer = 0;
       window.clearTimeout(closeTimer);
-      closeTimer = window.setTimeout(() => {
-        setOpen(element, false);
-      }, HOVER_CLOSE_DELAY);
-    };
-
-    element.addEventListener("mouseenter", open);
-    element.addEventListener("mouseleave", scheduleClose);
-    // Passive: the settle test only reads the pointer, and a listener on every
-    // entry of the bar must not be able to hold up a scroll.
-    element.addEventListener("mousemove", track, { passive: true });
+      closeTimer = window.setTimeout(() => setOpen(item, false), CLOSE_DELAY);
+    });
 
     // A panel opened by click or arrow keys has no mouseleave to close it, so
-    // it closes when focus leaves it — it is a menu, not a dialog, and holds
-    // no focus trap. The :hover guard keeps a pointer click on the disclosure
-    // from closing-then-reopening on browsers that do not focus buttons on
-    // click, and skips the case hover-intent already owns.
-    element.addEventListener("focusout", (event) => {
-      if (event.relatedTarget && element.contains(event.relatedTarget)) return;
-      // Focus has genuinely left the entry, so an Escape that dismissed it has
-      // nothing left to suppress; forget it before the guards below, which are
-      // about closing rather than about the dismissal.
-      element.classList.remove("is-dismissed");
-      if (!desktop.matches || element.matches(":hover")) {
-        // Not closing — but focus has left, so `:focus-within` no longer
-        // reveals anything and the attribute may have just become false
-        // without any class changing.
-        syncExpanded(element);
+    // it closes when focus leaves the entry — it is a menu, not a dialog, and
+    // holds no focus trap.
+    item.addEventListener("focusout", (event) => {
+      if (event.relatedTarget && item.contains(event.relatedTarget)) return;
+      // Focus has genuinely left, so an Escape that dismissed the entry has
+      // nothing left to suppress; forget it.
+      item.classList.remove("is-dismissed");
+      if (!desktop.matches || item.matches(":hover")) {
+        // Not closing (hover owns it, or the accordion holds it), but
+        // `:focus-within` is now false, so aria may have flipped with no class
+        // change.
+        syncExpanded(item);
         return;
       }
-      setOpen(element, false);
+      setOpen(item, false);
     });
 
-    // Keyboard focus reveals the panel through CSS :focus-within, which no
-    // handler above sees; measure on focus too so a panel reached by Tab or
-    // the arrow keys flips at the edge exactly as a hovered one does.
-    element.addEventListener("focusin", () => {
-      // Before the desktop guard: the attribute is a statement about what is on
-      // screen, and it is as true at phone width as at desktop. Only the
-      // measuring below is desktop-only.
-      syncExpanded(element);
-      if (!desktop.matches) return;
-      if (isBranch) placeFlyout(element);
-      else placeMega(element);
+    // Keyboard focus reveals the panel through `:focus-within`, which no handler
+    // above sees; sync aria and measure the edge so a panel reached by Tab flips
+    // exactly as a hovered one does. Deliberately does NOT call setOpen: a mouse
+    // click focuses the button before its own handler runs, and opening here
+    // would make that handler read the entry as already open and close it.
+    item.addEventListener("focusin", () => {
+      syncExpanded(item);
+      if (desktop.matches) placePanel(item);
     });
-  };
-
-  for (const item of document.querySelectorAll(".uwp-nav-item")) {
-    wireHoverIntent(item, false);
-  }
-  for (const branch of document.querySelectorAll(".uwp-nav-branch")) {
-    wireHoverIntent(branch, true);
   }
 
-  // A click that lands outside every open panel closes them all: a wide mega
-  // panel left open over the page is a curtain, not a menu. Desktop only —
-  // the mobile accordion sits inside the nav panel the [data-uwp-nav-toggle]
-  // handler already owns.
+  // A click outside every open panel closes them all: a wide panel left over
+  // the page is a curtain, not a menu. Desktop only — the accordion lives
+  // inside the nav panel the toggle handler already owns.
   document.addEventListener("click", (event) => {
     if (!desktop.matches) return;
-    for (const open of document.querySelectorAll(
-      ".uwp-nav-item.is-open, .uwp-nav-branch.is-open",
-    )) {
-      if (!open.contains(event.target)) setOpen(open, false);
+    for (const item of items) {
+      if (item.classList.contains("is-open") && !item.contains(event.target)) {
+        setOpen(item, false);
+      }
     }
   });
 
-  // Arrow keys, desktop only: Left/Right step across the top-level entries,
-  // Down opens the focused entry's panel and walks its links, Up walks back.
-  // This is the disclosure-navigation pattern, not a menubar: links keep
-  // their natural roles and tabindex, Tab still moves freely, and the mobile
-  // accordion keeps its plain document order.
+  // Arrow keys, desktop only. Left/Right step across the top-level entries;
+  // Down opens the focused entry and walks its links; Up walks back. This is
+  // the disclosure-navigation pattern, not a menubar: links keep their natural
+  // roles and tabindex, Tab still moves freely, and the accordion keeps plain
+  // document order.
   const ARROWS = ["ArrowDown", "ArrowUp", "ArrowLeft", "ArrowRight"];
   document.addEventListener("keydown", (event) => {
     if (!ARROWS.includes(event.key) || !desktop.matches) return;
@@ -455,20 +336,19 @@
     if (!entry) return;
 
     if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-      const step = event.key === "ArrowRight" ? 1 : -1;
-      const next = entries[entries.indexOf(entry) + step];
+      const next =
+        entries[entries.indexOf(entry) + (event.key === "ArrowRight" ? 1 : -1)];
       if (!next) return;
       event.preventDefault();
       (next.matches("a") ? next : next.querySelector(":scope > a"))?.focus();
       return;
     }
 
-    // Down/Up walk one entry's own links; plain top-level links have none.
+    // Down/Up walk one entry's own links; a plain top-level link has none.
     if (!entry.matches(".uwp-nav-item")) return;
     event.preventDefault();
     if (event.key === "ArrowDown" && !entry.classList.contains("is-open")) {
-      closeSiblings(entry);
-      setOpen(entry, true);
+      openExclusively(entry);
     }
     const links = [...entry.querySelectorAll("a")].filter(
       (link) => link.getClientRects().length,
@@ -478,30 +358,25 @@
     target?.focus();
   });
 
-  // Escape closes any open dropdown/fly-out and returns focus to the top-level
-  // item link, which is where a reader who has just dismissed a panel expects
-  // to be — not thrown back to the top of the document.
-  //
-  // Clearing `is-open` is not enough to collapse it. Under `.uwp-js` the panel
-  // is revealed by `.is-open` OR `:focus-within` on the entry, and the link
-  // focus lands inside the entry, so `:focus-within` holds the panel open with
-  // `is-open` already gone — Escape appeared to do nothing. `is-dismissed`
-  // outranks the reveal (see patterns.css) and lasts until the entry is opened
-  // again or focus leaves it, both of which clear the class above.
+  // Escape closes any open panel and returns focus to its top-level link, where
+  // a reader who just dismissed a panel expects to be. Clearing `.is-open` is
+  // not enough: the returned focus lands inside the entry, so `:focus-within`
+  // would hold the panel open with the class already gone. `.is-dismissed`
+  // outranks the reveal (see patterns.css) until the entry is opened again or
+  // focus leaves it, both of which clear it above.
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
     const item = document.activeElement?.closest(".uwp-nav-item");
-    for (const open of document.querySelectorAll(
-      ".uwp-nav-branch.is-open, .uwp-nav-item.is-open",
-    )) {
-      setOpen(open, false);
+    for (const open of items) {
+      if (open.classList.contains("is-open")) setOpen(open, false);
     }
     if (item) {
-      const link =
-        item.querySelector(":scope > .uwp-nav-item__link") ||
-        item.querySelector(":scope > a");
       item.classList.add("is-dismissed");
-      link?.focus();
+      (
+        item.querySelector(":scope > .uwp-nav-item__link") ||
+        item.querySelector(":scope > a")
+      )?.focus();
+      syncExpanded(item);
     }
   });
 })();

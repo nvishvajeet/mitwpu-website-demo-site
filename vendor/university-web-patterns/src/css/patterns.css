@@ -624,109 +624,6 @@
   background: color-mix(in srgb, var(--uwp-ink) 7%, transparent);
 }
 
-/* Level-2 cascade fly-out. A row inside a `.uwp-nav-menu` may itself be a
-   `.uwp-nav-branch` carrying a `.uwp-nav-flyout` of sub-links, revealed in a
-   panel beside the row (two levels only, never deeper). With scripting the
-   reveal is driven solely by `.is-open` (hover-intent, navigation.js) plus
-   `:focus-within`, so travelling diagonally from the row to the panel never
-   snaps it shut; the base `:hover` opener is only the no-JS fallback. Row links
-   and fly-out links inherit their type from `.uwp-nav-menu a`. Data-free: the
-   client supplies rows per navigation-cascade.schema.json. */
-.uwp-nav-branch {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-}
-
-.uwp-nav-branch__link {
-  flex: 1 1 auto;
-}
-
-.uwp-nav-branch__disclosure {
-  display: inline-flex;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  min-height: 44px;
-  padding: 0;
-  color: var(--uwp-muted);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.uwp-nav-branch__disclosure span {
-  display: block;
-  width: .4rem;
-  height: .4rem;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  transform: rotate(45deg);
-  transition: transform 150ms ease;
-  content: "";
-}
-
-.uwp-nav-branch.is-open > .uwp-nav-branch__disclosure span,
-.uwp-nav-branch:focus-within > .uwp-nav-branch__disclosure span {
-  transform: rotate(135deg);
-}
-
-.uwp-nav-branch:hover > .uwp-nav-branch__link,
-.uwp-nav-branch:focus-within > .uwp-nav-branch__link,
-.uwp-nav-branch.is-open > .uwp-nav-branch__link {
-  background: color-mix(in srgb, var(--uwp-ink) 7%, transparent);
-}
-
-.uwp-nav-flyout {
-  position: absolute;
-  top: -.7rem;
-  left: 100%;
-  z-index: 60;
-  display: none;
-  flex-direction: column;
-  min-width: 16rem;
-  padding: .4rem 0;
-  background: var(--uwp-surface);
-  border: 1px solid color-mix(in srgb, var(--uwp-ink) 16%, transparent);
-  border-top: 3px solid var(--uwp-accent);
-  border-radius: 0 .25rem .25rem .25rem;
-  box-shadow: 0 1.25rem 2.75rem rgb(0 0 0 / 22%);
-}
-
-/* Edge variant: near the right viewport edge navigation.js measures the panel
-   and flips it to open to the left of the row instead. */
-.uwp-nav-flyout--left {
-  right: 100%;
-  left: auto;
-  border-radius: .25rem 0 .25rem .25rem;
-}
-
-.uwp-nav-branch:hover > .uwp-nav-flyout,
-.uwp-nav-branch:focus-within > .uwp-nav-flyout,
-.uwp-nav-branch.is-open > .uwp-nav-flyout {
-  display: flex;
-}
-
-.uwp-js .uwp-nav-branch:hover > .uwp-nav-flyout {
-  display: none;
-}
-
-.uwp-js .uwp-nav-branch:focus-within > .uwp-nav-flyout,
-.uwp-js .uwp-nav-branch.is-open > .uwp-nav-flyout {
-  display: flex;
-}
-
-.uwp-nav-flyout .uwp-nav-flyout__all {
-  margin-top: .3rem;
-  border-top: 1px solid var(--uwp-rule);
-  /* --uwp-link, not --uwp-brand: brand is a solid background paired with
-     --uwp-brand-contrast, and a client that sets it to an institutional navy
-     gets near-invisible text here in dark mode. */
-  color: var(--uwp-link);
-  font-weight: 700;
-}
-
 /* Mega panel. A `.uwp-nav-item--mega` opens a `.uwp-nav-mega` (also a
    `.uwp-nav-menu`, so every reveal, accordion and no-JS rule above applies
    unchanged) that shows all of an entry's destinations at once as a grid of
@@ -742,8 +639,8 @@
    dropped over the page rather than as a menu belonging to a word in it, and
    the university mastheads worth copying all size theirs to their contents.
 
-   Near the right edge navigation.js measures the panel and adds `--left`,
-   exactly as it already does for a cascade fly-out. Without scripting nothing
+   Near the right edge navigation.js measures the panel and adds `--left`.
+   Without scripting nothing
    can measure, so the no-JS rule below restores the masthead-wide panel: it
    is wider than it needs to be, but it cannot run off an edge, which is the
    property that matters when nothing can correct it. Requires the panel to
@@ -776,7 +673,7 @@
 }
 
 /* Edge variant: near the right viewport edge navigation.js flips the panel to
-   hang from the entry's right edge instead, as for `.uwp-nav-flyout--left`. */
+   hang from the entry's right edge instead. */
 .uwp-nav-mega--left {
   right: 0;
   left: auto;
@@ -908,7 +805,9 @@ html:not(.uwp-js) .uwp-nav-mega {
   border-radius: .25rem;
 }
 
-/* See the note on .uwp-nav-flyout__all for why --uwp-link, not --uwp-brand. */
+/* --uwp-link, not --uwp-brand: brand is a solid background paired with
+   --uwp-brand-contrast, and a client that sets it to an institutional navy
+   gets near-invisible text here in dark mode. */
 .uwp-nav-mega__all {
   margin-top: var(--uwp-space-2);
   padding-inline: .6rem;
@@ -921,8 +820,8 @@ html:not(.uwp-js) .uwp-nav-mega {
 
    Every client sizes its top-bar links the same way — `.site-nav a { height:
    112px }`, one class and a bare element — and that selector does not stop at
-   the bar. The three panels hang off it in the DOM, so a drop-down row, a
-   fly-out row and a mega-panel row each took the full height of the bar: one
+   the bar. The panels hang off it in the DOM, so a drop-down row and a
+   mega-panel row each took the full height of the bar: one
    client's academics panel came to 1,547px of content in a 785px panel and
    scrolled, for twenty-seven links that fit. Nothing in the package declared
    a height, so there was nothing for the client's rule to lose to.
@@ -936,7 +835,6 @@ html:not(.uwp-js) .uwp-nav-mega {
    three panels inside it — so this holds for every navigation pattern,
    including any added later. */
 .uwp-nav .uwp-nav-menu a,
-.uwp-nav .uwp-nav-flyout a,
 .uwp-nav .uwp-nav-mega a {
   height: auto;
 }
@@ -1679,7 +1577,7 @@ html:not(.uwp-js) .uwp-nav-mega {
 
 .uwp-card a:not([class*="uwp-"]):hover,
 .uwp-card a:not([class*="uwp-"]):focus-visible {
-  /* Foreground, so --uwp-link. See the note on .uwp-nav-flyout__all. */
+  /* Foreground, so --uwp-link. See the note on .uwp-nav-mega__all. */
   color: var(--uwp-link);
   text-decoration-color: currentColor;
 }
@@ -4015,42 +3913,10 @@ html:not(.uwp-js) .uwp-nav-mega {
     padding-left: 2rem;
   }
 
-  /* Cascade fly-outs collapse into the accordion: no hover, tap the row's
-     disclosure to expand the sub-links inline as a deeper indent. */
-  .uwp-js .uwp-masthead .uwp-nav-branch {
-    display: block;
-    width: 100%;
-  }
-
-  .uwp-js .uwp-masthead .uwp-nav-flyout {
-    position: static;
-    min-width: 0;
-    padding: 0;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .uwp-js .uwp-masthead .uwp-nav-branch:hover > .uwp-nav-flyout,
-  .uwp-js .uwp-masthead .uwp-nav-branch:focus-within > .uwp-nav-flyout {
-    display: none;
-  }
-
-  .uwp-js .uwp-masthead .uwp-nav-branch.is-open > .uwp-nav-flyout {
-    display: flex;
-  }
-
-  .uwp-masthead .uwp-nav-flyout a {
-    width: 100%;
-    padding-left: 2.75rem;
-  }
-
-  /* The mega panel collapses into the same accordion as the other two nav
-     patterns: `.uwp-nav-menu` already goes static above, so only the mega's
-     own grid, columns and panel chrome need undoing here. Groups stack as one
-     column; group links sit a step deeper than their heading, matching the
-     cascade's indent scale. */
+  /* The mega panel collapses into the accordion: `.uwp-nav-menu` already goes
+     static above, so only the mega's own grid, columns and panel chrome need
+     undoing here. Groups stack as one column; group links sit a step deeper
+     than their heading. */
   .uwp-js .uwp-masthead .uwp-nav-mega {
     width: auto;
     max-width: none;
@@ -4236,7 +4102,6 @@ html:not(.uwp-js) .uwp-nav-mega {
   .uwp-button,
   .uwp-switch-thumb,
   .uwp-nav-item__disclosure span,
-  .uwp-nav-branch__disclosure span,
   .uwp-faq__question::after {
     transition: none;
   }
