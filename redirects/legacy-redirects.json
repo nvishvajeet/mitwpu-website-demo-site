@@ -2587,6 +2587,58 @@
       "target": "/campus-life/clubs/finfluencers/"
     },
     {
+      "source": "/hswtech-about-us/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-advisory-committee/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-call-for-papers-workshops-tutorials-invited-talks/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-call-for-workshops-tutorials/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-committee/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-contact-us/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-important-dates/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-registration/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-sponsorship/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-submission-guidelines/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-technical-program-committee/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech-travel-and-venue/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
+      "source": "/hswtech/",
+      "target": "/events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/"
+    },
+    {
       "source": "/icsscc-submission/",
       "target": "/events/mit-wpu-hosts-icsscc-2026-to-advance-sustainable-smart-computing-and-communication-research/"
     },
@@ -2721,6 +2773,34 @@
     {
       "source": "/national-service-scheme/",
       "target": "/campus-life/clubs/national-service-scheme/"
+    },
+    {
+      "source": "/nctsrie-about-us/",
+      "target": "/events/"
+    },
+    {
+      "source": "/nctsrie-awards--certification/",
+      "target": "/events/"
+    },
+    {
+      "source": "/nctsrie-committee/",
+      "target": "/events/"
+    },
+    {
+      "source": "/nctsrie-contact-us/",
+      "target": "/events/"
+    },
+    {
+      "source": "/nctsrie-important-dates/",
+      "target": "/events/"
+    },
+    {
+      "source": "/nctsrie-submission-guidelines/",
+      "target": "/events/"
+    },
+    {
+      "source": "/nctsrie-tracks/",
+      "target": "/events/"
     },
     {
       "source": "/ninox-nature/",

@@ -6,6 +6,24 @@
  * controls, and safe text reflow. It deliberately does not disable browser
  * zoom or replace user font preferences.
  */
+
+/* ── the eyebrow, named once ──────────────────────────────────────────
+ *
+ * Each family carried its own eyebrow: 0.68, 0.7, 0.72 and 0.75rem across six
+ * stylesheets, at weight 700 or 800, tracked between 0.09 and 0.11em. Several
+ * were below the 14px this same file floors metadata at, so the kicker over a
+ * page title was set smaller than the caption under a photograph on it. These
+ * tokens are the one settled value, and it is not a new invention: it is the
+ * package's own .uwp-eyebrow (0.875rem / 800 / 0.11em, raised there for exactly
+ * this floor), so a locally-classed eyebrow and a package one now set the same
+ * on a page that shows both. A family names the role and keeps its own colour
+ * and spacing. */
+:root {
+  --eyebrow-size: 0.875rem;
+  --eyebrow-weight: 800;
+  --eyebrow-tracking: 0.11em;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -70,6 +88,28 @@ body {
 ) {
   font-size: max(.875rem, 14px);
   line-height: 1.45;
+}
+
+/* The eyebrow, settled in one place. The tokens at the top of this file give
+ * the value; this applies it to every family's eyebrow at once, so the kicker
+ * over a page title stops being 0.68rem here and 0.75rem there. Ordinary
+ * specificity, and this sheet is injected last on every page, so it lands on
+ * the base `.eyebrow` / `.section-label` a family declares — while a
+ * deliberately larger eyebrow set through a descendant selector (`.some-hero
+ * .eyebrow`) keeps its say. Only the size, weight and tracking are unified;
+ * the colour and the spacing stay each family's own.
+ *
+ * This is the one place the sheet sets a value at ordinary specificity rather
+ * than flooring one through `:where()`. It is deliberate: an eyebrow drawn
+ * below the 14px this file already floors captions at is not a family's
+ * identity, it is the drift this unifies. */
+.eyebrow,
+.kicker,
+.section-label,
+.orientation-label {
+  font-size: var(--eyebrow-size);
+  font-weight: var(--eyebrow-weight);
+  letter-spacing: var(--eyebrow-tracking);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {

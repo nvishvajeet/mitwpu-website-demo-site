@@ -491,7 +491,9 @@ h3 {
  * nothing in it that is not in a screen. */
 .is-landing .activity,
 .is-landing .home-events,
-.is-landing .redressal {
+.is-landing .redressal,
+.is-landing .schools,
+.is-landing .research-home {
   padding-block: 0;
 }
 
@@ -502,12 +504,39 @@ h3 {
   padding-block: 24px;
 }
 
+/* 24px, down from 32/36, and the list and state paragraph tighten with it
+   (see .home-events__list and .home-events__state). Restoring the three
+   subtitles the band once dropped to fit put it 37px over a screen; this is
+   where that comes back. A description a reader came for is worth more than the
+   air around it, and the band still lands whole — 592 of 605 at 1280x720. */
 .is-landing .home-events .band-screen {
-  padding-block: 32px 36px;
+  padding-block: 24px;
 }
 
 .is-landing .redressal .band-screen {
   padding-block: 40px;
+}
+
+/* Schools reuses the Latest band's grid and card, so it pays the same 24px
+   its six cards do — the heading above is the separation from Events, and the
+   ground turning from --paper to --subtle at that boundary is the other half
+   of it. */
+.is-landing .schools .band-screen {
+  padding-block: 24px;
+}
+
+/* Research is a directory, not a grid of pictures, so its rows are what set
+   the height. The band takes 32px, and the rows lose the 76px floor a section
+   landing's directory rows carry: here a row is a name and its one-line note,
+   which sets its own height, and the floor would only pad the shorter rows
+   until four groups plus a heading ran the tallest column past the screen. */
+.is-landing .research-home .band-screen {
+  padding-block: 32px;
+}
+
+.is-landing .research-home .directory-link {
+  min-height: 0;
+  padding-block: 13px;
 }
 
 .is-landing > main > section .section-heading {
@@ -1346,7 +1375,7 @@ h3 {
 
 .home-events__state {
   max-width: 62ch;
-  margin: -26px 0 34px;
+  margin: -26px 0 20px;
   color: var(--copy);
   font-size: 0.95rem;
   line-height: 1.6;
@@ -1367,7 +1396,7 @@ h3 {
 
 .home-events__list {
   display: grid;
-  gap: 22px;
+  gap: 14px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1499,6 +1528,41 @@ h3 {
 
 
 
+
+/* ── the two new landing bands: schools and research ─────────────────
+ *
+ * Both live here rather than in a section-page sheet because they exist only
+ * on the landing, and both take the page's alternating ground so the rhythm
+ * that ran hero→Latest→Events keeps going: Events closes on --paper, Schools
+ * turns to --subtle, Research turns back to --paper, and the footer's dark is
+ * the last turn. Neither draws a border — at every one of those boundaries the
+ * ground already changes, and a hairline along a colour edge is the seam this
+ * page was tuned to remove. */
+.schools {
+  padding-block: 56px 52px;
+  background: var(--subtle);
+}
+
+.research-home {
+  padding-block: 56px 72px;
+  background: var(--paper);
+}
+
+/* The one line a directory row grows for the home. A section landing's
+   directory is bare name-and-arrow, because there the label IS the whole
+   signpost; on the home a research group's name without its subject is a
+   cipher, so the row carries the group's own opening sentence, truncated, set
+   smaller and lighter than the name so the name still leads. One added line on
+   an existing component, not a component of its own. */
+.directory-note {
+  display: block;
+  max-width: 42ch;
+  margin-top: 5px;
+  color: var(--copy);
+  font-size: 0.86rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
 
 .directory {
   padding-block: 80px 88px;

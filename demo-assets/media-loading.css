@@ -1,0 +1,116 @@
+/* ── designed load states ────────────────────────────────────────────
+ *
+ * The frame is drawn before the photograph arrives, and the photograph
+ * fades into it. Until this layer the reserved media boxes on this site —
+ * card, portrait, gallery, single-figure hero — sat empty while their image
+ * loaded: on a warm ground that reads as a blank panel with a gold edge, and
+ * the first thing a reader met on a school page was a rectangle that looked
+ * broken. The boxes already reserve their space (an `aspect-ratio` on every
+ * frame), so nothing here moves the layout; it only fills the reserved box
+ * with a quiet skeleton while the bytes are in flight and then reveals the
+ * picture instead of letting it snap in.
+ *
+ * WHY A SEPARATE, INJECTED FILE. It is the same argument screen-rhythm.css
+ * makes: this is generic, every page family has framed images, and none of
+ * their six stylesheets should carry a private copy. tools/build_public_demo.py
+ * injects it on every page beside readability.css, keyed by its own SHA-256.
+ * The behaviour is opt-in per image: demo-assets/media-loading.js marks the
+ * images it manages, so a page whose script is blocked shows its pictures the
+ * ordinary way and pays only for one request.
+ *
+ * WHY IT IS GUARDED ON `html.has-media-reveal`. Same no-JavaScript guard the
+ * scroll-reveal layer uses. media-loading.js stamps that class on <html>
+ * before it hides anything; until then, and forever if the script fails, an
+ * image is simply visible. Hiding an image behind a class the page might never
+ * add is how a gallery goes blank and no error is raised. */
+
+:root {
+  /* The skeleton is a warm neutral, deep enough off the paper to read as a
+     deliberate placeholder rather than an empty box — the whole point is that
+     the loading frame looks intentional. A grey would read as a hole on this
+     ground, so it stays in the paper's family, just several steps darker. The
+     sheen is the moving highlight that sweeps across it. Hand-picked per theme
+     rather than mixed from --line so it never depends on a family token. */
+  --skeleton-base: #e2dccc;
+  --skeleton-sheen: #f4f1e8;
+}
+
+:root[data-theme="dark"] {
+  --skeleton-base: #1f2e3a;
+  --skeleton-sheen: #33475a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --skeleton-base: #1f2e3a;
+    --skeleton-sheen: #33475a;
+  }
+}
+
+/* The reveal. An image media-loading.js manages starts transparent and settles
+   in over the skeleton. The easing is the site's reveal curve, shared with the
+   scroll-reveal layer so the two motions read as one hand. */
+html.has-media-reveal img.media-reveal {
+  opacity: 0;
+  transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.has-media-reveal img.media-reveal.is-loaded {
+  opacity: 1;
+}
+
+/* The skeleton, on the frame the image sits in. The frame already clips and
+   reserves its box, so the tint fills exactly the space the picture will take.
+   `position: relative` is asserted because a generic wrapper (a bare <a>) may
+   not have set it, and the sheen below is absolutely positioned to it. */
+html.has-media-reveal .is-media-loading {
+  position: relative;
+  background-color: var(--skeleton-base);
+}
+
+/* The sheen only sweeps once the frame is near the viewport: media-loading.js
+   adds `is-inview` through one shared IntersectionObserver, so sixty framed
+   thumbnails below the fold hold a still tint instead of animating offscreen.
+   A single diagonal highlight, slow and low-contrast — a skeleton, not a
+   candy-stripe loader. */
+html.has-media-reveal .is-media-loading.is-inview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    100deg,
+    transparent 30%,
+    var(--skeleton-sheen) 50%,
+    transparent 70%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  animation: media-skeleton-sweep 1.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes media-skeleton-sweep {
+  from { background-position: 160% 0; }
+  to   { background-position: -60% 0; }
+}
+
+/* A reader who asked for less movement gets the skeleton as a still tint and
+   the photograph without a fade — the frame is still drawn, so there is still
+   no blank box, there is just no motion in it. */
+@media (prefers-reduced-motion: reduce) {
+  html.has-media-reveal img.media-reveal {
+    transition: none;
+  }
+
+  html.has-media-reveal .is-media-loading.is-inview::after {
+    animation: none;
+  }
+}
+
+/* Generated device-theme fallback. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --skeleton-base: #1f2e3a;
+      --skeleton-sheen: #33475a;
+  }
+}

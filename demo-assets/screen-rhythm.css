@@ -105,6 +105,42 @@
   scroll-snap-align: end;
 }
 
+/* ── a page composed to a screen, without the band mechanism ─────────
+ *
+ * The band rhythm above is for a page BUILT as a stack of composed screens.
+ * Most pages are not that: a hub, an index, a short statement has one column of
+ * content that may or may not reach the fold, and when it does not the footer
+ * — 547px of institutional columns, the tallest single thing on the site —
+ * rides up into the first screen under it, and the page reads as a fragment
+ * with a footer stuck to its middle rather than as a composed screen. The
+ * operator asked for those to be given a height too: "fix a height unless they
+ * are long articles".
+ *
+ * This is that, and it is the smaller, quieter half of the mechanism — a floor
+ * on the CONTENT, not the page, and no snapping. `main` is given the same
+ * one-screen floor `.band-screen` carries, `calc(100svh - masthead)`, so a
+ * short page's content fills the screen and the footer lands just past the fold
+ * where it belongs. It is deliberately NOT a body-level sticky footer: that
+ * pulls the 547px footer UP into view and makes the footer the screen, which is
+ * the opposite of composing the content.
+ *
+ * It does NOTHING on a long page, because content already past the fold ignores
+ * a minimum — so "except long articles" needs no list to enforce; the rule
+ * exempts them by construction. And it is opt-IN, by a body class a builder
+ * stamps on the index and short-statement pages and withholds from the
+ * articles, so a genuinely tiny stub is never stretched into a screen of
+ * emptiness against the operator's own "don't force a tall band on genuinely
+ * short content".
+ *
+ * No scroll-snap, so nothing fights a trackpad or a touch fling, and the phone
+ * and reduced-motion carve-outs the band mechanism needs do not apply: a floor
+ * moves nothing. `> main`, by tag and not by id, because the families name that
+ * element five different ways (`main`, `page-content`, `site-search` …) and
+ * every one of them is still the one <main> that is a direct child of <body>. */
+.is-composed > main {
+  min-block-size: calc(100svh - var(--mitwpu-masthead-height, 115px));
+}
+
 /* ── boundaries between screens ──────────────────────────────────────
  *
  * A rule is drawn between two screens ONLY where the ground does not change.

@@ -8,6 +8,8 @@
     var groups = [
       [".activity .section-heading", 0],
       [".activity-card", 45],
+      [".schools .section-heading", 0],
+      [".research-home .section-heading", 0],
       [".directory .section-heading", 0],
       [".directory-group", 60]
     ];

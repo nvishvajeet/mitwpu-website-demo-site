@@ -23,27 +23,29 @@
     })();
   </script>
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/media.css?v=874fc6c0872d">
-  <link rel="stylesheet" href="demo-assets/site.css?v=d0f478cdaced">
+  <link rel="stylesheet" href="demo-assets/site.css?v=a83aeeb6f8f3">
   <script src="demo-assets/theme.js?v=78daa9888a50" defer></script>
-  <script src="demo-assets/landing.js?v=2a30f8901b1a" defer></script>
+  <script src="demo-assets/landing.js?v=113e6412bdd5" defer></script>
   <link rel="stylesheet" href="demo-assets/institutional-footer.css?v=ff600599fd01">
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/tokens.css">
   <link rel="stylesheet" href="vendor/university-web-patterns/src/css/patterns.css">
   <link rel="stylesheet" href="demo-assets/uwp-bridge.css?v=db076bd67e4c">
   <script src="/vendor/university-web-patterns/src/js/navigation.js" defer></script>
   <link rel="stylesheet" href="/demo-assets/global-masthead.css?v=11ed1f347962" data-global-masthead-style>
-  <link rel="stylesheet" href="/demo-assets/readability.css?v=9513c5f54c78" data-global-readability-style>
-  <link rel="stylesheet" href="/demo-assets/screen-rhythm.css?v=25cd99c69acc" data-global-screen-rhythm-style>
+  <link rel="stylesheet" href="/demo-assets/readability.css?v=06f3b7feb9b0" data-global-readability-style>
+  <link rel="stylesheet" href="/demo-assets/screen-rhythm.css?v=0bf33adb4713" data-global-screen-rhythm-style>
+  <link rel="stylesheet" href="/demo-assets/media-loading.css?v=b3ac10f3e1b1" data-global-media-loading-style>
+  <script defer src="/demo-assets/media-loading.js?v=cf16f4418595" data-global-media-loading-script></script>
   <link rel="canonical" href="https://mitwpu.vishwanathgrid.org/">
   <meta property="og:title" content="MIT World Peace University" data-release-generated="social">
   <meta property="og:description" content="Browse academics, research, facilities, events, and public profiles across MIT World Peace University." data-release-generated="social">
-  <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/demo-assets/campus/mitwpu-campus-lead.webp" data-release-generated="social">
+  <meta property="og:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/academic/26/26fb3e92d04f7354-26fb3e92d04f7354-Civil-About-academic-hero.webp" data-release-generated="social">
   <meta property="og:type" content="website" data-release-generated="social">
   <meta property="og:url" content="https://mitwpu.vishwanathgrid.org/" data-release-generated="social">
   <meta name="twitter:card" content="summary_large_image" data-release-generated="social">
   <meta name="twitter:title" content="MIT World Peace University" data-release-generated="social">
   <meta name="twitter:description" content="Browse academics, research, facilities, events, and public profiles across MIT World Peace University." data-release-generated="social">
-  <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/demo-assets/campus/mitwpu-campus-lead.webp" data-release-generated="social">
+  <meta name="twitter:image" content="https://mitwpu.vishwanathgrid.org/media/mitwpu-public/optimized/academic/26/26fb3e92d04f7354-26fb3e92d04f7354-Civil-About-academic-hero.webp" data-release-generated="social">
   <script type="application/ld+json" data-release-generated="webpage">{"@context":"https://schema.org","@type":"WebSite","@id":"https://mitwpu.vishwanathgrid.org/#website","name":"MIT World Peace University","url":"https://mitwpu.vishwanathgrid.org/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://mitwpu.vishwanathgrid.org/search/?q={search_term_string}"},"query-input":"required name=search_term_string"},"description":"Browse academics, research, facilities, events, and public profiles across MIT World Peace University."}</script>
   <link rel="stylesheet" href="/group-assets/vendor/photoswipe/photoswipe.css?v=3916557e85d5" data-image-viewer-asset="photoswipe">
   <link rel="stylesheet" href="/group-assets/image-viewer.css?v=31f27f3967dd" data-image-viewer-asset="site">
@@ -585,45 +587,38 @@
             <p>The National Scientists Round Table Conference: three days on science, technology and innovation, with the programme, the research tracks, the awards and the scientific organisation all on the record.</p>
           </article>
 
-          <!-- The lead carries the sentence; the list carries the dates. That
-               split is what the two columns have always meant, and making it
-               literal is what brings this band from 1.42 screens to 1.00: the
-               three descriptions here ran 69, 46 and 23px, and the list is
-               what sets the band's height since it is twice the lead's.
-               Removing them takes the list from 479 to 318. Spacing could not
-               have done it — the most available from gaps, padding and margins
-               together was about 56px against the 113 needed.
+          <!-- The lead and every list item now carry their subtitle. An
+               earlier pass had dropped the three list descriptions to bring
+               this band to one screen; the operator asked for the Events band
+               to be fuller, and the subtitle is the fullness — each names what
+               its conference was, which the bare title and date do not.
 
-               THIS IS THE ONE PLACE ON THE PAGE THAT STILL FITS BY REMOVING
-               SOMETHING, and it is deliberate rather than an oversight. Latest
-               is paged instead of cut, because it was 113px short of TWO
-               screens' worth of content and paging it wastes nothing. Events
-               with its descriptions restored is 714px — 1.18 screens. Paging
-               that would spend 1210px of page on 714px of content and leave
-               nearly 500px of air across two screens, which is the fault the
-               operator raised about margins, arriving by a different road. One
-               screen is the better artifact here and three subtitle sentences
-               is the price.
-
-               What is given up is small and recoverable: each title links to
-               the conference's own page, which is where the subtitle was read
-               from and where it still is. What a reader keeps is which four
-               events the university declares a date for and when each ran. -->
+               The band was re-costed rather than allowed to overflow. With the
+               descriptions back it ran 37px over a screen; the screen padding
+               came down from 32/36 to 24, the list gap from 22 to 14 and the
+               state paragraph's lower margin from 34 to 20, and with those the
+               four events and their subtitles land at 592 of a 605 screen at
+               1280x720. Each subtitle is a faithful line from that conference's
+               own page — the same page the title still links to — so nothing
+               here is written that the site did not already hold. -->
           <ul class="home-events__list">
             <li>
               <p class="home-events__kind">Conference · concluded</p>
               <h3><a href="rtep-advisory-committee/">RTEP 2026</a></h3>
               <p class="home-events__when"><time datetime="2026-03-13">13–14 March 2026</time></p>
+              <p>Recent Technologies &amp; Innovations in Electronics and Photonics.</p>
             </li>
             <li>
               <p class="home-events__kind">Conference · concluded</p>
               <h3><a href="national-conference-towards-a-self-reliant-and-inclusive-economy-for-viksit-bharat-2047/">NCTSRIE 2026</a></h3>
               <p class="home-events__when"><time datetime="2026-03-11">11–12 March 2026</time></p>
+              <p>Towards a self-reliant, inclusive economy for Viksit Bharat 2047.</p>
             </li>
             <li>
               <p class="home-events__kind">Conference · concluded</p>
-              <h3><a href="hswtech/">HSWTech 2025</a></h3>
+              <h3><a href="events/ieee-hswtech-2025-international-conference-advances-sustainable-technologies-for-a-smarter-future/">HSWTech 2025</a></h3>
               <p class="home-events__when"><time datetime="2025-09-02">2–4 September 2025</time></p>
+              <p>Sustainable technologies for a smarter future.</p>
             </li>
           </ul>
         </div>
@@ -635,6 +630,152 @@
              screen of itself; and it cost 61px of a band that had to lose 113.
              A redundancy that is also the expensive thing is an easy cut. -->
       </div>
+      </div>
+    </section>
+
+    <!-- Schools, the academic half of the hero's promise ("Academics and
+         research"), as a band of its own. The six cards reuse the Latest
+         band's .activity-card exactly — picture, kind label, linked heading —
+         so nothing new is drawn; only the data differs. Each links to a real
+         /academics/<school>/ landing and carries that school's own 1600x900
+         hero photograph. The image is marked data-media-role="hero" so the
+         media contract validates it as the 1600x900 it is, rather than as the
+         3/2 the .activity-image frame crops it to for the grid.
+
+         SIX, and a multiple of three, for the same reason Latest is six: two
+         columns of three is the tightest honest grid that still lands one
+         screen at 1280x720. The six span all four faculties — Engineering &
+         Technology twice, Science & Health Sciences twice, Business, Design —
+         chosen because those are the schools whose captured hero image is a
+         photograph rather than the lettered fallback. Titles drop the
+         redundant "MIT-WPU" the masthead already carries; the eyebrow names
+         the faculty each sits under. -->
+    <section class="schools" aria-labelledby="schools-title" data-image-gallery>
+      <div class="band-screen">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <h2 id="schools-title">Schools</h2>
+            </div>
+            <div class="activity-heading-actions">
+              <a class="archive-link" href="academics/">All schools &amp; programmes <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <div class="activity-grid">
+            <article class="activity-card">
+              <a class="activity-image" href="academics/engineering-and-technology/">
+                <img src="media/mitwpu-public/optimized/academic/26/26fb3e92d04f7354-26fb3e92d04f7354-Civil-About-academic-hero.webp" alt="MIT-WPU School of Engineering and Technology" width="1600" height="900" data-media-role="hero" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Faculty of Engineering &amp; Technology</p>
+                <h3><a href="academics/engineering-and-technology/">School of Engineering and Technology</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="academics/computer-engineering-and-technology/">
+                <img src="media/mitwpu-public/optimized/academic/85/85e47957048dbd98-85e47957048dbd98-Department-of-Computer-Engineering-and-Technology-Banne-academic-hero.webp" alt="MIT-WPU School of Computer Science and Engineering" width="1600" height="900" data-media-role="hero" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Faculty of Engineering &amp; Technology</p>
+                <h3><a href="academics/computer-engineering-and-technology/">School of Computer Science &amp; Engineering</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="academics/business/">
+                <img src="media/mitwpu-public/optimized/academic/c3/c3ec11a4897561ba-c3ec11a4897561ba-63996225dd4731670996517-academic-hero.webp" alt="MIT-WPU School of Business" width="1600" height="900" data-media-role="hero" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Faculty of Business &amp; Leadership</p>
+                <h3><a href="academics/business/">School of Business</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="academics/design/">
+                <img src="media/mitwpu-public/optimized/academic/c5/c535b13ea32be9c7-c535b13ea32be9c7-Department-of-Design-banner-img-academic-hero.webp" alt="MIT-WPU School of Design" width="1600" height="900" data-media-role="hero" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Faculty of Design, Humanities &amp; Liberal Arts</p>
+                <h3><a href="academics/design/">School of Design</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="academics/science/">
+                <img src="media/mitwpu-public/optimized/academic/e8/e89a6ed914fde1c5-e89a6ed914fde1c5-Department-of-Mathematics-and-Statistics-academic-hero.webp" alt="MIT-WPU School of Science and Environmental Studies" width="1600" height="900" data-media-role="hero" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Faculty of Science &amp; Health Sciences</p>
+                <h3><a href="academics/science/">School of Science &amp; Environmental Studies</a></h3>
+              </div>
+            </article>
+
+            <article class="activity-card">
+              <a class="activity-image" href="academics/health-science-technologies/">
+                <img src="media/mitwpu-public/optimized/academic/7e/7e007a183b214404-7e007a183b214404-Department-of-Pharmaceutical-Sciences-academic-hero.webp" alt="MIT-WPU School of Health Sciences and Technology" width="1600" height="900" data-media-role="hero" loading="lazy" decoding="async">
+              </a>
+              <div class="activity-copy">
+                <p class="activity-kind">Faculty of Science &amp; Health Sciences</p>
+                <h3><a href="academics/health-science-technologies/">School of Health Sciences &amp; Technology</a></h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research, the other half of the hero. NO .activity-card here, and that
+         is deliberate: the four group microsites publish no banner the capture
+         retained, and a card frame with an empty picture well says something is
+         missing rather than that nothing is — the same argument the Events band
+         makes about its dateless conferences. So it is the directory pattern
+         the section landings already use: grouped, ruled rows, one real
+         destination each, complete without a photograph because an index is not
+         a gallery. Every row resolves — the four group microsites, the Central
+         Research Facility, and the research wrapper. The one-line notes are
+         faithful truncations of each group's own opening sentence, not new
+         copy. -->
+    <section class="research-home" aria-labelledby="research-home-title" data-image-gallery>
+      <div class="band-screen">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <h2 id="research-home-title">Research</h2>
+            </div>
+            <div class="activity-heading-actions">
+              <a class="archive-link" href="research/">All research <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <div class="directory-groups">
+            <div class="directory-group">
+              <h3>Research groups</h3>
+              <div class="link-list">
+                <a class="directory-link" href="quantum/"><span><strong>Quantum Science &amp; Technology</strong><span class="directory-note">Quantum algorithms and information; entangled-photon optics and materials.</span></span><span aria-hidden="true">→</span></a>
+                <a class="directory-link" href="photonics/"><span><strong>Photonics</strong><span class="directory-note">Structured and single-photon light; nonlinear and photorefractive media; materials spectroscopy.</span></span><span aria-hidden="true">→</span></a>
+                <a class="directory-link" href="astrophysics/"><span><strong>Astrophysics</strong><span class="directory-note">Cosmic magnetism, astrophysical dynamos, turbulence and cosmic rays.</span></span><span aria-hidden="true">→</span></a>
+                <a class="directory-link" href="bioinformatics/"><span><strong>Bioinformatics</strong><span class="directory-note">Infectious disease, microbial systems, genomic variation and viral genomics.</span></span><span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="directory-group">
+              <h3>Facilities</h3>
+              <div class="link-list">
+                <a class="directory-link" href="facilities/"><span><strong>Central Research Facility</strong><span class="directory-note">The university's shared instrumentation, across the sciences and engineering.</span></span><span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="directory-group">
+              <h3>Explore</h3>
+              <div class="link-list">
+                <a class="directory-link" href="research/"><span><strong>Research at MIT-WPU</strong></span><span aria-hidden="true">→</span></a>
+                <a class="directory-link" href="groups/"><span><strong>All research groups</strong></span><span aria-hidden="true">→</span></a>
+                <a class="directory-link" href="science/"><span><strong>Science &amp; environment</strong></span><span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
