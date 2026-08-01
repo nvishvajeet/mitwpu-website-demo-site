@@ -32,38 +32,28 @@
   // How the panel opens, and why each number is what it is.
   //
   // The panel is a DOM child of its entry, so the entry's `:hover` and its
-  // `mouseleave` both already span the trigger AND the panel. That is the whole
-  // bridge: a pointer travelling from the word in the bar down into the panel
-  // never leaves the entry, so nothing has to reach across a gap the way the
-  // old sibling fly-out did. The close delay below only has to cover a pointer
-  // that clips a corner for a frame.
-  const CLOSE_DELAY = 200; // ms the panel stays after the pointer leaves the entry
-  const SETTLE_DELAY = 90; // ms below rest-speed before a hovered entry opens
-
-  // Opening on hover has one hard requirement: a fast horizontal sweep across
-  // the whole bar must open NOTHING. The mistake every earlier version made was
-  // to arm the open on ENTERING an entry and disarm it on leaving, on the
-  // theory that a crossing pointer is inside an entry too briefly to matter.
-  // It is not: an unhurried two-second sweep holds each ~85px entry for
-  // 400–500ms, longer than any delay that still feels responsive, so every
-  // entry crossed opened in turn — a row of sheets thrown down and torn away.
+  // `mouseleave` both already span the trigger AND the panel: a pointer
+  // travelling from the word in the bar down into the panel never leaves the
+  // entry, so nothing has to reach across a gap. The close delay only has to
+  // cover a pointer that clips a corner for a frame.
   //
-  // What separates a crossing from an arrival is not time in the entry, it is
-  // that the crossing is still MOVING. So nothing is armed by entering; a
-  // reveal is armed only once a `mousemove` measures the pointer travelling
-  // slower than REST_SPEED, and any faster move cancels one already waiting.
-  // Cross at any ordinary speed and nothing is ever armed; come to rest on an
-  // entry and it opens a settle later. A stalled event stream cannot forge a
-  // stop, because the move that resumes it covers a large distance and reads as
-  // fast. REST_SPEED is well under an ordinary sweep (~0.34px/ms) and only a
-  // pointer deliberately crawling — most of ten seconds to cross the bar —
-  // falls under it, where opening each panel in turn is the menu answering.
-  const REST_SPEED = 0.1; // px/ms; at or above this the pointer is travelling
-  const REST_SLOP = 4; // px of drift still counted as at rest
-  const MIN_INTERVAL = 12; // ms; a shorter gap between moves carries no speed
+  // Opening is a plain dwell. Entering an entry starts OPEN_DELAY; if the
+  // pointer is still on the entry when it fires, the panel opens — whether or
+  // not the pointer ever moved again. A fast sweep leaves each entry before the
+  // delay elapses, so `mouseleave` cancels the timer (and the callback also
+  // re-checks `:hover`), and a crossing opens nothing.
+  //
+  // A 2026 revision instead armed the open only from a `mousemove` measuring
+  // the pointer below a rest-speed, to keep even a slow sweep from opening
+  // anything. It backfired on the commonest case of all: a pointer that comes
+  // to rest and holds STILL emits no `mousemove`, so it produced no sample and
+  // the menu never opened — the reader had to jiggle the cursor to reveal it.
+  // Measuring speed to find rest cannot see the most complete rest there is. A
+  // clock needs no motion, so the dwell cannot have that fault.
+  const CLOSE_DELAY = 200; // ms the panel stays after the pointer leaves the entry
+  const OPEN_DELAY = 110; // ms a pointer must dwell on an entry before it opens
   const EDGE_GAP = 12; // px kept between the panel and the viewport edge
 
-  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
   const desktop = window.matchMedia("(min-width: 56.01rem)");
 
   const items = [...document.querySelectorAll(".uwp-nav-item")];
@@ -185,86 +175,35 @@
       else setOpen(item, open);
     });
 
-    // Hover-intent. `anchor` is where the current rest began (the slop is
-    // measured from it); `last` is the previous sample, so a speed is taken
-    // between two real points rather than inferred from silence.
+    // Hover-intent: a plain dwell timer, not inferred cursor speed. Entering an
+    // entry starts the clock; if the pointer is still on the entry when it
+    // fires, the panel opens — whether or not the pointer ever moved again,
+    // which is exactly what a still cursor needs and what the speed test could
+    // not do.
     let openTimer = 0;
     let closeTimer = 0;
-    let anchorX = 0;
-    let anchorY = 0;
-    let lastX = 0;
-    let lastY = 0;
-    let lastT = 0;
 
-    const arm = (x, y) => {
+    const arm = () => {
       window.clearTimeout(openTimer);
-      anchorX = x;
-      anchorY = y;
       openTimer = window.setTimeout(() => {
-        // Re-checked, not assumed: the pointer may have left during the wait,
-        // and an Escape inside it may have dismissed the entry from above.
+        // Re-checked, not assumed: a crossing pointer has already left (its
+        // mouseleave cleared this), so only an entry still under the pointer
+        // opens; and an Escape inside the delay may have dismissed it.
         if (!item.matches(":hover") || item.classList.contains("is-dismissed")) {
           return;
         }
         openExclusively(item);
-      }, SETTLE_DELAY);
+      }, OPEN_DELAY);
     };
 
-    item.addEventListener("mouseenter", (event) => {
-      // Entering arms nothing — a sweep enters every entry it crosses. Just
-      // drop any pending close and seed the speed sample.
+    item.addEventListener("mouseenter", () => {
+      // Entering starts the dwell clock and drops any pending close. A sweep
+      // enters every entry it crosses but leaves each before the clock elapses,
+      // so the mouseleave below cancels it; only a genuine rest lasts long
+      // enough to open.
       window.clearTimeout(closeTimer);
-      window.clearTimeout(openTimer);
-      openTimer = 0;
-      anchorX = lastX = event.clientX;
-      anchorY = lastY = event.clientY;
-      lastT = event.timeStamp;
+      arm();
     });
-
-    // Passive: this only reads the pointer, and a listener on every entry of
-    // the bar must never be able to hold up a scroll.
-    item.addEventListener(
-      "mousemove",
-      (event) => {
-        // Once open the pointer is free to roam the panel — that is the reader
-        // using the menu, not deciding to. Re-arming there only re-reveals what
-        // is already revealed.
-        if (item.classList.contains("is-open")) return;
-        if (!finePointer.matches || !desktop.matches) return;
-        const dt = event.timeStamp - lastT;
-        // Too soon after the last sample to carry a speed: the browser fires
-        // several moves per frame, and `mouseenter` shares its timestamp with
-        // the move that crossed in. Leave the reference put and let the interval
-        // grow, so a stalled stream that resumes far away still reads as travel.
-        if (dt < MIN_INTERVAL) return;
-        const dist =
-          Math.abs(event.clientX - lastX) + Math.abs(event.clientY - lastY);
-        lastX = event.clientX;
-        lastY = event.clientY;
-        lastT = event.timeStamp;
-        if (dist / dt >= REST_SPEED) {
-          // Travelling: nothing may be left armed, or the next stall in the
-          // stream would let it fire mid-sweep. Re-anchor so the clock starts
-          // the moment the pointer does slow.
-          window.clearTimeout(openTimer);
-          openTimer = 0;
-          anchorX = event.clientX;
-          anchorY = event.clientY;
-          return;
-        }
-        // Slow enough to be settling. Start the clock once, from here; a drift
-        // past the slop restarts it, so the reveal lands where the pointer came
-        // to rest and not where it first dipped below speed.
-        if (
-          !openTimer ||
-          Math.abs(event.clientX - anchorX) + Math.abs(event.clientY - anchorY) >
-            REST_SLOP
-        ) {
-          arm(event.clientX, event.clientY);
-        }
-      },
-      { passive: true },
-    );
 
     item.addEventListener("mouseleave", () => {
       // A pending open is dropped, not left to fire from outside the entry. The
