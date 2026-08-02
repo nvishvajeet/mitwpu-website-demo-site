@@ -14,11 +14,11 @@
  * list drifts from it. Keep them in the registry's order.
  */
 @import url("../group-assets/site.css?v=1384d404869c");
-@import url("../vendor/university-web-patterns/src/css/tokens.css");
-@import url("../vendor/university-web-patterns/src/css/readability.css");
-@import url("../vendor/university-web-patterns/src/css/typography.css");
-@import url("../vendor/university-web-patterns/src/css/patterns.css");
-@import url("../vendor/university-web-patterns/src/css/media.css");
+@import url("../vendor/university-web-patterns/src/css/tokens.css?v=f6c66c29f774");
+@import url("../vendor/university-web-patterns/src/css/readability.css?v=d53c199749ec");
+@import url("../vendor/university-web-patterns/src/css/typography.css?v=07c89d758062");
+@import url("../vendor/university-web-patterns/src/css/patterns.css?v=1b1643b19d54");
+@import url("../vendor/university-web-patterns/src/css/media.css?v=874fc6c0872d");
 
 /* Token overrides.
  *
