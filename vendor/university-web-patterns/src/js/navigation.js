@@ -55,6 +55,12 @@
   const EDGE_GAP = 12; // px kept between the panel and the viewport edge
 
   const desktop = window.matchMedia("(min-width: 56.01rem)");
+  // Pointer hover is an enhancement for a mouse or trackpad, never the
+  // authority for touch. Keep the layout breakpoint coupled to patterns.css,
+  // while disclosure clicks continue to own every coarse-pointer interaction.
+  const fineHover = window.matchMedia(
+    "(min-width: 56.01rem) and (hover: hover) and (pointer: fine)",
+  );
 
   const items = [...document.querySelectorAll(".uwp-nav-item")];
 
@@ -184,6 +190,7 @@
     let closeTimer = 0;
 
     const arm = () => {
+      if (!fineHover.matches) return;
       window.clearTimeout(openTimer);
       openTimer = window.setTimeout(() => {
         // Re-checked, not assumed: a crossing pointer has already left (its
@@ -197,6 +204,7 @@
     };
 
     item.addEventListener("mouseenter", () => {
+      if (!fineHover.matches) return;
       // Entering starts the dwell clock and drops any pending close. A sweep
       // enters every entry it crosses but leaves each before the clock elapses,
       // so the mouseleave below cancels it; only a genuine rest lasts long
@@ -206,6 +214,7 @@
     });
 
     item.addEventListener("mouseleave", () => {
+      if (!fineHover.matches) return;
       // A pending open is dropped, not left to fire from outside the entry. The
       // close waits out the grace period so a clipped corner does not shut a
       // panel the reader is heading into; re-entry cancels it (mouseenter).
@@ -213,6 +222,15 @@
       openTimer = 0;
       window.clearTimeout(closeTimer);
       closeTimer = window.setTimeout(() => setOpen(item, false), CLOSE_DELAY);
+    });
+
+    fineHover.addEventListener?.("change", (event) => {
+      if (event.matches) return;
+      window.clearTimeout(openTimer);
+      window.clearTimeout(closeTimer);
+      openTimer = 0;
+      closeTimer = 0;
+      if (!item.matches(":focus-within")) setOpen(item, false);
     });
 
     // A panel opened by click or arrow keys has no mouseleave to close it, so

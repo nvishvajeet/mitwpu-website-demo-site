@@ -33,7 +33,7 @@
    *
    * The bar is the one part of this site that was measurably short of room at
    * 1180: the arithmetic further down this file works out that the one-row
-   * demand is 1065.5px against a 1180px measure, which is 114.5px of slack,
+   * demand is 1147.2px against a 1180px measure, which is 32.8px of slack,
    * and it is why the search input is drawn as a magnifier and not a field.
    * 1280 hands it 100px more. Nothing below is retuned to spend that — the
    * fallback bands still fire at the same viewports, so they now fire with
@@ -849,25 +849,24 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
  * is the lockup, the seven entries at 15px, the control cluster, and two
  * column gaps. Every number below is measured in the browser, not estimated.
  *
- *   navigation, 15px, 12px gaps, package carets   663.5px
+ *   navigation, 15px, 12px gaps, package carets   745.2px
  *   controls: magnifier 46 + gap 14 + switch 44   104px
  *   crest alone                                   100px
  *   crest + two-line wordmark                     258px
  *
- * so the whole bar is 899.5px with the crest alone and a 16px column gap, and
- * 1065.5px with the name beside it and a 20px one; the bands below are simply
+ * so the whole bar is about 981px with the crest alone and a 16px column gap,
+ * and 1147.2px with the name beside it and a 20px one; the bands below are
+ * simply
  * where each of those fits:
  *
  *   viewport   measure   demand   slack   band
- *     1440       1280     1065.5   214.5  crest + name
- *     1280       1232     1065.5   166.5  crest + name
- *     1200       1152     1065.5    86.5  crest + name
- *     1136       1088     1065.5    22.5  crest + name  (bottom of the band)
- *     1100       1052      899.5   152.5  crest
- *     1024        976      899.5    76.5  crest
- *      977        929      899.5    29.5  crest        (bottom of the band)
- *      960        912      899.5    12.5  — too thin
- *      897        849      899.5   -50.5  — does not fit
+ *     1440       1280     1147.2   132.8  full lockup
+ *     1280       1232     1085.2   146.8  compact lockup
+ *     1200       1152     1085.2    66.8  compact lockup
+ *     1136       1088     1085.2     2.8  compact lockup (bottom of the band)
+ *     1100       1052       ~981      ~71  crest
+ *     1024        976       ~981       ~0  crest
+ *      977        929       ~981      ~-52  crest       (two-row boundary)
  *
  * WHAT DOES NOT FIT, STATED PLAINLY. Between 897px and 976px the one-row bar
  * is 50px short at its worst, and there is no honest 50px left to find. The
@@ -975,8 +974,8 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
   }
 }
 
-/* ---- 976px and up: the crest carries the bar alone ----------------------- *
- * The wordmark is not drawn between 976px and 1136px, and this is the one
+/* ---- 976px through 1135px: the crest carries the bar alone --------------- *
+ * The wordmark is not drawn between 976px and 1135px, and this is the one
  * subtraction in the change that is a real loss rather than a saving, so it
  * is worth being exact about what goes and what does not.
  *
@@ -988,10 +987,12 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
  * bar that has lost its name; it is a bar showing the name as a mark instead
  * of as a sentence, which is what a mark is for.
  *
- * It returns at 1136px and not lower because 258 + 663.5 + 104 + 40 =
- * 1065.5px of demand needs a 1065.5px measure, which is a 1113.5px viewport;
- * 71rem is the first round figure above it and leaves 22.5px rather than
- * nothing.
+ * The navigation has grown since the original measurement above: its current
+ * seven-entry strip is 745.2px, not 663.5px. The full row therefore asks for
+ * 258 + 745.2 + 104 + 40 = 1147.2px. It technically fits at 1200px with less
+ * than 5px left, which is not a responsive contract; browser zoom, a fallback
+ * font, or one longer translation spends that immediately. The wordmark now
+ * returns in a compact setting at 71rem and reaches full size at 81rem.
  */
 @media (min-width: 61.01rem) and (max-width: 70.99rem) {
   [data-global-masthead] .masthead-wordmark {
@@ -999,12 +1000,53 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
   }
 }
 
-/* ---- The lockup where the bar has room for all of it --------------------- *
- * Nothing moves here. The wordmark returns, the gaps open by four pixels, and
- * that is the whole of it: the row is the same row at 1136px and at 1440px,
- * because the measure is capped at 1280px and stops changing at 1328px.
+/* ---- 1136px through 1295px: the whole name, set compactly ---------------- *
+ * Keep the institution's name beside its crest while protecting every global
+ * destination and control. Compared with the full setting this saves 46px in
+ * the lockup, 12px between navigation entries and 4px in the action cluster.
+ * That changes the 1280px bar from a coincidental fit to 146.8px of headroom,
+ * without changing its information architecture or target sizes.
  */
-@media (min-width: 71rem) {
+@media (min-width: 71rem) and (max-width: 80.99rem) {
+  [data-global-masthead] .masthead-emblem {
+    width: 80px !important;
+    height: 77px !important;
+    border-radius: 9px !important;
+  }
+
+  [data-global-masthead] :is(
+    .global-masthead__brand,
+    .institutional-lockup,
+    .institution-home,
+    .wordmark,
+    .brand
+  ) {
+    gap: 12px !important;
+  }
+
+  [data-global-masthead] .masthead-wordmark__name {
+    font-size: 15px !important;
+  }
+
+  [data-global-masthead] .masthead-wordmark__founder {
+    font-size: 9.5px !important;
+  }
+
+  [data-global-masthead] [data-global-nav] {
+    gap: 10px !important;
+  }
+
+  [data-global-masthead] .uwp-masthead__actions {
+    gap: 10px !important;
+  }
+}
+
+/* ---- The lockup where the bar has room for the full setting -------------- *
+ * At 81rem the wordmark and crest return to their default sizes and the gaps
+ * open by four pixels. The measure is capped at 1280px and stops changing at
+ * 1328px, so the row above that is stable.
+ */
+@media (min-width: 81rem) {
   [data-global-masthead] > .global-masthead__inner {
     column-gap: 20px !important;
   }
@@ -1057,6 +1099,23 @@ body > [data-global-masthead] ~ .uwp-masthead .theme-toggle {
     .brand
   ) {
     gap: 10px !important;
+  }
+}
+
+/* ---- Home hero at the compact-desktop edge ------------------------------- *
+ * This release sheet is injected after the home family's sheet, which makes it
+ * the one place where the 1280px header and the first screen can share an exact
+ * responsive boundary without restamping every committed page that imports
+ * site.css. A 1280px laptop has only a 24px shell gutter. That is sufficient
+ * for the photograph, whose edge is visually quiet, but not for a 77px heading
+ * and its standfirst. Trade 24px of the inter-column gap for a second 24px of
+ * trailing measure. The image and copy widths stay effectively unchanged;
+ * wide desktop and the stacked mobile composition are untouched.
+ */
+@media (min-width: 58.76rem) and (max-width: 80rem) {
+  .is-landing .hero-inner {
+    gap: clamp(36px, 4vw, 52px);
+    padding-inline-end: 24px;
   }
 }
 
