@@ -15,7 +15,7 @@
  * can override a package rule of equal specificity — an @import would have
  * put every rule below it earlier in the cascade than patterns.css.
  *
- * Five things remain, each because the package does not carry it and each
+ * Six things remain, each because the package does not carry it and each
  * annotated with why.
  */
 
@@ -202,3 +202,18 @@
  * The colours themselves are in people/service-brands.css, generated from
  * demo-assets/service-brands.json, which records each value's source and what
  * it measures against each of this site's two grounds. */
+
+/* The graceful-empty line a floor section shows when the site holds nothing for
+ * it yet — About, Research interests or Publications on a thin stub (see
+ * gracefulEmptySection in tools/build_people_profiles.mjs). It is the site's own
+ * note that a field is not filled in, not the person's content, so it is set in
+ * the muted ink the rest of the site uses for secondary lines — the same weight
+ * the department news pane's empty line and the administration directory's "not
+ * published" line carry. Muted, not hidden: the point is that the section keeps
+ * its place in the scaffold and says so, rather than vanishing. The package has
+ * no rule for it because the empty state is this site's decision, not the
+ * component's. */
+.uwp-profile__empty {
+  margin: 0;
+  color: var(--muted);
+}
