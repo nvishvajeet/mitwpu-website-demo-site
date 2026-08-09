@@ -6,8 +6,7 @@
     "lede": "The offices of MIT-WPU, what each one is for, and the published route to it — with the offices the university has published no route to named rather than left out.",
     "description": "A directory of MIT-WPU's administrative offices keyed by office rather than by person: what each office does, how to reach it, who currently holds the post, and every contact the university has not published.",
     "urgentIntroduction": [
-      "The university's public website publishes no route to campus security and no route to the campus medical service. Both numbers below were found in the source of its contact page, where they had been commented out and were never shown to a reader.",
-      "They are the two most important rows on this page and they are the two least certain. Read the note beneath them before relying on either."
+      "The university's public website publishes no route to campus security or the campus medical service. Both numbers below were found commented out in the source of its contact page and were never shown to a reader — see the note beneath them."
     ],
     "provenanceIntroduction": [
       "Every value here came from a page MIT-WPU published, or from the source of one, on the day this site was captured. Nothing has been filled in from memory, from another university, or from what seemed likely.",
@@ -18,12 +17,10 @@
       "Until they are supplied, a missing value is shown as missing wherever it appears. An office with no published telephone number says it has none rather than quietly showing one fewer line than its neighbour."
     ],
     "statusNote": {
-      "eyebrow": "Read this before using the numbers",
-      "title": "Some of these numbers were never published by the university",
+      "eyebrow": "About the emergency numbers",
+      "title": "Found in the site's source, not published on its pages",
       "paragraphs": [
-        "MIT-WPU's contact page carries a table of eleven departmental telephone numbers inside an HTML comment. The table does not render and no visitor to the live site has ever seen it. Whether it was withdrawn deliberately or commented out by accident is not known.",
-        "Those numbers are published here on the university operator's instruction, because the alternative — a university website with no route to campus security and none to its medical service — is worse. They are marked throughout as present in the captured source but not published, which is a different claim from \"the university publishes this\". If one of them turns out to be stale, that marking is what lets somebody work out why.",
-        "This is a demonstration site. Every page carries a banner saying so and asks search engines not to index it, and that is what makes publishing an unpublished internal number acceptable here. If this site's status ever changes, these rows are the first thing to re-check — before anything else on the page."
+        "MIT-WPU's contact page holds the campus security and medical numbers — and eleven departmental ones — inside an HTML comment, so no visitor to the live site ever saw them. They are shown here on the university operator's instruction, because a campus with no published route to security or medical help is worse than one whose numbers came from the page source. This is a noindexed demonstration site; if that ever changes, these are the first rows to reconfirm. The full source of every contact on this page is set out in the table at the foot."
       ]
     },
     "relatedIntroduction": [

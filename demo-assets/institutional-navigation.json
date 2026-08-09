@@ -131,10 +131,6 @@
               {
                 "label": "Liberal Arts & Consciousness",
                 "local": "academics/liberal-arts-humanities/"
-              },
-              {
-                "label": "All schools and departments",
-                "local": "academics/"
               }
             ]
           },
@@ -157,10 +153,6 @@
               {
                 "label": "Certificates and diplomas",
                 "local": "programmes/diploma/"
-              },
-              {
-                "label": "Programme finder",
-                "local": "programmes/"
               }
             ]
           },
@@ -223,10 +215,6 @@
               {
                 "label": "IPR and patents",
                 "local": "research/ipr/"
-              },
-              {
-                "label": "All research areas",
-                "local": "research/research-areas/"
               }
             ]
           },
@@ -249,10 +237,6 @@
               {
                 "label": "Astrophysics Research Group",
                 "local": "astrophysics/"
-              },
-              {
-                "label": "All research groups",
-                "local": "groups/"
               }
             ]
           },
@@ -334,7 +318,7 @@
         "/contact-us",
         "/intranet"
       ],
-      "note": "This entry keeps the stable page id `people` so every existing builder continues to mark the same family current, but its visible label and destination now describe the wider job it performs. `People` gave a top-level tab to one directory while offices, forms, governance, contacts and staff services were scattered across the footer and section pages. `Administration` replaces that tab without adding another item or giving the subject more visual weight. The existing people and faculty destinations remain the first branch in the menu, so the change reorganises rather than removes them.",
+      "note": "This entry keeps the stable page id `people` so every existing builder continues to mark the same family current, but its visible label and destination now describe the wider job it performs. `People` gave a top-level tab to one directory while offices, forms, governance, contacts and staff services were scattered across the footer and section pages. `Administration` replaces that tab without adding another item or giving the subject more visual weight. The existing people and faculty destinations remain the first branch in the menu, so the change reorganises rather than removes them. Slimmed on 2026-08-09. The People group listed five rows where the People directory already answers three of them: it filters by role — faculty, leadership, head, director — so separate `Faculty directory` and `Leadership` rows were the same humans a second and third time, the duplication this file refuses; both were dropped, and the underlying /faculty/ and /leadership/ pages remain reachable as deep links but are no longer masthead peers of the directory that supersedes them. `Faculty and staff` moved to `Services and forms`, because it is a staff-services front door and not a directory of people, so it read as a fifth person-list while sitting in a people group. The `Governance` group went the same day: `Governance and quality` is `about-us/leadership-and-governance/`, already carried by About Us › Leadership, and `Grievance redressal` is already carried by Campus › Student support, where that entry's own note argues it belongs and asks not to be listed twice — a destination in two panels teaches a reader the two are different things, so each keeps one home and the overview `Offices and contacts` still anchors the section.",
       "menu": {
         "kind": "mega",
         "overview": {
@@ -343,24 +327,12 @@
         },
         "groups": [
           {
-            "heading": "People and leadership",
+            "heading": "People",
             "local": "people/",
             "links": [
               {
                 "label": "People directory",
                 "local": "people/"
-              },
-              {
-                "label": "Faculty directory",
-                "local": "faculty/"
-              },
-              {
-                "label": "Faculty and staff",
-                "local": "faculty-staff/"
-              },
-              {
-                "label": "Leadership",
-                "local": "leadership/"
               },
               {
                 "label": "Alumni",
@@ -372,6 +344,10 @@
             "heading": "Services and forms",
             "links": [
               {
+                "label": "Faculty and staff",
+                "local": "faculty-staff/"
+              },
+              {
                 "label": "Forms and requests",
                 "local": "forms/"
               },
@@ -382,19 +358,6 @@
               {
                 "label": "Contact the university",
                 "local": "contact-us/"
-              }
-            ]
-          },
-          {
-            "heading": "Governance",
-            "links": [
-              {
-                "label": "Governance and quality",
-                "local": "about-us/leadership-and-governance/"
-              },
-              {
-                "label": "Grievance redressal",
-                "local": "grievance-redressal/"
               }
             ]
           }
@@ -439,10 +402,6 @@
             "heading": "Clubs and galleries",
             "local": "campus-life/",
             "links": [
-              {
-                "label": "Campus and student life directory",
-                "local": "campus-life/"
-              },
               {
                 "label": "Photo and video galleries",
                 "local": "campus-life/galleries/"
