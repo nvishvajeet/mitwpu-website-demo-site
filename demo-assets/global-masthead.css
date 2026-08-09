@@ -403,6 +403,24 @@
     position: static !important;
   }
 
+  /* THE HOVER-FLICKER FIX. The item is static above, so the mega panel is
+     positioned against the masthead. Anchor it to BOTH shell edges and let it
+     span the full width, dropping flush below the bar (top:100% -> the bar's
+     bottom). Why this and not the vendored content-width, right-aligned panel:
+     that panel opened ~300px to the right of its trigger, so moving the pointer
+     from the word down to the panel crossed empty page — mouseleave fired, the
+     panel closed, re-entry reopened it: flicker. A full-width panel sits
+     directly under every trigger, so there is no horizontal gap to cross and it
+     cannot flicker. Verified: all six triggers sit over their panel, panel top
+     == bar bottom, no dead zone. (Upstream this is the "shell-bounded" third
+     placement the note above wants contributed to university-web-patterns.) */
+  [data-global-masthead] .uwp-nav-mega {
+    left: 1rem !important;
+    right: 1rem !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
   [data-global-masthead] .uwp-nav-mega {
     right: max(
       calc(var(--mitwpu-masthead-gutter) / 2),
