@@ -1188,6 +1188,31 @@ h3 {
   color: var(--copy);
 }
 
+/* The News & events pane (`unit-events`) the Research landing carries, the
+ * same recurring band the school and department landings show. The record
+ * rows match that pane; the empty state is the calm line that keeps the band
+ * present and the same shape when Research has nothing to publish yet. See
+ * tools/build_university_layers.mjs renderResearchEvents. */
+.record-list {
+  border-top: 1px solid var(--line);
+}
+
+.record-row {
+  display: block;
+  padding: 23px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.record-row h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.unit-events__empty {
+  margin: 0;
+  color: var(--muted);
+}
+
 .directory-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1610,6 +1635,7 @@ h3 {
 .is-landing .hero-band,
 .is-landing .maeer-mission,
 .is-landing .curated-media,
+.is-landing .unit-events,
 .is-landing .campus-map,
 .is-landing .directory {
   padding-block: 0;
@@ -1630,7 +1656,8 @@ h3 {
 }
 
 .is-landing .maeer-mission .band-screen,
-.is-landing .curated-media .band-screen {
+.is-landing .curated-media .band-screen,
+.is-landing .unit-events .band-screen {
   padding-block: 40px;
 }
 
@@ -1729,6 +1756,7 @@ h3 {
   .is-landing .hero-band .band-screen,
   .is-landing .maeer-mission .band-screen,
   .is-landing .curated-media .band-screen,
+  .is-landing .unit-events .band-screen,
   .is-landing .campus-map .band-screen,
   .is-landing .directory .band-screen {
     padding-block: clamp(3rem, 7vw, 5rem) 0;

@@ -88,6 +88,17 @@
   width: min(calc(100% - 48px), var(--shell));
 }
 
+/* A breadcrumb crumb whose text is very long — the full formal name of a
+   school, for instance ("Prof. Makarand Hastak School of Construction
+   Engineering & Management") — must not push the page wider than the viewport
+   on a phone. The package li is `flex: 0 0 auto`, so it will not shrink to the
+   trail's width; cap it and let the crumb wrap (min-width: 0 + overflow-wrap on
+   the crumb do the breaking). Fixed upstream on .uwp-breadcrumbs li as well, so
+   this override retires on the next re-vendor. */
+.uwp-breadcrumbs li {
+  max-width: 100%;
+}
+
 /* Give package-rendered section headings the same restrained institutional
  * register as the hand-authored and academic families. The split heading is
  * intentionally unruled in the package contract and remains untouched. The

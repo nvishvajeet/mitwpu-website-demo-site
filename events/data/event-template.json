@@ -1,5 +1,6 @@
 {
   "publicationStatus": "draft",
+  "suppressFromMain": false,
   "slug": "replace-with-event-slug",
   "type": "Workshop",
   "status": "Registration opens soon",
