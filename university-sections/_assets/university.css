@@ -501,10 +501,7 @@ h3 {
 .curated-media__grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: clamp(0.75rem, 1.5vw, 1rem);
 }
 
 .curated-media__card {
@@ -512,6 +509,7 @@ h3 {
   display: grid;
   min-width: 0;
   overflow: hidden;
+  border-radius: 0.5rem;
   background: var(--paper);
   color: #fff;
   text-decoration: none;
@@ -1193,9 +1191,7 @@ h3 {
 .directory-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .directory-card {
@@ -1204,6 +1200,8 @@ h3 {
   flex-direction: column;
   padding: clamp(1.35rem, 3vw, 2.25rem);
   background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
 }
 
 .directory-card > p {
