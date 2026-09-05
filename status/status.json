@@ -6,7 +6,7 @@
   "phase": "Validated, checkpointed, and synchronized",
   "updated_at": "25 July 2026, 19:25 CEST",
   "eta": "0 minutes — this crawl and indexing lane is complete",
-  "git_checkpoint": "64c002550831",
+  "git_checkpoint": "443d1c841255",
   "git_checkpoint_label": "Artifact built from git checkpoint",
   "graph_nodes": 8717,
   "graph_pages": 4050,
@@ -61,5 +61,5 @@
     "Institutional AWS identity, S3 or CloudFront target, and approved production hostname are not configured",
     "The private production export is required for source-of-truth reconciliation and final cutover"
   ],
-  "git_checkpoint_at": "2026-08-10T01:48:56+02:00"
+  "git_checkpoint_at": "2026-09-05T19:36:01+02:00"
 }
